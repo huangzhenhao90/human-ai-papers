@@ -1,0 +1,96 @@
+{
+  "abstract": "Optimizing the treatment regimen is a fundamental medical decision-making problem. This can be thought of as a two-dimensional decision-making problem with a nested structure because it involves determining both the optimal medication and its optimal dose. Identifying the most effective medication for an individual often poses considerable difficulty, and even when a suitable medication is ascertained, dosing it optimally remains a significant challenge. Making these two nested decisions necessitates the adaptive learning of a personalized disease progression control model. To address this problem, we propose a novel contextual multiarmed bandit model under a two-dimensional control with a nested structure. For this model, we develop a new joint contextual learning and optimization algorithm, termed the stochastic subgradient descent atop contextual multiarmed bandit (SGD-MAB) algorithm. It sequentially selects for a patient (i) the best medication based on their contextual information and (ii) the corresponding dose optimized over the prior history of those patients who received the same medication. We prove that it admits a sublinear regret, which is tight up to a logarithmic factor. Our regret analysis leverages the strengths of both contextual bandit approaches and online convex optimization techniques in a seamless fashion. We substantiate the practicality of SGD-MAB using clinical data on patients with hypertension and heightened cardiovascular risks. Our analysis indicates that SGD-MAB has the potential to surpass current practices. We benchmark several policies to show the advantages of our approach and offer critical insights. Our framework holds promise for various applications beyond healthcare that require nested decision-making.\n                  This paper was accepted by J. George Shanthikumar, data science.\n                  Funding: This work was supported by the National Science Foundation (CMMI-1548201, CMMI-1634505) and the National Eye Institute (NIH Grant R01EY026641).\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2019.03211 .",
+  "ai_type_tags": [
+    "多臂老虎机",
+    "在线凸优化",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2019.03211",
+  "authors": [
+    "Esmaeil Keyvanshokooh",
+    "Mohammad Zhalechian",
+    "Cong Shi",
+    "Mark P. Van Oyen",
+    "Pooyan Kazemian"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Texas A&M University"
+      ],
+      "name": "Esmaeil Keyvanshokooh",
+      "orcid": "https://orcid.org/0000-0001-9634-3806",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Indiana University Bloomington"
+      ],
+      "name": "Mohammad Zhalechian",
+      "orcid": "https://orcid.org/0000-0002-1174-6102",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Miami"
+      ],
+      "name": "Cong Shi",
+      "orcid": "https://orcid.org/0000-0003-3564-3391",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Michigan"
+      ],
+      "name": "Mark P. Van Oyen",
+      "orcid": "https://orcid.org/0000-0002-8685-7843",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Case Western Reserve University"
+      ],
+      "name": "Pooyan Kazemian",
+      "orcid": "https://orcid.org/0000-0002-2846-3862",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心即上下文多臂老虎机算法，用于医疗决策优化，属AI/机器学习方法论",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对个体化药物及剂量选择问题，构建两层嵌套结构的上下文多臂老虎机模型，提出 SGD‑MAB 算法，理论上证明次线性 regret，并通过高血压患者临床数据验证效果。",
+      "topic_tags": [
+        "医疗决策",
+        "多臂老虎机",
+        "在线学习",
+        "个性化治疗"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 5,
+  "date": "2025-12",
+  "doi": "10.1287/mnsc.2019.03211",
+  "id": "p_YiU_ERCwlwDPKW1E",
+  "issue": "12",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 2987,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Contextual Learning with Online Convex Optimization: Theory and Application to Medical Decision-Making",
+  "title_zh": "基于在线凸优化的情境学习：理论及其在医疗决策中的应用",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2019.03211",
+  "volume": "71",
+  "year": 2025
+}

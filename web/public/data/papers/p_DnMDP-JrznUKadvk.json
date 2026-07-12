@@ -1,0 +1,100 @@
+{
+  "abstract": "BACKGROUND: Millions of people now use leading generative artificial intelligence (AI) tools (chatbots) for psychological support. Despite the promise related to availability and scale, the single most pressing question in AI for mental health is whether these tools are safe. The field currently lacks a validated, automated benchmark for determining AI chatbot safety in mental health, including for users at risk of suicide. The Validation of Ethical and Responsible AI in Mental Health (VERA-MH) evaluation was recently proposed to meet this urgent need. OBJECTIVE: This human validation study examines the alignment of the VERA-MH safety evaluation for AI chatbot suicide risk detection and response with safety ratings by expert human clinicians. METHODS: We simulated a large set of conversations between large language model (LLM)-based users (\"user-agents\") spanning a wide range of suicide risk levels and disclosure styles and general-purpose AI chatbots. Licensed mental health clinicians from Spring Health used a scoring rubric developed for VERA-MH to independently rate the simulated conversations for safe and unsafe chatbot behaviors. An LLM-based evaluator (the \"judge\") used the same scoring rubric to evaluate the same set of conversations. We then examined rating alignment across (1) individual clinicians, (2) clinician consensus and the LLM judge, and (3) different judge LLMs. We also examined clinicians' ratings of user-agent realism, suicide risk, and disclosure. RESULTS: Clinicians were generally consistent with one another in their safety ratings (chance-corrected interrater reliability=0.77), thus establishing a reliable clinical consensus reference. The LLM judge was strongly aligned with this clinical consensus reference (interrater reliability=0.81) when using the same scoring rubric. Ratings were stable across judge LLMs and evaluations. Clinicians' ratings of user-agent realism and how well the intended user-agent suicide risk and disclosure styles were reflected in the simulated conversations were mixed. CONCLUSIONS: For the potential mental health benefits of AI chatbots to be realized, attention to safety is paramount. Findings support the reliability of VERA-MH, an open-source, fully automated AI safety evaluation for suicide risk detection and response. These results reflect an earlier version of the benchmark, and as VERA-MH continues to evolve, external validation of updated versions will be an important next step. Future research directions include VERA-MH generalizability and robustness, as well as expanding to target other key areas of AI safety for mental health.",
+  "ai_type_tags": [
+    "llm_genai",
+    "nlp",
+    "conversational_ai"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Kate H Bentley",
+    "Luca Belli",
+    "Adam M. Chekroud",
+    "Emily J. Ward",
+    "Emily R. Dworkin",
+    "Emily Van Ark",
+    "Kelly M. Johnston",
+    "Will Alexander",
+    "Millard Brown",
+    "Matt Hawrilenko"
+  ],
+  "authors_full": [
+    {
+      "name": "Kate H Bentley"
+    },
+    {
+      "name": "Luca Belli"
+    },
+    {
+      "name": "Adam M. Chekroud"
+    },
+    {
+      "name": "Emily J. Ward"
+    },
+    {
+      "name": "Emily R. Dworkin"
+    },
+    {
+      "name": "Emily Van Ark"
+    },
+    {
+      "name": "Kelly M. Johnston"
+    },
+    {
+      "name": "Will Alexander"
+    },
+    {
+      "name": "Millard Brown"
+    },
+    {
+      "name": "Matt Hawrilenko"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "人工验证开源AI安全评估基准VERA-MH，AI担任裁判与临床共识对比，核心为AI聊天机器人自杀风险检测安全验证。",
+      "ai_score": 5,
+      "clinical_validation": "external",
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "crisis_safety",
+        "hallucination_misinformation",
+        "bias_fairness"
+      ],
+      "safety_evaluated": true,
+      "tldr": "临床专家与LLM法官的一致性达0.81，VERA-MH评估具有可靠性，为AI心理健康安全基准提供人工验证。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "safety_ethics",
+        "crisis_detection",
+        "general_population",
+        "clinicians"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-08",
+  "doi": "10.2196/92817",
+  "id": "p_DnMDP-JrznUKadvk",
+  "issue": null,
+  "journal": "JMIR AI",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7163913218"
+    }
+  ],
+  "title": "AI Chatbot Suicide Risk Detection and Response: Human Validation Study of the Open-Source VERA-MH Safety Evaluation",
+  "title_zh": "AI聊天机器人自杀风险检测与应对：开源VERA-MH安全评估的人类验证研究",
+  "unified_ingested_at": "2026-07-12T08:09:29.110653Z",
+  "url": "https://doi.org/10.2196/92817",
+  "volume": null,
+  "year": 2026
+}

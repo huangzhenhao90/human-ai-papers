@@ -1,0 +1,69 @@
+{
+  "abstract": "Firms adopt randomized experiments to evaluate various interventions (e.g., website design, creative content, and pricing). However, most randomized experiments are designed to identify the impact of one specific intervention. The literature on randomized experiments lacks a holistic approach to optimize a sequence of interventions along the customer journey. Specifically, locally optimal interventions unveiled by randomized experiments might be globally suboptimal when considering their interdependence as well as the long-term rewards. Fortunately, the accumulation of a large number of historical experiments creates exogenous interventions at different stages along the customer journey and provides a new opportunity. This study integrates multiple experiments within the reinforcement learning (RL) framework to tackle the questions that cannot be answered by stand-alone randomized experiments. How can we learn optimal policy with a sequence of interventions along the customer journey based on an ensemble of historical experiments? Additionally, how can we learn from multiple historical experiments to guide future intervention trials? We propose a Bayesian recurrent Q-network model that leverages the exogenous interventions from multiple experiments to learn their effectiveness at different stages of the customer journey and optimize them for long-term rewards. Beyond optimization within the existing interventions, the Bayesian model also estimates the distribution of rewards, which can guide subject allocation in the design of future experiments to optimally balance exploration and exploitation. In summary, the proposed model creates a two-way complementarity between RL and randomized experiments, and thus, it provides a holistic approach to learning and optimizing interventions along the customer journey.  This paper was accepted by Anindya Ghose, information systems.  Funding: This work was supported by Adobe Faculty Research Award and the Marketing Science Institute Research Grant.  Supplemental Material: The data files and online appendix are available at https://doi.org/10.1287/mnsc.2023.4914 .",
+  "ai_type_tags": [
+    "强化学习",
+    "贝叶斯方法",
+    "神经网络"
+  ],
+  "arxiv_id": "2023.4914",
+  "authors": [
+    "Yicheng Song",
+    "Tianshu Sun"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Minnesota"
+      ],
+      "name": "Yicheng Song",
+      "orcid": "https://orcid.org/0000-0002-9107-814X",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Southern California",
+        "Cheung Kong Graduate School of Business"
+      ],
+      "name": "Tianshu Sun",
+      "orcid": "https://orcid.org/0000-0002-9786-044X",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "使用强化学习优化客户旅程干预，属于AI+营销管理核心议题",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "传统随机实验仅评估单一干预措施，缺乏沿客户旅程优化序列干预的整体方法。本研究将多个历史随机实验整合进强化学习框架，提出贝叶斯循环Q网络模型，利用历史实验产生的外部干预，学习各阶段干预效果并优化长期收益，同时估计干预奖励分布以指导未来实验设计。",
+      "topic_tags": [
+        "客户旅程",
+        "实验设计",
+        "营销",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 12,
+  "date": "2024-08",
+  "doi": "10.1287/mnsc.2023.4914",
+  "id": "p_7fuHIStxDxqgWvF-",
+  "issue": "8",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3996,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Ensemble Experiments to Optimize Interventions Along the Customer Journey: A Reinforcement Learning Approach",
+  "title_zh": "优化客户旅程干预的集成实验：一种强化学习方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4914",
+  "volume": "70",
+  "year": 2024
+}

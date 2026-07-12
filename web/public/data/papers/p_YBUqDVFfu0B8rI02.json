@@ -1,0 +1,74 @@
+{
+  "abstract": "In this work, we present a modular and interpretable framework that uses Large Language Models (LLMs) to automate candidate assessment in recruitment. The system integrates diverse sources, including job descriptions, CVs, interview transcripts, and HR feedback; to generate structured evaluation reports that mirror expert judgment. Unlike traditional ATS tools that rely on keyword matching or shallow scoring, our approach employs role-specific, LLM-generated rubrics and a multi-agent architecture to perform fine-grained, criteria-driven evaluations. The framework outputs detailed assessment reports, candidate comparisons, and ranked recommendations that are transparent, auditable, and suitable for real-world hiring workflows.   Beyond rubric-based analysis, we introduce an LLM-Driven Active Listwise Tournament mechanism for candidate ranking. Instead of noisy pairwise comparisons or inconsistent independent scoring, the LLM ranks small candidate subsets (mini-tournaments), and these listwise permutations are aggregated using a Plackett-Luce model. An active-learning loop selects the most informative subsets, producing globally coherent and sample-efficient rankings. This adaptation of listwise LLM preference modeling (previously explored in financial asset ranking) provides a principled and highly interpretable methodology for large-scale candidate ranking in talent acquisition.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2603.26710",
+  "authors": [
+    "Kamer Ali Yuksel",
+    "Abdul Basit Anees",
+    "Ashraf Elneima",
+    "Sanjika Hewavitharana",
+    "Mohamed Al-Badrashiny"
+  ],
+  "authors_full": [
+    {
+      "name": "Kamer Ali Yuksel"
+    },
+    {
+      "name": "Abdul Basit Anees"
+    },
+    {
+      "name": "Ashraf Elneima"
+    },
+    {
+      "name": "Sanjika Hewavitharana"
+    },
+    {
+      "name": "Mohamed Al-Badrashiny"
+    },
+    {
+      "name": "Hassan Sawaf"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心研究LLM自动化HR招聘评估，系统设计即核心议题",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "提出一种基于LLM的模块化、可解释招聘候选人评估框架，整合简历、职位描述、面试转录等多源信息，通过角色定制化LLM评分量表与多智能体架构实现精细化评估。核心创新在于提出LLM驱动的主动列表式锦标赛机制，用小样本子集排序结合Plackett-Luce模型聚合，并通过主动学习挑选信息量最大的子集，实现高效且全局一致的候选人排名。该方法输出透明可审计的评估报告，适用于大规模招聘场景。",
+      "topic_tags": [
+        "招聘",
+        "绩效评估",
+        "HR",
+        "工作设计"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-17",
+  "doi": null,
+  "id": "p_YBUqDVFfu0B8rI02",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2603.26710v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8234,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Agentic AI for Human Resources: LLM-Driven Candidate Assessment",
+  "title_zh": "面向人力资源的Agentic AI：基于LLM的候选人评估",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2603.26710v1",
+  "volume": null,
+  "year": 2026
+}

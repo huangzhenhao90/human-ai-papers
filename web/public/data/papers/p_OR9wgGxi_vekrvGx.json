@@ -1,0 +1,57 @@
+{
+  "abstract": "As generative AI becomes more prevalent, it is important to study how human users interact with such models. In this work, we investigate how people use text-to-image models to generate desired target images. To study this interaction, we created ArtWhisperer, an online game where users are given a target image and are tasked with iteratively finding a prompt that creates a similar-looking image as the target. Through this game, we recorded over 50,000 human-AI interactions; each interaction corresponds to one text prompt created by a user and the corresponding generated image. The majority of these are repeated interactions where a user iterates to find the best prompt for their target image, making this a unique sequential dataset for studying human-AI collaborations. In an initial analysis of this dataset, we identify several characteristics of prompt interactions and user strategies. People submit diverse prompts and are able to discover a variety of text descriptions that generate similar images. Interestingly, prompt diversity does not decrease as users find better prompts. We further propose a new metric to quantify the steerability of AI using our dataset. We define steerability as the expected number of interactions required to adequately complete a task. We estimate this value by fitting a Markov chain for each target task and calculating the expected time to reach an adequate score in the Markov chain. We quantify and compare AI steerability across different types of target images and two different models, finding that images of cities and natural world images are more steerable than artistic and fantasy images. These findings provide insights into human-AI interaction behavior, present a concrete method of assessing AI steerability, and demonstrate the general utility of the ArtWhisperer dataset.",
+  "ai_type_tags": [
+    "图像生成",
+    "GenAI",
+    "算法决策"
+  ],
+  "arxiv_id": "2306.08141",
+  "authors": [
+    "Kailas Vodrahalli",
+    "James Zou"
+  ],
+  "authors_full": [
+    {
+      "name": "Kailas Vodrahalli"
+    },
+    {
+      "name": "James Zou"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "生成式AI人机交互数据集,与消费者行为相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "ArtWhisperer通过在线游戏收集超过50,000条人类‑AI交互记录，研究用户如何迭代优化文本提示以生成目标图像，发现用户提交多样提示且提示多样性在找到更好提示后不下降，并提出‘可操纵性’指标，利用马尔可夫链量化AI完成任务所需的交互次数。",
+      "topic_tags": [
+        "人机协作",
+        "创意",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-06-13",
+  "doi": null,
+  "id": "p_OR9wgGxi_vekrvGx",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2306.08141v4",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10337,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "ArtWhisperer: A Dataset for Characterizing Human-AI Interactions in Artistic Creations",
+  "title_zh": "ArtWhisperer：用于表征艺术创作中人机交互的数据集",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2306.08141v4",
+  "volume": null,
+  "year": 2023
+}

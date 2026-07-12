@@ -1,0 +1,86 @@
+{
+  "abstract": "Background: Large language models (LLMs) and, more recently, large reasoning models (LRMs) have rapidly garnered significant interest for application in psychiatry and behavioral health. However, recent studies have identified significant shortcomings and potential risks in the performance of LLM-based systems, complicating their application to psychiatric diagnosis. Two promising approaches to addressing these challenges and improving the efficacy of these models are simulated reasoning (SR) and self-verification (SV), in which additional \"reasoning tokens\" are used to guide model output, either during or after inference. Objective: We aimed to explore how the use of SR (via LRMs) and SV (via supplemental prompting) affects the psychiatric diagnostic performance of LLMs. Methods: 106 case vignettes and associated diagnoses were extracted from the DSM-5-TR (Diagnostic and Statistical Manual, Version 5, Text Revision) Clinical Cases book, with permission. Both an LLM and an LRM model were selected from the latest available model generation for each of the two vendors studied (OpenAI and Google). Two inference approaches were developed: a Basic approach that directly prompted models to provide diagnoses and a SV approach that augmented the Basic approach with additional prompts. All case vignettes were processed by the two LLMs, two LRMs, and two inference approaches, and diagnostic performance was evaluated using the sensitivity and positive predictive value (PPV). Binomial generalized linear mixed models were used to test for significant differences between the model vendors (OpenAI, Google), type (LLM, LRM), and the addition of an SV prompt. Results: All vignettes were successfully processed by each model and inference approach. Sensitivity ranged from 0.732 to 0.817, and PPV ranged from 0.534 to 0.779. The best overall performance was found in the o3-pro LRM using SV, with a sensitivity of 0.782 and a PPV of 0.779. No statistically significant fixed effects were found for sensitivity. For PPV, a statistically significant effect was found for prompt type (SV, P=.007) and model type (LRM, P=.009). No significant interaction effects were identified. Conclusions: We found that both SR and SV yielded statistically significant improvements in the PPV, without significant differences in the sensitivity. The addition of the manually specified SV prompt improved the PPV even when simulated reasoning was used. This suggests that future efforts to apply language models in behavioral health could benefit from manually crafted reasoning prompts and automated SR.",
+  "ai_type_tags": [
+    "llm_genai",
+    "deep_learning"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Karthik V. Sarma",
+    "Kaitlin Hanss",
+    "Andrew J M Halls",
+    "Daniel F Becker",
+    "Anne L. Glowinski",
+    "Andrew D. Krystal"
+  ],
+  "authors_full": [
+    {
+      "name": "Karthik V. Sarma"
+    },
+    {
+      "name": "Kaitlin Hanss"
+    },
+    {
+      "name": "Andrew J M Halls"
+    },
+    {
+      "name": "Daniel F Becker"
+    },
+    {
+      "name": "Anne L. Glowinski"
+    },
+    {
+      "name": "Andrew D. Krystal"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "LLM/LRM在精神科诊断中的基准性能评估，使用DSM-5-TR病例验证，属于核心AI方法+核心精神健康任务。",
+      "ai_score": 5,
+      "clinical_validation": "internal",
+      "domain_score": 5,
+      "evidence_stage": "benchmark_development",
+      "ground_truth_quality": "validated_instrument",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "hallucination_misinformation"
+      ],
+      "safety_evaluated": false,
+      "tldr": "在106个DSM-5病例上比较LLM和LRM的诊断性能，发现自我验证提示显著提升阳性预测值至0.779。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "psychosis_schizophrenia",
+        "bipolar",
+        "eating_disorders",
+        "substance_use",
+        "transdiagnostic",
+        "screening_assessment",
+        "clinical_patients"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-08",
+  "doi": "10.2196/83927",
+  "id": "p_7SKsGugZEwZzUcU0",
+  "issue": null,
+  "journal": "JMIR AI",
+  "pdf_url": "https://ai.jmir.org/2026/1/e83927/PDF",
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7163900134"
+    }
+  ],
+  "title": "Simulated Reasoning and Self-Verification for Psychiatric Diagnosis in Generalist Large Language Models: Comparative Evaluation",
+  "title_zh": "通用大语言模型中模拟推理与自我验证用于精神科诊断的比较评估",
+  "unified_ingested_at": "2026-07-12T08:09:29.110653Z",
+  "url": "https://doi.org/10.2196/83927",
+  "volume": null,
+  "year": 2026
+}

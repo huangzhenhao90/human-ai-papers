@@ -1,0 +1,85 @@
+{
+  "abstract": "Machine learning (ML) is increasingly being used to support high-stakes decisions. However, there is frequently a construct gap: a gap between the construct of interest to the decision-making task and what is captured in proxies used as labels to train ML models. As a result, ML models may fail to capture important dimensions of decision criteria, hampering their utility for decision support. Thus, an essential step in the design of ML systems for decision support is selecting a target label among available proxies. In this work, we explore the use of historical expert decisions as a rich—yet also imperfect—source of information that can be combined with observed outcomes to narrow the construct gap. We argue that managers and system designers may be interested in learning from experts in instances where they exhibit consistency with each other while learning from observed outcomes otherwise. We develop a methodology to enable this goal using information that is commonly available in organizational information systems. This involves two core steps. First, we propose an influence function-based methodology to estimate expert consistency indirectly when each case in the data are assessed by a single expert. Second, we introduce a label amalgamation approach that allows ML models to simultaneously learn from expert decisions and observed outcomes. Our empirical evaluation, using simulations in a clinical setting and real-world data from the child welfare domain, indicates that the proposed approach successfully narrows the construct gap, yielding better predictive performance than learning from either observed outcomes or expert decisions alone.\n                  This paper was accepted by Anindya Ghose, information systems.\n                  Funding: This work was supported by the National Institutes of Health [Grant R01NS124642], Good Systems, University of Texas at Austin, the Metro 21 Institute, the Defense Advanced Research Projects Agency [Grant FA8750-17-2-0130], the National Science Foundation [Grant 1939606], Google [Award for Inclusion Research], and the UK Medical Research Council [Grants MC UU 00002/2, MC UU 00002/5, and MC UU 00040/02–Precision Medicine].\n                  Supplemental Material: The online appendices and data files are available at https://doi.org/10.1287/mnsc.2022.01576 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "人机协作"
+  ],
+  "arxiv_id": "2022.01576",
+  "authors": [
+    "Maria De‐Arteaga",
+    "Vincent Jeanselme",
+    "Artur Dubrawski",
+    "Alexandra Chouldechova"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "The University of Texas at Austin"
+      ],
+      "name": "Maria De‐Arteaga",
+      "orcid": "https://orcid.org/0000-0003-2297-3308",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Cambridge",
+        "MRC Biostatistics Unit",
+        "Medical Research Council"
+      ],
+      "name": "Vincent Jeanselme",
+      "orcid": "https://orcid.org/0000-0001-6204-666X",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Carnegie Mellon University"
+      ],
+      "name": "Artur Dubrawski",
+      "orcid": "https://orcid.org/0000-0002-2372-0831",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Carnegie Mellon University"
+      ],
+      "name": "Alexandra Chouldechova",
+      "orcid": "https://orcid.org/0000-0002-2337-9610",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "ML决策支持系统设计,核心议题就是AI算法应用,涉及管理决策辅助",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究在高风险决策中将历史专家决定与观测结果结合，通过影响函数评估专家一致性并提出标签融合方法，使机器学习模型弥补目标差距，临床和儿童福利案例验证提升决策支持。",
+      "topic_tags": [
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 1,
+  "date": "2025-12",
+  "doi": "10.1287/mnsc.2022.01576",
+  "id": "p_k4smG1Z7Koo40aUd",
+  "issue": "12",
+  "journal": "MgmtSci",
+  "pdf_url": "http://export.arxiv.org/pdf/2101.09648",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3214,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Leveraging Expert Consistency to Improve Algorithmic Decision Support",
+  "title_zh": "利用专家一致性改进算法决策支持",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.01576",
+  "volume": "71",
+  "year": 2025
+}

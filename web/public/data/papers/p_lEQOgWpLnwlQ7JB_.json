@@ -1,0 +1,70 @@
+{
+  "abstract": "Fine-tuning LLMs on tabular classification tasks can lead to the phenomenon of fine-tuning multiplicity where equally well-performing models make conflicting predictions on the same input. Fine-tuning multiplicity can arise due to variations in the training process, e.g., seed, weight initialization, minor changes to training data, etc., raising concerns about the reliability of Tabular LLMs in high-stakes applications such as finance, hiring, education, healthcare. Our work formalizes this unique challenge of fine-tuning multiplicity in Tabular LLMs and proposes a novel measure to quantify the consistency of individual predictions without expensive model retraining. Our measure quantifies a prediction's consistency by analyzing (sampling) the model's local behavior around that input in the embedding space. Interestingly, we show that sampling in the local neighborhood can be leveraged to provide probabilistic guarantees on prediction consistency under a broad class of fine-tuned models, i.e., inputs with sufficiently high local stability (as defined by our measure) also remain consistent across several fine-tuned models with high probability. We perform experiments on multiple real-world datasets to show that our local stability measure preemptively captures consistency under actual multiplicity across several fine-tuned models, outperforming competing measures.",
+  "ai_type_tags": [
+    "LLM",
+    "表格模型",
+    "机器学习"
+  ],
+  "arxiv_id": "2407.04173",
+  "authors": [
+    "Faisal Hamman",
+    "Pasan Dissanayake",
+    "Saumitra Mishra",
+    "Freddy Lecue",
+    "Sanghamitra Dutta"
+  ],
+  "authors_full": [
+    {
+      "name": "Faisal Hamman"
+    },
+    {
+      "name": "Pasan Dissanayake"
+    },
+    {
+      "name": "Saumitra Mishra"
+    },
+    {
+      "name": "Freddy Lecue"
+    },
+    {
+      "name": "Sanghamitra Dutta"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM技术问题，虽涉招聘但偏技术",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究针对表格分类任务中LLM微调多重性导致的预测不一致问题，提出通过分析嵌入空间局部行为的预测一致性度量方法。该方法可在不重训练的情况下评估预测可靠性，为金融、医疗等高风险场景提供概率一致性保证。",
+      "topic_tags": [
+        "模型可靠性",
+        "表格数据",
+        "机器学习",
+        "高风险决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-07-04",
+  "doi": null,
+  "id": "p_lEQOgWpLnwlQ7JB_",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2407.04173v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8679,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Quantifying Prediction Consistency Under Fine-Tuning Multiplicity in Tabular LLMs",
+  "title_zh": "表格LLM微调多样性下的预测一致性量化研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2407.04173v2",
+  "volume": null,
+  "year": 2024
+}

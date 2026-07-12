@@ -1,0 +1,68 @@
+{
+  "abstract": "A site's recommendation system relies on knowledge of its users' preferences to offer relevant recommendations to them. These preferences are for attributes that comprise items and content shown on the site, and are estimated from the data of users' interactions with the site. Another form of users' preferences is material too, namely, users' preferences for the site over other sites, since that shows users' base level propensities to engage with the site. Estimating users' preferences for the site, however, faces major obstacles because (a) the focal site usually has no data of its users' interactions with other sites; these interactions are users' unobserved behaviors for the focal site; and (b) the Machine Learning literature in recommendation does not offer a model of this situation. Even if (b) is resolved, the problem in (a) persists since without access to data of its users' interactions with other sites, there is no ground truth for evaluation. Moreover, it is most useful when (c) users' preferences for the site can be estimated at the individual level, since the site can then personalize recommendations to individual users. We offer a method to estimate individual user's preference for a focal site, under this premise. In particular, we compute the focal site's share of a user's online engagements without any data from other sites. We show an evaluation framework for the model using only the focal site's data, allowing the site to test the model. We rely upon a Hierarchical Bayes Method and perform estimation in two different ways - Markov Chain Monte Carlo and Stochastic Gradient with Langevin Dynamics. Our results find good support for the approach to computing personalized share of engagement and for its evaluation.",
+  "ai_type_tags": [
+    "机器学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2312.16177",
+  "authors": [
+    "Atanu R Sinha",
+    "Tanay Anand",
+    "Paridhi Maheshwari",
+    "A V Lakshmy",
+    "Vishal Jain"
+  ],
+  "authors_full": [
+    {
+      "name": "Atanu R Sinha"
+    },
+    {
+      "name": "Tanay Anand"
+    },
+    {
+      "name": "Paridhi Maheshwari"
+    },
+    {
+      "name": "A V Lakshmy"
+    },
+    {
+      "name": "Vishal Jain"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "推荐系统用户偏好推断,消费者行为边缘相关",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "研究提出仅利用目标网站自身数据估算用户对该网站的相对偏好，通过计算用户在全网活动的份额实现无外部数据条件下的个体偏好估计，并设计仅基于本网站的评估框架验证模型效果。",
+      "topic_tags": [
+        "推荐系统",
+        "消费者行为",
+        "人机交互"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-12-15",
+  "doi": null,
+  "id": "p_TqsJJX29i133EdsI",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2312.16177v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10733,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning to Infer Unobserved Behaviors: Estimating User's Preference for a Site over Other Sites",
+  "title_zh": "学习推断未观察行为：估算用户对特定网站相对于其他网站的偏好",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2312.16177v1",
+  "volume": null,
+  "year": 2023
+}

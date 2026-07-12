@@ -1,0 +1,83 @@
+{
+  "abstract": "Host-generated property images as a visual channel reveal substantial information about properties. Selecting proper images to display can lead to higher demand and increased rental revenue. In this paper, we define, estimate, and optimize the impacts of Airbnb photos on customers’ renting decisions. We apply ResNet-50, a convolutional neural network model, to build two separate, supervised learning models to evaluate the image quality and room types posted by Airbnb hosts. Then, we characterize the overall impacts of photo layout by the room type featured in the photo, photo quality, and order of display on the listings’ web pages. To address two estimation challenges in the Airbnb setting, namely, censored demand and changing consideration sets, we propose a novel pairwise comparison model that utilizes customers’ booking sequence data to consistently estimate the impact of photo layout on customers’ renting decisions. Our estimation results suggest that the cover image has a significantly larger impact than noncover photos and a high-quality bedroom cover image leads to the largest increase in demand. Furthermore, we build a nonlinear integer programming optimization problem and develop an algorithm to determine the optimal photo layout. Our counterfactual analysis suggests that a listing’s unilateral adoption of optimal photo layout leads to 11.0% more bookings on average. Moreover, depending on the neighborhood and market size, when listings simultaneously switch to the optimal photo layout, they get booked for two to five additional days in a year on average, which boosts revenue by $500 to $1,100.  This paper was accepted by Swaminathan, Jayashankar, operations management.  Funding: This research was partially sponsored by the MIT Data Science Lab and also benefited from generous support provided by Zalando.  Supplemental Material: The online companion and data are available at https://doi.org/10.1287/mnsc.2022.4616 .",
+  "ai_type_tags": [
+    "深度学习",
+    "图像识别",
+    "CNN",
+    "ResNet"
+  ],
+  "arxiv_id": "2022.4616",
+  "authors": [
+    "Hanwei Li",
+    "David Simchi-Levi",
+    "Michelle Xiao Wu",
+    "Weiming Zhu"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Department of Management Sciences, College of Business, City University of Hong Kong, Hong Kong, China;"
+      ],
+      "name": "Hanwei Li",
+      "orcid": "https://orcid.org/0000-0002-1236-1597"
+    },
+    {
+      "affiliation": [
+        "Institute for Data, Systems, and Society, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139;"
+      ],
+      "name": "David Simchi-Levi",
+      "orcid": "https://orcid.org/0000-0002-4650-1519"
+    },
+    {
+      "affiliation": [
+        "Institute for Data, Systems, and Society, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139;"
+      ],
+      "name": "Michelle Xiao Wu",
+      "orcid": "https://orcid.org/0000-0001-6894-7469"
+    },
+    {
+      "affiliation": [
+        "Faculty of Business and Economics, The University of Hong Kong, Hong Kong, China"
+      ],
+      "name": "Weiming Zhu",
+      "orcid": "https://orcid.org/0000-0001-9231-555X"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "使用ResNet-50 CNN模型分析房源图片",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "利用ResNet-50构建图像质量与房间类型监督模型，采用成对比较模型估计Airbnb房源照片布局对租客决策的影响。结果显示封面图影响显著，高质量卧室封面提升需求最大；通过整数规划优化布局可使预订量平均提升约11%。",
+      "topic_tags": [
+        "视觉营销",
+        "平台经济",
+        "民宿",
+        "需求预测"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 20,
+  "date": "2023-09",
+  "doi": "10.1287/mnsc.2022.4616",
+  "id": "p_dJgvOq9Mbt82OiXC",
+  "issue": "9",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3101,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Estimating and Exploiting the Impact of Photo Layout: A Structural Approach",
+  "title_zh": "估计与利用照片布局的影响：一种结构化方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.4616",
+  "volume": "69",
+  "year": 2023
+}

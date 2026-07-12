@@ -1,0 +1,62 @@
+{
+  "abstract": "Online reviews have played a pivotal role in consumers' decision-making processes. Existing research has highlighted the significant impact of managerial review responses on customer relationship management and firm performance. However, a large portion of online reviews remains unaddressed due to the considerable human labor required to respond to the rapid growth of online reviews. While generative AI has achieved remarkable success in a range of tasks, they are general-purpose models and may not align well with domain-specific human preferences. To tailor these general generative AI models to domain-specific applications, finetuning is commonly employed. Nevertheless, several challenges persist in finetuning with domain-specific data, including hallucinations, difficulty in representing domain-specific human preferences, and over conservatism in offline policy optimization. To address these challenges, we propose a novel preference finetuning method to align an LLM with domain-specific human preferences for generating online review responses. Specifically, we first identify the source of hallucination and propose an effective context augmentation approach to mitigate the LLM hallucination. To represent human preferences, we propose a novel theory-driven preference finetuning approach that automatically constructs human preference pairs in the online review domain. Additionally, we propose a curriculum learning approach to further enhance preference finetuning. To overcome the challenge of over conservatism in existing offline preference finetuning method, we propose a novel density estimation-based support constraint method to relax the conservatism, and we mathematically prove its superior theoretical guarantees. Extensive evaluations substantiate the superiority of our proposed preference finetuning method.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI"
+  ],
+  "arxiv_id": "2604.21209",
+  "authors": [
+    "Yanan Wang",
+    "Yong Ge"
+  ],
+  "authors_full": [
+    {
+      "name": "Yanan Wang"
+    },
+    {
+      "name": "Yong Ge"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "生成AI对齐微调用于在线评论管理,消费者决策核心议题",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究针对在线评论管理场景，提出一种将通用LLM适配为生成特定领域评论回复的偏好微调方法。首先识别幻觉来源并提出上下文增强方案；其次提出理论驱动的偏好配对自动构建方法；再次引入课程学习策略进一步优化微调效果。该方法解决了领域特定人类偏好难以表征及离线策略优化中过度保守等难题，提升了AI在客服评论回复任务中的实用性与准确性。",
+      "topic_tags": [
+        "消费者行为",
+        "推荐系统",
+        "营销",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-04-23",
+  "doi": "10.1287/isre.2024.1518",
+  "id": "p_MBynS_ft1EVJSotz",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2604.21209v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 5218,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    },
+    {
+      "channel": "ob",
+      "legacy_id": 9367,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Align Generative Artificial Intelligence with Human Preferences: A Novel Large Language Model Fine-Tuning Method for Online Review Management",
+  "title_zh": "将生成式AI与人类偏好对齐：在线评论管理的LLM微调新方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.21209v1",
+  "volume": null,
+  "year": 2026
+}

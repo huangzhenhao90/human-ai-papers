@@ -1,0 +1,69 @@
+{
+  "abstract": "Prior work on fairness in large language models (LLMs) has primarily focused on access-level behaviors such as refusals and safety filtering. However, equitable access does not ensure equitable interaction quality once a response is provided. In this paper, we conduct a controlled fairness audit examining how LLMs differ in tone, uncertainty, and linguistic framing across demographic identities after access is granted. Using a counterfactual prompt design, we evaluate GPT-4 and LLaMA-3.1-70B on career advice tasks while varying identity attributes along age, gender, and nationality. We assess access fairness through refusal analysis and measure interaction quality using automated linguistic metrics, including sentiment, politeness, and hedging. Identity-conditioned differences are evaluated using paired statistical tests. Both models exhibit zero refusal rates across all identities, indicating uniform access. Nevertheless, we observe systematic, model-specific disparities in interaction quality: GPT-4 expresses significantly higher hedging toward younger male users, while LLaMA exhibits broader sentiment variation across identity groups. These results show that fairness disparities can persist at the interaction level even when access is equal, motivating evaluation beyond refusal-based audits.",
+  "ai_type_tags": [
+    "LLM",
+    "ChatGPT"
+  ],
+  "arxiv_id": "2602.02932",
+  "authors": [
+    "Alireza Amiri-Margavi",
+    "Arshia Gharagozlou",
+    "Amin Gholami Davodi",
+    "Seyed Pouyan Mousavi Davoudi",
+    "Hamidreza Hasani Balyani"
+  ],
+  "authors_full": [
+    {
+      "name": "Alireza Amiri-Margavi"
+    },
+    {
+      "name": "Arshia Gharagozlou"
+    },
+    {
+      "name": "Amin Gholami Davodi"
+    },
+    {
+      "name": "Seyed Pouyan Mousavi Davoudi"
+    },
+    {
+      "name": "Hamidreza Hasani Balyani"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM公平性审计;涉及组织公平与伦理议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "超越访问层公平，研究LLM在获得响应后的交互质量差异。构建反事实提示设计，在职业建议任务中变换年龄、性别和国籍属性，通过自动化语言指标（情感、礼貌、模糊语）评估发现：两个模型均无拒绝差异，但GPT-4对年轻男性用户表达更高模糊语，LLaMA在群体间情感变化更广，表明平等访问下交互质量仍存在系统性公平偏差。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "招聘",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-02-03",
+  "doi": null,
+  "id": "p_BvAG79q3pYl7yvKi",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2602.02932v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9422,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Equal Access, Unequal Interaction: A Counterfactual Audit of LLM Fairness",
+  "title_zh": "对等访问与非平等交互：基于反事实审计的 LLM 公平性研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2602.02932v1",
+  "volume": null,
+  "year": 2026
+}

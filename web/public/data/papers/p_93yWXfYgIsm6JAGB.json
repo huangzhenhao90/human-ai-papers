@@ -1,0 +1,71 @@
+{
+  "abstract": "Organizations are increasingly adopting machine learning (ML) for personnel assessment. However, concerns exist about fairness in designing and implementing ML assessments. Supervised ML models are trained to model patterns in data, meaning ML models tend to yield predictions that reflect subgroup differences in applicant attributes in the training data, regardless of the underlying cause of subgroup differences. In this study, we systematically under- and oversampled minority (Black and Hispanic) applicants to manipulate adverse impact ratios in training data and investigated how training data adverse impact ratios affect ML model adverse impact and accuracy. We used self-reports and interview transcripts from job applicants (N = 2,501) to train 9,702 ML models to predict screening decisions. We found that training data adverse impact related linearly to ML model adverse impact. However, removing adverse impact from training data only slightly reduced ML model adverse impact and tended to negatively affect ML model accuracy. We observed consistent effects across self-reports and interview transcripts, whether oversampling real (i.e., bootstrapping) or synthetic observations. As our study relied on limited predictor sets from one organization, the observed effects on adverse impact may be attenuated among more accurate ML models.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "AI招聘",
+    "算法管理"
+  ],
+  "arxiv_id": "2304.13933",
+  "authors": [
+    "Louis Hickman",
+    "Jason Kuruzovich",
+    "Vincent Ng",
+    "Kofi Arhin",
+    "Danielle Wilson"
+  ],
+  "authors_full": [
+    {
+      "name": "Louis Hickman"
+    },
+    {
+      "name": "Jason Kuruzovich"
+    },
+    {
+      "name": "Vincent Ng"
+    },
+    {
+      "name": "Kofi Arhin"
+    },
+    {
+      "name": "Danielle Wilson"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "ML招聘模型公平性分析",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "研究通过在训练数据中系统地增减少数群体（黑人、西班牙裔）样本比例，考察数据层面的 adverse impact 对机器学习筛选模型的影响。结果表明训练数据 adverse impact 与模型 adverse impact 呈线性关系，但仅靠移除训练数据中的不利差异只能略微降低模型不利影响，同时会显著降低模型准确率，提示在招聘筛选中需权衡公平性与预测性能。",
+      "topic_tags": [
+        "招聘",
+        "公平性",
+        "偏见",
+        "HR"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-04-27",
+  "doi": "10.1111/peps.12593",
+  "id": "p_93yWXfYgIsm6JAGB",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2304.13933v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8844,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Oversampling Higher-Performing Minorities During Machine Learning Model Training Reduces Adverse Impact Slightly but Also Reduces Model Accuracy",
+  "title_zh": "机器学习模型训练中的高性能少数群体过采样略微降低负面影响但也降低模型准确率",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2304.13933v1",
+  "volume": null,
+  "year": 2023
+}

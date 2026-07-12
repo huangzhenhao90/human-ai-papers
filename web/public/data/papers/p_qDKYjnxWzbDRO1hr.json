@@ -1,0 +1,57 @@
+{
+  "abstract": "Understanding and mitigating biases is critical for the adoption of large language models (LLMs) in high-stakes decision-making. We introduce Admissions and Hiring, decision tasks with hypothetical applicant profiles where a person's race can be inferred from their name, as simplified test beds for racial bias. We show that Gemma 2B Instruct and LLaMA 3.2 3B Instruct exhibit strong biases. Gemma grants admission to 26% more White than Black applicants, and LLaMA hires 60% more Asian than White applicants. We demonstrate that these biases are resistant to prompt engineering: multiple prompting strategies all fail to promote fairness. In contrast, using distributed alignment search, we can identify \"race subspaces\" within model activations and intervene on them to debias model decisions. Averaging the representation across all races within the subspaces reduces Gemma's bias by 37-57%. Finally, we examine the generalizability of Gemma's race subspaces, and find limited evidence for generalization, where changing the prompt format can affect the race representation. Our work suggests mechanistic approaches may provide a promising venue for improving the fairness of LLMs, but a universal race representation remains elusive.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2504.06303",
+  "authors": [
+    "Dang Nguyen",
+    "Chenhao Tan"
+  ],
+  "authors_full": [
+    {
+      "name": "Dang Nguyen"
+    },
+    {
+      "name": "Chenhao Tan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM种族偏见去偏研究，涉招聘决策公平",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "通过假设的招生与招聘情境检验LLM的种族偏见，发现Gemma、LLaMA等模型存在显著种族偏差，且常规提示工程难以消除。利用分布对齐搜索定位种族子空间并干预，可降低偏差约37‑57%，但跨场景泛化仍有局限。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-04-07",
+  "doi": null,
+  "id": "p_qDKYjnxWzbDRO1hr",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2504.06303v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8526,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "On the Effectiveness and Generalization of Race Representations for Debiasing High-Stakes Decisions",
+  "title_zh": "论种族表征在去偏见化高风险决策中的有效性与泛化性",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2504.06303v2",
+  "volume": null,
+  "year": 2025
+}

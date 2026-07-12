@@ -1,0 +1,66 @@
+{
+  "abstract": "Training vision models to detect workplace hazards accurately requires realistic images of unsafe conditions that could lead to accidents. However, acquiring such datasets is difficult because capturing accident-triggering scenarios as they occur is nearly impossible. To overcome this limitation, this study presents a novel scene graph-guided generative AI framework that synthesizes photorealistic images of hazardous scenarios grounded in historical Occupational Safety and Health Administration (OSHA) accident reports. OSHA narratives are analyzed using GPT-4o to extract structured hazard reasoning, which is converted into object-level scene graphs capturing spatial and contextual relationships essential for understanding risk. These graphs guide a text-to-image diffusion model to generate compositionally accurate hazard scenes. To evaluate the realism and semantic fidelity of the generated data, a visual question answering (VQA) framework is introduced. Across four state-of-the-art generative models, the proposed VQA Graph Score outperforms CLIP and BLIP metrics based on entropy-based validation, confirming its higher discriminative sensitivity.",
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "图像生成",
+    "多模态"
+  ],
+  "arxiv_id": "2511.13970",
+  "authors": [
+    "Sanjay Acharjee",
+    "Abir Khan Ratul",
+    "Diego Patino",
+    "Md Nazmus Sakib"
+  ],
+  "authors_full": [
+    {
+      "name": "Sanjay Acharjee"
+    },
+    {
+      "name": "Abir Khan Ratul"
+    },
+    {
+      "name": "Diego Patino"
+    },
+    {
+      "name": "Md Nazmus Sakib"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "GenAI生成工业安全场景图像,AI生成模型为核心,安全领域边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "工业场景中危险事故图像稀缺，难以训练视觉模型。本研究提出场景图引导的生成式AI框架，基于OSHA事故报告用GPT-4o提取结构化危险推理，转换为对象级场景图以引导文本到图像扩散模型生成逼真的危险场景。引入VQA框架评估生成图像的真实感和语义保真度。实验表明，在四个主流生成模型上，VQA Graph Score基于熵验证优于CLIP和BLIP指标，具有更高辨别力。",
+      "topic_tags": [
+        "工作安全",
+        "组织学习",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-17",
+  "doi": null,
+  "id": "p_KgGn89_nUFUFlQ56",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2511.13970v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8342,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Scene Graph-Guided Generative AI Framework for Synthesizing and Evaluating Industrial Hazard Scenarios",
+  "title_zh": "场景图引导的生成式AI框架：合成与评估工业危险场景",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.13970v1",
+  "volume": null,
+  "year": 2025
+}

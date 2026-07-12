@@ -1,0 +1,63 @@
+{
+  "abstract": "Authoritative competency frameworks such as ESCO, ROME, and O*NET are essential for aligning education with labor market needs, yet their technical complexity and structural heterogeneity hinder practical adoption by educators. This paper introduces SkillGraph-Service, an interoperable microservice designed to bridge this gap by unifying these resources into a provenance-preserving Knowledge Graph (KG). Adopting a KG-first, LLM-fallback architecture, the system combines symbolic rigor with sub-symbolic flexibility. It implements a lightweight hybrid retrieval engine (fusing SQLite FTS5 and HNSW vector search) to handle the vocabulary mismatch in educator queries, and utilizes Large Language Models (LLMs) strictly for constrained ranking and audience-aware explanation. Empirical evaluation on a multilingual dataset reveals that the proposed hybrid strategy achieves superior retrieval effectiveness (nDCG@5>0.94) with sub-200 ms latency, rendering computationally expensive cross-encoder re-ranking may be unnecessary for this domain. Furthermore, an analysis of generated explanations highlights a trade-off between fluency and faithfulness: while JSON-constrained LLMs ensure high citation precision, deterministic templates remain the most reliable method for maximizing evidence coverage. The resulting architecture offers a practical, scalable, and auditable solution for integrating complex skill data into digital learning ecosystems.",
+  "ai_type_tags": [
+    "LLM",
+    "知识图谱",
+    "混合检索",
+    "推荐算法"
+  ],
+  "arxiv_id": "2605.01582",
+  "authors": [
+    "Ngoc Luyen Le",
+    "Marie-Hélène Abel",
+    "Bertrand Laforge"
+  ],
+  "authors_full": [
+    {
+      "name": "Ngoc Luyen Le"
+    },
+    {
+      "name": "Marie-Hélène Abel"
+    },
+    {
+      "name": "Bertrand Laforge"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心构建LLM微服务系统；解决劳动力技能匹配问题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究如何降低ESCO、ROME、O*NET等权威技能框架的技术门槛，使其惠及教育工作者。提出KG-First、LLM-Fallback混合架构，将异构技能资源统一为带溯源的知识图谱，并结合SQLite FTS5与HNSW向量检索处理词汇差异，LLM仅用于受限排序与受众适配解释。实证表明该混合策略检索效能优异（nDCG@5>0.94）且延迟低于200毫秒；但存在流畅性与忠实性的权衡：JSON约束LLM引用精度高，确定性模板在证据覆盖率上更可靠。",
+      "topic_tags": [
+        "知识管理",
+        "教育",
+        "技能框架",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-02",
+  "doi": null,
+  "id": "p__3BqrouDSaBJYRTd",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2605.01582v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8882,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "KG-First, LLM-Fallback: A Hybrid Microservice for Grounded Skill Search and Explanation",
+  "title_zh": "KG优先、LLM备选：面向可落地技能检索与解释的混合微服务",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2605.01582v1",
+  "volume": null,
+  "year": 2026
+}

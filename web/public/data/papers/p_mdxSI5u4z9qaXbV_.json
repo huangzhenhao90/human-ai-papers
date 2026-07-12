@@ -1,0 +1,75 @@
+{
+  "abstract": "Automated emotion detection is widely used in applications ranging from well-being monitoring to high-stakes domains like mental health and hiring. However, models often rely on annotations that reflect dominant cultural norms, limiting model ability to recognize emotional expression in dialects often excluded from training data distributions, such as African American Vernacular English (AAVE). This study examines emotion recognition model performance on AAVE compared to General American English (GAE). We analyze 2.7 million tweets geo-tagged within Los Angeles. Texts are scored for strength of AAVE using computational approximations of dialect features. Annotations of emotion presence and intensity are collected on a dataset of 875 tweets with both high and low AAVE densities. To assess model accuracy on a task as subjective as emotion perception, we calculate community-informed \"silver\" labels where AAVE-dense tweets are labeled by African American, AAVE-fluent (ingroup) annotators. On our labeled sample, GPT and BERT-based models exhibit false positive prediction rates of anger on AAVE more than double than on GAE. SpanEmo, a popular text-based emotion model, increases false positive rates of anger from 25 percent on GAE to 60 percent on AAVE. Additionally, a series of linear regressions reveals that models and non-ingroup annotations are significantly more correlated with profanity-based AAVE features than ingroup annotations. Linking Census tract demographics, we observe that neighborhoods with higher proportions of African American residents are associated with higher predictions of anger (Pearson's correlation r = 0.27) and lower joy (r = -0.10). These results find an emergent safety issue of emotion AI reinforcing racial stereotypes through biased emotion classification. We emphasize the need for culturally and dialect-informed affective computing systems.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2511.10846",
+  "authors": [
+    "Rebecca Dorn",
+    "Christina Chance",
+    "Casandra Rusti",
+    "Charles Bickham",
+    "Kai-Wei Chang"
+  ],
+  "authors_full": [
+    {
+      "name": "Rebecca Dorn"
+    },
+    {
+      "name": "Christina Chance"
+    },
+    {
+      "name": "Casandra Rusti"
+    },
+    {
+      "name": "Charles Bickham"
+    },
+    {
+      "name": "Kai-Wei Chang"
+    },
+    {
+      "name": "Fred Morstatter"
+    },
+    {
+      "name": "Kristina Lerman"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AAVE方言情绪AI检测,AI模型性能研究,组织情境(招聘)边缘涉及",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "使用洛杉矶 tweets 对比情感检测模型在AAVE和通用美语的表现，发现模型对AAVE的愤怒误判率显著提升，且与亵渎特征相关，暗示文化偏见。",
+      "topic_tags": [
+        "偏见",
+        "伦理",
+        "公平性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-13",
+  "doi": null,
+  "id": "p_mdxSI5u4z9qaXbV_",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2511.10846v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8347,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Reinforcing Stereotypes of Anger: Emotion AI on African American Vernacular English",
+  "title_zh": "强化愤怒刻板印象：情感AI与非裔美国人白话英语",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.10846v1",
+  "volume": null,
+  "year": 2025
+}

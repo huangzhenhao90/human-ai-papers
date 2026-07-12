@@ -1,0 +1,70 @@
+{
+  "abstract": "Large language models are increasingly used to support organizational decisions from hiring to governance, raising fairness concerns in AI-assisted evaluation. Prior work has focused mainly on demographic bias and broader preference effects, rather than on whether evaluators reward expressed trust in AI itself. We study this phenomenon as LLM Nepotism, an attitude-driven bias channel in which favorable signals toward AI are rewarded even when they are not relevant to role-related merit. We introduce a two-phase simulation pipeline that first isolates AI-trust preference in qualification-matched resume screening and then examines its downstream effects in board-level decision making. Across several popular LLMs, we find that resume screeners tend to favor candidates with positive or non-critical attitudes toward AI, discriminating skeptical, human-centered counterparts. These biases suggest a loophole: LLM-based hiring can produce more homogeneous AI-trusting organizations, whose decision-makers exhibit greater scrutiny failure and delegation to AI agents, approving flawed proposals more readily while favoring AI-delegation initiatives. To mitigate this behavior, we additionally study prompt-based mitigation and propose Merit-Attitude Factorization, which separates non-merit AI attitude from merit-based evaluation and attenuates this bias across experiments.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策",
+    "AI治理"
+  ],
+  "arxiv_id": "2604.09620",
+  "authors": [
+    "Shunqi Mao",
+    "Wei Guo",
+    "Dingxin Zhang",
+    "Chaoyi Zhang",
+    "Weidong Cai"
+  ],
+  "authors_full": [
+    {
+      "name": "Shunqi Mao"
+    },
+    {
+      "name": "Wei Guo"
+    },
+    {
+      "name": "Dingxin Zhang"
+    },
+    {
+      "name": "Chaoyi Zhang"
+    },
+    {
+      "name": "Weidong Cai"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心研究LLM在组织决策中的偏见机制，OB治理主题直接相关",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究AI辅助评估中是否存在对AI持信任态度候选人的隐性偏好。构建两阶段模拟管道，先在资格匹配的简历筛选中隔离AI信任偏好，再考察其在董事会决策中的下游效应。结果发现，多个主流LLM的简历筛选器偏好对AI持正面/非批判态度的候选人，歧视持怀疑态度、以人为本的候选人。这种偏差导致组织趋向同质化，决策者表现出更强的AI委托倾向和审查失败，批准有缺陷提案的可能性更高。研究还提出\"功过态度因子分解\"方法以缓解该偏差。",
+      "topic_tags": [
+        "招聘",
+        "算法公平",
+        "组织决策",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-18",
+  "doi": null,
+  "id": "p_qzD8Si2wlWGw3Uh5",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2604.09620v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8233,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "LLM Nepotism in Organizational Governance",
+  "title_zh": "大型语言模型在组织治理中的裙带关系现象",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.09620v1",
+  "volume": null,
+  "year": 2026
+}

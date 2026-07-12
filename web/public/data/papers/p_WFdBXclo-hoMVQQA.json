@@ -1,0 +1,68 @@
+{
+  "abstract": "Accurate prediction of human behavior is essential for robust and safe human-AI collaboration. However, existing approaches for modeling people are often data-hungry and brittle because they either make unrealistic assumptions about rationality or are too computationally demanding to adapt rapidly. Our key insight is that many everyday social interactions may follow predictable patterns; efficient \"scripts\" that minimize cognitive load for actors and observers, e.g., \"wait for the green light, then go.\" We propose modeling these routines as behavioral programs instantiated in computer code rather than policies conditioned on beliefs and desires. We introduce ROTE, a novel algorithm that leverages both large language models (LLMs) for synthesizing a hypothesis space of behavioral programs, and probabilistic inference for reasoning about uncertainty over that space. We test ROTE in a suite of gridworld tasks and a large-scale embodied household simulator. ROTE predicts human and AI behaviors from sparse observations, outperforming competitive baselines -- including behavior cloning and LLM-based methods -- by as much as 50% in terms of in-sample accuracy and out-of-sample generalization. By treating action understanding as a program synthesis problem, ROTE opens a path for AI systems to efficiently and effectively predict human behavior in the real-world.",
+  "ai_type_tags": [
+    "LLM",
+    "大语言模型"
+  ],
+  "arxiv_id": "2510.01272",
+  "authors": [
+    "Kunal Jha",
+    "Aydan Yuenan Huang",
+    "Eric Ye",
+    "Natasha Jaques",
+    "Max Kleiman-Weiner"
+  ],
+  "authors_full": [
+    {
+      "name": "Kunal Jha"
+    },
+    {
+      "name": "Aydan Yuenan Huang"
+    },
+    {
+      "name": "Eric Ye"
+    },
+    {
+      "name": "Natasha Jaques"
+    },
+    {
+      "name": "Max Kleiman-Weiner"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM建模人类行为，human-AI协作与OB相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "准确预测人类行为对安全的人机协作至关重要，但现有方法或假设不切实际或计算成本过高。本文提出将日常社交互动建模为行为程序（代码形式），而非信念欲望条件下的策略。ROTE算法利用LLM合成行为程序假设空间，结合概率推理处理不确定性。在网格世界和家居模拟器中，ROTE从稀疏观察预测行为，准确率优于行为克隆和LLM基线方法。",
+      "topic_tags": [
+        "人机协作",
+        "行为预测",
+        "人机交互"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-09-29",
+  "doi": null,
+  "id": "p_WFdBXclo-hoMVQQA",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2510.01272v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10300,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Modeling Others' Minds as Code",
+  "title_zh": "将他人心智建模为代码",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.01272v1",
+  "volume": null,
+  "year": 2025
+}

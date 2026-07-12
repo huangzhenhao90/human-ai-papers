@@ -1,0 +1,69 @@
+{
+  "abstract": "Personalized outfit recommendation remains a complex challenge, demanding both fashion compatibility understanding and trend awareness. This paper presents a novel framework that harnesses the expressive power of large language models (LLMs) for this task, mitigating their \"black box\" and static nature through fine-tuning and direct feedback integration. We bridge the item visual-textual gap in items descriptions by employing image captioning with a Multimodal Large Language Model (MLLM). This enables the LLM to extract style and color characteristics from human-curated fashion images, forming the basis for personalized recommendations. The LLM is efficiently fine-tuned on the open-source Polyvore dataset of curated fashion images, optimizing its ability to recommend stylish outfits. A direct preference mechanism using negative examples is employed to enhance the LLM's decision-making process. This creates a self-enhancing AI feedback loop that continuously refines recommendations in line with seasonal fashion trends. Our framework is evaluated on the Polyvore dataset, demonstrating its effectiveness in two key tasks: fill-in-the-blank, and complementary item retrieval. These evaluations underline the framework's ability to generate stylish, trend-aligned outfit suggestions, continuously improving through direct feedback. The evaluation results demonstrated that our proposed framework significantly outperforms the base LLM, creating more cohesive outfits. The improved performance in these tasks underscores the proposed framework's potential to enhance the shopping experience with accurate suggestions, proving its effectiveness over the vanilla LLM based outfit generation.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "GenAI"
+  ],
+  "arxiv_id": "2409.12150",
+  "authors": [
+    "Najmeh Forouzandehmehr",
+    "Nima Farrokhsiar",
+    "Ramin Giahi",
+    "Evren Korpeoglu",
+    "Kannan Achan"
+  ],
+  "authors_full": [
+    {
+      "name": "Najmeh Forouzandehmehr"
+    },
+    {
+      "name": "Nima Farrokhsiar"
+    },
+    {
+      "name": "Ramin Giahi"
+    },
+    {
+      "name": "Evren Korpeoglu"
+    },
+    {
+      "name": "Kannan Achan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI/LLM技术用于时尚推荐，属消费者行为研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对个性化服装搭配推荐难题，提出基于大语言模型（LLM）的框架。先用多模态LLM对图片生成描述，补全视觉-文本鸿沟；对LLM进行高效微调并加入负例偏好机制，形成自增强反馈循环。实验在Polyvore数据集上表明，该方法在填充式和互补检索任务中显著超越基线LLM，生成更具时尚感和趋势匹配的搭配。",
+      "topic_tags": [
+        "推荐系统",
+        "时尚",
+        "消费者行为"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-09-18",
+  "doi": null,
+  "id": "p_mere73m905wQ9Y_k",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2409.12150v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9969,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Decoding Style: Efficient Fine-Tuning of LLMs for Image-Guided Outfit Recommendation with Preference",
+  "title_zh": "风格解码：基于偏好的图像引导服装推荐 LLM 高效微调",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2409.12150v1",
+  "volume": null,
+  "year": 2024
+}

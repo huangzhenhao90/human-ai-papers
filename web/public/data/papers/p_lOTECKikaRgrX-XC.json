@@ -1,0 +1,72 @@
+{
+  "abstract": "In this work, we develop a novel reasoning approach to enhance the performance of large language models (LLMs) in future occupation prediction. In this approach, a reason generator first derives a ``reason'' for a user using his/her past education and career history. The reason summarizes the user's preference and is used as the input of an occupation predictor to recommend the user's next occupation. This two-step occupation prediction approach is, however, non-trivial as LLMs are not aligned with career paths or the unobserved reasons behind each occupation decision. We therefore propose to fine-tune LLMs improving their reasoning and occupation prediction performance. We first derive high-quality oracle reasons, as measured by factuality, coherence and utility criteria, using a LLM-as-a-Judge. These oracle reasons are then used to fine-tune small LLMs to perform reason generation and next occupation prediction. Our extensive experiments show that: (a) our approach effectively enhances LLM's accuracy in next occupation prediction making them comparable to fully supervised methods and outperforming unsupervised methods; (b) a single LLM fine-tuned to perform reason generation and occupation prediction outperforms two LLMs fine-tuned to perform the tasks separately; and (c) the next occupation prediction accuracy depends on the quality of generated reasons. Our code is available at https://github.com/Sarasarahhhhh/job_prediction.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "人机协作"
+  ],
+  "arxiv_id": "2604.21204",
+  "authors": [
+    "Shan Dong",
+    "Palakorn Achananuparp",
+    "Hieu Hien Mai",
+    "Lei Wang",
+    "Yao Lu"
+  ],
+  "authors_full": [
+    {
+      "name": "Shan Dong"
+    },
+    {
+      "name": "Palakorn Achananuparp"
+    },
+    {
+      "name": "Hieu Hien Mai"
+    },
+    {
+      "name": "Lei Wang"
+    },
+    {
+      "name": "Yao Lu"
+    },
+    {
+      "name": "Ee-Peng Lim"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM职业推荐推理,人力资源边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究如何提升LLM在职业预测任务中的表现。提出先由reason generator基于用户历史生成偏好理由，再据此预测下个职业的两阶段方法。采用LLM-as-a-Judge生成高质量oracle reasons用于微调小模型。实验表明：推理reason质量是关键；联合微调单一LLM优于分离微调两个LLM；该方法性能可比肩全监督方法、显著优于无监督方法。",
+      "topic_tags": [
+        "推荐系统",
+        "职业发展",
+        "决策支持"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-04-23",
+  "doi": null,
+  "id": "p_lOTECKikaRgrX-XC",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2604.21204v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9368,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "On Reasoning Behind Next Occupation Recommendation",
+  "title_zh": "下一职业推荐背后的推理机制探析",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.21204v1",
+  "volume": null,
+  "year": 2026
+}

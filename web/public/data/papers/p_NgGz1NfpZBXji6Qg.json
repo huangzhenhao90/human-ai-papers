@@ -1,0 +1,88 @@
+{
+  "abstract": "Long-horizon reasoning is a key challenge for autonomous agents, yet existing benchmarks evaluate agents on single tasks in isolation. Real organizational work requires managing many concurrent long-horizon tasks with interleaving, dependencies, and reprioritization. We introduce Multi-Horizon Task Environments (MHTEs): a distinct problem class requiring coherent execution across dozens of interleaved tasks (45+, 500-1500+ steps) within persistent execution contexts spanning hours. We identify four failure modes that cause baseline CUAs to degrade from 16.7% to 8.7% completion as load scales 25% to 100%, a pattern consistent across three independent implementations. These failure modes are context saturation (O(N) vs O(1) growth), memory interference, dependency complexity (DAGs vs. chains), and reprioritization overhead. We present CorpGen, an architecture-agnostic framework addressing these failures via hierarchical planning for multi-horizon goal alignment, sub-agent isolation preventing cross-task contamination, tiered memory (working, structured, semantic), and adaptive summarization. CorpGen simulates corporate environments through digital employees with persistent identities and realistic schedules. Across three CUA backends (UFO2, OpenAI CUA, hierarchical) on OSWorld Office, CorpGen achieves up to 3.5x improvement over baselines (15.2% vs 4.3%) with stable performance under increasing load, confirming that gains stem from architectural mechanisms rather than specific CUA implementations. Ablation studies show experiential learning provides the largest gains.",
+  "ai_type_tags": [
+    "LLM",
+    "工具使用",
+    "多智能体系统"
+  ],
+  "arxiv_id": "2602.14229",
+  "authors": [
+    "Abubakarr Jaye",
+    "Nigel Boachie Kumankumah",
+    "Chidera Biringa",
+    "Anjel Shaileshbhai Patel",
+    "Sulaiman Vesal"
+  ],
+  "authors_full": [
+    {
+      "name": "Abubakarr Jaye"
+    },
+    {
+      "name": "Nigel Boachie Kumankumah"
+    },
+    {
+      "name": "Chidera Biringa"
+    },
+    {
+      "name": "Anjel Shaileshbhai Patel"
+    },
+    {
+      "name": "Sulaiman Vesal"
+    },
+    {
+      "name": "Dayquan Julienne"
+    },
+    {
+      "name": "Charlotte Siska"
+    },
+    {
+      "name": "Manuel Raúl Meléndez Luján"
+    },
+    {
+      "name": "Anthony Twum-Barimah"
+    },
+    {
+      "name": "Mauricio Velazco"
+    },
+    {
+      "name": "Tianwei Chen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "自主智能体模拟企业工作环境，核心OB组织行为研究",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对自主代理在长时程推理中的局限，提出Multi-Horizon Task Environments（MHTEs）问题类，要求在持久执行上下文中连贯执行45+个交错任务（500-1500+步）。识别四种失败模式（上下文饱和、记忆干扰、依赖复杂性、重优先级开销）导致基线CUA性能从16.7%降至8.7%。提出CorpGen框架，通过层级规划、子代理隔离、分层记忆和自适应摘要实现3.5倍性能提升。",
+      "topic_tags": [
+        "自主代理",
+        "组织学习",
+        "工作设计",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-02-15",
+  "doi": null,
+  "id": "p_NgGz1NfpZBXji6Qg",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2602.14229v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8268,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "CORPGEN: Simulating Corporate Environments with Autonomous Digital Employees in Multi-Horizon Task Environments",
+  "title_zh": "CORPGEN：在多期任务环境中通过自主数字员工模拟企业环境",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2602.14229v1",
+  "volume": null,
+  "year": 2026
+}

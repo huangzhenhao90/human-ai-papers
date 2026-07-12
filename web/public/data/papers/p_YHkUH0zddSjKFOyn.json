@@ -1,0 +1,71 @@
+{
+  "abstract": "Making personalized recommendation for cold-start users, who only have a few interaction histories, is a challenging problem in recommendation systems. Recent works leverage hypernetworks to directly map user interaction histories to user-specific parameters, which are then used to modulate predictor by feature-wise linear modulation function. These works obtain the state-of-the-art performance. However, the physical meaning of scaling and shifting in recommendation data is unclear. Instead of using a fixed modulation function and deciding modulation position by expertise, we propose a modulation framework called ColdNAS for user cold-start problem, where we look for proper modulation structure, including function and position, via neural architecture search. We design a search space which covers broad models and theoretically prove that this search space can be transformed to a much smaller space, enabling an efficient and robust one-shot search algorithm. Extensive experimental results on benchmark datasets show that ColdNAS consistently performs the best. We observe that different modulation functions lead to the best performance on different datasets, which validates the necessity of designing a searching-based method.",
+  "ai_type_tags": [
+    "机器学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2306.03387",
+  "authors": [
+    "Shiguang Wu",
+    "Yaqing Wang",
+    "Qinghe Jing",
+    "Daxiang Dong",
+    "Dejing Dou"
+  ],
+  "authors_full": [
+    {
+      "name": "Shiguang Wu"
+    },
+    {
+      "name": "Yaqing Wang"
+    },
+    {
+      "name": "Qinghe Jing"
+    },
+    {
+      "name": "Daxiang Dong"
+    },
+    {
+      "name": "Dejing Dou"
+    },
+    {
+      "name": "Quanming Yao"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "神经架构搜索解决冷启动推荐",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对仅少量交互历史的冷启动用户，提出ColdNAS框架，通过神经架构搜索自动寻找调制函数和位置，提升用户冷启动推荐性能，实验验证效果最佳。",
+      "topic_tags": [
+        "推荐系统",
+        "冷启动",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-06-06",
+  "doi": null,
+  "id": "p_YHkUH0zddSjKFOyn",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2306.03387v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10049,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "ColdNAS: Search to Modulate for User Cold-Start Recommendation",
+  "title_zh": "ColdNAS：面向用户冷启动推荐的搜索调制方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2306.03387v1",
+  "volume": null,
+  "year": 2023
+}

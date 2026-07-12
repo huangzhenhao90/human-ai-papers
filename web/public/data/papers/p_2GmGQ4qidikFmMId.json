@@ -1,0 +1,85 @@
+{
+  "abstract": "Many real-world process automation environments are rife with high-expertise and limited labeled data. We propose a computational design science artifact to automate systematic review (SR) in such an environment. SR is a manual process that collects and synthesizes data from medical literature to inform medical decisions and improve clinical practice. Existing machine learning solutions for SR automation suffer from a lack of labeled data and a misrepresentation of the high-expertise manual process. Motivated by humans’ impressive capability to learn from limited examples, we propose a principled and generalizable few-shot learning framework—FastSR—to automate the multistep, expertise-intensive SR process using minimal training data. Informed by SR experts’ annotation logic, FastSR extends the traditional few-shot learning framework by including (1) various representations to account for diverse SR knowledge, (2) attention mechanisms to reflect semantic correspondence of medical text fragments, and (3) shared representations to jointly learn interrelated tasks (i.e., sentence classification and sequence tagging). We instantiated and evaluated FastSR on three test beds: full-text articles from Wilson disease (WD) and COVID-19, as well as a public dataset (EBM-NLP) containing clinical trial abstracts on a wide range of diseases. Our experiments demonstrate that FastSR significantly outperforms several benchmarking solutions and expedites the SR project by up to 65%. We critically examine the SR outcomes and practical advantages of FastSR compared to other ML and manual SR solutions and propose a new FastSR-augmented protocol. Overall, our multifaceted evaluation quantitatively and qualitatively underscores the efficacy and applicability of FastSR in expediting SR. Our results have important implications for designing computational artifacts for automating/augmenting processes in high-expertise, low-label environments.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "多模态"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Rong Liu",
+    "Jingjing Li",
+    "Marko Zivkovic",
+    "Ahmed Abbasi"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Florida International University"
+      ],
+      "name": "Rong Liu",
+      "orcid": "https://orcid.org/0000-0001-7176-1999",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Virginia"
+      ],
+      "name": "Jingjing Li",
+      "orcid": "https://orcid.org/0000-0003-1967-0090",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Genesis Research Institute"
+      ],
+      "name": "Marko Zivkovic",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Notre Dame"
+      ],
+      "name": "Ahmed Abbasi",
+      "orcid": "https://orcid.org/0000-0001-7698-7794",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "Few-shot learning自动化系统评价，ML/AI核心方法论",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对高专业性、低标注数据环境，提出FastSR框架自动化医学系统综述。通过融入专家标注逻辑的少样本学习、注意力机制和共享表征，仅需少量训练数据即可完成多步骤医学文本分类与序列标注任务，在WD、COVID-19及EBM-NLP数据集上显著优于基准方案，效率提升达65%。",
+      "topic_tags": [
+        "知识管理",
+        "组织变革",
+        "教育"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 2,
+  "date": "2025-09-01",
+  "doi": "10.25300/misq/2024/18573",
+  "id": "p_2GmGQ4qidikFmMId",
+  "issue": "3",
+  "journal": "MISQ",
+  "pdf_url": "https://misq.umn.edu/downloadable/download/sample/sample_id/10/",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4907,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Automating in High-Expertise, Low-Label Environments: Evidence-Based Medicine by Expert-Augmented Few-Shot Learning",
+  "title_zh": "高专业度低标注环境中的自动化：专家增强的小样本学习用于循证医学",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.25300/misq/2024/18573",
+  "volume": "49",
+  "year": 2025
+}

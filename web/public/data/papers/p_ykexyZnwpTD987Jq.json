@@ -1,0 +1,65 @@
+{
+  "abstract": "A common challenge for decision makers is selecting actions whose rewards are unknown and evolve over time based on prior policies. For instance, repeated use may reduce an action's effectiveness (habituation), while inactivity may restore it (recovery). These nonstationarities are captured by the Reducing or Gaining Unknown Efficacy (ROGUE) bandit framework, which models real-world settings such as behavioral health interventions. While existing algorithms can compute sublinear regret policies to optimize these settings, they may not provide sufficient exploration due to overemphasis on exploitation, limiting the ability to estimate population-level effects. This is a challenge of particular interest in micro-randomized trials (MRTs) that aid researchers in developing just-in-time adaptive interventions that have population-level effects while still providing personalized recommendations to individuals. In this paper, we first develop ROGUE-TS, a Thompson Sampling algorithm tailored to the ROGUE framework, and provide theoretical guarantees of sublinear regret. We then introduce a probability clipping procedure to balance personalization and population-level learning, with quantified trade-off that balances regret and minimum exploration probability. Validation on two MRT datasets concerning physical activity promotion and bipolar disorder treatment shows that our methods both achieve lower regret than existing approaches and maintain high statistical power through the clipping procedure without significantly increasing regret. This enables reliable detection of treatment effects while accounting for individual behavioral dynamics. For researchers designing MRTs, our framework offers practical guidance on balancing personalization with statistical validity.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2511.02944",
+  "authors": [
+    "Fengxu Li",
+    "Stephanie M. Carpenter",
+    "Matthew P. Buman",
+    "Yonatan Mintz"
+  ],
+  "authors_full": [
+    {
+      "name": "Fengxu Li"
+    },
+    {
+      "name": "Stephanie M. Carpenter"
+    },
+    {
+      "name": "Matthew P. Buman"
+    },
+    {
+      "name": "Yonatan Mintz"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法决策用于行为健康干预场景",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "在非稳态赌博问题中考虑习惯化与恢复效应，已知现有算法过度利用导致探索不足。为平衡个性化与总体学习，提出ROGUE‑TS（汤普森采样）并引入概率裁剪实现最小探索保证。实验表明在体能活动和双相情感障碍微随机试验数据上，regret更低且统计功效保持。",
+      "topic_tags": [
+        "决策",
+        "算法管理",
+        "健康",
+        "个性化"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-04",
+  "doi": null,
+  "id": "p_ykexyZnwpTD987Jq",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2511.02944v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9897,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Power Constrained Nonstationary Bandits with Habituation and Recovery Dynamics",
+  "title_zh": "考虑习惯化与恢复动态的功率约束非平稳多臂老虎机",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.02944v1",
+  "volume": null,
+  "year": 2025
+}

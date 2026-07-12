@@ -1,0 +1,67 @@
+{
+  "abstract": "We study the problem of dynamic batch learning in high-dimensional sparse linear contextual bandits, where a decision maker, under a given maximum-number-of-batch constraint and only able to observe rewards at the end of each batch, can dynamically decide how many individuals to include in the next batch (at the end of the current batch) and what personalized action-selection scheme to adopt within each batch. Such batch constraints are ubiquitous in a variety of practical contexts, including personalized product offerings in marketing and medical treatment selection in clinical trials. We characterize the fundamental learning limit in this problem via a regret lower bound and provide a matching upper bound (up to log factors), thus prescribing an optimal scheme for this problem. To the best of our knowledge, our work provides the first inroad into a theoretical understanding of dynamic batch learning in high-dimensional sparse linear contextual bandits. Notably, even a special case of our result—when no batch constraint is present—yields that the simple exploration-free algorithm using the LASSO estimator already achieves the minimax optimal [Formula: see text] regret bound (s0 is the sparsity parameter or an upper bound thereof and T is the learning horizon) for standard online learning in high-dimensional linear contextual bandits (for the no-margin case), a result that appears unknown in the emerging literature of high-dimensional contextual bandits.  This paper was accepted by Baris Ata, stochastic models and simulation.  Funding: This work is supported by the National Science Foundation [Grant CCF-2106508]. Z. Zhou gratefully acknowledges the Digital Twin research grant from Bain &amp; Company and the New York University’s 2022-2023 Center for Global Economy and Business faculty research grant for support on this work. Z. Ren was supported by the National Science Foundation [Grant OAC 1934578] and by the Discovery Innovation Fund for Biomedical Data Sciences.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2023.4895",
+  "authors": [
+    "Zhimei Ren",
+    "Zhengyuan Zhou"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Pennsylvania"
+      ],
+      "name": "Zhimei Ren",
+      "orcid": "https://orcid.org/0000-0002-2872-5842",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "New York University"
+      ],
+      "name": "Zhengyuan Zhou",
+      "orcid": "https://orcid.org/0000-0002-0005-9411",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "Bandit算法批量学习研究，核心是机器学习算法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究在高维稀疏线性上下文多臂老虎机中，决策者在批量约束下只能观察批次结束时的奖励，需动态决定每批人数和内部动作选择方案。通过建立遗憾下界并给出匹配上界（至对数因子），提出最优批量学习策略，并证明无批次约束时简单LASSO估计即可达到极小极大最优遗憾界。",
+      "topic_tags": [
+        "决策",
+        "机器学习",
+        "统计学",
+        "算法"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 14,
+  "date": "2024-02",
+  "doi": "10.1287/mnsc.2023.4895",
+  "id": "p_4T7I32d3AsTlvWYI",
+  "issue": "2",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4086,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Dynamic Batch Learning in High-Dimensional Sparse Linear Contextual Bandits",
+  "title_zh": "高维稀疏线性情境老虎机中的动态批量学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4895",
+  "volume": "70",
+  "year": 2024
+}

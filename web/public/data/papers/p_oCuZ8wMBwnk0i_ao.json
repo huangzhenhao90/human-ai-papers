@@ -1,0 +1,74 @@
+{
+  "abstract": "Job recommender systems are crucial for aligning job opportunities with job-seekers in online job-seeking. However, users tend to adjust their job preferences to secure employment opportunities continually, which limits the performance of job recommendations. The inherent frequency of preference drift poses a challenge to promptly and precisely capture user preferences. To address this issue, we propose a novel session-based framework, BISTRO, to timely model user preference through fusion learning of semantic and behavioral information. Specifically, BISTRO is composed of three stages: 1) coarse-grained semantic clustering, 2) fine-grained job preference extraction, and 3) personalized top-$k$ job recommendation. Initially, BISTRO segments the user interaction sequence into sessions and leverages session-based semantic clustering to achieve broad identification of person-job matching. Subsequently, we design a hypergraph wavelet learning method to capture the nuanced job preference drift. To mitigate the effect of noise in interactions caused by frequent preference drift, we innovatively propose an adaptive wavelet filtering technique to remove noisy interaction. Finally, a recurrent neural network is utilized to analyze session-based interaction for inferring personalized preferences. Extensive experiments on three real-world offline recruitment datasets demonstrate the significant performances of our framework. Significantly, BISTRO also excels in online experiments, affirming its effectiveness in live recruitment settings. This dual success underscores the robustness and adaptability of BISTRO. The source code is available at https://github.com/Applied-Machine-Learning-Lab/BISTRO.",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习",
+    "深度学习",
+    "多模态"
+  ],
+  "arxiv_id": "2407.00082",
+  "authors": [
+    "Xiao Han",
+    "Chen Zhu",
+    "Xiao Hu",
+    "Chuan Qin",
+    "Xiangyu Zhao"
+  ],
+  "authors_full": [
+    {
+      "name": "Xiao Han"
+    },
+    {
+      "name": "Chen Zhu"
+    },
+    {
+      "name": "Xiao Hu"
+    },
+    {
+      "name": "Chuan Qin"
+    },
+    {
+      "name": "Xiangyu Zhao"
+    },
+    {
+      "name": "Hengshu Zhu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "推荐系统融合学习，涉人力资源应用",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "用户求职偏好随时间漂移，导致岗位推荐效果下降。提出BISTRO框架，融合语义与行为信息，通过会话级语义聚类、细粒度偏好抽取、超图小波学习捕捉漂移并自适应滤波去除噪声，RNN推断个性化偏好，实验表明显著提升线上线下推荐效果。",
+      "topic_tags": [
+        "推荐系统",
+        "消费者行为",
+        "机器学习",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-06-24",
+  "doi": "10.1145/3637528.3671759",
+  "id": "p_oCuZ8wMBwnk0i_ao",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2407.00082v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8690,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Adapting Job Recommendations to User Preference Drift with Behavioral-Semantic Fusion Learning",
+  "title_zh": "基于行为-语义融合学习的工作推荐用户偏好漂移适配",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2407.00082v1",
+  "volume": null,
+  "year": 2024
+}

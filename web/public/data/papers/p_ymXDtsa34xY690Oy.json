@@ -1,0 +1,56 @@
+{
+  "abstract": "Folklore suggests that policy gradient can be more robust to misspecification than its relative, approximate policy iteration. This paper studies the case of state-aggregated representations, in which the state space is partitioned and either the policy or value function approximation is held constant over partitions. This paper shows a policy gradient method converges to a policy whose regret per period is bounded by ϵ, the largest difference between two elements of the state-action value function belonging to a common partition. With the same representation, both approximate policy iteration and approximate value iteration can produce policies whose per-period regret scales as [Formula: see text], where γ is a discount factor. Faced with inherent approximation error, methods that locally optimize the true decision objective can be far more robust.  This paper was accepted by Hamid Nazerzadeh, data science.  Supplemental Material: Data are available at https://doi.org/10.1287/mnsc.2023.4788 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2023.4788",
+  "authors": [
+    "Daniel Russo"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Columbia University"
+      ],
+      "name": "Daniel Russo",
+      "orcid": "https://orcid.org/0000-0001-5926-8624",
+      "position": "first"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "策略梯度强化学习方法，运筹学方法论",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "在状态聚合的近似表示下，分析策略梯度与近似策略迭代、价值迭代的后悔值差异。结果表明，策略梯度的每步后悔值受限于最大分块差异 ε，而后者可能出现 O(γ/(1-γ)) 的规模增长，体现出更强的鲁棒性。",
+      "topic_tags": [
+        "算法决策",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 3,
+  "date": "2023-11",
+  "doi": "10.1287/mnsc.2023.4788",
+  "id": "p_ymXDtsa34xY690Oy",
+  "issue": "11",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4466,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Approximation Benefits of Policy Gradient Methods with Aggregated States",
+  "title_zh": "聚合状态策略梯度方法的近似优势研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4788",
+  "volume": "69",
+  "year": 2023
+}

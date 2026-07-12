@@ -1,0 +1,66 @@
+{
+  "abstract": "Ensuring fairness in Recommendation Systems (RSs) across demographic groups is critical due to the increased integration of RSs in applications such as personalized healthcare, finance, and e-commerce. Graph-based RSs play a crucial role in capturing intricate higher-order interactions among entities. However, integrating these graph models into the Federated Learning (FL) paradigm with fairness constraints poses formidable challenges as this requires access to the entire interaction graph and sensitive user information (such as gender, age, etc.) at the central server. This paper addresses the pervasive issue of inherent bias within RSs for different demographic groups without compromising the privacy of sensitive user attributes in FL environment with the graph-based model. To address the group bias, we propose F2PGNN (Fair Federated Personalized Graph Neural Network), a novel framework that leverages the power of Personalized Graph Neural Network (GNN) coupled with fairness considerations. Additionally, we use differential privacy techniques to fortify privacy protection. Experimental evaluation on three publicly available datasets showcases the efficacy of F2PGNN in mitigating group unfairness by 47% - 99% compared to the state-of-the-art while preserving privacy and maintaining the utility. The results validate the significance of our framework in achieving equitable and personalized recommendations using GNN within the FL landscape.",
+  "ai_type_tags": [
+    "图神经网络",
+    "联邦学习",
+    "差分隐私"
+  ],
+  "arxiv_id": "2312.10080",
+  "authors": [
+    "Nimesh Agrawal",
+    "Anuj Kumar Sirohi",
+    "Jayadeva",
+    "Sandeep Kumar"
+  ],
+  "authors_full": [
+    {
+      "name": "Nimesh Agrawal"
+    },
+    {
+      "name": "Anuj Kumar Sirohi"
+    },
+    {
+      "name": "Jayadeva"
+    },
+    {
+      "name": "Sandeep Kumar"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "公平性联邦图推荐，公平性是OB核心议题",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "提出 F2PGNN 框架，在联邦学习环境下结合个性化图神经网络和差分隐私，实现组公平性提升47%–99%，同时保持效用和隐私。",
+      "topic_tags": [
+        "推荐系统",
+        "公平性",
+        "隐私",
+        "联邦学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-12-10",
+  "doi": null,
+  "id": "p_U-SiefhgTSnaRYyk",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2312.10080v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10018,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "No prejudice! Fair Federated Graph Neural Networks for Personalized Recommendation",
+  "title_zh": "拒绝偏见！面向个性化推荐的公平联邦图神经网络",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2312.10080v2",
+  "volume": null,
+  "year": 2023
+}

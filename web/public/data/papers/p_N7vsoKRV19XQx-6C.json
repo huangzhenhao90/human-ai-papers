@@ -1,0 +1,76 @@
+{
+  "abstract": "The data-driven newsvendor problem with features has recently emerged as a significant area of research, driven by the proliferation of data across various sectors such as retail, supply chains, e-commerce, and healthcare. Given the sensitive nature of customer or organizational data often used in feature-based analysis, it is crucial to ensure individual privacy to uphold trust and confidence. Despite its importance, privacy preservation in the context of inventory planning remains unexplored. A key challenge is the nonsmoothness of the newsvendor loss function, which sets it apart from existing work on privacy-preserving algorithms in other settings. This paper introduces a novel approach to estimating a privacy-preserving optimal inventory policy within the f-differential privacy framework, an extension of the classical [Formula: see text]-differential privacy with several appealing properties. We develop a clipped noisy gradient descent algorithm based on convolution smoothing for optimal inventory estimation to simultaneously address three main challenges: (i) unknown demand distribution and nonsmooth loss function, (ii) provable privacy guarantees for individual-level data, and (iii) desirable statistical precision. We derive finite-sample high-probability bounds for optimal policy parameter estimation and regret analysis. By leveraging the structure of the newsvendor problem, we attain a faster excess population risk bound compared with that obtained from an indiscriminate application of existing results for general nonsmooth convex loss. Our bound aligns with that for strongly convex and smooth loss function. Our numerical experiments demonstrate that the proposed new method can achieve desirable privacy protection with a marginal increase in cost.  This paper was accepted by J. George Shanthikumar, data science.  Funding: This work was supported by the National Science Foundation [Grants DMS-2113409 and DMS 2401268 to W.-X. Zhou, and FRGMS-1952373 to L. Wang].  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.01268 .",
+  "ai_type_tags": [
+    "算法决策",
+    "机器学习"
+  ],
+  "arxiv_id": "2023.01268",
+  "authors": [
+    "Tuoyi Zhao",
+    "Wen‐Xin Zhou",
+    "Lan Wang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Miami"
+      ],
+      "name": "Tuoyi Zhao",
+      "orcid": "https://orcid.org/0009-0006-1866-3920",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Illinois Chicago",
+        "Decision Sciences (United States)"
+      ],
+      "name": "Wen‐Xin Zhou",
+      "orcid": "https://orcid.org/0000-0002-2761-485X",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Miami"
+      ],
+      "name": "Lan Wang",
+      "orcid": "https://orcid.org/0000-0002-3217-0202",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "数据驱动库存策略涉及机器学习但非核心AI议题",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "针对零售、供应链等领域中特征驱动的报童问题，研究如何在利用数据的同时保护敏感的客户或组织数据。提出基于f-差分隐私框架的裁剪噪声梯度下降算法，通过卷积平滑处理非平滑损失函数，在未知需求分布下实现隐私保护的最优库存策略估计，同时保证统计精度和有限样本高概率边界。",
+      "topic_tags": [
+        "供应链",
+        "库存管理",
+        "隐私"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 4,
+  "date": "2025-07",
+  "doi": "10.1287/mnsc.2023.01268",
+  "id": "p_N7vsoKRV19XQx-6C",
+  "issue": "7",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4310,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Private Optimal Inventory Policy Learning for Feature-Based Newsvendor with Unknown Demand",
+  "title_zh": "未知需求下基于特征的报童问题私有最优库存策略学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.01268",
+  "volume": "71",
+  "year": 2025
+}

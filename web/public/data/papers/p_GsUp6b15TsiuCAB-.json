@@ -1,0 +1,76 @@
+{
+  "abstract": "Enterprise ERP systems managing hundreds of thousands of employee records face critical data quality challenges when human resources departments perform decentralized manual entry across multiple languages. We present an end-to-end pipeline combining automated data cleaning with LLM-driven SQL query generation, deployed on a production system managing 240,000 employee records over six months.   The system operates in two integrated stages: a multi-stage cleaning pipeline that performs translation normalization, spelling correction, and entity deduplication during periodic synchronization from Microsoft SQL Server to PostgreSQL; and a retrieval-augmented generation framework powered by GPT-4o that translates natural-language questions in Turkish, Russian, and English into validated SQL queries. The query engine employs LangChain orchestration, FAISS vector similarity search, and few-shot learning with 500+ validated examples.   Our evaluation demonstrates 92.5% query validity, 95.1% schema compliance, and 90.7\\% semantic accuracy on 2,847 production queries. The system reduces query turnaround time from 2.3 days to under 5 seconds while maintaining 99.2% uptime, with GPT-4o achieving 46% lower latency and 68% cost reduction versus GPT-3.5. This modular architecture provides a reproducible framework for AI-native enterprise data governance, demonstrating real-world viability at enterprise scale with 4.3/5.0 user satisfaction.",
+  "ai_type_tags": [
+    "LLM",
+    "RAG",
+    "多模态",
+    "企业AI"
+  ],
+  "arxiv_id": "2511.16700",
+  "authors": [
+    "Sedat Bin Vedat",
+    "Enes Kutay Yarkan",
+    "Meftun Akarsu",
+    "Recep Kaan Karaman",
+    "Arda Sar"
+  ],
+  "authors_full": [
+    {
+      "name": "Sedat Bin Vedat"
+    },
+    {
+      "name": "Enes Kutay Yarkan"
+    },
+    {
+      "name": "Meftun Akarsu"
+    },
+    {
+      "name": "Recep Kaan Karaman"
+    },
+    {
+      "name": "Arda Sar"
+    },
+    {
+      "name": "Çağrı Çelikbilek"
+    },
+    {
+      "name": "Savaş Saygılı"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "RAG+LLM驱动ERP数据治理,AI核心议题,涉及HR数据管理",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "企业ERP系统管理海量员工记录时面临多语言手动录入导致的数据质量挑战。研究提出结合自动清洗与LLM驱动SQL生成的两阶段端到端管道：多阶段清洗完成翻译规范化、拼写纠错与实体去重；RAG框架由GPT-4o将土耳其实俄语等自然语言问题转为合规SQL查询，配合LangChain、FAISS向量检索和500+示例few-shot学习。生产环境运行六个月，查询有效率达92.5%、语义准确率90.7%，响应时间从2.3天降至5秒，用户满意度4.3/5。",
+      "topic_tags": [
+        "知识管理",
+        "组织变革",
+        "数据治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-18",
+  "doi": null,
+  "id": "p_GsUp6b15TsiuCAB-",
+  "issue": null,
+  "journal": "arXiv:cs.DB",
+  "pdf_url": "https://arxiv.org/pdf/2511.16700v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8341,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "RAG-Driven Data Quality Governance for Enterprise ERP Systems",
+  "title_zh": "RAG驱动的企业ERP系统数据质量治理",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.16700v1",
+  "volume": null,
+  "year": 2025
+}

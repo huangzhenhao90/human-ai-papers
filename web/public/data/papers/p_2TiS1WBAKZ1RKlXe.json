@@ -1,0 +1,66 @@
+{
+  "abstract": "In an era of increasingly capable foundation models, job seekers are turning to generative AI tools to enhance their application materials. However, unequal access to and knowledge about generative AI tools can harm both employers and candidates by reducing the accuracy of hiring decisions and giving some candidates an unfair advantage. To address these challenges, we introduce a new variant of the strategic classification framework tailored to manipulations performed using large language models, accommodating varying levels of manipulations and stochastic outcomes. We propose a ``two-ticket'' scheme, where the hiring algorithm applies an additional manipulation to each submitted resume and considers this manipulated version together with the original submitted resume. We establish theoretical guarantees for this scheme, showing improvements for both the fairness and accuracy of hiring decisions when the true positive rate is maximized subject to a no false positives constraint. We further generalize this approach to an $n$-ticket scheme and prove that hiring outcomes converge to a fixed, group-independent decision, eliminating disparities arising from differential LLM access. Finally, we empirically validate our framework and the performance of our two-ticket scheme on real resumes using an open-source resume screening tool.",
+  "ai_type_tags": [
+    "LLM",
+    "算法管理",
+    "算法决策"
+  ],
+  "arxiv_id": "2502.13221",
+  "authors": [
+    "Lee Cohen",
+    "Jack Hsieh",
+    "Connie Hong",
+    "Judy Hanwen Shen"
+  ],
+  "authors_full": [
+    {
+      "name": "Lee Cohen"
+    },
+    {
+      "name": "Jack Hsieh"
+    },
+    {
+      "name": "Connie Hong"
+    },
+    {
+      "name": "Judy Hanwen Shen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI招聘算法直接涉及HR管理实践",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对求职者利用LLM优化简历导致的不公平问题，提出双票方案：招聘算法对每份简历额外施加一次LLM manipulation，连同原始简历一并评估。理论证明该方案在无假阳性约束下最大化真阳性率时，可同时提升招聘公平性与准确性，并扩展至n票方案，最终收敛至与群体无关的固定决策，消除LLM获取不平等带来的差异。实证用开源简历筛选工具验证。",
+      "topic_tags": [
+        "招聘",
+        "算法决策",
+        "公平性",
+        "偏见"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-02-18",
+  "doi": null,
+  "id": "p_2TiS1WBAKZ1RKlXe",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2502.13221v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8560,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations",
+  "title_zh": "双管齐下：战略LLM操纵下的公平准确招聘",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2502.13221v1",
+  "volume": null,
+  "year": 2025
+}

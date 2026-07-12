@@ -1,0 +1,65 @@
+{
+  "abstract": "As machine learning systems move from theory to practice, they are increasingly tasked with decisions that affect healthcare access, financial opportunities, hiring, and public services. In these contexts, accuracy is only one piece of the puzzle - models must also be fair to different groups, protect individual privacy, and remain accountable to stakeholders. Achieving all three is difficult: differential privacy can unintentionally worsen disparities, fairness interventions often rely on sensitive data that privacy restricts, and automated pipelines ignore that fairness is ultimately a human and contextual judgment. We introduce FAIRPLAI (Fair and Private Learning with Active Human Influence), a practical framework that integrates human oversight into the design and deployment of machine learning systems. FAIRPLAI works in three ways: (1) it constructs privacy-fairness frontiers that make trade-offs between accuracy, privacy guarantees, and group outcomes transparent; (2) it enables interactive stakeholder input, allowing decision-makers to select fairness criteria and operating points that reflect their domain needs; and (3) it embeds a differentially private auditing loop, giving humans the ability to review explanations and edge cases without compromising individual data security. Applied to benchmark datasets, FAIRPLAI consistently preserves strong privacy protections while reducing fairness disparities relative to automated baselines. More importantly, it provides a straightforward, interpretable process for practitioners to manage competing demands of accuracy, privacy, and fairness in socially impactful applications. By embedding human judgment where it matters most, FAIRPLAI offers a pathway to machine learning systems that are effective, responsible, and trustworthy in practice. GitHub: https://github.com/Li1Davey/Fairplai",
+  "ai_type_tags": [
+    "机器学习",
+    "差分隐私"
+  ],
+  "arxiv_id": "2511.08702",
+  "authors": [
+    "David Sanchez",
+    "Holly Lopez",
+    "Michelle Buraczyk",
+    "Anantaa Kotal"
+  ],
+  "authors_full": [
+    {
+      "name": "David Sanchez"
+    },
+    {
+      "name": "Holly Lopez"
+    },
+    {
+      "name": "Michelle Buraczyk"
+    },
+    {
+      "name": "Anantaa Kotal"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "公平+隐私ML框架+人在回路,AI部署中的公平性与问责,招聘应用场景",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "机器学习模型在医疗、金融等敏感领域部署时，公平性、隐私保护与准确性三者难以兼顾——差分隐私可能加剧公平差异，公平约束常依赖受限制的敏感数据，自动流程无法反映人类的情境判断。FAIRPLAI框架通过三条路径整合人类监督：构建隐私-公平前沿以可视化权衡；提供交互式利益相关者输入渠道；嵌入差分私有审计循环。实验表明，该框架在保持强隐私保护的同时，有效降低了相对于自动化基线的公平性差距。",
+      "topic_tags": [
+        "公平性",
+        "隐私",
+        "算法决策",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-11",
+  "doi": null,
+  "id": "p_TL5JnZluhBOET7CV",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2511.08702v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8349,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "FAIRPLAI: A Human-in-the-Loop Approach to Fair and Private Machine Learning",
+  "title_zh": "FAIRPLAI：一种公平且私密机器学习的人机协同方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.08702v1",
+  "volume": null,
+  "year": 2025
+}

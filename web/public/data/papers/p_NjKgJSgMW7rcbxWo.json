@@ -1,0 +1,60 @@
+{
+  "abstract": "Predicting user preferences and sequential dependencies based on historical behavior is the core goal of sequential recommendation. Although attention-based models have shown effectiveness in this field, they often struggle with inference inefficiency due to the quadratic computational complexity inherent in attention mechanisms, especially with long-range behavior sequences. Drawing inspiration from the recent advancements of state space models (SSMs) in control theory, which provide a robust framework for modeling and controlling dynamic systems, we introduce EchoMamba4Rec. Control theory emphasizes the use of SSMs for managing long-range dependencies and maintaining inferential efficiency through structured state matrices. EchoMamba4Rec leverages these control relationships in sequential recommendation and integrates bi-directional processing with frequency-domain filtering to capture complex patterns and dependencies in user interaction data more effectively. Our model benefits from the ability of state space models (SSMs) to learn and perform parallel computations, significantly enhancing computational efficiency and scalability. It features a bi-directional Mamba module that incorporates both forward and reverse Mamba components, leveraging information from both past and future interactions. Additionally, a filter layer operates in the frequency domain using learnable Fast Fourier Transform (FFT) and learnable filters, followed by an inverse FFT to refine item embeddings and reduce noise. We also integrate Gate Linear Units (GLU) to dynamically control information flow, enhancing the model's expressiveness and training stability. Experimental results demonstrate that EchoMamba significantly outperforms existing models, providing more accurate and personalized recommendations.",
+  "ai_type_tags": [
+    "机器学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2406.02638",
+  "authors": [
+    "Yuda Wang",
+    "Xuxin He",
+    "Shengxin Zhu"
+  ],
+  "authors_full": [
+    {
+      "name": "Yuda Wang"
+    },
+    {
+      "name": "Xuxin He"
+    },
+    {
+      "name": "Shengxin Zhu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "SSM技术用于序列推荐，属技术方法论论文",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "研究问题：序列推荐中注意力机制计算复杂度高，难以处理长行为序列；方法：采用双向状态空间模型 Mamba 结合频域滤波（FFT），实现高效并行计算；核心发现：在保持线性复杂度的同时，模型准确捕捉用户行为长期依赖，推荐性能提升显著。",
+      "topic_tags": [
+        "推荐系统",
+        "机器学习",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-06-04",
+  "doi": null,
+  "id": "p_NjKgJSgMW7rcbxWo",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2406.02638v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9986,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "EchoMamba4Rec: Harmonizing Bidirectional State Space Models with Spectral Filtering for Advanced Sequential Recommendation",
+  "title_zh": "EchoMamba4Rec：结合谱滤波的双向状态空间模型在序列推荐中的融合",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2406.02638v2",
+  "volume": null,
+  "year": 2024
+}

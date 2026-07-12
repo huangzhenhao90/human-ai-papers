@@ -1,0 +1,62 @@
+{
+  "abstract": "Matching markets face increasing needs to learn the matching qualities between demand and supply for effective design of matching policies. In practice, the matching rewards are high-dimensional due to the growing diversity of participants. We leverage a natural low-rank matrix structure of the matching rewards in these two-sided markets, and propose to utilize matrix completion to accelerate reward learning with limited offline data. A unique property for matrix completion in this setting is that the entries of the reward matrix are observed with matching interference -- i.e., the entries are not observed independently but dependently due to matching or budget constraints. Such matching dependence renders unique technical challenges, such as sub-optimality or inapplicability of the existing analytical tools in the matrix completion literature, since they typically rely on sample independence. In this paper, we first show that standard nuclear norm regularization remains theoretically effective under matching interference. We provide a near-optimal Frobenius norm guarantee in this setting, coupled with a new analytical technique. Next, to guide certain matching decisions, we develop a novel ``double-enhanced'' estimator, based off the nuclear norm estimator, with a near-optimal entry-wise guarantee. Our double-enhancement procedure can apply to broader sampling schemes even with dependence, which may be of independent interest. Additionally, we extend our approach to online learning settings with matching constraints such as optimal matching and stable matching, and present improved regret bounds in matrix dimensions. Finally, we demonstrate the practical value of our methods using both synthetic data and real data of labor markets.",
+  "ai_type_tags": [
+    "矩阵补全",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2601.06982",
+  "authors": [
+    "Zhiyuan Tang",
+    "Wanning Chen",
+    "Kan Xu"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhiyuan Tang"
+    },
+    {
+      "name": "Wanning Chen"
+    },
+    {
+      "name": "Kan Xu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "矩阵补全用于匹配市场，属市场设计技术，对管理有弱关联",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "在双边匹配市场中，匹配奖励高维且样本存在匹配干扰，导致传统矩阵补全失效。研究证明在匹配干扰下核范数正则化仍有效，并提出双增强估计器实现近最优条目误差。该方法可加速离线数据下奖励学习，为匹配政策设计提供依据。",
+      "topic_tags": [
+        "匹配市场",
+        "机器学习",
+        "决策",
+        "算法"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-01-11",
+  "doi": null,
+  "id": "p_v-qCg5gsVR5I4Lir",
+  "issue": null,
+  "journal": "arXiv:stat.ML",
+  "pdf_url": "https://arxiv.org/pdf/2601.06982v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10278,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Match Made with Matrix Completion: Efficient Learning under Matching Interference",
+  "title_zh": "矩阵补全中的匹配：匹配干扰下的高效学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2601.06982v1",
+  "volume": null,
+  "year": 2026
+}

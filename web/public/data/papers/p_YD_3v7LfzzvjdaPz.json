@@ -1,0 +1,68 @@
+{
+  "abstract": "Equity in real-world sequential decision problems can be enforced using fairness-aware methods. Therefore, we require algorithms that can make suitable and transparent trade-offs between performance and the desired fairness notions. As the desired performance-fairness trade-off is hard to specify a priori, we propose a framework where multiple trade-offs can be explored. Insights provided by the reinforcement learning algorithm regarding the obtainable performance-fairness trade-offs can then guide stakeholders in selecting the most appropriate policy. To capture fairness, we propose an extended Markov decision process, $f$MDP, that explicitly encodes individuals and groups. Given this $f$MDP, we formalise fairness notions in the context of sequential decision problems and formulate a fairness framework that computes fairness measures over time. We evaluate our framework in two scenarios with distinct fairness requirements: job hiring, where strong teams must be composed while treating applicants equally, and fraud detection, where fraudulent transactions must be detected while ensuring the burden on customers is fairly distributed. We show that our framework learns policies that are more fair across multiple scenarios, with only minor loss in performance reward. Moreover, we observe that group and individual fairness notions do not necessarily imply one another, highlighting the benefit of our framework in settings where both fairness types are desired. Finally, we provide guidelines on how to apply this framework across different problem settings.",
+  "ai_type_tags": [
+    "算法管理",
+    "强化学习"
+  ],
+  "arxiv_id": "2509.22232",
+  "authors": [
+    "Alexandra Cimpean",
+    "Nicole Orzan",
+    "Catholijn Jonker",
+    "Pieter Libin",
+    "Ann Nowé"
+  ],
+  "authors_full": [
+    {
+      "name": "Alexandra Cimpean"
+    },
+    {
+      "name": "Nicole Orzan"
+    },
+    {
+      "name": "Catholijn Jonker"
+    },
+    {
+      "name": "Pieter Libin"
+    },
+    {
+      "name": "Ann Nowé"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "公平RL框架通用算法设计，HR应用边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究如何在顺序决策问题中平衡性能与公平性。提出公平感知强化学习框架FAReL，通过扩展马尔可夫决策过程（fMDP）编码个体和群体信息，可量化时间维度上的公平性指标。在招聘和欺诈检测两个场景验证表明，框架能在保持性能的同时显著提升公平性，且发现群体公平与个体公平不能相互蕴含，凸显同时考虑两者的必要性。",
+      "topic_tags": [
+        "公平性",
+        "算法决策",
+        "组织变革"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-09-26",
+  "doi": null,
+  "id": "p_YD_3v7LfzzvjdaPz",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2509.22232v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8387,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Fairness-Aware Reinforcement Learning (FAReL): A Framework for Transparent and Balanced Sequential Decision-Making",
+  "title_zh": "公平感知强化学习 FAReL：透明平衡序列决策框架",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2509.22232v1",
+  "volume": null,
+  "year": 2025
+}

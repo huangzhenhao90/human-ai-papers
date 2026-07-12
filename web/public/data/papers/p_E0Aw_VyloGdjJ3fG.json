@@ -1,0 +1,81 @@
+{
+  "abstract": "The use of Large Language Models (LLMs) in hiring has led to legislative actions to protect vulnerable demographic groups. This paper presents a novel framework for benchmarking hierarchical gender hiring bias in Large Language Models (LLMs) for resume scoring, revealing significant issues of reverse gender hiring bias and overdebiasing. Our contributions are fourfold: Firstly, we introduce a new construct grounded in labour economics, legal principles, and critiques of current bias benchmarks: hiring bias can be categorized into two types: Level bias (difference in the average outcomes between demographic counterfactual groups) and Spread bias (difference in the variance of outcomes between demographic counterfactual groups); Level bias can be further subdivided into statistical bias (i.e. changing with non-demographic content) and taste-based bias (i.e. consistent regardless of non-demographic content). Secondly, the framework includes rigorous statistical and computational hiring bias metrics, such as Rank After Scoring (RAS), Rank-based Impact Ratio, Permutation Test, and Fixed Effects Model. Thirdly, we analyze gender hiring biases in ten state-of-the-art LLMs. Seven out of ten LLMs show significant biases against males in at least one industry. An industry-effect regression reveals that the healthcare industry is the most biased against males. Moreover, we found that the bias performance remains invariant with resume content for eight out of ten LLMs. This indicates that the bias performance measured in this paper might apply to other resume datasets with different resume qualities. Fourthly, we provide a user-friendly demo and resume dataset to support the adoption and practical use of the framework, which can be generalized to other social traits and tasks.",
+  "ai_type_tags": [
+    "LLM",
+    "AI招聘"
+  ],
+  "arxiv_id": "2406.15484",
+  "authors": [
+    "Ze Wang",
+    "Zekun Wu",
+    "Xin Guan",
+    "Michael Thaler",
+    "Adriano Koshiyama"
+  ],
+  "authors_full": [
+    {
+      "name": "Ze Wang"
+    },
+    {
+      "name": "Zekun Wu"
+    },
+    {
+      "name": "Xin Guan"
+    },
+    {
+      "name": "Michael Thaler"
+    },
+    {
+      "name": "Adriano Koshiyama"
+    },
+    {
+      "name": "Skylar Lu"
+    },
+    {
+      "name": "Sachin Beepath"
+    },
+    {
+      "name": "Ediz Ertekin"
+    },
+    {
+      "name": "Maria Perez-Ortiz"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM性别招聘偏见Benchmark，HR核心议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "该研究构建了JobFair框架，用于评估大语言模型在简历评分中的性别招聘偏见。框架提出层级偏差（Level bias）与离散偏差（Spread bias）概念，并采用排名评分、排列检验等指标。对十种主流LLM的分析发现，七种模型在至少一个行业对男性存在显著偏见，医疗行业最严重，且偏见不随简历内容变化。",
+      "topic_tags": [
+        "招聘",
+        "公平性",
+        "偏见",
+        "LLM"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-06-17",
+  "doi": "10.18653/v1/2024.findings-emnlp.184",
+  "id": "p_E0Aw_VyloGdjJ3fG",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2406.15484v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8698,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "JobFair: A Framework for Benchmarking Gender Hiring Bias in Large Language Models",
+  "title_zh": "JobFair：面向大语言模型性别招聘偏见基准测试的框架",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2406.15484v2",
+  "volume": null,
+  "year": 2024
+}

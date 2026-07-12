@@ -1,0 +1,69 @@
+{
+  "abstract": "LLM-powered chatbots are becoming widely adopted in applications such as healthcare, personal assistants, industry hiring decisions, etc. In many of these cases, chatbots are fed sensitive, personal information in their prompts, as samples for in-context learning, retrieved records from a database, or as part of the conversation. The information provided in the prompt could directly appear in the output, which might have privacy ramifications if there is sensitive information there. As such, in this paper, we aim to understand the input copying and regurgitation capabilities of these models during inference and how they can be directly instructed to limit this copying by complying with regulations such as HIPAA and GDPR, based on their internal knowledge of them. More specifically, we find that when ChatGPT is prompted to summarize cover letters of a 100 candidates, it would retain personally identifiable information (PII) verbatim in 57.4% of cases, and we find this retention to be non-uniform between different subgroups of people, based on attributes such as gender identity. We then probe ChatGPT's perception of privacy-related policies and privatization mechanisms by directly instructing it to provide compliant outputs and observe a significant omission of PII from output.",
+  "ai_type_tags": [
+    "LLM",
+    "ChatGPT",
+    "人机交互"
+  ],
+  "arxiv_id": "2305.15008",
+  "authors": [
+    "Aman Priyanshu",
+    "Supriti Vijay",
+    "Ayush Kumar",
+    "Rakshit Naidu",
+    "Fatemehsadat Mireshghallah"
+  ],
+  "authors_full": [
+    {
+      "name": "Aman Priyanshu"
+    },
+    {
+      "name": "Supriti Vijay"
+    },
+    {
+      "name": "Ayush Kumar"
+    },
+    {
+      "name": "Rakshit Naidu"
+    },
+    {
+      "name": "Fatemehsadat Mireshghallah"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM隐私泄露风险研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究大语言模型聊天机器人在隐私敏感场景中的输入 regurgitation（复现）问题及提示词诱导的净化效果。以ChatGPT为对象，发现其在总结100名候选人求职信时，有57.4%的概率逐字保留个人可识别信息（PII），且保留率在不同性别亚群体间不均衡。进一步测试发现，直接指示模型按HIPAA和GDPR合规输出时，PII显著减少，表明模型对隐私政策的内部认知可被引导用于减少信息泄露。",
+      "topic_tags": [
+        "隐私",
+        "伦理",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-05-24",
+  "doi": null,
+  "id": "p_toRUZnxNWIxxh8tQ",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2305.15008v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8837,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Are Chatbots Ready for Privacy-Sensitive Applications? An Investigation into Input Regurgitation and Prompt-Induced Sanitization",
+  "title_zh": "聊天机器人是否已准备好用于隐私敏感应用？输入 regurgitation 与 prompt 诱导 sanitization 的调查",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2305.15008v1",
+  "volume": null,
+  "year": 2023
+}

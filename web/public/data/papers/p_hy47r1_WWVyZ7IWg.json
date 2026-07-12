@@ -1,0 +1,65 @@
+{
+  "abstract": "Inventory control is a fundamental operations problem in which ordering decisions are traditionally guided by theoretically grounded operations research (OR) algorithms. However, such algorithms often rely on rigid modeling assumptions and can perform poorly when demand distributions shift or relevant contextual information is unavailable. Recent advances in large language models (LLMs) have generated interest in AI agents that can reason flexibly and incorporate rich contextual signals, but it remains unclear how best to incorporate LLM-based methods into traditional decision-making pipelines.   We study how OR algorithms, LLMs, and humans can interact and complement each other in a multi-period inventory control setting. We construct InventoryBench, a benchmark of over 1,000 inventory instances spanning both synthetic and real-world demand data, designed to stress-test decision rules under demand shifts, seasonality, and uncertain lead times. Through this benchmark, we find that OR-augmented LLM methods outperform either method in isolation, suggesting that these methods are complementary rather than substitutes.   We further investigate the role of humans through a controlled classroom experiment that embeds LLM recommendations into a human-in-the-loop decision pipeline. Contrary to prior findings that human-AI collaboration can degrade performance, we show that, on average, human-AI teams achieve higher profits than either humans or AI agents operating alone. Beyond this population-level finding, we formalize an individual-level complementarity effect and derive a distribution-free lower bound on the fraction of individuals who benefit from AI collaboration; empirically, we find this fraction to be substantial.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策",
+    "人机协作"
+  ],
+  "arxiv_id": "2602.12631",
+  "authors": [
+    "Jackie Baek",
+    "Yaopeng Fu",
+    "Will Ma",
+    "Tianyi Peng"
+  ],
+  "authors_full": [
+    {
+      "name": "Jackie Baek"
+    },
+    {
+      "name": "Yaopeng Fu"
+    },
+    {
+      "name": "Will Ma"
+    },
+    {
+      "name": "Tianyi Peng"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM核心议题,运营管理领域",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究探索运筹学算法、大型语言模型与人类在库存控制中的协作与互补关系。构建InventoryBench基准，包含超过1000个库存实例，涵盖合成与真实需求数据。实验发现OR增强的LLM方法优于各自单独使用，说明两类方法为互补而非替代关系。通过课堂人机协作实验进一步表明，人类-AI团队的利润表现优于单独的人类或AI系统，挑战了此前人机协作降低绩效的结论。",
+      "topic_tags": [
+        "决策",
+        "人机协作",
+        "运营管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-02-13",
+  "doi": null,
+  "id": "p_hy47r1_WWVyZ7IWg",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2602.12631v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10439,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "AI Agents for Inventory Control: Human-LLM-OR Complementarity",
+  "title_zh": "用于库存控制的AI智能体：人-LLM-运筹学互补性",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2602.12631v2",
+  "volume": null,
+  "year": 2026
+}

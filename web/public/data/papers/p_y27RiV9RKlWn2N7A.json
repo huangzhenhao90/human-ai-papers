@@ -1,0 +1,82 @@
+{
+  "abstract": "Large language models struggle to accumulate evidence across multiple rounds of user interaction, failing to update their beliefs in a manner consistent with Bayesian inference. Existing solutions require fine-tuning on sensitive user interaction data, limiting their applicability in privacy-conscious settings. We propose AdaptFuse, a training-free framework that externalizes probabilistic computation entirely from the LLM: a symbolic module maintains a Bayesian posterior over a discrete hypothesis set, while a frozen LLM contributes semantic reasoning via multi-sample Dirichlet aggregation. The two signals are combined through entropy-adaptive fusion, which automatically weights each source by its predictive confidence, shifting reliance from the LLM to the symbolic posterior as evidence accumulates. We evaluate across three domains: flight recommendation, hotel recommendation, and web shopping; on Gemma 2 9B, Llama 3 8B, and Qwen 2.5 7B. AdaptFuse consistently outperforms both prompting baselines and fine-tuned Bayesian Teaching models on all tasks, with accuracy improving monotonically over interaction rounds. These results demonstrate that principled inference-time algorithms can substitute for fine-tuning in personalized recommendation, without storing or training on sensitive user data. All the code and materials will be open-sourced.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "人机协作"
+  ],
+  "arxiv_id": "2604.03925",
+  "authors": [
+    "Fangzhou Lin",
+    "Peiran Li",
+    "Shuo Xing",
+    "Siyuan Yang",
+    "Qianwen Ge"
+  ],
+  "authors_full": [
+    {
+      "name": "Fangzhou Lin"
+    },
+    {
+      "name": "Peiran Li"
+    },
+    {
+      "name": "Shuo Xing"
+    },
+    {
+      "name": "Siyuan Yang"
+    },
+    {
+      "name": "Qianwen Ge"
+    },
+    {
+      "name": "Kazunori Yamada"
+    },
+    {
+      "name": "Ziming Zhang"
+    },
+    {
+      "name": "Haichong Zhang"
+    },
+    {
+      "name": "Zhengzhong Tu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM偏好学习，涉及消费者行为相关概念",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "LLM 在多轮用户交互中难以累积证据更新信念，现有方法需微调用户数据，引发隐私担忧。AdaptFuse 提出免训练的外部化贝叶斯推理框架：符号模块维护离散假设集的后验分布，冻结 LLM 通过 Dirichlet 聚合提供语义推理，两者通过熵自适应融合自动调节置信度权重。实验覆盖航班、酒店推荐及网购场景，AdaptFuse 在三种模型上持续超越提示基线和微调贝叶斯教学模型，准确率随交互轮次单调提升，证明无需存储或训练敏感用户数据即可实现个性化推荐。",
+      "topic_tags": [
+        "推荐系统",
+        "决策",
+        "隐私",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-04-05",
+  "doi": null,
+  "id": "p_y27RiV9RKlWn2N7A",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2604.03925v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9874,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "AdaptFuse: Training-Free Sequential Preference Learning via Externalized Bayesian Inference",
+  "title_zh": "AdaptFuse：通过外部化贝叶斯推断实现免训练顺序偏好学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.03925v1",
+  "volume": null,
+  "year": 2026
+}

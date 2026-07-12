@@ -1,0 +1,71 @@
+{
+  "abstract": "While vision-language models (VLMs) have achieved remarkable performance improvements recently, there is growing evidence that these models also posses harmful biases with respect to social attributes such as gender and race. Prior studies have primarily focused on probing such bias attributes individually while ignoring biases associated with intersections between social attributes. This could be due to the difficulty of collecting an exhaustive set of image-text pairs for various combinations of social attributes from existing datasets. To address this challenge, we employ text-to-image diffusion models to produce counterfactual examples for probing intserctional social biases at scale. Our approach utilizes Stable Diffusion with cross attention control to produce sets of counterfactual image-text pairs that are highly similar in their depiction of a subject (e.g., a given occupation) while differing only in their depiction of intersectional social attributes (e.g., race & gender). We conduct extensive experiments using our generated dataset which reveal the intersectional social biases present in state-of-the-art VLMs.",
+  "ai_type_tags": [
+    "图像生成",
+    "多模态",
+    "算法决策",
+    "AI治理"
+  ],
+  "arxiv_id": "2310.02988",
+  "authors": [
+    "Phillip Howard",
+    "Avinash Madasu",
+    "Tiep Le",
+    "Gustavo Lujan Moreno",
+    "Vasudev Lal"
+  ],
+  "authors_full": [
+    {
+      "name": "Phillip Howard"
+    },
+    {
+      "name": "Avinash Madasu"
+    },
+    {
+      "name": "Tiep Le"
+    },
+    {
+      "name": "Gustavo Lujan Moreno"
+    },
+    {
+      "name": "Vasudev Lal"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "研究VLM社会偏见属AI伦理核心，边缘涉及公平性议题",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究利用文本到图像扩散模型生成反事实示例，系统探测视觉-语言模型在性别与种族交叉属性上的社会偏见。实验揭示当前先进模型存在显著交叉偏见，表明需在模型评估中纳入交叉视角。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "多模态",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-10-04",
+  "doi": null,
+  "id": "p_ksrXziPR74-wBw4X",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2310.02988v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9807,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Probing Intersectional Biases in Vision-Language Models with Counterfactual Examples",
+  "title_zh": "基于反事实样本探究视觉-语言模型的交叉偏差",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2310.02988v1",
+  "volume": null,
+  "year": 2023
+}

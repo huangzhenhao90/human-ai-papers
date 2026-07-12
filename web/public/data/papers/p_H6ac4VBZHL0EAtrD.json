@@ -1,0 +1,65 @@
+{
+  "abstract": "The use of automated decision tools in recruitment has received an increasing amount of attention. In November 2021, the New York City Council passed a legislation (Local Law 144) that mandates bias audits of Automated Employment Decision Tools. From 15th April 2023, companies that use automated tools for hiring or promoting employees are required to have these systems audited by an independent entity. Auditors are asked to compute bias metrics that compare outcomes for different groups, based on sex/gender and race/ethnicity categories at a minimum. Local Law 144 proposes novel bias metrics for regression tasks (scenarios where the automated system scores candidates with a continuous range of values). A previous version of the legislation proposed a bias metric that compared the mean scores of different groups. The new revised bias metric compares the proportion of candidates in each group that falls above the median. In this paper, we argue that both metrics fail to capture distributional differences over the whole domain, and therefore cannot reliably detect bias. We first introduce two metrics, as possible alternatives to the legislation metrics. We then compare these metrics over a range of theoretical examples, for which the legislation proposed metrics seem to underestimate bias. Finally, we study real data and show that the legislation metrics can similarly fail in a real-world recruitment application.",
+  "ai_type_tags": [
+    "算法决策",
+    "机器学习"
+  ],
+  "arxiv_id": "2302.04119",
+  "authors": [
+    "Giulio Filippi",
+    "Sara Zannone",
+    "Airlie Hilliard",
+    "Adriano Koshiyama"
+  ],
+  "authors_full": [
+    {
+      "name": "Giulio Filippi"
+    },
+    {
+      "name": "Sara Zannone"
+    },
+    {
+      "name": "Airlie Hilliard"
+    },
+    {
+      "name": "Adriano Koshiyama"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI招聘工具bias审计，劳动力/HR管理政策研究",
+      "ai_score": 4.0,
+      "domain_score": 5.0,
+      "tldr": "针对纽约市地方法144号法案中自动招聘决策工具的偏差审计指标展开批判性分析。该法案提出用组间均值差异和中位数以上比例差异度量回归任务偏差。研究通过理论示例和真实招聘数据表明，两种指标均无法捕捉整体分布差异，可能系统性低估算法偏见，并提出替代性分布敏感指标。",
+      "topic_tags": [
+        "招聘",
+        "公平性",
+        "算法管理",
+        "绩效评估"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-02-08",
+  "doi": null,
+  "id": "p_H6ac4VBZHL0EAtrD",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2302.04119v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8872,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Local Law 144: A Critical Analysis of Regression Metrics",
+  "title_zh": "地方性法规144：回归指标的关键性分析",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2302.04119v1",
+  "volume": null,
+  "year": 2023
+}

@@ -1,0 +1,67 @@
+{
+  "abstract": "The k-secretary problem deals with online selection of at most k numerically scored applicants, where selection decisions are immediate upon their arrival and irrevocable, with the goal of maximizing total score. There is, however, wide prevalence of bias in evaluations of applicants from different demographic groups (e.g., gender, age, race), and the assumption of an algorithm observing their true score is unreasonable in practice. In this work, we propose the poset secretary problem, where selection decisions must be made by observing a partial order over the applicants. This partial order is constructed to account for uncertainty and biases in applicant scores. We assume that each applicant has a fixed score, which is not visible to the algorithm and is consistent with the partial order. Using a random partitioning technique from the matroid secretary literature, we provide order-optimal competitive algorithms for the poset secretary problem and provide matching lower bounds. Further, we develop the theory of thresholding in posets to provide a tight, adaptive-thresholding algorithm under regimes where k grows quickly enough, thus matching the adaptiveness to k shown for the classical k-secretary problem. We then study a special case, in which applicants belong to g disjoint demographic groups and the bias is group specific. We provide competitive algorithms for adversarial and stochastic variants of this special case, including a framework, Gap, for parallelizing any vanilla k-secretary algorithm to the group setting. Finally, we perform a case study on real-world data to demonstrate the responsiveness of our algorithms to data and their impact on selection rates.  This paper was accepted by Hamid Nazerzadeh, data science.  Funding: This work was supported by the National Science Foundation [Grant 2112533]. S. Gupta’s research was supported in part by NSF CAREER Award 2239824.  Supplemental Material: The data files are available at https://doi.org/10.1287/mnsc.2023.4926 .",
+  "ai_type_tags": [
+    "算法决策",
+    "AI治理"
+  ],
+  "arxiv_id": "2023.4926",
+  "authors": [
+    "Jad Salem",
+    "Swati Gupta"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "United States Naval Academy"
+      ],
+      "name": "Jad Salem",
+      "orcid": "https://orcid.org/0000-0003-4480-4601",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Swati Gupta",
+      "orcid": "https://orcid.org/0000-0002-9566-3856",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法在线决策选人，涉及偏见与公平核心议题",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对招聘算法中普遍存在的群体偏见问题，提出“偏序秘书问题”框架。算法仅能观测到申请人之间的部分排序而非真实分数，排序形式反映评分中的不确定性和偏见。通过随机分割技术和自适应阈值算法，为该问题提供竞争性最优解，并针对不同人口群体设计专门的竞争算法。",
+      "topic_tags": [
+        "算法决策",
+        "公平性",
+        "招聘",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 10,
+  "date": "2024-08",
+  "doi": "10.1287/mnsc.2023.4926",
+  "id": "p_gi4-6mLjLONTWdJS",
+  "issue": "8",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 2942,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Secretary Problems with Biased Evaluations Using Partial Ordinal Information",
+  "title_zh": "基于偏序信息的部分评价在秘书问题中的应用",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4926",
+  "volume": "70",
+  "year": 2024
+}

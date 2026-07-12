@@ -1,0 +1,68 @@
+{
+  "abstract": "Post-hoc explanations are widely used to justify, contest, and review automated decisions in high-stakes domains such as lending, employment, and healthcare. Among these methods, SHAP is often treated as providing a reliable account of which features mattered for an individual prediction and is routinely used to support recourse, oversight, and accountability. In practice, however, SHAP explanations can differ substantially across repeated runs, even when the individual, prediction task, and trained model are held fixed. We conceptualize and name this phenomenon explanation multiplicity: the existence of multiple, internally valid but substantively different explanations for the same decision. Explanation multiplicity poses a normative challenge for responsible AI deployment, as it undermines expectations that explanations can reliably identify the reasons for an adverse outcome. We present a comprehensive methodology for characterizing explanation multiplicity in post-hoc feature attribution methods, disentangling sources arising from model training and selection versus stochasticity intrinsic to the explanation pipeline. Furthermore, whether explanation multiplicity is surfaced depends on how explanation consistency is measured. Commonly used magnitude-based metrics can suggest stability while masking substantial instability in the identity and ordering of top-ranked features. To contextualize observed instability, we derive and estimate randomized baseline values under plausible null models, providing a principled reference point for interpreting explanation disagreement. Across datasets, model classes, and confidence regimes, we find that explanation multiplicity is widespread and persists even under highly controlled conditions, including high-confidence predictions. Thus explanation practices must be evaluated using metrics and baselines aligned with their intended societal role.",
+  "ai_type_tags": [
+    "可解释 AI",
+    "机器学习"
+  ],
+  "arxiv_id": "2601.12654",
+  "authors": [
+    "Hyunseung Hwang",
+    "Seungeun Lee",
+    "Lucas Rosenblatt",
+    "Steven Euijong Whang",
+    "Julia Stoyanovich"
+  ],
+  "authors_full": [
+    {
+      "name": "Hyunseung Hwang"
+    },
+    {
+      "name": "Seungeun Lee"
+    },
+    {
+      "name": "Lucas Rosenblatt"
+    },
+    {
+      "name": "Steven Euijong Whang"
+    },
+    {
+      "name": "Julia Stoyanovich"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "SHAP可解释AI方法在算法决策中的应用研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "SHAP解释在不同运行中可能产生多种合法但实质不同的解释，被称为解释多元性。本研究提出系统方法，将多元性来源区分为模型训练/选择与解释过程的随机性，并指出常用幅值指标掩盖了特征身份与排序的不稳定。通过随机基线比较量化多元性程度，为可解释AI的可靠性评估提供框架。",
+      "topic_tags": [
+        "算法管理",
+        "信任",
+        "公平性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-01-19",
+  "doi": null,
+  "id": "p_YcfRIaTBvDNjBzmj",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2601.12654v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8989,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Explanation Multiplicity in SHAP: Characterization and Assessment",
+  "title_zh": "SHAP解释的多重性：特征与评估",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2601.12654v2",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,69 @@
+{
+  "abstract": "This case study investigates the task of job classification in a real-world setting, where the goal is to determine whether an English-language job posting is appropriate for a graduate or entry-level position. We explore multiple approaches to text classification, including supervised approaches such as traditional models like Support Vector Machines (SVMs) and state-of-the-art deep learning methods such as DeBERTa. We compare them with Large Language Models (LLMs) used in both few-shot and zero-shot classification settings. To accomplish this task, we employ prompt engineering, a technique that involves designing prompts to guide the LLMs towards the desired output. Specifically, we evaluate the performance of two commercially available state-of-the-art GPT-3.5-based language models, text-davinci-003 and gpt-3.5-turbo. We also conduct a detailed analysis of the impact of different aspects of prompt engineering on the model's performance. Our results show that, with a well-designed prompt, a zero-shot gpt-3.5-turbo classifier outperforms all other models, achieving a 6% increase in Precision@95% Recall compared to the best supervised approach. Furthermore, we observe that the wording of the prompt is a critical factor in eliciting the appropriate \"reasoning\" in the model, and that seemingly minor aspects of the prompt significantly affect the model's performance.",
+  "ai_type_tags": [
+    "LLM",
+    "GPT-3.5",
+    "提示工程"
+  ],
+  "arxiv_id": "2303.07142",
+  "authors": [
+    "Benjamin Clavié",
+    "Alexandru Ciceu",
+    "Frederick Naylor",
+    "Guillaume Soulié",
+    "Thomas Brightwell"
+  ],
+  "authors_full": [
+    {
+      "name": "Benjamin Clavié"
+    },
+    {
+      "name": "Alexandru Ciceu"
+    },
+    {
+      "name": "Frederick Naylor"
+    },
+    {
+      "name": "Guillaume Soulié"
+    },
+    {
+      "name": "Thomas Brightwell"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM职位分类属AI应用，HR边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究以招聘帖分类为真实场景，探讨大语言模型在判断岗位是否为应届生/初级职位上的应用。对比SVM、DeBERTa等监督方法与GPT-3.5（text-davinci-003、gpt-3.5-turbo）的少样本和零样本分类表现，并分析提示工程的影响。结果显示，设计良好的提示可使零样本gpt-3.5-turbo超越所有监督模型，Precision@95% Recall提升6%，提示词措辞是关键因素。",
+      "topic_tags": [
+        "招聘",
+        "分类任务",
+        "自然语言处理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-03-13",
+  "doi": null,
+  "id": "p_CX4T8XTW-WeSmE5d",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2303.07142v3",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10070,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Large Language Models in the Workplace: A Case Study on Prompt Engineering for Job Type Classification",
+  "title_zh": "职场中的大语言模型：职位类型分类的 Prompt 工程案例研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2303.07142v3",
+  "volume": null,
+  "year": 2023
+}

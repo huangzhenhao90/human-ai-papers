@@ -1,0 +1,58 @@
+{
+  "abstract": "Internal talent recommendation is a critical strategy for organizational continuity, yet conventional approaches suffer from structural limitations, often overlooking qualified candidates by relying on the narrow perspective of a few managers. To address this challenge, we propose a novel framework that models two distinct dimensions of an employee's position fit from email data: WHAT they do (semantic similarity of tasks) and HOW they work (structural characteristics of their interactions and collaborations). These dimensions are represented as independent graphs and adaptively fused using a Dual Graph Convolutional Network (GCN) with a gating mechanism. Experiments show that our proposed gating-based fusion model significantly outperforms other fusion strategies and a heuristic baseline, achieving a top performance of 40.9% on Hit@100. Importantly, it is worth noting that the model demonstrates high interpretability by learning distinct, context-aware fusion strategies for different job families. For example, it learned to prioritize relational (HOW) data for 'sales and marketing' job families while applying a balanced approach for 'research' job families. This research offers a quantitative and comprehensive framework for internal talent discovery, minimizing the risk of candidate omission inherent in traditional methods. Its primary contribution lies in its ability to empirically determine the optimal fusion ratio between task alignment (WHAT) and collaborative patterns (HOW), which is required for employees to succeed in the new positions, thereby offering important practical implications.",
+  "ai_type_tags": [
+    "机器学习",
+    "图神经网络",
+    "推荐算法"
+  ],
+  "arxiv_id": "2508.20328",
+  "authors": [
+    "Soo Hyun Kim",
+    "Jang-Hyun Kim"
+  ],
+  "authors_full": [
+    {
+      "name": "Soo Hyun Kim"
+    },
+    {
+      "name": "Jang-Hyun Kim"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "图卷积网络内部人才推荐，企业人力资源管理核心技术应用",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究解决企业内人才推荐中传统方法依赖少数管理者视角、容易遗漏合格候选人的结构性问题。提出基于企业邮件的多视图图卷积网络框架，通过语义相似性(WHAT)和交互协作模式(HOW)两个维度建模员工岗位适配，以双图卷积网络和门控机制自适应融合两个视图。实验在Hit@100上达40.9%，并展现高可解释性：针对不同职能自动学习差异化融合策略，如销售职能优先关系数据、研究职能采用均衡策略。",
+      "topic_tags": [
+        "HR",
+        "人才管理",
+        "组织学习",
+        "招聘"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-08-28",
+  "doi": null,
+  "id": "p_mGrjQG-qbqdGPaMK",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2508.20328v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8412,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Multi-View Graph Convolution Network for Internal Talent Recommendation Based on Enterprise Emails",
+  "title_zh": "基于企业邮件的多视角图卷积网络内部人才推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2508.20328v1",
+  "volume": null,
+  "year": 2025
+}

@@ -1,0 +1,76 @@
+{
+  "abstract": "As artificial intelligence (AI) assistants become more widely adopted in safety-critical domains, it becomes important to develop safeguards against potential failures or adversarial attacks. A key prerequisite to developing these safeguards is understanding the ability of these AI assistants to mislead human teammates. We investigate this attack problem within the context of an intellective strategy game where a team of three humans and one AI assistant collaborate to answer a series of trivia questions. Unbeknownst to the humans, the AI assistant is adversarial. Leveraging techniques from Model-Based Reinforcement Learning (MBRL), the AI assistant learns a model of the humans' trust evolution and uses that model to manipulate the group decision-making process to harm the team. We evaluate two models -- one inspired by literature and the other data-driven -- and find that both can effectively harm the human team. Moreover, we find that in this setting our data-driven model is capable of accurately predicting how human agents appraise their teammates given limited information on prior interactions. Finally, we compare the performance of state-of-the-art LLM models to human agents on our influence allocation task to evaluate whether the LLMs allocate influence similarly to humans or if they are more robust to our attack. These results enhance our understanding of decision-making dynamics in small human-AI teams and lay the foundation for defense strategies.",
+  "ai_type_tags": [
+    "强化学习",
+    "LLM",
+    "对抗性AI"
+  ],
+  "arxiv_id": "2503.21983",
+  "authors": [
+    "Abed Kareem Musaffar",
+    "Anand Gokhale",
+    "Sirui Zeng",
+    "Rasta Tadayon",
+    "Xifeng Yan"
+  ],
+  "authors_full": [
+    {
+      "name": "Abed Kareem Musaffar"
+    },
+    {
+      "name": "Anand Gokhale"
+    },
+    {
+      "name": "Sirui Zeng"
+    },
+    {
+      "name": "Rasta Tadayon"
+    },
+    {
+      "name": "Xifeng Yan"
+    },
+    {
+      "name": "Ambuj Singh"
+    },
+    {
+      "name": "Francesco Bullo"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "RL对抗攻击是核心；涉及人-AI团队协作（OB强相关）",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "在三人与对抗性AI合作的智力问答游戏中，利用基于模型的强化学习让AI学习人类信任演化并操纵团队决策，导致团队表现受损；实验表明数据驱动模型能精准预测人类对队友的评价，且最新LLM对影响力分配的防御能力与人类相近，提示需加强人机团队的安全防护。",
+      "topic_tags": [
+        "人机协作",
+        "信任",
+        "决策",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-03-27",
+  "doi": null,
+  "id": "p_-gS41Wd3nCugz2LC",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2503.21983v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10703,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning to Lie: Reinforcement Learning Attacks Damage Human-AI Teams and Teams of LLMs",
+  "title_zh": "学会欺骗：强化学习攻击损害人机团队与LLM团队",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2503.21983v2",
+  "volume": null,
+  "year": 2025
+}

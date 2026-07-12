@@ -1,0 +1,82 @@
+{
+  "abstract": "A mixture of multinomial logits (mixed multinomial logit (MMNL)) generalizes the multinomial logit model, which is commonly used in modeling market demand to capture consumer heterogeneity. Although extensive algorithms have been developed in the literature to learn MMNL models, theoretical results are limited. Built on the Frank-Wolfe (FW) method, we propose a new algorithm that learns both mixture weights and component-specific logit parameters with provable convergence guarantees for an arbitrary number of mixtures. Our algorithm utilizes historical choice data to generate a set of candidate choice probability vectors, each being close to the ground truth with a high probability. We further provide a sample complexity analysis to show that only a polynomial number of samples is required to secure the performance guarantee of our algorithm. Finally, we apply the learned MMNL to data-driven multiproduct pricing problems and quantify how the estimation errors affect the pricing optimality under our proposed data-driven pricing framework Numerical studies are conducted to evaluate the performance of the proposed algorithms.\n                  This paper was accepted by J. George Shanthikumar, data science.\n                  Funding: The research of the first and third authors was supported by MIT-Accenture Alliance for Business Analytics, the MIT Data Science Lab. Z. Yan received financial support from the Ministry of Education Academic Research Fund [Tier 1 Grant RG20/23], Neptune Orient Lines Limited [Fellowship NOL21RP04], and School of Physical and Mathematical Sciences [2023 Collaborative Research Award].\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.03792 .",
+  "ai_type_tags": [
+    "机器学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2022.03792",
+  "authors": [
+    "Yiqun Hu",
+    "Limeng Liu",
+    "David Simchi-Levi",
+    "Zhenzhen Yan"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [],
+      "name": "Yiqun Hu",
+      "orcid": "https://orcid.org/0009-0006-3254-2420",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Nanyang Technological University"
+      ],
+      "name": "Limeng Liu",
+      "orcid": "https://orcid.org/0009-0005-6162-6415",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "David Simchi-Levi",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Nanyang Technological University"
+      ],
+      "name": "Zhenzhen Yan",
+      "orcid": "https://orcid.org/0000-0001-7370-9959",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "统计学习算法用于消费者选择模型，营销核心议题",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "研究混合多项Logit（MMNL）模型的参数学习与定价应用。基于Frank-Wolfe方法提出新算法，可学习任意数量混合成分的权重与参数，并提供可证明的收敛保证；样本复杂度为多项式量级。将学习所得MMNL应用于多产品定价问题，量化估计误差对定价最优性的影响，数值实验验证算法性能。",
+      "topic_tags": [
+        "消费者行为",
+        "定价",
+        "营销"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-12",
+  "doi": "10.1287/mnsc.2022.03792",
+  "id": "p_EaAigfgr23PTknYc",
+  "issue": "12",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4227,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning Mixed Multinomial Logits with Provable Guarantees and Its Applications in Multiproduct Pricing",
+  "title_zh": "混合多项 Logit 模型的可证明学习及其在多产品定价中的应用",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.03792",
+  "volume": "71",
+  "year": 2025
+}

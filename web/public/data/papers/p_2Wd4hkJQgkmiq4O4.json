@@ -1,0 +1,86 @@
+{
+  "abstract": "Contextual advertising involves matching features of ads to features of the media context where they appear. The authors propose AdGazer, a new machine learning procedure to support contextual advertising. It comprises a theoretical framework organizing high- and low-level features of ads and contexts, feature engineering models grounded in this framework, an XGBoost model predicting ad and brand attention, and an algorithm optimally assigning ads to contexts. AdGazer includes a multimodal large language model to extract high-level topics predicting the ad–context match. This research uses a unique eye-tracking database containing 3,531 digital display ads and their contexts, and aggregate ad and brand gaze times. The authors compare AdGazer’s predictive performance with that of two feature learning models, VGG16 and ResNet50. AdGazer predicts highly accurately with holdout correlations of .83 for ad gaze and .80 for brand gaze, outperforming both feature learning models and generalizing better to out-of-distribution ads. Context features jointly contributed at least 33% to predicted ad gaze and about 20% to predicted brand gaze, good news for managers practicing or considering contextual advertising. The authors demonstrate that the theory-informed AdGazer effectively matches ads to advertising vehicles and their contexts, optimizing ad gaze more than current practice and alternatives like text-based and native contextual advertising.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "AI 推荐",
+    "机器学习"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Jianping Ye",
+    "Michel Wedel",
+    "Rik Pieters"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [],
+      "name": "Jianping Ye",
+      "orcid": "https://orcid.org/0000-0002-9997-8011"
+    },
+    {
+      "affiliation": [],
+      "name": "Michel Wedel",
+      "orcid": "https://orcid.org/0000-0002-1244-4923"
+    },
+    {
+      "affiliation": [],
+      "name": "Rik Pieters",
+      "orcid": null
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "机器学习/XGBoost/LLM优化广告分配",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "上下文广告匹配中，广告与媒体情境的契合度影响消费者注意力。研究提出AdGazer框架，集成多模态大语言模型提取高层语义特征，结合XGBoost预测广告和品牌关注度。基于3531条眼动追踪数据的验证表明，AdGazer预测广告注视时长的相关系数达0.83、品牌注视时长达0.80，显著优于VGG16和ResNet50。情境特征对广告注视的贡献至少33%，证实了情境匹配的关键价值，为广告投放优化提供可解释方案。",
+      "topic_tags": [
+        "广告",
+        "消费者行为",
+        "推荐系统"
+      ]
+    },
+    "ur": {
+      "ai_reason": "ML优化广告定向，虽用eye-tracking但核心是算法工程非用研",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "AdGazer是一个理论驱动的机器学习框架，用于优化情境广告匹配。它整合广告与媒体语境的高层主题（由多模态大语言模型提取）和低层视觉特征，预测广告和品牌注视时长。在3531条数字展示广告的眼动数据集上，AdGazer的holdout相关度达0.83（广告注视）和0.80（品牌注视），显著优于VGG16和ResNet50基准。情境特征对广告注视贡献至少33%、品牌注视约20%。",
+      "topic_tags": [
+        "消费者行为",
+        "广告",
+        "AI推荐",
+        "可视化"
+      ]
+    }
+  },
+  "channels": [
+    "ob",
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-29",
+  "doi": "10.1177/00222429251396114",
+  "id": "p_2Wd4hkJQgkmiq4O4",
+  "issue": "4",
+  "journal": "JM",
+  "pdf_url": "https://research.tilburguniversity.edu/en/publications/c198aa3a-8bd8-4801-b108-b927de5f5097",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 5994,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 3224,
+      "revision": "a8be9093b6fca7daef7faf55e5ee1803f079cae5"
+    }
+  ],
+  "title": "AdGazer: Improving Contextual Advertising with Theory-Informed Machine Learning",
+  "title_zh": "AdGazer：基于理论信息的机器学习提升情境广告效果",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1177/00222429251396114",
+  "volume": "90",
+  "year": 2026
+}

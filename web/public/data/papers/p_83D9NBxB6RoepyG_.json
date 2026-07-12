@@ -1,0 +1,65 @@
+{
+  "abstract": "In talent management systems, critical information often resides in complex tabular formats, presenting significant retrieval challenges for conventional language models. These challenges are pronounced when processing Talent documentation that requires precise interpretation of tabular relationships for accurate information retrieval and downstream decision-making. Current table extraction methods struggle with semantic understanding, resulting in poor performance when integrated into retrieval-augmented chat applications. This paper identifies a key bottleneck - while structural table information can be extracted, the semantic relationships between tabular elements are lost, causing downstream query failures. To address this, we introduce TalentMine, a novel LLM-enhanced framework that transforms extracted tables into semantically enriched representations. Unlike conventional approaches relying on CSV or text linearization, our method employs specialized multimodal reasoning to preserve both structural and semantic dimensions of tabular data. Experimental evaluation across employee benefits document collections demonstrates TalentMine's superior performance, achieving 100% accuracy in query answering tasks compared to 0% for standard AWS Textract extraction and 40% for AWS Textract Visual Q&A capabilities. Our comparative analysis also reveals that the Claude v3 Haiku model achieves optimal performance for talent management applications. The key contributions of this work include (1) a systematic analysis of semantic information loss in current table extraction pipelines, (2) a novel LLM-based method for semantically enriched table representation, (3) an efficient integration framework for retrieval-augmented systems as end-to-end systems, and (4) comprehensive benchmarks on talent analytics tasks showing substantial improvements across multiple categories.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "检索增强生成"
+  ],
+  "arxiv_id": "2507.00041",
+  "authors": [
+    "Varun Mannam",
+    "Fang Wang",
+    "Chaochun Liu",
+    "Xin Chen"
+  ],
+  "authors_full": [
+    {
+      "name": "Varun Mannam"
+    },
+    {
+      "name": "Fang Wang"
+    },
+    {
+      "name": "Chaochun Liu"
+    },
+    {
+      "name": "Xin Chen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM增强的人才表格提取，属HR人才管理领域",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "TalentMine利用LLM增强的多模态推理，将表格的结构与语义信息共同保留，在员工福利文档上实现问答准确率100%，远高于传统AWS Textract的0%和40%，并指出Claude v3 Haiku在此类人才管理任务中表现最优。",
+      "topic_tags": [
+        "HR",
+        "知识管理",
+        "多模态"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-06-22",
+  "doi": null,
+  "id": "p_83D9NBxB6RoepyG_",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2507.00041v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8460,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "TalentMine: LLM-Based Extraction and Question-Answering from Multimodal Talent Tables",
+  "title_zh": "TalentMine：基于LLM的多模态人才表格抽取与问答",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2507.00041v1",
+  "volume": null,
+  "year": 2025
+}

@@ -1,0 +1,57 @@
+{
+  "abstract": "Text-to-Image (T2I) models have transformed visual content creation, producing highly realistic images from natural language prompts. However, concerns persist around their potential to replicate and magnify existing societal biases. To investigate these issues, we curated a diverse set of prompts spanning thematic categories such as occupations, traits, actions, ideologies, emotions, family roles, place descriptions, spirituality, and life events. For each of the 160 unique topics, we crafted multiple prompt variations to reflect a wide range of meanings and perspectives. Using Stable Diffusion 1.5 (UNet-based) and Flux-1 (DiT-based) models with original checkpoints, we generated over 16,000 images under consistent settings. Additionally, we collected 8,000 comparison images from Google Image Search. All outputs were filtered to exclude abstract, distorted, or nonsensical results. Our analysis reveals significant disparities in the representation of gender, race, age, somatotype, and other human-centric factors across generated images. These disparities often mirror and reinforce harmful stereotypes embedded in societal narratives. We discuss the implications of these findings and emphasize the need for more inclusive datasets and development practices to foster fairness in generative visual systems.",
+  "ai_type_tags": [
+    "图像生成",
+    "GenAI",
+    "Stable Diffusion"
+  ],
+  "arxiv_id": "2506.13780",
+  "authors": [
+    "Sedat Porikli",
+    "Vedat Porikli"
+  ],
+  "authors_full": [
+    {
+      "name": "Sedat Porikli"
+    },
+    {
+      "name": "Vedat Porikli"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "T2I模型社会偏见研究，涉及职业刻板印象，边缘相关OB议题",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "文生图模型（T2I）虽能根据文本生成逼真图像，但可能复制并放大社会偏见。研究使用Stable Diffusion 1.5和Flux-1，针对160个主题类别生成超16000张图像，分析发现性别、种族、年龄、体型等方面的表征存在显著差异，镜像并强化了有害刻板印象。呼吁构建更具包容性的数据集和开发实践。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-06-09",
+  "doi": null,
+  "id": "p_vta5nkoV4ZwFTL36",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2506.13780v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9556,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Hidden Bias in the Machine: Stereotypes in Text-to-Image Models",
+  "title_zh": "机器中的隐性偏见：文生图模型中的刻板印象",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2506.13780v1",
+  "volume": null,
+  "year": 2025
+}

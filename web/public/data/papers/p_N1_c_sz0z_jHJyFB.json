@@ -1,0 +1,74 @@
+{
+  "abstract": "We consider the problem of managing resources in shared micromobility systems (bike sharing and scooter sharing). An important task in managing such systems is periodic repositioning/recharging/sourcing of units to avoid stockouts or excess inventory at nodes with unbalanced flows. We consider a discrete-time model; each period begins with an initial inventory at each node in the network, and then, customers (demand) materialize at the nodes. Each customer picks up a unit at the origin node and drops it off at a randomly sampled destination node with an origin-specific probability distribution. We model the above network inventory management problem as an infinite horizon discrete-time discounted Markov decision process (MDP) and prove the asymptotic optimality of a novel mean-field approximation to the original MDP as the number of stations becomes large. To compute an approximately optimal policy for the mean-field dynamics, we provide an algorithm with a running time that is logarithmic in the desired optimality gap. Lastly, we compare the performance of our mean field-based policy with state-of-the-art heuristics via numerical experiments, including experiments using Austin scooter-sharing data.  This paper was accepted by Jeannette Song, operations management.  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.02023 .",
+  "ai_type_tags": [
+    "算法管理",
+    "决策"
+  ],
+  "arxiv_id": "2022.02023",
+  "authors": [
+    "Deniz Akturk",
+    "Ozan Candogan",
+    "Varun Gupta"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Washington University in St. Louis"
+      ],
+      "name": "Deniz Akturk",
+      "orcid": "https://orcid.org/0000-0002-6541-6619",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Chicago"
+      ],
+      "name": "Ozan Candogan",
+      "orcid": "https://orcid.org/0000-0003-3920-402X",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Chicago"
+      ],
+      "name": "Varun Gupta",
+      "orcid": "https://orcid.org/0000-0001-7373-1734",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "运筹优化算法非AI核心，运营管理核心议题",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "研究共享微出行系统的资源管理，将周期性重新定位、充电、补货建模为无限视界折扣马尔可夫决策过程，引入均值场近似并在站点数趋于无穷时证明渐近最优性。给出对数时间复杂度的近似最优策略算法，并通过奥斯汀滑板车数据等进行数值实验验证。",
+      "topic_tags": [
+        "算法管理",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 7,
+  "date": "2025-07",
+  "doi": "10.1287/mnsc.2022.02023",
+  "id": "p_N1_c_sz0z_jHJyFB",
+  "issue": "7",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4573,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Managing Resources for Shared Micromobility: Approximate Optimality in Large-Scale Systems",
+  "title_zh": "共享微出行资源管理：大规模系统近似最优性",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.02023",
+  "volume": "71",
+  "year": 2025
+}

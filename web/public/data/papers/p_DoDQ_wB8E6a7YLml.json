@@ -1,0 +1,65 @@
+{
+  "abstract": "As human-robot collaboration increases in the workforce, it becomes essential for human-robot teams to coordinate efficiently and intuitively. Traditional approaches for human-robot scheduling either utilize exact methods that are intractable for large-scale problems and struggle to account for stochastic, time varying human task performance, or application-specific heuristics that require expert domain knowledge to develop. We propose a deep learning-based framework, called HybridNet, combining a heterogeneous graph-based encoder with a recurrent schedule propagator for scheduling stochastic human-robot teams under upper- and lower-bound temporal constraints. The HybridNet's encoder leverages Heterogeneous Graph Attention Networks to model the initial environment and team dynamics while accounting for the constraints. By formulating task scheduling as a sequential decision-making process, the HybridNet's recurrent neural schedule propagator leverages Long Short-Term Memory (LSTM) models to propagate forward consequences of actions to carry out fast schedule generation, removing the need to interact with the environment between every task-agent pair selection. The resulting scheduling policy network provides a computationally lightweight yet highly expressive model that is end-to-end trainable via Reinforcement Learning algorithms. We develop a virtual task scheduling environment for mixed human-robot teams in a multi-round setting, capable of modeling the stochastic learning behaviors of human workers. Experimental results showed that HybridNet outperformed other human-robot scheduling solutions across problem sizes for both deterministic and stochastic human performance, with faster runtime compared to pure-GNN-based schedulers.",
+  "ai_type_tags": [
+    "深度学习",
+    "强化学习",
+    "人机交互"
+  ],
+  "arxiv_id": "2301.13279",
+  "authors": [
+    "Batuhan Altundas",
+    "Zheyuan Wang",
+    "Joshua Bishop",
+    "Matthew Gombolay"
+  ],
+  "authors_full": [
+    {
+      "name": "Batuhan Altundas"
+    },
+    {
+      "name": "Zheyuan Wang"
+    },
+    {
+      "name": "Joshua Bishop"
+    },
+    {
+      "name": "Matthew Gombolay"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "人机协作调度，直接涉及组织行为与工作场所管理",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对人机团队中大规模调度的计算效率与随机任务表现建模难题，提出HybridNet深度学习框架。框架融合异构图注意力编码器与基于LSTM的循环调度传播器，将任务调度建模为序列决策过程，在上下界时间约束下生成人机混合团队的调度策略，并通过强化学习端到端训练。",
+      "topic_tags": [
+        "人机协作",
+        "工作设计",
+        "组织变革"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-01-30",
+  "doi": "10.1109/iros47612.2022.9981748",
+  "id": "p_DoDQ_wB8E6a7YLml",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2301.13279v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8876,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning Coordination Policies over Heterogeneous Graphs for Human-Robot Teams via Recurrent Neural Schedule Propagation",
+  "title_zh": "通过循环神经网络调度传播在异构图上学习人机团队的协调策略",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2301.13279v1",
+  "volume": null,
+  "year": 2023
+}

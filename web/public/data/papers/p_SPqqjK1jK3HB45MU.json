@@ -1,0 +1,54 @@
+{
+  "abstract": "Effective skills-aware talent recommendation must balance behavioral transition patterns, trajectory-sensitive adaptation, and inspectable occupation-level criteria. Evidence from public benchmarks on how these signals interact, however, remains limited. This study proposes CF-RL-TOPSIS, an interpretable late-fusion model that integrates a transition-aware collaborative branch, a compact reinforcement-style occupation-family bandit, and an entropy-weighted TOPSIS branch constructed from six semantic proxies; the validation-selected fusion coefficients remain auditable. The model is evaluated on two frozen public ICT talent-history benchmarks, JobHop and Karrierewege, using repeated chronological top-5 ranking and paired Wilcoxon tests. On JobHop the full hybrid attains NDCG@5 = 0.3040 +/- 0.0073 and significantly surpasses repeat-last, item Markov, transition-aware collaborative filtering, the CF+TOPSIS hybrid, GRU4Rec, and SASRec (p <= 0.0039 across planned comparisons). On Karrierewege the hybrid remains competitive but does not significantly exceed the strongest Markov baseline, revealing a persistence-dominated setting in which the bandit branch appropriately shrinks to near-zero weight. Proxy-sensitivity, family-level deep Q-network, and runtime checks support this interpretation, and a worked user-level case shows how branch scores, criterion weights, and rank shifts can be inspected for an individual recommendation. The contribution is not a benchmark-agnostic superiority claim, but a reproducible account of the conditions under which transparent late fusion adds value beyond simple continuation heuristics. In semantically rich, non-saturating talent-history regimes the three branches reinforce one another; in persistence-dominated regimes the same architecture remains competitive through its collaborative backbone, with the adaptive branch correctly inactive.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "人机协作"
+  ],
+  "arxiv_id": "2605.24155",
+  "authors": [
+    "Özkan Canay"
+  ],
+  "authors_full": [
+    {
+      "name": "Özkan Canay"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "技能感知人才推荐，HR管理/OB核心议题",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究提出CF-RL-TOPSIS可解释融合模型，用于技能感知的人才推荐。该模型整合转移感知协同过滤、强化学习式职业bandit和熵加权TOPSIS分支，在JobHop数据集上NDCG@5达0.3040，显著超越多种基线方法。模型融合系数可审计，支持个体层面的分支得分、准则权重和排名变化检查。两个数据集表现差异揭示了数据特性对模型权重的影响。",
+      "topic_tags": [
+        "推荐系统",
+        "人力资源",
+        "绩效评估",
+        "组织学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-22",
+  "doi": null,
+  "id": "p_SPqqjK1jK3HB45MU",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2605.24155v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11551,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "An Interpretable CF-RL-TOPSIS Fusion Model for Skills-Aware Talent Recommendation",
+  "title_zh": "技能感知人才推荐的可解释CF-RL-TOPSIS融合模型",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2605.24155v1",
+  "volume": null,
+  "year": 2026
+}

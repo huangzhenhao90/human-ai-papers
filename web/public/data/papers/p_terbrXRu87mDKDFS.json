@@ -1,0 +1,63 @@
+{
+  "abstract": "Recently, Large Language Model (LLM)-empowered recommender systems have revolutionized personalized recommendation frameworks and attracted extensive attention. Despite the remarkable success, existing LLM-empowered RecSys have been demonstrated to be highly vulnerable to minor perturbations. To mitigate the negative impact of such vulnerabilities, one potential solution is to employ collaborative signals based on item-item co-occurrence to purify the malicious collaborative knowledge from the user's historical interactions inserted by attackers. On the other hand, due to the capabilities to expand insufficient internal knowledge of LLMs, Retrieval-Augmented Generation (RAG) techniques provide unprecedented opportunities to enhance the robustness of LLM-empowered recommender systems by introducing external collaborative knowledge. Therefore, in this paper, we propose a novel framework (RETURN) by retrieving external collaborative signals to purify the poisoned user profiles and enhance the robustness of LLM-empowered RecSys in a plug-and-play manner. Specifically, retrieval-augmented perturbation positioning is proposed to identify potential perturbations within the users' historical sequences by retrieving external knowledge from collaborative item graphs. After that, we further retrieve the collaborative knowledge to cleanse the perturbations by using either deletion or replacement strategies and introduce a robust ensemble recommendation strategy to generate final robust predictions. Extensive experiments on three real-world datasets demonstrate the effectiveness of the proposed RETURN.",
+  "ai_type_tags": [
+    "LLM",
+    "RAG",
+    "协同过滤",
+    "推荐算法"
+  ],
+  "arxiv_id": "2504.02458",
+  "authors": [
+    "Liangbo Ning",
+    "Wenqi Fan",
+    "Qing Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Liangbo Ning"
+    },
+    {
+      "name": "Wenqi Fan"
+    },
+    {
+      "name": "Qing Li"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "RAG增强的LLM推荐系统鲁棒性研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对大语言模型推荐系统易受噪声扰动攻击的问题，RETURN框架利用检索增强生成从协同物品图获取外部知识，定位用户历史序列中的潜在扰动并通过删除或替换策略净化，随后采用鲁棒集成推荐生成最终推荐。实验表明该方法显著提升系统鲁棒性。",
+      "topic_tags": [
+        "推荐系统",
+        "对抗鲁棒性",
+        "检索增强生成",
+        "大语言模型"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-04-03",
+  "doi": null,
+  "id": "p_terbrXRu87mDKDFS",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2504.02458v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9944,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Retrieval-Augmented Purifier for Robust LLM-Empowered Recommendation",
+  "title_zh": "用于鲁棒LLM推荐系统的检索增强净化器",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2504.02458v1",
+  "volume": null,
+  "year": 2025
+}

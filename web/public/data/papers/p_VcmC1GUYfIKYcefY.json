@@ -1,0 +1,60 @@
+{
+  "abstract": "The deployment of machine learning in high-stakes domains requires a balance between predictive safety and algorithmic fairness. However, existing fairness interventions often as- sume unconstrained resources and employ group-specific decision thresholds that violate anti- discrimination regulations. We introduce a post-hoc, model-agnostic threshold optimization framework that jointly balances safety, efficiency, and equity under strict and hard capacity constraints. To ensure legal compliance, the framework enforces a single, global decision thresh- old. We formulated a parameterized ethical loss function coupled with a bounded decision rule that mathematically prevents intervention volumes from exceeding the available resources. An- alytically, we prove the key properties of the deployed threshold, including local monotonicity with respect to ethical weighting and the formal identification of critical capacity regimes. We conducted extensive experimental evaluations on diverse high-stakes datasets. The principal re- sults demonstrate that capacity constraints dominate ethical priorities; the strict resource limit determines the final deployed threshold in over 80% of the tested configurations. Furthermore, under a restrictive 25% capacity limit, the proposed framework successfully maintains high risk identification (recall ranging from 0.409 to 0.702), whereas standard unconstrained fairness heuristics collapse to a near-zero utility. We conclude that theoretical fairness objectives must be explicitly subordinated to operational capacity limits to remain in deployment. By decou- pling predictive scoring from policy evaluation and strictly bounding intervention rates, this framework provides a practical and legally compliant mechanism for stakeholders to navigate unavoidable ethical trade-offs in resource-constrained environments.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法管理"
+  ],
+  "arxiv_id": "2602.22560",
+  "authors": [
+    "Moirangthem Tiken Singh",
+    "Amit Kalita",
+    "Sapam Jitu Singh"
+  ],
+  "authors_full": [
+    {
+      "name": "Moirangthem Tiken Singh"
+    },
+    {
+      "name": "Amit Kalita"
+    },
+    {
+      "name": "Sapam Jitu Singh"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法公平性ML技术，应用含招聘但非核心OB研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出在严格资源上限下对机器学习模型后验阈值进行公平优化的框架，采用单一全局阈值和伦理损失函数，理论证明其单调性与临界容量，实验显示在容量限制时该方法保持高召回率，而传统公平方法失效。",
+      "topic_tags": [
+        "公平性",
+        "算法管理",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-02-26",
+  "doi": null,
+  "id": "p_VcmC1GUYfIKYcefY",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2602.22560v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8261,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Operationalizing Fairness: Post-Hoc Threshold Optimization Under Hard Resource Limits",
+  "title_zh": "公平性的可操作性：硬性资源限制下的事后阈值优化",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2602.22560v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,69 @@
+{
+  "abstract": "Computational models are increasingly embedded in human-centered domains such as healthcare, education, workplace analytics, and digital well-being, where their predictions directly influence individual outcomes and collective welfare. In such contexts, achieving high accuracy alone is insufficient; models must also act ethically and equitably across diverse populations. However, fair AI approaches that rely on demographic attributes are impractical, as such information is often unavailable, privacy-sensitive, or restricted by regulatory frameworks. Moreover, conventional parity-based fairness approaches, while aiming for equity, can inadvertently violate core ethical principles by trading off subgroup performance or stability. To address this challenge, we present Flare (Fisher-guided LAtent-subgroup learning with do-no-harm REgularization), the first demographic-agnostic framework that aligns algorithmic fairness with ethical principles through the geometry of optimization. Flare leverages Fisher Information to regularize curvature, uncovering latent disparities in model behavior without access to demographic or sensitive attributes. By integrating representation, loss, and curvature signals, it identifies hidden performance strata and adaptively refines them through collaborative but do-no-harm optimization, enhancing each subgroup's performance while preserving global stability and ethical balance. We also introduce BHE (Beneficence-Harm Avoidance-Equity), a novel metric suite that operationalizes ethical fairness evaluation beyond statistical parity. Extensive evaluations across diverse physiological (EDA), behavioral (IHS), and clinical (OhioT1DM) datasets show that Flare consistently enhances ethical fairness compared to state-of-the-art baselines.",
+  "ai_type_tags": [
+    "机器学习",
+    "AI治理"
+  ],
+  "arxiv_id": "2603.13373",
+  "authors": [
+    "Shaily Roy",
+    "Harshit Sharma",
+    "Daniel A. Adler",
+    "Tanzeem Choudhury",
+    "Asif Salekin"
+  ],
+  "authors_full": [
+    {
+      "name": "Shaily Roy"
+    },
+    {
+      "name": "Harshit Sharma"
+    },
+    {
+      "name": "Daniel A. Adler"
+    },
+    {
+      "name": "Tanzeem Choudhury"
+    },
+    {
+      "name": "Asif Salekin"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI公平性方法论，研究场景含职场分析",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究指出嵌入医疗、教育、工作场所分析等以人为中心的领域的高精度模型，其公平性常依赖难以获取的敏感人口属性，且传统公平方法可能以牺牲子群体性能换取全局均等。针对这一挑战，提出Flare框架（Fisher引导的潜在子群学习+无害化正则化），通过Fisher信息正则化曲率，无需人口属性即可揭示模型行为中的隐性 disparity，并借助BHE（行善-避害-公平）新指标，在不降低全局稳定性的前提下自适应改善各子群体性能。",
+      "topic_tags": [
+        "公平性",
+        "算法决策",
+        "伦理",
+        "可解释AI"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-10",
+  "doi": null,
+  "id": "p_sZFURCxmpJoYE2uF",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2603.13373v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8247,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Ethical Fairness without Demographics in Human-Centered AI",
+  "title_zh": "人本AI中不依赖人口统计特征的伦理公平性",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2603.13373v2",
+  "volume": null,
+  "year": 2026
+}

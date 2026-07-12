@@ -1,0 +1,80 @@
+{
+  "abstract": "The recent rapid adoption of large language models (LLMs) highlights the critical need for benchmarking their fairness. Conventional fairness metrics, which focus on discrete accuracy-based evaluations (i.e., prediction correctness), fail to capture the implicit impact of model uncertainty (e.g., higher model confidence about one group over another despite similar accuracy). To address this limitation, we propose an uncertainty-aware fairness metric, UCerF, to enable a fine-grained evaluation of model fairness that is more reflective of the internal bias in model decisions compared to conventional fairness measures. Furthermore, observing data size, diversity, and clarity issues in current datasets, we introduce a new gender-occupation fairness evaluation dataset with 31,756 samples for co-reference resolution, offering a more diverse and suitable dataset for evaluating modern LLMs. We establish a benchmark, using our metric and dataset, and apply it to evaluate the behavior of ten open-source LLMs. For example, Mistral-7B exhibits suboptimal fairness due to high confidence in incorrect predictions, a detail overlooked by Equalized Odds but captured by UCerF. Overall, our proposed LLM benchmark, which evaluates fairness with uncertainty awareness, paves the way for developing more transparent and accountable AI systems.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习"
+  ],
+  "arxiv_id": "2505.23996",
+  "authors": [
+    "Yinong Oliver Wang",
+    "Nivedha Sivakumar",
+    "Falaah Arif Khan",
+    "Rin Metcalf Susa",
+    "Adam Golinski"
+  ],
+  "authors_full": [
+    {
+      "name": "Yinong Oliver Wang"
+    },
+    {
+      "name": "Nivedha Sivakumar"
+    },
+    {
+      "name": "Falaah Arif Khan"
+    },
+    {
+      "name": "Rin Metcalf Susa"
+    },
+    {
+      "name": "Adam Golinski"
+    },
+    {
+      "name": "Natalie Mackraz"
+    },
+    {
+      "name": "Barry-John Theobald"
+    },
+    {
+      "name": "Luca Zappella"
+    },
+    {
+      "name": "Nicholas Apostoloff"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM公平性评估，直接涉及AI偏见与组织公正议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "传统公平性指标依赖离散准确率，无法捕捉模型决策中隐含的不确定性偏差。研究提出不确定性感知的公平性度量UCerF，并构建含31756样本的性别-职业共指消解数据集，对10个开源LLM进行基准测试。例如Mistral-7B在错误预测上表现出高置信度，Equalized Odds遗漏了该问题而UCerF成功识别，为开发更透明、可信的AI系统提供新路径。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-05-29",
+  "doi": null,
+  "id": "p_pa8uFBNb7e-Eu4JD",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2505.23996v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9560,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs",
+  "title_zh": "你的模型是否公平确定？LLM的不确定性感知公平性评估",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2505.23996v1",
+  "volume": null,
+  "year": 2025
+}

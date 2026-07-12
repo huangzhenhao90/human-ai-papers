@@ -1,0 +1,69 @@
+{
+  "abstract": "Conversational Recommender Systems (CRSs) have emerged as a transformative paradigm for offering personalized recommendations through natural language dialogue. However, they face challenges with knowledge sparsity, as users often provide brief, incomplete preference statements. While recent methods have integrated external knowledge sources to mitigate this, they still struggle with semantic understanding and complex preference reasoning. Recent Large Language Models (LLMs) demonstrate promising capabilities in natural language understanding and reasoning, showing significant potential for CRSs. Nevertheless, due to the lack of domain knowledge, existing LLM-based CRSs either produce hallucinated recommendations or demand expensive domain-specific training, which largely limits their applicability. In this work, we present G-CRS (Graph Retrieval-Augmented Large Language Model for Conversational Recommender Systems), a novel training-free framework that combines graph retrieval-augmented generation and in-context learning to enhance LLMs' recommendation capabilities. Specifically, G-CRS employs a two-stage retrieve-and-recommend architecture, where a GNN-based graph reasoner first identifies candidate items, followed by Personalized PageRank exploration to jointly discover potential items and similar user interactions. These retrieved contexts are then transformed into structured prompts for LLM reasoning, enabling contextually grounded recommendations without task-specific training. Extensive experiments on two public datasets show that G-CRS achieves superior recommendation performance compared to existing methods without requiring task-specific training.",
+  "ai_type_tags": [
+    "LLM",
+    "GNN",
+    "Graph retrieval-augmented generation"
+  ],
+  "arxiv_id": "2503.06430",
+  "authors": [
+    "Zhangchi Qiu",
+    "Linhao Luo",
+    "Zicheng Zhao",
+    "Shirui Pan",
+    "Alan Wee-Chung Liew"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhangchi Qiu"
+    },
+    {
+      "name": "Linhao Luo"
+    },
+    {
+      "name": "Zicheng Zhao"
+    },
+    {
+      "name": "Shirui Pan"
+    },
+    {
+      "name": "Alan Wee-Chung Liew"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM对话推荐系统,AI核心,推荐属营销边缘",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "对话式推荐系统常因用户偏好表述简短而面临知识稀疏问题。本文提出G-CRS框架，结合图检索增强的大语言模型和上下文学习，采用GNN候选生成与个性化PageRank探索，再将检索结果转为结构化提示供LLM推理，实现无需额外训练的上下文感知推荐。",
+      "topic_tags": [
+        "推荐系统",
+        "人机交互",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-03-09",
+  "doi": null,
+  "id": "p_YfQf08ryIZBV7Bh2",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2503.06430v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9949,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Graph Retrieval-Augmented LLM for Conversational Recommendation Systems",
+  "title_zh": "图检索增强的LLM用于会话推荐系统",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2503.06430v1",
+  "volume": null,
+  "year": 2025
+}

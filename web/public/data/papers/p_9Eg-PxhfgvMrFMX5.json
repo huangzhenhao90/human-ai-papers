@@ -1,0 +1,66 @@
+{
+  "abstract": "Multi-armed bandit has been well known for its efficiency in online decision-making in terms of minimizing the loss of the participants’ welfare during experiments (i.e., the regret). In clinical trials and many other scenarios, the statistical power of inferring the treatment effects (i.e., the gaps between the mean outcomes of different arms) is also crucial. Nevertheless, minimizing the regret entails harming the statistical power of estimating the treatment effect because the observations from some arms can be limited. In this paper, we investigate the trade-off between efficiency and statistical power by casting the multi-armed bandit experimental design into a minimax multi-objective optimization problem. We introduce the concept of Pareto optimality to mathematically characterize the situation in which neither the statistical power nor the efficiency can be improved without degrading the other. We derive a useful sufficient and necessary condition for the Pareto optimal solutions to the minimax multi-objective optimization problem. Additionally, we design an effective Pareto optimal multi-armed bandit experiment that can be tailored to different levels of the trade-off between the two objectives. Moreover, we extend the design and analysis to the setting where the outcome of each arm consists of an adversarial baseline reward and a stochastic treatment effect, demonstrating the robustness of our design. Finally, motivated by clinical trials, we examine the setting where the employed experiment must split the experimental units into a small number of batches, and we propose a flexible Pareto optimal design.  This paper was accepted by George Shanthikumar, data science.  Funding: The authors thank the Massachusetts Institute of Technology (MIT)-IBM partnership in Artificial Intelligence and the MIT Data Science Laboratory for support.  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.00492 .",
+  "ai_type_tags": [
+    "多臂老虎机",
+    "机器学习"
+  ],
+  "arxiv_id": "2023.00492",
+  "authors": [
+    "David Simchi‐Levi",
+    "Chonghuan Wang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "David Simchi‐Levi",
+      "orcid": null,
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Chonghuan Wang",
+      "orcid": "https://orcid.org/0000-0003-4887-6004",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "多臂老虎机算法用于实验设计与统计推断",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究多臂老虎机实验设计中统计效力与决策效率的权衡问题，将其建模为极小极大多目标优化问题。引入帕累托最优性概念，推导出最优解的充分必要条件，设计可灵活调节两种目标权衡程度的自适应实验方案，并扩展至含对抗性基线奖励与随机治疗效应的鲁棒场景。",
+      "topic_tags": [
+        "决策",
+        "临床试验",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 3,
+  "date": "2025-06",
+  "doi": "10.1287/mnsc.2023.00492",
+  "id": "p_9Eg-PxhfgvMrFMX5",
+  "issue": "6",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4161,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Multi-armed Bandit Experimental Design: Online Decision-Making and Adaptive Inference",
+  "title_zh": "多臂老虎机实验设计：在线决策与自适应推断",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.00492",
+  "volume": "71",
+  "year": 2025
+}

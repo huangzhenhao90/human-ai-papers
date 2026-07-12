@@ -1,0 +1,77 @@
+{
+  "abstract": "The burgeoning presence of multimodal content-sharing platforms propels the development of personalized recommender systems. Previous works usually suffer from data sparsity and cold-start problems, and may fail to adequately explore semantic user-product associations from multimodal data. To address these issues, we propose a novel Multi-Modal Hypergraph Contrastive Learning (MMHCL) framework for user recommendation. For a comprehensive information exploration from user-product relations, we construct two hypergraphs, i.e. a user-to-user (u2u) hypergraph and an item-to-item (i2i) hypergraph, to mine shared preferences among users and intricate multimodal semantic resemblance among items, respectively. This process yields denser second-order semantics that are fused with first-order user-item interaction as complementary to alleviate the data sparsity issue. Then, we design a contrastive feature enhancement paradigm by applying synergistic contrastive learning. By maximizing/minimizing the mutual information between second-order (e.g. shared preference pattern for users) and first-order (information of selected items for users) embeddings of the same/different users and items, the feature distinguishability can be effectively enhanced. Compared with using sparse primary user-item interaction only, our MMHCL obtains denser second-order hypergraphs and excavates more abundant shared attributes to explore the user-product associations, which to a certain extent alleviates the problems of data sparsity and cold-start. Extensive experiments have comprehensively demonstrated the effectiveness of our method. Our code is publicly available at: https://github.com/Xu107/MMHCL.",
+  "ai_type_tags": [
+    "多模态",
+    "超图",
+    "对比学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2504.16576",
+  "authors": [
+    "Xu Guo",
+    "Tong Zhang",
+    "Fuyun Wang",
+    "Xudong Wang",
+    "Xiaoya Zhang"
+  ],
+  "authors_full": [
+    {
+      "name": "Xu Guo"
+    },
+    {
+      "name": "Tong Zhang"
+    },
+    {
+      "name": "Fuyun Wang"
+    },
+    {
+      "name": "Xudong Wang"
+    },
+    {
+      "name": "Xiaoya Zhang"
+    },
+    {
+      "name": "Xin Liu"
+    },
+    {
+      "name": "Zhen Cui"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "多模态超图对比学习推荐，非LLM/GenAI",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "提出多模态超图对比学习框架MMHCL，通过构建用户‑用户和商品‑商品两层超图捕捉二阶共享偏好和多模态语义，将其与一阶交互融合，并采用协同对比学习增强特征区分度，有效缓解推荐系统中的数据稀疏和冷启动问题。",
+      "topic_tags": [
+        "推荐系统",
+        "多模态学习",
+        "超图",
+        "对比学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-04-23",
+  "doi": null,
+  "id": "p_K5bQjkclw5BmfG3p",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2504.16576v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9937,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "MMHCL: Multi-Modal Hypergraph Contrastive Learning for Recommendation",
+  "title_zh": "MMHCL: 用于推荐的多模态超图对比学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2504.16576v1",
+  "volume": null,
+  "year": 2025
+}

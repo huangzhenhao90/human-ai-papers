@@ -1,0 +1,86 @@
+{
+  "abstract": "Policy learning using historical observational data are an important problem that has widespread applications. Examples include selecting offers, prices, or advertisements for consumers; choosing bids in contextual first-price auctions; and selecting medication based on patients’ characteristics. However, existing literature rests on the crucial assumption that the future environment where the learned policy will be deployed is the same as the past environment that has generated the data: an assumption that is often false or too coarse an approximation. In this paper, we lift this assumption and aim to learn a distributionally robust policy with incomplete observational data. We first present a policy evaluation procedure that allows us to assess how well the policy does under worst-case environment shift. We then establish a central limit theorem type guarantee for this proposed policy evaluation scheme. Leveraging this evaluation scheme, we further propose a novel learning algorithm that is able to learn a policy that is robust to adversarial perturbations and unknown covariate shifts with a performance guarantee based on the theory of uniform convergence. Finally, we empirically test the effectiveness of our proposed algorithm in synthetic datasets and demonstrate that it provides the robustness that is missing using standard policy learning algorithms. We conclude the paper by providing a comprehensive application of our methods in the context of a real-world voting data set. This paper was accepted by Hamid Nazerzadeh, data science. Funding: This work was supported by the National Science Foundation [Grant CCF-2106508] and the Air Force Office of Scientific Research [Award FA9550-20-1-0397]. Z. Zhou also gratefully acknowledges the JP Morgan AI Research Grant and the New York University’s Center for Global Economy and Business faculty research grant for support on this work. Additional support is gratefully acknowledged from the National Science Foundation [Grants 1915967 and 2118199]. Supplemental Material: The data files and online appendix are available at https://doi.org/10.1287/mnsc.2023.4678 .",
+  "ai_type_tags": [
+    "机器学习",
+    "强化学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2023.4678",
+  "authors": [
+    "Nian Si",
+    "Fan Zhang",
+    "Zhengyuan Zhou",
+    "José Blanchet"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Stanford University"
+      ],
+      "name": "Nian Si",
+      "orcid": "https://orcid.org/0000-0002-4730-543X",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Stanford University"
+      ],
+      "name": "Fan Zhang",
+      "orcid": "https://orcid.org/0000-0001-6735-4901",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "New York University"
+      ],
+      "name": "Zhengyuan Zhou",
+      "orcid": "https://orcid.org/0000-0002-0005-9411",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Stanford University"
+      ],
+      "name": "José Blanchet",
+      "orcid": "https://orcid.org/0000-0001-5895-0912",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "分布式鲁棒上下文赌博机算法，AI/机器学习核心方法，应用于运营管理",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究提出在历史观测数据下进行分布鲁棒策略学习的框架，能够在环境分布漂移、对抗扰动和协变量偏移下评估并学习稳健策略，给出中心极限定理型保证和均匀收敛的学习算法；在合成数据和真实投票数据上的实验验证了该方法的有效性。",
+      "topic_tags": [
+        "算法决策",
+        "推荐系统",
+        "强化学习",
+        "稳健优化"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 16,
+  "date": "2023-10",
+  "doi": "10.1287/mnsc.2023.4678",
+  "id": "p_FC0YNjV5irFzM7_g",
+  "issue": "10",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3237,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Distributionally Robust Batch Contextual Bandits",
+  "title_zh": "分布鲁棒批量上下文赌博机",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4678",
+  "volume": "69",
+  "year": 2023
+}

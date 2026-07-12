@@ -1,0 +1,58 @@
+{
+  "abstract": "Predicting human trust in AI systems is crucial for safe integration of AI-based decision support tools, especially in healthcare. This study proposes a multi-modal machine learning framework that combines image and galvanic skin response (GSR) data to predict early user trust in AI- or human-generated recommendations in a simulated ADHD mHealth context. Facial video data were processed using OpenCV for frame extraction and transferred learning with a pre-trained transformer model to derive emotional features. Concurrently, GSR signals were decomposed into tonic and phasic components to capture physiological arousal patterns. Two temporal windows were defined for trust prediction: the Early Detection Window (6 to 3 seconds before decision-making) and the Proximal Detection Window (3 to 0 seconds before decision-making). For each window, trust prediction was conducted separately using image-based, GSR-based, and multimodal (image + GSR) features. Each modality was analyzed using machine learning algorithms, and the top-performing unimodal models were integrated through a multimodal stacking ensemble for final prediction. Experimental results showed that combining facial and physiological cues significantly improved prediction performance. The multimodal stacking framework achieved an accuracy of 0.83, F1-score of 0.88, and ROC-AUC of 0.87 in the Early Detection Window, and an accuracy of 0.75, F1-score of 0.82, and ROC-AUC of 0.66 in the Proximal Detection Window. These results demonstrate the potential of bio signals as real-time, objective markers of user trust, enabling adaptive AI systems that dynamically adjust their responses to maintain calibrated trust which is a critical capability in mental health applications where mis-calibrated trust can affect diagnostic and treatment outcomes.",
+  "ai_type_tags": [
+    "多模态",
+    "机器学习",
+    "图像识别"
+  ],
+  "arxiv_id": "2511.21908",
+  "authors": [
+    "Hamid Shamszare",
+    "Avishek Choudhury"
+  ],
+  "authors_full": [
+    {
+      "name": "Hamid Shamszare"
+    },
+    {
+      "name": "Avishek Choudhury"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "信任预测是OB核心议题，多模态ML框架为核心AI技术",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "本研究构建多模态机器学习框架，融合面部表情与皮肤电反应信号，预测用户在ADHD移动健康场景中对AI或人类推荐决策的早期信任。通过早期与近端时间窗口的图像、GSR及融合特征，采用堆叠集成模型，实现最高0.83准确率、0.88 F1和0.87 AUC。",
+      "topic_tags": [
+        "信任",
+        "人机交互",
+        "多模态",
+        "医疗AI"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-26",
+  "doi": null,
+  "id": "p_R5lFNlqnV03EEocd",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2511.21908v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10285,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Multi-Modal Machine Learning for Early Trust Prediction in Human-AI Interaction Using Face Image and GSR Bio Signals",
+  "title_zh": "多模态机器学习：利用面部图像和 GSR 生物信号预测人机交互中的早期信任",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.21908v2",
+  "volume": null,
+  "year": 2025
+}

@@ -1,0 +1,96 @@
+{
+  "abstract": "Motivated by the human-machine interaction such as recommending videos for improving customer engagement, we study human-guided human-machine interaction for decision making with private information. We model this interaction as a two-player turn-based game, where one player (Bob, a human) guides the other player (Alice, a machine) toward a common goal. Specifically, we focus on offline reinforcement learning (RL) in this game, where the goal is to find a policy pair for Alice and Bob that maximizes their expected total rewards based on an offline data set collected a priori. The offline setting presents two challenges: (i) We cannot collect Bob’s private information, leading to a confounding bias when using standard RL methods, and (ii) there is a distributional mismatch between the behavior policy used to collect data and the desired optimal policy we aim to learn. To tackle the confounding bias, we treat Bob’s previous action as an instrumental variable for Alice’s current decision making to adjust for the unmeasured confounding. We establish a novel identification result and propose a new off-policy evaluation (OPE) method for evaluating policy pairs in this two-player turn-based game. To tackle the distributional mismatch, we leverage the idea of pessimism and use our OPE method to develop an off-policy policy learning algorithm for finding a desirable policy pair for both Alice and Bob. Moreover, we prove that under some technical assumptions, the policy pair obtained through our method converges to the optimal one at a satisfactory rate. Finally, we conduct a simulation study to demonstrate the performance of the proposed method.\n                  This paper was accepted by Nicolas Stier, Special Issue on the Human-Algorithm Connection.\n                  Funding: L. Wang’s research is partially supported by the National Science Foundation [Grant FRGMS-1952373].\n                  Supplemental Material: The online appendices and data files are available at https://doi.org/10.1287/mnsc.2022.04112 .",
+  "ai_type_tags": [
+    "机器学习",
+    "人机交互",
+    "算法决策"
+  ],
+  "arxiv_id": "2022.04112",
+  "authors": [
+    "Zuyue Fu",
+    "Zhengling Qi",
+    "Zhuoran Yang",
+    "Zhaoran Wang",
+    "Lan Wang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Northwestern University"
+      ],
+      "name": "Zuyue Fu",
+      "orcid": "https://orcid.org/0009-0003-9217-543X",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "George Washington University",
+        "Decision Sciences (United States)"
+      ],
+      "name": "Zhengling Qi",
+      "orcid": "https://orcid.org/0000-0003-0270-7969",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Yale University"
+      ],
+      "name": "Zhuoran Yang",
+      "orcid": "https://orcid.org/0000-0001-5269-9958",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Northwestern University"
+      ],
+      "name": "Zhaoran Wang",
+      "orcid": "https://orcid.org/0000-0002-6617-4842",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Miami"
+      ],
+      "name": "Lan Wang",
+      "orcid": "https://orcid.org/0000-0002-3217-0202",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "离线强化学习驱动的智能人机交互研究，核心为AI决策",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究人机交互中人引导机器的离线强化学习方法。将Bob的前一动作作工具变量校正未测混杂，建立新颖的识别与离策略评估算法，并在悲观原则下实现双人回合博弈的最优策略对学习。",
+      "topic_tags": [
+        "决策",
+        "人机协作",
+        "算法管理",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 1,
+  "date": "2026-01",
+  "doi": "10.1287/mnsc.2022.04112",
+  "id": "p_qJsMy5fhDbjqs3kd",
+  "issue": "1",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3953,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Offline Reinforcement Learning for Human-Guided Human-Machine Interaction with Private Information",
+  "title_zh": "离线强化学习用于人类引导的人机交互且包含私密信息",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.04112",
+  "volume": "72",
+  "year": 2026
+}

@@ -1,0 +1,73 @@
+{
+  "abstract": "Predicting rare outcomes such as startup success is central to venture capital, demanding models that are both accurate and interpretable. We introduce Random Rule Forest (RRF), a lightweight ensemble method that uses a large language model (LLM) to generate simple YES/NO questions in natural language. Each question functions as a weak learner, and their responses are combined using a threshold-based voting rule to form a strong, interpretable predictor.   Applied to a dataset of 9,892 founders, RRF achieves a 6.9x improvement over a random baseline on held-out data; adding expert-crafted questions lifts this to 8x and highlights the value of human-LLM collaboration. Compared with zero- and few-shot baselines across three LLM architectures, RRF attains an F0.5 of 0.121, versus 0.086 for the best baseline (+0.035 absolute, +41% relative). By combining the creativity of LLMs with the rigor of ensemble learning, RRF delivers interpretable, high-precision predictions suitable for decision-making in high-stakes domains.",
+  "ai_type_tags": [
+    "LLM",
+    "生成式AI",
+    "可解释AI"
+  ],
+  "arxiv_id": "2505.24622",
+  "authors": [
+    "Ben Griffin",
+    "Diego Vidaurre",
+    "Ugur Koyluoglu",
+    "Joseph Ternasky",
+    "Fuat Alican"
+  ],
+  "authors_full": [
+    {
+      "name": "Ben Griffin"
+    },
+    {
+      "name": "Diego Vidaurre"
+    },
+    {
+      "name": "Ugur Koyluoglu"
+    },
+    {
+      "name": "Joseph Ternasky"
+    },
+    {
+      "name": "Fuat Alican"
+    },
+    {
+      "name": "Yigit Ihlamur"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM生成规则预测创业成功，创业管理领域强相关",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "预测创业成功率在风险投资中关键。随机规则森林(RRF)利用大语言模型生成自然语言是/否问题作为弱学习器，通过阈值投票形成可解释的强预测器。在9892创始人数据上，RRF相对随机基线提升6.9倍，融合专家问题进一步提升至8倍，兼顾精度与解释性，适用于高风险决策。",
+      "topic_tags": [
+        "创业",
+        "预测",
+        "可解释AI",
+        "投资决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-05-30",
+  "doi": null,
+  "id": "p_AnAzIw9jwIqWJDpU",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2505.24622v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9927,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Random Rule Forest (RRF): Interpretable Ensembles of LLM-Generated Questions for Predicting Startup Success",
+  "title_zh": "Random Rule Forest (RRF): 基于LLM生成问题的可解释集成方法预测创业成功率",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2505.24622v2",
+  "volume": null,
+  "year": 2025
+}

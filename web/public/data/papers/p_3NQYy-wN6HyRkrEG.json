@@ -1,0 +1,85 @@
+{
+  "abstract": "This paper proposes a framework for learning the most concise Markov decision process (MDP) model of a continuous state-space dynamic system from observed transition data. This setting is encountered in numerous important applications, such as patient treatment, online advertising, recommender systems, and estimation of treatment effects in econometrics. Most existing methods in offline reinforcement learning construct functional approximations of the value or the transition and reward functions, requiring complex and often not interpretable function approximators. Our approach instead relies on partitioning the system’s observation space into regions constituting states of a finite MDP representing the system. We discuss the theoretically minimal MDP representation that preserves the values and, therefore, the optimal policy of the dynamic system—in a sense, the optimal discretization. We formally define the problem of learning such a concise representation from transition data without exploration. Learning such a representation allows for enhanced tractability and, importantly, provides interpretability. To solve this problem, we introduce an in-sample property on partitions of the observation space we name coherence, and we show that if the class of possible partitions is of finite Vapnik-Chervonenkis dimension, any coherent partition with the transition data converges to the minimal representation of the system with provable finite-sample probably approximately correct convergence guarantees. This insight motivates our minimal representation learning algorithm that constructs from transition data an MDP representation that approximates the minimal representation of the system. We illustrate the effectiveness of the proposed framework through numerical experiments in both deterministic and stochastic environments as well as with real data.  This paper was accepted by Chung Piaw Teo, optimization.  Funding: The authors are very grateful to the Health Systems Initiative at MIT Sloan for financial support for this project.  Supplemental Material: The online appendix is available at https://doi.org/10.1287/mnsc.2022.01652 .",
+  "ai_type_tags": [
+    "强化学习",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2022.01652",
+  "authors": [
+    "Mohammed Amine Bennouna",
+    "Dessislava A. Pachamanova",
+    "Georgia Perakis",
+    "Omar Skali Lami"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Mohammed Amine Bennouna",
+      "orcid": "https://orcid.org/0000-0002-9123-8588",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Babson College"
+      ],
+      "name": "Dessislava A. Pachamanova",
+      "orcid": "https://orcid.org/0000-0002-1373-1553",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Georgia Perakis",
+      "orcid": "https://orcid.org/0000-0002-0888-9030",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Omar Skali Lami",
+      "orcid": "https://orcid.org/0000-0002-8208-3035",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "离线强化学习MDP属AI核心领域",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究如何从连续状态空间动态系统的观测转移数据中学习最简洁的马尔可夫决策过程（MDP）模型。传统离线强化学习方法依赖复杂函数近似，缺乏可解释性。该研究通过将观测空间划分为有限区域构成状态，建立保持最优策略的最小MDP表示。提出连贯性（coherence）概念，证明当分区类具有有限VC维时，任何与数据一致的连贯分区在有限样本下能收敛到系统最小表示。该方法增强了可追溯性和可解释性，适用于患者治疗、推荐系统等场景。",
+      "topic_tags": [
+        "决策",
+        "算法决策",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 2,
+  "date": "2025-06",
+  "doi": "10.1287/mnsc.2022.01652",
+  "id": "p_3NQYy-wN6HyRkrEG",
+  "issue": "6",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4203,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning the Minimal Representation of a Continuous State-Space Markov Decision Process from Transition Data",
+  "title_zh": "从转移数据学习连续状态空间马尔可夫决策过程的最小表示",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.01652",
+  "volume": "71",
+  "year": 2025
+}

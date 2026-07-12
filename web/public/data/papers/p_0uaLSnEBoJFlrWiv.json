@@ -1,0 +1,102 @@
+{
+  "abstract": "We investigate a data-driven multiperiod inventory replenishment problem with uncertain demand and vendor lead time (VLT) with accessibility to a large quantity of historical data. Different from the traditional two-step predict-then-optimize (PTO) solution framework, we propose a one-step end-to-end (E2E) framework that uses deep learning models to output the suggested replenishment amount directly from input features without any intermediate step. The E2E model is trained to capture the behavior of the optimal dynamic programming solution under historical observations without any prior assumptions on the distributions of the demand and the VLT. By conducting a series of thorough numerical experiments using real data from one of the leading e-commerce companies, we demonstrate the advantages of the proposed E2E model over conventional PTO frameworks. We also conduct a field experiment with JD.com, and the results show that our new algorithm reduces holding cost, stockout cost, total inventory cost, and turnover rate substantially compared with JD’s current practice. For the supply chain management industry, our E2E model shortens the decision process and provides an automatic inventory management solution with the possibility to generalize and scale. The concept of E2E, which uses the input information directly for the ultimate goal, can also be useful in practice for other supply chain management circumstances.This paper was accepted by Hamid Nazerzadeh, big data analytics.Funding: This research was supported by the National Key Research and Development Program of China [Grant 2018YFB1700600] and National Natural Science Foundation of China [Grants 71991462 and 91746210].Supplemental Material: The online data are available at https://doi.org/10.1287/mnsc.2022.4564 .",
+  "ai_type_tags": [
+    "深度学习",
+    "机器学习"
+  ],
+  "arxiv_id": "2022.4564",
+  "authors": [
+    "Meng Qi",
+    "Yuanyuan Shi",
+    "Yongzhi Qi",
+    "Chenxin Ma",
+    "Rong Yuan"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "SC Johnson College of Business, Cornell University, Ithaca, New York 14853;"
+      ],
+      "name": "Meng Qi",
+      "orcid": "https://orcid.org/0000-0002-0984-4846"
+    },
+    {
+      "affiliation": [
+        "Department of Electrical and Computer Engineering, University of California–San Diego, San Diego, California 92161;"
+      ],
+      "name": "Yuanyuan Shi",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "JD.com Smart Supply Chain Y, Mountain View, California 94043;"
+      ],
+      "name": "Yongzhi Qi",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "JD.com Silicon Valley Research Center, Mountain View, California 94043;"
+      ],
+      "name": "Chenxin Ma",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "JD.com Silicon Valley Research Center, Mountain View, California 94043;"
+      ],
+      "name": "Rong Yuan",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "JD.com Silicon Valley Research Center, Mountain View, California 94043;"
+      ],
+      "name": "Di Wu",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "SC Johnson College of Business, Cornell University, Ithaca, New York 14853;"
+      ],
+      "name": "Zuo-Jun (Max) Shen",
+      "orcid": "https://orcid.org/0000-0003-4538-8312"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "深度学习用于库存管理;无AI核心议题;运筹管理",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "提出端到端深度学习库存管理模型，替代传统\"预测-优化\"两阶段框架，直接从输入特征输出补货建议。在京东真实数据验证，并开展现场实验。核心发现：新算法显著降低持有成本、缺货成本、总库存成本及周转率，验证了端到端框架在供应链管理中的实用价值。",
+      "topic_tags": [
+        "运营管理",
+        "供应链",
+        "绩效评估"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 131,
+  "date": "2023-02",
+  "doi": "10.1287/mnsc.2022.4564",
+  "id": "p_0uaLSnEBoJFlrWiv",
+  "issue": "2",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3532,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "A Practical End-to-End Inventory Management Model with Deep Learning",
+  "title_zh": "基于深度学习的实用端到端库存管理模型",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.4564",
+  "volume": "69",
+  "year": 2023
+}

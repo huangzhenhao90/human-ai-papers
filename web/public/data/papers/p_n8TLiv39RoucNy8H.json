@@ -1,0 +1,63 @@
+{
+  "abstract": "We consider small-data, large-scale decision problems in which a firm must make many operational decisions simultaneously (e.g., across a large product portfolio) while observing only a few, potentially noisy, data points per instance. Inspired by the success of large language models (LLMs), we propose a pretrain-then-finetune approach built on a designed Transformer model to address this challenge. The model is first pretrained on large-scale, domain-informed synthetic data that encode managerial knowledge and structural features of the decision environment, and is then fine-tuned on real observations. This new pipeline offers two complementary advantages: pretraining injects domain knowledge into the learning process and enables the training of high-capacity models using abundant synthetic data, while finetuning adapts the pretrained model to the operational environment and improves alignment with the true data-generating regime. While we have leveraged the Transformer's state-of-the-art representational capacity, particularly its attention mechanism, to efficiently extract cross-task structure, our approach is not an off-the-shelf application. Instead, it relies on problem-specific architectural design and a tailored training procedure to match the decision setting. Theoretically, we develop the first comprehensive error analysis regarding Transformer learning in relevant contexts, establishing nonasymptotic guarantees that validate the method's effectiveness. Critically, our analysis reveals how pretraining and fine-tuning jointly determine performance, with the dominant contribution governed by whichever is more favorable. In particular, finetuning exhibits an economies-of-scale effect, whereby transfer learning becomes increasingly effective as the number of instances grows.",
+  "ai_type_tags": [
+    "机器学习",
+    "LLM"
+  ],
+  "arxiv_id": "2602.03690",
+  "authors": [
+    "Zishi Zhang",
+    "Jinhui Han",
+    "Ming Hu",
+    "Yijie Peng"
+  ],
+  "authors_full": [
+    {
+      "name": "Zishi Zhang"
+    },
+    {
+      "name": "Jinhui Han"
+    },
+    {
+      "name": "Ming Hu"
+    },
+    {
+      "name": "Yijie Peng"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM-inspired transformer用于决策优化;运筹学/管理科学边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对小样本、大规模决策难题，提出基于Transformer的预训练-微调方法：用编码管理知识和结构特征的合成数据进行大规模预训练，再在真实观察上微调，实现领域知识注入与数据对齐的互补优势。同时建立了Transformer在此类决策场景下的首个非渐近误差界，理论上验证方法有效性。",
+      "topic_tags": [
+        "算法决策",
+        "组织学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-02-03",
+  "doi": null,
+  "id": "p_n8TLiv39RoucNy8H",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2602.03690v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9421,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "LLM-Inspired Pretrain-Then-Finetune for Small-Data, Large-Scale Optimization",
+  "title_zh": "受 LLM 启发的预训练后微调：小数据大规模优化方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2602.03690v1",
+  "volume": null,
+  "year": 2026
+}

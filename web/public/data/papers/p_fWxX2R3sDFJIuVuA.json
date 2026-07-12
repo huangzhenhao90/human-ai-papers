@@ -1,0 +1,67 @@
+{
+  "abstract": "Motivated by a long-standing gap between inventory theory and practice, we study online inventory models with unknown cyclic demand distributions. We design provably efficient reinforcement learning (RL) algorithms that leverage the structure of inventory problems to achieve optimal theoretical guarantees that surpass existing results. We apply the standard performance measure in online learning literature, regret, which is defined as the difference between the total expected cost of our policy and the total expected cost of the clairvoyant optimal policy that has full knowledge of the demand distributions a priori. This paper analyzes, in the presence of unknown cyclic demands, both the lost-sales model with zero lead time and the multiproduct backlogging model with positive lead times, fixed joint-ordering costs and order limits. For both models, we first introduce episodic models where inventory is discarded at the end of every cycle, and then build upon these results to analyze the nondiscarding models. Our RL policies HQL and FQL achieve [Formula: see text] regret for the episodic lost-sales model and the episodic multiproduct backlogging model, matching the regret lower bound that we prove in this paper. For the nondiscarding models, we construct a bandit learning algorithm on top that governs multiple copies of the previous RL algorithms, named Meta-HQL. Meta-HQL achieves [Formula: see text] regret for the nondiscarding lost-sales model with zero lead time, again matching the regret lower bound. For the nondiscarding multiproduct backlogging model, our policy Mimic-QL achieves [Formula: see text] regret. Our policies remove the regret dependence on the cardinality of the state-action space for inventory problems, which is an improvement over existing RL algorithms. We conducted experiments with a real sales data set from Rossmann, one of the largest drugstore chains in Europe, and also with a synthetic data set. For both sets of experiments, our policy converges rapidly to the optimal policy and dramatically outperforms the best policy that models demand as independent and identically distributed instead of cyclic.  This paper was accepted by J. George Shanthikumar, data science.  Funding: X.-Y. Gong was partially supported by an Accenture Fellowship. The work of X.-Y. Gong and D. Simchi-Levi was partially supported by the MIT Data Science Lab.  Supplemental Material: The data and online appendices are available at https://doi.org/10.1287/mnsc.2023.4947 .",
+  "ai_type_tags": [
+    "强化学习",
+    "算法决策",
+    "机器学习"
+  ],
+  "arxiv_id": "2023.4947",
+  "authors": [
+    "X. H. Gong",
+    "David Simchi‐Levi"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Carnegie Mellon University"
+      ],
+      "name": "X. H. Gong",
+      "orcid": "https://orcid.org/0000-0002-4647-3941",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "David Simchi‐Levi",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "使用强化学习算法处理库存问题，AI为核心工具",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究面向未知周期需求分布的在线库存问题，设计高效强化学习算法。提出HQL、FQL及Meta-HQL算法，分别处理周期内丢弃与非丢弃的缺货模型与多产品积压模型。通过 regret 指标验证，算法实现了与理论下界匹配的最优 regret 界，显著优于现有结果。",
+      "topic_tags": [
+        "算法管理",
+        "决策",
+        "运营管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 13,
+  "date": "2023-10-26",
+  "doi": "10.1287/mnsc.2023.4947",
+  "id": "p_fWxX2R3sDFJIuVuA",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4000,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Bandits atop Reinforcement Learning: Tackling Online Inventory Models with Cyclic Demands",
+  "title_zh": "强化学习框架下的多臂老虎机：应对周期性需求的在线库存模型",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4947",
+  "volume": null,
+  "year": 2023
+}

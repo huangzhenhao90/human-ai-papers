@@ -1,0 +1,68 @@
+{
+  "abstract": "Decision makers often simultaneously face many related but heterogeneous learning problems. For instance, a large retailer may wish to learn product demand at different stores to solve pricing or inventory problems, making it desirable to learn jointly for stores serving similar customers; alternatively, a hospital network may wish to learn patient risk at different providers to allocate personalized interventions, making it desirable to learn jointly for hospitals serving similar patient populations. Motivated by real data sets, we study a natural setting where the unknown parameter in each learning instance can be decomposed into a shared global parameter plus a sparse instance-specific term. We propose a novel two-stage multitask learning estimator that exploits this structure in a sample-efficient way, using a unique combination of robust statistics (to learn across similar instances) and LASSO regression (to debias the results). Our estimator yields improved sample complexity bounds in the feature dimension d relative to commonly employed estimators; this improvement is exponential for “data-poor” instances, which benefit the most from multitask learning. We illustrate the utility of these results for online learning by embedding our multitask estimator within simultaneous contextual bandit algorithms. We specify a dynamic calibration of our estimator to appropriately balance the bias-variance trade-off over time, improving the resulting regret bounds in the context dimension d. Finally, we illustrate the value of our approach on synthetic and real data sets.  This paper was accepted by J. George Shanthikumar, data science.  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.00490 .",
+  "ai_type_tags": [
+    "Multi-task Learning",
+    "Robust Statistics",
+    "LASSO",
+    "Bandits"
+  ],
+  "arxiv_id": "2022.00490",
+  "authors": [
+    "Kan Xu",
+    "Hamsa Bastani"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Arizona State University"
+      ],
+      "name": "Kan Xu",
+      "orcid": "https://orcid.org/0000-0001-8738-6564",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Pennsylvania"
+      ],
+      "name": "Hamsa Bastani",
+      "orcid": "https://orcid.org/0000-0002-8793-4732",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "多任务学习与强盗算法的鲁棒统计方法，属于AI/机器学习，应用于零售医疗",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究多任务学习中每个任务参数可分解为全局共享加稀疏专有两部分，提出结合稳健统计与LASSO的两阶段估计器，显著提升特征维度的样本复杂度，并嵌入上下文老虎机算法以改善遗憾界。",
+      "topic_tags": [
+        "多任务学习",
+        "机器学习",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 5,
+  "date": "2025-09",
+  "doi": "10.1287/mnsc.2022.00490",
+  "id": "p_IFabh8bKT4uPsWMm",
+  "issue": "9",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3694,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Multitask Learning and Bandits via Robust Statistics",
+  "title_zh": "基于稳健统计的多任务学习与多臂老虎机",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.00490",
+  "volume": "71",
+  "year": 2025
+}

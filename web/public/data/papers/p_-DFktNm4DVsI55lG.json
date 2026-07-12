@@ -1,0 +1,112 @@
+{
+  "abstract": "High-value payment systems (HVPSs) are typically liquidity intensive because payments are settled on a gross basis. State-of-the-art solutions to this problem include algorithms that seek netting sets and allow for ad hoc reordering of submitted payments. This paper introduces a new algorithm that explores the entire space of payments reordering to improve the liquidity efficiency of these systems without significantly increasing payment delays. Finding the optimal payment order among the entire space of reorderings is, however, an NP-hard combinatorial optimization problem. We solve this problem using a hybrid quantum annealing algorithm. Despite the limitations in size and speed of today’s quantum computers, our algorithm provides quantifiable liquidity savings when applied to the Canadian HVPS using a 30-day sample of transaction data. By reordering batches of 70 payments, we achieve an average of Canadian (C) $240 million in daily liquidity savings, with a settlement delay of approximately 90 seconds. For a few days in the sample, the liquidity savings exceed C$1 billion. Compared with classical computing and with current algorithms in HVPS, our quantum algorithm offers larger liquidity savings, and it offers more reliable and consistent solutions, particularly under time constraints.  This paper was accepted by Chung Piaw Teo, optimization.  Supplemental Material: The data files are available at https://doi.org/10.1287/mnsc.2023.00314 .",
+  "ai_type_tags": [
+    "量子计算",
+    "优化"
+  ],
+  "arxiv_id": "2023.00314",
+  "authors": [
+    "Christopher McMahon",
+    "Donald McGillivray",
+    "Ajit Desai",
+    "Francisco Rivadeneyra",
+    "Jean-Paul Lam"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [],
+      "name": "Christopher McMahon",
+      "orcid": "https://orcid.org/0000-0001-7802-3016",
+      "position": "first"
+    },
+    {
+      "affiliation": [],
+      "name": "Donald McGillivray",
+      "orcid": "https://orcid.org/0000-0002-2907-6143",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Bank of Canada"
+      ],
+      "name": "Ajit Desai",
+      "orcid": "https://orcid.org/0000-0001-7098-3186",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Bank of Canada"
+      ],
+      "name": "Francisco Rivadeneyra",
+      "orcid": "https://orcid.org/0000-0003-1423-0467",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Waterloo"
+      ],
+      "name": "Jean-Paul Lam",
+      "orcid": "https://orcid.org/0000-0002-7131-8636",
+      "position": "middle"
+    },
+    {
+      "affiliation": [],
+      "name": "Thomas Lo",
+      "orcid": "https://orcid.org/0000-0001-5764-9749",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Bank of Canada"
+      ],
+      "name": "Danica Marsden",
+      "orcid": "https://orcid.org/0000-0002-3807-6559",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Bank of Canada"
+      ],
+      "name": "Vladimir Skavysh",
+      "orcid": "https://orcid.org/0000-0002-1856-2963",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "使用量子退火算法优化支付系统，涉及AI相关计算方法但非核心AI议题。",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "大额支付系统因逐笔结算而流动性占用高，当前算法只能局部搜索网络结构。本文提出在全排列空间探索支付重排序的混合量子退火算法，在保持结算时延约90秒的前提下，为加拿大系统70笔支付批次实现平均每日2.4亿加元流动资金节省，峰值超10亿加元，显著优于经典和现有算法，尤其在时间约束下更稳健。",
+      "topic_tags": [
+        "金融",
+        "支付系统",
+        "量子计算",
+        "优化"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 5,
+  "date": "2024-10",
+  "doi": "10.1287/mnsc.2023.00314",
+  "id": "p_-DFktNm4DVsI55lG",
+  "issue": "10",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4131,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Improving the Efficiency of Payments Systems Using Quantum Computing",
+  "title_zh": "利用量子计算提升支付系统效率",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.00314",
+  "volume": "70",
+  "year": 2024
+}

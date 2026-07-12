@@ -1,0 +1,78 @@
+{
+  "abstract": "Motivated by operations research applications, such as inventory control and real-time bidding, we consider undiscounted reinforcement learning in Markov decision processes under model uncertainty and temporal drifts. In this setting, both the latent reward and state transition distributions are allowed to evolve over time, as long as their respective total variations, quantified by suitable metrics, do not exceed certain variation budgets. We first develop the sliding window upper confidence bound for reinforcement learning with confidence-widening (SWUCRL2-CW) algorithm and establish its dynamic regret bound when the variation budgets are known. In addition, we propose the bandit-over-reinforcement learning algorithm to adaptively tune the SWUCRL2-CW algorithm to achieve the same dynamic regret bound but in a parameter-free manner (i.e., without knowing the variation budgets). Finally, we conduct numerical experiments to show that our proposed algorithms achieve superior empirical performance compared with existing algorithms. Notably, under nonstationarity, historical data samples may falsely indicate that state transition rarely happens. This thus presents a significant challenge when one tries to apply the conventional optimism in the face of uncertainty principle to achieve a low dynamic regret bound. We overcome this challenge by proposing a novel confidence-widening technique that incorporates additional optimism into our learning algorithms. To extend our theoretical findings, we demonstrate, in the context of single-item inventory control with lost sales, fixed cost, and zero lead time, how one can leverage special structures on the state transition distributions to achieve improved dynamic regret bound in time-varying demand environments.  This paper was accepted by J. George Shanthikumar, data science.  Funding: The authors acknowledge support from the Massachusetts Institute of Technology (MIT) Data Science Laboratory and the MIT–IBM partnership in artificial intelligence. W. C. Cheung acknowledges support from the Singapore Ministry of Education [Tier 2 Grant MOE-T2EP20121-0012].  Supplemental Material: The data files and online appendix are available at https://doi.org/10.1287/mnsc.2023.4704 .",
+  "ai_type_tags": [
+    "强化学习",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2023.4704",
+  "authors": [
+    "Wang Chi Cheung",
+    "David Simchi‐Levi",
+    "Ruihao Zhu"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "National University of Singapore"
+      ],
+      "name": "Wang Chi Cheung",
+      "orcid": "https://orcid.org/0000-0001-9380-5673",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "David Simchi‐Levi",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Cornell University",
+        "SC Johnson (United States)"
+      ],
+      "name": "Ruihao Zhu",
+      "orcid": "https://orcid.org/0000-0003-1463-1308",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "强化学习核心AI算法，应用于运筹学",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究在奖励与状态转移随时间漂移的非平稳马尔可夫决策过程下，如何实现低动态遗憾的强化学习。提出滑动窗口上置信界结合置信扩张的SWUCRL2‑CW算法，并设计自适应调参的Bandit‑over‑RL方案，实现无需预知变化预算即可获得最优 regret。实验验证该算法在非平稳环境下显著优于传统方法。",
+      "topic_tags": [
+        "决策",
+        "算法管理",
+        "机器学习",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 32,
+  "date": "2023-10",
+  "doi": "10.1287/mnsc.2023.4704",
+  "id": "p_px_8Bhj3Y7Yf9hjW",
+  "issue": "10",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4142,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Nonstationary Reinforcement Learning: The Blessing of (More) Optimism",
+  "title_zh": "非平稳强化学习：更乐观的机遇",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4704",
+  "volume": "69",
+  "year": 2023
+}

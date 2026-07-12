@@ -1,0 +1,58 @@
+{
+  "abstract": "A main research goal in various studies is to use an observational data set and provide a new set of counterfactual guidelines that can yield causal improvements. Dynamic Treatment Regimes (DTRs) are widely studied to formalize this process and enable researchers to find guidelines that are both personalized and dynamic. However, available methods in finding optimal DTRs often rely on assumptions that are violated in real-world applications (e.g., medical decision making or public policy), especially when (a) the existence of unobserved confounders cannot be ignored, and (b) the unobserved confounders are time varying (e.g., affected by previous actions). When such assumptions are violated, one often faces ambiguity regarding the underlying causal model that is needed to be assumed to obtain an optimal DTR. This ambiguity is inevitable because the dynamics of unobserved confounders and their causal impact on the observed part of the data cannot be understood from the observed data. Motivated by a case study of finding superior treatment regimes for patients who underwent transplantation in our partner hospital (Mayo Clinic) and faced a medical condition known as new-onset diabetes after transplantation, we extend DTRs to a new class termed Ambiguous Dynamic Treatment Regimes (ADTRs), in which the causal impact of treatment regimes is evaluated based on a “cloud” of potential causal models. We then connect ADTRs to Ambiguous Partially Observable Markov Decision Processes (APOMDPs) proposed by Saghafian (2018) , and consider unobserved confounders as latent variables but with ambiguous dynamics and causal effects on observed variables. Using this connection, we develop two reinforcement learning methods termed Direct Augmented V-Learning (DAV-Learning) and Safe Augmented V-Learning (SAV-Learning), which enable using the observed data to effectively learn an optimal treatment regime. We establish theoretical results for these learning methods, including (weak) consistency and asymptotic normality. We further evaluate the performance of these learning methods both in our case study (using clinical data) and in simulation experiments (using synthetic data). We find promising results for our proposed approaches, showing that they perform well even compared with an imaginary oracle who knows both the true causal model (of the data-generating process) and the optimal regime under that model. Finally, we highlight that our approach enables a two-way personalization; obtained treatment regimes can be personalized based on both patients’ characteristics and physicians’ preferences. This paper was accepted by David Simchi-Levi, data science. Supplemental Material: The data files and online appendix are available at https://doi.org/10.1287/mnsc.2022.00883 .",
+  "ai_type_tags": [
+    "强化学习",
+    "机器学习",
+    "因果推断"
+  ],
+  "arxiv_id": "2022.00883",
+  "authors": [
+    "Soroush Saghafian"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Harvard University Press"
+      ],
+      "name": "Soroush Saghafian",
+      "orcid": "https://orcid.org/0000-0002-9781-6561",
+      "position": "first"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "强化学习DTR，AI辅助但涉及医疗决策",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "提出模糊动态治疗方案（ADTR），将未观测混杂的时间变化纳入因果模型集合，采用强化学习方法搜索最优治疗方案，在Mayo诊所肝移植后新发糖尿病患者数据上验证，可获得更稳健、个性化的治疗建议。",
+      "topic_tags": [
+        "医疗决策",
+        "因果推断",
+        "强化学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 17,
+  "date": "2023-10-04",
+  "doi": "10.1287/mnsc.2022.00883",
+  "id": "p_vG9J-2abxNXPTc7r",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3816,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Ambiguous Dynamic Treatment Regimes: A Reinforcement Learning Approach",
+  "title_zh": "模糊动态治疗方案：强化学习方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.00883",
+  "volume": null,
+  "year": 2023
+}

@@ -1,0 +1,64 @@
+{
+  "abstract": "AI systems increasingly assist human decision making by producing preliminary assessments of complex inputs. However, such AI-generated assessments can often be noisy or systematically biased, raising a central question: how should costly human effort be allocated to correct AI outputs where it matters the most for the final decision? We propose a general decision-theoretic framework for human-AI collaboration in which AI assessments are treated as factor-level signals and human judgments as costly information that can be selectively acquired. We consider cases where the optimal selection problem reduces to maximizing a reward associated with each candidate subset of factors, and turn policy design into reward estimation. We develop estimation procedures under both nonparametric and linear models, covering contextual and non-contextual selection rules. In the linear setting, the optimal rule admits a closed-form expression with a clear interpretation in terms of factor importance and residual variance. We apply our framework to AI-assisted peer review. Our approach substantially outperforms LLM-only predictions and achieves performance comparable to full human review while using only 20-30% of the human information. Across different selection rules, we find that simpler rules derived under linear models can significantly reduce computational cost without harming final prediction performance. Our results highlight both the value of human intervention and the efficiency of principled dispatching.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策"
+  ],
+  "arxiv_id": "2603.13688",
+  "authors": [
+    "Lezhi Tan",
+    "Naomi Sagan",
+    "Lihua Lei",
+    "Jose Blanchet"
+  ],
+  "authors_full": [
+    {
+      "name": "Lezhi Tan"
+    },
+    {
+      "name": "Naomi Sagan"
+    },
+    {
+      "name": "Lihua Lei"
+    },
+    {
+      "name": "Jose Blanchet"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心研究AI辅助决策中人类介入的优化问题，人机协作框架设计",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "AI辅助决策中，如何高效分配人力纠正AI输出？研究提出决策理论框架，将AI评估视为信号，人类判断视为可选的昂贵信息。针对同行评审场景，在线性和非参数模型下推导最优规则，发现用20%-30%的人类信息即可达到接近全人工评审的准确率，简化规则不损害性能，凸显人机协同的效率潜力。",
+      "topic_tags": [
+        "人机协作",
+        "算法决策",
+        "同行评审"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-14",
+  "doi": null,
+  "id": "p_XBCd7hDE-iRze6Aj",
+  "issue": null,
+  "journal": "arXiv:stat.ML",
+  "pdf_url": "https://arxiv.org/pdf/2603.13688v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10717,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "When Should Humans Step In? Optimal Human Dispatching in AI-Assisted Decisions",
+  "title_zh": "何时需要人类介入？AI辅助决策中的最优人工调度研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2603.13688v1",
+  "volume": null,
+  "year": 2026
+}

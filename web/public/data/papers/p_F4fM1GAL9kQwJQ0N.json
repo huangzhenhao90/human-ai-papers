@@ -1,0 +1,70 @@
+{
+  "abstract": "Large language models (LLMs) have demonstrated success in various applications of user recommendation and personalization across e-commerce and entertainment. On many entertainment platforms such as Netflix, users typically interact with a wide range of titles, each represented by an artwork. Since users have diverse preferences, an artwork that appeals to one type of user may not resonate with another with different preferences. Given this user heterogeneity, our work explores the novel problem of personalized artwork recommendations according to diverse user preferences. Similar to the multi-dimensional nature of users' tastes, titles contain different themes and tones that may appeal to different viewers. For example, the same title might feature both heartfelt family drama and intense action scenes. Users who prefer romantic content may like the artwork emphasizing emotional warmth between the characters, while those who prefer action thrillers may find high-intensity action scenes more intriguing. Rather than a one-size-fits-all approach, we conduct post-training of pre-trained LLMs to make personalized artwork recommendations, selecting the most preferred visual representation of a title for each user and thereby improving user satisfaction and engagement. Our experimental results with Llama 3.1 8B models (trained on a dataset of 110K data points and evaluated on 5K held-out user-title pairs) show that the post-trained LLMs achieve 3-5\\% improvements over the Netflix production model, suggesting a promising direction for granular personalized recommendations using LLMs.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "多模态"
+  ],
+  "arxiv_id": "2601.02764",
+  "authors": [
+    "Hyunji Nam",
+    "Sejoon Oh",
+    "Emma Kong",
+    "Yesu Feng",
+    "Moumita Bhattacharya"
+  ],
+  "authors_full": [
+    {
+      "name": "Hyunji Nam"
+    },
+    {
+      "name": "Sejoon Oh"
+    },
+    {
+      "name": "Emma Kong"
+    },
+    {
+      "name": "Yesu Feng"
+    },
+    {
+      "name": "Moumita Bhattacharya"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM个性化推荐有营销应用场景，但偏工程实现",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "探索LLM后训练实现影视作品封面个性化推荐，解决用户偏好异质性问题。研究根据用户对同一作品不同主题/基调的偏好差异，推荐最匹配的视觉呈现。在Llama 3.1 8B上训练110K数据点，5K用户-标题对评估，后训练模型较Netflix现有方法提升3-5%用户满意度与参与度。",
+      "topic_tags": [
+        "推荐系统",
+        "消费者行为",
+        "个性化营销",
+        "广告"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-01-06",
+  "doi": null,
+  "id": "p_F4fM1GAL9kQwJQ0N",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2601.02764v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9885,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Netflix Artwork Personalization via LLM Post-training",
+  "title_zh": "通过LLM后训练实现Netflix作品个性化",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2601.02764v1",
+  "volume": null,
+  "year": 2026
+}

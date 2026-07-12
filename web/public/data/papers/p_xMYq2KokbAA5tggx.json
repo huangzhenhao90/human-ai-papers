@@ -1,0 +1,77 @@
+{
+  "abstract": "Next Point-of-Interest (POI) recommendation is a critical task in modern Location-Based Social Networks (LBSNs), aiming to model the complex decision-making process of human mobility to provide personalized recommendations for a user's next check-in location. Existing hyperbolic POI recommendation models, predominantly based on rotations and graph representations, have been extensively investigated. Although hyperbolic geometry has proven superior in representing hierarchical data with low distortion, current hyperbolic sequence models typically rely on performing recurrence via expensive Möbius operations directly on the manifold. This incurs prohibitive computational costs and numerical instability, rendering them ill-suited for trajectory modeling. To resolve this conflict between geometric representational power and sequential efficiency, we propose GTR-Mamba, a novel framework featuring Geometry-to-Tangent Routing. GTR-Mamba strategically routes complex state transitions to the computationally efficient Euclidean tangent space. Crucially, instead of a static approximation, we introduce a Parallel Transport (PT) mechanism that dynamically aligns tangent spaces along the trajectory. This ensures geometric consistency across recursive updates, effectively bridging the gap between the curved manifold and linear tangent operations. This process is orchestrated by an exogenous spatio-temporal channel, which explicitly modulates the SSM discretization parameters. Extensive experiments on three real-world datasets demonstrate that GTR-Mamba consistently outperforms state-of-the-art baselines in next POI recommendation.",
+  "ai_type_tags": [
+    "推荐算法",
+    "深度学习",
+    "序列模型"
+  ],
+  "arxiv_id": "2510.22942",
+  "authors": [
+    "Zhuoxuan Li",
+    "Jieyuan Pei",
+    "Tangwei Ye",
+    "Zhongyuan Lai",
+    "Zihan Liu"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhuoxuan Li"
+    },
+    {
+      "name": "Jieyuan Pei"
+    },
+    {
+      "name": "Tangwei Ye"
+    },
+    {
+      "name": "Zhongyuan Lai"
+    },
+    {
+      "name": "Zihan Liu"
+    },
+    {
+      "name": "Fengyuan Xu"
+    },
+    {
+      "name": "Qi Zhang"
+    },
+    {
+      "name": "Liang Hu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "推荐模型用于POI位置预测",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对双曲几何 POI 推荐中计算代价高、数值不稳定问题，提出 GTR‑Mamba，通过几何到切空间路由与并行传输机制在欧氏切空间高效完成序列建模。实验显示在真实签到数据上推荐精度与运行效率显著提升。",
+      "topic_tags": [
+        "推荐系统",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-27",
+  "doi": null,
+  "id": "p_xMYq2KokbAA5tggx",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2510.22942v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9898,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "GTR-Mamba: Geometry-to-Tangent Routing Mamba for Hyperbolic POI Recommendation",
+  "title_zh": "GTR-Mamba：面向双曲空间 POI 推荐的几何切线路由 Mamba 方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.22942v2",
+  "volume": null,
+  "year": 2025
+}

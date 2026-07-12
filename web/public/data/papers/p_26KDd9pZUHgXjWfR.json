@@ -1,0 +1,74 @@
+{
+  "abstract": "Sequential recommendation (SR) aims to predict a user's next item preference by modeling historical interaction sequences. Recent advances often integrate frequency-domain modules to compensate for self-attention's low-pass nature by restoring the high-frequency signals critical for personalized recommendations. Nevertheless, existing frequency-aware solutions process each session in isolation and optimize exclusively with time-domain objectives. Consequently, they overlook cross-session spectral dependencies and fail to enforce alignment between predicted and actual spectral signatures, leaving valuable frequency information under-exploited. To this end, we propose FreqRec, a Frequency-Enhanced Dual-Path Network for sequential Recommendation that jointly captures inter-session and intra-session behaviors via a learnable Frequency-domain Multi-layer Perceptrons. Moreover, FreqRec is optimized under a composite objective that combines cross entropy with a frequency-domain consistency loss, explicitly aligning predicted and true spectral signatures. Extensive experiments on three benchmarks show that FreqRec surpasses strong baselines and remains robust under data sparsity and noisy-log conditions.",
+  "ai_type_tags": [
+    "机器学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2511.06285",
+  "authors": [
+    "Peng He",
+    "Yao Liu",
+    "Yanglei Gan",
+    "Run Lin",
+    "Tingting Dai"
+  ],
+  "authors_full": [
+    {
+      "name": "Peng He"
+    },
+    {
+      "name": "Yao Liu"
+    },
+    {
+      "name": "Yanglei Gan"
+    },
+    {
+      "name": "Run Lin"
+    },
+    {
+      "name": "Tingting Dai"
+    },
+    {
+      "name": "Qiao Liu"
+    },
+    {
+      "name": "Xuexin Li"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "深度学习用于序列推荐系统",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "为解决现有频率感知推荐模型忽视跨会话依赖的问题，提出频率增强双路径网络FreqRec。通过可学习的频域多层感知器同时捕获会话内和会话间行为，并结合交叉熵与频域一致性损失进行联合优化。实验证明其在稀疏数据和噪声日志下仍优于强基线。",
+      "topic_tags": [
+        "推荐系统",
+        "机器学习",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-09",
+  "doi": null,
+  "id": "p_26KDd9pZUHgXjWfR",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2511.06285v3",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9896,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Exploiting Inter-Session Information with Frequency-enhanced Dual-Path Networks for Sequential Recommendation",
+  "title_zh": "利用频率增强双路径网络挖掘会话间信息的序列推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.06285v3",
+  "volume": null,
+  "year": 2025
+}

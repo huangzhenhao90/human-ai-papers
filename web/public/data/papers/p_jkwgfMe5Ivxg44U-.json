@@ -1,0 +1,75 @@
+{
+  "abstract": "Fairness in algorithmic decision-making is often framed in terms of individual fairness, which requires that similar individuals receive similar outcomes. A system violates individual fairness if there exists a pair of inputs differing only in protected attributes (such as race or gender) that lead to significantly different outcomes-for example, one favorable and the other unfavorable. While this notion highlights isolated instances of unfairness, it fails to capture broader patterns of systematic or clustered discrimination that may affect entire subgroups. We introduce and motivate the concept of discrimination clustering, a generalization of individual fairness violations. Rather than detecting single counterfactual disparities, we seek to uncover regions of the input space where small perturbations in protected features lead to k-significantly distinct clusters of outcomes. That is, for a given input, we identify a local neighborhood-differing only in protected attributes-whose members' outputs separate into many distinct clusters. These clusters reveal significant arbitrariness in treatment solely based on protected attributes that help expose patterns of algorithmic bias that elude pairwise fairness checks. We present HyFair, a hybrid technique that combines formal symbolic analysis (via SMT and MILP solvers) to certify individual fairness with randomized search to discover discriminatory clusters. This combination enables both formal guarantees-when no counterexamples exist-and the detection of severe violations that are computationally challenging for symbolic methods alone. Given a set of inputs exhibiting high k-unfairness, we introduce a novel explanation method to generate interpretable, decision-tree-style artifacts. Our experiments demonstrate that HyFair outperforms state-of-the-art fairness verification and local explanation methods.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "可解释AI"
+  ],
+  "arxiv_id": "2512.23769",
+  "authors": [
+    "Ranit Debnath Akash",
+    "Ashish Kumar",
+    "Verya Monjezi",
+    "Ashutosh Trivedi",
+    "Gang"
+  ],
+  "authors_full": [
+    {
+      "name": "Ranit Debnath Akash"
+    },
+    {
+      "name": "Ashish Kumar"
+    },
+    {
+      "name": "Verya Monjezi"
+    },
+    {
+      "name": "Ashutosh Trivedi"
+    },
+    {
+      "name": "Gang"
+    },
+    {
+      "name": "Tan"
+    },
+    {
+      "name": "Saeid Tizpaz-Niari"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法公平性中系统性歧视聚类检测研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "现有个体公平性框架难以捕捉系统性、聚集性的歧视模式。研究提出\"歧视聚集\"概念——识别输入空间中受保护属性小幅扰动导致结果显著分簇的区域，进而揭示仅因受保护属性产生的任意性处理。研究开发HyFair方法，结合形式符号分析（SMT/MILP）提供个体公平性证明，与随机搜索发现歧视聚集区域，兼具形式化保证与歧视模式检测能力，为揭示成对公平检查所遗漏的算法偏见提供新路径。",
+      "topic_tags": [
+        "算法决策",
+        "公平性",
+        "偏见"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-12-29",
+  "doi": "10.1109/ase63991.2025.00141",
+  "id": "p_jkwgfMe5Ivxg44U-",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2512.23769v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8998,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Uncovering Discrimination Clusters: Quantifying and Explaining Systematic Fairness Violations",
+  "title_zh": "揭露歧视集群：系统性公平违规的量化与解释",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2512.23769v1",
+  "volume": null,
+  "year": 2025
+}

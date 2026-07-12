@@ -1,0 +1,65 @@
+{
+  "abstract": "We study the classical newsvendor problem in which the decision maker must trade off underage and overage costs. In contrast to the typical setting, we assume that the decision maker does not know the underlying distribution driving uncertainty but has only access to historical data. In turn, the key questions are how to map existing data to a decision and what type of performance to expect as a function of the data size. We analyze the classical setting with access to past samples drawn from the distribution (e.g., past demand), focusing not only on asymptotic performance but also on what we call the transient regime of learning, that is, performance for arbitrary data sizes. We evaluate the performance of any algorithm through its worst-case relative expected regret, compared with an oracle with knowledge of the distribution. We provide the first finite sample exact analysis of the classical sample average approximation (SAA) algorithm for this class of problems across all data sizes. This allows one to uncover novel fundamental insights on the value of data: It reveals that tens of samples are sufficient to perform very efficiently but also that more data can lead to worse out-of-sample performance for SAA. We then focus on the general class of mappings from data to decisions without any restriction on the set of policies and derive an optimal algorithm (in the minimax sense) and characterize its associated performance. This leads to significant improvements for limited data sizes and allows to exactly quantify the value of historical information.  This paper was accepted by David Simchi-Levi, data science.  Supplemental Material: The data files and online appendix are available at https://doi.org/10.1287/mnsc.2023.4725 .",
+  "ai_type_tags": [
+    "机器学习"
+  ],
+  "arxiv_id": "2023.4725",
+  "authors": [
+    "Omar Besbes",
+    "Omar Mouchtaki"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Columbia University"
+      ],
+      "name": "Omar Besbes",
+      "orcid": "https://orcid.org/0000-0002-2982-3794",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Columbia University"
+      ],
+      "name": "Omar Mouchtaki",
+      "orcid": "https://orcid.org/0000-0002-1734-9247",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "数据驱动报童问题，关注学习性能的非渐近分析",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "探讨数据驱动报童问题中数据量与决策性能的关系。突破传统渐近分析，聚焦任意数据规模下的学习瞬态性能。核心发现：数十个样本即可实现高效决策，但样本平均近似算法在某些情况下更多数据反而导致更差的样本外表现。提出极小极大意义下的最优算法。",
+      "topic_tags": [
+        "决策",
+        "组织学习",
+        "绩效评估"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 62,
+  "date": "2023-10",
+  "doi": "10.1287/mnsc.2023.4725",
+  "id": "p_oBj3gOtcN7Q-YEoi",
+  "issue": "10",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3524,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "How Big Should Your Data Really Be? Data-Driven Newsvendor: Learning One Sample at a Time",
+  "title_zh": "你的数据究竟应该有多大？数据驱动报童问题：一次学习一个样本",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4725",
+  "volume": "69",
+  "year": 2023
+}

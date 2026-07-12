@@ -1,0 +1,56 @@
+{
+  "abstract": "Language models increasingly act as epistemic proxies, synthesizing evidence from multiple sources to inform decisions. Whether they evaluate the quality of that evidence, or merely aggregate it based on surface presentation, remains poorly understood. We show that models possess the capability to detect fabricated statistics (correct identification rates of 0.76-1.00 for methodology in isolation) but do not recruit this capability during multi-source synthesis, producing similar numeric estimates whether the statistics are fabricated or valid. Specifically, source influence is governed by a methodology-register gate that responds to the distributional register of analytical text but not to numeric validity: for example, statistically impossible confidence intervals receive the same weight as valid ones. The behavioral dissociation replicates across five models from three families (Claude, Qwen, OLMo) and three professional domains. Mechanistic analyses, including causal tracing, linear probes, and component-level attribution, converge on the same account: the model encodes and causally uses a methodology-register representation that transfers across domains (probe AUC 0.83-0.92), while numeric-validity signals, decodable in isolation, are suppressed to chance during multi-source synthesis. Prompting-based mitigations, even an oracle checklist naming the exact statistical checks, produce blanket skepticism rather than selective discernment, and the post-training pipelines we examine reinforce the stylistic shortcut without building numeric verification. Unlike sycophancy, which tracks user preference, this failure tracks whether a source presents as analytically credible, not whether its claims are internally consistent. We term this epistemic alignment: like preference and safety alignment, the question is not capability but deployment.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI"
+  ],
+  "arxiv_id": "2606.05403",
+  "authors": [
+    "Rohan N. Pradhan",
+    "Steve Goley"
+  ],
+  "authors_full": [
+    {
+      "name": "Rohan N. Pradhan"
+    },
+    {
+      "name": "Steve Goley"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM证据评估能力研究，AI核心议题",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究大语言模型在多源信息综合时的证据评估能力。实验表明模型孤立时能识别虚假统计数据，但在多源合成中不调动该能力，对统计上不可能的置信区间与有效数据给予相同权重。方法论风格门控机制驱动源影响力，而非数值有效性。即使提供精确统计检查清单的提示也只产生泛化怀疑而非选择性辨别。",
+      "topic_tags": [
+        "决策",
+        "伦理",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-03",
+  "doi": null,
+  "id": "p_m6l6sJ5RL6zt42C5",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2606.05403v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11527,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Trust, but Don't Verify: Epistemic Blind Spots in LLM Source Evaluation",
+  "title_zh": "信任但不验证：LLM来源评估中的认知盲点",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2606.05403v1",
+  "volume": null,
+  "year": 2026
+}

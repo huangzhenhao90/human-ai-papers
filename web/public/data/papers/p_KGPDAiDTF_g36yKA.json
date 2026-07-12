@@ -1,0 +1,54 @@
+{
+  "abstract": "Effective human-AI collaboration hinges on the ability to dynamically integrate the complementary strengths of human experts and AI models across diverse decision contexts. Context-aware weighted combination of human and AI outputs is a promising technique, which involves the optimization of combination weights based on capabilities of decision agents on a given task. However, existing approaches treat humans and AI as isolated entities, lacking a unified representation to model the heterogeneous capabilities of multiple decision agents. To address this gap, we propose a novel capability-aware architecture that models both human and AI decision-makers using learnable capability vectors. These vectors encode task-relevant competencies in a shared latent space and are used by a transformer-based weight generation module to produce instance-specific aggregation weights. Our framework supports flexible integration of confidence scores or one-hot decisions from a variable number of agents. We further introduce a learning-free baseline using optimized global weights for human-AI collaboration. Extensive experiments on image classification and hate speech detection tasks demonstrate that our approach outperforms state-of-the-art methods under various collaboration settings with both simulated and real human labels. The results highlight the robustness, scalability, and superior accuracy of our method, underscoring its potential for real-world applications.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "人机协作"
+  ],
+  "arxiv_id": "2502.15196",
+  "authors": [
+    "Renlong Jie"
+  ],
+  "authors_full": [
+    {
+      "name": "Renlong Jie"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "人-AI决策协作机制；涉及决策科学弱相关OB",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "本文提出基于能力向量的可学习人机协作架构，在共享潜在空间建模人与AI的异质能力，使用Transformer生成实例化聚合权重，实现自适应决策。实验在图像分类和仇恨言论检测任务上验证了该方法在鲁棒性、可扩展性和准确率上优于现有方案。",
+      "topic_tags": [
+        "人机协作",
+        "决策",
+        "算法管理",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-02-21",
+  "doi": null,
+  "id": "p_KGPDAiDTF_g36yKA",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2502.15196v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10508,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning to Collaborate: A Capability Vectors-based Architecture for Adaptive Human-AI Decision Making",
+  "title_zh": "学会协作：基于能力向量的自适应人机决策架构",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2502.15196v2",
+  "volume": null,
+  "year": 2025
+}

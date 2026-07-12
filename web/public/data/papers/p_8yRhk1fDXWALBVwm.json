@@ -1,0 +1,67 @@
+{
+  "abstract": "Exploration is often necessary in online learning to maximize long-term rewards, but it comes at the cost of short-term “regret.” We study how this cost of exploration is shared across multiple groups. For example, in a clinical trial setting, patients who are assigned a suboptimal treatment effectively incur the cost of exploration. When patients are associated with natural groups on the basis of, say, race or age, it is natural to ask whether the cost of exploration borne by any single group is “fair.” So motivated, we introduce the “grouped” bandit model. We leverage the theory of axiomatic bargaining, and the Nash bargaining solution in particular, to formalize what might constitute a fair division of the cost of exploration across groups. On one hand, we show that any regret-optimal policy strikingly results in the least fair outcome: such policies will perversely leverage the most “disadvantaged” groups when they can. More constructively, we derive policies that are optimally fair and simultaneously enjoy a small “price of fairness.” We illustrate the relative merits of our algorithmic framework with a case study on contextual bandits for warfarin dosing where we are concerned with the cost of exploration across multiple races and age groups.  This paper was accepted by David Simchi-Levi, data science.  Funding: This work was supported by the National Science Foundation, Division of Civil, Mechanical and Manufacturing Innovation [Grant 1727239].  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.01985 .",
+  "ai_type_tags": [
+    "算法决策",
+    "强化学习"
+  ],
+  "arxiv_id": "2022.01985",
+  "authors": [
+    "Jackie Baek",
+    "Vivek F. Farias"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "New York University"
+      ],
+      "name": "Jackie Baek",
+      "orcid": "https://orcid.org/0000-0001-5538-509X",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Vivek F. Farias",
+      "orcid": "https://orcid.org/0000-0002-5856-9246",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "bandit模型中的公平探索，算法决策与公平性",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "研究在线学习中探索成本在不同群体间的公平分配问题。在临床试验等场景中，探索带来的短期regret由不同群体承担，引发公平性关切。论文引入分组bandit模型，运用公理化谈判理论（纳什谈判解）形式化公平分配概念。研究发现，最小化regret的策略反而造成最不公平的结果，会不成比例地利用弱势群体。进一步推导出既公平又具有较小“公平价格”的策略，并通过华法林剂量分配的上下文bandit模型进行案例验证。",
+      "topic_tags": [
+        "伦理",
+        "公平性",
+        "算法决策",
+        "强化学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 5,
+  "date": "2024-12",
+  "doi": "10.1287/mnsc.2022.01985",
+  "id": "p_8yRhk1fDXWALBVwm",
+  "issue": "12",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3465,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Fair Exploration via Axiomatic Bargaining",
+  "title_zh": "公平探索：通过公理化议价",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.01985",
+  "volume": "70",
+  "year": 2024
+}

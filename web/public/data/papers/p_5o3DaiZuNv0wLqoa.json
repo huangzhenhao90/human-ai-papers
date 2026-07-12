@@ -1,0 +1,54 @@
+{
+  "abstract": "As Large Language Models (LLMs) are increasingly integrated into automated decision-making pipelines, specifically within Human Resources (HR), the security implications of Indirect Prompt Injection (IPI) become critical. While a prevailing hypothesis posits that \"Reasoning\" or \"Chain-of-Thought\" Models possess safety advantages due to their ability to self-correct, emerging research suggests these capabilities may enable more sophisticated alignment failures. This qualitative Red-Teaming case study challenges the safety-through-reasoning premise using the Qwen 3 30B architecture. By subjecting both a standard instruction-tuned model and a reasoning-enhanced model to a \"Trojan Horse\" curriculum vitae, distinct failure modes are observed. The results suggest a complex trade-off: while the Standard Model resorted to brittle hallucinations to justify simple attacks and filtered out illogical constraints in complex scenarios, the Reasoning Model displayed a dangerous duality. It employed advanced strategic reframing to make simple attacks highly persuasive, yet exhibited \"Meta-Cognitive Leakage\" when faced with logically convoluted commands. This study highlights a failure mode where the cognitive load of processing complex adversarial instructions causes the injection logic to be unintentionally printed in the final output, rendering the attack more detectable by humans than in Standard Models.",
+  "ai_type_tags": [
+    "LLM",
+    "推理模型",
+    "Chain-of-Thought"
+  ],
+  "arxiv_id": "2602.18514",
+  "authors": [
+    "Manuel Wirth"
+  ],
+  "authors_full": [
+    {
+      "name": "Manuel Wirth"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM招聘安全漏洞研究，HR技术安全强相关",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对LLM在HR招聘流程中的间接提示注入（IPI）安全问题，对比标准指令微调模型与推理增强模型的红队测试。研究发现标准模型采用脆弱幻觉为简单攻击辩护，推理模型则展现危险的二元性：既能战略性重塑简单攻击使其更有说服力，又在面对复杂逻辑命令时出现“元认知泄漏”，意外暴露注入逻辑，使攻击更易被人类察觉。",
+      "topic_tags": [
+        "算法安全",
+        "红队测试",
+        "模型评估",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-02-19",
+  "doi": null,
+  "id": "p_5o3DaiZuNv0wLqoa",
+  "issue": null,
+  "journal": "arXiv:cs.CR",
+  "pdf_url": "https://arxiv.org/pdf/2602.18514v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8266,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Trojan Horses in Recruiting: A Red-Teaming Case Study on Indirect Prompt Injection in Standard vs. Reasoning Models",
+  "title_zh": "招聘中的特洛伊木马：标准模型与推理模型中间接提示注入的红队案例研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2602.18514v1",
+  "volume": null,
+  "year": 2026
+}

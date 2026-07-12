@@ -1,0 +1,81 @@
+{
+  "abstract": "The recruitment of trustworthy and high-quality workers is an important research issue for MCS. Previous studies either assume that the qualities of workers are known in advance, or assume that the platform knows the qualities of workers once it receives their collected data. In reality, to reduce costs and thus maximize revenue, many strategic workers do not perform their sensing tasks honestly and report fake data to the platform, which is called False data attacks. And it is very hard for the platform to evaluate the authenticity of the received data. In this paper, an incentive mechanism named Semi-supervision based Combinatorial Multi-Armed Bandit reverse Auction (SCMABA) is proposed to solve the recruitment problem of multiple unknown and strategic workers in MCS. First, we model the worker recruitment as a multi-armed bandit reverse auction problem and design an UCB-based algorithm to separate the exploration and exploitation, regarding the Sensing Rates (SRs) of recruited workers as the gain of the bandit. Next, a Semi-supervised Sensing Rate Learning (SSRL) approach is proposed to quickly and accurately obtain the workers' SRs, which consists of two phases, supervision and self-supervision. Last, SCMABA is designed organically combining the SRs acquisition mechanism with multi-armed bandit reverse auction, where supervised SR learning is used in the exploration, and the self-supervised one is used in the exploitation. We theoretically prove that our SCMABA achieves truthfulness and individual rationality and exhibits outstanding performances of the SCMABA mechanism through in-depth simulations of real-world data traces.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法管理"
+  ],
+  "arxiv_id": "2301.08563",
+  "authors": [
+    "Jianheng Tang",
+    "Kejia Fan",
+    "Wenxuan Xie",
+    "Luomin Zeng",
+    "Feijiang Han"
+  ],
+  "authors_full": [
+    {
+      "name": "Jianheng Tang"
+    },
+    {
+      "name": "Kejia Fan"
+    },
+    {
+      "name": "Wenxuan Xie"
+    },
+    {
+      "name": "Luomin Zeng"
+    },
+    {
+      "name": "Feijiang Han"
+    },
+    {
+      "name": "Guosheng Huang"
+    },
+    {
+      "name": "Tian Wang"
+    },
+    {
+      "name": "Anfeng Liu"
+    },
+    {
+      "name": "Shaobo Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "众包工人招募激励，CMAB机制与组织/经济相关",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "提出一种基于半监督感知率学习的组合多臂老虎机反向拍卖机制SCMABA，用于在移动众包中招募可信工人，防止虚假数据攻击。算法利用UCB平衡探索与利用，通过监督和自监督两阶段快速获取工人感知率，理论证明其可实现近似最优收益。",
+      "topic_tags": [
+        "招聘",
+        "算法管理",
+        "零工经济",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-01-17",
+  "doi": "10.1016/j.comcom.2023.04.030",
+  "id": "p_ElDFodgcpeWbn47W",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2301.08563v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8879,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "A Semi-supervised Sensing Rate Learning based CMAB Scheme to Combat COVID-19 by Trustful Data Collection in the Crowd",
+  "title_zh": "基于半监督感知率学习的CMAB方案：通过可信数据收集抗击COVID-19",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2301.08563v2",
+  "volume": null,
+  "year": 2023
+}

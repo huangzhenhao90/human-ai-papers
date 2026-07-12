@@ -1,0 +1,52 @@
+{
+  "abstract": "AI in applications like screening job applicants had become widespread, and may contribute to unemployment especially among the young. Biases in the AIs may become baked into the job selection process, but even in their absence, reliance on a single AI is problematic. In this paper we derive a simple formula to estimate, or at least place an upper bound on, the precision of such approaches for data resembling realistic CVs:   $P(q) \\approx \\frac{ρn^b + q(1-ρ)}{1 + (n^b - 1)ρ}$ where $b \\approx q^* + 0.8 (1 - ρ)$ and $q^*$ is $q$ clipped to $[0.07, 0.22]$ where $P(q)$ is the precision of the top $q$ quantile selected by a panel of $n$ AIs and $ρ$ is their average pairwise correlation. This equation provides a basis for considering how many AIs should be used in a Panel, depending on the importance of the decision. A quantitative discussion of the merits of using a diverse panel of AIs to support decision-making in such areas will move away from dangerous reliance on single AI systems and encourage a balanced assessment of the extent to which diversity needs to be built into the AI parts of the socioeconomic systems that are so important for our future.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法管理"
+  ],
+  "arxiv_id": "2604.16432",
+  "authors": [
+    "Nicholas CL Beale"
+  ],
+  "authors_full": [
+    {
+      "name": "Nicholas CL Beale"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI招聘面板精度分析，属HR/人事选拔研究",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究AI panel（多个AI组合）能否提升人才筛选精度问题。通过推导公式 P(q)≈(ρn^b+q(1-ρ))/(1+(n^b-1)ρ)，量化了AI panel数量(n)、选前分位点(q)及AI间相关性(ρ)对精度的影响，发现即使AI无偏见，使用多个低相关AI panel也比单一AI更稳健，并提供了何时需要更多AI panel的决策依据，倡导用多样化AI panel替代对单一AI的依赖。",
+      "topic_tags": [
+        "招聘",
+        "算法决策",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-04-06",
+  "doi": null,
+  "id": "p_QDSAn9ZtWAPkDV8L",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2604.16432v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8208,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Quantifying how AI Panels improve precision",
+  "title_zh": "AI评审团提升精度的量化研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.16432v2",
+  "volume": null,
+  "year": 2026
+}

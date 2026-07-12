@@ -1,0 +1,74 @@
+{
+  "abstract": "Random coefficient multinomial logit models are widely used to estimate customer preferences from sales data. However, these estimation models can only allow for products with positive sales; this selection leads to highly biased estimates in long tail markets, that is, markets where many products have zero or low sales. Such markets are increasingly common in areas such as online retail and other online marketplaces. In this paper, we propose a two-stage estimator that uses machine learning to correct for this bias. Our method first uses deep learning to predict the market shares of all products, where the neural network’s structure mirrors the random coefficient multinomial logit model’s data generating process. In the second stage, we use the predictions of the first stage to reweight the observed shares in a way that corrects for the induced bias and maintains the causal interpretation of the structural model. We show that the estimated parameters are consistent in the number of markets. Our method performs well on simulated and real long tail data, producing accurate estimates of customer behavior. These improved estimates can subsequently be used to provide prescriptive policy recommendations on important managerial decisions such as pricing, assortment, and so on.  This paper was accepted by Gabriel Weintraub, revenue management and market analytics.  Supplemental Material: The data files are available at https://doi.org/10.1287/mnsc.2023.4893 .",
+  "ai_type_tags": [
+    "机器学习",
+    "深度学习",
+    "LLM"
+  ],
+  "arxiv_id": "2023.4893",
+  "authors": [
+    "Hammaad Adam",
+    "Pu He",
+    "Fanyin Zheng"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Hammaad Adam",
+      "orcid": "https://orcid.org/0000-0001-6910-7074",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Two Sigma Investments (United States)"
+      ],
+      "name": "Pu He",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [],
+      "name": "Fanyin Zheng",
+      "orcid": "https://orcid.org/0000-0001-5215-8721",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "用深度学习预测市场份额，ML是核心方法",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "长尾市场中大量商品销量为零或极低，导致传统随机系数多项Logit模型仅基于有销量的产品进行偏好估计，产生系统性偏误。研究提出两阶段估计器：先用深度学习预测所有商品的市场份额（网络结构对应随机系数多项Logit的数据生成过程），再以预测值对观测份额进行重新加权，以校正选择偏差并保持结构模型的因果解释。理论证明估计量在市场数趋于无穷时具有一致性。模拟数据和真实数据验证了该方法能显著提高消费者行为估计精度，进而为定价、品类管理等决策提供更可靠的支持。",
+      "topic_tags": [
+        "消费者行为",
+        "营销",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 23,
+  "date": "2024-08",
+  "doi": "10.1287/mnsc.2023.4893",
+  "id": "p_kKHgmJcqEqG5uCvL",
+  "issue": "8",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3521,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Machine Learning for Demand Estimation in Long Tail Markets",
+  "title_zh": "机器学习用于长尾市场需求估计",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4893",
+  "volume": "70",
+  "year": 2024
+}

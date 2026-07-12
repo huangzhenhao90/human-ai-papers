@@ -1,0 +1,80 @@
+{
+  "abstract": "As the pursuit of synergy between Artificial Intelligence (AI) and Operations Research (OR) gains momentum in handling complex inventory systems, a critical challenge persists: how to effectively reconcile AI's adaptive perception with OR's structural rigor. To bridge this gap, we propose a novel OR-Guided \"Pretrain-then-Reinforce\" framework. To provide structured guidance, we propose a simulation-augmented OR model that generates high-quality reference decisions, implicitly capturing complex business constraints and managerial preferences. Leveraging these OR-derived decisions as foundational training labels, we design a domain-informed deep learning foundation model to establish foundational decision-making capabilities, followed by a reinforcement learning (RL) fine-tuning stage. Uniquely, we position RL as a deep alignment mechanism that enables the AI agent to internalize the optimality principles of OR, while simultaneously leveraging exploration for general policy refinement and allowing expert guidance for scenario-specific adaptation (e.g., promotional events). Validated through extensive numerical experiments and a field deployment at JD.com augmented by a Difference-in-Differences (DiD) analysis, our model significantly outperforms incumbent industrial practices, delivering real-world gains of a 5.27-day reduction in turnover and a 2.29% increase in in-stock rates, alongside a 29.95% decrease in holding costs. Contrary to the prevailing trend of brute-force model scaling, our study demonstrates that a lightweight, domain-informed model can deliver state-of-the-art performance and robust transferability when guided by structured OR logic. This approach offers a scalable and cost-effective paradigm for intelligent supply chain management, highlighting the value of deeply aligning AI with OR.",
+  "ai_type_tags": [
+    "机器学习",
+    "强化学习"
+  ],
+  "arxiv_id": "2512.19001",
+  "authors": [
+    "Lingjie Zhao",
+    "Xue Yu",
+    "Yongzhi Qi",
+    "Hao Hu",
+    "Jianshen Zhang"
+  ],
+  "authors_full": [
+    {
+      "name": "Lingjie Zhao"
+    },
+    {
+      "name": "Xue Yu"
+    },
+    {
+      "name": "Yongzhi Qi"
+    },
+    {
+      "name": "Hao Hu"
+    },
+    {
+      "name": "Jianshen Zhang"
+    },
+    {
+      "name": "Yingzheng Ma"
+    },
+    {
+      "name": "Shuyu Han"
+    },
+    {
+      "name": "Wei Qi"
+    },
+    {
+      "name": "Zuo-Jun Max Shen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI+运筹学用于库存管理，边缘涉及运营管理",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "解决AI自适应感知与运筹学（OR）结构化严谨性之间的张力。提出OR引导的\"预训练-强化\"框架：利用模拟增强的OR模型生成高质量参考决策，结合领域感知深度学习基础模型和RL微调。在京东真实部署中，库存周转缩短5.27天，库存可用率提升2.29%，持有成本降低29.95%，显著优于现有工业实践。",
+      "topic_tags": [
+        "运营管理",
+        "决策",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-12-22",
+  "doi": null,
+  "id": "p_Zwo7npqOekH4mtkR",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2512.19001v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9443,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "ORPR: An OR-Guided Pretrain-then-Reinforce Learning Model for Inventory Management",
+  "title_zh": "ORPR: 一种OR引导的预训练-强化学习库存管理模型",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2512.19001v2",
+  "volume": null,
+  "year": 2025
+}

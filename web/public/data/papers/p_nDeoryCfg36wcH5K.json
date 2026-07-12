@@ -1,0 +1,53 @@
+{
+  "abstract": "This study investigates the adoption and effectiveness of AI-based anomaly detection in cross-provider electronic health record (EHR) environments. It aims to (1) identify the organisational and digital capabilities required for successful implementation and (2) evaluate the performance and interpretability of lightweight anomaly detection approaches using contextual audit data. A semi-systematic scoping synthesis is conducted to derive a four-pillar readiness framework covering governance, infrastructure/interoperability, workforce, and AI integration, operationalised as a 10-item checklist with measurable indicators. This is complemented by a simulation of cross-provider audit logs incorporating contextual features such as provider mismatch, time of access, days since discharge, session duration, and access frequency. A rule-based approach is benchmarked against Isolation Forest, with SHAP used to explain model behaviour. Results show that rule-based methods achieve high recall but generate higher alert volumes, while Isolation Forest reduces alert burden at the cost of lower sensitivity. SHAP analysis highlights provider mismatch and off-hours access as dominant anomaly drivers. The study proposes a staged deployment strategy combining rules for coverage and machine learning for prioritisation, supported by explainability and continuous monitoring. The findings contribute a practical readiness framework and empirical insights to guide the implementation of AI-based anomaly detection in multi-provider healthcare environments.",
+  "ai_type_tags": [
+    "异常检测",
+    "机器学习",
+    "可解释AI"
+  ],
+  "arxiv_id": "2604.09630",
+  "authors": [
+    "Cao Tram Anh Hoang"
+  ],
+  "authors_full": [
+    {
+      "name": "Cao Tram Anh Hoang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI异常检测用于EHR,医疗信息管理边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究AI异常检测在跨提供商电子健康记录环境中的采用与效果。通过半系统综述提出涵盖治理、基础设施、劳动力、AI集成的四支柱就绪框架，并结合模拟审计日志评估规则方法与Isolation Forest表现。结果显示规则方法高召回但警报量大，机器学习方法减少警报但牺牲灵敏度。SHAP分析揭示提供商不匹配和非工作时间访问是主要异常驱动因素，建议分阶段部署策略结合规则覆盖与机器学习优先级排序。",
+      "topic_tags": [
+        "数据安全",
+        "医疗信息化",
+        "组织变革"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-19",
+  "doi": null,
+  "id": "p_nDeoryCfg36wcH5K",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2604.09630v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8229,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Adoption and Effectiveness of AI-Based Anomaly Detection for Cross Provider Health Data Exchange",
+  "title_zh": "基于AI的异常检测在跨提供商健康数据交换中的采纳与效能",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.09630v1",
+  "volume": null,
+  "year": 2026
+}

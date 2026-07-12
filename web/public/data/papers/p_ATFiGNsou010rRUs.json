@@ -1,0 +1,64 @@
+{
+  "abstract": "The burgeoning interest in data mining has catalyzed a proliferation of innovative techniques in extracting useful information from unstructured data sources, such as text and images in social sciences. One typical research design involves a two-stage process. In the first stage, researchers apply the classification algorithm to predict an individual-level categorical variable. In the second stage, researchers aggregate the predicted values to construct a group-level variable for further regression analysis. For example, text classification has been applied to classify whether a review is positive or negative. The predicted review sentiment is aggregated at the product level as a focal independent variable in a regression model to examine the impact of the average review sentiment on product sales. Since the first-stage classification will inevitably have errors, the aggregated variable may suffer from a measurement error in the regression analysis. Our study attempts to systematically investigate the theoretical properties of the estimation bias and introduce solutions rooted in theory to mitigate the issue of measurement error. We propose one exact solution and two approximated solutions based on the central limit theorem (CLT) and the law of large numbers (LLN), respectively. Our theoretical analysis and experimentation confirm that the consistency of regression estimators can be recovered across all examined scenarios and the approximated solutions offer a significantly reduced computational complexity compared to the exact solution. We also provide heuristic guidelines to choose one of three solutions.",
+  "ai_type_tags": [
+    "机器学习"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Mengke Qiao",
+    "Ke‐Wei Huang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Alabama"
+      ],
+      "name": "Mengke Qiao",
+      "orcid": "https://orcid.org/0000-0003-1172-8833",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "National University of Singapore"
+      ],
+      "name": "Ke‐Wei Huang",
+      "orcid": "https://orcid.org/0000-0002-9932-6195",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "涉及数据挖掘分类算法用于文本分类，但属方法论论文",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "在利用分类模型预测个体类别并聚合成群体变量进行回归分析时，第一阶段的分类误差会导致聚合变量出现测量误差。研究通过理论推导证明该误差使回归系数不一致，并提出基于中心极限定理和大数定律的精确及近似校正方法。实验验证所有方案均可恢复估计的一致性，且近似解表现显著改进。",
+      "topic_tags": [
+        "算法管理",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 2,
+  "date": "2025-03-01",
+  "doi": "10.25300/misq/2024/18026",
+  "id": "p_ATFiGNsou010rRUs",
+  "issue": "1",
+  "journal": "MISQ",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4808,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Correcting Measurement Error in Regression Models with Variables Constructed from Aggregated Output of Data Mining Models",
+  "title_zh": "纠正回归模型中由数据挖掘模型聚合输出构建变量的测量误差",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.25300/misq/2024/18026",
+  "volume": "49",
+  "year": 2025
+}

@@ -1,0 +1,67 @@
+{
+  "abstract": "The Dynamic Task Assignment Problem (DTAP) concerns matching resources to tasks in real time while minimizing some objectives, like resource costs or task cycle time. In this work, we consider a DTAP variant where every task is a case composed of a stochastic sequence of activities. The DTAP, in this case, involves the decision of which employee to assign to which activity to process requests as quickly as possible. In recent years, Deep Reinforcement Learning (DRL) has emerged as a promising tool for tackling this DTAP variant, but most research is limited to solving small-scale, synthetic problems, neglecting the challenges posed by real-world use cases. To bridge this gap, this work proposes a DRL-based Decision Support System (DSS) for real-world scale DTAPS. To this end, we introduce a DRL agent with two novel elements: a graph structure for observations and actions that can effectively represent any DTAP and a reward function that is provably equivalent to the objective of minimizing the average cycle time of tasks. The combination of these two novelties allows the agent to learn effective and generalizable assignment policies for real-world scale DTAPs. The proposed DSS is evaluated on five DTAP instances whose parameters are extracted from real-world logs through process mining. The experimental evaluation shows how the proposed DRL agent matches or outperforms the best baseline in all DTAP instances and generalizes on different time horizons and across instances.",
+  "ai_type_tags": [
+    "深度强化学习",
+    "机器学习"
+  ],
+  "arxiv_id": "2504.19933",
+  "authors": [
+    "Riccardo Lo Bianco",
+    "Willem van Jaarsveld",
+    "Jeroen Middelhuis",
+    "Luca Begnardi",
+    "Remco Dijkman"
+  ],
+  "authors_full": [
+    {
+      "name": "Riccardo Lo Bianco"
+    },
+    {
+      "name": "Willem van Jaarsveld"
+    },
+    {
+      "name": "Jeroen Middelhuis"
+    },
+    {
+      "name": "Luca Begnardi"
+    },
+    {
+      "name": "Remco Dijkman"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI自动化决策用于任务分配，边缘HR管理议题",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "动态任务分配问题（DTAP）涉及实时将资源匹配到由随机活动序列组成的任务中。本文提出一种基于深度强化学习（DRL）的决策支持系统，通过引入图结构观察与动作表示，以及等价于最小化平均周期时间的奖励函数，实现真实规模DTAP的有效求解。在5个从真实日志中提取的DTAP实例上验证，该系统在所有实例中匹配或超越最佳基线，并具有良好的泛化能力。",
+      "topic_tags": [
+        "算法管理",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-04-28",
+  "doi": null,
+  "id": "p_37DZ8TvB7TCetPbj",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2504.19933v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8514,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Automated decision-making for dynamic task assignment at scale",
+  "title_zh": "大规模动态任务分配的自动化决策",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2504.19933v1",
+  "volume": null,
+  "year": 2025
+}

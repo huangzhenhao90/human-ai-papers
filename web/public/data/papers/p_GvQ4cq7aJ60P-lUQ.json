@@ -1,0 +1,68 @@
+{
+  "abstract": "AI Agents can perform complex operations at great speed, but just like all the humans we have ever hired, their intelligence remains fallible. Miscommunications aren't noticed, systemic biases have no counter-action, and inner monologues are rarely written down.   We did not come to fire them for their mistakes, but to hire them and provide a safe productive working environment. We posit that we can reuse a common corporate organizational structure: teams of independent AI agents with strict role boundaries can work with common goals, but opposing incentives. Multiple models serving as a team of rivals can catch and minimize errors within the final product at a small cost to the velocity of actions. In this paper we demonstrate that we can achieve reliability without acquiring perfect components, but through careful orchestration of imperfect ones.   This paper describes the architecture of such a system in practice: specialized agent teams (planners, executors, critics, experts), organized into an organization with clear goals, coordinated through a remote code executor that keeps data transformations and tool invocations separate from reasoning models. Rather than agents directly calling tools and ingesting full responses, they write code that executes remotely; only relevant summaries return to agent context. By preventing raw data and tool outputs from contaminating context windows, the system maintains clean separation between perception (brains that plan and reason) and execution (hands that perform heavy data transformations and API calls). We demonstrate the approach achieves over 90% internal error interception prior to user exposure while maintaining acceptable latency tradeoffs. A survey from our traces shows that we only trade off cost and latency to achieve correctness and incrementally expand capabilities without impacting existing ones.",
+  "ai_type_tags": [
+    "LLM",
+    "多智能体"
+  ],
+  "arxiv_id": "2601.14351",
+  "authors": [
+    "Gopal Vijayaraghavan",
+    "Prasanth Jayachandran",
+    "Arun Murthy",
+    "Sunil Govindan",
+    "Vivek Subramanian"
+  ],
+  "authors_full": [
+    {
+      "name": "Gopal Vijayaraghavan"
+    },
+    {
+      "name": "Prasanth Jayachandran"
+    },
+    {
+      "name": "Arun Murthy"
+    },
+    {
+      "name": "Sunil Govindan"
+    },
+    {
+      "name": "Vivek Subramanian"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心是多AI agent协作系统，涉及组织结构概念",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究探讨如何通过组织架构设计提升AI智能体系统的可靠性。借鉴企业\"竞争团队\"模式，构建由规划者、执行者、批评者、专家等角色组成的AI智能体团队，各智能体拥有对立激励但共享目标，可相互检错纠偏。关键创新在于远程代码执行机制，将数据转换和工具调用与推理模型分离，防止原始数据和工具输出污染上下文窗口，实现感知层与推理层的清晰解耦。实验表明，通过精心编排不完美组件可实现整体可靠性，无需追求完美个体。",
+      "topic_tags": [
+        "人机协作",
+        "组织学习",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-01-20",
+  "doi": null,
+  "id": "p_GvQ4cq7aJ60P-lUQ",
+  "issue": null,
+  "journal": "arXiv:cs.MA",
+  "pdf_url": "https://arxiv.org/pdf/2601.14351v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8293,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "If You Want Coherence, Orchestrate a Team of Rivals: Multi-Agent Models of Organizational Intelligence",
+  "title_zh": "若欲确保一致性，则编排竞争对手团队：组织智能的多智能体模型",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2601.14351v1",
+  "volume": null,
+  "year": 2026
+}

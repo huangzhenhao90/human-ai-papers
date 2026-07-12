@@ -1,0 +1,60 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly deployed in decision-support systems for high-stakes domains such as hiring and university admissions, where choices often involve selecting among competing alternatives. While prior work has noted position biases in LLM-driven comparisons, these biases have not been systematically analyzed or linked to underlying preference structures. We present the first comprehensive study of position biases across multiple LLMs and two distinct domains: resume comparisons, representing a realistic high-stakes context, and color selection, which isolates position effects by removing confounding factors. We find strong and consistent order effects, including a quality-dependent shift: when all options are high quality, models favor the first option, but when quality is lower, they favor later options. We also identify a previously undocumented bias: a name bias, where certain names are favored despite controlling for demographic signals. To separate superficial tie-breaking from genuine distortions of judgment, we extend the rational choice framework to classify pairwise preferences as robust, fragile, or indifferent. Using this framework, we show that order effects can lead models to select strictly inferior options. These results indicate that LLMs exhibit distinct failure modes not documented in human decision-making. We also propose targeted mitigation strategies, including a novel use of the temperature parameter, to recover underlying preferences when order effects distort model behavior.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策"
+  ],
+  "arxiv_id": "2506.14092",
+  "authors": [
+    "Haonan Yin",
+    "Shai Vardi",
+    "Vidyanand Choudhary"
+  ],
+  "authors_full": [
+    {
+      "name": "Haonan Yin"
+    },
+    {
+      "name": "Shai Vardi"
+    },
+    {
+      "name": "Vidyanand Choudhary"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "研究LLM在招聘和招生决策中的位置偏差问题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "对大语言模型在简历对比和颜色选择两种情境下的位置效应进行系统研究，发现强顺序效应表现为高质量选项倾向首位、低质量倾向后位，并首次识别出名字偏见。模型可能选出劣等方案，导致决策失真。基于理性选择框架提出稳健、脆弱、无差别偏好分类，并设计温度参数调节等缓解策略。",
+      "topic_tags": [
+        "决策",
+        "偏见",
+        "招聘"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-06-17",
+  "doi": null,
+  "id": "p_KhaLKehwqeCrKHYw",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2506.14092v3",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8464,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Fragile Preferences: A Deep Dive Into Order Effects in Large Language Models",
+  "title_zh": "脆弱的偏好：大型语言模型中的顺序效应探究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2506.14092v3",
+  "volume": null,
+  "year": 2025
+}

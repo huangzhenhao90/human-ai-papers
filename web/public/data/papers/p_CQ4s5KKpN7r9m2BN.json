@@ -1,0 +1,76 @@
+{
+  "abstract": "With the rapid development of fintech, the need for dynamic credit risk evaluation is becoming increasingly important. While previous studies on credit scoring have mostly focused on single-period loan default prediction, we call for a new avenue—multiperiod default prediction (MPDP)—to depict risk profiles over time. To address the challenges raised by MPDP, such as monotonic default probability prediction and complex relationship accommodation, we propose a novel approach, hybrid and collective scoring (HACS). We design a hybrid modeling strategy to predict whether and when a borrower will default separately through a default discrimination model and a default time estimation model, respectively, and synthesize them through a probabilistic framework. To accommodate various possible patterns of default time and measure the distribution of default probability over successive time intervals, we propose a joint default modeling method to train the default time estimation model. Empirical evaluations at the model (time-to-default prediction performance and discrimination performance) and mechanism (identifiability and discriminability) levels, as well as impact analyses at the application (granting performance and profitability performance) level, show that HACS outperforms the benchmarked survival analysis and multilabel learning methods on all fronts. It can more accurately predict time-to-default and provide financial institutions and investors better decision-support in granting loans and selecting loan portfolios.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "生存分析"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Zhao Wang",
+    "Cuiqing Jiang",
+    "Huimin Zhao"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Hefei University",
+        "Hefei University of Technology"
+      ],
+      "name": "Zhao Wang",
+      "orcid": "https://orcid.org/0000-0002-3352-3655",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Hefei University of Technology"
+      ],
+      "name": "Cuiqing Jiang",
+      "orcid": "https://orcid.org/0000-0001-6492-4550",
+      "position": "middle"
+    },
+    {
+      "affiliation": [],
+      "name": "Huimin Zhao",
+      "orcid": "https://orcid.org/0000-0002-6471-9837",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "信用风险预测涉及机器学习模型，但非OB/营销核心议题",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "研究针对多期贷款违约预测（MPDP）的挑战，提出混合与集体评分方法（HACS），同时预测违约与否及违约时间，通过概率框架结合违约判别模型和时间估计模型，在模型层面、机制层面和应用层面验证，结果显示在违约时间预测和金融机构决策支持方面优于基准生存分析和多标签学习方法。",
+      "topic_tags": [
+        "信用风险",
+        "贷款违约",
+        "多期预测",
+        "金融科技"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 15,
+  "date": "2023-12-01",
+  "doi": "10.25300/misq/2022/17491",
+  "id": "p_CQ4s5KKpN7r9m2BN",
+  "issue": "4",
+  "journal": "MISQ",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4977,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Depicting Risk Profile over Time: A Novel Multiperiod Loan Default Prediction Approach",
+  "title_zh": "刻画风险画像的时间演变：一种新型多期贷款违约预测方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.25300/misq/2022/17491",
+  "volume": "47",
+  "year": 2023
+}

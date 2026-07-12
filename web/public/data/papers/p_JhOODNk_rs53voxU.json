@@ -1,0 +1,75 @@
+{
+  "abstract": "Making decisions with limited data and incomplete statistical characterization is challenging. The typical statistical-machine-learning approaches would call for migrating the experience of a related system with ample data through transfer learning or leveraging the similarity of multiple systems with limited data through data pooling. We, instead, develop new solution concepts to learn across related systems by adapting the parametric Operational Data Analytics (ODA) framework, which is known to produce uniformly optimal data-integrated decisions in the corresponding parametric settings, for nonparametric decision-making. We demonstrate, through the application of newsvendor systems, that transfer learning can, indeed, improve decision performance in the focal system by utilizing a model pretrained with ample data in a related system. However, through the lens of the ODA framework, the best transfer-learning decision falls in a subclass of operational statistics, limiting the ultimate optimality. In contrast, the ODA cross-learning approach utilizes the ample data from the related system to mimic the stochastic environment of the focal system. When the data from the old system are sufficiently large, the cross-learning solutions derived outperform any transfer-learning solution, and they are shown to asymptotically approach the parametric ODA solutions. When there are multiple related systems with limited data, we aggregate the data from different systems to create a generic stochastic environment for the decision-making problem, which facilitates the implementation of the parametric ODA solutions. We show that the derived co-learning solutions are asymptotically optimal for the aggregate system and for each subsystem. This approach outperforms the existing data-pooling techniques in the sense that the latter focuses only on the aggregated performance, and the chosen solution may be (asymptotically) suboptimal for individual subsystems. Our results underscore the roles of domain knowledge and the structural relationships between the data and the decision in designing efficient learning solutions with limited data. Though we demonstrate our development through the application of newsvendor systems, the solutions developed in this study apply to a much wider class of operational decision-making problems that exhibit certain homogeneous properties.\n                  This paper was accepted by David Simchi-Levi, operations management.\n                  Funding: L. Li’s research is partly supported by the Research Grants Council of Hong Kong [Grant 15515324] and The Hong Kong Polytechnic University under Grant 1-BEAT.\n                  Supplemental Material: The online appendix is available at https://doi.org/10.1287/mnsc.2023.03688 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2023.03688",
+  "authors": [
+    "Qi Feng",
+    "L K Li",
+    "J. George Shanthikumar"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Purdue University West Lafayette"
+      ],
+      "name": "Qi Feng",
+      "orcid": "https://orcid.org/0000-0001-8469-8650",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Hong Kong Polytechnic University"
+      ],
+      "name": "L K Li",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Purdue University West Lafayette"
+      ],
+      "name": "J. George Shanthikumar",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "迁移学习在运营决策应用，核心机器学习AI方法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究利用相关系统数据辅助目标系统决策的跨系统学习方法。通过newsboy系统应用发现，传统迁移学习受限于最优决策子类；提出ODA跨学习方法，利用相关系统数据模拟目标系统随机环境，表现优于任何迁移学习方法，并在数据充足时渐近达到参数化ODA最优解，支持多系统数据聚合。",
+      "topic_tags": [
+        "知识管理",
+        "组织学习",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-07",
+  "doi": "10.1287/mnsc.2023.03688",
+  "id": "p_JhOODNk_rs53voxU",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4092,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Transfer Learning, Cross Learning and Co-Learning with Operational Data Analytics (ODA)",
+  "title_zh": "迁移学习、交叉学习与协作学习：基于运营数据分析(ODA)",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.03688",
+  "volume": null,
+  "year": 2026
+}

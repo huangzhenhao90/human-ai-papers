@@ -1,0 +1,65 @@
+{
+  "abstract": "Fairness studies of algorithmic decision-making systems often simplify complex decision processes, such as bail or loan approvals, into binary classification tasks. However, these approaches overlook that such decisions are not inherently binary (e.g., approve or not approve bail or loan); they also involve non-binary treatment decisions (e.g., bail conditions or loan terms) that can influence the downstream outcomes (e.g., loan repayment or reoffending). In this paper, we argue that non-binary treatment decisions are integral to the decision process and controlled by decision-makers and, therefore, should be central to fairness analyses in algorithmic decision-making. We propose a causal framework that extends fairness analyses and explicitly distinguishes between decision-subjects' covariates and the treatment decisions. This specification allows decision-makers to use our framework to (i) measure treatment disparity and its downstream effects in historical data and, using counterfactual reasoning, (ii) mitigate the impact of past unfair treatment decisions when automating decision-making. We use our framework to empirically analyze four widely used loan approval datasets to reveal potential disparity in non-binary treatment decisions and their discriminatory impact on outcomes, highlighting the need to incorporate treatment decisions in fairness assessments. Moreover, by intervening in treatment decisions, we show that our framework effectively mitigates treatment discrimination from historical data to ensure fair risk score estimation and (non-binary) decision-making processes that benefit all stakeholders.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2503.22454",
+  "authors": [
+    "Ayan Majumdar",
+    "Deborah D. Kanubala",
+    "Kavya Gupta",
+    "Isabel Valera"
+  ],
+  "authors_full": [
+    {
+      "name": "Ayan Majumdar"
+    },
+    {
+      "name": "Deborah D. Kanubala"
+    },
+    {
+      "name": "Kavya Gupta"
+    },
+    {
+      "name": "Isabel Valera"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法公平性框架，可应用于组织决策",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "指出现有公平研究常将保释、贷款等决策简化为二元分类，忽视非二元处理（如保释条件、贷款利率）对下游结果的影响。提出因果框架，区分个体特征与处理决策，并在四组贷款数据上度量非二元处理差异，使用反事实推理实现歧视缓解。实验证明该框架可有效降低处理层面的不公平。",
+      "topic_tags": [
+        "算法公平",
+        "偏见检测",
+        "因果推断",
+        "金融决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-03-28",
+  "doi": null,
+  "id": "p_fsOOZ936W55FOxpW",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2503.22454v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9140,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "A Causal Framework to Measure and Mitigate Non-binary Treatment Discrimination",
+  "title_zh": "测量与缓解非二元处理歧视的因果框架",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2503.22454v2",
+  "volume": null,
+  "year": 2025
+}

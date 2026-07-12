@@ -1,0 +1,96 @@
+{
+  "abstract": "In recent years, recommendation systems have evolved from providing a single list of recommendations to offering a comprehensive suite of topic focused services. To better accomplish this task, conversational recommendation systems (CRS) have progressed from basic retrieval augmented LLM generation to agentic systems with advanced reasoning and self correction capabilities. However, agentic systems come with notable response latency, a longstanding challenge for conversational recommendation systems. To balance the trade off between handling complex queries and minimizing latency, we propose AdaptJobRec, the first conversational job recommendation system that leverages autonomous agent to integrate personalized recommendation algorithm tools. The system employs a user query complexity identification mechanism to minimize response latency. For straightforward queries, the agent directly selects the appropriate tool for rapid responses. For complex queries, the agent uses the memory processing module to filter chat history for relevant content, then passes the results to the intelligent task decomposition planner, and finally executes the tasks using personalized recommendation tools. Evaluation on Walmart's real world career recommendation scenarios demonstrates that AdaptJobRec reduces average response latency by up to 53.3% compared to competitive baselines, while significantly improving recommendation accuracy.",
+  "ai_type_tags": [
+    "LLM",
+    "Agent",
+    "推荐算法"
+  ],
+  "arxiv_id": "2508.13423",
+  "authors": [
+    "Qixin Wang",
+    "Dawei Wang",
+    "Kun Chen",
+    "Yaowei Hu",
+    "Puneet Girdhar"
+  ],
+  "authors_full": [
+    {
+      "name": "Qixin Wang"
+    },
+    {
+      "name": "Dawei Wang"
+    },
+    {
+      "name": "Kun Chen"
+    },
+    {
+      "name": "Yaowei Hu"
+    },
+    {
+      "name": "Puneet Girdhar"
+    },
+    {
+      "name": "Ruoteng Wang"
+    },
+    {
+      "name": "Aadesh Gupta"
+    },
+    {
+      "name": "Chaitanya Devella"
+    },
+    {
+      "name": "Wenlai Guo"
+    },
+    {
+      "name": "Shangwen Huang"
+    },
+    {
+      "name": "Bachir Aoun"
+    },
+    {
+      "name": "Greg Hayworth"
+    },
+    {
+      "name": "Han Li"
+    },
+    {
+      "name": "Xintao Wu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM驱动职业推荐系统，属HR/职业发展相关",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "为解决对话推荐系统中处理复杂查询与低延迟之间的权衡，提出AdaptJobRec，首个利用自主智能体集成个性化推荐工具的对话职业推荐系统。系统通过用户查询复杂度识别机制：简单查询直接选工具快速响应，复杂查询调用记忆处理模块和任务分解规划器，再执行个性化推荐工具。在沃尔玛真实职业推荐场景中，AdaptJobRec平均响应延迟降低53.3%，同时显著提升推荐准确率。",
+      "topic_tags": [
+        "推荐系统",
+        "HR",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-08-19",
+  "doi": null,
+  "id": "p_GyrIrjQPJYq17T-d",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2508.13423v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9512,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "AdaptJobRec: Enhancing Conversational Career Recommendation through an LLM-Powered Agentic System",
+  "title_zh": "AdaptJobRec: 通过LLM驱动的智能体系统增强会话式职业推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2508.13423v2",
+  "volume": null,
+  "year": 2025
+}

@@ -1,0 +1,57 @@
+{
+  "abstract": "Equitably allocating limited resources in high-stakes domains-such as education, employment, and healthcare-requires balancing short-term utility with long-term impact, while accounting for delayed outcomes, hidden heterogeneity, and ethical constraints. However, most learning-based allocation frameworks either assume immediate feedback or ignore the complex interplay between individual characteristics and intervention dynamics. We propose a novel bi-level contextual bandit framework for individualized resource allocation under delayed feedback, designed to operate in real-world settings with dynamic populations, capacity constraints, and time-sensitive impact. At the meta level, the model optimizes subgroup-level budget allocations to satisfy fairness and operational constraints. At the base level, it identifies the most responsive individuals within each group using a neural network trained on observational data, while respecting cooldown windows and delayed treatment effects modeled via resource-specific delay kernels. By explicitly modeling temporal dynamics and feedback delays, the algorithm continually refines its policy as new data arrive, enabling more responsive and adaptive decision-making. We validate our approach on two real-world datasets from education and workforce development, showing that it achieves higher cumulative outcomes, better adapts to delay structures, and ensures equitable distribution across subgroups. Our results highlight the potential of delay-aware, data-driven decision-making systems to improve institutional policy and social welfare.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法管理",
+    "算法决策"
+  ],
+  "arxiv_id": "2511.10572",
+  "authors": [
+    "Mohammadsina Almasi",
+    "Hadis Anahideh"
+  ],
+  "authors_full": [
+    {
+      "name": "Mohammadsina Almasi"
+    },
+    {
+      "name": "Hadis Anahideh"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "双层上下文老虎机资源分配,AI优化框架为主,高风险情境边缘涉及",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "提出双层上下文老虎机框架，在延迟反馈下进行个性化资源分配，元层优化子群预算，基础层通过神经网络识别最响应个体，兼顾公平与容量约束，在教育和就业数据上验证提升累计收益并保持公平。",
+      "topic_tags": [
+        "决策",
+        "公平性",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-13",
+  "doi": null,
+  "id": "p_lGuZV6eovjE8qqlu",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2511.10572v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8348,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Bi-Level Contextual Bandits for Individualized Resource Allocation under Delayed Feedback",
+  "title_zh": "延迟反馈下的双层上下文老虎机用于个性化资源配置",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.10572v2",
+  "volume": null,
+  "year": 2025
+}

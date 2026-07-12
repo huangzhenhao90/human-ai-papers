@@ -1,0 +1,53 @@
+{
+  "abstract": "Large multimodal models (LMMs) have revolutionized text-to-image generation, but they risk perpetuating the harmful social biases in their training data. Prior work has identified gender bias in these models, but methodological limitations prevented large-scale, comparable, cross-model analysis. To address this gap, we introduce the Aymara Image Fairness Evaluation, a benchmark for assessing social bias in AI-generated images. We test 13 commercially available LMMs using 75 procedurally-generated, gender-neutral prompts to generate people in stereotypically-male, stereotypically-female, and non-stereotypical professions. We then use a validated LLM-as-a-judge system to score the 965 resulting images for gender representation. Our results reveal (p < .001 for all): 1) LMMs systematically not only reproduce but actually amplify occupational gender stereotypes relative to real-world labor data, generating men in 93.0% of images for male-stereotyped professions but only 22.5% for female-stereotyped professions; 2) Models exhibit a strong default-male bias, generating men in 68.3% of the time for non-stereotyped professions; and 3) The extent of bias varies dramatically across models, with overall male representation ranging from 46.7% to 73.3%. Notably, the top-performing model de-amplified gender stereotypes and approached gender parity, achieving the highest fairness scores. This variation suggests high bias is not an inevitable outcome but a consequence of design choices. Our work provides the most comprehensive cross-model benchmark of gender bias to date and underscores the necessity of standardized, automated evaluation tools for promoting accountability and fairness in AI development.",
+  "ai_type_tags": [
+    "多模态",
+    "图像生成",
+    "LLM"
+  ],
+  "arxiv_id": "2509.07050",
+  "authors": [
+    "Juan Manuel Contreras"
+  ],
+  "authors_full": [
+    {
+      "name": "Juan Manuel Contreras"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "评估AI模型偏见，AI伦理相关边缘涉及社会议题",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究通过Aymara图像公平性评估基准，对13个大型多模态模型进行性别偏见评估。使用75个性别中立提示生成965张图像，并借助LLM-as-judge评分。结果发现：LMMs不仅复制而且放大了职业性别刻板印象（男性职业93%生成男性，女性职业仅22.5%）；存在默认男性偏见（非典型职业68.3%生成男性）；不同模型偏见差异显著（46.7%-73.3%）；表现最优模型接近性别平等，表明高偏见非不可避免而是设计选择的结果。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-09-08",
+  "doi": null,
+  "id": "p_lM--bCpbZvTbxgXe",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2509.07050v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9496,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Automated Evaluation of Gender Bias Across 13 Large Multimodal Models",
+  "title_zh": "13个大型多模态模型中性别偏见的自动化评估",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2509.07050v1",
+  "volume": null,
+  "year": 2025
+}

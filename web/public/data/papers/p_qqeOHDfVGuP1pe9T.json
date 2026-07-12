@@ -1,0 +1,60 @@
+{
+  "abstract": "Multimodal recommender systems enhance personalized recommendations in e-commerce and online advertising by integrating visual, textual, and user-item interaction data. However, existing methods often overlook two critical biases: (i) modal confounding, where latent factors (e.g., brand style or product category) simultaneously drive multiple modalities and influence user preference, leading to spurious feature-preference associations; (ii) interaction bias, where genuine user preferences are mixed with noise from exposure effects and accidental clicks. To address these challenges, we propose a Causal-inspired multimodal Recommendation framework. Specifically, we introduce a dual-channel cross-modal diffusion module to identify hidden modal confounders, utilize back-door adjustment with hierarchical matching and vector-quantized codebooks to block confounding paths, and apply front-door adjustment combined with causal topology reconstruction to build a deconfounded causal subgraph. Extensive experiments on three real-world e-commerce datasets demonstrate that our method significantly outperforms state-of-the-art baselines while maintaining strong interpretability.",
+  "ai_type_tags": [
+    "多模态",
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2510.12325",
+  "authors": [
+    "Jie Yang",
+    "Chenyang Gu",
+    "Zixuan Liu"
+  ],
+  "authors_full": [
+    {
+      "name": "Jie Yang"
+    },
+    {
+      "name": "Chenyang Gu"
+    },
+    {
+      "name": "Zixuan Liu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "因果推断AI用于多模态推荐系统",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "多模态推荐系统中，模态混杂与交互噪声导致偏好估计偏误。提出因果启发框架，利用双通道跨模态扩散识别隐藏混杂，采用后门与前门调整构建去混杂因果子图。实验表明在电商数据集上显著超越基线，且具强可解释性。",
+      "topic_tags": [
+        "推荐系统",
+        "偏见"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-14",
+  "doi": null,
+  "id": "p_qqeOHDfVGuP1pe9T",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2510.12325v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9900,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Causal Inspired Multi Modal Recommendation",
+  "title_zh": "因果启发的多模态推荐方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.12325v1",
+  "volume": null,
+  "year": 2025
+}

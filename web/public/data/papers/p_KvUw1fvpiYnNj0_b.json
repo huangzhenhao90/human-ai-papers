@@ -1,0 +1,53 @@
+{
+  "abstract": "Adaptive behavior in volatile environments requires agents to switch among value-control regimes across latent contexts, but maintaining separate preferences, policy biases, and action-confidence parameters for every situation is intractable. We introduce value profiles: a small set of reusable bundles of value-related parameters (outcome preferences, policy priors, and policy precision) assigned to hidden states in a generative model. As posterior beliefs over states evolve trial by trial, effective control parameters arise via belief-weighted mixing, enabling state-conditional strategy recruitment without requiring independent parameters for each context. We evaluate this framework in probabilistic reversal learning, comparing static-precision, entropy-coupled dynamic-precision, and profile-based models using cross-validated log-likelihood and information criteria. Model comparison favors the profile-based model over simpler alternatives (about 100-point AIC differences), and parameter-recovery analyses support structural identifiability even when context must be inferred from noisy observations. Model-based inference further suggests that adaptive control in this task is driven primarily by modulation of policy priors rather than policy precision, with gradual belief-dependent profile recruitment consistent with state-conditional (not purely uncertainty-driven) control. Overall, reusable value profiles provide a tractable computational account of belief-conditioned value control in volatile environments and yield testable signatures of belief-dependent control and behavioral flexibility.",
+  "ai_type_tags": [
+    "算法决策",
+    "机器学习",
+    "可解释AI"
+  ],
+  "arxiv_id": "2512.11829",
+  "authors": [
+    "Jacob Poschl"
+  ],
+  "authors_full": [
+    {
+      "name": "Jacob Poschl"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "主动推理计算认知框架",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "在动态环境中，智能体需在不同价值控制模式间切换，但为每个情境维护独立参数不可行。研究提出可复用的价值档案：绑定到隐藏状态的参数束，通过信念加权混合动态生成控制参数。在概率反转学习任务中，档案模型优于简单替代模型约100点AIC。分析表明适应性控制主要源于政策先验调节，而非政策精度；渐进式信念依赖的档案招募支持状态条件控制机制。该框架为信念条件下的价值调节提供了可处理的计算模型。",
+      "topic_tags": [
+        "决策",
+        "算法管理",
+        "组织学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-12-03",
+  "doi": null,
+  "id": "p_KvUw1fvpiYnNj0_b",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2512.11829v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8328,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Active Inference with Reusable State-Dependent Value Profiles",
+  "title_zh": "具有可复用状态依赖价值画像的主动推理",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2512.11829v1",
+  "volume": null,
+  "year": 2025
+}

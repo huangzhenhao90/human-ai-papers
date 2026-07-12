@@ -1,0 +1,61 @@
+{
+  "abstract": "Problem definition: Supply chains are constantly evolving networks. Reinforcement learning is increasingly proposed as a solution to provide optimal control of these networks. Academic/practical: However, learning in continuously varying environments remains a challenge in the reinforcement learning literature.Methodology: This paper therefore seeks to address whether agents can control varying supply chain problems, transferring learning between environments that require different strategies and avoiding catastrophic forgetting of tasks that have not been seen in a while. To evaluate this approach, two state-of-the-art Reinforcement Learning (RL) algorithms are compared: an actor-critic learner, Proximal Policy Optimisation(PPO), and a Recurrent Proximal Policy Optimisation (RPPO), PPO with a Long Short-Term Memory(LSTM) layer, which is showing popularity in online learning environments. Results: First these methods are compared on six sets of environments with varying degrees of stochasticity. The results show that more lean strategies adopted in Batch environments are different from those adopted in Stochastic environments with varying products. The methods are also compared on various continuous supply chain scenarios, where the PPO agents are shown to be able to adapt through continuous learning when the tasks are similar but show more volatile performance when changing between the extreme tasks. However, the RPPO, with an ability to remember histories, is able to overcome this to some extent and takes on a more realistic strategy. Managerial implications: Our results provide a new perspective on the continuously varying supply chain, the cooperation and coordination of agents are crucial for improving the overall performance in uncertain and semi-continuous non-stationary supply chain environments without the need to retrain the environment as the demand changes.",
+  "ai_type_tags": [
+    "强化学习",
+    "机器学习"
+  ],
+  "arxiv_id": "2312.15502",
+  "authors": [
+    "Wan Wang",
+    "Haiyan Wang",
+    "Adam J. Sobey"
+  ],
+  "authors_full": [
+    {
+      "name": "Wan Wang"
+    },
+    {
+      "name": "Haiyan Wang"
+    },
+    {
+      "name": "Adam J. Sobey"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "强化学习用于供应链管理，管理学核心领域",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "探究强化学习能否有效控制持续变化的供应链网络，并在不同策略环境间迁移学习、避免灾难性遗忘。对比PPO与RPPO算法在六组不同随机环境及连续供应链场景中的表现。结果显示RPPO因具备历史记忆能力，在极端任务切换时表现更稳定。",
+      "topic_tags": [
+        "供应链管理",
+        "强化学习",
+        "算法决策",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-12-24",
+  "doi": null,
+  "id": "p_HY2bROS3IL6LW6vm",
+  "issue": null,
+  "journal": "arXiv:eess.SY",
+  "pdf_url": "https://arxiv.org/pdf/2312.15502v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9777,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Agent based modelling for continuously varying supply chains",
+  "title_zh": "面向持续变动供应链的智能体建模仿真",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2312.15502v1",
+  "volume": null,
+  "year": 2023
+}

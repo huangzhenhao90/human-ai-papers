@@ -1,0 +1,86 @@
+{
+  "abstract": "Organizations increasingly use machine learning (ML) and artificial intelligence (AI), including large language models, to generate variables for regression models that inform business and policy decisions. For example, practitioners may use AI to predict review sentiment, ad aesthetics, or emotional expressions, and then estimate their causal effects on outcomes such as sales or engagement. However, because AI predictions are imperfect, directly using these AI-generated variables as regressors introduces measurement error that can systematically bias causal estimates, potentially leading to over- or underinvestment in business strategies. We develop new estimators that correct this bias in partially linear regression models, which are widely deployed in experimental systems at major platforms, including Tencent, Amazon AWS, and Microsoft. Our approach requires only a small human-annotated subsample alongside the large AI-labeled data set to achieve unbiased and efficient estimation. We demonstrate that our methods work with both traditional ML algorithms and LLM-based predictions. Our framework can be directly integrated into existing analytics and experimental systems, enabling practitioners to leverage the scalability of AI-generated data while maintaining reliable causal conclusions. This work also has implications for AI fairness, as our approach can help correct biases from any source in AI predictions.",
+  "ai_type_tags": [
+    "机器学习",
+    "LLM",
+    "算法决策"
+  ],
+  "arxiv_id": "2024.1370",
+  "authors": [
+    "Jingwen Zhang",
+    "Wendao Xue",
+    "Yifan Yu",
+    "Yong Tan"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Illinois Urbana-Champaign"
+      ],
+      "name": "Jingwen Zhang",
+      "orcid": "https://orcid.org/0009-0008-6162-9810",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Chinese University of Hong Kong"
+      ],
+      "name": "Wendao Xue",
+      "orcid": "https://orcid.org/0000-0001-8388-9674",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Hong Kong"
+      ],
+      "name": "Yifan Yu",
+      "orcid": "https://orcid.org/0000-0002-8959-3169",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Washington"
+      ],
+      "name": "Yong Tan",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "ML/AI生成变量偏差校正为核心AI议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "机器学习或大语言模型生成的预测变量在回归中常因测量误差导致因果效应估计偏误。该研究提出在部分线性模型中使用少量人工标注样本纠正偏差的新估计量，适用于腾讯、亚马逊、微软等平台的实验系统。方法兼容传统ML与LLM预测，可直接嵌入现有分析流程，在保持AI可扩展性的同时恢复无偏因果结论，并对AI公平性提供潜在帮助。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "因果推断",
+        "绩效评估"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-27",
+  "doi": "10.1287/isre.2024.1370",
+  "id": "p_0qOaD0rffAHUVvnr",
+  "issue": null,
+  "journal": "ISR",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11399,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Debiasing ML- or AI-Generated Regressors in Partially Linear Models",
+  "title_zh": "部分线性模型中ML或AI生成回归器的去偏方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/isre.2024.1370",
+  "volume": null,
+  "year": 2026
+}

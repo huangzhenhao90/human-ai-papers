@@ -1,0 +1,70 @@
+{
+  "abstract": "Recommender systems are the cornerstone of today's information dissemination, yet a disconnect between offline metrics and online performance greatly hinders their development. Addressing this challenge, we envision a recommendation simulator, capitalizing on recent breakthroughs in human-level intelligence exhibited by Large Language Models (LLMs). We propose Agent4Rec, a user simulator in recommendation, leveraging LLM-empowered generative agents equipped with user profile, memory, and actions modules specifically tailored for the recommender system. In particular, these agents' profile modules are initialized using real-world datasets (e.g. MovieLens, Steam, Amazon-Book), capturing users' unique tastes and social traits; memory modules log both factual and emotional memories and are integrated with an emotion-driven reflection mechanism; action modules support a wide variety of behaviors, spanning both taste-driven and emotion-driven actions. Each agent interacts with personalized recommender models in a page-by-page manner, relying on a pre-implemented collaborative filtering-based recommendation algorithm. We delve into both the capabilities and limitations of Agent4Rec, aiming to explore an essential research question: ``To what extent can LLM-empowered generative agents faithfully simulate the behavior of real, autonomous humans in recommender systems?'' Extensive and multi-faceted evaluations of Agent4Rec highlight both the alignment and deviation between agents and user-personalized preferences. Beyond mere performance comparison, we explore insightful experiments, such as emulating the filter bubble effect and discovering the underlying causal relationships in recommendation tasks. Our codes are available at https://github.com/LehengTHU/Agent4Rec.",
+  "ai_type_tags": [
+    "LLM",
+    "生成式AI",
+    "用户模拟",
+    "推荐算法"
+  ],
+  "arxiv_id": "2310.10108",
+  "authors": [
+    "An Zhang",
+    "Yuxin Chen",
+    "Leheng Sheng",
+    "Xiang Wang",
+    "Tat-Seng Chua"
+  ],
+  "authors_full": [
+    {
+      "name": "An Zhang"
+    },
+    {
+      "name": "Yuxin Chen"
+    },
+    {
+      "name": "Leheng Sheng"
+    },
+    {
+      "name": "Xiang Wang"
+    },
+    {
+      "name": "Tat-Seng Chua"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM生成代理用于推荐模拟器，涉及消费者行为建模",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "推荐系统的离线指标与在线表现常有差距，本文提出基于大语言模型的生成式 Agent 模拟器 Agent4Rec，赋予用户画像、记忆与行为模块，模拟口味驱动和情感驱动的行为，借助协同过滤推荐算法进行页面级交互。实验评估 Agent4Rec 对真实用户行为的对齐程度，揭示其优势与局限。",
+      "topic_tags": [
+        "推荐系统",
+        "人机交互",
+        "评估"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-10-16",
+  "doi": null,
+  "id": "p_wcwRsYQpoJTnUa6i",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2310.10108v3",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10026,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "On Generative Agents in Recommendation",
+  "title_zh": "论推荐中的生成式智能体",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2310.10108v3",
+  "volume": null,
+  "year": 2023
+}

@@ -1,0 +1,89 @@
+{
+  "abstract": "Stochastic gradient descent (SGD) has proven effective in solving many inventory control problems with demand learning. However, it often faces the pitfall of an infeasible target inventory level that is lower than the current inventory level. Several recent works have been successful in resolving this issue in various inventory systems. However, their techniques are rather sophisticated and difficult to apply to more complicated scenarios, such as multiproduct and multiconstraint inventory systems. In this paper, we address the infeasible target inventory-level issue from a new technical perspective; we propose a novel minibatch SGD-based metapolicy. Our metapolicy is flexible enough to be applied to a general inventory systems framework covering a wide range of inventory management problems with myopic clairvoyant optimal policy. By devising the optimal minibatch scheme, our metapolicy achieves a regret bound of [Formula: see text] for the general convex case and [Formula: see text] for the strongly convex case. To demonstrate the power and flexibility of our metapolicy, we apply it to three important inventory control problems, multiproduct and multiconstraint systems, multiechelon serial systems, and one-warehouse and multistore systems, by carefully designing application-specific subroutines. We also conduct extensive numerical experiments to demonstrate that our metapolicy enjoys competitive regret performance, high computational efficiency, and low variances among a wide range of applications.  This paper was accepted by J. George Shanthikumar, data science.  Funding: J. Xie and S. Yuan are supported by the National Natural Science Foundation of China (NSFC) [Grant 72331011].  Supplemental Material: The online appendix is available at https://doi.org/10.1287/mnsc.2023.00920 .",
+  "ai_type_tags": [
+    "随机梯度下降",
+    "元策略",
+    "在线学习",
+    "机器学习"
+  ],
+  "arxiv_id": "2023.00920",
+  "authors": [
+    "Jiameng Lyu",
+    "Jinxing Xie",
+    "Shilin Yuan",
+    "Yuan Zhou"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Tsinghua University"
+      ],
+      "name": "Jiameng Lyu",
+      "orcid": "https://orcid.org/0000-0002-4688-5276",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Tsinghua University"
+      ],
+      "name": "Jinxing Xie",
+      "orcid": "https://orcid.org/0000-0002-9269-6468",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Tsinghua University"
+      ],
+      "name": "Shilin Yuan",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Institute of Mathematical Sciences",
+        "Beijing Institute of Mathematical Sciences and Applications",
+        "Tsinghua University"
+      ],
+      "name": "Yuan Zhou",
+      "orcid": "https://orcid.org/0009-0008-1706-6539",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "随机梯度下降SGD方法用于库存控制优化",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对需求学习中的库存控制问题，提出 minibatch SGD 元策略框架，解决目标库存不可达的难题，获得一般凸和强凸情况下的 O(T^{3/4}) 与 O(T) regret 界，并通过多产品、多约束、串行与多仓系统验证其高效性和通用性。",
+      "topic_tags": [
+        "库存管理",
+        "供应链",
+        "在线学习",
+        "决策优化"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 2,
+  "date": "2025-07",
+  "doi": "10.1287/mnsc.2023.00920",
+  "id": "p_l-zBRcvNngLyRbeN",
+  "issue": "7",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3107,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "A Minibatch Stochastic Gradient Descent-Based Learning Metapolicy for Inventory Systems with Myopic Optimal Policy",
+  "title_zh": "基于小批量随机梯度下降的学习元策略：具有短视最优策略的库存系统",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.00920",
+  "volume": "71",
+  "year": 2025
+}

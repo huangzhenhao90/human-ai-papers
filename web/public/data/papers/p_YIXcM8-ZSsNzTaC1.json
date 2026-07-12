@@ -1,0 +1,91 @@
+{
+  "abstract": "This work presents a two-layer, human-centric production planning framework designed to optimize both operational efficiency and workforce fairness in industrial manufacturing. The first layer formulates the Order-Line allocation as a Constraint Programming (CP) problem, generating high-utilization production schedules that respect machine capacities, processing times, and due dates. The second layer models Worker-Line allocation as a Markov Decision Process (MDP), integrating human factors such as worker preference, experience, resilience, and medical constraints into the assignment process. Three solution strategies, greedy allocation, MCTS, and RL, are implemented and compared across multiple evaluation scenarios. The proposed system is validated through 16 test sessions with domain experts from the automotive industry, combining quantitative key performance indicators (KPIs) with expert ratings. Results indicate that the CP-based scheduling approach produces compact, feasible production plans with low tardiness, while the MDP-based worker allocation significantly improves fairness and preference alignment compared to baseline approaches. Domain experts rated both the Order-Line and Worker-Line components as effective and highlighted opportunities to further refine the objective function to penalize excessive earliness and improve continuity in worker assignments. Overall, the findings demonstrate that combining CP with learning-based decision-making provides a robust approach for human-centric production planning. The approach enables simultaneous optimization of throughput and workforce well-being, offering a practical foundation for fair and efficient manufacturing scheduling in industrial settings.",
+  "ai_type_tags": [
+    "强化学习",
+    "算法决策",
+    "机器学习"
+  ],
+  "arxiv_id": "2510.01094",
+  "authors": [
+    "Alexander Nasuta",
+    "Alessandro Cisi",
+    "Sylwia Olbrych",
+    "Gustavo Vieira",
+    "Rui Fernandes"
+  ],
+  "authors_full": [
+    {
+      "name": "Alexander Nasuta"
+    },
+    {
+      "name": "Alessandro Cisi"
+    },
+    {
+      "name": "Sylwia Olbrych"
+    },
+    {
+      "name": "Gustavo Vieira"
+    },
+    {
+      "name": "Rui Fernandes"
+    },
+    {
+      "name": "Lucas Paletta"
+    },
+    {
+      "name": "Marlene Mayr"
+    },
+    {
+      "name": "Rishyank Chevuri"
+    },
+    {
+      "name": "Robert Woitsch"
+    },
+    {
+      "name": "Hans Aoyang Zhou"
+    },
+    {
+      "name": "Anas Abdelrazeq"
+    },
+    {
+      "name": "Robert H. Schmitt"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "RL/CP优化生产规划含人为因素，中度管理相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "提出双层生产计划框架：第一层用约束规划优化订单-产线分配，第二层用马尔可夫决策过程优化工人-产线分配，融入公平性与偏好等因素。实验证明该方法在保证效率的同时显著提升劳动力分配公平性，经汽车行业专家验证有效。",
+      "topic_tags": [
+        "工作设计",
+        "绩效评估",
+        "算法管理",
+        "组织变革"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-01",
+  "doi": null,
+  "id": "p_YIXcM8-ZSsNzTaC1",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2510.01094v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8380,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Optimizing Fairness in Production Planning: A Human-Centric Approach to Machine and Workforce Allocation",
+  "title_zh": "优化生产计划中的公平性：机器与劳动力分配的人类中心方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.01094v1",
+  "volume": null,
+  "year": 2025
+}

@@ -1,0 +1,85 @@
+{
+  "abstract": "AI assistants in human-AI collaboration often correct suboptimal human actions through behavioral feedback (e.g., alerts or steering-wheel nudges in assistive driving). Such interventions can mitigate immediate errors, but long-term improvement requires addressing the underlying misconceptions that cause repeated mistakes. We introduce SENSEI, a framework that infers user misconceptions from interaction behavior and provides targeted, minimal yet sufficient suggestions to correct them. Our approach departs from action- or trajectory-level interventions by operating over a structured knowledge representation to localize and correct the sources of erroneous behavior. Across three long-horizon tasks with diverse misconceptions and corresponding behaviors, SENSEI demonstrates zero-shot compositional generalization, disentangling multiple overlapping misconceptions despite training only on single-misconception cases. A user study further shows that our method identifies real human misconceptions and provides effective guidance that improves long-horizon task performance, successfully correcting $90\\%$ of student misconceptions. Code and project page are available at https://misoshiruseijin.github.io/SENSEI/.",
+  "ai_type_tags": [
+    "可解释AI",
+    "人机交互"
+  ],
+  "arxiv_id": "2606.05602",
+  "authors": [
+    "Ayano Hiranaka",
+    "Ya-Chuan Hsu",
+    "Stefanos Nikolaidis",
+    "Erdem Bıyık",
+    "Daniel Seita"
+  ],
+  "authors_full": [
+    {
+      "name": "Ayano Hiranaka"
+    },
+    {
+      "name": "Ya-Chuan Hsu"
+    },
+    {
+      "name": "Stefanos Nikolaidis"
+    },
+    {
+      "name": "Erdem Bıyık"
+    },
+    {
+      "name": "Daniel Seita"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "可解释AI辅助人机协作，交互机制相关，偏人因工程",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出SENSEI框架，通过知识表征定位用户误解根源并提供精准建议，而非仅纠正单次行为。区别于轨迹级干预，该方法在结构化知识层面解纠缠多个重叠误解。跨三个长时域任务实现零样本组合泛化，用户研究中90%的误解得到有效纠正，提升长期任务表现。",
+      "topic_tags": [
+        "人机协作",
+        "教育",
+        "培训"
+      ]
+    },
+    "ur": {
+      "ai_reason": "AI框架推断用户误解并纠正，虽涉及用户行为，但评估为计算实验，非用户研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究提出SENSEI框架，通过结构化知识表征从交互行为中推断用户误解，并给出最小且足够的建议以纠正根本错误。三项长期任务实验显示模型具备零样本组合泛化能力，可分离重叠误解；用户实验证实可纠正90%学习者误解并提升任务表现。",
+      "topic_tags": [
+        "可解释 AI",
+        "人机协作",
+        "智能体/Agent"
+      ]
+    }
+  },
+  "channels": [
+    "ob",
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-04",
+  "doi": null,
+  "id": "p_NSyH_eZzPOL1Xl4g",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2606.05602v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11533,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 7674,
+      "revision": "a8be9093b6fca7daef7faf55e5ee1803f079cae5"
+    }
+  ],
+  "title": "Fix the Mind, Not the Move: Interpretable AI Assistance via Knowledge-Gap Localization",
+  "title_zh": "修复思维而非动作：通过知识差距定位的可解释AI辅助",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2606.05602v1",
+  "volume": null,
+  "year": 2026
+}

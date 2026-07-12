@@ -1,0 +1,75 @@
+{
+  "abstract": "Most venture capital (VC) investments fail, while a few deliver outsized returns. Accurately predicting startup success requires synthesizing complex relational evidence, including company disclosures, investor track records, and investment network structures, through explicit reasoning to form coherent, interpretable investment theses. Traditional machine learning and graph neural networks both lack this reasoning capability. Large language models (LLMs) offer strong reasoning but face a modality mismatch with graphs. Recent graph-LLM methods target in-graph tasks where answers lie within the graph, whereas VC prediction is off-graph: the target exists outside the network. The core challenge is selecting graph paths that maximize predictor performance on an external objective while enabling step-by-step reasoning. We present MIRAGE-VC, a multi-perspective retrieval-augmented generation framework that addresses two obstacles: path explosion (thousands of candidate paths overwhelm LLM context) and heterogeneous evidence fusion (different startups need different analytical emphasis). Our information-gain-driven path retriever iteratively selects high-value neighbors, distilling investment networks into compact chains for explicit reasoning. A multi-agent architecture integrates three evidence streams via a learnable gating mechanism based on company attributes. Under strict anti-leakage controls, MIRAGE-VC achieves +5.0% F1 and +16.6% PrecisionAt5, and sheds light on other off-graph prediction tasks such as recommendation and risk assessment. Code: https://anonymous.4open.science/r/MIRAGE-VC-323F.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "多模态"
+  ],
+  "arxiv_id": "2512.23489",
+  "authors": [
+    "Haoyu Pei",
+    "Zhongyang Liu",
+    "Xiangyi Xiao",
+    "Xiaocong Du",
+    "Suting Hong"
+  ],
+  "authors_full": [
+    {
+      "name": "Haoyu Pei"
+    },
+    {
+      "name": "Zhongyang Liu"
+    },
+    {
+      "name": "Xiangyi Xiao"
+    },
+    {
+      "name": "Xiaocong Du"
+    },
+    {
+      "name": "Suting Hong"
+    },
+    {
+      "name": "Kunpeng Zhang"
+    },
+    {
+      "name": "Haipeng Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM图推理用于VC预测，强创业/投资管理相关性",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "解决风险投资预测中路径爆炸和异构证据融合两大挑战，提出MIRAGE-VC框架。该框架通过信息增益驱动的路径检索器迭代选择高价值邻居，利用多智能体架构和可学习门控机制整合公司属性等三种证据流。在严格反泄露控制下，F1提升5.0%，PrecisionAt5提升16.6%，为离图预测任务提供可解释推理。",
+      "topic_tags": [
+        "创业",
+        "决策",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-12-29",
+  "doi": null,
+  "id": "p_4WZvNPJOsSVRTPUs",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2512.23489v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9887,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "The Gaining Paths to Investment Success: Information-Driven LLM Graph Reasoning for Venture Capital Prediction",
+  "title_zh": "投资成功之道：信息驱动的LLM图推理与风险投资预测",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2512.23489v2",
+  "volume": null,
+  "year": 2025
+}

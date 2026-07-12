@@ -1,0 +1,56 @@
+{
+  "abstract": "This paper studies algorithmic decision-making in the presence of strategic individual behaviors, where an ML model is used to make decisions about human agents and the latter can adapt their behavior strategically to improve their future data. Existing results on strategic learning have largely focused on the linear setting where agents with linear labeling functions best respond to a (noisy) linear decision policy. Instead, this work focuses on general non-linear settings where agents respond to the decision policy with only \"local information\" of the policy. Moreover, we simultaneously consider the objectives of maximizing decision-maker welfare (model prediction accuracy), social welfare (agent improvement caused by strategic behaviors), and agent welfare (the extent that ML underestimates the agents). We first generalize the agent best response model in previous works to the non-linear setting, then reveal the compatibility of welfare objectives. We show the three welfare can attain the optimum simultaneously only under restrictive conditions which are challenging to achieve in non-linear settings. The theoretical results imply that existing works solely maximizing the welfare of a subset of parties inevitably diminish the welfare of the others. We thus claim the necessity of balancing the welfare of each party in non-linear settings and propose an irreducible optimization algorithm suitable for general strategic learning. Experiments on synthetic and real data validate the proposed algorithm.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法管理"
+  ],
+  "arxiv_id": "2405.01810",
+  "authors": [
+    "Tian Xie",
+    "Xueru Zhang"
+  ],
+  "authors_full": [
+    {
+      "name": "Tian Xie"
+    },
+    {
+      "name": "Xueru Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法决策与战略行为为核心，涉及人类主体行为适应，与OB有一定关联",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "论文聚焦非线性情境下的战略性学习问题，将代理人对决策策略的局部响应模型化，并在保持预测精度的同时，引入决策者、社会与代理人三方福利的联合优化。理论证明三方福利难以同步最优，必要在非线性条件下进行权衡，提出不可约优化算法，实验验证其有效性。",
+      "topic_tags": [
+        "算法决策",
+        "公平性",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-05-03",
+  "doi": null,
+  "id": "p_gx8rOYD8CDFrwCgt",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2405.01810v3",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9244,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Non-linear Welfare-Aware Strategic Learning",
+  "title_zh": "非线性福利感知策略学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2405.01810v3",
+  "volume": null,
+  "year": 2024
+}

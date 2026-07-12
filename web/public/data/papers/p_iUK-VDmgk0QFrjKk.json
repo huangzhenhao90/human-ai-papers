@@ -1,0 +1,71 @@
+{
+  "abstract": "A number of scientific conferences and journals have recently enacted policies that prohibit LLM usage by peer reviewers, except for polishing, paraphrasing, and grammar correction of otherwise human-written reviews. But, are these policies enforceable? To answer this question, we assemble a dataset of peer reviews simulating multiple levels of human-AI collaboration, and evaluate five state-of-the-art detectors, including two commercial systems. Our analysis shows that all detectors misclassify a non-trivial fraction of LLM-polished reviews as AI-generated, thereby risking false accusations of academic misconduct. We further investigate whether peer-review-specific signals, including access to the paper manuscript and the constrained domain of scientific writing, can be leveraged to improve detection. While incorporating such signals yields measurable gains in some settings, we identify limitations in each approach and find that none meets the accuracy standards required for identifying AI use in peer reviews. Importantly, our results suggest that recent public estimates of AI use in peer reviews through the use of AI-text detectors should be interpreted with caution, as current detectors misclassify mixed reviews (collaborative human-AI outputs) as fully AI generated, potentially overstating the extent of policy violations.",
+  "ai_type_tags": [
+    "LLM",
+    "AI检测"
+  ],
+  "arxiv_id": "2603.20450",
+  "authors": [
+    "Rounak Saha",
+    "Gurusha Juneja",
+    "Dayita Chaudhuri",
+    "Naveeja Sajeevan",
+    "Nihar B Shah"
+  ],
+  "authors_full": [
+    {
+      "name": "Rounak Saha"
+    },
+    {
+      "name": "Gurusha Juneja"
+    },
+    {
+      "name": "Dayita Chaudhuri"
+    },
+    {
+      "name": "Naveeja Sajeevan"
+    },
+    {
+      "name": "Nihar B Shah"
+    },
+    {
+      "name": "Danish Pruthi"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM-polished同行评审的可检测性研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "多项学术会议禁止审稿人使用LLM，仅允许润色改写，研究评估此类政策是否可执行。构建多层次人机协作的审稿数据集，测试五款最新检测器（包括两款商业系统），结果所有检测器均将相当比例的LLM润色审稿误判为纯AI生成，存在虚假指控风险；引入审稿领域特定信号虽有一定改善，但无一检测器达到识别LLM使用的准确标准。结论：现有LLM检测器误分类人机协作产出为纯AI生成，当前对审稿中AI使用的公开估计可能严重高估，政策执行尚不可行。",
+      "topic_tags": [
+        "教育",
+        "伦理",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-20",
+  "doi": null,
+  "id": "p_iUK-VDmgk0QFrjKk",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2603.20450v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10090,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Policies Permitting LLM Use for Polishing Peer Reviews Are Currently Not Enforceable",
+  "title_zh": "允许LLM用于润色同行评审的政策目前无法执行",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2603.20450v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,67 @@
+{
+  "abstract": "Organizations are increasingly deploying large language models (LLMs) as customer service agents, decision aids, and semiautonomous agents. We develop State–Understanding–Value–Action (SUVA), a probabilistic auditing framework that turns an LLM’s response into structured evidence about how its decision was produced. SUVA treats the prompt as the state, codes the model’s reasoning to extract its understanding and stated values using a transparent codebook, and then estimates how these elements statistically predict the eventual action. We demonstrate SUVA on social preference games from behavioral economics and show how the same workflow can audit other delegated decisions by using domain-specific prompts and value codebooks. Across eight widely used LLMs, SUVA reveals systematic prosocial and reciprocity patterns and shows how posttraining alignment reshapes them. For practice and policy, SUVA supports a repeatable audit, align, and reaudit workflow for model selection, compliance, and ongoing monitoring of deployed LLM systems.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2024.0857",
+  "authors": [
+    "Yan Leng",
+    "Yuan Yuan"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "The University of Texas at Austin"
+      ],
+      "name": "Yan Leng",
+      "orcid": null,
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of California, Davis"
+      ],
+      "name": "Yuan Yuan",
+      "orcid": "https://orcid.org/0000-0001-6681-5710",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM审计框架，AI为核心消费者行为研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对大型语言模型在客服、决策辅助等场景中的价值对齐问题，提出SUVA审计框架，将提示视为状态，通过透明编码本提取模型理解和价值陈述，统计预测行为。使用行为经济学社会偏好游戏对8种LLM进行审计，发现模型普遍展现亲社会和互惠倾向，且后期对齐训练显著改变这些模式。框架支持可重复的审计、对齐、再审计流程，适用于模型选择、合规和部署监控。",
+      "topic_tags": [
+        "算法决策",
+        "伦理",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 1,
+  "date": "2026-02-23",
+  "doi": "10.1287/isre.2024.0857",
+  "id": "p_AO5OtlA7FfI5v71m",
+  "issue": null,
+  "journal": "ISR",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 5277,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "SUVA: A Probabilistic Framework for Auditing LLMs with an Application to Social Preferences",
+  "title_zh": "SUVA：一种审计LLM的概率框架及其在社会偏好中的应用",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/isre.2024.0857",
+  "volume": null,
+  "year": 2026
+}

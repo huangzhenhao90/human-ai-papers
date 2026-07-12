@@ -1,0 +1,74 @@
+{
+  "abstract": "Deep learning models are widely used in decision-making and recommendation systems, where they typically rely on the assumption of a static data distribution between training and deployment. However, real-world deployment environments often violate this assumption. Users who receive negative outcomes may adapt their features to meet model criteria, i.e., recourse action. These adaptive behaviors create shifts in the data distribution and when models are retrained on this shifted data, a feedback loop emerges: user behavior influences the model, and the updated model in turn reshapes future user behavior. Despite its importance, this bidirectional interaction between users and models has received limited attention. In this work, we develop a general framework to model user strategic behaviors and their interactions with decision-making systems under resource constraints and competitive dynamics. Both the theoretical and empirical analyses show that user recourse behavior tends to push logistic and MLP models toward increasingly higher decision standards, resulting in higher recourse costs and less reliable recourse actions over time. To mitigate these challenges, we propose two methods--Fair-top-k and Dynamic Continual Learning (DCL)--which significantly reduce recourse cost and improve model robustness. Our findings draw connections to economic theories, highlighting how algorithmic decision-making can unintentionally reinforce a higher standard and generate endogenous barriers to entry.",
+  "ai_type_tags": [
+    "机器学习",
+    "深度学习",
+    "推荐算法",
+    "持续学习"
+  ],
+  "arxiv_id": "2503.09658",
+  "authors": [
+    "Bo-Yi Liu",
+    "Zhi-Xuan Liu",
+    "Kuan Lun Chen",
+    "Shih-Yu Tsai",
+    "Jie Gao"
+  ],
+  "authors_full": [
+    {
+      "name": "Bo-Yi Liu"
+    },
+    {
+      "name": "Zhi-Xuan Liu"
+    },
+    {
+      "name": "Kuan Lun Chen"
+    },
+    {
+      "name": "Shih-Yu Tsai"
+    },
+    {
+      "name": "Jie Gao"
+    },
+    {
+      "name": "Hao-Tsung Yang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "用户与模型反馈循环，涉人机交互与组织行为",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究用户为获得模型正面决策而采取的策略性特征调整（recourse）对数据分布的影响。构建考虑资源约束与竞争的用户行为与决策系统交互框架，理论分析和实验表明，此类自适应行为会导致 logistic 和 MLP 模型的决策阈值不断升高，recourse 成本上升且可靠性下降。提出 Fair‑top‑k 与动态持续学习（DCL）两种方法，显著降低 recourse 成本并提升模型鲁棒性。",
+      "topic_tags": [
+        "人机协作",
+        "算法决策",
+        "反馈循环",
+        "公平性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-03-12",
+  "doi": "10.1609/aies.v8i2.36659",
+  "id": "p_zLunFzhV9Gntx0Mr",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2503.09658v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9148,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Understanding Endogenous Data Drift in Adaptive Models with Recourse-Seeking Users",
+  "title_zh": "内生性数据漂移对寻求替代方案用户适应模型的影响",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2503.09658v2",
+  "volume": null,
+  "year": 2025
+}

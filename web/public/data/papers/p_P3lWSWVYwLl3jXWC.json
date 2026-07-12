@@ -1,0 +1,67 @@
+{
+  "abstract": "Conversational Recommender Systems (CRSs) aim to provide personalized recommendations by capturing user preferences through interactive dialogues. Explainability in CRSs is crucial as it enables users to understand the reasoning behind recommendations, increasing system transparency and trustworthiness. However, current CRSs often leverage knowledge graphs (KGs) or language models to extract and represent user preferences as latent vectors, which limits their explainability. Large language models (LLMs) offer powerful reasoning capabilities that can bridge this gap by generating human-understandable preference summaries. However, effectively reasoning over user preferences in CRSs remains challenging as LLMs pre-trained on large-scale corpora may not be well-suited for analyzing user preferences. While KGs provide rich domain knowledge, integrating them with LLMs encounters a significant modality gap between structured KG information and unstructured conversations. In this paper, we propose COMPASS, a plug-and-play framework that synergizes LLMs and KGs to reason over user preferences, enhancing the performance and explainability of existing CRSs. COMPASS employs a two-stage training approach: first, it bridges the gap between the structured KG and natural language through novel graph entity captioning pre-training. Next, COMPASS optimizes user preference reasoning via knowledge-aware instruction fine-tuning, where the LLM learns to reason and summarize user preferences from dialogue histories and KG-augmented context. This enables COMPASS to perform knowledge-aware reasoning and generate interpretable user preferences that can seamlessly integrate with existing CRS models for improving recommendation performance and explainability. Our experiments on benchmark datasets demonstrate the effectiveness of COMPASS in improving various CRS models.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "知识图谱",
+    "可解释AI"
+  ],
+  "arxiv_id": "2411.14459",
+  "authors": [
+    "Zhangchi Qiu",
+    "Linhao Luo",
+    "Shirui Pan",
+    "Alan Wee-Chung Liew"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhangchi Qiu"
+    },
+    {
+      "name": "Linhao Luo"
+    },
+    {
+      "name": "Shirui Pan"
+    },
+    {
+      "name": "Alan Wee-Chung Liew"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "知识图谱增强LLM对话推荐",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "对话推荐系统面临用户偏好推理可解释性不足的挑战。现有系统将偏好表示为潜在向量，限制了可解释性。COMPASS框架通过知识图谱与大型语言模型协同弥合模态差距，采用图实体描述预训练跨越结构化知识与非结构化对话的语义鸿沟，并利用知识感知指令微调优化偏好推理，提升推荐系统透明度和用户信任。",
+      "topic_tags": [
+        "推荐系统",
+        "人机交互",
+        "消费者行为",
+        "知识管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-11-16",
+  "doi": null,
+  "id": "p_P3lWSWVYwLl3jXWC",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2411.14459v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9957,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Reasoning over User Preferences: Knowledge Graph-Augmented LLMs for Explainable Conversational Recommendations",
+  "title_zh": "基于知识图谱增强LLM的用户偏好推理实现可解释对话推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2411.14459v2",
+  "volume": null,
+  "year": 2024
+}

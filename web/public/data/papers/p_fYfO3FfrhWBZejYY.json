@@ -1,0 +1,61 @@
+{
+  "abstract": "As e-commerce expands, delivering real-time personalized recommendations from vast catalogs poses a critical challenge for retail platforms. Maximizing revenue requires careful consideration of both individual customer characteristics and available item features to continuously optimize assortments over time. In this paper, we consider the dynamic assortment problem with dual contexts -- user and item features. In high-dimensional scenarios, the quadratic growth of dimensions complicates computation and estimation. To tackle this challenge, we introduce a new low-rank dynamic assortment model to transform this problem into a manageable scale. Then we propose an efficient algorithm that estimates the intrinsic subspaces and utilizes the upper confidence bound approach to address the exploration-exploitation trade-off in online decision making. Theoretically, we establish a regret bound of $\\tilde{O}((d_1+d_2)r\\sqrt{T})$, where $d_1, d_2$ represent the dimensions of the user and item features respectively, $r$ is the rank of the parameter matrix, and $T$ denotes the time horizon. This bound represents a substantial improvement over prior literature, achieved by leveraging the low-rank structure. Extensive simulations and an application to the Expedia hotel recommendation dataset further demonstrate the advantages of our proposed method.",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2404.17592",
+  "authors": [
+    "Seong Jin Lee",
+    "Will Wei Sun",
+    "Yufeng Liu"
+  ],
+  "authors_full": [
+    {
+      "name": "Seong Jin Lee"
+    },
+    {
+      "name": "Will Wei Sun"
+    },
+    {
+      "name": "Yufeng Liu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "动态 assortment 优化,电商运营相关,有限OB关联",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "针对电商个性化推荐中高维用户‑商品特征导致计算与估计困难，构建低秩动态排序模型，利用上置信界算法平衡探索‑利用，理论上给出 O~((d1+d2)r√T) regret 界，模拟与 Expedia 数据验证优势。",
+      "topic_tags": [
+        "推荐系统",
+        "电子商务",
+        "算法管理",
+        "在线学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-04-19",
+  "doi": null,
+  "id": "p_fYfO3FfrhWBZejYY",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2404.17592v3",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10732,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Low-Rank Online Dynamic Assortment with Dual Contextual Information",
+  "title_zh": "基于双重上下文信息的低秩在线动态 assortment 优化",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2404.17592v3",
+  "volume": null,
+  "year": 2024
+}

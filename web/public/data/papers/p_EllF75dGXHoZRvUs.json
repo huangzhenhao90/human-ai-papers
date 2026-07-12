@@ -1,0 +1,63 @@
+{
+  "abstract": "Problem definition: Although large language models (LLMs) are increasingly integrated into business decision making, their potential to replicate and even amplify human cognitive biases cautions a significant, yet not well-understood, risk. This is particularly critical in high-stakes operational contexts like supply chain management. To address this, we investigate the decision-making patterns of leading LLMs using the canonical newsvendor problem in a dynamic setting, aiming to identify the nature and origins of their cognitive biases. Methodology/results: Through dynamic, multi-round experiments with GPT-4, GPT-4o, and LLaMA-8B, we tested for five established decision biases. We found that LLMs consistently replicated the classic ``Too Low/Too High'' ordering bias and significantly amplified other tendencies like demand-chasing behavior compared to human benchmarks. Our analysis uncovered a ``paradox of intelligence'': the more sophisticated GPT-4 demonstrated the greatest irrationality through overthinking, while the efficiency-optimized GPT-4o performed near-optimally. Because these biases persist even when optimal formulas are provided, we conclude they stem from architectural constraints rather than knowledge gaps. Managerial implications: First, managers should select models based on the specific task, as our results show that efficiency-optimized models can outperform more complex ones on certain optimization problems. Second, the significant amplification of bias by LLMs highlights the urgent need for robust human-in-the-loop oversight in high-stakes decisions to prevent costly errors. Third, our findings suggest that designing structured, rule-based prompts is a practical and effective strategy for managers to constrain models' heuristic tendencies and improve the reliability of AI-assisted decisions.",
+  "ai_type_tags": [
+    "LLM",
+    "GPT-4",
+    "GPT-4o",
+    "机器学习"
+  ],
+  "arxiv_id": "2512.12552",
+  "authors": [
+    "Jifei Liu",
+    "Zhi Chen",
+    "Yuanguang Zhong"
+  ],
+  "authors_full": [
+    {
+      "name": "Jifei Liu"
+    },
+    {
+      "name": "Zhi Chen"
+    },
+    {
+      "name": "Yuanguang Zhong"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心研究LLM认知偏差，运营管理场景",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究聚焦大语言模型在供应链牛鞭效应经典报童问题中的决策偏差。通过对GPT-4、GPT-4o和LLaMA-8B进行多轮动态实验，测试五类决策偏见，发现LLM一致复制了\"过低/过高\"订单偏差，并显著放大了相比人类基准的需求追逐行为。研究揭示了\"智能悖论\"：更复杂的GPT-4因过度思考表现出最大非理性，而效率优化的GPT-4o表现接近最优。偏见即使在提供最优公式时仍持续存在，表明其源于架构约束而非知识缺口。",
+      "topic_tags": [
+        "决策",
+        "算法管理",
+        "认知偏差",
+        "供应链"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-12-14",
+  "doi": null,
+  "id": "p_EllF75dGXHoZRvUs",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2512.12552v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9445,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Large Language Newsvendor: Decision Biases and Cognitive Mechanisms",
+  "title_zh": "大语言模型报童问题: 决策偏差与认知机制",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2512.12552v1",
+  "volume": null,
+  "year": 2025
+}

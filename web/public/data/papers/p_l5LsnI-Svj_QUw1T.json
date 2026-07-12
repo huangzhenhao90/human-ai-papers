@@ -1,0 +1,68 @@
+{
+  "abstract": "Due to the sheer number of available choices, online retailers frequently use tiered assortment to present products. In this case, groups of products are arranged across multiple pages or stages, and a customer clicks on “next” or “load more” to access them sequentially. Despite the prevalence of such assortments in practice, this topic has not received much attention in the existing literature. In this work, we focus on a sequential choice model that captures customers’ behavior when product recommendations are presented in tiers. We analyze multiple variants of tiered assortment optimization (TAO) problems by imposing “no-duplication” and capacity constraints. For the offline setting involving known customers’ preferences, we characterize the properties of the optimal tiered assortment and propose algorithms that improve the computational efficiency over the existing benchmarks. To the best of our knowledge, we are the first to study the online setting of the TAO problem. A unique characteristic of our online setting, absent from the one-tier MNL bandit, is partial feedback. Products in the lower priority tiers are not shown when a customer has purchased a product or has chosen to exit at an earlier tier. Such partial feedback, along with product interdependence across tiers, increases the learning complexity. For both the noncontextual and contextual problems, we propose online algorithms and quantify their respective regrets. Moreover, we are able to construct tighter uncertainty sets for model parameters in the contextual case and thus improve the performance. We demonstrate the efficacy of our proposed algorithms through numerical experiments.  This paper was accepted by J. George Shanthikumar, data science.  Supplemental Material: The data files and e-companion are available at https://doi.org/10.1287/mnsc.2023.4940 .",
+  "ai_type_tags": [
+    "推荐算法",
+    "在线学习",
+    "多臂老虎机"
+  ],
+  "arxiv_id": "2023.4940",
+  "authors": [
+    "Junyu Cao",
+    "Wei Sun"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "The University of Texas at Austin"
+      ],
+      "name": "Junyu Cao",
+      "orcid": "https://orcid.org/0000-0001-9235-1411",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "IBM (United States)"
+      ],
+      "name": "Wei Sun",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "研究在线零售分层分类优化与在线学习，属运筹/营销管理边缘AI",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "研究在线零售商常用的分页分阶段陈列（分层 assortment）优化问题。构建捕捉顾客层级浏览行为的序贯选择模型，在满足不重复和容量约束下，分别解决离线已知偏好和在线学习两种情境：对离线问题提出高效算法，对在线问题因存在早期退出导致的局部反馈而引入新挑战，提出具有可证明遗憾界的在线算法，填补了该领域的理论与实践空白。",
+      "topic_tags": [
+        "品类规划",
+        "在线零售",
+        "消费者行为",
+        "运筹优化"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 4,
+  "date": "2024-08",
+  "doi": "10.1287/mnsc.2023.4940",
+  "id": "p_l5LsnI-Svj_QUw1T",
+  "issue": "8",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3331,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Tiered Assortment: Optimization and Online Learning",
+  "title_zh": "分层 assortment：优化与在线学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4940",
+  "volume": "70",
+  "year": 2024
+}

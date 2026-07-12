@@ -1,0 +1,60 @@
+{
+  "abstract": "The wide adoption of AI decision-making systems in critical domains such as criminal justice, loan approval, and hiring processes has heightened concerns about algorithmic fairness. As we often only have access to the output of algorithms without insights into their internal mechanisms, it was natural to examine how decisions would alter when auxiliary sensitive attributes (such as race) change. This led the research community to come up with counterfactual fairness measures, but how to evaluate the measure from available data remains a challenging task. In many practical applications, the target counterfactual measure is not identifiable, i.e., it cannot be uniquely determined from the combination of quantitative data and qualitative knowledge. This paper addresses this challenge using partial identification, which derives informative bounds over counterfactual fairness measures from observational data. We introduce a Bayesian approach to bound unknown counterfactual fairness measures with high confidence. We demonstrate our algorithm on the COMPAS dataset, examining fairness in recidivism risk scores with respect to race, age, and sex. Our results reveal a positive (spurious) effect on the COMPAS score when changing race to African-American (from all others) and a negative (direct causal) effect when transitioning from young to old age.",
+  "ai_type_tags": [
+    "算法决策",
+    "可解释AI"
+  ],
+  "arxiv_id": "2510.00163",
+  "authors": [
+    "Saeyoung Rho",
+    "Junzhe Zhang",
+    "Elias Bareinboim"
+  ],
+  "authors_full": [
+    {
+      "name": "Saeyoung Rho"
+    },
+    {
+      "name": "Junzhe Zhang"
+    },
+    {
+      "name": "Elias Bareinboim"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法公平性评估涉招聘决策，边缘管理相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "算法决策系统在司法、信贷、招聘等关键领域广泛部署，引发公平性担忧。研究问题：如何从仅有输出的黑箱系统评估反事实公平性？方法：采用偏识别（Partial Identification）框架，利用贝叶斯方法从观测数据推导公平性指标的可信界。以COMPAS累犯风险评分为例，发现将种族改为非裔美国人时产生正向虚假效应，年龄从青年转为老年时产生负向直接因果效应。",
+      "topic_tags": [
+        "公平性",
+        "算法决策",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-09-30",
+  "doi": null,
+  "id": "p_iXmhcrLoCLeN1kYQ",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2510.00163v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8382,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Partial Identification Approach to Counterfactual Fairness Assessment",
+  "title_zh": "反事实公平评估的偏态识别方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.00163v1",
+  "volume": null,
+  "year": 2025
+}

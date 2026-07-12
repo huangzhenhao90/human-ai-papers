@@ -1,0 +1,71 @@
+{
+  "abstract": "Algorithmic decisions in critical domains such as hiring, college admissions, and lending are often based on rankings. Given the impact of these decisions on individuals, organizations, and population groups, it is essential to understand them - to help individuals improve their ranking position, design better ranking procedures, and ensure legal compliance. In this paper, we argue that explainability methods for classification and regression, such as SHAP, are insufficient for ranking tasks, and present ShaRP - Shapley Values for Rankings and Preferences - a framework that explains the contributions of features to various aspects of a ranked outcome.   ShaRP computes feature contributions for various ranking-specific profit functions, such as rank and top-k, and also includes a novel Shapley value-based method for explaining pairwise preference outcomes. We provide a flexible implementation of ShaRP, capable of efficiently and comprehensively explaining ranked and pairwise outcomes over tabular data, in score-based ranking and learning-to-rank tasks. Finally, we develop a comprehensive evaluation methodology for ranking explainability methods, showing through qualitative, quantitative, and usability studies that our rank-aware QoIs offer complementary insights, scale effectively, and help users interpret ranked outcomes in practice.",
+  "ai_type_tags": [
+    "可解释 AI",
+    "机器学习",
+    "推荐算法",
+    "算法决策"
+  ],
+  "arxiv_id": "2401.16744",
+  "authors": [
+    "Venetia Pliatsika",
+    "Joao Fonseca",
+    "Kateryna Akhynko",
+    "Ivan Shevchenko",
+    "Julia Stoyanovich"
+  ],
+  "authors_full": [
+    {
+      "name": "Venetia Pliatsika"
+    },
+    {
+      "name": "Joao Fonseca"
+    },
+    {
+      "name": "Kateryna Akhynko"
+    },
+    {
+      "name": "Ivan Shevchenko"
+    },
+    {
+      "name": "Julia Stoyanovich"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "排名可解释性用于招聘",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "现有分类和回归的可解释方法在排序任务中不适用。为此引入ShaRP框架，基于Shapley值量化特征对排名收益（如排名位置、Top‑K）和成对偏好的贡献，并提供高效实现。实验表明该方法在可解释性、规模和实用性上均优于传统方法。",
+      "topic_tags": [
+        "决策",
+        "可解释 AI",
+        "公平性",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-01-30",
+  "doi": "10.14778/3749646.3749682",
+  "id": "p_OelS8CCpHQm5XHz0",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2401.16744v5",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8771,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "ShaRP: Explaining Rankings and Preferences with Shapley Values",
+  "title_zh": "ShaRP：基于Shapley值的排名与偏好可解释性方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2401.16744v5",
+  "volume": null,
+  "year": 2024
+}

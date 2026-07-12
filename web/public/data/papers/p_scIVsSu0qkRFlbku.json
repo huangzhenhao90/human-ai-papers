@@ -1,0 +1,88 @@
+{
+  "abstract": "Because they play an increasingly important role in determining access to credit, credit scoring models are under growing scrutiny from banking supervisors and internal model validators. These authorities need to monitor the model performance and identify its key drivers. To facilitate this, we introduce the explainable performance (XPER) methodology to decompose a performance metric (e.g., area under the curve (AUC), [Formula: see text]) into specific contributions associated with the various features of a forecasting model. XPER is theoretically grounded on Shapley values and is both model-agnostic and performance metric-agnostic. Furthermore, it can be implemented either at the model level or at the individual level. Using a novel data set of car loans, we decompose the AUC of a machine-learning model trained to forecast the default probability of loan applicants. We show that a small number of features can explain a surprisingly large part of the model performance. Notably, the features that contribute the most to the predictive performance of the model may not be the ones that contribute the most to individual forecasts (Shapley additive explanation). Finally, we show how XPER can be used to deal with heterogeneity issues and improve performance.\n                  This paper was accepted by Kay Giesecke, finance.\n                  Funding: The authors thank the Institut Universitaire de France, the Autorité de contrôle prudentiel et de résolution Chair in Regulation and Systemic Risk, the HEC-Deloitte Chair on Artificial Intelligence for Business Innovation, the Excellence Initiative of Aix-Marseille University [A*MIDEX], and the French National Research Agency [Grants AMSE ANR-17-EURE-0020, Ecodec ANR-11-LABX-0047, and MLEforRisk ANR-21-CE26-0007] for supporting our research.\n                  Supplemental Material: The online appendices and data files are available at https://doi.org/10.1287/mnsc.2023.02025 .",
+  "ai_type_tags": [
+    "机器学习",
+    "可解释AI",
+    "算法决策"
+  ],
+  "arxiv_id": "2023.02025",
+  "authors": [
+    "Sullivan Hué",
+    "Christophe Hurlin",
+    "Christophe Pérignon",
+    "Sébastien Saurin"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Centre National de la Recherche Scientifique",
+        "Aix-Marseille Université"
+      ],
+      "name": "Sullivan Hué",
+      "orcid": null,
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Université d'Orléans",
+        "Institut Universitaire de France"
+      ],
+      "name": "Christophe Hurlin",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "HEC Paris"
+      ],
+      "name": "Christophe Pérignon",
+      "orcid": "https://orcid.org/0000-0002-5100-9342",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "HEC Paris"
+      ],
+      "name": "Sébastien Saurin",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "信用评分模型性能分解，用Shapley值和机器学习方法，属金融风险管理",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对信用评分模型的性能监控需求，提出基于Shapley值的可解释性能（XPER）方法，可将AUC等指标分解为各特征的贡献，具备模型无关、指标无关特性。通过汽车贷款数据验证，发现少数特征即可解释大部分预测性能，且对整体贡献最大的特征与个体层面的SHAP贡献可能不同，XPER还能帮助识别异质性和提升模型表现。",
+      "topic_tags": [
+        "信用评分",
+        "模型性能评估",
+        "可解释AI",
+        "特征贡献"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-04-08",
+  "doi": "10.1287/mnsc.2023.02025",
+  "id": "p_scIVsSu0qkRFlbku",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3329,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Measuring the Driving Forces of Predictive Performance: Application to Credit Scoring",
+  "title_zh": "预测性能驱动因素的测量：信用评分应用",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.02025",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,65 @@
+{
+  "abstract": "We consider a multiclass queueing model of a telephone call center in which a system manager dynamically allocates available servers to customer calls. Calls can terminate through either service completion or customer abandonment, and the manager strives to minimize the expected total of holding costs plus abandonment costs over a finite horizon. Focusing on the Halfin–Whitt heavy traffic regime, we derive an approximating diffusion control problem and, building on earlier work by Beck et al. [Beck C, Becker S, Cheridito P, Jentzen A, Neufeld A (2021) Deep splitting method for parabolic PDEs. SIAM J. Sci. Comput. 43(5):A3135–A3154], develop a simulation-based computational method for solution of such problems, one that relies heavily on deep neural network technology. Using this computational method, we propose a policy for the original (prelimit) call center scheduling problem. Finally, the performance of this policy is assessed using test problems based on publicly available call center data. For the test problems considered so far, our policy does as well as or better than the best benchmark we could find. Moreover, our method is computationally feasible at least up to dimension 500, that is, for call centers with 500 or more distinct customer classes.\n                  This paper was accepted by David Simchi-Levi, stochastic models and simulation.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.03921 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法管理"
+  ],
+  "arxiv_id": "2023.03921",
+  "authors": [
+    "Barış Ata",
+    "Ebru Kaşıkaralar"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Chicago"
+      ],
+      "name": "Barış Ata",
+      "orcid": "https://orcid.org/0009-0001-4793-4607",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Chicago"
+      ],
+      "name": "Ebru Kaşıkaralar",
+      "orcid": "https://orcid.org/0009-0004-1243-9798",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "深度神经网络用于排队调度；运筹学/服务运营",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "在呼叫中心多类排队系统中，考虑有限视界内持有成本和放弃成本的最小化。采用Halfin‑Whitt重负载近似，利用深度神经网络求解扩散控制问题，提出动态调度策略。数值实验表明该策略优于已有基准，且可扩展至500类以上的规模。",
+      "topic_tags": [
+        "算法管理",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-07",
+  "doi": "10.1287/mnsc.2023.03921",
+  "id": "p_hGhMLhWL226Uaadg",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4098,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Dynamic Scheduling of a Multiclass Queue in the Halfin–Whitt Regime: A Computational Approach for High-Dimensional Problems",
+  "title_zh": "Halfin-Whitt regime下多类队列的动态调度：高维问题的计算方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.03921",
+  "volume": null,
+  "year": 2025
+}

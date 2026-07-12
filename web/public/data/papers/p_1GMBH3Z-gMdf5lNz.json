@@ -1,0 +1,84 @@
+{
+  "abstract": "We introduce the click-based MNL choice model, a framework for capturing customer purchasing decisions in e-commerce settings. Specifically, we augment the classical Multinomial Logit choice model by assuming that customers only consider the items they have clicked on before they proceed to compare their random utilities. In this context, we study the resulting assortment optimization problem, where the objective is to select a subset of products, made available for purchase, to maximize the expected revenue. Our main algorithmic contribution comes in the form of a polynomial-time approximation scheme (PTAS) for this problem, showing that the optimal expected revenue can be efficiently approached within any degree of accuracy. To establish this result, we develop several technical ideas, including enumeration schemes and stochastic inequalities, which may be of broader interest. Using data from Alibaba’s online marketplace, we fit click-based MNL and latent class MNL models to historical sales and click data in a setting where the online platform recommends a personalized six-product display to each user. We propose an estimation methodology for the click-based MNL model that leverages clickstream data and machine learning classification algorithms. Our numerical results suggest that clickstream data are valuable for predicting choices and that the click-based MNL model can outperform standard logit-based models in certain settings.  This paper was accepted by Chung Piaw Teo, optimization.  Funding: D. Segev was supported by the Israel Science Foundation [Grant 1407/20].  Supplemental Material: The online appendix is available at https://doi.org/10.1287/mnsc.2021.00281 .",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2021.00281",
+  "authors": [
+    "Ali Aouad",
+    "Jacob Feldman",
+    "Danny Segev",
+    "Dennis Zhang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Ali Aouad",
+      "orcid": "https://orcid.org/0000-0002-9812-6140",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Washington University in St. Louis"
+      ],
+      "name": "Jacob Feldman",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Tel Aviv University"
+      ],
+      "name": "Danny Segev",
+      "orcid": "https://orcid.org/0000-0003-4684-2185",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Washington University in St. Louis"
+      ],
+      "name": "Dennis Zhang",
+      "orcid": "https://orcid.org/0000-0002-4544-775X",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "点击数据驱动的MNL模型，涉及机器学习与优化算法",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "提出点击-Based MNL选择模型，假设顾客仅考虑点击过的商品后比较效用。在阿里电商数据上验证，发现点击流数据对预测购买选择有重要价值，且该模型在特定场景下优于标准logit模型。算法贡献是为此 assortment 优化问题提供多项式时间近似方案。",
+      "topic_tags": [
+        "消费者行为",
+        "推荐系统",
+        "营销"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 11,
+  "date": "2025-08",
+  "doi": "10.1287/mnsc.2021.00281",
+  "id": "p_1GMBH3Z-gMdf5lNz",
+  "issue": "8",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3468,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "The Click-Based MNL Model: A Framework for Modeling Click Data in Assortment Optimization",
+  "title_zh": "基于点击的MNL模型： assortment优化中点击数据建模框架",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2021.00281",
+  "volume": "71",
+  "year": 2025
+}

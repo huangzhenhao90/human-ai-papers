@@ -1,0 +1,53 @@
+{
+  "abstract": "Automated emotion recognition in real-world workplace settings remains a challenging problem in affective computing due to the scarcity of large-scale, longitudinal datasets collected in naturalistic environments. We present a novel dataset comprising 733,651 facial expression records from 38 employees collected over 30.5 months (November 2021 to May 2024) in an authentic office environment. Each record contains seven emotion probabilities (neutral, happy, sad, surprised, fear, disgusted, angry) derived from deep learning-based facial expression recognition, along with comprehensive metadata including job roles, employment outcomes, and personality traits. The dataset uniquely spans the COVID-19 pandemic period, capturing emotional responses to major societal events including the Shanghai lockdown and policy changes. We provide 32 extended emotional metrics computed using established affective science methods, including valence, arousal, volatility, predictability, inertia, and emotional contagion strength. Technical validation demonstrates high data quality through successful replication of known psychological patterns (weekend effect: +192% valence improvement, p < 0.001; diurnal rhythm validated) and perfect predictive validity for employee turnover (AUC=1.0). Baseline experiments using Random Forest and LSTM models achieve 91.2% accuracy for emotion classification and R2 = 0.84 for valence prediction. This is the largest and longest longitudinal workplace emotion dataset publicly available, enabling research in emotion recognition, affective dynamics modeling, emotional contagion, turnover prediction, and emotion-aware system design.",
+  "ai_type_tags": [
+    "机器学习",
+    "人机交互",
+    "深度学习"
+  ],
+  "arxiv_id": "2510.15221",
+  "authors": [
+    "Xiao Sun"
+  ],
+  "authors_full": [
+    {
+      "name": "Xiao Sun"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "深度学习面部情绪识别数据集，应用于职场员工情感追踪，AI为工具/变量，OB/HR强相关",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "构建了733,651条面部表情记录、覆盖38名员工30.5个月的大规模职场情绪纵向数据集，跨越COVID-19期间。使用深度学习提取七类情绪概率，提供32项情绪度量指标。技术验证复制了周末效应（+192%愉悦度提升）及日间节律，员工离职预测AUC达1.0。基线模型情绪分类准确率91.2%，为真实职场情感计算研究提供稀缺基准。",
+      "topic_tags": [
+        "员工幸福感",
+        "绩效评估",
+        "HR"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-17",
+  "doi": null,
+  "id": "p_wPXKUw_vxapGYpZS",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2510.15221v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8365,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "WELD: A Large-Scale Longitudinal Dataset of Emotional Dynamics for Ubiquitous Affective Computing",
+  "title_zh": "WELD：用于普适情感计算的大规模情绪动态纵向数据集",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.15221v1",
+  "volume": null,
+  "year": 2025
+}

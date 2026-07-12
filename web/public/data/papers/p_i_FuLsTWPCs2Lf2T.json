@@ -1,0 +1,61 @@
+{
+  "abstract": "There are multiple applications to automatically count people and specify their gender at work, exhibitions, malls, sales, and industrial usage. Although current speech detection methods are supposed to operate well, in most situations, in addition to genders, the number of current speakers is unknown and the classification methods are not suitable due to many possible classes. In this study, we focus on a long-short-term memory convolutional neural network (LSTM-CNN) to extract time and / or frequency-dependent features of the sound data to estimate the number / gender of simultaneous active speakers at each frame in noisy environments. Considering the maximum number of speakers as 10, we have utilized 19000 audio samples with diverse combinations of males, females, and background noise in public cities, industrial situations, malls, exhibitions, workplaces, and nature for learning purposes. This proof of concept shows promising performance with training/validation MSE values of about 0.019/0.017 in detecting count and gender.",
+  "ai_type_tags": [
+    "LSTM",
+    "CNN"
+  ],
+  "arxiv_id": "2312.07059",
+  "authors": [
+    "Praveen Damacharla",
+    "Hamid Rajabalipanah",
+    "Mohammad Hosein Fakheri"
+  ],
+  "authors_full": [
+    {
+      "name": "Praveen Damacharla"
+    },
+    {
+      "name": "Hamid Rajabalipanah"
+    },
+    {
+      "name": "Mohammad Hosein Fakheri"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LSTM-CNN音频分析，职场人数统计弱相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "提出一种长短期记忆卷积神经网络（LSTM‑CNN）模型，从含噪声的城市、工业、商场等场景的音频中同步估计说话人数及性别。实验采用19000条多样样本进行训练，计数与性别识别的训练/验证均方误差约为0.019/0.017，验证了概念的有效性。",
+      "topic_tags": [
+        "音频分析",
+        "深度学习",
+        "噪声环境",
+        "性别识别"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-12-12",
+  "doi": "10.1109/csci62032.2023.00019",
+  "id": "p_i_FuLsTWPCs2Lf2T",
+  "issue": null,
+  "journal": "arXiv:cs.SD",
+  "pdf_url": "https://arxiv.org/pdf/2312.07059v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8784,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "LSTM-CNN Network for Audio Signature Analysis in Noisy Environments",
+  "title_zh": "噪声环境中的LSTM-CNN音频签名分析网络",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2312.07059v1",
+  "volume": null,
+  "year": 2023
+}

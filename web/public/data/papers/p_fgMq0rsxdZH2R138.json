@@ -1,0 +1,69 @@
+{
+  "abstract": "Tabular foundation models achieve strong accuracy on choice prediction tasks, but their predictions often violate the economic logic those tasks require: raising a price sometimes increases predicted demand, and implied willingness-to-pay estimates are frequently negative or implausible. We propose a two-stage adapter that embeds foundation model predictions within a utility-maximization framework. In the first stage, we estimate a standard choice model whose parameters are constrained to obey economic theory. In the second stage, we freeze those parameters and train a correction term that incorporates the foundation model's predictions as additional information. The result is a model that inherits the foundation model's accuracy gains while guaranteeing monotonic price-demand relationships under policy perturbation and producing analytically computable trade-off measures. On two transportation datasets, the adapter recovers up to 13 percentage points of accuracy over a standard logit model while maintaining perfect economic consistency, something neither the raw foundation models nor conventional distillation achieve.",
+  "ai_type_tags": [
+    "机器学习",
+    "推荐算法",
+    "基础模型"
+  ],
+  "arxiv_id": "2605.26559",
+  "authors": [
+    "Yingshuo Wang",
+    "Xian Sun",
+    "Yanhang Li",
+    "Zhichao Fan",
+    "Zexin Zhuang"
+  ],
+  "authors_full": [
+    {
+      "name": "Yingshuo Wang"
+    },
+    {
+      "name": "Xian Sun"
+    },
+    {
+      "name": "Yanhang Li"
+    },
+    {
+      "name": "Zhichao Fan"
+    },
+    {
+      "name": "Zexin Zhuang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "Foundation model修正经济逻辑，接近消费者选择/营销研究",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "发现表格基础模型在选择预测任务中违反经济逻辑（涨价反增需求、负支付意愿）。提出两阶段适配器：第一阶段用符合经济理论的约束参数估计选择模型；第二阶段以基础模型预测作为额外信息训练修正项。在交通数据集上恢复13个百分点精度同时保证完全的经济一致性。",
+      "topic_tags": [
+        "决策",
+        "消费者行为",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-26",
+  "doi": null,
+  "id": "p_fgMq0rsxdZH2R138",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2605.26559v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11548,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Auditing and Fixing Economic Validity in Tabular Foundation Models for Discrete Choice",
+  "title_zh": "离散选择表格基础模型的经济有效性审计与修复",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2605.26559v1",
+  "volume": null,
+  "year": 2026
+}

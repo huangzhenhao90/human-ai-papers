@@ -1,0 +1,72 @@
+{
+  "abstract": "Recommendation systems help users find matched items based on their previous behaviors. Personalized recommendation becomes challenging in the absence of historical user-item interactions, a practical problem for startups known as the system cold-start recommendation. While existing research addresses cold-start issues for either users or items, we still lack solutions for system cold-start scenarios. To tackle the problem, we propose PromptRec, a simple but effective approach based on in-context learning of language models, where we transform the recommendation task into the sentiment analysis task on natural language containing user and item profiles. However, this naive approach heavily relies on the strong in-context learning ability emerged from large language models, which could suffer from significant latency for online recommendations. To solve the challenge, we propose to enhance small language models for recommender systems with a data-centric pipeline, which consists of: (1) constructing a refined corpus for model pre-training; (2) constructing a decomposed prompt template via prompt pre-training. They correspond to the development of training data and inference data, respectively. The pipeline is supported by a theoretical framework that formalizes the connection between in-context recommendation and language modeling. To evaluate our approach, we introduce a cold-start recommendation benchmark, and the results demonstrate that the enhanced small language models can achieve comparable cold-start recommendation performance to that of large models with only $17\\%$ of the inference time. To the best of our knowledge, this is the first study to tackle the system cold-start recommendation problem. We believe our findings will provide valuable insights for future works. The benchmark and implementations are available at https://github.com/JacksonWuxs/PromptRec.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2306.17256",
+  "authors": [
+    "Xuansheng Wu",
+    "Huachi Zhou",
+    "Yucheng Shi",
+    "Wenlin Yao",
+    "Xiao Huang"
+  ],
+  "authors_full": [
+    {
+      "name": "Xuansheng Wu"
+    },
+    {
+      "name": "Huachi Zhou"
+    },
+    {
+      "name": "Yucheng Shi"
+    },
+    {
+      "name": "Wenlin Yao"
+    },
+    {
+      "name": "Xiao Huang"
+    },
+    {
+      "name": "Ninghao Liu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "小语言模型用于冷启动推荐",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "为系统冷启动推荐场景，提出PromptRec框架，将推荐转化为情感分析任务，并通过对小语言模型进行语料和提示预训练提升推理效率，实现有效冷启动推荐。",
+      "topic_tags": [
+        "推荐系统",
+        "冷启动",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-06-29",
+  "doi": null,
+  "id": "p_b6_ScqIFQn7wYVrR",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2306.17256v5",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10047,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Could Small Language Models Serve as Recommenders? Towards Data-centric Cold-start Recommendations",
+  "title_zh": "小型语言模型能否作为推荐系统？迈向数据驱动的冷启动推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2306.17256v5",
+  "volume": null,
+  "year": 2023
+}

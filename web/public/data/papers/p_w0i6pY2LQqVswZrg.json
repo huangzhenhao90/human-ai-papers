@@ -1,0 +1,73 @@
+{
+  "abstract": "Professional job recommendation involves a complex bipartite matching process that must reconcile a candidate's subjective preference with an employer's objective qualification. While Large Language Models (LLMs) are well-suited for modeling the rich semantics of resumes and job descriptions, existing paradigms often collapse these two decision dimensions into a single interaction signal, yielding confounded supervision under recruitment-funnel censoring and limiting policy controllability. To address these challenges, We propose JobRec, a generative job recommendation framework for de-conflating preference and qualification via constrained dual-perspective reasoning. JobRec introduces a Unified Semantic Alignment Schema that aligns candidate and job attributes into structured semantic layers, and a Two-Stage Cooperative Training Strategy that learns decoupled experts to separately infer preference and qualification. Building on these experts, a Lagrangian-based Policy Alignment module optimizes recommendations under explicit eligibility requirements, enabling controllable trade-offs. To mitigate data scarcity, we construct a synthetic dataset refined by experts. Experiments show that JobRec consistently outperforms strong baselines and provides improved controllability for strategy-aware professional matching.",
+  "ai_type_tags": [
+    "LLM"
+  ],
+  "arxiv_id": "2602.03097",
+  "authors": [
+    "Bryce Kan",
+    "Wei Yang",
+    "Emily Nguyen",
+    "Ganghui Yi",
+    "Bowen Yi"
+  ],
+  "authors_full": [
+    {
+      "name": "Bryce Kan"
+    },
+    {
+      "name": "Wei Yang"
+    },
+    {
+      "name": "Emily Nguyen"
+    },
+    {
+      "name": "Ganghui Yi"
+    },
+    {
+      "name": "Bowen Yi"
+    },
+    {
+      "name": "Chenxiao Yu"
+    },
+    {
+      "name": "Yan Liu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM工作推荐解耦偏好与资质；HR核心议题",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对招聘匹配中候选偏好与岗位资质被混淆的问题，提出JobRec框架，通过统一语义对齐模式和两阶段协同训练分离两类信息，并结合拉格朗日策略对齐实现可控制的推荐。实验证明在合成数据集上显著优于强基线，提升了可解释性和可控性。",
+      "topic_tags": [
+        "招聘",
+        "推荐系统",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-02-03",
+  "doi": null,
+  "id": "p_w0i6pY2LQqVswZrg",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2602.03097v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8277,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "De-conflating Preference and Qualification: Constrained Dual-Perspective Reasoning for Job Recommendation with Large Language Models",
+  "title_zh": "区分偏好与资质：基于大语言模型的约束性双视角推理岗位推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2602.03097v1",
+  "volume": null,
+  "year": 2026
+}

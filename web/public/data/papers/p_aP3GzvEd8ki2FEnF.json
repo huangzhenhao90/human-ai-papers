@@ -1,0 +1,66 @@
+{
+  "abstract": "The recent surge in the popularity of short-form video (SFV) on digital platforms has led to massive numbers of videos and ever-evolving topics. As a result, the task of making personalized recommendations has become increasingly challenging. We introduce a new pure exploration problem on SFV platforms: finding a ([Formula: see text])-optimal set that includes all recommendations within the [Formula: see text]-optimality gap and that excludes those beyond the [Formula: see text]-optimality gap relative to the best arm with a capacity limit of K. To solve this problem, we propose an algorithm called adaptive acquisition tree (AAT). AAT jointly accounts for user preference heterogeneity and high-dimensional product characteristics. It adaptively segments users and then, learns a personalized transductive policy that can be used on partially observed or even unobserved card types to accommodate the dynamic trends on SFV platforms. We derive the sample complexity required to identify a [Formula: see text]-optimal set. Our method’s efficiency is validated through numerical tests using data from the NetEase platform. Our results reveal that the proposed policy performs significantly better than several state-of-the-art benchmarks across four transductive scenarios for both spotlight recommendations (i.e., best-arm identifications) and [Formula: see text]-optimal set recommendations. Compared with the best benchmarks for the best card and [Formula: see text]-optimal set recommendations, our approach can elevate the average rewards (measured by view time) by 30% (to 100%) and 43% (to 56%), respectively. Given the increasing popularity and uniqueness of SFVs and more broadly, user-generated content, our method offers significant academic and practical merit.\n                  This paper was accepted by Omar Besbes, revenue management and market analytics.\n                  Funding: Y. Leng is supported by the U.S. National Science Foundation (NSF) under [Grant IIS 2153468].\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.01130 .",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2022.01130",
+  "authors": [
+    "Junyu Cao",
+    "Yan Leng"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "The University of Texas at Austin"
+      ],
+      "name": "Junyu Cao",
+      "orcid": "https://orcid.org/0000-0001-9235-1411",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "The University of Texas at Austin"
+      ],
+      "name": "Yan Leng",
+      "orcid": "https://orcid.org/0000-0002-7084-2700",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "推荐系统用ML算法，用户偏好异质性与高维特征的自适应学习，AI为核心工具",
+      "ai_score": 4.0,
+      "domain_score": 5.0,
+      "tldr": "研究在短视频平台个性化推荐问题，提出自适应采集树(AAT)算法，实现对用户异质性与高维视频特征的协同学习，保证ε-最优集合的样本复杂度，并在网易数据验证，显著优于现有基准。",
+      "topic_tags": [
+        "推荐系统",
+        "机器学习",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 1,
+  "date": "2026-04",
+  "doi": "10.1287/mnsc.2022.01130",
+  "id": "p_aP3GzvEd8ki2FEnF",
+  "issue": "4",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3495,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Adaptive Data Acquisition for Personalized Recommendations with Optimality Guarantees on Short-Form Video Platforms",
+  "title_zh": "短视频平台个性化推荐的适应性数据获取：最优性保证",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.01130",
+  "volume": "72",
+  "year": 2026
+}

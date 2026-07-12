@@ -1,0 +1,79 @@
+{
+  "abstract": "Large language models (LLMs) have achieved impressive performance, leading to their widespread adoption as decision-support tools in resource-constrained contexts like hiring and admissions. There is, however, scientific consensus that AI systems can reflect and exacerbate societal biases, raising concerns about identity-based harm when used in critical social contexts. Prior work has laid a solid foundation for assessing bias in LLMs by evaluating demographic disparities in different language reasoning tasks. In this work, we extend single-axis fairness evaluations to examine intersectional bias, recognizing that when multiple axes of discrimination intersect, they create distinct patterns of disadvantage. We create a new benchmark called WinoIdentity by augmenting the WinoBias dataset with 25 demographic markers across 10 attributes, including age, nationality, and race, intersected with binary gender, yielding 245,700 prompts to evaluate 50 distinct bias patterns. Focusing on harms of omission due to underrepresentation, we investigate bias through the lens of uncertainty and propose a group (un)fairness metric called Coreference Confidence Disparity which measures whether models are more or less confident for some intersectional identities than others. We evaluate five recently published LLMs and find confidence disparities as high as 40% along various demographic attributes including body type, sexual orientation and socio-economic status, with models being most uncertain about doubly-disadvantaged identities in anti-stereotypical settings. Surprisingly, coreference confidence decreases even for hegemonic or privileged markers, indicating that the recent impressive performance of LLMs is more likely due to memorization than logical reasoning. Notably, these are two independent failures in value alignment and validity that can compound to cause social harm.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2508.07111",
+  "authors": [
+    "Falaah Arif Khan",
+    "Nivedha Sivakumar",
+    "Yinong Oliver Wang",
+    "Katherine Metcalf",
+    "Cezanne Camacho"
+  ],
+  "authors_full": [
+    {
+      "name": "Falaah Arif Khan"
+    },
+    {
+      "name": "Nivedha Sivakumar"
+    },
+    {
+      "name": "Yinong Oliver Wang"
+    },
+    {
+      "name": "Katherine Metcalf"
+    },
+    {
+      "name": "Cezanne Camacho"
+    },
+    {
+      "name": "Barry-John Theobald"
+    },
+    {
+      "name": "Luca Zappella"
+    },
+    {
+      "name": "Nicholas Apostoloff"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM招聘偏见与HR/公平就业强相关",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究评估大型语言模型在交叉身份偏见的表现，构建WinoIdentity基准（包含25个身份标记、245,700条提示），提出Coreference Confidence Disparity度量，发现模型在不同交叉属性（如体型、性取向、社会经济地位）上的置信度差异最高达40%，提示其在社会关键场景中的潜在危害。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "伦理",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-08-09",
+  "doi": null,
+  "id": "p_TuNZVA2uxZ4ri0tO",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2508.07111v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8429,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Investigating Intersectional Bias in Large Language Models using Confidence Disparities in Coreference Resolution",
+  "title_zh": "基于共指解析置信度差异探究大语言模型中的交叉偏见",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2508.07111v1",
+  "volume": null,
+  "year": 2025
+}

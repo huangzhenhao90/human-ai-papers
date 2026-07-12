@@ -1,0 +1,74 @@
+{
+  "abstract": "Biomedical research may uncover insights regarding the interaction of the treatments of a disease with patient covariates. We show how to use such insights to improve the efficiency of adaptive clinical trials for precision medicine by extending ideas from optimal Bayesian learning. We present a model for response-adaptive multi-arm clinical trials that leverages knowledge about the predictive-prognostic covariate structure to accelerate the learning of personalized treatment strategies that obtain the best expected outcomes for post-trial patients. Our base model is a contextual linear bandit for best-arm identification, and outcomes may be observed with delay. We characterize the optimal policy for sequentially allocating treatments to in-trial patients and, because it is hard to compute, propose several computable heuristics based on Bayesian one-step look-ahead techniques. We prove that several of our proposed heuristics are asymptotically optimal in learning treatment strategies. Numerical results based on two case studies motivated by sepsis management show that our heuristics can significantly improve clinical trial efficiency to learn a treatment strategy for precision medicine. We provide extensions that allow for rewards from outcomes of in-trial patients (resolving the exploration-exploitation tradeoff) and for inferring covariate structure using Lasso when biomedical insights on covariate structure are lacking. Our proposed trial design is of interest to funders, designers, and managers of clinical trials. It may also apply to other contextual bandit problems in settings where insights about covariate-treatment interactions are available.\n                  This paper was accepted by Stefan Scholtes, healthcare management.\n                  Funding: This work was supported by the Marie Skłodowska-Curie Actions under the European Union’s Horizon 2020 research and innovation programme [Grant 676129]. S. E. Chick gratefully acknowledges the support of Dr Simba Gill and Sabi Dau to the INSEAD Healthcare Management Initiative.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.02048 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2022.02048",
+  "authors": [
+    "Andres Alban",
+    "Stephen E. Chick",
+    "Spyros I. Zoumpoulis"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Frankfurt School of Finance & Management"
+      ],
+      "name": "Andres Alban",
+      "orcid": "https://orcid.org/0000-0002-9552-4039",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "INSEAD"
+      ],
+      "name": "Stephen E. Chick",
+      "orcid": "https://orcid.org/0000-0002-8026-1571",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "INSEAD"
+      ],
+      "name": "Spyros I. Zoumpoulis",
+      "orcid": "https://orcid.org/0000-0002-4662-7787",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "贝叶斯学习与Contextual Bandit用于临床试验,AI算法是核心工具,但属医疗运营领域",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "提出上下文线性盗贼模型结合预测/预后协变量结构，利用贝叶斯最优策略和一阶前瞻启发式，在自适应临床试验中加速学习个体化治疗方案，理论证明渐近最优，败血症案例验证显著提升试验效率。",
+      "topic_tags": [
+        "决策",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-29",
+  "doi": "10.1287/mnsc.2022.02048",
+  "id": "p_897iddKQ_DOVCety",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3215,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning Personalized Treatment Strategies with Predictive and Prognostic Covariates in Adaptive Clinical Trials",
+  "title_zh": "在适应性临床试验中学习基于预测和预后协变量的个性化治疗策略",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.02048",
+  "volume": null,
+  "year": 2025
+}

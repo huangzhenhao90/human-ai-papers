@@ -1,0 +1,76 @@
+{
+  "abstract": "Most of the traditional Applicant Tracking Systems (ATS) depend on strict matching using keywords, where candidates that are highly qualified are many times disqualified because of minor semantic differences. In this article, the two-stage process of developing a more comprehensive resume assessment system based on a small language model that is trained with fewer than 600M parameters is introduced and fine-tuned by using GRPO with a uniquely designed reward function. The initial stage is Supervised Fine-Tuning (SFT), which is used to create a strong base model with the ability to perceive resumes beyond superficial overlap of keywords. This SFT model is further optimized in the second step with Reinforcement Learning (RL) via GRPO with the help of multi-component-based rewarding, which will not be considered as a commission of tokens matching. In the initial RL experiments, we found a severe difficulty in the shape of reward hacking: overly aggressive penalty terms resulted in unstable training dynamics and prohibitively negative model behavior. This was solved by trial-and-error refinement of the reward and careful training hyperparameter tuning, which led to a stable and controlled process of gentle polishing. The GRPO-refined model shows high real-life performance, as it shows an accuracy of 91% on unseen data used for testing. It has a high recall of 0.85 on the SELECTED class with a perfect precision of 1.0, which highlights its high reliability for identifying qualified applicants. These findings demonstrate that an appropriately structured two-step fine-tuning pipeline can effectively be used to transfer a small language model into human-like candidate evaluation, surpassing the shortcomings of both traditional ATS systems and unrefined uses of reinforcement learning.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "强化学习",
+    "AI招聘"
+  ],
+  "arxiv_id": "2511.16073",
+  "authors": [
+    "Shreyansh Jain",
+    "Madhav Singhvi",
+    "Shreya Rahul Jain",
+    "Pranav S",
+    "Dishaa Lokesh"
+  ],
+  "authors_full": [
+    {
+      "name": "Shreyansh Jain"
+    },
+    {
+      "name": "Madhav Singhvi"
+    },
+    {
+      "name": "Shreya Rahul Jain"
+    },
+    {
+      "name": "Pranav S"
+    },
+    {
+      "name": "Dishaa Lokesh"
+    },
+    {
+      "name": "Naren Chittibabu"
+    },
+    {
+      "name": "Akash Anandhan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "RL训练小语言模型评估简历，招聘/HR核心应用",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "传统ATS依赖关键词严格匹配，常误淘汰qualified候选人。研究基于不足6亿参数的小型语言模型，通过监督微调（SFT）建立超越表层关键词的简历理解能力，再以GRPO强化学习结合多组分奖励函数进一步优化。初期面临奖励黑客导致的训练不稳定问题，经奖励函数迭代调优后解决。最终模型在测试集达到91%准确率，SELECTED类召回率0.85、精确率1.0，显著提升招聘筛选可靠性。",
+      "topic_tags": [
+        "招聘",
+        "绩效评估",
+        "HR"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-20",
+  "doi": "10.1109/iccca66364.2025.11325393",
+  "id": "p_qIz6PgyhRogw4QOa",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2511.16073v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8340,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Mathematical Framework for Custom Reward Functions in Job Application Evaluation using Reinforcement Learning",
+  "title_zh": "基于强化学习的求职申请评估自定义奖励函数数学框架",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.16073v2",
+  "volume": null,
+  "year": 2025
+}

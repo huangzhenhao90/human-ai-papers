@@ -1,0 +1,82 @@
+{
+  "abstract": "Operating under both supply-side and demand-side uncertainties, a mobile-promotion platform conducts advertising campaigns for individual advertisers. Campaigns arrive dynamically over time, which is divided into seasons; each campaign requires the platform to deliver a target number of mobile impressions from a desired set of locations over a desired time interval. The platform fulfills these campaigns by procuring impressions from publishers, who supply advertising space on apps via real-time bidding on ad exchanges. Each location is characterized by its win curve, that is, the relationship between the bid price and the probability of winning an impression at that bid. The win curves at the various locations of interest are initially unknown to the platform, and it learns them on the fly based on the bids it places to win impressions and the realized outcomes. Each acquired impression is allocated to one of the ongoing campaigns. The platform’s objective is to minimize its total cost (the amount spent in procuring impressions and the penalty incurred due to unmet targets of the campaigns) over the time horizon of interest. Our main result is a bidding and allocation policy for this problem. We show that our policy is the best possible (asymptotically tight) for the problem using the notion of regret under a policy, namely the difference between the expected total cost under that policy and the optimal cost for the clairvoyant problem (i.e., one in which the platform has full information about the win curves at all the locations in advance): The lower bound on the regret under any policy is of the order of the square root of the number of seasons, and the regret under our policy matches this lower bound. We demonstrate the performance of our policy through numerical experiments on a test bed of instances whose input parameters are based on our observations at a real-world mobile-promotion platform.  This paper was accepted by Baris Ata, stochastic models and simulation.  Supplemental Material: The online appendices are available at https://doi.org/10.1287/mnsc.2022.4441 .",
+  "ai_type_tags": [
+    "机器学习",
+    "强化学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2022.4441",
+  "authors": [
+    "Zhichao Feng",
+    "Milind Dawande",
+    "Ganesh Janakiraman",
+    "Anyan Qi"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Department of Logistics and Maritime Studies, Faculty of Business, The Hong Kong Polytechnic University, Kowloon, Hong Kong, China;"
+      ],
+      "name": "Zhichao Feng",
+      "orcid": "https://orcid.org/0000-0002-4680-9193"
+    },
+    {
+      "affiliation": [
+        "Naveen Jindal School of Management, The University of Texas at Dallas, Richardson, Texas 75080"
+      ],
+      "name": "Milind Dawande",
+      "orcid": "https://orcid.org/0000-0001-6956-0856"
+    },
+    {
+      "affiliation": [
+        "Naveen Jindal School of Management, The University of Texas at Dallas, Richardson, Texas 75080"
+      ],
+      "name": "Ganesh Janakiraman",
+      "orcid": "https://orcid.org/0000-0001-7386-4318"
+    },
+    {
+      "affiliation": [
+        "Naveen Jindal School of Management, The University of Texas at Dallas, Richardson, Texas 75080"
+      ],
+      "name": "Anyan Qi",
+      "orcid": "https://orcid.org/0000-0003-2933-8294"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "移动推广平台的学习算法研究，涉及在线学习",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "移动推广平台面临供需不确定性和实时竞价的双重挑战，平台需在未知win曲线下学习最优出价并分配曝光。提出一种渐近最优的出价-分配策略，基于在线学习实现对win曲线的快速学习，理论证明其regret上界与最优相当，并通过仿真验证显著降低成本。",
+      "topic_tags": [
+        "广告",
+        "实时竞价",
+        "学习算法",
+        "平台"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 6,
+  "date": "2023-03",
+  "doi": "10.1287/mnsc.2022.4441",
+  "id": "p_tvPC2D9HJXlMKSoa",
+  "issue": "3",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3461,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "An Asymptotically Tight Learning Algorithm for Mobile-Promotion Platforms",
+  "title_zh": "移动推广平台的渐近紧学习算法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.4441",
+  "volume": "69",
+  "year": 2023
+}

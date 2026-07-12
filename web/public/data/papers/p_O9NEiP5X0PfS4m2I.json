@@ -1,0 +1,81 @@
+{
+  "abstract": "Recent incidents involving LLMs used for mental-health support reveal a critical evaluation gap: surface-level safety scores do not capture how models behave across realistic, emotionally sensitive interactions over time. Existing benchmarks measure knowledge, safety, or static response quality, but miss whether LLM interactions help users keep reflecting, coping, and making decisions themselves. We formalize this missing dimension as COGNITIVE ATROPHY, a process-level behavioural measure in AI-mediated mental-health support distinct from safety and helpfulness. To measure it, we introduce COGNITIVE ATROPHY BENCH, a clinically grounded benchmark built from 1,576 fully human-generated counseling conversations, 15,680 turns, and 42,230 responses from five LLMs. Three clinical and neuropsychology experts developed a 20-attribute schema spanning user context, response behaviour, and global risk flags; six trained clinical reviewers applied it with span-grounded evidence, producing 5,324 reviewer judgments. We further introduce the User-Input Risk Index (UIRI), the Cognitive Atrophy Risk Index (ARI), and trajectory summaries. Across five LLMs, models show a consistent moderate-to-high level of atrophy-aligned behaviour across single and multi-turn settings. While models generally respond to overt safety cues, they adapt less reliably when users seek solutions or decisions. The dominant recurring patterns are directive advice, problem-solving, recommendation responses, topic shifts, and forms of validation that may reinforce dependence rather than reflection. Our work makes COGNITIVE ATROPHY measurable and provides a foundation for auditing model behaviour in sensitive LLM conversations.",
+  "ai_type_tags": [
+    "LLM",
+    "基准测试",
+    "行为分析",
+    "风险指数"
+  ],
+  "arxiv_id": "2606.18129",
+  "authors": [
+    "Abeer Badawi",
+    "Moyosoreoluwa Olatosi",
+    "Negin Baghbanzadeh",
+    "Laleh Seyyed-Kalantari",
+    "Frank Rudzicz"
+  ],
+  "authors_full": [
+    {
+      "name": "Abeer Badawi"
+    },
+    {
+      "name": "Moyosoreoluwa Olatosi"
+    },
+    {
+      "name": "Negin Baghbanzadeh"
+    },
+    {
+      "name": "Laleh Seyyed-Kalantari"
+    },
+    {
+      "name": "Frank Rudzicz"
+    },
+    {
+      "name": "R. Shayna Rosenbaum"
+    },
+    {
+      "name": "Sara Pishdadian"
+    },
+    {
+      "name": "Elham Dolatabadi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM认知萎缩测量基准，AI评估为主含人机交互成分",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "识别现有LLM心理支持评估的关键缺口：表面安全分数无法捕捉模型在长期、情感敏感交互中的过程行为。提出认知萎缩（COGNITIVE ATROPHY）作为独立于安全性和有用性的新行为衡量维度。基于1,576个真实咨询对话、15,680轮、42,230响应构建认知萎缩基准，发现主流模型整体呈现中高度萎缩行为——对显性安全线索响应良好，但对用户寻求解决方案时适应不稳定。",
+      "topic_tags": [
+        "AI心理健康支持",
+        "认知萎缩",
+        "LLM评估",
+        "用户体验",
+        "伦理AI"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-16",
+  "doi": null,
+  "id": "p_O9NEiP5X0PfS4m2I",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2606.18129v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 14953,
+      "revision": "a8be9093b6fca7daef7faf55e5ee1803f079cae5"
+    }
+  ],
+  "title": "Towards Understanding and Measuring COGNITIVE ATROPHY in LLM Behaviour",
+  "title_zh": "理解并测量LLM行为中的认知萎缩",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2606.18129v1",
+  "volume": null,
+  "year": 2026
+}

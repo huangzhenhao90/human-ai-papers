@@ -1,0 +1,83 @@
+{
+  "abstract": "In many operations management problems, we need to make decisions sequentially to minimize the cost, satisfying certain constraints. One modeling approach to such problems is the constrained Markov decision process (CMDP). In this work, we develop a data-driven primal-dual algorithm to solve CMDPs. Our approach alternatively applies regularized policy iteration to improve the policy and subgradient ascent to maintain the constraints. Under mild regularity conditions, we show that the algorithm converges at rate [Formula: see text], where T is the number of iterations, for both the discounted and long-run average cost formulations. Our algorithm can be easily combined with advanced deep learning techniques to deal with complex large-scale problems with the additional benefit of straightforward convergence analysis. When the CMDP has a weakly coupled structure, our approach can further reduce the computational complexity through an embedded decomposition. We apply the algorithm to two operations management problems: multiclass queue scheduling and multiproduct inventory management. Numerical experiments demonstrate that our algorithm, when combined with appropriate value function approximations, generates policies that achieve superior performance compared with state-of-the-art heuristics.\n                  This paper was accepted by Baris Ata, stochastic models and simulation.\n                  Funding: Y. Chen was supported by the Hong Kong Research Grants Council, Early Career Scheme Fund [Grant 26508924], and partially supported by a grant from the National Natural Science Foundation of China [Grant 72495125]. J. Dong was supported by the National Science Foundation [Grant 1944209].\n                  Supplemental Material: The data files are available at https://doi.org/10.1287/mnsc.2022.03736 .",
+  "ai_type_tags": [
+    "机器学习"
+  ],
+  "arxiv_id": "2022.03736",
+  "authors": [
+    "Yi Chen",
+    "Jing Dong",
+    "Zhaoran Wang",
+    "Chuheng Zhang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Hong Kong University of Science and Technology"
+      ],
+      "name": "Yi Chen",
+      "orcid": "https://orcid.org/0000-0001-7763-7016",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Columbia University"
+      ],
+      "name": "Jing Dong",
+      "orcid": "https://orcid.org/0000-0001-6387-4088",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Northwestern University"
+      ],
+      "name": "Zhaoran Wang",
+      "orcid": "https://orcid.org/0000-0002-1824-2580",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Microsoft Research Asia (China)"
+      ],
+      "name": "Chuheng Zhang",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "数据驱动算法结合深度学习解决CMDP，属于AI/ML技术应用",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "提出原始-对偶数据驱动算法，交替使用正则化策略迭代和次梯度上升求解受限马尔可夫决策过程，收敛速率 O(1/√T)。可结合深度学习处理大规模队列调度和库存管理，实验显示优于现有启发式方法。",
+      "topic_tags": [
+        "决策",
+        "算法管理",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 1,
+  "date": "2026-02",
+  "doi": "10.1287/mnsc.2022.03736",
+  "id": "p_F8R_RGXgur3xaMwn",
+  "issue": "2",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3612,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "A Primal-Dual Approach to Constrained Markov Decision Processes with Applications to Queue Scheduling and Inventory Management",
+  "title_zh": "约束马尔可夫决策过程的原始对偶方法：队列调度与库存管理应用",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.03736",
+  "volume": "72",
+  "year": 2026
+}

@@ -1,0 +1,72 @@
+{
+  "abstract": "Job recommendation aims to provide potential talents with suitable job descriptions (JDs) consistent with their career trajectory, which plays an essential role in proactive talent recruitment. In real-world management scenarios, the available JD-user records always consist of JDs, user profiles, and click data, in which the user profiles are typically summarized as the user's skill distribution for privacy reasons. Although existing sophisticated recommendation methods can be directly employed, effective recommendation still has challenges considering the information deficit of JD itself and the natural heterogeneous gap between JD and user profile. To address these challenges, we proposed a novel skill-aware recommendation model based on the designed semantic-enhanced transformer to parse JDs and complete personalized job recommendation. Specifically, we first model the relative items of each JD and then adopt an encoder with the local-global attention mechanism to better mine the intra-job and inter-job dependencies from JD tuples. Moreover, we adopt a two-stage learning strategy for skill-aware recommendation, in which we utilize the skill distribution to guide JD representation learning in the recall stage, and then combine the user profiles for final prediction in the ranking stage. Consequently, we can embed rich contextual semantic representations for learning JDs, while skill-aware recommendation provides effective JD-user joint representation for click-through rate (CTR) prediction. To validate the superior performance of our method for job recommendation, we present a thorough empirical analysis of large-scale real-world and public datasets to demonstrate its effectiveness and interpretability.",
+  "ai_type_tags": [
+    "推荐算法",
+    "Transformer",
+    "机器学习"
+  ],
+  "arxiv_id": "2404.04313",
+  "authors": [
+    "Zhihao Guan",
+    "Jia-Qi Yang",
+    "Yang Yang",
+    "Hengshu Zhu",
+    "Wenjie Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhihao Guan"
+    },
+    {
+      "name": "Jia-Qi Yang"
+    },
+    {
+      "name": "Yang Yang"
+    },
+    {
+      "name": "Hengshu Zhu"
+    },
+    {
+      "name": "Wenjie Li"
+    },
+    {
+      "name": "Hui Xiong"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI推荐算法核心，HR人才招聘管理相关",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对招聘信息不足和JD与用户异质性差距，提出基于语义增强Transformer的技能感知模型；通过局部-全局注意力建模JD内部与跨职位依赖，采用双阶段学习策略（召回阶段以技能分布引导JD表示，排序阶段融合用户画像）提升JD‑用户匹配效果，实现更高的点击率预测。",
+      "topic_tags": [
+        "招聘",
+        "推荐系统",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-04-05",
+  "doi": null,
+  "id": "p_f-JiWEmz44e5m14F",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2404.04313v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8737,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "JobFormer: Skill-Aware Job Recommendation with Semantic-Enhanced Transformer",
+  "title_zh": "JobFormer：基于语义增强Transformer的技能感知工作推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2404.04313v1",
+  "volume": null,
+  "year": 2024
+}

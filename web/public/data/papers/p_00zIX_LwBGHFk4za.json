@@ -1,0 +1,978 @@
+{
+  "abstract": "Recent AI systems have achieved strong results on a wide range of benchmarks, yet these gains have not translated into economically meaningful deployment across many professional domains. We argue that this gap is largely an evaluation problem: widely used benchmarks lack sustained performance measurement on real and economically valuable workflows. This paper introduces Agents' Last Exam (ALE), a benchmark designed to evaluate AI agents on long-horizon, economically valuable, real-world tasks with verifiable outcomes. Developed in collaboration with 250+ industry experts, ALE covers non-physical industries defined with reference to O*NET / SOC 2018 (the U.S. federal occupational taxonomy). It is organized around a task taxonomy with 55 subfields grouped into 13 industry clusters covering 1K+ tasks. Current results show that the hardest tier remains far from saturated: across mainstream harness and backbone configurations, the average full pass rate is 2.6%. ALE is designed as a living benchmark: its task pool grows continuously as new workflows and industries are onboarded. More broadly, ALE is intended not merely as another leaderboard, but as an instrument for closing the gap between benchmark success and GDP-relevant impact.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI治理"
+  ],
+  "arxiv_id": "2606.05405",
+  "authors": [
+    "Yiyou Sun",
+    "Xinyang Han",
+    "Weichen Zhang",
+    "Yuanbo Pang",
+    "Tianyu Wang"
+  ],
+  "authors_full": [
+    {
+      "name": "Yiyou Sun"
+    },
+    {
+      "name": "Xinyang Han"
+    },
+    {
+      "name": "Weichen Zhang"
+    },
+    {
+      "name": "Yuanbo Pang"
+    },
+    {
+      "name": "Tianyu Wang"
+    },
+    {
+      "name": "Yuhan Cao"
+    },
+    {
+      "name": "Yixiao Huang"
+    },
+    {
+      "name": "Chris Duroiu"
+    },
+    {
+      "name": "Haoyun Zhang"
+    },
+    {
+      "name": "Jeffrey Lin"
+    },
+    {
+      "name": "Weishu Zhang"
+    },
+    {
+      "name": "Tyler Zeng"
+    },
+    {
+      "name": "Ying Yan"
+    },
+    {
+      "name": "Bo Liu"
+    },
+    {
+      "name": "Hanson Wen"
+    },
+    {
+      "name": "Mingyang Xu"
+    },
+    {
+      "name": "Xiaoyuan Liu"
+    },
+    {
+      "name": "Zimeng Chen"
+    },
+    {
+      "name": "Weiyan Shi"
+    },
+    {
+      "name": "Amanda Dsouza"
+    },
+    {
+      "name": "Vincent Sunn Chen"
+    },
+    {
+      "name": "Patrick Bryant"
+    },
+    {
+      "name": "Carl Boettiger"
+    },
+    {
+      "name": "Yamini Rangan"
+    },
+    {
+      "name": "Bradley Rothenberg"
+    },
+    {
+      "name": "Kyle Steinfeld"
+    },
+    {
+      "name": "Arvind Rao"
+    },
+    {
+      "name": "Tapio Schneider"
+    },
+    {
+      "name": "Georgios Yannakakis"
+    },
+    {
+      "name": "Laure Zanna"
+    },
+    {
+      "name": "Kaan Ozbay"
+    },
+    {
+      "name": "Ida Sim"
+    },
+    {
+      "name": "Tarek Zohdi"
+    },
+    {
+      "name": "George Em Karniadakis"
+    },
+    {
+      "name": "Jack Gallant"
+    },
+    {
+      "name": "Teresa Head-gordon"
+    },
+    {
+      "name": "Yushan Li"
+    },
+    {
+      "name": "Wenxi Deng"
+    },
+    {
+      "name": "Tao Sun"
+    },
+    {
+      "name": "Huiqi Wang"
+    },
+    {
+      "name": "Zhun Wang"
+    },
+    {
+      "name": "Justin Xu"
+    },
+    {
+      "name": "Chris Yuhao Liu"
+    },
+    {
+      "name": "Yafei Cheng"
+    },
+    {
+      "name": "Rongwang Hu"
+    },
+    {
+      "name": "Aras Bacho"
+    },
+    {
+      "name": "Shengcao Cao"
+    },
+    {
+      "name": "Zengyi Qin"
+    },
+    {
+      "name": "Yixiong Chen"
+    },
+    {
+      "name": "Hengduan Fan"
+    },
+    {
+      "name": "Hao Liu"
+    },
+    {
+      "name": "Lin Zeng"
+    },
+    {
+      "name": "Shashank Muralidhar Bharadwaj"
+    },
+    {
+      "name": "Litian Gong"
+    },
+    {
+      "name": "Yingxuan Yang"
+    },
+    {
+      "name": "Maojia Song"
+    },
+    {
+      "name": "Ruheng Wang"
+    },
+    {
+      "name": "Zongzheng Zhang"
+    },
+    {
+      "name": "Honglin Bao"
+    },
+    {
+      "name": "Shuo Lu"
+    },
+    {
+      "name": "Jianhong Tu"
+    },
+    {
+      "name": "Zhonghua Wang"
+    },
+    {
+      "name": "Zheng Zhang"
+    },
+    {
+      "name": "Zijiao Chen"
+    },
+    {
+      "name": "yanqiong Jiang"
+    },
+    {
+      "name": "Zhendong Li"
+    },
+    {
+      "name": "Bohan Lyu"
+    },
+    {
+      "name": "Chang Ma"
+    },
+    {
+      "name": "Peiran Xu"
+    },
+    {
+      "name": "Benran Zhang"
+    },
+    {
+      "name": "Shangding Gu"
+    },
+    {
+      "name": "Haoyue Hua"
+    },
+    {
+      "name": "Haoyang Li"
+    },
+    {
+      "name": "Wanzhe Liao"
+    },
+    {
+      "name": "Chengzhi Liu"
+    },
+    {
+      "name": "Junbo Peng"
+    },
+    {
+      "name": "Haoran Sun"
+    },
+    {
+      "name": "Zechen Xu"
+    },
+    {
+      "name": "Bo Chen"
+    },
+    {
+      "name": "Jiayi Cheng"
+    },
+    {
+      "name": "Yi Jiang"
+    },
+    {
+      "name": "Keying Kuang"
+    },
+    {
+      "name": "Yuan Li"
+    },
+    {
+      "name": "Youbang Pan"
+    },
+    {
+      "name": "Ziyan Rao"
+    },
+    {
+      "name": "Alexander Schubert"
+    },
+    {
+      "name": "Yifan Shen"
+    },
+    {
+      "name": "Vincent Siu"
+    },
+    {
+      "name": "Xiatao Sun"
+    },
+    {
+      "name": "Kangqi Zhang"
+    },
+    {
+      "name": "Xiaopan Zhang"
+    },
+    {
+      "name": "Yuchen Zhu"
+    },
+    {
+      "name": "Ishaan Singh Chandok"
+    },
+    {
+      "name": "Lei Ding"
+    },
+    {
+      "name": "Jingxuan Fan"
+    },
+    {
+      "name": "Andrew Glover"
+    },
+    {
+      "name": "Jiaming Hu"
+    },
+    {
+      "name": "Yiran Hu"
+    },
+    {
+      "name": "Wenbo Huang"
+    },
+    {
+      "name": "Zixin Jiang"
+    },
+    {
+      "name": "Haoran Jin"
+    },
+    {
+      "name": "Lukas Kim"
+    },
+    {
+      "name": "Ming Liu"
+    },
+    {
+      "name": "Yang Liu"
+    },
+    {
+      "name": "Alireza Rafiei"
+    },
+    {
+      "name": "Xuhuan Shen"
+    },
+    {
+      "name": "Kunyang Sun"
+    },
+    {
+      "name": "Sophia Sun"
+    },
+    {
+      "name": "Ting Sun"
+    },
+    {
+      "name": "Eric Wang"
+    },
+    {
+      "name": "Yixin Wang"
+    },
+    {
+      "name": "Hanwen Xing"
+    },
+    {
+      "name": "Sihan Xu"
+    },
+    {
+      "name": "Yuzheng Xu"
+    },
+    {
+      "name": "Zhongxing Xu"
+    },
+    {
+      "name": "Zhiling Yan"
+    },
+    {
+      "name": "Boqin Yuan"
+    },
+    {
+      "name": "Ruiqi Zhang"
+    },
+    {
+      "name": "Yifan Zhang"
+    },
+    {
+      "name": "Zibo Zhao"
+    },
+    {
+      "name": "Liana"
+    },
+    {
+      "name": "Santanu Bosu Antu"
+    },
+    {
+      "name": "Haoyue Bai"
+    },
+    {
+      "name": "Carlo Bosio"
+    },
+    {
+      "name": "Joseph Cavanagh"
+    },
+    {
+      "name": "Patricia Cavazos-Rehg"
+    },
+    {
+      "name": "Tianxing Chen"
+    },
+    {
+      "name": "Xuewen Chen"
+    },
+    {
+      "name": "Yipu Chen"
+    },
+    {
+      "name": "Zhu Chenyu"
+    },
+    {
+      "name": "Chen Dai"
+    },
+    {
+      "name": "Stefano De Castro"
+    },
+    {
+      "name": "Yunfu Deng"
+    },
+    {
+      "name": "Kaustubh Dhole"
+    },
+    {
+      "name": "Jiayuan Ding"
+    },
+    {
+      "name": "Chenchen Du"
+    },
+    {
+      "name": "Zhehang Du"
+    },
+    {
+      "name": "Hao Fan"
+    },
+    {
+      "name": "Run-ze Fan"
+    },
+    {
+      "name": "Hengyu Fu"
+    },
+    {
+      "name": "Shi Gu"
+    },
+    {
+      "name": "Yifan Gu"
+    },
+    {
+      "name": "Charlie Guo"
+    },
+    {
+      "name": "Baihe Huang"
+    },
+    {
+      "name": "Baixiang Huang"
+    },
+    {
+      "name": "Rimika Jaiswal"
+    },
+    {
+      "name": "Zhihan Jiang"
+    },
+    {
+      "name": "Ran Jin"
+    },
+    {
+      "name": "Erin Kasson"
+    },
+    {
+      "name": "Xin Lan"
+    },
+    {
+      "name": "Joseph Lee"
+    },
+    {
+      "name": "Deren Lei"
+    },
+    {
+      "name": "Chenyu Li"
+    },
+    {
+      "name": "Daofeng Li"
+    },
+    {
+      "name": "Haitao Li"
+    },
+    {
+      "name": "Hongwei Li"
+    },
+    {
+      "name": "Jingyan Li"
+    },
+    {
+      "name": "Xiao Li"
+    },
+    {
+      "name": "Yi Li"
+    },
+    {
+      "name": "Yinsheng Li"
+    },
+    {
+      "name": "Yuangang Li"
+    },
+    {
+      "name": "Zhixu Li"
+    },
+    {
+      "name": "Wenyu Liang"
+    },
+    {
+      "name": "Longtai Liao"
+    },
+    {
+      "name": "Kevin Qinghong Lin"
+    },
+    {
+      "name": "AndyZeyi Liu"
+    },
+    {
+      "name": "Che Liu"
+    },
+    {
+      "name": "Jiaming Liu"
+    },
+    {
+      "name": "Kaiyuan Liu"
+    },
+    {
+      "name": "Xuan Liu"
+    },
+    {
+      "name": "Pan Lu"
+    },
+    {
+      "name": "Wenbo Lv"
+    },
+    {
+      "name": "Yicheng Lv"
+    },
+    {
+      "name": "Qiuyang Mang"
+    },
+    {
+      "name": "Kyle Montgomery"
+    },
+    {
+      "name": "Yuzhou Nie"
+    },
+    {
+      "name": "Ruoxi Ning"
+    },
+    {
+      "name": "Jorin Overwiening"
+    },
+    {
+      "name": "Xu Pan"
+    },
+    {
+      "name": "Layna Paraboschi"
+    },
+    {
+      "name": "Core Francisco Park"
+    },
+    {
+      "name": "Justin Purnomo"
+    },
+    {
+      "name": "Swati Rajwal"
+    },
+    {
+      "name": "Scott Rankin"
+    },
+    {
+      "name": "Bixuan Ren"
+    },
+    {
+      "name": "Yiren Rong"
+    },
+    {
+      "name": "HaoYang Shang"
+    },
+    {
+      "name": "Ventus Shaw"
+    },
+    {
+      "name": "Fiona Shen"
+    },
+    {
+      "name": "Jiawei Shen"
+    },
+    {
+      "name": "Minqi Shi"
+    },
+    {
+      "name": "Qiu Shi"
+    },
+    {
+      "name": "Huaxiu Yao"
+    },
+    {
+      "name": "Tianneng Shi"
+    },
+    {
+      "name": "Jonah So"
+    },
+    {
+      "name": "Vladislav Susoy"
+    },
+    {
+      "name": "Hannah Szlyk"
+    },
+    {
+      "name": "Haocheng Wang"
+    },
+    {
+      "name": "Jialu Wang"
+    },
+    {
+      "name": "Wei Wang"
+    },
+    {
+      "name": "Xinyu Wang"
+    },
+    {
+      "name": "Zehao Wang"
+    },
+    {
+      "name": "Dowling Wong"
+    },
+    {
+      "name": "Angela Wu"
+    },
+    {
+      "name": "Dehao Wu"
+    },
+    {
+      "name": "Fangyu Wu"
+    },
+    {
+      "name": "Mengyuan \"Millie\" Wu"
+    },
+    {
+      "name": "Yu Wu"
+    },
+    {
+      "name": "Yuchen Wu"
+    },
+    {
+      "name": "Yuhao Wu"
+    },
+    {
+      "name": "Qingpo Wuwu"
+    },
+    {
+      "name": "Weihang Xiao"
+    },
+    {
+      "name": "Yongyi Xiong"
+    },
+    {
+      "name": "Fan Xu"
+    },
+    {
+      "name": "Ruiling Xu"
+    },
+    {
+      "name": "Mingxuan Yan"
+    },
+    {
+      "name": "Benjamin Yang"
+    },
+    {
+      "name": "Jirong Yang"
+    },
+    {
+      "name": "Sen Yang"
+    },
+    {
+      "name": "Xiaoli Yang"
+    },
+    {
+      "name": "Yushi Yang"
+    },
+    {
+      "name": "Haoran Ye"
+    },
+    {
+      "name": "Xiaohu Yu"
+    },
+    {
+      "name": "Zhengming Yu"
+    },
+    {
+      "name": "Chenlong Zhang"
+    },
+    {
+      "name": "Chi Zhang"
+    },
+    {
+      "name": "Hanning Zhang"
+    },
+    {
+      "name": "Hanwen Zhang"
+    },
+    {
+      "name": "Junge Zhang"
+    },
+    {
+      "name": "Kunpeng Zhang"
+    },
+    {
+      "name": "Song Zhang"
+    },
+    {
+      "name": "Wenjin Zhang"
+    },
+    {
+      "name": "Wenshuo Zhang"
+    },
+    {
+      "name": "Ying Zhang"
+    },
+    {
+      "name": "Yizhi Zhang"
+    },
+    {
+      "name": "Brian Zhao"
+    },
+    {
+      "name": "Qijian Zhao"
+    },
+    {
+      "name": "Yimin Zhao"
+    },
+    {
+      "name": "Yuhaohua Zheng"
+    },
+    {
+      "name": "Liwei Zhou"
+    },
+    {
+      "name": "Tianyue Zhou"
+    },
+    {
+      "name": "Sichen Zhu"
+    },
+    {
+      "name": "Siqi Zhu"
+    },
+    {
+      "name": "Yan Zhu"
+    },
+    {
+      "name": "Yishu Zhu"
+    },
+    {
+      "name": "Jierui Zuo"
+    },
+    {
+      "name": "Chonghao Cai"
+    },
+    {
+      "name": "Helena Casademunt"
+    },
+    {
+      "name": "Wenjia Chen"
+    },
+    {
+      "name": "Benjamin Cheng"
+    },
+    {
+      "name": "Nawen Deng"
+    },
+    {
+      "name": "Rao Fu"
+    },
+    {
+      "name": "Tianfu Fu"
+    },
+    {
+      "name": "Yifan Han"
+    },
+    {
+      "name": "Ren He"
+    },
+    {
+      "name": "Zhenyu He"
+    },
+    {
+      "name": "Qiao Jin"
+    },
+    {
+      "name": "Lang Lang"
+    },
+    {
+      "name": "Yuetai Li"
+    },
+    {
+      "name": "Sylvia Liu"
+    },
+    {
+      "name": "Lu Lu"
+    },
+    {
+      "name": "Qing Lu"
+    },
+    {
+      "name": "Subhabrata Mukherjee"
+    },
+    {
+      "name": "Yunqi Ouyang"
+    },
+    {
+      "name": "Yin Ren"
+    },
+    {
+      "name": "Dawei Shi"
+    },
+    {
+      "name": "Haoran Wu"
+    },
+    {
+      "name": "Zhiyue Wu"
+    },
+    {
+      "name": "Hannah Yao"
+    },
+    {
+      "name": "Zhuoran Yi"
+    },
+    {
+      "name": "Jenny Yu"
+    },
+    {
+      "name": "Rhea Zhan"
+    },
+    {
+      "name": "Hang Zhou"
+    },
+    {
+      "name": "Blake Zhu"
+    },
+    {
+      "name": "Junfan Zhu"
+    },
+    {
+      "name": "Alan Yuille"
+    },
+    {
+      "name": "Yang Liu"
+    },
+    {
+      "name": "Russell Alan Poldrack"
+    },
+    {
+      "name": "Jiachen Li"
+    },
+    {
+      "name": "Zhenglu Li"
+    },
+    {
+      "name": "Molei Tao"
+    },
+    {
+      "name": "Jing Huang"
+    },
+    {
+      "name": "Wenqi Shi"
+    },
+    {
+      "name": "Costas Spanos"
+    },
+    {
+      "name": "Lichao Sun"
+    },
+    {
+      "name": "Chenguang Wang"
+    },
+    {
+      "name": "Orson Xu"
+    },
+    {
+      "name": "Zhen Dong"
+    },
+    {
+      "name": "Hector Gomez"
+    },
+    {
+      "name": "Aylin Caliskan"
+    },
+    {
+      "name": "Ali Emami"
+    },
+    {
+      "name": "Haimin Hu"
+    },
+    {
+      "name": "Zhi Li"
+    },
+    {
+      "name": "Lihui Liu"
+    },
+    {
+      "name": "Murphy Niu"
+    },
+    {
+      "name": "Yi Shao"
+    },
+    {
+      "name": "Jianxin Sun"
+    },
+    {
+      "name": "Mikko Tolonen"
+    },
+    {
+      "name": "Ting Wang"
+    },
+    {
+      "name": "Sanjiv Das"
+    },
+    {
+      "name": "Yanjun Gao"
+    },
+    {
+      "name": "Wenbo Guo"
+    },
+    {
+      "name": "Erika J Schneider"
+    },
+    {
+      "name": "Zhiyong Lu"
+    },
+    {
+      "name": "Mark Mueller"
+    },
+    {
+      "name": "Radha Poovendran"
+    },
+    {
+      "name": "Somayeh Sojoudi"
+    },
+    {
+      "name": "Dawn Song"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI agent评估基准测试，跨行业应用但非OB核心议题",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "指出当前AI评测基准与真实经济价值存在巨大鸿沟。提出ALE基准，涵盖55个子领域、13个行业集群、1000+任务，由250+行业专家协作开发。当前主流模型平均通过率仅2.6%，最难层级远未饱和。该基准为动态更新，旨在将AI表现从榜单成功转化为GDP相关影响。",
+      "topic_tags": [
+        "绩效评估",
+        "决策",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-03",
+  "doi": null,
+  "id": "p_00zIX_LwBGHFk4za",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2606.05405v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11537,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Agents' Last Exam",
+  "title_zh": "Agent的最后考试",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2606.05405v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,53 @@
+{
+  "abstract": "Due to the increasing number of graduates, many applicants experience the situation about finding a job, and employers experience difficulty filtering job applicants, which might negatively impact their effectiveness. However, most job-hunting websites lack job recommendation and CV filtering or ranking functionality, which are not integrated into the system. Thus, a smart job hunter combined with the above functionality will be conducted in this project, which contains job recommendations, CV ranking and even a job dashboard for skills and job applicant functionality. Job recommendation and CV ranking starts from the automatic keyword extraction and end with the Job/CV ranking algorithm. Automatic keyword extraction is implemented by Job2Skill and the CV2Skill model based on Bert. Job2Skill consists of two components, text encoder and Gru-based layers, while CV2Skill is mainly based on Bert and fine-tunes the pre-trained model by the Resume- Entity dataset. Besides, to match skills from CV and job description and rank lists of jobs and candidates, job/CV ranking algorithms have been provided to compute the occurrence ratio of skill words based on TFIDF score and match ratio of the total skill numbers. Besides, some advanced features have been integrated into the website to improve user experiences, such as the calendar and sweetalert2 plugin. And some basic features to go through job application processes, such as job application tracking and interview arrangement.",
+  "ai_type_tags": [
+    "BERT",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2303.17930",
+  "authors": [
+    "Shiyao Wu"
+  ],
+  "authors_full": [
+    {
+      "name": "Shiyao Wu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "用BERT做职位推荐和简历排序，涉及HR领域但属技术系统开发",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "随着毕业生数量增加，求职者和雇主均面临效率困境，但多数招聘网站缺乏岗位推荐和简历过滤功能。项目开发了集成智能招聘平台，采用基于BERT的Job2Skill和CV2Skill模型实现自动关键词提取，并通过TF-IDF技能词匹配和排名算法连接岗位描述与简历，提升人岗匹配效率。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-03-31",
+  "doi": null,
+  "id": "p_n7O6xv7E0Tr9kLe1",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2303.17930v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10068,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "JobHam-place with smart recommend job options and candidate filtering options",
+  "title_zh": "JobHam-place：智能职位推荐与候选人筛选",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2303.17930v1",
+  "volume": null,
+  "year": 2023
+}

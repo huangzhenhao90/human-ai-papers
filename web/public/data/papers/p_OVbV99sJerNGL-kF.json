@@ -1,0 +1,84 @@
+{
+  "abstract": "Integrating diverse data modalities is crucial for enhancing the performance of personalized recommendation systems. Traditional models, which often rely on singular data sources, lack the depth needed to accurately capture the multifaceted nature of item features and user behaviors. This paper introduces a novel framework for multi-behavior recommendations, leveraging the fusion of triple-modality, which is visual, textual, and graph data through alignment with large language models (LLMs). By incorporating visual information, we capture contextual and aesthetic item characteristics; textual data provides insights into user interests and item features in detail; and graph data elucidates relationships within the item-behavior heterogeneous graphs. Our proposed model called Triple Modality Fusion (TMF) utilizes the power of LLMs to align and integrate these three modalities, achieving a comprehensive representation of user behaviors. The LLM models the user's interactions including behaviors and item features in natural languages. Initially, the LLM is warmed up using only natural language-based prompts. We then devise the modality fusion module based on cross-attention and self-attention mechanisms to integrate different modalities from other models into the same embedding space and incorporate them into an LLM. Extensive experiments demonstrate the effectiveness of our approach in improving recommendation accuracy. Further ablation studies validate the effectiveness of our model design and benefits of the TMF.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "推荐算法"
+  ],
+  "arxiv_id": "2410.12228",
+  "authors": [
+    "Luyi Ma",
+    "Xiaohan Li",
+    "Zezhong Fan",
+    "Kai Zhao",
+    "Jianpeng Xu"
+  ],
+  "authors_full": [
+    {
+      "name": "Luyi Ma"
+    },
+    {
+      "name": "Xiaohan Li"
+    },
+    {
+      "name": "Zezhong Fan"
+    },
+    {
+      "name": "Kai Zhao"
+    },
+    {
+      "name": "Jianpeng Xu"
+    },
+    {
+      "name": "Jason Cho"
+    },
+    {
+      "name": "Praveen Kanumala"
+    },
+    {
+      "name": "Kaushiki Nag"
+    },
+    {
+      "name": "Sushant Kumar"
+    },
+    {
+      "name": "Kannan Achan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI/GenAI技术核心，推荐系统属消费者行为研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对现有推荐系统仅依赖单一数据源、难以捕捉用户多维行为的问题，提出基于大语言模型的三模态融合框架，将视觉、文本、图结构信息对齐整合。实验表明该方法显著提升多行为推荐准确率，消融实验验证各模态贡献。",
+      "topic_tags": [
+        "推荐系统",
+        "消费者行为",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-10-16",
+  "doi": null,
+  "id": "p_OVbV99sJerNGL-kF",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2410.12228v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9963,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Triple Modality Fusion: Aligning Visual, Textual, and Graph Data with Large Language Models for Multi-Behavior Recommendations",
+  "title_zh": "基于大语言模型的三模态融合：视觉、文本与图数据的对齐用于多行为推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2410.12228v2",
+  "volume": null,
+  "year": 2024
+}

@@ -1,0 +1,63 @@
+{
+  "abstract": "Diversity in training data, architecture, and providers is assumed to mitigate homogeneity in LLMs. However, we lack empirical evidence on whether different LLMs differ meaningfully. We conduct a large-scale empirical evaluation on over 350 LLMs overall, using two popular leaderboards and a resume-screening task. We find substantial correlation in model errors -- on one leaderboard dataset, models agree 60% of the time when both models err. We identify factors driving model correlation, including shared architectures and providers. Crucially, however, larger and more accurate models have highly correlated errors, even with distinct architectures and providers. Finally, we show the effects of correlation in two downstream tasks: LLM-as-judge evaluation and hiring -- the latter reflecting theoretical predictions regarding algorithmic monoculture.",
+  "ai_type_tags": [
+    "LLM"
+  ],
+  "arxiv_id": "2506.07962",
+  "authors": [
+    "Elliot Kim",
+    "Avi Garg",
+    "Kenny Peng",
+    "Nikhil Garg"
+  ],
+  "authors_full": [
+    {
+      "name": "Elliot Kim"
+    },
+    {
+      "name": "Avi Garg"
+    },
+    {
+      "name": "Kenny Peng"
+    },
+    {
+      "name": "Nikhil Garg"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "研究LLM错误相关性，含招聘下游任务评估",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究不同LLM是否真有意义差异。对350余个模型开展大规模实证评估，涵盖两个主流榜单和简历筛选任务。结果显示模型错误高度相关——在某一榜单数据集上，两个模型同时犯错时一致率达60%。共享架构和提供商是相关性的驱动因素，但更大、更准确的模型即便架构和提供商不同也呈现高度相关错误。该相关性在LLM-as-judge评估和招聘场景中造成算法单一文化效应。",
+      "topic_tags": [
+        "算法决策",
+        "AI治理",
+        "招聘"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-06-09",
+  "doi": null,
+  "id": "p_GoED2omTmyTN6nsZ",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2506.07962v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8468,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Correlated Errors in Large Language Models",
+  "title_zh": "大语言模型中的相关误差",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2506.07962v1",
+  "volume": null,
+  "year": 2025
+}

@@ -1,0 +1,82 @@
+{
+  "abstract": "Uplift modeling, vital in online marketing, seeks to accurately measure the impact of various strategies, such as coupons or discounts, on different users by predicting the Individual Treatment Effect (ITE). In an e-commerce setting, user behavior follows a defined sequential chain, including impression, click, and conversion. Marketing strategies exert varied uplift effects at each stage within this chain, impacting metrics like click-through and conversion rate. Despite its utility, existing research has neglected to consider the inter-task across all stages impacts within a specific treatment and has insufficiently utilized the treatment information, potentially introducing substantial bias into subsequent marketing decisions. We identify these two issues as the chain-bias problem and the treatment-unadaptive problem. This paper introduces the Entire Chain UPlift method with context-enhanced learning (ECUP), devised to tackle these issues. ECUP consists of two primary components: 1) the Entire Chain-Enhanced Network, which utilizes user behavior patterns to estimate ITE throughout the entire chain space, models the various impacts of treatments on each task, and integrates task prior information to enhance context awareness across all stages, capturing the impact of treatment on different tasks, and 2) the Treatment-Enhanced Network, which facilitates fine-grained treatment modeling through bit-level feature interactions, thereby enabling adaptive feature adjustment. Extensive experiments on public and industrial datasets validate ECUPs effectiveness. Moreover, ECUP has been deployed on the Meituan food delivery platform, serving millions of daily active users, with the related dataset released for future research.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "推荐算法"
+  ],
+  "arxiv_id": "2402.03379",
+  "authors": [
+    "Yinqiu Huang",
+    "Shuli Wang",
+    "Min Gao",
+    "Xue Wei",
+    "Changhao Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Yinqiu Huang"
+    },
+    {
+      "name": "Shuli Wang"
+    },
+    {
+      "name": "Min Gao"
+    },
+    {
+      "name": "Xue Wei"
+    },
+    {
+      "name": "Changhao Li"
+    },
+    {
+      "name": "Chuan Luo"
+    },
+    {
+      "name": "Yinhua Zhu"
+    },
+    {
+      "name": "Xiong Xiao"
+    },
+    {
+      "name": "Yi Luo"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI技术用于电商营销uplift建模，直接服务营销决策",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "电商营销场景中，用户行为遵循曝光-点击-转化的顺序链，现有提升建模忽略跨阶段任务间影响和治疗信息利用不足，形成链偏差和治疗非自适应问题。ECUP方法通过全链增强网络建模各阶段治疗差异效果，并利用治疗增强网络实现细粒度特征交互，为智能营销决策提供更精准的效果评估。",
+      "topic_tags": [
+        "营销",
+        "推荐系统",
+        "消费者行为",
+        "绩效评估"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-02-04",
+  "doi": null,
+  "id": "p_e3Hla_y67UFaC1QQ",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2402.03379v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9771,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Entire Chain Uplift Modeling with Context-Enhanced Learning for Intelligent Marketing",
+  "title_zh": "基于情境增强学习的全链路提升建模助力智能营销",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2402.03379v2",
+  "volume": null,
+  "year": 2024
+}

@@ -1,0 +1,76 @@
+{
+  "abstract": "Person-Job Fit (PJF) is a critical component for online recruitment. Existing approaches face several challenges, particularly in handling low-quality job descriptions and similar candidate-job pairs, which impair model performance. To address these challenges, this paper proposes a large language model (LLM) based method with two novel techniques: (1) LLM-based data augmentation, which polishes and rewrites low-quality job descriptions by leveraging chain-of-thought (COT) prompts, and (2) category-aware Mixture of Experts (MoE) that assists in identifying similar candidate-job pairs. This MoE module incorporates category embeddings to dynamically assign weights to the experts and learns more distinguishable patterns for similar candidate-job pairs. We perform offline evaluations and online A/B tests on our recruitment platform. Our method relatively surpasses existing methods by 2.40% in AUC and 7.46% in GAUC, and boosts click-through conversion rate (CTCVR) by 19.4% in online tests, saving millions of CNY in external headhunting expenses.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2604.21264",
+  "authors": [
+    "Minping Chen",
+    "Bing Xu",
+    "Zulong Chen",
+    "Chuanfei Xu",
+    "Ying Zhou"
+  ],
+  "authors_full": [
+    {
+      "name": "Minping Chen"
+    },
+    {
+      "name": "Bing Xu"
+    },
+    {
+      "name": "Zulong Chen"
+    },
+    {
+      "name": "Chuanfei Xu"
+    },
+    {
+      "name": "Ying Zhou"
+    },
+    {
+      "name": "Zui Tao"
+    },
+    {
+      "name": "Zeyi Wen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM招聘数据增强，HR匹配技术应用",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "本研究利用大语言模型对低质量职位描述进行链式思维增强改写，并提出类别感知的专家混合模块以识别相似候选人‑职位配对，显著提升人岗匹配AUC、GAUC及线上点击转化率，节约大量猎头费用。",
+      "topic_tags": [
+        "招聘",
+        "人岗匹配",
+        "数据增强",
+        "LLM"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-04-23",
+  "doi": null,
+  "id": "p_La44Al3fYZeOiCET",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2604.21264v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8195,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Enhancing Online Recruitment with Category-Aware MoE and LLM-based Data Augmentation",
+  "title_zh": "基于类别感知 MoE 与 LLM 数据增强提升在线招聘",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.21264v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,68 @@
+{
+  "abstract": "As machine learning (ML) systems increasingly impact critical sectors such as hiring, financial risk assessments, and criminal justice, the imperative to ensure fairness has intensified due to potential negative implications. While much ML fairness research has focused on enhancing training data and processes, addressing the outputs of already deployed systems has received less attention. This paper introduces 'BiasGuard', a novel approach designed to act as a fairness guardrail in production ML systems. BiasGuard leverages Test-Time Augmentation (TTA) powered by Conditional Generative Adversarial Network (CTGAN), a cutting-edge generative AI model, to synthesize data samples conditioned on inverted protected attribute values, thereby promoting equitable outcomes across diverse groups. This method aims to provide equal opportunities for both privileged and unprivileged groups while significantly enhancing the fairness metrics of deployed systems without the need for retraining. Our comprehensive experimental analysis across diverse datasets reveals that BiasGuard enhances fairness by 31% while only reducing accuracy by 0.09% compared to non-mitigated benchmarks. Additionally, BiasGuard outperforms existing post-processing methods in improving fairness, positioning it as an effective tool to safeguard against biases when retraining the model is impractical.",
+  "ai_type_tags": [
+    "算法决策",
+    "机器学习"
+  ],
+  "arxiv_id": "2501.04142",
+  "authors": [
+    "Nurit Cohen-Inger",
+    "Seffi Cohen",
+    "Neomi Rabaev",
+    "Lior Rokach",
+    "Bracha Shapira"
+  ],
+  "authors_full": [
+    {
+      "name": "Nurit Cohen-Inger"
+    },
+    {
+      "name": "Seffi Cohen"
+    },
+    {
+      "name": "Neomi Rabaev"
+    },
+    {
+      "name": "Lior Rokach"
+    },
+    {
+      "name": "Bracha Shapira"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "ML公平性系统技术研究，虽涉招聘但技术导向，非行为研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "在招聘、金融风险评估等关键场景中，已部署的机器学习系统可能产生歧视。BiasGuard 通过在推理阶段使用条件生成对抗网络（CTGAN）合成反向受保护属性样本，实现无需重训练的公平性后处理。实验表明，该方法在不显著损失准确率的前提下，将公平性指标提升约31%，显著优于传统后处理技术，为实际生产环境提供有效的公平保障。",
+      "topic_tags": [
+        "公平性",
+        "算法管理",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-01-07",
+  "doi": null,
+  "id": "p__STf0ztrEcI1ozpF",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2501.04142v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8584,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "BiasGuard: Guardrailing Fairness in Machine Learning Production Systems",
+  "title_zh": "BiasGuard：机器学习生产系统中的公平性护栏",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2501.04142v1",
+  "volume": null,
+  "year": 2025
+}

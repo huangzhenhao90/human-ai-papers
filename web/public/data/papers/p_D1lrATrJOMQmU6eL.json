@@ -1,0 +1,89 @@
+{
+  "abstract": "The next point-of-interest (POI) recommendation task aims to predict the users' immediate next destinations based on their preferences and historical check-ins, holding significant value in location-based services. Recently, large language models (LLMs) have shown great potential in recommender systems, which treat the next POI prediction in a generative manner. However, these LLMs, pretrained primarily on vast corpora of unstructured text, lack the native understanding of structured geographical entities and sequential mobility patterns required for next POI prediction tasks. Moreover, in industrial-scale POI prediction applications, incorporating world knowledge and alignment of human cognition, such as seasons, weather conditions, holidays, and users' profiles (such as habits, occupation, and preferences), can enhance the user experience while improving recommendation performance. To address these issues, we propose CoAST (Cognitive-Aligned Spatial-Temporal LLMs), a framework employing natural language as an interface, allowing for the incorporation of world knowledge, spatio-temporal trajectory patterns, profiles, and situational information. Specifically, CoAST mainly comprises of 2 stages: (1) Recommendation Knowledge Acquisition through continued pretraining on the enriched spatial-temporal trajectory data of the desensitized users; (2) Cognitive Alignment to align cognitive judgments with human preferences using enriched training data through Supervised Fine-Tuning (SFT) and a subsequent Reinforcement Learning (RL) phase. Extensive offline experiments on various real-world datasets and online experiments deployed in \"Guess Where You Go\" of AMAP App homepage demonstrate the effectiveness of CoAST.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习"
+  ],
+  "arxiv_id": "2510.14702",
+  "authors": [
+    "Penglong Zhai",
+    "Jie Li",
+    "Fanyi Di",
+    "Yue Liu",
+    "Yifang Yuan"
+  ],
+  "authors_full": [
+    {
+      "name": "Penglong Zhai"
+    },
+    {
+      "name": "Jie Li"
+    },
+    {
+      "name": "Fanyi Di"
+    },
+    {
+      "name": "Yue Liu"
+    },
+    {
+      "name": "Yifang Yuan"
+    },
+    {
+      "name": "Jie Huang"
+    },
+    {
+      "name": "Peng Wu"
+    },
+    {
+      "name": "Sicong Wang"
+    },
+    {
+      "name": "Mingyang Yin"
+    },
+    {
+      "name": "Tingting Hu"
+    },
+    {
+      "name": "Yao Xu"
+    },
+    {
+      "name": "Xin Li"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM用于POI推荐任务，偏向推荐系统技术而非OB/营销研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究针对下一个兴趣点(POI)推荐任务提出CoAST框架，解决LLM缺乏对结构化地理实体和序列移动模式原生理解的缺陷。框架分两阶段：(1)通过在丰富的时空轨迹数据上持续预训练获取推荐知识；(2)使用增强训练数据通过监督微调对齐认知判断与人类偏好，整合世界知识、时空轨迹、用户画像及情境信息（如季节、天气、节假日），提升推荐性能与用户体验。",
+      "topic_tags": [
+        "推荐系统",
+        "算法决策",
+        "消费者行为"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-16",
+  "doi": null,
+  "id": "p_D1lrATrJOMQmU6eL",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2510.14702v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9472,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Cognitive-Aligned Spatio-Temporal Large Language Models For Next Point-of-Interest Prediction",
+  "title_zh": "面向下一兴趣点预测的认知对齐时空大语言模型",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.14702v1",
+  "volume": null,
+  "year": 2025
+}

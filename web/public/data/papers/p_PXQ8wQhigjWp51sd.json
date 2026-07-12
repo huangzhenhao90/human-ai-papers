@@ -1,0 +1,82 @@
+{
+  "abstract": "In the contemporary era of widespread online recruitment, resume understanding has been widely acknowledged as a fundamental and crucial task, which aims to extract structured information from resume documents automatically. Compared to the traditional rule-based approaches, the utilization of recently proposed pre-trained document understanding models can greatly enhance the effectiveness of resume understanding. The present approaches have, however, disregarded the hierarchical relations within the structured information presented in resumes, and have difficulty parsing resumes in an efficient manner. To this end, in this paper, we propose a novel model, namely ERU, to achieve efficient resume understanding. Specifically, we first introduce a layout-aware multi-modal fusion transformer for encoding the segments in the resume with integrated textual, visual, and layout information. Then, we design three self-supervised tasks to pre-train this module via a large number of unlabeled resumes. Next, we fine-tune the model with a multi-granularity sequence labeling task to extract structured information from resumes. Finally, extensive experiments on a real-world dataset clearly demonstrate the effectiveness of ERU.",
+  "ai_type_tags": [
+    "多模态",
+    "Transformer",
+    "自监督学习"
+  ],
+  "arxiv_id": "2404.13067",
+  "authors": [
+    "Feihu Jiang",
+    "Chuan Qin",
+    "Jingshuai Zhang",
+    "Kaichun Yao",
+    "Xi Chen"
+  ],
+  "authors_full": [
+    {
+      "name": "Feihu Jiang"
+    },
+    {
+      "name": "Chuan Qin"
+    },
+    {
+      "name": "Jingshuai Zhang"
+    },
+    {
+      "name": "Kaichun Yao"
+    },
+    {
+      "name": "Xi Chen"
+    },
+    {
+      "name": "Dazhong Shen"
+    },
+    {
+      "name": "Chen Zhu"
+    },
+    {
+      "name": "Hengshu Zhu"
+    },
+    {
+      "name": "Hui Xiong"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "简历理解AI模型,招聘应用,边缘HR相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对招聘场景的简历结构化信息抽取，本文提出ERU模型，利用布局感知的多模态融合Transformer，结合文本、视觉和布局信息，通过大规模无标注简历进行自监督预训练，并采用多粒度序列标注微调，实现高效准确的简历解析。实验证明ERU在真实简历数据集上显著提升抽取效果。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "文档理解",
+        "多模态"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-04-13",
+  "doi": null,
+  "id": "p_PXQ8wQhigjWp51sd",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2404.13067v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8731,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Towards Efficient Resume Understanding: A Multi-Granularity Multi-Modal Pre-Training Approach",
+  "title_zh": "面向高效简历理解的多粒度多模态预训练方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2404.13067v1",
+  "volume": null,
+  "year": 2024
+}

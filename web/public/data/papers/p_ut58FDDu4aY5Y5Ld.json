@@ -1,0 +1,64 @@
+{
+  "abstract": "Text-to-image models, which can generate high-quality images based on textual input, have recently enabled various content-creation tools. Despite significantly affecting a wide range of downstream applications, the distributions of these generated images are still not fully understood, especially when it comes to the potential stereotypical attributes of different genders. In this work, we propose a paradigm (Gender Presentation Differences) that utilizes fine-grained self-presentation attributes to study how gender is presented differently in text-to-image models. By probing gender indicators in the input text (e.g., \"a woman\" or \"a man\"), we quantify the frequency differences of presentation-centric attributes (e.g., \"a shirt\" and \"a dress\") through human annotation and introduce a novel metric: GEP. Furthermore, we propose an automatic method to estimate such differences. The automatic GEP metric based on our approach yields a higher correlation with human annotations than that based on existing CLIP scores, consistently across three state-of-the-art text-to-image models. Finally, we demonstrate the generalization ability of our metrics in the context of gender stereotypes related to occupations.",
+  "ai_type_tags": [
+    "图像生成",
+    "多模态"
+  ],
+  "arxiv_id": "2302.03675",
+  "authors": [
+    "Yanzhe Zhang",
+    "Lu Jiang",
+    "Greg Turk",
+    "Diyi Yang"
+  ],
+  "authors_full": [
+    {
+      "name": "Yanzhe Zhang"
+    },
+    {
+      "name": "Lu Jiang"
+    },
+    {
+      "name": "Greg Turk"
+    },
+    {
+      "name": "Diyi Yang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "T2I模型性别偏见审计，AI伦理议题",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "通过细粒度自我呈现属性研究文本到图像模型中性别呈现差异，提出 GEP 指标，利用人工标注并设计自动评估方法，结果在三款模型上相关性高于 CLIP，且可推广至职业性别刻板印象。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "图像生成"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-02-07",
+  "doi": "10.1145/3689904.3694710",
+  "id": "p_ut58FDDu4aY5Y5Ld",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2302.03675v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9864,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Auditing Gender Presentation Differences in Text-to-Image Models",
+  "title_zh": "审计文本到图像模型中的性别呈现差异",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2302.03675v2",
+  "volume": null,
+  "year": 2023
+}

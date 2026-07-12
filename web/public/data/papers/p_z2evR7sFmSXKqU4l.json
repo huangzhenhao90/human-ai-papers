@@ -1,0 +1,56 @@
+{
+  "abstract": "Understanding human personality is crucial for web applications such as personalized recommendation and mental health assessment. Existing studies on personality detection predominantly adopt a \"posts -> user vector -> labels\" modeling paradigm, which encodes social media posts into user representations for predicting personality labels (e.g., MBTI labels). While recent advances in large language models (LLMs) have improved text encoding capacities, these approaches remain constrained by limited supervision signals due to label scarcity, and under-specified semantic mappings between user language and abstract psychological constructs. We address these challenges by proposing ROME, a novel framework that explicitly injects psychological knowledge into personality detection. Inspired by standardized self-assessment tests, ROME leverages LLMs' role-play capability to simulate user responses to validated psychometric questionnaires. These generated question-level answers transform free-form user posts into interpretable, questionnaire-grounded evidence linking linguistic cues to personality labels, thereby providing rich intermediate supervision to mitigate label scarcity while offering a semantic reasoning chain that guides and simplifies the text-to-personality mapping learning. A question-conditioned Mixture-of-Experts module then jointly routes over post and question representations, learning to answer questionnaire items under explicit supervision. The predicted answers are summarized into an interpretable answer vector and fused with the user representation for final prediction within a multi-task learning framework, where question answering serves as a powerful auxiliary task for personality detection. Extensive experiments on two real-world datasets demonstrate that ROME consistently outperforms state-of-the-art baselines, achieving improvements (15.41% on Kaggle dataset).",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习"
+  ],
+  "arxiv_id": "2512.08814",
+  "authors": [
+    "Yifan Lyu",
+    "Liang Zhang"
+  ],
+  "authors_full": [
+    {
+      "name": "Yifan Lyu"
+    },
+    {
+      "name": "Liang Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM人格检测，直接相关OB中个体差异与人格研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究提出ROME框架，利用大语言模型角色扮演模拟心理问卷，将用户帖子转化为可解释的问卷答案，通过问题条件混合专家模块进行人格标签预测，缓解标签稀缺并提供语义推理链。实验表明该方法在MBTI人格检测上显著提升性能。",
+      "topic_tags": [
+        "人格检测",
+        "心理测量",
+        "大语言模型"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-12-09",
+  "doi": null,
+  "id": "p_z2evR7sFmSXKqU4l",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2512.08814v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10269,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Ask, Answer, and Detect: Role-Playing LLMs for Personality Detection with Question-Conditioned Mixture-of-Experts",
+  "title_zh": "提问、回答与检测：基于问题条件混合专家模型的角色扮演 LLM 人格检测",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2512.08814v1",
+  "volume": null,
+  "year": 2025
+}

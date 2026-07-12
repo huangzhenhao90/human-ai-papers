@@ -1,0 +1,89 @@
+{
+  "abstract": "This study presents a systematic comparison of methods for individual treatment assignment. We group the various methods proposed in the literature into three general classes of algorithms (or metalearners): learning models to predict outcomes (the O-learner), learning models to predict causal effects (the E-learner), and learning models to predict optimal treatment assignments (the A-learner). We discuss how the metalearners differ in their level of generality and their objective function, which has critical implications for modeling and decision making. Notably, we demonstrate that optimizing for the prediction of outcomes or causal effects is not the same as optimizing for treatment assignments, suggesting that, in general, the A-learner should lead to better treatment assignments than the other metalearners. We then compare the metalearners in the context of choosing, for each user, the best algorithm for playlist generation in order to optimize engagement. This is the first comparison of the three different metalearners on a real-world application at scale (based on more than half a billion treatment assignments). In addition to supporting our analytical findings, the results show how large A/B tests can provide substantial value for learning treatment-assignment policies, rather than simply choosing the variant that performs best on average.",
+  "ai_type_tags": [
+    "机器学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2022.1149",
+  "authors": [
+    "Carlos Fernández-Loría",
+    "Foster Provost",
+    "Jesse Anderton",
+    "Benjamin Carterette",
+    "Praveen Chandar"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Hong Kong University of Science and Technology, Clear Water Bay, Hong Kong;"
+      ],
+      "name": "Carlos Fernández-Loría",
+      "orcid": "https://orcid.org/0000-0003-4509-3768"
+    },
+    {
+      "affiliation": [
+        "New York University, New York, New York 10012;"
+      ],
+      "name": "Foster Provost",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "Spotify, New York, New York 10007"
+      ],
+      "name": "Jesse Anderton",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "Spotify, New York, New York 10007"
+      ],
+      "name": "Benjamin Carterette",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "Spotify, New York, New York 10007"
+      ],
+      "name": "Praveen Chandar",
+      "orcid": null
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "比较treatment assignment算法(ML/metalearners),涉及算法方法论但非AI核心议题",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "个体治疗分配方法常分为结果预测（O‑learner）、因果效应预测（E‑learner）和最优分配预测（A‑learner）三类。本文比较三类元学习算法在Playlist生成中的表现，基于超过5亿次分配的大规模实验发现，A‑learner在提升用户参与度方面优于其他方法，并指出大规模A/B测试可用来学习更优的分配策略，而不仅局限于选择平均表现最佳的变体。",
+      "topic_tags": [
+        "决策",
+        "推荐系统",
+        "算法管理",
+        "绩效评估"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 6,
+  "date": "2023-06",
+  "doi": "10.1287/isre.2022.1149",
+  "id": "p_ydzFzDeoVzcrFOyG",
+  "issue": "2",
+  "journal": "ISR",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 5429,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "A Comparison of Methods for Treatment Assignment with an Application to Playlist Generation",
+  "title_zh": "治疗分配方法的比较及其在歌单生成中的应用",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/isre.2022.1149",
+  "volume": "34",
+  "year": 2023
+}

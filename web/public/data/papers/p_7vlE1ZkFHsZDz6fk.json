@@ -1,0 +1,72 @@
+{
+  "abstract": "User profile embedded in the prompt template of personalized recommendation agents play a crucial role in shaping their decision-making process. High-quality user profiles are essential for aligning agent behavior with real user interests. Typically, these profiles are constructed by leveraging LLMs for user profile modeling (LLM-UM). However, this process faces several challenges: (1) LLMs struggle with long user behaviors due to context length limitations and performance degradation. (2) Existing methods often extract only partial segments from full historical behavior sequence, inevitably discarding diverse user interests embedded in the omitted content, leading to incomplete modeling and suboptimal profiling. (3) User profiling is often tightly coupled with the inference context, requiring online processing, which introduces significant latency overhead. In this paper, we propose PersonaX, an agent-agnostic LLM-UM framework to address these challenges. It augments downstream recommendation agents to achieve better recommendation performance and inference efficiency. PersonaX (a) segments complete historical behaviors into clustered groups, (b) selects multiple sub behavior sequences (SBS) with a balance of prototypicality and diversity to form a high quality core set, (c) performs offline multi-persona profiling to capture diverse user interests and generate fine grained, cached textual personas, and (d) decouples user profiling from online inference, enabling profile retrieval instead of real time generation. Extensive experiments demonstrate its effectiveness: using only 30 to 50% of behavioral data (sequence length 480), PersonaX enhances AgentCF by 3 to 11% and Agent4Rec by 10 to 50%. As a scalable and model-agnostic LLM-UM solution, PersonaX sets a new benchmark in scalable user modeling.",
+  "ai_type_tags": [
+    "LLM",
+    "Prompt engineering",
+    "User modeling"
+  ],
+  "arxiv_id": "2503.02398",
+  "authors": [
+    "Yunxiao Shi",
+    "Wujiang Xu",
+    "Zeqi Zhang",
+    "Xing Zi",
+    "Qiang Wu"
+  ],
+  "authors_full": [
+    {
+      "name": "Yunxiao Shi"
+    },
+    {
+      "name": "Wujiang Xu"
+    },
+    {
+      "name": "Zeqi Zhang"
+    },
+    {
+      "name": "Xing Zi"
+    },
+    {
+      "name": "Qiang Wu"
+    },
+    {
+      "name": "Min Xu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM用户建模框架,AI核心,推荐属营销边缘",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "长行为序列给基于LLM的用户画像带来上下文限制和信息丢失难题。PersonaX通过行为聚类、多样性子序列选取、离线多角色画像生成以及画像与推理解耦，实现高效、可扩展的用户建模，提升推荐质量并显著降低在线延迟。",
+      "topic_tags": [
+        "推荐系统",
+        "算法管理",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-03-04",
+  "doi": null,
+  "id": "p_7vlE1ZkFHsZDz6fk",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2503.02398v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9950,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "PersonaX: A Recommendation Agent Oriented User Modeling Framework for Long Behavior Sequence",
+  "title_zh": "PersonaX：面向长行为序列的推荐智能体用户建模框架",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2503.02398v2",
+  "volume": null,
+  "year": 2025
+}

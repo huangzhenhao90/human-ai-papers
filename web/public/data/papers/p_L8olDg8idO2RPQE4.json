@@ -1,0 +1,87 @@
+{
+  "abstract": "Online reviews provide rich information on customer satisfaction, displaying various numeric ratings as well as detailed explanations presented in written form. However, analyzing such data is challenging due to the unstructured nature of text. This article introduces a novel machine-learning method for identifying interpretable key drivers of star ratings from text reviews, which might vary across segments. By adopting the Ising model prior to account for dependence between words, the model simultaneously achieves segmentation, identifies segment-level key topics (i.e., groups of frequently co-occurring words), and estimates the impacts of the selected words on the ratings. The authors first demonstrate that the proposed model successfully identifies segment-specific key drivers of customer satisfaction using illustrative simulated review data. Then, the authors utilize real-world reviews from Yelp for empirical applications. When applied to online reviews of 5,241 Arizona-based restaurants, the model identifies three distinct restaurant segments, each characterized by three to five important topics. The model's performance is evaluated against six benchmark models, encompassing various topic models and latent class regression with variable selection. The comparison results emphasize the proposed model's unique advantages in prediction, interpretability, and handling heterogeneity. Additionally, the authors demonstrate the applicability of the model in examining customer segmentation for individual restaurants.",
+  "ai_type_tags": [
+    "机器学习",
+    "主题模型"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Sunghoon Kim",
+    "Sanghak Lee",
+    "Robert McCulloch"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [],
+      "name": "Sunghoon Kim",
+      "orcid": "https://orcid.org/0000-0002-8605-0222",
+      "position": "first"
+    },
+    {
+      "affiliation": [],
+      "name": "Sanghak Lee",
+      "orcid": "https://orcid.org/0000-0002-5883-5065",
+      "position": "middle"
+    },
+    {
+      "affiliation": [],
+      "name": "Robert McCulloch",
+      "orcid": "https://orcid.org/0000-0001-5542-3703",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "使用机器学习Ising模型分析文本属AI方法但非核心议题",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "提出基于Ising模型先验的主题分段模型，从非结构化文本评论中自动识别细分层面的星评驱动因素。模型同步完成细分、提取关键主题并估计词对评分的影响，在模拟数据和Yelp真实餐厅评论上验证，可识别3个餐厅细分，各含3‑5个重要主题，相比六种基准模型在预测、可解释性和异质性处理上表现更优。",
+      "topic_tags": [
+        "消费者行为",
+        "营销",
+        "算法管理"
+      ]
+    },
+    "ur": {
+      "ai_reason": "ML分析评论驱动因素",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "通过 Ising 先验的主题分割模型对非结构化文本评论进行细分，同时提取细分层级的关键话题并估计词汇对星级评分的影响，在 Yelp 5,241 家餐厅评论中识别三类细分市场，预测性能和可解释性优于六种基准模型。",
+      "topic_tags": [
+        "用户研究方法",
+        "客户体验(CX)",
+        "文本分析",
+        "可解释性"
+      ]
+    }
+  },
+  "channels": [
+    "ob",
+    "ur"
+  ],
+  "cited_by": 11,
+  "date": "2024-06-10",
+  "doi": "10.1177/00222437241246752",
+  "id": "p_L8olDg8idO2RPQE4",
+  "issue": "6",
+  "journal": "JMR",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 6180,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 4005,
+      "revision": "a8be9093b6fca7daef7faf55e5ee1803f079cae5"
+    }
+  ],
+  "title": "A Topic-Based Segmentation Model for Identifying Segment-Level Drivers of Star Ratings from Unstructured Text Reviews",
+  "title_zh": "基于主题的细分模型：从非结构化文本评论中识别星级评分驱动力",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1177/00222437241246752",
+  "volume": "61",
+  "year": 2024
+}

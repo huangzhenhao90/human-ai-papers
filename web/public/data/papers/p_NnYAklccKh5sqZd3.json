@@ -1,0 +1,62 @@
+{
+  "abstract": "With the rapid growth of AI-generated content (AIGC) across domains such as music, video, and literature, the demand for emotionally aware recommendation systems has become increasingly important. Traditional recommender systems primarily rely on user behavioral data such as clicks, views, or ratings, while neglecting users' real-time emotional and intentional states during content interaction. To address this limitation, this study proposes a Multi-Modal Emotion and Intent Recognition Model (MMEI) based on a BERT-based Cross-Modal Transformer with Attention-Based Fusion, integrated into a cloud-native personalized AIGC recommendation framework. The proposed system jointly processes visual (facial expression), auditory (speech tone), and textual (comments or utterances) modalities through pretrained encoders ViT, Wav2Vec2, and BERT, followed by an attention-based fusion module to learn emotion-intent representations. These embeddings are then used to drive personalized content recommendations through a contextual matching layer. Experiments conducted on benchmark emotion datasets (AIGC-INT, MELD, and CMU-MOSEI) and an AIGC interaction dataset demonstrate that the proposed MMEI model achieves a 4.3% improvement in F1-score and a 12.3% reduction in cross-entropy loss compared to the best fusion-based transformer baseline. Furthermore, user-level online evaluations reveal that emotion-driven recommendations increase engagement time by 15.2% and enhance satisfaction scores by 11.8%, confirming the model's effectiveness in aligning AI-generated content with users' affective and intentional states. This work highlights the potential of cross-modal emotional intelligence for next-generation AIGC ecosystems, enabling adaptive, empathetic, and context-aware recommendation experiences.",
+  "ai_type_tags": [
+    "推荐算法",
+    "多模态",
+    "LLM",
+    "GenAI"
+  ],
+  "arxiv_id": "2512.10963",
+  "authors": [
+    "Zheqi Hu",
+    "Xuanjing Chen",
+    "Jinlin Hu"
+  ],
+  "authors_full": [
+    {
+      "name": "Zheqi Hu"
+    },
+    {
+      "name": "Xuanjing Chen"
+    },
+    {
+      "name": "Jinlin Hu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI推荐系统涉及消费者行为研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对AI生成内容推荐忽视用户实时情绪的问题，提出基于BERT跨模态Transformer的多模态情绪意图识别模型（MMEI），融合面部表情、语音语调和文本评论，通过注意力融合生成情绪-意图表征，驱动个性化内容匹配。基准数据集实验F1提升4.3%，在线评估显示用户参与时长增加15.2%。",
+      "topic_tags": [
+        "推荐系统",
+        "消费者行为",
+        "人机交互"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-25",
+  "doi": null,
+  "id": "p_NnYAklccKh5sqZd3",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2512.10963v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9893,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Emotion-Driven Personalized Recommendation for AI-Generated Content Using Multi-Modal Sentiment and Intent Analysis",
+  "title_zh": "情感驱动的AI生成内容个性化推荐：多模态情感与意图分析",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2512.10963v1",
+  "volume": null,
+  "year": 2025
+}

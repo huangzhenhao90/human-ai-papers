@@ -1,0 +1,66 @@
+{
+  "abstract": "Labor market analysis relies on extracting insights from job advertisements, which provide valuable yet unstructured information on job titles and corresponding skill requirements. While state-of-the-art methods for skill extraction achieve strong performance, they depend on large language models (LLMs), which are computationally expensive and slow. In this paper, we propose \\textbf{ConTeXT-match}, a novel contrastive learning approach with token-level attention that is well-suited for the extreme multi-label classification task of skill classification. \\textbf{ConTeXT-match} significantly improves skill extraction efficiency and performance, achieving state-of-the-art results with a lightweight bi-encoder model. To support robust evaluation, we introduce \\textbf{Skill-XL}, a new benchmark with exhaustive, sentence-level skill annotations that explicitly address the redundancy in the large label space. Finally, we present \\textbf{JobBERT V2}, an improved job title normalization model that leverages extracted skills to produce high-quality job title representations. Experiments demonstrate that our models are efficient, accurate, and scalable, making them ideal for large-scale, real-time labor market analysis.",
+  "ai_type_tags": [
+    "LLM",
+    "对比学习",
+    "文本编码器"
+  ],
+  "arxiv_id": "2505.24640",
+  "authors": [
+    "Jens-Joris Decorte",
+    "Jeroen Van Hautte",
+    "Chris Develder",
+    "Thomas Demeester"
+  ],
+  "authors_full": [
+    {
+      "name": "Jens-Joris Decorte"
+    },
+    {
+      "name": "Jeroen Van Hautte"
+    },
+    {
+      "name": "Chris Develder"
+    },
+    {
+      "name": "Thomas Demeester"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "用轻量级模型做技能提取,AI为工具用于劳动力市场分析,属HR/人才管理相关",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "提出ConTeXT-match对比学习方法与轻量级双编码器，解决招聘广告技能提取中大语言模型计算成本高的问题，显著提升效率与准确性。引入Skill-XL句级标注基准解决标签冗余，并提出JobBERT V2职位名称标准化模型，实现大规模实时劳动力市场分析。",
+      "topic_tags": [
+        "自然语言处理",
+        "技能提取",
+        "招聘",
+        "劳动力市场分析"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-05-30",
+  "doi": "10.1109/access.2025.3589147",
+  "id": "p_pZJMLre0Ast9z53K",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2505.24640v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8911,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Efficient Text Encoders for Labor Market Analysis",
+  "title_zh": "用于劳动力市场分析的高效文本编码器",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2505.24640v1",
+  "volume": null,
+  "year": 2025
+}

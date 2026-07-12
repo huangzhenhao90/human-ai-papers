@@ -1,0 +1,68 @@
+{
+  "abstract": "Learning to defer (L2D) enables human-AI cooperation by deciding when an AI system should act autonomously or defer to a human expert. Existing L2D methods, however, assume static human performance, contradicting well-established findings on fatigue-induced degradation. We propose Fatigue-Aware Learning to Defer via Constrained Optimisation (FALCON), which explicitly models workload-varying human performance using psychologically grounded fatigue curves. FALCON formulates L2D as a Constrained Markov Decision Process (CMDP) whose state includes both task features and cumulative human workload, and optimises accuracy under human-AI cooperation budgets via PPO-Lagrangian training. We further introduce FA-L2D, a benchmark that systematically varies fatigue dynamics from near-static to rapidly degrading regimes. Experiments across multiple datasets show that FALCON consistently outperforms state-of-the-art L2D methods across coverage levels, generalises zero-shot to unseen experts with different fatigue patterns, and demonstrates the advantage of adaptive human-AI collaboration over AI-only or human-only decision-making when coverage lies strictly between 0 and 1.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2604.00904",
+  "authors": [
+    "Zheng Zhang",
+    "Cuong C. Nguyen",
+    "David Rosewarne",
+    "Kevin Wells",
+    "Gustavo Carneiro"
+  ],
+  "authors_full": [
+    {
+      "name": "Zheng Zhang"
+    },
+    {
+      "name": "Cuong C. Nguyen"
+    },
+    {
+      "name": "David Rosewarne"
+    },
+    {
+      "name": "Kevin Wells"
+    },
+    {
+      "name": "Gustavo Carneiro"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "研究人机协作中的疲劳感知决策 defer，属AI+组织行为交叉，AI为核心",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对学习 defer（L2D）忽视人类疲劳导致决策偏差，提出FALCON方法：基于心理疲劳曲线建模工作负荷，将问题建模为约束马尔可夫决策过程，用PPO-Lagrangian训练。实验显示在多种覆盖率下均超越现有L2D，并具零样本泛化能力。",
+      "topic_tags": [
+        "人机协作",
+        "决策",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-04-01",
+  "doi": null,
+  "id": "p_ynEIGgi9r6dKQTz2",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2604.00904v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10283,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Fatigue-Aware Learning to Defer via Constrained Optimisation",
+  "title_zh": "疲劳感知的延迟学习：基于约束优化的方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.00904v2",
+  "volume": null,
+  "year": 2026
+}

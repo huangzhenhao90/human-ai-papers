@@ -1,0 +1,69 @@
+{
+  "abstract": "Retrieval-augmented generation (RAG) systems are increasingly used to analyze complex policy documents, but achieving sufficient reliability for expert usage remains challenging in domains characterized by dense legal language and evolving, overlapping regulatory frameworks. We study the application of RAG to AI governance and policy analysis using the AI Governance and Regulatory Archive (AGORA) corpus, a curated collection of 947 AI policy documents. Our system combines a ColBERT-based retriever fine-tuned with contrastive learning and a generator aligned to human preferences using Direct Preference Optimization (DPO). We construct synthetic queries and collect pairwise preferences to adapt the system to the policy domain. Through experiments evaluating retrieval quality, answer relevance, and faithfulness, we find that domain-specific fine-tuning improves retrieval metrics but does not consistently improve end-to-end question answering performance. In some cases, stronger retrieval counterintuitively leads to more confident hallucinations when relevant documents are absent from the corpus. These results highlight a key concern for those building policy-focused RAG systems: improvements to individual components do not necessarily translate to more reliable answers. Our findings provide practical insights for designing grounded question-answering systems over dynamic regulatory corpora.",
+  "ai_type_tags": [
+    "RAG",
+    "LLM"
+  ],
+  "arxiv_id": "2603.24580",
+  "authors": [
+    "Saahil Mathur",
+    "Ryan David Rittner",
+    "Vedant Ajit Thakur",
+    "Daniel Stuart Schiff",
+    "Tunazzina Islam"
+  ],
+  "authors_full": [
+    {
+      "name": "Saahil Mathur"
+    },
+    {
+      "name": "Ryan David Rittner"
+    },
+    {
+      "name": "Vedant Ajit Thakur"
+    },
+    {
+      "name": "Daniel Stuart Schiff"
+    },
+    {
+      "name": "Tunazzina Islam"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "RAG系统用于AI治理政策文档分析",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究RAG系统在AI治理与政策文档（AGORA语料库，947篇文档）上的可靠性。采用对比学习微调的ColBERT检索器与DPO对齐的生成器，发现领域适配提升了检索指标，却未带来一致更好的端到端问答性能；更强检索在相关文档缺失时反而导致更自信的幻觉。结论：RAG各组件改进不等于政策问答可靠性提升，政策导向检索系统的设计者需警惕此落差。",
+      "topic_tags": [
+        "政策分析",
+        "AI治理",
+        "人机协作",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-25",
+  "doi": null,
+  "id": "p_NcLT6-ysNaslCc7M",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2603.24580v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10088,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Retrieval Improvements Do Not Guarantee Better Answers: A Study of RAG for AI Policy QA",
+  "title_zh": "检索改进不保证更好答案：RAG在AI政策问答中的研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2603.24580v1",
+  "volume": null,
+  "year": 2026
+}

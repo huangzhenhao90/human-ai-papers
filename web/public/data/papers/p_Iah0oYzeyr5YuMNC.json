@@ -1,0 +1,86 @@
+{
+  "abstract": "Effective treatment of Parkinson’s disease (PD) is a continual challenge for healthcare providers, and providers can benefit from leveraging emerging technologies to supplement traditional clinic care. We develop a data-driven reinforcement learning (RL) framework to optimize PD medication regimens through wearable sensors. We leverage a data set of n = 26 PD patients who wore wrist-mounted movement trackers for two separate six-day periods. Using these data, we first build and validate a simulation model of how individual patients’ movement symptoms respond to medication administration. We then pair this simulation model with an on-policy RL algorithm that recommends optimal medication types, timing, and dosages during the day while incorporating human-in-the-loop considerations on medication administration. The results show that the RL-prescribed medication regimens outperform physicians’ medication regimens, despite physicians having access to the same data as the RL agent. To validate our results, we assess our wearable-based RL medication regimens using n = 399 PD patients from the Parkinson’s Progression Markers Initiative data set. We show that the wearable-based RL medication regimens would lead to significant symptom improvement for these patients, even more so than training RL policies directly from this data set. In doing so, we show that RL models from even small data sets of wearable data can offer novel, generalizable clinical insights and medication strategies, which may outperform those derived from larger data sets without wearable data.  This paper was accepted by Carri Chan, healthcare management.  Funding: This research is partially supported by the Science Alliance, University of Tennessee and by the Laboratory Directed Research and Development Program, Oak Ridge National Laboratory managed by UT-Battelle, LLC for the U.S. Department of Energy. Data used in this article were obtained from the Parkinson Progression Markers Initiative (PPMI) database, which is sponsored by the Michael J. Fox Foundation for Parkinson’s Research (MJFF).  Supplemental Material: The data files and online appendix are available at https://doi.org/10.1287/mnsc.2023.4747 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "强化学习"
+  ],
+  "arxiv_id": "2023.4747",
+  "authors": [
+    "Matt Baucum",
+    "Anahita Khojandi",
+    "Rama K. Vasudevan",
+    "Ritesh Ramdhani"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Florida State University"
+      ],
+      "name": "Matt Baucum",
+      "orcid": "https://orcid.org/0000-0002-2699-167X",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Tennessee at Knoxville"
+      ],
+      "name": "Anahita Khojandi",
+      "orcid": "https://orcid.org/0000-0001-6818-2048",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Oak Ridge National Laboratory"
+      ],
+      "name": "Rama K. Vasudevan",
+      "orcid": "https://orcid.org/0000-0003-4692-8579",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Hofstra University"
+      ],
+      "name": "Ritesh Ramdhani",
+      "orcid": "https://orcid.org/0000-0002-0695-0707",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "使用强化学习框架和可穿戴传感器优化用药方案，AI/ML为核心方法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对帕金森病药物管理难题，利用腕部运动传感器数据构建患者症状响应仿真模型，并结合在线强化学习算法优化药物类型、时间和剂量。结果显示，RL方案在相同信息下优于医生处方；外部验证亦表明可穿戴数据驱动的RL策略能够显著改善患者症状，具有跨样本可推广性。",
+      "topic_tags": [
+        "人机协作",
+        "决策",
+        "算法管理",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 13,
+  "date": "2023-10",
+  "doi": "10.1287/mnsc.2023.4747",
+  "id": "p_Iah0oYzeyr5YuMNC",
+  "issue": "10",
+  "journal": "MgmtSci",
+  "pdf_url": "https://www.osti.gov/servlets/purl/2000318",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4119,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Optimizing Patient-Specific Medication Regimen Policies Using Wearable Sensors in Parkinson’s Disease",
+  "title_zh": "利用可穿戴传感器优化帕金森病患者个性化用药方案",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.4747",
+  "volume": "69",
+  "year": 2023
+}

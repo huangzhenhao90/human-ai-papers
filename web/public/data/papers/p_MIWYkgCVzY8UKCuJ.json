@@ -1,0 +1,62 @@
+{
+  "abstract": "In Conversational Recommendation System (CRS), an agent is asked to recommend a set of items to users within natural language conversations. To address the need for both conversational capability and personalized recommendations, prior works have utilized separate recommendation and dialogue modules. However, such approach inevitably results in a discrepancy between recommendation results and generated responses. To bridge the gap, we propose a multi-task learning for a unified CRS, where a single model jointly learns both tasks via Contextualized Knowledge Distillation (ConKD). We introduce two versions of ConKD: hard gate and soft gate. The former selectively gates between two task-specific teachers, while the latter integrates knowledge from both teachers. Our gates are computed on-the-fly in a context-specific manner, facilitating flexible integration of relevant knowledge. Extensive experiments demonstrate that our single model significantly improves recommendation performance while enhancing fluency, and achieves comparable results in terms of diversity.",
+  "ai_type_tags": [
+    "LLM",
+    "对话系统",
+    "多任务学习",
+    "知识蒸馏"
+  ],
+  "arxiv_id": "2310.18119",
+  "authors": [
+    "Yeongseo Jung",
+    "Eunseo Jung",
+    "Lei Chen"
+  ],
+  "authors_full": [
+    {
+      "name": "Yeongseo Jung"
+    },
+    {
+      "name": "Eunseo Jung"
+    },
+    {
+      "name": "Lei Chen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "统一对话推荐系统，多任务学习与知识蒸馏，涉消费者推荐",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "对话推荐系统需要在自然语言交互和个性化推荐之间取得平衡，传统分离模块导致结果不一致。本文提出统一模型采用多任务学习与上下文知识蒸馏（ConKD），通过硬门/软门动态融合推荐与生成任务，实现单一模型在推荐性能、流畅度和多样性方面的显著提升。",
+      "topic_tags": [
+        "推荐系统",
+        "对话系统",
+        "自然语言处理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-10-27",
+  "doi": null,
+  "id": "p_MIWYkgCVzY8UKCuJ",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2310.18119v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10025,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Towards a Unified Conversational Recommendation System: Multi-task Learning via Contextualized Knowledge Distillation",
+  "title_zh": "迈向统一的对话推荐系统：通过情境化知识蒸馏的多任务学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2310.18119v1",
+  "volume": null,
+  "year": 2023
+}

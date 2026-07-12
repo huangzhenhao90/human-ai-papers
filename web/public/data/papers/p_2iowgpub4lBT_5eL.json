@@ -1,0 +1,52 @@
+{
+  "abstract": "Worker utility is not observed -- only its consequence is. Each gig transaction produces a single bit: accepted or rejected. We argue this structure points directly to the Preisach hysteresis model as the natural representation of latent worker preferences. The Preisach operator models aggregate output as an integral over a population of binary threshold elements -- precisely the structure that emerges when heterogeneous workers each carry a private acceptance wage. We estimate two latent utility surfaces: acceptance utility U_1(X) and rejection utility U_0(X), via a dual-output neural network (shared layers 256->128, margin loss enforcing U_1 >= U_0). Classification reduces to the Preisach gap U_1(X) - U_0(X), passed into an XGBoost classifier alongside clip-stabilised price-to-threshold encodings. On 36,891 gig transactions, this pipeline achieves Jaccard = 0.827 and ROC AUC = 0.799. The price-to-threshold encoding accounts for +11.0 pp AUC over raw utility features. The model confirms the directional asymmetry hysteresis predicts: price decreases depress completion rates more than equivalent increases raise them. Applied to the full dataset, the model's recommendations simultaneously reduce the total wage bill by 21.3% and increase expected fill rate by 9.7 pp. For 74.2% of transactions, P(accept) already exceeds 0.80; reducing the wage keeps it above threshold (mean post-cut P = 0.972), releasing cost savings (median 31%). For the remaining 25.4%, a median 7% wage increase recovers +43 pp acceptance. A model without an explicit indifference zone cannot execute both moves simultaneously.",
+  "ai_type_tags": [
+    "算法管理",
+    "机器学习"
+  ],
+  "arxiv_id": "2606.04916",
+  "authors": [
+    "Piotr Frydrych"
+  ],
+  "authors_full": [
+    {
+      "name": "Piotr Frydrych"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "零工市场worker决策研究，ML为估计工具，强相关OB/HR",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "利用Preisach滞后模型表征零工市场中的工人偏好。研究通过双输出神经网络估计接受与拒绝效用，以价格-阈值编码捕捉决策边界。模型证实价格下降比同等幅度上升更能抑制完成率，即滞后不对称性。应用建议可降低总工资支出21.3%同时提升填充率9.7个百分点。",
+      "topic_tags": [
+        "零工经济",
+        "算法管理",
+        "绩效评估"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-03",
+  "doi": null,
+  "id": "p_2iowgpub4lBT_5eL",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2606.04916v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11531,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Worker Utility as Hysteresis: A Preisach Model of Transaction Acceptance in Gig Labour Markets",
+  "title_zh": "工人效用作为滞后现象：零工市场中交易接受的Preisach模型",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2606.04916v1",
+  "volume": null,
+  "year": 2026
+}

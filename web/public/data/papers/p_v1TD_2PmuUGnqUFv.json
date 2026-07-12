@@ -1,0 +1,71 @@
+{
+  "abstract": "User retention is a critical objective for online platforms like Pinterest, as it strengthens user loyalty and drives growth through repeated engagement. A key indicator of retention is revisitation, i.e., when users return to view previously saved content, a behavior often sparked by personalized recommendations and user satisfaction. However, modeling and optimizing revisitation poses significant challenges. One core difficulty is accurate attribution: it is often unclear which specific user actions or content exposures trigger a revisit, since many confounding factors (e.g., content quality, user interface, notifications, or even changing user intent) can influence return behavior. Additionally, the scale and timing of revisitations introduce further complexity; users may revisit content days or even weeks after their initial interaction, requiring the system to maintain and associate extensive historical records across millions of users and sessions. These complexities render existing methods insufficient for robustly capturing and optimizing long-term revisitation. To address these gaps, we introduce a novel, lightweight, and interpretable framework for modeling revisitation behavior and optimizing long-term user retention in Pinterest's search-based recommendation context. By defining a surrogate attribution process that links saves to subsequent revisitations, we reduce noise in the causal relationship between user actions and return visits. Our scalable event aggregation pipeline enables large-scale analysis of user revisitation patterns and enhances the ranking system's ability to surface items with high retention value. Deployed on Pinterest's Related Pins surface to serve 500+ million users, the framework led to a significant lift of 0.1% in active users without additional computational costs.",
+  "ai_type_tags": [
+    "推荐算法",
+    "算法决策"
+  ],
+  "arxiv_id": "2511.18013",
+  "authors": [
+    "Weijie Jiang",
+    "Armando Ordorica",
+    "Jaewon Yang",
+    "Olafur Gudmundsson",
+    "Yucheng Tu"
+  ],
+  "authors_full": [
+    {
+      "name": "Weijie Jiang"
+    },
+    {
+      "name": "Armando Ordorica"
+    },
+    {
+      "name": "Jaewon Yang"
+    },
+    {
+      "name": "Olafur Gudmundsson"
+    },
+    {
+      "name": "Yucheng Tu"
+    },
+    {
+      "name": "Huizhong Duan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI框架优化平台用户留存管理",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究如何在大型推荐平台中建模用户回访行为并提升留存。通过构建轻量可解释的归因模型，将保存行为与后续回访关联，结合可扩展的事件聚合降低噪声，实现长期回访预测和留存优化。核心发现是可显著提升回访归因准确率和留存指标。",
+      "topic_tags": [
+        "推荐系统",
+        "消费者行为",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-22",
+  "doi": null,
+  "id": "p_v1TD_2PmuUGnqUFv",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2511.18013v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9894,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Save, Revisit, Retain: A Scalable Framework for Enhancing User Retention in Large-Scale Recommender Systems",
+  "title_zh": "保存、重访、留存：大规模推荐系统中提升用户留存的可扩展框架",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2511.18013v1",
+  "volume": null,
+  "year": 2025
+}

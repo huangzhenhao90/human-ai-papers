@@ -1,0 +1,71 @@
+{
+  "abstract": "Recent advances in generative AI have enabled visual content creation through text-to-image (T2I) generation. However, despite their creative potential, T2I models often replicate and amplify societal stereotypes -- particularly those related to gender, race, and culture -- raising important ethical concerns. This paper proposes a theory-driven bias detection rubric and a Social Stereotype Index (SSI) to systematically evaluate social biases in T2I outputs. We audited three major T2I model outputs -- DALL-E-3, Midjourney-6.1, and Stability AI Core -- using 100 queries across three categories -- geocultural, occupational, and adjectival. Our analysis reveals that initial outputs are prone to include stereotypical visual cues, including gendered professions, cultural markers, and western beauty norms. To address this, we adopted our rubric to conduct targeted prompt refinement using LLMs, which significantly reduced bias -- SSI dropped by 61% for geocultural, 69% for occupational, and 51% for adjectival queries. We complemented our quantitative analysis through a user study examining perceptions, awareness, and preferences around AI-generated biased imagery. Our findings reveal a key tension -- although prompt refinement can mitigate stereotypes, it can limit contextual alignment. Interestingly, users often perceived stereotypical images to be more aligned with their expectations. We discuss the need to balance ethical debiasing with contextual relevance and call for T2I systems that support global diversity and inclusivity while not compromising the reflection of real-world social complexity.",
+  "ai_type_tags": [
+    "图像生成",
+    "LLM",
+    "GenAI",
+    "算法决策"
+  ],
+  "arxiv_id": "2505.20692",
+  "authors": [
+    "Saharsh Barve",
+    "Andy Mao",
+    "Jiayue Melissa Shi",
+    "Prerna Juneja",
+    "Koustuv Saha"
+  ],
+  "authors_full": [
+    {
+      "name": "Saharsh Barve"
+    },
+    {
+      "name": "Andy Mao"
+    },
+    {
+      "name": "Jiayue Melissa Shi"
+    },
+    {
+      "name": "Prerna Juneja"
+    },
+    {
+      "name": "Koustuv Saha"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "T2I社会刻板印象审计，直接涉及职场性别/文化偏见",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对文本生成图像（T2I）模型中的社会刻板印象问题，提出基于理论的偏见检测框架与刻板印象指数（SSI），审计了DALL-E 3、Midjourney-6.1和Stability AI Core三款模型。结果发现初始输出存在性别职业、文化标记和西方审美规范等刻板印象；通过LLM引导的提示优化可将 SSI 降低51%-69%。用户研究表明刻板印象图像反而被感知为更具情境契合度，揭示了伦理去偏与情境相关性之间的张力。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "广告",
+        "消费者行为"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-05-27",
+  "doi": null,
+  "id": "p_j1Bsju1h7LulwfvY",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2505.20692v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9562,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Can we Debias Social Stereotypes in AI-Generated Images? Examining Text-to-Image Outputs and User Perceptions",
+  "title_zh": "AI生成图像中的社会偏见能否消除？文生图输出与用户感知研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2505.20692v1",
+  "volume": null,
+  "year": 2025
+}

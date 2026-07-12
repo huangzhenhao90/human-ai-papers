@@ -1,0 +1,71 @@
+{
+  "abstract": "Developing decision-support systems that complement human performance in classification tasks remains an open challenge. A popular approach, Learning to Defer (LtD), allows a Machine Learning (ML) model to pass difficult cases to a human expert. However, LtD treats humans and ML models as mutually exclusive decision-makers, restricting the expert contribution to mere predictions. To address this limitation, we propose Learning to Ask (LtA), a new framework that handles both when and how to incorporate expert input in an ML model. LtA is based on a two-part architecture: a standard ML model and an enriched model trained with additional expert human feedback, with a formally optimal strategy for selecting when to query the enriched model. We provide two practical implementations of LtA: a sequential approach, which trains the models in stages, and a joint approach, which optimises them simultaneously. For the latter, we design surrogate losses with realisable-consistency guarantees. Our experiments with synthetic and real expert data demonstrate that LtA provides a more flexible and powerful foundation for effective human-AI collaboration.",
+  "ai_type_tags": [
+    "机器学习",
+    "人机协作"
+  ],
+  "arxiv_id": "2510.08314",
+  "authors": [
+    "Andrea Pugnana",
+    "Giovanni De Toni",
+    "Cesare Barbera",
+    "Roberto Pellungrini",
+    "Bruno Lepri"
+  ],
+  "authors_full": [
+    {
+      "name": "Andrea Pugnana"
+    },
+    {
+      "name": "Giovanni De Toni"
+    },
+    {
+      "name": "Cesare Barbera"
+    },
+    {
+      "name": "Roberto Pellungrini"
+    },
+    {
+      "name": "Bruno Lepri"
+    },
+    {
+      "name": "Andrea Passerini"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "人-AI协作决策框架属OB人机交互核心议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "决策支持系统中如何有效整合人类专家输入仍是挑战。传统Learning to Defer将人与ML模型视为互斥决策者，限制专家作用仅在于预测。本文提出Learning to Ask (LtA)框架，同时解决何时及如何纳入专家反馈。架构包含标准ML模型和经专家反馈增强的模型，并提供最优查询策略。实验表明LtA比现有方法更灵活强大，为人机协作提供更有效基础。",
+      "topic_tags": [
+        "人机协作",
+        "决策支持系统",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-09",
+  "doi": null,
+  "id": "p__pHJR1sfF1ZNVmKh",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2510.08314v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10296,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "To Ask or Not to Ask: Learning to Require Human Feedback",
+  "title_zh": "问与不问：学习何时需要人类反馈",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.08314v1",
+  "volume": null,
+  "year": 2025
+}

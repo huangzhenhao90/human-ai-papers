@@ -1,0 +1,58 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly deployed in high-stakes hiring applications, making decisions that directly impact people's careers and livelihoods. While prior studies suggest simple anti-bias prompts can eliminate demographic biases in controlled evaluations, we find these mitigations fail when realistic contextual details are introduced. We address these failures through internal bias mitigation: by identifying and neutralizing sensitive attribute directions within model activations, we achieve robust bias reduction across all tested scenarios. Across leading commercial (GPT-4o, Claude 4 Sonnet, Gemini 2.5 Flash) and open-source models (Gemma-2 27B, Gemma-3, Mistral-24B), we find that adding realistic context such as company names, culture descriptions from public careers pages, and selective hiring constraints (e.g.,``only accept candidates in the top 10\\%\") induces significant racial and gender biases (up to 12\\% differences in interview rates). When these biases emerge, they consistently favor Black over White candidates and female over male candidates across all tested models and scenarios. Moreover, models can infer demographics and become biased from subtle cues like college affiliations, with these biases remaining invisible even when inspecting the model's chain-of-thought reasoning. To address these limitations, our internal bias mitigation identifies race and gender-correlated directions and applies affine concept editing at inference time. Despite using directions from a simple synthetic dataset, the intervention generalizes robustly, consistently reducing bias to very low levels (typically under 1\\%, always below 2.5\\%) while largely maintaining model performance. Our findings suggest that practitioners deploying LLMs for hiring should adopt more realistic evaluation methodologies and consider internal mitigation strategies for equitable outcomes.",
+  "ai_type_tags": [
+    "LLM",
+    "ChatGPT",
+    "可解释AI"
+  ],
+  "arxiv_id": "2506.10922",
+  "authors": [
+    "Adam Karvonen",
+    "Samuel Marks"
+  ],
+  "authors_full": [
+    {
+      "name": "Adam Karvonen"
+    },
+    {
+      "name": "Samuel Marks"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "改善LLM招聘公平性，核心是组织招聘决策",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对LLM在招聘场景中的公平性问题。研究发现简单的反偏见提示在引入真实上下文（如公司名称、文化描述）后失效。通过识别并中和模型激活中的敏感属性方向，在GPT-4o、Claude等主流模型上实现稳健的偏见削减，揭示了模型能从大学背景等细微线索推断人口统计特征并产生偏见。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "招聘",
+        "可解释AI"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-06-12",
+  "doi": null,
+  "id": "p_GL1txOkyRqBbsfLe",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2506.10922v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8466,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Robustly Improving LLM Fairness in Realistic Settings via Interpretability",
+  "title_zh": "基于可解释性在现实场景中稳健提升LLM公平性",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2506.10922v1",
+  "volume": null,
+  "year": 2025
+}

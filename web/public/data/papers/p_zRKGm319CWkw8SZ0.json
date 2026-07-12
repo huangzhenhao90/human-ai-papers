@@ -1,0 +1,64 @@
+{
+  "abstract": "Gender bias research has been pivotal in revealing undesirable behaviors in large language models, exposing serious gender stereotypes associated with occupations, and emotions. A key observation in prior work is that models reinforce stereotypes as a consequence of the gendered correlations that are present in the training data. In this paper, we focus on bias where the effect from training data is unclear, and instead address the question: Do language models still exhibit gender bias in non-stereotypical settings? To do so, we introduce UnStereoEval (USE), a novel framework tailored for investigating gender bias in stereotype-free scenarios. USE defines a sentence-level score based on pretraining data statistics to determine if the sentence contain minimal word-gender associations. To systematically benchmark the fairness of popular language models in stereotype-free scenarios, we utilize USE to automatically generate benchmarks without any gender-related language. By leveraging USE's sentence-level score, we also repurpose prior gender bias benchmarks (Winobias and Winogender) for non-stereotypical evaluation. Surprisingly, we find low fairness across all 28 tested models. Concretely, models demonstrate fair behavior in only 9%-41% of stereotype-free sentences, suggesting that bias does not solely stem from the presence of gender-related words. These results raise important questions about where underlying model biases come from and highlight the need for more systematic and comprehensive bias evaluation. We release the full dataset and code at https://ucinlp.github.io/unstereo-eval.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习"
+  ],
+  "arxiv_id": "2405.00588",
+  "authors": [
+    "Catarina G Belém",
+    "Preethi Seshadri",
+    "Yasaman Razeghi",
+    "Sameer Singh"
+  ],
+  "authors_full": [
+    {
+      "name": "Catarina G Belém"
+    },
+    {
+      "name": "Preethi Seshadri"
+    },
+    {
+      "name": "Yasaman Razeghi"
+    },
+    {
+      "name": "Sameer Singh"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "语言模型性别偏见研究，AI伦理核心，与HR/OB招聘公平性强相关",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "提出UnStereoEval框架，用于在无性别关联文本中评估语言模型的性别偏见。对28个主流模型的实验表明，即便在无性别词汇的情境下，模型公平性仅为9%至41%，说明偏见来源不限于显性性别词，亟需系统性去偏。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-05-01",
+  "doi": null,
+  "id": "p_zRKGm319CWkw8SZ0",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2405.00588v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9740,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Are Models Biased on Text without Gender-related Language?",
+  "title_zh": "模型对无性别相关语言的文本是否存在偏见？",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2405.00588v1",
+  "volume": null,
+  "year": 2024
+}

@@ -1,0 +1,72 @@
+{
+  "abstract": "Machine learning is traditionally studied at the model level: researchers measure and improve the accuracy, robustness, bias, efficiency, and other dimensions of specific models. In practice, the societal impact of machine learning is determined by the surrounding context of machine learning deployments. To capture this, we introduce ecosystem-level analysis: rather than analyzing a single model, we consider the collection of models that are deployed in a given context. For example, ecosystem-level analysis in hiring recognizes that a job candidate's outcomes are not only determined by a single hiring algorithm or firm but instead by the collective decisions of all the firms they applied to. Across three modalities (text, images, speech) and 11 datasets, we establish a clear trend: deployed machine learning is prone to systemic failure, meaning some users are exclusively misclassified by all models available. Even when individual models improve at the population level over time, we find these improvements rarely reduce the prevalence of systemic failure. Instead, the benefits of these improvements predominantly accrue to individuals who are already correctly classified by other models. In light of these trends, we consider medical imaging for dermatology where the costs of systemic failure are especially high. While traditional analyses reveal racial performance disparities for both models and humans, ecosystem-level analysis reveals new forms of racial disparity in model predictions that do not present in human predictions. These examples demonstrate ecosystem-level analysis has unique strengths for characterizing the societal impact of machine learning.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2307.05862",
+  "authors": [
+    "Connor Toups",
+    "Rishi Bommasani",
+    "Kathleen A. Creel",
+    "Sarah H. Bana",
+    "Dan Jurafsky"
+  ],
+  "authors_full": [
+    {
+      "name": "Connor Toups"
+    },
+    {
+      "name": "Rishi Bommasani"
+    },
+    {
+      "name": "Kathleen A. Creel"
+    },
+    {
+      "name": "Sarah H. Bana"
+    },
+    {
+      "name": "Dan Jurafsky"
+    },
+    {
+      "name": "Percy Liang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "分析ML部署生态系统，含招聘场景，对管理有参考",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究提出生态系统层面的机器学习分析框架，跨文本、图像、语音三种模态及11个数据集显示已部署模型普遍出现系统性失效——部分用户被所有模型全部误分类。即使整体性能提升，错误仍集中于被忽视的群体，凸显公平性缺口并提示需在系统层面评估模型的社会影响。",
+      "topic_tags": [
+        "算法决策",
+        "公平性",
+        "偏见",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-07-12",
+  "doi": null,
+  "id": "p_OPD0sFn_FwHam07W",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2307.05862v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8825,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Ecosystem-level Analysis of Deployed Machine Learning Reveals Homogeneous Outcomes",
+  "title_zh": "生态系统层面的已部署机器学习分析揭示同质化结果",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2307.05862v2",
+  "volume": null,
+  "year": 2023
+}

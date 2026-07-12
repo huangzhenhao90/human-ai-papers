@@ -1,0 +1,83 @@
+{
+  "abstract": "In an environment where demand is unknown to the firm, it is important to investigate how capacity adjustment and dynamic pricing can be integrated so that the firm can learn about the demand on the fly while making capacity and pricing decisions. In this paper, we design learning algorithms for the joint capacity and pricing management problem. To evaluate the performance of our algorithms, we consider a large-demand asymptotic regime where the demand and capacity are scaled up with the selling horizon T. We first establish an [Formula: see text] lower bound on the regret under any admissible policy. We propose a novel double-trisection algorithm that utilizes pricing decisions to collect demand information and tune capacity rate levels safely, attaining an [Formula: see text] regret upper bound that matches the lower bound. We then modify our algorithm to address the issue when the number of capacity adjustment opportunities K is limited and find that only a few opportunities to adjust capacity levels (i.e., [Formula: see text]) are sufficient to achieve the optimal regret rate. We also consider seasonal demands and provide a modified algorithm to incorporate the seasonality. We finally conduct numerical experiments on a test bed inspired by public operational and financial data.\n                  This paper was accepted by J. George Shanthikumar, data science.\n                  Supplemental Material: The online appendix is available at https://doi.org/10.1287/mnsc.2023.03749 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2023.03749",
+  "authors": [
+    "Jian Chen",
+    "Zechao Li",
+    "Anyan Qi",
+    "Yining Wang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Tsinghua University"
+      ],
+      "name": "Jian Chen",
+      "orcid": null,
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "London Business School"
+      ],
+      "name": "Zechao Li",
+      "orcid": "https://orcid.org/0000-0001-5698-6022",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "The University of Texas at Dallas"
+      ],
+      "name": "Anyan Qi",
+      "orcid": "https://orcid.org/0000-0003-2933-8294",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "The University of Texas at Dallas"
+      ],
+      "name": "Yining Wang",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "需求学习与动态定价，算法决策应用但属运筹学",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "研究需求未知环境下的产能与定价联合决策问题，设计学习算法。利用大需求渐近体制分析，建立遗憾下界并提出双三分法算法，达到匹配下界的最优遗憾上界。研究表明少量产能调整机会（如对数级别）即可实现最优遗憾率，算法可扩展至季节性需求场景。",
+      "topic_tags": [
+        "决策",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-11",
+  "doi": "10.1287/mnsc.2023.03749",
+  "id": "p_y2n82nTnDvEH6JFh",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4043,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Capacity and Pricing Management with Demand Learning",
+  "title_zh": "容量与定价管理中的需求学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.03749",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,64 @@
+{
+  "abstract": "Fairness-aware machine learning has attracted a surge of attention in many domains, such as online advertising, personalized recommendation, and social media analysis in web applications. Fairness-aware machine learning aims to eliminate biases of learning models against certain subgroups described by certain protected (sensitive) attributes such as race, gender, and age. Among many existing fairness notions, counterfactual fairness is a popular notion defined from a causal perspective. It measures the fairness of a predictor by comparing the prediction of each individual in the original world and that in the counterfactual worlds in which the value of the sensitive attribute is modified. A prerequisite for existing methods to achieve counterfactual fairness is the prior human knowledge of the causal model for the data. However, in real-world scenarios, the underlying causal model is often unknown, and acquiring such human knowledge could be very difficult. In these scenarios, it is risky to directly trust the causal models obtained from information sources with unknown reliability and even causal discovery methods, as incorrect causal models can consequently bring biases to the predictor and lead to unfair predictions. In this work, we address the problem of counterfactually fair prediction from observational data without given causal models by proposing a novel framework CLAIRE. Specifically, under certain general assumptions, CLAIRE effectively mitigates the biases from the sensitive attribute with a representation learning framework based on counterfactual data augmentation and an invariant penalty. Experiments conducted on both synthetic and real-world datasets validate the superiority of CLAIRE in both counterfactual fairness and prediction performance.",
+  "ai_type_tags": [
+    "机器学习",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2307.08232",
+  "authors": [
+    "Jing Ma",
+    "Ruocheng Guo",
+    "Aidong Zhang",
+    "Jundong Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Jing Ma"
+    },
+    {
+      "name": "Ruocheng Guo"
+    },
+    {
+      "name": "Aidong Zhang"
+    },
+    {
+      "name": "Jundong Li"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "反事实公平性,公平感知ML在广告推荐中应用",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "研究针对现有因果模型未知导致反事实公平难以实现的问题，提出无需先验因果结构的框架 CLAIRE，仅在观测数据上通过一般假设消除模型对敏感属性的偏见，实现公平预测。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-07-17",
+  "doi": "10.1145/3580305.3599408",
+  "id": "p_0YdZX7rM51U-QWT1",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2307.08232v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10735,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning for Counterfactual Fairness from Observational Data",
+  "title_zh": "从观测数据中学习反事实公平性",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2307.08232v1",
+  "volume": null,
+  "year": 2023
+}

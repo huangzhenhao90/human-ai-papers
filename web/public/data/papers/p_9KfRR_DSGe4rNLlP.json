@@ -1,0 +1,76 @@
+{
+  "abstract": "The rise of big data analytics has automated the decision-making of companies and increased supply chain agility. In this paper, we study the supply chain contract design problem faced by a data-driven supplier (she) who needs to respond to the inventory decisions of the downstream retailer (he). Both the supplier and the retailer are uncertain about the market demand and need to learn about it sequentially over a fixed time horizon. In addition, the supplier does not know the retailer’s inventory learning policy, which may change dynamically. The goal for the supplier is to develop data-driven pricing policies with sublinear regret bounds under a wide range of possible retailer inventory learning policies. To capture the dynamics induced by the retailer’s inventory learning policy, we establish a connection with nonstationary online learning by following the notion of a variation budget. We start by making the observation that existing approaches for nonstationary online learning cannot precisely delineate the dynamics incurred by the retailer’s inventory learning policy, and may lead to linear growth in the supplier’s regret under some well-known retailer inventory learning policies. To overcome this challenge, we introduce a new notion of variation budget, which better quantifies the impact of the retailer’s learning on the supplier’s decision-making environment. We also demonstrate the advantages of our new model for the variation budget in our setting over those in the existing literature. We then proceed to propose dynamic pricing policies for the supplier for both discrete and continuous demand distributions. Our pricing policies lead to sublinear regret bounds for the supplier under a wide range of retailer inventory learning policies. Our pricing policies empirically outperform those from the existing nonstationary online learning literature. At the managerial level, we answer affirmatively that there is a pricing policy with a sublinear regret bound for the supplier under a wide range of retailer inventory learning policies, even though she faces a learning retailer and an unknown demand distribution. Our work also provides a novel perspective in data-driven operations management where the principal has to learn to react to the learning policies employed by other agents in the system.\n                  This paper was accepted by Jeannette Song, operations management.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.03339 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2022.03339",
+  "authors": [
+    "Xiaoping Zhao",
+    "Ruihao Zhu",
+    "William B. Haskell"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of North Carolina at Charlotte"
+      ],
+      "name": "Xiaoping Zhao",
+      "orcid": "https://orcid.org/0000-0002-0021-4100",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Cornell University",
+        "SC Johnson (United States)"
+      ],
+      "name": "Ruihao Zhu",
+      "orcid": "https://orcid.org/0000-0003-1463-1308",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Purdue University West Lafayette"
+      ],
+      "name": "William B. Haskell",
+      "orcid": "https://orcid.org/0000-0002-9518-4310",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "数据驱动定价涉及机器学习但非核心议题",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "研究在需求不确定且下游零售商动态学习的供应链中，供应商如何制定具有次线性遗憾的定价策略。通过引入新的变动预算概念，刻画零售商库存学习对决策环境的影响，实现对多种学习策略的鲁棒定价，并在理论上证明其优势。",
+      "topic_tags": [
+        "供应链",
+        "定价",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03",
+  "doi": "10.1287/mnsc.2022.03339",
+  "id": "p_9KfRR_DSGe4rNLlP",
+  "issue": "3",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3576,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning to Price Supply Chain Contracts Against a Learning Retailer",
+  "title_zh": "学习型零售商环境下供应链合约定价研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.03339",
+  "volume": "72",
+  "year": 2026
+}

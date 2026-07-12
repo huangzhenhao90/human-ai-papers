@@ -1,0 +1,94 @@
+{
+  "abstract": "In an attempt to make algorithms fair, the machine learning literature has largely focused on equalizing decisions, outcomes, or error rates across race or gender groups. To illustrate, consider a hypothetical government rideshare program that provides transportation assistance to low-income people with upcoming court dates. Following this literature, one might allocate rides to those with the highest estimated treatment effect per dollar while constraining spending to be equal across race groups. That approach, however, ignores the downstream consequences of such constraints and, as a result, can induce unexpected harm. For instance, if one demographic group lives farther from court, enforcing equal spending would necessarily mean fewer total rides provided and potentially more people penalized for missing court. Here we present an alternative framework for designing equitable algorithms that foregrounds the consequences of decisions. In our approach, one first elicits stakeholder preferences over the space of possible decisions and the resulting outcomes—such as preferences for balancing spending parity against court appearance rates. We then optimize over the space of decision policies, making trade-offs in a way that maximizes the elicited utility. To do so, we develop an algorithm for efficiently learning these optimal policies from data for a large family of expressive utility functions. In particular, we use a contextual bandit algorithm to explore the space of policies while solving a convex optimization problem at each step to estimate the best policy based on the available information. This consequentialist paradigm facilitates a more holistic approach to equitable decision making.\n                  This paper was accepted by Catherine Tucker, Special Issue on the Human-Algorithm Connection.\n                  Funding: This work was supported by Stanford Impact Labs [Start-Up Impact Labs/GEJBU], the Stanford Institute for Human-Centered Artificial Intelligence, and Harvard Data Science Initiative.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.00345 .",
+  "ai_type_tags": [
+    "算法管理",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2022.00345",
+  "authors": [
+    "Alex Chohlas-Wood",
+    "Madison Coots",
+    "Henry Zhu",
+    "Emma Brunskill",
+    "Sharad Goel"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "New York University"
+      ],
+      "name": "Alex Chohlas-Wood",
+      "orcid": "https://orcid.org/0000-0002-8279-6270",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Harvard University Press"
+      ],
+      "name": "Madison Coots",
+      "orcid": "https://orcid.org/0009-0002-9819-8985",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Stanford University"
+      ],
+      "name": "Henry Zhu",
+      "orcid": "https://orcid.org/0000-0001-9256-8813",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Stanford University"
+      ],
+      "name": "Emma Brunskill",
+      "orcid": "https://orcid.org/0000-0002-3971-7127",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Harvard University Press"
+      ],
+      "name": "Sharad Goel",
+      "orcid": "https://orcid.org/0000-0002-6103-9318",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法公平性ML方法，AI核心议题，管理学相关",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对传统公平算法仅约束群体间的决策、结果或错误率相等而忽视下游后果的问题，提出以结果为中心的公平决策框架。首先采集利益相关者对各决策及其结果的偏好（如支出公平与court出席率的权衡），随后在决策策略空间上优化以最大化给定效用函数。针对大类别表达性效用函数，开发了基于上下文老虎机的算法以高效地从数据中学习最优策略。",
+      "topic_tags": [
+        "公平性",
+        "算法决策",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 10,
+  "date": "2026-01",
+  "doi": "10.1287/mnsc.2022.00345",
+  "id": "p_W0klfbHYVKK9XGYg",
+  "issue": "1",
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 3936,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning to Be Fair: A Consequentialist Approach to Equitable Decision Making",
+  "title_zh": "学会公平：一种结果主义视角下的公平决策方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2022.00345",
+  "volume": "72",
+  "year": 2026
+}

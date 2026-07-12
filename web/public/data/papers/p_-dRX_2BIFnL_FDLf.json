@@ -1,0 +1,84 @@
+{
+  "abstract": "Industry assignment, which assigns firms to industries according to a predefined industry classification system (ICS), is fundamental to a large number of critical business practices, ranging from operations and strategic decision-making by firms to economic analyses by government agencies. Three types of expert knowledge are essential to effective industry assignment: definition-based knowledge (i.e., expert definitions of each industry), structure-based knowledge (i.e., structural relationships among industries as specified in an ICS), and assignment-based knowledge (i.e., prior firm-industry assignments performed by domain experts). Existing industry assignment methods utilize only assignment-based knowledge to learn a model that classifies unassigned firms to industries, overlooking definition-based and structure-based knowledge. Moreover, these methods only consider which industry a firm has been assigned to, ignoring the time-specificity of assignment-based knowledge, i.e., when the assignment occurs. To address the limitations of existing methods, we propose a novel deep learning-based method that not only seamlessly integrates the three types of knowledge for industry assignment but also takes the time-specificity of assignment-based knowledge into account. Methodologically, our method features two innovations: dynamic industry representation and hierarchical assignment. The former represents an industry as a sequence of time-specific vectors by integrating the three types of knowledge through our proposed temporal and spatial aggregation mechanisms. The latter takes industry and firm representations as inputs, computes the probability of assigning a firm to different industries, and assigns the firm to the industry with the highest probability. We conduct extensive evaluations with two widely used ICSs and demonstrate the superiority of our method over prevalent existing methods.",
+  "ai_type_tags": [
+    "深度学习",
+    "机器学习"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Xiaohang Zhao",
+    "Xiao Fang",
+    "Jing He",
+    "Lihua Huang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Shanghai University of Finance and Economics"
+      ],
+      "name": "Xiaohang Zhao",
+      "orcid": "https://orcid.org/0000-0001-7766-6730",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Delaware"
+      ],
+      "name": "Xiao Fang",
+      "orcid": "https://orcid.org/0000-0002-9429-5748",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Delaware"
+      ],
+      "name": "Jing He",
+      "orcid": "https://orcid.org/0000-0001-7504-8314",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Fudan University"
+      ],
+      "name": "Lihua Huang",
+      "orcid": "https://orcid.org/0000-0002-6031-9078",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "深度学习行业分类，核心为AI方法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出融合三类专家知识的深度学习行业分类方法。现有方法仅利用分配类知识，忽视定义类知识(行业定义)和结构类知识(行业层级关系)。新方法通过动态行业表征和层级分配两大创新，将三类知识无缝整合并纳入分配的时间特异性，在行业分配任务上显著优于传统方法。",
+      "topic_tags": [
+        "知识管理",
+        "组织变革",
+        "战略"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 7,
+  "date": "2023-09-01",
+  "doi": "10.25300/misq/2022/17171",
+  "id": "p_-dRX_2BIFnL_FDLf",
+  "issue": "3",
+  "journal": "MISQ",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4965,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Exploiting Expert Knowledge for Assigning Firms to Industries: A Novel Deep Learning Method",
+  "title_zh": "利用专家知识进行企业行业归类：一种新型深度学习方法",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.25300/misq/2022/17171",
+  "volume": "47",
+  "year": 2023
+}

@@ -1,0 +1,66 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly deployed across high-impact domains, from clinical decision support and legal analysis to hiring and education, making fairness and bias evaluation before deployment critical. However, existing evaluations lack grounding in real-world scenarios and do not account for differences in harm severity, e.g., a biased decision in surgery should not be weighed the same as a stylistic bias in text summarization. To address this gap, we introduce HALF (Harm-Aware LLM Fairness), a deployment-aligned framework that assesses model bias in realistic applications and weighs the outcomes by harm severity. HALF organizes nine application domains into three tiers (Severe, Moderate, Mild) using a five-stage pipeline. Our evaluation results across eight LLMs show that (1) LLMs are not consistently fair across domains, (2) model size or performance do not guarantee fairness, and (3) reasoning models perform better in medical decision support but worse in education. We conclude that HALF exposes a clear gap between previous benchmarking success and deployment readiness.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "算法决策"
+  ],
+  "arxiv_id": "2510.12217",
+  "authors": [
+    "Ali Mekky",
+    "Omar El Herraoui",
+    "Preslav Nakov",
+    "Yuxia Wang"
+  ],
+  "authors_full": [
+    {
+      "name": "Ali Mekky"
+    },
+    {
+      "name": "Omar El Herraoui"
+    },
+    {
+      "name": "Preslav Nakov"
+    },
+    {
+      "name": "Yuxia Wang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM公平性评估框架，核心AI研究，涉猎临床/法律/招聘等领域，AI伦理边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出HALF框架，填补LLM公平性评估与实际部署场景脱节的空白。将九个应用领域按危害严重性分为三层（严重、中等、轻微），通过五阶段流程评估模型偏见。八个LLM评估结果显示：模型在不同领域公平性不一致，规模或性能不保证公平性，推理模型在医疗决策支持表现更好但在教育领域更差。研究揭示基准测试成功与部署就绪之间存在显著差距。",
+      "topic_tags": [
+        "算法决策",
+        "伦理",
+        "公平性",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-14",
+  "doi": null,
+  "id": "p_iPhdp1c1oDUFXxcY",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2510.12217v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8366,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "HALF: Harm-Aware LLM Fairness Evaluation Aligned with Deployment",
+  "title_zh": "HALF：面向部署的伤害感知LLM公平性评估",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2510.12217v2",
+  "volume": null,
+  "year": 2025
+}

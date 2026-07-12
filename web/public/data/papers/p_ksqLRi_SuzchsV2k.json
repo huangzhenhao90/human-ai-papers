@@ -1,0 +1,77 @@
+{
+  "abstract": "Despite the growing adoption of large language models (LLMs) in academic workflows, their capabilities remain limited in supporting high-quality scientific writing. Most existing systems are designed for general-purpose scientific text generation and fail to meet the sophisticated demands of research communication beyond surface-level polishing, for example, maintaining conceptual coherence across sections. Furthermore, academic writing is inherently iterative and revision-driven, a process that is not well supported by direct prompting-based paradigms. To address these scenarios, we propose a human-AI collaboration framework for academic paper revision, centered on criteria-guided intent alignment and context-aware modeling. To validate the framework, we curate a dataset of 7,000 research papers from top-tier venues, annotated with 140,000 instruction--response pairs that reflect realistic, section-level scientific revisions. We instantiate the framework in XtraGPT, the first suite of open-source LLMs (1.5B to 14B parameters) specifically fine-tuned for context-aware academic paper revision. Extensive experiments show that XtraGPT significantly outperforms same-scale baselines and rivals the quality of proprietary counterparts. Both automated preference assessments and human evaluations confirm the effectiveness of XtraGPT in improving scientific drafts. Our code and models are available at https://github.com/Xtra-Computing/XtraGPT and https://huggingface.co/collections/Xtra-Computing/xtragpt.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "人机交互"
+  ],
+  "arxiv_id": "2505.11336",
+  "authors": [
+    "Nuo Chen",
+    "Andre Lin HuiKai",
+    "Jiaying Wu",
+    "Junyi Hou",
+    "Zining Zhang"
+  ],
+  "authors_full": [
+    {
+      "name": "Nuo Chen"
+    },
+    {
+      "name": "Andre Lin HuiKai"
+    },
+    {
+      "name": "Jiaying Wu"
+    },
+    {
+      "name": "Junyi Hou"
+    },
+    {
+      "name": "Zining Zhang"
+    },
+    {
+      "name": "Qian Wang"
+    },
+    {
+      "name": "Xidong Wang"
+    },
+    {
+      "name": "Bingsheng He"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "人-AI协作学术写作框架，强相关消费者/专业沟通行为",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "现有LLM难以支撑高水平学术写作的迭代修订需求。研究提出人机协作框架，通过准则引导的意图对齐与上下文感知建模，支持段落级概念连贯性提升。基于7000篇顶会论文及14万条指令-响应标注对微调XtraGPT（1.5B-14B参数），实验表明其显著优于同规模基线并匹敌闭源模型，自动化评估与人类评审均验证了科学草稿质量的有效提升。",
+      "topic_tags": [
+        "教育",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-05-16",
+  "doi": null,
+  "id": "p_ksqLRi_SuzchsV2k",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2505.11336v4",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10158,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "XtraGPT: Context-Aware and Controllable Academic Paper Revision via Human-AI Collaboration",
+  "title_zh": "XtraGPT：基于人机协作的上下文感知与可控学术论文修订",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2505.11336v4",
+  "volume": null,
+  "year": 2025
+}

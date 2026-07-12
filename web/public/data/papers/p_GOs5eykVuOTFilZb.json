@@ -1,0 +1,61 @@
+{
+  "abstract": "The aggregation of multiple opinions plays a crucial role in decision-making, such as in hiring and loan review, and in labeling data for supervised learning. Although majority voting and existing opinion aggregation models are effective for simple tasks, they are inappropriate for tasks without objectively true labels in which disagreements may occur. In particular, when voter attributes such as gender or race introduce bias into opinions, the aggregation results may vary depending on the composition of voter attributes. A balanced group of voters is desirable for fair aggregation results but may be difficult to prepare. In this study, we consider methods to achieve fair opinion aggregation based on voter attributes and evaluate the fairness of the aggregated results. To this end, we consider an approach that combines opinion aggregation models such as majority voting and the Dawid and Skene model (D&S model) with fairness options such as sample weighting. To evaluate the fairness of opinion aggregation, probabilistic soft labels are preferred over discrete class labels. First, we address the problem of soft label estimation without considering voter attributes and identify some issues with the D&S model. To address these limitations, we propose a new Soft D&S model with improved accuracy in estimating soft labels. Moreover, we evaluated the fairness of an opinion aggregation model, including Soft D&S, in combination with different fairness options using synthetic and semi-synthetic data. The experimental results suggest that the combination of Soft D&S and data splitting as a fairness option is effective for dense data, whereas weighted majority voting is effective for sparse data. These findings should prove particularly valuable in supporting decision-making by human and machine-learning models with balanced opinion aggregation.",
+  "ai_type_tags": [
+    "算法决策",
+    "机器学习"
+  ],
+  "arxiv_id": "2307.10749",
+  "authors": [
+    "Ryosuke Ueda",
+    "Koh Takeuchi",
+    "Hisashi Kashima"
+  ],
+  "authors_full": [
+    {
+      "name": "Ryosuke Ueda"
+    },
+    {
+      "name": "Koh Takeuchi"
+    },
+    {
+      "name": "Hisashi Kashima"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "投票属性偏差与公平聚合，服务机器学习标注，偏AI方法应用",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "多数投票等传统意见聚合方法在无客观真值场景下易受投票者属性偏差影响，聚合结果随投票者构成而变化。研究评估了将多数投票、Dawid-Skene模型与样本加权等公平选项结合的效果，发现离散标签难以充分反映公平性。研究提出改进的Soft D&S模型以更准确地估计概率软标签，并验证了结合公平选项的意见聚合模型可有效缓解属性偏差。",
+      "topic_tags": [
+        "公平性",
+        "决策",
+        "偏见",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-07-20",
+  "doi": "10.1145/3600211.3604660",
+  "id": "p_GOs5eykVuOTFilZb",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2307.10749v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10384,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Mitigating Voter Attribute Bias for Fair Opinion Aggregation",
+  "title_zh": "减轻投票者属性偏见以实现公平观点聚合",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2307.10749v1",
+  "volume": null,
+  "year": 2023
+}

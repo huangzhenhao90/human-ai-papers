@@ -1,0 +1,59 @@
+{
+  "abstract": "Gaining insights into the preferences of new users and subsequently personalizing recommendations necessitate managing user interactions intelligently, namely, posing pertinent questions to elicit valuable information effectively. In this study, our focus is on a specific scenario of the cold-start problem, where the recommendation system lacks adequate user presence or access to other users' data is restricted, obstructing employing user profiling methods utilizing existing data in the system. We employ Active Learning (AL) to solve the addressed problem with the objective of maximizing information acquisition with minimal user effort. AL operates for selecting informative data from a large unlabeled set to inquire an oracle to label them and eventually updating a machine learning (ML) model. We operate AL in an integrated process of unsupervised, semi-supervised, and supervised ML within an explanatory preference elicitation process. It harvests user feedback (given for the system's explanations on the presented items) over informative samples to update an underlying ML model estimating user preferences. The designed user interaction facilitates personalizing the system by incorporating user feedback into the ML model and also enhances user trust by refining the system's explanations on recommendations. We implement the proposed preference elicitation methodology for food recommendation. We conducted human experiments to assess its efficacy in the short term and also experimented with several AL strategies over synthetic user profiles that we created for two food datasets, aiming for long-term performance analysis. The experimental results demonstrate the efficiency of the proposed preference elicitation with limited user-labeled data while also enhancing user trust through accurate explanations.",
+  "ai_type_tags": [
+    "推荐算法",
+    "主动学习",
+    "可解释AI",
+    "人机协作"
+  ],
+  "arxiv_id": "2309.00356",
+  "authors": [
+    "Furkan Cantürk",
+    "Reyhan Aydoğan"
+  ],
+  "authors_full": [
+    {
+      "name": "Furkan Cantürk"
+    },
+    {
+      "name": "Reyhan Aydoğan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "主动学习用于偏好获取，属消费者偏好建模技术",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对冷启动问题，采用主动学习框架进行用户偏好获取。在缺乏用户历史数据的约束下，将无监督、半监督和监督机器学习整合到可解释的偏好 elicitation 流程中，通过收集用户对推荐解释的反馈来更新偏好估计模型，实现个性化推荐并提升用户信任。",
+      "topic_tags": [
+        "推荐系统",
+        "用户偏好",
+        "人机交互",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-09-01",
+  "doi": null,
+  "id": "p_m9Ki7-zIqb_Vbggm",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2309.00356v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 10031,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Explainable Active Learning for Preference Elicitation",
+  "title_zh": "用于偏好获取的可解释主动学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2309.00356v1",
+  "volume": null,
+  "year": 2023
+}

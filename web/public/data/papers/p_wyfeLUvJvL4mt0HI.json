@@ -1,0 +1,56 @@
+{
+  "abstract": "As machine learning (ML) based systems are adopted in domains such as law enforcement, criminal justice, finance, hiring and admissions, ensuring the fairness of ML aided decision-making is becoming increasingly important. In this paper, we focus on the problem of fair classification, and introduce a novel min-max F-divergence regularization framework for learning fair classification models while preserving high accuracy. Our framework consists of two trainable networks, namely, a classifier network and a bias/fairness estimator network, where the fairness is measured using the statistical notion of F-divergence. We show that F-divergence measures possess convexity and differentiability properties, and their variational representation make them widely applicable in practical gradient based training methods. The proposed framework can be readily adapted to multiple sensitive attributes and for high dimensional datasets. We study the F-divergence based training paradigm for two types of group fairness constraints, namely, demographic parity and equalized odds. We present a comprehensive set of experiments for several real-world data sets arising in multiple domains (including COMPAS, Law Admissions, Adult Income, and CelebA datasets). To quantify the fairness-accuracy tradeoff, we introduce the notion of fairness-accuracy receiver operating characteristic (FA-ROC) and a corresponding \\textit{low-bias} FA-ROC, which we argue is an appropriate measure to evaluate different classifiers. In comparison to several existing approaches for learning fair classifiers (including pre-processing, post-processing and other regularization methods), we show that the proposed F-divergence based framework achieves state-of-the-art performance with respect to the trade-off between accuracy and fairness.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2306.16552",
+  "authors": [
+    "Meiyu Zhong",
+    "Ravi Tandon"
+  ],
+  "authors_full": [
+    {
+      "name": "Meiyu Zhong"
+    },
+    {
+      "name": "Ravi Tandon"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "公平分类器研究涉及招聘决策，弱相关管理",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对机器学习辅助决策中的公平性问题，提出一种基于最小最大F散度正则化的公平分类框架。该框架包含分类器网络与公平性估计网络，利用F散度的凸性与可微性实现梯度训练，可同时实现人口公平与等赔率两种公平约束。在COMPAS、律所录取、成人收入、CelebA等数据集上验证了框架有效性，并提出公平-准确率ROC（FA-ROC）指标以量化二者权衡。",
+      "topic_tags": [
+        "公平性",
+        "算法决策",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2023-06-28",
+  "doi": null,
+  "id": "p_wyfeLUvJvL4mt0HI",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2306.16552v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8829,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Learning Fair Classifiers via Min-Max F-divergence Regularization",
+  "title_zh": "通过 Min-Max F散度正则化学习公平分类器",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2306.16552v1",
+  "volume": null,
+  "year": 2023
+}

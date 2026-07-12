@@ -1,0 +1,75 @@
+{
+  "abstract": "Recent advancements in recommender systems have focused on leveraging Large Language Models (LLMs) to improve user preference modeling, yielding promising outcomes. However, current LLM-based approaches struggle to fully leverage user behavior sequences, resulting in suboptimal preference modeling for personalized recommendations. In this study, we propose a novel Counterfactual Fine-Tuning (CFT) method to address this issue by explicitly emphasizing the role of behavior sequences when generating recommendations. Specifically, we employ counterfactual reasoning to identify the causal effects of behavior sequences on model output and introduce a task that directly fits the ground-truth labels based on these effects, achieving the goal of explicit emphasis. Additionally, we develop a token-level weighting mechanism to adjust the emphasis strength for different item tokens, reflecting the diminishing influence of behavior sequences from earlier to later tokens during predicting an item. Extensive experiments on real-world datasets demonstrate that CFT effectively improves behavior sequence modeling. Our codes are available at https://github.com/itsmeyjt/CFT.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "机器学习"
+  ],
+  "arxiv_id": "2410.22809",
+  "authors": [
+    "Yang Zhang",
+    "Juntao You",
+    "Yimeng Bai",
+    "Jizhi Zhang",
+    "Keqin Bao"
+  ],
+  "authors_full": [
+    {
+      "name": "Yang Zhang"
+    },
+    {
+      "name": "Juntao You"
+    },
+    {
+      "name": "Yimeng Bai"
+    },
+    {
+      "name": "Jizhi Zhang"
+    },
+    {
+      "name": "Keqin Bao"
+    },
+    {
+      "name": "Wenjie Wang"
+    },
+    {
+      "name": "Tat-Seng Chua"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM因果推理行为序列建模",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究提出因果微调（CFT）方法，通过反事实推理显式强化行为序列在推荐中的作用，并在 token 层面调节不同位置的影响权重。基于真实数据集的实验证明，CFT 能显著提升序列建模效果和推荐精度。",
+      "topic_tags": [
+        "推荐系统",
+        "算法决策",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-10-30",
+  "doi": null,
+  "id": "p_utjfkiUauvyerWoS",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2410.22809v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9959,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Causality-Enhanced Behavior Sequence Modeling in LLMs for Personalized Recommendation",
+  "title_zh": "因果增强的LLM行为序列建模用于个性化推荐",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2410.22809v1",
+  "volume": null,
+  "year": 2024
+}

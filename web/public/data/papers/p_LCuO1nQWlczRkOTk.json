@@ -1,0 +1,91 @@
+{
+  "abstract": "Psychiatry's reliance on language makes LLMs a natural tool for psychopathological assessment, yet structured, item-level assessments from psychiatric clinical interviews remain under-researched. In this proof-of-concept study, 10 LLMs assessed transcripts of three simulated psychiatric interviews across all 100 items of the Association for Methodology and Documentation in Psychiatry (AMDP) system, benchmarked against 108 early-career clinicians rating full audiovisual recordings, using an expert consensus panel as reference. GPT-5.1 and Gemini-3-Pro-Preview achieved the highest accuracy (0.72; 64th percentile of the clinician distribution) using majority voting across three runs with AMDP definitions as context. GPT-5.1, selected for a marginal advantage, showed per-scenario accuracies of 0.81 (depression), 0.76 (mania), and 0.60 (schizophrenia) versus clinician means of 0.79, 0.68, and 0.58. Clinicians and LLMs showed distinct error profiles: clinicians tended to over-infer symptom presence, whereas LLMs more conservatively flagged items as \"not assessable\" - most pronounced for observation-dependent items but present even for text-assessable items (19.4% vs. 11.4%, p < 0.001). In post hoc simulated disagreement resolutions (2091 clinician pairs; 35.5% disagreements), LLM and board-certified supervision were associated with more accurate resolutions than unsupervised random clinician selection (p < 0.0002). These proof-of-concept findings require validation in real patient interviews, larger samples, and prospective studies integrating multimodal input.",
+  "ai_type_tags": [
+    "llm_genai"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Esra Lenz",
+    "Joonas Naamanka",
+    "W. Trabert",
+    "Ronald Bottlender",
+    "Berend Malchow",
+    "Andreas Meyer-Lindenberg",
+    "Tobias Gradinger",
+    "Emanuel Schwarz"
+  ],
+  "authors_full": [
+    {
+      "name": "Esra Lenz"
+    },
+    {
+      "name": "Joonas Naamanka"
+    },
+    {
+      "name": "W. Trabert"
+    },
+    {
+      "name": "Ronald Bottlender"
+    },
+    {
+      "name": "Berend Malchow"
+    },
+    {
+      "name": "Andreas Meyer-Lindenberg"
+    },
+    {
+      "name": "Tobias Gradinger"
+    },
+    {
+      "name": "Emanuel Schwarz"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "LLM与临床医生在精神病理学评估（AMDP系统100项）上的基准对比测试，AI是核心测试对象，评估精神病理症状。",
+      "ai_score": 5,
+      "clinical_validation": "none",
+      "domain_score": 5,
+      "evidence_stage": "benchmark_development",
+      "ground_truth_quality": "clinician_assessed",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "clinical_harm",
+        "overreliance",
+        "transparency_accountability"
+      ],
+      "safety_evaluated": false,
+      "tldr": "10个LLM在模拟访谈转录本上评估AMDP系统100项，达到72%准确率（第64百分位），但需在真实患者访谈中验证。",
+      "topic_tags": [
+        "depression",
+        "psychosis_schizophrenia",
+        "bipolar",
+        "screening_assessment",
+        "clinical_patients",
+        "clinicians"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-07",
+  "doi": "10.1038/s41746-026-02852-7",
+  "id": "p_LCuO1nQWlczRkOTk",
+  "issue": null,
+  "journal": "npj Digital Medicine",
+  "pdf_url": "https://www.nature.com/articles/s41746-026-02852-7.pdf",
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7167606606"
+    }
+  ],
+  "title": "Benchmarking large language models against practicing clinicians on psychopathological assessment",
+  "title_zh": "大语言模型与执业临床医生在精神病理学评估上的基准测试",
+  "unified_ingested_at": "2026-07-12T08:09:29.110653Z",
+  "url": "https://doi.org/10.1038/s41746-026-02852-7",
+  "volume": null,
+  "year": 2026
+}

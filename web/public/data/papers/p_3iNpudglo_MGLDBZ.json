@@ -1,0 +1,76 @@
+{
+  "abstract": "Motivated by emerging applications, such as live-streaming e-commerce, promotions, and recommendations, we introduce and solve a general class of nonstationary multi-armed bandit problems that have the following two features: (i) the decision maker can pull and collect rewards from up to [Formula: see text] out of N different arms in each time period and (ii) the expected reward of an arm immediately drops after it is pulled and then nonparametrically recovers as the arm’s idle time increases. With the objective of maximizing the expected cumulative reward over T time periods, we design a class of purely periodic policies that jointly set a period to pull each arm. For the proposed policies, we prove performance guarantees for both the offline and the online problems. For the offline problem when all model parameters are known, the proposed periodic policy obtains a long-run approximation ratio that is at the order of [Formula: see text], which is asymptotically optimal when K grows to infinity. For the online problem when the model parameters are unknown and need to be dynamically learned, we integrate the offline periodic policy with the upper confidence bound procedure to construct on online policy. The proposed online policy is proved to approximately have [Formula: see text] regret against the offline benchmark. Our framework and policy design may shed light on broader offline planning and online learning applications with nonstationary and recovering rewards.  This paper was accepted by J. George Shanthikumar, data science.  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2021.04202 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "推荐算法"
+  ],
+  "arxiv_id": "2021.04202",
+  "authors": [
+    "David Simchi‐Levi",
+    "Zeyu Zheng",
+    "Feng Zhu"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "David Simchi‐Levi",
+      "orcid": null,
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of California, Berkeley"
+      ],
+      "name": "Zeyu Zheng",
+      "orcid": "https://orcid.org/0000-0001-5653-152X",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Massachusetts Institute of Technology"
+      ],
+      "name": "Feng Zhu",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "多臂老虎机与在线学习算法决策研究",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对拉动后奖励下降并随空闲时间恢复的非平稳多臂 bandit 问题，提出纯周期策略用于离线规划，并在参数未知时结合上置信界实现线上学习。已知参数下该策略取得近似最优的长期收益比率；未知参数下其遗憾上界约为 O(√T)。该框架为实时电商、推荐等场景的动态资源分配提供理论支持。",
+      "topic_tags": [
+        "算法管理",
+        "算法决策",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 1,
+  "date": "2024-04-03",
+  "doi": "10.1287/mnsc.2021.04202",
+  "id": "p_3iNpudglo_MGLDBZ",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 4154,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Offline Planning and Online Learning Under Recovering Rewards",
+  "title_zh": "恢复性奖励下的离线规划与在线学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2021.04202",
+  "volume": null,
+  "year": 2024
+}

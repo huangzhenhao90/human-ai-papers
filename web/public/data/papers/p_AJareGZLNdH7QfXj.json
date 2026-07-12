@@ -1,0 +1,63 @@
+{
+  "abstract": "Conversational recommender systems proactively query users with relevant \"key terms\" and leverage the feedback to elicit users' preferences for personalized recommendations. Conversational contextual bandits, a prevalent approach in this domain, aim to optimize preference learning by balancing exploitation and exploration. However, several limitations hinder their effectiveness in real-world scenarios. First, existing algorithms employ key term selection strategies with insufficient exploration, often failing to thoroughly probe users' preferences and resulting in suboptimal preference estimation. Second, current algorithms typically rely on deterministic rules to initiate conversations, causing unnecessary interactions when preferences are well-understood and missed opportunities when preferences are uncertain. To address these limitations, we propose three novel algorithms: CLiSK, CLiME, and CLiSK-ME. CLiSK introduces smoothed key term contexts to enhance exploration in preference learning, CLiME adaptively initiates conversations based on preference uncertainty, and CLiSK-ME integrates both techniques. We theoretically prove that all three algorithms achieve a tighter regret upper bound of $O(\\sqrt{dT\\log{T}})$ with respect to the time horizon $T$, improving upon existing methods. Additionally, we provide a matching lower bound $Ω(\\sqrt{dT})$ for conversational bandits, demonstrating that our algorithms are nearly minimax optimal. Extensive evaluations on both synthetic and real-world datasets show that our approaches achieve at least a 14.6% improvement in cumulative regret.",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2505.21393",
+  "authors": [
+    "Maoli Liu",
+    "Zhuohua Li",
+    "Xiangxiang Dai",
+    "John C. S. Lui"
+  ],
+  "authors_full": [
+    {
+      "name": "Maoli Liu"
+    },
+    {
+      "name": "Zhuohua Li"
+    },
+    {
+      "name": "Xiangxiang Dai"
+    },
+    {
+      "name": "John C. S. Lui"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "对话推荐 bandits算法，略涉及消费者偏好学习",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "对话推荐系统中关键术语选择探索不足、对话启动规则僵化导致偏好估计次优。提出三种新算法：CLiSK通过平滑关键术语上下文增强探索，CLiME基于偏好不确定性自适应启动对话，CLiSK-ME融合两者。理论证明三种算法均达$O(\\sqrt{dT\\log{T}})$悔恨上界，接近极小极大最优。",
+      "topic_tags": [
+        "推荐系统",
+        "人机交互"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-05-27",
+  "doi": "10.1145/3711896.3737025",
+  "id": "p_AJareGZLNdH7QfXj",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2505.21393v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9929,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Leveraging the Power of Conversations: Optimal Key Term Selection in Conversational Contextual Bandits",
+  "title_zh": "会话力量的利用：对话上下文匪徒中最优关键术语选择",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2505.21393v1",
+  "volume": null,
+  "year": 2025
+}

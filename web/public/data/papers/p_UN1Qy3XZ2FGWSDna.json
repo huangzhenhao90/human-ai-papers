@@ -1,0 +1,94 @@
+{
+  "abstract": "Digital platforms often share publicly visible behavioral data, such as ratings and reviews, to improve service quality. Yet, these seemingly innocuous data can also reveal hidden social ties among users. We develop a two-stage framework that first diagnoses this leakage risk by inferring latent social interactions from behavioral data and then mitigates the risk while preserving data utility. We characterize when hidden ties are identifiable from observed actions and show, using public Yelp data from Louisiana and Pennsylvania, that an attacker can recover about half of true social ties at a 10% false-positive rate and more than 60% at a 20% false-positive rate. These inferred ties can materially increase cyber risk: when used for spear phishing, the estimated return on attack rises from 109% for a campaign with 500 impersonation attempts to 1,098% for one with 10,000 attempts. To reduce this leakage, we propose two perturbation mechanisms with formal differential privacy guarantees on the released representations: one adds Gaussian noise directly to the released action matrix, and the other adds Laplace noise to the learned representation before resynthesizing the released data. Both mechanisms reduce the link-inference accuracy and substantially lower estimated attacker returns; under our main protection settings, returns become negative for smaller campaigns and remain much lower at larger scales. Overall, the paper provides a practical framework for diagnosing social interaction leakage and evaluating the privacy-utility trade-off when platforms share behavioral data.\n                  History: Peiyu Chen, Senior Editor; Heng Xu, Associate Editor.\n                  Funding: Y. Leng is supported by the U.S. National Science Foundation (NSF) [Grant IIS-2153468].\n                  Supplemental Material: The online appendix is available at https://doi.org/10.1287/isre.2024.1469 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2024.1469",
+  "authors": [
+    "Yan Leng",
+    "Yiqun Chen",
+    "Xiaowen Dong",
+    "Junfeng Wu",
+    "Guodong Shi"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "The University of Texas at Austin"
+      ],
+      "name": "Yan Leng",
+      "orcid": "https://orcid.org/0000-0002-7084-2700",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "The University of Melbourne"
+      ],
+      "name": "Yiqun Chen",
+      "orcid": "https://orcid.org/0000-0003-0672-9217",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Oxford"
+      ],
+      "name": "Xiaowen Dong",
+      "orcid": "https://orcid.org/0000-0002-1143-9786",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Chinese University of Hong Kong, Shenzhen"
+      ],
+      "name": "Junfeng Wu",
+      "orcid": "https://orcid.org/0000-0002-7125-3748",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Australian Centre for Robotic Vision"
+      ],
+      "name": "Guodong Shi",
+      "orcid": "https://orcid.org/0000-0002-5929-9655",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法推断社交关系涉及AI但非OB核心",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "数字平台公开的行为数据（如评分、评论）可被攻击者用于推断用户间的隐藏社交关系。研究基于Yelp数据发现，在10%误报率下可恢复约50%真实关系，在20%误报率下超过60%；该推断显著提升钓鱼攻击回报率（500次冒名尝试回报109%，10,000次则升至1,098%）。为降低泄露风险，提出两种差分隐私扰动机制——直接对行为矩阵加高斯噪声与对学习表示加拉普拉斯噪声后重新合成数据——均显著降低关系推断准确率并使攻击回报转负或大幅下降。",
+      "topic_tags": [
+        "隐私",
+        "社会网络",
+        "数据安全",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-28",
+  "doi": "10.1287/isre.2024.1469",
+  "id": "p_UN1Qy3XZ2FGWSDna",
+  "issue": null,
+  "journal": "ISR",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11392,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "When Behavioral Data Betray Users: A Diagnostic and Protective Framework Against Social Interaction Leakages",
+  "title_zh": "当行为数据背叛用户：社交互动泄露的诊断与防护框架",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/isre.2024.1469",
+  "volume": null,
+  "year": 2026
+}

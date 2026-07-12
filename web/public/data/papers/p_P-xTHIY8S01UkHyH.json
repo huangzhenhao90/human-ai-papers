@@ -1,0 +1,62 @@
+{
+  "abstract": "Machine learning models often make predictions based on biased features such as gender, race, and other social attributes, posing significant fairness risks, especially in societal applications, such as hiring, banking, and criminal justice. Traditional approaches to addressing this issue involve retraining or fine-tuning neural networks with fairness-aware optimization objectives. However, these methods can be impractical due to significant computational resources, complex industrial tests, and the associated CO2 footprint. Additionally, regular users often fail to fine-tune models because they lack access to model parameters In this paper, we introduce the Inference-Time Rule Eraser (Eraser), a novel method designed to address fairness concerns by removing biased decision-making rules from deployed models during inference without altering model weights. We begin by establishing a theoretical foundation for modifying model outputs to eliminate biased rules through Bayesian analysis. Next, we present a specific implementation of Eraser that involves two stages: (1) distilling the biased rules from the deployed model into an additional patch model, and (2) removing these biased rules from the output of the deployed model during inference. Extensive experiments validate the effectiveness of our approach, showcasing its superior performance in addressing fairness concerns in AI systems.",
+  "ai_type_tags": [
+    "机器学习",
+    "知识蒸馏",
+    "推理时"
+  ],
+  "arxiv_id": "2404.04814",
+  "authors": [
+    "Yi Zhang",
+    "Dongyuan Lu",
+    "Jitao Sang"
+  ],
+  "authors_full": [
+    {
+      "name": "Yi Zhang"
+    },
+    {
+      "name": "Dongyuan Lu"
+    },
+    {
+      "name": "Jitao Sang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "推理时公平规则消除,招聘应用,边缘管理相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "为解决模型在招聘、信贷等场景中因性别、种族等敏感特征产生的偏见，本文提出推理时规则橡皮擦(Eraser)，通过将偏置规则蒸馏进补丁模型并在推理阶段对输出进行修正，无需重新训练或更改权重。理论分析与大量实验表明Eraser显著提升公平性且计算开销低。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "AI治理",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-04-07",
+  "doi": null,
+  "id": "p_P-xTHIY8S01UkHyH",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2404.04814v4",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8736,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Inference-Time Rule Eraser: Fair Recognition via Distilling and Removing Biased Rules",
+  "title_zh": "推理时规则擦除器：通过蒸馏与消除偏见规则实现公平识别",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2404.04814v4",
+  "volume": null,
+  "year": 2024
+}

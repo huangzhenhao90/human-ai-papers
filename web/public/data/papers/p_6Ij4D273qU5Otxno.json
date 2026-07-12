@@ -1,0 +1,62 @@
+{
+  "abstract": "We present PopResume, a population-representative resume dataset for causal fairness auditing of LLM- and VLM-based resume screening systems. Unlike existing benchmarks that rely on manually injected demographic information and outcome-level disparities, PopResume is grounded in population statistics and preserves natural attribute relationships, enabling path-specific effect (PSE)-based fairness evaluation. We decompose the effect of a protected attribute on resume scores into two paths: the business necessity path, mediated by job-relevant qualifications, and the redlining path, mediated by demographic proxies. This distinction allows auditors to separate legally permissible from impermissible sources of disparity. Evaluating four LLMs and four VLMs on PopResume's 60.8K resumes across five occupations, we identify five representative discrimination patterns that aggregate metrics fail to capture. Our results demonstrate that PSE-based evaluation reveals fairness issues masked by outcome-level measures, underscoring the need for causally-grounded auditing frameworks in AI-assisted hiring.",
+  "ai_type_tags": [
+    "LLM",
+    "VLM",
+    "算法管理"
+  ],
+  "arxiv_id": "2603.22714",
+  "authors": [
+    "Sumin Yu",
+    "Juhyeon Park",
+    "Taesup Moon"
+  ],
+  "authors_full": [
+    {
+      "name": "Sumin Yu"
+    },
+    {
+      "name": "Juhyeon Park"
+    },
+    {
+      "name": "Taesup Moon"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM简历筛选公平性,HR/招聘管理核心议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "构建了PopResume，一个基于人口统计的代表性简历数据集，用于对LLM和VLM简历筛选系统进行因果公平性审计。采用路径特定效应(PSE)方法，将受保护属性对简历评分的影响分解为业务必要性路径和\"红线\"路径，以区分合法与非法差异来源。在5个职业、6.08万份简历上评估4个LLM和4个VLM后，识别出5种传统聚合指标无法捕捉的歧视模式，证明基于因果的评估框架能揭示传统指标掩盖的公平性问题。",
+      "topic_tags": [
+        "算法决策",
+        "公平性",
+        "招聘",
+        "偏见"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-24",
+  "doi": null,
+  "id": "p_6Ij4D273qU5Otxno",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2603.22714v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8225,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "PopResume: Causal Fairness Evaluation of LLM/VLM Resume Screeners with Population-Representative Dataset",
+  "title_zh": "PopResume：基于人口代表性数据集的LLM/VLM简历筛选器因果公平性评估",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2603.22714v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,63 @@
+{
+  "abstract": "The fusion of Large Language Models (LLMs) with recommender systems (RecSys) has dramatically advanced personalized recommendations and drawn extensive attention. Despite the impressive progress, the safety of LLM-based RecSys against backdoor attacks remains largely under-explored. In this paper, we raise a new problem: Can a backdoor with a specific trigger be injected into LLM-based Recsys, leading to the manipulation of the recommendation responses when the backdoor trigger is appended to an item's title? To investigate the vulnerabilities of LLM-based RecSys under backdoor attacks, we propose a new attack framework termed Backdoor Injection Poisoning for RecSys (BadRec). BadRec perturbs the items' titles with triggers and employs several fake users to interact with these items, effectively poisoning the training set and injecting backdoors into LLM-based RecSys. Comprehensive experiments reveal that poisoning just 1% of the training data with adversarial examples is sufficient to successfully implant backdoors, enabling manipulation of recommendations. To further mitigate such a security threat, we propose a universal defense strategy called Poison Scanner (P-Scanner). Specifically, we introduce an LLM-based poison scanner to detect the poisoned items by leveraging the powerful language understanding and rich knowledge of LLMs. A trigger augmentation agent is employed to generate diverse synthetic triggers to guide the poison scanner in learning domain-specific knowledge of the poisoned item detection task. Extensive experiments on three real-world datasets validate the effectiveness of the proposed P-Scanner.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法",
+    "后门攻击",
+    "防御"
+  ],
+  "arxiv_id": "2504.11182",
+  "authors": [
+    "Liangbo Ning",
+    "Wenqi Fan",
+    "Qing Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Liangbo Ning"
+    },
+    {
+      "name": "Wenqi Fan"
+    },
+    {
+      "name": "Qing Li"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心是LLM推荐系统的后门攻击与防御",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "探讨大语言模型（LLM）驱动的推荐系统后门攻击可行性，提出BadRec攻击框架，通过在商品标题植入触发词并利用少量伪用户交互，仅1%投毒即可在模型中植入后门并操纵推荐；为防御设计P‑Scanner，利用LLM语言理解与知识生成多样化触发器，实现投毒项检测与清除。",
+      "topic_tags": [
+        "推荐系统",
+        "后门攻击",
+        "AI安全",
+        "LLM"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-04-15",
+  "doi": null,
+  "id": "p_0GlCHR7GBVslJaWo",
+  "issue": null,
+  "journal": "arXiv:cs.CR",
+  "pdf_url": "https://arxiv.org/pdf/2504.11182v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9939,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Exploring Backdoor Attack and Defense for LLM-empowered Recommendations",
+  "title_zh": "LLM推荐系统的后门攻击与防御研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2504.11182v1",
+  "volume": null,
+  "year": 2025
+}

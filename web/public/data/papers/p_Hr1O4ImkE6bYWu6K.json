@@ -1,0 +1,52 @@
+{
+  "abstract": "This study examines the behavior of Large Language Models (LLMs) when evaluating professional candidates based on their resumes or curricula vitae (CVs). In an experiment involving 22 leading LLMs, each model was systematically given one job description along with a pair of profession-matched CVs, one bearing a male first name, the other a female first name, and asked to select the more suitable candidate for the job. Each CV pair was presented twice, with names swapped to ensure that any observed preferences in candidate selection stemmed from gendered names cues. Despite identical professional qualifications across genders, all LLMs consistently favored female-named candidates across 70 different professions. Adding an explicit gender field (male/female) to the CVs further increased the preference for female applicants. When gendered names were replaced with gender-neutral identifiers \"Candidate A\" and \"Candidate B\", several models displayed a preference to select \"Candidate A\". Counterbalancing gender assignment between these gender-neutral identifiers resulted in gender parity in candidate selection. When asked to rate CVs in isolation rather than compare pairs, LLMs assigned slightly higher average scores to female CVs overall, but the effect size was negligible. Including preferred pronouns (he/him or she/her) next to a candidate's name slightly increased the odds of the candidate being selected regardless of gender. Finally, most models exhibited a substantial positional bias to select the candidate listed first in the prompt. These findings underscore the need for caution when deploying LLMs in high-stakes autonomous decision-making contexts and raise doubts about whether LLMs consistently apply principled reasoning.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策"
+  ],
+  "arxiv_id": "2505.17049",
+  "authors": [
+    "David Rozado"
+  ],
+  "authors_full": [
+    {
+      "name": "David Rozado"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "直接研究LLM在招聘中的性别偏见，为OB核心HR议题",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究22个主流LLM在简历评估中的性别与位置偏见。向每个模型呈现配对简历（男/女姓名），70个职业中所有模型均一致偏好女性简历。添加性别字段或代词均加剧该偏好。当使用中性标识替代姓名后，位置偏好显现，counterbalancing后性别偏见消失。单独评分时性别效应微弱。",
+      "topic_tags": [
+        "偏见",
+        "AI招聘",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-05-16",
+  "doi": null,
+  "id": "p_Hr1O4ImkE6bYWu6K",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2505.17049v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8500,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Gender and Positional Biases in LLM-Based Hiring Decisions: Evidence from Comparative CV/Résumé Evaluations",
+  "title_zh": "基于大语言模型的招聘决策中性别与位置偏见：比较简历评估的实证研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2505.17049v2",
+  "volume": null,
+  "year": 2025
+}

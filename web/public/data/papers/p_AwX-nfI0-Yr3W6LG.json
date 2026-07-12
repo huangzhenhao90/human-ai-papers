@@ -1,0 +1,81 @@
+{
+  "abstract": "Reranking plays a crucial role in modern multi-stage recommender systems by rearranging the initial ranking list. Due to the inherent challenges of combinatorial search spaces, some current research adopts an evaluator-generator paradigm, with a generator generating feasible sequences and an evaluator selecting the best sequence based on the estimated list utility. However, these methods still face two issues. Firstly, due to the goal inconsistency problem between the evaluator and generator, the generator tends to fit the local optimal solution of exposure distribution rather than combinatorial space optimization. Secondly, the strategy of generating target items one by one is difficult to achieve optimality because it ignores the information of subsequent items.   To address these issues, we propose a utilizing Neighbor Lists model for Generative Reranking (NLGR), which aims to improve the performance of the generator in the combinatorial space. NLGR follows the evaluator-generator paradigm and improves the generator's training and generating methods. Specifically, we use neighbor lists in combination space to enhance the training process, making the generator perceive the relative scores and find the optimization direction. Furthermore, we propose a novel sampling-based non-autoregressive generation method, which allows the generator to jump flexibly from the current list to any neighbor list. Extensive experiments on public and industrial datasets validate NLGR's effectiveness and we have successfully deployed NLGR on the Meituan food delivery platform.",
+  "ai_type_tags": [
+    "推荐算法",
+    "生成模型"
+  ],
+  "arxiv_id": "2502.06097",
+  "authors": [
+    "Shuli Wang",
+    "Xue Wei",
+    "Senjie Kou",
+    "Chi Wang",
+    "Wenshuai Chen"
+  ],
+  "authors_full": [
+    {
+      "name": "Shuli Wang"
+    },
+    {
+      "name": "Xue Wei"
+    },
+    {
+      "name": "Senjie Kou"
+    },
+    {
+      "name": "Chi Wang"
+    },
+    {
+      "name": "Wenshuai Chen"
+    },
+    {
+      "name": "Qi Tang"
+    },
+    {
+      "name": "Yinhua Zhu"
+    },
+    {
+      "name": "Xiong Xiao"
+    },
+    {
+      "name": "Xingxing Wang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "生成式重排序,非LLM的生成方法",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "针对多阶段推荐系统中重排序的组合搜索难题，NLGR 采用邻居列表增强生成器训练并提出非自回归采样方法，实现序列全局优化，显著提升排序效果。",
+      "topic_tags": [
+        "推荐系统",
+        "算法决策",
+        "机器学习",
+        "GenAI"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2025-02-10",
+  "doi": "10.1145/3701716.3715251",
+  "id": "p_AwX-nfI0-Yr3W6LG",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2502.06097v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9953,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "NLGR: Utilizing Neighbor Lists for Generative Rerank in Personalized Recommendation Systems",
+  "title_zh": "NLGR：利用邻接列表进行个性化推荐系统生成式重排序",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2502.06097v2",
+  "volume": null,
+  "year": 2025
+}

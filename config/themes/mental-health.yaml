@@ -1,0 +1,354 @@
+schema_version: 1
+
+theme:
+  id: mh
+  slug: mental-health
+  name_zh: 心理健康
+  name_en: Mental Health
+  default_from_date: "2023-01-01"
+  publish_thresholds:
+    ai_relevance: 3
+    domain_relevance: 3
+
+# OpenAlex ID 与 ISSN 只在 OpenAlex 官方 API 返回唯一同名条目时填写。
+# 空值不是猜测值；fetch report 会将其标记为 missing_identifier，并尝试运行时精确同名解析。
+sources:
+  full:
+    description: 整刊召回，不用关键词作闸门，后置双评分。
+    journals:
+      - key: nature_mental_health
+        name: Nature Mental Health
+        ingest_mode: full
+        openalex_id: S4387286578
+        issn_l: 2731-6076
+      - key: jmir_mental_health
+        name: JMIR Mental Health
+        ingest_mode: full
+        openalex_id: S2764449704
+        issn_l: 2368-7959
+      - key: lancet_psychiatry
+        name: The Lancet Psychiatry
+        ingest_mode: full
+        openalex_id: S2531556786
+        issn_l: 2215-0366
+      - key: jama_psychiatry
+        name: JAMA Psychiatry
+        ingest_mode: full
+        openalex_id: S2495708506
+        issn_l: 2168-622X
+      - key: american_journal_psychiatry
+        name: American Journal of Psychiatry
+        ingest_mode: full
+        openalex_id: S116025658
+        issn_l: 0002-953X
+      - key: world_psychiatry
+        name: World Psychiatry
+        ingest_mode: full
+        openalex_id: S183644930
+        issn_l: 1723-8617
+      - key: psychological_medicine
+        name: Psychological Medicine
+        ingest_mode: full
+        openalex_id: S71144982
+        issn_l: 0033-2917
+      - key: journal_affective_disorders
+        name: Journal of Affective Disorders
+        ingest_mode: full
+        openalex_id: S113871862
+        issn_l: 0165-0327
+      - key: translational_psychiatry
+        name: Translational Psychiatry
+        ingest_mode: full
+        openalex_id: S163345920
+        issn_l: 2158-3188
+      - key: internet_interventions
+        name: Internet Interventions
+        ingest_mode: full
+        openalex_id: S4210232579
+        issn_l: 2214-7829
+      - key: bjpsych_open
+        name: BJPsych Open
+        ingest_mode: full
+        openalex_id: S2764831659
+        issn_l: 2056-4724
+      - key: clinical_psychological_science
+        name: Clinical Psychological Science
+        ingest_mode: full
+        openalex_id: S2764897075
+        issn_l: 2167-7026
+
+  query:
+    description: 只召回同时命中 AI_SIGNAL 与 MENTAL_HEALTH_SIGNAL 的记录。
+    query_expression: AI_SIGNAL AND MENTAL_HEALTH_SIGNAL
+    journals:
+      - key: npj_digital_medicine
+        name: npj Digital Medicine
+        ingest_mode: query
+        openalex_id: S4210195431
+        issn_l: 2398-6352
+      - key: lancet_digital_health
+        name: The Lancet Digital Health
+        ingest_mode: query
+        openalex_id: S4210237014
+        issn_l: 2589-7500
+      - key: jmir
+        name: Journal of Medical Internet Research
+        ingest_mode: query
+        openalex_id: S17147534
+        issn_l: 1438-8871
+      - key: jmir_ai
+        name: JMIR AI
+        ingest_mode: query
+        openalex_id: S4387286577
+        issn_l: 2817-1705
+      - key: artificial_intelligence_in_medicine
+        name: Artificial Intelligence in Medicine
+        ingest_mode: query
+        openalex_id: S42468263
+        issn_l: 0933-3657
+      - key: journal_biomedical_informatics
+        name: Journal of Biomedical Informatics
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+      - key: ieee_jbhi
+        name: IEEE Journal of Biomedical and Health Informatics
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+      - key: nejm_ai
+        name: NEJM AI
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+      - key: plos_digital_health
+        name: PLOS Digital Health
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+
+  conferences:
+    description: CLPsych 全量；其他会议先做双信号预过滤。CHI/CSCW 后续也可从 UR 频道复用。
+    items:
+      - key: clpsych
+        name: Clinical NLP Workshop
+        aliases: [CLPsych, Computational Linguistics and Clinical Psychology]
+        ingest_mode: full
+        openalex_id:
+        issn_l:
+      - key: chi
+        name: CHI Conference on Human Factors in Computing Systems
+        aliases: [CHI]
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+      - key: cscw
+        name: ACM Conference on Computer-Supported Cooperative Work and Social Computing
+        aliases: [CSCW, Proceedings of the ACM on Human-Computer Interaction]
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+      - key: chil
+        name: Conference on Health, Inference, and Learning
+        aliases: [CHIL]
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+      - key: ml4h
+        name: Machine Learning for Health
+        aliases: [ML4H]
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+      - key: mlhc
+        name: Machine Learning for Healthcare
+        aliases: [MLHC]
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+      - key: amia
+        name: AMIA Annual Symposium Proceedings
+        aliases: [AMIA Annual Symposium]
+        ingest_mode: query
+        openalex_id:
+        issn_l:
+
+  arxiv:
+    key: arxiv
+    name: arXiv
+    ingest_mode: query
+    openalex_id:
+    issn_l:
+    categories:
+      - cs.CL
+      - cs.HC
+      - cs.AI
+      - cs.LG
+      - cs.CY
+      - cs.SI
+      - stat.ML
+      - eess.AS
+    note: OpenAlex 不保证返回 arXiv category；分类约束为后续 arXiv 原生连接器保留。
+
+recall:
+  query_expression: AI_SIGNAL AND MENTAL_HEALTH_SIGNAL
+  ai_signal:
+    terms:
+      - artificial intelligence
+      - machine learning
+      - deep learning
+      - generative AI
+      - large language model
+      - large language models
+      - LLM
+      - ChatGPT
+      - foundation model
+      - natural language processing
+      - neural network
+      - computer vision
+      - speech recognition
+      - predictive model
+      - algorithmic prediction
+      - chatbot
+      - conversational agent
+      - digital phenotyping
+  mental_health_signal:
+    terms:
+      - mental health
+      - mental illness
+      - psychiatric
+      - psychiatry
+      - psychological distress
+      - depression
+      - depressive
+      - anxiety
+      - suicide
+      - suicidal
+      - self-harm
+      - psychosis
+      - schizophrenia
+      - bipolar
+      - post-traumatic stress
+      - PTSD
+      - eating disorder
+      - substance use disorder
+      - addiction
+      - psychotherapy
+      - counseling
+      - therapist
+      - psychological intervention
+      - wellbeing
+      - well-being
+      - loneliness
+      - stress
+      - hallucination
+  openalex_query_pairs:
+    - artificial intelligence mental health
+    - large language model mental health
+    - machine learning depression
+    - machine learning anxiety
+    - chatbot psychotherapy
+    - artificial intelligence psychiatry
+    - digital phenotyping suicide
+
+false_positive_rules:
+  - id: technical_stress_testing
+    description: 工程压测不是心理压力。
+    patterns: ['\bstress[- ]test(?:ing)?\b']
+    unless_terms: [mental health, psychological stress, PTSD, depression, anxiety]
+    max_domain_score: 2
+  - id: llm_hallucination_only
+    description: LLM 幻觉不等于精神症状。
+    patterns: ['\bhallucinations?\b']
+    unless_terms: [auditory hallucination, visual hallucination, psychosis, schizophrenia, psychiatric, mental health]
+    max_domain_score: 2
+  - id: emotion_or_sentiment_only
+    description: 只做情感/情绪识别且无心理健康结局。
+    patterns: ['\bsentiment analysis\b', '\bemotion recognition\b', '\baffective computing\b']
+    unless_terms: [mental health, depression, anxiety, psychiatric, suicide, therapy, psychological distress]
+    max_domain_score: 2
+  - id: physical_therapy_only
+    description: 物理/职业/言语治疗的 therapy 字面命中。
+    patterns: ['\bphysical therapy\b', '\boccupational therapy\b', '\bspeech therapy\b']
+    unless_terms: [mental health, psychotherapy, psychiatric, depression, anxiety]
+    max_domain_score: 2
+  - id: pure_neuro_biomarker
+    description: 纯神经影像/生物标志物建模，无服务、评估或心理健康结局。
+    patterns: ['\b(?:fMRI|EEG|neuroimaging|biomarker|connectome)\b']
+    unless_terms: [screening, assessment, intervention, treatment outcome, clinical workflow, mental health service]
+    max_domain_score: 2
+
+controlled_tags:
+  conditions:
+    - {id: depression, label_zh: 抑郁}
+    - {id: anxiety, label_zh: 焦虑}
+    - {id: suicide_self_harm, label_zh: 自杀与自伤}
+    - {id: psychosis_schizophrenia, label_zh: 精神病性障碍}
+    - {id: bipolar, label_zh: 双相障碍}
+    - {id: ptsd_trauma, label_zh: PTSD与创伤}
+    - {id: eating_disorders, label_zh: 进食障碍}
+    - {id: substance_use, label_zh: 物质使用}
+    - {id: wellbeing_loneliness, label_zh: 幸福感与孤独}
+    - {id: transdiagnostic, label_zh: 跨诊断}
+  applications:
+    - {id: screening_assessment, label_zh: 筛查与评估}
+    - {id: risk_prediction, label_zh: 风险预测}
+    - {id: digital_intervention, label_zh: 数字干预}
+    - {id: supportive_conversation, label_zh: 支持性对话}
+    - {id: treatment_support, label_zh: 治疗辅助}
+    - {id: clinical_decision_support, label_zh: 临床决策支持}
+    - {id: clinician_workflow, label_zh: 临床工作流}
+    - {id: crisis_detection, label_zh: 危机识别}
+    - {id: monitoring, label_zh: 状态监测}
+    - {id: service_access, label_zh: 服务可及性}
+    - {id: usability_experience, label_zh: 可用性与体验}
+    - {id: safety_ethics, label_zh: 安全与伦理}
+  populations:
+    - {id: children_adolescents, label_zh: 儿童青少年}
+    - {id: adults, label_zh: 成年人}
+    - {id: older_adults, label_zh: 老年人}
+    - {id: students, label_zh: 学生}
+    - {id: workers, label_zh: 职场人群}
+    - {id: clinical_patients, label_zh: 临床患者}
+    - {id: clinicians, label_zh: 心理健康专业人员}
+    - {id: general_population, label_zh: 一般人群}
+  ai_types:
+    - {id: machine_learning, label_zh: 机器学习}
+    - {id: deep_learning, label_zh: 深度学习}
+    - {id: nlp, label_zh: 自然语言处理}
+    - {id: llm_genai, label_zh: LLM与生成式AI}
+    - {id: conversational_ai, label_zh: 对话式AI}
+    - {id: computer_vision, label_zh: 计算机视觉}
+    - {id: speech_audio, label_zh: 语音与音频AI}
+    - {id: multimodal, label_zh: 多模态}
+    - {id: recommender_personalization, label_zh: 推荐与个性化}
+    - {id: digital_phenotyping, label_zh: 数字表型}
+  evidence_stages:
+    - {id: conceptual, label_zh: 概念观点}
+    - {id: benchmark_development, label_zh: 基准或工具开发}
+    - {id: retrospective_validation, label_zh: 回顾性验证}
+    - {id: user_study, label_zh: 用户研究}
+    - {id: prospective_study, label_zh: 前瞻性研究}
+    - {id: real_world_deployment, label_zh: 真实部署}
+    - {id: randomized_controlled_trial, label_zh: 随机对照试验}
+    - {id: systematic_review, label_zh: 系统综述}
+  risks:
+    - {id: crisis_safety, label_zh: 危机安全}
+    - {id: bias_fairness, label_zh: 偏差与公平}
+    - {id: privacy_security, label_zh: 隐私与安全}
+    - {id: clinical_harm, label_zh: 临床伤害}
+    - {id: overreliance, label_zh: 过度依赖}
+    - {id: hallucination_misinformation, label_zh: 幻觉与错误信息}
+    - {id: transparency_accountability, label_zh: 透明度与问责}
+    - {id: access_inequality, label_zh: 可及性不平等}
+
+assessment_fields:
+  clinical_validation: [none, internal, external, prospective, randomized_controlled_trial]
+  ground_truth_quality: [unknown, weak_proxy, self_report, clinician_assessed, validated_instrument, clinical_outcome]
+  booleans: [safety_evaluated, real_world_deployment]
+
+identifier_verification:
+  checked_at: "2026-07-12"
+  authority: OpenAlex official Sources API
+  method: exact display_name match; where duplicate names existed, non-null matching ISSN record was selected
+  base_url: https://api.openalex.org/sources

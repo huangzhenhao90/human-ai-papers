@@ -1,0 +1,70 @@
+{
+  "abstract": "We study and develop an algorithmic framework for incorporating “ex ante” constraints—constraints on outcomes that hold only on average—into stateful sequential search problems with costly inspection. Our framework encompasses the classical Weitzman’s Pandora’s box and its extensions to joint Markovian scheduling, which model richer processes such as multistage search with multiple layers of inspection. Ex ante constraints are particularly motivated by social considerations in algorithmic hiring, where they can adjust outcome distributions to promote equity and access. Although most work in the algorithmic fairness literature in computer science and economics has focused on incorporating such constraints into machine learning tasks like classification and regression, far less attention has been devoted to operational problems such as sequential search, with their unique intricacies. Our work aims to bridge this gap. Building on the optimality of index-based policies in the unconstrained versions of these problems, we show that optimal policies under a single ex ante constraint (e.g., demographic parity) retain an index-based structure but require (i) dual-based adjustments of the indices and (ii) randomization between two such adjustments via a “tie-breaking rule,” both easy to compute and economically interpretable. We then extend our results to multiple affine constraints by reducing the problem to a variant of the exact Carathéodory problem and providing a polynomial-time algorithm that constructs an optimal randomized dual-adjusted index-based policy satisfying all constraints simultaneously. For general affine and convex constraints, we develop a primal-dual algorithm that randomizes over a polynomial number of dual-based adjustments, yielding a near-feasible, near-optimal policy. These results rely on the key observation that a suitable relaxation of the Lagrange dual function for these constrained problems admits index-based policies akin to those in the unconstrained setting. Finally, through a numerical study, we investigate the implications of imposing socially aware ex ante constraints and their socially desirable outcomes. This paper was accepted by Vivek Farias, data science. Funding: R. Niazadeh’s research was partially supported by the Asness Junior Faculty Fellowship at The University of Chicago Booth School of Business. Supplemental Material: The online appendix and data are available at https://doi.org/10.1287/mnsc.2023.04079 .",
+  "ai_type_tags": [
+    "算法决策",
+    "算法管理"
+  ],
+  "arxiv_id": "2023.04079",
+  "authors": [
+    "Mohammad Reza Aminian",
+    "Vahideh Manshadi",
+    "Rad Niazadeh"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [],
+      "name": "Mohammad Reza Aminian",
+      "orcid": null,
+      "position": "first"
+    },
+    {
+      "affiliation": [],
+      "name": "Vahideh Manshadi",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [],
+      "name": "Rad Niazadeh",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "聚焦算法招聘公平约束，属AI核心议题",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究如何在状态序贯搜索问题中融入\"事前\"约束（即平均意义上的结果约束），以服务于算法招聘中的社会公平目标。基于Weitzman Pandora箱及马尔可夫调度的无约束最优指标策略框架，证明在单一事前约束（如人口均等）下，最优策略仍保持指标结构，但需要对指标进行对偶调整并在两种调整间随机化；多仿射约束情形可通过精确Carathéodory问题约化在多项式时间内求解。",
+      "topic_tags": [
+        "算法管理",
+        "招聘",
+        "公平性",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-05",
+  "doi": "10.1287/mnsc.2023.04079",
+  "id": "p_bYeUuFoaP9I0ziUl",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11581,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Markovian Search with Ex Ante Constraints: Theory and Applications to Socially Aware Algorithmic Hiring",
+  "title_zh": "前置约束下的马尔可夫搜索：社会感知算法招聘的理论与应用",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.04079",
+  "volume": null,
+  "year": 2026
+}

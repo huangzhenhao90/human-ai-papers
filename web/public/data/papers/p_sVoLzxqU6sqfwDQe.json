@@ -1,0 +1,72 @@
+{
+  "abstract": "We introduce WorkBench: a benchmark dataset for evaluating agents' ability to execute tasks in a workplace setting. WorkBench contains a sandbox environment with five databases, 26 tools, and 690 tasks. These tasks represent common business activities, such as sending emails and scheduling meetings. The tasks in WorkBench are challenging as they require planning, tool selection, and often multiple actions. If a task has been successfully executed, one (or more) of the database values may change. The correct outcome for each task is unique and unambiguous, which allows for robust, automated evaluation. We call this key contribution outcome-centric evaluation. We evaluate five existing ReAct agents on WorkBench, finding they successfully complete as few as 3% of tasks (Llama2-70B), and just 43% for the best-performing (GPT-4). We further find that agents' errors can result in the wrong action being taken, such as an email being sent to the wrong person. WorkBench reveals weaknesses in agents' ability to undertake common business activities, raising questions about their use in high-stakes workplace settings. WorkBench is publicly available as a free resource at https://github.com/olly-styles/WorkBench.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "Agent"
+  ],
+  "arxiv_id": "2405.00823",
+  "authors": [
+    "Olly Styles",
+    "Sam Miller",
+    "Patricio Cerda-Mardini",
+    "Tanaya Guha",
+    "Victor Sanchez"
+  ],
+  "authors_full": [
+    {
+      "name": "Olly Styles"
+    },
+    {
+      "name": "Sam Miller"
+    },
+    {
+      "name": "Patricio Cerda-Mardini"
+    },
+    {
+      "name": "Tanaya Guha"
+    },
+    {
+      "name": "Victor Sanchez"
+    },
+    {
+      "name": "Bertie Vidgen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "工作场所AI代理基准数据集，涉及办公任务自动化",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "WorkBench是一个职场任务基准，包含5个数据库、26个工具、690项业务任务（如发邮件、安排会议），采用结果导向评估。当前ReAct智能体在此基准上表现不佳，GPT-4最高仅完成43%任务，揭示了现有Agent在规划、工具选择和多步执行方面的缺陷，提示在关键业务场景部署风险。",
+      "topic_tags": [
+        "人机协作",
+        "工作设计",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2024-05-01",
+  "doi": null,
+  "id": "p_sVoLzxqU6sqfwDQe",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2405.00823v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 8724,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "WorkBench: a Benchmark Dataset for Agents in a Realistic Workplace Setting",
+  "title_zh": "WorkBench：面向现实职场环境中智能体的基准数据集",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2405.00823v2",
+  "volume": null,
+  "year": 2024
+}

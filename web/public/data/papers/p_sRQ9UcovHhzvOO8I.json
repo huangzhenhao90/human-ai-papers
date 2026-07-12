@@ -1,0 +1,70 @@
+{
+  "abstract": "Buildings account for approximately 40% of global energy consumption, and with the growing share of intermittent renewable energy sources, enabling demand-side flexibility, particularly in heating, ventilation and air conditioning systems, is essential for grid stability and energy efficiency. This paper presents a safe deep reinforcement learning-based control framework to optimize building space heating while enabling demand-side flexibility provision for power system operators. A deep deterministic policy gradient algorithm is used as the core deep reinforcement learning method, enabling the controller to learn an optimal heating strategy through interaction with the building thermal model while maintaining occupant comfort, minimizing energy cost, and providing flexibility. To address safety concerns with reinforcement learning, particularly regarding compliance with flexibility requests, we propose a real-time adaptive safety-filter to ensure that the system operates within predefined constraints during demand-side flexibility provision. The proposed real-time adaptive safety filter guarantees full compliance with flexibility requests from system operators and improves energy and cost efficiency -- achieving up to 50% savings compared to a rule-based controller -- while outperforming a standalone deep reinforcement learning-based controller in energy and cost metrics, with only a slight increase in comfort temperature violations.",
+  "ai_type_tags": [
+    "深度强化学习"
+  ],
+  "arxiv_id": "2604.16033",
+  "authors": [
+    "Colin Jüni",
+    "Mina Montazeri",
+    "Yi Guo",
+    "Federica Bellizio",
+    "Giovanni Sansavini"
+  ],
+  "authors_full": [
+    {
+      "name": "Colin Jüni"
+    },
+    {
+      "name": "Mina Montazeri"
+    },
+    {
+      "name": "Yi Guo"
+    },
+    {
+      "name": "Federica Bellizio"
+    },
+    {
+      "name": "Giovanni Sansavini"
+    },
+    {
+      "name": "Philipp Heer"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "建筑供暖深度强化学习,运营管理边缘相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "建筑能耗占全球约40%，文章提出一种基于深度强化学习的安全控制框架，用于优化建筑供暖并提供电网需求侧灵活性。采用深度确定性策略梯度（DDPG）算法，并创新性引入实时自适应安全过滤器，确保在响应灵活性请求时系统始终运行在预设约束内。实验表明该方法较规则控制器节能50%，同时兼顾舒适度与成本效率。",
+      "topic_tags": [
+        "能源管理",
+        "建筑智能化",
+        "需求侧灵活性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-04-17",
+  "doi": null,
+  "id": "p_sRQ9UcovHhzvOO8I",
+  "issue": null,
+  "journal": "arXiv:eess.SY",
+  "pdf_url": "https://arxiv.org/pdf/2604.16033v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 9372,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Safe Deep Reinforcement Learning for Building Heating Control and Demand-side Flexibility",
+  "title_zh": "建筑供暖控制与需求侧灵活性的安全深度强化学习",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://arxiv.org/abs/2604.16033v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,86 @@
+{
+  "abstract": "Research Spotlight: Auditing the “Right to Be Forgotten” in AI Recommender Systems\n                  Personalized recommendation systems power today’s e-commerce and streaming platforms, but they also raise regulatory concerns about user privacy. Under regulations such as the General Data Protection Regulation (GDPR), individuals have the “right to be forgotten.” Whereas companies can remove user records from databases, it remains unclear whether trained AI models truly forget the behavioral patterns or preferences learned from that data. If not, platforms may continue profiling users even after deletion requests.\n                  This study introduces RecAudit, a practical auditing tool that tests whether a recommender system has genuinely removed a user’s influence from its trained model. RecAudit acts as an independent verification mechanism that identifies users whose behavioral traces persist after data deletion. Across multiple real-world data sets, RecAudit substantially outperforms existing auditing and membership inference methods.\n                  By enabling organizations to detect high-risk cases and target corrective machine unlearning efforts, RecAudit provides a concrete technical pathway to operationalize data revocation rights. The framework supports platform operators and regulators in strengthening accountability and ensuring AI systems comply with evolving data protection laws.",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习",
+    "AI治理"
+  ],
+  "arxiv_id": "2024.1179",
+  "authors": [
+    "Zhihao Zhu",
+    "Yi Yang",
+    "Yangyang Fan",
+    "D.L. Lian"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Hong Kong"
+      ],
+      "name": "Zhihao Zhu",
+      "orcid": "https://orcid.org/0000-0001-5814-1939",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Hong Kong"
+      ],
+      "name": "Yi Yang",
+      "orcid": "https://orcid.org/0000-0001-8863-112X",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Hong Kong Polytechnic University"
+      ],
+      "name": "Yangyang Fan",
+      "orcid": null,
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Science and Technology of China"
+      ],
+      "name": "D.L. Lian",
+      "orcid": null,
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI推荐系统遗忘机制审计，GDPR合规研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "本研究提出 RecAudit 审计工具，检验推荐系统在用户数据删除后是否真正遗忘用户行为模式。研究表明，即使公司从数据库中移除记录，AI 模型仍可能保留学习到的偏好信息。RecAudit 通过独立验证机制识别数据删除后行为痕迹仍然存在的用户，在多个真实数据集上显著优于现有审计方法，为组织与监管机构提供操作性路径，确保 AI 系统符合 GDPR 等数据保护法规。",
+      "topic_tags": [
+        "隐私",
+        "推荐系统",
+        "算法管理",
+        "公平性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-30",
+  "doi": "10.1287/isre.2024.1179",
+  "id": "p_CWjbtvqRrkH7cj46",
+  "issue": null,
+  "journal": "ISR",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 5257,
+      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+    }
+  ],
+  "title": "Forget Me If You Can: Auditing User Data Revocation in Recommendation Systems",
+  "title_zh": "能否遗忘：推荐系统中用户数据撤销的审计研究",
+  "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
+  "url": "https://doi.org/10.1287/isre.2024.1179",
+  "volume": null,
+  "year": 2026
+}
