@@ -9,7 +9,7 @@ from pathlib import Path
 from playwright.sync_api import ConsoleMessage, Response, sync_playwright
 
 
-BASE_URL = "http://127.0.0.1:3300"
+BASE_URL = "http://localhost:3300"
 ROOT = Path(__file__).resolve().parents[1]
 SCREENSHOT_DIR = ROOT / "artifacts" / "screenshots"
 
