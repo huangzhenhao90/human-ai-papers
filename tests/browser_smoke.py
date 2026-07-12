@@ -40,6 +40,11 @@ def main() -> None:
         page.get_by_role("group", name="研究频道").get_by_text("全部领域").wait_for()
         assert page.locator(".paper-card").count() == 24
         assert "1,840" in page.locator(".result-heading").inner_text()
+        assert page.locator(".filters-desktop .search-field").is_visible()
+        assert not page.locator(".search-field--results").is_visible()
+        assert page.locator(".paper-card__footer").first.evaluate(
+            "element => getComputedStyle(element).borderTopWidth"
+        ) == "0px"
         page.screenshot(path=str(SCREENSHOT_DIR / "home-desktop.png"), full_page=True)
 
         page.get_by_role("group", name="研究频道").get_by_role(
@@ -73,6 +78,7 @@ def main() -> None:
         mobile.on("console", on_console)
         mobile.on("response", on_response)
         mobile.goto(BASE_URL, wait_until="networkidle")
+        assert mobile.locator(".search-field--results").is_visible()
         mobile.get_by_role("button", name="筛选").click()
         mobile.get_by_role("dialog", name="筛选论文").wait_for()
         mobile.wait_for_timeout(350)
@@ -86,10 +92,13 @@ def main() -> None:
         "status": "passed" if not browser_errors and not http_errors else "failed",
         "assertions": [
             "home shows 1840 unified papers",
+            "desktop search stays in the filter rail",
+            "paper tags have no divider above them",
             "mental-health channel shows 9 real scored papers",
             "paper detail opens",
             "favorite persists across routes",
             "recent page uses publication-date copy",
+            "mobile search remains visible",
             "mobile filter dialog opens and closes",
         ],
         "browser_errors": browser_errors,

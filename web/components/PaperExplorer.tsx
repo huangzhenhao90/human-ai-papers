@@ -219,19 +219,14 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
 
       <div className="explorer-layout">
         <aside className="filters-desktop" aria-label="论文筛选">
-          <FilterPanel idPrefix="desktop" activeDomain={activeDomain} values={filterValues} facets={facets} resultCount={filtered.length} totalCount={modePapers.length} activeCount={activeFilterCount} generatedAt={meta?.generated_at} onChange={changeFilter} onClear={clearFilters} />
+          <FilterPanel idPrefix="desktop" activeDomain={activeDomain} values={filterValues} facets={facets} resultCount={filtered.length} totalCount={modePapers.length} activeCount={activeFilterCount} generatedAt={meta?.generated_at} afterSummary={<div className="filter-search"><PaperSearch query={query} onChange={(value) => updateParam("q", value)} /></div>} onChange={changeFilter} onClear={clearFilters} />
         </aside>
 
         <section className="results" aria-labelledby="result-heading">
           <ChannelTabs active={activeDomain} onChange={(channel) => updateParam("domain", channel)} counts={channelCounts} />
 
           <div className="result-tools">
-            <label className="search-field">
-              <SearchIcon />
-              <span className="sr-only">搜索论文</span>
-              <input value={query} onChange={(event) => updateParam("q", event.target.value)} placeholder="搜索标题、摘要、作者或标签" type="search" />
-              {query ? <button type="button" onClick={() => updateParam("q", "")} aria-label="清空搜索"><CloseIcon /></button> : null}
-            </label>
+            <PaperSearch className="search-field--results" query={query} onChange={(value) => updateParam("q", value)} />
             <button ref={filterTriggerRef} type="button" className="mobile-filter-trigger" onClick={() => setMobileFilters(true)} aria-haspopup="dialog" aria-expanded={mobileFilters}>
               <FilterIcon />筛选{activeFilterCount ? <span>{activeFilterCount}</span> : null}
             </button>
@@ -278,6 +273,17 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
         </div>
       ) : null}
     </main>
+  );
+}
+
+function PaperSearch({ query, onChange, className = "" }: { query: string; onChange: (value: string) => void; className?: string }) {
+  return (
+    <label className={`search-field ${className}`.trim()}>
+      <SearchIcon />
+      <span className="sr-only">搜索论文</span>
+      <input value={query} onChange={(event) => onChange(event.target.value)} placeholder="搜索标题、摘要、作者或标签" type="search" />
+      {query ? <button type="button" onClick={() => onChange("")} aria-label="清空搜索"><CloseIcon /></button> : null}
+    </label>
   );
 }
 

@@ -26,6 +26,7 @@ export default function FilterPanel({
   totalCount,
   activeCount,
   generatedAt,
+  afterSummary,
   onChange,
   onClear,
 }: {
@@ -37,6 +38,7 @@ export default function FilterPanel({
   totalCount: number;
   activeCount: number;
   generatedAt?: string;
+  afterSummary?: React.ReactNode;
   onChange: (key: keyof FilterValues, value: string | number) => void;
   onClear: () => void;
 }) {
@@ -51,6 +53,8 @@ export default function FilterPanel({
         <strong>{resultCount.toLocaleString("zh-CN")}</strong>
         <span className="filter-summary__caption">当前结果 · 共 {totalCount.toLocaleString("zh-CN")} 篇</span>
       </div>
+
+      {afterSummary}
 
       <FilterGroup title="发表年份" htmlFor={`${idPrefix}-year`}>
         <select id={`${idPrefix}-year`} value={values.year} onChange={(event) => onChange("year", event.target.value)}>
