@@ -282,7 +282,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
 }
 
 function ExplorerSkeleton() {
-  return <main id="main-content" className="loading-state" aria-busy="true"><div className="skeleton skeleton--hero" /><div className="skeleton-grid"><div className="skeleton skeleton--aside" /><div><div className="skeleton skeleton--tabs" /><div className="skeleton skeleton--tools" />{[1, 2, 3].map((item) => <div className="skeleton skeleton--card" key={item} />)}</div></div><span className="sr-only">正在加载论文数据</span></main>;
+  return <main id="main-content" className="loading-state" aria-busy="true"><div className="skeleton skeleton--hero" /><div className="skeleton-grid"><div className="skeleton skeleton--aside" /><div className="skeleton-results"><div className="skeleton skeleton--tabs" /><div className="skeleton skeleton--tools" />{[1, 2, 3].map((item) => <div className="skeleton skeleton--card" key={item} />)}</div></div><span className="sr-only">正在加载论文数据</span></main>;
 }
 
 function ExplorerError({ error, onRetry }: { error: Error; onRetry: () => void }) {
