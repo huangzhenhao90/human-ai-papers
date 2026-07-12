@@ -212,8 +212,6 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
         <div className="hero__spectrum"><Spectrum /><span>ORGANIZATION</span><span>INTERACTION</span><span>MENTAL HEALTH</span></div>
       </section>
 
-      <ChannelTabs active={activeDomain} onChange={(channel) => updateParam("domain", channel)} counts={channelCounts} />
-
       {demo ? <div className="notice notice--demo"><b>开发预览</b><span>尚未读到发布数据，当前展示小型示意样本。</span></div> : null}
       {staleChannels.length || pendingChannels.length || failures.length ? (
         <div className="notice notice--warning" role="status"><b>数据更新提示</b><span>{pendingChannels.length ? `${pendingChannels.map((channel) => isChannel(channel) ? CHANNELS[channel].label : channel).join("、")} 频道正在回填。` : ""}{staleChannels.length ? ` ${staleChannels.join("、")} 频道沿用上一版成功快照。` : ""}{failures.length ? ` 本轮有 ${failures.length} 个来源失败。` : ""}</span></div>
@@ -225,6 +223,8 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
         </aside>
 
         <section className="results" aria-labelledby="result-heading">
+          <ChannelTabs active={activeDomain} onChange={(channel) => updateParam("domain", channel)} counts={channelCounts} />
+
           <div className="result-tools">
             <label className="search-field">
               <SearchIcon />
@@ -282,7 +282,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
 }
 
 function ExplorerSkeleton() {
-  return <main id="main-content" className="loading-state" aria-busy="true"><div className="skeleton skeleton--hero" /><div className="skeleton skeleton--tabs" /><div className="skeleton-grid"><div className="skeleton skeleton--aside" /><div>{[1, 2, 3].map((item) => <div className="skeleton skeleton--card" key={item} />)}</div></div><span className="sr-only">正在加载论文数据</span></main>;
+  return <main id="main-content" className="loading-state" aria-busy="true"><div className="skeleton skeleton--hero" /><div className="skeleton-grid"><div className="skeleton skeleton--aside" /><div><div className="skeleton skeleton--tabs" /><div className="skeleton skeleton--tools" />{[1, 2, 3].map((item) => <div className="skeleton skeleton--card" key={item} />)}</div></div><span className="sr-only">正在加载论文数据</span></main>;
 }
 
 function ExplorerError({ error, onRetry }: { error: Error; onRetry: () => void }) {

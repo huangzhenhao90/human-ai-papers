@@ -94,6 +94,7 @@ svg { display: block; }
 .channel-tabs button > span:last-child { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
 .channel-tabs b { font-size: 13px; font-weight: 650; }
 .channel-tabs small { color: var(--muted); font: 500 9px/1.3 var(--utility); }
+.results > .channel-tabs { margin-bottom: 10px; }
 
 .notice { display: flex; align-items: baseline; gap: 10px; margin: 12px 0 -2px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 5px; font-size: 11px; }
 .notice b { white-space: nowrap; }
@@ -206,7 +207,8 @@ svg { display: block; }
 .loading-state { padding: 40px 0; }
 .skeleton { border-radius: 7px; background: linear-gradient(100deg, #eef3f1 20%, #f7f9f8 36%, #eef3f1 52%); background-size: 200% 100%; animation: skeleton 1.35s linear infinite; }
 .skeleton--hero { width: 65%; height: 110px; }
-.skeleton--tabs { width: 100%; height: 58px; margin-top: 28px; }
+.skeleton--tabs { width: 100%; height: 58px; }
+.skeleton--tools { width: 100%; height: 38px; margin: 10px 0 18px; }
 .skeleton-grid { display: grid; grid-template-columns: 260px 1fr; gap: 24px; margin-top: 24px; }
 .skeleton--aside { height: 420px; }
 .skeleton--card { height: 170px; margin-bottom: 8px; }
@@ -348,6 +350,8 @@ svg { display: block; }
   .main-nav .rss-link { margin-left: auto; }
   .hero { grid-template-columns: 1fr; gap: 24px; }
   .hero__spectrum { max-width: 440px; }
+  .skeleton-grid { grid-template-columns: 1fr; }
+  .skeleton--aside { display: none; }
   .explorer-layout { grid-template-columns: minmax(0, 1fr); padding-top: 20px; }
   .filters-desktop { display: none; }
   .result-tools { grid-template-columns: minmax(0, 1fr) auto auto; }
@@ -392,8 +396,8 @@ svg { display: block; }
   .paper-card__metrics { width: 100%; justify-content: flex-end; }
   .empty-state { min-height: 260px; padding: 24px 20px; }
   .skeleton--hero { width: 100%; }
-  .skeleton-grid { grid-template-columns: 1fr; gap: 0; }
-  .skeleton--aside { display: none; }
+  .skeleton--tabs { height: 114px; }
+  .skeleton-grid { gap: 0; }
   .detail-shell { padding: 22px 0 42px; }
   .paper-detail { margin-top: 14px; }
   .paper-detail__header { padding: 20px 18px 24px; }
