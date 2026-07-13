@@ -8,6 +8,10 @@
 
 网站打开后直接进入统一论文流。同一论文可属于多个频道；页面只显示一次，但保留每个频道自己的相关度、摘要与标签。
 
+正式网站：https://human-ai-papers.vercel.app
+
+GitHub：https://github.com/huangzhenhao90/human-ai-papers
+
 频道不是写死在页面中的。名称、顺序、颜色、是否必需与数据目录统一登记在 `config/channels.yaml`；发布层、校验器和前端会读取同一份注册信息，为后续增加第四、第五个频道保留了稳定入口。
 
 ## 当前数据
@@ -140,7 +144,5 @@ Python：
 
 ## 暂未执行
 
-- GitHub 远端创建与推送
-- Vercel 部署
 - 旧网站下线或跳转
 - 心理健康历史全量付费回填
