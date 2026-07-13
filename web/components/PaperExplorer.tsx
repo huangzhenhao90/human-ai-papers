@@ -40,6 +40,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const { papers, meta, updates, loading, error, demo, reload } = usePapersData();
+  const activeMode: ExplorerMode = pathname === "/recent" ? "recent" : pathname === "/favorites" ? "favorites" : mode;
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [readIds, setReadIds] = useState<Set<string>>(new Set());
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
@@ -103,10 +104,10 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   }, [pathname, router, searchParams]);
 
   const modePapers = useMemo(() => {
-    if (mode === "recent") return papers.filter((paper) => isPublishedInLastSevenDays(paper));
-    if (mode === "favorites") return papers.filter((paper) => favorites.has(paper.id));
+    if (activeMode === "recent") return papers.filter((paper) => isPublishedInLastSevenDays(paper));
+    if (activeMode === "favorites") return papers.filter((paper) => favorites.has(paper.id));
     return papers;
-  }, [favorites, mode, papers]);
+  }, [activeMode, favorites, papers]);
 
   const channelCounts = useMemo(() => {
     const counts: Partial<Record<ChannelId | "all", number>> = { all: modePapers.length };
@@ -143,7 +144,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
     return result;
   }, [activeDomain, aiType, journal, minScore, query, scopedPapers, sort, topic, year]);
 
-  useEffect(() => setVisibleCount(PAGE_SIZE), [activeDomain, aiType, journal, minScore, mode, query, sort, topic, year]);
+  useEffect(() => setVisibleCount(PAGE_SIZE), [activeDomain, activeMode, aiType, journal, minScore, query, sort, topic, year]);
 
   const activeFilterCount = [activeDomain, query, year, journal, topic, aiType].filter(Boolean).length + (minScore > 3 ? 1 : 0) + (sort !== "recent" ? 1 : 0);
   const filterValues: FilterValues = { year, journal, topic, aiType, minScore };
@@ -151,7 +152,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   const staleChannels = Array.isArray(updates?.stale_channels) ? updates!.stale_channels! : [];
   const pendingChannels = Array.isArray(updates?.pending_channels) ? updates!.pending_channels! : [];
   const failures = Array.isArray(updates?.failures) ? updates!.failures! : [];
-  const hero = heroCopy[mode];
+  const hero = heroCopy[activeMode];
 
   function changeFilter(key: keyof FilterValues, value: string | number) {
     const queryKey = key === "aiType" ? "aitype" : key === "minScore" ? "minscore" : key;
@@ -207,7 +208,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
           </div>
 
           <div className="result-heading">
-            <div><span className="eyebrow">PAPER STREAM</span><h2 id="result-heading">{activeDomain ? channelLookup[activeDomain]?.label || activeDomain : mode === "favorites" ? "我的收藏" : mode === "recent" ? "最近发表" : "统一论文流"}</h2></div>
+            <div><span className="eyebrow">PAPER STREAM</span><h2 id="result-heading">{activeDomain ? channelLookup[activeDomain]?.label || activeDomain : activeMode === "favorites" ? "我的收藏" : activeMode === "recent" ? "最近发表" : "统一论文流"}</h2></div>
             <label className="sort-field">
               <span>排序</span>
               <select value={sort} onChange={(event) => updateParam("sort", event.target.value)}>
@@ -219,7 +220,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
           </div>
 
           {!filtered.length ? (
-            <EmptyState mode={mode} activeDomain={activeDomain} activeLabel={activeDomain ? channelLookup[activeDomain]?.label : undefined} pending={Boolean(activeDomain && pendingChannels.includes(activeDomain))} hasFilters={activeFilterCount > 0} onClear={clearFilters} />
+            <EmptyState mode={activeMode} activeDomain={activeDomain} activeLabel={activeDomain ? channelLookup[activeDomain]?.label : undefined} pending={Boolean(activeDomain && pendingChannels.includes(activeDomain))} hasFilters={activeFilterCount > 0} onClear={clearFilters} />
           ) : (
             <>
               <div className="paper-list">

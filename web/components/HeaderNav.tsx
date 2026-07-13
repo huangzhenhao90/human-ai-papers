@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { BookmarkIcon, RssIcon } from "@/components/Icons";
 import { Spectrum } from "@/components/Spectrum";
 import { readFavorites, storageEvents } from "@/lib/storage";
@@ -13,6 +13,7 @@ const links = [
   { href: "/favorites", label: "我的收藏", favorite: true },
   { href: "/about", label: "关于" },
 ];
+const explorerPaths = new Set(["/", "/recent", "/favorites"]);
 
 export default function HeaderNav() {
   const pathname = usePathname();
@@ -29,6 +30,13 @@ export default function HeaderNav() {
     };
   }, []);
 
+  function navigateWithinExplorer(event: MouseEvent<HTMLAnchorElement>, href: string) {
+    if (!explorerPaths.has(pathname) || !explorerPaths.has(href) || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    window.history.pushState(null, "", href);
+    window.scrollTo({ top: 0 });
+  }
+
   return (
     <header className="site-header">
       <Spectrum />
@@ -41,13 +49,16 @@ export default function HeaderNav() {
         <nav className="main-nav" aria-label="主导航">
           {links.map((link) => {
             const active = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
-            return (
-              <Link href={link.href} key={link.href} className={active ? "is-active" : ""} aria-current={active ? "page" : undefined}>
+            const instant = explorerPaths.has(pathname) && explorerPaths.has(link.href);
+            const label = (
+              <>
                 {link.favorite ? <BookmarkIcon className="nav-icon" filled={active} /> : null}
                 {link.label}
                 {link.favorite && favoriteCount > 0 ? <span className="nav-count">{favoriteCount}</span> : null}
-              </Link>
+              </>
             );
+            if (instant) return <a href={link.href} onClick={(event) => navigateWithinExplorer(event, link.href)} key={link.href} className={active ? "is-active" : ""} aria-current={active ? "page" : undefined}>{label}</a>;
+            return <Link href={link.href} key={link.href} className={active ? "is-active" : ""} aria-current={active ? "page" : undefined}>{label}</Link>;
           })}
           <a href="/rss.xml" className="rss-link" aria-label="RSS 订阅"><RssIcon className="nav-icon" />RSS</a>
         </nav>
