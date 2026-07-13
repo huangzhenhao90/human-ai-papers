@@ -39,7 +39,9 @@ def main() -> None:
         page.get_by_role("heading", name="追踪 AI 如何改变人、组织与心理健康").wait_for()
         page.get_by_role("group", name="研究频道").get_by_text("全部领域").wait_for()
         assert page.locator(".paper-card").count() == 24
-        assert "1,840" in page.locator(".result-heading").inner_text()
+        assert "1,840" in page.locator(".filters-desktop .filter-summary").inner_text()
+        assert "篇论文" not in page.locator(".result-heading").inner_text()
+        assert page.locator(".result-heading .sort-field").is_visible()
         assert page.locator(".filters-desktop .search-field").is_visible()
         assert not page.locator(".search-field--results").is_visible()
         assert page.locator(".paper-card__footer").first.evaluate(
@@ -54,7 +56,7 @@ def main() -> None:
             "() => new URLSearchParams(window.location.search).get('domain') === 'mh'"
         )
         page.get_by_text("AI和大语言模型时代数字心理健康研究优先事项再审视").wait_for()
-        assert "9 篇论文" in page.locator(".result-heading").inner_text()
+        assert "9" in page.locator(".filters-desktop .filter-summary").inner_text()
         page.screenshot(path=str(SCREENSHOT_DIR / "mental-health-desktop.png"), full_page=True)
 
         first_card = page.locator(".paper-card").first
@@ -93,6 +95,7 @@ def main() -> None:
         "assertions": [
             "home shows 1840 unified papers",
             "desktop search stays in the filter rail",
+            "sort control replaces the duplicated result count",
             "paper tags have no divider above them",
             "mental-health channel shows 9 real scored papers",
             "paper detail opens",

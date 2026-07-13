@@ -230,6 +230,10 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
             <button ref={filterTriggerRef} type="button" className="mobile-filter-trigger" onClick={() => setMobileFilters(true)} aria-haspopup="dialog" aria-expanded={mobileFilters}>
               <FilterIcon />筛选{activeFilterCount ? <span>{activeFilterCount}</span> : null}
             </button>
+          </div>
+
+          <div className="result-heading">
+            <div><span className="eyebrow">PAPER STREAM</span><h2 id="result-heading">{activeDomain ? CHANNELS[activeDomain].label : mode === "favorites" ? "我的收藏" : mode === "recent" ? "最近发表" : "统一论文流"}</h2></div>
             <label className="sort-field">
               <span>排序</span>
               <select value={sort} onChange={(event) => updateParam("sort", event.target.value)}>
@@ -238,11 +242,6 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
                 <option value="cited">引用数</option>
               </select>
             </label>
-          </div>
-
-          <div className="result-heading">
-            <div><span className="eyebrow">PAPER STREAM</span><h2 id="result-heading">{activeDomain ? CHANNELS[activeDomain].label : mode === "favorites" ? "我的收藏" : mode === "recent" ? "最近发表" : "统一论文流"}</h2></div>
-            <p><b>{filtered.length.toLocaleString("zh-CN")}</b> 篇论文</p>
           </div>
 
           {!filtered.length ? (
@@ -288,7 +287,7 @@ function PaperSearch({ query, onChange, className = "" }: { query: string; onCha
 }
 
 function ExplorerSkeleton() {
-  return <main id="main-content" className="loading-state" aria-busy="true"><div className="skeleton skeleton--hero" /><div className="skeleton-grid"><div className="skeleton skeleton--aside" /><div className="skeleton-results"><div className="skeleton skeleton--tabs" /><div className="skeleton skeleton--tools" />{[1, 2, 3].map((item) => <div className="skeleton skeleton--card" key={item} />)}</div></div><span className="sr-only">正在加载论文数据</span></main>;
+  return <main id="main-content" className="loading-state" aria-busy="true"><div className="skeleton skeleton--hero" /><div className="skeleton-grid"><div className="skeleton skeleton--aside" /><div className="skeleton-results"><div className="skeleton skeleton--tabs" />{[1, 2, 3].map((item) => <div className="skeleton skeleton--card" key={item} />)}</div></div><span className="sr-only">正在加载论文数据</span></main>;
 }
 
 function ExplorerError({ error, onRetry }: { error: Error; onRetry: () => void }) {
