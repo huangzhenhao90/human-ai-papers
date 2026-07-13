@@ -1,0 +1,85 @@
+name: Daily Unified Update
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+    inputs:
+      mh_mode:
+        description: "心理健康更新模式；execute 会产生小批量付费调用"
+        required: true
+        default: skip
+        type: choice
+        options: [skip, fetch, dry-run, execute]
+      mh_limit:
+        description: "心理健康候选及评分硬上限"
+        required: true
+        default: "12"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-unified-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/checkout@v4
+        with:
+          repository: huangzhenhao90/ob-ai-papers
+          path: upstreams/ob-ai-papers
+          fetch-depth: 1
+      - uses: actions/checkout@v4
+        with:
+          repository: huangzhenhao90/ur-ai-papers
+          path: upstreams/ur-ai-papers
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Update, build, and validate
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          MINIMAX_BASE_URL: https://api.minimaxi.com/v1
+          MINIMAX_MODEL: MiniMax-M2.7
+        run: |
+          python scripts/update_project.py \
+            --ob upstreams/ob-ai-papers \
+            --ur upstreams/ur-ai-papers \
+            --ob-ref HEAD \
+            --ur-ref HEAD \
+            --skip-fetch-remotes \
+            --mh-mode "${{ inputs.mh_mode || 'skip' }}" \
+            --mh-limit "${{ inputs.mh_limit || '12' }}" \
+            --site-url "${SITE_URL:-https://human-ai-papers.vercel.app}"
+      - run: pytest -q
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci && npm run typecheck && npm run build
+        working-directory: web
+      - name: Commit public artifacts if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web/public/data web/public/rss.xml data/upstream data/reports/unified-publish-report.json data/exports/mental-health
+          if git diff --cached --quiet; then
+            echo "No public data changes"
+          else
+            git add data/reports/update-run.json
+            git commit -m "chore: update unified paper index $(date -u +%F)"
+            git push
+          fi

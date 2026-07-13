@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 from .build_rss import build_rss_xml
+from .channel_registry import default_registry_path, load_channel_registry, resolve_channel_data_dir
 from .io_utils import json_bytes, read_json, replace_json_directory, write_bytes, write_json
 from .merge_channels import merge_channel_records_with_diagnostics
 from .normalize_contract import ChannelSnapshot, load_channel_snapshot
@@ -153,49 +154,55 @@ def _channel_coverage(
     }
 
 
-def _resolve_mh_dir(upstream_dir: Path, mh_dir: Path | None) -> Path | None:
-    candidates = [mh_dir] if mh_dir is not None else [
-        upstream_dir / "mh",
-        upstream_dir.parent / "exports/mental-health",
-    ]
-    for candidate in candidates:
-        if candidate is not None and (candidate / "papers.json").is_file():
-            return candidate
-    return None
-
-
 def build_unified_index(
     *,
     upstream_dir: Path,
     output_dir: Path,
     report_path: Path,
     mh_dir: Path | None = None,
+    registry_path: Path | None = None,
     start_year: int = 2023,
     rss_path: Path | None = None,
-    site_url: str = "http://localhost:3000",
+    site_url: str = "http://localhost:3300",
+    stale_channels: list[str] | None = None,
+    failures: list[dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     """Build all public JSON plus an auditable canonical-key report."""
 
+    definitions = load_channel_registry(registry_path or default_registry_path())
+    project_root = Path(__file__).resolve().parents[1]
+    stale = sorted(set(stale_channels or []))
+    update_failures = list(failures or [])
     snapshots: list[ChannelSnapshot] = []
-    for channel in ("ob", "ur"):
-        channel_dir = upstream_dir / channel
+    pending_channels: list[str] = []
+    for definition in definitions:
+        upstream_override = upstream_dir / definition.id
+        if definition.id == "mh" and mh_dir is not None:
+            channel_dir = mh_dir
+        elif definition.id == "mh" and (upstream_override / "papers.json").is_file():
+            channel_dir = upstream_override
+        else:
+            channel_dir = resolve_channel_data_dir(
+                definition, project_root=project_root, upstream_dir=upstream_dir
+            )
+        if channel_dir is None or not (channel_dir / "papers.json").is_file():
+            if definition.required:
+                raise RuntimeError(
+                    f"build unified index: required channel={definition.id} has no snapshot at {channel_dir}"
+                )
+            pending_channels.append(definition.id)
+            continue
         try:
-            snapshots.append(load_channel_snapshot(channel_dir, channel))
+            snapshots.append(load_channel_snapshot(channel_dir, definition.id))
         except RuntimeError as exc:
+            if not definition.required:
+                raise RuntimeError(
+                    f"build unified index: optional channel={definition.id} is invalid: {exc}"
+                ) from exc
             raise RuntimeError(
-                f"build unified index: required channel={channel} could not be loaded; "
+                f"build unified index: required channel={definition.id} could not be loaded; "
                 f"run scripts/sync_legacy.py first: {exc}"
             ) from exc
-
-    selected_mh_dir = _resolve_mh_dir(upstream_dir, mh_dir)
-    pending_channels: list[str] = []
-    if selected_mh_dir is None:
-        pending_channels.append("mh")
-    else:
-        try:
-            snapshots.append(load_channel_snapshot(selected_mh_dir, "mh"))
-        except RuntimeError as exc:
-            raise RuntimeError(f"build unified index: optional channel=mh is invalid: {exc}") from exc
 
     source_records = [record for snapshot in snapshots for record in snapshot.records]
     excluded_before_start_year = sorted(
@@ -238,6 +245,9 @@ def build_unified_index(
             for snapshot in snapshots
         },
         "pending_channels": pending_channels,
+        "stale_channels": stale,
+        "failures": update_failures,
+        "channel_registry": [definition.public_dict() for definition in definitions],
     }
     data_version = hashlib.sha256(json_bytes(version_payload)).hexdigest()[:16]
     upstream_generated_at = _upstream_generated_at(snapshots)
@@ -262,11 +272,12 @@ def build_unified_index(
             "cross_channel_papers": sum(len(paper["channels"]) > 1 for paper in public_papers),
         },
         "channels": {
-            channel: {
-                "papers": channel_counts.get(channel, 0),
-                "status": "pending" if channel in pending_channels else "ready",
+            definition.id: {
+                **definition.public_dict(),
+                "papers": channel_counts.get(definition.id, 0),
+                "status": "pending" if definition.id in pending_channels else "stale" if definition.id in stale else "ready",
             }
-            for channel in ("ob", "ur", "mh")
+            for definition in definitions
         },
         "facets": _facet_counts(public_papers),
     }
@@ -277,13 +288,16 @@ def build_unified_index(
         "start_year": start_year,
         "channels": {
             **{
-                snapshot.channel: _channel_coverage(
-                    snapshot,
-                    included_records=sum(
-                        record["_channel"] == snapshot.channel for record in all_records
+                snapshot.channel: {
+                    **_channel_coverage(
+                        snapshot,
+                        included_records=sum(
+                            record["_channel"] == snapshot.channel for record in all_records
+                        ),
+                        canonical_memberships=channel_counts.get(snapshot.channel, 0),
                     ),
-                    canonical_memberships=channel_counts.get(snapshot.channel, 0),
-                )
+                    "status": "stale" if snapshot.channel in stale else "ready",
+                }
                 for snapshot in snapshots
             },
             **{
@@ -297,6 +311,8 @@ def build_unified_index(
             },
         },
         "pending_channels": pending_channels,
+        "stale_channels": stale,
+        "failures": update_failures,
     }
     skipped = [
         {"channel": snapshot.channel, **item}
@@ -308,10 +324,10 @@ def build_unified_index(
         "built_at": built_at,
         "upstream_generated_at": upstream_generated_at,
         "data_version": data_version,
-        "status": "partial" if pending_channels or skipped else "ok",
+        "status": "partial" if pending_channels or stale or update_failures or skipped else "ok",
         "pending_channels": pending_channels,
-        "stale_channels": [],
-        "failures": [],
+        "stale_channels": stale,
+        "failures": update_failures,
         "skipped": skipped,
         "counts": {
             "source_records": len(source_records),
@@ -321,7 +337,7 @@ def build_unified_index(
         },
     }
     report = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": built_at,
         "built_at": built_at,
         "upstream_generated_at": upstream_generated_at,
@@ -335,6 +351,9 @@ def build_unified_index(
             for snapshot in snapshots
         },
         "pending_channels": pending_channels,
+        "stale_channels": stale,
+        "failures": update_failures,
+        "channel_registry": [definition.public_dict() for definition in definitions],
         "counts": {
             "input_records": len(source_records),
             "included_records": len(all_records),

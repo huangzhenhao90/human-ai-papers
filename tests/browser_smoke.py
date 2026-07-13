@@ -12,6 +12,9 @@ from playwright.sync_api import ConsoleMessage, Response, sync_playwright
 BASE_URL = "http://localhost:3300"
 ROOT = Path(__file__).resolve().parents[1]
 SCREENSHOT_DIR = ROOT / "artifacts" / "screenshots"
+META = json.loads((ROOT / "web/public/data/meta.json").read_text(encoding="utf-8"))
+TOTAL_PAPERS = int(META["totals"]["papers"])
+MH_PAPERS = int(META["channels"]["mh"]["papers"])
 
 
 def main() -> None:
@@ -39,7 +42,7 @@ def main() -> None:
         page.get_by_role("heading", name="追踪 AI 如何改变人、组织与心理健康").wait_for()
         page.get_by_role("group", name="研究频道").get_by_text("全部领域").wait_for()
         assert page.locator(".paper-card").count() == 24
-        assert "1,840" in page.locator(".filters-desktop .filter-summary").inner_text()
+        assert f"{TOTAL_PAPERS:,}" in page.locator(".filters-desktop .filter-summary").inner_text()
         assert "篇论文" not in page.locator(".result-heading").inner_text()
         assert page.locator(".result-heading .sort-field").is_visible()
         assert page.locator(".filters-desktop .search-field").is_visible()
@@ -50,13 +53,13 @@ def main() -> None:
         page.screenshot(path=str(SCREENSHOT_DIR / "home-desktop.png"), full_page=True)
 
         page.get_by_role("group", name="研究频道").get_by_role(
-            "button", name=re.compile(r"心理健康\s*9 篇")
+            "button", name=re.compile(rf"心理健康\s*{MH_PAPERS} 篇")
         ).click()
         page.wait_for_function(
             "() => new URLSearchParams(window.location.search).get('domain') === 'mh'"
         )
         page.get_by_text("AI和大语言模型时代数字心理健康研究优先事项再审视").wait_for()
-        assert "9" in page.locator(".filters-desktop .filter-summary").inner_text()
+        assert str(MH_PAPERS) in page.locator(".filters-desktop .filter-summary").inner_text()
         page.screenshot(path=str(SCREENSHOT_DIR / "mental-health-desktop.png"), full_page=True)
 
         first_card = page.locator(".paper-card").first
@@ -93,11 +96,11 @@ def main() -> None:
     result = {
         "status": "passed" if not browser_errors and not http_errors else "failed",
         "assertions": [
-            "home shows 1840 unified papers",
+            f"home shows {TOTAL_PAPERS} unified papers",
             "desktop search stays in the filter rail",
             "sort control replaces the duplicated result count",
             "paper tags have no divider above them",
-            "mental-health channel shows 9 real scored papers",
+            f"mental-health channel shows {MH_PAPERS} real scored papers",
             "paper detail opens",
             "favorite persists across routes",
             "recent page uses publication-date copy",

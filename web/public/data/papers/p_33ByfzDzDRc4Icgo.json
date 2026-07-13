@@ -1,0 +1,83 @@
+{
+  "abstract": "When algorithmic predictors inform resource allocation in high-stakes domains such as healthcare, these predictors must account for strategic manipulation of input features. The typical solution is to redesign the predictor itself to explicitly account for strategic interactions. In practice, however, decision makers are often constrained to adjusting coarser levers within existing prediction pipelines. For example, healthcare organizations often select which features to exclude based on perceived manipulability, while using standard regularization procedures to shrink the coefficients of retained features. In this work, we initiate a formal study of strategic classification through feature selection and its interaction with ridge regularization. Our main finding is that excluding individual features based on their manipulability alone is generally suboptimal. We provide a fine-grained characterization of the performance of a feature subset under optimal regularization, yielding new insights for policy design. Motivated by this characterization, we develop a practical algorithm for jointly choosing the feature set and the level of ridge regularization. Through a real-world case study on a healthcare payments benchmark, we illustrate how our algorithm can guide the design of coarse policy levers in practice. Our results provide a principled, practical framework for mitigating the effects of strategic behavior in algorithmic decision-making systems.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "算法决策",
+    "推荐算法"
+  ],
+  "arxiv_id": "2606.18867",
+  "authors": [
+    "Jivat Neet Kaur",
+    "Pratik Patil",
+    "Divya Shanmugam",
+    "Emma Pierson",
+    "Michael I. Jordan"
+  ],
+  "authors_full": [
+    {
+      "name": "Jivat Neet Kaur"
+    },
+    {
+      "name": "Pratik Patil"
+    },
+    {
+      "name": "Divya Shanmugam"
+    },
+    {
+      "name": "Emma Pierson"
+    },
+    {
+      "name": "Michael I. Jordan"
+    },
+    {
+      "name": "Nika Haghtalab"
+    },
+    {
+      "name": "Meena Jagadeesan"
+    },
+    {
+      "name": "Ahmed Alaa"
+    },
+    {
+      "name": "Serena Wang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "战略特征选择与正则化，医疗决策场景边缘相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究算法预测系统在医疗等高风险领域面临战略特征操纵时的特征选择问题。决策者常只能调整预测管道中的粗粒度杠杆（如根据可操纵性排除特征）。形式化分析表明，仅依据可操纵性排除特征通常非最优。研究给出了特征子集在最优正则化下的性能精细刻画，提出联合选择特征集与岭正则化参数的算法。通过医疗支付基准数据集验证了框架有效性，为缓解算法决策系统中的战略行为提供了实用框架。",
+      "topic_tags": [
+        "决策",
+        "医疗",
+        "算法管理",
+        "公平性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-17",
+  "doi": null,
+  "id": "p_33ByfzDzDRc4Icgo",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2606.18867v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11780,
+      "revision": "bcdda0ebbb6060c402faed2b43fe8ba11a4215bc"
+    }
+  ],
+  "title": "Strategic Feature Selection",
+  "title_zh": "战略性特征选择",
+  "unified_ingested_at": "2026-07-13T02:16:28.798793Z",
+  "url": "https://arxiv.org/abs/2606.18867v1",
+  "volume": null,
+  "year": 2026
+}

@@ -18,6 +18,7 @@ from publisher.build_index import build_unified_index
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--upstream-dir", type=Path, default=PROJECT_ROOT / "data/upstream")
+    parser.add_argument("--registry", type=Path, default=PROJECT_ROOT / "config/channels.yaml")
     parser.add_argument(
         "--mh-dir",
         type=Path,
@@ -42,7 +43,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--site-url",
-        default=os.getenv("SITE_URL", "http://localhost:3000"),
+        default=os.getenv("SITE_URL", "http://localhost:3300"),
         help="Absolute website URL used in RSS links",
     )
     return parser.parse_args()
@@ -54,6 +55,7 @@ def main() -> int:
         report = build_unified_index(
             upstream_dir=args.upstream_dir,
             mh_dir=args.mh_dir,
+            registry_path=args.registry,
             output_dir=args.output_dir,
             report_path=args.report,
             start_year=args.start_year,

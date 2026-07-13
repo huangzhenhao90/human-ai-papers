@@ -1,0 +1,53 @@
+{
+  "abstract": "Team science holds that leadership is contingent: it helps only under specific conditions, and capable, autonomous teams may need none at all. We ask the analogous question for multi-agent LLM teams: under what measurable conditions does process-level coordination control add value, and do those conditions match what team science predicts? We use behavioral signatures (majority lock-in, exploration, recovery from an incorrect round-0 consensus) and per-action ablations, clean because each controller is an explicit action set, not a monolithic prompt. We operationalize three classical leadership styles (transactional, transformational, situational) as controllers over a shared action vocabulary (explore, revise, accept, synthesize). A matched controller with the same actions but an arbitrary rule recovers no better than majority voting, so the theory-derived rule, not the vocabulary, does the work. Across four task regimes and three open-weight model families, no controller dominates by accuracy, as the contingency view predicts: transactional control matches a shared round-0 vote on all 12 (model, regime) combinations to within 1.3pp, and gains appear only on the one combination where the round-0 majority is unreliable (llama-4-scout social; situational +8pp over flat). A recovery-advantage account, tested with four boundary probes, says a controller beats plain interaction only where the round-0 majority is unreliable, the task is recoverable, and undirected interaction does not already repair it. These regions map onto contingency theory (leadership substitutes, path-goal redundancy, the situational readiness gap), so a largely null accuracy result is what the theory predicts, not a failure of the controllers. We read process-level coordination control as a contingency to be measured and theory-mapped, not a leaderboard to be topped.",
+  "ai_type_tags": [
+    "LLM",
+    "多智能体"
+  ],
+  "arxiv_id": "2606.19111",
+  "authors": [
+    "Haewoon Kwak"
+  ],
+  "authors_full": [
+    {
+      "name": "Haewoon Kwak"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "多智能体LLM团队领导力，协调控制，OB核心议题",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究多智能体LLM团队中协调控制何时产生价值。通过行为签名（多数锁定、探索、从错误共识恢复）和消融实验，将三种经典领导风格（交易型、变革型、情境型）操作化为对共享行动词汇的控制器。在四种任务模式和三种模型族上的实验表明：无控制器能主导准确率，符合权变理论预测；仅在round-0多数不可靠时，情境型控制才显现优势（如llama-4-scout社会任务中提升8pp）。恢复优势边界得到验证：控制器优势仅在多数不可靠+任务可恢复+无指导交互无法解决的条件下出现。",
+      "topic_tags": [
+        "团队",
+        "领导力",
+        "人机协作",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-17",
+  "doi": null,
+  "id": "p_Y-e8kBF2AISlC8tM",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2606.19111v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11763,
+      "revision": "bcdda0ebbb6060c402faed2b43fe8ba11a4215bc"
+    }
+  ],
+  "title": "Leadership as Coordination Control: Behavioral Signatures and the Recovery-Advantage Boundary in Multi-Agent LLM Teams",
+  "title_zh": "领导力作为协调控制：多智能体LLM团队中的行为特征与恢复优势边界",
+  "unified_ingested_at": "2026-07-13T02:16:28.798793Z",
+  "url": "https://arxiv.org/abs/2606.19111v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,5 +1,5 @@
 import { demoPapers } from "@/lib/demo-data";
-import { CHANNEL_ORDER, isChannel, type ChannelProfile, type Meta, type Paper, type PaperDetail, type Updates } from "@/lib/types";
+import { type ChannelProfile, type Meta, type Paper, type PaperDetail, type Updates } from "@/lib/types";
 
 export class DataLoadError extends Error {
   constructor(public readonly path: string, message?: string) {
@@ -48,12 +48,12 @@ export function normalizePaper(value: unknown): Paper {
     ? raw.channel_profiles
     : {}) as Record<string, unknown>;
   const channel_profiles: Paper["channel_profiles"] = {};
-  for (const channel of CHANNEL_ORDER) {
+  for (const channel of Object.keys(rawProfiles)) {
     const normalized = normalizeProfile(rawProfiles[channel]);
     if (normalized) channel_profiles[channel] = normalized;
   }
-  const channels = asStringArray(raw.channels).filter(isChannel);
-  const legacyChannel = channels[0] || (isChannel(raw.channel) ? raw.channel : null);
+  const channels = asStringArray(raw.channels);
+  const legacyChannel = channels[0] || (typeof raw.channel === "string" ? raw.channel : null);
   if (!Object.keys(channel_profiles).length && legacyChannel) {
     channel_profiles[legacyChannel] = {
       ai_score: Number(raw.ai_score ?? 0),
@@ -65,7 +65,7 @@ export function normalizePaper(value: unknown): Paper {
   }
   const normalizedChannels = channels.length
     ? channels
-    : CHANNEL_ORDER.filter((channel) => Boolean(channel_profiles[channel]));
+    : Object.keys(channel_profiles);
   return {
     id: String(raw.id ?? ""),
     doi: typeof raw.doi === "string" ? raw.doi : null,

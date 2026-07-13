@@ -3,18 +3,20 @@
 import Link from "next/link";
 import { ArrowIcon, BookmarkIcon } from "@/components/Icons";
 import { DomainTrack } from "@/components/Spectrum";
-import { CHANNELS, type ChannelId, type Paper } from "@/lib/types";
+import type { ChannelDefinition, ChannelId, Paper } from "@/lib/types";
 import { formatDate, getPaperProfile } from "@/lib/papers";
 import { markRead } from "@/lib/storage";
 
-export default function PaperCard({ paper, activeDomain, favorite, read, onToggleFavorite }: {
+export default function PaperCard({ paper, activeDomain, favorite, read, channels, onToggleFavorite }: {
   paper: Paper;
   activeDomain: ChannelId | null;
   favorite: boolean;
   read: boolean;
+  channels: ChannelDefinition[];
   onToggleFavorite: (id: string) => void;
 }) {
   const selected = getPaperProfile(paper, activeDomain);
+  const definitions = new Map(channels.map((channel) => [channel.id, channel]));
   const profile = selected?.profile;
   const authorText = paper.authors.length > 3
     ? `${paper.authors.slice(0, 3).join("、")} 等`
@@ -22,13 +24,14 @@ export default function PaperCard({ paper, activeDomain, favorite, read, onToggl
 
   return (
     <article className={`paper-card ${read ? "paper-card--read" : ""}`}>
-      <DomainTrack channels={paper.channels} />
+      <DomainTrack channels={paper.channels} definitions={channels} />
       <div className="paper-card__body">
         <div className="paper-card__topline">
           <div className="paper-card__channels">
-            {paper.channels.map((channel) => (
-              <span key={channel} className={`domain-label domain-label--${channel}`}>{CHANNELS[channel].label}</span>
-            ))}
+            {paper.channels.map((channel) => {
+              const definition = definitions.get(channel);
+              return <span key={channel} className="domain-label" style={definition ? { background: definition.soft_color, color: definition.color } : undefined}>{definition?.label || channel}</span>;
+            })}
             {read ? <span className="read-label">已读</span> : null}
           </div>
           <button type="button" className={`bookmark-button ${favorite ? "is-active" : ""}`} onClick={() => onToggleFavorite(paper.id)} aria-label={favorite ? `取消收藏 ${paper.title_zh || paper.title}` : `收藏 ${paper.title_zh || paper.title}`} aria-pressed={favorite}>

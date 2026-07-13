@@ -1,0 +1,58 @@
+{
+  "abstract": "Empirical research on the labor-market impact of artificial intelligence has converged, since Frey and Osborne (2017), on a continuous-gradient representation in which each occupation is assigned a real-valued exposure score on [0,1] obtained by linear aggregation across capability dimensions. This continuity is rarely articulated as an assumption and has not been tested at the micro-action level where substitution actually occurs. We decompose 1,961 O*NET Detailed Work Activities into 15,817 micro-actions using a multi-agent LLM pipeline with 31-expert HITL calibration, then project the DWA-level Occupational Automation Index from our prior work onto a 7-macro semantic typology. The result is a bipolar structure. Tool-Mediated Physical (M2, mean OAI = 0.054) and Planning & Design (M7, mean OAI = 0.499) form two extremes separated by Cohen's d = 2.41 (H = 172.88, p = 6.21e-34). The geometry is robust under three independent stress tests: resolution (K=7 to K=15, polar gap widens from 0.45 to 0.57), encoder swap to BGE (LLM-class OAI lead replicates at 3.37x), and Eloundou's GPT-4 task ratings (DWA-level rho = 0.635). The six middle macros form a low-contrast band between the poles (TOST at d=0.2 admits only 1/15 pairs as equivalent), not a flat plain. The geometry's stability does not, however, extend to its content. Across a decade, the polarity has inverted. Frey-Osborne (2013) placed Tool-Mediated Physical near the highest computerisation risk and Planning & Design near the lowest; our LLM-era OAI reverses that order, with macro-level FO-Eloundou Spearman rho = -0.750, p = 0.020, against the original Oxford Martin appendix. Which pole is high is therefore contingent on the era's dominant capability frontier, while the stable geometry itself is the structurally robust object.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2606.07939",
+  "authors": [
+    "Shuyao Gao",
+    "Minghao Huang"
+  ],
+  "authors_full": [
+    {
+      "name": "Shuyao Gao"
+    },
+    {
+      "name": "Minghao Huang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI对职业替代性的实证研究，劳动力市场边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "挑战职业AI暴露度连续梯度假设。将1,961项O*NET详细工作活动分解为15,817个微观行为，构建多智能体LLM管道并映射至7个宏观语义类型。发现职业AI可替代性呈双极结构：工具介导体力工作（M2，均值0.054）与规划设计（M7，均值0.499）极距Cohen's d=2.41，中部六类构成低对比度带。更重要的是，十年来极性已发生反转——Frey-Osborne（2013）认为高风险的体力工作现已成为最低风险类别。",
+      "topic_tags": [
+        "劳动力市场",
+        "算法管理",
+        "算法决策",
+        "职业发展"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-06",
+  "doi": null,
+  "id": "p_exN9gEPprm7h30Zo",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2606.07939v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11779,
+      "revision": "bcdda0ebbb6060c402faed2b43fe8ba11a4215bc"
+    }
+  ],
+  "title": "Stable Geometry, Reversing Poles: The Bipolar Structure of AI Occupational Substitutability and Its Decade-Scale Inversion",
+  "title_zh": "稳定几何、极性反转：AI职业可替代性的双极结构及其十年尺度逆转",
+  "unified_ingested_at": "2026-07-13T02:16:28.798793Z",
+  "url": "https://arxiv.org/abs/2606.07939v1",
+  "volume": null,
+  "year": 2026
+}

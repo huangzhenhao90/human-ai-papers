@@ -1,8 +1,8 @@
 {
   "abstract": "Online reviews provide rich information on customer satisfaction, displaying various numeric ratings as well as detailed explanations presented in written form. However, analyzing such data is challenging due to the unstructured nature of text. This article introduces a novel machine-learning method for identifying interpretable key drivers of star ratings from text reviews, which might vary across segments. By adopting the Ising model prior to account for dependence between words, the model simultaneously achieves segmentation, identifies segment-level key topics (i.e., groups of frequently co-occurring words), and estimates the impacts of the selected words on the ratings. The authors first demonstrate that the proposed model successfully identifies segment-specific key drivers of customer satisfaction using illustrative simulated review data. Then, the authors utilize real-world reviews from Yelp for empirical applications. When applied to online reviews of 5,241 Arizona-based restaurants, the model identifies three distinct restaurant segments, each characterized by three to five important topics. The model's performance is evaluated against six benchmark models, encompassing various topic models and latent class regression with variable selection. The comparison results emphasize the proposed model's unique advantages in prediction, interpretability, and handling heterogeneity. Additionally, the authors demonstrate the applicability of the model in examining customer segmentation for individual restaurants.",
   "ai_type_tags": [
-    "机器学习",
-    "主题模型"
+    "可解释 AI",
+    "AI 用户画像"
   ],
   "arxiv_id": null,
   "authors": [
@@ -14,20 +14,17 @@
     {
       "affiliation": [],
       "name": "Sunghoon Kim",
-      "orcid": "https://orcid.org/0000-0002-8605-0222",
-      "position": "first"
+      "orcid": "https://orcid.org/0000-0002-8605-0222"
     },
     {
       "affiliation": [],
       "name": "Sanghak Lee",
-      "orcid": "https://orcid.org/0000-0002-5883-5065",
-      "position": "middle"
+      "orcid": null
     },
     {
       "affiliation": [],
       "name": "Robert McCulloch",
-      "orcid": "https://orcid.org/0000-0001-5542-3703",
-      "position": "last"
+      "orcid": null
     }
   ],
   "channel_profiles": {
@@ -70,16 +67,16 @@
     {
       "channel": "ob",
       "legacy_id": 6180,
-      "revision": "b8b7ee1e84534549fb7511f171081b6e7befb731"
+      "revision": "bcdda0ebbb6060c402faed2b43fe8ba11a4215bc"
     },
     {
       "channel": "ur",
       "legacy_id": 4005,
-      "revision": "a8be9093b6fca7daef7faf55e5ee1803f079cae5"
+      "revision": "633aaa45be03db6e8e4833c24b25ca9d0a3f5b95"
     }
   ],
   "title": "A Topic-Based Segmentation Model for Identifying Segment-Level Drivers of Star Ratings from Unstructured Text Reviews",
-  "title_zh": "基于主题的细分模型：从非结构化文本评论中识别星级评分驱动力",
+  "title_zh": "基于主题的细分模型：从非结构化文本评论中识别星级评分细分驱动因素",
   "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
   "url": "https://doi.org/10.1177/00222437241246752",
   "volume": "61",

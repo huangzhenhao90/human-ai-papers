@@ -36,6 +36,15 @@ def resolve_revision(repo: Path, ref: str) -> str:
     ).strip()
 
 
+def repository_identity(repo: Path) -> str:
+    """Prefer a portable remote URL; keep a local path for test/offline repositories."""
+
+    try:
+        return _git(repo, "remote", "get-url", "origin", context="resolve repository identity").strip()
+    except RuntimeError:
+        return str(repo.resolve())
+
+
 def read_git_json(repo: Path, revision: str, relative_path: str) -> tuple[Any, bytes]:
     context = f"read formal publication repo={repo} revision={revision} file={relative_path}"
     raw = _git(repo, "show", f"{revision}:{relative_path}", context=context).encode("utf-8")
@@ -71,7 +80,7 @@ def sync_channel(repo: Path, ref: str, channel: str, output_dir: Path) -> dict[s
         "channel": channel,
         "ref": ref,
         "revision": revision,
-        "repo": str(repo.resolve()),
+        "repo": repository_identity(repo),
         "generated_at": files["meta.json"].get("generated_at"),
         "files": checksums,
     }

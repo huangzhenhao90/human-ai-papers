@@ -1,0 +1,76 @@
+{
+  "abstract": "We propose deep neural networks for data-driven stochastic optimization. Using historical data (covariates, decisions, costs), we propose to train a neural network to predict the objective value as a function of both the decision and covariate. After training, for a given covariate, this predicted objective is optimized over the decision variables using gradient-based methods with analytical gradients and Hessians. Performance is characterized by neural network generalization bounds. Comprehensive experiments on newsvendor, personalized assortment pricing, and call center staffing problems demonstrate our method’s strength over existing approaches such as conditional stochastic optimization and analytical approximations, especially when (i) the objective function is unknown, (ii) moderate to large data sets are available, or (iii) the problem structure resists simple parametric approximations. This paper was accepted by Chung Piaw Teo, optimization and decision analytics. Funding: The research of N. Chen is supported by the UTMM MARC Grant and the IMI Research Grant. The research of J. Milner is supported by NSERC [Grant 453954]. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.04141 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2023.04141",
+  "authors": [
+    "Saman Lagzi",
+    "Ningyuan Chen",
+    "Joseph Milner"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of North Carolina at Chapel Hill"
+      ],
+      "name": "Saman Lagzi",
+      "orcid": "https://orcid.org/0000-0002-0001-8572",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "University of Toronto"
+      ],
+      "name": "Ningyuan Chen",
+      "orcid": "https://orcid.org/0000-0002-3948-1011",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Toronto"
+      ],
+      "name": "Joseph Milner",
+      "orcid": "https://orcid.org/0000-0002-8272-8171",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "MgmtSci运筹学期刊，神经网络驱动运营决策，核心AI技术应用",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "论文提出用深度神经网络进行数据驱动随机优化，通过历史数据预测目标函数并用解析梯度优化决策；在新闻vendor、个性化定价、排班等运营场景验证其优势，尤其在目标函数未知、数据量大、结构复杂时表现优于传统方法。",
+      "topic_tags": [
+        "决策",
+        "运营管理",
+        "机器学习",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-15",
+  "doi": "10.1287/mnsc.2023.04141",
+  "id": "p_cGtntrv4RxoFN9hN",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11735,
+      "revision": "bcdda0ebbb6060c402faed2b43fe8ba11a4215bc"
+    }
+  ],
+  "title": "Using Neural Networks to Guide Data-Driven Operational Decisions",
+  "title_zh": "使用神经网络指导数据驱动的运营决策",
+  "unified_ingested_at": "2026-07-13T02:16:28.798793Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.04141",
+  "volume": null,
+  "year": 2026
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { CHANNELS, type ChannelId } from "@/lib/types";
+import type { ChannelDefinition, ChannelId } from "@/lib/types";
 
 export type FilterValues = {
   year: string;
@@ -26,6 +26,7 @@ export default function FilterPanel({
   totalCount,
   activeCount,
   generatedAt,
+  channels,
   afterSummary,
   onChange,
   onClear,
@@ -38,17 +39,19 @@ export default function FilterPanel({
   totalCount: number;
   activeCount: number;
   generatedAt?: string;
+  channels: ChannelDefinition[];
   afterSummary?: React.ReactNode;
   onChange: (key: keyof FilterValues, value: string | number) => void;
   onClear: () => void;
 }) {
   const topTopics = includeActive(facets.topics, values.topic, 12);
   const topAiTypes = includeActive(facets.aiTypes, values.aiType, 10);
-  const domainLabel = activeDomain ? CHANNELS[activeDomain].label : "全部领域";
+  const activeDefinition = channels.find((channel) => channel.id === activeDomain);
+  const domainLabel = activeDefinition?.label || "全部领域";
   return (
     <div className="filter-panel">
       <div className="filter-summary">
-        <span className={`filter-summary__signal ${activeDomain ? `signal-${activeDomain}` : "signal-all"}`} aria-hidden="true" />
+        <span className={`filter-summary__signal ${activeDefinition ? "" : "signal-all"}`} style={activeDefinition ? { background: activeDefinition.color } : undefined} aria-hidden="true" />
         <span className="filter-summary__eyebrow">{domainLabel}</span>
         <strong>{resultCount.toLocaleString("zh-CN")}</strong>
         <span className="filter-summary__caption">当前结果 · 共 {totalCount.toLocaleString("zh-CN")} 篇</span>

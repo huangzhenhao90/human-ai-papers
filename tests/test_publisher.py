@@ -8,8 +8,10 @@ from email.utils import parsedate_to_datetime
 from xml.etree import ElementTree
 
 import pytest
+import yaml
 
 from publisher.build_index import build_unified_index
+from publisher.channel_registry import load_channel_registry
 from publisher.git_source import read_git_json, sync_channel
 from publisher.io_utils import write_json
 from publisher.merge_channels import (
@@ -18,6 +20,8 @@ from publisher.merge_channels import (
     normalize_channel_record,
 )
 from publisher.stable_id import canonical_key, stable_public_id
+from publisher.update_pipeline import merge_mental_health_batch, sync_legacy_with_fallback
+from publisher.validate_release import validate_release
 
 
 def paper(**overrides):
@@ -193,6 +197,54 @@ def test_build_supports_optional_mh_and_is_byte_idempotent(tmp_path: Path):
     assert items[-1].findtext("guid", "").endswith(shared_id)
 
 
+def test_channel_registry_can_publish_a_fourth_channel_without_code_changes(tmp_path: Path):
+    upstream = tmp_path / "upstream"
+    for channel in ("ob", "ur", "mh", "edu"):
+        _snapshot(
+            upstream / channel,
+            [paper(id=f"{channel}-1", doi=f"10.9999/{channel}", title=f"{channel} paper")],
+            generated_at="2026-07-03T00:00:00Z",
+            revision=channel,
+        )
+    channels = [
+        {
+            "id": channel,
+            "short": channel.upper(),
+            "label": f"{channel} label",
+            "description": f"{channel} description",
+            "color": "#345678",
+            "soft_color": "#e8eef2",
+            "order": index * 10,
+            "required": channel in {"ob", "ur"},
+            "data_dir": str(upstream / channel),
+            "source_kind": "native",
+        }
+        for index, channel in enumerate(("ob", "ur", "mh", "edu"), start=1)
+    ]
+    registry = tmp_path / "channels.yaml"
+    registry.write_text(yaml.safe_dump({"schema_version": 1, "channels": channels}), encoding="utf-8")
+    output = tmp_path / "public/data"
+    report = tmp_path / "reports/unified.json"
+
+    build_unified_index(
+        upstream_dir=upstream,
+        output_dir=output,
+        report_path=report,
+        registry_path=registry,
+    )
+    meta = json.loads((output / "meta.json").read_text())
+
+    assert [definition.id for definition in load_channel_registry(registry)] == ["ob", "ur", "mh", "edu"]
+    assert meta["channels"]["edu"]["label"] == "edu label"
+    assert meta["channels"]["edu"]["papers"] == 1
+    checked = validate_release(
+        output_dir=output,
+        report_path=report,
+        rss_path=output.parent / "rss.xml",
+    )
+    assert checked["channels"]["edu"] == 1
+
+
 def _init_git_publication(repo: Path):
     subprocess.run(["git", "init", "-q", repo], check=True)
     subprocess.run(["git", "-C", repo, "config", "user.email", "test@example.com"], check=True)
@@ -231,3 +283,43 @@ def test_git_read_error_names_repo_revision_and_file(tmp_path: Path):
     assert str(repo) in message
     assert revision in message
     assert "missing.json" in message
+
+
+def test_failure_aware_sync_keeps_previous_valid_channel_snapshot(tmp_path: Path):
+    ob = tmp_path / "ob"
+    ur = tmp_path / "ur"
+    _init_git_publication(ob)
+    _init_git_publication(ur)
+    output = tmp_path / "upstream"
+    sync_legacy_with_fallback(
+        ob_repo=ob, ur_repo=ur, ob_ref="HEAD", ur_ref="HEAD", output_dir=output
+    )
+
+    manifest = sync_legacy_with_fallback(
+        ob_repo=ob, ur_repo=ur, ob_ref="missing-ref", ur_ref="HEAD", output_dir=output
+    )
+
+    assert manifest["stale_channels"] == ["ob"]
+    assert manifest["failures"][0]["fallback"] == "previous_valid_snapshot"
+    assert json.loads((output / "ob/papers.json").read_text())[0]["title"] == "Committed"
+
+
+def test_executed_mental_health_batch_merges_into_cumulative_snapshot(tmp_path: Path):
+    batch = tmp_path / "batch"
+    cumulative = tmp_path / "cumulative"
+    existing = paper(id="W1", doi="10.9999/existing", title="Existing")
+    incoming = paper(id="W2", doi="10.9999/incoming", title="Incoming")
+    for directory, records in ((cumulative, [existing]), (batch, [incoming])):
+        write_json(directory / "papers.json", records)
+        write_json(directory / "papers_full.json", records)
+    write_json(cumulative / "meta.json", {"generated_at": "2026-07-01", "dry_run": False})
+    write_json(
+        batch / "meta.json",
+        {"generated_at": "2026-07-02", "dry_run": False, "status": "success", "totals": {"papers_published": 1}},
+    )
+
+    result = merge_mental_health_batch(batch_dir=batch, cumulative_dir=cumulative)
+
+    assert result["previous_papers"] == 1
+    assert result["cumulative_papers"] == 2
+    assert len(json.loads((cumulative / "papers.json").read_text())) == 2

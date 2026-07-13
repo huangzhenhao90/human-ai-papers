@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+import type { CSSProperties } from "react";
 import { ArrowIcon, BookmarkIcon, RefreshIcon } from "@/components/Icons";
 import { DomainTrack, Spectrum } from "@/components/Spectrum";
-import { DataLoadError, loadPaperDetail, loadPapers } from "@/lib/data";
+import { DataLoadError, loadMeta, loadPaperDetail, loadPapers } from "@/lib/data";
 import { formatDate } from "@/lib/papers";
 import { markRead, readFavorites, storageEvents, toggleFavorite } from "@/lib/storage";
-import { CHANNELS, CHANNEL_ORDER, type PaperDetail } from "@/lib/types";
+import { DEFAULT_CHANNELS, channelDefinitions as getChannelDefinitions, channelMap, type ChannelDefinition, type PaperDetail } from "@/lib/types";
 
 export default function PaperDetailView() {
   const params = useParams<{ id: string }>();
@@ -19,6 +20,7 @@ export default function PaperDetailView() {
   const [detailMissing, setDetailMissing] = useState(false);
   const [favorite, setFavorite] = useState(false);
   const [reloadKey, setReloadKey] = useState(0);
+  const [channels, setChannels] = useState<ChannelDefinition[]>(DEFAULT_CHANNELS);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -49,6 +51,12 @@ export default function PaperDetailView() {
   }, [id, reloadKey]);
 
   useEffect(() => {
+    const controller = new AbortController();
+    loadMeta(controller.signal).then((value) => setChannels(getChannelDefinitions(value))).catch(() => undefined);
+    return () => controller.abort();
+  }, [reloadKey]);
+
+  useEffect(() => {
     const sync = () => setFavorite(readFavorites().has(id));
     sync();
     window.addEventListener(storageEvents.favorites, sync);
@@ -60,6 +68,11 @@ export default function PaperDetailView() {
     if (paper.authors_full?.length) return paper.authors_full.map((author) => author.name).join("、");
     return paper.authors.join("、");
   }, [paper]);
+  const definitions = useMemo(() => channelMap(channels), [channels]);
+  const profileChannels = useMemo(() => {
+    if (!paper) return channels.map((channel) => channel.id);
+    return [...channels.map((channel) => channel.id), ...Object.keys(paper.channel_profiles).filter((id) => !definitions[id])];
+  }, [channels, definitions, paper]);
 
   if (loading) return <main id="main-content" className="detail-shell" aria-busy="true"><div className="skeleton skeleton--detail" /><span className="sr-only">正在加载论文详情</span></main>;
   if (error || !paper) {
@@ -73,10 +86,10 @@ export default function PaperDetailView() {
       {detailMissing ? <div className="notice notice--warning"><b>详情文件待补</b><span>列表页仍可正常使用，当前先展示索引中的摘要信息。</span></div> : null}
 
       <article className="paper-detail">
-        <DomainTrack channels={paper.channels} />
+        <DomainTrack channels={paper.channels} definitions={channels} />
         <header className="paper-detail__header">
           <div className="paper-detail__channels">
-            {paper.channels.map((channel) => <span className={`domain-label domain-label--${channel}`} key={channel}>{CHANNELS[channel].label}</span>)}
+            {paper.channels.map((channel) => <span className="domain-label" style={definitions[channel] ? { background: definitions[channel].soft_color, color: definitions[channel].color } : undefined} key={channel}>{definitions[channel]?.label || channel}</span>)}
           </div>
           <button type="button" className={`bookmark-button bookmark-button--detail ${favorite ? "is-active" : ""}`} onClick={() => { setFavorite(toggleFavorite(paper.id)); }} aria-label={favorite ? "取消收藏" : "收藏论文"} aria-pressed={favorite}><BookmarkIcon filled={favorite} />{favorite ? "已收藏" : "收藏"}</button>
           <p className="paper-detail__date">{formatDate(paper.date, paper.year)} {paper.journal ? `· ${paper.journal}` : ""}</p>
@@ -93,12 +106,13 @@ export default function PaperDetailView() {
         <div className="paper-detail__spectrum"><Spectrum /></div>
 
         <div className="profile-stack">
-          {CHANNEL_ORDER.map((channel) => {
+          {profileChannels.map((channel) => {
             const profile = paper.channel_profiles[channel];
             if (!profile) return null;
+            const definition = definitions[channel];
             return (
-              <section className={`channel-profile channel-profile--${channel}`} key={channel}>
-                <div className="channel-profile__heading"><span>{CHANNELS[channel].short}</span><div><p>{CHANNELS[channel].label}</p><h2>领域摘要</h2></div><dl><div><dt>AI</dt><dd>{profile.ai_score}</dd></div><div><dt>领域</dt><dd>{profile.domain_score}</dd></div></dl></div>
+              <section className="channel-profile channel-profile--dynamic" style={{ "--channel-color": definition?.color || "#6d7a7b", "--channel-soft": definition?.soft_color || "#eef3f1" } as CSSProperties} key={channel}>
+                <div className="channel-profile__heading"><span>{definition?.short || channel.toUpperCase()}</span><div><p>{definition?.label || channel}</p><h2>领域摘要</h2></div><dl><div><dt>AI</dt><dd>{profile.ai_score}</dd></div><div><dt>领域</dt><dd>{profile.domain_score}</dd></div></dl></div>
                 {profile.tldr ? <p className="channel-profile__tldr">{profile.tldr}</p> : <p className="channel-profile__empty">该领域摘要待补。</p>}
                 {profile.topic_tags.length ? <div className="channel-profile__tags">{profile.topic_tags.map((tag) => <span key={tag}>#{tag}</span>)}</div> : null}
                 {profile.evidence_stage || profile.clinical_validation ? <div className="channel-profile__evidence">{profile.evidence_stage ? <span>证据阶段：{profile.evidence_stage}</span> : null}{profile.clinical_validation ? <span>临床验证：{profile.clinical_validation}</span> : null}</div> : null}

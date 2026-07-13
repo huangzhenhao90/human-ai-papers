@@ -1,0 +1,70 @@
+{
+  "abstract": "Diffusion models are highly effective at modeling complex data distributions, including images and text. However, in applications like personalized recommender systems, the objective often shifts to modeling specific regions of the distribution that maximize user preferences-initially unknown but gradually uncovered through interactive feedback. This can naturally be framed as a reinforcement learning problem, where the goal is to fine-tune a diffusion model to maximize a reward function based on preferences. However, the main challenge lies in learning a parameterized reward model, which typically requires large-scale preference data-something that is often not feasible in practice. In this work, we introduce Personalized Active Preference Alignment PAPA, a novel method that bypasses the requirement for a parametrized reward model by directly optimizing the diffusion model using real-time user feedback. PAPA enables feedback-efficient preference alignment, drawing inspiration from the variational inference framework. We demonstrate PAPA's effectiveness through extensive experiments and ablation studies across diverse class-conditioned and fine-grained alignment tasks. Additionally, based on theoretical insights, we propose an enhanced fine-tuning strategy, referred to as EPAPA, that requires less computational budget and accelerates the fine-tuning process, further boosting PAPA's suitability for real-world deployment. Our code is made publicly available at https://github.com/NasikNafi/papa.",
+  "ai_type_tags": [
+    "扩散模型",
+    "生成式AI",
+    "强化学习"
+  ],
+  "arxiv_id": "2607.00486",
+  "authors": [
+    "Anindya Sarkar",
+    "Nasik Muhammad Nafi",
+    "Isaac Lyngaas",
+    "Muralikrishnan Gopalakrishnan Meena",
+    "Yevgeniy Vorobeychik"
+  ],
+  "authors_full": [
+    {
+      "name": "Anindya Sarkar"
+    },
+    {
+      "name": "Nasik Muhammad Nafi"
+    },
+    {
+      "name": "Isaac Lyngaas"
+    },
+    {
+      "name": "Muralikrishnan Gopalakrishnan Meena"
+    },
+    {
+      "name": "Yevgeniy Vorobeychik"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "扩散模型个性化偏好对齐，AI核心方法论",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "扩散模型在个性化推荐等场景中需根据用户偏好进行调整，但获取大规模偏好数据成本高。PAPA提出无需参数化奖励模型的个性化偏好对齐方法，直接利用实时用户反馈优化扩散模型，借鉴变分推理框架提升反馈效率。实验表明该方法在类条件和对齐任务上有效。进一步提出增强版EPAPA，降低计算开销，加速微调过程，更适合实际部署。",
+      "topic_tags": [
+        "推荐系统",
+        "个性化",
+        "用户偏好",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-01",
+  "doi": null,
+  "id": "p_EuhswDV6oyEkelHt",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2607.00486v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 12057,
+      "revision": "bcdda0ebbb6060c402faed2b43fe8ba11a4215bc"
+    }
+  ],
+  "title": "PAPA: Online Personalized Active Preference Alignment",
+  "title_zh": "PAPA：在线个性化主动偏好对齐",
+  "unified_ingested_at": "2026-07-13T02:16:28.798793Z",
+  "url": "https://arxiv.org/abs/2607.00486v1",
+  "volume": null,
+  "year": 2026
+}

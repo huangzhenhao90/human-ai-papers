@@ -1,0 +1,86 @@
+{
+  "abstract": "Advances in machine learning have made it easier to extract useful information from both structured and unstructured data. Accordingly, empirical researchers often seek to leverage machine learning for statistical inference and hypothesis testing. We study an increasingly popular practice wherein a supervised machine learning model is trained to predict a certain variable of interest, and the predicted values are subsequently used in regression models as independent variables to draw statistical inferences. However, inevitably, errors in predictions manifest as measurement errors in regression models and lead to estimation biases. In this paper, we design and evaluate a novel approach, termed EnsembleIV, to address the issue. We propose the use of ensemble machine learning techniques to generate the predictions and show that individual learners in the ensemble (after a proposed special-purpose data-driven transformation procedure) can serve as instrumental variables to correct for the measurement error and avoid estimation biases. EnsembleIV’s effectiveness is demonstrated on both synthetic and real data sets for both linear and generalized linear regression models. We also compare EnsembleIV with several alternative bias correction methods and highlight its advantages. Overall, EnsembleIV represents a flexible algorithm that enables empirical researchers to draw robust statistical inferences with independent variables generated via machine learning. This paper was accepted by D.J. Wu, information systems. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.08999 .",
+  "ai_type_tags": [
+    "机器学习",
+    "集成学习"
+  ],
+  "arxiv_id": "2024.08999",
+  "authors": [
+    "Gordon Burtch",
+    "Edward McFowland",
+    "Mochen Yang",
+    "Gediminas Adomavičius"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Boston University"
+      ],
+      "name": "Gordon Burtch",
+      "orcid": "https://orcid.org/0000-0001-9798-1113",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Harvard University"
+      ],
+      "name": "Edward McFowland",
+      "orcid": "https://orcid.org/0000-0001-5249-7117",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Minnesota",
+        "University of Minnesota System"
+      ],
+      "name": "Mochen Yang",
+      "orcid": "https://orcid.org/0000-0001-5101-9041",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "University of Minnesota",
+        "University of Minnesota System"
+      ],
+      "name": "Gediminas Adomavičius",
+      "orcid": "https://orcid.org/0000-0001-5251-5098",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "集成学习创建工具变量用于统计推断，机器学习核心方法论文",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对机器学习预测值用于回归推断时的测量误差偏误问题，提出 EnsembleIV 方法。利用集成学习生成预测值，并通过数据驱动变换程序将各基学习器转化为工具变量，从而纠正测量误差、避免估计偏误。方法在合成数据和真实数据上验证有效，适用于线性和广义线性回归模型，并优于其他偏差校正方法。",
+      "topic_tags": [
+        "统计推断",
+        "计量方法",
+        "机器学习应用"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-19",
+  "doi": "10.1287/mnsc.2024.08999",
+  "id": "p_axp6A2B3Z9LY_aNZ",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11847,
+      "revision": "bcdda0ebbb6060c402faed2b43fe8ba11a4215bc"
+    }
+  ],
+  "title": "EnsembleIV: Creating Instrumental Variables from Ensemble Learners for Robust Statistical Inference with ML- Generated Variables",
+  "title_zh": "EnsembleIV：基于集成学习构建工具变量以实现机器学习生成变量的稳健统计推断",
+  "unified_ingested_at": "2026-07-13T02:16:28.798793Z",
+  "url": "https://doi.org/10.1287/mnsc.2024.08999",
+  "volume": null,
+  "year": 2026
+}

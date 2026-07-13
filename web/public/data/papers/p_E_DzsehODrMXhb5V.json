@@ -1,0 +1,65 @@
+{
+  "abstract": "Traditionally, decision support studies how humans use machine learning models to make better decisions. In modern agentic systems, this division of roles is increasingly reversed: AI agents act on behalf of users, while humans and tools becomes support mechanisms around them. This role reversal brings reliability concerns to the forefront, since agentic errors can be consequential and agent behavior must remain aligned with human goals and constraints. Departing from the classical view of decision support, we revisit its two basic principles, the cost--value tradeoff of seeking support and the role of uncertainty quantification, in a setting where AI agents are the central actors. We propose a framework for strategic decision support for AI agents through an optimization problem that minimizes support usage subject to controlling a counterfactual missed-support error: the probability that the agent acts alone on instances where support would have materially improved its output. At the population level, we show that the optimal policy is a threshold rule on the value of support. Building on this structure, we develop an online algorithm that adaptively thresholds such a score and uses randomized exploration to control missed-support error without distributional assumptions. We further introduce a calibration-on-the-fly method that reduces unnecessary support calls online. We instantiate this framework across diverse scenarios, including information gathering, human--AI collaboration, and tool use, showing how each can be modeled through the same strategic decision-support lens. Experiments across these settings show that our method reliably controls the target error while substantially reducing support usage in practice.",
+  "ai_type_tags": [
+    "算法决策",
+    "机器学习",
+    "AI治理"
+  ],
+  "arxiv_id": "2606.12587",
+  "authors": [
+    "Shayan Kiyani",
+    "Sima Noorani",
+    "George Pappas",
+    "Hamed Hassani"
+  ],
+  "authors_full": [
+    {
+      "name": "Shayan Kiyani"
+    },
+    {
+      "name": "Sima Noorani"
+    },
+    {
+      "name": "George Pappas"
+    },
+    {
+      "name": "Hamed Hassani"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI代理决策支持框架研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "将决策支持从人类使用模型转向AI代理主导的情境，构建以控制错失支持错误为目标的优化框架，推导出阈值最优策略并提出自适应在线算法，实现无需分布假设的校准，验证于信息收集与人机协作场景。",
+      "topic_tags": [
+        "决策",
+        "算法管理",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-10",
+  "doi": null,
+  "id": "p_E_DzsehODrMXhb5V",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2606.12587v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11814,
+      "revision": "bcdda0ebbb6060c402faed2b43fe8ba11a4215bc"
+    }
+  ],
+  "title": "Strategic Decision Support for AI Agents",
+  "title_zh": "AI代理的战略决策支持",
+  "unified_ingested_at": "2026-07-13T02:16:28.798793Z",
+  "url": "https://arxiv.org/abs/2606.12587v1",
+  "volume": null,
+  "year": 2026
+}

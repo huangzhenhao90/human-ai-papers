@@ -1,4 +1,4 @@
-import type { ChannelId } from "@/lib/types";
+import type { ChannelDefinition, ChannelId } from "@/lib/types";
 
 export function Spectrum({ compact = false }: { compact?: boolean }) {
   return (
@@ -10,10 +10,11 @@ export function Spectrum({ compact = false }: { compact?: boolean }) {
   );
 }
 
-export function DomainTrack({ channels }: { channels: ChannelId[] }) {
+export function DomainTrack({ channels, definitions }: { channels: ChannelId[]; definitions: ChannelDefinition[] }) {
+  const colors = new Map(definitions.map((channel) => [channel.id, channel.color]));
   return (
     <span className="domain-track" aria-hidden="true">
-      {channels.map((channel) => <i className={`domain-track__${channel}`} key={channel} />)}
+      {channels.map((channel) => <i style={{ background: colors.get(channel) || "#6d7a7b" }} key={channel} />)}
     </span>
   );
 }

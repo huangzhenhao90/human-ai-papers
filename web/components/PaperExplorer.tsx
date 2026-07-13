@@ -10,7 +10,7 @@ import { Spectrum } from "@/components/Spectrum";
 import { DataLoadError, loadMeta, loadPapers, loadUpdates } from "@/lib/data";
 import { allTopicTags, compareRecent, countValues, isPublishedInLastSevenDays, matchesSearch, paperScore } from "@/lib/papers";
 import { readFavorites, readReadIds, storageEvents, toggleFavorite } from "@/lib/storage";
-import { CHANNELS, CHANNEL_ORDER, isChannel, type ChannelId, type Meta, type Paper, type Updates } from "@/lib/types";
+import { channelDefinitions as getChannelDefinitions, channelMap, isChannel, type ChannelId, type Meta, type Paper, type Updates } from "@/lib/types";
 
 export type ExplorerMode = "all" | "recent" | "favorites";
 
@@ -30,7 +30,7 @@ const heroCopy: Record<ExplorerMode, { eyebrow: string; title: string; descripti
   favorites: {
     eyebrow: "YOUR RESEARCH SHELF",
     title: "把值得回来的研究，放在一个地方",
-    description: "收藏以稳定论文 ID 保存在当前浏览器中，跨三个研究频道共用。",
+    description: "收藏以稳定论文 ID 保存在当前浏览器中，跨全部研究频道共用。",
   },
 };
 
@@ -107,8 +107,10 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
     };
   }, [mobileFilters]);
 
+  const channelDefinitions = useMemo(() => getChannelDefinitions(meta), [meta]);
+  const channelLookup = useMemo(() => channelMap(channelDefinitions), [channelDefinitions]);
   const domainValue = searchParams.get("domain");
-  const activeDomain: ChannelId | null = isChannel(domainValue) ? domainValue : null;
+  const activeDomain: ChannelId | null = isChannel(domainValue, channelDefinitions) ? domainValue : null;
   const query = searchParams.get("q") || "";
   const year = searchParams.get("year") || "";
   const journal = searchParams.get("journal") || "";
@@ -136,9 +138,9 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
 
   const channelCounts = useMemo(() => {
     const counts: Partial<Record<ChannelId | "all", number>> = { all: modePapers.length };
-    for (const channel of CHANNEL_ORDER) counts[channel] = modePapers.filter((paper) => paper.channels.includes(channel)).length;
+    for (const channel of channelDefinitions) counts[channel.id] = modePapers.filter((paper) => paper.channels.includes(channel.id)).length;
     return counts;
-  }, [modePapers]);
+  }, [channelDefinitions, modePapers]);
 
   const scopedPapers = useMemo(
     () => activeDomain ? modePapers.filter((paper) => paper.channels.includes(activeDomain)) : modePapers,
@@ -209,21 +211,21 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
           <h1>{hero.title}</h1>
           <p>{hero.description}</p>
         </div>
-        <div className="hero__spectrum"><Spectrum /><span>ORGANIZATION</span><span>INTERACTION</span><span>MENTAL HEALTH</span></div>
+        <div className="hero__spectrum"><Spectrum />{channelDefinitions.slice(0, 3).map((channel) => <span key={channel.id}>{channel.short} · {channel.label}</span>)}</div>
       </section>
 
       {demo ? <div className="notice notice--demo"><b>开发预览</b><span>尚未读到发布数据，当前展示小型示意样本。</span></div> : null}
       {staleChannels.length || pendingChannels.length || failures.length ? (
-        <div className="notice notice--warning" role="status"><b>数据更新提示</b><span>{pendingChannels.length ? `${pendingChannels.map((channel) => isChannel(channel) ? CHANNELS[channel].label : channel).join("、")} 频道正在回填。` : ""}{staleChannels.length ? ` ${staleChannels.join("、")} 频道沿用上一版成功快照。` : ""}{failures.length ? ` 本轮有 ${failures.length} 个来源失败。` : ""}</span></div>
+        <div className="notice notice--warning" role="status"><b>数据更新提示</b><span>{pendingChannels.length ? `${pendingChannels.map((channel) => channelLookup[channel]?.label || channel).join("、")} 频道正在回填。` : ""}{staleChannels.length ? ` ${staleChannels.map((channel) => channelLookup[channel]?.label || channel).join("、")} 频道沿用上一版成功快照。` : ""}{failures.length ? ` 本轮有 ${failures.length} 个来源失败。` : ""}</span></div>
       ) : null}
 
       <div className="explorer-layout">
         <aside className="filters-desktop" aria-label="论文筛选">
-          <FilterPanel idPrefix="desktop" activeDomain={activeDomain} values={filterValues} facets={facets} resultCount={filtered.length} totalCount={modePapers.length} activeCount={activeFilterCount} generatedAt={meta?.generated_at} afterSummary={<div className="filter-search"><PaperSearch query={query} onChange={(value) => updateParam("q", value)} /></div>} onChange={changeFilter} onClear={clearFilters} />
+          <FilterPanel idPrefix="desktop" activeDomain={activeDomain} channels={channelDefinitions} values={filterValues} facets={facets} resultCount={filtered.length} totalCount={modePapers.length} activeCount={activeFilterCount} generatedAt={meta?.generated_at} afterSummary={<div className="filter-search"><PaperSearch query={query} onChange={(value) => updateParam("q", value)} /></div>} onChange={changeFilter} onClear={clearFilters} />
         </aside>
 
         <section className="results" aria-labelledby="result-heading">
-          <ChannelTabs active={activeDomain} onChange={(channel) => updateParam("domain", channel)} counts={channelCounts} />
+          <ChannelTabs active={activeDomain} onChange={(channel) => updateParam("domain", channel)} counts={channelCounts} channels={channelDefinitions} />
 
           <div className="result-tools">
             <PaperSearch className="search-field--results" query={query} onChange={(value) => updateParam("q", value)} />
@@ -233,7 +235,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
           </div>
 
           <div className="result-heading">
-            <div><span className="eyebrow">PAPER STREAM</span><h2 id="result-heading">{activeDomain ? CHANNELS[activeDomain].label : mode === "favorites" ? "我的收藏" : mode === "recent" ? "最近发表" : "统一论文流"}</h2></div>
+            <div><span className="eyebrow">PAPER STREAM</span><h2 id="result-heading">{activeDomain ? channelLookup[activeDomain]?.label || activeDomain : mode === "favorites" ? "我的收藏" : mode === "recent" ? "最近发表" : "统一论文流"}</h2></div>
             <label className="sort-field">
               <span>排序</span>
               <select value={sort} onChange={(event) => updateParam("sort", event.target.value)}>
@@ -245,11 +247,11 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
           </div>
 
           {!filtered.length ? (
-            <EmptyState mode={mode} activeDomain={activeDomain} pending={Boolean(activeDomain && pendingChannels.includes(activeDomain))} hasFilters={activeFilterCount > 0} onClear={clearFilters} />
+            <EmptyState mode={mode} activeDomain={activeDomain} activeLabel={activeDomain ? channelLookup[activeDomain]?.label : undefined} pending={Boolean(activeDomain && pendingChannels.includes(activeDomain))} hasFilters={activeFilterCount > 0} onClear={clearFilters} />
           ) : (
             <>
               <div className="paper-list">
-                {visiblePapers.map((paper) => <PaperCard key={paper.id} paper={paper} activeDomain={activeDomain} favorite={favorites.has(paper.id)} read={readIds.has(paper.id)} onToggleFavorite={handleToggleFavorite} />)}
+                {visiblePapers.map((paper) => <PaperCard key={paper.id} paper={paper} activeDomain={activeDomain} channels={channelDefinitions} favorite={favorites.has(paper.id)} read={readIds.has(paper.id)} onToggleFavorite={handleToggleFavorite} />)}
               </div>
               {visibleCount < filtered.length ? (
                 <button type="button" className="load-more" onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}>
@@ -266,7 +268,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
           <button type="button" className="filter-drawer__backdrop" onClick={closeMobileFilters} tabIndex={-1} aria-label="关闭筛选" />
           <div className="filter-drawer__panel">
             <div className="filter-drawer__header"><h2 id="mobile-filter-title">筛选论文</h2><button ref={closeButtonRef} type="button" onClick={closeMobileFilters} aria-label="关闭筛选"><CloseIcon /></button></div>
-            <FilterPanel idPrefix="mobile" activeDomain={activeDomain} values={filterValues} facets={facets} resultCount={filtered.length} totalCount={modePapers.length} activeCount={activeFilterCount} generatedAt={meta?.generated_at} onChange={changeFilter} onClear={clearFilters} />
+            <FilterPanel idPrefix="mobile" activeDomain={activeDomain} channels={channelDefinitions} values={filterValues} facets={facets} resultCount={filtered.length} totalCount={modePapers.length} activeCount={activeFilterCount} generatedAt={meta?.generated_at} onChange={changeFilter} onClear={clearFilters} />
             <button type="button" className="filter-drawer__done" onClick={closeMobileFilters}>查看 {filtered.length} 篇论文</button>
           </div>
         </div>
@@ -295,9 +297,9 @@ function ExplorerError({ error, onRetry }: { error: Error; onRetry: () => void }
   return <main id="main-content" className="state-page"><span className="state-page__code">DATA / UNAVAILABLE</span><h1>论文索引暂时无法读取</h1><p>加载 <code>{path}</code> 失败。请确认发布数据已生成，或稍后重试。</p><pre>{error.message}</pre><button type="button" onClick={onRetry}><RefreshIcon />重新加载</button></main>;
 }
 
-function EmptyState({ mode, activeDomain, pending, hasFilters, onClear }: { mode: ExplorerMode; activeDomain: ChannelId | null; pending: boolean; hasFilters: boolean; onClear: () => void }) {
+function EmptyState({ mode, activeDomain, activeLabel, pending, hasFilters, onClear }: { mode: ExplorerMode; activeDomain: ChannelId | null; activeLabel?: string; pending: boolean; hasFilters: boolean; onClear: () => void }) {
   const copy = activeDomain && pending
-    ? { title: `${CHANNELS[activeDomain].label}频道正在回填`, body: "频道入口已保留，首批论文通过范围与质量核验后会出现在这里。" }
+    ? { title: `${activeLabel || activeDomain}频道正在回填`, body: "频道入口已保留，首批论文通过范围与质量核验后会出现在这里。" }
     : mode === "favorites" && !hasFilters
     ? { title: "还没有收藏的论文", body: "在论文卡上点击书签图标，它们会出现在这里。" }
     : mode === "recent" && !hasFilters

@@ -1,11 +1,11 @@
-import { CHANNEL_ORDER, type ChannelId, type ChannelProfile, type Paper } from "@/lib/types";
+import { type ChannelId, type ChannelProfile, type Paper } from "@/lib/types";
 
 export function getPaperProfile(paper: Paper, active?: ChannelId | null): { channel: ChannelId; profile: ChannelProfile } | null {
   if (active && paper.channel_profiles[active]) {
     return { channel: active, profile: paper.channel_profiles[active]! };
   }
   let best: { channel: ChannelId; profile: ChannelProfile } | null = null;
-  for (const channel of CHANNEL_ORDER) {
+  for (const channel of paper.channels) {
     const profile = paper.channel_profiles[channel];
     if (profile && (!best || Math.min(profile.ai_score, profile.domain_score) > Math.min(best.profile.ai_score, best.profile.domain_score))) {
       best = { channel, profile };
@@ -22,7 +22,7 @@ export function paperScore(paper: Paper, active?: ChannelId | null) {
 
 export function allTopicTags(paper: Paper, active?: ChannelId | null) {
   if (active) return paper.channel_profiles[active]?.topic_tags || [];
-  return Array.from(new Set(CHANNEL_ORDER.flatMap((channel) => paper.channel_profiles[channel]?.topic_tags || [])));
+  return Array.from(new Set(Object.values(paper.channel_profiles).flatMap((profile) => profile?.topic_tags || [])));
 }
 
 export function matchesSearch(paper: Paper, query: string) {
@@ -35,8 +35,7 @@ export function matchesSearch(paper: Paper, query: string) {
     ...paper.authors,
     ...paper.ai_type_tags,
     ...allTopicTags(paper),
-    ...CHANNEL_ORDER.flatMap((channel) => {
-      const profile = paper.channel_profiles[channel];
+    ...Object.values(paper.channel_profiles).flatMap((profile) => {
       return profile ? [profile.tldr, profile.ai_reason] : [];
     }),
   ].filter(Boolean).join(" ").toLocaleLowerCase();
