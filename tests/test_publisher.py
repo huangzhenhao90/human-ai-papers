@@ -181,10 +181,16 @@ def test_build_supports_optional_mh_and_is_byte_idempotent(tmp_path: Path):
     assert built["excluded_before_start_year"][0]["legacy_id"] == 3
     merged = json.loads((output / "papers.json").read_text())
     assert all((item["year"] or 9999) >= 2023 for item in merged)
-    shared = next(item for item in merged if item["doi"] == "10.1234/example.1")
+    shared = next(item for item in merged if item["id"] == shared_id)
     assert shared["channels"] == ["mh", "ob"]
     assert shared["channel_profiles"]["mh"]["ai_score"] == 5
-    assert (output / "papers" / f"{shared['id']}.json").is_file()
+    assert set(shared["channel_profiles"]["mh"]) == {
+        "ai_score", "domain_score", "topic_tags", "tldr"
+    }
+    assert "doi" not in shared and "source_refs" not in shared
+    detail = json.loads((output / "papers" / f"{shared['id']}.json").read_text())
+    assert detail["doi"] == "10.1234/example.1"
+    assert detail["source_refs"]
     meta = json.loads((output / "meta.json").read_text())
     assert meta["generated_at"] == meta["built_at"]
     assert meta["upstream_generated_at"] == "2026-07-03T00:00:00Z"

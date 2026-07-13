@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import HeaderNav from "@/components/HeaderNav";
+import { PapersDataProvider } from "@/components/PapersDataProvider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -14,7 +15,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <a href="#main-content" className="skip-link">跳到主要内容</a>
         <HeaderNav />
-        <div className="site-frame">{children}</div>
+        <PapersDataProvider>
+          <div className="site-frame">{children}</div>
+        </PapersDataProvider>
         <Footer />
       </body>
     </html>

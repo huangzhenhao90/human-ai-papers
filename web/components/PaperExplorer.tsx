@@ -6,11 +6,12 @@ import ChannelTabs from "@/components/ChannelTabs";
 import FilterPanel, { type Facets, type FilterValues } from "@/components/FilterPanel";
 import { CloseIcon, FilterIcon, RefreshIcon, SearchIcon } from "@/components/Icons";
 import PaperCard from "@/components/PaperCard";
+import { usePapersData } from "@/components/PapersDataProvider";
 import { Spectrum } from "@/components/Spectrum";
-import { DataLoadError, loadMeta, loadPapers, loadUpdates } from "@/lib/data";
+import { DataLoadError } from "@/lib/data";
 import { allTopicTags, compareRecent, countValues, isPublishedInLastSevenDays, matchesSearch, paperScore } from "@/lib/papers";
 import { readFavorites, readReadIds, storageEvents, toggleFavorite } from "@/lib/storage";
-import { channelDefinitions as getChannelDefinitions, channelMap, isChannel, type ChannelId, type Meta, type Paper, type Updates } from "@/lib/types";
+import { channelDefinitions as getChannelDefinitions, channelMap, isChannel, type ChannelId } from "@/lib/types";
 
 export type ExplorerMode = "all" | "recent" | "favorites";
 
@@ -38,42 +39,13 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [papers, setPapers] = useState<Paper[]>([]);
-  const [meta, setMeta] = useState<Meta | null>(null);
-  const [updates, setUpdates] = useState<Updates | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<Error | null>(null);
-  const [demo, setDemo] = useState(false);
-  const [reloadKey, setReloadKey] = useState(0);
+  const { papers, meta, updates, loading, error, demo, reload } = usePapersData();
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [readIds, setReadIds] = useState<Set<string>>(new Set());
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const [mobileFilters, setMobileFilters] = useState(false);
   const filterTriggerRef = useRef<HTMLButtonElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
-
-  useEffect(() => {
-    const controller = new AbortController();
-    setLoading(true);
-    setError(null);
-    Promise.allSettled([
-      loadPapers(controller.signal),
-      loadMeta(controller.signal),
-      loadUpdates(controller.signal),
-    ]).then(([papersResult, metaResult, updatesResult]) => {
-      if (controller.signal.aborted) return;
-      if (papersResult.status === "rejected") {
-        setError(papersResult.reason instanceof Error ? papersResult.reason : new Error(String(papersResult.reason)));
-      } else {
-        setPapers(papersResult.value.papers);
-        setDemo(papersResult.value.demo);
-      }
-      if (metaResult.status === "fulfilled") setMeta(metaResult.value);
-      if (updatesResult.status === "fulfilled") setUpdates(updatesResult.value);
-      setLoading(false);
-    });
-    return () => controller.abort();
-  }, [reloadKey]);
 
   useEffect(() => {
     const syncFavorites = () => setFavorites(readFavorites());
@@ -201,7 +173,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   }
 
   if (loading) return <ExplorerSkeleton />;
-  if (error) return <ExplorerError error={error} onRetry={() => setReloadKey((key) => key + 1)} />;
+  if (error) return <ExplorerError error={error} onRetry={reload} />;
 
   return (
     <main id="main-content">

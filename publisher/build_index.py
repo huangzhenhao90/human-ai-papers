@@ -18,7 +18,6 @@ from .normalize_contract import ChannelSnapshot, load_channel_snapshot
 
 LIST_FIELDS = (
     "id",
-    "doi",
     "title",
     "title_zh",
     "date",
@@ -27,16 +26,18 @@ LIST_FIELDS = (
     "authors",
     "channels",
     "channel_profiles",
-    "source_refs",
     "ai_type_tags",
     "cited_by",
+)
+LIST_PROFILE_FIELDS = ("ai_score", "domain_score", "topic_tags", "tldr")
+DETAIL_FIELDS = (
+    *LIST_FIELDS,
+    "doi",
+    "source_refs",
     "url",
     "pdf_url",
     "volume",
     "issue",
-)
-DETAIL_FIELDS = (
-    *LIST_FIELDS,
     "arxiv_id",
     "abstract",
     "authors_full",
@@ -46,6 +47,15 @@ DETAIL_FIELDS = (
 
 def _select_fields(paper: dict[str, Any], fields: Iterable[str]) -> dict[str, Any]:
     return {field: paper.get(field) for field in fields}
+
+
+def _select_list_paper(paper: dict[str, Any]) -> dict[str, Any]:
+    selected = _select_fields(paper, LIST_FIELDS)
+    selected["channel_profiles"] = {
+        channel: _select_fields(profile, LIST_PROFILE_FIELDS)
+        for channel, profile in paper["channel_profiles"].items()
+    }
+    return selected
 
 
 def _facet_counts(papers: list[dict[str, Any]]) -> dict[str, dict[str, int]]:
@@ -223,7 +233,7 @@ def build_unified_index(
         if _record_year(record) is None or _record_year(record) >= start_year
     ]
     merged, conflicts = merge_channel_records_with_diagnostics(all_records)
-    public_papers = [_select_fields(paper, LIST_FIELDS) for paper in merged]
+    public_papers = [_select_list_paper(paper) for paper in merged]
     version_payload = {
         "start_year": start_year,
         "papers": [

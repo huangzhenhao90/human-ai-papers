@@ -26,6 +26,7 @@ def main() -> None:
         browser = playwright.chromium.launch(headless=True)
         context = browser.new_context(viewport={"width": 1440, "height": 1000})
         page = context.new_page()
+        paper_index_requests: list[str] = []
 
         def on_console(message: ConsoleMessage) -> None:
             if message.type == "error":
@@ -37,6 +38,11 @@ def main() -> None:
 
         page.on("console", on_console)
         page.on("response", on_response)
+        page.on(
+            "request",
+            lambda request: paper_index_requests.append(request.url)
+            if request.url.endswith("/data/papers.json") else None,
+        )
 
         page.goto(BASE_URL, wait_until="networkidle")
         page.get_by_role("heading", name="追踪 AI 如何改变人、组织与心理健康").wait_for()
@@ -50,6 +56,15 @@ def main() -> None:
         assert page.locator(".paper-card__footer").first.evaluate(
             "element => getComputedStyle(element).borderTopWidth"
         ) == "0px"
+        assert len(paper_index_requests) == 1
+
+        page.locator(".main-nav").get_by_role("link", name="最近发表").click()
+        page.wait_for_url("**/recent")
+        page.get_by_role("heading", name="过去 7 天，哪些研究刚刚出现？").wait_for()
+        page.locator(".main-nav").get_by_role("link", name="全部论文").click()
+        page.wait_for_url(BASE_URL + "/")
+        page.get_by_role("heading", name="追踪 AI 如何改变人、组织与心理健康").wait_for()
+        assert len(paper_index_requests) == 1, "route switching downloaded papers.json again"
         page.screenshot(path=str(SCREENSHOT_DIR / "home-desktop.png"), full_page=True)
 
         page.get_by_role("group", name="研究频道").get_by_role(

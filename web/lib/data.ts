@@ -11,7 +11,7 @@ export class DataLoadError extends Error {
 async function fetchJson<T>(path: string, signal?: AbortSignal): Promise<T> {
   let response: Response;
   try {
-    response = await fetch(path, { cache: "no-store", signal });
+    response = await fetch(path, { signal });
   } catch (error) {
     if (error instanceof DOMException && error.name === "AbortError") throw error;
     throw new DataLoadError(path, `无法连接 ${path}`);
@@ -107,6 +107,55 @@ export async function loadMeta(signal?: AbortSignal) {
 
 export async function loadUpdates(signal?: AbortSignal) {
   return fetchJson<Updates>("/data/updates.json", signal);
+}
+
+export type CatalogData = {
+  papers: Paper[];
+  meta: Meta | null;
+  updates: Updates | null;
+  demo: boolean;
+};
+
+let catalogSnapshot: CatalogData | null = null;
+let catalogPromise: Promise<CatalogData> | null = null;
+let catalogGeneration = 0;
+
+export function getCatalogSnapshot() {
+  return catalogSnapshot;
+}
+
+export function loadCatalog(): Promise<CatalogData> {
+  if (catalogSnapshot) return Promise.resolve(catalogSnapshot);
+  if (catalogPromise) return catalogPromise;
+
+  const generation = catalogGeneration;
+  const request = Promise.allSettled([
+    loadPapers(),
+    loadMeta(),
+    loadUpdates(),
+  ]).then(([papersResult, metaResult, updatesResult]) => {
+    if (papersResult.status === "rejected") throw papersResult.reason;
+    const value: CatalogData = {
+      papers: papersResult.value.papers,
+      demo: papersResult.value.demo,
+      meta: metaResult.status === "fulfilled" ? metaResult.value : null,
+      updates: updatesResult.status === "fulfilled" ? updatesResult.value : null,
+    };
+    if (generation === catalogGeneration) catalogSnapshot = value;
+    return value;
+  }).catch((error) => {
+    if (generation === catalogGeneration) catalogPromise = null;
+    throw error;
+  });
+
+  catalogPromise = request;
+  return request;
+}
+
+export function resetCatalogCache() {
+  catalogGeneration += 1;
+  catalogSnapshot = null;
+  catalogPromise = null;
 }
 
 export async function loadPaperDetail(id: string, signal?: AbortSignal): Promise<PaperDetail> {
