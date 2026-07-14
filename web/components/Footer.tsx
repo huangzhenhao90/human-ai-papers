@@ -8,7 +8,7 @@ export default function Footer() {
       <Spectrum />
       <div className="site-footer__inner">
         <div><strong>AI Papers</strong><p>让分散的人 × AI 研究，在一条清晰的论文流里相遇。</p></div>
-        <nav aria-label="页脚导航"><Link href="/">全部论文</Link><Link href="/recent">最近发表</Link><Link href="/favorites">我的收藏</Link><Link href="/about">关于</Link><a href="/rss.xml"><RssIcon />RSS</a></nav>
+        <nav aria-label="页脚导航"><Link href="/" prefetch={false}>全部论文</Link><Link href="/recent" prefetch={false}>最近发表</Link><Link href="/favorites" prefetch={false}>我的收藏</Link><Link href="/about" prefetch={false}>关于</Link><a href="/rss.xml"><RssIcon />RSS</a></nav>
       </div>
     </footer>
   );

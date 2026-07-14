@@ -7,7 +7,6 @@ import FilterPanel, { type Facets, type FilterValues } from "@/components/Filter
 import { CloseIcon, FilterIcon, RefreshIcon, SearchIcon } from "@/components/Icons";
 import PaperCard from "@/components/PaperCard";
 import { usePapersData } from "@/components/PapersDataProvider";
-import { Spectrum } from "@/components/Spectrum";
 import { DataLoadError } from "@/lib/data";
 import { allTopicTags, compareRecent, countValues, isPublishedInLastSevenDays, matchesSearch, paperScore } from "@/lib/papers";
 import { readFavorites, readReadIds, storageEvents, toggleFavorite } from "@/lib/storage";
@@ -16,6 +15,7 @@ import { channelDefinitions as getChannelDefinitions, channelMap, isChannel, typ
 export type ExplorerMode = "all" | "recent" | "favorites";
 
 const PAGE_SIZE = 24;
+const explorerNavigateEvent = "ai-papers:explorer-navigate";
 
 const heroCopy: Record<ExplorerMode, { eyebrow: string; title: string; description: string }> = {
   all: {
@@ -40,7 +40,8 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const { papers, meta, updates, loading, error, demo, reload } = usePapersData();
-  const activeMode: ExplorerMode = pathname === "/recent" ? "recent" : pathname === "/favorites" ? "favorites" : mode;
+  const [displayPath, setDisplayPath] = useState(pathname);
+  const activeMode: ExplorerMode = displayPath === "/recent" ? "recent" : displayPath === "/favorites" ? "favorites" : mode;
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [readIds, setReadIds] = useState<Set<string>>(new Set());
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
@@ -62,6 +63,20 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
       window.removeEventListener(storageEvents.read, syncRead);
       window.removeEventListener("storage", syncFavorites);
       window.removeEventListener("storage", syncRead);
+    };
+  }, []);
+
+  useEffect(() => {
+    setDisplayPath(pathname);
+  }, [pathname]);
+
+  useEffect(() => {
+    const syncPath = () => setDisplayPath(window.location.pathname);
+    window.addEventListener("popstate", syncPath);
+    window.addEventListener(explorerNavigateEvent, syncPath);
+    return () => {
+      window.removeEventListener("popstate", syncPath);
+      window.removeEventListener(explorerNavigateEvent, syncPath);
     };
   }, []);
 
@@ -100,8 +115,8 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
     if (value === null || value === "" || isDefault) next.delete(key);
     else next.set(key, String(value));
     const queryString = next.toString();
-    router.replace(queryString ? `${pathname}?${queryString}` : pathname, { scroll: false });
-  }, [pathname, router, searchParams]);
+    router.replace(queryString ? `${displayPath}?${queryString}` : displayPath, { scroll: false });
+  }, [displayPath, router, searchParams]);
 
   const modePapers = useMemo(() => {
     if (activeMode === "recent") return papers.filter((paper) => isPublishedInLastSevenDays(paper));
@@ -160,7 +175,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   }
 
   function clearFilters() {
-    router.replace(pathname, { scroll: false });
+    router.replace(displayPath, { scroll: false });
   }
 
   function handleToggleFavorite(id: string) {
@@ -184,7 +199,6 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
           <h1>{hero.title}</h1>
           <p>{hero.description}</p>
         </div>
-        <div className="hero__spectrum"><Spectrum />{channelDefinitions.slice(0, 3).map((channel) => <span key={channel.id}>{channel.short} · {channel.label}</span>)}</div>
       </section>
 
       {demo ? <div className="notice notice--demo"><b>开发预览</b><span>尚未读到发布数据，当前展示小型示意样本。</span></div> : null}

@@ -14,10 +14,16 @@ const links = [
   { href: "/about", label: "关于" },
 ];
 const explorerPaths = new Set(["/", "/recent", "/favorites"]);
+const explorerNavigateEvent = "ai-papers:explorer-navigate";
 
 export default function HeaderNav() {
   const pathname = usePathname();
+  const [displayPath, setDisplayPath] = useState(pathname);
   const [favoriteCount, setFavoriteCount] = useState(0);
+
+  useEffect(() => {
+    setDisplayPath(pathname);
+  }, [pathname]);
 
   useEffect(() => {
     const sync = () => setFavoriteCount(readFavorites().size);
@@ -30,10 +36,22 @@ export default function HeaderNav() {
     };
   }, []);
 
+  useEffect(() => {
+    const syncPath = () => setDisplayPath(window.location.pathname);
+    window.addEventListener("popstate", syncPath);
+    window.addEventListener(explorerNavigateEvent, syncPath);
+    return () => {
+      window.removeEventListener("popstate", syncPath);
+      window.removeEventListener(explorerNavigateEvent, syncPath);
+    };
+  }, []);
+
   function navigateWithinExplorer(event: MouseEvent<HTMLAnchorElement>, href: string) {
-    if (!explorerPaths.has(pathname) || !explorerPaths.has(href) || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (!explorerPaths.has(displayPath) || !explorerPaths.has(href) || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     event.preventDefault();
-    window.history.pushState(null, "", href);
+    if (displayPath === href) return;
+    History.prototype.pushState.call(window.history, null, "", href);
+    window.dispatchEvent(new CustomEvent(explorerNavigateEvent));
     window.scrollTo({ top: 0 });
   }
 
@@ -48,8 +66,8 @@ export default function HeaderNav() {
         </Link>
         <nav className="main-nav" aria-label="主导航">
           {links.map((link) => {
-            const active = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
-            const instant = explorerPaths.has(pathname) && explorerPaths.has(link.href);
+            const active = link.href === "/" ? displayPath === "/" : displayPath.startsWith(link.href);
+            const instant = explorerPaths.has(displayPath) && explorerPaths.has(link.href);
             const label = (
               <>
                 {link.favorite ? <BookmarkIcon className="nav-icon" filled={active} /> : null}

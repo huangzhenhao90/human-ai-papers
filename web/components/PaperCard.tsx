@@ -38,7 +38,7 @@ export default function PaperCard({ paper, activeDomain, favorite, read, channel
             <BookmarkIcon filled={favorite} />
           </button>
         </div>
-        <Link href={`/papers/${encodeURIComponent(paper.id)}`} className="paper-card__title-link" onClick={() => markRead(paper.id)}>
+        <Link href={`/papers/${encodeURIComponent(paper.id)}`} prefetch={false} className="paper-card__title-link" onClick={() => markRead(paper.id)}>
           <h2>{paper.title_zh || paper.title}</h2>
           {paper.title_zh ? <p className="paper-card__english">{paper.title}</p> : null}
         </Link>
@@ -56,7 +56,7 @@ export default function PaperCard({ paper, activeDomain, favorite, read, channel
           <div className="paper-card__metrics">
             {profile ? <><span>AI <b>{profile.ai_score}</b></span><span>领域 <b>{profile.domain_score}</b></span></> : null}
             {paper.cited_by > 0 ? <span>引用 {paper.cited_by}</span> : null}
-            <Link href={`/papers/${encodeURIComponent(paper.id)}`} aria-label={`查看 ${paper.title_zh || paper.title} 详情`} onClick={() => markRead(paper.id)}><ArrowIcon /></Link>
+            <Link href={`/papers/${encodeURIComponent(paper.id)}`} prefetch={false} aria-label={`查看 ${paper.title_zh || paper.title} 详情`} onClick={() => markRead(paper.id)}><ArrowIcon /></Link>
           </div>
         </div>
       </div>

@@ -23,7 +23,7 @@ def main() -> None:
         page.goto(BASE_URL, wait_until="networkidle")
         page.get_by_role("heading", name=re.compile("追踪 AI 如何改变")).wait_for()
         assert page.locator(".paper-card").count() > 0, "Home paper stream is empty"
-        assert page.get_by_role("button", name=re.compile("心理健康")).count() == 1
+        assert page.get_by_role("group", name="研究频道").get_by_role("button", name=re.compile("心理健康")).count() == 1
         page.screenshot(path="/tmp/human-ai-papers-home.png", full_page=False)
 
         first_title = page.locator(".paper-card h2").first.inner_text()
@@ -44,8 +44,9 @@ def main() -> None:
         page.locator(".filters-desktop .clear-filters").click()
         page.wait_for_url(BASE_URL + "/")
 
-        page.get_by_role("button", name=re.compile("心理健康")).click()
-        page.get_by_role("heading", name=re.compile("心理健康频道正在回填")).wait_for()
+        page.get_by_role("group", name="研究频道").get_by_role("button", name=re.compile("心理健康")).click()
+        page.get_by_role("heading", name="心理健康", exact=True).wait_for()
+        assert page.locator(".paper-card").count() > 0, "Mental-health channel is empty"
         page.get_by_role("button", name=re.compile("全部领域")).click()
         page.get_by_role("button", name=re.compile("组织与商业")).click()
         page.wait_for_url(re.compile(r"domain=ob"))

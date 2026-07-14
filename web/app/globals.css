@@ -70,13 +70,10 @@ svg { display: block; }
 .main-nav .rss-link { margin-left: 6px; color: var(--ob); }
 
 /* Unified index hero */
-.hero { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(300px, .7fr); gap: clamp(28px, 5vw, 68px); align-items: end; padding: clamp(38px, 5vw, 58px) 0 28px; }
-.hero__copy { max-width: 790px; }
-.hero h1 { max-width: 760px; margin: 10px 0 12px; font-family: var(--display); font-size: clamp(36px, 4.4vw, 56px); font-weight: 600; line-height: 1.08; letter-spacing: -.04em; }
-.hero__copy > p { max-width: 680px; margin: 0; color: var(--ink-soft); font-size: 13px; line-height: 1.6; }
-.hero__spectrum { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 8px; padding-bottom: 5px; }
-.hero__spectrum .spectrum { grid-column: 1 / -1; height: 4px; margin-bottom: 8px; }
-.hero__spectrum > span { color: var(--muted); font: 500 8px/1.2 var(--utility); letter-spacing: .07em; }
+.hero { display: block; padding: clamp(38px, 5vw, 58px) 0 28px; }
+.hero__copy { max-width: 1120px; }
+.hero h1 { max-width: 1120px; margin: 10px 0 12px; font-family: var(--display); font-size: clamp(36px, 4.1vw, 54px); font-weight: 600; line-height: 1.08; letter-spacing: -.04em; }
+.hero__copy > p { max-width: 830px; margin: 0; color: var(--ink-soft); font-size: 15px; line-height: 1.6; }
 
 /* Channel tabs */
 .channel-tabs { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border: 1px solid var(--line); border-radius: 8px; background: var(--paper-raised); box-shadow: 0 7px 28px rgba(23, 35, 38, .035); overflow: hidden; }
@@ -363,8 +360,7 @@ svg { display: block; }
   .main-nav a { padding: 0 10px; }
   .main-nav a::after { right: 10px; left: 10px; }
   .main-nav .rss-link { margin-left: auto; }
-  .hero { grid-template-columns: 1fr; gap: 24px; }
-  .hero__spectrum { max-width: 440px; }
+  .hero { display: block; }
   .skeleton-grid { grid-template-columns: 1fr; gap: 0; }
   .skeleton-results { padding-left: 0; border-left: 0; }
   .skeleton--aside { display: none; }
@@ -389,9 +385,7 @@ svg { display: block; }
   .main-nav .rss-link { margin-left: 0; }
   .hero { padding: 32px 0 22px; }
   .hero h1 { font-size: clamp(32px, 10vw, 44px); }
-  .hero__copy > p { font-size: 13px; line-height: 1.6; }
-  .hero__spectrum { gap: 0 5px; }
-  .hero__spectrum > span { font-size: 6px; }
+  .hero__copy > p { font-size: 14px; line-height: 1.6; }
   .channel-tabs { grid-template-columns: 1fr 1fr; }
   .channel-tabs button { min-height: 56px; padding: 9px 12px; border-bottom: 1px solid var(--line); }
   .channel-tabs button:nth-child(even) { border-right: 0; }
