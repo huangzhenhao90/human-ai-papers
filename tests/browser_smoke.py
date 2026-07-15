@@ -25,6 +25,7 @@ def main() -> None:
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True)
         context = browser.new_context(viewport={"width": 1440, "height": 1000})
+        context.add_init_script("localStorage.removeItem('human-ai-papers-read-v1'); localStorage.removeItem('human-ai-papers-favorites-v1');")
         page = context.new_page()
         paper_index_requests: list[str] = []
         explorer_route_requests: list[str] = []
@@ -66,6 +67,8 @@ def main() -> None:
         assert first_home_card.locator(".favorite-button").is_visible()
         assert first_home_card.locator(".paper-card__metrics").count() == 0
         assert first_home_card.locator(".paper-card__chinese").count() <= 1
+        first_home_card.locator(".paper-card__meta").click()
+        assert "paper-card--read" in (first_home_card.get_attribute("class") or "")
         assert len(paper_index_requests) == 1
         explorer_route_requests.clear()
 
@@ -127,6 +130,7 @@ def main() -> None:
             "desktop search stays in the filter rail",
             "sort control replaces the duplicated result count",
             "paper cards use the compact UR-style citation hierarchy",
+            "clicking a paper card marks it as read",
             f"mental-health channel shows {MH_PAPERS} real scored papers",
             "paper detail opens",
             "favorite persists across routes",

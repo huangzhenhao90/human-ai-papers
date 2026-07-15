@@ -23,6 +23,9 @@ def main() -> None:
         page.goto(BASE_URL, wait_until="networkidle")
         page.get_by_role("heading", name=re.compile("追踪 AI 如何改变")).wait_for()
         assert page.locator(".paper-card").count() > 0, "Home paper stream is empty"
+        first_home_card = page.locator(".paper-card").first
+        first_home_card.locator(".paper-card__meta").click()
+        assert "paper-card--read" in (first_home_card.get_attribute("class") or ""), "Card click did not mark the paper as read"
         assert page.get_by_role("group", name="研究频道").get_by_role("button", name=re.compile("心理健康")).count() == 1
         page.screenshot(path="/tmp/human-ai-papers-home.png", full_page=False)
 

@@ -19,7 +19,7 @@ export default function PaperCard({ paper, activeDomain, favorite, read, onToggl
     : paper.authors.join("、");
 
   return (
-    <article className={`paper-card ${read ? "paper-card--read" : ""}`}>
+    <article className={`paper-card ${read ? "paper-card--read" : ""}`} onClick={() => markRead(paper.id)}>
       <div className="paper-card__body">
         <div className="paper-card__topline">
           <Link href={`/papers/${encodeURIComponent(paper.id)}`} prefetch={false} className="paper-card__title-link" onClick={() => markRead(paper.id)}>
