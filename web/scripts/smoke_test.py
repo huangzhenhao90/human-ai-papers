@@ -53,7 +53,7 @@ def main() -> None:
         assert page.locator(".paper-card").count() > 0, "OB channel is empty"
 
         first_card = page.locator(".paper-card").first
-        first_card.locator(".bookmark-button").click()
+        first_card.locator(".favorite-button").click()
         page.get_by_role("link", name=re.compile("我的收藏")).first.click()
         page.wait_for_load_state("networkidle")
         page.locator(".paper-card").first.wait_for()
@@ -63,6 +63,7 @@ def main() -> None:
         page.wait_for_url(re.compile(r"/papers/"))
         page.wait_for_load_state("networkidle")
         assert re.search(r"/papers/", page.url), "Detail route did not open"
+        page.locator(".paper-detail h1").wait_for()
         assert page.locator(".paper-detail h1").count() == 1, "Detail heading is missing"
         assert page.locator(".channel-profile").count() >= 1, "Channel profile is missing"
 

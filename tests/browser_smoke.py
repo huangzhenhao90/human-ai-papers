@@ -61,9 +61,11 @@ def main() -> None:
         assert page.locator(".result-heading .sort-field").is_visible()
         assert page.locator(".filters-desktop .search-field").is_visible()
         assert not page.locator(".search-field--results").is_visible()
-        assert page.locator(".paper-card__footer").first.evaluate(
-            "element => getComputedStyle(element).borderTopWidth"
-        ) == "0px"
+        first_home_card = page.locator(".paper-card").first
+        assert first_home_card.locator(".domain-track").count() == 0
+        assert first_home_card.locator(".favorite-button").is_visible()
+        assert first_home_card.locator(".paper-card__metrics").count() == 0
+        assert first_home_card.locator(".paper-card__chinese").count() <= 1
         assert len(paper_index_requests) == 1
         explorer_route_requests.clear()
 
@@ -88,8 +90,8 @@ def main() -> None:
         page.screenshot(path=str(SCREENSHOT_DIR / "mental-health-desktop.png"), full_page=True)
 
         first_card = page.locator(".paper-card").first
-        first_title = first_card.locator("h2").inner_text()
-        first_card.locator(".bookmark-button").click()
+        first_title = first_card.locator(".paper-card__chinese").inner_text()
+        first_card.locator(".favorite-button").click()
         first_card.locator(".paper-card__title-link").click()
         page.wait_for_url("**/papers/p_*")
         page.get_by_role("heading", name=first_title).wait_for()
@@ -124,7 +126,7 @@ def main() -> None:
             f"home shows {TOTAL_PAPERS} unified papers",
             "desktop search stays in the filter rail",
             "sort control replaces the duplicated result count",
-            "paper tags have no divider above them",
+            "paper cards use the compact UR-style citation hierarchy",
             f"mental-health channel shows {MH_PAPERS} real scored papers",
             "paper detail opens",
             "favorite persists across routes",

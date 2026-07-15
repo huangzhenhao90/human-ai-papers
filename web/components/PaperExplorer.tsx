@@ -238,7 +238,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
           ) : (
             <>
               <div className="paper-list">
-                {visiblePapers.map((paper) => <PaperCard key={paper.id} paper={paper} activeDomain={activeDomain} channels={channelDefinitions} favorite={favorites.has(paper.id)} read={readIds.has(paper.id)} onToggleFavorite={handleToggleFavorite} />)}
+                {visiblePapers.map((paper) => <PaperCard key={paper.id} paper={paper} activeDomain={activeDomain} favorite={favorites.has(paper.id)} read={readIds.has(paper.id)} onToggleFavorite={handleToggleFavorite} />)}
               </div>
               {visibleCount < filtered.length ? (
                 <button type="button" className="load-more" onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}>
