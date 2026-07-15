@@ -67,6 +67,8 @@ def main() -> None:
         assert first_home_card.locator(".favorite-button").is_visible()
         assert first_home_card.locator(".paper-card__metrics").count() == 0
         assert first_home_card.locator(".paper-card__chinese").count() <= 1
+        assert first_home_card.get_by_role("link", name="原文 ↗").get_attribute("href")
+        assert page.get_by_role("link", name="PDF ↗").count() > 0
         first_home_card.locator(".paper-card__meta").click()
         assert "paper-card--read" in (first_home_card.get_attribute("class") or "")
         assert len(paper_index_requests) == 1
@@ -75,9 +77,15 @@ def main() -> None:
         page.locator(".main-nav").get_by_role("link", name="最近发表").click()
         page.wait_for_url("**/recent")
         page.get_by_role("heading", name="过去 7 天，哪些研究刚刚出现？").wait_for()
+        page.get_by_role("group", name="研究频道").get_by_role("button", name=re.compile(r"用户与交互")).click()
+        page.wait_for_url("**/recent?domain=ur")
+        page.get_by_role("heading", name="用户与交互", exact=True).wait_for()
+        explorer_route_requests.clear()
         page.locator(".main-nav").get_by_role("link", name="全部论文").click()
         page.wait_for_url(BASE_URL + "/")
         page.get_by_role("heading", name="追踪 AI 如何改变人、组织与心理健康").wait_for()
+        page.get_by_role("heading", name="统一论文流", exact=True).wait_for()
+        assert page.get_by_role("group", name="研究频道").get_by_role("button", name=re.compile(r"用户与交互")).get_attribute("aria-pressed") == "false"
         assert len(paper_index_requests) == 1, "route switching downloaded papers.json again"
         assert not explorer_route_requests, "route switching fetched a Next.js page payload"
         page.screenshot(path=str(SCREENSHOT_DIR / "home-desktop.png"), full_page=True)
@@ -129,7 +137,9 @@ def main() -> None:
             f"home shows {TOTAL_PAPERS} unified papers",
             "desktop search stays in the filter rail",
             "sort control replaces the duplicated result count",
+            "main navigation clears an active channel when returning to all papers",
             "paper cards use the compact UR-style citation hierarchy",
+            "paper cards expose direct source and PDF links when available",
             "clicking a paper card marks it as read",
             f"mental-health channel shows {MH_PAPERS} real scored papers",
             "paper detail opens",

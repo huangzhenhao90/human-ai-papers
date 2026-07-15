@@ -22,6 +22,7 @@ export default function HeaderNav() {
   const [favoriteCount, setFavoriteCount] = useState(0);
 
   useEffect(() => {
+    if (typeof window !== "undefined" && pathname !== window.location.pathname) return;
     setDisplayPath(pathname);
   }, [pathname]);
 

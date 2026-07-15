@@ -35,13 +35,14 @@ const heroCopy: Record<ExplorerMode, { eyebrow: string; title: string; descripti
   },
 };
 
-export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
+export default function PaperExplorer({ mode: _mode }: { mode: ExplorerMode }) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const { papers, meta, updates, loading, error, demo, reload } = usePapersData();
   const [displayPath, setDisplayPath] = useState(pathname);
-  const activeMode: ExplorerMode = displayPath === "/recent" ? "recent" : displayPath === "/favorites" ? "favorites" : mode;
+  const [displaySearch, setDisplaySearch] = useState(searchParams.toString());
+  const activeMode: ExplorerMode = displayPath === "/recent" ? "recent" : displayPath === "/favorites" ? "favorites" : "all";
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   const [readIds, setReadIds] = useState<Set<string>>(new Set());
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
@@ -67,16 +68,21 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   }, []);
 
   useEffect(() => {
+    if (typeof window !== "undefined" && pathname !== window.location.pathname) return;
     setDisplayPath(pathname);
-  }, [pathname]);
+    setDisplaySearch(searchParams.toString());
+  }, [pathname, searchParams]);
 
   useEffect(() => {
-    const syncPath = () => setDisplayPath(window.location.pathname);
-    window.addEventListener("popstate", syncPath);
-    window.addEventListener(explorerNavigateEvent, syncPath);
+    const syncLocation = () => {
+      setDisplayPath(window.location.pathname);
+      setDisplaySearch(window.location.search.slice(1));
+    };
+    window.addEventListener("popstate", syncLocation);
+    window.addEventListener(explorerNavigateEvent, syncLocation);
     return () => {
-      window.removeEventListener("popstate", syncPath);
-      window.removeEventListener(explorerNavigateEvent, syncPath);
+      window.removeEventListener("popstate", syncLocation);
+      window.removeEventListener(explorerNavigateEvent, syncLocation);
     };
   }, []);
 
@@ -97,26 +103,28 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
 
   const channelDefinitions = useMemo(() => getChannelDefinitions(meta), [meta]);
   const channelLookup = useMemo(() => channelMap(channelDefinitions), [channelDefinitions]);
-  const domainValue = searchParams.get("domain");
+  const displayParams = useMemo(() => new URLSearchParams(displaySearch), [displaySearch]);
+  const domainValue = displayParams.get("domain");
   const activeDomain: ChannelId | null = isChannel(domainValue, channelDefinitions) ? domainValue : null;
-  const query = searchParams.get("q") || "";
-  const year = searchParams.get("year") || "";
-  const journal = searchParams.get("journal") || "";
-  const topic = searchParams.get("topic") || "";
-  const aiType = searchParams.get("aitype") || "";
-  const requestedMin = Number(searchParams.get("minscore") || 3);
+  const query = displayParams.get("q") || "";
+  const year = displayParams.get("year") || "";
+  const journal = displayParams.get("journal") || "";
+  const topic = displayParams.get("topic") || "";
+  const aiType = displayParams.get("aitype") || "";
+  const requestedMin = Number(displayParams.get("minscore") || 3);
   const minScore = requestedMin === 4 || requestedMin === 5 ? requestedMin : 3;
-  const requestedSort = searchParams.get("sort");
+  const requestedSort = displayParams.get("sort");
   const sort = requestedSort === "score" || requestedSort === "cited" ? requestedSort : "recent";
 
   const updateParam = useCallback((key: string, value: string | number | null) => {
-    const next = new URLSearchParams(searchParams.toString());
+    const next = new URLSearchParams(displaySearch);
     const isDefault = (key === "minscore" && value === 3) || (key === "sort" && value === "recent");
     if (value === null || value === "" || isDefault) next.delete(key);
     else next.set(key, String(value));
     const queryString = next.toString();
+    setDisplaySearch(queryString);
     router.replace(queryString ? `${displayPath}?${queryString}` : displayPath, { scroll: false });
-  }, [displayPath, router, searchParams]);
+  }, [displayPath, displaySearch, router]);
 
   const modePapers = useMemo(() => {
     if (activeMode === "recent") return papers.filter((paper) => isPublishedInLastSevenDays(paper));
@@ -175,6 +183,7 @@ export default function PaperExplorer({ mode }: { mode: ExplorerMode }) {
   }
 
   function clearFilters() {
+    setDisplaySearch("");
     router.replace(displayPath, { scroll: false });
   }
 

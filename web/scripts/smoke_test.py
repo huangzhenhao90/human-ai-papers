@@ -24,6 +24,8 @@ def main() -> None:
         page.get_by_role("heading", name=re.compile("追踪 AI 如何改变")).wait_for()
         assert page.locator(".paper-card").count() > 0, "Home paper stream is empty"
         first_home_card = page.locator(".paper-card").first
+        assert first_home_card.get_by_role("link", name="原文 ↗").get_attribute("href"), "Card source link is missing"
+        assert page.get_by_role("link", name="PDF ↗").count() > 0, "No card exposes an available PDF link"
         first_home_card.locator(".paper-card__meta").click()
         assert "paper-card--read" in (first_home_card.get_attribute("class") or ""), "Card click did not mark the paper as read"
         assert page.get_by_role("group", name="研究频道").get_by_role("button", name=re.compile("心理健康")).count() == 1
@@ -80,6 +82,11 @@ def main() -> None:
 
         page.goto(f"{BASE_URL}/recent", wait_until="networkidle")
         page.get_by_role("heading", level=1, name=re.compile("过去 7 天")).wait_for()
+        page.get_by_role("group", name="研究频道").get_by_role("button", name=re.compile("用户与交互")).click()
+        page.wait_for_url(re.compile(r"/recent\?domain=ur"))
+        page.get_by_role("link", name="全部论文").first.click()
+        page.wait_for_url(BASE_URL + "/")
+        page.get_by_role("heading", name="统一论文流", exact=True).wait_for()
         page.goto(f"{BASE_URL}/about", wait_until="networkidle")
         page.get_by_role("heading", name=re.compile("不是三个论文站")).wait_for()
 

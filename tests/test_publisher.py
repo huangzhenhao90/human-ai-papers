@@ -141,7 +141,14 @@ def test_build_supports_optional_mh_and_is_byte_idempotent(tmp_path: Path):
     upstream = tmp_path / "upstream"
     _snapshot(
         upstream / "ob",
-        [paper(id=1), paper(id=3, doi="10.9999/old", title="Old", year=2022, date="2022-01-01")],
+        [
+            paper(
+                id=1,
+                url="https://example.com/article",
+                pdf_url="https://example.com/article.pdf",
+            ),
+            paper(id=3, doi="10.9999/old", title="Old", year=2022, date="2022-01-01"),
+        ],
         generated_at="2026-07-01T00:00:00Z",
         revision="ob",
     )
@@ -188,6 +195,8 @@ def test_build_supports_optional_mh_and_is_byte_idempotent(tmp_path: Path):
         "ai_score", "domain_score", "topic_tags", "tldr"
     }
     assert "doi" not in shared and "source_refs" not in shared
+    assert shared["url"] == "https://example.com/article"
+    assert shared["pdf_url"] == "https://example.com/article.pdf"
     detail = json.loads((output / "papers" / f"{shared['id']}.json").read_text())
     assert detail["doi"] == "10.1234/example.1"
     assert detail["source_refs"]

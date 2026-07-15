@@ -28,6 +28,8 @@ LIST_FIELDS = (
     "channel_profiles",
     "ai_type_tags",
     "cited_by",
+    "url",
+    "pdf_url",
 )
 LIST_PROFILE_FIELDS = ("ai_score", "domain_score", "topic_tags", "tldr")
 DETAIL_FIELDS = (
