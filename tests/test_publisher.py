@@ -330,11 +330,23 @@ def test_executed_mental_health_batch_merges_into_cumulative_snapshot(tmp_path: 
     write_json(cumulative / "meta.json", {"generated_at": "2026-07-01", "dry_run": False})
     write_json(
         batch / "meta.json",
-        {"generated_at": "2026-07-02", "dry_run": False, "status": "success", "totals": {"papers_published": 1}},
+        {
+            "generated_at": "2026-07-02",
+            "dry_run": False,
+            "status": "success",
+            "processed_candidate_keys": ["doi:10.9999/incoming", "openalex:W_REJECTED"],
+            "totals": {"papers_published": 1},
+        },
     )
 
     result = merge_mental_health_batch(batch_dir=batch, cumulative_dir=cumulative)
 
     assert result["previous_papers"] == 1
     assert result["cumulative_papers"] == 2
+    assert result["processed_candidates"] == 3
     assert len(json.loads((cumulative / "papers.json").read_text())) == 2
+    assert json.loads((cumulative / "meta.json").read_text())["processed_candidate_keys"] == [
+        "doi:10.9999/existing",
+        "doi:10.9999/incoming",
+        "openalex:W_REJECTED",
+    ]

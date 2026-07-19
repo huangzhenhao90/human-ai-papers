@@ -221,6 +221,7 @@ def test_fake_score_exports_publisher_contract_and_controlled_tags(tmp_path: Pat
     )
     assert meta["status"] == "success"
     assert meta["totals"]["papers_published"] == 1
+    assert meta["processed_candidate_keys"] == ["doi:10.1234/mh.1"]
     papers = json.loads((tmp_path / "papers.json").read_text())
     full = json.loads((tmp_path / "papers_full.json").read_text())
     assert set(papers[0]) >= {

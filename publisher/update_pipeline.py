@@ -115,6 +115,7 @@ def merge_mental_health_batch(*, batch_dir: Path, cumulative_dir: Path) -> dict[
 
     existing_public: list[dict[str, Any]] = []
     existing_full: list[dict[str, Any]] = []
+    existing_meta: dict[str, Any] = {}
     if (cumulative_dir / "papers.json").is_file():
         value = read_json(cumulative_dir / "papers.json", context="read cumulative MH papers")
         if not isinstance(value, list):
@@ -125,6 +126,10 @@ def merge_mental_health_batch(*, batch_dir: Path, cumulative_dir: Path) -> dict[
         if not isinstance(value, list):
             raise RuntimeError("merge mental-health batch: cumulative papers_full.json must be an array")
         existing_full = value
+    if (cumulative_dir / "meta.json").is_file():
+        value = read_json(cumulative_dir / "meta.json", context="read cumulative MH meta")
+        if isinstance(value, dict):
+            existing_meta = value
 
     public = _merge_records(existing_public, batch_public)
     full = _merge_records(existing_full, batch_full)
@@ -134,9 +139,23 @@ def merge_mental_health_batch(*, batch_dir: Path, cumulative_dir: Path) -> dict[
         raise RuntimeError("merge mental-health batch: compact and full snapshots disagree")
 
     last_batch_totals = dict(batch_meta.get("totals") or {})
+    processed_keys = {
+        str(key)
+        for key in (existing_meta.get("processed_candidate_keys") or [])
+        if str(key)
+    }
+    # Older snapshots predate processed_candidate_keys. Their published records
+    # still count as processed so the first automated run does not rescore them.
+    processed_keys.update(_mental_health_key(record) for record in existing_full)
+    processed_keys.update(
+        str(key)
+        for key in (batch_meta.get("processed_candidate_keys") or [])
+        if str(key)
+    )
     cumulative_meta = {
         **batch_meta,
         "scope": "cumulative",
+        "processed_candidate_keys": sorted(processed_keys),
         "totals": {
             **last_batch_totals,
             "papers_published": len(public),
@@ -161,5 +180,6 @@ def merge_mental_health_batch(*, batch_dir: Path, cumulative_dir: Path) -> dict[
         "previous_papers": len(existing_public),
         "batch_papers": len(batch_public),
         "cumulative_papers": len(public),
+        "processed_candidates": len(processed_keys),
         "status": batch_meta.get("status"),
     }

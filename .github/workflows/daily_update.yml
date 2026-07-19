@@ -8,7 +8,7 @@ on:
       mh_mode:
         description: "心理健康更新模式；execute 会产生小批量付费调用"
         required: true
-        default: skip
+        default: execute
         type: choice
         options: [skip, fetch, dry-run, execute]
       mh_limit:
@@ -52,7 +52,7 @@ jobs:
           CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           MINIMAX_BASE_URL: https://api.minimaxi.com/v1
-          MINIMAX_MODEL: MiniMax-M2.7
+          MINIMAX_MODEL: MiniMax-M2.5-lightning
         run: |
           python scripts/update_project.py \
             --ob upstreams/ob-ai-papers \
@@ -60,8 +60,9 @@ jobs:
             --ob-ref HEAD \
             --ur-ref HEAD \
             --skip-fetch-remotes \
-            --mh-mode "${{ inputs.mh_mode || 'skip' }}" \
+            --mh-mode "${{ inputs.mh_mode || 'execute' }}" \
             --mh-limit "${{ inputs.mh_limit || '12' }}" \
+            --mh-scan-limit "120" \
             --site-url "${SITE_URL:-https://human-ai-papers.vercel.app}"
       - run: pytest -q
       - uses: actions/setup-node@v4

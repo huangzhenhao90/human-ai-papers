@@ -14,6 +14,7 @@ from typing import Any, Callable, Mapping
 import httpx
 
 from .config import load_theme_config
+from .openalex import candidate_key
 from .signals import evaluate_recall, false_positive_domain_cap
 
 
@@ -388,6 +389,9 @@ def _write_exports(
         "model": model,
         "scope": "current_candidates_batch",
         "thresholds": thresholds,
+        # Only successful scores are remembered. Failed candidates remain eligible
+        # for a later retry instead of being silently discarded.
+        "processed_candidate_keys": sorted(candidate_key(candidate) for candidate, _ in scored),
         "totals": {
             "candidates_input": len(candidates),
             "papers_scored": len(scored),

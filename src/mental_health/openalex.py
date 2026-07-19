@@ -196,7 +196,7 @@ def normalize_work(
     }
 
 
-def _candidate_key(candidate: dict[str, Any]) -> str:
+def candidate_key(candidate: dict[str, Any]) -> str:
     if candidate.get("doi"):
         return f"doi:{candidate['doi']}"
     if candidate.get("openalex_id"):
@@ -335,7 +335,7 @@ def run_fetch(
                         recall_decision=decision,
                         retrieved_at=retrieved_at,
                     )
-                    key = _candidate_key(candidate)
+                    key = candidate_key(candidate)
                     if key not in gathered:
                         gathered[key] = candidate
                         source_report["accepted"] += 1

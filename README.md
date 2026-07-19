@@ -38,7 +38,7 @@ GitHub：https://github.com/huangzhenhao90/human-ai-papers
 
     python scripts/update_project.py
 
-默认不会调用付费模型。心理健康支持四种显式模式：
+本地默认不会调用付费模型。心理健康支持四种显式模式：
 
     python scripts/update_project.py --mh-mode fetch
     python scripts/update_project.py --mh-mode dry-run
@@ -127,7 +127,7 @@ Python：
 ## 自动更新与部署
 
 - `.github/workflows/ci.yml`：Python 测试、公开数据校验、TypeScript 与 Next.js 构建。
-- `.github/workflows/daily_update.yml`：每天北京时间 10:00 同步两个上游、构建、校验并提交变化；心理健康付费更新只可手动选择 `execute`。
+- `.github/workflows/daily_update.yml`：每天北京时间 10:00 同步 OB / UR，并对心理健康执行 OpenAlex 候选检索和最多 12 篇 MiniMax 双评分；已评分候选会自动排除，然后构建、校验并提交变化。
 - `web/vercel.json`：将 Vercel 项目 Root Directory 设为 `web` 后可直接部署。
 - 正式部署前将 GitHub Repository Variable `SITE_URL` 设置为网站域名，RSS 会使用该域名。
 

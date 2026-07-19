@@ -21,6 +21,7 @@ from publisher.build_index import build_unified_index
 from publisher.io_utils import write_json
 from publisher.update_pipeline import merge_mental_health_batch, sync_legacy_with_fallback
 from publisher.validate_release import validate_release
+from src.mental_health.openalex import candidate_key
 
 
 def parse_args() -> argparse.Namespace:
@@ -33,6 +34,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--skip-fetch-remotes", action="store_true", help="Do not refresh origin before snapshotting")
     parser.add_argument("--mh-mode", choices=("skip", "fetch", "dry-run", "execute"), default="skip")
     parser.add_argument("--mh-limit", type=int, default=12, help="Bounded MH candidate/scoring cap")
+    parser.add_argument("--mh-scan-limit", type=int, default=120, help="Free MH recall scan cap before excluding processed candidates")
     parser.add_argument("--mh-batch-size", type=int, default=4)
     parser.add_argument("--start-year", type=int, default=2023)
     parser.add_argument("--site-url", default=os.getenv("SITE_URL", "http://localhost:3300"))
@@ -68,13 +70,26 @@ def _update_mental_health(args: argparse.Namespace) -> dict[str, Any] | None:
             str(PROJECT_ROOT / "scripts/fetch_mental_health.py"),
             "--output", str(candidates),
             "--report", str(fetch_report),
-            "--limit", str(args.mh_limit),
+            "--limit", str(args.mh_scan_limit),
         ]
         if args.mh_mode == "dry-run":
             fetch_command.append("--dry-run")
         _run(fetch_command)
         if args.mh_mode in {"fetch", "dry-run"}:
             return {"mode": args.mh_mode, "fetch_report": json.loads(fetch_report.read_text())}
+
+        fetched = json.loads(candidates.read_text())
+        cumulative_dir = PROJECT_ROOT / "data/exports/mental-health"
+        processed_keys: set[str] = set()
+        meta_path = cumulative_dir / "meta.json"
+        if meta_path.is_file():
+            meta = json.loads(meta_path.read_text())
+            processed_keys.update(str(key) for key in meta.get("processed_candidate_keys") or [])
+        full_path = cumulative_dir / "papers_full.json"
+        if full_path.is_file():
+            processed_keys.update(candidate_key(record) for record in json.loads(full_path.read_text()))
+        selected = [item for item in fetched if candidate_key(item) not in processed_keys][: args.mh_limit]
+        write_json(candidates, selected)
 
         batch_dir = temp / "scored"
         _run([
@@ -90,7 +105,17 @@ def _update_mental_health(args: argparse.Namespace) -> dict[str, Any] | None:
             batch_dir=batch_dir,
             cumulative_dir=PROJECT_ROOT / "data/exports/mental-health",
         )
-        return {"mode": "execute", "merge": merged}
+        return {
+            "mode": "execute",
+            "selection": {
+                "fetched": len(fetched),
+                "already_processed": len(fetched) - len([item for item in fetched if candidate_key(item) not in processed_keys]),
+                "selected_for_scoring": len(selected),
+                "scoring_limit": args.mh_limit,
+                "scan_limit": args.mh_scan_limit,
+            },
+            "merge": merged,
+        }
 
 
 def main() -> int:
