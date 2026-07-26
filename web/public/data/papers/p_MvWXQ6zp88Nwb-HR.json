@@ -1,0 +1,113 @@
+{
+  "abstract": "Abstract Psychosis prevention relies on early detection of individuals at clinical high risk for psychosis (CHR-P). The effectiveness of the CHR-P state is constrained, in part, due to clinical assessments requiring specialist interpretation of narrative interviews, limiting scalability. Here, we evaluate whether large language models (LLMs; deep learning models trained on large text corpora to process and generate language) can extract clinically meaningful information from such interviews to support psychosis risk assessment. We assessed 11 open-weight LLMs on 678 partial PSYCHS interview transcripts from 373 participants (77.7% CHR-P). Models inferred CHR-P status and estimated severity and frequency across 15 symptom domains, benchmarked against researcher-rated scores. Larger models achieved the strongest classification performance (Llama-3.3-70B: accuracy = 0.80, sensitivity = 0.93, specificity = 0.58). LLM-generated symptom scores showed good correlations with researcher-rated scores (ICC sev = 0.74, ICC freq = 0.75). Performance disparities were minimal across most demographic groups but varied across sites. Generated summaries were largely faithful to source transcripts, with low rates of clinically relevant confabulation (3%). Errors primarily reflected over-pathologisation of non-clinical experiences. While accuracy scaled with model size, smaller models achieved competitive performance with substantially lower computational cost. These findings demonstrate that open-weight LLMs have the potential to assess psychosis risk from psychometric interview transcripts, supporting scalable, human-in-the-loop approaches to early detection.",
+  "ai_type_tags": [
+    "llm_genai",
+    "nlp",
+    "deep_learning"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Taiyu Zhu",
+    "Alexander Tashevski",
+    "Maxime Taquet",
+    "Matilda Azis",
+    "Tia Jani",
+    "Matthew R. Broome",
+    "Thomas Kabir",
+    "Amedeo Minichino",
+    "Graham K. Murray",
+    "Matthew M. Nour"
+  ],
+  "authors_full": [
+    {
+      "name": "Taiyu Zhu"
+    },
+    {
+      "name": "Alexander Tashevski"
+    },
+    {
+      "name": "Maxime Taquet"
+    },
+    {
+      "name": "Matilda Azis"
+    },
+    {
+      "name": "Tia Jani"
+    },
+    {
+      "name": "Matthew R. Broome"
+    },
+    {
+      "name": "Thomas Kabir"
+    },
+    {
+      "name": "Amedeo Minichino"
+    },
+    {
+      "name": "Graham K. Murray"
+    },
+    {
+      "name": "Matthew M. Nour"
+    },
+    {
+      "name": "Ilina Singh"
+    },
+    {
+      "name": "Paolo Fusar-Poli"
+    },
+    {
+      "name": "Alejo Nevado-Holgado"
+    },
+    {
+      "name": "Philip McGuire"
+    },
+    {
+      "name": "Dominic Oliver"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "评估LLM从心理访谈记录中提取信息以支持精神病风险评估，属于AI核心方法用于心理健康筛查/评估。",
+      "ai_score": 5,
+      "clinical_validation": "internal",
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "overreliance",
+        "transparency_accountability"
+      ],
+      "safety_evaluated": false,
+      "tldr": "在678份部分PSYCHS访谈记录上评估11个开源LLM，LLaMA-3.3-70B分类准确率0.80，ICC症状严重度0.74，支持可扩展的早期精神病风险检测。",
+      "topic_tags": [
+        "psychosis_schizophrenia",
+        "screening_assessment",
+        "clinical_patients"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-23",
+  "doi": "10.1038/s41746-026-02928-4",
+  "id": "p_MvWXQ6zp88Nwb-HR",
+  "issue": null,
+  "journal": "npj Digital Medicine",
+  "pdf_url": "https://www.nature.com/articles/s41746-026-02928-4.pdf",
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7170171534"
+    }
+  ],
+  "title": "Evaluating large language models for assessment of psychosis risk",
+  "title_zh": "评估大语言模型用于精神病风险评估",
+  "unified_ingested_at": "2026-07-26T05:35:52.632450Z",
+  "url": "https://doi.org/10.1038/s41746-026-02928-4",
+  "volume": null,
+  "year": 2026
+}

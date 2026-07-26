@@ -1,0 +1,86 @@
+{
+  "abstract": "Background: Anxiety disorders are highly prevalent among adults with autism, with 20%-65% experiencing at least one diagnosable anxiety disorder. While mindfulness-based interventions have demonstrated efficacy for anxiety reduction, treatment response varies considerably across individuals. Machine learning approaches offer potential for identifying who is most likely to benefit from smartphone-based mindfulness interventions, enabling personalized treatment recommendations. Objective: This study aimed to develop and evaluate machine learning models to predict individual treatment response to a smartphone-based mindfulness intervention for adults with autism. We identified baseline characteristics that distinguish responders from nonresponders and explored few-shot learning with large language models (LLMs) as a complementary approach for low-data clinical prediction. Methods: We conducted a secondary analysis of a randomized controlled trial comparing a 6-week smartphone-based mindfulness intervention with a waitlist control group in adults with autism. Among 73 participants who completed the intervention, we defined responders as those achieving a ≥7-point reduction in State-Trait Anxiety Inventory state anxiety scores. Baseline predictors included demographic variables; autism trait measures; and self-report questionnaires assessing anxiety symptoms, perceived stress, affect, and mindfulness. To determine which machine learning model was most predictive of response, we trained 6 different models (logistic regression, random forest, extreme gradient boosting [XGBoost], tabular data network [TabNet], TabICL, and Tabular Prior-Data Fitted Network [TabPFN]) using nested 10-fold cross-validation with inner 5-fold cross-validation for hyperparameter tuning and evaluated GPT-4o few-shot learning with tokenized features at 20 to 70 shots. Results: Random forest achieved the highest predictive performance for state anxiety response (area under the curve [AUC] 0.79, 95% CI 0.66-0.91), followed by TabPFN (AUC 0.78, 95% CI 0.64-0.94) and logistic regression (AUC 0.77, 95% CI 0.73-0.81). Higher baseline state anxiety (standardized β coefficient=1.20, P<.001) predicted better treatment response, while higher Autism Spectrum Quotient at baseline (standardized β coefficient=-0.17, P=.001), older age (standardized β coefficient=-0.18, P=.02), and lower childhood pretend play scores (standardized β coefficient=-0.93, P=.007) were associated with poorer response. Few-shot learning with 7-feature tokenization achieved an accuracy of 0.867 at 70 shots, compared to an accuracy of 0.733 for random forest. Prediction of trait anxiety changes was substantially weaker (AUCs 0.46-0.68), likely reflecting the inherent stability of this personality dimension. Conclusions: Machine learning models successfully identified baseline characteristics predicting state anxiety response to a smartphone-based mindfulness intervention in adults with autism. Few-shot learning with LLMs demonstrated superior performance to traditional machine learning when provided with compact, high-signal feature representations, offering a promising approach for clinical prediction in small-sample settings. These findings demonstrate the feasibility of precision psychiatry in digital mental health interventions for adults with autism. As online mental health interventions become ubiquitous, patients and clinicians can know whether a particular intervention is more or less likely to benefit an individual patient.",
+  "ai_type_tags": [
+    "llm_genai",
+    "machine_learning"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Gun Ahn",
+    "Cindy Li",
+    "Aixin Liang",
+    "Wonchang Choi",
+    "Seoin Ahn",
+    "Clark Roberts",
+    "John D. E. Gabrieli"
+  ],
+  "authors_full": [
+    {
+      "name": "Gun Ahn"
+    },
+    {
+      "name": "Cindy Li"
+    },
+    {
+      "name": "Aixin Liang"
+    },
+    {
+      "name": "Wonchang Choi"
+    },
+    {
+      "name": "Seoin Ahn"
+    },
+    {
+      "name": "Clark Roberts"
+    },
+    {
+      "name": "John D. E. Gabrieli"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "使用LLM少样本学习预测自闭症成人焦虑干预的治疗反应，基于RCT二级分析，AI为预测核心方法。",
+      "ai_score": 5,
+      "clinical_validation": "randomized_controlled_trial",
+      "domain_score": 5,
+      "evidence_stage": "randomized_controlled_trial",
+      "ground_truth_quality": "validated_instrument",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "在73名自闭症成人RCT中，GPT-4o少样本学习70样本准确率0.867优于随机森林（AUC 0.79），证明LLM在小样本临床预测中的可行性。",
+      "topic_tags": [
+        "anxiety",
+        "treatment_support",
+        "risk_prediction",
+        "adults",
+        "clinical_patients"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-12",
+  "doi": "10.2196/89054",
+  "id": "p_mRi3NFnr_HjSaiG9",
+  "issue": null,
+  "journal": "JMIR AI",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7164509822"
+    }
+  ],
+  "title": "Large Language Model Few-Shot Learning for Predicting Individual Treatment Response to Smartphone-Based Mindfulness in Autistic Adults With Anxiety: Secondary Analysis of a Randomized Controlled Trial",
+  "title_zh": "大语言模型少样本学习预测自闭症成人智能手机正念干预个体治疗反应",
+  "unified_ingested_at": "2026-07-26T05:35:52.632450Z",
+  "url": "https://doi.org/10.2196/89054",
+  "volume": null,
+  "year": 2026
+}
