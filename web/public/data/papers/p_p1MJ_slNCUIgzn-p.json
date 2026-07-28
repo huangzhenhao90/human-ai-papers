@@ -1,0 +1,66 @@
+{
+  "abstract": "Conversational Speech Synthesis is a fundamental component of human-computer interaction, aiming to generate contextually appropriate, expressive, and empathetic speech. However, facial expressions encode subtle and rich affective cues that are crucial for empathetic speech interaction, whereas existing approaches often overlook this important modality. In addition, the lack of large-scale natural conversational datasets with both speech and visual modalities also limits the development of visual affect understanding in conversational settings.To address these limitations, we propose FacialTalker, a facial-expression-aware CSS framework built upon a large language model backbone. To efficiently encode facial expressions, we propose AUTokenizer, a single-codebook visual tokenizer that discretizes each frame-level facial expression into a compact token, trained with supervision from combinations of facial Action Units. We further introduce a dual direct preference optimization (DualDPO) strategy, which extends the DPO by jointly imposing preference constraints on both visual and speech token sequences, to enhance the model's understanding of facial expressions and speech semantics in multimodal conversational contexts. Moreover, we construct VSDD-1K, a large-scale multimodal dialogue dataset collected through a fully automated pipeline from real-world Internet conversations, comprising over 1,033 hours of synchronized speaker videos and speech, with more than 85\\% of frames containing valid faces. Extensive objective and subjective experiments demonstrate that FacialTalker consistently outperforms strong baselines in facial-expression perception and speech synthesis quality, generating speech that is more natural, expressive, and better aligned with the conversational context. The results also validate the effectiveness of our training strategy and dataset construction pipeline.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "情感识别"
+  ],
+  "arxiv_id": "2607.24430",
+  "authors": [
+    "Yifan Hu",
+    "Shuwei He",
+    "Rui Liu",
+    "Haizhou Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Yifan Hu"
+    },
+    {
+      "name": "Shuwei He"
+    },
+    {
+      "name": "Rui Liu"
+    },
+    {
+      "name": "Haizhou Li"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM-based facial CSS, HCI context but primarily tech",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "在对话语音合成中忽视面部表情导致情感表达不足。提出 FacialTalker 框架，基于大语言模型并引入 AUTokenizer 将面部动作离散为视觉 token，结合双直接偏好优化（DualDPO）提升多模态对话中视觉与语音一致性。构建 VSDD‑1K 数据集（超 1033 小时同步音视频），实验表明模型能更自然地生成情感匹配的语音与表情。",
+      "topic_tags": [
+        "多模态交互",
+        "情感计算",
+        "对话式 AI",
+        "人机交互"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-27",
+  "doi": null,
+  "id": "p_p1MJ_slNCUIgzn-p",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2607.24430v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15340,
+      "revision": "6ebf26fca25b401a1bbbb4b7558e431ecc82d04e"
+    }
+  ],
+  "title": "Let Me Look at You: Advanced Facial Expression Modeling for Conversational Speech Synthesis",
+  "title_zh": "让我看看你：用于对话语音合成的高级面部表情建模",
+  "unified_ingested_at": "2026-07-28T05:17:08.933862Z",
+  "url": "https://arxiv.org/abs/2607.24430v1",
+  "volume": null,
+  "year": 2026
+}
