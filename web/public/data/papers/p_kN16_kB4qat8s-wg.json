@@ -1,0 +1,115 @@
+{
+  "abstract": "Structured psychiatric interviews improve diagnostic reliability but are resource-intensive to administer. We developed a multi-agent large language model (LLM) framework to support protocolized structured interviewing and module-level psychiatric screening. The system orchestrates four agents, Questioner, Evaluator, Navigator, and Diagnoser, to administer interview modules, interpret free-text responses, enforce bounded clarification loops, identify safety-related red flags and trigger escalation, and apply encoded decision rules to produce screening outcomes. Prior to any model processing, responses undergo automated redaction of personally identifiable and protected health information. We conducted a simulation-based technical evaluation using 1350 interviews across 15 neuropsychiatric screening modules (e.g., anxiety, depression, and bipolar disorders) with systematic variation in symptom direction, disclosure depth, and emotional tone. To test robustness to language variability, we additionally evaluated reconstructed conversation bundles derived from the deidentified MentalChat16K dataset. In the primary evaluation, module-level decisions showed 87.8% concordance with rule-based expected outcomes (95% CI: 85.9–89.6), with sensitivity 88.9% (95% CI: 86.5–91.2) and specificity 86.7% (95% CI: 84.0–89.2) relative to predefined item-level endorsements. Post hoc comparator analyses showed higher F2 for the multi-agent framework (88.5%) than single-pass LLM (49.5%) or deterministic rule-based (61.9%) transcript-scoring baselines. On a 2000-sentence red flag benchmark stratified by explicit/implicit and active/passive ideation, the classifier achieved 93.9% accuracy, 94.2% sensitivity, and 93.6% specificity. In pilot feedback from mental health clinicians, descriptive ratings suggested favorable perceptions of clarity, workflow fit, and perceived safety for clinician-supervised use. These results support proof-of-concept technical feasibility for a protocol-adherent, auditable agentic LLM framework for structured psychiatric screening.",
+  "ai_type_tags": [
+    "llm_genai",
+    "conversational_ai",
+    "nlp"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Mohammad Amin Kamaleddin",
+    "Mina Mirjalili",
+    "Reza Barzegar",
+    "Nghia Trung Le",
+    "Areez Visram",
+    "Fatemeh Gholami Nezhad",
+    "Alice Rueda",
+    "Bazen Gashaw Teferra",
+    "Candice Monson",
+    "Tristan Glatard"
+  ],
+  "authors_full": [
+    {
+      "name": "Mohammad Amin Kamaleddin"
+    },
+    {
+      "name": "Mina Mirjalili"
+    },
+    {
+      "name": "Reza Barzegar"
+    },
+    {
+      "name": "Nghia Trung Le"
+    },
+    {
+      "name": "Areez Visram"
+    },
+    {
+      "name": "Fatemeh Gholami Nezhad"
+    },
+    {
+      "name": "Alice Rueda"
+    },
+    {
+      "name": "Bazen Gashaw Teferra"
+    },
+    {
+      "name": "Candice Monson"
+    },
+    {
+      "name": "Tristan Glatard"
+    },
+    {
+      "name": "Sri Krishnan"
+    },
+    {
+      "name": "Divya Sharma"
+    },
+    {
+      "name": "Benoit H. Mulsant"
+    },
+    {
+      "name": "Venkat Bhat"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "多智能体LLM框架用于结构化精神科访谈和筛查，涵盖焦虑、抑郁、双相障碍模块。模拟评估+试点反馈，非真实临床验证。",
+      "ai_score": 5,
+      "clinical_validation": "internal",
+      "domain_score": 4,
+      "evidence_stage": "benchmark_development",
+      "ground_truth_quality": "weak_proxy",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "crisis_safety",
+        "hallucination_misinformation",
+        "overreliance"
+      ],
+      "safety_evaluated": false,
+      "tldr": "该多智能体LLM系统可执行结构化精神科访谈模块，模块级决策与规则预期结果一致性达87.8%，红线识别准确率93.9%，但仅为概念验证，尚未进行临床部署。",
+      "topic_tags": [
+        "anxiety",
+        "bipolar",
+        "depression",
+        "transdiagnostic",
+        "screening_assessment",
+        "risk_prediction",
+        "clinical_patients",
+        "clinicians"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-31",
+  "doi": "10.1038/s41398-026-04335-5",
+  "id": "p_kN16_kB4qat8s-wg",
+  "issue": null,
+  "journal": "Translational Psychiatry",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7172018219"
+    }
+  ],
+  "title": "A multi-agent large language model framework for structured clinical interviewing and psychiatric screening: a proof-of-concept",
+  "title_zh": "多智能体大语言模型框架用于结构化临床访谈与精神科筛查：概念验证",
+  "unified_ingested_at": "2026-08-02T05:31:53.935657Z",
+  "url": "https://doi.org/10.1038/s41398-026-04335-5",
+  "volume": null,
+  "year": 2026
+}

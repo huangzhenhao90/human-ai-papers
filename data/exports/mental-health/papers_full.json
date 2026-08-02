@@ -1,5 +1,364 @@
 [
   {
+    "abstract": "Structured psychiatric interviews improve diagnostic reliability but are resource-intensive to administer. We developed a multi-agent large language model (LLM) framework to support protocolized structured interviewing and module-level psychiatric screening. The system orchestrates four agents, Questioner, Evaluator, Navigator, and Diagnoser, to administer interview modules, interpret free-text responses, enforce bounded clarification loops, identify safety-related red flags and trigger escalation, and apply encoded decision rules to produce screening outcomes. Prior to any model processing, responses undergo automated redaction of personally identifiable and protected health information. We conducted a simulation-based technical evaluation using 1350 interviews across 15 neuropsychiatric screening modules (e.g., anxiety, depression, and bipolar disorders) with systematic variation in symptom direction, disclosure depth, and emotional tone. To test robustness to language variability, we additionally evaluated reconstructed conversation bundles derived from the deidentified MentalChat16K dataset. In the primary evaluation, module-level decisions showed 87.8% concordance with rule-based expected outcomes (95% CI: 85.9–89.6), with sensitivity 88.9% (95% CI: 86.5–91.2) and specificity 86.7% (95% CI: 84.0–89.2) relative to predefined item-level endorsements. Post hoc comparator analyses showed higher F2 for the multi-agent framework (88.5%) than single-pass LLM (49.5%) or deterministic rule-based (61.9%) transcript-scoring baselines. On a 2000-sentence red flag benchmark stratified by explicit/implicit and active/passive ideation, the classifier achieved 93.9% accuracy, 94.2% sensitivity, and 93.6% specificity. In pilot feedback from mental health clinicians, descriptive ratings suggested favorable perceptions of clarity, workflow fit, and perceived safety for clinician-supervised use. These results support proof-of-concept technical feasibility for a protocol-adherent, auditable agentic LLM framework for structured psychiatric screening.",
+    "ai_reason": "多智能体LLM框架用于结构化精神科访谈和筛查，涵盖焦虑、抑郁、双相障碍模块。模拟评估+试点反馈，非真实临床验证。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai",
+      "conversational_ai",
+      "nlp"
+    ],
+    "authors": [
+      "Mohammad Amin Kamaleddin",
+      "Mina Mirjalili",
+      "Reza Barzegar",
+      "Nghia Trung Le",
+      "Areez Visram",
+      "Fatemeh Gholami Nezhad",
+      "Alice Rueda",
+      "Bazen Gashaw Teferra",
+      "Candice Monson",
+      "Tristan Glatard"
+    ],
+    "authors_full": [
+      {
+        "name": "Mohammad Amin Kamaleddin"
+      },
+      {
+        "name": "Mina Mirjalili"
+      },
+      {
+        "name": "Reza Barzegar"
+      },
+      {
+        "name": "Nghia Trung Le"
+      },
+      {
+        "name": "Areez Visram"
+      },
+      {
+        "name": "Fatemeh Gholami Nezhad"
+      },
+      {
+        "name": "Alice Rueda"
+      },
+      {
+        "name": "Bazen Gashaw Teferra"
+      },
+      {
+        "name": "Candice Monson"
+      },
+      {
+        "name": "Tristan Glatard"
+      },
+      {
+        "name": "Sri Krishnan"
+      },
+      {
+        "name": "Divya Sharma"
+      },
+      {
+        "name": "Benoit H. Mulsant"
+      },
+      {
+        "name": "Venkat Bhat"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "多智能体LLM框架用于结构化精神科访谈和筛查，涵盖焦虑、抑郁、双相障碍模块。模拟评估+试点反馈，非真实临床验证。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "conversational_ai",
+        "nlp"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "benchmark_development",
+      "risk_tags": [
+        "crisis_safety",
+        "hallucination_misinformation",
+        "overreliance"
+      ],
+      "tldr": "该多智能体LLM系统可执行结构化精神科访谈模块，模块级决策与规则预期结果一致性达87.8%，红线识别准确率93.9%，但仅为概念验证，尚未进行临床部署。",
+      "topic_tags": [
+        "anxiety",
+        "bipolar",
+        "depression",
+        "transdiagnostic",
+        "screening_assessment",
+        "risk_prediction",
+        "clinical_patients",
+        "clinicians"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "internal",
+    "date": "2026-07-31",
+    "doi": "10.1038/s41398-026-04335-5",
+    "domain_score": 4,
+    "evidence_stage": "benchmark_development",
+    "ground_truth_quality": "weak_proxy",
+    "id": "W7172018219",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "多智能体LLM框架用于结构化精神科访谈和筛查，涵盖焦虑、抑郁、双相障碍模块。模拟评估+试点反馈，非真实临床验证。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "conversational_ai",
+        "nlp"
+      ],
+      "clinical_validation": "internal",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "conversational_ai",
+          "nlp"
+        ],
+        "applications": [
+          "screening_assessment",
+          "risk_prediction"
+        ],
+        "conditions": [
+          "anxiety",
+          "bipolar",
+          "depression",
+          "transdiagnostic"
+        ],
+        "populations": [
+          "clinical_patients",
+          "clinicians"
+        ],
+        "risks": [
+          "crisis_safety",
+          "hallucination_misinformation",
+          "overreliance"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "模块决策一致性87.8%，敏感度88.9%，特异度86.7%；红线分类准确率93.9%",
+        "sample": "1350次访谈跨15个筛查模块，2000句红线基准测试",
+        "study_design": "模拟技术评估+精神科医生试点反馈"
+      },
+      "evidence_stage": "benchmark_development",
+      "ground_truth_quality": "weak_proxy",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language model",
+          "LLM"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "psychiatric",
+          "depression",
+          "anxiety",
+          "bipolar"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "crisis_safety",
+        "hallucination_misinformation",
+        "overreliance"
+      ],
+      "safety_evaluated": false,
+      "tldr": "该多智能体LLM系统可执行结构化精神科访谈模块，模块级决策与规则预期结果一致性达87.8%，红线识别准确率93.9%，但仅为概念验证，尚未进行临床部署。",
+      "topic_tags": [
+        "anxiety",
+        "bipolar",
+        "depression",
+        "transdiagnostic",
+        "screening_assessment",
+        "risk_prediction",
+        "clinical_patients",
+        "clinicians"
+      ]
+    },
+    "openalex_id": "W7172018219",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "crisis_safety",
+      "hallucination_misinformation",
+      "overreliance"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "A multi-agent large language model framework for structured clinical interviewing and psychiatric screening: a proof-of-concept",
+    "title_zh": "多智能体大语言模型框架用于结构化临床访谈与精神科筛查：概念验证",
+    "tldr": "该多智能体LLM系统可执行结构化精神科访谈模块，模块级决策与规则预期结果一致性达87.8%，红线识别准确率93.9%，但仅为概念验证，尚未进行临床部署。",
+    "topic_tags": [
+      "anxiety",
+      "bipolar",
+      "depression",
+      "transdiagnostic",
+      "screening_assessment",
+      "risk_prediction",
+      "clinical_patients",
+      "clinicians"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04335-5",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "NLP是核心方法，预测青少年精神病理，AI与心理健康深度融合。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "nlp"
+    ],
+    "authors": [
+      "Chase Antonacci",
+      "Jessica P. Uy",
+      "Kaitlyn Kwan",
+      "Eugenia Giampetruzzi",
+      "Sabrina Jones",
+      "James W. Pennebaker",
+      "Ian H. Gotlib"
+    ],
+    "authors_full": [
+      {
+        "name": "Chase Antonacci"
+      },
+      {
+        "name": "Jessica P. Uy"
+      },
+      {
+        "name": "Kaitlyn Kwan"
+      },
+      {
+        "name": "Eugenia Giampetruzzi"
+      },
+      {
+        "name": "Sabrina Jones"
+      },
+      {
+        "name": "James W. Pennebaker"
+      },
+      {
+        "name": "Ian H. Gotlib"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "NLP是核心方法，预测青少年精神病理，AI与心理健康深度融合。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "nlp"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "prospective_study",
+      "risk_tags": [],
+      "tldr": null,
+      "topic_tags": [
+        "transdiagnostic",
+        "risk_prediction",
+        "screening_assessment",
+        "children_adolescents"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-07-31",
+    "doi": "10.1038/s44220-026-00683-9",
+    "domain_score": 5,
+    "evidence_stage": "prospective_study",
+    "ground_truth_quality": "unknown",
+    "id": "W7171990743",
+    "journal": "Nature Mental Health",
+    "mh_profile": {
+      "ai_reason": "NLP是核心方法，预测青少年精神病理，AI与心理健康深度融合。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "nlp"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "nlp"
+        ],
+        "applications": [
+          "risk_prediction",
+          "screening_assessment"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "children_adolescents"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "精神病理预测",
+        "sample": null,
+        "study_design": "前瞻性纵向研究"
+      },
+      "evidence_stage": "prospective_study",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [],
+        "mental_health_signal": false
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": null,
+      "topic_tags": [
+        "transdiagnostic",
+        "risk_prediction",
+        "screening_assessment",
+        "children_adolescents"
+      ]
+    },
+    "openalex_id": "W7171990743",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4387286578",
+      "ingest_mode": "full",
+      "key": "nature_mental_health",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Natural language processing of youth speech predicts psychopathology across adolescence",
+    "title_zh": "青少年言语的自然语言处理预测整个青春期的精神病理",
+    "tldr": null,
+    "topic_tags": [
+      "transdiagnostic",
+      "risk_prediction",
+      "screening_assessment",
+      "children_adolescents"
+    ],
+    "url": "https://doi.org/10.1038/s44220-026-00683-9",
+    "year": 2026
+  },
+  {
     "abstract": "This Viewpoint discusses considerations in training mental health clinicians and implementing institutional workflows to use large language models (LLMs) as clinical instruments for improving care.",
     "ai_reason": "LLM作为临床工具直接服务精神科临床决策，AI是核心方法论，发表于JAMA Psychiatry。",
     "ai_score": 5,
