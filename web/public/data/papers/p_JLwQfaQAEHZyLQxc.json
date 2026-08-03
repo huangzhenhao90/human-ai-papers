@@ -1,0 +1,73 @@
+{
+  "abstract": "Auto-bidding systems optimize bids to maximize value under efficiency constraints such as Cost-Per-Action (CPA). Existing methods treat each day as an independent episode. However, many advertisers produce value so sparsely that per-day efficiency ratios become statistically unreliable, undermining advertiser retention. Platforms therefore evaluate window-level efficiency over sliding windows of $W{=}7$ days, ensuring fair evaluation and long-term advertising effectiveness. This creates cross-episode coupling: each day's bidding decisions affect up to $W$ overlapping windows, so setting daily targets requires anticipating future market conditions. We propose SWAG-Bid (Sliding-Window Aware Generative Auto-Bidding), a hierarchical framework decomposing this challenge into episode-level planning and step-level execution. The planner uses a Masked Trajectory Model to forecast markets and generate candidate plans, scored across all overlapping windows by Multi-Window Model Predictive Control Sampling (MWMS) with exponential confidence decay. The controller adjusts reliance on this guidance through a state-adaptive gate, Per-Step Gated Adaptive Layer Normalization (PSG-AdaLN), complemented by Return-to-Go and Cost-to-Go channels carrying budget and constraint information. Experiments on AuctionNet-Sparse and online A/B tests on AliExpress show that SWAG-Bid achieves competitive constraint satisfaction and value acquisition under sliding-window evaluation.",
+  "ai_type_tags": [
+    "机器学习",
+    "GenAI"
+  ],
+  "arxiv_id": "2607.25233",
+  "authors": [
+    "Binglin Wu",
+    "Chuan Yue",
+    "Yingyi Zhang",
+    "Xianneng Li",
+    "Ruyue Deng"
+  ],
+  "authors_full": [
+    {
+      "name": "Binglin Wu"
+    },
+    {
+      "name": "Chuan Yue"
+    },
+    {
+      "name": "Yingyi Zhang"
+    },
+    {
+      "name": "Xianneng Li"
+    },
+    {
+      "name": "Ruyue Deng"
+    },
+    {
+      "name": "Weiru Zhang"
+    },
+    {
+      "name": "Xiaoyi Zeng"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "生成式自动出价属AI核心议题，广告营销",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对广告自动出价中将每日视为独立回合导致稀疏广告主效率评估不可靠的问题，提出滑动窗口感知的生成式自动出价框架SWAG-Bid。该框架分层分解为回合级规划与步级执行：规划器用掩码轨迹模型预测市场并生成候选方案，由多窗口MPC采样在指数置信衰减下评分；控制器通过步级门控自适应层归一化调节依赖，并结合Return-to-Go与Cost-to-Go通道传递预算与约束信息。在AuctionNet-Sparse与AliExpress在线A/B测试中显著提升滑动窗口评估下的约束满足与价值获取。",
+      "topic_tags": [
+        "广告",
+        "营销"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-28",
+  "doi": null,
+  "id": "p_JLwQfaQAEHZyLQxc",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2607.25233v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 12389,
+      "revision": "406e824c1f039582523c2bad7e37f227f7fbb9ba"
+    }
+  ],
+  "title": "Beyond Single-Episode Optimization: Sliding-Window Aware Generative Auto-Bidding for Long-Term Advertising Effectiveness",
+  "title_zh": "超越单次优化：面向长期广告效果的滑动窗口感知生成式自动出价",
+  "unified_ingested_at": "2026-08-03T05:45:55.470542Z",
+  "url": "https://arxiv.org/abs/2607.25233v1",
+  "volume": null,
+  "year": 2026
+}

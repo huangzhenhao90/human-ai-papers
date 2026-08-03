@@ -1,0 +1,63 @@
+{
+  "abstract": "Large-scale, richly annotated career trajectory data underpins workforce planning, job recommendation, and labour market analysis, yet publicly available datasets are either small, closed to independent use, or built from pre-standardized occupational codes with LLM-synthesized rather than authentic free text. We present JobHop~v2, an improved version of the publicly available JobHop dataset, constructed through end-to-end large language model (LLM) extraction from a corpus of ${\\sim}440{,}000$ pseudonymized, multilingual resumes provided by VDAB, the Flemish Public Employment Service. The released dataset comprises $355{,}315$ career trajectories annotated with ESCO occupational codes, quarter-level temporal information, and normalized five-level education attainment, broadening both the coverage and the annotation richness of the original release. Relative to v1, JobHop~v2 introduces a redesigned extraction pipeline based on reasoning-controlled LLM inference with a retry mechanism (achieving a 100% JSON parse rate), a richer extraction schema, and a revised evaluation protocol scored against three complementary annotation baselines. Evaluated against these baselines, our best extractor comes closest to the inter-annotator agreement ceiling among all compared models, trailing it by only 1.1-2.7 percentage points. The dataset and code are publicly released to support reproducible career-trajectory research.",
+  "ai_type_tags": [
+    "LLM"
+  ],
+  "arxiv_id": "2607.11715",
+  "authors": [
+    "Iman Johary",
+    "Guillaume Bied",
+    "Alexandru C. Mara",
+    "Tijl De Bie"
+  ],
+  "authors_full": [
+    {
+      "name": "Iman Johary"
+    },
+    {
+      "name": "Guillaume Bied"
+    },
+    {
+      "name": "Alexandru C. Mara"
+    },
+    {
+      "name": "Tijl De Bie"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM提取简历,AI是核心方法,HR数据",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "构建大规模职业轨迹数据集 JobHop v2，从约44万份多语种简历中通过LLM端到端抽取，得到355,315条带ESCO职业编码、季度时间信息和标准化学历的轨迹。改进管线采用推理控制LLM与重试机制，JSON解析率达100%，最佳提取器接近人工标注一致性上限。",
+      "topic_tags": [
+        "HR",
+        "招聘",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-13",
+  "doi": null,
+  "id": "p_Llfx6BuzzSDLQWs-",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2607.11715v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 12302,
+      "revision": "406e824c1f039582523c2bad7e37f227f7fbb9ba"
+    }
+  ],
+  "title": "JobHop v2: A Large-Scale Career Trajectory Dataset from Unstructured Resumes",
+  "title_zh": "JobHop v2：基于非结构化简历的大规模职业轨迹数据集",
+  "unified_ingested_at": "2026-08-03T05:45:55.470542Z",
+  "url": "https://arxiv.org/abs/2607.11715v2",
+  "volume": null,
+  "year": 2026
+}

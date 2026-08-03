@@ -1,0 +1,57 @@
+{
+  "abstract": "Personalized recommendation systems are central to modern e-commerce and retail platforms, but they typically rely on centralized storage of detailed user interaction data, creating significant privacy and regulatory challenges. With increasing requirements from regulations such as GDPR, CCPA, and CPRA, organizations must develop recommendation systems that preserve user privacy without substantially degrading recommendation quality.   This work presents and evaluates a privacy-preserving recommendation framework that combines federated learning, differential privacy, cohort-level modeling, and privacy-aware intelligent agents. The framework keeps raw user data decentralized while introducing mathematically bounded noise to model updates. Experiments were conducted on synthetic retail datasets that emulate customer clickstream and purchase behavior. Recommendation quality was evaluated using Click-Through Rate (CTR), Precision@K, Recall@K, and Normalized Discounted Cumulative Gain (NDCG@K) across multiple differential privacy budgets.   We evaluate matrix factorization, neural collaborative filtering, and GRU4Rec under varying privacy constraints and analyze the trade-off between privacy and utility. An interactive Streamlit dashboard was developed to visualize recommendation performance, ranking stability, privacy-utility trade-offs, and fairness metrics. Results show that the proposed framework maintains competitive recommendation quality at moderate privacy budgets (approximately $ε\\approx 5$), demonstrating that strong privacy guarantees can be achieved with limited impact on recommendation effectiveness.   This work provides a practical framework for deploying privacy-preserving recommendation systems that balance personalization, regulatory compliance, and business objectives, offering a scalable approach for next-generation AI-driven retail platforms.",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习",
+    "AI治理"
+  ],
+  "arxiv_id": "2607.13328",
+  "authors": [
+    "Ranjeet K Jha",
+    "Venkata Suresh Gummadilli"
+  ],
+  "authors_full": [
+    {
+      "name": "Ranjeet K Jha"
+    },
+    {
+      "name": "Venkata Suresh Gummadilli"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "隐私推荐系统核心使用AI/联邦学习",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "提出融合联邦学习、差分隐私、同类群建模与隐私感知智能体的隐私保护推荐框架，在合成零售数据上评估矩阵分解、神经协同过滤与GRU4Rec在不同隐私预算下的表现。结果显示在中等隐私预算下推荐质量仍具竞争力，并分析隐私效用权衡与公平性。",
+      "topic_tags": [
+        "推荐系统",
+        "隐私",
+        "公平性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-14",
+  "doi": null,
+  "id": "p_TmSobQXqKAWk9d5K",
+  "issue": null,
+  "journal": "arXiv:cs.CR",
+  "pdf_url": "https://arxiv.org/pdf/2607.13328v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 12242,
+      "revision": "406e824c1f039582523c2bad7e37f227f7fbb9ba"
+    }
+  ],
+  "title": "Privacy Preserving Recommender Systems Balancing Personalization with Privacy",
+  "title_zh": "保护隐私的推荐系统：平衡个性化与隐私",
+  "unified_ingested_at": "2026-08-03T05:45:55.470542Z",
+  "url": "https://arxiv.org/abs/2607.13328v1",
+  "volume": null,
+  "year": 2026
+}

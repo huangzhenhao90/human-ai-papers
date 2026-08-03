@@ -1,0 +1,52 @@
+{
+  "abstract": "Personalized pricing negotiations are a challenging testbed for LLM agents because successful interaction does not guarantee profitable decision making. A seller may produce valid actions and close many deals while still pricing poorly when buyer willingness to pay and bargaining traits remain hidden. This paper presents PrefBench, a simulator-based benchmark for hidden-preference personalized pricing negotiations. Each episode pairs a simulated buyer with a fixed vehicle-customization bundle; the seller observes public persona descriptors, bundle information, and negotiation history, while latent buyer variables govern valuation, patience, counter-offer behavior, and walkaway decisions. PrefBench evaluates this setting through an LLM-facing state-summary protocol that constrains agents to return strict JSON actions under a fixed hidden-information boundary. We evaluate zero-shot LLM sellers against heuristic references over 7,500 episodes. The tested LLMs follow the protocol reliably and achieve deal rates above 0.99, but their seller-profit outcomes remain weak: the best LLM average profit is only slightly above the random baseline and far below a simple concession heuristic under the same episode stream. These results show that structured action compliance and agreement-seeking behavior can coexist with weak profit-sensitive bargaining. PrefBench provides a controlled benchmark for evaluating pricing-agent behavior under hidden buyer preferences.",
+  "ai_type_tags": [
+    "LLM",
+    "人机交互"
+  ],
+  "arxiv_id": "2605.22855",
+  "authors": [
+    "Yingjie Lei"
+  ],
+  "authors_full": [
+    {
+      "name": "Yingjie Lei"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心是LLM agent在定价谈判中的表现，AI为主；属营销定价但偏CS",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出PrefBench基准，评估零样本LLM智能体在隐藏偏好定价谈判中的表现。卖方仅能观察公开人设与历史信息，真实估价、耐心度等为隐变量。基于7500轮仿真发现：LLM严格遵循JSON协议，达成率超0.99，但利润表现仅略高于随机基线，远低于简单让步启发式。表明协议合规与成交行为并不等同于利润敏感型议价能力。",
+      "topic_tags": [
+        "决策",
+        "人机协作",
+        "营销"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-19",
+  "doi": null,
+  "id": "p_x_lwl4QKxUSbbzA9",
+  "issue": null,
+  "journal": "arXiv:cs.GT",
+  "pdf_url": "https://arxiv.org/pdf/2605.22855v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 11429,
+      "revision": "406e824c1f039582523c2bad7e37f227f7fbb9ba"
+    }
+  ],
+  "title": "PrefBench: Evaluating Zero-Shot LLM Agents in Hidden-Preference Personalized Pricing Negotiations",
+  "title_zh": "PrefBench：评估零样本LLM智能体在隐式偏好个性化定价谈判中的表现",
+  "unified_ingested_at": "2026-08-03T05:45:55.470542Z",
+  "url": "https://arxiv.org/abs/2605.22855v1",
+  "volume": null,
+  "year": 2026
+}

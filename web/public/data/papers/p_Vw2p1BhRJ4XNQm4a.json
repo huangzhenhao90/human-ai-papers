@@ -1,0 +1,78 @@
+{
+  "abstract": "Large language model (LLM) agents have shown strong performance in long-horizon tasks that require planning, tool use, and interaction with external environments. However, most existing benchmarks implicitly assume a monolingual setting, where the entire execution process, including reasoning, tool invocation, and output generation, is conducted within a single language. In contrast, real-world applications often involve multilingual inputs and outputs within a unified workflow, yet the interaction between multilinguality and agentic execution remains underexplored. In this work, we introduce PolyWorkBench, a benchmark for evaluating LLM agents on multilingual long-horizon workplace workflows. PolyWorkBench consists of 67 tasks across five domains, including commerce, knowledge work, legal analysis, localization, and manufacturing, where agents must process heterogeneous multilingual inputs, perform iterative reasoning, invoke external tools, and produce structured outputs. To enable comprehensive evaluation, we propose a hybrid framework that combines structural grading, executable verification, and LLM-based semantic assessment. This design allows us to capture both functional correctness and linguistic consistency across complex workflows. Empirical results show that state-of-the-art LLM agents suffer significant performance degradation in multilingual workflow settings compared to monolingual counterparts. Our analysis suggests that multilinguality introduces compounding effects across reasoning and execution steps, highlighting the importance of jointly modeling language variation and procedural decision-making in agent evaluation.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "GenAI"
+  ],
+  "arxiv_id": "2607.06008",
+  "authors": [
+    "Hongliang Li",
+    "Yijin Liu",
+    "Zhiwei Zhang",
+    "Zihe Liu",
+    "Xinyue Lou"
+  ],
+  "authors_full": [
+    {
+      "name": "Hongliang Li"
+    },
+    {
+      "name": "Yijin Liu"
+    },
+    {
+      "name": "Zhiwei Zhang"
+    },
+    {
+      "name": "Zihe Liu"
+    },
+    {
+      "name": "Xinyue Lou"
+    },
+    {
+      "name": "Jinan Xu"
+    },
+    {
+      "name": "Fandong Meng"
+    },
+    {
+      "name": "Kaiyu Huang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM代理基准，AI核心但偏CS",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出PolyWorkBench多语言长周期LLM智能体基准，涵盖商业、知识工作、法律分析、本地化与制造五大领域67项任务，采用结构评分、可执行验证与LLM语义评估的混合评测框架；实证发现SOTA LLM智能体在多语言工作流中相较单语场景性能显著下降。",
+      "topic_tags": [
+        "人机协作",
+        "工作设计",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-07",
+  "doi": null,
+  "id": "p_Vw2p1BhRJ4XNQm4a",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2607.06008v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 12303,
+      "revision": "406e824c1f039582523c2bad7e37f227f7fbb9ba"
+    }
+  ],
+  "title": "PolyWorkBench: Benchmarking Multilingual Long-Horizon LLM Agents",
+  "title_zh": "PolyWorkBench：多语言长视野LLM智能体基准测试",
+  "unified_ingested_at": "2026-08-03T05:45:55.470542Z",
+  "url": "https://arxiv.org/abs/2607.06008v2",
+  "volume": null,
+  "year": 2026
+}

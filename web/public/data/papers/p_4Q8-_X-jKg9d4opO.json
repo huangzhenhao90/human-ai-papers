@@ -1,0 +1,70 @@
+{
+  "abstract": "Although large language models (LLMs) have recently gained traction in recommender systems due to their strong reasoning capabilities and extensive world knowledge, previous LLM-based agents suffer from hallucination and context-length limitations, and thus are not suitable for full-ranking recommendation tasks. To circumvent these limitations through architectural design rather than modifying the LLM itself, we propose an agent-based recommendation framework, memory-based $\\textbf{P}$ersonalized $\\textbf{R}$ecommendation $\\textbf{T}$ool learning via autonomous language $\\textbf{A}$gents (PRTA), in which an LLM acts as a central planner interacting with multiple recommendation models as tools. The LLM-based agent is responsible for high-level reasoning and personalized tool selection, while traditional recommendation models perform full-ranking scoring, leveraging their scalability in modeling behavioral patterns. To support personalized tool selection, we design reflection mechanisms that enable the agent to evaluate and compare tools for each user based on user profiles and candidate ranked lists. Extensive experiments across three public datasets demonstrate the superiority of \\modelname over traditional recommendation and LLM-based baselines in improving full-ranking recommendation performance.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法",
+    "人机协作"
+  ],
+  "arxiv_id": "2607.19739",
+  "authors": [
+    "Mingdai Yang",
+    "Zhiwei Liu",
+    "Weizhi Zhang",
+    "Yibo Wang",
+    "Hao Peng"
+  ],
+  "authors_full": [
+    {
+      "name": "Mingdai Yang"
+    },
+    {
+      "name": "Zhiwei Liu"
+    },
+    {
+      "name": "Weizhi Zhang"
+    },
+    {
+      "name": "Yibo Wang"
+    },
+    {
+      "name": "Hao Peng"
+    },
+    {
+      "name": "Philip Yu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心是LLM推荐系统框架，属营销/推荐领域",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "现有基于LLM的推荐代理存在幻觉和上下文长度限制，难以胜任全排序推荐任务。本文提出PRTA框架，让LLM充当中央规划器与多个传统推荐模型工具交互：LLM负责高层推理与个性化工具选择，推荐模型负责全排序打分。设计反思机制，根据用户画像和候选排序列表对各工具进行评估与比较。在三个公开数据集上的实验表明，PRTA在提升全排序推荐效果上优于传统推荐方法和LLM基线。",
+      "topic_tags": [
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-22",
+  "doi": null,
+  "id": "p_4Q8-_X-jKg9d4opO",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2607.19739v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 12385,
+      "revision": "406e824c1f039582523c2bad7e37f227f7fbb9ba"
+    }
+  ],
+  "title": "Personalized Recommendation Tool Learning via Autonomous Language Agents",
+  "title_zh": "自主语言智能体驱动的个性化推荐工具学习",
+  "unified_ingested_at": "2026-08-03T05:45:55.470542Z",
+  "url": "https://arxiv.org/abs/2607.19739v1",
+  "volume": null,
+  "year": 2026
+}

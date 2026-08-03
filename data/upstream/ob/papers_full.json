@@ -49967,6 +49967,44 @@
     "year": 2026
   },
   {
+    "abstract": "Personalized pricing negotiations are a challenging testbed for LLM agents because successful interaction does not guarantee profitable decision making. A seller may produce valid actions and close many deals while still pricing poorly when buyer willingness to pay and bargaining traits remain hidden. This paper presents PrefBench, a simulator-based benchmark for hidden-preference personalized pricing negotiations. Each episode pairs a simulated buyer with a fixed vehicle-customization bundle; the seller observes public persona descriptors, bundle information, and negotiation history, while latent buyer variables govern valuation, patience, counter-offer behavior, and walkaway decisions. PrefBench evaluates this setting through an LLM-facing state-summary protocol that constrains agents to return strict JSON actions under a fixed hidden-information boundary. We evaluate zero-shot LLM sellers against heuristic references over 7,500 episodes. The tested LLMs follow the protocol reliably and achieve deal rates above 0.99, but their seller-profit outcomes remain weak: the best LLM average profit is only slightly above the random baseline and far below a simple concession heuristic under the same episode stream. These results show that structured action compliance and agreement-seeking behavior can coexist with weak profit-sensitive bargaining. PrefBench provides a controlled benchmark for evaluating pricing-agent behavior under hidden buyer preferences.",
+    "ai_reason": "核心是LLM agent在定价谈判中的表现，AI为主；属营销定价但偏CS",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Yingjie Lei"
+    ],
+    "authors_full": [
+      {
+        "name": "Yingjie Lei"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-05-19",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 11429,
+    "ingested_at": "2026-05-30T05:48:57.218178",
+    "issue": null,
+    "journal": "arXiv:cs.GT",
+    "pdf_url": "https://arxiv.org/pdf/2605.22855v1",
+    "scored_at": "2026-08-02T13:29:02.261656",
+    "title": "PrefBench: Evaluating Zero-Shot LLM Agents in Hidden-Preference Personalized Pricing Negotiations",
+    "title_zh": "PrefBench：评估零样本LLM智能体在隐式偏好个性化定价谈判中的表现",
+    "tldr": "提出PrefBench基准，评估零样本LLM智能体在隐藏偏好定价谈判中的表现。卖方仅能观察公开人设与历史信息，真实估价、耐心度等为隐变量。基于7500轮仿真发现：LLM严格遵循JSON协议，达成率超0.99，但利润表现仅略高于随机基线，远低于简单让步启发式。表明协议合规与成交行为并不等同于利润敏感型议价能力。",
+    "topic_tags": [
+      "决策",
+      "人机协作",
+      "营销"
+    ],
+    "url": "https://arxiv.org/abs/2605.22855v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Generative artificial intelligence (AI) is expected to transform work, but less is known about how firms reorganize labor demand as the technology diffuses. Existing research has largely focused on which occupations are exposed to AI or whether exposed jobs decline. We extend this debate by examining whether firms adjust by changing where they hire, what jobs contain, or both. Using a nationwide dataset of job postings in the United States, covering all sectors of the economy, we construct a dynamic, posting-level measure of generative AI exposure with a two-stage large language model pipeline. The pipeline identifies the tasks described in each posting and classifies the extent to which generative AI can perform or assist them. We then decompose changes in aggregate exposure into two margins: reallocation of demand across jobs and redesign of tasks within jobs. We document three main findings. First, generative AI exposure is dynamic rather than fixed, changing substantially over time. Second, labor demand adjusts through both margins. Hiring reallocation explains the largest share of the aggregate decline in exposure, accounting for 52% on average, while within-job redesign becomes increasingly important, accounting for 39.5%. A complementary Oaxaca-Blinder decomposition shows that shifts in occupational composition account for about 90% of the exposure change attributable to observable job characteristics. Third, adjustment differs across the job ladder. Senior jobs adjust earlier and mainly through reallocation, whereas junior jobs adjust through a broader mix of reallocation, redesign, and their interaction. These findings suggest that labor-market adjustment to generative AI is a process of organizational reconfiguration, in which firms reshape both hiring demand and the task architecture of work.",
     "ai_reason": "核心研究GenAI对劳动需求重组的影响",
     "ai_score": 5.0,
@@ -52947,7 +52985,11 @@
     "abstract": "When firms deploy autonomous AI, they must decide how much work to leave to the system and how much to keep workers engaged. This decision affects current output and future human capital. We develop a parsimonious two-period model in which AI may outperform the worker when it functions, but may fail with positive probability. A firm chooses worker engagement; engagement lowers current output for below-benchmark workers, but changes future skill through learning and erosion. We distinguish two dimensions of AI progress: capability, the system's output when it works, and reliability, the probability that it works. In a single-firm benchmark, engagement is valuable only as fallback investment. The firm engages the least-skilled workers most, because they have the largest skill gaps and are least costly to bring toward a useful fallback level. With worker mobility, engagement also affects labor-market sorting: workers prefer jobs that build more valuable skill trajectories. This sorting motive targets higher-skill workers near the AI frontier, where skill gains are more valuable and engagement is less costly. Mobility can therefore reverse the engagement pattern, shifting investment from the least-skilled toward the most-skilled workers below the AI benchmark. Mobility also reshapes how AI progress affects engagement: greater capability raises engagement by increasing the value of the skill trajectory a firm offers, whereas greater reliability can raise or lower it because it reduces fallback need while also changing learning opportunities. Under worker mobility, human-AI work design becomes a problem of human-capital investment, in which allocating work today shapes future skill.",
     "ai_reason": "核心议题为AI部署决策与工人参与，属企业人力管理",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "算法管理",
+      "人机协作",
+      "AI治理"
+    ],
     "authors": [
       "Simrita Singh",
       "Naireet Ghosh",
@@ -52976,8 +53018,13 @@
     "scored_at": "2026-07-07T06:12:32.297637",
     "title": "Managing the Human Fallback: Skill Investment Under Improving AI and Worker Mobility",
     "title_zh": "管理人力后备机制：AI能力提升与劳动力流动性背景下的技能投资",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究企业部署AI时如何在自主系统与员工投入之间分配任务，以兼顾当前产出与未来人力资本。构建两期模型区分AI能力（输出水平）与可靠性（运行概率）。无劳动力流动时，企业主要投资技能最低的员工以备\"兜底\"；引入员工流动后，企业转而投资AI前沿附近的高技能员工。AI能力提升增加投入价值，可靠性提升则效应不确定，可能加剧或削弱投入。",
+    "topic_tags": [
+      "HR",
+      "工作设计",
+      "战略",
+      "员工幸福感"
+    ],
     "url": "https://arxiv.org/abs/2606.29111v1",
     "volume": null,
     "year": 2026
@@ -52986,7 +53033,11 @@
     "abstract": "Agentic artificial intelligence is increasingly deployed not as a single assistant but as a collective of planners, solvers, reviewers, memory managers, tool users, and orchestrators. These systems are entering organisational workflows under familiar labels such as teams, managers, committees, markets, and workflows. This article asks whether such agent collectives exhibit organisational behaviour in a sense that is analytically comparable to, yet distinct from, human organisational behaviour. I argue that agentic AI is a partial organisational analogue. It resembles a human organisation because it differentiates work, coordinates interdependence, performs recurrent routines, crosses boundaries, and produces collective outcomes. It differs because these patterns are not sustained by motivation, identity, trust, employment, socialisation, or moral accountability. They are sustained by context architecture: prompts, memory, traces, schemas, tools, validators, and permissions. The article develops contextual transaction cost as the central mechanism linking these similarities and differences. Computational theorising, synthetic task simulations, real LLM agent traces, and robustness analyses show that human-imitation forms often underperform when they add lossy handoffs, correlated deliberation, and verification burdens, whereas shared-state and adaptive forms perform better when they make context durable, inspectable, and task-contingent. The article contributes to organisation studies by theorising agentic AI as an emerging object of organising and by specifying the interface conditions under which human and agentic organisational behaviour can jointly support collective intelligence.",
     "ai_reason": "核心议题为智能代理集体行为的组织行为类比，直接相关",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "人机协作",
+      "算法管理"
+    ],
     "authors": [
       "Canhui Liu"
     ],
@@ -53007,9 +53058,1599 @@
     "scored_at": "2026-07-07T06:12:32.298096",
     "title": "The Organizational Behavior of Agentic AI: Collective Intelligence in Human-Agent Workflows",
     "title_zh": "Agentic AI的组织行为：人-Agent工作流程中的集体智能",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究智能体AI在组织工作流中是否表现出类人组织行为。基于计算建模、合成任务仿真与真实LLM代理轨迹分析发现：智能体集合在任务分工、协同、例行化方面类似人类组织，但这些模式由\"上下文架构\"（提示、记忆、工具、权限）而非动机、信任或社会规范维系。模仿人类结构的组织形式常因信息损耗式交接表现不佳，而共享状态、自适应形式更具优势。核心机制为\"上下文交易成本\"。",
+    "topic_tags": [
+      "人机协作",
+      "组织变革",
+      "工作设计",
+      "组织学习"
+    ],
     "url": "https://arxiv.org/abs/2606.30986v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Personalized recommendation systems are central to modern e-commerce and retail platforms, but they typically rely on centralized storage of detailed user interaction data, creating significant privacy and regulatory challenges. With increasing requirements from regulations such as GDPR, CCPA, and CPRA, organizations must develop recommendation systems that preserve user privacy without substantially degrading recommendation quality.   This work presents and evaluates a privacy-preserving recommendation framework that combines federated learning, differential privacy, cohort-level modeling, and privacy-aware intelligent agents. The framework keeps raw user data decentralized while introducing mathematically bounded noise to model updates. Experiments were conducted on synthetic retail datasets that emulate customer clickstream and purchase behavior. Recommendation quality was evaluated using Click-Through Rate (CTR), Precision@K, Recall@K, and Normalized Discounted Cumulative Gain (NDCG@K) across multiple differential privacy budgets.   We evaluate matrix factorization, neural collaborative filtering, and GRU4Rec under varying privacy constraints and analyze the trade-off between privacy and utility. An interactive Streamlit dashboard was developed to visualize recommendation performance, ranking stability, privacy-utility trade-offs, and fairness metrics. Results show that the proposed framework maintains competitive recommendation quality at moderate privacy budgets (approximately $ε\\approx 5$), demonstrating that strong privacy guarantees can be achieved with limited impact on recommendation effectiveness.   This work provides a practical framework for deploying privacy-preserving recommendation systems that balance personalization, regulatory compliance, and business objectives, offering a scalable approach for next-generation AI-driven retail platforms.",
+    "ai_reason": "隐私推荐系统核心使用AI/联邦学习",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "机器学习",
+      "AI治理"
+    ],
+    "authors": [
+      "Ranjeet K Jha",
+      "Venkata Suresh Gummadilli"
+    ],
+    "authors_full": [
+      {
+        "name": "Ranjeet K Jha"
+      },
+      {
+        "name": "Venkata Suresh Gummadilli"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-14",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12242,
+    "ingested_at": "2026-07-16T05:00:49.210098",
+    "issue": null,
+    "journal": "arXiv:cs.CR",
+    "pdf_url": "https://arxiv.org/pdf/2607.13328v1",
+    "scored_at": "2026-08-02T13:29:04.133817",
+    "title": "Privacy Preserving Recommender Systems Balancing Personalization with Privacy",
+    "title_zh": "保护隐私的推荐系统：平衡个性化与隐私",
+    "tldr": "提出融合联邦学习、差分隐私、同类群建模与隐私感知智能体的隐私保护推荐框架，在合成零售数据上评估矩阵分解、神经协同过滤与GRU4Rec在不同隐私预算下的表现。结果显示在中等隐私预算下推荐质量仍具竞争力，并分析隐私效用权衡与公平性。",
+    "topic_tags": [
+      "推荐系统",
+      "隐私",
+      "公平性"
+    ],
+    "url": "https://arxiv.org/abs/2607.13328v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative AI tools are increasingly being piloted in public agencies, but limited evidence explains how employee acceptance changes after hands-on use. This study examines Microsoft 365 Copilot adoption during an eight-week pilot at a state Department of Transportation. A matched two-wave survey measured perceived usefulness, perceived ease of use, behavioral intention, and trust before and after participation. After matching and response-quality screening, the sample included 124 employees. Nonparametric tests assessed aggregate changes, k-means clustering identified baseline acceptance personas, and fixed-centroid assignment tracked migration. Open-ended responses were examined using keyword-based content mapping. Perceived usefulness declined significantly after use, suggesting recalibration of expectations, while perceived ease of use, behavioral intention, and trust showed only small, nonsignificant changes. Three baseline personas emerged: Skeptics, Cautiously Positive users, and Champions. Although persona counts changed modestly, individual movement was substantial: 40 percent of Skeptics moved to Cautiously Positive, while 68 percent of Champions moved to less enthusiastic personas. Upward movement was associated with gains in usefulness, behavioral intention, and trust; downward movement was associated with declines in usefulness and trust. Communication and summarization remained stable use cases, while data, chart, and presentation tasks declined. Accuracy and privacy concerns decreased, but job and skills concerns increased. Public-sector AI adoption should be monitored dynamically and supported through persona-specific training, workflow examples, verification routines, and trust-calibration safeguards. The study offers a framework for tracking workforce heterogeneity during enterprise generative AI implementation.",
+    "ai_reason": "GenAI采纳与员工信任纵向研究，AI与OB核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Omidreza Shoghli",
+      "Fatemeh Banani Ardecani",
+      "Amin Mohamadi Hezaveh"
+    ],
+    "authors_full": [
+      {
+        "name": "Omidreza Shoghli"
+      },
+      {
+        "name": "Fatemeh Banani Ardecani"
+      },
+      {
+        "name": "Amin Mohamadi Hezaveh"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-15",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 12247,
+    "ingested_at": "2026-07-16T05:00:49.214094",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2607.13798v1",
+    "scored_at": "2026-08-02T13:29:02.370712",
+    "title": "Persona Migration and Expectation Recalibration in Generative AI Adoption: A Longitudinal Study at a State Department of Transportation",
+    "title_zh": "生成式AI采用中的角色迁移与期望重校准：一项州交通部门的纵向研究",
+    "tldr": "在州交通厅开展为期八周的Microsoft 365 Copilot试点，124名员工两波配对调查追踪使用前后变化。发现感知有用性显著下降，预期经历重校准；识别怀疑者、谨慎乐观者与拥护者三类基线人格，40%怀疑者上移、68%拥护者下移，人格迁移幅度大，沟通与摘要为稳定使用场景。",
+    "topic_tags": [
+      "人机协作",
+      "组织变革",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2607.13798v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models (LLMs) are rapidly reshaping workplace communication, yet whether AI-assisted writing changes how recipients actually behave, and through what channel, remains unknown. Here, in a randomized crossover field experiment, 121 employees across six companies sent work emails under three conditions over three weeks: unaided writing, GPT-5 rewriting in a playful tone, and GPT-5 rewriting in a professional tone. Across 16,880 emails, playful editing increased emotional positivity (B=+0.068, p<0.001), and professional editing decreased it (B=-0.041, p<0.001), yet neither condition directly altered open rates, reply rates, or response times. Instead, within-sender positivity strongly predicted both opening (OR=2.05) and replying (OR=3.32, p<0.001), a significant indirect pathway through which AI editing shaped behavior, in the absence of any direct effect. These findings suggest that AI-assisted communication shapes workplace engagement not through its use, but through the emotional tone of the language it produces.",
+    "ai_reason": "LLM辅助工作邮件写作的现场实验，OB核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "ChatGPT"
+    ],
+    "authors": [
+      "Ziv Ben-Zion",
+      "Teddy Lazebnik"
+    ],
+    "authors_full": [
+      {
+        "name": "Ziv Ben-Zion"
+      },
+      {
+        "name": "Teddy Lazebnik"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-13",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 12249,
+    "ingested_at": "2026-07-16T05:00:49.215344",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2607.11749v1",
+    "scored_at": "2026-08-02T13:36:55.382390",
+    "title": "Playful AI in Professional Email: A Field Experiment on Tone and Recipient Engagement",
+    "title_zh": "专业邮件中的趣味AI：语气与收件人参与度的现场实验",
+    "tldr": "通过121名员工、16880封工作邮件的随机交叉田野实验，比较无辅助写作、GPT-5活泼语气改写与专业语气改写三种条件对收件人行为的影响。AI改写不直接影响邮件打开率、回复率和响应时间，而是通过改变发件人语言的情绪积极性，间接提升被打开（OR=2.05）和被回复（OR=3.32）的可能性。研究揭示AI辅助沟通通过语言情感而非直接渠道影响职场互动。",
+    "topic_tags": [
+      "人机协作",
+      "工作设计",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2607.11749v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Knowledge workers switch between applications thousands of times per day, spending nearly a tenth of the work year transitioning between digital applications in a process called digital fragmentation. Whether this fragmentation reflects who an employee is, where they work, or what kind of day they are having, has remained an open question. We analyzed 103 million application events recorded second-by-second from 1,017 employees across eight organizations that largely employ knowledge workers (e.g., law, financial services). Day-to-day variation in fragmentation within individual employees accounted for 44.6% of the variation in digital fragmentation, slightly exceeding stable individual differences between employees (35.8%), and far exceeding variation between organizations (19.6%). Fragmentation rose over the work week and reset after weekends and holidays. Higher-than-typical use of communication applications coincided with more fragmented work. Generative AI use also occurred on more fragmented days, but the period following AI use was marked by narrower, longer, and more predictable application use. These findings identify the workday as a key level for understanding and intervening on digital fragmentation and suggest that AI may help structure fragmented work rather than merely intensify it.",
+    "ai_reason": "GenAI使用与知识工作者，AI主变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI"
+    ],
+    "authors": [
+      "Sumer S. Vaid",
+      "Ashley V. Whillans"
+    ],
+    "authors_full": [
+      {
+        "name": "Sumer S. Vaid"
+      },
+      {
+        "name": "Ashley V. Whillans"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-07",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12251,
+    "ingested_at": "2026-07-16T05:00:49.216577",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.06681v1",
+    "scored_at": "2026-08-02T13:37:08.065408",
+    "title": "Digital Fragmentation and Generative AI Use Across 103 Million Application Events",
+    "title_zh": "数字碎片化与生成式AI使用：基于1.03亿次应用事件的分析",
+    "tldr": "基于1017名知识工作者跨8家组织共1.03亿条应用切换事件数据，探究数字碎片化的成因与生成式AI使用的影响。日间波动解释44.6%的碎片化变异，略高于员工间稳定差异（35.8%），远高于组织间差异（19.6%）。碎片化随工作周上升，周末后重置。沟通应用高使用与碎片化正相关；GenAI使用当天碎片化更高，但使用后应用切换变得更窄、更长、更可预测，提示AI有潜力结构化碎片化工作。",
+    "topic_tags": [
+      "工作未来",
+      "人机协作",
+      "知识管理"
+    ],
+    "url": "https://arxiv.org/abs/2607.06681v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Between 2023 and 2026, frontier AI systems crossed documented human expert baselines on a growing set of bounded, well-specified, evaluable cognitive tasks, including graduate-level science questions, competition mathematics, software-engineering benchmarks, and structured diagnostic reasoning, while the length of tasks such systems can complete at 50% reliability doubled roughly every seven months. These crossings are rapid and broad, but the frontier is jagged: humans retain decisive advantages in long-horizon reliability, genuinely novel problems, calibrated self-knowledge, sample-efficient learning, and embodied action, and benchmark results overstate deployed capability for reasons that are themselves now documented, namely contamination, construct validity, vendor self-evaluation, and the gap between 50% reliability and the reliability that economic work requires. Concurrently, humans increasingly use these systems as cognitive extensions. The offloading literature predicts costs to unaided skill, and early field evidence is consistent with such costs, though the largest meta-analytic evidence on prior technologies points the other way, and the question of whether generative AI differs is open. Finally, the experimental record on human-AI collaboration shows that naive combination often underperforms the stronger partner, implying that the human contribution must be repositioned toward specification, verification, and oversight, a shift visible in experiments but, so far, barely visible in field labor-market data. This paper states the resulting position, rapid crossings on a jagged frontier with a human role that must be redesigned rather than defended, and draws out its theoretical and practical implications.",
+    "ai_reason": "前沿AI能力与人类判断,触及管理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Ancuta Margondai",
+      "Julie Rader",
+      "Emma Rader",
+      "Sara Willox",
+      "Mustapha Mouloua"
+    ],
+    "authors_full": [
+      {
+        "name": "Ancuta Margondai"
+      },
+      {
+        "name": "Julie Rader"
+      },
+      {
+        "name": "Emma Rader"
+      },
+      {
+        "name": "Sara Willox"
+      },
+      {
+        "name": "Mustapha Mouloua"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-13",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12253,
+    "ingested_at": "2026-07-16T05:00:49.217797",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.12125v1",
+    "scored_at": "2026-08-02T13:29:04.139341",
+    "title": "Faster AI, Uneven Frontier: Rapid Crossings, a Jagged Frontier, and the Repositioning of Human Judgment",
+    "title_zh": "更快的AI与不均衡前沿：快速跨越、锯齿状前沿与人类判断的再定位",
+    "tldr": "综述2023-2026年前沿AI能力跨越人类专家基线的快速进程，揭示\"参差不齐的前沿\"：AI在有界任务上进步飞快，但在长程可靠性、真正新颖问题、校准自我认知等方面仍逊于人类。认知卸载文献预示技能退化风险，人机协作实验显示朴素组合常劣于更强一方，提示人类角色须向规范、验证与监督重新定位。",
+    "topic_tags": [
+      "人机协作",
+      "决策",
+      "工作未来"
+    ],
+    "url": "https://arxiv.org/abs/2607.12125v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI systems are increasingly used to provide legal advice, raising questions about whether laypeople accept guidance from algorithms--especially when that advice is legally correct but socially controversial. We report a preregistered survey experiment with 3,348 adults in mainland China examining how people evaluate identical legal advice when it is attributed either to an AI system or to a human lawyer, and when it is accompanied by reasoning or not.   Contrary to expectations of algorithm aversion, attribution to an AI system has no net effect on perceived reasonableness. However, mediation analyses reveal opposing psychological pathways underlying this null result. AI-attributed advice is perceived as more objective, which increases perceived reasonableness, but also as less comprehensive and less attentive to special circumstances, which decreases perceived reasonableness. By contrast, providing legal reasoning substantially increases perceived reasonableness regardless of source, largely by enhancing perceptions of objectivity. Qualitative responses corroborate this tension between objectivity and contextual sensitivity in evaluations of legal advice.   Together, these findings suggest that public responses to AI legal advisors are shaped not by rigid attitudes toward automation, but by the balancing of competing normative expectations. The results have implications for theories of algorithm aversion and the design of AI recommendation systems in normatively salient domains.",
+    "ai_reason": "AI法律建议接受度，AI是核心变量，决策行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI治理"
+    ],
+    "authors": [
+      "Benjamin Minhao Chen",
+      "Zhiyu Li"
+    ],
+    "authors_full": [
+      {
+        "name": "Benjamin Minhao Chen"
+      },
+      {
+        "name": "Zhiyu Li"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-06",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12254,
+    "ingested_at": "2026-07-16T05:00:49.218417",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2607.05680v1",
+    "scored_at": "2026-08-02T13:29:04.934095",
+    "title": "Beyond Accuracy: How Humans Evaluate Legally Correct but Socially Controversial Legal Advice from Machines",
+    "title_zh": "超越准确性：人类如何评价机器生成的法律正确却具社会争议的法律建议",
+    "tldr": "基于3348名中国大陆成年人的预注册调查实验，考察人们对AI与人类律师提供法律建议的评价差异。研究发现AI来源对感知合理性无净效应，但存在两条相反心理路径：AI建议被视为更客观（提升合理性）却又更不全面、忽视特殊情境（降低合理性）。提供推理说明可显著提升合理性，源于增强客观性感知。揭示公众对AI法律顾问的反应是规范期望的平衡，而非简单的算法厌恶。",
+    "topic_tags": [
+      "人机协作",
+      "消费者行为",
+      "信任",
+      "公平性",
+      "决策"
+    ],
+    "url": "https://arxiv.org/abs/2607.05680v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "An AI teammate's design properties (personality, communication style, when it speaks) can shape a team's trust, coordination, and decisions. Studying this rigorously demands infrastructure no existing tool provides: reproducible configuration of an AI teammate embedded in instrumented, real-time collaboration sustained over time. We present the Team Research and AI Integration Lab (TRAIL), a web platform that makes the AI teammate a configurable, reproducible design object, pairing a Big Five persona with a selective-participation message pipeline, dual memory, chained longitudinal experiments, and export-ready analytics. In a real six-session classroom deployment (about 51 students), TRAIL sustained longitudinal chaining, held the AI to a stable minority of the conversation, and enabled export-driven AI-human text-similarity analysis. A single blind persona change produced a design-consistent double dissociation: a cognitive-scaffolding agent drew stronger contribution ratings and closer linguistic alignment; a socially-supportive agent, a warmer team climate and lower over-reliance.",
+    "ai_reason": "人机团队实验平台,AI核心,团队OB",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "人机协作",
+      "LLM"
+    ],
+    "authors": [
+      "Mohammad Amin Samadi",
+      "Pedro Martins De Bastos",
+      "Jaeyoon Choi",
+      "Spencer JaQuay",
+      "Seehee Park"
+    ],
+    "authors_full": [
+      {
+        "name": "Mohammad Amin Samadi"
+      },
+      {
+        "name": "Pedro Martins De Bastos"
+      },
+      {
+        "name": "Jaeyoon Choi"
+      },
+      {
+        "name": "Spencer JaQuay"
+      },
+      {
+        "name": "Seehee Park"
+      },
+      {
+        "name": "Nia Nixon"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-13",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12257,
+    "ingested_at": "2026-07-16T05:00:49.220279",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.12180v1",
+    "scored_at": "2026-08-02T13:29:04.138913",
+    "title": "TRAIL: A Platform for Configurable Human--AI Teaming Experiments",
+    "title_zh": "TRAIL：可配置人机协同实验平台",
+    "tldr": "构建TRAIL网页平台，将AI队友设计为可配置可复现对象，搭载大五人格与选择性发言机制。在51名学生6节课的课堂部署中，平台支持纵向链式实验与文本相似度分析。盲测人格切换产生双重分离：认知支架型队友提升贡献度与语言一致性；社会支持型队友营造更温暖氛围并降低过度依赖。",
+    "topic_tags": [
+      "人机协作",
+      "团队",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2607.12180v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Controlled research on AI ideation typically compares independent agents, while field studies of human-AI collaboration sacrifice experimental control. We introduce a controlled, two-player extension of the Alternate Uses Test (AUT) that enables comparison of human-human and human-AI co-creation under matched interactive conditions, alongside calibrated non-interactive baselines. The platform supports decomposition of performance into three typically confounded factors: participant traits, partner perceptions, and content dynamics. An in-person pilot (N = 62) demonstrates its utility. Under matched time limits, originality with a GPT-4 partner is statistically equivalent to that with a human partner. Approach motivation (BAS Drive) moderates whether interactive partnership benefits originality, and self-reported cognitive outsourcing predicts lower originality specifically in human-human dyads. Prior exposure to highly creative ideas improves later performance, suggesting a \"seeding\" intervention. We release the platform, code, and dataset as a shared testbed for controlled studies of human-AI co-creation.",
+    "ai_reason": "人机协同创造实验,涉及创造力心理学",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机交互",
+      "人机协作",
+      "GenAI"
+    ],
+    "authors": [
+      "Babak Hemmatian",
+      "Anita Keshmirian",
+      "Yijun Lin",
+      "Shravan Ramamoorthy",
+      "Maryam Jahadakbar"
+    ],
+    "authors_full": [
+      {
+        "name": "Babak Hemmatian"
+      },
+      {
+        "name": "Anita Keshmirian"
+      },
+      {
+        "name": "Yijun Lin"
+      },
+      {
+        "name": "Shravan Ramamoorthy"
+      },
+      {
+        "name": "Maryam Jahadakbar"
+      },
+      {
+        "name": "Eli Khuri-Reid"
+      },
+      {
+        "name": "Jingtong Wang"
+      },
+      {
+        "name": "Sarah Hadjarab"
+      },
+      {
+        "name": "Sindre Veum"
+      },
+      {
+        "name": "Pranav Gupta"
+      },
+      {
+        "name": "Deepak Somaya"
+      },
+      {
+        "name": "Lav R. Varshney"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-08",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12259,
+    "ingested_at": "2026-07-16T05:00:49.221536",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.07522v1",
+    "scored_at": "2026-08-02T13:29:02.279947",
+    "title": "Two-player Alternate Uses Test: A Controlled Testbed for Interactive Human-AI and Human-Human Co-Creation",
+    "title_zh": "双人替代用途测试：面向人机与人人交互式协同创作的受控测试平台",
+    "tldr": "提出两人交替用途测验（AUT）受控实验平台，在匹配交互条件下比较人-AI与人-人协同创意，并设置非交互基线，可拆解参与者特质、伙伴感知与内容动态三类因素。试点研究（N=62）发现，限时匹配条件下与GPT-4搭档的原创性与人类搭档无显著差异；BAS驱力调节交互伙伴对原创性的收益；认知外包感仅预测人-人组原创性下降；先前接触高创意想法具有播种效应。",
+    "topic_tags": [
+      "创意",
+      "人机协作",
+      "创新"
+    ],
+    "url": "https://arxiv.org/abs/2607.07522v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI-mediated communication is increasingly being utilized to help facilitate interactions; however, in privacy sensitive domains, an AI mediator has the additional challenge of considering how to preserve privacy. In these contexts, a mediator may redact or withhold information, raising questions about how users perceive these interventions and whether explanations of system behavior can improve trust. In this work, we investigate how explanations of redaction operations can affect user trust in AI-mediated communication. We devise a scenario where a validated system removes sensitive content from messages and generates explanations of varying detail to communicate its decisions to recipients. We then conduct a user study with 180 participants that studies how user trust and preferences vary for cases with different amounts of redacted content and different levels of explanation detail. Our results show that participants believed our system was more effective at preserving privacy when explanations were provided (p<0.05, Cohen's d ~ 0.3). We also found that contextual factors had an impact; participants relied more on explanations and found them more helpful when the system performed extensive redactions (p<0.05, Cohen's f ~ 0.2). We also found that explanation preferences depended on individual differences as well, and factors such as age and baseline familiarity with AI affected user trust in our system. These findings highlight the importance and challenge of balancing transparency and privacy in AI-mediated communications and suggest that adaptive, context-aware explanations are essential for designing privacy-aware, trustworthy AI systems.",
+    "ai_reason": "AI中介沟通与信任，AI核心HCI",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "人机协作"
+    ],
+    "authors": [
+      "Roshni Kaushik",
+      "Maarten Sap",
+      "Koichi Onoue"
+    ],
+    "authors_full": [
+      {
+        "name": "Roshni Kaushik"
+      },
+      {
+        "name": "Maarten Sap"
+      },
+      {
+        "name": "Koichi Onoue"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-07",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12260,
+    "ingested_at": "2026-07-16T05:00:49.222160",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.06687v1",
+    "scored_at": "2026-08-02T13:37:08.065005",
+    "title": "Exploring the Interaction of Explanation Styles, Context, and Trust of AI Privacy Redaction in AI-mediated Interactions",
+    "title_zh": "AI中介交互中解释风格、情境与AI隐私编辑信任的交互作用探究",
+    "tldr": "研究AI中介通信中隐私信息编辑的可解释性问题。构建系统自动删除敏感内容并生成不同详细度的解释，通过180名参与者的用户实验考察解释风格、编辑程度与用户信任的关系。结果表明：提供解释显著提升用户对系统隐私保护有效性的感知（p<0.05）；编辑量越大，用户越依赖且认为解释更有帮助；年龄与AI熟悉度等个体差异也影响信任水平。",
+    "topic_tags": [
+      "隐私",
+      "信任",
+      "人机交互"
+    ],
+    "url": "https://arxiv.org/abs/2607.06687v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Young job seekers frequently turn to social media to compare themselves with peers and make sense of career possibilities. However, passive feed browsing creates a paradox: the authentic peer content that provides emotional grounding also triggers potentially detrimental upward social comparison and cognitive overload. Previous work has either structured online user-generated content to reduce noise without changing the passive browsing modality, or built AI-powered career exploration systems that disregard authentic human experiences. To address this gap, we developed JobMate, an interactive system that transforms real social media career posts into persona-grounded conversational AI agents, shifting the interaction from passive scrolling to active, personalized dialogue. We conducted a between-subjects study ($N$ = 24, three disciplines) comparing JobMate with native RedNote browsing. Our study shows that JobMate's AI-mediated dialogue redirected social comparison from potentially detrimental upward comparison toward constructive self-reframing, while promoting sensemaking through active conversational engagement. However, users still relied on the authenticity of real peer content for emotional grounding. We discuss design implications for AI systems that augment authentic online user-generated content consumption across social comparison contexts.",
+    "ai_reason": "AI职业探索对话系统,AI核心,职业行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Pengping Tan",
+      "Baoquan Zhao",
+      "Zhenhui Peng"
+    ],
+    "authors_full": [
+      {
+        "name": "Pengping Tan"
+      },
+      {
+        "name": "Baoquan Zhao"
+      },
+      {
+        "name": "Zhenhui Peng"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-13",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12262,
+    "ingested_at": "2026-07-16T05:00:49.223406",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.11039v1",
+    "scored_at": "2026-08-02T13:29:04.138456",
+    "title": "Same Stories, Different Journeys: From Social Comparison to Sensemaking in AI-Mediated Peer Career Exploration",
+    "title_zh": "相同的故事，不同的旅程：从社会比较到AI中介同伴职业探索中的意义建构",
+    "tldr": "针对年轻求职者开发JobMate系统，将社交媒体真实职业帖转化为基于人物角色的对话AI代理，把被动浏览转变为主动个性化对话。N=24被试间实验显示，AI中介对话将社会比较从潜在有害的上行比较转向建设性自我重构，促进意义建构，但用户仍依赖真实同伴内容获得情感锚定。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "招聘"
+    ],
+    "url": "https://arxiv.org/abs/2607.11039v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Career paths encode decades of skill acquisition, role transitions, and educational investment, and understanding them at scale underpins workforce planning, labor market policy, and job recommendation. Resumes are a rich source of information about career paths: they contain detailed descriptions of work experience, education, and skills. Yet their unstructured, heterogeneous, and multilingual nature has long prevented large-scale systematic analysis. With the advent of large language models (LLMs), it is now possible to source rich career trajectory data containing temporal and educational signals from unstructured resumes, enabling new opportunities for career-path recommendation. Exploiting this opportunity, we present STEP (Sequential Trajectory of Employment Prediction), a novel career-path recommendation system that leverages temporal and educational signals to predict the next job in a career trajectory. STEP integrates a time-decay Gated Recurrent Unit (GRU) cell to model temporal dynamics, Feature-wise Linear Modulation (FiLM) conditioned on educational attainment, and attention-based sequence pooling to select relevant features for next job prediction. To improve internal occupation representation for STEP, we introduce ROUTE, a two-stage contrastive procedure that first adapts a multilingual encoder to the career domain via unsupervised denoising autoencoding, then performs supervised contrastive fine-tuning with guided negative selection. We evaluate STEP on four datasets of career trajectories, including an improved version of our publicly available JobHop dataset, and show that it outperforms state-of-the-art baselines in next job prediction. The dataset and code are publicly released to support reproducible career-trajectory research.",
+    "ai_reason": "LLM职业路径推荐,AI为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "机器学习",
+      "推荐算法"
+    ],
+    "authors": [
+      "Iman Johary",
+      "Guillaume Bied",
+      "Alexandru C. Mara",
+      "Tijl De Bie"
+    ],
+    "authors_full": [
+      {
+        "name": "Iman Johary"
+      },
+      {
+        "name": "Guillaume Bied"
+      },
+      {
+        "name": "Alexandru C. Mara"
+      },
+      {
+        "name": "Tijl De Bie"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-13",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12301,
+    "ingested_at": "2026-07-21T05:20:55.948283",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2607.11722v2",
+    "scored_at": "2026-08-02T13:29:04.137984",
+    "title": "STEP: Career-Path Recommendation via Temporal and Educational Trajectory Modeling",
+    "title_zh": "STEP：基于时间与教育轨迹建模的职业路径推荐",
+    "tldr": "提出职业路径推荐系统STEP，融合时间衰减GRU建模职业时序动态、基于学历的FiLM条件调制和注意力池化以预测下一份工作；引入ROUTE两阶段对比程序（去噪自编码预训练+引导负样本对比微调）改进职业表征，在四个数据集上验证有效性。",
+    "topic_tags": [
+      "HR",
+      "招聘",
+      "推荐系统"
+    ],
+    "url": "https://arxiv.org/abs/2607.11722v2",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large-scale, richly annotated career trajectory data underpins workforce planning, job recommendation, and labour market analysis, yet publicly available datasets are either small, closed to independent use, or built from pre-standardized occupational codes with LLM-synthesized rather than authentic free text. We present JobHop~v2, an improved version of the publicly available JobHop dataset, constructed through end-to-end large language model (LLM) extraction from a corpus of ${\\sim}440{,}000$ pseudonymized, multilingual resumes provided by VDAB, the Flemish Public Employment Service. The released dataset comprises $355{,}315$ career trajectories annotated with ESCO occupational codes, quarter-level temporal information, and normalized five-level education attainment, broadening both the coverage and the annotation richness of the original release. Relative to v1, JobHop~v2 introduces a redesigned extraction pipeline based on reasoning-controlled LLM inference with a retry mechanism (achieving a 100% JSON parse rate), a richer extraction schema, and a revised evaluation protocol scored against three complementary annotation baselines. Evaluated against these baselines, our best extractor comes closest to the inter-annotator agreement ceiling among all compared models, trailing it by only 1.1-2.7 percentage points. The dataset and code are publicly released to support reproducible career-trajectory research.",
+    "ai_reason": "LLM提取简历,AI是核心方法,HR数据",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM"
+    ],
+    "authors": [
+      "Iman Johary",
+      "Guillaume Bied",
+      "Alexandru C. Mara",
+      "Tijl De Bie"
+    ],
+    "authors_full": [
+      {
+        "name": "Iman Johary"
+      },
+      {
+        "name": "Guillaume Bied"
+      },
+      {
+        "name": "Alexandru C. Mara"
+      },
+      {
+        "name": "Tijl De Bie"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-13",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12302,
+    "ingested_at": "2026-07-21T05:20:55.949121",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2607.11715v2",
+    "scored_at": "2026-08-02T13:29:04.137481",
+    "title": "JobHop v2: A Large-Scale Career Trajectory Dataset from Unstructured Resumes",
+    "title_zh": "JobHop v2：基于非结构化简历的大规模职业轨迹数据集",
+    "tldr": "构建大规模职业轨迹数据集 JobHop v2，从约44万份多语种简历中通过LLM端到端抽取，得到355,315条带ESCO职业编码、季度时间信息和标准化学历的轨迹。改进管线采用推理控制LLM与重试机制，JSON解析率达100%，最佳提取器接近人工标注一致性上限。",
+    "topic_tags": [
+      "HR",
+      "招聘",
+      "推荐系统"
+    ],
+    "url": "https://arxiv.org/abs/2607.11715v2",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language model (LLM) agents have shown strong performance in long-horizon tasks that require planning, tool use, and interaction with external environments. However, most existing benchmarks implicitly assume a monolingual setting, where the entire execution process, including reasoning, tool invocation, and output generation, is conducted within a single language. In contrast, real-world applications often involve multilingual inputs and outputs within a unified workflow, yet the interaction between multilinguality and agentic execution remains underexplored. In this work, we introduce PolyWorkBench, a benchmark for evaluating LLM agents on multilingual long-horizon workplace workflows. PolyWorkBench consists of 67 tasks across five domains, including commerce, knowledge work, legal analysis, localization, and manufacturing, where agents must process heterogeneous multilingual inputs, perform iterative reasoning, invoke external tools, and produce structured outputs. To enable comprehensive evaluation, we propose a hybrid framework that combines structural grading, executable verification, and LLM-based semantic assessment. This design allows us to capture both functional correctness and linguistic consistency across complex workflows. Empirical results show that state-of-the-art LLM agents suffer significant performance degradation in multilingual workflow settings compared to monolingual counterparts. Our analysis suggests that multilinguality introduces compounding effects across reasoning and execution steps, highlighting the importance of jointly modeling language variation and procedural decision-making in agent evaluation.",
+    "ai_reason": "LLM代理基准，AI核心但偏CS",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "多模态",
+      "GenAI"
+    ],
+    "authors": [
+      "Hongliang Li",
+      "Yijin Liu",
+      "Zhiwei Zhang",
+      "Zihe Liu",
+      "Xinyue Lou"
+    ],
+    "authors_full": [
+      {
+        "name": "Hongliang Li"
+      },
+      {
+        "name": "Yijin Liu"
+      },
+      {
+        "name": "Zhiwei Zhang"
+      },
+      {
+        "name": "Zihe Liu"
+      },
+      {
+        "name": "Xinyue Lou"
+      },
+      {
+        "name": "Jinan Xu"
+      },
+      {
+        "name": "Fandong Meng"
+      },
+      {
+        "name": "Kaiyu Huang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-07",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12303,
+    "ingested_at": "2026-07-21T05:20:55.949918",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2607.06008v2",
+    "scored_at": "2026-08-02T13:37:08.064585",
+    "title": "PolyWorkBench: Benchmarking Multilingual Long-Horizon LLM Agents",
+    "title_zh": "PolyWorkBench：多语言长视野LLM智能体基准测试",
+    "tldr": "提出PolyWorkBench多语言长周期LLM智能体基准，涵盖商业、知识工作、法律分析、本地化与制造五大领域67项任务，采用结构评分、可执行验证与LLM语义评估的混合评测框架；实证发现SOTA LLM智能体在多语言工作流中相较单语场景性能显著下降。",
+    "topic_tags": [
+      "人机协作",
+      "工作设计",
+      "创新"
+    ],
+    "url": "https://arxiv.org/abs/2607.06008v2",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "This study examines the integration of AI into Human Resource Management in German companies. We ask if and how AI-based technologies are \\enquote{augmenting} human resource management. Organisations employ generative AI or predictive analytics to transform traditional human resource functions, to streamline routine tasks and to reallocate resources toward strategic, people-centred activities. Our findings from interviews and group discussions and a survey (N=410) reveal that while AI tools enhance HR analytics capabilities, their adoption mainly serves efficiency and rationalising goals. The introduction of AI tools is shaped by organisational transformation factors such as digital infrastructure, co-determination frameworks, and ethical implications. The research highlights both the strategic potential for improved talent development and the challenges posed by data governance and algorithmic transparency. Overall, this work contributes to understanding the ambiguous role of technological change in HR, which promises to augment predictive capabilities yet serves the ends of efficiency and rationalisation.",
+    "ai_reason": "AI在HR中的整合是核心议题，典型管理学研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "机器学习",
+      "算法管理",
+      "AI治理"
+    ],
+    "authors": [
+      "Yannick Kalff",
+      "Katharina Simbeck"
+    ],
+    "authors_full": [
+      {
+        "name": "Yannick Kalff"
+      },
+      {
+        "name": "Katharina Simbeck"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-15",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 12309,
+    "ingested_at": "2026-07-21T05:20:55.954528",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2607.13839v2",
+    "scored_at": "2026-08-02T13:29:02.367825",
+    "title": "AI-Augmented Human Resource Management? Insights from German companies",
+    "title_zh": "AI增强的人力资源管理？来自德国企业的洞察",
+    "tldr": "研究德国企业AI融入人力资源管理的现状与方式，结合访谈、焦点小组与问卷调查（N=410），发现AI工具虽提升了HR分析能力，但采纳主要服务于效率提升与组织合理化目标。落地受数字基础设施、共同决定制度框架与伦理规范影响，呈现改善人才发展潜力与数据治理、算法透明度挑战并存的张力。",
+    "topic_tags": [
+      "HR",
+      "组织变革",
+      "伦理",
+      "算法管理"
+    ],
+    "url": "https://arxiv.org/abs/2607.13839v2",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Standard automation ROI misses four categories of systemic risk -- tacit knowledge erosion, resilience reduction, regulatory exposure, and socio-institutional capital degradation -- that affect long-term organizational performance. PHP-AIO (Protocol for Human Preservation in AI-Optimized Organizations) is a five-gate sequential decision protocol with a final composite check that quantifies these unpriced systemic risks at the role level and produces auditable automation decisions. A closed-form automation-debt measure ($ρ(P)$) formalises how role-level decisions accumulate across multi-step processes; its warning is neutralised only by a regulator-mandated human-in-the-loop anchor. Applied to stylised profiles of representative internal roles, PHP-AIO produces distinct outcomes -- automate, augment, hybrid, and preserve -- for candidates that standard cost-benefit analysis would uniformly automate. Threshold sensitivity analysis confirms the gate decisions are robust to upward perturbations of at least 14% in three of four representative cases.   Keywords: AI governance, automation decision, human oversight, tacit knowledge, organizational resilience, financial services",
+    "ai_reason": "AI优化组织中人类保留协议，AI核心含管理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI治理",
+      "人机协作",
+      "算法决策"
+    ],
+    "authors": [
+      "Jose Manuel de la Chica Rodriguez",
+      "Jairo Rodriguez Arias",
+      "Spyridon Chouliaras"
+    ],
+    "authors_full": [
+      {
+        "name": "Jose Manuel de la Chica Rodriguez"
+      },
+      {
+        "name": "Jairo Rodriguez Arias"
+      },
+      {
+        "name": "Spyridon Chouliaras"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-17",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12313,
+    "ingested_at": "2026-07-21T05:20:55.958345",
+    "issue": null,
+    "journal": "arXiv:cs.MA",
+    "pdf_url": "https://arxiv.org/pdf/2607.15944v1",
+    "scored_at": "2026-08-02T13:36:56.440781",
+    "title": "When Not to Automate: A Formal Protocol for Human Preservation in AI-Optimized Organizations",
+    "title_zh": "何时不应自动化：AI优化型组织中维系人类存续的正式协议",
+    "tldr": "针对标准自动化ROI忽视默会知识流失、韧性下降、监管暴露与社会制度资本退化四类系统性风险的问题，提出五门序贯决策协议PHP-AIO，并形式化定义自动化债务度量ρ(P)与人类在环监管锚点。基于代表性内部岗位的分析显示，标准成本收益分析会统一选择自动化的对象，PHP-AIO可给出自动化、增强、混合与保留等差异化处置。",
+    "topic_tags": [
+      "组织变革",
+      "工作设计",
+      "决策",
+      "AI治理"
+    ],
+    "url": "https://arxiv.org/abs/2607.15944v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative AI and coding agents are intensifying a central governance tension in open-source software (OSS): they scale contribution generation faster than maintainers can assess risk, evidence, and accountability. Existing responses improve agent-readability and traceability, but project rules must also organize contribution-specific risk, evidence, accountability, and review-gate states. We theorize this organizational arrangement as project-side governability infrastructure. A diagnostic audit of 50 GitHub repositories finds widespread general governance artifacts, observable agent-readability, and fragmented AI-governance cues, but no project-wide arrangement that coordinates shared rules, preparation obligations, verification rights, and maintainer decision authority across AI-mediated contribution workflows. We develop the Agent Governance Manifest (AGM) as a repository-hosted boundary resource and bidirectional governance contract linking contributor-side evidence preparation with maintainer-side verification. In a controlled reviewer-side evaluation with 15 participants and 75 task-level outputs, AGM-supported materials improved exact risk-label recovery (37/38 vs. 15/37) and perceived review support (6.14 vs. 3.27 on a 1-7 scale). In a contributor-side feasibility check, 15 participants completed 45 tasks; all final packages represented the core governance state correctly, and 41 passed strict structural validation. The study develops a three-layer framework of agent-readability, traceability, and governability, theorizes agent-mediated contributions as governable boundary objects, and advances compliance-enabling digital innovation governance while preserving maintainer decision authority.",
+    "ai_reason": "AI代理开源协作治理，AI核心但偏IS/治理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "AI治理"
+    ],
+    "authors": [
+      "Jinjin Gao",
+      "Luyang Li",
+      "Shufen Guo",
+      "Ligang He",
+      "Xiaoning Sun"
+    ],
+    "authors_full": [
+      {
+        "name": "Jinjin Gao"
+      },
+      {
+        "name": "Luyang Li"
+      },
+      {
+        "name": "Shufen Guo"
+      },
+      {
+        "name": "Ligang He"
+      },
+      {
+        "name": "Xiaoning Sun"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-17",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12314,
+    "ingested_at": "2026-07-21T05:20:55.959109",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2607.15769v1",
+    "scored_at": "2026-08-02T13:36:56.440330",
+    "title": "Making Agent-Mediated Contributions Governable: A Project-Level Governance Manifest for Open-Source AI Collaboration",
+    "title_zh": "让代理中介贡献可治理:开源 AI 协作的项目级治理宣言",
+    "tldr": "生成式AI编码智能体加速了开源贡献生成，但维护者难以及时评估其风险、证据和责任。审计50个GitHub仓库发现普遍缺乏协调AI贡献全流程的治理安排。作者提出智能体治理清单（AGM）作为仓库级双向治理契约，连接贡献者证据准备与维护者验证。评审实验显示AGM将风险标签恢复率从15/37提升至37/38，感知评审支持从3.27升至6.14，并构建三层智能体可治理性框架。",
+    "topic_tags": [
+      "AI治理",
+      "知识管理",
+      "组织变革"
+    ],
+    "url": "https://arxiv.org/abs/2607.15769v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Artificial intelligence is rapidly evolving from generative systems to agentic AI capable of autonomously planning and executing tasks. Widely characterized as the Year of Agentic AI, 2025 marked accelerated development and deployment, introducing new ethical and governance challenges. This paper presents a systematic review of the emerging literature on agentic AI governance. Our analysis identifies features that distinguish agentic AI from traditional systems and why it warrants targeted governance attention. We synthesize prevailing governance priorities, proposed mechanisms, and stakeholder roles shaping this evolving domain. As an initial scholarly effort, this review lays the preliminary groundwork for developing a structured roadmap to guide responsible and adaptive agentic AI governance.",
+    "ai_reason": "Agentic AI治理综述,治理属边缘管理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "AI治理"
+    ],
+    "authors": [
+      "Mubarak Raji",
+      "Masooda Bashir"
+    ],
+    "authors_full": [
+      {
+        "name": "Mubarak Raji"
+      },
+      {
+        "name": "Masooda Bashir"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-08",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12318,
+    "ingested_at": "2026-07-21T05:20:55.962047",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2607.07612v1",
+    "scored_at": "2026-08-02T13:29:02.279200",
+    "title": "Towards Agentic AI Governance: A Preliminary Assessment",
+    "title_zh": "迈向智能体AI治理：初步评估",
+    "tldr": "综述生成式AI向可自主规划与执行任务的智能体AI演进所带来的治理挑战。通过系统综述，识别智能体AI区别于传统系统的特征及其需专项治理的原因，梳理当前治理优先事项、提议机制与利益相关方角色，为构建负责任且具备适应性的智能体AI治理路线图奠定初步学术基础。",
+    "topic_tags": [
+      "伦理",
+      "组织变革",
+      "战略"
+    ],
+    "url": "https://arxiv.org/abs/2607.07612v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Artificial intelligence (AI) is increasingly embedded in scientific research, but its scientific value is unlikely to be distributed evenly. This study examines how AI knowledge integration is associated with scientific impact and asks who benefits from AI-related knowledge in science. Using large-scale bibliographic data, we measure AI integration through references to papers in the OpenAlex Artificial intelligence subfield and link it to five-year citation impact. The results show that AI references are generally associated with higher citation impact, but the returns vary substantially across scientific fields. Career stage also matters: senior scholars benefit more from the extensive margin of AI referencing, whereas junior scholars benefit more from intensive AI referencing and tend to cite newer and higher-impact AI papers. At the institutional level, returns are non-monotonic: institutions with intermediate AI capability achieve the largest proportional gains, while leading AI institutions are more deeply embedded in AI-centered knowledge spaces, attract more AI-related audiences, and more often become substitute citation gateways to cited AI sources. These findings suggest that the value of AI knowledge depends not only on technical capability, but also on translational capacity: the ability to make AI knowledge meaningful, legitimate, and useful across scientific communities.",
+    "ai_reason": "AI知识整合与科学影响，AI为核心但偏科学社会学",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "AI治理"
+    ],
+    "authors": [
+      "Zhiyong Tan",
+      "Hongkan Chen",
+      "Yi Bu"
+    ],
+    "authors_full": [
+      {
+        "name": "Zhiyong Tan"
+      },
+      {
+        "name": "Hongkan Chen"
+      },
+      {
+        "name": "Yi Bu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-18",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12319,
+    "ingested_at": "2026-07-21T05:20:55.962780",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2607.16780v1",
+    "scored_at": "2026-08-02T13:29:02.799971",
+    "title": "Translating AI into scientific impact: Field context, career position, and institutional capability in AI-enabled research",
+    "title_zh": "将AI转化为科学影响：AI赋能研究中的领域情境、职业位置与机构能力",
+    "tldr": "基于大规模文献计量数据，考察AI知识整合与科学引用影响的关系。结果显示AI引用普遍提升引用量，但收益因学科而异：资深学者从引用广度获益更大，青年学者从高强度引用及更新、更高影响AI文献中获益更多；机构层面呈倒U型，中等AI能力的机构获比例性收益最大，顶级AI机构则更深嵌入AI知识网络并充当引用门户，强调AI价值的实现取决于跨学科翻译能力。",
+    "topic_tags": [
+      "知识管理",
+      "创新",
+      "战略"
+    ],
+    "url": "https://arxiv.org/abs/2607.16780v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "The adoption of artificial intelligence (AI) by large enterprises is an important potential source of aggregate productivity improvement and labor market impact. We study AI adoption of S&P 500 firms over the period 2016 to 2025, estimating adoption at the enterprise level. While generative AI tools are useful for personal and professional applications, our focus is on the deep integration of AI in the business processes of large enterprises which are bellwethers for firm adoption more broadly. We develop a novel measure to assess deep AI adoption (and distinguish it from AI hype) that is based on SEC 10-K filings, where laws and regulations ``prohibit companies from making materially false or misleading statements.\" In 2025, 11% of S&P 500 enterprises had AI deeply integrated into their business processes, and a further 10% were using AI in the production of goods and delivery of services. AI adoption has more than quadrupled from 5% in 2022 with slowly accelerating adoption among non-technology firms but very aggressive adoption in the technology sector which accounts for two-thirds of deeply integrated enterprise adoption. Firm profitability shows a \"J-curve\" as firms move from no adoption to deep adoption, but we observe no differences in capex or productivity. Among technology firms, but not others, AI adoption is higher for firms with more employees and higher values of Tobin's q.",
+    "ai_reason": "S&P 500企业AI深度采用测量，核心AI",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "机器学习"
+    ],
+    "authors": [
+      "Yang Yu",
+      "Martin Fleming",
+      "Lucy Hampton",
+      "Christophe Combemale",
+      "Neil Thompson"
+    ],
+    "authors_full": [
+      {
+        "name": "Yang Yu"
+      },
+      {
+        "name": "Martin Fleming"
+      },
+      {
+        "name": "Lucy Hampton"
+      },
+      {
+        "name": "Christophe Combemale"
+      },
+      {
+        "name": "Neil Thompson"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-09",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12322,
+    "ingested_at": "2026-07-21T05:20:55.965207",
+    "issue": null,
+    "journal": "arXiv:econ.GN",
+    "pdf_url": "https://arxiv.org/pdf/2607.08920v1",
+    "scored_at": "2026-08-02T13:37:03.848075",
+    "title": "AI Adoption in S&P 500 Firms",
+    "title_zh": "标普500企业的AI采纳",
+    "tldr": "基于S&P 500企业2016—2025年SEC 10-K文件构建AI深度整合测度，发现2025年11%企业实现AI深度整合，10%在产品服务中应用，整体采用率较2022年翻逾四倍，科技行业贡献约三分之二；盈利呈J型曲线，但未观察到资本支出与生产率差异。",
+    "topic_tags": [
+      "战略",
+      "创新",
+      "组织变革"
+    ],
+    "url": "https://arxiv.org/abs/2607.08920v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "This paper studies what happens when AI gets cheaper, with emphasis on the labor market outcomes, whether it creates formal jobs or whether it pushes workers into informality. We argue that the answer depends on the elasticity of substitution between imported AI capital and formal labor. We build a small open economy DSGE model with a dual labor market, imported AI capital, and country risk, calibrated to an economy where informality is pervasive. The same decline in AI prices produces sharply different labor-market outcomes depending on whether AI substitutes or complements formal workers. Under substitution, cheaper AI weakens formal labor demand and increases the role of the informal sector as an employment buffer. Under complementarity, it expands formal employment and amplifies output, wages, investment, and capital accumulation. The model therefore shows that AI can become either a source of displacement pressure or a driver of formal-sector expansion, depending on how it interacts with human labor.",
+    "ai_reason": "核心是AI对劳动力市场影响，劳动经济学",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法管理"
+    ],
+    "authors": [
+      "Gabriel Montes-Rojas",
+      "Fernando Toledo",
+      "Juan Manuel Rodríguez Repeti"
+    ],
+    "authors_full": [
+      {
+        "name": "Gabriel Montes-Rojas"
+      },
+      {
+        "name": "Fernando Toledo"
+      },
+      {
+        "name": "Juan Manuel Rodríguez Repeti"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-16",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12324,
+    "ingested_at": "2026-07-21T05:20:55.966647",
+    "issue": null,
+    "journal": "arXiv:econ.GN",
+    "pdf_url": "https://arxiv.org/pdf/2607.15381v1",
+    "scored_at": "2026-08-02T13:29:01.930651",
+    "title": "Cheaper AI, More Informality? A Dual Labor Market Model for Developing Economies",
+    "title_zh": "更便宜的AI，更多的非正规性？面向发展中经济体的二元劳动力市场模型",
+    "tldr": "构建小型开放经济DSGE模型，纳入正规与非正规双重劳动力市场及进口AI资本，分析AI降价对发展中经济体的劳动力影响。结果取决于AI与正规劳动的替代弹性：替代关系下正规就业收缩、非正规部门扩大充当缓冲；互补关系下则扩张正规就业、放大产出和工资。AI既可能成为劳动力替代压力，也可能成为正规部门扩张驱动力，取决于其与人力劳动的交互方式。",
+    "topic_tags": [
+      "战略",
+      "工作未来",
+      "组织变革"
+    ],
+    "url": "https://arxiv.org/abs/2607.15381v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "How should people choose careers when artificial intelligence (AI) is rapidly transforming the nature of work? We first compare six recent projections of occupational exposure to task automation with AI, examining their methods and assumptions. We then propose a new empirical model of occupational AI exposure based on 2025 query data from Anthropic and OpenAI. We find marked heterogeneity in model predictions, though models published since 2020 show positive relationships among AI exposure, salaries, and occupational complexity. To reduce uncertainty due to heterogeneous assumptions about task automation potential, we average the projections from five models, including our own. Using these averages, we report on likely tradeoffs between salaries and AI exposure across interest categories, O*NET Job Zones, and job fields. Jobs in healthcare practice show the strongest balance of higher pay with lower AI exposure. Among jobs making high use of Anthropic's Claude, those that use it as a complement rather than a substitute for human work are modestly higher-paying, though whether this pattern holds will depend on usage norms adopted in each field.",
+    "ai_reason": "核心是AI对职业选择影响，劳动/HR相关",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "算法决策"
+    ],
+    "authors": [
+      "Jennifer L. Steele",
+      "Isabella Cruz"
+    ],
+    "authors_full": [
+      {
+        "name": "Jennifer L. Steele"
+      },
+      {
+        "name": "Isabella Cruz"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-16",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12325,
+    "ingested_at": "2026-07-21T05:20:55.967414",
+    "issue": null,
+    "journal": "arXiv:econ.GN",
+    "pdf_url": "https://arxiv.org/pdf/2607.15506v1",
+    "scored_at": "2026-08-02T13:29:01.929963",
+    "title": "Helping People Choose Careers in the Age of AI",
+    "title_zh": "AI时代帮助人们选择职业",
+    "tldr": "比较6种AI对职业暴露的预测方法，基于Anthropic和OpenAI 2025年查询数据构建新模型。发现模型间异质性显著，但2020年后模型显示AI暴露、薪资与职业复杂度正相关。综合5个模型均值发现，医疗类工作在高薪资与低AI暴露间平衡最佳；将Claude作为互补工具的工作比替代性使用的工作薪资略高，模式取决于各领域使用规范。",
+    "topic_tags": [
+      "工作未来",
+      "招聘",
+      "决策"
+    ],
+    "url": "https://arxiv.org/abs/2607.15506v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "I study how cheaper AI-assisted research changes the institutions that certify science. AI lowers the cost of producing a polished manuscript faster than it lowers the cost of judging whether the underlying contribution is valuable. Polish therefore loses information, entry expands and the average quality of the uncertified pool can fall. At a fixed standard, the willingness to pay for credible certification then rises because the outside option deteriorates. A certifier with market power can capture this premium; competition and alternative disclosure rules need not produce the same fee. With fixed review capacity and weak commitment, certification instead dilutes. In that extension, the partial Pigouvian toll on submissions and the shadow value of review capacity both rise with AI-assisted entry. The contribution is to connect the economics of AI and scientific production to signaling, certification and peer review: cheaper production shifts scarcity downstream, from making research look credible to verifying which research is credible.",
+    "ai_reason": "AI是核心变量，科学认证经济学",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "AI 治理"
+    ],
+    "authors": [
+      "Johan Fourie"
+    ],
+    "authors_full": [
+      {
+        "name": "Johan Fourie"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-15",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12326,
+    "ingested_at": "2026-07-21T05:20:55.968134",
+    "issue": null,
+    "journal": "arXiv:econ.GN",
+    "pdf_url": "https://arxiv.org/pdf/2607.13844v1",
+    "scored_at": "2026-08-02T13:29:01.933643",
+    "title": "Messy Research, Certification and the Monetization of Science",
+    "title_zh": "混乱研究、认证与科学的商品化",
+    "tldr": "研究AI辅助研究对科学认证制度的冲击。AI降低产出精美论文的成本快于降低评估贡献质量的成本，使外观打磨失去信息价值、投稿膨胀、未经认证池平均质量下降。在固定认证标准下，认证意愿支付上升，掌握市场力的认证方可捕获溢价；评审能力固定且承诺弱时认证则被稀释。文章将AI经济与科学认证、信号博弈及同行评审联系起来。",
+    "topic_tags": [
+      "知识管理",
+      "组织学习",
+      "伦理"
+    ],
+    "url": "https://arxiv.org/abs/2607.13844v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Fortunetelling is a cultural practice for navigating uncertainty, often associated with people's beliefs and decisions. Fortunetelling with recent large language models (LLMs) introduces new opportunities and risks. This paper conducts qualitative studies to understand users' practices, perceptions, and impacts of LLM fortunetelling in China. We first analyze 1,045 posts on Chinese social media, yielding a comprehensive taxonomy of the diverse foretold topics (e.g., career, romance), emotion reactions (e.g., surprise, worry), and perceived credibility (e.g., doubt, trust) of LLM fortunetelling. Then, we conduct interviews with 20 users of LLM fortunetelling. The findings indicate that users treat LLM fortunetelling as a tool less for accurate prediction but more for emotional support. While the fortunetelling results rarely change users' initial beliefs or decisions, they are associated with subtle mindset shifts, with some users reporting small behavioral adjustments. We discuss implications for gaining benefits from LLM fortunetelling.",
+    "ai_reason": "LLM算命用户实践，AI核心+消费者行为研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Xueer Lin",
+      "Chenyu Li",
+      "Shuai Ma",
+      "Yuhan Lyu",
+      "Zhenhui Peng"
+    ],
+    "authors_full": [
+      {
+        "name": "Xueer Lin"
+      },
+      {
+        "name": "Chenyu Li"
+      },
+      {
+        "name": "Shuai Ma"
+      },
+      {
+        "name": "Yuhan Lyu"
+      },
+      {
+        "name": "Zhenhui Peng"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-17",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12376,
+    "ingested_at": "2026-07-28T05:16:53.880619",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.15626v2",
+    "scored_at": "2026-08-02T13:29:02.802080",
+    "title": "Understanding Fortunetelling with Large Language Models in China: User Practices, Perceptions, and Impacts on Beliefs and Decisions",
+    "title_zh": "理解中国的大语言模型算命：用户实践、感知及对信念与决策的影响",
+    "tldr": "基于1045条中国社交媒体帖子分析与20位用户访谈，探究中国用户使用大语言模型进行算命的实践与影响。构建了涵盖预测主题（职业、感情等）、情绪反应（惊讶、担忧等）和感知可信度（怀疑、信任等）的分类体系。研究发现用户主要将LLM算命作为情感支持工具而非准确预测手段；算命结果很少改变用户初始信念或决策，但伴随微妙心态转变与轻微行为调整。",
+    "topic_tags": [
+      "消费者行为",
+      "决策",
+      "信任",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2607.15626v2",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Although large language models (LLMs) have recently gained traction in recommender systems due to their strong reasoning capabilities and extensive world knowledge, previous LLM-based agents suffer from hallucination and context-length limitations, and thus are not suitable for full-ranking recommendation tasks. To circumvent these limitations through architectural design rather than modifying the LLM itself, we propose an agent-based recommendation framework, memory-based $\\textbf{P}$ersonalized $\\textbf{R}$ecommendation $\\textbf{T}$ool learning via autonomous language $\\textbf{A}$gents (PRTA), in which an LLM acts as a central planner interacting with multiple recommendation models as tools. The LLM-based agent is responsible for high-level reasoning and personalized tool selection, while traditional recommendation models perform full-ranking scoring, leveraging their scalability in modeling behavioral patterns. To support personalized tool selection, we design reflection mechanisms that enable the agent to evaluate and compare tools for each user based on user profiles and candidate ranked lists. Extensive experiments across three public datasets demonstrate the superiority of \\modelname over traditional recommendation and LLM-based baselines in improving full-ranking recommendation performance.",
+    "ai_reason": "核心是LLM推荐系统框架，属营销/推荐领域",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "推荐算法",
+      "人机协作"
+    ],
+    "authors": [
+      "Mingdai Yang",
+      "Zhiwei Liu",
+      "Weizhi Zhang",
+      "Yibo Wang",
+      "Hao Peng"
+    ],
+    "authors_full": [
+      {
+        "name": "Mingdai Yang"
+      },
+      {
+        "name": "Zhiwei Liu"
+      },
+      {
+        "name": "Weizhi Zhang"
+      },
+      {
+        "name": "Yibo Wang"
+      },
+      {
+        "name": "Hao Peng"
+      },
+      {
+        "name": "Philip Yu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-22",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12385,
+    "ingested_at": "2026-07-29T05:21:33.614365",
+    "issue": null,
+    "journal": "arXiv:cs.IR",
+    "pdf_url": "https://arxiv.org/pdf/2607.19739v1",
+    "scored_at": "2026-08-02T13:29:04.916692",
+    "title": "Personalized Recommendation Tool Learning via Autonomous Language Agents",
+    "title_zh": "自主语言智能体驱动的个性化推荐工具学习",
+    "tldr": "现有基于LLM的推荐代理存在幻觉和上下文长度限制，难以胜任全排序推荐任务。本文提出PRTA框架，让LLM充当中央规划器与多个传统推荐模型工具交互：LLM负责高层推理与个性化工具选择，推荐模型负责全排序打分。设计反思机制，根据用户画像和候选排序列表对各工具进行评估与比较。在三个公开数据集上的实验表明，PRTA在提升全排序推荐效果上优于传统推荐方法和LLM基线。",
+    "topic_tags": [
+      "推荐系统"
+    ],
+    "url": "https://arxiv.org/abs/2607.19739v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Auto-bidding systems optimize bids to maximize value under efficiency constraints such as Cost-Per-Action (CPA). Existing methods treat each day as an independent episode. However, many advertisers produce value so sparsely that per-day efficiency ratios become statistically unreliable, undermining advertiser retention. Platforms therefore evaluate window-level efficiency over sliding windows of $W{=}7$ days, ensuring fair evaluation and long-term advertising effectiveness. This creates cross-episode coupling: each day's bidding decisions affect up to $W$ overlapping windows, so setting daily targets requires anticipating future market conditions. We propose SWAG-Bid (Sliding-Window Aware Generative Auto-Bidding), a hierarchical framework decomposing this challenge into episode-level planning and step-level execution. The planner uses a Masked Trajectory Model to forecast markets and generate candidate plans, scored across all overlapping windows by Multi-Window Model Predictive Control Sampling (MWMS) with exponential confidence decay. The controller adjusts reliance on this guidance through a state-adaptive gate, Per-Step Gated Adaptive Layer Normalization (PSG-AdaLN), complemented by Return-to-Go and Cost-to-Go channels carrying budget and constraint information. Experiments on AuctionNet-Sparse and online A/B tests on AliExpress show that SWAG-Bid achieves competitive constraint satisfaction and value acquisition under sliding-window evaluation.",
+    "ai_reason": "生成式自动出价属AI核心议题，广告营销",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "GenAI"
+    ],
+    "authors": [
+      "Binglin Wu",
+      "Chuan Yue",
+      "Yingyi Zhang",
+      "Xianneng Li",
+      "Ruyue Deng"
+    ],
+    "authors_full": [
+      {
+        "name": "Binglin Wu"
+      },
+      {
+        "name": "Chuan Yue"
+      },
+      {
+        "name": "Yingyi Zhang"
+      },
+      {
+        "name": "Xianneng Li"
+      },
+      {
+        "name": "Ruyue Deng"
+      },
+      {
+        "name": "Weiru Zhang"
+      },
+      {
+        "name": "Xiaoyi Zeng"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-28",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12389,
+    "ingested_at": "2026-07-29T05:21:33.617607",
+    "issue": null,
+    "journal": "arXiv:cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2607.25233v1",
+    "scored_at": "2026-08-02T13:19:32.308766",
+    "title": "Beyond Single-Episode Optimization: Sliding-Window Aware Generative Auto-Bidding for Long-Term Advertising Effectiveness",
+    "title_zh": "超越单次优化：面向长期广告效果的滑动窗口感知生成式自动出价",
+    "tldr": "针对广告自动出价中将每日视为独立回合导致稀疏广告主效率评估不可靠的问题，提出滑动窗口感知的生成式自动出价框架SWAG-Bid。该框架分层分解为回合级规划与步级执行：规划器用掩码轨迹模型预测市场并生成候选方案，由多窗口MPC采样在指数置信衰减下评分；控制器通过步级门控自适应层归一化调节依赖，并结合Return-to-Go与Cost-to-Go通道传递预算与约束信息。在AuctionNet-Sparse与AliExpress在线A/B测试中显著提升滑动窗口评估下的约束满足与价值获取。",
+    "topic_tags": [
+      "广告",
+      "营销"
+    ],
+    "url": "https://arxiv.org/abs/2607.25233v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Artificial intelligence automates execution more readily than evaluation: producing output is cheap, judging whether it is correct is not. Exposure measures rank tasks by whether AI can perform them, not by which function the human supplies. I score all $19{,}265$ O*NET task statements under fixed rubrics to build occupation-level execution and AI-capability shares. The execution share is reproducible across model coders and O*NET vintages and distinct from AI capability and routine-task intensity; it is a model-based measure, not human-validated ground truth, and adds only modest power beyond O*NET's evaluation activities. In a harmonized panel, employment growth is lower in execution-heavy white-collar occupations in every window since 2012, and equality of slopes cannot be rejected: the gradient is a secular trend rather than an AI-era event, largely between occupational families. The vintage-valid capability gradient steepens after 2022, a change that is dated but not causally attributable. The evidence establishes a measure and a chronology, not an AI-caused effect.",
+    "ai_reason": "AI对职业执行/评估任务的影响，劳动经济",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策"
+    ],
+    "authors": [
+      "Li Gan"
+    ],
+    "authors_full": [
+      {
+        "name": "Li Gan"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-23",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12437,
+    "ingested_at": "2026-08-01T05:27:09.683546",
+    "issue": null,
+    "journal": "arXiv:econ.GN",
+    "pdf_url": "https://arxiv.org/pdf/2607.20807v1",
+    "scored_at": "2026-08-02T13:37:02.740983",
+    "title": "Execution and Evaluation: A New Occupational Measure and Long-Run Employment Gradients",
+    "title_zh": "执行与评估:一种新的职业测度与长期就业梯度",
+    "tldr": "研究区分AI对任务执行与评估能力的不同替代程度，基于固定评分规则对O*NET全部19,265条任务进行编码，构建职业层面的执行占比与AI能力占比指标。发现执行密集型白领职业的就业增长在2012年以来的各窗口期均偏低，但斜率差异为长期结构性趋势而非AI时代特有效应；2022年后AI能力梯度有所陡峭，但尚不能归因。",
+    "topic_tags": [
+      "工作未来",
+      "战略"
+    ],
+    "url": "https://arxiv.org/abs/2607.20807v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "This paper presents the second edition of the TalentCLEF Challenge, which will run as an evaluation lab as part of CLEF 2026. The aim of TalentCLEF is to promote the development of systems and methods that use Natural Language Processing (NLP) in the field of Human Capital Management (HCM), fostering approaches that ensure fairness in results, operate across multiple languages, and adapt to diverse industries. To this end, TalentCLEF establishes public benchmarks where research teams can compare methods and share findings, moving the field toward more practical and impactful NLP solutions that effectively address the real needs of workforce management.   This year's lab will feature two tasks designed to foster the development and evaluation of systems that support key HCM activities such as talent matching, upskilling, reskilling, and skill gap detection: (i) Task A - Contextualized Job-Person Matching, focused on retrieving and ranking suitable candidates for specific job positions using context-rich and privacy-preserving data; and (ii) Task B - Job-Skill Matching with Skill Type Classification, centered on identifying relevant skills for a given job title and classifying them by their type within the job profile.   TalentCLEF website: https://talentclef.github.io/talentclef/",
+    "ai_reason": "HCM领域NLP基准评测，与AI和HR管理相关",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "AI招聘"
+    ],
+    "authors": [
+      "Luis Gasco",
+      "Hermenegildo Fabregat",
+      "Laura García-Sardiña",
+      "Paula Estrella",
+      "Casimiro Pio Carrino"
+    ],
+    "authors_full": [
+      {
+        "name": "Luis Gasco"
+      },
+      {
+        "name": "Hermenegildo Fabregat"
+      },
+      {
+        "name": "Laura García-Sardiña"
+      },
+      {
+        "name": "Paula Estrella"
+      },
+      {
+        "name": "Casimiro Pio Carrino"
+      },
+      {
+        "name": "Daniel Deniz"
+      },
+      {
+        "name": "Alvaro Rodrigo"
+      },
+      {
+        "name": "Rabih Zbib"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-22",
+    "doi": "https://doi.org/10.1007/978-3-032-21321-1_35",
+    "domain_score": 3.0,
+    "id": 12453,
+    "ingested_at": "2026-08-02T05:26:29.567558",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2607.20009v1",
+    "scored_at": "2026-08-02T13:36:56.487951",
+    "title": "TalentCLEF at CLEF2026: Skill and Job Title Intelligence for Human Capital Management",
+    "title_zh": "TalentCLEF 亮相 CLEF2026:人力资本管理的技能与职位智能",
+    "tldr": "介绍CLEF 2026上举办的TalentCLEF第二届评测赛，旨在推动自然语言处理在人力资本管理领域的应用。重点涵盖两项任务：任务A为基于上下文且保护隐私的岗位-候选人匹配；任务B为岗位-技能匹配及技能类型分类。赛事强调多语言、公平性与跨行业适配，为人才匹配、技能提升与缺口识别提供公共基准。",
+    "topic_tags": [
+      "招聘",
+      "HR",
+      "公平性"
+    ],
+    "url": "https://arxiv.org/abs/2607.20009v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Autistic individuals often face barriers in workplace communication, where soft skills are embedded within ongoing tasks and surrounding environment context, not in isolated verbal exchange. Recent work has introduced LLM-driven agents into VR-based communication training and proposed prompting schemas that let agents generate dialogue grounded in the VR environment and the user's hand-based interactions. Building on this work, we explore how different levels of environmental grounding influence the training experience of autistic trainees and job coaches. We conducted an exploratory study with 9 autistic trainees and 7 job coaches across three modalities: conversation-only (C), conversation with environmental objects (C+O), and conversation with objects and grasp interactions (C+O+G). Usability and workload were comparable across modalities, while both trainees and coaches preferred the more interactive and environment-grounded condition (C+O+G). Participants viewed C+O+G as helpful for sustaining engagement and integrating communication practice into task performance. We discuss design considerations for more flexible, interactive, and workplace-relevant VR communication training for autistic individuals.",
+    "ai_reason": "GenAI驱动VR沟通训练，边缘相关HR/培训",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Ziming Li",
+      "Roshan L. Peiris"
+    ],
+    "authors_full": [
+      {
+        "name": "Ziming Li"
+      },
+      {
+        "name": "Roshan L. Peiris"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-23",
+    "doi": "https://doi.org/10.1145/3797867.3829054",
+    "domain_score": 3.0,
+    "id": 12461,
+    "ingested_at": "2026-08-02T05:26:29.573725",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.21769v1",
+    "scored_at": "2026-08-02T13:37:02.740129",
+    "title": "From Grasping to Speaking: Generative AI-Based Environment-Grounded VR Communication Training for Autistic Individuals",
+    "title_zh": "从理解到表达:基于生成式 AI 的环境锚定 VR 沟通训练(面向自闭症群体)",
+    "tldr": "研究探索基于生成式AI的VR沟通训练对自闭症职场人士的效果，以LLM驱动智能体结合环境物体与手部抓取交互。9名自闭症学员与7名职场教练参与三种模态实验（C、C+O、C+O+G）。可用性与认知负荷无显著差异，但学员与教练均更偏好互动性最强的C+O+G，认为其有助于维持投入并将沟通练习融入任务操作。研究提出了面向职场的VR训练设计建议。",
+    "topic_tags": [
+      "培训",
+      "人机交互",
+      "创新"
+    ],
+    "url": "https://arxiv.org/abs/2607.21769v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "As AI agents become integral to business workflows, establishing guiding user experience (UX) principles is crucial for ensuring user trust and successful adoption. To address this, our study uses a multi-method approach - combining participatory design workshop, paper-and-pencil, expert review, meta-analysis, and in-depth interviews - to identify and validate a design framework of eight core UX principles for human-AI agent interaction in the workplace. Together with their underlying criteria, these principles provide actionable guardrails for designers and software engineers, creating a foundation for developing effective and human-centered AI agent interactions. This study contributes to a structured foundation for future empirical studies on agentic AI in enterprise settings.",
+    "ai_reason": "工作场所人机交互UX原则，AI核心但偏HCI",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机协作",
+      "人机交互",
+      "可解释AI"
+    ],
+    "authors": [
+      "Kathrin Paimann",
+      "Elizangela Valarini",
+      "Sebastian Juhl"
+    ],
+    "authors_full": [
+      {
+        "name": "Kathrin Paimann"
+      },
+      {
+        "name": "Elizangela Valarini"
+      },
+      {
+        "name": "Sebastian Juhl"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-22",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12462,
+    "ingested_at": "2026-08-02T05:26:29.574477",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.19941v1",
+    "scored_at": "2026-08-02T13:36:56.487164",
+    "title": "A Framework of User Experience Principles for Human-AI Agent Interaction in the Workplace",
+    "title_zh": "工作场所人-AI 代理交互的用户体验原则框架",
+    "tldr": "针对AI智能体在企业工作流中日益普及的趋势，采用参与式设计工作坊、专家评审、元分析与深度访谈等多元方法，提炼并验证了适用于职场人机交互的八项核心用户体验(UX)设计原则及其配套准则，为设计师与工程师开发以人为中心、有效可信的智能体交互系统提供可操作框架。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互",
+      "工作设计"
+    ],
+    "url": "https://arxiv.org/abs/2607.19941v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "The integration of AI in Talent Management is a change in the way that organizations are designing their strategies for Talent Retention (TR), engagement, and future strategy. New and innovative tools such as predictive models, sentiment analysis, and personalized career planning have come up, and they offer better ways of addressing retention issues, workforce engagement, and, in general, sustainability. Through the application of predictive analytics, organizations can determine employees' likelihood of leaving the organization, who is likely to leave, and when to act, thus minimizing the costs and time associated with the recruitment process and improving performance. Furthermore, AI solutions help the development of individualized learning plans that help to define employees' professional goals and link them with the organization's strategy to encourage the employees' continuous growth.   This paper explained how AI is impacting the retention process and how it can be used to decrease attrition rates, create a loyal workforce, and promote sustainable management of human and other resources. Furthermore, the author discusses the ethical issues, such as privacy and fairness of algorithms, that are involved in the implementation of AI systems. Thus, the above challenges can be solved by developing a sustainable and inclusive ecosystem that can help in the development of the future workforce. Based on a systematic review of literature, the study presents a framework that can help organizations improve their talent management practices with the help of AI to support long-term sustainable growth. It can be used to help industry professionals and decision-makers understand the new technological shifts that are occurring.",
+    "ai_reason": "AI驱动的 talent retention 策略，属HR/管理领域",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策",
+      "AI治理"
+    ],
+    "authors": [
+      "Jay Barach"
+    ],
+    "authors_full": [
+      {
+        "name": "Jay Barach"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-22",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 12463,
+    "ingested_at": "2026-08-02T05:26:29.575180",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2607.19733v1",
+    "scored_at": "2026-08-02T13:36:56.486729",
+    "title": "AI-Increased Talent Retention Strategies: Fostering Long-Term Employee Engagement and Development in Talent Management",
+    "title_zh": "AI 增强型人才保留策略:促进长期员工敬业与发展",
+    "tldr": "聚焦AI对人才管理中员工保留策略的影响。借助预测分析、情感分析与个性化职业规划等工具，组织可识别离职风险、降低招聘成本，并为员工定制学习路径。研究通过系统性文献综述构建整合性框架，涵盖降低流失率、提升敬业度与可持续人力资源管理，同时探讨算法隐私、公平性等伦理挑战及应对路径。",
+    "topic_tags": [
+      "招聘",
+      "HR",
+      "员工幸福感",
+      "伦理",
+      "组织变革"
+    ],
+    "url": "https://arxiv.org/abs/2607.19733v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Diverse human groups produce diverse ideas, the raw material of innovation. Generative AI challenges this engine twice over: everyday AI assistance may homogenize what diverse people create, and AI-simulated diversity may replace the people altogether. We tested both challenges in a preregistered creative metaphor experiment with native (L1) and non-native (L2) English writers, who wrote without AI, with AI-generated ideas (AI ideation), or with AI refining their own ideas (AI refinement). L2 writers contributed more collective diversity than L1 writers, with native-language ideation showing the most diverse pools. AI ideation compressed collective diversity for everyone and left the L2 advantage undetectable, whereas AI refinement preserved both. We then simulated the entire writer pool using personas built from participants' real backgrounds, three model families, native-language prompting, and elevated sampling temperatures. Every simulated pool fell below every human pool, and pushing models further induced diversity only through degenerate text. However, at the individual level, AI ideation raised writers' ratings, pitting private incentives against the collective good, except when L2 writers used their native language, which benefited both. Human diversity remains a valuable creative resource that current AI cannot simulate or sustain; the design of human-AI collaborative workflows determines whether it survives.",
+    "ai_reason": "核心对比LLM与人类创造力，涉及团队创新",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Mengchen Dong",
+      "Hiromu Yakura"
+    ],
+    "authors_full": [
+      {
+        "name": "Mengchen Dong"
+      },
+      {
+        "name": "Hiromu Yakura"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-29",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12469,
+    "ingested_at": "2026-08-02T05:26:29.579647",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2607.26899v1",
+    "scored_at": "2026-08-02T13:19:33.056911",
+    "title": "Human diversity fuels collective creativity that large language models cannot simulate or sustain",
+    "title_zh": "人类多样性驱动集体创造力：大语言模型所无法模拟与维持",
+    "tldr": "通过预注册的创意隐喻实验，比较母语(L1)与非母语(L2)英语写作者在无AI、AI生成创意和AI优化创意三种条件下的表现。结果显示L2写作者贡献更多集体多样性，AI生成创意压缩了集体多样性并消除L2优势，AI优化则保留多样性。模拟多样化写作群体的实验表明，所有AI模拟池均低于人类池，强行提升多样性只能产生退化文本。揭示了AI辅助对集体创造力的潜在威胁。",
+    "topic_tags": [
+      "创意",
+      "创新",
+      "人机协作",
+      "团队"
+    ],
+    "url": "https://arxiv.org/abs/2607.26899v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Web browsers now provide AI-generated news summaries for millions of users. Despite their popularity and influence, we lack a systematic understanding of how these systems transform news before people read it. Through a large-scale audit, we investigate the factual accuracy of browser-based AI summarizers and how they alter the political bias, negative affect, and journalistic writing quality of news. Drawing on 13,777 articles from 15 U.S. news outlets, we evaluate their 41,331 summaries generated by three leading AI-powered browsers: Google Chrome (Gemini), Microsoft Edge (Copilot), and Perplexity Comet. We find that browser-based AI summarizers are broadly accurate. Furthermore, they consistently transform news by attenuating ideological bias, partisan stances, negativity, anger, and fear, while increasing clarity and reducing personal tone. With some variations, these patterns hold across browsers, outlet ideologies, and topics. Our findings identify AI-powered browsers as a new class of editorial intermediaries that systematically reshape news, with implications for democratic discourse and AI governance.",
+    "ai_reason": "核心研究AI浏览器摘要，涉及消费者信息处理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "AI治理"
+    ],
+    "authors": [
+      "Yan Xia",
+      "Dominik Batorski",
+      "Erin Wertz",
+      "Michalis Mamakos",
+      "Lucen Li"
+    ],
+    "authors_full": [
+      {
+        "name": "Yan Xia"
+      },
+      {
+        "name": "Dominik Batorski"
+      },
+      {
+        "name": "Erin Wertz"
+      },
+      {
+        "name": "Michalis Mamakos"
+      },
+      {
+        "name": "Lucen Li"
+      },
+      {
+        "name": "Magdalena Wojcieszak"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-21",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 12478,
+    "ingested_at": "2026-08-02T05:26:29.586567",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2607.18931v1",
+    "scored_at": "2026-08-02T13:29:04.917912",
+    "title": "AI-Powered Browsers Are Broadly Accurate News Summarizers That Reduce Political Bias and Negative Affect",
+    "title_zh": "AI驱动浏览器：广泛准确的新闻摘要工具，可减少政治偏见与负面情绪",
+    "tldr": "基于15家美国新闻媒体的13,777篇文章生成的41,331条摘要，本文对Google Chrome（Gemini）、Microsoft Edge（Copilot）和Perplexity Comet三大AI浏览器进行系统性审计。研究发现AI浏览器摘要整体事实准确性较高，并系统性地减弱意识形态偏见、党派立场、负面情绪、愤怒与恐惧，同时提升清晰度、降低个人语气，跨浏览器、媒体倾向和话题均较为稳健。研究将AI浏览器界定为新型编辑中介，探讨其对民主话语与AI治理的影响。",
+    "topic_tags": [
+      "偏见",
+      "信任",
+      "AI治理"
+    ],
+    "url": "https://arxiv.org/abs/2607.18931v1",
     "volume": null,
     "year": 2026
   },
@@ -55089,6 +56730,60 @@
     "url": "https://doi.org/10.5465/amr.2019.0178",
     "volume": "46",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心研究GenAI对知识密集型团队的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Jessica Reif",
+      "Jonathon N. Cummings"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "California University of Pennsylvania"
+        ],
+        "name": "Jessica Reif",
+        "orcid": "https://orcid.org/0009-0007-6057-8524",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Duke University"
+        ],
+        "name": "Jonathon N. Cummings",
+        "orcid": null,
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-17",
+    "doi": "10.5465/amr.2024.0538",
+    "domain_score": 5.0,
+    "id": 12288,
+    "ingested_at": "2026-07-19T05:22:04.844807",
+    "issue": null,
+    "journal": "AMR",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:36:55.380507",
+    "title": "The Generative AI Dilemma in Knowledge-Intensive Teams",
+    "title_zh": "知识密集型团队中的生成式AI困境",
+    "tldr": "探讨生成式AI在知识密集型团队中应用的两难困境：GenAI能加速知识生产与信息整合，但同时可能侵蚀团队深层的认知互动、专业判断与成员间的信任关系。围绕团队如何在拥抱AI效率与维护知识深度、协作质量之间取得平衡，分析其对团队学习、创造力与长期竞争力的影响，为理解GenAI在专业团队中的边界与代价提供理论视角。",
+    "topic_tags": [
+      "团队",
+      "知识管理",
+      "人机协作",
+      "创新"
+    ],
+    "url": "https://doi.org/10.5465/amr.2024.0538",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": "Managing with artificial intelligence (AI) refers to humans’ interaction with algorithms performing managerial tasks in organizations. Two literatures exploring this interaction—human-AI collaboration (HAIC) and algorithmic management (AM)—have focused on distinct managerial tasks: while HAIC examines executive decision-making, AM focuses on managerial control. This article presents a review of both literatures to identify opportunities for integration and advancement. We observe that HAIC’s and AM’s micro-level emphases on different managerial tasks have resulted in diverging conceptualizations of context, agency, interaction, and outcome. Adopting a more encompassing systems lens, we unveil previously concealed linkages between HAIC and AM, suggesting that the two literatures have analyzed two sides of the same phenomenon: while HAIC explores how humans use AI to manage, AM describes how humans are managed by AI. We develop an integrative framework that elevates the viewpoint from tasks to the organizational context, from individual to collective agency, from local to systemic interaction, and from micro-level to multilevel outcomes. By employing this framework, we lay the foundations for an organizational perspective on managing with AI.",
@@ -65665,6 +67360,303 @@
     "year": 2026
   },
   {
+    "abstract": "Many online platforms now use complex recommender systems to decide which products, restaurants, or services people see. These systems can improve matching, but their recommendations are often hard for users and managers to understand. This article introduces MG-GAT, a recommender system framework that uses multiple networks and attribute data while keeping track of the neighbors and features that influence each recommendation. The same evidence is then used to generate explanations, so the reason shown to a user is tied to the model’s internal decision process rather than added afterward. Across Yelp data from Ontario and Pennsylvania, the method performs competitively with strong deep-learning baselines. In a randomized experiment, explanations based on MG-GAT increased users’ trust, persuasiveness, satisfaction, and engagement relative to similarity-based, social, and SHAP-based explanations. For practice, the results show that platforms do not have to choose between predictive performance and accountable explanations. Recommendation teams can design systems that expose the signals behind predictions, audit generated explanations for unsupported claims, and give users clearer reasons for accepting or questioning automated recommendations.",
+    "ai_reason": "LLM驱动的可解释推荐系统，AI为核心，信息系统",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "可解释AI",
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Yan Leng",
+      "Xiao Liu",
+      "Rodrigo Ruiz"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "The University of Texas at Austin"
+        ],
+        "name": "Yan Leng",
+        "orcid": "https://orcid.org/0000-0002-7084-2700",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "New York University"
+        ],
+        "name": "Xiao Liu",
+        "orcid": "https://orcid.org/0000-0002-7093-8534",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Neighborhood House"
+        ],
+        "name": "Rodrigo Ruiz",
+        "orcid": null,
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-15",
+    "doi": "10.1287/isre.2023.0549",
+    "domain_score": 4.0,
+    "id": 12268,
+    "ingested_at": "2026-07-17T05:20:39.167616",
+    "issue": null,
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:29:02.369554",
+    "title": "Interpretable Recommendations and Parameter-Grounded LLM Explanations with Multigraph Attention",
+    "title_zh": "基于多图注意力的可解释推荐与参数锚定LLM解释",
+    "tldr": "提出MG-GAT可解释推荐框架，结合多图注意力与属性数据，跟踪影响推荐结果的邻居与特征，并将同一证据用于生成与模型内部决策对齐的解释。在Yelp安大略与宾州数据上预测性能与深度学习基线相当；随机实验显示，其解释在信任、说服力、满意度与参与度上优于相似度、社交与SHAP等基线解释。",
+    "topic_tags": [
+      "推荐系统",
+      "消费者行为",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1287/isre.2023.0549",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "This study explores the implications of a policy change announced by Stack Overflow, a popular question-and-answer platform, to prohibit the use of ChatGPT for generating questions or answers. To analyze data from Stack Overflow and Reddit, we employ the difference-in-differences (DID) empirical strategy to examine the impact of Stack Overflow’s policy. Our analysis focuses on the linguistic characteristics of content using natural language processing (NLP) techniques and voting features on both platforms. The results indicate that, after the restriction, the users on Stack Overflow exhibited a change in their answer generation, producing answers that exhibited more language complexity, positivity, and a larger number of words than the users on the AskProgramming subreddit. However, there was no discernible impact on the questions asked on Stack Overflow. Notably, the answers on Stack Overflow received more upvotes after the restriction, suggesting that the community perceived them to be of higher quality than answers on the subreddit. The frequency analysis reveals a noticeable decrease in the number of questions and answers posted by users on Stack Overflow following the restriction. Additionally, our supplementary analysis suggests a decrease in first-time contributors on Stack Overflow after the restriction. We validate our findings using an independent natural experiment leveraging Italy’s temporary nationwide ChatGPT ban, as well as a scenario-based experiment with 440 participants that provides direct evidence of compensatory knowledge signaling by contributors when AI-generated content is restricted. This study contributes to the existing literature by providing empirical evidence and insights into the decision to prohibit ChatGPT on a question-and-answer platform and provides practical implications to platform managers, informing them about the impact of the restriction on the change in answer content.",
+    "ai_reason": "ChatGPT禁令对平台影响，信息系统议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "ChatGPT",
+      "LLM",
+      "NLP"
+    ],
+    "authors": [
+      "Sameer Borwankar",
+      "Warut Khern-am-nuai",
+      "Anastasiya Pocheptsova Ghosh",
+      "Karthik Kannan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "McGill University"
+        ],
+        "name": "Sameer Borwankar",
+        "orcid": "https://orcid.org/0000-0002-1108-7135",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "McGill University"
+        ],
+        "name": "Warut Khern-am-nuai",
+        "orcid": "https://orcid.org/0000-0002-1028-1593",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Arizona"
+        ],
+        "name": "Anastasiya Pocheptsova Ghosh",
+        "orcid": "https://orcid.org/0000-0002-1517-4447",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Arizona"
+        ],
+        "name": "Karthik Kannan",
+        "orcid": "https://orcid.org/0000-0002-9861-0717",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-24",
+    "doi": "10.1287/isre.2024.1235",
+    "domain_score": 4.0,
+    "id": 12365,
+    "ingested_at": "2026-07-26T05:30:53.780161",
+    "issue": null,
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:37:02.738458",
+    "title": "Unraveling the Impact: An Empirical Investigation of ChatGPT’s Exclusion from Stack Overflow",
+    "title_zh": "揭示影响:ChatGPT 被 Stack Overflow 排除的实证研究",
+    "tldr": "采用双重差分与自然语言处理方法，检验Stack Overflow封禁ChatGPT后内容与社区行为变化。结果显示封禁后回答语言更复杂、更积极且更长，获更多投票支持，但提问未受影响；发布频率与首答者数量下降，并以意大利临时封禁及情景实验加以验证。",
+    "topic_tags": [
+      "知识管理",
+      "人机协作",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1287/isre.2024.1235",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Regulators increasingly mandate transparency regarding generative AI (GenAI) use in creative work, aiming to protect audiences from deception while preserving creators' self-expression. One way of achieving this transparency is through disclosure labels that directly inform audiences about GenAI use. Yet, prior research focused almost exclusively on how such labels affect audience evaluations and paid surprisingly little attention to whether mandatory disclosure affects creators, too. We refer to this as the indirect disclosure effect. Drawing on Goffman's account of impression management, we theorize that creators who anticipate disclosure fear that audiences will not recognize their human creative agency, threatening their validation as a creative self, which leads them to adjust their collaboration with GenAI. To investigate this mechanism, we employ two nested mixed-methods experiments in which participants collaborate with a text-to-image GenAI tool under different disclosure conditions. We empirically establish the indirect disclosure effect: when disclosure is anticipated, the majority of creators withdraw from the creative process, leaving image generation to GenAI. We provide evidence that this withdrawal is driven by creators’ fears that audiences will not recognize their creative agency. Hence, the produced artifacts predominantly reflect computational rather than human creativity, which is also recognized and evaluated by the audience regardless of the direct disclosure label. Overall, our study reveals a fundamental tension at the heart of transparency regulation: by disclosing GenAI use through a simple label, regulators may inadvertently diminish the very human creative agency they aim to protect, and they do so before audiences ever see the label.",
+    "ai_reason": "核心研究GenAI披露对创作者影响，属IS/管理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作"
+    ],
+    "authors": [
+      "Ekaterina Jussupow",
+      "Kevin Bauer",
+      "Rebecca Heigl",
+      "Benjamin Vogt",
+      "Oliver Hinz"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Technische Universität Darmstadt"
+        ],
+        "name": "Ekaterina Jussupow",
+        "orcid": "https://orcid.org/0000-0002-3009-076X",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "University of Mannheim"
+        ],
+        "name": "Kevin Bauer",
+        "orcid": "https://orcid.org/0000-0001-8172-1261",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Goethe University Frankfurt"
+        ],
+        "name": "Rebecca Heigl",
+        "orcid": "https://orcid.org/0009-0009-2449-5558",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Zhejiang Wanli University"
+        ],
+        "name": "Benjamin Vogt",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Goethe University Frankfurt"
+        ],
+        "name": "Oliver Hinz",
+        "orcid": "https://orcid.org/0000-0003-4757-0599",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-28",
+    "doi": "10.1287/isre.2024.0951",
+    "domain_score": 4.0,
+    "id": 12404,
+    "ingested_at": "2026-07-30T04:58:14.706821",
+    "issue": null,
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:19:32.307057",
+    "title": "The Indirect Disclosure Effect: How Disclosing Generative AI Use Impacts Human Creative Collaboration with AI",
+    "title_zh": "间接披露效应：披露生成式AI使用对人类与AI创造性协作的影响",
+    "tldr": "研究强制披露GenAI使用对创作者与AI协作行为的影响。基于Goffman印象管理理论，通过两项嵌套混合方法实验，让参与者在不同披露条件下与文本生成图像工具协作。发现预期披露时，多数创作者会退出创作过程、将图像生成交由AI完成，原因是担心观众无法认可其创造性主体性；由此产生的作品主要体现计算创造力而非人类创造力，该效应亦被观众识别与评价，揭示了披露制度的间接效应。",
+    "topic_tags": [
+      "人机协作",
+      "创意",
+      "信任",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1287/isre.2024.0951",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Physical retailers have long lacked the real-time behavioral visibility that online platforms enjoy through clickstream data. This research addresses that gap by introducing a video analytics framework that transforms in-store security camera footage into a rich, structured behavioral record: an \"offline clickstream.\" Using computer vision and deep learning techniques, including person re-identification, trajectory reconstruction, pose estimation, and vision-language models, the system extracts moment-by-moment signals of shopper intent: how customers move through the store, how they interact with products, and how their body language evolves during a visit. A transformer-based prediction model trained on these signals achieves dramatically better purchase prediction accuracy than conventional demographic or contextual benchmarks alone: improving predictive performance by up to 79% on key metrics. Beyond prediction, the framework supports five real-time targeting policies; simulations show that a persuadability-based policy yields a 13.1% profit lift over no targeting. For retailers and policymakers, this research offers a scalable, privacy-conscious blueprint for bridging the capability gap between physical and digital commerce, enabling timely, personalized interventions that improve customer experience and store profitability.",
+    "ai_reason": "核心用计算机视觉和深度学习预测店内购买，AI是中心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "多模态",
+      "推荐算法"
+    ],
+    "authors": [
+      "Rubing Li",
+      "Wen Wang",
+      "Kaiquan Xu",
+      "Anindya Ghose",
+      "Beibei Li"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "New York University",
+          "University of Maryland, College Park"
+        ],
+        "name": "Rubing Li",
+        "orcid": null,
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "New York University",
+          "University of Maryland, College Park"
+        ],
+        "name": "Wen Wang",
+        "orcid": "https://orcid.org/0000-0001-5983-3224",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Renmin University of China"
+        ],
+        "name": "Kaiquan Xu",
+        "orcid": "https://orcid.org/0009-0009-5563-1356",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "New York University"
+        ],
+        "name": "Anindya Ghose",
+        "orcid": "https://orcid.org/0000-0002-6499-8944",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Historical Society of Western Pennsylvania"
+        ],
+        "name": "Beibei Li",
+        "orcid": "https://orcid.org/0000-0001-5466-7925",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-29",
+    "doi": "10.1287/isre.2023.0432",
+    "domain_score": 5.0,
+    "id": 12419,
+    "ingested_at": "2026-07-31T05:36:47.956700",
+    "issue": null,
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:19:34.144674",
+    "title": "Predicting Consumer In-Store Purchase Through Real-Time Video Analytics: An Advanced Computer Vision and Deep Learning Approach",
+    "title_zh": "基于实时视频分析的消费者店内购买预测：计算机视觉与深度学习方法",
+    "tldr": "针对线下零售缺乏实时行为数据的痛点，构建视频分析框架将店内监控画面转化为离线点击流。结合行人重识别、轨迹重建、姿态估计和视觉-语言模型，提取顾客移动路径、产品互动与肢体语言等行为信号。Transformer预测模型在购买预测关键指标上较传统基准提升达79%，并支持五种实时定向策略；模拟显示基于说服力的策略可带来13.1%的利润提升，为弥合实体与数字零售能力差距提供可扩展且注重隐私的方案。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "推荐系统",
+      "隐私"
+    ],
+    "url": "https://doi.org/10.1287/isre.2023.0432",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Abstract Companies are increasingly introducing conversational reviews —reviews solicited via chatbots—to gain customer feedback. However, little is known about how chatbot-mediated solicitation influences rating valence and review helpfulness compared to conventional online forms. Therefore, we conceptualized these review solicitation media on the continuum of anthropomorphism and investigated how various levels of anthropomorphism affect rating valence and review helpfulness, showing that more anthropomorphic media lead to more positive and less helpful reviews. We found that moderate levels of anthropomorphism lead to increased interaction enjoyment, and high levels increase social presence, thus inflating the rating valence and decreasing review helpfulness. Further, the effect of anthropomorphism remains robust across review solicitors’ salience (sellers vs. platforms) and expressed emotionality in conversations. Our study is among the first to investigate chatbots as a new form of technology to solicit online reviews, providing insights to inform various stakeholders of the advantages, drawbacks, and potential ethical concerns of anthropomorphic technology in customer feedback solicitation.",
     "ai_reason": "核心研究聊天机器人征集评论的偏差效应，直接涉及对话式AI",
     "ai_score": 5.0,
@@ -66758,6 +68750,192 @@
     "url": "https://doi.org/10.1007/s11747-022-00839-w",
     "volume": "50",
     "year": 2022
+  },
+  {
+    "abstract": "Abstract Across a series of studies, we find that despite AI’s potential for greater efficiency in sustainable product designs, AI-designed products are perceived by consumers as less sustainable than those designed by humans. We demonstrate that this effect is driven by a perceived lack of genuine care, defined as the emotional component believed to go into a product’s design. Since sustainability is symbolically linked to values such as love and care, the absence of human involvement undermines perceptions of sustainability. Our findings contribute to research on perceptions related to AI-designed products, sustainability marketing, and the moderating role of genuine care cues in product evaluation. We offer theoretical insights into the socially constructed perceptions related to sustainability and practical guidance for firms seeking to align AI-driven innovation with consumer expectations around sustainability.",
+    "ai_reason": "AI设计vs人类设计感知，AI核心变量，JAMS营销",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作"
+    ],
+    "authors": [
+      "Barbara Duffek",
+      "Dipayan Biswas"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Georgia State University"
+        ],
+        "name": "Barbara Duffek",
+        "orcid": "https://orcid.org/0000-0002-1855-2853",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "University of South Florida"
+        ],
+        "name": "Dipayan Biswas",
+        "orcid": "https://orcid.org/0000-0002-6015-8585",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-06",
+    "doi": "10.1007/s11747-026-01170-4",
+    "domain_score": 5.0,
+    "id": 12145,
+    "ingested_at": "2026-07-08T05:24:30.811308",
+    "issue": null,
+    "journal": "JAMS",
+    "pdf_url": "https://doi.org/10.1007/s11747-026-01170-4",
+    "scored_at": "2026-08-02T13:29:04.935379",
+    "title": "AI and human designers: How consumers see the genuine care in product design as more sustainable",
+    "title_zh": "AI与人类设计师：消费者如何看待产品设计中的真诚关怀与可持续性",
+    "tldr": "通过一系列研究探讨消费者对AI设计与人类设计的可持续产品的感知差异。尽管AI在可持续设计中效率更高，但消费者认为AI设计的产品可持续性更低。机制在于感知缺乏真诚关怀——可持续性在符号上与爱与关怀等价值相连，人类参与的缺失削弱了可持续感知。研究贡献于AI产品感知与可持续营销文献，并为企业如何在AI创新与消费者期望间取得平衡提供实践指引。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "品牌",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1007/s11747-026-01170-4",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI为讨论变量之一，核心在消费者素养",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "GenAI"
+    ],
+    "authors": [
+      "Yanmei Zheng",
+      "Joseph W. Alba",
+      "Ben Hutchinson",
+      "J. Wesley Hutchinson"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Hawaii System"
+        ],
+        "name": "Yanmei Zheng",
+        "orcid": "https://orcid.org/0000-0002-8502-6191",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "University of Florida"
+        ],
+        "name": "Joseph W. Alba",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Oregon",
+          "University of Pennsylvania"
+        ],
+        "name": "Ben Hutchinson",
+        "orcid": "https://orcid.org/0000-0003-2253-6204",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Oregon",
+          "University of Pennsylvania"
+        ],
+        "name": "J. Wesley Hutchinson",
+        "orcid": "https://orcid.org/0009-0006-3405-8069",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-09",
+    "doi": "10.1007/s11747-026-01174-0",
+    "domain_score": 5.0,
+    "id": 12188,
+    "ingested_at": "2026-07-11T05:04:06.779043",
+    "issue": null,
+    "journal": "JAMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:37:08.061746",
+    "title": "Consumer expertise across technological frontiers: Consumer literacy, the internet, and artificial intelligence",
+    "title_zh": "技术前沿下的消费者专长：消费者素养、互联网与人工智能",
+    "tldr": "探讨消费者专业知识如何跨越互联网与人工智能等技术前沿演化，分析不同技术世代下消费者读写能力(consumer literacy)的变化及其对营销与品牌管理的启示。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "品牌"
+    ],
+    "url": "https://doi.org/10.1007/s11747-026-01174-0",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI代理的社交临场感，营销传播相关",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "GenAI"
+    ],
+    "authors": [
+      "Antoine Juquelier",
+      "Simon Hazée",
+      "Yves Van Vaerenbergh",
+      "Ingrid Poncin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Antoine Juquelier",
+        "orcid": null,
+        "position": "first"
+      },
+      {
+        "affiliation": [],
+        "name": "Simon Hazée",
+        "orcid": "https://orcid.org/0000-0003-2657-2261",
+        "position": "middle"
+      },
+      {
+        "affiliation": [],
+        "name": "Yves Van Vaerenbergh",
+        "orcid": "https://orcid.org/0000-0001-7621-1961",
+        "position": "middle"
+      },
+      {
+        "affiliation": [],
+        "name": "Ingrid Poncin",
+        "orcid": "https://orcid.org/0000-0002-4225-0118",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-24",
+    "doi": "10.1007/s11747-026-01177-x",
+    "domain_score": 4.0,
+    "id": 12366,
+    "ingested_at": "2026-07-26T05:30:53.800156",
+    "issue": null,
+    "journal": "JAMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:37:02.738036",
+    "title": "Automated social presence in artificial agents: A conventional and qualitative comparative meta-analysis",
+    "title_zh": "人工代理的自动社交临场感:常规与定性比较元分析",
+    "tldr": "基于常规与定性比较的元分析，综合现有实证研究，探讨人工智能代理中自动化社会临场感的形成机制与配置条件，识别影响用户对AI代理社会感知的因素组合及边界条件。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1007/s11747-026-01177-x",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,
@@ -68162,6 +70340,173 @@
     "year": 2026
   },
   {
+    "abstract": "¯ = .63). Training sample configuration also influenced psychometric properties, such that training on a mixed sample of honest and motivated responses yielded the best results. Finally, AI-generated responses (fully synthetic and human-AI hybrid) received scores that varied considerably across models, though they typically were higher than human scores. However, a customized algorithm accurately differentiated human from AI responses with near-perfect accuracy (across seven large language models and for humans using AI), with only a 1% false positive rate. Collectively, these findings suggest that open-ended personality assessments, when paired with natural language processing scoring, have potential to offer a scalable, more faking-resistant approach to personality assessment. (PsycInfo Database Record (c) 2026 APA, all rights reserved).",
+    "ai_reason": "AI生成回答与NLP评分是核心变量之一",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "AI 招聘"
+    ],
+    "authors": [
+      "Andrew B. Speer",
+      "Takudzwa Chawota",
+      "Cort Rudolph",
+      "Amani Qaqish"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Indiana University Bloomington"
+        ],
+        "name": "Andrew B. Speer",
+        "orcid": "https://orcid.org/0000-0002-3376-2103",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Missouri State University"
+        ],
+        "name": "Takudzwa Chawota",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Wayne State University"
+        ],
+        "name": "Cort Rudolph",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Wayne State University"
+        ],
+        "name": "Amani Qaqish",
+        "orcid": null,
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-06",
+    "doi": "10.1037/apl0001397",
+    "domain_score": 5.0,
+    "id": 12137,
+    "ingested_at": "2026-07-08T05:24:30.584456",
+    "issue": null,
+    "journal": "JAP",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:37:04.866633",
+    "title": "The impact of impression management on writing tendencies: Investigating faking susceptibility of open-ended personality assessments.",
+    "title_zh": "印象管理对写作倾向的影响：开放式人格评估的伪装易感性探究",
+    "tldr": "考察开放式人格评估中的印象管理与造假易感性，结合自然语言处理进行评分。训练样本配置影响心理测量特性，混合诚实与动机化响应的样本效果最佳。AI生成回答（纯合成与人机混合）得分普遍高于人类，但定制算法可近乎完美地区分人类与AI回答（跨7个大语言模型，假阳性率仅1%）。研究表明NLP驱动的开放式评估有望成为可扩展且抗造假的人格测量方式。",
+    "topic_tags": [
+      "招聘",
+      "绩效评估",
+      "偏见"
+    ],
+    "url": "https://doi.org/10.1037/apl0001397",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Despite the expansion of research on leadership behaviors (LBs) over the past decades, this field faces challenges related to construct redundancy, which impedes theoretical integration and empirical accumulation. To address this issue, we conducted two complementary studies to systematically examine a six-category taxonomy of LBs (i.e., task-oriented, relational-oriented, change-oriented, value-based and moral, passive, and destructive LBs, collectively referred to as the TRCVPD taxonomy), which maps diverse LBs onto a unified framework. In Study 1, we compiled a database comprising measurement items from 48 LBs scales and leveraged large language models and subject-matter experts to assess whether measurement items of previously unclassified LBs semantically corresponded to the theoretical definitions of the TRCVPD taxonomy of LBs. Specifically, we were able to semantically match 41 of the 48 LBs to the TRCVPD taxonomy. Based on the findings of Study 1, Study 2 conducted a comprehensive second-order meta-analysis, synthesizing 109 meta-analyses based on more than 6 million participants. In particular, we evaluated the nomological network of the six LBs by meta-analytically estimating their relations with antecedents and outcomes. In addition, we used dominance analyses to further compare the relative importance of each LB category in explaining leadership outcomes. Together, these two studies present integrative findings that offer an overarching theoretical framework and empirical foundation for understanding the taxonomy and nomological structure of LBs. (PsycInfo Database Record (c) 2026 APA, all rights reserved).",
+    "ai_reason": "用LLM验证领导行为分类，AI为主要方法",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM",
+      "机器学习"
+    ],
+    "authors": [
+      "张宇辰 Zhang Yucheng",
+      "Shanshan Zhang",
+      "Zijun Ke",
+      "Wenrui Cao",
+      "M Wang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Management and Technology"
+        ],
+        "name": "张宇辰 Zhang Yucheng",
+        "orcid": null,
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Southwestern University of Finance and Economics"
+        ],
+        "name": "Shanshan Zhang",
+        "orcid": "https://orcid.org/0000-0001-5016-7528",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Sun Yat-sen University"
+        ],
+        "name": "Zijun Ke",
+        "orcid": "https://orcid.org/0000-0002-3162-3871",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Beijing Jiaotong University"
+        ],
+        "name": "Wenrui Cao",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Florida"
+        ],
+        "name": "M Wang",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Zhongnan University of Economics and Law",
+          "Wuhan University of Science and Technology"
+        ],
+        "name": "Kaiyang Qin",
+        "orcid": "https://orcid.org/0000-0001-5504-2660",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Southwestern University of Finance and Economics"
+        ],
+        "name": "Han Li",
+        "orcid": "https://orcid.org/0000-0001-5892-8192",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-20",
+    "doi": "10.1037/apl0001402",
+    "domain_score": 5.0,
+    "id": 12332,
+    "ingested_at": "2026-07-22T05:19:32.318810",
+    "issue": null,
+    "journal": "JAP",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:29:01.637748",
+    "title": "Synthesizing research on leadership behaviors: Semantically validating a taxonomy using large language models and examining the nomological network with a second-order meta-analysis.",
+    "title_zh": "领导行为研究综合：利用大语言模型语义验证分类法并以二阶元分析考察其法则网络",
+    "tldr": "针对领导行为研究中的构念冗余问题开展两项研究。Study 1汇编48个领导行为量表条目，利用大语言模型与领域专家进行语义匹配，将41个量表归入六类领导行为分类法（TRCVPD）。Study 2基于6百万余名参与者、109项元分析进行二阶元分析，结合优势分析评估六类领导行为与前因后果的关系强度，构建统一理论框架。",
+    "topic_tags": [
+      "领导力",
+      "组织学习",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1037/apl0001402",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Abstract Chatbots are now able to engage in sophisticated conversations with consumers. Due to the “black box” nature of the algorithms, it is impossible to predict in advance how these conversations will unfold. Behavioral research provides little insight into potential safety issues emerging from the current rapid deployment of this technology at scale. We begin to address this urgent question by focusing on the context of mental health and “companion AI”: Applications designed to provide consumers with synthetic interaction partners. Studies 1a and 1b present field evidence: Actual consumer interactions with two different companion AIs. Study 2 reports an extensive performance test of several commercially available companion AIs. Study 3 is an experiment testing consumer reaction to risky and unhelpful chatbot responses. The findings show that (1) mental health crises are apparent in a nonnegligible minority of conversations with users; (2) companion AIs are often unable to recognize, and respond appropriately to, signs of distress; and (3) consumers display negative reactions to unhelpful and risky chatbot responses, highlighting emerging reputational risks for generative AI companies.",
     "ai_reason": "核心研究GenAI伴侣应用的心理安全问题",
     "ai_score": 5.0,
@@ -69181,6 +71526,118 @@
     "url": "https://doi.org/10.1002/jcpy.1452",
     "volume": "35",
     "year": 2025
+  },
+  {
+    "abstract": "Abstract The rapid growth of generative AI has generated excitement about its potential and concern about its effects on psychological research. Schmitt, Hao, Pham, and Hofstetter (2026) offer Generative Grounded Theory (GGT) as a seven‐step framework for incorporating generative artificial intelligence into inductive theory building. It uses AI to support corpus formation, data structuring, coding, conceptual clustering, abstraction, theoretical integration, and the assessment of saturation, while reserving interpretive authority and theoretical responsibility for the researcher. These Commentaries of this Methods Dialogue respond to the accepted, revised version of the lead article by Schmitt et al. (2026), which incorporated feedback from open, collaborative reviews by established researchers. Following acceptance, the review teams provided four independent assessments of the value of GGT. Tomaino proposes that GGT is particularly suited for experimental researchers who are generating rich conversational data through AI‐mediated studies, as GGT can possibly reveal mechanisms, generate new research questions, and unearth competing explanations. Schweidel emphasizes the researcher's indispensable role as a “cognitive operator.” He acknowledges that GGT's traceability facilitates replication, digital‐twin exploration, and coordination across qualitative–quantitative researchers, but only if researchers resist sycophancy, cognitive offloading, and the temptation to delegate the entire process to an autonomous agent. Dolbec, Fischer, and Smith expand the focus on the responsibility of the GGT researcher, arguing that the ease of AI‐assisted analysis may create a “fallacy of facility” in which plausible output is mistaken for expertise. They propose that methodological simulacrums can produce polished but weakly grounded research unless investigators actively harness substantial qualitative method expertise to control AI's distorting capability. Finally, Puntoni and Schillewaert shift attention upstream from analysis to data collection. They argue that using AI moderation may relax the long‐standing separation between qualitative depth interviews and standardized variable assessment. If so, AI‐adaptive interviews could integrate sampling and analysis by offering a “living” grounded theory, while raising new questions about saturation and reproducibility. Together, these commentaries acknowledge that GGT could extend the reach of inductive inquiry and facilitate automated theorizing, but it is a method that demands critical judgment, transparent record‐keeping, and human control.",
+    "ai_reason": "JCP讨论GenAI在消费者研究方法中的核心应用",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Geoff Tomaino",
+      "David A. Schweidel",
+      "Pierre-Yann Dolbec",
+      "Eileen Fischer",
+      "Andrew N. Smith"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Florida"
+        ],
+        "name": "Geoff Tomaino",
+        "orcid": "https://orcid.org/0000-0002-0034-1679",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Emory University"
+        ],
+        "name": "David A. Schweidel",
+        "orcid": "https://orcid.org/0000-0003-2665-3272",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Concordia University"
+        ],
+        "name": "Pierre-Yann Dolbec",
+        "orcid": "https://orcid.org/0000-0002-0463-7530",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "York University"
+        ],
+        "name": "Eileen Fischer",
+        "orcid": "https://orcid.org/0000-0002-8212-0414",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Suffolk University"
+        ],
+        "name": "Andrew N. Smith",
+        "orcid": "https://orcid.org/0000-0001-5652-7870",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Pennsylvania"
+        ],
+        "name": "Stefano Puntoni",
+        "orcid": "https://orcid.org/0000-0002-3259-2325",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Vlerick Business School"
+        ],
+        "name": "Niels Schillewaert",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Duke University"
+        ],
+        "name": "Joel Huber",
+        "orcid": "https://orcid.org/0000-0002-6479-2794",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Arizona"
+        ],
+        "name": "Martin Reimann",
+        "orcid": "https://orcid.org/0000-0002-3246-1878",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-21",
+    "doi": "10.1002/jcpy.70037",
+    "domain_score": 4.0,
+    "id": 12346,
+    "ingested_at": "2026-07-23T05:24:59.129881",
+    "issue": null,
+    "journal": "JCP",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:29:04.920137",
+    "title": "Commentaries on “Generative grounded theory ( <scp>GGT</scp> ): Inductive theory building in the age of generative <scp>AI</scp> ”",
+    "title_zh": "对“生成式扎根理论（GGT）：生成式AI时代的归纳性理论建构”的评论",
+    "tldr": "针对Schmitt等人提出的生成式扎根理论（GGT）七步框架展开评论，该框架将生成式AI用于语料构建、编码、概念聚类与理论整合等归纳式理论建构环节，同时保留研究者的解释权与理论责任。多篇评论分别探讨GGT对实验研究者揭示机制的潜力、研究者作为\"认知操作者\"的不可替代性，以及规避认知卸载与迎合偏差等风险。",
+    "topic_tags": [
+      "知识管理",
+      "组织学习",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1002/jcpy.70037",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": "Abstract\n                  Prior literature is yet to explain how algorithms systematically constrain consumer experience (CX). To address this issue, we conducted a multi-method ethnographic study of consumers using fitness tracking software. We draw on the information science literature to demonstrate that the constitutive properties of information technology (IT) that underlie algorithms result in a set of restrictive fundamental interactional mechanisms imposed through algorithmic logics of legibility (what is selectively registered as input), visibility (what is selectively represented in output), and legitimacy (normative commitments embedded in input and output choices). We find that these mechanisms systematically constrain the distinct dimensions of the CX construct by eliciting consumption work. Consumers perform cognitive work to think through algorithmic limitations, practical work to accommodate those limitations, relational work to clarify algorithmic misrepresentation, and affective work to deal with algorithmic delegitimization. We make two contributions. First, our emergent framework not only demonstrates how algorithms systematically constrain CX, but is also more broadly relevant to consumer research because it enables accounting for the agency of IT. Second, we provide a corrective to the passive, emotion focused, view of CX by demonstrating how the consumption work of accommodating algorithmic limitations constrains the distinct dimensions of the CX construct.",
@@ -71108,6 +73565,54 @@
     "url": "https://doi.org/10.1177/00222429241276529",
     "volume": "89",
     "year": 2025
+  },
+  {
+    "abstract": "Rapid development and adoption of AI, machine learning, and natural language processing applications challenge managers and policy makers to harness these transformative technologies. In this context, the authors provide evidence of a novel “word-of-machine” effect, the phenomenon by which utilitarian/hedonic attribute trade-offs determine preference for, or resistance to, AI-based recommendations compared with traditional word of mouth, or human-based recommendations. The word-of-machine effect stems from a lay belief that AI recommenders are more competent than human recommenders in the utilitarian realm and less competent than human recommenders in the hedonic realm. As a consequence, importance or salience of utilitarian attributes determine preference for AI recommenders over human ones, and importance or salience of hedonic attributes determine resistance to AI recommenders over human ones (Studies 1–4). The word-of machine effect is robust to attribute complexity, number of options considered, and transaction costs. The word-of-machine effect reverses for utilitarian goals if a recommendation needs matching to a person’s unique preferences (Study 5) and is eliminated in the case of human–AI hybrid decision making (i.e., augmented rather than artificial intelligence; Study 6). An intervention based on the consider-the-opposite protocol attenuates the word-of-machine effect (Studies 7a–b).",
+    "ai_reason": "AI推荐vs人类推荐效应，核心AI+消费者行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "人机交互",
+      "AI治理"
+    ],
+    "authors": [
+      "Chiara Longoni",
+      "Luca Cian"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Chiara Longoni",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Luca Cian",
+        "orcid": "https://orcid.org/0000-0002-8051-1366"
+      }
+    ],
+    "cited_by": 632,
+    "date": "2020-11-02",
+    "doi": "10.1177/0022242920957347",
+    "domain_score": 5.0,
+    "id": 11156,
+    "ingested_at": "2026-05-13T05:50:58.034363",
+    "issue": "1",
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:29:00.737982",
+    "title": "Artificial Intelligence in Utilitarian vs. Hedonic Contexts: The “Word-of-Machine” Effect",
+    "title_zh": "人工智能在功利与享乐情境中的应用：机器口碑效应",
+    "tldr": "研究消费者在功利性vs享乐性情境下对AI推荐与人工推荐的偏好差异，发现\"机器口碑\"效应：消费者认为AI推荐者在功利性领域更胜任，在享乐性领域不如人类，因此功利属性凸显时偏好AI、享乐属性凸显时抵触AI。该效应在属性复杂度、选项数量、交易成本变化下稳健，但在需匹配个人独特偏好时反转，在人机混合决策中消失，且\"考虑对立面\"干预可削弱该效应。",
+    "topic_tags": [
+      "消费者行为",
+      "推荐系统",
+      "决策",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1177/0022242920957347",
+    "volume": "86",
+    "year": 2020
   },
   {
     "abstract": "An idea is more than a simple collection of words or ingredients that make up the idea. What makes an idea original or appealing is how these elements are combined in the context in which they appear. This research leverages representation learning methods, specifically word embeddings, to measure internal coherence among the components of a creative idea and capture the relationship between its coherence and idea evaluation or success. Using a large-scale online recipe dataset with over 57K recipes, as well as an ideation dataset of 1,057 ideas, the authors investigate how the fit among idea components relates to downstream measures such as popularity and evaluation. The results consistently show that internal coherence of an idea promotes its popularity, trial, and post-trial evaluation. Counter to prior research on creativity, which suggests that creativity is mostly associated with positive outcomes, the study finds that ideas with unique ingredients have lower popularity or trial, but higher ratings given trial in the context of food recipes. Based on these findings, the authors develop a generative recipe tool that suggests recipe improvements by adding, removing, or substituting ingredients ( http://recipecreativity.com/ ).",
@@ -74170,6 +76675,96 @@
     "year": 2026
   },
   {
+    "abstract": "Abstract This Point introduces algorithmic status inequality that is, enduring disparities in social position, influence, and resource access reinforced by AI systems, as a critical lens for understanding technological stratification in organizations. I develop an integrative model showing how computational beliefs (i.e., cultural assumptions embedded in algorithmic design) interact with computational inequalities (i.e., disparities in technical capabilities) to produce persistent status hierarchies through self‐reinforcing feedback loops. Illustrative cases in recruitment, healthcare and legal assistance demonstrate these mechanisms in practice, producing three consequential patterns: status schisms within minority‐serving AI systems, status tensions between dominant and specialized algorithms and status disparities between AI systems and human experts. Unlike the Counterpoint perspectives that either emphasize market‐based dynamic capabilities as self‐correcting mechanisms for algorithmic disparities or locate the primary source of inequality in biased training data amenable to technical debiasing , I argue that neither purely technical approaches (such as diversifying training data) nor purely market‐based approaches (such as relying on competitive dynamics) are sufficient to address algorithmic status inequality. This sociotechnical perspective explains why isolated interventions typically fail and provides a theoretical foundation for developing comprehensive strategies that simultaneously target embedded cultural beliefs and material inequalities in AI development.",
+    "ai_reason": "AI驱动的组织地位不平等，JMS管理学",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法决策",
+      "AI治理"
+    ],
+    "authors": [
+      "Jie Wu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Aberdeen",
+          "The King's University"
+        ],
+        "name": "Jie Wu",
+        "orcid": "https://orcid.org/0000-0002-4289-4204",
+        "position": "first"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-13",
+    "doi": "10.1111/joms.70134",
+    "domain_score": 5.0,
+    "id": 12238,
+    "ingested_at": "2026-07-16T05:00:48.984585",
+    "issue": null,
+    "journal": "JMS",
+    "pdf_url": "https://doi.org/10.1111/joms.70134",
+    "scored_at": "2026-08-02T13:36:55.383268",
+    "title": "Algorithmic Status Inequality: An Integrative Perspective on AI‐Driven Social Stratification",
+    "title_zh": "算法地位不平等：AI驱动社会分层的整合视角",
+    "tldr": "提出算法地位不平等概念，揭示AI系统如何通过计算信念（嵌入算法的文化假设）与计算不平等（技术能力差异）的交互，形成自我强化的反馈循环，在招聘、医疗、法律等领域制造持续地位分层。批评单纯技术去偏和市场竞争两种矫正路径的不足，主张从社会技术综合视角制定全面应对策略。",
+    "topic_tags": [
+      "公平性",
+      "算法管理",
+      "偏见",
+      "组织变革"
+    ],
+    "url": "https://doi.org/10.1111/joms.70134",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Abstract The Point by Wu advances a compelling framework for understanding algorithmic status inequality, demonstrating how computational beliefs and computational inequalities can interact to produce persistent status hierarchies within and across organizations. This Counterpoint accepts Wu's core observations while offering a complementary theoretical lens grounded in the dynamic capabilities framework and the economics of general‐purpose technologies. Where Wu emphasizes structural constraints that render algorithmic hierarchies resistant to isolated interventions, this Counterpoint highlights organizational agency, specifically, the sensing, seizing, and transforming capabilities through which firms can detect, respond to, and potentially reshape algorithmic status dynamics. Rather than disputing Wu's diagnosis, this Counterpoint extends it by examining three complementary mechanisms: sensing capabilities (detecting status‐stratifying algorithmic effects), seizing capabilities (mobilizing resources toward more inclusive algorithmic development), and transforming capabilities (reconfiguring human‐algorithm relationships over time). These mechanisms work alongside the structural interventions Wu advocates rather than substituting for them. The dialogue between structural determinism and organizational agency in the context of algorithmic status inequality suggests a research agenda focused on the conditions under which dynamic capabilities are likely sufficient to overcome status‐stratifying structural forces, how institutions might democratize adaptive capabilities, and what governance arrangements best combine structural intervention with capability development.",
+    "ai_reason": "算法地位不平等，AI/算法为核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "算法管理",
+      "算法决策",
+      "AI治理"
+    ],
+    "authors": [
+      "David J. Teece"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of California System"
+        ],
+        "name": "David J. Teece",
+        "orcid": "https://orcid.org/0000-0002-4532-2834",
+        "position": "first"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-30",
+    "doi": "10.1111/joms.70136",
+    "domain_score": 5.0,
+    "id": 12435,
+    "ingested_at": "2026-08-01T05:27:09.485237",
+    "issue": null,
+    "journal": "JMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:19:31.190677",
+    "title": "Algorithmic Status Inequality Through a Dynamic Capabilities Lens: A Market‐Based Perspective",
+    "title_zh": "动态能力视角下的算法地位不平等：基于市场的视角",
+    "tldr": "作为对Wu算法地位不平等框架的回应，本文提出基于动态能力视角的补充理论，从感知、把握、变革三种能力出发，探讨组织如何检测算法引发的地位分化、调动资源推动更具包容性的算法开发、以及随时间重构人机关系。该文不否定Wu的结构性诊断，而是强调组织能动性，为算法地位不平等的未来研究议程提供方向。",
+    "topic_tags": [
+      "组织变革",
+      "战略",
+      "创新",
+      "公平性"
+    ],
+    "url": "https://doi.org/10.1111/joms.70136",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "ABSTRACT\n                  Due to rapid advancements in artificial intelligence and machine learning, the research conversation has drifted from viewing robots as replacements for humans (i.e., the substitute view) to a view that considers the possible benefits of human–robot collaboration in the workplace (i.e., the complementary view). However, as the complementary view has been mainly studied at the microlevel of the organization (i.e., individuals, dyads, and teams), we do not yet fully understand the organizational impact of human–robot collaboration. To better understand how human–robot collaboration may impact firm outcomes, we apply the human capital resource emergence literature to develop a multilevel model of human capital robotic integration (HCRI). We specifically emphasize how HCRI influences the emergence of human capital resources through social dynamics in organizations while also considering the moderating effects of task interdependence. Furthermore, we develop theoretical arguments to illustrate how organizations can leverage the HCRI process to create value and gain a competitive advantage from their existing human capital. Finally, with potential positive effects being outlined, we discuss the possible negative consequences that may result from human–robot collaboration.",
     "ai_reason": "核心议题是human-robot collaboration，涉及AI机器人整合到组织中",
     "ai_score": 5.0,
@@ -75894,6 +78489,102 @@
     "url": "https://doi.org/10.1177/01492063251368267",
     "volume": null,
     "year": 2025
+  },
+  {
+    "abstract": "In recent years, a rapidly growing number of management scholars are using computational linguistics (CL) to analyze vast corpora of naturally occurring organizational language. Yet the rapid adoption of CL methods has outpaced the development of shared standards for linking theoretical constructs, linguistic data, and computational measurement. We synthesize 353 articles published in leading management journals for 2013–2025, identifying four recurring challenges shaping the credibility of CL-based research: misalignment between constructs and textual corpora, unnecessary model complexity, the opacity of large language model workflows, and insufficient transparency in reporting. Building on these patterns, we develop four integrative design principles—construct-language fit, minimal sufficient complexity, LLM sensitivity and auditability, and disclosure-as-assessability—and identify key research implications that reposition CL as a theoretically consequential lens for management scholarship.",
+    "ai_reason": "JOM：综述CL/LLM在管理研究中的方法学挑战",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "可解释AI",
+      "机器学习"
+    ],
+    "authors": [
+      "Joseph Simpson",
+      "Richard A. Hunt",
+      "David M. Townsend",
+      "Judy Rady",
+      "Elham Asgari"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "The University of Texas Rio Grande Valley"
+        ],
+        "name": "Joseph Simpson",
+        "orcid": "https://orcid.org/0000-0002-3035-2969",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Virginia Tech"
+        ],
+        "name": "Richard A. Hunt",
+        "orcid": "https://orcid.org/0000-0002-8893-2616",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Virginia Tech"
+        ],
+        "name": "David M. Townsend",
+        "orcid": "https://orcid.org/0000-0001-7903-7831",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Kansas"
+        ],
+        "name": "Judy Rady",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Michigan Technological University"
+        ],
+        "name": "Elham Asgari",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Virginia Tech"
+        ],
+        "name": "Mohammad Rady",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Virginia Tech"
+        ],
+        "name": "Daniel J. Beal",
+        "orcid": "https://orcid.org/0000-0003-4750-2430",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-23",
+    "doi": "10.1177/01492063261465289",
+    "domain_score": 5.0,
+    "id": 12362,
+    "ingested_at": "2026-07-26T05:30:53.698713",
+    "issue": null,
+    "journal": "JOM",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:36:56.483726",
+    "title": "Making Words Count: Computational Linguistics in Management Research",
+    "title_zh": "让文字有分量:管理研究中的计算语言学",
+    "tldr": "综述2013–2025年发表在顶刊管理学文献中的353篇计算语言学应用研究，归纳出制约CL可信度的四类共性问题：构念与语料错位、模型过度复杂、大语言模型流程不透明、报告不充分。基于此提出四项整合性设计原则：构念—语言匹配、最小充分复杂度、LLM敏感性与可审计性、披露即评估性，倡导将CL重新定位为理论驱动的方法论。",
+    "topic_tags": [
+      "知识管理",
+      "组织学习",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1177/01492063261465289",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": "Conversational AI agents-systems capable of holding intelligent conversations with human users-are rapidly reshaping how organizations operate, from leadership development and employee training to internal communication. Consequently, researchers across leadership, management, and the broader social sciences are beginning to examine how these agents affect organizational processes, employees, and workplace outcomes. Yet, existing studies still often rely on scenario-based methods that-while offering experimental control-are limited in ecological validity. Recent advances in no-code platforms mark a turning point: researchers can now design and deploy customized, conversational AI agents without requiring any technical expertise. This development makes it more feasible to conduct empirical studies based on real-time, interactive experiences with functional AI agents rather than imagined scenarios. These agents can represent a variety of organizational actors, including leaders, coworkers, or subordinates; display diverse characteristics and behaviors; and be implemented in complex study designs across lab and field, experimental and observational, and both quantitative and qualitative methodologies. We demonstrate the power of this approach through three empirical studies (N = 789), showing how interactions with customized, conversational AI agents can meaningfully shape participants' perceptions, attitudes, and behaviors in incentivized settings. Introducing a novel, open-source tool called ResearchChatAI as an illustrative example, we outline how such studies can be designed and deployed-and critically reflect on the practical and methodological trade-offs involved. We showcase how such tools enrich the methodological toolkit of scholars and pave the way for more valid, realistic, and scalable leadership and management research on as well as with AI.",
@@ -90646,6 +93337,301 @@
     "year": 2026
   },
   {
+    "abstract": "This Commentary responds to “Fighting Fire with Fire: Infusing AI into Peer Review to Sustain Quality Scholarship.” It shares the paper’s core position, that journals should govern artificial intelligence openly rather than leave it to the shadows, but it questions the premise that rising submission volume poses an existential threat. The safeguard is human judgment. Our shared fatigue with derivative, repetitive work is a sensor more discerning than any AI detector, because a model trained on what we have already rewarded cannot produce the novelty that our community prizes. The threat to a journal like Management Science is thus more contained than the original alarm implies, provided AI remains a non-final input and humans retain ownership of novelty and contribution. One test should govern any AI workflow: does it ask more of human judgment, or less? This paper was accepted by Christoph Loch, commentary.",
+    "ai_reason": "核心讨论AI在同行评审中的治理，属管理学出版议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI治理",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Tinglong Dai"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Johns Hopkins University",
+          "Johns Hopkins Medicine"
+        ],
+        "name": "Tinglong Dai",
+        "orcid": "https://orcid.org/0000-0001-9248-5153",
+        "position": "first"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-07",
+    "doi": "10.1287/mnsc.2026.02441",
+    "domain_score": 4.0,
+    "id": 12162,
+    "ingested_at": "2026-07-09T06:04:39.472578",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:29:04.930567",
+    "title": "The Sound We Haven’t Heard Before: A Commentary on “Fighting Fire with Fire: Infusing AI into Peer Review to Sustain Quality Scholarship”",
+    "title_zh": "前所未闻之声：评《以火攻火：将AI融入同行评审以维持学术质量》",
+    "tldr": "对将AI用于同行评审的观点进行评论：认同期刊应公开治理AI而非任其暗中发展，但质疑投稿量增长构成存亡威胁的预设。核心主张是人类判断力仍是保障，真正的威胁是缺乏新颖性。提出唯一检验标准：AI流程是否对人类判断提出更高要求而非降低要求。强调AI应作为非终局输入，人类保留对新颖性与贡献的主导权。",
+    "topic_tags": [
+      "人机协作",
+      "组织学习",
+      "决策",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2026.02441",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "As the economy digitizes, menu costs fall, and firms can more easily monitor prices. These trends have led to the rise of automated pricing (and repricing) tools. We employ a novel e-commerce data set to examine the effect of algorithmic pricing in the wild. Evidence from an event study suggests that firms that start employing repricing tools drop their prices by 16.93%, with market prices falling by 9.67%. However, algorithmic pricing companies have developed “resetting” strategies (which regularly raise prices in the hope that competitors will follow) in order to avoid stark Bertrand-Nash competition. We find that these strategies are effective at coaxing competitors to raise their prices; when a resetting strategy is adopted on a market with less than six serious competitors, both competitor prices and market prices eventually increase by 11.4%. Although the resulting patterns of cycling prices are reminiscent of Maskin-Tirole’s Edgeworth cycles, a model of equilibrium in delegated strategies fits the data better. This model suggests that the average price over the cycle will be the monopoly price. Moreover, if the available repricing technologies remain fixed, cycling and prices could rise significantly. However, cycling is still relatively rare in the data, even when studying a convenience sample of products with at least one merchant using a repricing tool. This paper was accepted by Omar Besbes, revenue management and market analytics. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.02462 .",
+    "ai_reason": "算法定价是核心变量,涉及竞争与隐性合谋",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "算法决策",
+      "算法管理"
+    ],
+    "authors": [
+      "Leon Musolff"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Pennsylvania"
+        ],
+        "name": "Leon Musolff",
+        "orcid": "https://orcid.org/0000-0001-8409-6449",
+        "position": "first"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-09",
+    "doi": "10.1287/mnsc.2022.02462",
+    "domain_score": 5.0,
+    "id": 12186,
+    "ingested_at": "2026-07-11T05:04:06.725857",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:29:02.276325",
+    "title": "Algorithmic Pricing, Price Wars, and Tacit Collusion: Evidence from E-Commerce",
+    "title_zh": "算法定价、价格战与隐性合谋：来自电子商务的证据",
+    "tldr": "利用电商数据通过事件研究法考察算法定价的市场效应。发现采用自动调价工具的企业降价16.93%，市场价格降9.67%；但在竞争者少于6家的市场，\"重置\"策略使对手与市场价格均上升11.4%，呈现类似Edgeworth周期模式。委托策略均衡模型表明周期内平均价格趋向垄断水平，若调价技术不变，价格将持续走高。",
+    "topic_tags": [
+      "营销",
+      "战略",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2022.02462",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Scalable and low-cost artificial intelligence (AI) assistance has the potential to improve firm decision making and economic performance, particularly in emerging markets. However, running a business involves a wide range of open-ended problems, making it unclear whether and how recent advances in AI can help business owners around the world make better decisions. In a field experiment with Kenyan entrepreneurs, we evaluated the impact of AI advice on small business revenues and profits by randomizing access to a GPT-4-powered AI business assistant. Although we are unable to reject the null hypothesis of no average treatment effect on firm revenues and profits, we find that the effect for entrepreneurs who were low performing at baseline is over 0.20-standard-deviations lower than for initial high performers. Subsample analyses show that low performers did nearly 10% worse because of the AI assistant, whereas high performers may have benefited by over 15%. This differential impact does not appear to result from differences in the questions posed to the AI or the advice that it provided but rather, from the advice that entrepreneurs chose to implement. More broadly, these results show that generative AI is already capable of impacting real-world business performance—although in uneven and sometimes unexpected ways. This paper was accepted by Anita McGahan, business strategy. Funding: This work was supported by the Weiss Fund, Harvard Business School, Berkeley Haas, the Cora Jane Flood Endowment at Berkeley Haas, the Agency Fund, the South Park Common Social Impact Fellowship, and the Digital Data Design Institute at Harvard. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.06909 .",
+    "ai_reason": "GPT-4助手的创业现场实验，核心AI议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Nicholas G. Otis",
+      "Rowan Philip Clarke",
+      "Solène Delecourt",
+      "David Holtz",
+      "Rembrand Koning"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of California, Berkeley"
+        ],
+        "name": "Nicholas G. Otis",
+        "orcid": "https://orcid.org/0000-0002-2099-1783",
+        "position": "first"
+      },
+      {
+        "affiliation": [],
+        "name": "Rowan Philip Clarke",
+        "orcid": "https://orcid.org/0000-0002-9520-5353",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of California, Berkeley"
+        ],
+        "name": "Solène Delecourt",
+        "orcid": "https://orcid.org/0000-0002-5917-3526",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "IIT@MIT"
+        ],
+        "name": "David Holtz",
+        "orcid": "https://orcid.org/0000-0002-0896-8628",
+        "position": "middle"
+      },
+      {
+        "affiliation": [],
+        "name": "Rembrand Koning",
+        "orcid": "https://orcid.org/0000-0002-6453-0831",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-10",
+    "doi": "10.1287/mnsc.2024.06909",
+    "domain_score": 5.0,
+    "id": 12197,
+    "ingested_at": "2026-07-12T05:27:17.406943",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:37:03.847242",
+    "title": "The Uneven Impact of Generative Artificial Intelligence on Entrepreneurial Performance: Evidence from a Field Experiment in Kenya",
+    "title_zh": "生成式AI对创业绩效的不均衡影响：来自肯尼亚现场实验的证据",
+    "tldr": "在肯尼亚对创业者进行田野实验，随机分配GPT-4驱动的AI商业助手访问权限。整体上对营收和利润无显著平均效应，但存在异质性影响：基期低绩效创业者因AI建议表现差约10%，高绩效者则受益超15%。差异并非来自AI所提建议本身，而源于创业者选择实施哪些建议，提示生成式AI对真实商业绩效的影响呈不均匀且出乎意料的分布。",
+    "topic_tags": [
+      "创业",
+      "决策",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2024.06909",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "We develop an end-to-end, scalable machine learning framework for designing bundle recommendations in a high-dimensional choice setting. We leverage historical purchases and consideration sets determined from clickstream data to generate dense representations (embeddings) of products. We impose minimal structure on these embeddings and develop heuristics for complementarity and substitutability among products. Subsequently, we use the heuristics to create multiple bundle recommendations for each of 4,500 focal products and test their performance using a field experiment with a large retailer. We use the experimental data to optimize the recommendation design policy with offline policy learning. Our optimized policy is robust across product categories, generalizes well to the retailer’s entire assortment, and provides an expected improvement of 35% ([Formula: see text] per 100 visits) in revenue from bundle recommendations over the baseline policy. This paper was accepted by Hemant Bhargava, information systems. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2022.01864 .",
+    "ai_reason": "ML用于捆绑推荐设计，AI为方法，营销/零售",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "机器学习"
+    ],
+    "authors": [
+      "Madhav Kumar",
+      "Dean Eckles",
+      "Sinan Aral"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Madhav Kumar",
+        "orcid": "https://orcid.org/0009-0000-4121-5727",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Massachusetts Institute of Technology"
+        ],
+        "name": "Dean Eckles",
+        "orcid": "https://orcid.org/0000-0001-8439-442X",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Massachusetts Institute of Technology"
+        ],
+        "name": "Sinan Aral",
+        "orcid": "https://orcid.org/0000-0002-2762-058X",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-15",
+    "doi": "10.1287/mnsc.2022.01864",
+    "domain_score": 4.0,
+    "id": 12267,
+    "ingested_at": "2026-07-17T05:20:39.140714",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:29:02.369922",
+    "title": "Scalable Bundle Recommendations: A Large-Scale Field Experiment",
+    "title_zh": "可扩展的捆绑推荐：一项大规模现场实验",
+    "tldr": "研究高维选择场景下捆绑推荐的可扩展机器学习框架。基于点击流数据生成产品嵌入向量，通过补充性与替代性启发式为4500个焦点产品生成捆绑组合，与大型零售商开展现场实验并用离线策略学习优化推荐策略，使捆绑推荐收入相对基线提升35%。",
+    "topic_tags": [
+      "推荐系统",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2022.01864",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "How does generative artificial intelligence (GenAI) reshape the skills that organizations seek as they adapt to a new general-purpose technology? GenAI effectively retrieves data, performs analysis, and conveys information, so it can substitute for workers doing these activities and complement workers relying on them. A natural consequence is skill deprioritization, a systematic reduction in firms’ demand for human skills that GenAI can effectively address as organizations adjust the division of labor and integration of effort. We draw on a theoretically grounded classification of organizing skills—task division, task allocation, information provision, reward distribution, and exception management—and a queuing theory model of organizing efficiency to predict which skills firms will deprioritize first. Using a quasiexperimental design that leverages the introduction of ChatGPT as an exogenous shock, we analyze 1,820 publicly listed U.S. companies and track changes in their hiring demand patterns over a period of a ±12-month window surrounds the shock. We find significant declines in demand for monitoring (reward distribution), operational exceptions, and task division skills, with information provision also showing declines. Task allocation and conflict resolution showed greater stability, suggesting greater reliance on human judgment. These effects intensify following GPT-4’s release, indicating that capability improvements also drive adaptation. Our findings demonstrate that firms engage in immediate and selective skill deprioritization, raising questions about longer-term hollowing out of human expertise in automated domains. We contribute a novel taxonomy of organizing skills, extend queuing theory to the GenAI context, and provide early empirical evidence on how GenAI is reshaping organizational skill demands. This paper was accepted by Anita McGahan, strategy. Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2025.01859 .",
+    "ai_reason": "GenAI重塑组织技能需求，核心管理议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "ChatGPT",
+      "LLM"
+    ],
+    "authors": [
+      "Matteo Devigili",
+      "Erdem Dogukan Yilmaz",
+      "Vibha Gaba",
+      "Henrich R. Greve"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "INSEAD"
+        ],
+        "name": "Matteo Devigili",
+        "orcid": null,
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "INSEAD"
+        ],
+        "name": "Erdem Dogukan Yilmaz",
+        "orcid": "https://orcid.org/0000-0002-2727-3557",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "INSEAD"
+        ],
+        "name": "Vibha Gaba",
+        "orcid": "https://orcid.org/0000-0002-0182-8948",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "INSEAD"
+        ],
+        "name": "Henrich R. Greve",
+        "orcid": "https://orcid.org/0000-0002-7927-6573",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-24",
+    "doi": "10.1287/mnsc.2025.01859",
+    "domain_score": 5.0,
+    "id": 12364,
+    "ingested_at": "2026-07-26T05:30:53.760039",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:37:02.738860",
+    "title": "Skill Deprioritization: Reorganizing in the Age of Generative Artificial Intelligence",
+    "title_zh": "技能降优先级:生成式人工智能时代的组织重构",
+    "tldr": "基于排队理论模型与ChatGPT发布作为外生冲击的准实验设计，分析1820家美国上市公司招聘需求变动。研究发现企业对监督、异常处理、任务分工等信息类组织技能需求显著下降，而任务分配与冲突解决等依赖人类判断的技能保持稳定，效应在GPT-4发布后进一步增强。",
+    "topic_tags": [
+      "招聘",
+      "HR",
+      "组织变革",
+      "工作设计"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2025.01859",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "This paper presents a novel integrative approach that combines artificial intelligence-driven forecasting with behavioral interventions to help businesses optimize energy consumption under critical peak pricing schemes.",
     "ai_reason": "AI驱动行为助推核心议题，兼具组织行为与AI",
     "ai_score": 5.0,
@@ -93299,6 +96285,65 @@
     "year": 2026
   },
   {
+    "abstract": "This paper proposes a fundamental characterization of choice functions for flexible, data-driven demand estimation in differentiated products markets, accommodating endogenous product features and enabling valid inference on economic objects such as price elasticities",
+    "ai_reason": "用深度学习做需求估计，AI是核心方法之一",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习"
+    ],
+    "authors": [
+      "Amandeep Singh",
+      "Ye Liu",
+      "Hema Yoganarasimhan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Amandeep Singh",
+        "orcid": null,
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Georgia Institute of Technology"
+        ],
+        "name": "Ye Liu",
+        "orcid": "https://orcid.org/0000-0001-7695-3615",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Hema Yoganarasimhan",
+        "orcid": "https://orcid.org/0000-0003-0703-5196",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-28",
+    "doi": "10.1287/mksc.2024.0724",
+    "domain_score": 5.0,
+    "id": 12407,
+    "ingested_at": "2026-07-30T04:58:14.774666",
+    "issue": null,
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:19:34.149385",
+    "title": "Choice Models and Permutation Invariance: Deep Demand Estimation in Differentiated Products Markets",
+    "title_zh": "选择模型与置换不变性：差异化产品市场的深度需求估计",
+    "tldr": "针对差异化产品市场的灵活数据驱动需求估计，提出选择函数的基本刻画方法。模型满足排列不变性（permutation invariance），可容纳内生产品特征，并保证价格弹性等经济对象推断的有效性，为深度学习在结构化需求估计中的应用奠定理论基础，弥补了传统选择模型与灵活机器学习方法之间的差距。",
+    "topic_tags": [
+      "营销",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2024.0724",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "As generative artificial intelligence (AI) has found its way into various work tasks, questions about whether its usage should be disclosed and the consequences of such disclosure have taken center stage in public and academic discourse on digital transparency. This article addresses this debate by asking: Does disclosing the usage of AI compromise trust in the user? We examine the impact of AI disclosure on trust across diverse tasks—from communications via analytics to artistry—and across individual actors such as supervisors, subordinates, professors, analysts, and creatives, as well as across organizational actors such as investment funds. Thirteen experiments consistently demonstrate that actors who disclose their AI usage are trusted less than those who do not. Drawing on micro-institutional theory, we argue that this reduction in trust can be explained by reduced perceptions of legitimacy, as shown across various experimental designs (Studies 6–8). Moreover, we demonstrate that this negative effect holds across different disclosure framings, above and beyond algorithm aversion, regardless of whether AI involvement is known, and regardless of whether disclosure is voluntary or mandatory, though it is comparatively weaker than the effect of third-party exposure (Studies 9–13). A within-paper meta analysis suggests this trust penalty is attenuated but not eliminated among evaluators with favorable technology attitudes and perceptions of high AI accuracy. This article contributes to research on trust, AI, transparency, and legitimacy by showing that AI disclosure can harm social perceptions, emphasizing that transparency is not straightforwardly beneficial, and highlighting legitimacy’s central role in trust formation.",
     "ai_reason": "核心议题为AI披露对信任的影响",
     "ai_score": 5.0,
@@ -94246,6 +97291,79 @@
     "year": 2026
   },
   {
+    "abstract": "Technological change reshapes labor markets not only by changing labor demand but also by altering labor supply, as workers reallocate effort across tasks and opportunities in response to technological advances. Yet research has focused more on demand-side effects than on how workers themselves adapt. In this research, we examine worker repositioning on a large online labor market following the launch of ChatGPT in November 2022. We argue that the launch of ChatGPT reduced expected returns to labor in exposed skill domains and develop and test a series of hypotheses regarding how this shock is associated with participation, horizontal positioning, and vertical positioning among workers on the platform. Using proprietary data on incumbent freelancers and a difference-in-differences design that leverages cross-sectional variation in pre-period AI exposure and skill-level, we show that freelancers more exposed to AI shift away from prior domains and reorient bidding toward higher-value contracts. In contrast, high skill-level freelancers, who face greater adjustment costs, are less likely to reduce participation on the platform, reposition across domains, and move upmarket. These findings highlight how technological shocks reshape labor markets through supply-side adaptation and how domain-specific human capital constrains worker responses.",
+    "ai_reason": "ChatGPT对劳动力市场的核心研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "ChatGPT",
+      "算法管理"
+    ],
+    "authors": [
+      "Shun Yiu",
+      "Robert Seamans",
+      "Manav Raj",
+      "Teng Liu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Indiana University Bloomington"
+        ],
+        "name": "Shun Yiu",
+        "orcid": null,
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "New York University"
+        ],
+        "name": "Robert Seamans",
+        "orcid": "https://orcid.org/0000-0001-9058-4190",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Pennsylvania"
+        ],
+        "name": "Manav Raj",
+        "orcid": "https://orcid.org/0000-0002-3657-7843",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of California, Santa Cruz"
+        ],
+        "name": "Teng Liu",
+        "orcid": null,
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-31",
+    "doi": "10.1287/orsc.2025.20566",
+    "domain_score": 5.0,
+    "id": 12443,
+    "ingested_at": "2026-08-02T05:26:29.320092",
+    "issue": null,
+    "journal": "OrgSci",
+    "pdf_url": null,
+    "scored_at": "2026-08-02T13:19:31.188267",
+    "title": "Worker Repositioning and Technological Change: Evidence from an Online Labor Market",
+    "title_zh": "劳动者再定位与技术变革：来自在线劳动力市场的证据",
+    "tldr": "研究ChatGPT发布对大型在线劳动力市场自由职业者行为的影响。采用双重差分法，结合AI暴露度和技能水平的横截面差异，发现AI暴露较高的自由职业者会从原有领域转向，并重新竞标高价值合同；而高技能者因调整成本较高，参与度下降、跨领域流动和向上流动均更少。揭示了技术冲击通过供给侧适应重塑劳动力市场，以及领域专用人力资本对劳动者响应的约束作用。",
+    "topic_tags": [
+      "零工经济",
+      "组织变革",
+      "工作未来",
+      "知识管理"
+    ],
+    "url": "https://doi.org/10.1287/orsc.2025.20566",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Abstract We compare modern machine learning (MML) techniques to ordinary least squares (OLS) regression on out‐of‐sample (OOS) operational validity, adverse impact, and dropped predictor counts within a common selection scenario: the prediction of job performance from a battery of diverse psychometrically‐validated tests. In total, scores from 1.2 billion validation study participants were simulated to describe outcomes across 31,752 combinations selection system design and scoring decisions. The most consistently valuable improvement from adopting MML over traditional regression was from dropping predictors rather than by improving prediction. On average, MML improved prediction of performance from psychometric scale composites only when the ratio of sample size to scale count was less than approximately 3, although algorithm choice, predictor count, and selection ratio affected outcomes as well. We also simulated the effects of design choices when combining item scores, which showed consistent, superior predictive accuracy for several MML algorithms, especially elastic net and random forest, over traditional regression. Given these results, we suggest the potential of machine learning for employee selection is unlikely to be realized in selection systems focusing on the combination of scale composites from previously validated psychometric tests. Instead, it will be realized in unconventional design scenarios, such as the use of individual items to make multiple trait inferences, or with novel data formats like text, image, audio, video, and behavioral traces. We therefore recommend researchers focus on the potential value of MML in future selection contexts rather than continuing to focus on the current value of MML in current selection contexts.",
     "ai_reason": "机器学习用于员工选拔预测，AI核心+HR领域",
     "ai_score": 5.0,
@@ -95161,6 +98279,50 @@
       "人机协作"
     ],
     "url": "https://doi.org/10.1111/peps.70033",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "ABSTRACT Artificial intelligence (AI), such as large language models (LLMs), is increasingly being used to score psychological and organizational constructs from text. However, the reliability and validity of these scores remains vital. Frequently, AI scores are treated as replicants of human ratings and inter‐rater reliability (IRR) is established by correlating AI and subject‐matter‐expert (SME) ratings. Yet, because LLMs may meaningfully differ from humans in ability to score text, correlating LLM scores with SME ratings is inappropriate because correlational approaches assume that AI and human scores are parallel, a condition that is unlikely and difficult to verify. This study proposes a factor‐analytic alternative in which AI scores and SME ratings are modeled as congeneric indicators of a common latent construct, estimating AI IRR as the squared standardized AI loading. Using a Monte Carlo simulation, correlational and CFA‐based IRR estimates were compared while manipulating true LLM and SME reliability, sample size, number of SME raters, and rater mean differences under ill‐structured rater designs. The simulations confirmed that when parallelism is violated, correlation‐based estimates (whether using single‐rater or composite SME ratings) are severely biased. In contrast, the proposed CFA framework accurately estimates AI IRR across diverse conditions, with precision improving as sample size, true IRR, and the number of SME raters increases. Furthermore, although ill‐structured designs reduce estimation accuracy, within‐rater standardization eliminated these inaccuracies. In conclusion, this paper urges researchers and practitioners to stop using correlational designs when estimating the IRR of LLM scores and offers best practice guidance going forward.",
+    "ai_reason": "LLM评分的信效度,AI与心理学结合",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "算法决策",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Andrew B. Speer"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Indiana University Bloomington"
+        ],
+        "name": "Andrew B. Speer",
+        "orcid": "https://orcid.org/0000-0002-3376-2103",
+        "position": "first"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-09",
+    "doi": "10.1111/peps.70036",
+    "domain_score": 4.0,
+    "id": 12184,
+    "ingested_at": "2026-07-11T05:04:06.672402",
+    "issue": null,
+    "journal": "PPsych",
+    "pdf_url": "https://doi.org/10.1111/peps.70036",
+    "scored_at": "2026-08-02T13:29:02.277276",
+    "title": "Inter‐Rater Reliability of AI Scores: A Call to Move from Correlational to Factor Analytical Estimation",
+    "title_zh": "AI评分的评分者间信度：从相关分析迈向因素分析估计的呼吁",
+    "tldr": "关注LLM评分心理与组织构念的信效度问题。论文指出传统AI与人类专家评分相关分析默认二者平行，该假设难以成立且违反时相关估计严重偏差。提出基于CFA的同质模型，以AI标准化因子载荷平方估计AI评分者间信度，并通过蒙特卡洛模拟验证：CFA框架在多种条件下估计准确，精度随样本量、真实信度与评分者数量提升而改善。",
+    "topic_tags": [
+      "绩效评估",
+      "决策",
+      "公平性"
+    ],
+    "url": "https://doi.org/10.1111/peps.70036",
     "volume": null,
     "year": 2026
   },
@@ -96807,5 +99969,125 @@
     "url": "https://doi.org/10.1002/smj.3179",
     "volume": "41",
     "year": 2020
+  },
+  {
+    "abstract": "Abstract Research Summary Strategy research examines the drivers of firm performance. Variance decomposition studies have analyzed industry's impact, with little attention paid to the industry to which a firm is assigned. This study investigates how industry assignment affects the findings about industry's impact. We analyze existing industry classification schemes and introduce a machine learning‐based scheme that leverages an embedding model to process text from annual reports. We find that industry assignment differs substantially across schemes, and that certain firms are more consistently grouped together. Schemes that group more similar firms together exhibit stronger industry effects. Given the literature's frequent reliance on the criticized Standard Industrial Classification scheme, industry's role in firm performance has likely been systematically underestimated. Managerial Summary Understanding what drives a company's success is crucial. Prior research has surprisingly found that a firm's industry plays little role in explaining a firm's performance. However, this study suggests that industry's importance is likely understated due to how firms are grouped into industries. Comparing several existing industry classification schemes alongside a new one we built using machine learning, we find that grouping similar firms in the same industry increases reported industry importance and decreases firm importance. Being more precise about industry membership reveals that industry matters more than previously thought. The implication is that understanding the industry is more important for a firm's performance and could be key to understanding sustained success.",
+    "ai_reason": "用ML嵌入做行业分类，AI是方法非核心，战略管理",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "LLM"
+    ],
+    "authors": [
+      "Alireza Eshraghi",
+      "Bart Vanneste"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University College London"
+        ],
+        "name": "Alireza Eshraghi",
+        "orcid": null,
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "University College London"
+        ],
+        "name": "Bart Vanneste",
+        "orcid": "https://orcid.org/0000-0002-3209-9370",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-15",
+    "doi": "10.1002/smj.70106",
+    "domain_score": 4.0,
+    "id": 12278,
+    "ingested_at": "2026-07-18T04:49:24.298938",
+    "issue": null,
+    "journal": "SMJ",
+    "pdf_url": "https://doi.org/10.1002/smj.70106",
+    "scored_at": "2026-08-02T13:29:02.368778",
+    "title": "Revisiting industry effects: The assignment of firms to industries",
+    "title_zh": "重访产业效应：企业的产业归属",
+    "tldr": "针对战略管理中行业效应被低估的现象，比较多种行业分类方案并构建基于年报文本嵌入的机器学习新方案，发现不同方案的行业归类差异显著，将更相似企业归入同一行业的方案能呈现更强的行业效应、降低企业效应，说明既有结论因依赖SIC等粗糙分类而系统性地低估了行业对绩效的作用。",
+    "topic_tags": [
+      "战略",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1002/smj.70106",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Abstract Research Summary We explore how Large Language Models (LLMs) can serve as synthetic subjects to inform strategy research. We introduce a framework for designing and running simulated experiments with LLM‐powered agents. We argue that this approach is useful for rapid, low‐cost prototyping of human experiments and for generating novel hypotheses. We apply the framework to the exploration–exploitation dilemma and show that LLM‐based experiments reproduce patterns observed among human participants. We then vary parameters and boundary conditions to illustrate how the same setup can support design iteration and surface hypotheses about when and why established results change. In the conclusion, we discuss the promise and limitations of artificial intelligence agents as “model organisms” for strategy. Managerial Summary Artificial intelligence (AI) agents are beginning to enter firms as tools that can execute work, from writing code to coordinating complex tasks across systems. This article argues that their value for strategy extends beyond task automation: AI agents can also be used to simulate strategic interactions and assess how strategies perform under alternative assumptions. In our exploration–exploitation application, these simulations reproduce core patterns from prior human experiments and reveal where those patterns weaken or reverse. Used this way, AI agents can help firms prototype strategic choices, stress‐test assumptions, and direct managerial attention toward promising leads before larger commitments of time and effort.",
+    "ai_reason": "核心用LLM智能体模拟战略交互，方法论属管理学",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI"
+    ],
+    "authors": [
+      "Matteo Tranchero",
+      "Cecil-Francis Brenninkmeijer",
+      "Arul Murugan",
+      "Abhishek Nagaraj"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Pennsylvania"
+        ],
+        "name": "Matteo Tranchero",
+        "orcid": null,
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Duke University"
+        ],
+        "name": "Cecil-Francis Brenninkmeijer",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of California, Berkeley"
+        ],
+        "name": "Arul Murugan",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of California, Berkeley"
+        ],
+        "name": "Abhishek Nagaraj",
+        "orcid": "https://orcid.org/0000-0001-9049-0522",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07-29",
+    "doi": "10.1002/smj.70112",
+    "domain_score": 4.0,
+    "id": 12418,
+    "ingested_at": "2026-07-31T05:36:47.933778",
+    "issue": null,
+    "journal": "SMJ",
+    "pdf_url": "https://doi.org/10.1002/smj.70112",
+    "scored_at": "2026-08-02T13:19:34.145326",
+    "title": "Simulating strategic interactions with AI agents",
+    "title_zh": "基于AI智能体的战略交互模拟",
+    "tldr": "探讨大语言模型作为合成被试在战略研究中的角色，提出基于LLM智能体的模拟实验框架，用于低成本快速原型设计及新假设生成。以探索-利用困境为应用场景，验证LLM实验能复现人类被试的既有行为模式；通过改变参数与边界条件，展示该框架如何辅助设计迭代、揭示已有结论失效的条件与原因，为战略选择原型测试与压力测试提供新工具。",
+    "topic_tags": [
+      "战略",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1002/smj.70112",
+    "volume": null,
+    "year": 2026
   }
 ]

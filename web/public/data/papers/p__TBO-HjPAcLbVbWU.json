@@ -1,0 +1,65 @@
+{
+  "abstract": "Career paths encode decades of skill acquisition, role transitions, and educational investment, and understanding them at scale underpins workforce planning, labor market policy, and job recommendation. Resumes are a rich source of information about career paths: they contain detailed descriptions of work experience, education, and skills. Yet their unstructured, heterogeneous, and multilingual nature has long prevented large-scale systematic analysis. With the advent of large language models (LLMs), it is now possible to source rich career trajectory data containing temporal and educational signals from unstructured resumes, enabling new opportunities for career-path recommendation. Exploiting this opportunity, we present STEP (Sequential Trajectory of Employment Prediction), a novel career-path recommendation system that leverages temporal and educational signals to predict the next job in a career trajectory. STEP integrates a time-decay Gated Recurrent Unit (GRU) cell to model temporal dynamics, Feature-wise Linear Modulation (FiLM) conditioned on educational attainment, and attention-based sequence pooling to select relevant features for next job prediction. To improve internal occupation representation for STEP, we introduce ROUTE, a two-stage contrastive procedure that first adapts a multilingual encoder to the career domain via unsupervised denoising autoencoding, then performs supervised contrastive fine-tuning with guided negative selection. We evaluate STEP on four datasets of career trajectories, including an improved version of our publicly available JobHop dataset, and show that it outperforms state-of-the-art baselines in next job prediction. The dataset and code are publicly released to support reproducible career-trajectory research.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2607.11722",
+  "authors": [
+    "Iman Johary",
+    "Guillaume Bied",
+    "Alexandru C. Mara",
+    "Tijl De Bie"
+  ],
+  "authors_full": [
+    {
+      "name": "Iman Johary"
+    },
+    {
+      "name": "Guillaume Bied"
+    },
+    {
+      "name": "Alexandru C. Mara"
+    },
+    {
+      "name": "Tijl De Bie"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM职业路径推荐,AI为核心",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出职业路径推荐系统STEP，融合时间衰减GRU建模职业时序动态、基于学历的FiLM条件调制和注意力池化以预测下一份工作；引入ROUTE两阶段对比程序（去噪自编码预训练+引导负样本对比微调）改进职业表征，在四个数据集上验证有效性。",
+      "topic_tags": [
+        "HR",
+        "招聘",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-13",
+  "doi": null,
+  "id": "p__TBO-HjPAcLbVbWU",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2607.11722v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 12301,
+      "revision": "406e824c1f039582523c2bad7e37f227f7fbb9ba"
+    }
+  ],
+  "title": "STEP: Career-Path Recommendation via Temporal and Educational Trajectory Modeling",
+  "title_zh": "STEP：基于时间与教育轨迹建模的职业路径推荐",
+  "unified_ingested_at": "2026-08-03T05:45:55.470542Z",
+  "url": "https://arxiv.org/abs/2607.11722v2",
+  "volume": null,
+  "year": 2026
+}

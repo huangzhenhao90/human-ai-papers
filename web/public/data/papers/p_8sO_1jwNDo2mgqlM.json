@@ -1,9 +1,9 @@
 {
   "abstract": "Generative AI tools are increasingly being piloted in public agencies, but limited evidence explains how employee acceptance changes after hands-on use. This study examines Microsoft 365 Copilot adoption during an eight-week pilot at a state Department of Transportation. A matched two-wave survey measured perceived usefulness, perceived ease of use, behavioral intention, and trust before and after participation. After matching and response-quality screening, the sample included 124 employees. Nonparametric tests assessed aggregate changes, k-means clustering identified baseline acceptance personas, and fixed-centroid assignment tracked migration. Open-ended responses were examined using keyword-based content mapping. Perceived usefulness declined significantly after use, suggesting recalibration of expectations, while perceived ease of use, behavioral intention, and trust showed only small, nonsignificant changes. Three baseline personas emerged: Skeptics, Cautiously Positive users, and Champions. Although persona counts changed modestly, individual movement was substantial: 40 percent of Skeptics moved to Cautiously Positive, while 68 percent of Champions moved to less enthusiastic personas. Upward movement was associated with gains in usefulness, behavioral intention, and trust; downward movement was associated with declines in usefulness and trust. Communication and summarization remained stable use cases, while data, chart, and presentation tasks declined. Accuracy and privacy concerns decreased, but job and skills concerns increased. Public-sector AI adoption should be monitored dynamically and supported through persona-specific training, workflow examples, verification routines, and trust-calibration safeguards. The study offers a framework for tracking workforce heterogeneity during enterprise generative AI implementation.",
   "ai_type_tags": [
-    "生成式AI",
-    "Microsoft 365 Copilot",
-    "LLM"
+    "GenAI",
+    "LLM",
+    "人机交互"
   ],
   "arxiv_id": "2607.13798",
   "authors": [
@@ -23,6 +23,17 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "GenAI采纳与员工信任纵向研究，AI与OB核心",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "在州交通厅开展为期八周的Microsoft 365 Copilot试点，124名员工两波配对调查追踪使用前后变化。发现感知有用性显著下降，预期经历重校准；识别怀疑者、谨慎乐观者与拥护者三类基线人格，40%怀疑者上移、68%拥护者下移，人格迁移幅度大，沟通与摘要为稳定使用场景。",
+      "topic_tags": [
+        "人机协作",
+        "组织变革",
+        "信任"
+      ]
+    },
     "ur": {
       "ai_reason": "GenAI工具采纳纵向调研，124人两波调查，用户接受度研究",
       "ai_score": 5.0,
@@ -37,6 +48,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 0,
@@ -48,13 +60,18 @@
   "pdf_url": "https://arxiv.org/pdf/2607.13798v1",
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 12247,
+      "revision": "406e824c1f039582523c2bad7e37f227f7fbb9ba"
+    },
+    {
       "channel": "ur",
       "legacy_id": 15338,
-      "revision": "07de545c526bd017e9a037a8016e7d7a9b3e699a"
+      "revision": "1f9df805e71df422a57debaf6a4e73847773e35a"
     }
   ],
   "title": "Persona Migration and Expectation Recalibration in Generative AI Adoption: A Longitudinal Study at a State Department of Transportation",
-  "title_zh": "生成式AI采用中的角色迁移与期望重新校准：州交通部门的纵向研究",
+  "title_zh": "生成式AI采用中的角色迁移与期望重校准：一项州交通部门的纵向研究",
   "unified_ingested_at": "2026-07-28T05:17:08.933862Z",
   "url": "https://arxiv.org/abs/2607.13798v1",
   "volume": null,
