@@ -1,0 +1,63 @@
+{
+  "abstract": "Creating sprint backlogs requires considerable effort, as items such as epics, user stories, and tasks can be missed or inconsistently specified. We propose a multimodal approach to support backlog generation from visual app mockups, an artifact available at early project stages. We evaluate three prompting strategies on GPT-4o: a zero-shot baseline, Compositional Chain-of-Thought (CCoT) for vision-language reasoning, and a persona-driven prompt. We study seven app development projects across two countries and interview developers about the results. Overall, we observed that the baseline prompt favours recall over precision, whereas CCoT is more balanced, achieving average F1 scores of 52-66% for epics and user stories. Tasks were more challenging to generate accurately. Precision gains were most consistent when adding architectural context, particularly for backend tasks (precision gains up to 35%). Interviews with developers revealed that up to 26% of false positives were still considered useful, reflecting the creative and open-ended nature of backlog creation. To capture this, we propose a new measure called Revised Recall, which complements ground-truth evaluation with developer assessments. Our findings suggest that hybrid prompting with architectural context can assist backlog generation from early mockups, though results vary by item type and developer oversight remains necessary.",
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "多模态",
+    "AI 助手"
+  ],
+  "arxiv_id": "2607.22902",
+  "authors": [
+    "Andrea Lezcano Airaldi",
+    "Lourdes Romera",
+    "Walid Maalej"
+  ],
+  "authors_full": [
+    {
+      "name": "Andrea Lezcano Airaldi"
+    },
+    {
+      "name": "Lourdes Romera"
+    },
+    {
+      "name": "Walid Maalej"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "GPT-4o生成backlog，采访开发者评估，明确用研方法",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究探索 GPT-4o 能否从应用线框图自动生成敏捷 Sprint 待办事项（含 Epic、用户故事、任务）。比较零样本、CCoT 视觉推理与角色驱动三种提示策略，结合七个跨国项目与开发者访谈。结果显示 CCoT 最均衡，Epic 与用户故事 F1 达 52–66%；加入架构上下文可提升精确度（后端任务最高 35%）；并提出融合开发者评估的 Revised Recall 衡量方法。",
+      "topic_tags": [
+        "人机协作",
+        "AI 助手",
+        "用户研究方法",
+        "访谈"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-24",
+  "doi": null,
+  "id": "p_a0CYgvrrE3Cos1vy",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2607.22902v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15424,
+      "revision": "7e5762b319cce40ce1b640627446f5c848e666a3"
+    }
+  ],
+  "title": "How Well Can AI Generate Backlogs from App Mockups?",
+  "title_zh": "AI从应用原型生成待办列表的效果如何？",
+  "unified_ingested_at": "2026-08-07T04:28:05.450416Z",
+  "url": "https://arxiv.org/abs/2607.22902v1",
+  "volume": null,
+  "year": 2026
+}
