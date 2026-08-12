@@ -1,5 +1,145 @@
 [
   {
+    "abstract": "Abstract Background Digital mental health interventions using conversational AI agents are increasingly being adopted as scalable alternatives to traditional care. Engagement is typically measured using volume-based metrics (eg, session counts and total time on a platform). However, these metrics overlook engagement patterns over time, which are not well understood in relation to mental health outcomes. Objective The purpose of this cross-sectional study was to explore how different patterns of engagement with Mental’s AI conversational agent relate to self-reported depression and anxiety. We aimed to (1) identify and describe engagement profiles based on patterns of interaction depth and temporal consistency, (2) compare depression and anxiety symptoms across engagement profiles, and (3) explore whether engagement profiles were associated with mental health symptom severity. Methods This cross-sectional observational study linked survey responses to back-end app usage data from 112 Mental app users who completed at least 5 sessions with the conversational AI agent. Engagement profiles were derived using median splits on interaction depth (α parameter) and temporal consistency (Gini coefficient). Depression was assessed using the Patient Health Questionnaire-8 (PHQ-8), and anxiety was assessed using the Generalized Anxiety Disorder-7 (GAD-7). One-way ANOVAs compared symptoms across profiles. Linear regression models examined associations between profiles and symptom severity, adjusting for age, gender, and total duration of use. Results We identified 4 distinct engagement profiles based on interaction depth and temporal consistency: extended and episodic (profile 1; n=25), extended and consistent (profile 2; n=31), brief and episodic (profile 3; n=31), and brief and consistent (profile 4; n=25). Users in profile 1 (extended and episodic) reported the lowest anxiety (mean 2.68, SD 2.43) and depression (mean 3.48, SD 4.06), while profile 4 (brief and consistent) reported the highest anxiety (mean 10.00, SD 7.03) and depression (mean 10.60, SD 8.75). Significant differences were observed for anxiety ( F 3,108 =8.07, P &lt;.001, η ²=0.18) and depression ( F 3,108 =5.47, P =.002, η ²=0.13). In adjusted models, engagement profile was significantly associated with depression ( R ²=0.16, F 7,104 =2.87, and P =.009) and anxiety ( R ²=0.21, F 7,104 =4.04, and P &lt;.001). Compared to profile 1, users in profiles 2 and 4 reported significantly higher depression and anxiety. Profile 3 differed from profile 1 for anxiety only (β=3.11, P =.047). Conclusions Users with longer, clustered sessions reported the lowest symptoms, whereas those with brief, evenly distributed use reported the highest symptom levels, suggesting that the structure of engagement may be associated with symptom levels in ways that aggregate usage metrics do not capture. These findings are preliminary and hypothesis-generating, highlighting the importance of considering how engagement unfolds over time and suggesting that pattern-based measurement may improve the understanding of user outcomes in AI-powered mental health care. Future work should examine the directionality of these associations and whether distinct engagement patterns reflect meaningfully different modes of interacting with AI-powered care.",
+    "ai_reason": "研究AI对话式智能体在心理健康中的参与模式，使用PHQ-8和GAD-7评估抑郁和焦虑症状，关联真实应用数据与自我报告量表。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "conversational_ai",
+      "llm_genai"
+    ],
+    "authors": [
+      "Kelsey McAlister",
+      "Courtney C. Jewell",
+      "Jennifer Huberty"
+    ],
+    "authors_full": [
+      {
+        "name": "Kelsey McAlister"
+      },
+      {
+        "name": "Courtney C. Jewell"
+      },
+      {
+        "name": "Jennifer Huberty"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "研究AI对话式智能体在心理健康中的参与模式，使用PHQ-8和GAD-7评估抑郁和焦虑症状，关联真实应用数据与自我报告量表。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "该横断面研究基于112名用户数据，识别出4种AI对话式智能体参与模式，发现长时会话型用户焦虑和抑郁水平最低，而短时均匀型用户最高。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "digital_intervention",
+        "monitoring",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-08-10",
+    "doi": "10.2196/98690",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "self_report",
+    "id": "W7202112844",
+    "journal": "JMIR Mental Health",
+    "mh_profile": {
+      "ai_reason": "研究AI对话式智能体在心理健康中的参与模式，使用PHQ-8和GAD-7评估抑郁和焦虑症状，关联真实应用数据与自我报告量表。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "conversational_ai",
+          "llm_genai"
+        ],
+        "applications": [
+          "digital_intervention",
+          "monitoring"
+        ],
+        "conditions": [
+          "depression",
+          "anxiety"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "PHQ-8抑郁得分和GAD-7焦虑得分，按参与档案分组比较",
+        "sample": "112名Mental应用用户，完成至少5次AI会话",
+        "study_design": "横断面观察性研究，关联问卷与后端应用使用数据"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "self_report",
+      "local_recall_audit": {
+        "ai_matches": [
+          "conversational agent"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "depression",
+          "anxiety"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "该横断面研究基于112名用户数据，识别出4种AI对话式智能体参与模式，发现长时会话型用户焦虑和抑郁水平最低，而短时均匀型用户最高。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "digital_intervention",
+        "monitoring",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7202112844",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2764449704",
+      "ingest_mode": "full",
+      "key": "jmir_mental_health",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Patterns of Engagement With an AI Conversational Agent for Mental Health and Associations With Anxiety and Depression: Cross-Sectional Study",
+    "title_zh": "AI对话式智能体在心理健康中的参与模式与焦虑抑郁的关联：横断面研究",
+    "tldr": "该横断面研究基于112名用户数据，识别出4种AI对话式智能体参与模式，发现长时会话型用户焦虑和抑郁水平最低，而短时均匀型用户最高。",
+    "topic_tags": [
+      "depression",
+      "anxiety",
+      "digital_intervention",
+      "monitoring",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.2196/98690",
+    "year": 2026
+  },
+  {
     "abstract": "Artificial intelligence (AI) may enhance the effectiveness of routine mental health care, yet large-scale real-world evaluations remain limited. We examined whether employer-level access to AI-enabled continuous care features embedded within psychotherapy was associated with treatment engagement and symptom improvement compared with psychotherapy alone. In a preregistered, cluster-matched quasi-experimental study, adults initiating psychotherapy within an employer-sponsored behavioral health program across 25 employers with access to continuous care features were compared with participants from 75 matched employers without access. Early engagement was assessed over 7 weeks ( n = 26,208), and symptom trajectories were evaluated for up to 6 months ( n = 5518). Access to continuous care features was associated with 5% greater session attendance (rate ratio 1.05 [1.01–1.10]) and faster time to second session. Although psychotherapy alone produced substantial symptom improvement, access to AI-enabled features was associated with additional reductions in depressive and anxiety symptoms ( d = 0.15–0.16), corresponding to higher rates of reliable improvement (NNT = 25). AI-enabled augmentation may enhance therapeutic engagement and support faster symptom improvement, with effects that may translate into meaningful shifts in population mental health when deployed at scale.",
     "ai_reason": "AI连续护理功能嵌入心理治疗，评估参与度和症状改善，双维度高度相关",
     "ai_score": 5,

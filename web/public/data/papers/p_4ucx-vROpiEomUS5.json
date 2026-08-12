@@ -1,0 +1,335 @@
+{
+  "abstract": "Human evaluation of AI systems and digital products is costly, slow, and difficult to scale. Offline evaluations are more scalable but often abstract away human diversity and interactive behavior. We therefore introduce MatrAIx, a population-scale simulated-user evaluation infrastructure for testing AI systems and digital products with heterogeneous users. MatrAIx has three core components: First, Persona 8B contains 8.3 billion persona records represented by 1,290 categorical dimensions. Records are either sampled from a dependency graph that preserves correlated attributes or derived from human-authored profiles. We release a quality-filtered coreset of approximately 1 million personas, comprising 599,847 human-grounded and 400,000 synthetic records. Second, the MatrAIx Playground provides four environments in which diverse users evaluate and interact with digital products: Survey, AI Chatbot, Web, and App. Third, MatrAIx provides 1,010 application tasks spanning more than 25 domains, including Commerce, Software, Finance, and Healthcare. We conducted 18,189 evaluation trials across eight representative tasks. Persona agents were powered by three LLMs: Claude Opus 4.8, GPT 5.5, and Claude Haiku 4.5. The resulting feedback captures how decisions and preferences vary across persona backgrounds, including hesitation after a price increase, willingness to continue after an AI assistant fails, and latency tolerance. We conducted two main validation studies: First, a 400-trial controlled study evaluated persona adherence across ten behavioral attributes and all four environments. The declared behavior was expressed or correctly suppressed in 366 trials (91.5%). Second, human and LLM judges evaluated the extraction quality of human-grounded personas. Overall, MatrAIx provides an end-to-end infrastructure for evaluating AI systems and digital products with diverse simulated human users.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI 助手",
+    "人机交互"
+  ],
+  "arxiv_id": "2608.04205",
+  "authors": [
+    "Xiaomin Li",
+    "Yuexing Hao",
+    "Jianheng Hou",
+    "Jintao Huang",
+    "Qianfeng Wen"
+  ],
+  "authors_full": [
+    {
+      "name": "Xiaomin Li"
+    },
+    {
+      "name": "Yuexing Hao"
+    },
+    {
+      "name": "Jianheng Hou"
+    },
+    {
+      "name": "Jintao Huang"
+    },
+    {
+      "name": "Qianfeng Wen"
+    },
+    {
+      "name": "Shirley Huang"
+    },
+    {
+      "name": "Yifan Liu"
+    },
+    {
+      "name": "Xiaoyi Liu"
+    },
+    {
+      "name": "Yilan Fan"
+    },
+    {
+      "name": "Yijun Wang"
+    },
+    {
+      "name": "Koutian Wu"
+    },
+    {
+      "name": "Ruoqi Gao"
+    },
+    {
+      "name": "Muhammad Ahmed Mohsin"
+    },
+    {
+      "name": "Jing Tang"
+    },
+    {
+      "name": "Brihi Joshi"
+    },
+    {
+      "name": "Heming Liu"
+    },
+    {
+      "name": "Zheyuan Deng"
+    },
+    {
+      "name": "Zonglin Di"
+    },
+    {
+      "name": "Sankalp Jajee"
+    },
+    {
+      "name": "Jiuyao Lu"
+    },
+    {
+      "name": "Zhiwei Zhang"
+    },
+    {
+      "name": "Saksham Kapoor"
+    },
+    {
+      "name": "Ishan Gupta"
+    },
+    {
+      "name": "Yunhan Zhao"
+    },
+    {
+      "name": "Chanwoo Park"
+    },
+    {
+      "name": "Yucheng Lu"
+    },
+    {
+      "name": "Bing Hu"
+    },
+    {
+      "name": "Weihang Xiao"
+    },
+    {
+      "name": "Aravind Mohan"
+    },
+    {
+      "name": "Hanwen Xing"
+    },
+    {
+      "name": "Runyu Zhang"
+    },
+    {
+      "name": "Mihir Kulshreshtha"
+    },
+    {
+      "name": "Yuanda Xu"
+    },
+    {
+      "name": "Qianyu Zhu"
+    },
+    {
+      "name": "Dianzhuo Wang"
+    },
+    {
+      "name": "Yuxin Xiao"
+    },
+    {
+      "name": "Bowen Jiang"
+    },
+    {
+      "name": "Yongye Su"
+    },
+    {
+      "name": "Wenhao Chai"
+    },
+    {
+      "name": "Zuxin Liu"
+    },
+    {
+      "name": "Lawrence Yunliang Chen"
+    },
+    {
+      "name": "Xuandong Zhao"
+    },
+    {
+      "name": "Ethan Ye"
+    },
+    {
+      "name": "Shivam Patel"
+    },
+    {
+      "name": "Jason Xie"
+    },
+    {
+      "name": "Alex Martin Richmond"
+    },
+    {
+      "name": "Weixiang Ding"
+    },
+    {
+      "name": "Emre Okçular"
+    },
+    {
+      "name": "Diya Mathew"
+    },
+    {
+      "name": "Ziheng Wang"
+    },
+    {
+      "name": "Rana M. Shahroz Khan"
+    },
+    {
+      "name": "Zhejian Peng"
+    },
+    {
+      "name": "Wu Fang"
+    },
+    {
+      "name": "Fan Nie"
+    },
+    {
+      "name": "Xinyang Han"
+    },
+    {
+      "name": "Yubin Kim"
+    },
+    {
+      "name": "Jiawei Zhang"
+    },
+    {
+      "name": "Zhenting Qi"
+    },
+    {
+      "name": "Huangyuan Su"
+    },
+    {
+      "name": "Xu Pan"
+    },
+    {
+      "name": "Abinitha Gourabathina"
+    },
+    {
+      "name": "Hyewon Jeong"
+    },
+    {
+      "name": "Hemanth Neelgund Ramesh"
+    },
+    {
+      "name": "Kumail Alhamoud"
+    },
+    {
+      "name": "Kimia Hamidieh"
+    },
+    {
+      "name": "Zidi Xiong"
+    },
+    {
+      "name": "Samuel Schmidgall"
+    },
+    {
+      "name": "Pengrui Han"
+    },
+    {
+      "name": "Yepeng Huang"
+    },
+    {
+      "name": "Yongheng Wang"
+    },
+    {
+      "name": "Bowen Yang"
+    },
+    {
+      "name": "Alex Gu"
+    },
+    {
+      "name": "Yuchu Wang"
+    },
+    {
+      "name": "Akshay Paruchuri"
+    },
+    {
+      "name": "Brenna Li"
+    },
+    {
+      "name": "Hejie Cui"
+    },
+    {
+      "name": "Jiayuan Ding"
+    },
+    {
+      "name": "Chaosheng Dong"
+    },
+    {
+      "name": "Jiahao Wang"
+    },
+    {
+      "name": "Yixuan He"
+    },
+    {
+      "name": "Chi Wang"
+    },
+    {
+      "name": "Pamela Bhattacharya"
+    },
+    {
+      "name": "Tianyi Peng"
+    },
+    {
+      "name": "Paul Pu Liang"
+    },
+    {
+      "name": "Mitchell Gordon"
+    },
+    {
+      "name": "Yilun Du"
+    },
+    {
+      "name": "Marinka Žitnik"
+    },
+    {
+      "name": "James Zou"
+    },
+    {
+      "name": "Prasanna Tambe"
+    },
+    {
+      "name": "Philip Torr"
+    },
+    {
+      "name": "Emily Fox"
+    },
+    {
+      "name": "Asu Ozdaglar"
+    },
+    {
+      "name": "Dawn Song"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心是AI评估基础设施，用户视角通过persona仿真而非真实用研",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "MatrAIx提出基于83亿人格代理的群体级模拟用户评估基础设施：Persona 8B含1290个分类维度与依赖图采样，配套Survey/AI Chatbot/Web/App四类Playground环境及1010个跨25+领域任务；使用Claude Opus 4.8、GPT 5.5、Claude Haiku 4.5驱动18189次评估试验，捕捉不同人格在涨价后犹豫、AI失败后留存意愿、延迟容忍度等行为差异，并以400人研究进行验证，为AI与数字产品评测提供可扩展且具多样性的替代方案。",
+      "topic_tags": [
+        "用户研究方法",
+        "用户画像",
+        "AI 采用",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-04",
+  "doi": "10.48550/arxiv.2608.04205",
+  "id": "p_4ucx-vROpiEomUS5",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2608.04205",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15610,
+      "revision": "913937abae2d1f662717457bb63c2ee035384711"
+    }
+  ],
+  "title": "MatrAIx: Simulating the World with 8.3 Billion Persona Agents",
+  "title_zh": "MatrAIx：基于83亿角色化智能体的世界模拟",
+  "unified_ingested_at": "2026-08-12T04:11:55.936267Z",
+  "url": "https://arxiv.org/abs/2608.04205",
+  "volume": null,
+  "year": 2026
+}

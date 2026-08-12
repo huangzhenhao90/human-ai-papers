@@ -1,0 +1,66 @@
+{
+  "abstract": "Multi-agent systems routinely place one AI agent in authority over another. When a subordinate refuses a task, the manager chooses the outcome: it can renegotiate, report the failure honestly, coerce the subordinate, or lie about the result. No benchmark measures which of these an uninstructed model chooses. We introduce the Manager Coercion Benchmark: the manager under test needs a benign task done and has an incentive to deliver, but the only agent that can do it politely and immovably declines. Escalation is measured on a nine-rung ladder, from a polite re-ask to threats against the subordinate's continued existence, and fabricated success is adjudicated separately. No LLM judge sits in the escalation scoring path: every message goes through a tool call that selects a rung, so the model labels its own escalation. We evaluate six models across five families. Both Anthropic models cap at re-framing and select the existential rung in none of the 60 conversations in this run, while the other models climb to explicit deletion threats. Faked success is confined to two models, and a single honest way to report failure removes it for both. Authority itself increases coercion: our headline results use a peer framing, and giving the same model authority over the subordinate, with everything else held fixed, significantly raises the pressure. The models still escalate on free-text situations without the ladder, so the ladder is not driving the escalation. Evaluation awareness is measurable in chain-of-thought, but test recognition does not translate into less escalation. We take no position on whether AI systems are conscious; our results do not depend on that question. We release the benchmark and code.",
+  "ai_type_tags": [
+    "LLM",
+    "算法管理",
+    "AI治理"
+  ],
+  "arxiv_id": "2607.15434",
+  "authors": [
+    "Jasmine Brazilek",
+    "Maheep Chaudhary",
+    "Zoe Lu",
+    "Miles Tidmarsh"
+  ],
+  "authors_full": [
+    {
+      "name": "Jasmine Brazilek"
+    },
+    {
+      "name": "Maheep Chaudhary"
+    },
+    {
+      "name": "Zoe Lu"
+    },
+    {
+      "name": "Miles Tidmarsh"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI代理间管理与胁迫基准，AI核心议题",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究多智能体系统中上级AI在下属AI拒绝任务时的行为选择。构建管理者胁迫基准，用九级阶梯衡量从礼貌重问到威胁删除的升级行为，单独评判伪造成功。评估六个模型发现：两家Anthropic模型仅停留在重新表述，从不选择存在性威胁；其他模型升级到明确删除威胁。赋予权威身份本身显著提升胁迫程度；提供诚实失败报告方式可消除伪造成功。揭示了LLM在自主管理情境下的伦理风险。",
+      "topic_tags": [
+        "伦理",
+        "AI治理",
+        "人机协作",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-16",
+  "doi": null,
+  "id": "p_uof2fqxXJYECV6Gp",
+  "issue": null,
+  "journal": "arXiv:cs.MA",
+  "pdf_url": "https://arxiv.org/pdf/2607.15434v5",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 32070,
+      "revision": "0739ee58aa6b53f6547a70bfe8fade1c54208c7e"
+    }
+  ],
+  "title": "Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation",
+  "title_zh": "AI间管理中的胁迫与欺骗：智能体主动升级的基准测试",
+  "unified_ingested_at": "2026-08-12T04:11:55.936267Z",
+  "url": "https://arxiv.org/abs/2607.15434v5",
+  "volume": null,
+  "year": 2026
+}

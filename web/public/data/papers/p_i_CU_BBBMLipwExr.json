@@ -1,0 +1,59 @@
+{
+  "abstract": "AI-based recruitment systems that rely on machine learning models trained on historical CV data, risk perpetuating and amplifying social biases. A key challenge arises in unstructured CV text, where pre-trained language model embeddings may infer sensitive attributes such as gender even after explicit indicators are removed. In this paper, we evaluate nine pre-trained embedding models on the synthetic FairCVdb dataset, analyzing the informativeness of their embeddings for applicant scoring and their susceptibility to gender leakage, on both original and gender-scrubbed biographies. We further use a multi-task adversarial learning framework with gradient reversal to predict applicant suitability while suppressing gender information from learned representations. Finally, we use a multi-objective Pareto-front-based model selection to balance predictive utility and fairness. Our experimental results show that explicit gender scrubbing substantially reduces but does not eliminate gender leakage, while adversarial learning improves fairness mainly on original biographies and acts as a complementary strategy rather than a substitute for text-level debiasing.",
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "AI招聘",
+    "算法决策"
+  ],
+  "arxiv_id": "2607.20073",
+  "authors": [
+    "Farnaz Faramarzi Lighvan",
+    "Lynn Houthuys"
+  ],
+  "authors_full": [
+    {
+      "name": "Farnaz Faramarzi Lighvan"
+    },
+    {
+      "name": "Lynn Houthuys"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI招聘性别偏见，HR/管理核心",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究AI招聘系统中预训练语言模型嵌入的性别偏见问题。在合成FairCVdb数据集上评估9种嵌入模型，分析其对申请者评分的有效性及性别泄露风险；采用多任务对抗学习与梯度反转方法抑制性别信息，并通过Pareto前沿方法在预测效用与公平性之间权衡。结果显示，显式性别清理可大幅减少但无法消除泄露；对抗学习主要对原始文本有效，与文本级去偏互为补充而非替代。",
+      "topic_tags": [
+        "招聘",
+        "AI招聘",
+        "公平性",
+        "偏见"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-22",
+  "doi": null,
+  "id": "p_i_CU_BBBMLipwExr",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2607.20073v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 32132,
+      "revision": "0739ee58aa6b53f6547a70bfe8fade1c54208c7e"
+    }
+  ],
+  "title": "Evaluating and Mitigating Gender Bias in Pre-trained Embeddings for ML-based Recruitment",
+  "title_zh": "评估与缓解基于机器学习的招聘中预训练嵌入的性别偏见",
+  "unified_ingested_at": "2026-08-12T04:11:55.936267Z",
+  "url": "https://arxiv.org/abs/2607.20073v1",
+  "volume": null,
+  "year": 2026
+}
