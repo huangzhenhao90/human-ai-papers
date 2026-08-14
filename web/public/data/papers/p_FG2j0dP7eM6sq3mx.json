@@ -1,0 +1,64 @@
+{
+  "abstract": "Role-playing agents (RPAs) have become one of the most important consumer applications of large language models. Users engage in multi-turn conversations with RPAs for experiences such as emotional comfort, making reliable evaluation essential for measuring capability, comparing systems, and guiding further improvement. Existing benchmarks, however, typically require an RPA to continue a fixed dialogue history and then evaluate the continuation using a fixed rubric detached from the user. We identify and empirically demonstrate two limitations of this design. First, an RPA's output is shaped by the preceding dialogue history, preventing a scientifically grounded assessment of its role-playing ability in real multi-turn settings. Second, user experience varies substantially across individuals, and conventional fixed rubrics need not align with user satisfaction. We therefore introduce PALATE (Person-Aligned LLM-Simulated-User Assessment with Tailored Evaluation), a scalable RPA benchmark built on user simulators. PALATE is accompanied by a pool of 300 character profiles. Its main evaluation trains five per-user simulators and lets them engage candidate RPAs in free-form, multi-turn conversations over a pre-frozen panel of character profiles. Alongside a general quality rubric, we construct personalized rubrics to measure user satisfaction; on held-out annotated data, the personalized rubrics show higher agreement with human judgments than the general rubric. In the main evaluation of 16 candidates, PALATE separately characterizes generic turn quality, long-horizon session capability, and per-user experience on multi-turn trajectories co-constructed by each candidate. It thereby produces interpretable evaluations of specific user-RPA pairs rather than compressing systems into a single user-independent ranking.",
+  "ai_type_tags": [],
+  "arxiv_id": "2607.27816",
+  "authors": [
+    "Yuhang Zhu",
+    "Mingxuan Du",
+    "Benfeng Xu",
+    "Jie Gao",
+    "Lingyun Yu"
+  ],
+  "authors_full": [
+    {
+      "name": "Yuhang Zhu"
+    },
+    {
+      "name": "Mingxuan Du"
+    },
+    {
+      "name": "Benfeng Xu"
+    },
+    {
+      "name": "Jie Gao"
+    },
+    {
+      "name": "Lingyun Yu"
+    },
+    {
+      "name": "Hongtao Xie"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "角色扮演智能体评估，用户模拟与UX",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-30",
+  "doi": "10.48550/arxiv.2607.27816",
+  "id": "p_FG2j0dP7eM6sq3mx",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.27816",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15637,
+      "revision": "3acad64853732ad3b581cd58880ab37906ae1802"
+    }
+  ],
+  "title": "Beyond Borrowed Histories: Person-Aligned User Simulation for Interactive Role-Playing Evaluation",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
+  "url": "https://arxiv.org/abs/2607.27816",
+  "volume": null,
+  "year": 2026
+}

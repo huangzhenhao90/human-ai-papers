@@ -1,6 +1,9 @@
 {
   "abstract": "Soft skills shape collaboration among ML engineers, data scientists, and software engineers building ML-enabled systems, yet what we know about them comes almost entirely from the demand side. Job advertisements, surveys, and hiring manager interviews capture what employers ask for. How candidates themselves articulate these competencies has not been studied, and existing CV-mining work is both keyword-based, so it cannot see skills conveyed through narrative, and descriptive, reporting frequency rankings without testing whether group differences exceed sampling variation. We close both gaps. Using a balanced corpus of 300 curated CVs spanning the three roles, we extract explicitly listed and implicitly narrated soft skills with an LLM-based pipeline validated against a human-annotated ground truth, a distinction that existing extractors were not designed to make. We then convert the demand-side literature's claims into 13 falsifiable hypotheses about role signatures, seniority progression, and disclosure style, and test them with effect sizes under family-wise error control, so that candidate-side data can corroborate or contradict the demand-side account rather than merely illustrate it. Eleven hypotheses are supported, one partially, and one refuted. Candidates disclose soft skills through narrative rather than keyword lists by roughly three to one, and most so for the competencies employers value most: leadership, coordination, and mentoring (88-96% narrative). Seniority nearly triples the odds of articulating leadership. That competency, assumed universal in prior work, is articulated by software engineers at half the rate of their peers. Technical candidates do articulate soft skills, but a keyword-based screening systematically misses them.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "AI招聘"
+  ],
   "arxiv_id": "2608.10046",
   "authors": [
     "Aidin Azamnouri",
@@ -27,8 +30,12 @@
       "ai_reason": "LLM用于CV软技能分析，涉及HR招聘",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究构建基于LLM的简历软技能提取流程，标注300份ML工程师、数据科学家与软件工程师简历，区分显式列出与隐式叙述的软技能，并将需求端文献主张转化为13个可证伪假设进行效应量检验。结果11个假设获支持、1个部分支持、1个被推翻；候选人以叙述方式披露软技能约为关键词列表的三倍，领导力、协调力与指导力88-96%以叙述形式呈现。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "人机协作"
+      ]
     }
   },
   "channels": [
@@ -45,7 +52,7 @@
     {
       "channel": "ob",
       "legacy_id": 53662,
-      "revision": "15e736b14ee10b99accde44007e594941b545088"
+      "revision": "4fe74527e3a406ad8167103e2ad33c4cf053caf1"
     }
   ],
   "title": "Detecting Soft Skills in ML Engineering Roles CVs",

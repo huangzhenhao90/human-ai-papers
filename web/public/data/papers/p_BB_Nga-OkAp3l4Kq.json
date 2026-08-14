@@ -1,0 +1,58 @@
+{
+  "abstract": "Deployed foundation models are often not static systems, with providers able to modify system behavior through fine-tuning, classifier updates, system prompt revisions, retrieval changes, and routing changes. These updates can be made silently -- that is, without public disclosure, a version increment, or re-evaluation. Such silent updates challenge a core assumption behind current AI governance frameworks that an externally verifiable chain of custody links the model referred to in evaluation results or a system card to the model served to users. In this paper, we examine post-deployment disclosure practices across first-party API providers and inference hosts to establish the extent to which a chain of custody exists in practice. We find that providers commonly publish substantial safety documentation, including quantitative evaluations and version-specific reports, but no provider in our sample published information allowing an external party to verify that the artifact being served is the same one referred to in this documentation. We introduce the Silent Updates Scorecard, a public instrument for measuring post-deployment disclosure practices across providers and hosts, and preliminary results for a sample of nine first-party API providers and seven third-party inference hosts. We also propose a Three-Part Behavioral Trigger System for determining when post-deployment modifications to a system motivate disclosure or re-evaluation obligations.",
+  "ai_type_tags": [
+    "AI治理",
+    "可解释 AI",
+    "GenAI",
+    "LLM"
+  ],
+  "arxiv_id": "2608.11803",
+  "authors": [
+    "Sophia Abraham",
+    "Ben Bucknall"
+  ],
+  "authors_full": [
+    {
+      "name": "Sophia Abraham"
+    },
+    {
+      "name": "Ben Bucknall"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心议题为基础模型部署后透明度与AI治理",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究基础模型部署后静默更新问题（微调、分类器更新、系统提示修改等），发现API提供商和推理平台虽发布安全文档与版本报告，但无一允许外部验证所服务模型与文档所述一致。提出Silent Updates Scorecard（对9家API提供商和7家第三方推理平台进行评分）以及三段式行为触发系统，用于判定何时部署后修改应触发披露或重新评估义务。",
+      "topic_tags": [
+        "伦理",
+        "信任",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-12",
+  "doi": null,
+  "id": "p_BB_Nga-OkAp3l4Kq",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2608.11803v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 55247,
+      "revision": "4fe74527e3a406ad8167103e2ad33c4cf053caf1"
+    }
+  ],
+  "title": "Silent Updates: Measuring and Closing the Post-Deployment Disclosure Gap",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
+  "url": "https://arxiv.org/abs/2608.11803v1",
+  "volume": null,
+  "year": 2026
+}

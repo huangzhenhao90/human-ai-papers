@@ -1,5 +1,376 @@
 [
   {
+    "abstract": "Importance Suicide is the leading cause of death among active-duty US Army soldiers. Evidence-based preventive interventions exist but need to be targeted to be cost-effective. Objectives To develop machine learning models using administrative data available during periodic health assessments (PHAs) to determine eligibility for a remote group dialectical behavior therapy-based skills training intervention for soldiers with elevated risk of suicide or nonfatal suicide attempt. Design, Setting, and Participants From regular US Army soldier PHAs completed from 2015 to 2019, separate 70% training samples were created for suicides and SAs. Each training sample contained all cases and a stratified equal-probability sample of 10 times as many controls, with inverse-probability of selection weights applied to controls. Model performance was evaluated in the remaining 30% test sample. Data analysis was conducted September 2025 through January 2026. Main Outcomes and Measures Suicides were recorded in the National Death Index for soldiers either still in or out of active service. SAs were recorded in US Army records only for soldiers still in active service. A 24-month risk horizon was used because successive PHAs, though designed to occur annually, are sometimes separated by this much time. A loss to follow-up weight was used in the SA model to adjust for leaving service within 24 months. Results PHA data were available from 668 684 regular US Army soldiers. A total of 1 932 243 PHAs (including 85.5% by male soldiers, 46.7% by soldiers aged 28 years or older, and 58.1% by married soldiers) completed during the 2015 to 2019 period were included in analyses. Over 24 months, suicide prevalence was 66.7 per 100 000 (SE = 3.6) and SA prevalence was 704.1 per 100 000 (SE = 14.7) adjusted for loss to follow-up. Test sample area under the receiver operating characteristic curve (AUROC) for suicide was 0.72 (SE = 0.17), with Integrated Calibration Index (ICI) of 0.0003 and Brier score of 0.0007. Test sample AUROC for SA was 0.81 (SE = 0.02), with ICI of 0.0014 and Brier score of 0.0070. Suicide prevalence was meaningfully elevated (at least twice that expected by chance) only in the 5% of PHAs with highest predicted risk (sensitivity = 18.6%; SE = 2.0%). SA risk was elevated only in the 10% of PHAs with highest predicted risk (sensitivity = 46.5%; SE = 1.0%). Predicted probabilities of suicide and SA were correlated (Pearson r = 0.29; t = 233.8; P &amp;amp;lt; .001). Overall, 11.9% of PHAs revealed US Army soldiers at elevated risk of either suicide or SA, and 3.1% were at elevated risk of both outcomes. Conclusions and Relevance Results of this prognostic study suggest that as suicides and SAs have distinct predictors, an attempt to optimize resource allocation will require thoughtful postintervention considerations of costs and benefits of interventions to optimize net benefit.",
+    "ai_reason": "机器学习模型是预测核心方法，自杀/自伤行为是核心精神健康结局，模型在30%测试样本中验证，AUROC 0.72-0.81。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Emily R. Edwards",
+      "Shelby Borowski",
+      "Matthew K. Nock",
+      "David M. Benedek",
+      "Kate H. Bentley",
+      "Joseph Geraci",
+      "Sarah M. Gildea",
+      "Marianne Goodman",
+      "Amit Gupta",
+      "Chris J. Kennedy"
+    ],
+    "authors_full": [
+      {
+        "name": "Emily R. Edwards"
+      },
+      {
+        "name": "Shelby Borowski"
+      },
+      {
+        "name": "Matthew K. Nock"
+      },
+      {
+        "name": "David M. Benedek"
+      },
+      {
+        "name": "Kate H. Bentley"
+      },
+      {
+        "name": "Joseph Geraci"
+      },
+      {
+        "name": "Sarah M. Gildea"
+      },
+      {
+        "name": "Marianne Goodman"
+      },
+      {
+        "name": "Amit Gupta"
+      },
+      {
+        "name": "Chris J. Kennedy"
+      },
+      {
+        "name": "Andrew J. King"
+      },
+      {
+        "name": "Evan M. Kleiman"
+      },
+      {
+        "name": "Howard Liu"
+      },
+      {
+        "name": "Alex Luedtke"
+      },
+      {
+        "name": "Sarah Maggio"
+      },
+      {
+        "name": "James A. Naifeh"
+      },
+      {
+        "name": "Thomas H. Nassif"
+      },
+      {
+        "name": "Chris Paine"
+      },
+      {
+        "name": "Nancy A. Sampson"
+      },
+      {
+        "name": "Nur Hani Zainal"
+      },
+      {
+        "name": "James Wagner"
+      },
+      {
+        "name": "Murray B. Stein"
+      },
+      {
+        "name": "Vincent F. Capaldi"
+      },
+      {
+        "name": "Robert J. Ursano"
+      },
+      {
+        "name": "Ronald C. Kessler"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "机器学习模型是预测核心方法，自杀/自伤行为是核心精神健康结局，模型在30%测试样本中验证，AUROC 0.72-0.81。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "利用行政健康数据训练机器学习模型，在668684名士兵中区分自杀与非自杀自伤风险，24个月风险预测AUROC达0.72-0.81。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "psychosis_schizophrenia",
+        "risk_prediction",
+        "screening_assessment",
+        "adults",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "external",
+    "date": "2026-08-12",
+    "doi": "10.1001/jamapsychiatry.2026.2410",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W7202301592",
+    "journal": "JAMA Psychiatry",
+    "mh_profile": {
+      "ai_reason": "机器学习模型是预测核心方法，自杀/自伤行为是核心精神健康结局，模型在30%测试样本中验证，AUROC 0.72-0.81。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "risk_prediction",
+          "screening_assessment"
+        ],
+        "conditions": [
+          "suicide_self_harm",
+          "psychosis_schizophrenia"
+        ],
+        "populations": [
+          "adults",
+          "clinical_patients"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "24个月内自杀(66.7/100000)和非致死性自杀未遂(704.1/100000)发生率",
+        "sample": "668684名美军士兵，1932243次定期健康评估数据",
+        "study_design": "回顾性队列预测模型开发与验证，70%训练/30%测试划分"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "suicide"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "利用行政健康数据训练机器学习模型，在668684名士兵中区分自杀与非自杀自伤风险，24个月风险预测AUROC达0.72-0.81。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "psychosis_schizophrenia",
+        "risk_prediction",
+        "screening_assessment",
+        "adults",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7202301592",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2495708506",
+      "ingest_mode": "full",
+      "key": "jama_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Predicting US Army Soldier Suicide-Related Behaviors at the Time of Periodic Health Assessments",
+    "title_zh": "预测美军士兵定期健康评估时的自杀相关行为",
+    "tldr": "利用行政健康数据训练机器学习模型，在668684名士兵中区分自杀与非自杀自伤风险，24个月风险预测AUROC达0.72-0.81。",
+    "topic_tags": [
+      "suicide_self_harm",
+      "psychosis_schizophrenia",
+      "risk_prediction",
+      "screening_assessment",
+      "adults",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.1001/jamapsychiatry.2026.2410",
+    "year": 2026
+  },
+  {
+    "abstract": "Natural language processing (NLP) enables the use of electronic health records (EHRs) for psychosis research in real-world settings and develops precision psychiatry. We conducted a PRISMA-guided systematic review of five databases from inception to 9 October 2025 and identified 62 eligible studies with over 1 million participants. Most studies (62.9%) used data from the UK Clinical Record Interactive Search (CRIS) platform. Methodologically, 37.1% applied dictionary-based NLP, 53.2% representation-based machine learning, 9.7% transformer-based NLP, and none applied generative large language models (LLMs). Clinically, 74.2% targeted symptom/information extraction, 19.2% classification, and 16.1% risk prediction. However, 56.5% studies self-reported limited generalizability, 32.3% reported data quality/collection challenges, and only two studies performed external validation. Despite promising proof-of-concept performance, evidence of real-world clinical utility remains limited. Current work remains concentrated on retrospective phenotyping within a single healthcare ecosystem. We highlight priorities for multi-system validation, temporal trajectory modeling, and responsible LLMs deployment in psychosis EHRs research.",
+    "ai_reason": "NLP是核心方法，系统综述62项研究聚焦精神分裂症EHR表型提取、分类和风险预测，属于精神健康评估/辅助诊断应用。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "nlp"
+    ],
+    "authors": [
+      "Rachel Hei Lam Ho",
+      "Harry Kam Hung Tsui",
+      "Sophia Vann-Adibe",
+      "Wing Yan Vivian Tsang",
+      "Huiquan Zhou",
+      "Hon‐Cheong So",
+      "Qingpeng Zhang",
+      "Sherry Kit Wa Chan"
+    ],
+    "authors_full": [
+      {
+        "name": "Rachel Hei Lam Ho"
+      },
+      {
+        "name": "Harry Kam Hung Tsui"
+      },
+      {
+        "name": "Sophia Vann-Adibe"
+      },
+      {
+        "name": "Wing Yan Vivian Tsang"
+      },
+      {
+        "name": "Huiquan Zhou"
+      },
+      {
+        "name": "Hon‐Cheong So"
+      },
+      {
+        "name": "Qingpeng Zhang"
+      },
+      {
+        "name": "Sherry Kit Wa Chan"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "NLP是核心方法，系统综述62项研究聚焦精神分裂症EHR表型提取、分类和风险预测，属于精神健康评估/辅助诊断应用。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "nlp"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "systematic_review",
+      "risk_tags": [
+        "bias_fairness",
+        "transparency_accountability"
+      ],
+      "tldr": "系统综述62项研究，发现NLP在精神病EHR中主要用于症状提取(74.2%)和风险预测(16.1%)，但仅两篇进行外部验证，临床实用性证据有限。",
+      "topic_tags": [
+        "psychosis_schizophrenia",
+        "screening_assessment",
+        "clinical_decision_support"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-08-12",
+    "doi": "10.1038/s41746-026-03125-z",
+    "domain_score": 4,
+    "evidence_stage": "systematic_review",
+    "ground_truth_quality": "unknown",
+    "id": "W7202187684",
+    "journal": "npj Digital Medicine",
+    "mh_profile": {
+      "ai_reason": "NLP是核心方法，系统综述62项研究聚焦精神分裂症EHR表型提取、分类和风险预测，属于精神健康评估/辅助诊断应用。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "nlp"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "nlp"
+        ],
+        "applications": [
+          "screening_assessment",
+          "clinical_decision_support"
+        ],
+        "conditions": [
+          "psychosis_schizophrenia"
+        ],
+        "populations": [],
+        "risks": [
+          "bias_fairness",
+          "transparency_accountability"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "方法学分类(词典法37.1%、表征学习53.2%、Transformer 9.7%、无LLM)；56.5%自报外部可推广性有限",
+        "sample": "62项研究，100余万参与者",
+        "study_design": "PRISMA指南系统综述，检索5个数据库至2025年10月"
+      },
+      "evidence_stage": "systematic_review",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning",
+          "large language models",
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatry",
+          "psychosis"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "transparency_accountability"
+      ],
+      "safety_evaluated": false,
+      "tldr": "系统综述62项研究，发现NLP在精神病EHR中主要用于症状提取(74.2%)和风险预测(16.1%)，但仅两篇进行外部验证，临床实用性证据有限。",
+      "topic_tags": [
+        "psychosis_schizophrenia",
+        "screening_assessment",
+        "clinical_decision_support"
+      ]
+    },
+    "openalex_id": "W7202187684",
+    "pdf_url": "https://www.nature.com/articles/s41746-026-03125-z_reference.pdf",
+    "real_world_deployment": false,
+    "risk_tags": [
+      "bias_fairness",
+      "transparency_accountability"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4210195431",
+      "ingest_mode": "query",
+      "key": "npj_digital_medicine",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "Natural language processing application in electronic health records studies for psychosis: a systematic review",
+    "title_zh": "自然语言处理在精神疾病电子健康记录研究中的应用：系统综述",
+    "tldr": "系统综述62项研究，发现NLP在精神病EHR中主要用于症状提取(74.2%)和风险预测(16.1%)，但仅两篇进行外部验证，临床实用性证据有限。",
+    "topic_tags": [
+      "psychosis_schizophrenia",
+      "screening_assessment",
+      "clinical_decision_support"
+    ],
+    "url": "https://doi.org/10.1038/s41746-026-03125-z",
+    "year": 2026
+  },
+  {
     "abstract": "Abstract Background Digital mental health interventions using conversational AI agents are increasingly being adopted as scalable alternatives to traditional care. Engagement is typically measured using volume-based metrics (eg, session counts and total time on a platform). However, these metrics overlook engagement patterns over time, which are not well understood in relation to mental health outcomes. Objective The purpose of this cross-sectional study was to explore how different patterns of engagement with Mental’s AI conversational agent relate to self-reported depression and anxiety. We aimed to (1) identify and describe engagement profiles based on patterns of interaction depth and temporal consistency, (2) compare depression and anxiety symptoms across engagement profiles, and (3) explore whether engagement profiles were associated with mental health symptom severity. Methods This cross-sectional observational study linked survey responses to back-end app usage data from 112 Mental app users who completed at least 5 sessions with the conversational AI agent. Engagement profiles were derived using median splits on interaction depth (α parameter) and temporal consistency (Gini coefficient). Depression was assessed using the Patient Health Questionnaire-8 (PHQ-8), and anxiety was assessed using the Generalized Anxiety Disorder-7 (GAD-7). One-way ANOVAs compared symptoms across profiles. Linear regression models examined associations between profiles and symptom severity, adjusting for age, gender, and total duration of use. Results We identified 4 distinct engagement profiles based on interaction depth and temporal consistency: extended and episodic (profile 1; n=25), extended and consistent (profile 2; n=31), brief and episodic (profile 3; n=31), and brief and consistent (profile 4; n=25). Users in profile 1 (extended and episodic) reported the lowest anxiety (mean 2.68, SD 2.43) and depression (mean 3.48, SD 4.06), while profile 4 (brief and consistent) reported the highest anxiety (mean 10.00, SD 7.03) and depression (mean 10.60, SD 8.75). Significant differences were observed for anxiety ( F 3,108 =8.07, P &lt;.001, η ²=0.18) and depression ( F 3,108 =5.47, P =.002, η ²=0.13). In adjusted models, engagement profile was significantly associated with depression ( R ²=0.16, F 7,104 =2.87, and P =.009) and anxiety ( R ²=0.21, F 7,104 =4.04, and P &lt;.001). Compared to profile 1, users in profiles 2 and 4 reported significantly higher depression and anxiety. Profile 3 differed from profile 1 for anxiety only (β=3.11, P =.047). Conclusions Users with longer, clustered sessions reported the lowest symptoms, whereas those with brief, evenly distributed use reported the highest symptom levels, suggesting that the structure of engagement may be associated with symptom levels in ways that aggregate usage metrics do not capture. These findings are preliminary and hypothesis-generating, highlighting the importance of considering how engagement unfolds over time and suggesting that pattern-based measurement may improve the understanding of user outcomes in AI-powered mental health care. Future work should examine the directionality of these associations and whether distinct engagement patterns reflect meaningfully different modes of interacting with AI-powered care.",
     "ai_reason": "研究AI对话式智能体在心理健康中的参与模式，使用PHQ-8和GAD-7评估抑郁和焦虑症状，关联真实应用数据与自我报告量表。",
     "ai_score": 5,

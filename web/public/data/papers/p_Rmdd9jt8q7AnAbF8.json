@@ -1,0 +1,70 @@
+{
+  "abstract": "AI assistants are typically reactive, relying on users to initiate interactions. Proactive assistants go beyond this paradigm by autonomously initiating interactions based on users' activity contexts. However, appropriate interaction timing is user-specific and difficult to determine in advance, while online feedback offers valuable signals for personalization. Direct feedback-driven adaptation is therefore appealing, but remains challenging due to sparse interaction-worthy moments scattered across fine-grained user states. To address the issues, we propose Evidence-driven Online Preference Adaptation (EOPA), which grounds a user's interaction-timing preferences in measurable contextual evidence through two evidence carriers: temporal preference anchors and evidence-bearing activity prototypes. At each polling step, EOPA derives temporal and activity evidence from the carriers through user-prior-smoothed evidence estimation and uncertainty-guided evidence scaling, and adaptively fuses the evidence for interaction-or-silence decisions. When interaction is selected, an LLM uses high-quality historical responses as demonstrations to generate a context-aware response that better reflects user preferences. EOPA updates its evidence carriers and decision parameters from received online feedback without LLM-based reasoning or retraining. Extensive experiments on a ProPerSim-based benchmark show that EOPA improves the interaction-timing F1 score by 19.80 points over the strongest baseline in our experiments, substantially reduces inference latency for both silence and interaction steps, and lowers the average daily adaptation time from 11.41 to 0.39 seconds.",
+  "ai_type_tags": [],
+  "arxiv_id": "2608.04416",
+  "authors": [
+    "Yufeng Wang",
+    "Wei Zhang",
+    "Zhiquan Wen",
+    "Jinwu Hu",
+    "Linhui Xiao"
+  ],
+  "authors_full": [
+    {
+      "name": "Yufeng Wang"
+    },
+    {
+      "name": "Wei Zhang"
+    },
+    {
+      "name": "Zhiquan Wen"
+    },
+    {
+      "name": "Jinwu Hu"
+    },
+    {
+      "name": "Linhui Xiao"
+    },
+    {
+      "name": "Tianlu Pan"
+    },
+    {
+      "name": "Qingfang Zheng"
+    },
+    {
+      "name": "Mingkui Tan"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心研究AI助手主动交互的用户偏好个性化",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-05",
+  "doi": "10.48550/arxiv.2608.04416",
+  "id": "p_Rmdd9jt8q7AnAbF8",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2608.04416",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15694,
+      "revision": "3acad64853732ad3b581cd58880ab37906ae1802"
+    }
+  ],
+  "title": "Preference-Driven Online Adaptation for Personalized Interaction Initiation in Proactive AI Assistants",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
+  "url": "https://arxiv.org/abs/2608.04416",
+  "volume": null,
+  "year": 2026
+}

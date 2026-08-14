@@ -1,0 +1,71 @@
+{
+  "abstract": "Modern recommender systems treat observed actions as reliable proxies for user preferences, yet interactions often reflect exploration or comparison rather than stable preference expression. As interfaces evolve from static layouts toward generative UIs and immersive extended reality (XR), the need for deeper, modality-agnostic user understanding grows: these adaptive environments must decide not only what to present but where, when, how prominently, and most importantly why a user acts. We propose an Inverse Theory of Mind (IToM) pipeline that reasons backward from observed interactions to infer the beliefs, preferences, and decision-making traits that explain behavior. The pipeline reconstructs each user's decision context, including what was chosen and what alternatives were available, applies LLM-driven counterfactual reasoning to produce evidence-grounded natural-language belief statements, and synthesizes these beliefs through multi-hypothesis abductive inference into a structured user persona. We evaluate on the OPeRA dataset against ground-truth personality assessments, attitudinal surveys, and interview-based personas across four tasks: next action prediction, shopping attitude alignment, Big Five personality inference, and held-out category prediction. Results show that inferred personas match or exceed ground-truth personas and that multi-hypothesis reasoning is essential for accurate personality prediction. We further demonstrate cross-modal transferability with a persona-driven spatial banking application on VisionOS.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI推荐",
+    "多模态"
+  ],
+  "arxiv_id": "2608.11354",
+  "authors": [
+    "Mengyu Chen",
+    "Feiyu Lu",
+    "Chun-Fu Chen",
+    "Lucas Vinh Tran",
+    "Jay Katukuri"
+  ],
+  "authors_full": [
+    {
+      "name": "Mengyu Chen"
+    },
+    {
+      "name": "Feiyu Lu"
+    },
+    {
+      "name": "Chun-Fu Chen"
+    },
+    {
+      "name": "Lucas Vinh Tran"
+    },
+    {
+      "name": "Jay Katukuri"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用户心智建模推荐系统，涉用户行为推断",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对推荐系统中观察行为未必反映稳定偏好的问题，提出逆向心智理论(IToM)管线：从用户交互反推解释行为的信念、偏好与决策特征。重建决策上下文后，LLM驱动反事实推理生成基于证据的自然语言信念陈述，再经多假设溯因推理合成为结构化用户画像。在OPeRA数据集的下一动作预测、态度对齐、大五人格推断等四项任务中匹配或超越真实画像，验证多假设推理必要性，并展示向生成式UI/XR的跨模态迁移能力。",
+      "topic_tags": [
+        "推荐系统",
+        "用户画像",
+        "个性化",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-11",
+  "doi": "10.1145/3773078.3831787",
+  "id": "p_odZ94g8T4MGCCJSG",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2608.11354v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 20286,
+      "revision": "3acad64853732ad3b581cd58880ab37906ae1802"
+    }
+  ],
+  "title": "Inverse Theory of Mind Modeling for Content Recommendation: From Web Browsing to Dynamic Intelligent Interfaces",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
+  "url": "https://arxiv.org/abs/2608.11354v1",
+  "volume": null,
+  "year": 2026
+}

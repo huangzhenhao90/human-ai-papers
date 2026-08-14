@@ -1,0 +1,55 @@
+{
+  "abstract": "Financial institutions are delegating consequential decisions to agentic AI systems that decompose goals, coordinate models and tools, and act with little oversight. Yet agentic AI governance in FinTech is under-investigated. We argue the binding governance constraint is not capability but verifiability. We define the Verifiability Gap as the shortfall between the verification delegated authority demands and the explainability and reproducibility retained after a decision. It is indexed to a verifier, evidentiary standard, and audit lag. We develop a multilevel governance theory for agentic AI and test its mechanisms in three studies over nine model versions, from a three-billion-parameter local model to a commercial frontier system. Study 1 shows that provider releases alter historical financial actions, and that the controls replay needs belong to the provider: the frontier model rejects temperature, top_p and top_k outright and exposes no random seed. Under the tightest controls each endpoint allows, a local model reproduced 320 of 320 executions, hosted models 319 of 320 and 959 of 960. Study 2 shows that orchestration is a latent policy layer. Architecture changes final actions, and no execution record repeated in any configuration at any scale. The frontier model reproduces its own actions more often than the local ones, its record no better, and loses a comparable share of its differentiation. Capability buys a higher starting point, not auditability. Study 3 shows two deterministic credit-model versions each reproduce their current action perfectly, yet the current cannot recover a historical one. We conceptualize reproducibility as a governance profile, not a scalar, yielding evidence-contingent delegation: authority is defensible only while retained evidence substantiates its exercise. Beyond finance, the framework extends to other high-stakes domains requiring auditability.",
+  "ai_type_tags": [
+    "LLM",
+    "AI治理",
+    "可解释AI",
+    "算法决策"
+  ],
+  "arxiv_id": "2608.11344",
+  "authors": [
+    "Henry Han"
+  ],
+  "authors_full": [
+    {
+      "name": "Henry Han"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI治理为核心，FinTech管理议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对金融科技中代理型AI系统治理不足的问题，提出\"可验证性差距\"概念并构建多层次治理理论。通过三组研究、覆盖从30亿参数本地模型到商业前沿系统的九个版本，发现编排是隐性策略层、架构变更改变最终行为且不可复现，能力提升仅提高起点而非可审计性。强调可验证性而非能力才是治理的关键约束。",
+      "topic_tags": [
+        "AI治理",
+        "伦理",
+        "信任",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-11",
+  "doi": null,
+  "id": "p_N51FmfF3mZ7vkrlw",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2608.11344v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 55240,
+      "revision": "4fe74527e3a406ad8167103e2ad33c4cf053caf1"
+    }
+  ],
+  "title": "Governing Agentic AI in FinTech",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
+  "url": "https://arxiv.org/abs/2608.11344v1",
+  "volume": null,
+  "year": 2026
+}

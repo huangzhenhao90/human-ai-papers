@@ -1,0 +1,61 @@
+{
+  "abstract": "Large language models are being extensively used to simulate individual user behavior, yet faithfully representing a population requires capturing the systematic variation in values, beliefs, and cultural norms that distinguish one group from another. We introduce Population Aligned Language Models (PALMs), a suite of models each aligned to specific populations, covering five countries: USA, India, Brazil, France and Italy. PALMs are created by synthesizing rationales grounded in psychological and cultural constructs and using these as latent supervision during preference tuning for population-specific alignment. Evaluated across four dimensions: personality, values and beliefs, cultural norms, and morality, PALMs consistently outperform baselines, including culture-specialized models, achieving an average of 8.59% relative improvement over the best baseline across all five populations. Notably, construct-grounded rationales outperform both demographic prompting and survey-based fine-tuning, suggesting that grounding preference learning in psychology and culture provides a richer inductive signal than surface-level response distributions. We further demonstrate strong generalization to downstream applications with- out task-specific supervision: outperforming best baselines by 5.19% in personalized reward modeling, 6.34% in population simulation, and showing strong transfer to social reasoning tasks. Datasets and code are available at: https://github.com/limenlp/PALMs.",
+  "ai_type_tags": [],
+  "arxiv_id": "2608.01458",
+  "authors": [
+    "Priyanka Dey",
+    "Brihi Joshi",
+    "Preyashi Poddar",
+    "Jieyu Zhao",
+    "Emilio Ferrara"
+  ],
+  "authors_full": [
+    {
+      "name": "Priyanka Dey"
+    },
+    {
+      "name": "Brihi Joshi"
+    },
+    {
+      "name": "Preyashi Poddar"
+    },
+    {
+      "name": "Jieyu Zhao"
+    },
+    {
+      "name": "Emilio Ferrara"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM模拟人群偏好，涉用户行为模拟方法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-02",
+  "doi": "10.48550/arxiv.2608.01458",
+  "id": "p_BaPgtq2BXph89Qfx",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2608.01458",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15690,
+      "revision": "3acad64853732ad3b581cd58880ab37906ae1802"
+    }
+  ],
+  "title": "PALMs: Using Multi Construct-Grounded Rationales for Modeling Population Preferences in LLMs",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
+  "url": "https://arxiv.org/abs/2608.01458",
+  "volume": null,
+  "year": 2026
+}

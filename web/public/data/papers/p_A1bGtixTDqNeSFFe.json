@@ -1,0 +1,82 @@
+{
+  "abstract": "Mental health professionals have raised concerns about risks of psychological harm from interaction with large language models (LLMs), including \"delusional spirals\" in which concerning human and LLM behaviors reinforce each other over time. With growing public use of LLM-powered chatbots, there is an urgent need to build evaluations grounded in real-world episodes of psychological harm experienced by users. We developed DelusionEval, an evaluation protocol that tests a model's tendencies to exhibit behaviors linked to promoting user delusions. We prompt each model with 589 unique conversation histories from 18 participants, comprising 12,591 messages from users who experienced delusions and psychological harm. We find that the tendency of an evaluated LLM to exhibit delusion-linked behavior does not reliably correlate with model size, release date, or the presence of test-time reasoning. However, extending the context of prior messages substantially increases rates of delusion-linked behaviors, providing evidence for the importance of context in LLM safety evaluation. For example, the rate of failing to discourage self-harm when the user expresses suicidal ideation increases from 30.0% to 41.1% when an additional 350 messages are prepended to the conversation history. All model families (e.g., GPT, Claude) exhibit substantial rates of delusion-linked behaviors. Within families, later, larger, or higher-reasoning models are not uniformly better across all behavior categories. Our results raise concerns regarding the potential psychological impact of LLMs and the need for more rigorous studies of real-world human-AI interaction.",
+  "ai_type_tags": [],
+  "arxiv_id": "2608.05004",
+  "authors": [
+    "Jared Moore",
+    "Andrea Mock",
+    "Yifan Mai",
+    "Jacy Reese Anthis",
+    "Ryan Louie"
+  ],
+  "authors_full": [
+    {
+      "name": "Jared Moore"
+    },
+    {
+      "name": "Andrea Mock"
+    },
+    {
+      "name": "Yifan Mai"
+    },
+    {
+      "name": "Jacy Reese Anthis"
+    },
+    {
+      "name": "Ryan Louie"
+    },
+    {
+      "name": "William Agnew"
+    },
+    {
+      "name": "Ashish Mehta"
+    },
+    {
+      "name": "Kevin Klyman"
+    },
+    {
+      "name": "Percy Liang"
+    },
+    {
+      "name": "Nick Haber"
+    },
+    {
+      "name": "Eric Lin"
+    },
+    {
+      "name": "Desmond C. Ong"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM评估为主,含18名用户真实对话数据",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-05",
+  "doi": "10.48550/arxiv.2608.05004",
+  "id": "p_A1bGtixTDqNeSFFe",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2608.05004",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15688,
+      "revision": "3acad64853732ad3b581cd58880ab37906ae1802"
+    }
+  ],
+  "title": "DelusionEval: Measuring Delusion-Linked Behaviors in AI Chatbots",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
+  "url": "https://arxiv.org/abs/2608.05004",
+  "volume": null,
+  "year": 2026
+}
