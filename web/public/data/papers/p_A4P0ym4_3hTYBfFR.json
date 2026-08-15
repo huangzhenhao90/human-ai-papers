@@ -1,6 +1,10 @@
 {
   "abstract": "Bias evaluations often move too quickly from evidence that a model encodes a social association to claims that the same association will alter consequential decisions. We test whether that inference is warranted using Chilean surnames as controlled socioeconomic probes. We evaluate eight frozen model-provider cells on 1,032 prompts each, yielding 8,256 verified primary responses. The design separates forced latent association from matched consequential decisions across academic selection, professional hiring, research fellowship selection, and legal-aid intake. Elite-coded surnames received higher forced high-status probability mass than common surnames in seven of eight models and higher mass than rare-frequency controls in all eight. Yet elite-minus-common decision effects were close to zero for most systems. Five models were statistically equivalent within a predeclared (Plus-Minus)0.10 standard-deviation margin, while the remaining three were imprecise or borderline, with no consistent elite advantage. Association strength did not reliably predict decision leakage across models (r = 0.201, p = 0.633) or across frozen surname-pair-by-model cells (r = 0.065, p = 0.565). The central result is a measurement dissociation: latent social association and consequential treatment are empirically distinct constructs. Evaluations should measure the transition from association to action directly.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "算法决策",
+    "可解释 AI"
+  ],
   "arxiv_id": "2608.10089",
   "authors": [
     "Abdullah X"
@@ -15,8 +19,13 @@
       "ai_reason": "LLM偏见对招聘/学术等决策影响，强OB关联",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "检验LLM潜在社会联想是否转化为决策歧视。以智利姓氏为社会经济探针，测试8个模型×1032提示×4类场景：精英姓氏在强制联想任务中获得更高地位概率（7/8模型显著），但在学术选拔、招聘、奖学金、法律援助等决策中差异接近零，五模型在±0.10标准差内无显著效应。联想强度与决策泄漏无可靠相关，揭示二者是可分离构念。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "决策",
+        "招聘"
+      ]
     }
   },
   "channels": [
@@ -33,7 +42,7 @@
     {
       "channel": "ob",
       "legacy_id": 53659,
-      "revision": "4fe74527e3a406ad8167103e2ad33c4cf053caf1"
+      "revision": "10dee9f5a7eb51a33722c7d6640f5cc1eeb57722"
     }
   ],
   "title": "Status Association Does Not Reliably Predict Decision Leakage",

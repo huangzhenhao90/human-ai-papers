@@ -1,5 +1,330 @@
 [
   {
+    "abstract": "Abstract Background Bipolar disorder (BD) features episodic shifts among mania, hypomania, depression, mixed states, and euthymia. Timely detection of mood transitions is difficult due to infrequent clinical touchpoints. Digital health technologies, including wearables and smartphones, offer a unique opportunity to passively and continuously monitor behavior and physiology that could reflect underlying mood dynamics in real-world settings. Objective This study aimed to systematically review passively collected digital markers for BD mood states, characterize devices/modalities and analytic approaches, appraise risk of bias, and identify design gaps and priorities for clinical translation. Methods Following the PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) guidelines, we searched MEDLINE, PsycINFO, Scopus, IEEE Xplore, and ACM Digital Library (February 16, 2026). We included peer-reviewed studies of adults with bipolar I disorder or bipolar II disorder (BDI or BDII) that measured passively collected markers and related them to depressive, manic, hypomanic, mixed, or euthymic states. Studies that relied exclusively on active measures (eg, lab tests and ecological momentary assessment) were excluded. Two independent reviewers screened studies, extracted study characteristics and results, conducted narrative synthesis, and assessed risk of bias. Results Of 23,727 records, 57 studies met criteria. Most enrolled ≤50 participants (n=34, 60%) and monitored ≤365 days (n=46, 81%); 11 out of 57 studies (19%) collected data only in the clinic. Eight digital marker domains emerged: physical activity, heart rate (HR), electrodermal activity (EDA), geolocation, smartphone use, light exposure, sleep, and speech. Consistent patterns linked depression to reduced mobility and social interaction, later/variable sleep, and lower daytime light; mania and hypomania were associated with higher and more variable activity, shorter/advanced sleep, and increased communication. Circadian features derived from sleep/activity repeatedly aided prediction. EDA tended to be lower in depression; HR variability findings were mixed across settings and methods. Keyboard and speech features (eg, timing and prosody) showed associations and performed well in classification models. Twenty-one studies used machine learning; several reported strong performance for episode prediction/classification. However, external validation was usually absent, samples were small, monitoring windows were often short relative to episode timescales, clinical labels were infrequent/misaligned, and missingness was rarely modeled despite likely informativeness. Conclusions Passive digital markers for BD show promise, with the most robust signals aligning with DSM-5 ( Diagnostic and Statistical Manual of Mental Disorders [Fifth Edition]) diagnostic features (sleep-wake patterns, activity, socialization, geolocation, and speech). To move from promise to practice, future studies should adopt longer within-subject monitoring, align label cadence with sensing granularity, standardize features/reporting, preregister analyses, externally validate models, minimize data collection to protect privacy, and expand physiological measurement beyond HR and EDA. These steps are essential to develop reliable, actionable tools for earlier detection and management of BD mood episodes.",
+    "ai_reason": "系统综述被动数字标记监测双相情感障碍，机器学习分类模型为21项研究核心方法，直接服务临床情绪状态预测。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "machine_learning",
+      "digital_phenotyping"
+    ],
+    "authors": [
+      "Thomas P. Kutcher",
+      "Isha Chakraborty",
+      "Kristin M. Kostick",
+      "Akane Sano",
+      "Nidal Moukaddam",
+      "Jeffrey A. Herron",
+      "Wayne K. Goodman",
+      "Sameer A. Sheth",
+      "Ashutosh Sabharwal",
+      "Nicole R. Provenza"
+    ],
+    "authors_full": [
+      {
+        "name": "Thomas P. Kutcher"
+      },
+      {
+        "name": "Isha Chakraborty"
+      },
+      {
+        "name": "Kristin M. Kostick"
+      },
+      {
+        "name": "Akane Sano"
+      },
+      {
+        "name": "Nidal Moukaddam"
+      },
+      {
+        "name": "Jeffrey A. Herron"
+      },
+      {
+        "name": "Wayne K. Goodman"
+      },
+      {
+        "name": "Sameer A. Sheth"
+      },
+      {
+        "name": "Ashutosh Sabharwal"
+      },
+      {
+        "name": "Nicole R. Provenza"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "系统综述被动数字标记监测双相情感障碍，机器学习分类模型为21项研究核心方法，直接服务临床情绪状态预测。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning",
+        "digital_phenotyping"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "systematic_review",
+      "risk_tags": [
+        "privacy_security"
+      ],
+      "tldr": "该系统综述纳入57项研究，发现被动数字标记（活动、睡眠、语音等）与双相障碍情绪状态关联显著，机器学习模型表现良好但外部验证不足。",
+      "topic_tags": [
+        "bipolar",
+        "monitoring",
+        "clinical_patients",
+        "adults"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-08-13",
+    "doi": "10.2196/94819",
+    "domain_score": 5,
+    "evidence_stage": "systematic_review",
+    "ground_truth_quality": "self_report",
+    "id": "W7202383926",
+    "journal": "JMIR Mental Health",
+    "mh_profile": {
+      "ai_reason": "系统综述被动数字标记监测双相情感障碍，机器学习分类模型为21项研究核心方法，直接服务临床情绪状态预测。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning",
+        "digital_phenotyping"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning",
+          "digital_phenotyping"
+        ],
+        "applications": [
+          "monitoring"
+        ],
+        "conditions": [
+          "bipolar"
+        ],
+        "populations": [
+          "clinical_patients",
+          "adults"
+        ],
+        "risks": [
+          "privacy_security"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "情绪状态关联分析、机器学习分类性能",
+        "sample": "57项研究，23,727条记录",
+        "study_design": "系统综述（PRISMA）"
+      },
+      "evidence_stage": "systematic_review",
+      "ground_truth_quality": "self_report",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "depression",
+          "depressive",
+          "bipolar"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "该系统综述纳入57项研究，发现被动数字标记（活动、睡眠、语音等）与双相障碍情绪状态关联显著，机器学习模型表现良好但外部验证不足。",
+      "topic_tags": [
+        "bipolar",
+        "monitoring",
+        "clinical_patients",
+        "adults"
+      ]
+    },
+    "openalex_id": "W7202383926",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "privacy_security"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2764449704",
+      "ingest_mode": "full",
+      "key": "jmir_mental_health",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Digital Markers for Passive Remote Monitoring of Bipolar Disorder: Systematic Review",
+    "title_zh": "双相情感障碍被动远程监测数字标记：系统综述",
+    "tldr": "该系统综述纳入57项研究，发现被动数字标记（活动、睡眠、语音等）与双相障碍情绪状态关联显著，机器学习模型表现良好但外部验证不足。",
+    "topic_tags": [
+      "bipolar",
+      "monitoring",
+      "clinical_patients",
+      "adults"
+    ],
+    "url": "https://doi.org/10.2196/94819",
+    "year": 2026
+  },
+  {
+    "abstract": "Abstract Background A growing body of literature leverages large language models (LLMs) to make mental health predictions. However, these models are prone to bias, and studies to validate their clinical utility are lacking. Objective This scoping review aims to uncover bias and clinical utility limitations stemming from the methodological design of LLM-based mental health predictive systems. In addition, it intends to document the level of self-reflection about bias and clinical challenges reported by authors in their own work. Methods This work follows the PRISMA-ScR (Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for Scoping Reviews) guidelines and was registered online. Eligible studies were original research articles in English published between 2019 and 2024, using LLMs to detect mental health conditions in nonsynthetic textual data. The search was conducted in 5 scientific databases (PubMed, Web of Science, IEEE Xplore, ACM Digital Library, and ACL Anthology) with queries associating keywords related to “Mental Health,” “Large Language Models,” and “Prediction.” We extracted both methodological information about the included studies and authors’ statements relevant to issues of bias and clinical utility. This extraction was based on a framework screening the entire pipeline of development of LLMs with applications in mental health: research design and selection, data collection, outcome definition, model development, and postdeployment considerations. Statistical description of the retrieved entities, as well as thematic coding, was performed for analysis. Results A total of 2472 articles were identified, of which 263 (10.6%) were assessed for eligibility, and 201 (8.1%) were included in the review. Included studies were mostly recent, indicating a growing interest in the use of LLMs for mental health predictions. Our analysis revealed that a majority of studies share similar methodological choices along their development pipeline: most of them focus on depressive disorders identified via processing user texts on social media, mainly with the use of nonspecialist LLMs derived from BERT (Bidirectional Encoder Representations from Transformers). Following previous works on these matters, we highlighted how these choices may hinder the clinical relevance and fairness of the envisioned systems. Similarly, we found that 164 (81.6%) studies mention themes related to bias and clinical utility; however, most of the discussion revolves around data-centered issues. Only 41 (20.4%) articles mention themes associated with at least 3 out of 5 pipeline steps, suggesting a limited appropriation of the notions of bias and clinical utility in such a sensitive context as mental health analysis. Conclusions Bias and clinical utility are lightly covered in the field of LLM-based mental health prediction research as of 2019‐2024. In-depth approaches involving interdisciplinary teams of clinicians and natural language processing specialists are needed to ensure technical soundness, clinical relevance, and fair outcomes for potential users.",
+    "ai_reason": "LLM在心理健康预测中的应用综述，LLM为研究核心对象，系统探讨偏见与临床效用局限。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai",
+      "nlp"
+    ],
+    "authors": [
+      "Clémentine Bleuze",
+      "Karën Fort",
+      "Vincent Martin",
+      "Aurélie Névéol"
+    ],
+    "authors_full": [
+      {
+        "name": "Clémentine Bleuze"
+      },
+      {
+        "name": "Karën Fort"
+      },
+      {
+        "name": "Vincent Martin"
+      },
+      {
+        "name": "Aurélie Névéol"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "LLM在心理健康预测中的应用综述，LLM为研究核心对象，系统探讨偏见与临床效用局限。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "systematic_review",
+      "risk_tags": [
+        "bias_fairness",
+        "overreliance"
+      ],
+      "tldr": "该综述纳入201项研究，发现81.6%提及偏见，但仅20.4%覆盖完整开发管线，LLM心理健康预测的临床相关性与公平性存在显著不足。",
+      "topic_tags": [
+        "transdiagnostic",
+        "risk_prediction",
+        "screening_assessment",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-08-13",
+    "doi": "10.2196/88082",
+    "domain_score": 5,
+    "evidence_stage": "systematic_review",
+    "ground_truth_quality": "unknown",
+    "id": "W7202359724",
+    "journal": "JMIR AI",
+    "mh_profile": {
+      "ai_reason": "LLM在心理健康预测中的应用综述，LLM为研究核心对象，系统探讨偏见与临床效用局限。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "nlp"
+        ],
+        "applications": [
+          "risk_prediction",
+          "screening_assessment"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": [
+          "bias_fairness",
+          "overreliance"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "方法学设计分析、偏见与临床效用主题编码",
+        "sample": "2472篇筛选，201篇纳入",
+        "study_design": "范围综述（PRISMA-ScR）"
+      },
+      "evidence_stage": "systematic_review",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language models",
+          "LLM",
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "depressive"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "overreliance"
+      ],
+      "safety_evaluated": false,
+      "tldr": "该综述纳入201项研究，发现81.6%提及偏见，但仅20.4%覆盖完整开发管线，LLM心理健康预测的临床相关性与公平性存在显著不足。",
+      "topic_tags": [
+        "transdiagnostic",
+        "risk_prediction",
+        "screening_assessment",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7202359724",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "bias_fairness",
+      "overreliance"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4387286577",
+      "ingest_mode": "query",
+      "key": "jmir_ai",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "Large Language Models for Mental Health Prediction: Scoping Review of Bias and Clinical Utility Documentation in 2019-2024",
+    "title_zh": "大语言模型用于心理健康预测：2019-2024年偏见与临床效用文档的范围综述",
+    "tldr": "该综述纳入201项研究，发现81.6%提及偏见，但仅20.4%覆盖完整开发管线，LLM心理健康预测的临床相关性与公平性存在显著不足。",
+    "topic_tags": [
+      "transdiagnostic",
+      "risk_prediction",
+      "screening_assessment",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.2196/88082",
+    "year": 2026
+  },
+  {
     "abstract": "Importance Suicide is the leading cause of death among active-duty US Army soldiers. Evidence-based preventive interventions exist but need to be targeted to be cost-effective. Objectives To develop machine learning models using administrative data available during periodic health assessments (PHAs) to determine eligibility for a remote group dialectical behavior therapy-based skills training intervention for soldiers with elevated risk of suicide or nonfatal suicide attempt. Design, Setting, and Participants From regular US Army soldier PHAs completed from 2015 to 2019, separate 70% training samples were created for suicides and SAs. Each training sample contained all cases and a stratified equal-probability sample of 10 times as many controls, with inverse-probability of selection weights applied to controls. Model performance was evaluated in the remaining 30% test sample. Data analysis was conducted September 2025 through January 2026. Main Outcomes and Measures Suicides were recorded in the National Death Index for soldiers either still in or out of active service. SAs were recorded in US Army records only for soldiers still in active service. A 24-month risk horizon was used because successive PHAs, though designed to occur annually, are sometimes separated by this much time. A loss to follow-up weight was used in the SA model to adjust for leaving service within 24 months. Results PHA data were available from 668 684 regular US Army soldiers. A total of 1 932 243 PHAs (including 85.5% by male soldiers, 46.7% by soldiers aged 28 years or older, and 58.1% by married soldiers) completed during the 2015 to 2019 period were included in analyses. Over 24 months, suicide prevalence was 66.7 per 100 000 (SE = 3.6) and SA prevalence was 704.1 per 100 000 (SE = 14.7) adjusted for loss to follow-up. Test sample area under the receiver operating characteristic curve (AUROC) for suicide was 0.72 (SE = 0.17), with Integrated Calibration Index (ICI) of 0.0003 and Brier score of 0.0007. Test sample AUROC for SA was 0.81 (SE = 0.02), with ICI of 0.0014 and Brier score of 0.0070. Suicide prevalence was meaningfully elevated (at least twice that expected by chance) only in the 5% of PHAs with highest predicted risk (sensitivity = 18.6%; SE = 2.0%). SA risk was elevated only in the 10% of PHAs with highest predicted risk (sensitivity = 46.5%; SE = 1.0%). Predicted probabilities of suicide and SA were correlated (Pearson r = 0.29; t = 233.8; P &amp;amp;lt; .001). Overall, 11.9% of PHAs revealed US Army soldiers at elevated risk of either suicide or SA, and 3.1% were at elevated risk of both outcomes. Conclusions and Relevance Results of this prognostic study suggest that as suicides and SAs have distinct predictors, an attempt to optimize resource allocation will require thoughtful postintervention considerations of costs and benefits of interventions to optimize net benefit.",
     "ai_reason": "机器学习模型是预测核心方法，自杀/自伤行为是核心精神健康结局，模型在30%测试样本中验证，AUROC 0.72-0.81。",
     "ai_score": 5,
