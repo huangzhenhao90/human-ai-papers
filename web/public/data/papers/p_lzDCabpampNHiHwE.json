@@ -1,0 +1,69 @@
+{
+  "abstract": "Direct hand-driven teleoperation maps an operator's hand motion to robot end-effector commands at every frame, enabling precise control, but it requires constant monitoring and correction during approach, grasp, and placement, which can be slow and fatiguing. For repetitive pick-and-place tasks, supervisory (goal-based) teleoperation simplifies this process: the operator specifies goals/waypoints, and the robot executes the motion using planning algorithms. Yet, this introduces latency, as the robot must wait for the next command before it can plan and act. \"How can we reduce robot reaction time while lowering operator workload?\" To tackle this question, we present AHEAD, a real-time VR teleoperation system that anticipates operator intent to enable proactive, hand-driven control. In a digital twin, the operator performs pick-and-place naturally, using hand motion to convey high-level commands rather than a continuous robot trajectory. AHEAD processes a short window of 3D hand and head signals together with scene context through an attention-based classifier to predict the intended grasp object and placement slot. A state machine converts intent predictions into stable robot goals, enabling early motion while remaining stable under noisy predictions and corrective hand movements. AHEAD's intent prediction module achieves Top1 accuracy: 76% for grasp objects and 76% for target slots. Moreover, our user study shows AHEAD reduces robot reaction latency by 0.6 s (object) and 1.4 s (slot) relative to baselines. Participants also reported lower operator load, indicating faster robot responses while maintaining low operator effort in practice.",
+  "ai_type_tags": [
+    "多模态",
+    "人机协作",
+    "人机交互"
+  ],
+  "arxiv_id": "2607.15172",
+  "authors": [
+    "Seok Joon Kim",
+    "Junho Lee",
+    "Federica Spinola",
+    "Taein Kwon",
+    "Mohsen Moghaddam"
+  ],
+  "authors_full": [
+    {
+      "name": "Seok Joon Kim"
+    },
+    {
+      "name": "Junho Lee"
+    },
+    {
+      "name": "Federica Spinola"
+    },
+    {
+      "name": "Taein Kwon"
+    },
+    {
+      "name": "Mohsen Moghaddam"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "VR遥操作+意图预测，有用户研究成分",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "针对VR远程操作中机器人反应延迟与操作疲劳问题，提出AHEAD系统：通过注意力分类器融合3D手部/头部信号与场景上下文，预测操作者意图的抓取目标与放置位；状态机将意图转化为稳定指令，实现预判式运动控制。抓取与放置预测Top1准确率均达76%，用户研究显示物体反应延迟降低0.6秒、放置延迟降低1.4秒。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可用性测试"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-16",
+  "doi": "10.48550/arxiv.2607.15172",
+  "id": "p_lzDCabpampNHiHwE",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.15172",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15525,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "AHEAD: Anticipatory Hand-Driven Teleoperation via Human Intent Prediction",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.15172",
+  "volume": null,
+  "year": 2026
+}

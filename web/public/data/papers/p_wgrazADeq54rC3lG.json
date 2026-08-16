@@ -1,0 +1,79 @@
+{
+  "abstract": "Mobile-health interventions increasingly use online learning and decision making algorithms to personalize when to nudge users toward healthier behavior, but a poorly designed algorithm can burden and disengage participants. New algorithm design decisions should therefore be vetted against realistic simulated users before each real-life deployment. We propose a method to develop ``JITAI-Twins'': digital twins of a target subpopulation for comparing candidate online algorithms before a just-in-time adaptive intervention (JITAI) deployment. The method builds on a conditional time-series diffusion model that is temporally consistent (future actions do not affect the generated past), and it supports repeated updating from three sources of information, in three steps: pre-training on a large observational dataset, fine-tuning on small prior intervention deployments in related populations, and inference-time calibration to the next target population from domain-scientist expertise. We validate the twin at each pre-deployment stage of the long-running HeartSteps series (v2 through v4) of physical-activity suggestion intervention deployments, treating each successive deployment as an upcoming study. The proposed method reproduces the target subpopulation's temporal and between-participant structure better than simpler simulators. These results suggest that our twin can be used to simulate a target deployment before it runs, the prerequisite for testing and informing online algorithm design decisions.",
+  "ai_type_tags": [
+    "推荐算法",
+    "智能体/Agent",
+    "人机协作"
+  ],
+  "arxiv_id": "2607.21403",
+  "authors": [
+    "Ziping Xu",
+    "Yuyi Chang",
+    "Chenshun Ni",
+    "Nithin Sugavanam",
+    "Asim H. Gazi"
+  ],
+  "authors_full": [
+    {
+      "name": "Ziping Xu"
+    },
+    {
+      "name": "Yuyi Chang"
+    },
+    {
+      "name": "Chenshun Ni"
+    },
+    {
+      "name": "Nithin Sugavanam"
+    },
+    {
+      "name": "Asim H. Gazi"
+    },
+    {
+      "name": "Pedja Klasnja"
+    },
+    {
+      "name": "Emre Ertin"
+    },
+    {
+      "name": "Susan A. Murphy"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "数字孪生用于健康干预，有用户视角",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究移动健康干预中在线个性化算法部署前的虚拟用户模拟问题。提出\"JITAI-Twins\"方法，基于条件时间序列扩散模型构建目标亚群数字孪生，通过观测数据预训练、相关人群微调与领域专家推理时校准三步更新。在HeartSteps物理活动干预系列(v2–v4)的部署前各阶段验证，结果显示该孪生能更准确复现目标人群的时间与个体间结构，可为部署前算法筛选提供支持。",
+      "topic_tags": [
+        "个性化",
+        "用户研究方法",
+        "可用性测试",
+        "AI 采用"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-23",
+  "doi": null,
+  "id": "p_wgrazADeq54rC3lG",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2607.21403v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15460,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "A Diffusion-Model Subpopulation Digital Twin for Mobile Health Deployment: A Case Study on the HeartSteps Intervention",
+  "title_zh": "移动健康部署的扩散模型子群体数字孪生：HeartSteps干预案例研究",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.21403v1",
+  "volume": null,
+  "year": 2026
+}

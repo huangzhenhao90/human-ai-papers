@@ -1,0 +1,72 @@
+{
+  "abstract": "Video thumbnails are a key factor for attracting user clicks on video platforms, and are increasingly supported by automation. However, existing thumbnail generation methods typically produce generic results shared across users, overlooking the diversity of individual preferences. We therefore introduce personalized video thumbnail generation, a novel task that aims to create thumbnails tailored to user-specific preferences. It is challenging in two aspects: (i) identifying visual anchors (i.e., key frames) from each video to guide the generation, which requires a balance between personalization and informativeness that existing highlight detection methods fail to achieve; and (ii) generating personalized thumbnails that are both visually coherent and faithful to the original video. As a response, we propose a two-stage framework that tightly couples preference-aware retrieval with controllable generation. In the first stage, a personalized highlight retriever captures fine-grained user-video interactions and incorporates video semantics through summarization, enabling the selection of diverse visual anchors aligned with both user preferences and video contexts. In the second stage, a VLM-guided diffusion pipeline transforms these anchors into thumbnails by extracting and injecting semantically grounded visual cues, improving personalization while preserving visual coherence and fidelity. Experiments on two public datasets show our method delivers state-of-the-art performance compared with both retrieval-based and generative baselines. A user study further demonstrates improved click preference, highlighting its effectiveness in enhancing user engagement. The code is available at https://github.com/hezy18/PVTG.",
+  "ai_type_tags": [
+    "多模态",
+    "GenAI",
+    "图像生成"
+  ],
+  "arxiv_id": "2607.12882",
+  "authors": [
+    "Zhiyu He",
+    "Zecheng Zhao",
+    "Tong Chen",
+    "Z Zhangqin Huang",
+    "Yiqun Liu"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhiyu He"
+    },
+    {
+      "name": "Zecheng Zhao"
+    },
+    {
+      "name": "Tong Chen"
+    },
+    {
+      "name": "Z Zhangqin Huang"
+    },
+    {
+      "name": "Yiqun Liu"
+    },
+    {
+      "name": "Min Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "个性化缩略图针对用户点击偏好，有用户视角",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对视频平台缩略图自动生成缺乏个性化的问题，提出个性化视频缩略图生成新任务，并设计两阶段框架：第一阶段通过偏好感知检索器结合用户-视频细粒度交互与视频摘要语义，挑选多样化的视觉锚点；第二阶段利用VLM引导的扩散管道将锚点转化为兼顾用户偏好与原视频保真度的缩略图。在两个公开数据集上达到最优性能。",
+      "topic_tags": [
+        "个性化",
+        "推荐系统",
+        "可视化"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-14",
+  "doi": "10.48550/arxiv.2607.12882",
+  "id": "p_ri1EjCFlb3UVud1g",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.12882",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15512,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "What Would You Click? Personalized Video Thumbnail Generation with Preference-aware Highlight Retrieval",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.12882",
+  "volume": null,
+  "year": 2026
+}

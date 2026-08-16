@@ -56321,7 +56321,11 @@
     "abstract": "Enterprises are deploying autonomous AI agents faster than they can govern them, and prevailing approaches stretch a single discipline, typically DevSecOps built for deterministic automation, across every scale of agency. We argue that agentic AI governance is four problems, not one, each with a mature governing science. The CASE framework assigns Control theory to the individual agent (intent as setpoint, guardrails as feedback, evaluation as observation), complex Adaptive systems theory to agent collectives (where emergence makes single-agent assurance non-compositional), Supervisory cybernetics to human-agent teams (where the Law of Requisite Variety shows unaided human oversight fails structurally), and Engineering operations to fleets (extending error budgets to decision quality so autonomy becomes a controlled variable). We formalize each layer, derive cross-layer coupling conditions, including a zero-touch deployment paradox where excellence at one-layer strains the others, and trace twenty-plus enterprise controls to their classical constructs. Three empirical studies validate the thesis: 82 percent of documented production agent failures are multi-layer trajectories; none of 22 ecosystem tools offers full Layer 2 (emergence) coverage; and all 35 scored public deployments fall in the lowest maturity band. We name this mismatch, risk realized at the emergence layer against capability barely offered and practice absent, the Emergence Gap. A five-level maturity model with a non-compensatory bottleneck-weighted index and assessment instrument operationalizes CASE as a scientific rather than process maturity model, grounded in production enterprise agentic platforms. As EU AI Act Article 14 makes effective human oversight a legal requirement, only architectures satisfying requisite variety can make oversight real rather than ceremonial.",
     "ai_reason": "核心是企业AI代理治理框架；管理与组织治理相关",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "AI治理",
+      "人机协作",
+      "算法管理"
+    ],
     "authors": [
       "Srinivas Telukunta",
       "Georgios Nektarios Lilis",
@@ -56350,8 +56354,13 @@
     "scored_at": "2026-08-12T05:43:32.006777",
     "title": "The CASE Framework: A Multi-Disciplinary Control Architecture for Governing Enterprise Agentic AI",
     "title_zh": "CASE框架：面向企业智能体AI治理的多学科控制架构",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对企业部署自主AI代理时治理能力滞后的问题，提出CASE多学科治理框架，将控制理论映射单体代理、复杂适应系统理论映射代理集群、监督控制论映射人机团队、工程运营映射代理舰队。实证发现82%生产代理故障属多层级轨迹，22个生态工具均未覆盖第二层（涌现层），35个公开部署均处于最低成熟度等级，由此提出\"涌现鸿沟\"概念及五级成熟度模型。",
+    "topic_tags": [
+      "伦理",
+      "人机协作",
+      "组织变革",
+      "信任"
+    ],
     "url": "https://arxiv.org/abs/2608.10153v1",
     "volume": null,
     "year": 2026
@@ -56791,6 +56800,81 @@
       "信任"
     ],
     "url": "https://arxiv.org/abs/2608.11371v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Long-running LLM agents act through tools, and a single step can send an email, merge a pull request, or wire a payment. The steering decision is the pre-commit choice at that boundary: proceed, or hold for human or policy review. We introduce SteerBench-Work, an incident-anchored, bidirectional benchmark for that decision in workplace agents across developer operations, customer service, finance, legal, medical, HR, and security.   Release v2026-05 contains 106 scenarios anchored in public incidents, paired evidence-reversed mirrors, and calibration controls, with labels split nearly evenly between proceed and hold so the two error directions get near-identical numbers of chances. A model sees the proposed action and the available evidence, returns a gate decision, and is scored on whether it crosses or holds the boundary correctly. Across 30 model conditions the failures run almost entirely in one direction: models wrongly hold authorized, evidence-cleared work on 28.1% of opportunities and wrongly allow unsafe work on 1.0%. The hardest cases are risk-resolved commits, where signed or structured evidence has already cleared a real risk trigger, and models score markedly worse on evidence-reversed mirrors of famous incidents (63.8%) than on the incidents themselves (98.5%). General capability is not the same as steering calibration: higher-capability models often over-refuse at the commit boundary, and more reasoning can repair a weak gate while leaving a calibrated one flat. The public leaderboard is at steerbench.com.",
+    "ai_reason": "LLM智能体工作场景决策基准，AI核心但偏技术",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Oguz Serdar",
+      "Cuneyt Mertayak"
+    ],
+    "authors_full": [
+      {
+        "name": "Oguz Serdar"
+      },
+      {
+        "name": "Cuneyt Mertayak"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-12",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 55804,
+    "ingested_at": "2026-08-15T03:06:44.863654",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2608.12654v1",
+    "scored_at": "2026-08-15T03:06:55.472606",
+    "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+    "title_zh": "SteerBench-Work：动作边界处智能体引导基准测试",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2608.12654v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Algorithmic fairness evaluation commonly assesses AI systems as bounded technical components, abstracting away the organizational context in which they operate. We present, to our knowledge, the first independent end-to-end fairness audit of a semi-automated hiring system operated by Barcelona Activa, a public employment agency using the third-party TalentClue platform for candidate search and shortlisting. We analyze approximately 497,000 candidate-vacancy pipeline entries from September 2017 to September 2022, covering seven pipeline stages that span automated processing, human discretion, candidate data, and employer decisions.   Aggregate outcomes across binary genders are statistically indistinguishable, yet this parity masks substantial disparities by salary level, age, and gender identity. Women face adverse impact in mid-salary shortlisting (DIR = 0.786, p < 0.001), alongside salary disparities in 15 of 20 sectors and a compounded disadvantage for women aged 46-55 (DIR = 0.77). Non-binary candidates are shortlisted at less than one third the rate of men (DIR = 0.295), although this estimate rests on a small sample (N = 285). Candidates aged 55 and over are entirely absent from the pipeline despite comprising 15.6% of Barcelona's labor force. The gender gap in shortlisting narrows over time, from 6.5 percentage points in 2017 to 1.3 in 2022.   The audit further reveals a vendor-deployer information asymmetry: Barcelona Activa lacks access to key information about TalentClue's matching logic and evaluation. Fairness outcomes can thus arise from interactions among automated processing, human discretion, data quality, vendor opacity, and pipeline structure. We build on prior calls for sociotechnical, end-to-end fairness evaluation, showing empirically why model-level assessment alone can be insufficient for understanding fairness in deployed systems.",
+    "ai_reason": "公共招聘AI系统公平性审计，AI+HR核心议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI招聘",
+      "算法决策",
+      "算法管理"
+    ],
+    "authors": [
+      "Gemma Galdón-Clavell"
+    ],
+    "authors_full": [
+      {
+        "name": "Gemma Galdón-Clavell"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-13",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 55806,
+    "ingested_at": "2026-08-15T03:06:44.865283",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2608.13022v1",
+    "scored_at": "2026-08-15T03:06:55.470585",
+    "title": "Applied and Filtered: An End-to-End Algorithmic Fairness Audit of A Public Employment Agency",
+    "title_zh": "申请与筛选：公共就业机构端到端算法公平性审计",
+    "tldr": "对巴塞罗那公共就业机构Barcelona Activa使用的半自动化招聘系统进行端到端算法公平性审计，分析约49.7万条候选人-职位流水线数据。发现总体性别结果无显著差异，但在薪资层级、年龄和性别身份层面存在显著不利影响，女性在中薪资职位的入围率显著偏低，46-55岁女性遭遇叠加劣势，非二元性别候选人入围率极低，55岁以上候选人完全缺席。审计同时揭示采购方与部署方之间的信息不对称问题。",
+    "topic_tags": [
+      "AI招聘",
+      "公平性",
+      "偏见",
+      "HR"
+    ],
+    "url": "https://arxiv.org/abs/2608.13022v1",
     "volume": null,
     "year": 2026
   },
@@ -60321,6 +60405,64 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聊天机器人vs人类，AI为核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "Chatbot",
+      "人机协作"
+    ],
+    "authors": [
+      "Qi Zhou",
+      "Bin Li",
+      "Lei Han",
+      "Min Jou"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Qi Zhou",
+        "orcid": "https://orcid.org/0000-0002-6025-0621"
+      },
+      {
+        "affiliation": [],
+        "name": "Bin Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Lei Han",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Min Jou",
+        "orcid": "https://orcid.org/0000-0002-1782-0115"
+      }
+    ],
+    "cited_by": 73,
+    "date": "2023-06",
+    "doi": "10.1016/j.chb.2023.107674",
+    "domain_score": 4.0,
+    "id": 51660,
+    "ingested_at": "2026-08-12T04:23:25.488682",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:22.326494",
+    "title": "Talking to a bot or a wall? How chatbots vs. human agents affect anticipated communication quality",
+    "title_zh": null,
+    "tldr": "比较聊天机器人与人类客服对用户预期沟通质量的影响，探讨用户对不同服务渠道沟通效果的评估差异及其心理机制，为聊天机器人服务设计与部署提供理论依据。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107674",
+    "volume": "143",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "自动补全算法影响舆论，算法相关",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -60373,7 +60515,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T04:25:05.413639",
     "title": "The search suggestion effect (SSE): A quantification of how autocomplete search suggestions could be used to impact opinions and votes",
-    "title_zh": null,
+    "title_zh": "搜索建议效应（SSE）：自动补全搜索建议对观点与投票影响的量化研究",
     "tldr": "提出并量化\"搜索建议效应\"(SSE)，通过实证测量自动补全搜索建议对用户观点形成与投票行为的潜在影响，揭示搜索引擎建议作为一种隐性说服机制可被利用来操纵公众意见的政治与营销风险。",
     "topic_tags": [
       "决策",
@@ -60383,6 +60525,317 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108342",
     "volume": "160",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人工对话代理为核心，涉人机互动",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "ChatGPT"
+    ],
+    "authors": [
+      "Debajyoti Pal",
+      "Vajirasak Vanijja",
+      "Himanshu Thapliyal",
+      "Xiangmin Zhang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Debajyoti Pal",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Vajirasak Vanijja",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Himanshu Thapliyal",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Xiangmin Zhang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 45,
+    "date": "2023-08",
+    "doi": "10.1016/j.chb.2023.107788",
+    "domain_score": 3.0,
+    "id": 51681,
+    "ingested_at": "2026-08-12T04:23:25.965776",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:13.044290",
+    "title": "What affects the usage of artificial conversational agents? An agent personality and love theory perspective",
+    "title_zh": null,
+    "tldr": "研究从代理人格与爱情理论视角出发，探讨影响用户使用人工对话代理的前因因素，分析用户对AI代理的拟人化人格感知及情感依恋如何驱动其接受度与持续使用意愿。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107788",
+    "volume": "145",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能虚拟助手，AI为核心、金融营销",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "ChatGPT",
+      "人机协作",
+      "AI客服"
+    ],
+    "authors": [
+      "Bhanu Priya",
+      "Vivek Sharma"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Bhanu Priya",
+        "orcid": "https://orcid.org/0000-0001-9507-8625"
+      },
+      {
+        "affiliation": [],
+        "name": "Vivek Sharma",
+        "orcid": null
+      }
+    ],
+    "cited_by": 133,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107912",
+    "domain_score": 4.0,
+    "id": 51683,
+    "ingested_at": "2026-08-12T04:23:26.073063",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:06:52.246598",
+    "title": "Exploring users' adoption intentions of intelligent virtual assistants in financial services: An anthropomorphic perspectives and socio-psychological perspectives",
+    "title_zh": "金融服务业智能虚拟助手用户采纳意向研究:拟人化与社会心理学视角",
+    "tldr": "研究金融场景中用户对智能虚拟助手（IVA）的采纳意愿，整合拟人化视角与社会心理学视角，分析外貌、语言、个性等拟人化线索及社会临场感、信任等心理因素如何共同驱动用户接受与持续使用金融服务中的AI助手。",
+    "topic_tags": [
+      "人机交互",
+      "信任",
+      "消费者行为",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107912",
+    "volume": "148",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心议题即以人为本AI，HCI/管理",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "William J. Bingley",
+      "Caitlin Curtis",
+      "Steven Lockey",
+      "Alina Bialkowski",
+      "Nicole Gillespie"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "William J. Bingley",
+        "orcid": "https://orcid.org/0000-0002-8178-5350"
+      },
+      {
+        "affiliation": [],
+        "name": "Caitlin Curtis",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Steven Lockey",
+        "orcid": "https://orcid.org/0000-0002-1441-4576"
+      },
+      {
+        "affiliation": [],
+        "name": "Alina Bialkowski",
+        "orcid": "https://orcid.org/0000-0002-5465-1162"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicole Gillespie",
+        "orcid": "https://orcid.org/0000-0002-6101-2123"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Alexander Haslam",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ryan K.L. Ko",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Niklas Steffens",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Janet Wiles",
+        "orcid": "https://orcid.org/0000-0002-4051-4116"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Worthy",
+        "orcid": null
+      }
+    ],
+    "cited_by": 129,
+    "date": "2023-04",
+    "doi": "10.1016/j.chb.2022.107617",
+    "domain_score": 4.0,
+    "id": 51699,
+    "ingested_at": "2026-08-12T04:23:26.502246",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:27.755089",
+    "title": "Where is the human in human-centered AI? Insights from developer priorities and user experiences",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107617",
+    "volume": "141",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机信任违反修复，涉及机器人AI但非核心",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Connor Esterwood",
+      "Lionel P. Robert Jr"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Connor Esterwood",
+        "orcid": "https://orcid.org/0000-0002-2685-6435"
+      },
+      {
+        "affiliation": [],
+        "name": "Lionel P. Robert Jr",
+        "orcid": "https://orcid.org/0000-0002-1410-2601"
+      }
+    ],
+    "cited_by": 79,
+    "date": "2023-05",
+    "doi": "10.1016/j.chb.2023.107658",
+    "domain_score": 3.0,
+    "id": 51701,
+    "ingested_at": "2026-08-12T04:23:26.546955",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:28.136114",
+    "title": "Three Strikes and you are out!: The impacts of multiple human–robot trust violations and repairs on robot trustworthiness",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2023.107658",
+    "volume": "142",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "教师AI工具伦理整合知识，核心AI",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Ismail Celik"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ismail Celik",
+        "orcid": "https://orcid.org/0000-0002-5027-8284"
+      }
+    ],
+    "cited_by": 765,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107468",
+    "domain_score": 3.0,
+    "id": 51704,
+    "ingested_at": "2026-08-12T04:23:26.614821",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:37.572944",
+    "title": "Towards Intelligent-TPACK: An empirical study on teachers’ professional knowledge to ethically integrate artificial intelligence (AI)-based tools into education",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107468",
+    "volume": "138",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "对话式AI问题性使用为核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "ChatGPT",
+      "人机交互"
+    ],
+    "authors": [
+      "Bo Hu",
+      "Yuanyi Mao",
+      "Ki Joon Kim"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Bo Hu",
+        "orcid": "https://orcid.org/0000-0001-9020-3423"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuanyi Mao",
+        "orcid": "https://orcid.org/0000-0002-7016-4057"
+      },
+      {
+        "affiliation": [],
+        "name": "Ki Joon Kim",
+        "orcid": "https://orcid.org/0000-0003-4188-7915"
+      }
+    ],
+    "cited_by": 188,
+    "date": "2023-08",
+    "doi": "10.1016/j.chb.2023.107760",
+    "domain_score": 4.0,
+    "id": 51708,
+    "ingested_at": "2026-08-12T04:23:26.705643",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:13.043424",
+    "title": "How social anxiety leads to problematic use of conversational AI: The roles of loneliness, rumination, and mind perception",
+    "title_zh": null,
+    "tldr": "研究探讨社交焦虑如何诱发对对话式AI的问题性使用，重点考察孤独感、反刍思维和心智感知在其中的中介作用，揭示心理脆弱性如何驱动用户对聊天机器人的过度依赖与成瘾倾向。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107760",
+    "volume": "145",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -60482,6 +60935,153 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108337",
     "volume": "159",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自动驾驶涉及AI，信任属OB/营销",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Min Wu",
+      "Nanxi Wang",
+      "Kum Fai Yuen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Min Wu",
+        "orcid": "https://orcid.org/0000-0003-4415-0273"
+      },
+      {
+        "affiliation": [],
+        "name": "Nanxi Wang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kum Fai Yuen",
+        "orcid": "https://orcid.org/0000-0002-9199-6661"
+      }
+    ],
+    "cited_by": 51,
+    "date": "2023-04",
+    "doi": "10.1016/j.chb.2022.107614",
+    "domain_score": 3.0,
+    "id": 51754,
+    "ingested_at": "2026-08-12T04:23:27.742989",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:27.754210",
+    "title": "Deep versus superficial anthropomorphism: Exploring their effects on human trust in shared autonomous vehicles",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107614",
+    "volume": "141",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "聊天机器人拟人线索与信任",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Yi Jiang",
+      "Xiangcheng Yang",
+      "Tianqi Zheng"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yi Jiang",
+        "orcid": "https://orcid.org/0000-0002-1228-7016"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiangcheng Yang",
+        "orcid": "https://orcid.org/0000-0002-4735-9518"
+      },
+      {
+        "affiliation": [],
+        "name": "Tianqi Zheng",
+        "orcid": "https://orcid.org/0000-0002-3398-964X"
+      }
+    ],
+    "cited_by": 152,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107485",
+    "domain_score": 4.0,
+    "id": 51755,
+    "ingested_at": "2026-08-12T04:23:27.765583",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:37.572512",
+    "title": "Make chatbots more adaptive: Dual pathways linking human-like cues and tailored response to trust in interactions with chatbots",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107485",
+    "volume": "138",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "可解释AI对信任与行为影响，AI为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Benedikt Leichtmann",
+      "Christina Humer",
+      "Andreas Hinterreiter",
+      "Marc Streit",
+      "Martina Mara"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Benedikt Leichtmann",
+        "orcid": "https://orcid.org/0000-0002-9062-0996"
+      },
+      {
+        "affiliation": [],
+        "name": "Christina Humer",
+        "orcid": "https://orcid.org/0000-0002-0249-4062"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Hinterreiter",
+        "orcid": "https://orcid.org/0000-0003-4101-5180"
+      },
+      {
+        "affiliation": [],
+        "name": "Marc Streit",
+        "orcid": "https://orcid.org/0000-0001-9186-2092"
+      },
+      {
+        "affiliation": [],
+        "name": "Martina Mara",
+        "orcid": "https://orcid.org/0000-0003-3447-0556"
+      }
+    ],
+    "cited_by": 183,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107539",
+    "domain_score": 4.0,
+    "id": 51758,
+    "ingested_at": "2026-08-12T04:23:27.834094",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:38.378450",
+    "title": "Effects of Explainable Artificial Intelligence on trust and human behavior in a high-risk decision task",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107539",
+    "volume": "139",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -60604,7 +61204,10 @@
     "abstract": null,
     "ai_reason": "算法主导零工情绪劳动与游戏化",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "算法管理",
+      "算法决策"
+    ],
     "authors": [
       "Yali Zhang",
       "Liaoliao Li",
@@ -60656,8 +61259,13 @@
     "scored_at": "2026-08-12T04:24:54.028002",
     "title": "Invisible algorithms, visible outcomes: Roles of emotional labor and work gamification in gigs",
     "title_zh": "隐形算法，可见结果：情绪劳动与工作游戏化在零工经济中的作用",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "聚焦零工经济中算法管理的隐性问题，研究情感劳动与工作游戏化在算法驱动平台中的角色。探讨看似中立的算法如何通过游戏化机制塑造劳动者情绪与行为，揭示不可见算法如何产生可观察的工作结果与劳动者体验差异。",
+    "topic_tags": [
+      "零工经济",
+      "算法管理",
+      "情感劳动",
+      "工作设计"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108681",
     "volume": "169",
     "year": 2025
@@ -60733,9 +61341,69 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人-自主系统团队，AI是核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Thomas A. O'Neill",
+      "Christopher Flathmann",
+      "Nathan J. McNeese",
+      "Eduardo Salas"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Thomas A. O'Neill",
+        "orcid": "https://orcid.org/0000-0002-8336-5763"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Flathmann",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nathan J. McNeese",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Eduardo Salas",
+        "orcid": null
+      }
+    ],
+    "cited_by": 66,
+    "date": "2023-09",
+    "doi": "10.1016/j.chb.2023.107762",
+    "domain_score": 4.0,
+    "id": 51791,
+    "ingested_at": "2026-08-12T04:23:28.643566",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:03.107581",
+    "title": "Human-autonomy Teaming: Need for a guiding team-based framework?",
+    "title_zh": null,
+    "tldr": "探讨人机自主团队(human-autonomy teaming)的理论基础与实践挑战，论证现有团队框架的不足，呼吁建立专门指导人机协作的团队理论框架，以推动人类与AI队友的混合团队有效运作。",
+    "topic_tags": [
+      "团队",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107762",
+    "volume": "146",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "家用机器人涉及自动化与AI",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
     "authors": [
       "Yumi Akuta",
       "Sayuri Suwa",
@@ -60847,11 +61515,105 @@
     "scored_at": "2026-08-12T04:24:47.715732",
     "title": "Willingness to use home-care robots and views regarding the provision of personal information in Japan: comparison between actual or potential users and robot developers",
     "title_zh": "日本家庭护理机器人使用意愿及个人信息提供观点：实际或潜在用户与机器人开发者之比较",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "在日本背景下比较家庭护理机器人的实际或潜在用户与机器人开发者对使用意愿及提供个人信息的看法差异，揭示双方在隐私态度上的分歧，为家用机器人的隐私设计与用户接受度提供参考依据。",
+    "topic_tags": [
+      "隐私",
+      "人机协作",
+      "消费者行为"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108817",
     "volume": "174",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自动化新闻，AI作者署名效应",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Angelica Lermann Henestrosa",
+      "Hannah Greving",
+      "Joachim Kimmerle"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Angelica Lermann Henestrosa",
+        "orcid": "https://orcid.org/0000-0002-0733-9045"
+      },
+      {
+        "affiliation": [],
+        "name": "Hannah Greving",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Joachim Kimmerle",
+        "orcid": null
+      }
+    ],
+    "cited_by": 95,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107445",
+    "domain_score": 3.0,
+    "id": 51797,
+    "ingested_at": "2026-08-12T04:23:28.781923",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:37.571677",
+    "title": "Automated journalism: The effects of AI authorship and evaluative information on the perception of a science journalism article",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107445",
+    "volume": "138",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "机器人伙伴信任与意外行为",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Joseph B. Lyons",
+      "Izz aldin Hamdan",
+      "Thy Q. Vo"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Joseph B. Lyons",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Izz aldin Hamdan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Thy Q. Vo",
+        "orcid": null
+      }
+    ],
+    "cited_by": 87,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107473",
+    "domain_score": 3.0,
+    "id": 51806,
+    "ingested_at": "2026-08-12T04:23:28.987574",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:37.571231",
+    "title": "Explanations and trust: What happens to trust when a robot partner does something unexpected?",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107473",
+    "volume": "138",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -60896,6 +61658,116 @@
   },
   {
     "abstract": null,
+    "ai_reason": "AI在学习分析中的应用，AI为主要变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Inge Molenaar",
+      "Susanne de Mooij",
+      "Roger Azevedo",
+      "Maria Bannert",
+      "Sanna Järvelä"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Inge Molenaar",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Susanne de Mooij",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Roger Azevedo",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Maria Bannert",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Sanna Järvelä",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dragan Gašević",
+        "orcid": null
+      }
+    ],
+    "cited_by": 170,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107540",
+    "domain_score": 3.0,
+    "id": 51851,
+    "ingested_at": "2026-08-12T04:23:30.012801",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:38.377629",
+    "title": "Measuring self-regulated learning and the role of AI: Five years of research using multimodal multichannel data",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107540",
+    "volume": "139",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI面试界面与信任，HR/管理核心议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI招聘",
+      "人机交互",
+      "算法决策"
+    ],
+    "authors": [
+      "Hung-Yue Suen",
+      "Kuo-En Hung"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Hung-Yue Suen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kuo-En Hung",
+        "orcid": null
+      }
+    ],
+    "cited_by": 62,
+    "date": "2023-06",
+    "doi": "10.1016/j.chb.2023.107713",
+    "domain_score": 5.0,
+    "id": 51865,
+    "ingested_at": "2026-08-12T04:23:30.331393",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:22.325563",
+    "title": "Building trust in automatic video interviews using various AI interfaces: Tangibility, immediacy, and transparency",
+    "title_zh": null,
+    "tldr": "研究AI自动视频面试中不同人机界面设计（有形性、即时性、透明度）如何影响求职者对AI面试官的信任感，探讨通过界面优化降低算法面试抵触、提升招聘流程接受度的设计策略。",
+    "topic_tags": [
+      "招聘",
+      "信任",
+      "HR",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107713",
+    "volume": "143",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "算法偏见导致招聘歧视，AI与HR核心议题",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -60936,7 +61808,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T04:25:01.587635",
     "title": "Biased search engine autosuggestions against females and immigrants can lead to hiring discrimination: An experimental investigation",
-    "title_zh": null,
+    "title_zh": "搜索引擎针对女性与移民的偏见性自动补全建议可导致招聘歧视：一项实验研究",
     "tldr": "通过实验法检验搜索引擎自动补全建议中针对女性与移民群体的性别及族裔偏见如何传导至招聘环节，揭示用户受有偏建议影响后形成的求职者评价差异，进而证明搜索算法偏见可引发实际的雇佣歧视风险。",
     "topic_tags": [
       "招聘",
@@ -61129,7 +62001,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T04:25:01.587147",
     "title": "The decision-making by citizens: Evaluating the effects of rule-driven and learning-driven automated responders on citizen-initiated contact",
-    "title_zh": null,
+    "title_zh": "公民决策：评估规则驱动与学习驱动自动应答对公民发起联系的影响",
     "tldr": "研究公民在与政府互动情境中使用自动化应答系统时的决策行为，对比基于规则驱动与基于学习驱动（机器学习/AI）两类自动回复对公民发起联络行为及决策结果的影响，探讨不同自动化程度如何塑造公民的信息处理与后续行动选择。",
     "topic_tags": [
       "决策",
@@ -61143,9 +62015,185 @@
   },
   {
     "abstract": null,
-    "ai_reason": "AI聊天使用动机，核心议题是AI应用",
+    "ai_reason": "AI辅助医疗咨询态度，AI为核心",
     "ai_score": 5.0,
     "ai_type_tags": [],
+    "authors": [
+      "Enoch Yi-No Kang",
+      "Duan-Rung Chen",
+      "Yen-Yuan Chen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Enoch Yi-No Kang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Duan-Rung Chen",
+        "orcid": "https://orcid.org/0000-0002-6391-987X"
+      },
+      {
+        "affiliation": [],
+        "name": "Yen-Yuan Chen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 49,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107529",
+    "domain_score": 3.0,
+    "id": 51957,
+    "ingested_at": "2026-08-12T04:23:32.599250",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:38.376352",
+    "title": "Associations between literacy and attitudes toward artificial intelligence–assisted medical consultations: The mediating role of perceived distrust and efficiency of artificial intelligence",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107529",
+    "volume": "139",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI支持学习调控，AI为核心变量之一",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机协作",
+      "机器学习"
+    ],
+    "authors": [
+      "Fan Ouyang",
+      "Mian Wu",
+      "Liyin Zhang",
+      "Weiqi Xu",
+      "Luyi Zheng"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Fan Ouyang",
+        "orcid": "https://orcid.org/0000-0002-4382-1381"
+      },
+      {
+        "affiliation": [],
+        "name": "Mian Wu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Liyin Zhang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Weiqi Xu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Luyi Zheng",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mutlu Cukurova",
+        "orcid": null
+      }
+    ],
+    "cited_by": 69,
+    "date": "2023-05",
+    "doi": "10.1016/j.chb.2023.107650",
+    "domain_score": 3.0,
+    "id": 51970,
+    "ingested_at": "2026-08-12T04:23:32.898258",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:28.134801",
+    "title": "Making strides towards AI-supported regulation of learning in collaborative knowledge construction",
+    "title_zh": null,
+    "tldr": "探索AI技术如何支持协作知识建构过程中的学习调节，分析AI介入对学习者协作互动质量与学习效果的影响机制及实现路径。",
+    "topic_tags": [
+      "教育",
+      "知识管理",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107650",
+    "volume": "142",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人-自主团队，AI主导，OB核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机协作",
+      "算法管理"
+    ],
+    "authors": [
+      "Thomas A. O'Neill",
+      "Christopher Flathmann",
+      "Nathan J. McNeese",
+      "Eduardo Salas"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Thomas A. O'Neill",
+        "orcid": "https://orcid.org/0000-0002-8336-5763"
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Flathmann",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nathan J. McNeese",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Eduardo Salas",
+        "orcid": null
+      }
+    ],
+    "cited_by": 22,
+    "date": "2023-10",
+    "doi": "10.1016/j.chb.2023.107865",
+    "domain_score": 4.0,
+    "id": 51975,
+    "ingested_at": "2026-08-12T04:23:33.011560",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:05.250193",
+    "title": "21st Century teaming and beyond: Advances in human-autonomy teamwork",
+    "title_zh": "21世纪团队协作及未来：人–自主体团队协作研究进展",
+    "tldr": "综述21世纪以来人-自主系统团队（human-autonomy teaming）的研究进展，梳理团队结构、协作机制、信任与协调等关键议题，分析自主代理对团队绩效、角色分配与决策过程的影响，并提出未来研究方向。",
+    "topic_tags": [
+      "团队",
+      "人机协作",
+      "领导力",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107865",
+    "volume": "147",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI聊天使用动机，核心议题是AI应用",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机协作"
+    ],
     "authors": [
       "Sebastian Scherr",
       "Bolin Cao",
@@ -61186,11 +62234,67 @@
     "scored_at": "2026-08-12T04:24:48.502640",
     "title": "Explaining the use of AI chatbots as context alignment: Motivations behind the use of AI chatbots across contexts and culture",
     "title_zh": "将AI聊天机器人使用解释为语境对齐：跨语境与文化背景下AI聊天机器人的使用动机",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "从上下文对齐视角解释用户使用AI聊天机器人的动机，比较不同应用场景与跨文化背景下用户采纳AI聊助的驱动因素及其差异。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "跨文化"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108738",
     "volume": "172",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI是核心方法，SRL属学习行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "人机交互"
+    ],
+    "authors": [
+      "Sanna Järvelä",
+      "Andy Nguyen",
+      "Inge Molenaar"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sanna Järvelä",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Andy Nguyen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Inge Molenaar",
+        "orcid": null
+      }
+    ],
+    "cited_by": 34,
+    "date": "2023-10",
+    "doi": "10.1016/j.chb.2023.107847",
+    "domain_score": 3.0,
+    "id": 52010,
+    "ingested_at": "2026-08-12T04:23:33.861317",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:05.249472",
+    "title": "Advancing SRL research with artificial intelligence",
+    "title_zh": "利用人工智能推进自我调节学习研究",
+    "tldr": "探讨如何借助人工智能技术推动自我调节学习（SRL）研究，梳理AI在捕捉学习者认知、行为与情感数据方面的方法路径，分析其对建模学习过程、个性化反馈与干预设计的促进作用，并展望SRL研究的未来方向。",
+    "topic_tags": [
+      "教育",
+      "培训",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107847",
+    "volume": "147",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -61307,6 +62411,88 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108501",
     "volume": "164",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心研究人-AI团队协作方法",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Aaron Schecter",
+      "Jess Hohenstein",
+      "Lindsay Larson",
+      "Alexa Harris",
+      "Tsung-Yu Hou"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Aaron Schecter",
+        "orcid": "https://orcid.org/0000-0002-3186-7788"
+      },
+      {
+        "affiliation": [],
+        "name": "Jess Hohenstein",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Lindsay Larson",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Alexa Harris",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Tsung-Yu Hou",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Wen-Ying Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nina Lauharatanahirun",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Leslie DeChurch",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Noshir Contractor",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Malte Jung",
+        "orcid": null
+      }
+    ],
+    "cited_by": 29,
+    "date": "2023-04",
+    "doi": "10.1016/j.chb.2022.107606",
+    "domain_score": 4.0,
+    "id": 52031,
+    "ingested_at": "2026-08-12T04:23:34.348087",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:32.113592",
+    "title": "Vero: An accessible method for studying human–AI teamwork",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107606",
+    "volume": "141",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -61467,7 +62653,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:32.876790",
     "title": "Deployment of algorithms in management tasks reduces prosocial motivation",
-    "title_zh": null,
+    "title_zh": "算法在管理任务中的部署降低亲社会动机",
     "tldr": "研究算法在管理任务中的部署如何削弱员工亲社会动机。通过对算法管理与员工内在动机关系的推断，揭示算法化任务分配、绩效监控等场景可能挤出利他与协作意愿，对组织管理与员工激励设计具有警示意义。",
     "topic_tags": [
       "算法管理",
@@ -61589,7 +62775,9 @@
     "abstract": null,
     "ai_reason": "核心研究算法推荐对购买意图影响，属营销/AI交叉",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "推荐算法"
+    ],
     "authors": [
       "Tetsuya Aoki",
       "Ayako Matsui"
@@ -61618,8 +62806,13 @@
     "scored_at": "2026-08-12T04:24:48.501552",
     "title": "Does algorithmic recommendation complement or substitute advertising and influencers? Consumer attitudes toward recommendation information and the formation of purchase intentions",
     "title_zh": "算法推荐是补充还是替代广告与网红？消费者对推荐信息的态度及购买意愿的形成",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "探讨电商场景下算法推荐与广告、网红营销之间是互补还是替代关系，分析消费者对算法推荐信息的信任与态度如何影响其购买意愿的形成。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "广告",
+      "推荐系统"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108735",
     "volume": "172",
     "year": 2025
@@ -61669,6 +62862,53 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108355",
     "volume": "159",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "虚拟网红涉AI，核心为购买意愿营销研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机交互"
+    ],
+    "authors": [
+      "Hyojung Kim",
+      "Minjung Park"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Hyojung Kim",
+        "orcid": "https://orcid.org/0000-0001-9422-1944"
+      },
+      {
+        "affiliation": [],
+        "name": "Minjung Park",
+        "orcid": null
+      }
+    ],
+    "cited_by": 259,
+    "date": "2023-06",
+    "doi": "10.1016/j.chb.2023.107703",
+    "domain_score": 5.0,
+    "id": 52159,
+    "ingested_at": "2026-08-12T04:23:37.392778",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:22.325078",
+    "title": "Virtual influencers’ attractiveness effect on purchase intention: A moderated mediation model of the Product–Endorser fit with the brand",
+    "title_zh": null,
+    "tldr": "研究虚拟网红（AI生成的数字代言人）的吸引力如何影响消费者购买意愿，构建一个有中介的调节模型，考察产品-代言人契合度对品牌代言效果的调节机制，揭示虚拟影响者营销的有效边界条件。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "广告",
+      "品牌"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107703",
+    "volume": "143",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -61840,6 +63080,51 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聊天机器人社会临场感，AI是核心变量，HCI/营销相关",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Elisa Konya-Baumbach",
+      "Miriam Biller",
+      "Sergej von Janda"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Elisa Konya-Baumbach",
+        "orcid": "https://orcid.org/0000-0002-7990-8542"
+      },
+      {
+        "affiliation": [],
+        "name": "Miriam Biller",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Sergej von Janda",
+        "orcid": "https://orcid.org/0000-0003-1183-429X"
+      }
+    ],
+    "cited_by": 244,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107513",
+    "domain_score": 4.0,
+    "id": 52196,
+    "ingested_at": "2026-08-12T04:23:38.300311",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:38.375447",
+    "title": "Someone out there? A study on the social presence of anthropomorphized chatbots",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107513",
+    "volume": "139",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI聊天机器人在心理健康应用，AI核心议题",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -61898,6 +63183,116 @@
     "url": "https://doi.org/10.1016/j.chb.2026.108955",
     "volume": "180",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心研究AI艺术欣赏中的人类中心偏见",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "图像生成"
+    ],
+    "authors": [
+      "Kobe Millet",
+      "Florian Buehler",
+      "Guanzhong Du",
+      "Michail D. Kokkoris"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Kobe Millet",
+        "orcid": "https://orcid.org/0000-0003-4365-6109"
+      },
+      {
+        "affiliation": [],
+        "name": "Florian Buehler",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Guanzhong Du",
+        "orcid": "https://orcid.org/0000-0002-0494-8398"
+      },
+      {
+        "affiliation": [],
+        "name": "Michail D. Kokkoris",
+        "orcid": null
+      }
+    ],
+    "cited_by": 165,
+    "date": "2023-06",
+    "doi": "10.1016/j.chb.2023.107707",
+    "domain_score": 4.0,
+    "id": 52207,
+    "ingested_at": "2026-08-12T04:23:38.541742",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:22.324370",
+    "title": "Defending humankind: Anthropocentric bias in the appreciation of AI art",
+    "title_zh": null,
+    "tldr": "探讨人类在欣赏AI生成艺术时是否存在以人类为中心的偏见（anthropocentric bias），即是否贬低或低估AI创作的艺术作品，以维护人类在艺术创作领域的主体地位。研究聚焦于人机对比下的审美评价偏差问题。",
+    "topic_tags": [
+      "消费者行为",
+      "伦理",
+      "偏见",
+      "创意"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107707",
+    "volume": "143",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人-AI协作自主智能体，核心AI议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Allyson I. Hauptman",
+      "Beau G. Schelble",
+      "Nathan J. McNeese",
+      "Kapil Chalil Madathil"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Allyson I. Hauptman",
+        "orcid": "https://orcid.org/0000-0001-7785-5996"
+      },
+      {
+        "affiliation": [],
+        "name": "Beau G. Schelble",
+        "orcid": "https://orcid.org/0000-0003-3704-697X"
+      },
+      {
+        "affiliation": [],
+        "name": "Nathan J. McNeese",
+        "orcid": "https://orcid.org/0000-0002-9143-2460"
+      },
+      {
+        "affiliation": [],
+        "name": "Kapil Chalil Madathil",
+        "orcid": "https://orcid.org/0000-0001-8938-9793"
+      }
+    ],
+    "cited_by": 100,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107451",
+    "domain_score": 3.0,
+    "id": 52217,
+    "ingested_at": "2026-08-12T04:23:38.762178",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:37.569941",
+    "title": "Adapt and overcome: Perceptions of adaptive autonomous agents for human-AI teaming",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107451",
+    "volume": "138",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -61978,7 +63373,11 @@
     "abstract": null,
     "ai_reason": "LLM控制对话代理，AI为核心",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "多模态",
+      "人机协作"
+    ],
     "authors": [
       "Leon O.H. Kroczek",
       "Alexander May",
@@ -62030,8 +63429,12 @@
     "scored_at": "2026-08-12T04:24:50.374789",
     "title": "The influence of persona and conversational task on social interactions with a LLM-controlled embodied conversational agent",
     "title_zh": "角色设定与对话任务对LLM控制具身对话代理社交互动的影响",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究LLM驱动的具身对话代理中，角色人设与对话任务类型如何影响用户的社会互动体验与感知，探讨不同角色设定和任务情境下人机交互的差异及其对交互质量的作用。",
+    "topic_tags": [
+      "人机交互",
+      "人机协作",
+      "消费者行为"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108759",
     "volume": "172",
     "year": 2025
@@ -62076,7 +63479,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:32.876313",
     "title": "Facilitation or hindrance: The contingent effect of organizational artificial intelligence adoption on proactive career behavior",
-    "title_zh": null,
+    "title_zh": "促进或阻碍：组织人工智能采纳对主动职业行为的权变效应",
     "tldr": "考察组织中AI应用对员工主动职业行为(proactive career behavior)的促进或阻碍作用及其边界条件。通过分析不同情境下AI赋能感与替代威胁感的权衡，揭示AI采纳影响员工职业发展的差异化机制。",
     "topic_tags": [
       "HR",
@@ -62209,6 +63612,45 @@
   },
   {
     "abstract": null,
+    "ai_reason": "智能agent拟人化与情感依附",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Andong Zhang",
+      "Pei-Luen Patrick Rau"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Andong Zhang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Pei-Luen Patrick Rau",
+        "orcid": null
+      }
+    ],
+    "cited_by": 154,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107415",
+    "domain_score": 3.0,
+    "id": 52292,
+    "ingested_at": "2026-08-12T04:23:40.461462",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:37.569032",
+    "title": "Tools or peers? Impacts of anthropomorphism level and social role on emotional attachment and disclosure tendency towards intelligent agents",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107415",
+    "volume": "138",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "机器人作为AI主体，核心比较儿童信任",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -62263,7 +63705,11 @@
     "abstract": null,
     "ai_reason": "自主技术与消费者反应",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器人",
+      "人机交互",
+      "算法决策"
+    ],
     "authors": [
       "Simoni F. Rohden",
       "Carla Freitas Silveira Netto",
@@ -62298,11 +63744,47 @@
     "scored_at": "2026-08-12T04:24:54.030058",
     "title": "Autonomous technology in the marketplace: The impact of enjoyment on consumer responses",
     "title_zh": "市场中的自主技术：愉悦感对消费者反应的影响",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "探讨自主技术（如AI代理、服务机器人）在市场消费情境中，享乐感与愉悦体验如何塑造消费者的态度、采纳意愿与行为反应，关注技术互动引发的情感机制，为自动化消费场景下的营销设计与用户体验优化提供理论依据。",
+    "topic_tags": [
+      "消费者行为",
+      "营销"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108647",
     "volume": "168",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心研究AI伴侣性别表演与伦理",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Jindong Leo-Liu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jindong Leo-Liu",
+        "orcid": "https://orcid.org/0000-0002-5456-0148"
+      }
+    ],
+    "cited_by": 59,
+    "date": "2023-04",
+    "doi": "10.1016/j.chb.2022.107620",
+    "domain_score": 4.0,
+    "id": 52319,
+    "ingested_at": "2026-08-12T04:23:41.051515",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:32.112759",
+    "title": "Loving a “defiant” AI companion? The gender performance and ethics of social exchange robots in simulated intimate interactions",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107620",
+    "volume": "141",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -62460,7 +63942,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:42.962775",
     "title": "An artificial intelligence perspective: How knowledge and confidence shape risk and benefit perception",
-    "title_zh": null,
+    "title_zh": "人工智能视角：知识与信心如何塑造风险与收益感知",
     "tldr": "从AI视角分析用户的知识水平与自信心如何塑造其对AI的风险与收益感知，揭示认知因素在AI接受与态度形成中的关键作用。",
     "topic_tags": [
       "信任",
@@ -62683,6 +64165,57 @@
   },
   {
     "abstract": null,
+    "ai_reason": "机器学习用户数据，隐私snooping议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Sangwook Lee",
+      "Won-Ki Moon",
+      "Jae-Gil Lee",
+      "S. Shyam Sundar"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sangwook Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Won-Ki Moon",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jae-Gil Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "S. Shyam Sundar",
+        "orcid": null
+      }
+    ],
+    "cited_by": 26,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107427",
+    "domain_score": 3.0,
+    "id": 52437,
+    "ingested_at": "2026-08-12T04:23:43.876530",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:37.568537",
+    "title": "When the machine learns from users, is it helping or snooping?",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107427",
+    "volume": "138",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI个性化与消费者感知为核心",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -62779,7 +64312,11 @@
     "abstract": null,
     "ai_reason": "AI回应是核心变量，消费者服务失败与重用意图",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "AI客服",
+      "人机交互",
+      "LLM"
+    ],
     "authors": [
       "Cuicui Wang",
       "Liangting Ni",
@@ -62820,11 +64357,111 @@
     "scored_at": "2026-08-12T04:24:55.392247",
     "title": "Exploring the effect of AI warm response on consumer reuse intention in service failure",
     "title_zh": "探索AI温情回应对服务失败后消费者再使用意愿的影响",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究服务失败情境下AI客服采用温暖、共情式回应策略对消费者复用意愿的影响，探讨AI情感化交互作为服务补救手段的效果。",
+    "topic_tags": [
+      "消费者行为",
+      "人机协作",
+      "营销"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108606",
     "volume": "166",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人-自主体团队含AI/自动化，OB议题",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Sydney R. Begerowski",
+      "Katelyn N. Hedrick",
+      "Flanagan Waldherr",
+      "Laine Mears",
+      "Marissa L. Shuffler"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sydney R. Begerowski",
+        "orcid": "https://orcid.org/0000-0001-7305-0162"
+      },
+      {
+        "affiliation": [],
+        "name": "Katelyn N. Hedrick",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Flanagan Waldherr",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Laine Mears",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Marissa L. Shuffler",
+        "orcid": "https://orcid.org/0000-0002-6292-8950"
+      }
+    ],
+    "cited_by": 17,
+    "date": "2023-08",
+    "doi": "10.1016/j.chb.2023.107763",
+    "domain_score": 4.0,
+    "id": 52463,
+    "ingested_at": "2026-08-12T04:23:44.474290",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:13.042950",
+    "title": "The forgotten teammate: Considering the labor perspective in human-autonomy teams",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2023.107763",
+    "volume": "145",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "机器人/AI协作与竞争，fNIRS实验",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Xin Lei",
+      "Pei-Luen Patrick Rau"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Xin Lei",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Pei-Luen Patrick Rau",
+        "orcid": null
+      }
+    ],
+    "cited_by": 32,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107496",
+    "domain_score": 3.0,
+    "id": 52469,
+    "ingested_at": "2026-08-12T04:23:44.612124",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:37.567773",
+    "title": "Emotional responses to performance feedback in an educational game during cooperation and competition with a robot: Evidence from fNIRS",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107496",
+    "volume": "138",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -62867,7 +64504,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:39.040404",
     "title": "Can AI really help? The double-edged sword effect of AI assistant on employees’ innovation behavior",
-    "title_zh": null,
+    "title_zh": "AI真的能帮上忙吗？AI助手对员工创新行为的双刃剑效应",
     "tldr": "研究AI助手对员工创新行为的双刃剑效应，揭示AI辅助既能促进也可能抑制员工创新。既关注AI作为工具带来的效率提升与创意激发，也考察其可能引发的依赖、认知替代等负面后果，探索边界条件与作用机制。",
     "topic_tags": [
       "创新",
@@ -62925,6 +64562,71 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108474",
     "volume": "162",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机协作决策，AI核心，关联OB/管理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "人机协作",
+      "算法决策"
+    ],
+    "authors": [
+      "Monika Westphal",
+      "Michael Vössing",
+      "Gerhard Satzger",
+      "Galit B. Yom-Tov",
+      "Anat Rafaeli"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Monika Westphal",
+        "orcid": "https://orcid.org/0000-0002-9210-0513"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Vössing",
+        "orcid": "https://orcid.org/0000-0002-7722-6142"
+      },
+      {
+        "affiliation": [],
+        "name": "Gerhard Satzger",
+        "orcid": "https://orcid.org/0000-0001-8731-654X"
+      },
+      {
+        "affiliation": [],
+        "name": "Galit B. Yom-Tov",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Anat Rafaeli",
+        "orcid": null
+      }
+    ],
+    "cited_by": 109,
+    "date": "2023-07",
+    "doi": "10.1016/j.chb.2023.107714",
+    "domain_score": 3.0,
+    "id": 52546,
+    "ingested_at": "2026-08-12T04:23:46.567411",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:13.830774",
+    "title": "Decision control and explanations in human-AI collaboration: Improving user perceptions and compliance",
+    "title_zh": null,
+    "tldr": "研究聚焦人机协作场景，考察决策控制权赋予与AI解释机制对用户感知和遵从行为的影响，揭示通过增强透明度与用户自主性来提升人机协同效能的设计启示。",
+    "topic_tags": [
+      "人机协作",
+      "决策",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107714",
+    "volume": "144",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -62987,6 +64689,63 @@
   },
   {
     "abstract": null,
+    "ai_reason": "机器人注视与声音，HRI含AI元素",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Mingming Li",
+      "Fu Guo",
+      "Xueshuang Wang",
+      "Jiahao Chen",
+      "Jaap Ham"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mingming Li",
+        "orcid": "https://orcid.org/0000-0002-4702-6350"
+      },
+      {
+        "affiliation": [],
+        "name": "Fu Guo",
+        "orcid": "https://orcid.org/0000-0001-6209-1874"
+      },
+      {
+        "affiliation": [],
+        "name": "Xueshuang Wang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jiahao Chen",
+        "orcid": "https://orcid.org/0000-0002-6110-7851"
+      },
+      {
+        "affiliation": [],
+        "name": "Jaap Ham",
+        "orcid": null
+      }
+    ],
+    "cited_by": 59,
+    "date": "2023-04",
+    "doi": "10.1016/j.chb.2022.107645",
+    "domain_score": 3.0,
+    "id": 52573,
+    "ingested_at": "2026-08-12T04:23:47.185709",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:32.111928",
+    "title": "Effects of robot gaze and voice human-likeness on users’ subjective perception, visual attention, and cerebral activity in voice conversations",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107645",
+    "volume": "141",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI中介英语学习，AI核心教育应用",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -63027,7 +64786,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T04:25:01.590827",
     "title": "Unpacking the role of motivation and enjoyment in AI-mediated informal digital learning of English (AI-IDLE): A mixed-method investigation in the Chinese context",
-    "title_zh": null,
+    "title_zh": "动机与愉悦感在AI中介非正式英语数字学习中的作用：中国情境的混合方法研究",
     "tldr": "采用混合方法考察中国语境下学习者在AI中介的非正式英语数字学习中的动机与愉悦感作用，探讨内在动机、享乐主义体验如何塑造学习投入与持续使用意愿，为AI赋能语言学习设计提供依据。",
     "topic_tags": [
       "教育",
@@ -63094,7 +64853,10 @@
     "abstract": null,
     "ai_reason": "提出AI可信度评估模型TrAM，AI核心议题",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "AI治理",
+      "可解释AI"
+    ],
     "authors": [
       "Nadine Schlicker",
       "Kevin Baum",
@@ -63146,8 +64908,11 @@
     "scored_at": "2026-08-12T04:24:48.505055",
     "title": "How do we assess the trustworthiness of AI? Introducing the trustworthiness assessment model (TrAM)",
     "title_zh": "如何评估AI的可信度？：引入可信度评估模型（TrAM）",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "该研究针对AI可信度评估难题，提出可信度评估模型（TrAM），从多维度构建AI系统可信度的结构化测量框架与指标体系，为AI治理、人机信任研究及组织部署AI决策提供评估工具。",
+    "topic_tags": [
+      "信任",
+      "AI治理"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108671",
     "volume": "170",
     "year": 2025
@@ -63258,7 +65023,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T04:25:01.590463",
     "title": "Cognitive ease at a cost: LLMs reduce mental effort but compromise depth in student scientific inquiry",
-    "title_zh": null,
+    "title_zh": "认知便利的代价：LLMs降低心智投入却损害学生科学探究的深度",
     "tldr": "研究LLM辅助对学生科学探究过程的影响，发现使用大语言模型可降低认知负荷与心智努力，但同时削弱了学生对科学问题进行深入探究与深度理解的能力，提示LLM在教育应用中存在认知便利与认知深度之间的权衡。",
     "topic_tags": [
       "教育",
@@ -63388,6 +65153,66 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人-自主体团队，AI是核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机协作",
+      "算法管理",
+      "机器人"
+    ],
+    "authors": [
+      "Nathan J. McNeese",
+      "Christopher Flathmann",
+      "Thomas A. O'Neill",
+      "Eduardo Salas"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Nathan J. McNeese",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Christopher Flathmann",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas A. O'Neill",
+        "orcid": "https://orcid.org/0000-0002-8336-5763"
+      },
+      {
+        "affiliation": [],
+        "name": "Eduardo Salas",
+        "orcid": null
+      }
+    ],
+    "cited_by": 56,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107874",
+    "domain_score": 5.0,
+    "id": 52662,
+    "ingested_at": "2026-08-12T04:23:49.423837",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:06:52.243878",
+    "title": "Stepping out of the shadow of human-human teaming: Crafting a unique identity for human-autonomy teams",
+    "title_zh": "走出人际团队协作的阴影:为人—自主性团队塑造独特身份",
+    "tldr": "聚焦人–自主系统团队（HAT）如何摆脱对传统人–人团队概念的依附，探讨为AI参与的团队赋予独特身份认同的路径。研究可能通过理论建构或质性访谈，识别HAT在角色、互动规范、共享心智模型等方面的差异化特征，并提出塑造HAT独立团队身份的管理建议。",
+    "topic_tags": [
+      "团队",
+      "人机协作",
+      "组织变革",
+      "工作设计"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107874",
+    "volume": "148",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "聊天机器人=AI核心，服务营销",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -63424,6 +65249,102 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2023.107954",
     "volume": "149",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "社交机器人语言拟人化，AI核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Hanna Chung",
+      "Hyunmin Kang",
+      "Soojin Jun"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Hanna Chung",
+        "orcid": "https://orcid.org/0000-0002-2818-9648"
+      },
+      {
+        "affiliation": [],
+        "name": "Hyunmin Kang",
+        "orcid": "https://orcid.org/0000-0003-2558-7744"
+      },
+      {
+        "affiliation": [],
+        "name": "Soojin Jun",
+        "orcid": "https://orcid.org/0000-0002-4844-2823"
+      }
+    ],
+    "cited_by": 60,
+    "date": "2023-05",
+    "doi": "10.1016/j.chb.2022.107640",
+    "domain_score": 4.0,
+    "id": 52673,
+    "ingested_at": "2026-08-12T04:23:49.678487",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:22.328609",
+    "title": "Verbal anthropomorphism design of social robots: Investigating users’ privacy perception",
+    "title_zh": null,
+    "tldr": "研究社交机器人语言拟人化设计对用户隐私感知的影响，分析不同拟人化程度的语言表达如何改变用户对隐私风险的判断及背后的作用机制。",
+    "topic_tags": [
+      "隐私",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2022.107640",
+    "volume": "142",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机协作中的风险决策,涉及AI",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Wei Xiong",
+      "Chen Wang",
+      "Liang Ma"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Wei Xiong",
+        "orcid": "https://orcid.org/0000-0001-6444-1495"
+      },
+      {
+        "affiliation": [],
+        "name": "Chen Wang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Liang Ma",
+        "orcid": "https://orcid.org/0000-0002-9422-814X"
+      }
+    ],
+    "cited_by": 33,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107556",
+    "domain_score": 4.0,
+    "id": 52677,
+    "ingested_at": "2026-08-12T04:23:49.775842",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:34.624756",
+    "title": "Partner or subordinate? Sequential risky decision-making behaviors under human-machine collaboration contexts",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107556",
+    "volume": "139",
     "year": 2023
   },
   {
@@ -63531,6 +65452,125 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108403",
     "volume": "161",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI产品使用与可持续性，AI核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机协作",
+      "机器学习"
+    ],
+    "authors": [
+      "Mohammed A. Al-Sharafi",
+      "Mostafa Al-Emran",
+      "Ibrahim Arpaci",
+      "Noorminshah A. Iahad",
+      "Adi Ahmad AlQudah"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mohammed A. Al-Sharafi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mostafa Al-Emran",
+        "orcid": "https://orcid.org/0000-0002-5269-5380"
+      },
+      {
+        "affiliation": [],
+        "name": "Ibrahim Arpaci",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Noorminshah A. Iahad",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Adi Ahmad AlQudah",
+        "orcid": "https://orcid.org/0000-0003-3942-5869"
+      },
+      {
+        "affiliation": [],
+        "name": "Mohammad Iranmanesh",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Noor Al-Qaysi",
+        "orcid": null
+      }
+    ],
+    "cited_by": 158,
+    "date": "2023-06",
+    "doi": "10.1016/j.chb.2023.107708",
+    "domain_score": 4.0,
+    "id": 52711,
+    "ingested_at": "2026-08-12T04:23:50.624060",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:15.296580",
+    "title": "Generation Z use of artificial intelligence products and its impact on environmental sustainability: A cross-cultural comparison",
+    "title_zh": null,
+    "tldr": "跨文化比较Z世代使用AI产品对环境可持续性行为的影响，分析不同文化背景下年轻群体AI产品使用模式与亲环境行为之间的关系及其作用机制。",
+    "topic_tags": [
+      "消费者行为",
+      "跨文化比较",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107708",
+    "volume": "143",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "Replika社交聊天机器人，人机关系研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Iryna Pentina",
+      "Tyler Hancock",
+      "Tianling Xie"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Iryna Pentina",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Tyler Hancock",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Tianling Xie",
+        "orcid": "https://orcid.org/0000-0003-4473-7672"
+      }
+    ],
+    "cited_by": 439,
+    "date": "2023-03",
+    "doi": "10.1016/j.chb.2022.107600",
+    "domain_score": 4.0,
+    "id": 52716,
+    "ingested_at": "2026-08-12T04:23:50.738670",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:24.645218",
+    "title": "Exploring relationship development with social chatbots: A mixed-method study of replika",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107600",
+    "volume": "140",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -63741,9 +65781,104 @@
   },
   {
     "abstract": null,
-    "ai_reason": "AI增强客户体验与战略营销，AI与营销核心",
+    "ai_reason": "人机团队透明度/可解释性，AI核心议题",
     "ai_score": 5.0,
     "ai_type_tags": [],
+    "authors": [
+      "Mica R. Endsley"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mica R. Endsley",
+        "orcid": "https://orcid.org/0000-0002-2359-947X"
+      }
+    ],
+    "cited_by": 269,
+    "date": "2023-03",
+    "doi": "10.1016/j.chb.2022.107574",
+    "domain_score": 4.0,
+    "id": 52819,
+    "ingested_at": "2026-08-12T04:23:53.117288",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:24.644315",
+    "title": "Supporting Human-AI Teams:Transparency, explainability, and situation awareness",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107574",
+    "volume": "140",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "语音助手为AI技术，涉消费者态度",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI客服"
+    ],
+    "authors": [
+      "Hyunjoo Im",
+      "Billy Sung",
+      "Garim Lee",
+      "Keegan Qi Xian Kok"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Hyunjoo Im",
+        "orcid": "https://orcid.org/0000-0002-7932-0087"
+      },
+      {
+        "affiliation": [],
+        "name": "Billy Sung",
+        "orcid": "https://orcid.org/0000-0003-0028-6574"
+      },
+      {
+        "affiliation": [],
+        "name": "Garim Lee",
+        "orcid": "https://orcid.org/0000-0002-7054-1967"
+      },
+      {
+        "affiliation": [],
+        "name": "Keegan Qi Xian Kok",
+        "orcid": "https://orcid.org/0000-0002-6623-8957"
+      }
+    ],
+    "cited_by": 49,
+    "date": "2023-08",
+    "doi": "10.1016/j.chb.2023.107791",
+    "domain_score": 4.0,
+    "id": 52834,
+    "ingested_at": "2026-08-12T04:23:53.447079",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:13.042068",
+    "title": "Let voice assistants sound like a machine: Voice and task type effects on perceived fluency, competence, and consumer attitude",
+    "title_zh": null,
+    "tldr": "研究语音助手的声音拟人化程度（机器声 vs 人声）与任务类型如何共同影响用户对助手的流畅度感知、能力评估及消费态度。预期机器般的声音在客观型任务中被认为更可信、更有能力，而人声在主观/社交型任务中表现更佳，为语音助手语音设计与产品定位提供指导。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107791",
+    "volume": "145",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI增强客户体验与战略营销，AI与营销核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "机器学习",
+      "推荐系统"
+    ],
     "authors": [
       "Jean-Michel Sahut",
       "Michel Laroche"
@@ -63772,11 +65907,54 @@
     "scored_at": "2026-08-12T04:24:48.504675",
     "title": "Using artificial intelligence (AI) to enhance customer experience and to develop strategic marketing: An integrative synthesis",
     "title_zh": "利用人工智能（AI）增强客户体验与制定战略营销：整合性综合研究",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "采用整合性综述方法系统梳理AI在提升客户体验与辅助战略营销决策中的应用框架，归纳关键技术与实践路径，为营销领域的AI落地提供综合视角。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "战略"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108684",
     "volume": "170",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI中介道歉，AI是核心变量，职场沟通",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Ella Glikson",
+      "Omri Asscher"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ella Glikson",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Omri Asscher",
+        "orcid": "https://orcid.org/0000-0002-3891-8058"
+      }
+    ],
+    "cited_by": 73,
+    "date": "2023-03",
+    "doi": "10.1016/j.chb.2022.107592",
+    "domain_score": 4.0,
+    "id": 52860,
+    "ingested_at": "2026-08-12T04:23:54.022603",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:24.643867",
+    "title": "AI-mediated apology in a multilingual work context: Implications for perceived authenticity and willingness to forgive",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107592",
+    "volume": "140",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -63820,7 +65998,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T04:25:01.590096",
     "title": "Trust and reliance on AI — An experimental study on the extent and costs of overreliance on AI",
-    "title_zh": null,
+    "title_zh": "信任与依赖AI：关于AI过度依赖程度及成本的实验研究",
     "tldr": "通过实验考察用户对人工智能系统的信任程度与过度依赖行为，量化过度依赖AI的广度（发生频率）与代价（决策准确率下降、纠错成本等），分析影响用户校准信任与AI依赖程度的情境与个体因素。",
     "topic_tags": [
       "信任",
@@ -63890,9 +66068,70 @@
   },
   {
     "abstract": null,
+    "ai_reason": "虚拟网红涉AI生成，营销学核心",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机交互"
+    ],
+    "authors": [
+      "Ozan Ozdemir",
+      "Bora Kolfal",
+      "Paul R. Messinger",
+      "Shaheer Rizvi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ozan Ozdemir",
+        "orcid": "https://orcid.org/0000-0002-7141-6201"
+      },
+      {
+        "affiliation": [],
+        "name": "Bora Kolfal",
+        "orcid": "https://orcid.org/0000-0001-9874-4734"
+      },
+      {
+        "affiliation": [],
+        "name": "Paul R. Messinger",
+        "orcid": "https://orcid.org/0000-0001-8104-458X"
+      },
+      {
+        "affiliation": [],
+        "name": "Shaheer Rizvi",
+        "orcid": null
+      }
+    ],
+    "cited_by": 188,
+    "date": "2023-08",
+    "doi": "10.1016/j.chb.2023.107771",
+    "domain_score": 5.0,
+    "id": 52929,
+    "ingested_at": "2026-08-12T04:23:55.626778",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:13.041574",
+    "title": "Human or virtual: How influencer type shapes brand attitudes",
+    "title_zh": null,
+    "tldr": "探讨人类真人影响者与虚拟（AI生成）影响者对消费者品牌态度的差异化影响。基于影响力营销与品牌态度理论，预期虚拟影响者在某些场景下可能引发更高或更低的品牌态度反应，揭示了AI生成内容在社交媒体营销中的说服效果边界，为品牌选择影响者类型提供实证依据。",
+    "topic_tags": [
+      "营销",
+      "品牌",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107771",
+    "volume": "145",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI建议对自私行为惩罚的实验，涉及AI伦理",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "AI治理",
+      "人机交互"
+    ],
     "authors": [
       "Margarita Leib",
       "Nils Köbis",
@@ -63927,8 +66166,12 @@
     "scored_at": "2026-08-12T04:24:48.503128",
     "title": "Does AI and human advice mitigate punishment for selfish behavior? An experiment on AI ethics from a psychological perspective",
     "title_zh": "AI与人类建议能否减轻对自私行为的惩罚？——基于心理学视角的AI伦理实验",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "通过实验从心理学视角探讨AI建议与人类建议是否能够减轻人们对自私行为的道德惩罚，比较不同建议来源（AI vs. 人类）对伦理判断与惩罚严厉程度的影响，揭示AI在道德决策情境中的角色与伦理意涵。",
+    "topic_tags": [
+      "伦理",
+      "决策",
+      "信任"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108709",
     "volume": "171",
     "year": 2025
@@ -64058,7 +66301,11 @@
     "abstract": null,
     "ai_reason": "AI道歉信任修复，AI为核心变量",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机交互",
+      "GenAI",
+      "LLM"
+    ],
     "authors": [
       "Joon Soo Lim",
       "Nalae Hong",
@@ -64093,8 +66340,13 @@
     "scored_at": "2026-08-12T04:24:50.373666",
     "title": "How warm-versus competent-toned AI apologies affect trust and forgiveness through emotions and perceived sincerity",
     "title_zh": "暖型与能力型AI道歉语气对信任与宽恕的影响：情感与感知真诚度的中介作用",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究AI道歉时的温暖型与能力型语调如何通过情绪反应和感知真诚度影响用户对AI的信任与原谅，揭示不同情感诉求策略在AI沟通修复中的差异化效果。",
+    "topic_tags": [
+      "信任",
+      "情绪",
+      "消费者行为",
+      "人机协作"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108761",
     "volume": "172",
     "year": 2025
@@ -64103,7 +66355,12 @@
     "abstract": null,
     "ai_reason": "LLM生成调研数据，AI为核心方法",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "ChatGPT",
+      "人机协作"
+    ],
     "authors": [
       "Leonie V.D.E. Vogelsmeier",
       "Eduardo Oliveira",
@@ -64150,8 +66407,12 @@
     "scored_at": "2026-08-12T04:24:50.370492",
     "title": "Delving into the psychology of Machines: Exploring the structure of self-regulated learning via LLM-generated survey responses",
     "title_zh": "深入机器心理学：基于LLM生成调查响应探讨自我调节学习结构",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "探讨利用大语言模型生成的问卷回答来剖析机器心理的可行性，构建基于LLM响应的自我调节学习结构模型，评估LLM在模拟学习者心理过程中的有效性及其对学习研究的启示。",
+    "topic_tags": [
+      "教育",
+      "培训",
+      "知识管理"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108769",
     "volume": "173",
     "year": 2025
@@ -64219,6 +66480,118 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108536",
     "volume": "165",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI身份与不道德行为，AI为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI治理",
+      "人机协作"
+    ],
+    "authors": [
+      "Limei Cao",
+      "Chen Chen",
+      "Xiaowei Dong",
+      "Manyi Wang",
+      "Xin Qin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Limei Cao",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Chen Chen",
+        "orcid": "https://orcid.org/0000-0002-0112-5046"
+      },
+      {
+        "affiliation": [],
+        "name": "Xiaowei Dong",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Manyi Wang",
+        "orcid": "https://orcid.org/0000-0002-9394-0223"
+      },
+      {
+        "affiliation": [],
+        "name": "Xin Qin",
+        "orcid": "https://orcid.org/0000-0001-8365-0217"
+      }
+    ],
+    "cited_by": 73,
+    "date": "2023-06",
+    "doi": "10.1016/j.chb.2023.107669",
+    "domain_score": 4.0,
+    "id": 52991,
+    "ingested_at": "2026-08-12T04:23:57.036003",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:15.295728",
+    "title": "The dark side of AI identity: Investigating when and why AI identity entitles unethical behavior",
+    "title_zh": null,
+    "tldr": "从阴暗面视角探究AI身份认同何时以及为何会滋生不道德行为，分析个体将AI身份内化后引发伦理失范的心理机制与边界条件，揭示AI身份带来的负面效应。",
+    "topic_tags": [
+      "伦理",
+      "人机交互",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107669",
+    "volume": "143",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "虚拟网红涉及AI披露，准社会关系研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互",
+      "GenAI"
+    ],
+    "authors": [
+      "Rachel Esther Lim",
+      "So Young Lee"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Rachel Esther Lim",
+        "orcid": "https://orcid.org/0000-0003-0778-2183"
+      },
+      {
+        "affiliation": [],
+        "name": "So Young Lee",
+        "orcid": null
+      }
+    ],
+    "cited_by": 208,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107897",
+    "domain_score": 4.0,
+    "id": 52998,
+    "ingested_at": "2026-08-12T04:23:57.186942",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:55.260178",
+    "title": "“You are a virtual influencer!”: Understanding the impact of origin disclosure and emotional narratives on parasocial relationships and virtual influencer credibility",
+    "title_zh": "\"你是一名虚拟影响者!\"：理解身份披露与情感叙事对类社会关系及虚拟影响者可信度的影响",
+    "tldr": "考察虚拟影响者披露AI出身与情感叙事如何影响受众的准社会关系与可信度，揭示披露方式与叙事策略在塑造受众对虚拟KOL认同与信任中的作用，对数字营销与品牌传播有重要启示。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "广告",
+      "品牌",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107897",
+    "volume": "148",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -64348,7 +66721,10 @@
     "abstract": null,
     "ai_reason": "社交机器人心智感知，属AI相关",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
     "authors": [
       "Kevin Koban",
       "Jaime Banks"
@@ -64376,9 +66752,13 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:28.702781",
     "title": "It feels, therefore it is: Associations between mind perception and mind ascription for social robots",
-    "title_zh": null,
-    "tldr": null,
-    "topic_tags": [],
+    "title_zh": "有所感，故其在：社交机器人心智感知与心智归因的关联",
+    "tldr": "研究社交机器人情境下用户对机器人的心智感知（mind perception）与心智归因（mind ascription）之间的关联，揭示人们如何将感受、意图、意识等心智特征投射到社交机器人上，探讨人机交互中拟人化判断的心理机制与影响因素。",
+    "topic_tags": [
+      "人机协作",
+      "信任",
+      "伦理"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2023.108098",
     "volume": "153",
     "year": 2024
@@ -64387,7 +66767,11 @@
     "abstract": null,
     "ai_reason": "AI想象塑造技术身份与数字未来，AI为主要变量",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "AI治理",
+      "人机协作"
+    ],
     "authors": [
       "Bu Zhong",
       "Yunya Song",
@@ -64464,8 +66848,13 @@
     "scored_at": "2026-08-12T04:24:48.506131",
     "title": "AI imaginaries shape technological identity and digital futures",
     "title_zh": "AI想象塑造技术身份与数字未来",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "探讨公众与从业者对AI的想象（imaginaries）如何塑造其技术身份认同与对数字未来的预期。研究关注AI话语与叙事如何影响个体对自我技术角色的定位，以及对未来社会数字化走向的想象建构，揭示AI想象在技术与身份共构中的作用机制。",
+    "topic_tags": [
+      "人机协作",
+      "工作未来",
+      "组织变革",
+      "信任"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108682",
     "volume": "169",
     "year": 2025
@@ -64611,9 +67000,70 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聊天机器人满意度，AI为核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "ChatGPT",
+      "人机协作"
+    ],
+    "authors": [
+      "Yu-li Liu",
+      "Bo Hu",
+      "Wenjia Yan",
+      "Zhi Lin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yu-li Liu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Bo Hu",
+        "orcid": "https://orcid.org/0000-0001-9020-3423"
+      },
+      {
+        "affiliation": [],
+        "name": "Wenjia Yan",
+        "orcid": "https://orcid.org/0000-0001-6708-2520"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhi Lin",
+        "orcid": "https://orcid.org/0000-0003-3398-4774"
+      }
+    ],
+    "cited_by": 71,
+    "date": "2023-06",
+    "doi": "10.1016/j.chb.2023.107716",
+    "domain_score": 4.0,
+    "id": 53050,
+    "ingested_at": "2026-08-12T04:23:58.378728",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:15.295326",
+    "title": "Can chatbots satisfy me? A mixed-method comparative study of satisfaction with task-oriented chatbots in mainland China and Hong Kong",
+    "title_zh": null,
+    "tldr": "采用混合方法比较中国大陆与香港用户对任务型聊天机器人的满意度差异，探究跨文化背景下用户对任务型chatbot的体验评价及其影响因素，揭示区域文化差异在人机交互中的作用。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "跨文化比较"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107716",
+    "volume": "143",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究LLM对人格/文化变量的响应，AI中心",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "GenAI"
+    ],
     "authors": [
       "Chihao Li",
       "Yue Qi"
@@ -64642,8 +67092,12 @@
     "scored_at": "2026-08-12T04:24:48.504273",
     "title": "Toward accurate psychological simulations: Investigating LLMs’ responses to personality and cultural variables",
     "title_zh": "迈向准确的心理模拟：探究LLMs对人格与文化变量的反应",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "评估大语言模型在心理模拟中的准确性，考察其在不同人格特质与文化变量下生成回应的表现与偏差，检验LLM能否有效模拟多样化的心理特征及其跨文化一致性。",
+    "topic_tags": [
+      "偏见",
+      "公平性",
+      "决策"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108687",
     "volume": "170",
     "year": 2025
@@ -64748,6 +67202,45 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心研究人与AI代理的拟人化互动",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Joohee Kim",
+      "Il Im"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Joohee Kim",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Il Im",
+        "orcid": "https://orcid.org/0000-0001-7536-3170"
+      }
+    ],
+    "cited_by": 188,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107512",
+    "domain_score": 5.0,
+    "id": 53134,
+    "ingested_at": "2026-08-12T04:24:00.338187",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:34.622006",
+    "title": "Anthropomorphic response: Understanding interactions between humans and artificial intelligence agents",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107512",
+    "volume": "139",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究AI医疗咨询用户偏好",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -64824,7 +67317,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T04:24:59.774541",
     "title": "User preferences and trust in hypothetical analog, digitalized and AI-based medical consultation scenarios: An online discrete choice survey",
-    "title_zh": null,
+    "title_zh": "用户对假设性模拟、数字化及人工智能医疗咨询场景的偏好与信任：一项在线离散选择调查",
     "tldr": "通过在线离散选择实验，比较用户在模拟、数字化与AI三种医疗咨询场景下的偏好与信任水平，揭示AI医疗咨询相对于传统方式的接受度、信任差距及用户选择的关键驱动因素。",
     "topic_tags": [
       "信任",
@@ -64905,6 +67398,70 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人-AI团队社会感知，AI为核心变量",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Alexandra M. Harris-Watson",
+      "Lindsay E. Larson",
+      "Nina Lauharatanahirun",
+      "Leslie A. DeChurch",
+      "Noshir S. Contractor"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Alexandra M. Harris-Watson",
+        "orcid": "https://orcid.org/0000-0001-6136-8069"
+      },
+      {
+        "affiliation": [],
+        "name": "Lindsay E. Larson",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nina Lauharatanahirun",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Leslie A. DeChurch",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Noshir S. Contractor",
+        "orcid": null
+      }
+    ],
+    "cited_by": 141,
+    "date": "2023-08",
+    "doi": "10.1016/j.chb.2023.107765",
+    "domain_score": 5.0,
+    "id": 53177,
+    "ingested_at": "2026-08-12T04:24:01.330482",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:03.109739",
+    "title": "Social perception in Human-AI teams: Warmth and competence predict receptivity to AI teammates",
+    "title_zh": null,
+    "tldr": "将社会认知中的\"温暖-能力\"模型应用于人-AI团队，考察用户对AI队友的接受度。实证发现，感知到的温暖与能力共同预测人们对AI队友的接纳意愿，揭示社会感知在人机协作中的关键作用。",
+    "topic_tags": [
+      "人机协作",
+      "团队",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107765",
+    "volume": "145",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI决策支持vs人类，核心AI议题",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -64946,7 +67503,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:28.702327",
     "title": "Trusting under risk – comparing human to AI decision support agents",
-    "title_zh": null,
+    "title_zh": "风险下的信任：人类与AI决策支持代理的比较",
     "tldr": "在风险情境下比较人类与AI决策支持代理的可信任度差异，探讨风险水平、任务类型及代理特征如何影响用户对两类决策辅助的信任与依赖，为人机协同决策设计提供启示。",
     "topic_tags": [
       "决策",
@@ -64992,7 +67549,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:28.701820",
     "title": "The effect of anthropomorphism of virtual voice assistants on perceived safety as an antecedent to voice shopping",
-    "title_zh": null,
+    "title_zh": "虚拟语音助手拟人化对感知安全的影响：作为语音购物的前因",
     "tldr": "研究虚拟语音助手（如Alexa、Siri）的拟人化程度对消费者感知安全性的影响，并进一步探究感知安全如何驱动语音购物意愿。揭示拟人化线索通过降低风险感知促进语音商务采纳的机制。",
     "topic_tags": [
       "消费者行为",
@@ -65008,7 +67565,10 @@
     "abstract": null,
     "ai_reason": "个性化算法与操纵",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "推荐算法",
+      "算法决策"
+    ],
     "authors": [
       "Robert Epstein",
       "Amanda Newland",
@@ -65043,11 +67603,292 @@
     "scored_at": "2026-08-12T04:24:54.031930",
     "title": "The “digital personalization effect” (DPE): A quantification of the possible extent to which personalizing content can increase the impact of online manipulations",
     "title_zh": "\"数字个性化效应\"（DPE）：内容个性化提升网络操纵影响的潜在程度量化",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究量化数字个性化内容对在线操纵影响力的放大效应，估算个性化推荐/定制化内容可能将在线操纵的传播效果提升的程度，探讨算法个性化机制如何加剧说服与操纵风险。",
+    "topic_tags": [
+      "消费者行为",
+      "推荐系统",
+      "伦理",
+      "隐私"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108578",
     "volume": "166",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "NLP分析自杀支持社区，AI方法",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Nicholas Deas",
+      "Robin Kowalski",
+      "Sophie Finnell",
+      "Emily Radovic",
+      "Hailey Carroll"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Nicholas Deas",
+        "orcid": "https://orcid.org/0000-0002-2306-5101"
+      },
+      {
+        "affiliation": [],
+        "name": "Robin Kowalski",
+        "orcid": "https://orcid.org/0000-0002-9667-3116"
+      },
+      {
+        "affiliation": [],
+        "name": "Sophie Finnell",
+        "orcid": "https://orcid.org/0000-0003-3751-3910"
+      },
+      {
+        "affiliation": [],
+        "name": "Emily Radovic",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hailey Carroll",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Chelsea Robbins",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Cook",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kenzie Hurley",
+        "orcid": "https://orcid.org/0000-0002-5390-1588"
+      },
+      {
+        "affiliation": [],
+        "name": "Natalie Cote",
+        "orcid": "https://orcid.org/0000-0003-2771-9130"
+      },
+      {
+        "affiliation": [],
+        "name": "Kelly Evans",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Isabella Lorenzo",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kelly Kiser",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Gabriela Mochizuki",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Meredith Mock",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Lyndsey Brewer",
+        "orcid": null
+      }
+    ],
+    "cited_by": 37,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107499",
+    "domain_score": 4.0,
+    "id": 53244,
+    "ingested_at": "2026-08-12T04:24:02.911341",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:31.599845",
+    "title": "I just want to matter: Examining the role of anti-mattering in online suicide support communities using natural language processing",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107499",
+    "volume": "139",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "NLP检测抑郁严重度，AI方法核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Mohsinul Kabir",
+      "Tasnim Ahmed",
+      "Md. Bakhtiar Hasan",
+      "Md Tahmid Rahman Laskar",
+      "Tarun Kumar Joarder"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mohsinul Kabir",
+        "orcid": "https://orcid.org/0000-0001-5899-6355"
+      },
+      {
+        "affiliation": [],
+        "name": "Tasnim Ahmed",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Md. Bakhtiar Hasan",
+        "orcid": "https://orcid.org/0000-0001-8093-5006"
+      },
+      {
+        "affiliation": [],
+        "name": "Md Tahmid Rahman Laskar",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Tarun Kumar Joarder",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hasan Mahmud",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kamrul Hasan",
+        "orcid": null
+      }
+    ],
+    "cited_by": 87,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107503",
+    "domain_score": 4.0,
+    "id": 53255,
+    "ingested_at": "2026-08-12T04:24:03.164264",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:31.599380",
+    "title": "DEPTWEET: A typology for social media texts to detect depression severities",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107503",
+    "volume": "139",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI vs人类队友信任，AI核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Guanglu Zhang",
+      "Leah Chong",
+      "Kenneth Kotovsky",
+      "Jonathan Cagan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Guanglu Zhang",
+        "orcid": "https://orcid.org/0000-0002-1203-2267"
+      },
+      {
+        "affiliation": [],
+        "name": "Leah Chong",
+        "orcid": "https://orcid.org/0000-0001-5619-4674"
+      },
+      {
+        "affiliation": [],
+        "name": "Kenneth Kotovsky",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan Cagan",
+        "orcid": "https://orcid.org/0000-0002-3935-9219"
+      }
+    ],
+    "cited_by": 126,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107536",
+    "domain_score": 4.0,
+    "id": 53263,
+    "ingested_at": "2026-08-12T04:24:03.350118",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:31.598984",
+    "title": "Trust in an AI versus a Human teammate: The effects of teammate identity and performance on Human-AI cooperation",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107536",
+    "volume": "139",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机协作AI生成俳句，AI核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Jimpei Hitsuwari",
+      "Yoshiyuki Ueda",
+      "Woojin Yun",
+      "Michio Nomura"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jimpei Hitsuwari",
+        "orcid": "https://orcid.org/0000-0002-0061-5318"
+      },
+      {
+        "affiliation": [],
+        "name": "Yoshiyuki Ueda",
+        "orcid": "https://orcid.org/0000-0001-7089-3009"
+      },
+      {
+        "affiliation": [],
+        "name": "Woojin Yun",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Michio Nomura",
+        "orcid": null
+      }
+    ],
+    "cited_by": 202,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107502",
+    "domain_score": 4.0,
+    "id": 53281,
+    "ingested_at": "2026-08-12T04:24:03.765900",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:31.598565",
+    "title": "Does human–AI collaboration lead to more creative art? Aesthetic evaluation of human-made and AI-generated haiku poetry",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107502",
+    "volume": "139",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -65167,6 +68008,45 @@
   },
   {
     "abstract": null,
+    "ai_reason": "品牌聊天机器人(chatbot)即AI，消费者品牌关系",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Jhih-Syuan (Elaine) Lin",
+      "Linwan Wu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jhih-Syuan (Elaine) Lin",
+        "orcid": "https://orcid.org/0000-0002-2026-5095"
+      },
+      {
+        "affiliation": [],
+        "name": "Linwan Wu",
+        "orcid": null
+      }
+    ],
+    "cited_by": 68,
+    "date": "2023-03",
+    "doi": "10.1016/j.chb.2022.107488",
+    "domain_score": 5.0,
+    "id": 53360,
+    "ingested_at": "2026-08-12T04:24:05.607228",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:24.643376",
+    "title": "Examining the psychological process of developing consumer-brand relationships through strategic use of social media brand chatbots",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107488",
+    "volume": "140",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "语音助手=AI核心，工作满意度属OB",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -65214,6 +68094,69 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2023.107919",
     "volume": "149",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心研究教师AI准备度，属AI教育应用",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机协作",
+      "AI 治理"
+    ],
+    "authors": [
+      "Xinghua Wang",
+      "Linlin Li",
+      "Seng Chee Tan",
+      "Lu Yang",
+      "Jun Lei"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Xinghua Wang",
+        "orcid": "https://orcid.org/0000-0002-4246-8600"
+      },
+      {
+        "affiliation": [],
+        "name": "Linlin Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Seng Chee Tan",
+        "orcid": "https://orcid.org/0000-0002-8406-0144"
+      },
+      {
+        "affiliation": [],
+        "name": "Lu Yang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jun Lei",
+        "orcid": "https://orcid.org/0000-0002-1030-0715"
+      }
+    ],
+    "cited_by": 271,
+    "date": "2023-09",
+    "doi": "10.1016/j.chb.2023.107798",
+    "domain_score": 4.0,
+    "id": 53379,
+    "ingested_at": "2026-08-12T04:24:06.106201",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:03.105748",
+    "title": "Preparing for AI-enhanced education: Conceptualizing and empirically examining teachers’ AI readiness",
+    "title_zh": null,
+    "tldr": "围绕教师AI教育准备度展开，构建AI readiness概念框架并通过实证调查测量教师在认知、情感与行为层面上的准备程度，识别影响其准备度的关键因素，为AI融入教育实践提供依据。",
+    "topic_tags": [
+      "教育",
+      "培训"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107798",
+    "volume": "146",
     "year": 2023
   },
   {
@@ -65307,7 +68250,9 @@
     "abstract": null,
     "ai_reason": "核心研究AI助手情绪匹配对驾驶安全的影响",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机交互"
+    ],
     "authors": [
       "Binhao Huang",
       "Jian Lv",
@@ -65342,8 +68287,11 @@
     "scored_at": "2026-08-12T05:43:44.648236",
     "title": "Influencing driving safety by matching AI assistant's verbal emotions to driver: A randomized controlled trial on performance, attention, and emotion",
     "title_zh": "匹配AI助手语言情绪以提升驾驶安全：表现、注意力与情绪的随机对照试验",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "该研究通过随机对照实验，检验AI驾驶助手语音情绪与驾驶员情绪匹配对驾驶安全的影响，比较匹配与不匹配条件下驾驶绩效、注意力分配和情绪反应的差异，为情感化人机交互设计提供实证依据。",
+    "topic_tags": [
+      "人机协作",
+      "决策"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108667",
     "volume": "169",
     "year": 2025
@@ -65403,7 +68351,10 @@
     "abstract": null,
     "ai_reason": "自动驾驶涉及AI，公众归因研究",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器学习",
+      "人机交互"
+    ],
     "authors": [
       "Heyuan Sun",
       "Yutong Chen",
@@ -65438,8 +68389,13 @@
     "scored_at": "2026-08-12T05:43:44.653384",
     "title": "Who is to blame for AV crashes? Public perceptions of blame attribution using text mining based on social media",
     "title_zh": "谁该为自动驾驶汽车事故负责？基于社交媒体文本挖掘的公众归因感知",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "基于社交媒体文本挖掘，分析公众对自动驾驶车辆（AV）事故的归因倾向与责任归属感知。研究识别公众在不同事故情境下对人类驾驶员、AI系统、制造商及监管方等主体的归责模式，揭示影响AV信任与接受的舆论因素。",
+    "topic_tags": [
+      "伦理",
+      "信任",
+      "消费者行为",
+      "决策"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108627",
     "volume": "168",
     "year": 2025
@@ -65534,7 +68490,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T05:43:55.026638",
     "title": "Unleashing pre-service language teachers’ productivity with generative AI: Emotions, appraisal and coping strategies",
-    "title_zh": null,
+    "title_zh": "生成式AI赋能职前语言教师生产力：情绪、评价与应对策略",
     "tldr": "该研究考察职前语言教师在教学准备中使用生成式AI时的情绪反应、认知评估与应对策略，探讨GenAI如何影响其生产力与教学准备过程，揭示教师对AI工具的情感体验及适应性行为机制。",
     "topic_tags": [
       "教育",
@@ -65603,7 +68559,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T05:43:55.026227",
     "title": "Social media use is predictable from app sequences: Using LSTM and transformer neural networks to model habitual behavior",
-    "title_zh": null,
+    "title_zh": "社交媒体使用可从应用序列预测：基于LSTM与Transformer神经网络建模习惯行为",
     "tldr": "利用LSTM与Transformer神经网络，基于手机App使用序列预测用户社交媒体习惯性行为。比较两类深度学习模型在建模习惯性行为中的表现，验证App切换序列对社交媒体使用模式的预测能力，为行为预测与个性化干预提供方法论支持。",
     "topic_tags": [
       "消费者行为",
@@ -65613,6 +68569,60 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108381",
     "volume": "161",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI执行任务对消费者感知影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机协作",
+      "AI客服",
+      "ChatGPT"
+    ],
+    "authors": [
+      "Mehmet Yanit",
+      "Metehan Yanit",
+      "Fang Wan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mehmet Yanit",
+        "orcid": "https://orcid.org/0000-0001-9383-1062"
+      },
+      {
+        "affiliation": [],
+        "name": "Metehan Yanit",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Fang Wan",
+        "orcid": null
+      }
+    ],
+    "cited_by": 30,
+    "date": "2023-10",
+    "doi": "10.1016/j.chb.2023.107870",
+    "domain_score": 4.0,
+    "id": 53930,
+    "ingested_at": "2026-08-12T05:42:26.035493",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:02.565089",
+    "title": "Right agent, wrong level of hedonism: How high (vs low) hedonic values in AI-performed tasks lead to decreased perceptions of humanlikeness, warmth, and less consumer support",
+    "title_zh": "正确的代理，错误的享乐水平：高享乐价值AI任务如何削弱类人性、温暖感与消费者支持",
+    "tldr": "探讨AI执行不同享乐性任务时的消费者反应：相比低享乐性任务，AI承担高享乐性任务会被感知为更缺乏人性与温暖，导致消费者支持度下降。研究揭示任务类型与AI主体性的不匹配效应，对AI服务边界设计具启示。",
+    "topic_tags": [
+      "消费者行为",
+      "人机交互",
+      "信任",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107870",
+    "volume": "147",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -65703,7 +68713,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:39.037367",
     "title": "The dynamics of human–robot trust attitude and behavior — Exploring the effects of anthropomorphism and type of failure",
-    "title_zh": null,
+    "title_zh": "人机信任态度与行为的动态：拟人化与失败类型的影响",
     "tldr": "探讨人与机器人信任的动态形成过程，重点考察拟人化程度和不同失败类型如何影响用户对机器人的信任态度与行为反应。研究关注信任如何随交互经验演变，以及机器人外形与故障情境的交互作用，为机器人设计和人机信任建立提供理论依据。",
     "topic_tags": [
       "信任",
@@ -65718,7 +68728,10 @@
     "abstract": null,
     "ai_reason": "算法意识与人机沟通隐私，涉及算法",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "算法管理",
+      "人机交互"
+    ],
     "authors": [
       "Matthew J.A. Craig"
     ],
@@ -65741,8 +68754,13 @@
     "scored_at": "2026-08-12T05:43:44.804782",
     "title": "Human-machine communication privacy management, privacy fatigue, and the conditional effects of algorithm awareness on privacy co-ownership in the social media context",
     "title_zh": "人机沟通隐私管理与隐私疲劳：算法意识对社交媒体隐私共同所有权的条件效应",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究社交媒体情境下人机沟通中的隐私管理，考察隐私疲劳如何影响用户行为，并检验算法意识对隐私共同所有权（privacy co-ownership）的条件效应，揭示算法透明度在缓解隐私担忧中的作用边界。",
+    "topic_tags": [
+      "隐私",
+      "信任",
+      "人机协作",
+      "消费者行为"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108786",
     "volume": "173",
     "year": 2025
@@ -65810,7 +68828,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T05:43:55.025816",
     "title": "Automated or human: Which driver wins the race for the passengers’ trust? Examining passenger trust in human-driven and automated vehicles following a dangerous situation",
-    "title_zh": null,
+    "title_zh": "自动驾驶还是人类驾驶：谁赢得乘客信任——危险情境后乘客信任考察",
     "tldr": "对比乘客在遭遇危险情境后对人类驾驶与自动驾驶车辆的信任差异。考察乘客在经历危险事件后对两种驾驶模式的信任变化及其影响因素，揭示自动化驾驶在赢得乘客信任方面面临的挑战，为自动驾驶系统的设计与信任建立提供参考。",
     "topic_tags": [
       "信任",
@@ -65870,9 +68888,64 @@
   },
   {
     "abstract": null,
+    "ai_reason": "自动化决策中的用户声音，AI/算法核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Paul Hellwig",
+      "Victoria Buchholz",
+      "Stefan Kopp",
+      "Günter W. Maier"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Paul Hellwig",
+        "orcid": "https://orcid.org/0000-0003-1144-2800"
+      },
+      {
+        "affiliation": [],
+        "name": "Victoria Buchholz",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Stefan Kopp",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Günter W. Maier",
+        "orcid": "https://orcid.org/0000-0002-6818-5617"
+      }
+    ],
+    "cited_by": 24,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107446",
+    "domain_score": 4.0,
+    "id": 54036,
+    "ingested_at": "2026-08-12T05:42:29.202945",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:40.759246",
+    "title": "Let the user have a say - voice in automated decision-making",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107446",
+    "volume": "138",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究AI交互及ChatGPT信任",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "ChatGPT",
+      "LLM",
+      "人机交互"
+    ],
     "authors": [
       "Christian Montag",
       "Jon D. Elhai"
@@ -65901,11 +68974,74 @@
     "scored_at": "2026-08-12T05:43:41.804891",
     "title": "Introduction of the AI-Interaction Positivity Scale and its relations to satisfaction with life and trust in ChatGPT",
     "title_zh": "人工智能交互积极性量表的编制及其与生活满意度和ChatGPT信任的关系",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "开发并检验AI互动积极性量表，测量用户在与AI系统互动时的积极情感与态度，并探讨该量表得分与生活满意度和对ChatGPT信任感之间的关系，为评估人机互动体验提供心理测量工具。",
+    "topic_tags": [
+      "信任",
+      "员工幸福感",
+      "心理测量",
+      "人机协作"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108705",
     "volume": "172",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI与人类创作艺术的情绪反应对比，AI为核心变量",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "图像生成",
+      "人机交互"
+    ],
+    "authors": [
+      "Theresa Rahel Demmer",
+      "Corinna Kühnapfel",
+      "Joerg Fingerhut",
+      "Matthew Pelowski"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Theresa Rahel Demmer",
+        "orcid": "https://orcid.org/0000-0002-8038-9348"
+      },
+      {
+        "affiliation": [],
+        "name": "Corinna Kühnapfel",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Joerg Fingerhut",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew Pelowski",
+        "orcid": null
+      }
+    ],
+    "cited_by": 78,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107875",
+    "domain_score": 4.0,
+    "id": 54071,
+    "ingested_at": "2026-08-12T05:42:30.234094",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:55.258003",
+    "title": "Does an emotional connection to art really require a human artist? Emotion and intentionality responses to AI- versus human-created art and impact on aesthetic experience",
+    "title_zh": "与艺术建立情感联结是否需要人类艺术家：AI与人类艺术的情感意向性反应及审美体验",
+    "tldr": "比较受众对AI创作与人类创作艺术作品的情感反应与意图归因，检验情感联结是否必须依赖人类创作者身份，并分析其对审美体验的影响，揭示AI艺术接受度的心理机制。",
+    "topic_tags": [
+      "消费者行为",
+      "创意"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107875",
+    "volume": "148",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -65942,7 +69078,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:39.036436",
     "title": "Parenting the TikTok algorithm: An algorithm awareness as process approach to online risks and opportunities",
-    "title_zh": null,
+    "title_zh": "引导TikTok算法：以算法意识为过程视角的网络风险与机遇",
     "tldr": "聚焦TikTok推荐算法，将父母对算法的认知视为一个动态过程，分析其如何识别并应对青少年面临的在线风险与机会，探讨算法素养在家庭数字监护中的作用，为青少年在线安全教育提供新视角。",
     "topic_tags": [
       "教育",
@@ -66148,7 +69284,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:29.013520",
     "title": "University Students’ Opinions on Using Intelligent Agents to Cope with Stress and Anxiety in Social Situations",
-    "title_zh": null,
+    "title_zh": "大学生关于使用智能体应对社交情境中压力与焦虑的观点",
     "tldr": "研究大学生对在社交情境中使用智能体（如聊天机器人、虚拟助手）应对压力与焦虑的看法。探讨用户接受度、隐私担忧、情感依附及使用意愿的影响因素，为面向学生群体的心理健康类智能体设计提供参考。",
     "topic_tags": [
       "人机交互",
@@ -66213,7 +69349,9 @@
     "abstract": null,
     "ai_reason": "AI信息暴露、素养、焦虑，AI核心",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机交互"
+    ],
     "authors": [
       "Sha Sarah Qiu",
       "Luxi Zhang",
@@ -66254,8 +69392,12 @@
     "scored_at": "2026-08-12T05:43:44.804380",
     "title": "Unpacking media channel effects on AI perception: A network analysis of AI information exposure across channels, overload, literacy, and anxiety among Chinese users",
     "title_zh": "媒体渠道对AI感知的影响：中国用户AI信息跨渠道暴露、过载、素养与焦虑的网络分析",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "采用网络分析方法，考察中国用户通过不同媒体渠道接触AI信息时，信息过载、AI素养与焦虑之间的关联结构，揭示多渠道信息暴露如何共同作用于公众对AI的整体感知与情绪反应。",
+    "topic_tags": [
+      "消费者行为",
+      "信任",
+      "偏见"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108790",
     "volume": "173",
     "year": 2025
@@ -66418,7 +69560,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T05:43:54.077814",
     "title": "Are social media robot influencers credible? A cross-continental analysis in a fashion context",
-    "title_zh": null,
+    "title_zh": "社交媒体机器人网红可信吗？时尚领域的跨洲分析",
     "tldr": "以时尚行业为背景，跨大洲比较社交媒体上虚拟/机器人网红的可信度差异，识别影响用户信任与可信感知的因素（外貌、互动性、来源国等），探讨AI网红在不同文化市场中的传播效果及其对品牌营销的启示。",
     "topic_tags": [
       "营销",
@@ -66468,7 +69610,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:28.706440",
     "title": "Algorithmic management of crowdworkers: Implications for workers’ identity, belonging, and meaningfulness of work",
-    "title_zh": null,
+    "title_zh": "众包工作者的算法管理：对工人身份认同、归属感与工作意义感的影响",
     "tldr": null,
     "topic_tags": [],
     "url": "https://doi.org/10.1016/j.chb.2023.108089",
@@ -66538,7 +69680,11 @@
     "abstract": null,
     "ai_reason": "GAI素养量表开发，AI为核心，教育领域",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "多模态"
+    ],
     "authors": [
       "Meilu Liu",
       "Lawrence Jun Zhang",
@@ -66573,8 +69719,11 @@
     "scored_at": "2026-08-12T05:43:50.777369",
     "title": "Enhancing student GAI literacy in digital multimodal composing through development and validation of a scale",
     "title_zh": "数字多模态写作中学生GAI素养量表的开发与验证",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对学生在数字多模态写作情境下的生成式AI（GAI）素养，开发并验证测量量表，识别GAI素养的多维结构与题项，为教育评估、课程设计及学生能力培养提供可靠工具，推动GenAI时代数字写作教学发展。",
+    "topic_tags": [
+      "教育",
+      "培训"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108569",
     "volume": "166",
     "year": 2025
@@ -66626,6 +69775,57 @@
     "url": "https://doi.org/10.1016/j.chb.2026.109111",
     "volume": "185",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "社交机器人拟人化，AI核心议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Federica Spaccatini",
+      "Giulia Corlito",
+      "Simona Sacchi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Federica Spaccatini",
+        "orcid": "https://orcid.org/0000-0001-7472-9089"
+      },
+      {
+        "affiliation": [],
+        "name": "Giulia Corlito",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Simona Sacchi",
+        "orcid": null
+      }
+    ],
+    "cited_by": 27,
+    "date": "2023-09",
+    "doi": "10.1016/j.chb.2023.107821",
+    "domain_score": 3.0,
+    "id": 54303,
+    "ingested_at": "2026-08-12T05:42:36.946130",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:05.254104",
+    "title": "New dyads? The effect of social robots’ anthropomorphization on empathy towards human beings",
+    "title_zh": null,
+    "tldr": "考察社交机器人拟人化程度对人类共情的影响，比较不同拟人化水平下用户对机器人的共情反应，并探讨这种共情是否进一步溢出至用户对真实他人的人际共情。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107821",
+    "volume": "146",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -66722,9 +69922,117 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人-自主团队奖励对齐，AI相关",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "算法决策"
+    ],
+    "authors": [
+      "Lindsay Sanneman",
+      "Julie A. Shah"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Lindsay Sanneman",
+        "orcid": "https://orcid.org/0000-0002-4247-3004"
+      },
+      {
+        "affiliation": [],
+        "name": "Julie A. Shah",
+        "orcid": null
+      }
+    ],
+    "cited_by": 18,
+    "date": "2023-09",
+    "doi": "10.1016/j.chb.2023.107809",
+    "domain_score": 4.0,
+    "id": 54377,
+    "ingested_at": "2026-08-12T05:42:39.170380",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:05.253690",
+    "title": "Validating metrics for reward alignment in human-autonomy teaming",
+    "title_zh": null,
+    "tldr": "聚焦人机自主团队中人机间奖励对齐的度量问题，开发并验证可衡量人机目标一致性的指标体系，为评估自主系统与人类协作效能及团队匹配质量提供量化工具。",
+    "topic_tags": [
+      "人机协作",
+      "团队",
+      "绩效评估"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107809",
+    "volume": "146",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "机器分配行为，算法决策公平性",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法决策",
+      "人机交互"
+    ],
+    "authors": [
+      "Houston Claure",
+      "Seyun Kim",
+      "René F. Kizilcec",
+      "Malte Jung"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Houston Claure",
+        "orcid": "https://orcid.org/0000-0002-6292-4706"
+      },
+      {
+        "affiliation": [],
+        "name": "Seyun Kim",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "René F. Kizilcec",
+        "orcid": "https://orcid.org/0000-0001-6283-5546"
+      },
+      {
+        "affiliation": [],
+        "name": "Malte Jung",
+        "orcid": "https://orcid.org/0000-0001-9359-7122"
+      }
+    ],
+    "cited_by": 18,
+    "date": "2023-09",
+    "doi": "10.1016/j.chb.2022.107628",
+    "domain_score": 4.0,
+    "id": 54457,
+    "ingested_at": "2026-08-12T05:42:41.531595",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:05.252855",
+    "title": "The social consequences of Machine Allocation Behavior: Fairness, interpersonal perceptions and performance",
+    "title_zh": null,
+    "tldr": "探讨机器作为分配者时的分配行为对人类的社会后果，重点考察人们对其分配决策的公平感知、形成的人际印象以及由此带来的人机协作绩效变化，揭示算法决策情境下社会心理机制。",
+    "topic_tags": [
+      "公平性",
+      "人机协作",
+      "信任",
+      "绩效评估"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2022.107628",
+    "volume": "146",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究AI健康信息寻求意向",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机交互",
+      "AI 客服"
+    ],
     "authors": [
       "Anne Reinhardt",
       "Jörg Matthes",
@@ -66776,8 +70084,13 @@
     "scored_at": "2026-08-12T05:43:41.802766",
     "title": "Help me, Doctor AI? A cross-national experiment on the effects of disease threat and stigma on AI health information-seeking intentions",
     "title_zh": "帮我，AI医生？：疾病威胁与污名对AI健康信息搜索意愿影响的跨国实验",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "跨国实验探究疾病威胁与疾病污名对消费者向AI寻求健康信息意愿的影响，考察在不同文化背景下，人们在感知疾病严重性较高或疾病带有污名时，是否更倾向或更抗拒使用AI获取健康信息。",
+    "topic_tags": [
+      "消费者行为",
+      "健康信息",
+      "跨文化",
+      "人机协作"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108718",
     "volume": "172",
     "year": 2025
@@ -66786,7 +70099,11 @@
     "abstract": null,
     "ai_reason": "主题建模人机编码对比，AI核心",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器学习",
+      "人机协作",
+      "可解释 AI"
+    ],
     "authors": [
       "Yukiko Maeda",
       "Xiyu Wang",
@@ -66833,8 +70150,12 @@
     "scored_at": "2026-08-12T05:43:44.805606",
     "title": "Balancing human and machine coding: Evaluating the credibility and potential of topic modeling for open-ended survey responses",
     "title_zh": "人机编码的平衡：评估主题建模在开放式调查回答中的可信度与潜力",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "比较人工编码与机器编码（主题建模）在开放式问卷分析中的表现，评估主题模型生成结果的可信度与潜力，探讨人机协同编码在社会科学研究中的方法论价值与适用边界。",
+    "topic_tags": [
+      "知识管理",
+      "创新",
+      "决策"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108703",
     "volume": "172",
     "year": 2025
@@ -66892,7 +70213,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:40.005820",
     "title": "Effects of automated communication on team members’ activity and social presence awareness, commitment, and motivation in human-autonomy teams",
-    "title_zh": null,
+    "title_zh": "自动化沟通对人机团队成员活动性、临场感意识、承诺与动机的影响",
     "tldr": "探讨人机自主团队中自动化沟通对成员活跃度、社交临场感、团队承诺与工作动机的影响，揭示自动化信息在团队协作情境下的作用机制与边界条件。",
     "topic_tags": [
       "人机协作",
@@ -66938,7 +70259,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:38.063750",
     "title": "Towards more legitimate algorithms: A model of algorithmic ethical perception, legitimacy, and continuous usage intentions of e-commerce platforms",
-    "title_zh": null,
+    "title_zh": "迈向更具合法性的算法：电子商务平台算法伦理感知、合法性与持续使用意愿模型",
     "tldr": "基于电子商务平台情境，构建算法伦理感知、合法性与持续使用意愿的关系模型，探讨用户如何评估算法是否符合伦理规范，并影响其对平台的信任与持续使用倾向，为平台算法的伦理设计提供理论参考。",
     "topic_tags": [
       "伦理",
@@ -66949,6 +70270,136 @@
     "url": "https://doi.org/10.1016/j.chb.2023.108006",
     "volume": "150",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心研究AI招聘系统对求职者的影响，OB/HR领域",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 招聘",
+      "算法决策",
+      "人机交互"
+    ],
+    "authors": [
+      "Rewina Bedemariam",
+      "Jennifer L. Wessel"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Rewina Bedemariam",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jennifer L. Wessel",
+        "orcid": null
+      }
+    ],
+    "cited_by": 23,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107869",
+    "domain_score": 5.0,
+    "id": 54506,
+    "ingested_at": "2026-08-12T05:42:42.985743",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:55.255440",
+    "title": "The roles of outcome and race on applicant reactions to AI systems",
+    "title_zh": "结果与种族在申请者对人工智能系统反应中的作用",
+    "tldr": "探讨招聘情境中AI系统的决策结果与种族因素如何共同影响申请人对AI招聘系统的反应，包括对程序公平性、雇主吸引力及法律申诉意愿的判断，为AI招聘中的公平与偏见问题提供理论启示。",
+    "topic_tags": [
+      "招聘",
+      "公平性",
+      "偏见",
+      "AI 招聘"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107869",
+    "volume": "148",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "实时分析个性化支架，AI驱动学习",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Lyn Lim",
+      "Maria Bannert",
+      "Joep van der Graaf",
+      "Shaveen Singh",
+      "Yizhou Fan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Lyn Lim",
+        "orcid": "https://orcid.org/0000-0002-0617-5552"
+      },
+      {
+        "affiliation": [],
+        "name": "Maria Bannert",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Joep van der Graaf",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Shaveen Singh",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yizhou Fan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Surya Surendrannair",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mladen Rakovic",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Inge Molenaar",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Johanna Moore",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dragan Gašević",
+        "orcid": null
+      }
+    ],
+    "cited_by": 155,
+    "date": "2023-02",
+    "doi": "10.1016/j.chb.2022.107547",
+    "domain_score": 4.0,
+    "id": 54545,
+    "ingested_at": "2026-08-12T05:42:44.137012",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:31.596352",
+    "title": "Effects of real-time analytics-based personalized scaffolds on students’ self-regulated learning",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107547",
+    "volume": "139",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -66994,7 +70445,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-12T05:43:54.076152",
     "title": "What makes an app authentic? Determining antecedents of perceived authenticity in an AI-powered service app",
-    "title_zh": null,
+    "title_zh": "什么让应用具有真实感？人工智能驱动服务应用中感知真实性的前因",
     "tldr": null,
     "topic_tags": [],
     "url": "https://doi.org/10.1016/j.chb.2024.108495",
@@ -67030,7 +70481,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:40.004537",
     "title": "Factors related to user perceptions of artificial intelligence (AI)-based content moderation on social media",
-    "title_zh": null,
+    "title_zh": "社交媒体上用户对人工智能(AI)内容审核感知的相关因素",
     "tldr": "研究社交媒体平台上用户对AI内容审核的感知影响因素，探讨用户对算法审核的接受度、信任度、公平性判断及透明度期待等关键变量，为平台内容治理与审核机制设计提供参考。",
     "topic_tags": [
       "人机交互",
@@ -67046,7 +70497,10 @@
     "abstract": null,
     "ai_reason": "自动驾驶出租车接受度，AI技术为核心",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
     "authors": [
       "Min Zhou",
       "Shuwei Yu",
@@ -67093,8 +70547,12 @@
     "scored_at": "2026-08-12T05:43:41.807526",
     "title": "Navigating the future: A longitudinal exploration of public acceptance of autonomous taxis from initial trials to stepwise habituation",
     "title_zh": "驾驭未来：自动驾驶出租车公众接受度的纵向探索——从初步试验到逐步适应",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "该研究采用纵向追踪设计，考察公众对自动驾驶出租车的接受度如何从初次试乘逐步演变为习惯化使用，揭示技术信任、感知风险与行为习惯形成随时间演变的动态过程及关键驱动因素。",
+    "topic_tags": [
+      "消费者行为",
+      "信任",
+      "创新"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108678",
     "volume": "169",
     "year": 2025
@@ -67154,6 +70612,161 @@
   },
   {
     "abstract": null,
+    "ai_reason": "AI投资建议核心议题，消费者采纳",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Alton Y.K. Chua",
+      "Anjan Pal",
+      "Snehasish Banerjee"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Alton Y.K. Chua",
+        "orcid": "https://orcid.org/0000-0002-5603-2453"
+      },
+      {
+        "affiliation": [],
+        "name": "Anjan Pal",
+        "orcid": "https://orcid.org/0000-0001-7203-7126"
+      },
+      {
+        "affiliation": [],
+        "name": "Snehasish Banerjee",
+        "orcid": "https://orcid.org/0000-0001-6355-0470"
+      }
+    ],
+    "cited_by": 55,
+    "date": "2023-01",
+    "doi": "10.1016/j.chb.2022.107481",
+    "domain_score": 4.0,
+    "id": 54663,
+    "ingested_at": "2026-08-12T05:42:47.592845",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:40.756635",
+    "title": "AI-enabled investment advice: Will users buy it?",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107481",
+    "volume": "138",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能代理透明度,核心AI议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法决策",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Ryan W. Wohleber",
+      "Kimberly Stowers",
+      "Michael Barnes",
+      "Jessie Y.C. Chen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ryan W. Wohleber",
+        "orcid": "https://orcid.org/0000-0001-6509-8019"
+      },
+      {
+        "affiliation": [],
+        "name": "Kimberly Stowers",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Barnes",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jessie Y.C. Chen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 15,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107866",
+    "domain_score": 3.0,
+    "id": 54699,
+    "ingested_at": "2026-08-12T05:42:48.639823",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:06:53.785306",
+    "title": "Agent transparency in mixed-initiative multi-UxV control: How should intelligent agent collaborators speak their minds?",
+    "title_zh": "混合主动多无人系统控制中的智能体透明度：智能体协作者应如何表达想法？",
+    "tldr": "针对多人无人系统（UxV）混合主动控制场景，研究智能体的透明度对人与AI协作的影响。探讨智能代理应如何向人类操作员表达意图、推理过程与不确定性，以提升协同决策效率和人机信任水平。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互",
+      "决策",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107866",
+    "volume": "148",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "文本挖掘分析绿色消费,AI作方法",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习"
+    ],
+    "authors": [
+      "Chuang Li",
+      "Yating Niu",
+      "Liping Wang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Chuang Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yating Niu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Liping Wang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 42,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107890",
+    "domain_score": 4.0,
+    "id": 54716,
+    "ingested_at": "2026-08-12T05:42:49.150779",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:06:53.784865",
+    "title": "How to win the green market? Exploring the satisfaction and sentiment of Chinese consumers based on text mining",
+    "title_zh": "如何赢得绿色市场？基于文本挖掘的中国消费者满意度与情感探索",
+    "tldr": "运用文本挖掘技术分析中国消费者对绿色产品的满意度与情感倾向，挖掘在线评论等数据中的关键影响因素。研究为企业把握绿色市场需求、制定差异化营销策略以赢得绿色市场提供数据支持与实践启示。",
+    "topic_tags": [
+      "消费者行为",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107890",
+    "volume": "148",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI工作场所顾问主题，核心OB/HR研究",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -67192,6 +70805,64 @@
     "url": "https://doi.org/10.1016/j.chb.2026.108994",
     "volume": "181",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人-AI交互拟人化满意度,核心AI议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机交互"
+    ],
+    "authors": [
+      "Yuguang Xie",
+      "Keyu Zhu",
+      "Peiyu Zhou",
+      "Changyong Liang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yuguang Xie",
+        "orcid": "https://orcid.org/0000-0002-1818-8860"
+      },
+      {
+        "affiliation": [],
+        "name": "Keyu Zhu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Peiyu Zhou",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Changyong Liang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 134,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107878",
+    "domain_score": 4.0,
+    "id": 54848,
+    "ingested_at": "2026-08-12T05:42:53.009129",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:06:53.784460",
+    "title": "How does anthropomorphism improve human-AI interaction satisfaction: a dual-path model",
+    "title_zh": "拟人化如何提升人机交互满意度：双路径模型",
+    "tldr": "基于双路径模型，探讨AI拟人化如何提升人机交互满意度。分别从认知路径（如感知能力、信任）与情感路径（如温暖感、亲近感）切入，分析拟人化设计通过中介机制影响用户满意度的内在过程，为AI交互设计提供理论依据。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107878",
+    "volume": "148",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -67254,7 +70925,11 @@
     "abstract": null,
     "ai_reason": "AI与信任是核心议题，知识工作管理研究",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器学习",
+      "人机协作",
+      "可解释AI"
+    ],
     "authors": [
       "Allen S. Brown",
       "Christopher R. Dishop",
@@ -67301,8 +70976,12 @@
     "scored_at": "2026-08-12T05:43:50.776207",
     "title": "Beyond efficiency: Trust, AI, and surprise in knowledge work environments",
     "title_zh": "超越效率：知识工作环境中的信任、人工智能与意外",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "在知识工作场景中超越效率视角，考察AI引入后信任建构与意外发现（惊喜）体验的作用，探讨人机协作中信任形成机制及非效率性体验对员工工作产出、满意度与意义感的影响，丰富AI与知识管理研究。",
+    "topic_tags": [
+      "知识管理",
+      "信任",
+      "人机协作"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2025.108605",
     "volume": "167",
     "year": 2025
@@ -67365,7 +71044,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-14T04:30:40.004056",
     "title": "“Do what you say?” The combined effects of framed social intent and autonomous agent behavior on the trust process",
-    "title_zh": null,
+    "title_zh": "\"言行一致？\"：框架化社交意图与自主智能体行为对信任过程的联合影响",
     "tldr": "考察社交意图框架与自主智能体行为如何共同作用于信任形成过程，探讨当智能体行为与其声明意图不一致时信任如何变化。研究关注意图传达方式与实际行为表现对用户信任评估的联合影响，揭示自主代理信任建立的心理机制。",
     "topic_tags": [
       "信任",
@@ -67374,6 +71053,45 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2023.107966",
     "volume": "149",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "孤独感与机器人陪伴，涉及AI/机器人",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Jianning Dang",
+      "Li Liu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jianning Dang",
+        "orcid": "https://orcid.org/0000-0002-8174-0136"
+      },
+      {
+        "affiliation": [],
+        "name": "Li Liu",
+        "orcid": "https://orcid.org/0000-0002-4898-3013"
+      }
+    ],
+    "cited_by": 52,
+    "date": "2023-04",
+    "doi": "10.1016/j.chb.2022.107637",
+    "domain_score": 3.0,
+    "id": 54897,
+    "ingested_at": "2026-08-12T05:42:54.539114",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:28.137408",
+    "title": "Do lonely people seek robot companionship? A comparative examination of the Loneliness–Robot anthropomorphism link in the United States and China",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107637",
+    "volume": "141",
     "year": 2023
   },
   {
@@ -67431,6 +71149,69 @@
     "url": "https://doi.org/10.1016/j.chb.2026.109123",
     "volume": "185",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "认知增强涉及AI技术，决策行为",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "Steeven Villa",
+      "Thomas Kosch",
+      "Felix Grelka",
+      "Albrecht Schmidt",
+      "Robin Welsch"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Steeven Villa",
+        "orcid": "https://orcid.org/0000-0002-4881-1350"
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Kosch",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Felix Grelka",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Albrecht Schmidt",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Robin Welsch",
+        "orcid": "https://orcid.org/0000-0002-7255-7890"
+      }
+    ],
+    "cited_by": 39,
+    "date": "2023-09",
+    "doi": "10.1016/j.chb.2023.107787",
+    "domain_score": 3.0,
+    "id": 54928,
+    "ingested_at": "2026-08-12T05:42:55.423957",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:05.251539",
+    "title": "The placebo effect of human augmentation: Anticipating cognitive augmentation increases risk-taking behavior",
+    "title_zh": null,
+    "tldr": "研究人类增强的安慰剂效应：仅预期获得认知增强（而非实际增强）是否会改变个体的风险决策行为。通过实验揭示预期增强带来的心理与行为变化，探讨对组织应用增强技术的启示。",
+    "topic_tags": [
+      "决策",
+      "人机协作",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107787",
+    "volume": "146",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -67530,6 +71311,123 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108242",
     "volume": "156",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能虚拟助手(IVA)，AI为核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI客服",
+      "多模态"
+    ],
+    "authors": [
+      "Saifeddin Alimamy",
+      "Mohammad Amin Kuhail"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Saifeddin Alimamy",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mohammad Amin Kuhail",
+        "orcid": "https://orcid.org/0000-0002-0000-0989"
+      }
+    ],
+    "cited_by": 66,
+    "date": "2023-06",
+    "doi": "10.1016/j.chb.2023.107711",
+    "domain_score": 3.0,
+    "id": 55296,
+    "ingested_at": "2026-08-14T04:29:53.376538",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:07:13.833696",
+    "title": "I will be with you Alexa! The impact of intelligent virtual assistant's authenticity and personalization on user reusage intentions",
+    "title_zh": null,
+    "tldr": "研究智能虚拟助手（如Alexa）的真实性与个性化对用户持续使用意愿的影响。考察用户在与IVA长期交互中如何形成拟人化情感联结，以及助手的真实感与个性化设计如何驱动用户黏性与再使用意图。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "信任",
+      "品牌"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107711",
+    "volume": "143",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "ScamGen用LLM/NLP生成语料分析诈骗",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM"
+    ],
+    "authors": [
+      "Xu Han",
+      "Qiang Li",
+      "Yaling Qi",
+      "Hongbo Cao",
+      "Witold Pedrycz"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Xu Han",
+        "orcid": "https://orcid.org/0000-0002-2699-7297"
+      },
+      {
+        "affiliation": [],
+        "name": "Qiang Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yaling Qi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hongbo Cao",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Witold Pedrycz",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Wei Wang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 4,
+    "date": "2025-01",
+    "doi": "10.1016/j.chb.2024.108451",
+    "domain_score": 3.0,
+    "id": 55574,
+    "ingested_at": "2026-08-15T03:06:18.308448",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:06:53.781809",
+    "title": "ScamGen: Unveiling psychological patterns in tele-scam through advanced template-augmented corpus generation",
+    "title_zh": "ScamGen：通过高级模板增强语料生成揭示电话诈骗的心理模式",
+    "tldr": "针对电话诈骗研究语料稀缺问题，构建基于模板增强的语料自动生成方法（ScamGen），借助生成式语言模型合成大规模诈骗对话语料，从中挖掘诈骗者与受害者的心理模式与话术特征，为反诈识别与心理学研究提供数据基础与分析框架。",
+    "topic_tags": [
+      "伦理",
+      "消费者行为",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2024.108451",
+    "volume": "162",
+    "year": 2025
   },
   {
     "abstract": "Artificial intelligence (AI) has become part and parcel of scientific knowledge production since the latest iterations of generative AI models (e.g., ChatGPT, DeepSeek, Claude, or Gemini) became widely available. Given AI has rapidly evolved since the initial release of ChatGPT in 2022, researching how AI’s capabilities impact organizations and how researchers make use of AI tools can be likened to a moving target. In this editorial essay, we explore the implications of the introduction of AI in the context of academic research, both as the subject of investigation (i.e., research\n                    on\n                    AI) and as a research tool to facilitate academic writing, data generation, or the peer review process (i.e., research\n                    with\n                    AI). Specifically, concerning research\n                    on\n                    AI, we consider issues around clarity regarding both existing definitions and concepts in the AI literature and how these are influenced by the rapid technological evolution of AI’s capabilities. In regard to research\n                    with\n                    AI, we reflect on the advantages and disadvantages of the use of AI as a research tool and discuss the\n                    Human Relations AI Usage Policy\n                    . Overall, our aim is not to be overly prescriptive on how to conduct research on and with AI but to encourage authors to reflect on how to best capture AI as a moving target in the context of their research endeavors.",
@@ -106496,6 +110394,68 @@
     "year": 2026
   },
   {
+    "abstract": "How consumers’ strategic identity disclosure decisions under AI accuracy parity policy interact with firm’s AI recommendation and AI learning investment decisions.",
+    "ai_reason": "AI推荐系统下消费者策略披露，核心营销+AI",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "算法决策"
+    ],
+    "authors": [
+      "Evelyn O. Smith",
+      "Jeffrey D. Shulman",
+      "Antino Kim"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Kentucky"
+        ],
+        "name": "Evelyn O. Smith",
+        "orcid": "https://orcid.org/0009-0008-3129-3404",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Jeffrey D. Shulman",
+        "orcid": "https://orcid.org/0000-0001-5288-3421",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Indiana University Bloomington"
+        ],
+        "name": "Antino Kim",
+        "orcid": "https://orcid.org/0000-0002-2886-0892",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-14",
+    "doi": "10.1287/mksc.2024.0900",
+    "domain_score": 5.0,
+    "id": 55762,
+    "ingested_at": "2026-08-15T03:06:23.610230",
+    "issue": null,
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-08-15T03:06:55.468335",
+    "title": "My Fair AI: Accuracy Parity and Strategic Identity Disclosure in AI Content Recommendation",
+    "title_zh": "我的公平AI：AI内容推荐中的准确率均等性与策略性身份披露",
+    "tldr": "研究在AI准确率公平（accuracy parity）政策下，消费者如何策略性地选择向AI披露或隐藏身份信息，并分析这种披露决策如何与企业的AI推荐策略及AI学习投资决策相互影响，揭示公平政策对推荐机制与市场均衡的复杂作用。",
+    "topic_tags": [
+      "消费者行为",
+      "推荐系统",
+      "公平性",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2024.0900",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "As generative artificial intelligence (AI) has found its way into various work tasks, questions about whether its usage should be disclosed and the consequences of such disclosure have taken center stage in public and academic discourse on digital transparency. This article addresses this debate by asking: Does disclosing the usage of AI compromise trust in the user? We examine the impact of AI disclosure on trust across diverse tasks—from communications via analytics to artistry—and across individual actors such as supervisors, subordinates, professors, analysts, and creatives, as well as across organizational actors such as investment funds. Thirteen experiments consistently demonstrate that actors who disclose their AI usage are trusted less than those who do not. Drawing on micro-institutional theory, we argue that this reduction in trust can be explained by reduced perceptions of legitimacy, as shown across various experimental designs (Studies 6–8). Moreover, we demonstrate that this negative effect holds across different disclosure framings, above and beyond algorithm aversion, regardless of whether AI involvement is known, and regardless of whether disclosure is voluntary or mandatory, though it is comparatively weaker than the effect of third-party exposure (Studies 9–13). A within-paper meta analysis suggests this trust penalty is attenuated but not eliminated among evaluators with favorable technology attitudes and perceptions of high AI accuracy. This article contributes to research on trust, AI, transparency, and legitimacy by showing that AI disclosure can harm social perceptions, emphasizing that transparency is not straightforwardly beneficial, and highlighting legitimacy’s central role in trust formation.",
     "ai_reason": "核心议题为AI披露对信任的影响",
     "ai_score": 5.0,
@@ -110241,5 +114201,64 @@
     "url": "https://doi.org/10.1002/smj.70112",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "Abstract\n                  \n                    Research Summary\n                    \n                      Human coding of unstructured text can enable scholars to measure complex latent constructs for use in empirical analysis, but also requires substantial time and resources that limit the number and sample sizes of studies using this approach. We demonstrate how supervised machine learning (ML) can overcome these constraints by allowing scholars to scale human‐coded data. Using board leadership as an illustrative context, we apply this method to create a large‐scale dataset (\n                      N\n                       = 22,388) from smaller scale human codings of CEO duality and board chair orientations from company proxy statements. We further demonstrate the potential value of this approach by using the resulting dataset to examine the relationships among board leadership, firm performance, and CEO dismissal. The ML code and dataset are available at\n                      10.5281/zenodo.7304697\n                      .\n                    \n                  \n                  \n                    Managerial Summary\n                    Manually converting unstructured text into usable data requires considerable time and resources. This article outlines a replicable process for applying supervised machine learning (ML) to overcome these constraints by scaling manually coded data. While ML is often used to identify patterns or predict relationships within a given dataset, we show how scholars and practitioners can build valuable custom algorithms at an earlier stage in the process—when first building a dataset. We illustrate this approach by training ML algorithms to replicate human codings of CEO duality and board chair control and collaboration orientations from over 22,000 company filings. We then show how this approach can support new knowledge development by using these data to explore the relationships among board leadership, company performance, and CEO dismissal.",
+    "ai_reason": "监督学习为核心方法，管理学应用",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Joseph S. Harrison",
+      "Matthew A. Josefy",
+      "Matias Kalm",
+      "Ryan Krause"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Department of Management and Leadership Neeley School of Business, Texas Christian University  Fort Worth Texas USA"
+        ],
+        "name": "Joseph S. Harrison",
+        "orcid": "https://orcid.org/0000-0002-4835-0566"
+      },
+      {
+        "affiliation": [
+          "Department of Management and Entrepreneurship Kelley School of Business, Indiana University  Bloomington Indiana USA"
+        ],
+        "name": "Matthew A. Josefy",
+        "orcid": "https://orcid.org/0000-0003-1174-1878"
+      },
+      {
+        "affiliation": [
+          "Department of Management Tilburg School of Economics and Management, Tilburg University  Tilburg Netherlands"
+        ],
+        "name": "Matias Kalm",
+        "orcid": "https://orcid.org/0000-0001-8333-6340"
+      },
+      {
+        "affiliation": [
+          "Department of Management and Leadership Neeley School of Business, Texas Christian University  Fort Worth Texas USA"
+        ],
+        "name": "Ryan Krause",
+        "orcid": "https://orcid.org/0000-0001-8651-3074"
+      }
+    ],
+    "cited_by": 29,
+    "date": "2022-12-27",
+    "doi": "10.1002/smj.3480",
+    "domain_score": 4.0,
+    "id": 41415,
+    "ingested_at": "2026-08-12T04:19:16.402976",
+    "issue": "7",
+    "journal": "SMJ",
+    "pdf_url": null,
+    "scored_at": "2026-08-16T02:59:41.235609",
+    "title": "Using supervised machine learning to scale human‐coded data: A method and dataset in the board leadership context",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1002/smj.3480",
+    "volume": "44",
+    "year": 2022
   }
 ]

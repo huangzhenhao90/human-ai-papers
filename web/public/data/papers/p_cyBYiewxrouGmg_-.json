@@ -1,0 +1,71 @@
+{
+  "abstract": "Conversational Recommendation Systems (CRS) aim to achieve two primary objectives: recommending relevant items and generating natural language responses. While recommendation accuracy is effectively measured by established ranking metrics, the evaluation of response generation poses a more fundamental challenge. Although human evaluation remains the gold standard, its cost and scalability constraints have motivated the adoption of LLM-as-a-judge as a promising proxy, whose alignment with human judgment in the context of CRS remains an open question. In this paper, we present the first user study to empirically assess the reliability of LLM-as-a-judge for evaluating CRS responses. We sample 20 multi-turn music recommendation sessions and generate candidate system responses using four instruction-tuned LLMs, inducing variance in response quality across model scales. We collect $n{=}400$ ratings from 20 domain-expert annotators, who evaluate each response across two dimensions: Personalization Quality and Explanation Quality. Through bootstrapped correlation analysis, we find that LLM-based judges exhibit moderate positive alignment with human assessments and outperform all reference-based baselines. Furthermore, we analyze how judge performance varies according to model scale and conditioning information, providing practical guidance for deploying LLM-as-a-judge.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 推荐",
+    "推荐算法"
+  ],
+  "arxiv_id": "2607.25640",
+  "authors": [
+    "Seungheon Doh",
+    "Bruno Sguerra",
+    "Sergio Oramas",
+    "Elena V. Epure",
+    "Juhan Nam"
+  ],
+  "authors_full": [
+    {
+      "name": "Seungheon Doh"
+    },
+    {
+      "name": "Bruno Sguerra"
+    },
+    {
+      "name": "Sergio Oramas"
+    },
+    {
+      "name": "Elena V. Epure"
+    },
+    {
+      "name": "Juhan Nam"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM评判核心，首个CRS用户研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "首次通过用户研究实证评估 LLM-as-a-Judge 在对话式音乐推荐系统响应评估中的可靠性。采集 20 位领域专家对 20 场多轮会话、4 种指令微调 LLM 生成共 400 条响应的双维度评分，采用自助相关分析发现 LLM 评判与人类判断呈中等正相关且优于所有参考基线，并给出关于模型规模与条件信息的部署建议。",
+      "topic_tags": [
+        "推荐系统",
+        "用户研究方法",
+        "个性化",
+        "对话式 AI"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-28",
+  "doi": "10.48550/arxiv.2607.25640",
+  "id": "p_cyBYiewxrouGmg_-",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.25640",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15482,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "LLM-as-a-Judge for Evaluating System Responses in Conversational Music Recommendation",
+  "title_zh": "LLM作为评判器：对话式音乐推荐中系统响应的评估",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.25640",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,49 @@
+{
+  "abstract": "Long-running LLM agents act through tools, and a single step can send an email, merge a pull request, or wire a payment. The steering decision is the pre-commit choice at that boundary: proceed, or hold for human or policy review. We introduce SteerBench-Work, an incident-anchored, bidirectional benchmark for that decision in workplace agents across developer operations, customer service, finance, legal, medical, HR, and security.   Release v2026-05 contains 106 scenarios anchored in public incidents, paired evidence-reversed mirrors, and calibration controls, with labels split nearly evenly between proceed and hold so the two error directions get near-identical numbers of chances. A model sees the proposed action and the available evidence, returns a gate decision, and is scored on whether it crosses or holds the boundary correctly. Across 30 model conditions the failures run almost entirely in one direction: models wrongly hold authorized, evidence-cleared work on 28.1% of opportunities and wrongly allow unsafe work on 1.0%. The hardest cases are risk-resolved commits, where signed or structured evidence has already cleared a real risk trigger, and models score markedly worse on evidence-reversed mirrors of famous incidents (63.8%) than on the incidents themselves (98.5%). General capability is not the same as steering calibration: higher-capability models often over-refuse at the commit boundary, and more reasoning can repair a weak gate while leaving a calibrated one flat. The public leaderboard is at steerbench.com.",
+  "ai_type_tags": [],
+  "arxiv_id": "2608.12654",
+  "authors": [
+    "Oguz Serdar",
+    "Cuneyt Mertayak"
+  ],
+  "authors_full": [
+    {
+      "name": "Oguz Serdar"
+    },
+    {
+      "name": "Cuneyt Mertayak"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM智能体工作场景决策基准，AI核心但偏技术",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-12",
+  "doi": null,
+  "id": "p_BLZ8g_wcjXJmS8Hu",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2608.12654v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 55804,
+      "revision": "e54763f941400dda1b3fb12bb3fe0dab83439a4e"
+    }
+  ],
+  "title": "SteerBench-Work: A Benchmark for Agent Steering at Action Boundaries",
+  "title_zh": "SteerBench-Work：动作边界处智能体引导基准测试",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2608.12654v1",
+  "volume": null,
+  "year": 2026
+}

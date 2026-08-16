@@ -1,0 +1,71 @@
+{
+  "abstract": "AI companions are judged not only by single-turn fluency but by whether they sustain emotional continuity: remembering who the companion is, what the user prefers, and how the relationship has felt. We present ZifaMem, a structured memory system that organizes dialogue into session summaries, episodic memories, and a consolidated user model. Against a deployment-honest comparator that supplies the full raw dialogue history, and under a fixed LLM-as-a-judge protocol with route audits, structured memory raises pooled four-backbone emotional-intelligence scores by 11.4% (95% CI 6.3% to 17.1%), and persona grounding improves on all four backbones (Claude +42% relative). Multi-turn affect context wins a +39% net preference over a single-turn snapshot (exploratory), whereas an additional emotion state machine yields no measurable gain on any of five endpoints. Under an identical preregistered protocol, three memory systems (ZifaMem, Mem0, and filtered verbatim retrieval) each improve significantly over raw-history deployment, and ZifaMem and Mem0 are statistically equivalent within +/-5 points on the preregistered primary preference endpoint. The ZifaMem SDK, CLI, and portable Agent Skills are open-sourced at https://github.com/zifacorp/zifamem.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "GenAI",
+    "AI 助手"
+  ],
+  "arxiv_id": "2607.17564",
+  "authors": [
+    "Jingzhe Fang",
+    "Guozhi Xu",
+    "Yunfan Cui",
+    "Xiaochen Yang",
+    "Zhangyu Hua"
+  ],
+  "authors_full": [
+    {
+      "name": "Jingzhe Fang"
+    },
+    {
+      "name": "Guozhi Xu"
+    },
+    {
+      "name": "Yunfan Cui"
+    },
+    {
+      "name": "Xiaochen Yang"
+    },
+    {
+      "name": "Zhangyu Hua"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心是AI陪伴系统，评估情感连续性与用户体验",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对AI伴侣在多轮交互中维持情感连续性的难题，提出ZifaMem结构化记忆系统，将对话组织为会话摘要、情景记忆与整合的用户模型。在固定LLM评判协议下，结构化记忆使四种基座模型的情感智商评分提升11.4%，人物一致性在所有基座上改善(Claude相对+42%)；多轮情感上下文相对单轮快照净偏好+39%。预先注册协议下ZifaMem、Mem0与过滤式逐字检索均显著优于原始历史部署。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "对话式 AI",
+        "情感计算",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-20",
+  "doi": "10.48550/arxiv.2607.17564",
+  "id": "p_p0FdRkOb1ZOOWKLh",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.17564",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15617,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "ZifaMem: Structured Memory for Persona, Preference, and Emotional Continuity in AI Companions",
+  "title_zh": "ZifaMem：面向AI伴侣的人格、偏好与情感连续性结构化记忆",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.17564",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,65 @@
+{
+  "abstract": "We introduce a novel learning problem: decoding gaze into natural language descriptions of human goals across diverse visual tasks. Unlike prior work, which frames gaze decoding as a discriminative task over predefined categories, we formulate it as a generative learning problem: training a model to produce free-form descriptions that capture the rich nuances and open-ended nature of human intentions beyond fixed labels. To this end, we introduce Gazette, the first gaze-to-text decoding framework. Based on multimodal large language models (MLLMs), Gazette learns to decode gaze scanpaths into natural language for goals that may extend beyond categorical labels and require articulation in natural language. To help Gazette filter out individual differences in gaze behavior and learn the goal-specific spatiotemporal dynamics crucial for generating accurate natural language goal descriptions, we propose a novel strategy that leverages the encyclopedic knowledge and reasoning abilities of a large language model to synthesize natural language explanations of goal-directed attentional behavior called think-aloud transcripts. Instruction tuning on these synthetic narratives allows Gazette to achieve state-of-the-art performance in gaze decoding across multiple tasks, demonstrating its generalizability and versatility, thereby enabling gaze to serve as a powerful, non-intrusive cue for inferring human goals and intentions in diverse scenarios.",
+  "ai_type_tags": [
+    "多模态",
+    "LLM",
+    "眼动 AI"
+  ],
+  "arxiv_id": "2607.23917",
+  "authors": [
+    "Sounak Mondal",
+    "Dimitris Samaras",
+    "Gregory Zelinsky",
+    "Minh Hoai"
+  ],
+  "authors_full": [
+    {
+      "name": "Sounak Mondal"
+    },
+    {
+      "name": "Dimitris Samaras"
+    },
+    {
+      "name": "Gregory Zelinsky"
+    },
+    {
+      "name": "Minh Hoai"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "MLLM解码注视为文本，核心HCI注视研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "将眼动解码从分类任务重构为生成任务，提出首个gaze-to-text框架Gazette，基于多模态大语言模型将注视扫描路径解码为描述人类意图的自然语言。利用LLM百科知识合成目标导向注意的think-aloud叙述作为训练数据，经指令微调后在多任务达到SOTA，验证了眼动作为非侵入式意图线索的有效性与跨任务泛化能力。",
+      "topic_tags": [
+        "眼动追踪",
+        "人机交互(HCI)",
+        "多模态交互"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-27",
+  "doi": "10.48550/arxiv.2607.23917",
+  "id": "p_HWP7ejKxprR3bNao",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.23917",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15596,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "Gaze-to-text Generation: Beyond Categorical Decoding of Human Attention",
+  "title_zh": "凝视转文本生成：超越人类注意力的类别化解码",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.23917",
+  "volume": null,
+  "year": 2026
+}

@@ -1,6 +1,10 @@
 {
   "abstract": null,
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "人机协作"
+  ],
   "arxiv_id": null,
   "authors": [
     "Leon O.H. Kroczek",
@@ -46,12 +50,24 @@
       "ai_reason": "LLM控制对话代理，AI为核心",
       "ai_score": 5.0,
       "domain_score": 4.0,
+      "tldr": "研究LLM驱动的具身对话代理中，角色人设与对话任务类型如何影响用户的社会互动体验与感知，探讨不同角色设定和任务情境下人机交互的差异及其对交互质量的作用。",
+      "topic_tags": [
+        "人机交互",
+        "人机协作",
+        "消费者行为"
+      ]
+    },
+    "ur": {
+      "ai_reason": "LLM驱动的具身对话代理，核心是AI与社交交互",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
       "tldr": null,
       "topic_tags": []
     }
   },
   "channels": [
-    "ob"
+    "ob",
+    "ur"
   ],
   "cited_by": 22,
   "date": "2025-11",
@@ -64,7 +80,12 @@
     {
       "channel": "ob",
       "legacy_id": 52261,
-      "revision": "10dee9f5a7eb51a33722c7d6640f5cc1eeb57722"
+      "revision": "e54763f941400dda1b3fb12bb3fe0dab83439a4e"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 16413,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
     }
   ],
   "title": "The influence of persona and conversational task on social interactions with a LLM-controlled embodied conversational agent",

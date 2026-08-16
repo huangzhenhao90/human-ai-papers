@@ -1,0 +1,61 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly used as synthetic users, stand-ins for human respondents whose simulated answers feed product, policy, and market decisions. We ask when this substitution is valid and when it fails, and package the answer as an evaluation framework for intelligent synthetic-user systems. A single protocol, run across four models spanning two families and an 8B-to-frontier capability range, is applied to two independent domains of real human-response data: U.S. general social attitudes (General Social Survey) and cross-cultural values (World Values Survey). Every model is benchmarked against a suite of non-LLM baselines fit on held-out human data. Under demographic prompting and the survey-simulation protocols we test, two failures replicate across both domains, all four models, and both families. First, at the individual level no LLM beats even the strongest baseline; on cross-cultural values every model falls well below it, and the gap survives distance-aware and proper scoring. Second, models systematically over-determine demographics, treating identity as far more predictive of attitudes than it is among real people, a distortion present for nearly every question-group combination and robust to a coding-invariant measure. Neither failure is remedied by a larger, more capable model. A decision-impact analysis shows why this matters in practice: on a segment-targeting task the models inflate between-segment gaps two to fourfold, would direct a team to the wrong segment in half of U.S. and most cross-cultural cases, and manufacture segment splits that do not exist in real people. We make the cross-domain benchmark and the evaluation framework available on request, so that teams can determine in advance when synthetic-user evidence is safe for decision support and when it is not.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI 问卷生成"
+  ],
+  "arxiv_id": "2607.26348",
+  "authors": [
+    "Zihan Chen",
+    "Di Zhu",
+    "Lei Nico Zheng"
+  ],
+  "authors_full": [
+    {
+      "name": "Zihan Chen"
+    },
+    {
+      "name": "Di Zhu"
+    },
+    {
+      "name": "Lei Nico Zheng"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM模拟用户核心，聚焦调查方法论验证",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究LLM作为合成用户替代真人受访者的有效性，在美国GSS与跨文化WVS两个真实调查数据集上对四个不同能力档位的模型进行跨域基准测试，并与非LLM基线对比。结果发现LLM在个体层面均未超越最强基线，且系统性过度依赖人口统计特征预测态度，在分群定位任务中将群体间差距夸大2至4倍，更大模型亦无法弥补。",
+      "topic_tags": [
+        "问卷",
+        "用户研究方法",
+        "AI 治理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-28",
+  "doi": "10.48550/arxiv.2607.26348",
+  "id": "p_7_as2zW90y2vrHe4",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.26348",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15564,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "When Synthetic Users Fail: A Cross-Domain Benchmark of LLM-Simulated Human Survey Responses",
+  "title_zh": "当合成用户失效时：LLM模拟人类调查响应的跨域基准",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.26348",
+  "volume": null,
+  "year": 2026
+}

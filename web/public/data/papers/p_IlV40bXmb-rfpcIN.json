@@ -1,0 +1,71 @@
+{
+  "abstract": "Current benchmarks for language models primarily evaluate execution on fully specified tasks. However, real user tasks are often ambiguous. Users arrive with incomplete, exploratory, or even inconsistent goals, requiring the assistant to first determine the intended task before carrying it out. We study this problem as task alignment: the ability to align with a user on their intended task. We introduce a general framework for converting specified tasks into underspecified interactions, formalized as a POMDP in which the model must infer a latent task from partial and evolving user intent. We validate our user simulator post hoc with a human user study. Across shopping, coding, and professional work settings, we find that while models often perform well once the task is specified, models still struggle with task alignment: current models act prematurely, interact ineffectively, and fail to resolve ambiguous requests. Models on average recover the user's intended task only 22-32% of the time under ambiguity. In a human study in the same setting, humans reach 48%, outperforming all evaluated models. We show that post-training with supervised fine-tuning and reinforcement learning improves task alignment, but models still lag behind humans in resolving uncertainty through interaction. Together, our results suggest that current models still lack key interaction abilities required for reliable agency.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 助手",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2607.16412",
+  "authors": [
+    "Andy Dai",
+    "Zexue He",
+    "Zhenyu Zhang",
+    "Alex Pentland",
+    "Jiaxin Pei"
+  ],
+  "authors_full": [
+    {
+      "name": "Andy Dai"
+    },
+    {
+      "name": "Zexue He"
+    },
+    {
+      "name": "Zhenyu Zhang"
+    },
+    {
+      "name": "Alex Pentland"
+    },
+    {
+      "name": "Jiaxin Pei"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "任务对齐框架含人类用户研究，核心HCI",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对语言模型在用户意图模糊时常过早行动、交互低效的问题，将任务对齐形式化为POMDP，让模型从部分、演化的用户意图中推断潜在任务。通过购物、编程、专业工作三个场景的用户模拟器与人类对比实验，发现模型仅能22-32%恢复用户意图（人类48%），后训练可提升但仍落后于人类。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "对话式 AI",
+        "人机协作",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-17",
+  "doi": "10.48550/arxiv.2607.16412",
+  "id": "p_IlV40bXmb-rfpcIN",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.16412",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15507,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "Interactive Task Alignment as a POMDP",
+  "title_zh": "将交互式任务对齐建模为POMDP",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.16412",
+  "volume": null,
+  "year": 2026
+}

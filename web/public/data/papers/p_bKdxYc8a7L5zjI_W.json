@@ -1,0 +1,62 @@
+{
+  "abstract": "In large-scale text analysis tasks, pre-trained language models are often used to embed text corpora for downstream analysis. However, such models may struggle to capture domain-specific semantics and adapting them typically requires large amounts of labeled data and technical expertise to implement training pipelines. Recent approaches have demonstrated how visual interactions in document projections can capture human feedback as training signals for model tuning. However, these methods operate on document-level feedback, which requires users to open and assess individual documents in order to provide effective feedback. In this paper, we propose KeySI, an interaction framework that enables feature-level feedback through keyword-based concept specification. Users specify feedback by organizing extracted keywords into groups representing concepts, which KeySI translates into document-level supervision for subsequent tuning. By operating on keywords as the primary interaction medium, KeySI reduces the need for manual document inspection and labeling and lowers the barrier to adapting embedding models. We present a prototype implementation that, given a corpus, curates representative keywords, visualizes keywords and document embeddings via dimensionality reduction, allows interactive specification of keyword groups, and supports iterative refinement through system feedback. We evaluate KeySI through a user study, usage scenarios, and quantitative experiments demonstrating its effectiveness in capturing user intent and improving embedding alignment.",
+  "ai_type_tags": [
+    "LLM",
+    "可解释AI",
+    "人机交互"
+  ],
+  "arxiv_id": "2607.20556",
+  "authors": [
+    "Yan Zhu",
+    "Y. Chen",
+    "Rebecca Faust"
+  ],
+  "authors_full": [
+    {
+      "name": "Yan Zhu"
+    },
+    {
+      "name": "Y. Chen"
+    },
+    {
+      "name": "Rebecca Faust"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "人机交互框架，基于人类反馈调优嵌入",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对文本嵌入模型难以捕捉领域语义、且调优需大量标注的问题，提出KeySI交互框架，让用户通过关键词分组表达概念级反馈，自动转化为文档级监督信号用于模型微调。系统支持关键词提取、降维可视化与迭代优化，经用户研究、使用场景与定量实验验证可降低嵌入适配门槛。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可视化",
+        "用户研究方法",
+        "可用性测试"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-17",
+  "doi": "10.48550/arxiv.2607.20556",
+  "id": "p_bKdxYc8a7L5zjI_W",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.20556",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15510,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "KeySI: An Interaction Framework for Tuning Text Embeddings Based on Human Feedback",
+  "title_zh": "KeySI：基于人类反馈的文本嵌入调优交互框架",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.20556",
+  "volume": null,
+  "year": 2026
+}

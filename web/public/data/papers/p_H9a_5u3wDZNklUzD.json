@@ -1,0 +1,63 @@
+{
+  "abstract": "Large language model (LLM)-based dialogue systems suffer response delays because generation begins only after final speech recognition. While fixed fillers are a workaround, they become unnatural over time. We propose a two-stage incremental framework that decouples prefatory-response preparation from speech onset. Once user intent becomes predictable, an intent readiness detector triggers LLM-based generation of a short prefatory response. Concurrently, a voice activity projection (VAP) model determines when to deliver it. Through a field experiment with a route-guidance robot in a shopping mall, we evaluated three conditions: no-filler, fixed-filler, and contextual-preface. Both fixed-filler and contextual-preface significantly reduced initial response latency relative to no-filler. Relative to fixed-filler, contextual-preface had significantly longer initial response latency but a significantly shorter initial-to-main gap. Exploratory ratings showed no significant differences. These results indicate a timing trade-off.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 助手",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2607.23204",
+  "authors": [
+    "Yuki Okafuji",
+    "Koji Inoue",
+    "Yoshiki Ohira"
+  ],
+  "authors_full": [
+    {
+      "name": "Yuki Okafuji"
+    },
+    {
+      "name": "Koji Inoue"
+    },
+    {
+      "name": "Yoshiki Ohira"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心LLM对话系统，实地机器人实验含用户评估",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对LLM对话系统响应延迟问题，提出两阶段增量框架：意图就绪检测器在用户意图可预测时触发LLM生成简短前置回复，同时语音活动预测(VAP)模型决定投递时机。商场路线引导机器人实地实验显示，固定填充语与情境前置回复均显著降低初始响应延迟；相对而言情境前置回复初始延迟略长，但显著缩短初始到主体回复间隔，存在时序权衡。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "对话式 AI",
+        "AI 助手",
+        "智能体"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-07-25",
+  "doi": "10.48550/arxiv.2607.23204",
+  "id": "p_H9a_5u3wDZNklUzD",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2607.23204",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 15540,
+      "revision": "5e919410d0a850dd00df17a5164bf3709841fcc8"
+    }
+  ],
+  "title": "Low-Latency Turn-Taking via Context-Aware Preface Generation in a Real-World Dialogue Robot",
+  "title_zh": "真实场景对话机器人中基于上下文感知前言生成的低延迟话轮转换",
+  "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
+  "url": "https://arxiv.org/abs/2607.23204",
+  "volume": null,
+  "year": 2026
+}
