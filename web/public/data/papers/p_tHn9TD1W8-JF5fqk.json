@@ -1,0 +1,70 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly used to score text records at scale (e.g., rating candidate resumes on a 1-5 scale). However, existing LLM-powered approaches do not account for the fact that effective scoring requires both holistic understanding of records and locally consistent judgments across similar ones. We present Attune, a mixed-initiative system for steerable LLM-powered scoring. Given a task description and scoring range, Attune performs pairwise comparisons across records to develop a global understanding first, and then resolves these comparisons into consistent score assignments-deriving scoring criteria and rules bottom-up in the process. These serve as shared representations of scoring logic that users can inspect and edit. Based on insights from a formative study (n = 12), Attune's interface introduces novel steering interactions that allow users to deterministically refine scoring logic. Users can provide examples, directly edit criteria, rules, or target distributions, and give natural language feedback-with all refinements compiling into constraints that guide re-scoring. We validate our approach through a technical evaluation across three workloads and a user study with domain experts (n = 8) in healthcare, law, education, and AI evaluation.",
+  "ai_type_tags": [],
+  "arxiv_id": "2608.14948",
+  "authors": [
+    "Bhavya Chopra",
+    "Meng Chen",
+    "Rebecca Dang",
+    "Chanbin Park",
+    "Shreya Shankar"
+  ],
+  "authors_full": [
+    {
+      "name": "Bhavya Chopra"
+    },
+    {
+      "name": "Meng Chen"
+    },
+    {
+      "name": "Rebecca Dang"
+    },
+    {
+      "name": "Chanbin Park"
+    },
+    {
+      "name": "Shreya Shankar"
+    },
+    {
+      "name": "Sepanta Zeighami"
+    },
+    {
+      "name": "Bjoern Hartmann"
+    },
+    {
+      "name": "Aditya Parameswaran"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM评分系统，混合主动交互，含用户形成性研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-15",
+  "doi": "10.1145/3830398.3830567",
+  "id": "p_tHn9TD1W8-JF5fqk",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2608.14948v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 21370,
+      "revision": "977511031af1892617e6a412d779258bc77709e9"
+    }
+  ],
+  "title": "Who's Keeping Score? Interactive Steering of LLM-Powered Scoring with Attune",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-18T02:57:20.908980Z",
+  "url": "https://arxiv.org/abs/2608.14948v1",
+  "volume": null,
+  "year": 2026
+}
