@@ -1,0 +1,58 @@
+{
+  "abstract": "Online video platforms can expose young users to harmful content, but independent audits remain difficult because video annotation is costly and moderation judgments vary across languages. We audit TikTok in France, Italy, and Sweden with sockpuppet accounts representing four age personas (13, 16, 19, 40), collecting 36,971 videos from passive For-You-page scrolling and active sessions that scroll, search for harm keywords, and scroll again. To scale annotation, we validate four multimodal LLMs against native-speaker labels on a 300-video reference set. Gemini 2.5 Flash with eight sampled frames plus text performs best (aggregate kappa = 0.42), at half the per-call cost of native-video upload, and we apply it to a 10% sample for approximately \\$50 in total API spend across both modalities. Keyword search returns 35-56% harmful content, a 1.5-7.5x increase over the scrolling baseline in ten of twelve country-age combinations; the spike is temporary and flattens the age differences observed in France and Sweden. Under passive scrolling, Italy has the highest harm rate at every age, with Italian age-19 reaching 48.6%. Overall, MLLM-based auditing offers a scalable approach for cross-national youth-safety audits, while provider safety filters (1.1% refusal rate) under-count the most explicit harms.",
+  "ai_type_tags": [
+    "多模态",
+    "LLM",
+    "AI治理"
+  ],
+  "arxiv_id": "2608.17583",
+  "authors": [
+    "Hamidreza Saffari",
+    "Francesco Pierri"
+  ],
+  "authors_full": [
+    {
+      "name": "Hamidreza Saffari"
+    },
+    {
+      "name": "Francesco Pierri"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "TikTok用户暴露审计，sockpuppet方法+用户画像",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究使用多模态大语言模型审计TikTok对青少年的有害内容暴露。方法上通过袜子木偶账号模拟13、16、19、40岁四类用户，在法、意、瑞典三国收集36971条视频，对比被动浏览与关键词搜索。Gemini 2.5 Flash结合8帧采样与文本在标注任务中表现最优；关键词搜索使有害内容率提升1.5–7.5倍，意大利整体最高，19岁达48.6%；但平台安全过滤拒绝率仅1.1%，低估了最露骨的内容。",
+      "topic_tags": [
+        "用户研究方法",
+        "伦理",
+        "AI治理",
+        "儿童/老人/无障碍"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-18",
+  "doi": null,
+  "id": "p_osTY71ckrYbq6Dk_",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2608.17583v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 21768,
+      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+    }
+  ],
+  "title": "Auditing Exposure to Harmful Content on TikTok using Multimodal Language Models: A Cross-National, Age-Stratified Study",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-19T03:00:19.225686Z",
+  "url": "https://arxiv.org/abs/2608.17583v1",
+  "volume": null,
+  "year": 2026
+}

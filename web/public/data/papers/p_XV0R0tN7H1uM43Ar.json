@@ -1,0 +1,62 @@
+{
+  "abstract": "Eliciting detailed and actionable software requirements from end-users is a critical phase in the iterative development of a software product or application. To ensure the feedback collected is detailed and actionable, software teams can leverage the laddering interview technique. While effective for ensuring granular and actionable items from the software feedback, these interviews are subject to several limitations. They are traditionally a manual process associated with a time and financial burden, limiting scalability; interviewers must balance probing for depth while managing interviewee behavioral and cultural constraints. To address these limitations, we present \\textbf{LadderTeam}, an open, reproducible framework that automates UX wireframe interviews using a dual-agent Large Language Model (LLM) architecture. An active interviewer agent executes one of three probing strategies (ACV, 5-Whys, and JTBD) to elicit actionable software requirements from usability feedback comments, while a concurrent background Judge agent evaluates probe-response pairs and triggers real-time guardrails to prevent topic drift. To rigorously evaluate LLM laddering without participant variance confounds, we introduce a controlled simulation methodology utilizing scripted ground-truth transcripts to isolate probe quality as the sole experimental variable. Across 216 interviews, \\textbf{LadderTeam} achieved 99.1\\% chain convergence and an 81.0\\% ground-truth actionable response match (86.1\\% reluctant personality, 75.9\\% terse personality) with zero drift across all runs. All evaluation code, all transcripts, inputs, and a live demonstration platform will be open-sourced upon acceptance.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI 访谈分析"
+  ],
+  "arxiv_id": "2608.17029",
+  "authors": [
+    "Manjushree Aithal",
+    "Alexander Kotz",
+    "James Mitchell"
+  ],
+  "authors_full": [
+    {
+      "name": "Manjushree Aithal"
+    },
+    {
+      "name": "Alexander Kotz"
+    },
+    {
+      "name": "James Mitchell"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM自动化UX访谈，UX研究方法应用",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对UX线框图访谈中传统阶梯访谈耗时且依赖人工的问题，提出LadderTeam双智能体LLM框架：主问智能体执行ACV/5-Whys/JTBD三种探询策略，并行Judge智能体实时防止话题偏移。基于脚本化真值转录的受控仿真方法，在216次访谈中实现99.1%链收敛与81.0%可操作响应匹配率，验证了LLM自动化阶梯访谈的可行性与质量。",
+      "topic_tags": [
+        "用户研究方法",
+        "访谈",
+        "用户体验(UX)",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-17",
+  "doi": null,
+  "id": "p_XV0R0tN7H1uM43Ar",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2608.17029v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 21766,
+      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+    }
+  ],
+  "title": "LadderTeam: Dual-Agent Laddering Elicitation Framework",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-19T03:00:19.225686Z",
+  "url": "https://arxiv.org/abs/2608.17029v1",
+  "volume": null,
+  "year": 2026
+}

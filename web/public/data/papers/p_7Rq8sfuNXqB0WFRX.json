@@ -1,0 +1,77 @@
+{
+  "abstract": "We present HAIFAI—a novel two-stage system where humans and AI interact to tackle the challenging task of reconstructing a visual representation of a face that exists only in a person’s mind. In the first stage, users iteratively rank images our reconstruction system presents based on their resemblance to a mental image. These rankings, in turn, allow the system to extract relevant image features, fuse them into a unified feature vector and use a generative model to produce an initial reconstruction of the mental image. The second stage leverages an existing face editing method, allowing users to manually refine and further improve this reconstruction using an easy-to-use slider interface for face shape manipulation. To avoid the need for tedious human data collection for training the reconstruction system, we introduce a computational user model of human ranking behaviour. For this, we collected a small face ranking dataset through an online crowd-sourcing study containing data from 275 participants. We evaluate HAIFAI and an ablated version in a 12-participant user study and demonstrate that our approach outperforms the previous state of the art regarding reconstruction quality, usability, perceived workload and reconstruction speed. We further validate the reconstructions in a subsequent face ranking study with 18 participants and show that HAIFAI achieves a new state-of-the-art identification rate of 60.6%. These findings represent a significant advancement towards developing new interactive intelligent systems capable of reliably and effortlessly reconstructing a user’s mental image.",
+  "ai_type_tags": [
+    "GenAI",
+    "图像生成",
+    "人机交互",
+    "多模态"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Florian Strohm",
+    "Mihai Bâce",
+    "Andreas Bulling"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Stuttgart, Stuttgart, Germany"
+      ],
+      "name": "Florian Strohm",
+      "orcid": "https://orcid.org/0000-0002-3787-3062"
+    },
+    {
+      "affiliation": [
+        "KU Leuven, Leuven, Belgium"
+      ],
+      "name": "Mihai Bâce",
+      "orcid": "https://orcid.org/0000-0002-1446-379X"
+    },
+    {
+      "affiliation": [
+        "University of Stuttgart, Stuttgart, Germany"
+      ],
+      "name": "Andreas Bulling",
+      "orcid": "https://orcid.org/0000-0001-6317-7303"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心人机AI交互系统，用户迭代参与重建",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "提出人机交互两阶段系统 HAIFAI，用于重建人脑中仅存的面孔图像。第一阶段由用户迭代排序候选图像，生成模型据此融合特征并产出初步重建；第二阶段通过人脸编辑滑块让用户手动细化。借助 275 人众包排序数据训练用户排名行为计算模型，12 人用户研究显示其在重建质量、可用性、工作负荷与速度上均优于既有方法，脸部排序验证中识别率达 60.6% 新 SOTA。",
+      "topic_tags": [
+        "HCI",
+        "人机协作",
+        "用户研究方法",
+        "众包",
+        "可用性测试",
+        "多模态交互"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 2,
+  "date": "2025-05-12",
+  "doi": "10.1145/3725891",
+  "id": "p_7Rq8sfuNXqB0WFRX",
+  "issue": "2",
+  "journal": "TiiS",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 21535,
+      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+    }
+  ],
+  "title": "HAIFAI: Human-AI Interaction for Mental Face Reconstruction",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-19T03:00:19.225686Z",
+  "url": "https://doi.org/10.1145/3725891",
+  "volume": "15",
+  "year": 2025
+}

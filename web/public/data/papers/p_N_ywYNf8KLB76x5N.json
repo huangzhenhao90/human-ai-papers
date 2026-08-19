@@ -1,0 +1,51 @@
+{
+  "abstract": "Every team building Large Language Models (LLMs) faces a core challenge: offline benchmarks show performance gains and user engagement rises post deployment, but isolating cause from effect remains difficult. Simultaneous marketing, media coverage, and seasonal demand obscure whether model updates truly drive engagement gains.   This paper presents a novel causal estimation approach that leverages non uniform quality improvements across capabilities within a single model version. Because capabilities improve unevenly (e.g., strong gains in coding versus modest gains in writing), users experience varied quality depending on their task distribution. This variation in experienced quality provides causal signal for estimation.   We validate this approach on synthetic data with known ground truth. The raw estimator recovers 81% to 88% of the true effect, with the remainder lost to measurement error in usage estimates. Applying an errors in variables disattenuation adjustment (using a test retest reliability ratio mean correlation of 0.861) corrects the estimate to 1.017 (bootstrapped 95% CI: 0.915 to 1.109).   By contrast, naive methods fail significantly, recovering only 63% without version controls and 62% using real time rather than frozen usage patterns. Permutation tests confirm the framework distinguishes true causal effects from noise. Sensitivity analysis indicates recovery improves monotonically from 78% to 87% as pre period length increases from 3 to 7 weeks, highlighting a clear tradeoff between sample duration and estimator precision. Seed sensitivity tests further confirm stability across random draws.",
+  "ai_type_tags": [
+    "LLM"
+  ],
+  "arxiv_id": "2608.17187",
+  "authors": [
+    "John Tribbia"
+  ],
+  "authors_full": [
+    {
+      "name": "John Tribbia"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用户参与度因果估计，有用户视角但非核心",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对LLM团队难以区分模型质量提升与营销/季节因素对用户参与度因果影响的问题，提出利用同一版本内不同能力非均匀质量改进的因果估计方法。合成数据验证：原始估计恢复81-88%真实效应，经测量误差修正后估计值为1.017（95%CI: 0.915-1.109），朴素方法仅恢复62-63%。敏感性分析显示前置周期由3周增至7周时恢复率从78%提升至87%。",
+      "topic_tags": [
+        "用户研究方法",
+        "AI 采用",
+        "HCI"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-17",
+  "doi": null,
+  "id": "p_N_ywYNf8KLB76x5N",
+  "issue": null,
+  "journal": "arXiv:stat.ME",
+  "pdf_url": "https://arxiv.org/pdf/2608.17187v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 21772,
+      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+    }
+  ],
+  "title": "Identifying Model Quality Effects on User Engagement: A Within-Version Causal Estimator with Synthetic Data Validation",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-19T03:00:19.225686Z",
+  "url": "https://arxiv.org/abs/2608.17187v1",
+  "volume": null,
+  "year": 2026
+}

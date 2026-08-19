@@ -56888,6 +56888,213 @@
     "year": 2026
   },
   {
+    "abstract": "As AI systems become increasingly capable of autonomous action, determining whether an agent is technically capable of performing an action is insufficient: the system must also determine whether the action is authorised in its context.   This paper introduces the Authority Resolution Framework (ARF), a five-domain ontology for representing and resolving authority across organisational roles and informal influence, business concepts, codified processes, machine-readable permissions and executable systems, and external real-world context. ARF defines the Authority Relation (AR) as a cross-domain primitive binding an actor, action, object, bounded context, justification chain, and a calibration measure termed the DNA-Coefficient, which captures divergence between documented authority structures and authority as practiced.   The framework provides a machine-interpretable representation of authority provenance and scope, with JSON-LD representations and knowledge-graph query patterns for authority resolution. ARF is designed to support AI agents in determining the provenance, scope and contextual validity of authority before executing consequential actions. The framework positions authority resolution as a knowledge-representation and reasoning problem at the intersection of ontology engineering, semantic AI, agentic AI and AI governance.",
+    "ai_reason": "AI权威治理框架,涉及组织角色",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI治理",
+      "可解释AI"
+    ],
+    "authors": [
+      "Parviz Shariff"
+    ],
+    "authors_full": [
+      {
+        "name": "Parviz Shariff"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-16",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 57015,
+    "ingested_at": "2026-08-18T02:55:56.084509",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2608.15832v1",
+    "scored_at": "2026-08-18T02:56:05.655124",
+    "title": "The Authority Resolution Framework: A Five-Domain Ontology for Governing Who and What Decides, at Scale",
+    "title_zh": null,
+    "tldr": "研究AI智能体执行关键行动前的授权决策问题。提出Authority Resolution Framework五域本体论，涵盖组织角色与隐性影响、业务概念、编码流程、机器可读权限及外部语境，定义Authority Relation跨域原语并引入DNA-Coefficient衡量文档化与实际权威结构的偏差。提供JSON-LD与知识图谱查询模式，使AI在执行后果性行动前可判断权威的来源、范围与语境有效性，定位为本体工程与AI治理的交叉问题。",
+    "topic_tags": [
+      "AI治理",
+      "决策",
+      "知识管理",
+      "算法管理"
+    ],
+    "url": "https://arxiv.org/abs/2608.15832v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative AI is transforming the workplace by augmenting and automating cognitive tasks, reshaping how organizations work and innovate while raising questions about workplace inequality and the future of work. Despite rapid adoption, empirical evidence on how these tools alter work practices and generate productivity gains remains limited. We examine how AI use affects the quantity and nature of information work using digital trace data from the Microsoft M365 application suite across multiple large international companies. Specifically, we study how generative AI adoption shifts the balance between communication and productivity-oriented activities, such as content creation in Word. Difference-in-Differences analyses show that AI adoption is associated with significant increases in both productivity (21.2%) and communication (7.1%) application actions among users who used the AI system more than 100 times over a 20-week post-adoption period. Among users with 100-500 AI use instances, higher AI usage is also associated with continued increases in both types of activity. The smaller increase in communication represents an overall shift toward individual, documentation-focused work and reflects mixed changes in communication, including decreases in reading and organizing email, compared with more uniform increases in productivity actions. These findings suggest potential efficiency gains and reductions in information overload, while highlighting the need to ensure that AI adoption does not weaken interpersonal communication and the diffusion of diverse information that supports innovation.",
+    "ai_reason": "生成式AI对工作场所生产力的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM"
+    ],
+    "authors": [
+      "Yulin Yu",
+      "Yan Chen",
+      "Rui Hu",
+      "Siddharth Suri",
+      "Scott Counts"
+    ],
+    "authors_full": [
+      {
+        "name": "Yulin Yu"
+      },
+      {
+        "name": "Yan Chen"
+      },
+      {
+        "name": "Rui Hu"
+      },
+      {
+        "name": "Siddharth Suri"
+      },
+      {
+        "name": "Scott Counts"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-16",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 57023,
+    "ingested_at": "2026-08-18T02:55:56.090898",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.15550v1",
+    "scored_at": "2026-08-18T02:56:05.654364",
+    "title": "Adoption of Generative AI in the Workplace: Increasing and Shifting the Balance of Productivity and Communication Activity",
+    "title_zh": null,
+    "tldr": "基于微软M365在多家跨国企业的数字足迹数据，采用双重差分法考察生成式AI采用对信息工作的影响。20周后，使用AI超100次的用户生产力行为增加21.2%，沟通行为增加7.1%；在100–500次使用区间，AI用量越高两类活动持续增长。沟通增幅较小反映工作重心向个人文档创作转移，邮件阅读与整理下降。研究提示AI带来效率提升并可能缓解信息过载，但需关注采用不均引发的组织内不平等。",
+    "topic_tags": [
+      "工作未来",
+      "组织变革",
+      "知识管理"
+    ],
+    "url": "https://arxiv.org/abs/2608.15550v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Modern vehicles, with advanced AI voice and autonomous navigation features, extend beyond traditional driving but, like any autonomous system, can potentially make mistakes or behave in ways unexpected by users. Although providing real-time explanations can alleviate some confusion, constant information can overwhelm users and potentially cause unnecessary distractions. Some situations may require explanations or corrective vehicle behavior, and thus, recognizing user response to unexpected vehicle behavior is critical. To investigate such user responses, our study focused on collecting and analyzing user behavioral responses to unexpected events while interacting with a fully autonomous vehicle in a driving simulator. We also aimed to address the lack of datasets capturing subtle user responses (facial, spoken language, physiological signals) to in-vehicle events, as existing datasets primarily focus on strong emotional signals in conventional human-driven cars and user response to external road and traffic conditions. Users were exposed to stimuli designed to induce surprise, confusion, and frustration while performing a secondary task on a tablet and interacting with the vehicle through voice commands and in-vehicle displays. We collected a multi-modal dataset with video, audio, and heart rate data and gained insights into subtle user responses that underscored the need for further investigation of nuanced user behaviors. These observations highlight the importance of designing vehicles that recognize and adapt to occupants' behavior, potentially improving their experience.",
+    "ai_reason": "自动驾驶为情境，研究用户情绪反应",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "Huy Quyen Ngo",
+      "Suresh Kumaar Jayaraman",
+      "Brian Mok",
+      "Ken Friedl",
+      "Oliver Krause"
+    ],
+    "authors_full": [
+      {
+        "name": "Huy Quyen Ngo"
+      },
+      {
+        "name": "Suresh Kumaar Jayaraman"
+      },
+      {
+        "name": "Brian Mok"
+      },
+      {
+        "name": "Ken Friedl"
+      },
+      {
+        "name": "Oliver Krause"
+      },
+      {
+        "name": "Aaron Steinfeld"
+      },
+      {
+        "name": "Nikolas Martelaro"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-15",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 57024,
+    "ingested_at": "2026-08-18T02:55:56.091554",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.15048v1",
+    "scored_at": "2026-08-18T02:56:09.317856",
+    "title": "Beyond Overt Reactions: Analyzing Subtle User Emotional Response to Unexpected In-Vehicle System Behavior",
+    "title_zh": null,
+    "tldr": "针对自动驾驶汽车意外行为引发用户细微情绪反应的研究空白，构建驾驶模拟器实验，让用户在平板执行次要任务并通过语音和车内显示与车辆交互，诱发其惊讶、困惑和挫败感。收集视频、音频、心率等多模态数据，系统捕捉面部、语音与生理信号层面的细微反应，弥补现有数据集仅关注强烈情绪与外部路况的不足，揭示自主车载系统设计中识别并响应用户细微反馈的必要性。",
+    "topic_tags": [
+      "人机交互",
+      "人机协作",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2608.15048v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Entrepreneurs increasingly use end-user generative AI technologies such as ChatGPT for high-stakes documents like loan applications and business plans, where AI-generated errors---a wrong price, a fabricated product---can affect loan or funding outcomes. Current approaches to supporting evaluation of AI-generated text assume a single user assessing output alone, on screen. This can be especially demanding for resource-constrained entrepreneurs, whose digital and AI skills vary widely. In this early-stage work, we explore how evaluation might instead be organized in a group setting and completed as a collective activity. We extended BizChat, an AI-powered business-planning tool, with an evaluation module that links each generated claim to the entrepreneur's original input. We partner with community organizations in Maryland---embedding BizChat within various entrepreneurship programs---where workshop attendees (N=14) evaluated their plans through think-pair-share discussion. Early findings suggest interface scaffolds like claim-to-input links primed attendees with concrete, personal evaluations, which the group setting then extended beyond the screen: attendees requested printed copies, used rubrics to compare across plans, and drew on peers' knowledge to verify what they could not easily judge alone.",
+    "ai_reason": "核心研究ChatGPT生成商业计划评估",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "ChatGPT",
+      "人机交互"
+    ],
+    "authors": [
+      "Qi Zhao",
+      "Marjory Pineda",
+      "Ketul Chhaya",
+      "Aakash Gautam",
+      "Yasmine Kotturi"
+    ],
+    "authors_full": [
+      {
+        "name": "Qi Zhao"
+      },
+      {
+        "name": "Marjory Pineda"
+      },
+      {
+        "name": "Ketul Chhaya"
+      },
+      {
+        "name": "Aakash Gautam"
+      },
+      {
+        "name": "Yasmine Kotturi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-17",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 57025,
+    "ingested_at": "2026-08-18T02:55:56.092280",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.16886v1",
+    "scored_at": "2026-08-18T02:56:05.651664",
+    "title": "Evaluating Beyond the Screen: Collective Assessment of AI-Generated Business Plans with Resource-Constrained Entrepreneurs",
+    "title_zh": null,
+    "tldr": "针对资源受限创业者难以独立评估AI生成商业计划的问题，研究扩展BizChat工具，新增将每条AI声明回链至创业者原始输入的评估模块，并在马里兰社区创业项目中以think-pair-share形式组织14名创业者集体评估。结果显示，声明-输入链接等界面支架帮助参与者形成具体、贴近自身经验的判断，而小组讨论将评估延展到屏幕之外：参与者要求打印计划、用评分量表横向比较，并借助同伴知识验证自己难以单独判断的内容。",
+    "topic_tags": [
+      "创业",
+      "决策",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2608.16886v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -62696,6 +62903,51 @@
   },
   {
     "abstract": null,
+    "ai_reason": "工作场所机器人恐惧，涉及AI机器人但侧重员工心理",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Junbang Lan",
+      "Bocong Yuan",
+      "Yuanyuan Gong"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Junbang Lan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Bocong Yuan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yuanyuan Gong",
+        "orcid": null
+      }
+    ],
+    "cited_by": 19,
+    "date": "2022-10",
+    "doi": "10.1016/j.chb.2022.107366",
+    "domain_score": 4.0,
+    "id": 52111,
+    "ingested_at": "2026-08-12T04:23:36.273311",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:25.309860",
+    "title": "RETRACTED: Predicting the change trajectory of employee robot-phobia in the workplace: The role of perceived robot advantageousness and anthropomorphism",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107366",
+    "volume": "135",
+    "year": 2022
+  },
+  {
+    "abstract": null,
     "ai_reason": "Algorithmic management directly affects motivation",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -66539,6 +66791,51 @@
   },
   {
     "abstract": null,
+    "ai_reason": "探讨人形机器人恐怖谷效应，涉及AI机器人但非核心算法议题",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Boyoung Kim",
+      "Ewart de Visser",
+      "Elizabeth Phillips"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Boyoung Kim",
+        "orcid": "https://orcid.org/0000-0003-1214-0169"
+      },
+      {
+        "affiliation": [],
+        "name": "Ewart de Visser",
+        "orcid": "https://orcid.org/0000-0001-9238-9081"
+      },
+      {
+        "affiliation": [],
+        "name": "Elizabeth Phillips",
+        "orcid": null
+      }
+    ],
+    "cited_by": 72,
+    "date": "2022-10",
+    "doi": "10.1016/j.chb.2022.107340",
+    "domain_score": 3.0,
+    "id": 52958,
+    "ingested_at": "2026-08-12T04:23:56.258521",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:25.308946",
+    "title": "Two uncanny valleys: Re-evaluating the uncanny valley across the full spectrum of real-world human-like robots",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107340",
+    "volume": "135",
+    "year": 2022
+  },
+  {
+    "abstract": null,
     "ai_reason": "推荐系统核心，电商消费行为",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -67694,6 +67991,51 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108419",
     "volume": "161",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "虚拟服务助手拟人化，涉及AI对话系统",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Juha Munnukka",
+      "Karoliina Talvitie-Lamberg",
+      "Devdeep Maity"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Juha Munnukka",
+        "orcid": "https://orcid.org/0000-0002-2960-2350"
+      },
+      {
+        "affiliation": [],
+        "name": "Karoliina Talvitie-Lamberg",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Devdeep Maity",
+        "orcid": null
+      }
+    ],
+    "cited_by": 189,
+    "date": "2022-10",
+    "doi": "10.1016/j.chb.2022.107343",
+    "domain_score": 4.0,
+    "id": 53172,
+    "ingested_at": "2026-08-12T04:24:01.219771",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:24.902055",
+    "title": "Anthropomorphism and social presence in Human–Virtual service assistant interactions: The role of dialog length and attitudes",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107343",
+    "volume": "135",
+    "year": 2022
   },
   {
     "abstract": null,
@@ -70827,6 +71169,45 @@
   },
   {
     "abstract": null,
+    "ai_reason": "研究智能虚拟助手(Alexa)游戏化设计，AI为核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Paula Bräuer",
+      "Athanasios Mazarakis"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Paula Bräuer",
+        "orcid": "https://orcid.org/0000-0001-5903-8829"
+      },
+      {
+        "affiliation": [],
+        "name": "Athanasios Mazarakis",
+        "orcid": "https://orcid.org/0000-0001-9943-0382"
+      }
+    ],
+    "cited_by": 26,
+    "date": "2022-10",
+    "doi": "10.1016/j.chb.2022.107362",
+    "domain_score": 4.0,
+    "id": 54592,
+    "ingested_at": "2026-08-12T05:42:45.504698",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:24.900111",
+    "title": "“Alexa, can we design gamification without a screen?” - Implementing cooperative and competitive audio-gamification for intelligent virtual assistants",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2022.107362",
+    "volume": "135",
+    "year": 2022
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI驱动的App真实性研究，AI为核心变量",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -71984,6 +72365,356 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108492",
     "volume": "164",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI vs人类代言人，购买意愿，核心AI+营销",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机交互"
+    ],
+    "authors": [
+      "Yang Song",
+      "Litong Wang",
+      "Zhiyuan Zhang",
+      "Lubica Hikkerova"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yang Song",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Litong Wang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Zhiyuan Zhang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Lubica Hikkerova",
+        "orcid": null
+      }
+    ],
+    "cited_by": 39,
+    "date": "2024-09",
+    "doi": "10.1016/j.chb.2024.108300",
+    "domain_score": 5.0,
+    "id": 56097,
+    "ingested_at": "2026-08-18T02:55:15.417714",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:04.786622",
+    "title": "AI or human: How endorser shapes online purchase intention?",
+    "title_zh": null,
+    "tldr": "探讨AI代言人与人类代言人如何影响消费者在线购买意愿，比较不同代言主体类型对营销传播效果及购买决策的差异。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "广告",
+      "品牌"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2024.108300",
+    "volume": "158",
+    "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心为人-AI协作与XAI，OB边缘相关",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "人机协作"
+    ],
+    "authors": [
+      "Judy Kay"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Judy Kay",
+        "orcid": null
+      }
+    ],
+    "cited_by": 12,
+    "date": "2023-10",
+    "doi": "10.1016/j.chb.2023.107848",
+    "domain_score": 3.0,
+    "id": 56112,
+    "ingested_at": "2026-08-18T02:55:15.821820",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:07.938136",
+    "title": "Foundations for Human-AI teaming for self-regulated learning with explainable AI (XAI)",
+    "title_zh": null,
+    "tldr": "构建人机协作自我调节学习的理论基础，探讨可解释AI(XAI)如何帮助学习者理解并与AI系统有效协作，以促进自主学习。",
+    "topic_tags": [
+      "教育",
+      "人机协作",
+      "培训"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107848",
+    "volume": "147",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI透明度与在线约会，CHB强相关",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Yuan Sun",
+      "Mengqi (Maggie) Liao",
+      "S. Shyam Sundar",
+      "Joseph B. Walther"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yuan Sun",
+        "orcid": "https://orcid.org/0000-0002-0752-1402"
+      },
+      {
+        "affiliation": [],
+        "name": "Mengqi (Maggie) Liao",
+        "orcid": "https://orcid.org/0000-0001-7287-7731"
+      },
+      {
+        "affiliation": [],
+        "name": "S. Shyam Sundar",
+        "orcid": "https://orcid.org/0000-0002-5779-8864"
+      },
+      {
+        "affiliation": [],
+        "name": "Joseph B. Walther",
+        "orcid": "https://orcid.org/0000-0003-2393-9208"
+      }
+    ],
+    "cited_by": 2,
+    "date": "2026-04",
+    "doi": "10.1016/j.chb.2025.108875",
+    "domain_score": 4.0,
+    "id": 56113,
+    "ingested_at": "2026-08-18T02:55:15.845997",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:09.321789",
+    "title": "Does transparency matter when an AI system meets performance expectations? An experiment with an online dating site",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2025.108875",
+    "volume": "177",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI驱动个性化，社交媒体消费者参与",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Tanawat Teepapal"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Tanawat Teepapal",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-01",
+    "doi": "10.1016/j.chb.2025.108797",
+    "domain_score": 5.0,
+    "id": 56131,
+    "ingested_at": "2026-08-18T02:55:16.344314",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:04.781294",
+    "title": "Corrigendum to “AI-driven personalization: Unraveling consumer perceptions in social media engagement” [Computers in Human Behavior 165 (2025) 108549]",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2025.108797",
+    "volume": "174",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机交互语言趋同，CHB强相关",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Jeongmin Lee",
+      "Sukyung Yoon",
+      "Hyorim Shin",
+      "Junho Choi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jeongmin Lee",
+        "orcid": "https://orcid.org/0009-0001-0056-4864"
+      },
+      {
+        "affiliation": [],
+        "name": "Sukyung Yoon",
+        "orcid": "https://orcid.org/0000-0002-9077-9024"
+      },
+      {
+        "affiliation": [],
+        "name": "Hyorim Shin",
+        "orcid": "https://orcid.org/0000-0003-3677-6284"
+      },
+      {
+        "affiliation": [],
+        "name": "Junho Choi",
+        "orcid": "https://orcid.org/0000-0002-1567-9269"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08",
+    "doi": "10.1016/j.chb.2026.109151",
+    "domain_score": 4.0,
+    "id": 56141,
+    "ingested_at": "2026-08-18T02:55:16.586197",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:09.321094",
+    "title": "“Can talking like you make it work?”: The role of linguistic convergence and maintenance in human–robot interaction",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2026.109151",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI拟人化与建议采纳，CHB强相关",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "Sisheng Li",
+      "Qinghua He",
+      "Yawei Qi",
+      "Ofir Turel"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sisheng Li",
+        "orcid": "https://orcid.org/0009-0002-3780-3539"
+      },
+      {
+        "affiliation": [],
+        "name": "Qinghua He",
+        "orcid": "https://orcid.org/0000-0001-6396-6273"
+      },
+      {
+        "affiliation": [],
+        "name": "Yawei Qi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ofir Turel",
+        "orcid": null
+      }
+    ],
+    "cited_by": 2,
+    "date": "2026-08",
+    "doi": "10.1016/j.chb.2026.108983",
+    "domain_score": 4.0,
+    "id": 56145,
+    "ingested_at": "2026-08-18T02:55:16.685192",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:09.320688",
+    "title": "Is anthropomorphizing AI worth it? The role of hands-on experience in shaping advice uptake",
+    "title_zh": null,
+    "tldr": "探讨AI拟人化是否值得——用户对AI建议的采纳是否受动手操作经验的影响。检验在实际接触与使用AI系统后，用户对拟人化AI所提建议的态度与接受行为如何变化，揭示hands-on experience对拟人化效应与建议采纳的调节作用，为人机交互中拟人化设计及建议接受度研究提供实证依据。",
+    "topic_tags": [
+      "人机交互",
+      "信任",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.108983",
+    "volume": "181",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "算法态度与人-算法合作，AI为主要变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "算法决策",
+      "算法管理",
+      "人机协作"
+    ],
+    "authors": [
+      "Tomasz Oleksy",
+      "Anna Wnuk",
+      "Anna Domaradzka",
+      "Dominika Maison"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Tomasz Oleksy",
+        "orcid": "https://orcid.org/0000-0002-3499-9874"
+      },
+      {
+        "affiliation": [],
+        "name": "Anna Wnuk",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Anna Domaradzka",
+        "orcid": "https://orcid.org/0000-0001-9585-732X"
+      },
+      {
+        "affiliation": [],
+        "name": "Dominika Maison",
+        "orcid": null
+      }
+    ],
+    "cited_by": 14,
+    "date": "2023-05",
+    "doi": "10.1016/j.chb.2023.107653",
+    "domain_score": 3.0,
+    "id": 56164,
+    "ingested_at": "2026-08-18T02:55:17.181071",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:07.938849",
+    "title": "What shapes our attitudes towards algorithms in urban governance? The role of perceived friendliness and controllability of the city, and human-algorithm cooperation",
+    "title_zh": null,
+    "tldr": "探究公众对城市治理中算法态度的影响因素，分析城市感知友好度、可控感以及人机合作在塑造算法接受度中的作用机制。",
+    "topic_tags": [
+      "信任",
+      "决策",
+      "组织变革"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107653",
+    "volume": "142",
+    "year": 2023
   },
   {
     "abstract": "Artificial intelligence (AI) has become part and parcel of scientific knowledge production since the latest iterations of generative AI models (e.g., ChatGPT, DeepSeek, Claude, or Gemini) became widely available. Given AI has rapidly evolved since the initial release of ChatGPT in 2022, researching how AI’s capabilities impact organizations and how researchers make use of AI tools can be likened to a moving target. In this editorial essay, we explore the implications of the introduction of AI in the context of academic research, both as the subject of investigation (i.e., research\n                    on\n                    AI) and as a research tool to facilitate academic writing, data generation, or the peer review process (i.e., research\n                    with\n                    AI). Specifically, concerning research\n                    on\n                    AI, we consider issues around clarity regarding both existing definitions and concepts in the AI literature and how these are influenced by the rapid technological evolution of AI’s capabilities. In regard to research\n                    with\n                    AI, we reflect on the advantages and disadvantages of the use of AI as a research tool and discuss the\n                    Human Relations AI Usage Policy\n                    . Overall, our aim is not to be overly prescriptive on how to conduct research on and with AI but to encourage authors to reflect on how to best capture AI as a moving target in the context of their research endeavors.",
@@ -74272,6 +75003,50 @@
       "员工幸福感"
     ],
     "url": "https://doi.org/10.1002/hrm.22154",
+    "volume": "62",
+    "year": 2022
+  },
+  {
+    "abstract": "AbstractArtificial intelligence (AI) has become an important topic in business literature and strategy talk. Yet, much of this literature is normative and conceptual in nature. How organizational members perceive AI and the job role changes that come with it is, so far, largely unknown territory for both HR scholars and practitioners. We sought to investigate the relationship between humans and AI and conducted an in‐depth exploratory study into the co‐existence of humans and two early‐stage AI‐solutions, one for “low‐status” automation and another for “high‐status”; augmentation. We suggest that different organizational groups may engage in distinctly different sensemaking processes regarding AI, an important insight for successful HRM strategies when AI is being introduced into the workplace. Moreover, contrary to recent conceptual work, our findings indicate that AI‐enabled automation and augmentation solutions may not be detached from nor exist in tension with each other. They are deeply embedded in organizational processes and workflows for which people who co‐exist with the technologies must take ownership. Our findings, in part, go against discussions on AI “taking over” jobs or deskilling humans. We describe a more nuanced version of reality fluctuating around the various ways different organizational groups encounter different AI‐solutions in their daily work. Finally, our study warns against unconditional technological enthusiasm, managerial ignorance of the nature of work that employees undertake in different organizational groups, and a neglect of the time and effort required to successfully implement AI‐solutions that affect not only the home organization but also members of the broader ecosystem.",
+    "ai_reason": "AI核心议题，HR场景，AI是中心变量",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Katja Einola",
+      "Violetta Khoreva"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Stockholm School of Economics  Stockholm Sweden",
+          "Management and Organization Hanken School of Economics  Helsinki Finland"
+        ],
+        "name": "Katja Einola",
+        "orcid": "https://orcid.org/0000-0002-1548-9510"
+      },
+      {
+        "affiliation": [
+          "Management and Organization Hanken School of Economics  Vaasa Finland"
+        ],
+        "name": "Violetta Khoreva",
+        "orcid": "https://orcid.org/0000-0002-1118-9983"
+      }
+    ],
+    "cited_by": 169,
+    "date": "2022-10-05",
+    "doi": "10.1002/hrm.22147",
+    "domain_score": 5.0,
+    "id": 51415,
+    "ingested_at": "2026-08-12T04:23:19.511143",
+    "issue": "1",
+    "journal": "HRM",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:20.317232",
+    "title": "Best friend or broken tool? Exploring the co‐existence of humans and artificial intelligence in the workplace ecosystem",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1002/hrm.22147",
     "volume": "62",
     "year": 2022
   },
@@ -83289,6 +84064,57 @@
   },
   {
     "abstract": null,
+    "ai_reason": "数字技术营销未来框架，AI/数字化为核心议题之一",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Kirk Plangger",
+      "Dhruv Grewal",
+      "Ko de Ruyter",
+      "Catherine Tucker"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Kirk Plangger",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dhruv Grewal",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ko de Ruyter",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Catherine Tucker",
+        "orcid": null
+      }
+    ],
+    "cited_by": 85,
+    "date": "2022-10-24",
+    "doi": "10.1007/s11747-022-00906-2",
+    "domain_score": 4.0,
+    "id": 48772,
+    "ingested_at": "2026-08-12T04:22:14.497422",
+    "issue": "6",
+    "journal": "JAMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:15.333060",
+    "title": "The future of digital technologies in marketing: A conceptual framework and an overview",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1007/s11747-022-00906-2",
+    "volume": "50",
+    "year": 2022
+  },
+  {
+    "abstract": null,
     "ai_reason": "自动化语音识别偏见属AI招聘核心议题",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -89408,6 +90234,51 @@
     "year": 2026
   },
   {
+    "abstract": "Artificial intelligence (AI) is pervading the government and transforming how public services are provided to consumers across policy areas spanning allocation of government benefits, law enforcement, risk monitoring, and the provision of services. Despite technological improvements, AI systems are fallible and may err. How do consumers respond when learning of AI failures? In 13 preregistered studies (N = 3,724) across a range of policy areas, the authors show that algorithmic failures are generalized more broadly than human failures. This effect is termed “algorithmic transference” as it is an inferential process that generalizes (i.e., transfers) information about one member of a group to another member of that same group. Rather than reflecting generalized algorithm aversion, algorithmic transference is rooted in social categorization: it stems from how people perceive a group of AI systems versus a group of humans. Because AI systems are perceived as more homogeneous than people, failure information about one AI algorithm is transferred to another algorithm to a greater extent than failure information about a person is transferred to another person. Capturing AI's impact on consumers and societies, these results show how the premature or mismanaged deployment of faulty AI technologies may undermine the very institutions that AI systems are meant to modernize.",
+    "ai_reason": "AI失败泛化，核心AI+消费者行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Chiara Longoni",
+      "Luca Cian",
+      "Ellie J. Kyung"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Chiara Longoni",
+        "orcid": "https://orcid.org/0000-0002-4945-4957"
+      },
+      {
+        "affiliation": [],
+        "name": "Luca Cian",
+        "orcid": "https://orcid.org/0000-0002-8051-1366"
+      },
+      {
+        "affiliation": [],
+        "name": "Ellie J. Kyung",
+        "orcid": "https://orcid.org/0000-0003-2385-9523"
+      }
+    ],
+    "cited_by": 104,
+    "date": "2022-10-19",
+    "doi": "10.1177/00222437221110139",
+    "domain_score": 4.0,
+    "id": 47475,
+    "ingested_at": "2026-08-12T04:21:42.974901",
+    "issue": "1",
+    "journal": "JMR",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:19.497137",
+    "title": "Algorithmic Transference: People Overgeneralize Failures of AI in the Government",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1177/00222437221110139",
+    "volume": "60",
+    "year": 2022
+  },
+  {
     "abstract": "Abstract\n                  In the digital era, organizations are increasingly leveraging artificial intelligence (AI) to optimize their operations and decision‐making. However, the opaqueness of AI processes raises concerns over trust, fairness, and autonomy, especially in the gig economy, where AI‐driven management is ubiquitous. This study investigates how explainable AI (xAI), through the comparative use of counterfactual versus factual and local versus global explanations, shapes gig workers’ acceptance of AI‐driven decisions and management relations, drawing on cognitive load theory. Using experimental data from 1107 gig workers, we found that both counterfactual (relative to factual) and local (relative to global) explanations increase the acceptance of AI decisions. However, the combination of local and counterfactual explanations can overwhelm workers, thereby reducing these positive effects. Furthermore, worker acceptance mediated the relationship between xAI explanations and management relations. A follow‐up study using a simplified scenario and additional procedural controls confirmed the robustness of these effects. Our findings underscore the value of carefully tailored xAI in fostering equitable, transparent, and constructive organizational practices in digitally mediated work environments.",
     "ai_reason": "核心议题为可解释AI对Gig worker接受度的影响",
     "ai_score": 5.0,
@@ -91371,6 +92242,100 @@
     "year": 2022
   },
   {
+    "abstract": "AbstractIntelligent technologies are raising important questions about the future of work. In response, many scholars explore new forms of work related to these technologies. Researchers then often speculate about what the organization of the future might look like from these newer images of work. Here we take the opposite approach: we start by asking how intelligent technologies are reshaping how organizing happens, then theorize how such organizational transformations may shape work. To this end we reconceptualize organizations as a hierarchy of pace layers – interdependent organizational processes that evolve at different timescales. Doing so allows us to see the new forms of work that are becoming necessary to articulate these pace layers for intra‐organizational coordination and allow for maximum organizational adaptability in an era where intelligent technologies engender rapid and discontinuous digital changes in the environments in which organizing occurs.",
+    "ai_reason": "智能技术重塑组织，AI为核心变量之一",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Matthew I. Beane",
+      "Paul M. Leonardi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of California"
+        ],
+        "name": "Matthew I. Beane",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of California"
+        ],
+        "name": "Paul M. Leonardi",
+        "orcid": null
+      }
+    ],
+    "cited_by": 22,
+    "date": "2022-09-27",
+    "doi": "10.1111/joms.12867",
+    "domain_score": 5.0,
+    "id": 50684,
+    "ingested_at": "2026-08-12T04:23:01.599867",
+    "issue": "5",
+    "journal": "JMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:31.815660",
+    "title": "Pace Layering as a Metaphor for Organizing in the Age of Intelligent Technologies: Considering the Future of Work by Theorizing the Future of Organizing",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1111/joms.12867",
+    "volume": "62",
+    "year": 2022
+  },
+  {
+    "abstract": "AbstractOn online labour platforms, algorithmic scores are used as indicators of freelancers' work quality and future performance. Recent studies underscore that, to achieve good scores and secure their presence on platforms, freelancers respond to algorithmic control in different ways. However, we argue, to fully understand how freelancers deal with algorithmic scores, we first need to investigate how they interpret scores and, more specifically, what scores can do for them, i.e., perceived algorithmic affordances and constraints. Our interviews and other qualitative data collected with knowledge intensive gig workers on a major platform allow us to explain how the perceived affordances of algorithms (i.e., barrier, individual visibility, self‐extension, rule of the game) act as mechanisms that explain different behavioural and emotional responses over time. Our work contributes to the current debate on the positive and negative consequences of algorithmic work by portraying the fundamental role paid by the individual interpretation of algorithmic scores and by integrating the affordance perspective into our understanding of algorithmic work.",
+    "ai_reason": "算法评分与平台劳工，AI/算法管理为主变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Francesca Bellesia",
+      "Elisa Mattarelli",
+      "Fabiola Bertolotti"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Modena and Reggio Emilia"
+        ],
+        "name": "Francesca Bellesia",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "San José State University"
+        ],
+        "name": "Elisa Mattarelli",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Modena and Reggio Emilia"
+        ],
+        "name": "Fabiola Bertolotti",
+        "orcid": null
+      }
+    ],
+    "cited_by": 73,
+    "date": "2022-10-03",
+    "doi": "10.1111/joms.12870",
+    "domain_score": 5.0,
+    "id": 50978,
+    "ingested_at": "2026-08-12T04:23:08.828170",
+    "issue": "1",
+    "journal": "JMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:20.317634",
+    "title": "Algorithms and their Affordances: How Crowdworkers Manage Algorithmic Scores in Online Labour Markets",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1111/joms.12870",
+    "volume": "60",
+    "year": 2022
+  },
+  {
     "abstract": "ABSTRACT\n                  Due to rapid advancements in artificial intelligence and machine learning, the research conversation has drifted from viewing robots as replacements for humans (i.e., the substitute view) to a view that considers the possible benefits of human–robot collaboration in the workplace (i.e., the complementary view). However, as the complementary view has been mainly studied at the microlevel of the organization (i.e., individuals, dyads, and teams), we do not yet fully understand the organizational impact of human–robot collaboration. To better understand how human–robot collaboration may impact firm outcomes, we apply the human capital resource emergence literature to develop a multilevel model of human capital robotic integration (HCRI). We specifically emphasize how HCRI influences the emergence of human capital resources through social dynamics in organizations while also considering the moderating effects of task interdependence. Furthermore, we develop theoretical arguments to illustrate how organizations can leverage the HCRI process to create value and gain a competitive advantage from their existing human capital. Finally, with potential positive effects being outlined, we discuss the possible negative consequences that may result from human–robot collaboration.",
     "ai_reason": "核心议题是human-robot collaboration，涉及AI机器人整合到组织中",
     "ai_score": 5.0,
@@ -92538,6 +93503,64 @@
     "url": "https://doi.org/10.1002/job.2800",
     "volume": "45",
     "year": 2024
+  },
+  {
+    "abstract": "ABSTRACT\n                  Artificial intelligence (AI) is increasingly part of collaborative work that was once carried out exclusively by humans. In this special issue, we ask whether our future colleagues will even be human and what this means for today's organizations. The eight contributions examine how design choices such as human‐likeness and gendered cues shape perceptions of AI, how AI alters team processes including decision‐making, trust, and stress, and how training and organizational integration condition sustainable human–AI collaboration. Together, the contributions suggest that AI reshapes collective work processes, not only individual judgments. Building on this insight and on sociotechnical systems thinking, we develop a framework that distinguishes where AI is positioned in the social system of work and how much agency it exercises. The framework also raises the normative question of how AI's position in organizations should be governed. Together, the contributions and the framework point toward a research agenda that differentiates between human–AI configurations and treats teams rather than dyads as the unit of analysis.",
+    "ai_reason": "JOB特刊,人-AI团队组织框架",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机协作",
+      "AI 治理"
+    ],
+    "authors": [
+      "Anna‐Sophie Ulfert",
+      "Eleni Georganta",
+      "Gudela Grote"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Human Performance Management Group, Department of Industrial Engineering &amp; Innovation Sciences Eindhoven University of Technology  Eindhoven the Netherlands"
+        ],
+        "name": "Anna‐Sophie Ulfert",
+        "orcid": "https://orcid.org/0000-0001-6293-4173"
+      },
+      {
+        "affiliation": [
+          "Group of Work and Organisational Psychology University of Amsterdam  Amsterdam the Netherlands"
+        ],
+        "name": "Eleni Georganta",
+        "orcid": "https://orcid.org/0000-0002-9070-5930"
+      },
+      {
+        "affiliation": [
+          "Management, Technology, and Economics ETH Zürich  Zürich Switzerland"
+        ],
+        "name": "Gudela Grote",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-17",
+    "doi": "10.1002/job.70125",
+    "domain_score": 5.0,
+    "id": 56495,
+    "ingested_at": "2026-08-18T02:55:25.557197",
+    "issue": null,
+    "journal": "JOB",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:05.653649",
+    "title": "Is Our Future Colleague Even Human? Advancing Human–AI Teamwork from an Organizational Perspective",
+    "title_zh": null,
+    "tldr": "该编辑性文章综合特刊8篇论文，探讨AI作为未来同事对组织的意涵。分析显示，AI重塑的是集体工作流程而非仅个体判断；类人化与性别化等设计线索影响AI感知，AI也改变决策、信任与压力等团队过程。文章基于社会技术系统思想构建框架，区分AI在工作社会系统中的位置与所行使的代理程度，提出应将团队（而非二元配对）作为分析单位，并就AI在组织中的治理提出规范性问题与研究议程。",
+    "topic_tags": [
+      "团队",
+      "人机协作",
+      "组织变革"
+    ],
+    "url": "https://doi.org/10.1002/job.70125",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": "The proliferation of generative AI models fundamentally alters organizational capabilities, enabling novel value creation while challenging incumbent governance frameworks. Employing a phenomenon-driven approach, this study integrates and extends property rights theory (PRT) and stakeholder resource-based theory (SRBT) to address governance challenges posed by generative AI. By leveraging system dynamics modeling, we conceptualize the dynamic interplay among stakeholder claims, institutional arrangements, and value appropriation outcomes, highlighting how feedback loops, delays, and accumulations shape these interactions. Our analysis reveals two insights: First, stable equilibrium states in stakeholder claims and property rights arrangements may not invariably lead to equitable outcomes, due to stakeholder power disparities and attribution ambiguity associated with generative AI. Second, framing the evolution of generative AI models as organizational resources from the complementary perspectives of PRT and SRBT reveals distinct resource features largely unexamined in the strategy literature. Hence, we introduce the concept of “wicked resources,” characterizing generative AI models by their inherent attribution ambiguity and emergent unpredictability. Building on prior research on resource complexity and uncertainty in the strategy literature, wicked resources are marked by the difficulty firms face in delineating and enforcing control within shifting sociopolitical contexts. This paper makes three key contributions: addressing the dynamic, multi-stakeholder nature of generative AI governance; introducing wicked resources as a novel resource category in strategy and management literatures; and identifying theoretical gaps, advocating for a dynamic, systemic approach to property rights and stakeholder bargaining.",
@@ -113247,6 +114270,49 @@
     "url": "https://doi.org/10.1111/peps.70036",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "AbstractWe propose a framework for integrating various modern natural language processing (NLP) models to assist researchers with developing valid psychological scales. Transformer‐based deep neural networks offer state‐of‐the‐art performance on various natural language tasks. This project adapts the transformer model GPT‐2 to learn the structure of personality items, and generate the largest openly available pool of personality items, consisting of one million new items. We then use that artificial intelligence‐based item pool (AI‐IP) to provide a subset of potential scale items for measuring a desired construct. To better recommend construct‐related items, we train a paired neural network‐based classification BERT model to predict the observed correlation between personality items using only their text. We also demonstrate how zero‐shot models can help balance desired content domains within the scale. In combination with the AI‐IP, these models narrow the large item pool to items most correlated with a set of initial items. We demonstrate the ability of this multimodel framework to develop longer cohesive scales from a small set of construct‐relevant items. We found reliability, validity, and fit equivalent for AI‐assisted scales compared to scales developed and optimized by traditional methods. By leveraging neural networks’ ability to generate text relevant to a given topic and infer semantic similarity, this project demonstrates how to support creative and open‐ended elements of the scale development process to increase the likelihood of one's initial scale being valid, and minimize the need to modify and revalidate the scale.",
+    "ai_reason": "AI/NLP生成人格量表项目，核心AI",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Ivan Hernandez",
+      "Weiwen Nie"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Department of Psychology Virginia Polytechnic Institute and State University  Blacksburg Virginia USA"
+        ],
+        "name": "Ivan Hernandez",
+        "orcid": "https://orcid.org/0000-0002-3141-7525"
+      },
+      {
+        "affiliation": [
+          "Hogan Assessment Systems Inc.  Tulsa Oklahoma USA"
+        ],
+        "name": "Weiwen Nie",
+        "orcid": null
+      }
+    ],
+    "cited_by": 59,
+    "date": "2022-10-18",
+    "doi": "10.1111/peps.12543",
+    "domain_score": 3.0,
+    "id": 37537,
+    "ingested_at": "2026-08-12T04:17:45.753085",
+    "issue": "4",
+    "journal": "PPsych",
+    "pdf_url": null,
+    "scored_at": "2026-08-18T02:56:19.498440",
+    "title": "The AI‐IP: Minimizing the guesswork of personality scale item development through artificial intelligence",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1111/peps.12543",
+    "volume": "76",
+    "year": 2022
   },
   {
     "abstract": "The platform economy is an increasingly large segment of the contemporary economy that continues to attract workers, drawing on narratives of self-empowerment and entrepreneurship that are idolized within American culture. Yet, the realized lived experiences of workers are often anything but that of a flourishing entrepreneur, with many describing economic precarity, invasive and unpredictable algorithmic control, and demanding hours. What keeps people invested in returning to platform work? We label this observed contradiction the platform paradox , and we theorize how this paradox is continuously regenerated through neo-normative control, a modern form of workplace control that encourages workers to express their ‘authentic’ selves, individuality, and emotions in ways that align with organizational goals. Drawing on extant scholarship, we identify three neo-normative control mechanisms—framing self-as-product, whole self-integration, and hyper-gamification—that support platform workers in experiencing themselves as independent entrepreneurs while also increasing their control by the platform and its algorithmic management system. We illustrate how these controls collectively contribute to adverse consequences on two core work experiences: worker skill and worker time. We propose future research directions to further unpack this paradox and for the field of platform scholarship at-large, discussing implications for inequality.",
