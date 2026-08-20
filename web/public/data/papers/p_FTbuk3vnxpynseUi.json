@@ -1,6 +1,11 @@
 {
   "abstract": "Programming small social robots from natural-language instructions requires more than invoking isolated APIs. Interactive tasks combine reactive physical behaviors with stateful social behaviors, while existing interfaces often require developers to manually compose APIs into skills, configure their parameters, bind sensor events to skills, and manage task states at runtime. We present MistyPilot, a multi-agent LLM framework that interprets high-level natural-language instructions and orchestrates the corresponding skills on the Misty social robot. A Task Router dispatches each instruction to one of two specialized agents: a Physically Interactive Agent for sensor-triggered robot control and direct skill invocation, and a Social Interaction Agent for dialogue-oriented task-state management and context-dependent multimodal response generation. To improve efficiency, the Social Interaction Agent reuses previously generated results when applicable and invokes full generation otherwise. We evaluate MistyPilot on five component-level suites, with sensor bindings and skill invocations executed on the physical Misty robot, and a preliminary user study with 12 participants. MistyPilot attains high accuracy on routing, sensor-skill binding, task-state parsing, result reuse, and skill extension up to 100 skills, and lower variance than an otherwise identical single-agent baseline, while participants report positive perceptions of usability and interaction quality. The code will be made publicly available via the project page.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "智能体/Agent",
+    "对话式 AI"
+  ],
   "arxiv_id": "2608.15549",
   "authors": [
     "Xiao Wang",
@@ -31,8 +36,13 @@
       "ai_reason": "多智能体LLM社交机器人控制,HCI但无用户研究",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "面向小型社交机器人，提出多智能体 LLM 框架 MistyPilot，将高层自然语言指令解析并编排为机器人技能。系统采用 Task Router 分发至物理交互智能体（传感器触发与技能调用）和社会交互智能体（多模态对话与任务状态管理），后者通过结果复用提升效率。在 Misty 机器人上完成组件级评测及 12 人用户研究，路由准确率与技能绑定均接近 100%，且方差不高于单智能体基线。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "多模态交互",
+        "可用性"
+      ]
     }
   },
   "channels": [
@@ -49,11 +59,11 @@
     {
       "channel": "ur",
       "legacy_id": 21380,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "MistyPilot: Enabling Social-Robot Control through Multi-Agent LLM Skill Orchestration",
-  "title_zh": null,
+  "title_zh": "MistyPilot：通过多智能体LLM技能编排实现社交机器人控制",
   "unified_ingested_at": "2026-08-18T02:57:20.908980Z",
   "url": "https://arxiv.org/abs/2608.15549v1",
   "volume": null,

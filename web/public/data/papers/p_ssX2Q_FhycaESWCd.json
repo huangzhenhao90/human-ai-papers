@@ -1,6 +1,11 @@
 {
   "abstract": "We present an autonomous robotic portrait-generation system combining real-time face detection, AI-based sketch generation, and robotic drawing. The system captures video frames, extracts facial regions, converts them into minimalist single-line sketches using the Gemini Vision API, optimizes stroke order through graph-based path planning, and executes smooth trajectories on a 6-DoF collaborative manipulator. This perception-cognition-action pipeline integrates computer vision, neural artistic abstraction, motion optimization, and robot control. User ratings on a 5-point scale were high for sketch quality 4.33, perceived execution 4.53, and user experience 4.65, indicating recognizable, appealing, and engaging robotic portraits.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "多模态",
+    "GenAI",
+    "人机交互",
+    "智能体/Agent"
+  ],
   "arxiv_id": "2608.00829",
   "authors": [
     "Miguel Altamirano Cabrera",
@@ -27,8 +32,13 @@
       "ai_reason": "Gemini Vision API核心，有5分量表用户评分与体验评估",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "论文提出由感知-认知-规划-动作四阶段构成的自主机器人肖像绘制系统 GeminiPainter：通过实时人脸检测定位面部区域，借助 Gemini Vision API 将其转化为极简单线素描，以图论路径规划优化笔画顺序，最终由 6 自由度协作机械臂执行平滑绘制。系统融合计算机视觉、神经艺术抽象、运动优化与机器人控制。用户 5 分制评分显示素描质量 4.33、感知执行 4.53、用户体验 4.65，表明机器人肖像具有高辨识度、吸引力与趣味性。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "多模态交互",
+        "服务设计"
+      ]
     }
   },
   "channels": [
@@ -45,11 +55,11 @@
     {
       "channel": "ur",
       "legacy_id": 15553,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "GeminiPainter's sequence-formed pipeline comprised of perception, cognition, planning, and action stages",
-  "title_zh": null,
+  "title_zh": "GeminiPainter 由感知、认知、规划与动作阶段构成的序列式流水线",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.00829",
   "volume": null,

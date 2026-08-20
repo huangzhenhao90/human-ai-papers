@@ -1,6 +1,10 @@
 {
   "abstract": "Residential virtual power plants (VPPs) can provide grid flexibility by shifting household demand, but physical flexibility becomes dependable capacity only when residents authorize a plan and the promised response is delivered. Existing benchmarks evaluate control but omit event-specific authorization. We present EnergyBridge, a benchmark and agent framework connecting capacity reporting, household authorization, and physical execution. It combines region-specific EnergyPlus environments for Tianjin and Berlin with an LLM-based User Participation Simulator. Against 584 persona- and event-matched human role-play judgments, the LLM-based User Participation Simulator preserves method ordering with a 5.3-point mean absolute acceptance error. Across conventional controllers and agent baselines, EnergyBridge achieves the highest simulated authorization, lowest event-window energy, and the most reliable capacity commitment in both regions. We release human data and codes for reproducible human-centered grid-flexibility research: https://github.com/Agentic-Intelligence-Lab/EnergyBridge.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI 助手"
+  ],
   "arxiv_id": "2608.08691",
   "authors": [
     "Xudong Wu",
@@ -49,8 +53,13 @@
       "ai_reason": "LLM用户模拟器+用户参与，benchmark为主非用户研究核心",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "EnergyBridge 提出家庭虚拟电厂基准与代理框架，将容量上报、用户授权和物理执行结合。基于天津和柏林的 EnergyPlus 环境构建 LLM 驱动的用户参与模拟器，与 584 条人类角色扮演判断对比，授权接受率平均绝对误差仅 5.3 分。两类区域中均获得最高模拟授权率、最低事件窗口能耗和最可靠的容量承诺。",
+      "topic_tags": [
+        "人机协作",
+        "AI 采用",
+        "用户研究方法",
+        "智能体"
+      ]
     }
   },
   "channels": [
@@ -67,11 +76,11 @@
     {
       "channel": "ur",
       "legacy_id": 20044,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "EnergyBridge: Benchmarking Household Energy Management, User Participation, and Grid Flexibility",
-  "title_zh": null,
+  "title_zh": "EnergyBridge:家庭能源管理、用户参与与电网灵活性基准测试",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.08691",
   "volume": null,

@@ -1,6 +1,11 @@
 {
   "abstract": "Market and survey researchers aim to write survey questions so that the target population can understand them. A common recommendation for general population studies is to write survey questions at an eighth-grade reading level. To evaluate whether questions meet this threshold, survey researchers turn to readability measures, such as the Flesch-Kincaid Reading Grade Level. Researchers may be able to streamline the calculation of question reading levels using artificial intelligence (AI) tools, such as ChatGPT,\n                    in situ\n                    to draft survey questions. One risk of using artificial intelligence tools is that they may incorrectly calculate readability measures. To our knowledge, whether AI tools calculate readability correctly has not been evaluated. In this paper, we examine readability calculations for 60 survey questions performed by commonly available AI tools, including both ChatGPT and Claude large language models (LLMs), at three time points (Summer 2024, November 2024, April 2025). We compare these to a “gold standard” online readability assessment tool (Readable.com), and calculations from packages in two open-source software programs, R and Python. We examine the Flesch-Kincaid Grade Level and four other readability measures and the inputs to their calculations (e.g., number of words, sentences). Although there is almost perfect alignment between these metrics as calculated by Readable and R, each LLM varies in its calculations across models and over time. We also examine the calculations of the inputs of the readability calculations for each tool, including implications for the reported overall readability score. Our results suggest that open-source tools are reliable and accurate. We also find that LLMs are evolving in their ability to accurately calculate readability of survey questions, with large variation over models and over time. Some, but not all, LLMs are being trained to use the same resources as open-source tools to calculate readability of passages of text.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "ChatGPT",
+    "AI问卷生成"
+  ],
   "arxiv_id": null,
   "authors": [
     "Kristen Olson",
@@ -27,8 +32,12 @@
       "ai_reason": "GenAI用于问卷可读性评估，方法论文涉及AI工具",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究评估ChatGPT、Claude等大语言模型对60道问卷题目可读性指标（如Flesch-Kincaid年级水平等5种度量）的计算准确性，跨2024夏、2024年11月、2025年4月三个时点，将其结果与Readable.com标准工具及R、Python开源包对比。结果显示Readable与R几乎完全一致，但各LLM计算结果存在明显波动与差异，提示用GenAI直接计算问卷可读性指标存在可靠性风险。",
+      "topic_tags": [
+        "问卷",
+        "用户研究方法",
+        "AI采用"
+      ]
     }
   },
   "channels": [
@@ -45,11 +54,11 @@
     {
       "channel": "ur",
       "legacy_id": 19872,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "“ChatBot” is a Two Syllable Word...Or Is It?: Using Generative AI for Survey Question Readability Assessments",
-  "title_zh": null,
+  "title_zh": "\"ChatBot\"是双音节词……还是不是？：运用生成式AI评估问卷题项可读性",
   "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
   "url": "https://doi.org/10.1177/14707853251389789",
   "volume": "68",

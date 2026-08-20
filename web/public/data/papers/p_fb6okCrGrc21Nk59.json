@@ -1,6 +1,10 @@
 {
   "abstract": "AI-mediated heads-up augmented reality (AR) replaces fixed interfaces with dynamically adapting ones that decide what information to present, in what form, and when, based on a continually changing context that cannot be fully anticipated beforehand. Although it remains an interface, its behavior over time is only partially specified at design time. We argue that this shift requires a corresponding change in evaluation: from snapshots to trajectories. A fixed interface is evaluated in a snapshot --- one context, one session, one set of task-performance metrics. A fluid interface must be evaluated over a trajectory --- a sequence of contexts with transitions, sampled from the distribution the interface will actually encounter, and tracked long enough for user trust to form, evolve, and potentially deteriorate. Drawing on the literature for heads-up AR multitasking enabled by optical see-through head-mounted displays (OST-HMDs), we find that current evaluation practice remains largely snapshot-based. Most studies use fixed-condition, single-session designs; interference between concurrent tasks is rarely quantified directly; and commonly used workload measures cannot disentangle cognitive load attributable to individual tasks. To address these limitations, we argue for three shifts: from isolated metrics to Performance Operating Characteristic (POC) interference frontiers, from fixed conditions to evaluation over context trajectories, and from single-session snapshots to longitudinal trust measurement.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "多模态",
+    "AI 助手",
+    "可解释 AI"
+  ],
   "arxiv_id": "2608.01656",
   "authors": [
     "Nuwan Janaka",
@@ -31,8 +35,14 @@
       "ai_reason": "AI介导AR的HCI评估方法论，涉及用户信任",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对AI介导的抬头显示AR界面，论文指出传统快照式评估范式已不适用，主张以轨迹式评估取代：构建POC干扰前沿刻画多任务绩效，引入上下文轨迹作为评估条件，并开展纵向研究以观察用户信任的演化与衰退。基于光学透视头戴显示器的多任务AR文献综述表明当前评估仍以单次固定条件为主，认知负荷难以按任务解构。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可用性测试",
+        "可解释性",
+        "信任",
+        "AI 采用"
+      ]
     }
   },
   "channels": [
@@ -49,11 +59,11 @@
     {
       "channel": "ur",
       "legacy_id": 15603,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "You Cannot Optimize What You Cannot Measure: Multitasking Evaluation as the Missing Foundation of AI-Mediated Heads-Up Interaction",
-  "title_zh": null,
+  "title_zh": "不可测则不可优化：多任务评估作为AI中介抬头交互的缺失基础",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.01656",
   "volume": null,

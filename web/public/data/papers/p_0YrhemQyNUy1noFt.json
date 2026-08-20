@@ -1,6 +1,10 @@
 {
   "abstract": "Deposition training requires attorneys to manage dynamic witness behavior, yet legal-AI evaluations largely focus on factual accuracy, reasoning, or response-level plausibility. We introduce WitnessSim, a deposition simulator driven by controllable legal personas. We use an evaluation framework separating behavioral realism from pedagogical usefulness. We assess realism through adversarial testing, blinded attorney comparison, and analysis of longitudinal behavioral trajectories. WitnessSim generally maintained plausible behavioral boundaries, and attorneys did not systematically prefer either original testimony or WitnessSim generated testimony. Pedagogical tests showed that witness behavior changed meaningfully in response to question form and attorney intervention without uniformly collapsing the assigned persona. Together, these results showcase a model of behavioral fidelity in legal simulations, and provide a framework for evaluating its performance.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "智能体/Agent"
+  ],
   "arxiv_id": "2608.13712",
   "authors": [
     "Divya Vetticaden",
@@ -27,8 +31,13 @@
       "ai_reason": "AI驱动证人模拟，含律师用户评估",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对法律AI评估重事实准确性而忽视证言行为真实性的问题，构建基于可控法律人设的证言模拟器 WitnessSim，提出区分行为真实性与教学有用性的评估框架。通过对抗性测试、盲法律师对比和纵向行为轨迹分析，发现 WitnessSim 能保持合理行为边界，证人行为对提问方式和律师干预做出有意义的响应且不破坏人设设定。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户研究方法",
+        "人机协作",
+        "可用性测试"
+      ]
     }
   },
   "channels": [
@@ -45,11 +54,11 @@
     {
       "channel": "ur",
       "legacy_id": 20643,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Reading Between The Lines: Modeling and Evaluating Behavioral Realism in Legal Simulation",
-  "title_zh": null,
+  "title_zh": "字里行间：法律仿真中行为真实性的建模与评估",
   "unified_ingested_at": "2026-08-17T03:01:55.785975Z",
   "url": "https://arxiv.org/abs/2608.13712v1",
   "volume": null,

@@ -1,6 +1,11 @@
 {
   "abstract": "Prompting LLMs for complex tasks (e.g., building a trip advisor chatbot) needs humans to clearly articulate customized requirements (e.g., “start the response with a tl;dr”). However, existing prompt engineering instructions often lack focused training on requirement articulation and instead tend to emphasize increasingly automatable strategies (e.g., tricks like adding role-plays and “think step-by-step”). To address the gap, we introduce Requirement-Oriented Prompt Engineering (\n            ROPE\n            ), a paradigm that focuses human attention on generating clear, complete requirements during prompting. We implement\n            ROPE\n            through an assessment and training suite that provides deliberate practice with LLM-generated feedback. In a randomized controlled experiment with 30 novices,\n            ROPE\n            significantly outperforms conventional prompt engineering training (20% vs. 1% gains), a gap that automatic prompt optimization cannot close. Furthermore, we demonstrate a direct correlation between the quality of input requirements and LLM outputs. Our work paves the way to empower more end-users to build complex LLM applications.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI助手",
+    "人机交互"
+  ],
   "arxiv_id": null,
   "authors": [
     "Qianou Ma",
@@ -58,8 +63,13 @@
       "ai_reason": "LLM提示工程训练人类，RCT用户研究核心HCI",
       "ai_score": 5.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对复杂LLM任务中提示工程忽视需求表达的问题，提出需求导向的提示工程范式ROPE，通过评估与训练套件结合LLM反馈引导用户练习清晰完整地表达需求。30名新手的随机对照实验显示ROPE显著优于传统提示工程训练（提升20% vs 1%），且自动提示优化无法弥补此差距，证实输入需求质量与LLM输出直接相关。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "AI助手",
+        "AI采用",
+        "人机协作"
+      ]
     }
   },
   "channels": [
@@ -76,11 +86,11 @@
     {
       "channel": "ur",
       "legacy_id": 17570,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "What Should We Engineer in Prompts? Training Humans in Requirement-Driven LLM Use",
-  "title_zh": null,
+  "title_zh": "提示中应工程化什么：训练人类以需求驱动方式使用LLM",
   "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
   "url": "https://doi.org/10.1145/3731756",
   "volume": "32",

@@ -1,6 +1,9 @@
 {
   "abstract": "The rise of conversational AI has increased interest in emotional Text-to-Speech (TTS). Most systems rely on discrete emotion labels, which fail to capture the nuanced nature of human affect. Recent models employ dimensional representations such as Russell's arousal-valence (A-V) model, offering finer control. However, emotional perception varies across individuals and cultures, which may cause mismatches between modeled and perceived emotions. We propose a personalized and culturally adaptive emotional TTS framework that performs interactive optimization of individualized A-V perception spaces using an Interactive Genetic Algorithm. By adapting emotion representations to each listener, the system produces speech with more perceptually aligned emotional expression than models using averaged A-V values. Evaluations with Japanese, Chinese, and Indonesian participants highlight the importance of personalization and cultural adaptation for moving beyond one-size-fits-all emotional TTS.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "多模态",
+    "对话式 AI"
+  ],
   "arxiv_id": "2608.00998",
   "authors": [
     "Wangzixi Zhou",
@@ -23,8 +26,14 @@
       "ai_reason": "情感TTS个性化，含个体感知与用户评估",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对情感语音合成(TTS)中离散标签难以捕捉细腻情感、且情感感知存在个体与文化差异的问题，提出基于交互式遗传算法的个性化与文化自适应框架，通过在线优化每位听者的唤醒度-效价(A-V)感知空间生成与个体更匹配的情感语音。日中印尼三国受试评估表明，个性化与文化自适应显著优于使用平均A-V的基线。",
+      "topic_tags": [
+        "情感计算",
+        "多模态交互",
+        "个性化",
+        "人机交互(HCI)",
+        "消费者行为"
+      ]
     }
   },
   "channels": [
@@ -41,11 +50,11 @@
     {
       "channel": "ur",
       "legacy_id": 15786,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Beyond One-Size-Fits-All: Personalized and Culturally Adaptive Emotional TTS via Interactive Optimization of Individual Emotion Perception Spaces",
-  "title_zh": null,
+  "title_zh": "超越一刀切：基于个体情感感知空间交互式优化的个性化与文化自适应情感TTS",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.00998",
   "volume": null,

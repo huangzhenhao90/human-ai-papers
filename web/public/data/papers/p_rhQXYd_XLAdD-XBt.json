@@ -1,6 +1,10 @@
 {
   "abstract": "Natural language offers an easy way for users to express chart editing intents, which are often composite and cross-component (e.g., adjusting style, extending categories, highlighting values). However, existing methods typically map instructions to a single operation or widget, limiting their ability to handle high-level requests and often producing locally plausible but globally inconsistent results due to a lack of awareness of relationships between chart components. To address these challenges, we introduce RAGE-Vis, a Relation-Aware Generative Editing interface for natural language-based chart editing. The system supports bitmap chart images as input and converts them into an editable parameterized intermediate representation. Instead of mapping instructions to a single edit or widget, RAGE-Vis parses composite intents, identifies targets and scopes, and generates hierarchical editing panels for underspecified requests, enabling users to adjust both global settings and local parameters. Furthermore, RAGE-Vis identifies potentially affected fields based on visual encoding relations, structural relationships, and expressive consistency relations, and organizes them into actionable widgets to support cross-component coordinated controls. Through two case studies, we demonstrate the applicability of RAGE-Vis in complex editing tasks, including style adjustment, data extension, order rearrangement, legend layout, and color mapping. A user study further shows that participants can effectively handle underspecified requests, explore candidate alternatives, and maintain cross-component consistency with RAGE-Vis.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "GenAI",
+    "多模态",
+    "人机交互"
+  ],
   "arxiv_id": "2608.11581",
   "authors": [
     "Ziyao Kang",
@@ -34,8 +38,13 @@
       "ai_reason": "用生成模型做图表编辑界面，HCI自然语言交互",
       "ai_score": 3.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对自然语言图表编辑中复合意图难处理、跨组件编辑结果不一致的问题，提出 RAGE-Vis 系统：先将位图转为可编辑的参数化中间表示，再解析复合意图生成层级编辑面板，并基于视觉编码、结构与表达一致性关系识别受影响字段，提供跨组件协调控件。案例与用户研究验证其在样式调整、数据扩展、顺序重排、图例布局和颜色映射等任务中的可用性与有效性。",
+      "topic_tags": [
+        "可视化",
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "可用性测试"
+      ]
     }
   },
   "channels": [
@@ -52,11 +61,11 @@
     {
       "channel": "ur",
       "legacy_id": 19980,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "RAGE-Vis:A Relation-Aware Generative Editing Interface for Natural Language-Based Chart Editing",
-  "title_zh": null,
+  "title_zh": "RAGE-Vis：面向自然语言图表编辑的关系感知生成式编辑界面",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.11581v1",
   "volume": null,

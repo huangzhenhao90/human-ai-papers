@@ -1,6 +1,10 @@
 {
   "abstract": "This research examines how well large language models, or LLMs, generate new product ideas for college students priced under $50. Across a series of studies, we identify key strengths and weaknesses of using LLMs for product innovation. Our first study shows that LLM-generated product ideas have higher average quality than human ideas, based on purchase intent, and are 7 times more likely to rank in the top 10%. Our second study shows that this AI-induced creativity boost is not explained by the LLM's more persuasive pitching skills. Our third and fourth studies identify a weakness of using LLMs for brainstorming: AI-generated ideas are less novel at the idea level and less diverse at the set level. In our fifth study, we analyze prior LLM-based creativity studies and find consistently lower idea diversity across all of them, demonstrating the generalizability of these findings. Our sixth and seventh studies investigate techniques to mitigate this diversity loss. We compare LLMs from different vendors and versions and find that more recent models generate more diverse ideas, though they still fall short of human-level diversity. We also demonstrate techniques that increase idea diversity almost to the level of human idea generation: pooling ideas across vendors; prompt engineering, including Chain-of-Thought prompting and injecting heterogeneous personas or constraints; and creative agents that broadly explore the solution landscape to restore diversity. Finally, in our eighth study, we show that exploiting the near-zero marginal cost of AI idea generation by scaling the number of ideas steadily improves coverage of the idea space, approaching human-level coverage. We conclude by presenting actionable recommendations for innovation managers who want to identify better new product ideas with the help of LLMs.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "智能体/Agent"
+  ],
   "arxiv_id": "2607.27553",
   "authors": [
     "Christian Terwiesch",
@@ -34,8 +38,12 @@
       "ai_reason": "LLM创意生成核心，多项用户购买意愿研究",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "通过八项系列研究系统考察LLM生成产品创意的能力与局限：LLM生成的想法质量更高（购买意愿更强，进入前10%的概率高7倍），但新颖度更低、集合多样性更差，这一规律在多篇既有研究中同样成立；通过跨厂商整合思路、提示工程（思维链、异质人物/约束注入）以及创造性智能体广域探索，可将多样性恢复至接近人类水平。",
+      "topic_tags": [
+        "消费者行为",
+        "人机协作",
+        "AI采用"
+      ]
     }
   },
   "channels": [
@@ -52,11 +60,11 @@
     {
       "channel": "ur",
       "legacy_id": 15680,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "AI and Its Impact on Creativity and Diversity: An Empirical Study of LLM-Generated Product Ideas",
-  "title_zh": null,
+  "title_zh": "人工智能对创造力与多样性的影响：基于大语言模型生成产品构想的实证研究",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.27553",
   "volume": null,

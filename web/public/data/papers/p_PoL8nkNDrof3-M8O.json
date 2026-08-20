@@ -2,8 +2,8 @@
   "abstract": "Large Language Model-powered agents are increasingly used in the workplace via human-artificial intelligence (AI) collaboration. In this new era of work, it is important to understand the kinds of prompting traits that contribute to task success. Moreover, we need to uncover key skills required for modern professionals and inform educators on how to foster these skills among students. Existing guidelines for human-AI collaboration are built from either top-down theory or context-specific observations of human-AI interactions. However, since LLM capabilities are rapidly improving, theory may not be able to explain emerging interaction patterns, and empirical guidelines may become obsolete quickly. In this work, we explore an automated, data-driven approach to uncover patterns, which we term traits, of effective human-AI interaction that are aligned with task outcomes. We propose Principal Trait Analysis, a Principal Component Analysis-inspired algorithm for deriving common traits from patterns in LLM conversations. Our algorithm uses LLM-based processing stages to analyze corpora of human-AI collaborative session traces, deriving common traits across the dataset and scoring each human collaborator's usage style by each trait. The approach also allows domain expertise to be injected during trait discovery and selects the most distinguishing traits to be those that exhibit the highest variance across collaborators. We evaluate PTA on two human-AI collaborative coding datasets, an educational setting (students working with an AI tutor) and a professional setting (developers working with an AI coding agent). We find that PTA-derived traits are significant in explaining collaborator behavior across both settings and can help predict task outcomes. However, whether traits qualify as skills remains to be seen, due to inconclusive results on generalizability and how user traits change over time.",
   "ai_type_tags": [
     "LLM",
-    "人机交互",
-    "GenAI"
+    "智能体/Agent",
+    "人机协作"
   ],
   "arxiv_id": "2608.11460",
   "authors": [
@@ -39,8 +39,12 @@
       "ai_reason": "人-AI协作提示特征分析，涉用户技能",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "面向LLM驱动的人机协作场景,提出Principal Trait Analysis(PTA),借鉴主成分分析思路,通过LLM处理阶段从大量人机协作会话语料中自动提取有效交互特征( traits),并对每位协作者按特征维度打分,从而数据驱动地识别影响任务成功的提示与协作技能。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -58,16 +62,16 @@
     {
       "channel": "ob",
       "legacy_id": 55242,
-      "revision": "16d8197c25611b5e68ec63478cb2ea87f5d52af4"
+      "revision": "799f0730dde06c94f7102d6ac21ab747fa438903"
     },
     {
       "channel": "ur",
       "legacy_id": 20283,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Principal Trait Analysis: Towards Deriving \"Skills\" in Human-AI Collaboration",
-  "title_zh": "主成分特质分析：面向人机协作中\"技能\"的提取",
+  "title_zh": "主体特质分析：迈向人机协作中\"技能\"的提炼",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.11460v1",
   "volume": null,

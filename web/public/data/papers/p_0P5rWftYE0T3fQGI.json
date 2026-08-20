@@ -1,6 +1,9 @@
 {
   "abstract": "Generative UI (GenUI) lets large language models synthesize a complete, renderable interface directly from a natural-language instruction, but evaluating the quality of what they generate remains an open problem. Human evaluation is costly and rater-variant, while LLM-as-a-judge is scalable but reflects only a single implicit viewpoint, unable to capture how different populations of real users actually perceive the same interface. We propose the Evidence-Grounded, Social-Weighted Persona Panel (ESPP), a three-stage GenUI evaluation method in which a panel of psychologically diverse, evidence-grounded personas independently rates a screenshot, exchanges opinions under a trait-derived, semantically-gated bounded-confidence mechanism, and is aggregated via Delphi-inspired social weighting into a single judgment. ESPP tracks human judgment substantially more closely than a naive single-pass judge, raising Pearson $r$ from $0.716$ to $0.922$, and a prompt-ensemble control recovers only about a third of this gap, isolating genuine persona and evidence grounding as the dominant source of improvement. Beyond this fidelity gain, retaining each panelist's individual rating further reveals that user subgroups agree on overall model rankings yet diverge sharply on specific rating dimensions, a structural disagreement a single homogeneous judge would systematically erase. The codes are available at https://github.com/Wuzheng02/ESPP.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI"
+  ],
   "arxiv_id": "2607.28439",
   "authors": [
     "Zheng Wu",
@@ -31,8 +34,13 @@
       "ai_reason": "GenUI评估方法，用户视角persona设计",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对生成式UI(GenUI)评测难题，提出证据锚定、社会加权的人格面板方法ESPP：由心理学多样化的角色独立评分，经特质驱动的有界置信机制交换意见，再以Delphi式社会加权聚合，将与人类判断的Pearson相关系数从0.716提升至0.922；并揭示不同用户子群在整体排名一致但具体维度上存在结构性分歧。",
+      "topic_tags": [
+        "用户体验(UX)",
+        "人机交互(HCI)",
+        "用户研究方法",
+        "可用性测试"
+      ]
     }
   },
   "channels": [
@@ -49,11 +57,11 @@
     {
       "channel": "ur",
       "legacy_id": 15624,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Beyond a Single Judge: The Evidence-Grounded, Social-Weighted Persona Panel for Generative UI Evaluation",
-  "title_zh": null,
+  "title_zh": "超越单一评判：生成式UI评估中循证社交加权人格面板",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.28439",
   "volume": null,

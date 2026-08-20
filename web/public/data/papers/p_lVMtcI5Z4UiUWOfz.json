@@ -1,6 +1,10 @@
 {
   "abstract": "Previous studies have shown that people can develop shared symbols, partner-specific expressions, personal idioms, inside jokes, and other parts of a relational microculture. Recent work has also examined how humans and conversational AI negotiate and revise symbolic meanings. However, long-term human-AI systems still lack a clear design model for recording how a dyad-specific expression gains meaning, checking whether both sides still accept that meaning, and safely reusing the expression in later sessions.   This concept-and-prototype paper introduces Private Etymology, a machine-representable relational provenance that records how a dyad-specific symbolic expression is proposed, interpreted, negotiated, repaired, reused, revised, stabilized, contested, forgotten, or retired over time. I also propose relational reuse: reactivating a dyad-specific expression in a later session without fully explaining its meaning again.   The contribution is not the invention of shared symbols or relational microcultures. Instead, this paper integrates prior ideas into persistent, revisable, and evidence-grounded symbolic units for human-AI relationships. I present a lifecycle model, an illustrative machine-readable schema, a working Apple Watch prototype, and a longitudinal research agenda. In the prototype, a language model classifies discrete conversational evidence, while deterministic local code decides whether a Shared Symbol can be updated. This prevents a free-form model confidence score or an AI proposal by itself from directly updating the persisted symbol. Private Etymology is proposed as infrastructure for conversational agents to participate in changing relational microcultures without inventing their origins or treating relational meaning as a fixed memory value.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "人机交互"
+  ],
   "arxiv_id": "2608.08443",
   "authors": [
     "Miki Ueno"
@@ -15,8 +19,12 @@
       "ai_reason": "人-AI长期交互设计概念，关系性符号设计模型",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对长期人机交互中缺乏共享符号（私人典故、默契表达）设计与复用模型的问题，提出\"私人词源\"概念——一种机器可表征的关系溯源机制，记录双方特定表达从提出、协商、修正、复用到淡忘的生命周期。配套关系复用原则、生命周期模型、机器可读模式与 Apple Watch 原型，由语言模型分类对话证据，由确定性本地代码决定是否更新共享符号。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "对话式 AI",
+        "AI 助手"
+      ]
     }
   },
   "channels": [
@@ -33,11 +41,11 @@
     {
       "channel": "ur",
       "legacy_id": 20015,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Private Etymology: Designing Relational Reuse of Shared Symbols in Long-Term Human-AI Interaction",
-  "title_zh": null,
+  "title_zh": "私人词源学：长期人机交互中共享符号的关系性复用设计",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.08443v1",
   "volume": null,

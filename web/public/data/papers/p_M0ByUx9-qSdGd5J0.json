@@ -1,6 +1,10 @@
 {
   "abstract": "AI agents can now solve problems, answer like subject experts, and generate long-form multimodal content. However, whether they can adapt a lesson to fit a specified learner, which education calls Pedagogical Content Knowledge (PCK), has not been benchmarked. To measure it, we introduce the Teaching Monster Challenge, the first instructional video generation benchmark to treat the learner persona as an explicit evaluation criterion. Each system is given a topic and a learner persona and must generate a complete instructional video. Every video is screened by an LLM-judge, ranked by crowd pairwise voting, and finalized by an expert panel. The first edition shows that today's systems handle the content well but are far weaker at presenting it and adapting it to the learner. The same process exposes a limit of automatic judging. The LLM-judge separates a clear low-performing tail but ranks the strongest systems poorly. The strongest systems receive nearly identical scores from the judge, so its ranking of them does not match human preference. Progress therefore requires not only better teaching systems but also better automatic judges, and we release the benchmark, rubric, and human judgments as a testbed for both.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "智能体/Agent"
+  ],
   "arxiv_id": "2608.08852",
   "authors": [
     "Yi-Cheng Lin",
@@ -70,8 +74,13 @@
       "ai_reason": "AI教学agent benchmark，含学习者画像与人群投票评估",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "教学怪兽挑战赛是首个以学习者画像为显式评估标准的教学视频生成基准，要求 AI 系统按指定学习者生成完整教学视频。经 LLM 评判员初筛、众包成对投票与专家组终审发现：现有系统能较好处理内容，但呈现与适配学习者方面仍弱；LLM 评判员可识别低分尾部却难以区分头部系统，与人类偏好不一致，呼吁同步改进教学系统与自动评判。",
+      "topic_tags": [
+        "用户研究方法",
+        "个性化",
+        "AI 评估",
+        "多模态交互"
+      ]
     }
   },
   "channels": [
@@ -88,11 +97,11 @@
     {
       "channel": "ur",
       "legacy_id": 20004,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Findings of the First Teaching Monster Challenge: A Benchmark of Pedagogical Content Knowledge in AI Agents",
-  "title_zh": null,
+  "title_zh": "首届Teaching Monster挑战赛发现：AI智能体教学内容知识基准",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.08852v1",
   "volume": null,

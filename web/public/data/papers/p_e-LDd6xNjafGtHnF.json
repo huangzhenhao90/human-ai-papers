@@ -1,6 +1,9 @@
 {
   "abstract": "Aligning large language models (LLMs) with human privacy preferences requires capturing individuals' disclosure boundaries beyond general privacy norms. However, a gap remains in eliciting such nuanced preferences to evaluate alignment in realistic settings. We introduce CIDER, a dataset of 14,850 human annotations from 169 users, forming 1,650 contextual disclosure boundary sets across 60 interpersonal communication scenarios involving information sharing that violates privacy norms. Each boundary represents a real user's disclosure decisions over 9 sharing variants in a scenario, for a given communication role and AI-mediated condition. We formulate a task in which models predict a user's disclosure decision from historical boundaries, with varying levels of contextual information. Across 12 open and proprietary models, in-context personalization improves prediction accuracy by up to 11.41 percentage points using only 6 historical examples. Larger models such as GPT-5.4 (with medium reasoning effort) and Claude Sonnet 4.6 are better at leveraging semantic context to understand user-specific, context-dependent disclosure preferences for more accurate predictions, while smaller models tend to rely on structured heuristics based on disclosure granularity and identifiability. Personalization generally improves prediction accuracy, but the improvement is often accompanied by imbalanced shifts in false-positive and false-negative rates across models, with only Claude Sonnet 4.6 achieving balanced improvements in both. Our findings reveal both the promise and limitations of inference-time personalization for privacy preference modeling and position CIDER as a resource for advancing personalized privacy alignment.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "个性化"
+  ],
   "arxiv_id": "2608.09164",
   "authors": [
     "Bingcan Guo",
@@ -31,8 +34,13 @@
       "ai_reason": "LLM隐私对齐+169用户标注，但主贡献是数据集",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出CIDER数据集，包含169名用户对60种人际沟通场景的14,850条标注，形成1,650组上下文披露边界集，用于评估LLM对个体隐私偏好的对齐能力。12个模型测试显示，上下文个性化仅用6个历史样本即可将披露决策预测准确率最高提升11.41个百分点；GPT-5.4与Claude Sonnet 4.6等大模型更善于利用语义上下文，小模型则依赖披露粒度与可识别性等结构化启发式。个性化常伴随误报率与漏报率的不平衡偏移。",
+      "topic_tags": [
+        "AI治理",
+        "伦理",
+        "个性化",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -49,11 +57,11 @@
     {
       "channel": "ur",
       "legacy_id": 20060,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "CIDER: A Dataset of Contextual Disclosure Boundaries for Privacy Preference Alignment",
-  "title_zh": null,
+  "title_zh": "CIDER:面向隐私偏好对齐的上下文披露边界数据集",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.09164",
   "volume": null,

@@ -1,6 +1,11 @@
 {
   "abstract": "Large language models (LLMs) are integral to complex intellectual tasks, yet output quality remains constrained by user-provided prompts. Iterative multi-turn prompting often leads to context degradation and diminishing cognitive returns. We present PAWNI (Prompt Architecture Wizard using Neural Intelligence), an agentic conversational interface of eight agents that transforms unstructured queries into structured prompts through guided question-and-answer dialogue informed by a self-evolving knowledge base. Rather than optimising the model's response, PAWNI optimises the question itself by front-loading intent clarification. We also propose a three-tier framework of 18 prompt elements across Essential, Enhancement, and Elevation categories. To evaluate system behaviour and validate a measurement protocol, we conducted an exploratory within-subjects study (N=4) across four complex tasks, integrating 32-channel EEG, NASA-TLX workload, and behavioural metrics. Participants produced more structurally complete prompts with PAWNI (42% to 91% of assessed elements), rated LLM outputs higher across all quality dimensions, and reported lower workload (39.6 vs. 21.7 NASA-TLX). Every participant reached satisfactory output in a single turn, compared to 1-12 turns unaided. While effect sizes are unstable due to sample size, direction consistency supports the hypothesis that optimising prompt formulation front-end is a critical lever for human-AI collaboration.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "智能体/Agent",
+    "对话式 AI"
+  ],
   "arxiv_id": "2608.01366",
   "authors": [
     "B. Sankar",
@@ -27,8 +32,13 @@
       "ai_reason": "LLM多代理提示工程系统，含用户对话评估",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对大语言模型输出质量受限于用户提示的问题，研究构建 PAWNI 多智能体对话系统，通过八个智能体与自演化知识库引导用户澄清意图，将非结构化查询转化为结构化提示。N=4 探索性研究结合 32 通道脑电、NASA-TLX 与行为指标显示，使用 PAWNI 后提示结构完整度从 42% 提升至 91%，输出质量各维度评分提高，认知负荷降低（39.6→21.7），且单轮即达满意，验证前置提示优化是人机协作的关键杠杆。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "AI 助手",
+        "可用性"
+      ]
     }
   },
   "channels": [
@@ -45,11 +55,11 @@
     {
       "channel": "ur",
       "legacy_id": 15797,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Asking Questions the Right Way: A Multi-Agent Conversational System for Prompt Formulation in Complex Task Resolution",
-  "title_zh": null,
+  "title_zh": "正确提问：面向复杂任务求解的多智能体提示词对话系统",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.01366",
   "volume": null,

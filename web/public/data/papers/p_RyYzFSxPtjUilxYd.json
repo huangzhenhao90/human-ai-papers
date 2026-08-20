@@ -1,6 +1,12 @@
 {
   "abstract": "Semi-structured interviews are a cornerstone of qualitative research but remain labor-intensive. We report an empirical study of what actually happens when the interviewer is an off-the-shelf real-time multimodal LLM (MLLM). We built InterviewBot, a voice-based interviewing system that wraps a real-time MLLM with a researcher-authored outline, and deployed it not as a novel architecture but as a research instrument for observing default MLLM interviewing behavior. In a practice study (N=15), participants completed a bot-led semi-structured interview and then a human-led reflection session about that experience. We contribute (i) a turn-level behavioral analysis of an MLLM interviewer (N_turns=428) showing that it is acknowledgment-heavy but probe-light (deepening probes account for 4.9% of all turns), and that 28.7% of question-bearing turns pack multiple questions into one turn despite an explicit one-question-at-a-time instruction; (ii) an inductive catalogue of four data-collection breakdowns (information loss, premature termination, latency, and interruption) observed in a deployed rather than simulated system; and (iii) three social dynamics from participants' reflections: disclosure calibration, where reduced social pressure coincided with shallower elaboration; institutional legitimacy, where trust tracked perceived stakes and what delegation to AI signaled about the organizer rather than conversational competence; and conversational grounding, where content-grounded paraphrase, not generic social filler, was what participants read as listening. We conclude with design implications for depth control, transparent handoffs, and non-templated listening mechanisms in human-centered interview automation.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "多模态",
+    "LLM",
+    "对话式 AI",
+    "AI 访谈分析",
+    "AI 助手"
+  ],
   "arxiv_id": "2608.10412",
   "authors": [
     "He Zhang",
@@ -27,8 +33,13 @@
       "ai_reason": "N=15用户研究，MLLM访谈行为与信任分析",
       "ai_score": 4.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "实证研究 MLLM 担任半结构化访谈主持人的表现。开发语音 InterviewBot 包裹实时多模态大模型，作为研究工具而非新架构部署。15 人练习研究：分析 428 轮行为发现 AI 主持人确认多追问少（深层追问仅 4.9%），28.7% 提问轮含多问题；归纳四类采集故障（信息丢失、提前终止、延迟、抢话）；从参与者反思中提炼披露校准、制度合法感、对话接地三种社会动态。",
+      "topic_tags": [
+        "用户研究方法",
+        "访谈",
+        "信任",
+        "人机交互(HCI)"
+      ]
     }
   },
   "channels": [
@@ -45,11 +56,11 @@
     {
       "channel": "ur",
       "legacy_id": 19999,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "When the Interviewer Is a Bot: Behavior, Breakdowns, and Trust in MLLM-Led Interviews",
-  "title_zh": null,
+  "title_zh": "当面试官是机器人：MLLM主导面试中的行为、失误与信任",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.10412v1",
   "volume": null,

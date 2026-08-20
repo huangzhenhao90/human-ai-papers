@@ -1,6 +1,8 @@
 {
   "abstract": "Breastfeeding provides critical insight into infant feeding competence and physiological health, yet objective monitoring remains difficult due to the intimate and internal nature of feeding. We present Mammal, a caregiver-worn computational garment that unobtrusively monitors breastfeeding without attaching sensors to the infant. Mammal leverages inter-body signal transmission through natural mouth-to-breast contact to capture infant cardiac and feeding-related acoustic signals on the caregiver's body. Using novel algorithms to detect latch onset, infer infant electrocardiogram (ECG), and identify suck and swallow events from inter-body signals, Mammal estimates latch duration, in-feeding heart rate, suck-swallow-breathe (SSB) ratio, and milk intake. In a user study with 10 caregiver-infant dyads, Mammal achieves a mean absolute percentage error (MAPE) of 5.56% for latch duration, a mean absolute error (MAE) of 3.61 bpm for infant heart rate estimation, a mean absolute error of 0.12 for SSB ratio estimation, and a mean relative error of 15.76% for milk intake, with participants reporting high comfort and wearability.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "多模态"
+  ],
   "arxiv_id": "2607.19796",
   "authors": [
     "Yanfeng Zhao",
@@ -37,8 +39,13 @@
       "ai_reason": "可穿戴信号检测算法,10人用研评估技术",
       "ai_score": 3.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对母乳喂养难以客观监测的难题，本研究提出Mammal——一种由照护者穿戴的计算服饰，通过母婴自然口乳接触实现体间信号传输，采集婴儿心电与喂养相关声学信号，并利用算法检测含乳起始、推断婴儿心电、识别吸吮与吞咽事件。10对母婴用户研究显示系统在含乳时长、心率、吸吮-吞咽-呼吸比及奶量估算上精度较高，参与者反馈穿戴舒适度良好。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可穿戴",
+        "可用性测试",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -55,7 +62,7 @@
     {
       "channel": "ur",
       "legacy_id": 15308,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Mammal: Supporting Breastfeeding Monitoring Through Computational Garments with Inter-Body Sensing",

@@ -1,6 +1,11 @@
 {
   "abstract": "As collaborative robots have entered domains such as manufacturing, agriculture, and healthcare, programming or adapting robot behavior typically requires robotic expertise that most end users lack. Natural language lowers this barrier. Recent advancements in large language models (LLMs) have made it feasible to translate natural language into robot task plans. However, language-based task specification suffers from semantic ambiguity, and generative models lack transparency for how language instructions become robot actions, making it difficult for users to validate the plan before execution. To address these issues, we introduce SHRIMP, a system that allows users to automatically generate a hierarchical robot primitive plan using natural language and iteratively revise their plan through re-prompting and explicit correction. At each revision, SHRIMP allows users to validate their plan in simulation, and once satisfied, execute it on the physical robot. Through a user study involving participants planning tabletop kitchen tasks (n=35), we validate that SHRIMP improves perceived control and enhances robot transparency. System videos and source code are available at https://wisc-hci.github.io/SHRIMP.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "人机协作",
+    "人机交互"
+  ],
   "arxiv_id": "2608.08884",
   "authors": [
     "Mya Schroder",
@@ -40,8 +45,13 @@
       "ai_reason": "LLM机器人任务规划+终端用户迭代修订，HRI研究",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对协作机器人编程需专业知识、自然语言指令存在语义模糊且生成模型缺乏透明性的问题，提出 SHRIMP 系统，通过自然语言生成层级化机器人任务原语计划，支持重提示与显式修正的迭代精炼，并在仿真中验证后部署到物理机器人。35 人用户研究表明该系统提升了用户感知控制力与机器人透明度。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可解释性",
+        "AI 助手"
+      ]
     }
   },
   "channels": [
@@ -58,11 +68,11 @@
     {
       "channel": "ur",
       "legacy_id": 19991,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "SHRIMP: Iterative Refinement of Robot Task Plans",
-  "title_zh": null,
+  "title_zh": "SHRIMP：机器人任务规划的迭代优化",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.08884v1",
   "volume": null,

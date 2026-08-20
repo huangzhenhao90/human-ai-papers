@@ -1,6 +1,10 @@
 {
   "abstract": "Role-playing agents (RPAs) have become one of the most important consumer applications of large language models. Users engage in multi-turn conversations with RPAs for experiences such as emotional comfort, making reliable evaluation essential for measuring capability, comparing systems, and guiding further improvement. Existing benchmarks, however, typically require an RPA to continue a fixed dialogue history and then evaluate the continuation using a fixed rubric detached from the user. We identify and empirically demonstrate two limitations of this design. First, an RPA's output is shaped by the preceding dialogue history, preventing a scientifically grounded assessment of its role-playing ability in real multi-turn settings. Second, user experience varies substantially across individuals, and conventional fixed rubrics need not align with user satisfaction. We therefore introduce PALATE (Person-Aligned LLM-Simulated-User Assessment with Tailored Evaluation), a scalable RPA benchmark built on user simulators. PALATE is accompanied by a pool of 300 character profiles. Its main evaluation trains five per-user simulators and lets them engage candidate RPAs in free-form, multi-turn conversations over a pre-frozen panel of character profiles. Alongside a general quality rubric, we construct personalized rubrics to measure user satisfaction; on held-out annotated data, the personalized rubrics show higher agreement with human judgments than the general rubric. In the main evaluation of 16 candidates, PALATE separately characterizes generic turn quality, long-horizon session capability, and per-user experience on multi-turn trajectories co-constructed by each candidate. It thereby produces interpretable evaluations of specific user-RPA pairs rather than compressing systems into a single user-independent ranking.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "智能体/Agent"
+  ],
   "arxiv_id": "2607.27816",
   "authors": [
     "Yuhang Zhu",
@@ -34,8 +38,12 @@
       "ai_reason": "角色扮演智能体评估，用户模拟与UX",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对角色扮演智能体（RPAs）现有评测依赖固定对话历史与脱离用户体验的通用量表的局限，提出PALATE评测框架：基于300个角色画像，由5个用户模拟器与候选RPA进行多轮自由对话，并构建个性化评估量表。实验表明个性化量表与人类判断的一致性显著高于通用量表，可扩展地评测多轮对话中的角色扮演能力与用户满意度。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "对话式 AI"
+      ]
     }
   },
   "channels": [
@@ -52,11 +60,11 @@
     {
       "channel": "ur",
       "legacy_id": 15637,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Beyond Borrowed Histories: Person-Aligned User Simulation for Interactive Role-Playing Evaluation",
-  "title_zh": null,
+  "title_zh": "超越借用历史：面向交互式角色扮演评估的个体对齐用户模拟",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.27816",
   "volume": null,

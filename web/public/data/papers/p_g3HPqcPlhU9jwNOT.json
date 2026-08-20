@@ -1,6 +1,10 @@
 {
   "abstract": "IT service management (ITSM) systems accumulate large volumes of heterogeneous ticket data that are difficult for sales and executive stakeholders to convert into actionable intelligence. This paper presents a sociotechnical AI pipeline, designed and evaluated following design science research principles, that transforms raw ITSM exports into a multilevel decision-support artifact. The pipeline combines LLM-based schema normalization, HDBSCAN sub-topic clustering, and hierarchical agglomerative clustering to generate executive-facing Main-topics and granular Sub-topics. A stakeholder evaluation across six artifacts and five raters from Sales Engineering and customer success roles shows that all four decision-support metrics, interpretability, actionability, trust, and likelihood of use, on average exceed 4.0 out of 5.0, with trust as the most consistent signal. The findings position ITSM analytics as an Information Systems (IS) problem of transformation, abstraction, and human-centered design.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "人机协作",
+    "可解释AI"
+  ],
   "arxiv_id": "2608.12670",
   "authors": [
     "Archan Dutta",
@@ -31,8 +35,13 @@
       "ai_reason": "LLM管线含stakeholder评估，有用户视角",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对IT服务管理（ITSM）工单数据难以转化为可执行洞察的问题，设计并评估了一条社会技术AI流水线，结合LLM模式归一化、HDBSCAN子主题聚类与层次聚合聚类，生成面向高管的主-子主题决策支持产物。销售工程与客户成功五位评估者对六份产物的可解释性、可行动性、信任与使用意愿评分均超4.0/5.0，信任最稳。研究将ITSM分析定位为信息系统的转化、抽象与人本设计问题。",
+      "topic_tags": [
+        "AI采用",
+        "人机协作",
+        "可解释性",
+        "用户体验(UX)"
+      ]
     }
   },
   "channels": [
@@ -49,11 +58,11 @@
     {
       "channel": "ur",
       "legacy_id": 20290,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Designing AI Pipelines for Decision-Ready ITSM Intelligence",
-  "title_zh": null,
+  "title_zh": "面向决策就绪ITSM智能的AI流水线设计",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.12670v1",
   "volume": null,

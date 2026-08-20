@@ -1,6 +1,11 @@
 {
   "abstract": "Emotional Support (ES) systems have long optimized a single objective: alleviating the user's emotional distress in the moment. We argue that a complementary need, helping users see themselves more clearly, defines a distinct paradigm we call Personality Support (PS). PS is not counseling or clinical intervention: it targets cognitive clarity and self-articulation, not symptom relief or diagnosis. We instantiate this paradigm in three layers. First, we present DSD, a Chinese self-discovery PS Dataset of 8,590 samples collected through real longitudinal interaction across five minimal units, Coach, Warm, Tsukkomi, Real, and Gonzo. Second, we build DeepSupport, a multi-persona PS system trained with OrthoTune, a PS-tailored framework with style-specific adapters and a style-consistency regularizer. Third, we unify the five DeepSupport personas into Ekova, a persistent personality-support agent with a unified cross-session memory layer, supporting both adaptive routing and user-customized persona selection. Experiments show that OrthoTune-trained models outperform all baselines with an average relative gain of 16.3% across all metrics over the strongest prompt-based baseline. Code is available at https://github.com/Yukyin/Ekova.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "智能体/Agent",
+    "人机协作"
+  ],
   "arxiv_id": "2608.00478",
   "authors": [
     "Yuyan Chen"
@@ -15,8 +20,13 @@
       "ai_reason": "情感人格支持代理，含真实用户交互数据集",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对情感支持系统仅关注即时情绪缓解的局限，提出\"人格支持\"(PS)新范式，旨在帮助用户获得认知清晰与自我表达。构建中文自发现数据集DSD(8590样本)，训练多人格系统DeepSupport与个性化训练框架OrthoTune，并整合为带跨会话记忆的持久化人格支持智能体Ekova。实验显示OrthoTune在所有指标上较最强提示基线平均相对提升16.3%。",
+      "topic_tags": [
+        "对话式 AI",
+        "AI 助手",
+        "情感计算",
+        "人机交互"
+      ]
     }
   },
   "channels": [
@@ -33,11 +43,11 @@
     {
       "channel": "ur",
       "legacy_id": 15632,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Ekova: A Personality-Support Agent for Self-Discovery Dialogue",
-  "title_zh": null,
+  "title_zh": "Ekova：面向自我发现对话的人格支持智能体",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.00478",
   "volume": null,

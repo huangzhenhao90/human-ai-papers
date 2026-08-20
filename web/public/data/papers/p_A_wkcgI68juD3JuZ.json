@@ -1,6 +1,10 @@
 {
   "abstract": "Data-driven journalism and policy reports frequently rely on statements grounded in statistical evidence, referred to as data claims. Verifying such a claim requires connecting it to the underlying structured dataset. However, existing systems typically isolate automated fact-checking from manual data exploration, leaving it unclear how readers coordinate AI assistance with manual inspection of the evidence in practice. We present FYI, a browser extension that embeds fact-checking in the reading environment, and use it as a design probe to study how people detect, verify, and determine the validity of data claims against the underlying dataset. FYI provides four complementary tools spanning the spectrum from full automation to manual data exploration. In an exploratory study (N=22), participants used FYI to fact-check claims in a data-driven article. We find that participants adopted three distinct workflow archetypes---AI-first with manual confirmation, manual-first with AI supplement, and parallel co-review---with visualization serving as the primary mechanism for auditing AI conclusions. Trust in AI shifted dynamically, growing when multiple tools converged and eroding when AI outputs were inconsistent. These findings suggest that fact-checking systems should treat AI as a starting point that human verification complements rather than a definitive authority, elevate visualization as a core verification capability, and support flexible, user-driven workflows. We release FYI as open-source software for further research at https://github.com/DataVisards/FYI.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "AI 助手",
+    "人机协作",
+    "可解释 AI"
+  ],
   "arxiv_id": "2608.06804",
   "authors": [
     "Nguyen-Truong Thinh",
@@ -27,8 +31,15 @@
       "ai_reason": "设计探针+N=22用户研究，核心HCI方法",
       "ai_score": 3.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究读者如何核查数据驱动报道中的统计声明。开发浏览器插件 FYI，提供从全自动到手动探索的四类核查工具，22 人探索性研究识别出三种工作流模式：AI 优先+人工确认、人工优先+AI 补充、并行共审。可视化是审计 AI 结论的主要手段；多工具一致时信任增强，AI 输出冲突时信任下降。建议将 AI 作为人工核查的起点而非权威结论。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可解释性",
+        "信任",
+        "可视化",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -45,11 +56,11 @@
     {
       "channel": "ur",
       "legacy_id": 20017,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Fact-Check Your Information (FYI): A Design Probe to Understand How People Actually Fact-Check Data-Driven Articles",
-  "title_zh": null,
+  "title_zh": "核实你的信息（FYI）：探究人们如何实际核实数据驱动文章的设计探针",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.06804v1",
   "volume": null,

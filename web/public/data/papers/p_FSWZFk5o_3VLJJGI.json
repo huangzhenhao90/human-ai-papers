@@ -1,6 +1,10 @@
 {
   "abstract": "Understanding how diverse audiences engage with narratives and content is central to exhibition design, yet designers often rely on intuition. Existing experience evaluation methods are typically retrospective, costly, and offer limited access to visitors' internal states, hindering early-stage iterative refinement. Rather than relying only on post-implementation evaluation with real visitors, we explore LLM-driven persona simulation as a reference for early-stage design. Following this idea, we present SiMUSation, an interactive framework designed to support early-stage exhibition design. SiMUSation models diverse visitor personas and simulates their exhibition experiences through a dual-layer representation that couples observable behaviors, such as movement and gaze, with corresponding internal responses, such as confusion and narrative engagement. Designers can steer simulations, inspect feedback from simulated visits, and iteratively revise layouts, content, and narrative flow to further examine how changes reshape visitor experience. We implemented a prototype and evaluated it through a user study (N=12), showing that SiMUSation provides insights for reflection and refinement in early-stage exhibition design. Our findings further highlight the potential of persona-driven simulation to support audience-informed evaluation and iterative decision-making across design tasks.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "GenAI"
+  ],
   "arxiv_id": "2608.16067",
   "authors": [
     "Huanchen Wang",
@@ -34,8 +38,13 @@
       "ai_reason": "LLM驱动persona模拟用于博物馆展陈UX设计",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对博物馆展览设计早期阶段缺乏低成本、可迭代的受众体验评估手段这一问题，提出 SiMUSation 框架，利用 LLM 驱动多样化访客画像模拟，结合可观察行为（动线、注视）与内在反应（困惑、叙事参与）双层表示，支持设计师操控模拟、检视反馈并迭代修改布局与叙事。12 人用户研究表明该框架可为早期展览设计提供受众视角的反思与改进依据。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户研究方法",
+        "AI 助手",
+        "用户体验(UX)"
+      ]
     }
   },
   "channels": [
@@ -52,11 +61,11 @@
     {
       "channel": "ur",
       "legacy_id": 21367,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "SiMUSation: An Interactive Visitor Experience Simulation Framework to Support Museum Exhibition Design",
-  "title_zh": null,
+  "title_zh": "SiMUSation：支持博物馆展览设计的交互式参观体验模拟框架",
   "unified_ingested_at": "2026-08-18T02:57:20.908980Z",
   "url": "https://arxiv.org/abs/2608.16067v1",
   "volume": null,

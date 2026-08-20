@@ -1,6 +1,10 @@
 {
   "abstract": "Large language model-based shopping agents are increasingly deployed in real-world e-commerce platforms, generating massive amounts of user interaction logs that provide valuable supervision for improving these agents. However, existing approaches primarily rely on offline training signals, such as user-item interactions or synthetic preference data, while largely overlooking the rich supervision contained in users' natural conversational feedback. Moreover, the available online feedback is heterogeneous, sparse, and noisy, making it difficult to transform into reliable learning signals automatically. To address these challenges, we propose LOFA, a framework that enables shopping agents to learn directly from real online interaction logs without human annotation. LOFA combines reinforcement learning over verifiable purchase outcomes with feedback-aware on-policy distillation, which identifies users'in-dialogue directives and converts them into dense token-level supervision. These complementary objectives capture both collaborative behavioral patterns and user-specific preferences. Extensive experiments on real-world e-commerce logs demonstrate that LOFA consistently improves recommendation quality, response helpfulness, and user-satisfaction alignment over strong baselines, highlighting the effectiveness of learning shopping agents from real online user feedback.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "推荐算法"
+  ],
   "arxiv_id": "2608.11604",
   "authors": [
     "Haobo Zhang",
@@ -31,8 +35,12 @@
       "ai_reason": "LLM购物智能体学习用户反馈，含用户视角数据",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出LOFA框架，让基于LLM的购物智能体无需人工标注，直接从真实电商在线交互日志中学习。方法融合面向可验证购买结果的强化学习与反馈感知在线策略蒸馏，将用户对话中的指令转化为稠密token级监督。真实电商日志实验显示，该方法在推荐质量、回复有用性与用户满意度对齐上均优于强基线。",
+      "topic_tags": [
+        "推荐系统",
+        "个性化",
+        "人机协作"
+      ]
     }
   },
   "channels": [
@@ -49,11 +57,11 @@
     {
       "channel": "ur",
       "legacy_id": 20294,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Learning from Online User Feedback for Shopping Agents",
-  "title_zh": null,
+  "title_zh": "面向购物智能体的在线用户反馈学习",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.11604v1",
   "volume": null,

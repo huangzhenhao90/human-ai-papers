@@ -1,6 +1,10 @@
 {
   "abstract": "Learning from demonstration (LfD) provides a developmental framework through which robots can develop motor skills by observing and imitating human dynamics, reducing reliance on explicit programming to teach a skill to a robot. The resulting human-like robot motion is recognised as a key factor in building trust and enabling natural collaboration in human-robot interaction. This paper presents a framework for learning human-like robot motion from demonstration, including data collection, probabilistic trajectory learning, and perceptual user evaluation. A dataset of 3,142 handwriting demonstrations was collected from 22 participants across all 52 Latin alphabet character-case combinations via a touchscreen teleoperation interface, capturing planar position, contact force, and timing. Building on the widely used Gaussian Mixture Model and Gaussian Mixture Regression approach for learning from demonstration, the framework is extended in this work by incorporating force and normalised time dimensions to enable richer representation of human dynamics, and adapting it to handle non-continuous, multi-segment trajectories, enabling generalisation across demonstrations. A user study with 21 participants evaluated the perceived human-likeness of the generated trajectories using a continuous scale anchored between robotic and human-like motion, normalised to 0-100 where 50 represents the neutral midpoint. The generated trajectories achieved an overall human-likeness score of 71.50 (SD=22.56), indicating that the majority of trajectories were perceived as more human-like. Participants identified geometric positioning and trajectory sequence as the most influential perceptual factors, and reported positive attitudes toward human-like robot behaviour. The datasets are released as open-source, providing a reproducible benchmark for developing and evaluating human-like robot motion methods.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "人机交互",
+    "多模态",
+    "智能体/Agent"
+  ],
   "arxiv_id": "2608.06221",
   "authors": [
     "Alperen Kenan",
@@ -23,8 +27,13 @@
       "ai_reason": "22人数据采集+感知用户评估，HRI研究",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出基于演示学习的人类化机器人运动框架,扩展高斯混合模型与回归方法,新增力与归一化时间维度以表征多段非连续轨迹。22名参与者经触摸屏遥操作采集3142条手写演示,覆盖52个拉丁字母大小写组合,记录平面位置、接触力与时序。21人用户研究以0-100连续量表评估感知人类相似度,生成轨迹总体得分71.50,验证力与时间特征对提升运动拟人化的作用。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "信任",
+        "多模态交互",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -41,11 +50,11 @@
     {
       "channel": "ur",
       "legacy_id": 15533,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Robot Learning from Human Demonstrations: Handwritten Alphabet Trajectories and Human-Likeness Evaluation",
-  "title_zh": null,
+  "title_zh": "机器人从人类示教中学习：手写字母轨迹与类人度评估",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.06221",
   "volume": null,

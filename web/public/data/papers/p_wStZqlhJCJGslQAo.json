@@ -1,6 +1,10 @@
 {
   "abstract": "Personal AI assistants are increasingly deployed as task-oriented, tool-augmented agents that operate within unified service environments to support everyday user activities. In realistic settings, such assistants must reason over persistent user state, respect user-specific configurations and permissions, and sustain long-horizon, constraint-aware interactions across multiple services. Existing benchmarks, however, often fragment service contexts or abstract away user state, limiting their ability to evaluate user-centric personal assistant behavior in realistic service settings. We introduce PAUSE, a user-centric benchmark for evaluating personal AI assistants in stateful, service-integrated environments. PAUSE captures core challenges of real-world assistant deployment by requiring agents to coordinate actions across heterogeneous user-owned resources while maintaining consistency with environment state, authorization constraints over multi-turn interactions. The benchmark incorporates explicit user-agent interaction via realistic user simulation, enabling evaluation beyond static tool execution. To support principled and reproducible evaluation, PAUSE adopts a multi-regime evaluation framework aligned with task characteristics. Open-ended service management tasks are assessed using semantic and trajectory-level behavioral metrics, while constraint-intensive tasks admit deterministic, state-based verification. Benchmark results show that even state-of-the-art proprietary models fail to reach 70% task completion on scenarios requiring stateful reasoning and configuration awareness, revealing consistent and interpretable failure patterns. Finally, we present a user-centric synthesis pipeline that enables scalable generation of coherent service environments, user configurations, and reliably annotated tasks, supporting benchmark extensibility and future research.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "智能体/Agent",
+    "LLM",
+    "AI助手"
+  ],
   "arxiv_id": "2607.27354",
   "authors": [
     "Haoyu Chen",
@@ -31,8 +35,13 @@
       "ai_reason": "核心评估个人AI助手，用户中心基准涉及用户状态与配置",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对现有基准割裂服务上下文、忽略用户状态的局限，提出以用户为中心的个人AI助手评测基准PAUSE，用于评估统一服务环境中具备状态感知与跨服务协作能力的助手。基准要求智能体在多轮交互中维护持久用户状态、遵守权限约束并完成长周期任务，通过真实用户模拟实现显式人机交互评测，并采用多范式评估框架结合语义、轨迹与确定性状态验证。实验表明当前最优专有模型在真实场景下仍存在显著不足。",
+      "topic_tags": [
+        "AI助手",
+        "人机交互(HCI)",
+        "可用性测试",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -49,11 +58,11 @@
     {
       "channel": "ur",
       "legacy_id": 15691,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "PAUSE: A User-Centric Benchmark for Personal AI Assistants in Unified Service Environments",
-  "title_zh": null,
+  "title_zh": "PAUSE：统一服务环境下以用户为中心的个人AI助手基准",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.27354",
   "volume": null,

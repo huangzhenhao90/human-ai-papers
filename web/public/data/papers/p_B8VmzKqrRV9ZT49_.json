@@ -1,6 +1,11 @@
 {
   "abstract": "Gamification is especially effective in learning domains requiring active problem-solving and iterative skill-building, such as cybersecurity education. Generative AI agents offer a path to delivering such experiences adaptively at scale, but introduce well-documented risks in educational settings: inconsistent behavior, hallucinated reasoning, and misalignment with pedagogical frameworks. Grounding these systems in learning science is therefore essential. We present \\model, an agentic framework for gamified cybersecurity learning that enables structured autonomy through ontology-guided validation, schema-governed behavioral control, and competency-based progression. The system is organized around a competency-based progression model that structures topics by difficulty and prerequisite relationships, reflecting evidence-based principles of scaffolded instruction. The learning loop is decomposed into four specialized agents: challenge, support, evaluation, and reward, each governed by behavioral schemas that encode operational modes and progression logic, bounding agent autonomy without eliminating generative flexibility. A cybersecurity ontology validates all generated content prior to display, enforcing domain-consistent reasoning and safety constraints. We evaluate CyberAgents through classroom deployment with undergraduate students, complemented by expert evaluations from educators and domain specialists. Results indicate improved engagement, clearer feedback interpretation, and greater learner trust in AI-generated responses when behavioral schemas and ontology validation are active. Preliminary comparisons with an unconstrained configuration further support the role of structured control in stabilizing instructional behavior. These findings offer a blueprint for designing pedagogically grounded agentic gamified learning systems.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "GenAI",
+    "智能体/Agent",
+    "AI 助手",
+    "LLM"
+  ],
   "arxiv_id": "2608.07965",
   "authors": [
     "Ivan Hornung",
@@ -37,8 +42,13 @@
       "ai_reason": "GenAI智能体驱动游戏化学习，AI为核心，含教育场景用户视角",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对生成式 AI 代理在网络安全教育中存在的行为不一致、推理幻觉与教学脱节等风险，提出 CyberAGENTS 智能体框架，以能力进阶模型组织学习内容，划分为挑战、支持、评估、奖励四个专门代理，由行为模式与本体论验证约束生成自由度。课堂部署与专家评估显示该系统提升了参与度与反馈可解释性。",
+      "topic_tags": [
+        "人机协作",
+        "AI 治理",
+        "服务设计",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -55,11 +65,11 @@
     {
       "channel": "ur",
       "legacy_id": 20062,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "CyberAGENTS: Structured Autonomy for Agentic Gamified Learning in Cybersecurity",
-  "title_zh": null,
+  "title_zh": "CyberAGENTS：网络安全智能体游戏化学习的结构化自主",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.07965",
   "volume": null,

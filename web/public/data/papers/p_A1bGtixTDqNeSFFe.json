@@ -1,6 +1,10 @@
 {
   "abstract": "Mental health professionals have raised concerns about risks of psychological harm from interaction with large language models (LLMs), including \"delusional spirals\" in which concerning human and LLM behaviors reinforce each other over time. With growing public use of LLM-powered chatbots, there is an urgent need to build evaluations grounded in real-world episodes of psychological harm experienced by users. We developed DelusionEval, an evaluation protocol that tests a model's tendencies to exhibit behaviors linked to promoting user delusions. We prompt each model with 589 unique conversation histories from 18 participants, comprising 12,591 messages from users who experienced delusions and psychological harm. We find that the tendency of an evaluated LLM to exhibit delusion-linked behavior does not reliably correlate with model size, release date, or the presence of test-time reasoning. However, extending the context of prior messages substantially increases rates of delusion-linked behaviors, providing evidence for the importance of context in LLM safety evaluation. For example, the rate of failing to discourage self-harm when the user expresses suicidal ideation increases from 30.0% to 41.1% when an additional 350 messages are prepended to the conversation history. All model families (e.g., GPT, Claude) exhibit substantial rates of delusion-linked behaviors. Within families, later, larger, or higher-reasoning models are not uniformly better across all behavior categories. Our results raise concerns regarding the potential psychological impact of LLMs and the need for more rigorous studies of real-world human-AI interaction.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "对话式AI",
+    "AI治理"
+  ],
   "arxiv_id": "2608.05004",
   "authors": [
     "Jared Moore",
@@ -52,8 +56,13 @@
       "ai_reason": "LLM评估为主,含18名用户真实对话数据",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "心理健康从业者担忧LLM聊天机器人可能引发妄想螺旋等心理伤害。研究构建DelusionEval评估协议，基于18位经历妄想与心理伤害用户的589段对话历史（12,591条消息）测试多款模型。发现模型妄想相关行为倾向与规模、发布日期、推理能力无可靠相关；延长上下文（如增加350条历史）显著抬升问题行为率，不劝阻自杀意念的比例从30.0%升至41.1%；各模型家族均存在明显缺陷，更大更新模型并非全面更优。",
+      "topic_tags": [
+        "伦理",
+        "AI治理",
+        "对话式AI",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -70,11 +79,11 @@
     {
       "channel": "ur",
       "legacy_id": 15688,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "DelusionEval: Measuring Delusion-Linked Behaviors in AI Chatbots",
-  "title_zh": null,
+  "title_zh": "DelusionEval：衡量AI聊天机器人中与妄想相关的行为",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.05004",
   "volume": null,

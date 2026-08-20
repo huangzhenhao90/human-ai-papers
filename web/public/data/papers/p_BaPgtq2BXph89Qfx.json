@@ -1,6 +1,9 @@
 {
   "abstract": "Large language models are being extensively used to simulate individual user behavior, yet faithfully representing a population requires capturing the systematic variation in values, beliefs, and cultural norms that distinguish one group from another. We introduce Population Aligned Language Models (PALMs), a suite of models each aligned to specific populations, covering five countries: USA, India, Brazil, France and Italy. PALMs are created by synthesizing rationales grounded in psychological and cultural constructs and using these as latent supervision during preference tuning for population-specific alignment. Evaluated across four dimensions: personality, values and beliefs, cultural norms, and morality, PALMs consistently outperform baselines, including culture-specialized models, achieving an average of 8.59% relative improvement over the best baseline across all five populations. Notably, construct-grounded rationales outperform both demographic prompting and survey-based fine-tuning, suggesting that grounding preference learning in psychology and culture provides a richer inductive signal than surface-level response distributions. We further demonstrate strong generalization to downstream applications with- out task-specific supervision: outperforming best baselines by 5.19% in personalized reward modeling, 6.34% in population simulation, and showing strong transfer to social reasoning tasks. Datasets and code are available at: https://github.com/limenlp/PALMs.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI"
+  ],
   "arxiv_id": "2608.01458",
   "authors": [
     "Priyanka Dey",
@@ -31,8 +34,14 @@
       "ai_reason": "LLM模拟人群偏好，涉用户行为模拟方法",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出面向不同人群的Population Aligned Language Models (PALMs)，覆盖美、印、巴、法、意五国，通过合成基于心理学与文化构念的推理依据作为隐式监督进行偏好微调。在人格、价值观与信念、文化规范、道德四维评估中均优于基线，平均相对提升8.59%；并在个性化奖励建模与群体模拟等下游任务上展现强泛化能力。",
+      "topic_tags": [
+        "个性化",
+        "用户画像",
+        "人机交互(HCI)",
+        "AI治理",
+        "消费者行为"
+      ]
     }
   },
   "channels": [
@@ -49,11 +58,11 @@
     {
       "channel": "ur",
       "legacy_id": 15690,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "PALMs: Using Multi Construct-Grounded Rationales for Modeling Population Preferences in LLMs",
-  "title_zh": null,
+  "title_zh": "PALMs：利用多重构念依据推理建模大语言模型中的群体偏好",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.01458",
   "volume": null,

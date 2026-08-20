@@ -1,6 +1,11 @@
 {
   "abstract": "Personalizing large language models (LLMs) to individual users is essential for improving user experience, yet existing approaches typically rely on explicit preference supervision such as pairwise comparisons or demographic attributes, limiting their applicability in natural interaction settings. We propose IRIS, a framework that learns dynamic user personas directly from implicit interaction streams by extracting behavioral signals from everyday conversations and iteratively refining persona representations through a prediction-driven closed loop without requiring explicit feedback. We introduce an evaluation protocol based on behavior prediction, persona stability, and decision prediction. A proof-of-concept study on a synthetic interaction stream derived from public-domain autobiographical text shows that IRIS produces stable personas and distinguishes individual users while revealing limitations of memory-only approaches on recall-oriented metrics. We then validate IRIS on anonymized real-world Reddit r/AmItheAsshole (AITA) data, with personas built solely from each author's historical interactions. Across 100 authors, IRIS achieves the highest decision prediction accuracy among all evaluated methods (61.0%), outperforming static personas, memory-only retrieval, and no-personalization baselines. These results suggest that implicit behavioral modeling provides a scalable alternative to explicit preference learning for personalized LLMs and offers a practical foundation for adaptive conversational systems and embodied agents that require continuously evolving models of their users.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "个性化",
+    "AI用户画像",
+    "AI推荐"
+  ],
   "arxiv_id": "2607.26473",
   "authors": [
     "Haifeng Wu"
@@ -15,8 +20,12 @@
       "ai_reason": "学习用户画像用于LLM个性化，有用户建模视角",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对LLM个性化依赖显式偏好监督的局限，研究提出IRIS框架，从隐式交互流中学习动态用户画像，通过预测驱动的闭环迭代优化表征，无需显式反馈。在自传体合成数据上完成概念验证后，基于Reddit r/AmItheAsshole真实数据对100位作者测试，IRIS决策预测准确率达61%，超越静态画像、记忆检索及无个性化基线，证明隐式行为建模是显式偏好学习的可扩展替代方案。",
+      "topic_tags": [
+        "用户画像",
+        "个性化",
+        "推荐系统"
+      ]
     }
   },
   "channels": [
@@ -33,11 +42,11 @@
     {
       "channel": "ur",
       "legacy_id": 15623,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Learning Dynamic User Personas from Implicit Interaction Streams via Iterative Refinement",
-  "title_zh": null,
+  "title_zh": "基于迭代优化的隐式交互流动态用户画像学习",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.26473",
   "volume": null,

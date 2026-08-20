@@ -2,39 +2,29 @@
   "abstract": "Emotions are central to consumer communications, and extracting them from user-generated online content is crucial for marketers, given that such consumer opinions significantly shape brand perceptions, influence purchase decisions, and provide essential insights for marketing analytics. To leverage vast user-generated data, marketers and researchers require advanced text-to-emotion converters. However, existing tools for fine-grained emotion extraction face several limitations: Lexica are constrained by their dictionaries, machine learning models by human-annotated training data, and large language models by insufficient validation. As a result, marketing research still tends to rely on mere sentiment detection instead of extracting more nuanced emotions from text. This article introduces NADE (Natural Affect DEtection), a novel text-to-emoji-to-emotion converter that first “emojifies” language and then converts these emojis into intensity measures of well-established, theory-grounded emotions. This approach addresses the limitations of existing tools by leveraging the inherent emotional information in emojis. Using human raters and state-of-the-art converters as benchmarks, the authors establish the benefits of exploiting emojis, validate NADE, and demonstrate its use in several marketing applications using data from various social media platforms. Users can apply the proposed converter through an easy-to-use online app and programming packages for Python and R.",
   "ai_type_tags": [
     "LLM",
-    "自然语言处理",
-    "情感计算"
+    "情感识别"
   ],
   "arxiv_id": null,
   "authors": [
-    "Christian Hotz‐Behofsits",
+    "Christian Hotz-Behofsits",
     "Nils Wlömert",
     "Nadia Abou Nabout"
   ],
   "authors_full": [
     {
-      "affiliation": [
-        "Vienna University of Economics and Business"
-      ],
-      "name": "Christian Hotz‐Behofsits",
-      "orcid": "https://orcid.org/0000-0003-1921-1978",
-      "position": "first"
+      "affiliation": [],
+      "name": "Christian Hotz-Behofsits",
+      "orcid": "https://orcid.org/0000-0003-1921-1978"
     },
     {
-      "affiliation": [
-        "Vienna University of Economics and Business"
-      ],
+      "affiliation": [],
       "name": "Nils Wlömert",
-      "orcid": "https://orcid.org/0000-0002-7220-9060",
-      "position": "middle"
+      "orcid": "https://orcid.org/0000-0002-7220-9060"
     },
     {
-      "affiliation": [
-        "Vienna University of Economics and Business"
-      ],
+      "affiliation": [],
       "name": "Nadia Abou Nabout",
-      "orcid": "https://orcid.org/0000-0001-7172-5592",
-      "position": "last"
+      "orcid": "https://orcid.org/0000-0001-7172-5592"
     }
   ],
   "channel_profiles": {
@@ -53,8 +43,13 @@
       "ai_reason": "AI情感检测方法，服务于营销消费者内容",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对营销场景中从用户生成内容中提取细粒度情绪的难题，提出 NADE（自然情感检测）方法：先将文本转化为 emoji，再将 emoji 映射为基于理论的情绪强度。该方法绕开词典、机器学习标注和 LLM 验证不足等局限，借助 emoji 自身情感信息实现更精准的情绪识别。通过人类评分者与现有工具对比验证，并在多平台社交媒体营销数据中展示应用价值，提供在线工具及 Python/R 接口。",
+      "topic_tags": [
+        "情感计算",
+        "消费者行为",
+        "AI 用户画像",
+        "营销"
+      ]
     }
   },
   "channels": [
@@ -62,7 +57,7 @@
     "ur"
   ],
   "cited_by": 7,
-  "date": "2025-01-13",
+  "date": "2025-04-23",
   "doi": "10.1177/00222429251315088",
   "id": "p_m-qpFgWwfwSg_OWu",
   "issue": "5",
@@ -72,16 +67,16 @@
     {
       "channel": "ob",
       "legacy_id": 6100,
-      "revision": "16d8197c25611b5e68ec63478cb2ea87f5d52af4"
+      "revision": "799f0730dde06c94f7102d6ac21ab747fa438903"
     },
     {
       "channel": "ur",
       "legacy_id": 18616,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Natural Affect DEtection (NADE): Using Emojis to Infer Emotions from Text",
-  "title_zh": "自然情感检测（NADE）：利用表情符号从文本推断情感",
+  "title_zh": "自然情感检测（NADE）：利用表情符号从文本中推断情感",
   "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
   "url": "https://doi.org/10.1177/00222429251315088",
   "volume": "90",

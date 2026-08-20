@@ -1,6 +1,10 @@
 {
   "abstract": "Large Language Models (LLMs) do not construct conceptual representations in ways that align with human cognition, posing risks for human–AI interaction. While LLMs solely rely on linguistic distributional knowledge, humans leverage both linguistic and sensorimotor knowledge. To systematically assess human-LLM alignment in concept representations, we propose a novel evaluation framework based on sensorimotor regularities, operationalized as image schemas—multimodal gestalts derived from repeated sensorimotor experiences. Investigating linguistic manifestations of such schemas, we systematically identify human-LLM alignments and misalignments in the encoding of sensorimotor regularities. Results indicate that three contemporary disembodied LLMs encode highly human-like sensorimotor gestalts. However, these models exhibit reduced alignment when mapping such gestalts to concepts, and they do not systematically combine these gestalts in ways consistent with human patterns. We identify each LLM’s misalignments with human patterns in image schema distribution, conceptual associations, and image schema co-occurrences. Building on these findings, we augment gpt-4-1106 with targeted sensorimotor priors derived from its identified misalignments with human patterns. In a downstream user study, this augmentation yields sentence continuations rated by humans as significantly more conceptually clear, contextually contingent, and human-like than baseline outputs. Our work establishes a foundation for evaluating and improving human-LLM alignment at the conceptual level.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "可解释AI",
+    "人机交互"
+  ],
   "arxiv_id": null,
   "authors": [
     "Jingyi Li",
@@ -35,8 +39,13 @@
       "ai_reason": "核心研究LLM与人类认知对齐，HCI实证评估",
       "ai_score": 5.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究LLM与人类概念表征的对齐问题。人类概念表征融合语言与感觉运动知识，而LLM仅依赖语言分布知识。作者提出基于感觉运动规整性（意象图式）的评估框架，系统比较人类与多个无身体LLM在图式编码、概念关联及图式共现上的对齐与错位，据此向GPT-4注入针对性感觉运动先验。下游用户研究显示，增强后的模型生成的句子在概念清晰度、语境贴合度及类人程度上均显著优于基线。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "用户研究方法",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -53,11 +62,11 @@
     {
       "channel": "ur",
       "legacy_id": 17525,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Sensorimotor Regularities as Alignment between Humans and Large Language Models",
-  "title_zh": null,
+  "title_zh": "感觉运动规律性作为人类与大语言模型之间的对齐",
   "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
   "url": "https://doi.org/10.1145/3778353",
   "volume": "33",

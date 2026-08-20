@@ -1,6 +1,10 @@
 {
   "abstract": "While generative AI has unlocked new opportunities for 3D content creation, current workflows often rely on multiple regenerations, which provides limited control and unpredictable outcomes. We present Compos3D, a system that introduces a compositional workflow for generative 3D modeling through remixing. Instead of repeatedly regenerating models, users generate multiple candidates from text or image prompts, select parts of interest via 2D image regions or 3D mesh segments, and assemble them into a coherent design. The system synthesizes these compositions into a refined 3D model, preserving high-level intent while resolving low-level geometry. To evaluate this approach, we conducted a controlled user study comparing remixing and regeneration workflows across both 2D and 3D modalities. Results show that the remixing workflow provides participants with greater creative control, stronger alignment with their intent, and higher satisfaction. We conclude with design recommendations for future AI-assisted 3D modeling workflows.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "GenAI",
+    "多模态",
+    "人机协作"
+  ],
   "arxiv_id": "2607.12193",
   "authors": [
     "Faraz Faruqi",
@@ -27,8 +31,13 @@
       "ai_reason": "生成式3D建模工具，含受控用户研究",
       "ai_score": 4.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对生成式3D建模中反复生成、难以精细控制的问题，提出Compos3D系统，允许用户从多个候选生成结果中选取感兴趣区域（2D图像或3D网格片段）进行组合重混，合成连贯的3D模型。控制实验表明，组合重混工作流在创意控制、意图对齐和用户满意度上均优于反复重新生成。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "可用性",
+        "创意设计工具"
+      ]
     }
   },
   "channels": [
@@ -45,11 +54,11 @@
     {
       "channel": "ur",
       "legacy_id": 15469,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Compos3D: Interactive Part-Based Composition for Creative Control in Generative 3D Models",
-  "title_zh": null,
+  "title_zh": "Compos3D：生成式三维模型中基于部件的交互式创作以实现创意控制",
   "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
   "url": "https://arxiv.org/abs/2607.12193",
   "volume": null,

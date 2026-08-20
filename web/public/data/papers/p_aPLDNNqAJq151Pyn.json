@@ -1,6 +1,10 @@
 {
   "abstract": "Great fiction earns its verisimilitude through precise details, from how a longsword is gripped to pierce armor gaps to why a bleeding corpse cannot yet smell of decay, weaving domain expertise into the fabric of invented worlds. Current AI writing tools offer limited support for discovering and integrating unfamiliar domain knowledge into narrative. They require explicit queries that authors cannot formulate, generate finished prose that risks homogenizing voice, or assist only within the boundaries of what authors already know. We argue that AI should reveal latent knowledge gaps to writers while preserving their agency to transform discovered knowledge into authentic prose. Grounded in formative interviews with 9 fiction writers, we present VeriForge, a mixed-initiative writing system that divides cognitive labor so that the system assumes initiative over domain discovery while the author retains full initiative over narrative synthesis. VeriForge realizes this through three complementary mechanisms. Proactive inline highlighting flags potential knowledge gaps as authors draft. Dual-stream querying pairs conversational responses with source-anchored Knowledge Cards for direct fact extraction. A spatial Knowledge Canvas allows authors to organize and connect discovered knowledge across their writing. These mechanisms are powered by a graph-based retrieval-augmented generation pipeline grounded in domain-specific source materials. A within-subjects user study (N=12) provides preliminary evidence that this paradigm helps authors recognize previously overlooked knowledge gaps, supports creative exploration, and is perceived by expert raters to produce passages with stronger domain grounding in a controlled cold-start writing task.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI 助手"
+  ],
   "arxiv_id": "2608.09698",
   "authors": [
     "Ruqi Sun",
@@ -37,8 +41,13 @@
       "ai_reason": "AI写作工具核心议题，含形成性访谈用研方法",
       "ai_score": 5.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "现有AI写作工具难以辅助作者发现并整合陌生领域知识。VeriForge通过认知分工，由系统主导领域知识发现，作者保留叙事创作主导权。系统具备三机制：主动内联高亮潜在知识缺口、双流问答配知识卡片、空间知识画布组织跨章节知识，底层采用基于图谱的RAG管道。基于9位虚构写作者的形成性访谈和12人被试内研究验证其在揭示知识缺口、保留作者声音方面的有效性。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "用户研究方法",
+        "访谈"
+      ]
     }
   },
   "channels": [
@@ -55,11 +64,11 @@
     {
       "channel": "ur",
       "legacy_id": 19987,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "VeriForge: Mitigating Latent Knowledge Gaps in Narrative Drafting via Mixed-Initiative Scaffolding",
-  "title_zh": null,
+  "title_zh": "VeriForge：基于混合主动式脚手架缓解叙事起草中的潜在知识缺口",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.09698v1",
   "volume": null,

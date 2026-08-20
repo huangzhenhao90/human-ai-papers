@@ -1,6 +1,8 @@
 {
   "abstract": "Popularity calibration in recommender systems has been studied both as a form of user-centered personalization and as an indicator of popularity bias. Most existing work evaluates calibration through offline metrics, often assuming that users prefer recommendation lists whose popularity distribution matches their historical consumption profile. However, user studies on calibration remain limited, and existing findings suggest that calibrated recommendations do not necessarily have a strong effect on user experience. Moreover, although prior work has shown that calibration metrics can correlate with users' perceptions of recommendation lists, the robustness of this relation remains unclear under different levels of item familiarity and incomplete user-history information. In this work, we study the perceived value and measurement reliability of popularity calibration in music recommendation. We construct personalized track lists from users' recent listening histories and use a controlled naive recommender to create lists with different popularity compositions: highpop-heavy, lowpop-heavy, and calibrated. We investigate whether users perceive differences between these lists, whether calibrated lists are preferred, how robust JSD-based popularity calibration is under different familiarity and history-availability conditions, and how computational popularity labels align with users' own popularity judgments. Our results show that users perceive differences in popularity composition, but do not clearly prefer calibrated lists. We further find that the relation between JSD and perceived popularity depends on item familiarity, list composition, and available user history, while computational and user-judged popularity labels only weakly align. These findings contribute to a more critical understanding of popularity calibration as both an offline metric and a user-facing construct.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "推荐算法"
+  ],
   "arxiv_id": "2608.05402",
   "authors": [
     "Oleg Lesota",
@@ -37,8 +39,12 @@
       "ai_reason": "明确用户研究评估推荐校准的用户感知",
       "ai_score": 3.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究音乐推荐中流行度校准的用户感知价值与测量可靠性。基于用户近期听歌记录构建个性化曲目列表，使用受控朴素推荐器生成高流行度、低流行度与校准三种组成列表，考察用户能否感知差异、是否偏好校准列表、JSD校准指标在不同熟悉度与历史信息不完整条件下的稳健性，以及计算流行度标签与用户自身流行度判断的一致性。",
+      "topic_tags": [
+        "推荐系统",
+        "用户研究方法",
+        "个性化"
+      ]
     }
   },
   "channels": [
@@ -55,11 +61,11 @@
     {
       "channel": "ur",
       "legacy_id": 15462,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Robustness and User-Perceived Value of Popularity Calibration in Music Recommendation: A User Study",
-  "title_zh": null,
+  "title_zh": "音乐推荐中流行度校准的鲁棒性与用户感知价值：一项用户研究",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.05402",
   "volume": null,

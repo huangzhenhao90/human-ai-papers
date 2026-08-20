@@ -1,6 +1,10 @@
 {
   "abstract": "High-quality annotation of artworks is essential for computational art research, yet extracting implicit semantics remains challenging due to the reliance on culturally grounded meanings and deep contextual knowledge behind the images. Current AI-assisted annotation tools often lack assistance or rely on one-way workflows where experts have to perform extra manual calibrations to improve AI models, resulting in limited efficiency. To address this, we propose Bidirectional Human-AI Augmentation(BiHAA), a closed-loop framework in which skills and domain knowledge base evolve through real-time interaction and bidirectional HAI augmentation. Informed by a formative study with 20 artwork annotators from different backgrounds, we implement this framework in ArtAnno, an artwork annotation system driven by a multi-agent architecture. The system includes a Proactive Agentic Support Module, where AI augments humans through semantic mining and label suggestion, and an Interaction-Driven Evolution Module, where human expertise continuously enhances the AI through distilling annotation trajectories into reusable experience. Evaluation through a user study and two case studies demonstrates that our framework and system improve annotation efficiency, enable knowledge accumulation, and reduce the effort of information seeking and verification for annotators with limited domain expertise. We conclude by discussing broader implications and future directions.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "人机协作"
+  ],
   "arxiv_id": "2608.05026",
   "authors": [
     "Xiaoyan Gu",
@@ -43,8 +47,13 @@
       "ai_reason": "20名标注者形成性研究,HCI人机协作系统",
       "ai_score": 4.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对艺术品标注中隐含语义提取困难、专家需反复人工校准的问题，构建了基于LLM多智能体架构的ArtAnno系统，提出双向人机增强框架BiHAA：主动支持模块提供语义挖掘与标签建议增强人类，交互驱动进化模块将标注轨迹蒸馏为可复用经验以持续优化AI。基于20名标注者形成性研究设计系统，用户研究与两个案例研究表明系统提升了标注效率、实现了知识积累，并降低了领域知识有限标注者的信息检索与验证负担。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "AI 助手",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -61,11 +70,11 @@
     {
       "channel": "ur",
       "legacy_id": 15505,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "ArtAnno: Annotating Implicit Semantics in Artworks through LLM Agent-Driven Bidirectional Human-AI Augmentation",
-  "title_zh": null,
+  "title_zh": "ArtAnno：基于LLM智能体驱动的双向人机增强的艺术隐含语义标注",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.05026",
   "volume": null,

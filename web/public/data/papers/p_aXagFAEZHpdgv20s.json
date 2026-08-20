@@ -1,6 +1,11 @@
 {
   "abstract": "LLM chains enable complex tasks by decomposing work into a sequence of subtasks. Similarly, the more established techniques of crowdsourcing workflows decompose complex tasks into smaller tasks for human crowdworkers. Chains address LLM errors analogously to the way crowdsourcing workflows address human error. To characterize opportunities for LLM chaining, we survey 107 papers across the crowdsourcing and chaining literature to construct a design space for chain development. The design space covers a designer’s\n            objectives\n            and the\n            tactics\n            used to build workflows. We then surface\n            strategies\n            that mediate how workflows use tactics to achieve objectives. To explore how techniques from crowdsourcing may apply to chaining, we adapt crowdsourcing workflows to implement LLM chains across three case studies: creating a taxonomy, shortening text, and writing a short story. From the design space and our case studies, we identify takeaways for effective chain design and raise implications for future research and development.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "人机协作",
+    "AI 助手"
+  ],
   "arxiv_id": null,
   "authors": [
     "Madeleine Grunde-McLaughlin",
@@ -51,8 +56,13 @@
       "ai_reason": "LLM链设计空间，AI为核心，含HCI设计但缺用户评估",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究将众包工作流中分解任务、处理人类错误的设计经验迁移到LLM链构建中。通过综述107篇文献，构建涵盖设计目标、战术与策略的LLM链设计空间，并以创建分类、文本缩短和短故事写作为案例，验证众包工作流技术对LLM链设计的适用性，提出链设计的有效建议与未来研究方向。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "众包",
+        "服务设计"
+      ]
     }
   },
   "channels": [
@@ -69,11 +79,11 @@
     {
       "channel": "ur",
       "legacy_id": 17568,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Designing LLM Chains by Adapting Techniques from Crowdsourcing Workflows",
-  "title_zh": null,
+  "title_zh": "通过适配众包工作流技术设计LLM链",
   "unified_ingested_at": "2026-08-17T03:01:55.785975Z",
   "url": "https://doi.org/10.1145/3716134",
   "volume": "32",

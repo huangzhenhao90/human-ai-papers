@@ -1,6 +1,10 @@
 {
   "abstract": "We present Anamnesis, an interactive system for demographically controllable survey simulation using large language models. Open-source, and designed for non-technical users/researchers, Anamnesis enables the prototyping and stress-testing of survey instruments on virtual populations rather than real human subjects. The platform operationalizes the recently introduced Anthology and Alterity frameworks, which use structured narrative backstories to condition model responses, within a unified web interface. It supports open-ended generation, probabilistic demographic resampling, and multimodal (image and audio) surveys. We evaluate the system through two case studies: (1) replicating segments of Pew Research Center's American Trends Panel (ATP) on political typology and biomedical issues and (2) emulating human preference in the New Yorker Caption Contest. In both cases, Anamnesis produces opinion distributions that more closely match real-world survey data than standard persona-prompting baselines, offering a transparent, reproducible, and open-source alternative to proprietary simulation services.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "多模态"
+  ],
   "arxiv_id": "2607.10628",
   "authors": [
     "Song-Ze Yu",
@@ -27,8 +31,13 @@
       "ai_reason": "LLM调查模拟平台，调研方法但用虚拟用户",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出开源平台Anamnesis，利用大语言模型结合结构化叙事背景进行人口统计学可控的问卷模拟，面向非技术用户。通过Anthology与Alterity框架在统一网页界面中支持开放式生成、人口重采样及多模态问卷。案例研究复现Pew研究中心政治类型和生物医学调查、模拟《纽约客》配文竞赛偏好，结果比标准角色提示更贴近真实数据分布。",
+      "topic_tags": [
+        "问卷",
+        "用户研究方法",
+        "AI用户画像",
+        "AI治理"
+      ]
     }
   },
   "channels": [
@@ -45,11 +54,11 @@
     {
       "channel": "ur",
       "legacy_id": 15541,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Anamnesis: An Open-Source Platform for Large-Scale Backstory-Conditioned Survey Simulation",
-  "title_zh": null,
+  "title_zh": "Anamnesis：面向大规模背景条件调查模拟的开源平台",
   "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
   "url": "https://arxiv.org/abs/2607.10628",
   "volume": null,

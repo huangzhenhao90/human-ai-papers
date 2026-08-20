@@ -1,6 +1,8 @@
 {
   "abstract": "Distracted driving remains a major safety concern, motivating approaches that aim to reduce visual overload before attention breaks down. However, visual overload varies across individuals, making it difficult to determine appropriate interventions for each driver. We investigate whether controllable visual blur can simplify the driving scene and mitigate distraction. To address this challenge, we propose BlurDriving, a target-selective, distance-aware blur system in a Virtual Reality (VR) urban driving simulator, and employ a Human-in-the-Loop Multi-Objective Bayesian Optimization (HITL-MOBO) framework to personalize blur configurations. Across two VR user studies, we evaluated driving under normal conditions in Study 1 and under cognitively demanding conditions in Study 2. We found that personalization revealed strong individual differences in blur preference but did not lead to significant improvements in objective driving performance compared to a no-blur baseline. Qualitative feedback revealed polarized responses: some drivers reported improved focus, while others experienced uncertainty, fatigue, or discomfort. These findings suggest that visual blur is not universally effective. Instead, its benefits depend on individual perceptual strategies and tolerance for visual uncertainty. This work highlights the limits of personalized visual simplification in safety-critical driving and informs adaptive in-vehicle interface design.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "人机协作"
+  ],
   "arxiv_id": "2607.18628",
   "authors": [
     "Yuan Li",
@@ -37,8 +39,13 @@
       "ai_reason": "两轮VR驾驶模拟器用研,个性化blur系统",
       "ai_score": 3.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对驾驶分心中视觉过载问题，本研究在VR城市驾驶模拟器中提出BlurDriving——一种基于人机协同多目标贝叶斯优化（HITL-MOBO）的目标选择性与距离感知模糊系统，用以为不同驾驶员个性化配置视觉模糊参数。两项研究显示，个性化虽揭示出显著个体差异，但与无模糊基线相比并未显著提升客观驾驶表现；定性反馈呈两极化，提示视觉模糊效益取决于个体感知策略与对视觉不确定性的耐受度。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "个性化",
+        "虚拟现实",
+        "可用性测试"
+      ]
     }
   },
   "channels": [
@@ -55,7 +62,7 @@
     {
       "channel": "ur",
       "legacy_id": 15310,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "BlurDriving: Investigating How Personalized Blur Techniques Impact Drivers' Performance in Virtual Reality",

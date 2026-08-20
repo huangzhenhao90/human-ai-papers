@@ -1,6 +1,12 @@
 {
   "abstract": "An effective large language model (LLM) tutor must often decline to give an answer it could easily produce. In a randomized study, students who used an unguarded chatbot scored higher while practicing but lower on a later test taken without it, whereas a Socratically guarded version of the same model kept the practice gain and removed the later loss [4]. Reliable answer-withholding is therefore central to a tutor's value, yet a capable model pressed by a frustrated student does not withhold reliably on a prompt alone. We report a deployed tutoring system that enforces answer-withholding as a per-turn, machine-checkable contract, and a method for tuning that withholding against evidence. A non-LLM policy core, reading only trusted learner state, sets a per-turn ceiling on an eight-rung help ladder; a deterministic detector strips solution code; and a separate LLM judge checks each risky reply against the contract. We tune the behavior with an automated evaluation that uses no human subjects: scripted student personas are driven through the live pipeline and re-scored by a stronger model, and we record each rejection's stated reason so failures are fixed by cause. Doing so revealed an interpretable \"over-help ladder,\" from blatant solution leaks, to naming the exact bug, to over-citing general facts, with each fix exposing the next. The tutor reached full compliance on all four acceptance criteria. We offer the measure, diagnose, and fix loop as a reusable recipe for any LLM agent that must refuse a capability it has.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "对话式 AI",
+    "AI 助手",
+    "智能体/Agent"
+  ],
   "arxiv_id": "2608.12292",
   "authors": [
     "Yusuf Pisan"
@@ -15,8 +21,13 @@
       "ai_reason": "LLM导师系统，随机对照实验有学生参与",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究问题：如何让LLM辅导老师在学生施压时可靠地拒绝直接给出答案。方法：部署分层监管架构——非LLM策略核心根据学习者状态设定每轮帮助上限，确定性检测器剥离解题代码，独立LLM法官核查每条回复合规；用脚本学生角色驱动自动化评估循环进行调优并记录失败原因。发现：存在可解释的\"过度帮助阶梯\"，从泄露完整解题、点明具体Bug到过度引用通用事实，逐层修复后系统在四项验收标准上达到完全合规。",
+      "topic_tags": [
+        "AI 助手",
+        "人机交互(HCI)",
+        "人机协作",
+        "AI 治理"
+      ]
     }
   },
   "channels": [
@@ -33,11 +44,11 @@
     {
       "channel": "ur",
       "legacy_id": 20270,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Teaching a Large Language Model Tutor to Withhold the Answer: A Supervisor Architecture and an Evidence-Driven Method for Tuning Socratic Behavior",
-  "title_zh": null,
+  "title_zh": "教导大语言模型导师保留答案：监督架构与证据驱动的苏格拉底式行为调控方法",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.12292v1",
   "volume": null,

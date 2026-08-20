@@ -1,6 +1,10 @@
 {
   "abstract": "Debt collection is a critical negotiation task in the financial industry, with strong practical relevance and exceptional academic value as a behaviorally rich, high-stakes testbed for human-centered dialogue systems. While large language models (LLMs) have shown promise in dialogue and negotiation, effectively evaluating their performance in this complex scenarios remains a major challenge: existing benchmarks uniformly assume users to be static, rational agents with fixed preferences, failing to capture the rich behavioral heterogeneity inherent in real-world debt collection. To bridge this gap, we propose DebtBench, the first public persona-enriched debt collection benchmark, that highlights behavioral heterogeneity in negotiation. Moreover, we develop DebtGPT, a debt collection agent trained to jointly optimize financial recovery and interaction experience. Our experimental results, using 16 state-of-the-art LLMs, find that most existing models struggle in this complex but realistic scenarios, whereas DebtGPT outperforms all open-source baselines and achieves performance on par with GPT-4o. The code and data are available at https://github.com/YYuHhhh/DebtNegotiation.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 助手"
+  ],
   "arxiv_id": "2607.25218",
   "authors": [
     "Yuhang Yang",
@@ -37,8 +41,13 @@
       "ai_reason": "LLM对话系统+用户行为异质性建模，含人本框架",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "现有对话系统评测假设用户为静态理性个体，难以反映真实催收场景中行为的多样性。本研究构建了首个融入人物画像的催收谈判基准 DebtBench，并基于此训练 DebtGPT。实验覆盖 16 个主流大模型，发现多数模型表现欠佳，而 DebtGPT 超越开源基线并达到 GPT-4o 水平。",
+      "topic_tags": [
+        "对话式 AI",
+        "人机协作",
+        "用户研究方法",
+        "HCI"
+      ]
     }
   },
   "channels": [
@@ -55,11 +64,11 @@
     {
       "channel": "ur",
       "legacy_id": 15647,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Everyone is unique: Towards Behaviorally Heterogeneous Negotiation Dialogue Systems for Debt Collection",
-  "title_zh": null,
+  "title_zh": "人人皆独特：面向催收场景的异质行为谈判对话系统",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.25218",
   "volume": null,

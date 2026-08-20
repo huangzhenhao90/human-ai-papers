@@ -1,6 +1,10 @@
 {
   "abstract": "AI decision-support tools typically offer a fixed type of assistance, like AI recommendations and explanations, regardless of the specific decision, individual, or broader context. This fixed design has been shown to hinder both human-AI decision accuracy and human skill improvement in the task. We posit that AI assistance needs to be dynamic, changing in response to contextual factors (e.g., AI uncertainty, task difficulty), individual differences, and specified objectives (e.g., decision accuracy, skill improvement). To enable such adaptive support, we propose Reinforcement Learning (RL) as a general approach for modeling human-AI decision-making to optimize human-AI interaction for diverse objectives. RL enables optimizing various objectives in AI-assisted decision-making by tailoring and adaptively providing decision support to humans—the right type of assistance, to the right person, at the right time. We instantiated our approach with two objectives: human-AI accuracy on the decision-making task and human skill improvement (i.e., learning about the task) and learned decision support policies from previous human-AI interaction data. We compared the optimized policies against several baselines in AI-assisted decision-making. Across two experiments (N = 316 and N = 964), our results consistently demonstrated that people interacting with policies optimized for accuracy achieve significantly higher accuracy—and even human-AI complementarity—compared to those interacting with any other type of AI support. Our results further indicated that human learning was more difficult to optimize than accuracy. While the policies learned the best available actions to optimize learning, participants who interacted with learning-optimized policies showed significant learning improvement only at times. Our research (1) demonstrates offline RL to be a promising approach to model the dynamics of human-AI decision-making, leading to policies that may optimize various objectives and provide novel insights about the AI-assisted decision-making space, and (2) emphasizes the importance of considering skill improvement and other human-centric objectives beyond accuracy in AI-assisted decision-making, opening up the novel research challenge of optimizing human-AI interaction for such objectives.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "AI助手",
+    "人机协作",
+    "可解释AI"
+  ],
   "arxiv_id": null,
   "authors": [
     "Zana Buçinca",
@@ -51,8 +55,12 @@
       "ai_reason": "RL驱动AI辅助决策，人-AI交互核心议题",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对AI辅助决策中支持方式固定化的局限，提出以离线强化学习建模人机决策过程，根据AI不确定性、任务难度及个体差异动态提供最适辅助。围绕人机决策准确率与人类技能提升两类目标，从历史交互数据中学习支持策略，并在两项实验（N=316、N=964）中验证其优于多种基线，能显著提高准确率并促进人机互补。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -69,11 +77,11 @@
     {
       "channel": "ur",
       "legacy_id": 17537,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Offline Reinforcement Learning for Adaptive Support in AI-Assisted Decision-Making",
-  "title_zh": null,
+  "title_zh": "离线强化学习用于AI辅助决策中的自适应支持",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://doi.org/10.1145/3815418",
   "volume": "33",

@@ -1,6 +1,10 @@
 {
   "abstract": "Large language models are increasingly being deployed in governmental settings, yet few existing evaluation frameworks jointly reflect the values of public administration and the linguistic requirements of non-English contexts. We present the \"Grip on LLMs\" framework, a systematic evaluation suite for Dutch governmental use developed in collaboration with domain experts from a major Dutch municipal organisation. Through an advisory board process, user research, and a survey of the users of a civil-servant chatbot, we identify six evaluation dimensions (factuality, honesty, social bias, energy consumption, cost, and training data transparency) and operationalise them into a benchmark suite covering more than 30 multilingual and Dutch-specific models. Our results reveal that no single model excels across all dimensions, and that trade-offs are unavoidable: higher quality consistently comes at greater environmental impact and financial cost, while bias remains largely independent of both. We further find that factuality (whether a model answers correctly) and honesty (whether a model acknowledges what it does not know) are governed by distinct properties, with high factuality not implying high honesty. To make these findings actionable for non-technical audiences, we release a publicly accessible, user-friendly model overview designed for the full range of stakeholders involved in governmental LLM selection, from engineers to policymakers.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "可解释 AI",
+    "AI 评估"
+  ],
   "arxiv_id": "2608.09925",
   "authors": [
     "Laurens Samson",
@@ -31,8 +35,13 @@
       "ai_reason": "LLM政府评估+明确用户研究与调查",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对荷兰政府场景，与领域专家合作开发\"Grip on LLMs\"评估框架。通过专家咨询、用户研究及公务员聊天机器人用户调研，确立事实性、诚实性、社会偏见、能源消耗、成本与训练数据透明度六个维度，对30余个多语种及荷兰语专属模型进行基准测试。结果显示无单一模型在所有维度均优，质量提升往往伴随更高环境与经济成本，偏见相对独立；事实性与诚实性属不同属性，高事实性不必然带来高诚实性，并发布面向非技术受众的公开模型概览。",
+      "topic_tags": [
+        "AI 治理",
+        "用户研究方法",
+        "AI 采用",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -49,11 +58,11 @@
     {
       "channel": "ur",
       "legacy_id": 20037,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch",
-  "title_zh": null,
+  "title_zh": "从价值到基准：评估大型语言模型在荷兰政府场景中的应用",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.09925",
   "volume": null,

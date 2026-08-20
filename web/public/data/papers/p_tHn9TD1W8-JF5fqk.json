@@ -1,6 +1,10 @@
 {
   "abstract": "Large language models (LLMs) are increasingly used to score text records at scale (e.g., rating candidate resumes on a 1-5 scale). However, existing LLM-powered approaches do not account for the fact that effective scoring requires both holistic understanding of records and locally consistent judgments across similar ones. We present Attune, a mixed-initiative system for steerable LLM-powered scoring. Given a task description and scoring range, Attune performs pairwise comparisons across records to develop a global understanding first, and then resolves these comparisons into consistent score assignments-deriving scoring criteria and rules bottom-up in the process. These serve as shared representations of scoring logic that users can inspect and edit. Based on insights from a formative study (n = 12), Attune's interface introduces novel steering interactions that allow users to deterministically refine scoring logic. Users can provide examples, directly edit criteria, rules, or target distributions, and give natural language feedback-with all refinements compiling into constraints that guide re-scoring. We validate our approach through a technical evaluation across three workloads and a user study with domain experts (n = 8) in healthcare, law, education, and AI evaluation.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "人机协作",
+    "可解释 AI"
+  ],
   "arxiv_id": "2608.14948",
   "authors": [
     "Bhavya Chopra",
@@ -40,8 +44,12 @@
       "ai_reason": "LLM评分系统，混合主动交互，含用户形成性研究",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "Attune是一个支持人类引导的LLM文本评分系统。通过先对记录进行两两比较以建立全局理解，再解析为一致的分数分配，自底向上生成评分标准与规则。用户可检视、编辑规则，提供示例或自然语言反馈，所有修改编译为约束以指导重评。在三个工作负载上的技术评估与8位医疗、法律、教育及AI评估领域专家的用户研究验证了系统有效性。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -58,11 +66,11 @@
     {
       "channel": "ur",
       "legacy_id": 21370,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Who's Keeping Score? Interactive Steering of LLM-Powered Scoring with Attune",
-  "title_zh": null,
+  "title_zh": "谁在评分？基于Attune的LLM驱动评分交互式调控",
   "unified_ingested_at": "2026-08-18T02:57:20.908980Z",
   "url": "https://arxiv.org/abs/2608.14948v1",
   "volume": null,

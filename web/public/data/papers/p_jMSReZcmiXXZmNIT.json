@@ -1,6 +1,10 @@
 {
   "abstract": "Immersive environments, e.g., virtual reality (VR), offer a unique approach to exploring complex 3D datasets, where data is often heavily occluded and exploration incurs a high cognitive load. We propose DP-LENS, a density-aware polyfocal fisheye lens equipped with topology-driven auto-routing. While preserving peripheral context through geometric deformation and 3D perspective techniques, it enables users to explore 3D data with a lower cognitive load. To facilitate hands-free macro-navigation, we integrate a Large Language Model (LLM) to serve as a supplementary voice-based target selection tool that initiates the auto-routing algorithm. Two user studies with 34 participants investigate the potential benefits of this system. Our first study (N=18) compared the manual DP-LENS against two industry-standard baselines (i.e., World-in-Miniature and volumetric slicing) in heavily occluded 3D datasets. The results show that DP-LENS significantly reduced cognitive load, decreased completion time, and improved user preference. The second study (N=16) compared the topology-driven auto-routing system (initiated via voice commands) with a fully manual DP-LENS. The results show that the auto-routing system improved task efficiency, further reduced cognitive load, and garnered higher user preference. Furthermore, the auto-routing partially decoupled exploration efficiency from the physical dimensions of the data and mitigated physical fatigue to some extent. Based on the findings, we proposed design implications to inform the development of more spatially scalable and low-fatigue interactions for future 3D visual analytics systems.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "人机协作"
+  ],
   "arxiv_id": "2607.27697",
   "authors": [
     "Nieyu Cao",
@@ -23,8 +27,13 @@
       "ai_reason": "VR沉浸式分析含LLM语音交互，两项用户研究评估认知负荷",
       "ai_score": 4.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对沉浸式3D数据分析中遮挡严重、认知负荷高的问题，提出密度感知的复焦鱼眼镜头DP-LENS，结合拓扑驱动的自动路由算法，并集成大语言模型实现语音目标选择以支持免手动导航。通过两项共34人用户研究，发现DP-LENS较基线（World-in-Miniature、体切割）显著降低认知负荷、缩短完成时间并提升偏好；语音触发自动路由进一步减轻体力疲劳，使探索效率与数据物理尺寸部分解耦。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可视化",
+        "用户体验(UX)",
+        "可用性测试"
+      ]
     }
   },
   "channels": [
@@ -41,11 +50,11 @@
     {
       "channel": "ur",
       "legacy_id": 15529,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "DP-LENS: A Density-Aware Polyfocal Lens with Topology-Driven Auto-Routing for Occlusion Management in Immersive 3D Analytics",
-  "title_zh": null,
+  "title_zh": "DP-LENS：用于沉浸式三维分析遮挡管理的密度感知多焦点透镜与拓扑驱动自动路由",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.27697",
   "volume": null,

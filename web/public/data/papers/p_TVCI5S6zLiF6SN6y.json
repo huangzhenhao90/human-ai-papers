@@ -1,6 +1,11 @@
 {
   "abstract": "As AI companions increasingly mediate repeated social interaction, users may rely on a stable role and shared history, yet locally acceptable replies do not ensure that either persists. We study two observable long-horizon failures: 'persona collapse', the loss of a deployed role, boundaries, values, or style, and 'behavioral drift', the gradual or recurrent erosion of those properties. We introduce ANCHOR, a controlled synthetic audit that separately measures persona enactment and trajectory recall. The study contains 2,008 conversations spanning 27 personas, nine interaction schedules, three generated memory settings, and four evaluated models. The Identity Probe combines a sealed 102-item questionnaire with turn-level judgments, while the Trajectory Probe scores 110 calibrated counterfactual questions from 35 conversation banks. Our results show that no evaluated model and configuration reliably preserves either dimensions: trajectory accuracy averages only 44.4%, user-state recall remains near four-option chance, and no tested context condition or memory consistently resolves these failures. Questionnaire retention also varies by model and persona facet, disagrees with turn-level behavior, and is sensitive to evaluator choice. These results indicate that current systems do not yet reliably support long-horizon companion continuity and that audits must distinguish persona enactment, trajectory recall, evaluator provenance, and deployment context rather than collapse them into a single trust or stability score.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "GenAI",
+    "AI 助手"
+  ],
   "arxiv_id": "2607.28818",
   "authors": [
     "Pranav Narayanan Venkit",
@@ -31,8 +36,15 @@
       "ai_reason": "AI伴侣长期失效审计，用户体验议题",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究AI陪伴应用长程交互中的\"人格坍塌\"与\"行为漂移\"问题，提出ANCHOR受控合成审计框架，结合身份探针（102项密封问卷+轮次级判断）与轨迹探针（110题反事实题），对4个模型、27种人格、9种交互节奏、3种记忆设置共2008组对话进行测试。结果表明所有配置均不可靠：轨迹准确率仅44.4%，用户状态回忆接近四选一随机水平，问卷保留率因模型与人格维度而异，并与对话级行为不一致，且对评估者选择敏感。指出需区分人格演绎、轨迹回忆、评估者来源与部署上下文进行审计。",
+      "topic_tags": [
+        "AI助手",
+        "人机交互(HCI)",
+        "用户研究方法",
+        "人机协作",
+        "信任",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -49,11 +61,11 @@
     {
       "channel": "ur",
       "legacy_id": 15614,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Best Friends, Not Forever: Evaluating Long-Horizon Persona Collapse and Behavioral Drift in AI Companions",
-  "title_zh": null,
+  "title_zh": "挚友非永恒：AI伴侣中长程人格坍缩与行为漂移评估",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.28818",
   "volume": null,

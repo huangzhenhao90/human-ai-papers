@@ -1,6 +1,10 @@
 {
   "abstract": "AI assistants are typically reactive, relying on users to initiate interactions. Proactive assistants go beyond this paradigm by autonomously initiating interactions based on users' activity contexts. However, appropriate interaction timing is user-specific and difficult to determine in advance, while online feedback offers valuable signals for personalization. Direct feedback-driven adaptation is therefore appealing, but remains challenging due to sparse interaction-worthy moments scattered across fine-grained user states. To address the issues, we propose Evidence-driven Online Preference Adaptation (EOPA), which grounds a user's interaction-timing preferences in measurable contextual evidence through two evidence carriers: temporal preference anchors and evidence-bearing activity prototypes. At each polling step, EOPA derives temporal and activity evidence from the carriers through user-prior-smoothed evidence estimation and uncertainty-guided evidence scaling, and adaptively fuses the evidence for interaction-or-silence decisions. When interaction is selected, an LLM uses high-quality historical responses as demonstrations to generate a context-aware response that better reflects user preferences. EOPA updates its evidence carriers and decision parameters from received online feedback without LLM-based reasoning or retraining. Extensive experiments on a ProPerSim-based benchmark show that EOPA improves the interaction-timing F1 score by 19.80 points over the strongest baseline in our experiments, substantially reduces inference latency for both silence and interaction steps, and lowers the average daily adaptation time from 11.41 to 0.39 seconds.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI助手"
+  ],
   "arxiv_id": "2608.04416",
   "authors": [
     "Yufeng Wang",
@@ -40,8 +44,13 @@
       "ai_reason": "核心研究AI助手主动交互的用户偏好个性化",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "主动式AI助手需判断何时主动发起交互，时机因人而异且难以预设。研究提出EOPA方法，通过时序偏好锚点与活动原型两种证据载体，结合用户先验平滑估计与不确定性引导的证据缩放在线推断交互时机并融合证据决策；交互时利用LLM结合历史高质量回复生成情境化响应，无需LLM推理或重训即可从在线反馈持续更新。在ProPerSim基准上交互时机F1较最强基线提升19.80分。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "个性化",
+        "AI助手",
+        "人机协作"
+      ]
     }
   },
   "channels": [
@@ -58,11 +67,11 @@
     {
       "channel": "ur",
       "legacy_id": 15694,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Preference-Driven Online Adaptation for Personalized Interaction Initiation in Proactive AI Assistants",
-  "title_zh": null,
+  "title_zh": "面向主动式AI助手个性化交互启动的偏好驱动在线自适应",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.04416",
   "volume": null,

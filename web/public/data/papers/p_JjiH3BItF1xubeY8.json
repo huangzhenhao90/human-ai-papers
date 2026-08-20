@@ -1,6 +1,11 @@
 {
   "abstract": "Terminal interfaces to conversational agents report rich internal state (listening, thinking, executing tools, awaiting input, failing) almost entirely through text, while the motion channel beside it, the one peripheral vision monitors without reading, carries a single bit: alive. We present the Signal Rail, a one-row terminal status instrument that gives that channel a grammar. Four ideas govern it: spatial semantics (input, processing, and output zones, with direction as meaning), a motion grammar (one kinetic rule per state, never color alone), determinism (frames as a pure function of explicit inputs, golden-frame testable), and honesty (no invented progress or activity). We contribute a 45-section normative specification and a reference implementation inside a working full-duplex local voice agent driven by real signals.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "对话式 AI",
+    "AI 助手",
+    "智能体/Agent",
+    "人机交互"
+  ],
   "arxiv_id": "2608.10689",
   "authors": [
     "Matteo Grella"
@@ -15,8 +20,13 @@
       "ai_reason": "对话智能体终端界面设计，无用户评估",
       "ai_score": 3.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对终端界面对话式智能体仅靠文字表达内部状态、动作通道仅传递存活信号的问题，提出 Signal Rail——单行终端状态条，以空间语义、运动语法、确定性渲染与诚实信号四原则，把运动通道升级为完整状态语法；贡献 45 节规范说明与一个全双工本地语音智能体的参考实现。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "可视化",
+        "对话式 AI"
+      ]
     }
   },
   "channels": [
@@ -33,11 +43,11 @@
     {
       "channel": "ur",
       "legacy_id": 20016,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "The Signal Rail: A Deterministic Motion Grammar for Communicating Conversational Agent State in Terminal Interfaces",
-  "title_zh": null,
+  "title_zh": "信号轨：面向终端界面对话式智能体状态传达的确定性动作语法",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.10689v1",
   "volume": null,

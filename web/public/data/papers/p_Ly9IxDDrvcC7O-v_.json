@@ -1,6 +1,10 @@
 {
   "abstract": "Natural-language interfaces can lower the barrier to programming robots, but existing systems struggle when users request complex tasks. While large language models (LLMs) perform well with simple commands, they often struggle to generate code for multi-step tasks, decompose high-level instructions, or reuse prior solutions. We present SkillComposer, an interactive natural-language robot programming system for simulation environments that continually learns reusable program abstractions. SkillComposer uses a generate-test architecture in which an LLM iteratively generates and revises robot programs before execution. Successful programs are stored and processed by an online library-learning algorithm that compresses recurring function sequences into reusable macro skills for future tasks. We evaluate SkillComposer through ablation experiments and a user study with 12 participants to determine its effectiveness on manipulation and robot caregiving tasks. The results show that evaluator-guided generation and learned abstractions improve success rates and usability while reducing user effort in natural-language robot programming.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "GenAI"
+  ],
   "arxiv_id": "2608.14944",
   "authors": [
     "John Woods",
@@ -19,8 +23,13 @@
       "ai_reason": "LLM机器人编程系统，HCI自然语言接口但偏技术",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对自然语言机器人编程在多步复杂任务中表现不足的问题，提出SkillComposer系统。该系统采用生成-测试架构，由LLM迭代生成与修正机器人程序，并利用在线库学习算法将重复函数序列压缩为可复用的宏技能。通过消融实验与12人用户研究表明，评估引导的生成与所学抽象技能可提升任务成功率与可用性，同时降低用户编程负担。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可用性测试",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -37,11 +46,11 @@
     {
       "channel": "ur",
       "legacy_id": 21377,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "SkillComposer: Learning Reusable Skills for Natural-Language Robot Programming",
-  "title_zh": null,
+  "title_zh": "SkillComposer：面向自然语言机器人编程的可复用技能学习",
   "unified_ingested_at": "2026-08-18T02:57:20.908980Z",
   "url": "https://arxiv.org/abs/2608.14944v1",
   "volume": null,

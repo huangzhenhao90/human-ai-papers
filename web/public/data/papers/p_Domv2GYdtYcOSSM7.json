@@ -1,6 +1,9 @@
 {
   "abstract": "We report on the design and evaluation of MindReader, a tool that helps a user replace her password when she is required to do so. Left to their own devices, users tend to replace their previous passwords with predictable variations of the original ones. MindReader leverages LLMs to suggest password variations that are chosen to be easy for the user to remember but harder for an attacker to predict. To do this, MindReader infers the meaning behind original password components and then suggests semantically related (yet syntactically unrelated) components for the new password. In a user study, passwords created using MindReader were more secure than both replacement passwords created without using MindReader and original passwords. In particular, MindReader replacement passwords were harder to guess in an online attack than alternative replacement passwords even by an attacker with knowledge of the original password and full knowledge of the tool implementation. Passwords created with MindReader were also comparably memorable to alternative replacement passwords and original passwords, as measured by the ability of users to successfully log in a week after creating their password.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "AI 助手"
+  ],
   "arxiv_id": "2607.12148",
   "authors": [
     "Anna Gerchanovsky",
@@ -23,8 +26,11 @@
       "ai_reason": "LLM生成密码方案，含用户研究评估",
       "ai_score": 4.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "设计并评估MindReader工具，利用大语言模型推断用户原密码成分的语义，推荐语义相关但句法无关的新密码。用户研究表明，该工具生成的替换密码比用户自行更换的密码更难被在线猜测，即使攻击者了解原密码与工具实现细节；且一周后记忆效果与原密码及常规替换密码相当。",
+      "topic_tags": [
+        "可用性测试",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -41,11 +47,11 @@
     {
       "channel": "ur",
       "legacy_id": 15476,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "MindReader: Using LLMs to Encourage Memorable and Secure Password Replacement",
-  "title_zh": null,
+  "title_zh": "MindReader：利用LLM鼓励用户更换易记且安全的密码",
   "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
   "url": "https://arxiv.org/abs/2607.12148",
   "volume": null,

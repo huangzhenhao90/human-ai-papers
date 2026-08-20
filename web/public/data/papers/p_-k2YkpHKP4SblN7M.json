@@ -1,6 +1,10 @@
 {
   "abstract": "Large language models are increasingly used as synthetic research participants and are often validated by whether their marginal responses resemble human data. We study a fixed panel of sixteen lightweight persona-conditioned GPT-4.1 configurations in repeated strategic games. The panel met preregistered broad-reference condition-mean criteria in three of four repeated-game cells; the sole miss was 0.011 below the lower reference bound. Variation was strongly prompt-indexed, but its share depended on uncertainty assumptions: fixed-panel symmetric-Dirichlet sensitivities produced median between-prompt shares of 63%-71% under Jeffreys alpha=0.5 and 47%-53% under alpha=1, while finite-opportunity plug-in estimates were 85%-96%. Aggregate continuation-probability contrasts were +0.083 and +0.078, with conservative simultaneous 95% intervals [-0.171, +0.330] and [-0.181, +0.330]. The treatment jointly changed the continuation process and its textual representation. A separate wording-and-position operation shifted cooperation from 0/40 to 37/40 in the bare configuration, and a label conflict also revealed representation control. The original persona-level p13 result was not prospectively family-controlled, while a post-adjudication exact gate was structurally underpowered; p13 is therefore a replication target rather than a finding. External review exposed family-error, dependence, construct, and boundary-uncertainty defects, and zero-call reanalysis changed the interpretation without rewriting the historical record. The registered marginal criteria could be passed without precisely estimating the treatment-response object. A public capsule verifies 4,916 confirmatory Phase 3-5 runs with no live model calls. The results concern one fixed model-prompt panel and do not establish human substitutability.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "智能体/Agent"
+  ],
   "arxiv_id": "2608.00979",
   "authors": [
     "Yohei Nakajima"
@@ -15,8 +19,13 @@
       "ai_reason": "LLM合成被试方法学，涉用户研究方法",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究以 16 组 GPT-4.1 人格配置在重复博弈中作为合成被试的可靠性。结果显示面板虽能通过多数边缘均值校验，但提示词索引方差贡献在 47%–96% 之间（取决于先验），处理效应区间宽至 [-0.18, +0.33]，且措辞微调即可使合作率从 0/40 跃至 37/40。结论：LLM 人格面板通过粗略边缘检验成本低廉，但治疗效应估计极不精确，提示词级 p 值未经族系误差控制，不构成可复现的发现。",
+      "topic_tags": [
+        "用户研究方法",
+        "AI 采用",
+        "HCI",
+        "AI 治理"
+      ]
     }
   },
   "channels": [
@@ -33,11 +42,11 @@
     {
       "channel": "ur",
       "legacy_id": 15612,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Passing Coarse Marginal Checks Can Be Cheap: Persona Mixtures and Imprecise Treatment-Response Estimates in an LLM Persona Panel",
-  "title_zh": null,
+  "title_zh": "通过粗略边际检验成本可能很低：LLM人格面板中的人格混合与不精确处理效应估计",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.00979",
   "volume": null,

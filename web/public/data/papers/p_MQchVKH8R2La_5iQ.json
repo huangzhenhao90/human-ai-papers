@@ -1,6 +1,10 @@
 {
   "abstract": "Composite visualizations integrate multiple visualizations to represent complex datasets effectively, but their intrinsic composite designs often impose a high initial cognitive load on novice users. Existing visualization onboarding approaches are typically platform-dependent, require substantial manual authoring effort, and struggle with the structural complexity of composite visualizations, limiting their general applicability. We present VizPilot, an automated visualization onboarding approach that reverse-engineers composite visualization structure to generate interactive onboarding experiences directly from raw visualization artifacts. VizPilot consists of two modules: a Composite Visualization Analyzer and an Onboarding Interface. Leveraging Multimodal Large Language Models (MLLMs), the Analyzer employs a two-stage pipeline that decomposes a visualization into visual components, extracts structured explanations, and maps them to precise SVG elements for reliable highlighting and interaction. Implemented as a browser extension, VizPilot requires only a brief visualization description and optional interaction source code from the visualization developer to automatically generate onboarding content. The Onboarding Interface supports both guided narrative scrollytelling and free exploration, enabling users to learn visualization components progressively or on demand. We evaluate VizPilot through a comparative analysis of different input modalities, a usage scenario demonstrating reduced authoring effort, and a user study assessing its impact on users' cognitive load. The results demonstrate that VizPilot effectively automates the authoring of onboarding experiences while improving the usability and accessibility of composite visualizations.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "多模态",
+    "LLM",
+    "GenAI"
+  ],
   "arxiv_id": "2607.27938",
   "authors": [
     "N. Gnanavel",
@@ -19,8 +23,12 @@
       "ai_reason": "多模态LLM驱动的可视化引导，关注用户认知负荷与上手体验",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对复合可视化对新用户认知负荷高、现有引导方法依赖平台且需大量手工编写的问题，提出VizPilot——基于多模态大语言模型的自动化引导系统。它通过两阶段流水线逆向解析SVG可视化结构，提取组件与结构化解释并映射到精确SVG元素，以浏览器扩展形式自动生成引导内容，支持滚动叙事与自由探索模式。通过输入模态对比与使用场景评估验证了系统的有效性与通用性。",
+      "topic_tags": [
+        "可视化",
+        "人机交互(HCI)",
+        "用户体验(UX)"
+      ]
     }
   },
   "channels": [
@@ -37,11 +45,11 @@
     {
       "channel": "ur",
       "legacy_id": 15517,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "VizPilot: Automated Onboarding for SVG-based Composite Visualizations using Multimodal LLMs",
-  "title_zh": null,
+  "title_zh": "VizPilot：基于多模态大语言模型的SVG复合可视化自动引导",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.27938",
   "volume": null,

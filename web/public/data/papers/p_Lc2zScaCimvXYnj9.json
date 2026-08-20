@@ -1,9 +1,10 @@
 {
   "abstract": "When analyzing a sequence of customer interactions, it is important for firms to understand how these interactions align with key objectives, such as generating qualified customer leads, driving conversion events, or reducing churn. The authors introduce a transformer-based framework that models customer interactions in a sequence similar to how a sentence is modeled as a sequence of words by large language models. They propose a heterogeneous-mixture multihead self-attention mechanism that captures individual heterogeneity in touchpoint effects. The model identifies self-attention patterns that reflect both population-level trends and the unique relationships between touchpoints within each customer journey. By assigning varying weights to each attention head, the model accounts for the distinctive aspects of the journey of each user. This results in more accurate predictions, enabling precise targeting and outperforming existing approaches such as hidden Markov models, point process models, and long short-term memory (LSTM) models. This empirical application in a multichannel marketing context demonstrates how managers can leverage the model's features to identify high-potential customers for targeting. Extensive simulations further establish the model's superiority over competing approaches. Beyond multichannel marketing, the transformer-based model also has broad applicability in customer journeys across other domains.",
   "ai_type_tags": [
-    "机器学习",
+    "GenAI",
     "LLM",
-    "推荐算法"
+    "推荐算法",
+    "人机协作"
   ],
   "arxiv_id": null,
   "authors": [
@@ -14,14 +15,12 @@
     {
       "affiliation": [],
       "name": "Zipei Lu",
-      "orcid": "https://orcid.org/0009-0000-5003-6608",
-      "position": "first"
+      "orcid": "https://orcid.org/0009-0000-5003-6608"
     },
     {
       "affiliation": [],
       "name": "P.K. Kannan",
-      "orcid": "https://orcid.org/0000-0003-0738-0766",
-      "position": "last"
+      "orcid": "https://orcid.org/0000-0003-0738-0766"
     }
   ],
   "channel_profiles": {
@@ -40,8 +39,13 @@
       "ai_reason": "Transformer分析客户旅程，AI方法应用于CX",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对多渠道营销场景中客户接触点序列预测难题，提出基于Transformer的框架，将客户旅程类比为句子、接触点类比为词元，通过异质混合多头自注意力机制刻画不同客户在触点效应上的个体差异，同时捕获群体趋势与个体独特关系。该模型在识别高潜客户、预测转化与流失等任务上显著优于隐马尔可夫、点过程和LSTM等方法，为精准营销与客户旅程管理提供可解释且通用的序列建模工具。",
+      "topic_tags": [
+        "消费者行为",
+        "用户旅程",
+        "推荐系统",
+        "客户体验(CX)"
+      ]
     }
   },
   "channels": [
@@ -59,16 +63,16 @@
     {
       "channel": "ob",
       "legacy_id": 6283,
-      "revision": "16d8197c25611b5e68ec63478cb2ea87f5d52af4"
+      "revision": "799f0730dde06c94f7102d6ac21ab747fa438903"
     },
     {
       "channel": "ur",
       "legacy_id": 21215,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "AI for Customer Journeys: A Transformer Approach",
-  "title_zh": "客户旅程中的人工智能：一种Transformer方法",
+  "title_zh": "AI赋能客户旅程：基于Transformer的方法",
   "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
   "url": "https://doi.org/10.1177/00222437251347268",
   "volume": "63",

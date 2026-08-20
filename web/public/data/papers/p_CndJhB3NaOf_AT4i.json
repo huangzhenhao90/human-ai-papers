@@ -1,6 +1,9 @@
 {
   "abstract": "This study evaluates the effectiveness of utilising large language models (LLMs) to retrieve targeted segments from delivered video recordings to answer student questions in introductory programming environments. By restricting AI to identifying existing, educator-verified media rather than generating open-ended text, this approach aims to mitigate common pedagogical risks such as generative hallucinations and cognitive bypassing. We benchmarked three distinct models, two proprietary (Gemini 3.1 Pro and GPT 5.4 Pro) and one open-weight (Qwen3.5 397B), against a human lecturer's manual video selections. An automated judging framework subsequently assessed the outputs for relevance, sufficiency, redundancy, and the presence of extraneous material. While the AI-retrieved timestamps rarely shared exact overlaps with the human baseline, the proprietary models achieved near-parity with the expert in delivering sufficient and highly relevant answers. Furthermore, a pilot deployment of this retrieval system in a large C programming cohort (n~=900) demonstrated strong user engagement, with students primarily utilising the tool to review foundational concepts. By leveraging AI to retrieve established lecture material, this approach shows potential for a reliable, high-fidelity pathway for safely integrating LLMs into novice computing courses.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "AI 助手"
+  ],
   "arxiv_id": "2608.16131",
   "authors": [
     "Owen Tang",
@@ -23,8 +26,12 @@
       "ai_reason": "LLM教育应用评测,有学生场景但评估自动化",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究利用LLM从编程课教学视频中检索相关片段以回答学生问题，通过限制AI仅识别已有教学素材而非自由生成内容，降低幻觉与认知绕过等教学风险。比较Gemini、GPT与Qwen三种模型，在约900人C语言课程中试点验证。",
+      "topic_tags": [
+        "人机协作",
+        "AI 采用",
+        "信任"
+      ]
     }
   },
   "channels": [
@@ -41,11 +48,11 @@
     {
       "channel": "ur",
       "legacy_id": 21374,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Mitigating AI Risks in Computing Education via LLM-Driven Lecture Video Curation",
-  "title_zh": null,
+  "title_zh": "通过LLM驱动的讲座视频整理缓解计算教育中的AI风险",
   "unified_ingested_at": "2026-08-18T02:57:20.908980Z",
   "url": "https://arxiv.org/abs/2608.16131v1",
   "volume": null,

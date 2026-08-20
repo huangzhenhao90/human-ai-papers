@@ -1,6 +1,9 @@
 {
   "abstract": "In AI decision support, explainability (e.g., disclosing system weaknesses) should help users spot erroneous recommendations, but its efficacy may depend on task difficulty. We ran three experiments in a simulated medical visual detection task. In Experiment 1, we manipulated error difficulty (easy vs. difficult) and explainability (non-XAI vs. XAI). Experiment 2 added a virtually impossible error difficulty. Across both, explainability consistently reduced reliance on incorrect recommendations for difficult errors, showed no benefit for easy errors, and showed a small benefit for impossible errors. Experiment 3 varied error and task difficulty within-subjects and extended these patterns; as task difficulty rose, participants behaved less rationally, exhibiting both under- and overreliance. Notably, these behavioral benefits were generally not accompanied by reduced trust in the AI system. Our findings suggest that disclosing system weaknesses enhances detection of AI errors but is most effective for tasks of moderate difficulty where AI recommendations are still verifiable.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "可解释AI",
+    "人机协作"
+  ],
   "arxiv_id": null,
   "authors": [
     "Tobias Rieger",
@@ -43,8 +46,12 @@
       "ai_reason": "三项实验研究AI可解释性对用户决策影响",
       "ai_score": 5.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "通过三项医学视觉检测模拟实验，探究AI错误难度对可解释性效果的影响。结果发现：可解释性显著降低对困难错误建议的依赖，对简单错误无效，对不可能错误有小幅收益；任务难度升高时参与者出现欠依赖与过度依赖等非理性行为；这些行为改善并未伴随对AI系统信任的下降，提示暴露系统弱点对中等难度任务最有效。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "信任",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -61,11 +68,11 @@
     {
       "channel": "ur",
       "legacy_id": 17512,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "AI Error Difficulty Modulates the Effectiveness of Explainability in Decision Support Systems",
-  "title_zh": null,
+  "title_zh": "AI错误难度调节可解释性在决策支持系统中的有效性",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://doi.org/10.1145/3817603",
   "volume": "33",

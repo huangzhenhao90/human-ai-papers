@@ -1,6 +1,10 @@
 {
   "abstract": "People routinely interleave activities while browsing the web, often simultaneously and with overlapping boundaries. Yet organizational primitives in modern browsers treat every tab uniformly, offering no structural awareness of which items serve which purpose. While task-based organization approaches exist, they typically require users to manually organize or invoke reorganization features, and quickly fall out of sync as user intents evolve. To address this, we present Ito, a mixed-initiative approach that infers user intent in real time and organizes browsing activities into dynamic collections called Flows. Ito continuously reads unfolding user context, determines moment-to-moment focus, and creates, restructures, hibernates, and awakens Flows in real time while preserving user control through a mixed-initiative loop of proposals and corrections. In a controlled lab study (N=12) and a two-week field study (N=11), results suggest that Ito's intent-driven Flows aligned more closely with participants' mental models, facilitated task switching and navigation more effectively, and reduced management burden without loss of perceived control.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "AI 助手",
+    "智能体/Agent",
+    "人机交互"
+  ],
   "arxiv_id": "2608.09107",
   "authors": [
     "Elvin Hu",
@@ -31,8 +35,13 @@
       "ai_reason": "意图检测涉及AI，浏览器交互编排属HCI",
       "ai_score": 3.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "现有浏览器将所有标签页一视同仁，缺乏对用户多任务意图的结构感知。Ito系统通过实时推断用户意图，将浏览活动组织为动态\"Flows\"集合，在用户主导下持续创建、重构、休眠和唤醒任务流。实验室研究（N=12）与两周田野研究（N=11）表明，意图驱动的Flows更贴合用户心智模型，显著提升任务切换与导航效率，减轻管理负担而不损失用户感知控制。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "用户体验(UX)",
+        "可用性测试"
+      ]
     }
   },
   "channels": [
@@ -49,11 +58,11 @@
     {
       "channel": "ur",
       "legacy_id": 19990,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "ITO: Real-time Browser Tab Orchestration Through Intent Detection",
-  "title_zh": null,
+  "title_zh": "ITO：基于意图检测的实时浏览器标签页编排",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2608.09107v1",
   "volume": null,

@@ -1,6 +1,11 @@
 {
   "abstract": "Empathetic social robots should respond not only to what users say, but also to how their emotions dynamically evolve during interaction. However, existing empathetic dialogue systems are often text-centered and primarily model empathy as a one-way mapping from the user's emotion to the system response, limiting their ability to capture embodied speaker--listener affective exchange. We present AffectLoop, a multimodal speaker-listener emotion-dynamics-aware spoken dialogue system implemented on the Misty II robot. The system tracks the speaker's verbal and facial affective dynamics, estimates the robot listener's own verbal and behavioral affective state, and conditions LLM-based response generation on both affective streams. The robot then generates a short spoken empathetic response together with emotionally congruent embodied behavior, forming a closed speaker--listener affective loop. We evaluate the system in a pilot within-subject study with five participants, comparing it with an otherwise identical utterance-conditioned baseline that omits the speaker- and listener-affective-state inputs. The proposed system received higher overall impression ratings, especially for empathetic response and user satisfaction. Post-hoc log analysis further showed higher speaker-listener affective alignment and stronger valence-based distress recovery. These preliminary results suggest that explicitly modeling both speaker emotional dynamics and listener affective state can improve embodied empathetic interaction.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "对话式 AI",
+    "情感识别"
+  ],
   "arxiv_id": "2608.16686",
   "authors": [
     "Zi Haur Pang",
@@ -23,8 +28,13 @@
       "ai_reason": "社交机器人情感交互系统,核心HRI用户研究",
       "ai_score": 4.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对现有共情对话系统多以文本为中心、缺乏对说话者—听者情感动态交互建模的问题，提出 AffectLoop 多模态情感对话系统，部署在 Misty II 机器人上，同时跟踪说话者言语与面部情感动态、估计机器人听者自身情感状态，并以此条件化 LLM 回复生成。5 人被试内实验显示，该系统在共情回复、用户满意度和情感对齐方面优于仅基于话语的基线，初步验证双向情感闭环建模对具身共情机器人的价值。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "情感计算",
+        "多模态交互",
+        "AI 助手"
+      ]
     }
   },
   "channels": [
@@ -41,11 +51,11 @@
     {
       "channel": "ur",
       "legacy_id": 21373,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Closing the Affective Loop: Multimodal Speaker-Listener Emotion-Dynamics-Aware Empathetic Social Robots",
-  "title_zh": null,
+  "title_zh": "闭合情感环：融合说话者—倾听者情感动态感知的多模态移情社交机器人",
   "unified_ingested_at": "2026-08-18T02:57:20.908980Z",
   "url": "https://arxiv.org/abs/2608.16686v1",
   "volume": null,

@@ -1,6 +1,11 @@
 {
   "abstract": "Lawyers and self-represented litigants are already using artificial intelligence (AI) to draft legal documents, and courts are responding with rules. After more than 1,500 cases involving AI hallucinations, lawyers have been instructed to perform careful, independent review of AI-assisted filings. Discharging these duties requires what the human-computer interaction (HCI) literature calls ``appropriate reliance,'' which cannot be calibrated without evidence on how often, how badly, and how detectably these tools fail at legal work. Existing research barely describes any of the three. We analyze the official record of the New York court system. The documents repeatedly call for evidence that does not exist (e.g., error rates, do-not-use lists). In its place they invoke procedure, including training mandates, checklists, and uncalibrated human review. The burden falls hardest on those least equipped to bear it: legal aid programs are told to track their own error rates, and judges are left to improvise their own tests. The paper makes four contributions: (1) a mapping from the legal duties to concepts in HCI; (2) a set of requirements elicited from the official record; (3) an analysis of how the legal system substitutes process for evidence; and (4) a research agenda for computing, including task taxonomies, shared error metrics, maintained benchmarks, and test harnesses for evaluations on private data. The computing community must supply what the justice system lacks; in doing so, it can help close, rather than widen, the justice gap.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "可解释 AI",
+    "AI 助手"
+  ],
   "arxiv_id": "2607.28869",
   "authors": [
     "James Williams"
@@ -15,8 +20,13 @@
       "ai_reason": "法律AI适当依赖，HCI核心理念与用户视角",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究法律领域如何对AI建立适当依赖（appropriate reliance）。分析纽约法院系统官方记录，发现法官与诉讼参与人已在大量案件中遭遇AI幻觉，但法庭所要求的错误率、禁用清单等证据几乎不存在，转而以培训、清单与未校准的人工审查等程序性要求替代，负担集中于法律援助机构与法官。贡献：将法律义务映射至HCI概念，提出包含任务分类、共享错误指标、基准与私有数据测试的研究议程。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "AI 治理",
+        "信任",
+        "伦理"
+      ]
     }
   },
   "channels": [
@@ -33,11 +43,11 @@
     {
       "channel": "ur",
       "legacy_id": 15734,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "From Process to Evidence: How Computing Can Ground Appropriate Reliance on Legal AI",
-  "title_zh": null,
+  "title_zh": "从过程到证据：计算如何为合理信赖法律人工智能提供依据",
   "unified_ingested_at": "2026-08-14T04:11:52.462483Z",
   "url": "https://arxiv.org/abs/2607.28869",
   "volume": null,

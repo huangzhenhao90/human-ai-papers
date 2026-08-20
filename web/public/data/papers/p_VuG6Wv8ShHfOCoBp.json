@@ -1,6 +1,11 @@
 {
   "abstract": "Large language models (LLMs) are shifting game generation from offline automation toward play-driven modification through natural language interaction. In this work, we present a play-driven game editing system that enables players to modify a retro Space Invaders - style arcade game through voice-based natural-language commands during play. Spoken instructions are interpreted by an LLM and translated into structured updates of internal configuration parameters, allowing iterative play - edit - feedback cycles in an invader-style game environment without exposing underlying system details. The game includes approximately 100 editable configuration fields controlling mechanics, visuals, interaction patterns, and audio behavior, enabling gameplay transformation through incremental parameter changes. To investigate how users experience play-driven AI-mediated editing (RQ1) and how emergent editing patterns relate to variations in player experience (RQ2), we conducted a user study combining subjective evaluations, workload measures, and log-based analysis of editing behavior. Participants were able to modify gameplay with generally positive experiences and moderate workload, and interaction outcomes did not strongly depend on prior programming experience. Editing-log analysis revealed distinct experiential tendencies: adjustments to immediately perceptible parameters were associated with higher usability, whereas edits affecting core gameplay structures were more closely associated with enjoyment. Post-session reflections further identified diverse editing strategies, including exploratory experimentation, goal-driven structural modification, and iterative parameter tuning. These findings demonstrate that voice-driven editing can support accessible, play-driven human - AI co-creation within a structured invader-style arcade game environment.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "对话式 AI",
+    "AI 助手"
+  ],
   "arxiv_id": "2607.10711",
   "authors": [
     "Maya Grace Torii",
@@ -23,8 +28,13 @@
       "ai_reason": "LLM核心驱动游戏编辑，HCI交互评估实质",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "构建基于LLM的语音驱动游戏编辑系统，让玩家在游玩《太空侵略者》风格街机时通过自然语言指令实时修改约100项游戏配置参数。用户研究结合主观评价、任务负荷量表与编辑日志分析，发现整体体验积极、负荷适中，且效果不依赖编程经验；日志分析显示，修改可直接感知的参数与更高可用性相关，而改动核心玩法结构则带来不同体验倾向。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可用性测试",
+        "用户研究方法",
+        "游戏设计"
+      ]
     }
   },
   "channels": [
@@ -41,11 +51,11 @@
     {
       "channel": "ur",
       "legacy_id": 15532,
-      "revision": "f9c171a3e1ebde64da4467af99a330c55288306c"
+      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
     }
   ],
   "title": "Lottery and Sprint Arcade: Enabling Player-Driven Game Editing with Generative AI",
-  "title_zh": null,
+  "title_zh": "Lottery and Sprint Arcade：基于生成式AI实现玩家驱动的游戏编辑",
   "unified_ingested_at": "2026-08-16T03:02:59.610711Z",
   "url": "https://arxiv.org/abs/2607.10711",
   "volume": null,
