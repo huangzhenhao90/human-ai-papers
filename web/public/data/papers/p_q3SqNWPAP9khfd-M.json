@@ -1,8 +1,9 @@
 {
   "abstract": null,
   "ai_type_tags": [
-    "智能体/Agent",
-    "人机交互"
+    "人机交互",
+    "算法管理",
+    "机器人"
   ],
   "arxiv_id": null,
   "authors": [
@@ -22,6 +23,17 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "自动驾驶监督属人因/AI交叉",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "研究人类操作员同时监管多辆自动驾驶车辆时的认知负荷与控制感问题，探讨在何种车辆数量阈值下操作员会感到过载、低载或可控，为自动驾驶车队的人机监督配比与界面设计提供人因学依据。",
+      "topic_tags": [
+        "人机协作",
+        "工作设计",
+        "工作未来"
+      ]
+    },
     "ur": {
       "ai_reason": "监督自动驾驶车辆的人因HCI研究",
       "ai_score": 3.0,
@@ -36,6 +48,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 5,
@@ -47,13 +60,18 @@
   "pdf_url": null,
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 58003,
+      "revision": "7f4e6d3cb5173d9a2e99145960e0bd859d1e4e07"
+    },
+    {
       "channel": "ur",
       "legacy_id": 21849,
-      "revision": "94c4f28f030999ac46fe6869344cd11e380a5b82"
+      "revision": "dfd2656cb9dff1e8db061e471ac618dc481cce45"
     }
   ],
   "title": "Overloaded, underloaded or in control: How many automated vehicles can one person supervise?",
-  "title_zh": "过载、低载或可控：一人可监管多少辆自动驾驶车辆？",
+  "title_zh": "过载、低载还是可控：一人能监督多少辆自动驾驶车辆？",
   "unified_ingested_at": "2026-08-20T02:58:50.900771Z",
   "url": "https://doi.org/10.1016/j.chb.2025.108690",
   "volume": "170",

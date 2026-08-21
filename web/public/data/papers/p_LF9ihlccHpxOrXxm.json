@@ -1,0 +1,80 @@
+{
+  "abstract": "Prosodic cues can convey task-relevant information that alters the trajectory and outcome of a task-oriented dialogue, even when the words themselves remain unchanged. Yet existing benchmarks typically evaluate prosodic perception, response appropriateness, and task-oriented dialogue in isolation, making it difficult to test whether prosodic evidence changes downstream decisions. We introduce Hear2Act, a unified evaluation protocol for text and spoken assistants with 480 persona-grounded scenarios, hidden user concerns, and objectively verifiable outcomes. For each scenario, we keep the task and user needs fixed while varying whether the same concern is conveyed explicitly in words or primarily through prosody, and evaluate decisions under transcript, audio, and concern-state access.   Using Hear2Act, we evaluate two audio-capable LLMs. Under Prosody-mediated feedback, adding audio to the transcript changes the average optimal-solution rate only from 14.6% to 15.3%. In contrast, when models infer the concern status from audio, represent it in text, and use it for next-action selection, the rate rises to 39.6%, close to 40.7% with the ground-truth state. This contrast, however, largely disappears under Explicit lexical feedback, where the concern is verbally mentioned in the utterance. Together, these results show that prosody matters when lexical evidence is insufficient, and that audio-capable LLMs can recover information from speech but do not reliably carry it into action without an explicit intermediate representation.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "对话式 AI",
+    "AI 助手"
+  ],
+  "arxiv_id": "2608.19515",
+  "authors": [
+    "Xinyi Liu",
+    "Hooshang Nayyeri",
+    "Dilek Hakkani-Tur",
+    "Emine Yilmaz",
+    "JK Kim"
+  ],
+  "authors_full": [
+    {
+      "name": "Xinyi Liu"
+    },
+    {
+      "name": "Hooshang Nayyeri"
+    },
+    {
+      "name": "Dilek Hakkani-Tur"
+    },
+    {
+      "name": "Emine Yilmaz"
+    },
+    {
+      "name": "JK Kim"
+    },
+    {
+      "name": "Yifei Zhang"
+    },
+    {
+      "name": "Charith Peris"
+    },
+    {
+      "name": "Hari Thadakamalla"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "语音助手评测含persona与用户关切，有HCI成分",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究语音助手在任务对话中如何处理韵律暗示的用户关切。Hear2Act 基准包含480个场景，固定任务与需求，变化关切是否以韵律而非词汇传达。仅靠韵律传递关切时，加入音频仅将最优解率从14.6%提升至15.3%，但将韵律推断的关切显式表示并用于下一步决策可提升至39.6%，接近真实状态下的40.7%；而词汇明确提及关切时差距消失。说明当前音频LLM能提取韵律信息但难以可靠地据此行动。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "对话式 AI",
+        "可用性测试",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-20",
+  "doi": null,
+  "id": "p_LF9ihlccHpxOrXxm",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2608.19515v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 22252,
+      "revision": "dfd2656cb9dff1e8db061e471ac618dc481cce45"
+    }
+  ],
+  "title": "Hear2Act: Benchmarking When Prosody Should Change What an Assistant Does",
+  "title_zh": "Hear2Act：韵律何时应改变助手行为的基准测试",
+  "unified_ingested_at": "2026-08-21T03:04:30.870587Z",
+  "url": "https://arxiv.org/abs/2608.19515v1",
+  "volume": null,
+  "year": 2026
+}
