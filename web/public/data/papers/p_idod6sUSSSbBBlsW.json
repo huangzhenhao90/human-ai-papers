@@ -1,10 +1,8 @@
 {
   "abstract": "Sales managers are unlikely to reap the benefits of implementing predictive analytics applications when salespeople show aversion to or lack understanding of these applications. For managers, it is essential to understand which factors mitigate or exacerbate these challenges. This article investigates these factors by studying the implementation of an application that predicts customer churn. Using 9.7 million transactions from a business-to-business company, the authors develop a predictive model of customer churn, implement it in a field experiment, and study its treatment effects using causal forests. Furthermore, the authors manipulate one specific mitigation strategy proposed by prior literature: the fostering of users’ realistic expectations regarding the accuracy of an algorithm. The results show that the effectiveness of the churn prediction application strongly depends on customer characteristics (most importantly the predicted churn probability and prior revenue) and salesperson characteristics (technology perceptions, abilities, and selling orientations). Fostering realistic expectations improves the effectiveness of the churn prediction only under very specific circumstances. Two follow-up stimuli-based experiments conceptually replicate key results of the field study. Therefore, this article helps build theory on predictive sales analytics and provides specific guidance to managers aiming to increase their return on analytics investments.",
   "ai_type_tags": [
-    "预测分析",
-    "机器学习",
-    "因果森林",
-    "算法决策"
+    "推荐算法",
+    "人机协作"
   ],
   "arxiv_id": null,
   "authors": [
@@ -41,12 +39,25 @@
         "算法管理",
         "因果推断"
       ]
+    },
+    "ur": {
+      "ai_reason": "核心研究销售员对预测分析算法的使用与感知，实地实验",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究销售场景中预测分析工具（客户流失预测）的有效实施。基于970万笔B2B交易构建预测模型，通过田野实验与因果森林识别处理效应，并辅以两项刺激实验进行概念复制。结果显示工具效果取决于客户特征（流失概率、历史收入）与销售人员特征（技术感知、能力、销售导向）；培养用户对算法准确性的合理期望仅在特定情境下提升效果。",
+      "topic_tags": [
+        "AI 采用",
+        "人机协作",
+        "用户研究方法",
+        "消费者行为"
+      ]
     }
   },
   "channels": [
-    "ob"
+    "ob",
+    "ur"
   ],
-  "cited_by": 38,
+  "cited_by": 47,
   "date": "2023-05-07",
   "doi": "10.1177/00222437221151039",
   "id": "p_idod6sUSSSbBBlsW",
@@ -57,7 +68,12 @@
     {
       "channel": "ob",
       "legacy_id": 6324,
-      "revision": "7f4e6d3cb5173d9a2e99145960e0bd859d1e4e07"
+      "revision": "54ccf3959fb56d3056bf8e677aee239d8bec6f3d"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 18935,
+      "revision": "fb5d17b7b746d0fc85abb7440ca3d3c0b0c4ad69"
     }
   ],
   "title": "Effective Implementation of Predictive Sales Analytics",
