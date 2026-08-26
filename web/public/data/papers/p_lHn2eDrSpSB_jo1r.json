@@ -1,0 +1,92 @@
+{
+  "abstract": "Simulating realistic user shopping behavior underpins offline evaluation and reinforcement learning in e-commerce scenarios. While recent LLM- and VLM-based simulators have made encouraging progress, reproducing a real browsing session remains difficult for two reasons. (i) Memory Challenge: a shopping session spans dozens of pages, yet existing agents either discard long-range observation histories, losing the evolving user state, or naively concatenate them, overwhelming the context window and even degrading simulation quality. (ii) Optimization Challenge: current user simulators are typically supervised to match each logged action via imitation or step-level rewards; the resulting sessions often display unrealistic patterns, such as over-exploration or excessive passivity, which per-step supervision can neither detect nor correct.   To address the above challenges, we present RecVerse, a GUI-grounded simulation agent that perceives pages through screenshots and produces faithful multi-turn trajectories. For the memory challenge, RecVerse adopts a cognitive-inspired hierarchical memory: Working Memory for short-term focus, Episodic Memory for in-session traces, and Preference Memory for high-level intent, with memory updates treated as actions so that the agent adaptively learns when and what to memorize. For the optimization challenge, RecVerse is optimized with a trajectory-level RL objective that scores entire sessions, aligning both macro-level action-type distributions and micro-level shopping intent with real users. We further release USB (User Simulation Benchmark), an interactive e-commerce GUI trajectory dataset for multi-turn user simulation. Experiments show that RecVerse significantly outperforms existing baselines in both behavioral fidelity and intent consistency.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "智能体/Agent",
+    "AI 推荐"
+  ],
+  "arxiv_id": "2608.20707",
+  "authors": [
+    "Jiakai Tang",
+    "Yan Mi",
+    "Jing Yu",
+    "Yang Zhang",
+    "See-Kiong Ng"
+  ],
+  "authors_full": [
+    {
+      "name": "Jiakai Tang"
+    },
+    {
+      "name": "Yan Mi"
+    },
+    {
+      "name": "Jing Yu"
+    },
+    {
+      "name": "Yang Zhang"
+    },
+    {
+      "name": "See-Kiong Ng"
+    },
+    {
+      "name": "Qi Cao"
+    },
+    {
+      "name": "Fei Sun"
+    },
+    {
+      "name": "Xu Chen"
+    },
+    {
+      "name": "Wen Chen"
+    },
+    {
+      "name": "Jian Wu"
+    },
+    {
+      "name": "Han Zhu"
+    },
+    {
+      "name": "Bo Zheng"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心是LLM模拟用户购物行为，AI为中心，用户视角为模拟对象",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对电商场景下LLM/VLM用户模拟器难以复现真实浏览过程的两大难题（长程记忆丢失/上下文过载、逐步监督致行为失真），提出RecVerse：基于截图的GUI代理，采用认知启发的分层记忆（工作/情景/偏好记忆）并将记忆更新作为可学习动作，配合轨迹级强化学习优化全局动作分布，生成更真实的多轮购物轨迹以支持离线评估与策略学习。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "推荐系统",
+        "用户研究方法",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-21",
+  "doi": null,
+  "id": "p_lHn2eDrSpSB_jo1r",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2608.20707v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 22811,
+      "revision": "fd75c9fccb9a10d9c5b1d6c791e4c1ce1f930b08"
+    }
+  ],
+  "title": "Towards Faithful Simulation of Human Shopping Behavior",
+  "title_zh": "迈向人类购物行为的忠实仿真",
+  "unified_ingested_at": "2026-08-26T03:08:17.087787Z",
+  "url": "https://arxiv.org/abs/2608.20707v1",
+  "volume": null,
+  "year": 2026
+}

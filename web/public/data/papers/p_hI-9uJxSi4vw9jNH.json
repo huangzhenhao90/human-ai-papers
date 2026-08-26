@@ -1,9 +1,9 @@
 {
   "abstract": "Sentiment analysis has fundamentally changed marketers’ ability to assess consumer opinion. Indeed, the measurement of attitudes via natural language has influenced how marketing is practiced on a day-to-day basis. Yet recent findings suggest that sentiment analysis's current emphasis on measuring valence (i.e., positivity or negativity) can produce incomplete, inaccurate, and even misleading insights. Conceptually, the current work challenges sentiment analysis to move beyond valence. The authors identify the certainty or confidence of consumers’ sentiment as a particularly potent facet to assess. Empirically, they develop a new computational measure of certainty in language—the Certainty Lexicon—and validate its use with sentiment analysis. To construct and validate this measure, the authors use text from 11.6 million people who generated billions of words, millions of online reviews, and hundreds of thousands of entries in an online prediction market. Across social media data sets, in-lab experiments, and online reviews, the authors find that the Certainty Lexicon is more comprehensive, generalizable, and accurate in its measurement compared with other tools. The authors also demonstrate the value of measuring sentiment certainty for marketers: certainty predicted the real-world success of commercials where traditional sentiment analysis did not. The Certainty Lexicon is available at www.CertaintyLexicon.com .",
   "ai_type_tags": [
-    "自然语言处理",
-    "情感分析",
-    "计算语言学"
+    "情感识别",
+    "LLM",
+    "AI 问卷生成"
   ],
   "arxiv_id": null,
   "authors": [
@@ -51,8 +51,13 @@
       "ai_reason": "NLP/情感分析方法，应用于消费者语言",
       "ai_score": 3.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对情感分析仅关注效价(正负)而忽视确定性导致结果片面甚至误导的问题，提出应超越效价测量消费者语言中的确信程度。研究开发并验证了\"确定性词典\"，基于1100万人社交媒体、在线评论与预测市场数据，在多场景中证明其比传统工具更全面准确，并能预测广告实际效果。",
+      "topic_tags": [
+        "情感计算",
+        "消费者行为",
+        "营销",
+        "AI 用户画像"
+      ]
     }
   },
   "channels": [
@@ -70,16 +75,16 @@
     {
       "channel": "ob",
       "legacy_id": 6285,
-      "revision": "f6fbb592909715cf4ca16c8435d88bd7f967cf77"
+      "revision": "2d1e48189fb6e3dac40ca3f105e829afbbbf9e99"
     },
     {
       "channel": "ur",
       "legacy_id": 21216,
-      "revision": "3efc6f30604a10c58e4628b6929175cb7bd10638"
+      "revision": "fd75c9fccb9a10d9c5b1d6c791e4c1ce1f930b08"
     }
   ],
   "title": "Beyond Sentiment: The Value and Measurement of Consumer Certainty in Language",
-  "title_zh": "超越情感：语言中消费者确定性的价值与测量",
+  "title_zh": "超越情感分析：语言中消费者确定性的价值与测量",
   "unified_ingested_at": "2026-07-12T08:03:25.068701Z",
   "url": "https://doi.org/10.1177/00222437221134802",
   "volume": "60",

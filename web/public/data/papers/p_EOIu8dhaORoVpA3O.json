@@ -1,0 +1,62 @@
+{
+  "abstract": "Memory systems for conversational LLMs are conventionally evaluated by direct, fact-seeking questions about prior dialogue (Direct QA): can the model recall fact X from a prior conversation? We tested whether higher Direct QA accuracy correlates with higher user satisfaction in a 4-month deployment (40 users, 1,872 sessions, 7 memory conditions). Existing-benchmark Direct QA varies from 19.7% to 70.1% across the 7 conditions, but satisfaction does not change. We hypothesize that existing benchmarks and user satisfaction are tracking different capabilities: benchmarks measure elicited retrieval (recall when asked), while conversation requires natural integration (detecting relevance and naturally weaving prior context into a response). To examine this, we introduce MemUse, a set of real user-cued memory moments drawn from the deployment, scored by an integration-aware judgment of the natural conversational response. Holding the model and context fixed, the same system that scores 78.8% on Direct QA references only 7.9% of those facts in conversation -- a 71-point gap. Within these moments, Natural Integration is associated with satisfaction, whereas Direct QA is not. We release the deployment corpus and MemUse together with all judgments and scoring prompts at https://github.com/ryuichi-sumida/memuse.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 助手"
+  ],
+  "arxiv_id": "2608.24189",
+  "authors": [
+    "Ryuichi Sumida",
+    "Koji Inoue",
+    "Tatsuya Kawahara"
+  ],
+  "authors_full": [
+    {
+      "name": "Ryuichi Sumida"
+    },
+    {
+      "name": "Koji Inoue"
+    },
+    {
+      "name": "Tatsuya Kawahara"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "4个月部署研究，40用户1872会话，核心用研方法",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究质疑对话式LLM记忆系统以\"直接问答\"评测的有效性。4个月实地部署（40用户、1872会话、7记忆条件）显示，直接问答准确率19.7%—70.1%差异与用户满意度无关。提出MemUse评测框架，聚焦\"自然整合\"能力——同一系统在直接问答上得分78.8%，在自然整合上仅7.9%，差距71分。自然整合与满意度相关，直接问答则不相关。",
+      "topic_tags": [
+        "用户研究方法",
+        "可用性测试",
+        "人机交互(HCI)",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-25",
+  "doi": null,
+  "id": "p_EOIu8dhaORoVpA3O",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2608.24189v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 23901,
+      "revision": "fd75c9fccb9a10d9c5b1d6c791e4c1ce1f930b08"
+    }
+  ],
+  "title": "MemUse: Moving Memory Evaluation from Direct QA to Natural Integration in Long-Term Human-AI Conversation",
+  "title_zh": null,
+  "unified_ingested_at": "2026-08-26T03:08:17.087787Z",
+  "url": "https://arxiv.org/abs/2608.24189v1",
+  "volume": null,
+  "year": 2026
+}
