@@ -1,0 +1,85 @@
+{
+  "abstract": "AI-powered digital avatar streamers must answer product questions, engage viewers, and execute marketing strategies in real time, demanding low latency, frequent strategy updates, and accurate yet effective responses. Evolvable Harnesses, whose Skills, Hooks, prompts, and tools can be updated independently of model weights, enable rapid iteration but expose a trade-off: large models adapt zero-shot yet are too slow, whereas compact models meet latency targets but overfit to fixed Harness configurations. We propose Harness-Aware Training (HAT), which trains compact models to adapt to changing Harnesses. Its key component, Harness-State Augmentation (HSA), applies task-preserving transformations to Skill identifiers and content, tool schemas, prompt structures, and Hook functions. Training proceeds in three stages: HSA-SFT learns reasoning and tool use from strong-model trajectories across diverse environments; General On-Policy Distillation restores generalization lost during SFT; and HSA-RL improves robustness to changing Harnesses through reinforcement learning in augmented environments. Across four evaluation sets, HAT achieves 94.8 on Live-Stream QA (base: 80.3; strongest general LLM: 93.0) and 94.6 on Harness-Variant QA (base: 75.4). Unlike Fixed-Harness SFT, which lowers IFEval by 7.7 points from the base model, HAT avoids this regression and reaches 83.5. On one NVIDIA H20 GPU, the optimized system delivers P50 and P95 latencies of 3.4 s and 8.1 s. Deployed in Taobao Live's digital-avatar service, it also yields positive online A/B test results for GMV and item-page views.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "机器学习",
+    "人机交互"
+  ],
+  "arxiv_id": "2608.15763",
+  "authors": [
+    "TaoLive AIGC LLM Team",
+    "Yuhan Sun",
+    "Wenhao Lin",
+    "Yongdong Luo",
+    "Yibo Hu"
+  ],
+  "authors_full": [
+    {
+      "name": "TaoLive AIGC LLM Team"
+    },
+    {
+      "name": "Yuhan Sun"
+    },
+    {
+      "name": "Wenhao Lin"
+    },
+    {
+      "name": "Yongdong Luo"
+    },
+    {
+      "name": "Yibo Hu"
+    },
+    {
+      "name": "Meiguang Jin"
+    },
+    {
+      "name": "Junfeng Ma"
+    },
+    {
+      "name": "Weihang Pan"
+    },
+    {
+      "name": "Jiaxin Zhao"
+    },
+    {
+      "name": "Zulong Chen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI数字人直播代理，营销应用但偏技术",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对AI数字人直播中大模型延迟高、小模型易过拟合Harness配置的矛盾，提出Harness感知训练（HAT）。核心是Harness状态增强（HSA），对技能标识、工具模式、提示结构、Hook函数做任务保持变换，经HSA-SFT、通用在线策略蒸馏和HSA-RL三阶段训练。直播问答94.8分、Harness变体问答94.6分且不引起IFEval回归，P95延迟8.1秒，已部署淘宝直播。",
+      "topic_tags": [
+        "推荐系统",
+        "营销",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-16",
+  "doi": null,
+  "id": "p_Wyp0x5mI5shYZaas",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2608.15763v2",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 62088,
+      "revision": "f501cbaffd95e09508e972f853f2a3ba12e6ded5"
+    }
+  ],
+  "title": "Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report",
+  "title_zh": "训练智能体与其运行环境协同进化：TaoLive 数字化身智能体技术报告",
+  "unified_ingested_at": "2026-08-27T12:29:12.608241Z",
+  "url": "https://arxiv.org/abs/2608.15763v2",
+  "volume": null,
+  "year": 2026
+}

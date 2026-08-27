@@ -12195,7 +12195,12 @@
     "abstract": "Trust in AI for emotional support is not universal; it is shaped by who users are, where they come from, and what they value. Yet research in this area lacks validated psychometric instruments for assessing user perceptions in affective AI contexts and large-scale evidence on how trust formation varies across user segments. To address these gaps, we develop and validate a seven-construct psychometric scale, test a Structural Equation Model (SEM) linking system attributes to Trust and Perceived Benefits as mediators of Actual System Use, and conduct a Multi-Group Analysis (MGA) across five sociodemographic dimensions (gender, age, education, socioeconomic status, cross-national region), drawing on 1,343 active users from seven countries. We find that users experience empathy and anthropomorphism as a unified \"Humanlikeness\" construct, and that Privacy, Personalization, and Humanlikeness drive Trust while Perceived Bias degrades it. Notably, adoption logic diverges across groups: Privacy shapes women's trust more than men's, Anglosphere (UK, USA) users respond more positively to Humanlikeness than Europeans, and educated and higher-income users require Trust to engage, whereas older adults and lower socioeconomic groups bypass it entirely, relying on perceived practical benefits (e.g., 24/7 availability, non-judgmental support). Our findings extend technology acceptance theory and inform the equitable design of emotional support AI.",
     "ai_reason": "1343用户多国SEM+MGA情感AI信任大规模用研",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "AI助手",
+      "情感识别"
+    ],
     "authors": [
       "Natalia Amat-Lefort",
       "Mert Yazan",
@@ -12228,8 +12233,14 @@
     "scored_at": "2026-08-24T03:03:29.386787",
     "title": "Who Trusts AI with Their Emotions? Trust Formation and Sociodemographic Variation in LLM Use for Emotional Support",
     "title_zh": "谁将情感托付AI？LLM情感支持中的信任形成与社会人口学差异",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对LLM情感支持场景，开发并验证七构念心理测量量表，基于7国1343名活跃用户数据，运用SEM与多群组分析检验信任形成机制。发现同理心与拟人化构成统一\"人类相似性\"构念，隐私、个性化和人类相似性驱动信任，感知偏见削弱信任；不同性别、年龄、教育、收入与地区群体的采纳逻辑显著分化。",
+    "topic_tags": [
+      "信任",
+      "问卷",
+      "用户研究方法",
+      "AI采用",
+      "情感计算"
+    ],
     "url": "https://arxiv.org/abs/2608.21220v1",
     "volume": null,
     "year": 2026
@@ -12425,7 +12436,12 @@
     "abstract": "Explainable AI (XAI) research has produced a plethora of explanation techniques, yet user studies repeatedly show that available explanations are not effective in practice. We argue that, given the siloed nature of conventional XAI, users are struggling to select the appropriate XAI technique. Viewing XAI through a philosophical lens, we offer a formalization of what we call the selection problem: the systematic failure of XAI interfaces to bridge the gap between a user's natural-language uncertainty and the explanation technique that resolves it. Following a logical premise-conclusion format, we show that conventional interfaces require users to translate their uncertainty into a technique selection, a challenging prerequisite to meet. We also propose a structural solution: a multi-agent LLM orchestration tool that translates the user's query to the proper XAI explanation technique. We provide an example of how this structural solution could be instantiated to address the selection problem.",
     "ai_reason": "XAI选择问题概念分析，有用户视角",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "可解释AI",
+      "人机交互"
+    ],
     "authors": [
       "Claire Vlases",
       "Katelyn Morrison"
@@ -12450,8 +12466,12 @@
     "scored_at": "2026-08-26T03:03:42.121074",
     "title": "Addressing the Selection Problem in Explainable AI",
     "title_zh": "应对可解释人工智能中的选择问题",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "XAI领域长期存在\"选择问题\"：用户难以将自然语言描述的不确定性与合适的解释技术匹配。以哲学视角形式化该问题后，论文论证传统界面要求用户自行完成技术选择这一高门槛任务，并提出基于多智能体LLM编排工具的结构性方案，自动将用户查询翻译为恰当的XAI技术。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互(HCI)",
+      "人机协作"
+    ],
     "url": "https://arxiv.org/abs/2608.22356v1",
     "volume": null,
     "year": 2026
@@ -12499,7 +12519,7 @@
     "pdf_url": "https://arxiv.org/pdf/2608.24297v1",
     "scored_at": "2026-08-26T03:03:41.770559",
     "title": "When AI \"Works,\" When Does Help Begin?: Intergenerational Support Around Older Adults' LLM Usage",
-    "title_zh": null,
+    "title_zh": "当AI\"有效\"时，援助何时开始？：围绕老年人LLM使用的代际支持",
     "tldr": "研究通过半结构化访谈与情境出声思考（6位老人、7位年轻家属），探讨老年人使用LLM时的代际支持。老人用LLM减少对家属依赖，家属仍作为选择性支持渠道保留；但因LLM很少产生可见操作故障，年轻家属缺乏介入信号，转而依赖老人部分披露和自我设限。提出设计启示：知情同意求助机制、保留老人任务所有权的学习型支持。",
     "topic_tags": [
       "访谈",
@@ -12776,7 +12796,7 @@
     "pdf_url": "https://arxiv.org/pdf/2608.24189v1",
     "scored_at": "2026-08-26T03:03:41.769366",
     "title": "MemUse: Moving Memory Evaluation from Direct QA to Natural Integration in Long-Term Human-AI Conversation",
-    "title_zh": null,
+    "title_zh": "MemUse：将记忆评估从直接问答转向长期人机对话中的自然融合",
     "tldr": "研究质疑对话式LLM记忆系统以\"直接问答\"评测的有效性。4个月实地部署（40用户、1872会话、7记忆条件）显示，直接问答准确率19.7%—70.1%差异与用户满意度无关。提出MemUse评测框架，聚焦\"自然整合\"能力——同一系统在直接问答上得分78.8%，在自然整合上仅7.9%，差距71分。自然整合与满意度相关，直接问答则不相关。",
     "topic_tags": [
       "用户研究方法",
@@ -12974,7 +12994,7 @@
     "pdf_url": "https://arxiv.org/pdf/2608.24654v1",
     "scored_at": "2026-08-26T03:03:41.768863",
     "title": "Expectation, Backlash, Recovery, and Excitement: How Model Releases Shape Reddit Perceptions of Conversational AI Systems",
-    "title_zh": null,
+    "title_zh": "期待、反弹、复苏与振奋：模型发布如何塑造Reddit对话式AI系统的认知",
     "tldr": "研究通过大规模分析Reddit讨论，考察不同对话式AI（Anthropic、OpenAI、Grok、DeepSeek）在模型发布前后用户感知的变化。结合情感分类与主题概念分析，发现用户感知是动态且对发布敏感的：Anthropic因Claude Code等产品契合呈正面；OpenAI围绕GPT-5呈现反弹—恢复；Grok-3受政治话语与提供者身份影响；DeepSeek-R1兼具工程赞誉与审查、可靠性担忧。",
     "topic_tags": [
       "用户研究方法",
@@ -13098,6 +13118,274 @@
     "tldr": null,
     "topic_tags": [],
     "url": "https://arxiv.org/abs/2608.23098v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Concept Bottleneck Models (CBMs) are interpretable-by-design neural networks that detect human-understandable concepts from the input and use them to generate predictions. By allowing users to inspect the concepts underlying a prediction and explore how predictions change under alternative concept configurations, CBMs have emerged as one of the most prominent approaches to supporting human-AI collaboration. However, user studies investigating their actual effectiveness as decision-support systems remain limited. We present two large-scale user studies (N participants = 705, N observations = 6,959) evaluating how concept-based explanations and user interventions on the model's concepts affect the performance of the human-AI team in two distinct binary classification tasks. Our results show that CBMs, and particularly their interactive component, can improve human-AI team accuracy relative to both unaided human performance and performance with non-interpretable AI support. However, these benefits emerge only under certain conditions: classification tasks perceived as difficult, easily identifiable concepts, and active interaction with the model. We also discuss how inaccurate concept detection may undermine users' trust in the model. Overall, this work provides practical guidance for the deployment of CBMs as effective decision-support tools.",
+    "ai_reason": "大规模用户研究(N=705)评估人-AI决策协作",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "可解释AI"
+    ],
+    "authors": [
+      "Alessandro Bogani",
+      "Nicola Debole",
+      "Emanuele Marconato",
+      "Andrea Pugnana",
+      "Katya Tentori"
+    ],
+    "authors_full": [
+      {
+        "name": "Alessandro Bogani"
+      },
+      {
+        "name": "Nicola Debole"
+      },
+      {
+        "name": "Emanuele Marconato"
+      },
+      {
+        "name": "Andrea Pugnana"
+      },
+      {
+        "name": "Katya Tentori"
+      },
+      {
+        "name": "Andrea Passerini"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-26",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 24195,
+    "ingested_at": "2026-08-27T12:14:27.747518",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.25581v1",
+    "scored_at": "2026-08-27T12:15:13.109697",
+    "title": "Are Concept Bottleneck Models Effective as Decision-Support Systems?",
+    "title_zh": "概念瓶颈模型作为决策支持系统的有效性研究",
+    "tldr": "通过两项大规模用户研究（N=705，N=6,959）评估概念瓶颈模型（CBM）作为决策支持系统在人机协作分类任务中的效果。研究发现CBM的概念解释与用户交互功能可提升人机团队准确率，但仅在任务困难、概念易识别且用户主动交互时有效；不准确的概念检测会损害用户信任。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "可解释性",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2608.25581v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative user interfaces (GenUIs) promise on-demand components tailored to users' needs. As users iterate on information tasks, they construct personal structures over information they encounter---how items are grouped, what gets prioritized, and what terms mean in their context. Yet, current systems leave these structural decisions to the model at each generation, ignoring the structural logic users have established. Without a persistent representational structure shared between user and system, GenUIs have no basis to remain aligned with what users have established. We draw on Information Architecture (IA), a design practice for organizing and structuring information, as a shared language to bridge user-constructed structure and system generation. We present a framework identifying four IA elements---partition, hierarchy, order, and vocabulary---and characterize how each maps to concrete UI generation decisions. We instantiate this framework in Maru, a conversational system that captures user prompts and interactions as IA preferences, persisting as rules both user and system draw on across generations. A user study revealed that IA persistence kept generated UIs aligned as sessions progressed, while alignment without it degraded, with diverse patterns emerging across users and contexts, pointing to the value of IA persistence in aligning GenUI to individual needs.",
+    "ai_reason": "GenUI信息架构框架，明确HCI/UX研究议题",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "对话式 AI",
+      "AI 助手",
+      "人机交互",
+      "人机协作"
+    ],
+    "authors": [
+      "Eunhye Kim",
+      "DaEun Choi",
+      "Bryan Min",
+      "Hyunjung Yi",
+      "Yue Jiang"
+    ],
+    "authors_full": [
+      {
+        "name": "Eunhye Kim"
+      },
+      {
+        "name": "DaEun Choi"
+      },
+      {
+        "name": "Bryan Min"
+      },
+      {
+        "name": "Hyunjung Yi"
+      },
+      {
+        "name": "Yue Jiang"
+      },
+      {
+        "name": "Juho Kim"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-26",
+    "doi": "https://doi.org/10.1145/3830398.3830621",
+    "domain_score": 4.0,
+    "id": 24196,
+    "ingested_at": "2026-08-27T12:14:27.750607",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.25565v1",
+    "scored_at": "2026-08-27T12:15:13.109332",
+    "title": "Maru: Information Architecture as a Shared Language for Generating Aligned and Persistent User Interfaces",
+    "title_zh": "Maru：信息架构作为生成一致持久用户界面的共享语言",
+    "tldr": "生成式用户界面每次生成都将结构决策交给模型，忽视用户已建立的信息组织逻辑。本文以信息架构（IA）为用户与系统共享语言，提炼出划分、层级、顺序、词汇四个要素并映射至UI生成决策，据此实现对话系统Maru，将用户提示与交互固化为跨轮次持久规则。用户研究表明，IA持久化使生成UI在会话推进中持续对齐，缺乏时则随时间退化，验证了个性化GenUI对结构一致性的价值。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "人机协作",
+      "可视化"
+    ],
+    "url": "https://arxiv.org/abs/2608.25565v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Experience-driven manufacturing, such as garment pattern making, faces a severe generational skills gap because its core expertise relies on undocumented tacit knowledge forged through day-to-day practice. To address this challenge, we present TailorCoPilot, an agentic pattern-making system built upon a specially designed version-control backend TailorTrace. TailorTrace models sewing patterns as structured, discrete states and records their transformations during the pattern-making process as explicit operation sequences defined upon the geometry primitives in the sewing pattern (panels, edges, vertices and stitches). Integrated into a conventional pattern-making GUI, TailorTrace enables seamless documentation of senior experts' tacit pattern-making knowledge without breaking their daily workflow. The documented knowledge further offers interactive, pedagogical scaffolding for novices, while providing a robust foundation to power TailorCoPilot and train future generative AI models. In a user study with novices and advanced novices, TailorCoPilot improved task completion rates, reduced time and perceived workload, and yielded higher-quality artifacts compared to skill-appropriate baselines. Ultimately, TailorCoPilot demonstrates a viable pathway to capture practice-based expertise, operationalizing it to support both generative AI advancements and human apprenticeship.",
+    "ai_reason": "智能体设计系统结合HCI设计实践，含GUI整合",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI 助手",
+      "人机协作",
+      "人机交互",
+      "GenAI"
+    ],
+    "authors": [
+      "Yuexin Sun",
+      "Zhaohui Wang",
+      "Ruiyang Liu",
+      "Demian Kong",
+      "Qian He"
+    ],
+    "authors_full": [
+      {
+        "name": "Yuexin Sun"
+      },
+      {
+        "name": "Zhaohui Wang"
+      },
+      {
+        "name": "Ruiyang Liu"
+      },
+      {
+        "name": "Demian Kong"
+      },
+      {
+        "name": "Qian He"
+      },
+      {
+        "name": "Gaofeng He"
+      },
+      {
+        "name": "Huamin Wang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-26",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 24198,
+    "ingested_at": "2026-08-27T12:14:27.752654",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.25462v1",
+    "scored_at": "2026-08-27T12:15:13.108625",
+    "title": "TailorCoPilot: Enabling Agentic Pattern Making with Version-Controlled State Tracking",
+    "title_zh": "TailorCoPilot：基于版本控制状态追踪的智能体驱动制版",
+    "tldr": "服装样板制作等经验驱动型制造面临代际技能断层，核心在于未经记录的隐性知识。本文提出基于版本控制后端TailorTrace的智能体系统TailorCoPilot，将样板建模为结构化离散状态并记录几何图元上的操作序列，在不打断日常工作流的前提下捕获专家隐性知识，同时为新手提供教学支架。用户研究表明，该系统较基线提升了任务完成率、缩短了时间与感知负荷，并产出更高质量成果。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "可用性测试",
+      "智能体"
+    ],
+    "url": "https://arxiv.org/abs/2608.25462v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative AI is promoted as a way to enhance knowledge work, yet its benefits and drawbacks fall unevenly across the workforce. Freelance and gig workers, who commonly lack the upskilling pathways available to traditional employees, face heightened risks to both skill development and job security as AI adoption advances. We review empirical evidence on AI's impact on knowledge-worker workflows and upskilling, then predict the primary and downstream effects of AI adoption among clients and workers in the freelance economy. We anchor this in two cases of the same shift, machine-translation post-editing and software development. We argue that freelancers are the leading edge of a change that also reaches salaried HCI practitioners, and we close with questions for the platforms and clients that mediate this work, and for HCI researchers.",
+    "ai_reason": "论述AI对自由职业者/HCI从业者技能影响",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "AI 助手",
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Nakul Rajpal"
+    ],
+    "authors_full": [
+      {
+        "name": "Nakul Rajpal"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-26",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 24200,
+    "ingested_at": "2026-08-27T12:14:27.759305",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.26089v1",
+    "scored_at": "2026-08-27T12:15:13.108227",
+    "title": "From Producing to Validating: How AI Is Deskilling Freelancers",
+    "title_zh": "从生产到验证：人工智能如何使自由职业者去技能化",
+    "tldr": "生成式AI在知识工作中的效益与风险在劳动力中分布不均。本文综述AI对知识工作流程与技能提升影响的实证证据，并以机器翻译后期编辑与软件开发为案例，预测AI对自由职业经济中客户与工作者的主要及下游影响，论证自由职业者正处于一场同样波及受薪HCI从业者的技能去化变革前沿，并提出对中介平台、客户端及HCI研究者的开放问题。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "AI 采用",
+      "人机协作",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2608.26089v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "The purpose of this study was to analyze patterns of artificial intelligence (AI) use and attitudes toward AI among students, faculty, and administrative staff at a large university specializing in teacher education. The analytical sample comprised 1809 students, 250 faculty members, and 62 administrative staff members (N = 2121). Three role-adapted 75-item questionnaires covered the frequency and contexts of AI use, perceived usefulness, trust and control, academic integrity concerns, responsible-use norms, institutional policy clarity, and perceived improvement in output quality. Data analysis included descriptive statistics, Welch group comparisons, pooled ordinary least squares (OLS) models, reliability and dimensionality checks for observed indices, and exploratory student-only K-means clustering. The results revealed a pronounced AI adaptation gap across university groups. Students reported higher current AI-use intensity and perceived usefulness than faculty and administrative staff, whereas faculty and administrative staff reported stronger academic integrity concerns and greater endorsement of responsible-use norms. In the pooled OLS trust model, perceived usefulness had the strongest standardized positive association with trust in AI (beta = 0.402); institutional policy clarity also had a positive but weaker association (beta = 0.223). Students reported higher perceived policy clarity than faculty, while neither group differed significantly from administrative staff. Exploratory clustering indicated heterogeneity among students in experience, competence, usefulness, trust, and control, but did not establish a latent typology across university groups. The cross-sectional, self-reported data show associations and group differences rather than causal effects on learning or objective outcomes.",
+    "ai_reason": "核心议题AI使用，2121人问卷调查",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "AI助手"
+    ],
+    "authors": [
+      "Yuriy S. Braun",
+      "Salavat M. Khafizov"
+    ],
+    "authors_full": [
+      {
+        "name": "Yuriy S. Braun"
+      },
+      {
+        "name": "Salavat M. Khafizov"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-25",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 24203,
+    "ingested_at": "2026-08-27T12:14:27.761969",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2608.25063v1",
+    "scored_at": "2026-08-27T12:15:14.216274",
+    "title": "The AI Adaptation Gap in Higher Education: Students, Faculty, and Administrative Staff",
+    "title_zh": "高等教育中的人工智能适应差距：学生、教师与行政人员",
+    "tldr": "对一所大型师范类大学的2121名学生、教师及行政人员开展问卷调查，揭示显著的AI适应差距：学生AI使用强度与感知有用性更高，而教师和行政人员学术诚信担忧与负责任使用规范认同更强；感知有用性是AI信任的最强预测因子，制度政策清晰度亦呈正向但较弱影响。",
+    "topic_tags": [
+      "AI采用",
+      "信任",
+      "问卷",
+      "AI治理"
+    ],
+    "url": "https://arxiv.org/abs/2608.25063v1",
     "volume": null,
     "year": 2026
   },
@@ -13585,6 +13873,59 @@
     "url": "https://doi.org/10.1145/3736163",
     "volume": "32",
     "year": 2025
+  },
+  {
+    "abstract": "In this work we develop a fully data driven conversational agent capable of carrying out motivational coaching sessions in Spanish, French, Norwegian, and English. Unlike the majority of coaching, and in general well-being related conversational agents that can be found in the literature, ours is not designed by hand-crafted rules. Instead, we directly model the coaching strategy of professionals with end users. To this end, we gather a set of virtual coaching sessions through a Wizard of Oz platform, and apply state of the art Natural Language Processing techniques. We employ a transfer learning approach, pretraining GPT2 neural language models and fine-tuning them on our corpus. However, since these only take as input a local dialogue history, a simple fine-tuning procedure is not capable of modeling the long-term dialogue strategies that appear in coaching sessions. To alleviate this issue, we first propose to learn dialogue phase and scenario embeddings in the fine-tuning stage. These indicate to the model at which part of the dialogue it is and which kind of coaching session it is carrying out. Second, we develop a global deep learning system which controls the long-term structure of the dialogue. We also show that this global module can be used to visualize and interpret the decisions taken by the the conversational agent, and that the learnt representations are comparable to dialogue acts. Automatic and human evaluation show that our proposals serve to improve the baseline models. Finally, interaction experiments with coaching experts indicate that the system is usable and gives rise to positive emotions in Spanish, French and English, while the results in Norwegian point out that there is still work to be done in fully data driven approaches with very low resource languages.",
+    "ai_reason": "核心为GPT-2神经对话教练,Wizard of Oz用研",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "AI 助手",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Asier López Zorrilla",
+      "M. Inés Torres"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of the Basque Country UPV/EHU, Leioa, Bizkaia, Spain"
+        ],
+        "name": "Asier López Zorrilla",
+        "orcid": "https://orcid.org/0000-0003-1739-1397"
+      },
+      {
+        "affiliation": [
+          "University of the Basque Country UPV/EHU, Leioa, Bizkaia, Spain"
+        ],
+        "name": "M. Inés Torres",
+        "orcid": "https://orcid.org/0000-0002-1773-3214"
+      }
+    ],
+    "cited_by": 10,
+    "date": "2022-06-30",
+    "doi": "10.1145/3487066",
+    "domain_score": 4.0,
+    "id": 24048,
+    "ingested_at": "2026-08-27T12:14:21.339297",
+    "issue": "2",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:22.883324",
+    "title": "A Multilingual Neural Coaching Model with Enhanced Long-term Dialogue Structure",
+    "title_zh": "多语言神经辅导模型：增强长期对话结构",
+    "tldr": "针对西班牙语、法语、挪威语和英语场景，构建数据驱动的动机式辅导对话智能体。通过 Wizard of Oz 平台采集真实辅导语料，基于 GPT2 预训练与微调，并提出对话阶段与场景嵌入以及全局深度学习模块来建模长程对话结构。全局模块还可用于可视化与解释模型决策，学到的表征与对话行为可比。自动与人工评估均验证该方法优于基线。",
+    "topic_tags": [
+      "对话式 AI",
+      "人机交互(HCI)",
+      "AI 助手",
+      "情感计算"
+    ],
+    "url": "https://doi.org/10.1145/3487066",
+    "volume": "12",
+    "year": 2022
   },
   {
     "abstract": null,
@@ -14940,6 +15281,145 @@
     "url": "https://doi.org/10.1177/10946705251372448",
     "volume": null,
     "year": 2025
+  },
+  {
+    "abstract": "Explainable AI is growing in importance as AI pervades modern society, but few have studied how explainable AI can directly support people trying to\n                    assess\n                    an AI agent. Without a rigorous process, people may approach assessment in ad hoc ways—leading to the possibility of wide variations in assessment of the same agent due only to variations in their processes. AAR, or After-Action Review, is a method some military organizations use to assess human agents, and it has been validated in many domains. Drawing upon this strategy, we derived an After-Action Review for AI (AAR/AI), to organize ways people assess reinforcement learning agents in a sequential decision-making environment. We then investigated what AAR/AI brought to human assessors in two qualitative studies. The first investigated AAR/AI to gather formative information, and the second built upon the results, and also varied the type of explanation (model-free vs. model-based) used in the AAR/AI process. Among the results were the following: (1) participants reporting that AAR/AI helped to\n                    organize their thoughts\n                    and\n                    think logically\n                    about the agent, (2) AAR/AI encouraged participants to reason about the agent from a\n                    wide range of perspectives\n                    , and (3) participants were able to leverage AAR/AI with the model-based explanations to\n                    falsify\n                    the agent’s predictions.",
+    "ai_reason": "解释性AI评估RL智能体的HCI定性研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Jonathan Dodge",
+      "Roli Khanna",
+      "Jed Irvine",
+      "Kin-ho Lam",
+      "Theresa Mai"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Jonathan Dodge",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Roli Khanna",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Jed Irvine",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Kin-ho Lam",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Theresa Mai",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Zhengxian Lin",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Nicholas Kiddle",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Evan Newman",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Andrew Anderson",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Sai Raja",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Caleb Matthews",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Christopher Perdriau",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Margaret Burnett",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, Corvallis, OR"
+        ],
+        "name": "Alan Fern",
+        "orcid": null
+      }
+    ],
+    "cited_by": 10,
+    "date": "2021-09-03",
+    "doi": "10.1145/3453173",
+    "domain_score": 5.0,
+    "id": 22719,
+    "ingested_at": "2026-08-24T03:02:49.713113",
+    "issue": "3-4",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:43.496150",
+    "title": "After-Action Review for AI (AAR/AI)",
+    "title_zh": "人工智能事后复盘（AAR/AI）",
+    "tldr": "借鉴军方复盘方法(After-Action Review),提出面向AI的复盘框架AAR/AI,用于规范人们评估强化学习智能体的过程。通过两项定性研究发现:AAR/AI帮助评估者组织思路、进行逻辑推理,促使其从多视角审视智能体,且结合基于模型的可解释信息时,参与者能有效反驳(证伪)对智能体的初步判断。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互",
+      "用户研究方法",
+      "访谈"
+    ],
+    "url": "https://doi.org/10.1145/3453173",
+    "volume": "11",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -16792,6 +17272,82 @@
     "year": 2022
   },
   {
+    "abstract": "Large Language Model (LLM)\n                    -based conversational agents have become increasingly popular in recent years due to their novel capacity for natural, human-like dialogue interactions. However, mistrust in LLMs persists due to concerns about privacy, the potential for incorrect responses (often referred to as “hallucinations”), and issues related to social bias. Previous AI research shows that anthropomorphic form positively influences users’ perceptions. However, this aspect remains under-explored in LLM-based conversational agent research. Our research features two anthropomorphic forms: embodied and behavioral.\n                    Embodied Anthropomorphic Form (EA)\n                    encompasses chatbot, chatbot with\n                    Text-to-Speech (TTS)\n                    , and\n                    Embodied Conversational Agent (ECA)\n                    interface designs.\n                    Behavioral Anthropomorphic (BA)\n                    Form involves LLMs instructed with and without\n                    Theory of Mind (ToM)\n                    principles. In an empirical evaluation, we explored how interplay between BA form and EA form, and vice-versa, affects users’ perceptions of LLM-based conversational agents on trust, anthropomorphism, presence, usability, and user experience. Our findings provide evidence of such effects, offering novel insight into the influence of both anthropomorphic forms on perceived anthropomorphism, presence, usability, user experience, and their positive impact on user trust in LLM-based conversational agents. However, the combined highest (i.e.,\n                    ECA with ToM behaviors\n                    ) and lowest (i.e.,\n                    Chatbot without ToM behaviors\n                    ) levels of both forms result in lower user trust, suggesting a complex relationship between embodiment and ToM behaviors that warrants further investigation.",
+    "ai_reason": "核心研究LLM对话代理的具身化与用户感知、信任、UX",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Elizabeth A. Schlesener",
+      "Marcin Ziolkowski",
+      "Sai-Keung Wong",
+      "Brent Westmoreland",
+      "Sabarish V. Babu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Clemson University, Clemson, Clemson, South Carolina, USA"
+        ],
+        "name": "Elizabeth A. Schlesener",
+        "orcid": "https://orcid.org/0000-0002-3534-7966"
+      },
+      {
+        "affiliation": [
+          "The BMW Group, Greenville, South Carolina, USA"
+        ],
+        "name": "Marcin Ziolkowski",
+        "orcid": "https://orcid.org/0009-0000-5148-9764"
+      },
+      {
+        "affiliation": [
+          "National Yang Ming Chiao Tung University, Hsinchu, Taiwan"
+        ],
+        "name": "Sai-Keung Wong",
+        "orcid": "https://orcid.org/0000-0002-4248-0052"
+      },
+      {
+        "affiliation": [
+          "The BMW Group, Greenville, South Carolina, USA"
+        ],
+        "name": "Brent Westmoreland",
+        "orcid": "https://orcid.org/0009-0004-5986-3895"
+      },
+      {
+        "affiliation": [
+          "Clemson University, Clemson, Clemson, South Carolina, USA"
+        ],
+        "name": "Sabarish V. Babu",
+        "orcid": "https://orcid.org/0000-0002-8348-0534"
+      }
+    ],
+    "cited_by": 4,
+    "date": "2026-03-13",
+    "doi": "10.1145/3774779",
+    "domain_score": 5.0,
+    "id": 24049,
+    "ingested_at": "2026-08-27T12:14:21.368830",
+    "issue": "2",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:19.624623",
+    "title": "“Am I Understood?”: How the Interplay between Embodiment and Theory of Mind Behavior Affects LLM-Based Conversational Agents on Perceived Trust, Anthropomorphism, Presence, Usability, and User Experience",
+    "title_zh": null,
+    "tldr": "研究关注 LLM 对话式智能体的拟人化设计对用户感知的影响。将拟人化分为具身形态（聊天机器人、TTS、具身对话代理）与行为形态（是否融入心智理论提示），通过实证评估两者的交互效应对信任、拟人感、临场感、可用性与用户体验的作用，揭示具身与心智理论行为的协同影响。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "信任",
+      "用户体验(UX)",
+      "对话式 AI"
+    ],
+    "url": "https://doi.org/10.1145/3774779",
+    "volume": "16",
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "核心研究人们对AI的风险收益感知",
     "ai_score": 5.0,
@@ -17230,7 +17786,9 @@
     "abstract": null,
     "ai_reason": "护理机器人用户偏好特征组合，HCI用户评估",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "智能体/Agent"
+    ],
     "authors": [
       "Kim Klüber",
       "Linda Onnasch"
@@ -17259,8 +17817,12 @@
     "scored_at": "2026-08-26T03:04:17.866256",
     "title": "Appearance is not everything - Preferred feature combinations for care robots",
     "title_zh": "外观并非一切：护理机器人偏好的特征组合",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "关注护理机器人的功能特征偏好，挑战外观决定一切的固有认知。通过考察用户对护理机器人各功能维度的组合偏好，揭示功能实用性、交互能力等非外观要素在用户接受度中的关键作用，为护理机器人设计提供超越外观的参考。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "用户研究方法"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2021.107128",
     "volume": "128",
     "year": 2022
@@ -17756,6 +18318,51 @@
     "url": "https://doi.org/10.1016/j.jretai.2025.03.003",
     "volume": "101",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "机器人涉及AI，人机交互情感归属HCI议题",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "情感识别"
+    ],
+    "authors": [
+      "Nicolas Spatola",
+      "Olga A. Wudarczyk"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Nicolas Spatola",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Olga A. Wudarczyk",
+        "orcid": null
+      }
+    ],
+    "cited_by": 96,
+    "date": "2021-11",
+    "doi": "10.1016/j.chb.2021.106934",
+    "domain_score": 4.0,
+    "id": 20869,
+    "ingested_at": "2026-08-18T02:52:12.788199",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:51.428176",
+    "title": "Ascribing emotions to robots: Explicit and implicit attribution of emotions and perceived robot anthropomorphism",
+    "title_zh": "赋予机器人情感：情绪的显性与隐性归因及机器人拟人化感知",
+    "tldr": "探究用户对机器人进行情绪归因的过程，比较显式与隐式两种归因路径对机器人拟人化感知的影响，揭示人机情感交互中的心理机制，分析用户如何感知、判断机器人的情绪状态及其背后的认知与情感因素。",
+    "topic_tags": [
+      "情感计算",
+      "人机交互(HCI)",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106934",
+    "volume": "124",
+    "year": 2021
   },
   {
     "abstract": "This work contributes a research protocol for evaluating human-AI interaction in the context of specific AI products. The research protocol enables UX and HCI researchers to assess different human-AI interaction solutions and validate design decisions before investing in engineering. We present a detailed account of the research protocol and demonstrate its use by employing it to study an existing set of human-AI interaction guidelines. We used factorial surveys with a 2 × 2 mixed design to compare user perceptions when a guideline is applied versus violated, under conditions of optimal versus sub-optimal AI performance. The results provided both qualitative and quantitative insights into the UX impact of each guideline. These insights can support creators of user-facing AI systems in their nuanced prioritization and application of the guidelines.",
@@ -19583,7 +20190,12 @@
     "abstract": "As AI-powered negotiations spread, their psychological and relational impact remains unclear. The authors propose a novel generative adversarial network framework that trains a bot to aim for superior economic outcomes while appearing “human” (“algorithmic anthropomorphization”). In a bargaining game experiment, they compare this “superhuman” bot with two simpler alternatives: a bot that mimics human behavior and a purely efficient bot. The results show that (1) superficial anthropomorphization can make a bot seem human but does not improve subjective evaluations, (2) the efficient bot is so rational that it is easily exploited, undercutting its performance, and (3) the superhuman bot achieves superior economic results while appearing more human than actual humans. Yet even when bots act indistinguishably from humans, they may trigger an “uncanny valley” effect, lowering subjective evaluations regardless of performance. Because subjective evaluations predict future negotiation outcomes, these findings highlight the potential negative impact that AI bargaining algorithms can have on long-term customer relationships. The authors urge firms to measure more than objective outcomes when assessing AI negotiators.",
     "ai_reason": "AI谈判框架与人类实验，含用户视角但偏ML",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "智能体/Agent",
+      "人机协作",
+      "人机交互"
+    ],
     "authors": [
       "Sumon Chaudhuri",
       "Arnaud De Bruyn"
@@ -19612,8 +20224,13 @@
     "scored_at": "2026-08-23T03:00:42.583561",
     "title": "Bots Bargaining with Humans: Building AI Super-Bargainers with Algorithmic Anthropomorphization",
     "title_zh": "机器人与人类议价：基于算法拟人化构建AI超级议价者",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对AI谈判机器人的心理与关系影响，提出基于GAN的\"算法拟人化\"框架。实验比较超级拟人机器人、行为模仿机器人和纯效率机器人，发现超级拟人机器人经济收益最优且最像人类，但会引发\"恐怖谷\"效应并降低主观评价。提示企业评估AI谈判者时需超越客观绩效，关注长期客户关系。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "人机交互(HCI)",
+      "信任"
+    ],
     "url": "https://doi.org/10.1177/00222437251375323",
     "volume": "63",
     "year": 2026
@@ -19956,6 +20573,62 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2023.103126",
     "volume": "180",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "社交机器人感知研究，含AI，明确用户视角",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI 助手",
+      "人机交互"
+    ],
+    "authors": [
+      "Sunny Xun Liu",
+      "Qi Shen",
+      "Jeff Hancock"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sunny Xun Liu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Qi Shen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jeff Hancock",
+        "orcid": "https://orcid.org/0000-0001-5367-2677"
+      }
+    ],
+    "cited_by": 58,
+    "date": "2021-12",
+    "doi": "10.1016/j.chb.2021.106942",
+    "domain_score": 4.0,
+    "id": 20840,
+    "ingested_at": "2026-08-18T02:52:11.941490",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:16:12.565474",
+    "title": "Can a social robot be too warm or too competent? Older Chinese adults’ perceptions of social robots and vulnerabilities",
+    "title_zh": "社交机器人是否会过于热情或过于能干：中国老年人对社交机器人的感知与脆弱性",
+    "tldr": "研究关注中国老年群体对社会机器人的接受度，借鉴刻板印象内容模型考察温暖度与能力感两个维度，探讨老年人在与社交机器人交互中可能遭遇的脆弱性（如隐私、依赖、情感误判等），旨在揭示机器人设计过度拟人化或过度功能化对老年用户信任与安全感的潜在风险。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "AI 助手",
+      "用户研究方法",
+      "信任",
+      "伦理",
+      "儿童/老人/无障碍"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106942",
+    "volume": "125",
+    "year": 2021
   },
   {
     "abstract": "Authors test previously published theory-based models in a sample of idea-screening contests and find that efficient, automated screening is possible using easy-to-collect data.",
@@ -22476,7 +23149,11 @@
     "abstract": "Recent advances in artificial intelligence (AI) have achieved human-scale speed and accuracy for classification tasks. Current systems do not need to be conscious to recognize patterns and classify them. However, for AI to advance to the next level, it needs to develop capabilities such as metathinking, creativity, and empathy. We contend that such a paradigm shift is possible through a fundamental change in the state of artificial intelligence toward consciousness, similar to what took place for humans through the process of natural selection and evolution. To that end, we propose that consciousness in AI is an emergent phenomenon that primordially appears when two machines cocreate their own language through which they can recall and communicate their internal state of time-varying symbol manipulation. Because, in our view, consciousness arises from the communication of inner states, it leads to empathy. We then provide a link between the empathic quality of machines and better service outcomes associated with empathic human agents that can also lead to accountability in AI services.",
     "ai_reason": "意识共情AI服务，AI核心且属CX领域",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "对话式 AI",
+      "多模态",
+      "情感识别"
+    ],
     "authors": [
       "Hadi Esmaeilzadeh",
       "Reza Vaezi"
@@ -22509,8 +23186,13 @@
     "scored_at": "2026-08-26T03:04:07.670596",
     "title": "Conscious Empathic AI in Service",
     "title_zh": "服务场景中的意识共情人工智能",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "从两台机器通过共同创造语言以交流内部状态的时间变化符号操作出发，论证AI意识是一种涌现现象，并由此衍生共情能力。进而将机器共情与人类服务代理的共情质量关联，探讨共情AI如何提升服务效果并增强AI服务中的问责机制。",
+    "topic_tags": [
+      "服务设计",
+      "服务体验",
+      "人机交互(HCI)",
+      "AI治理"
+    ],
     "url": "https://doi.org/10.1177/10946705221103531",
     "volume": "25",
     "year": 2022
@@ -24074,6 +24756,55 @@
     "url": "https://doi.org/10.1080/0144929x.2025.2477053",
     "volume": "45",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "会话AI适老化设计，HCI核心议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "多模态",
+      "人机交互"
+    ],
+    "authors": [
+      "Doha Kim",
+      "Hayeon Song"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Doha Kim",
+        "orcid": "https://orcid.org/0000-0003-3138-3510"
+      },
+      {
+        "affiliation": [],
+        "name": "Hayeon Song",
+        "orcid": "https://orcid.org/0000-0001-5951-8507"
+      }
+    ],
+    "cited_by": 19,
+    "date": "2024-07",
+    "doi": "10.1016/j.ijhcs.2024.103262",
+    "domain_score": 5.0,
+    "id": 24041,
+    "ingested_at": "2026-08-27T12:14:21.133709",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:21.864206",
+    "title": "Designing an age-friendly conversational AI agent for mobile banking: the effects of voice modality and lip movement",
+    "title_zh": "面向移动银行的老年友好型对话AI代理设计：声音模态与唇动的影响",
+    "tldr": "针对老年用户设计移动银行场景下的适龄对话式AI代理，考察语音模态与唇部动画对交互体验与信任的影响，通过多模态通道设计提升老年人对金融对话AI的接受度与任务完成效果。",
+    "topic_tags": [
+      "对话式 AI",
+      "老年人/无障碍",
+      "用户体验(UX)",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2024.103262",
+    "volume": "187",
+    "year": 2024
   },
   {
     "abstract": null,
@@ -29305,6 +30036,53 @@
   },
   {
     "abstract": null,
+    "ai_reason": "语音助手属AI，老年用户纵向研究为核心用研",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Sunyoung Kim",
+      "Abhishek Choudhury"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sunyoung Kim",
+        "orcid": "https://orcid.org/0000-0002-0680-7345"
+      },
+      {
+        "affiliation": [],
+        "name": "Abhishek Choudhury",
+        "orcid": null
+      }
+    ],
+    "cited_by": 199,
+    "date": "2021-11",
+    "doi": "10.1016/j.chb.2021.106914",
+    "domain_score": 5.0,
+    "id": 20968,
+    "ingested_at": "2026-08-18T02:52:15.669753",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:51.427793",
+    "title": "Exploring older adults’ perception and use of smart speaker-based voice assistants: A longitudinal study",
+    "title_zh": "探索老年人对智能音箱语音助手的感知与使用：一项纵向研究",
+    "tldr": "纵向追踪老年用户对智能音箱语音助手（如Alexa）的感知与使用情况，考察其采纳行为、使用频率及态度随时间的变化规律，揭示老年群体对语音交互技术的接受机制、持续使用意愿及潜在障碍，为适老化语音助手设计提供依据。",
+    "topic_tags": [
+      "儿童/老人/无障碍",
+      "AI 采用",
+      "人机交互(HCI)",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106914",
+    "volume": "124",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "语音代理辅助亲子共读，研究用户/家长参与体验与互动行为",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -29436,7 +30214,10 @@
     "abstract": null,
     "ai_reason": "人脸识别涉及AI，隐私-个性化用户视角但非核心",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "AI助手",
+      "可解释AI"
+    ],
     "authors": [
       "Olena Ciftci",
       "Katerina Berezina",
@@ -29471,8 +30252,13 @@
     "scored_at": "2026-08-26T03:03:57.529991",
     "title": "Exploring privacy-personalization paradox: Facial recognition systems at business events",
     "title_zh": "探究隐私与个性化悖论：商业活动中的面部识别系统",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究商业活动场景中面部识别系统带来的隐私与个性化悖论：企业为提升参会体验、个性化服务而部署人脸识别，却引发用户对数据收集、存储与使用的隐私担忧，探讨用户如何在二者间权衡及影响接受度的因素。",
+    "topic_tags": [
+      "隐私",
+      "个性化",
+      "人机交互(HCI)",
+      "AI采用"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2024.108335",
     "volume": "159",
     "year": 2024
@@ -29855,6 +30641,73 @@
     "url": "https://doi.org/10.1080/0144929x.2024.2362406",
     "volume": "44",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "情感计算交互原型+消费者神经科学，AI与用户研究兼具",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "情感识别",
+      "多模态",
+      "情感计算"
+    ],
+    "authors": [
+      "Alvaro Saavedra",
+      "Raquel Chocarro",
+      "Monica Cortinas",
+      "Natalia Rubio"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Public University of Navarre (UPNA), Jerónimo de Ayanz Centre"
+        ],
+        "name": "Alvaro Saavedra",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Public University of Navarre (UPNA), Jerónimo de Ayanz Centre"
+        ],
+        "name": "Raquel Chocarro",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Public University of Navarre (UPNA), Jerónimo de Ayanz Centre"
+        ],
+        "name": "Monica Cortinas",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Autonomous University of Madrid"
+        ],
+        "name": "Natalia Rubio",
+        "orcid": null
+      }
+    ],
+    "cited_by": 8,
+    "date": "2025-05-18",
+    "doi": "10.1080/0144929x.2025.2504514",
+    "domain_score": 4.0,
+    "id": 24064,
+    "ingested_at": "2026-08-27T12:14:21.833981",
+    "issue": "20",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:11.750651",
+    "title": "Exploring unconscious user responses to affective computing in interactive prototypes: a consumer neuroscience study",
+    "title_zh": "探索交互式原型中情感计算引发的无意识用户反应：一项消费神经科学研究",
+    "tldr": "面向交互原型中的情感计算(affective computing)体验，采用消费神经科学方法(可能含脑电/眼动/生理测量)探测用户的无意识反应，揭示情感计算界面对消费者情绪与决策的隐性影响机制。",
+    "topic_tags": [
+      "情感计算",
+      "消费者行为",
+      "多模态交互"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2025.2504514",
+    "volume": "44",
+    "year": 2025
   },
   {
     "abstract": null,
@@ -32571,6 +33424,58 @@
     "year": 2023
   },
   {
+    "abstract": "This study explores the use of generative AI tools in qualitative research, specifically to enhance thematic analysis (TA). Traditional TA, while widely adopted in marketing, is inherently labor-intensive and prone to researcher biases. The method proposed here, generative AI-augmented thematic analysis (GAATA), addresses these limitations by using gen AI tools to automate and augment the data analysis process. GAATA comprises three phases: prompt designing, code generation/validation, and theme generation/validation. The method leverages the capabilities of multiple gen AI tools to generate initial codes and themes. These codes/themes are then validated and refined by human researchers, thereby increasing reliability and reflexivity in the TA process. A set of generic prompt templates are provided to enable researchers with less technical expertise to use GAATA. An empirical comparison between GAATA and traditional thematic analysis (TA) is then undertaken. The emergent themes are validated across four dimensions: conceptual mapping, thematic specificity, theoretical alignment, and time efficiency. GAATA, augmenting gen AI with structured human oversight, offers a scalable, robust alternative that accelerates and enriches thematic analysis in market research.",
+    "ai_reason": "核心是GenAI增强主题分析方法，研究方法论创新",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "AI 访谈分析"
+    ],
+    "authors": [
+      "Vimukthi Jayawardene",
+      "Michael T. Ewing"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Southern Cross University"
+        ],
+        "name": "Vimukthi Jayawardene",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Southern Cross University"
+        ],
+        "name": "Michael T. Ewing",
+        "orcid": "https://orcid.org/0000-0002-2260-2761"
+      }
+    ],
+    "cited_by": 2,
+    "date": "2025-12-03",
+    "doi": "10.1177/14707853251405043",
+    "domain_score": 4.0,
+    "id": 24182,
+    "ingested_at": "2026-08-27T12:14:25.597986",
+    "issue": "2",
+    "journal": "IJMR",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:19.626889",
+    "title": "Generative AI-Augmented Thematic Analysis",
+    "title_zh": "生成式人工智能增强的主题分析",
+    "tldr": "提出生成式 AI 增强的主题分析(GAATA)方法：分提示设计、编码生成/验证、主题生成/验证三阶段，借助多款生成式 AI 工具产出初稿，由研究者把关修订；与人工主题分析对比，结果在概念映射、主题特异性、理论契合度与时间效率四维上验证，兼具规模化与可靠性。",
+    "topic_tags": [
+      "用户研究方法",
+      "消费者行为",
+      "营销",
+      "AI 采用"
+    ],
+    "url": "https://doi.org/10.1177/14707853251405043",
+    "volume": "68",
+    "year": 2025
+  },
+  {
     "abstract": "Abstract\n          Nowadays, we are witnessing the exponential growth of Generative AI (GenAI), a group of AI models designed to produce new content. This technology is poised to revolutionize marketing research and practice. Since the marketing literature about GenAI is still in its infancy, we offer a technical overview of how GenAI models are trained and how they produce content. Following this, we construct a roadmap for future research on GenAI in marketing, divided into two main domains. The first domain focuses on how firms can harness the potential of GenAI throughout the innovation process. We begin by discussing how GenAI changes consumer behavior and propose research questions at the consumer level. We then connect these emerging consumer insights with corresponding firm marketing strategies, presenting research questions at the firm level. The second set of research questions examines the likely consequences of using GenAI to analyze: (1) the relationship between market-based assets and firm value, and (2) consumer skills, preferences, and role in marketing processes.",
     "ai_reason": "GenAI技术概述+营销研究路线图，含消费者行为但以综述为主",
     "ai_score": 5.0,
@@ -32944,7 +33849,7 @@
     "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joca.70072",
     "scored_at": "2026-08-23T03:00:42.580968",
     "title": "Generative\n                    <scp>AI</scp>\n                    in Brand Activism: Impacts on Consumers’ Negative Affect and Decision Comfort",
-    "title_zh": null,
+    "title_zh": "生成式AI在品牌行动主义中的应用：对消费者负面情绪与决策舒适度的影响",
     "tldr": "围绕品牌行动主义中生成式AI的使用，五项研究考察AI创作的社政类品牌信息如何影响消费者负向情感与决策舒适度。结果显示AI创作信息引发更强负向情绪、降低决策舒适度，源于消费者感知其真实性更低；保守派或高AI拟人化倾向者效应减弱。",
     "topic_tags": [
       "消费者行为",
@@ -33467,6 +34372,54 @@
     "url": "https://doi.org/10.1080/0144929x.2026.2697317",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人脸识别AI技术核心议题，含公众感知模型",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "情感识别",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Xiaojun Lai",
+      "Pei-Luen Patrick Rau"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Xiaojun Lai",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Pei-Luen Patrick Rau",
+        "orcid": null
+      }
+    ],
+    "cited_by": 71,
+    "date": "2021-11",
+    "doi": "10.1016/j.chb.2021.106894",
+    "domain_score": 3.0,
+    "id": 22993,
+    "ingested_at": "2026-08-26T03:02:29.282781",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:16:12.569480",
+    "title": "Has facial recognition technology been misused? A public perception model of facial recognition scenarios",
+    "title_zh": "人脸识别技术是否被滥用：人脸识别情境下的公众感知模型",
+    "tldr": "研究聚焦人脸识别技术的滥用问题，构建公众对不同人脸识别应用场景的感知模型，探讨公众如何评估该技术在安防、零售、社交等场景中的合理性与风险，揭示影响公众态度的关键因素，为技术治理与伦理规范提供依据。",
+    "topic_tags": [
+      "AI 治理",
+      "伦理",
+      "用户研究方法",
+      "信任",
+      "AI 采用"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106894",
+    "volume": "124",
+    "year": 2021
   },
   {
     "abstract": "Empowered by advances in artificial intelligence (AI) and data technologies, service personnel can deliver highly personalized communication using automatically acquired consumer data. However, as firms increasingly rely on such data to enhance service efficiency, consumers’ privacy concerns have become more salient. Drawing on the persuasion knowledge model, this research integrates field data with four controlled experiments to examine how response speed following data acquisition influences consumer reactions. We find that faster (vs. slower) responses, defined as those delivered moderately earlier (vs. later) than consumers’ normative expectations in comparable service contexts, attenuate consumers’ positive reactions to marketing communications. This effect is driven by a serial mediation involving perceived firm eagerness to use information and privacy concerns, highlighting privacy concerns as one of the key psychological mechanisms shaping consumer reactions. Importantly, this negative effect is attenuated when firms provide prewarning messages about upcoming data-based communication, when service involvement is low, or in service recovery contexts. These findings suggest that response speed should be managed strategically. While overly fast responses may backfire in high-involvement or routine services, combining fast responses with prewarning strategies can help firms balance efficiency and privacy perceptions in digital service environments.",
@@ -35780,6 +36733,66 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人机协作决策，CHB期刊，HCI/UX实质内容",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "人机协作",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Tessa Haesevoets",
+      "David De Cremer",
+      "Kim Dierckx",
+      "Alain Van Hiel"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Tessa Haesevoets",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "David De Cremer",
+        "orcid": "https://orcid.org/0000-0002-6357-9385"
+      },
+      {
+        "affiliation": [],
+        "name": "Kim Dierckx",
+        "orcid": "https://orcid.org/0000-0001-6589-9393"
+      },
+      {
+        "affiliation": [],
+        "name": "Alain Van Hiel",
+        "orcid": null
+      }
+    ],
+    "cited_by": 229,
+    "date": "2021-06",
+    "doi": "10.1016/j.chb.2021.106730",
+    "domain_score": 4.0,
+    "id": 20932,
+    "ingested_at": "2026-08-18T02:52:14.621390",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:16:03.767647",
+    "title": "Human-machine collaboration in managerial decision making",
+    "title_zh": "管理决策中的人机协作",
+    "tldr": "研究管理者在决策过程中如何与机器/AI 系统进行协作以提升决策质量与效率。聚焦人机分工、互补机制、信任校准与决策效能，探讨不同任务情境下人类判断与机器智能的最佳结合方式，为管理决策场景中的人机协同设计提供启示。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "信任",
+      "AI 采用"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106730",
+    "volume": "119",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "人机协同决策实证研究，AI为关键变量，含用户实验",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -35949,6 +36962,51 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2024.103377",
     "volume": "193",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机主体感，HCI核心议题",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Debora Zanatto",
+      "Mark Chattington",
+      "Jan Noyes"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Debora Zanatto",
+        "orcid": "https://orcid.org/0000-0002-7903-3491"
+      },
+      {
+        "affiliation": [],
+        "name": "Mark Chattington",
+        "orcid": "https://orcid.org/0000-0001-8170-7398"
+      },
+      {
+        "affiliation": [],
+        "name": "Jan Noyes",
+        "orcid": "https://orcid.org/0000-0003-0287-8573"
+      }
+    ],
+    "cited_by": 20,
+    "date": "2021-12",
+    "doi": "10.1016/j.ijhcs.2021.102716",
+    "domain_score": 4.0,
+    "id": 22713,
+    "ingested_at": "2026-08-24T03:02:49.533410",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:32.832655",
+    "title": "Human-machine sense of agency",
+    "title_zh": "人机主体的能动感",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.ijhcs.2021.102716",
+    "volume": "156",
+    "year": 2021
   },
   {
     "abstract": "When their identity is salient, consumers from historically marginalized and privileged groups are differentially influenced when it comes to choosing algorithmic service providers (e.g., AI-enabled tellers, chatbots, robots, and digital kiosks). Under identity salience, as would be the case in a service context where the service providers are all from historically privileged groups, consumers from historically marginalized groups (e.g., Black people) become concerned about identity-based social judgment, leading to relatively higher preference for algorithmic service providers. Underrepresentation of historically marginalized groups in white-collar professions (e.g., financial services), regulatory pressures to abandon diversity hiring initiatives, and a tight labor market make it increasingly difficult for companies to ensure diversity among frontline employees. How can managers provide consumers from historically marginalized groups the services they seek in nondiverse settings while balancing other constraints and reducing identity-based social judgment concerns? The results of a series of field studies and controlled experiments suggest that algorithmic service providers can provide a means to serve historically marginalized consumers in nondiverse service settings. The effect attenuates in service contexts where historically marginalized consumers are less concerned about identity-based social judgment. Interestingly, identity salience does not influence historically privileged consumers’ choice of algorithmic service providers.",
@@ -37446,6 +38504,65 @@
   },
   {
     "abstract": null,
+    "ai_reason": "ML方法研究影响者专业感知，消费者视角",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "多模态",
+      "推荐算法"
+    ],
+    "authors": [
+      "Xin Wen",
+      "Teli Xian",
+      "Chengcheng Liao",
+      "Ziyao Huang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Xin Wen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Teli Xian",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Chengcheng Liao",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ziyao Huang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08",
+    "doi": "10.1016/j.jretai.2026.08.005",
+    "domain_score": 4.0,
+    "id": 24179,
+    "ingested_at": "2026-08-27T12:14:25.508265",
+    "issue": null,
+    "journal": "JR",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:14.217795",
+    "title": "Influencers’ perceived expertise in social media retailing: Multimodal machine learning with data fusion",
+    "title_zh": null,
+    "tldr": "研究关注社交媒体零售情境中影响者感知专业度的评估问题，提出采用多模态机器学习与数据融合的方法，整合影响者的多源异构数据对其专业形象进行建模与预测，旨在探讨多模态特征融合对影响者专业度识别与社交电商营销效果的影响。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "推荐系统",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1016/j.jretai.2026.08.005",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI助手情感匹配驾驶员，RCT评估人机交互表现与情绪",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -38163,6 +39280,57 @@
     "url": "https://doi.org/10.1080/0144929x.2023.2184174",
     "volume": "43",
     "year": 2023
+  },
+  {
+    "abstract": "Abstract\n                  Artificial intelligence (AI) is transforming word of mouth (WOM) and influencer marketing. This development gives rise to synthetic WOM, a form of WOM in which AI participates in creating, mediating, evaluating, and/or acting on the consumption-related communication. Despite its growing prevalence, existing research has not fully conceptualized synthetic WOM or explained how consumers perceive varying degrees of machine involvement in WOM content. This article addresses these gaps by developing a conceptual framework that integrates AI into the core WOM elements of source, message, channel, and receiver. This article also introduces the notion of degree of syntheticity, defined as consumers’ perceptions of the extent to which WOM reflects machine-driven rather than human-driven processes, and conceptualizes it as a multidimensional construct encompassing narrative, voice, appearance, and consumption syntheticity. Building on this framework, this article outlines key directions for future research, including the role of AI agents as communicators and receivers, AI-to-AI WOM environments, and the potential dark and regulatory implications of synthetic WOM. This work advances understanding of how AI reshapes WOM and offers a foundation for future theory and research.",
+    "ai_reason": "AI合成口碑核心议题，消费者感知与营销框架",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Michael Haenlein",
+      "P. K. Kannan",
+      "Eitan Muller",
+      "Risqo Wahid"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Michael Haenlein",
+        "orcid": "https://orcid.org/0000-0001-6175-4947"
+      },
+      {
+        "affiliation": [],
+        "name": "P. K. Kannan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Eitan Muller",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Risqo Wahid",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-26",
+    "doi": "10.1007/s11747-026-01198-6",
+    "domain_score": 4.0,
+    "id": 24147,
+    "ingested_at": "2026-08-27T12:14:24.523090",
+    "issue": null,
+    "journal": "JAMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:14.214571",
+    "title": "Introducing the special issue on influencer marketing with extension into synthetic word of mouth: How AI shapes the future of influencer marketing",
+    "title_zh": "网红营销及其向合成口碑拓展特刊导言：人工智能如何塑造网红营销的未来",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1007/s11747-026-01198-6",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,
@@ -40067,7 +41235,11 @@
     "abstract": null,
     "ai_reason": "人机协作中的评估焦虑，HCI议题涉及AI系统",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机协作",
+      "人机交互",
+      "AI 助手"
+    ],
     "authors": [
       "Dominik Siemon"
     ],
@@ -40092,8 +41264,12 @@
     "scored_at": "2026-08-26T03:04:18.099941",
     "title": "Let the computer evaluate your idea: evaluation apprehension in human-computer collaboration",
     "title_zh": "让计算机评估你的创意：人机协作中的评价焦虑",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究在人机协作情境下，当用户的创意或想法由计算机系统进行评价时，所引发的评价焦虑(evaluation apprehension)现象及其对用户表现和心理状态的影响，探讨人机评估与人为评估在压力感知、创造力发挥等方面的差异。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "信任"
+    ],
     "url": "https://doi.org/10.1080/0144929x.2021.2023638",
     "volume": "42",
     "year": 2022
@@ -40489,6 +41665,45 @@
     "year": 2025
   },
   {
+    "abstract": null,
+    "ai_reason": "算法行为定向是AI，社会临场感属HCI/CX",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Bingjie Liu",
+      "Lewen Wei"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Bingjie Liu",
+        "orcid": "https://orcid.org/0000-0001-9019-8521"
+      },
+      {
+        "affiliation": [],
+        "name": "Lewen Wei",
+        "orcid": "https://orcid.org/0000-0002-4387-2779"
+      }
+    ],
+    "cited_by": 40,
+    "date": "2021-11",
+    "doi": "10.1016/j.chb.2021.106926",
+    "domain_score": 4.0,
+    "id": 20119,
+    "ingested_at": "2026-08-14T04:05:11.507519",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:51.428959",
+    "title": "Machine gaze in online behavioral targeting: The effects of algorithmic human likeness on social presence and social influence",
+    "title_zh": "在线行为定向中的机器凝视：算法拟人化对社会临场感与社会影响的效果",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2021.106926",
+    "volume": "124",
+    "year": 2021
+  },
+  {
     "abstract": "Artificial intelligence (AI) systems are increasingly integrated into decision-making across high-stakes domains, influencing not only task performance but potentially human learning. While prior research has focused on AI’s impact on accuracy, its role in supporting long-term knowledge acquisition remains underexplored. This study investigates whether AI-based decision support systems can serve as implicit mentors, enabling users to internalize novel decision strategies through repeated interaction, a phenomenon we term machine mentoring. In a simulated diagnostic task, 289 medical students received different forms of AI support. Participants in the Feedback condition, who received trial-by-trial feedback on the correctness of both their own and the AI’s decisions, significantly improved their accuracy on cases involving a hidden diagnostic criterion and retained these gains in subsequent unaided trials. By contrast, AI advice alone, or with confidence indicators, did not lead to significant learning outcomes. These findings indicate that evaluative, trial-by-trial feedback is the key driver of AI-supported knowledge transfer: advice alone, even when paired with calibrated confidence cues, did not yield durable learning. Rather than attributing the effect to AI per se, our results indicate that what drives durable learning is access to trial-level, ground-truth corrective feedback—something competent AI systems can help deliver at scale. This is especially relevant in medical education and simulation contexts, where feedback can be reliably validated.",
     "ai_reason": "AI mentorship核心；289医学生实验，用研方法明确，HCI实质相关",
     "ai_score": 5.0,
@@ -40642,7 +41857,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-23T03:00:42.582245",
     "title": "Made With AI: Consumer Engagement With Social Media Containing AI Disclosures",
-    "title_zh": null,
+    "title_zh": "\"由AI制作\"：消费者对含AI披露社交媒体内容的参与行为",
     "tldr": "基于TikTok AI披露政策数据与8项实验，考察AI生成内容披露对社交媒体消费者参与度的影响。发现披露降低参与度，原因并非内容质量担忧或对AI的反感，而是削弱了准社会连接；披露创作者努力程度可缓解参与度下降。",
     "topic_tags": [
       "消费者行为",
@@ -44741,6 +45956,73 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人形机器人触摸交互+生理评估，HCI实质内容",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "情感识别",
+      "人机交互"
+    ],
+    "authors": [
+      "Fu Guo",
+      "Chen Fang",
+      "Zenggen Ren",
+      "Mingming Li"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Northeastern University"
+        ],
+        "name": "Fu Guo",
+        "orcid": "https://orcid.org/0000-0001-6209-1874"
+      },
+      {
+        "affiliation": [
+          "Northeastern University"
+        ],
+        "name": "Chen Fang",
+        "orcid": "https://orcid.org/0000-0001-5057-0800"
+      },
+      {
+        "affiliation": [
+          "College of Economics and Management, Taiyuan University of Technology, Taiyuan, People's Republic of China"
+        ],
+        "name": "Zenggen Ren",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Anhui University of Technology"
+        ],
+        "name": "Mingming Li",
+        "orcid": "https://orcid.org/0000-0002-4702-6350"
+      }
+    ],
+    "cited_by": 3,
+    "date": "2024-11-13",
+    "doi": "10.1080/0144929x.2024.2427831",
+    "domain_score": 4.0,
+    "id": 24062,
+    "ingested_at": "2026-08-27T12:14:21.775289",
+    "issue": "12",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:11.753366",
+    "title": "Potential applications of humanoid robotic touch for social regulation of emotion: evidence from ECG and fNIRS",
+    "title_zh": "人形机器人触摸在情绪社交调节中的潜在应用：心电与近红外脑功能成像的证据",
+    "tldr": "研究类人机器人通过身体触摸进行社交情绪调节的潜在应用，同步采集心电(ECG)与近红外脑功能成像(fNIRS)信号，从心脏与皮层活动两个层面评估人机触觉接触对情绪状态的调节效果，为情感计算与社交机器人设计提供客观生理证据。",
+    "topic_tags": [
+      "情感计算",
+      "人机交互(HCI)",
+      "多模态交互"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2024.2427831",
+    "volume": "44",
+    "year": 2024
+  },
+  {
+    "abstract": null,
     "ai_reason": "金融科技聊天机器人持续使用意向，AI+UX",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -45470,6 +46752,59 @@
     "year": 2024
   },
   {
+    "abstract": null,
+    "ai_reason": "手机轨迹识别内在动机，含ML与用户感知",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "情感识别",
+      "人机交互"
+    ],
+    "authors": [
+      "Ahmed Ibrahim",
+      "Sarah Clinch",
+      "Simon Harper"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ahmed Ibrahim",
+        "orcid": "https://orcid.org/0000-0002-4306-6400"
+      },
+      {
+        "affiliation": [],
+        "name": "Sarah Clinch",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Simon Harper",
+        "orcid": "https://orcid.org/0000-0001-9301-5049"
+      }
+    ],
+    "cited_by": 7,
+    "date": "2021-09",
+    "doi": "10.1016/j.ijhcs.2021.102650",
+    "domain_score": 4.0,
+    "id": 20995,
+    "ingested_at": "2026-08-18T02:52:16.478223",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:46.240125",
+    "title": "Recognising Intrinsic Motivation using Smartphone Trajectories",
+    "title_zh": "利用智能手机轨迹识别内在动机",
+    "tldr": "研究利用智能手机采集的运动轨迹(传感器数据)来识别用户的内在动机,探索基于移动行为信号推断心理状态的可能性,为人机交互中的动机感知、个性化适应等应用提供依据。",
+    "topic_tags": [
+      "情感计算",
+      "多模态交互",
+      "用户研究方法",
+      "个性化"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2021.102650",
+    "volume": "153",
+    "year": 2021
+  },
+  {
     "abstract": "Voice assistants are adopted widely, but they have proven challenging for advertisers because persuasive communication via this new medium has evoked negative user reactions. As a potential solution, this study examines four information tailoring techniques that may reduce ad reactance by affording more control to users: ad customization, overt ad personalization, voice deletion, and voice recognition. To do so, a 16-condition full-factorial experiment was conducted, using a voice-assistant app developed for this study (N = 405). Ad customization reduced ad reactance via increased sense of control and decreased threat to freedom, but only when accompanied by covert (rather than overt) ad personalization. When voice deletion was offered, the presence (or absence) of both ad customization and voice recognition led to lower ad reactance. On the other hand, when voice deletion was not offered, ad customization tended to decrease ad reactance regardless of the presence of voice recognition. Theoretically, the findings highlight the role of control afforded by customization as a precursor to reactance reduction by alleviating threat to freedom. Practically, the findings inform ways to secure the positive effects of ad customization, by employing more transparent and effective personalization and privacy features.",
     "ai_reason": "语音助手（AI）为研究核心，N=405实验测用户广告抗拒",
     "ai_score": 4.0,
@@ -45522,6 +46857,59 @@
     "url": "https://doi.org/10.1177/10949968241261301",
     "volume": "60",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人形机器人恐怖谷，AI相关但非核心，用户感知",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互",
+      "多模态"
+    ],
+    "authors": [
+      "Kai Chi Yam",
+      "Yochanan Bigman",
+      "Kurt Gray"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Kai Chi Yam",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yochanan Bigman",
+        "orcid": "https://orcid.org/0000-0002-0978-322X"
+      },
+      {
+        "affiliation": [],
+        "name": "Kurt Gray",
+        "orcid": null
+      }
+    ],
+    "cited_by": 128,
+    "date": "2021-12",
+    "doi": "10.1016/j.chb.2021.106945",
+    "domain_score": 3.0,
+    "id": 20091,
+    "ingested_at": "2026-08-14T04:05:10.575654",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:16:12.567109",
+    "title": "Reducing the uncanny valley by dehumanizing humanoid robots",
+    "title_zh": "通过去人格化类人机器人缓解恐怖谷效应",
+    "tldr": "针对人形机器人引发的恐怖谷效应，研究提出通过\"去人性化\"策略（即弱化类人表征、强化机器属性认知）来降低用户的不适感，探讨人们如何重新将人形机器人归类为\"物\"而非\"类人\"，从而跨越恐怖谷，提升人机交互体验。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "情感计算",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106945",
+    "volume": "125",
+    "year": 2021
   },
   {
     "abstract": "This article presents findings from a Research through Design investigation focusing on a reflexive approach to data curation and the use of generative AI in design and creative practices. Using binary gender categories manifested in children’s toys as a context, we examine three design experiments aimed at probing how designers can cultivate a\n            reflexive human-AI practice\n            to confront and challenge their internalized biases. Our goal is to underscore the intricate interplay between the designer, AI technology, and publicly held imaginaries and to offer an initial set of tactics for how personal biases and societal norms can be illuminated through interactions with AI. We conclude by proposing that designers not only bear the responsibility of grappling critically with the complexities of AI but also possess the opportunity to creatively harness the limitations of technology to craft a\n            reflexive data curation\n            that encourages profound reflections and awareness within design processes.",
@@ -45646,6 +47034,45 @@
     "url": "https://doi.org/10.1111/joca.70066",
     "volume": "60",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI招聘中求职者反应，AI是核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Jenny S. Wesche",
+      "Andreas Sonderegger"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jenny S. Wesche",
+        "orcid": "https://orcid.org/0000-0002-2681-4542"
+      },
+      {
+        "affiliation": [],
+        "name": "Andreas Sonderegger",
+        "orcid": "https://orcid.org/0000-0003-0054-0544"
+      }
+    ],
+    "cited_by": 63,
+    "date": "2021-12",
+    "doi": "10.1016/j.chb.2021.106931",
+    "domain_score": 4.0,
+    "id": 22079,
+    "ingested_at": "2026-08-21T03:00:03.728498",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:32.833399",
+    "title": "Repelled at first sight? Expectations and intentions of job-seekers reading about AI selection in job advertisements",
+    "title_zh": "一见即退？求职者对招聘广告中AI筛选信息的预期与意图",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2021.106931",
+    "volume": "125",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -46286,7 +47713,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-23T03:00:42.581754",
     "title": "See what you see, hear what you hear: Theorizing AI Device Embodiment (ADE) and its effects on well-being, perceived social support, and adoption",
-    "title_zh": null,
+    "title_zh": "见你所见，听你所听：AI设备具身化（ADE）理论建构及其对幸福感、感知社会支持与采纳的影响",
     "tldr": "提出AI设备具身化（ADE）理论框架，探讨不同物理具身形态的AI设备对用户幸福感、感知社会支持与技术采纳意愿的影响，为AI设备设计与用户体验研究提供新视角。",
     "topic_tags": [
       "人机交互",
@@ -46760,6 +48187,61 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2023.103182",
     "volume": "183",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能虚拟体社会交互，HCI核心议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "对话式 AI",
+      "AI 助手",
+      "人机交互"
+    ],
+    "authors": [
+      "Sun Kyong Lee",
+      "Pavitra Kavya",
+      "Sarah C. Lasser"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sun Kyong Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Pavitra Kavya",
+        "orcid": "https://orcid.org/0000-0002-9165-5170"
+      },
+      {
+        "affiliation": [],
+        "name": "Sarah C. Lasser",
+        "orcid": null
+      }
+    ],
+    "cited_by": 88,
+    "date": "2021-06",
+    "doi": "10.1016/j.ijhcs.2021.102608",
+    "domain_score": 5.0,
+    "id": 21015,
+    "ingested_at": "2026-08-18T02:52:17.060495",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:16:03.767247",
+    "title": "Social interactions and relationships with an intelligent virtual agent",
+    "title_zh": "与智能虚拟体的社会交互及关系",
+    "tldr": "研究用户在与智能虚拟代理(IVA)互动过程中如何建立社会关系与社交互动模式。围绕拟人化程度、信任建立、情感联结与长期使用意愿等维度，探讨人—智能体社交交互的影响因素与机制，揭示用户对虚拟代理的社会性感知如何塑造其态度与行为。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "对话式 AI",
+      "用户研究方法",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2021.102608",
+    "volume": "150",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -47429,6 +48911,66 @@
     "url": "https://doi.org/10.1002/jcpy.1461",
     "volume": "36",
     "year": 2025
+  },
+  {
+    "abstract": "Although in-feed advertising is popular on mainstream platforms, academic research on it is limited. Platforms typically deliver organic content through two methods: subscription by users or recommendation by artificial intelligence. However, little is known about the ad performance between these two channels. This research examines how the performance of in-feed ads, in terms of click-through rates and conversion rates, differs between subscription and recommendation channels and whether these effects are mediated by ad intrusiveness and moderated by ad attributes. Two ad attributes are investigated: ad appeal (informational vs. emotional) and ad link (direct vs. indirect). Study 1 finds that the recommendation channel generates higher click-through rates but lower conversion rates than the subscription channel, and these effects are amplified by informational ad appeal and direct ad links. Study 2 explores channel differences, revealing that the recommendation channel yields less source credibility and content control, reducing consumer engagement with organic content. Studies 3 and 4 validate the mediating role of ad intrusiveness and rule out ad recognition as an alternative explanation. Study 5 uses eye-tracking technology to show that the recommendation channel has lower content engagement, lower ad intrusiveness, and greater ad interest.",
+    "ai_reason": "AI推荐vs订阅渠道广告效果对比，AI为主要变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 推荐",
+      "推荐算法",
+      "眼动追踪"
+    ],
+    "authors": [
+      "Beibei Dong",
+      "Mengzhou Zhuang",
+      "Eric (Er) Fang",
+      "Minxue Huang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Beibei Dong",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mengzhou Zhuang",
+        "orcid": "https://orcid.org/0000-0001-9970-4443"
+      },
+      {
+        "affiliation": [],
+        "name": "Eric (Er) Fang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Minxue Huang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 57,
+    "date": "2023-09-12",
+    "doi": "10.1177/00222429231190021",
+    "domain_score": 4.0,
+    "id": 24091,
+    "ingested_at": "2026-08-27T12:14:22.677390",
+    "issue": "2",
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:26.694979",
+    "title": "Tales of Two Channels: Digital Advertising Performance Between AI Recommendation and User Subscription Channels",
+    "title_zh": "双渠道之辩：AI推荐与用户订阅渠道间的数字广告效果",
+    "tldr": "对比信息流中AI推荐与用户订阅两种渠道的广告效果：推荐渠道点击率更高但转化率更低，信息型诉求与直达链接放大此差异；中介机制为广告侵入感，推荐渠道源可信度与内容控制感更低削弱参与度，眼动实验进一步佐证较低内容卷入与较低侵入感。",
+    "topic_tags": [
+      "营销",
+      "广告",
+      "推荐系统",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1177/00222429231190021",
+    "volume": "88",
+    "year": 2023
   },
   {
     "abstract": "Through a natural language interface (NLI) for exploratory visual analysis, users can directly “ask” analytical questions about the given tabular data. This process greatly improves user experience and lowers the technical barriers of data analysis. Existing techniques focus on generating a visualization from a concrete question. However, complex questions, requiring multiple data queries and visualizations to answer, are frequently asked in data exploration and analysis, which cannot be easily solved with the existing techniques. To address this issue, in this article, we introduce Talk2Data, a natural language interface for exploratory visual analysis that supports answering complex questions. It leverages an advanced deep-learning model to resolve complex questions into a series of simple questions that could gradually elaborate on the users’ requirements. To present answers, we design a set of annotated and captioned visualizations to represent the answers in a form that supports interpretation and narration. We conducted an ablation study and a controlled user study to evaluate the Talk2Data’s effectiveness and usefulness.",
@@ -49355,6 +50897,54 @@
     "year": 2023
   },
   {
+    "abstract": null,
+    "ai_reason": "AI决策自动化/增强对工人影响，核心AI议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Markus Langer",
+      "Richard N. Landers"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Markus Langer",
+        "orcid": "https://orcid.org/0000-0002-8165-1803"
+      },
+      {
+        "affiliation": [],
+        "name": "Richard N. Landers",
+        "orcid": null
+      }
+    ],
+    "cited_by": 289,
+    "date": "2021-10",
+    "doi": "10.1016/j.chb.2021.106878",
+    "domain_score": 4.0,
+    "id": 20077,
+    "ingested_at": "2026-08-14T04:05:10.118514",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:43.494342",
+    "title": "The future of artificial intelligence at work: A review on effects of decision automation and augmentation on workers targeted by algorithms and third-party observers",
+    "title_zh": "工作中人工智能的未来：决策自动化与增强对算法目标员工及第三方观察者影响的综述",
+    "tldr": "综述人工智能在工作场景中的影响,聚焦决策自动化与增强对被算法针对的工人以及第三方观察者(如同事、管理者、客户)的作用,梳理现有研究在心理、行为、绩效等维度的发现,探讨算法决策对劳动者及其社会关系带来的机遇与风险。",
+    "topic_tags": [
+      "人机协作",
+      "信任",
+      "AI 治理",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106878",
+    "volume": "123",
+    "year": 2021
+  },
+  {
     "abstract": "The use of digital employees (DEs)—chatbots powered by artificial intelligence (AI)—is becoming increasingly common in the service industry. However, it is unclear whether collaborations between the human employee (HE) and DE can influence customer outcomes, and what the mechanisms behind such outcomes are. This research proposes and tests a theoretical model that explains how the communication of HE-DE collaboration in the form of interdependent behavioral cues can influence customer evaluations of the service they received from such a team. Five experimental studies involving a total of 1403 participants demonstrate that making HE-DE collaboration visible to customers during the service encounter can reinforce their perception of HE-DE team cohesiveness and service process fluency, driving satisfaction. The communication of coordination and team goal cues are two strong stimulants that strengthen such impressions. Further, this research also reveals that the HE-DE collaboration (vs. augmentation or substitution) appeals to customers thanks to their perception of a transparent process, which is induced through collaborative cues. This research provides theoretical implications for a transparent collaborative process between HE and DE and practical advice for firms seeking to integrate DE into their organizations’ workflows.",
     "ai_reason": "5实验研究客户视角下人-AI协作的服务体验与评价",
     "ai_score": 3.0,
@@ -50794,6 +52384,131 @@
   },
   {
     "abstract": null,
+    "ai_reason": "DSS与智能体自主性，AI相关，工作场景用户视角",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI 助手",
+      "人机交互"
+    ],
+    "authors": [
+      "Anna-Sophie Ulfert",
+      "Conny H. Antoni",
+      "Thomas Ellwart"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Anna-Sophie Ulfert",
+        "orcid": "https://orcid.org/0000-0001-6293-4173"
+      },
+      {
+        "affiliation": [],
+        "name": "Conny H. Antoni",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Ellwart",
+        "orcid": null
+      }
+    ],
+    "cited_by": 52,
+    "date": "2022-01",
+    "doi": "10.1016/j.chb.2021.106987",
+    "domain_score": 3.0,
+    "id": 22574,
+    "ingested_at": "2026-08-23T03:00:02.892466",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:32.016345",
+    "title": "The role of agent autonomy in using decision support systems at work",
+    "title_zh": "主体自主性在工作中使用决策支持系统中的作用",
+    "tldr": "探讨职场中使用决策支持系统时，智能体自主性程度对员工实际使用行为的影响。聚焦人机协作情境下，自主性高低如何塑造用户对 DSS 的接受度、依赖与采纳模式，为设计适度自主的决策支持系统提供理论与实践启示。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "AI 采用",
+      "AI 依赖",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106987",
+    "volume": "126",
+    "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "拟人化AI核心议题，消费者心智模型与情感",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "多模态"
+    ],
+    "authors": [
+      "Samira Nazari Ghazvini",
+      "Behnaz Ahmadzadeh Ardebili",
+      "Amir Heidari Arash",
+      "Shokoufeh Hajmalek",
+      "Mohammad Hossein Vafa"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Samira Nazari Ghazvini",
+        "orcid": "https://orcid.org/0000-0001-6279-9979"
+      },
+      {
+        "affiliation": [],
+        "name": "Behnaz Ahmadzadeh Ardebili",
+        "orcid": "https://orcid.org/0000-0002-5026-9732"
+      },
+      {
+        "affiliation": [],
+        "name": "Amir Heidari Arash",
+        "orcid": "https://orcid.org/0009-0001-6731-5328"
+      },
+      {
+        "affiliation": [],
+        "name": "Shokoufeh Hajmalek",
+        "orcid": "https://orcid.org/0009-0001-2966-3145"
+      },
+      {
+        "affiliation": [],
+        "name": "Mohammad Hossein Vafa",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hassan Nosrati",
+        "orcid": "https://orcid.org/0000-0003-1509-9819"
+      }
+    ],
+    "cited_by": 2,
+    "date": "2026-11",
+    "doi": "10.1016/j.chb.2026.109080",
+    "domain_score": 5.0,
+    "id": 24026,
+    "ingested_at": "2026-08-27T12:14:20.659038",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:14.217418",
+    "title": "The role of anthropomorphized artificial intelligence in shaping consumer mental models and emotional experience in digital branding",
+    "title_zh": null,
+    "tldr": "研究拟探讨拟人化人工智能在数字品牌塑造中如何影响消费者的心理模型与情感体验。围绕 AI 形象的人格化设计，结合品牌情境，分析用户对 AI 品牌的认知建构与情绪反应，揭示拟人化策略在数字品牌传播中对消费者心理加工与品牌印象形成的作用机制，为品牌 AI 形象设计提供理论依据。",
+    "topic_tags": [
+      "消费者行为",
+      "人机交互(HCI)",
+      "情感计算",
+      "用户体验(UX)"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109080",
+    "volume": "184",
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "研究个体差异在人与自动驾驶车辆交互中的作用，HCI用户研究议题",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -52195,6 +53910,64 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2025.103574",
     "volume": "203",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "机器人强化学习透明性HRI研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Marco Matarese",
+      "Alessandra Sciutti",
+      "Francesco Rea",
+      "Silvia Rossi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Marco Matarese",
+        "orcid": "https://orcid.org/0000-0003-1719-3745"
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandra Sciutti",
+        "orcid": "https://orcid.org/0000-0002-1056-3398"
+      },
+      {
+        "affiliation": [],
+        "name": "Francesco Rea",
+        "orcid": "https://orcid.org/0000-0001-8535-223X"
+      },
+      {
+        "affiliation": [],
+        "name": "Silvia Rossi",
+        "orcid": "https://orcid.org/0000-0002-3379-1756"
+      }
+    ],
+    "cited_by": 29,
+    "date": "2021-12",
+    "doi": "10.1109/thms.2021.3116119",
+    "domain_score": 4.0,
+    "id": 21135,
+    "ingested_at": "2026-08-18T02:52:20.551194",
+    "issue": "6",
+    "journal": "THMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:32.834541",
+    "title": "Toward Robots’ Behavioral Transparency of Temporal Difference Reinforcement Learning With a Human Teacher",
+    "title_zh": "面向人机协同教学：时序差分强化学习的机器人行为透明性",
+    "tldr": "研究如何在时间差分强化学习（TD-RL）框架下提升机器人对人类教师的行为透明度。机器人通过与人类教师交互学习任务时，其决策逻辑常难以外显，导致信任与教学效率低下。该工作提出行为透明机制，使机器人能向人类教师清晰解释其学习进展与决策依据，促进人机协作中教与学的双向理解与效率提升。",
+    "topic_tags": [
+      "人机协作",
+      "可解释性",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1109/thms.2021.3116119",
+    "volume": "51",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -54906,6 +56679,47 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心研究LLM在用户画像与构思中的HCI应用",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Stefano De Paoli"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Stefano De Paoli",
+        "orcid": "https://orcid.org/0000-0003-1120-4773"
+      }
+    ],
+    "cited_by": 9,
+    "date": "2026-01",
+    "doi": "10.1016/j.ijhcs.2025.103690",
+    "domain_score": 5.0,
+    "id": 24042,
+    "ingested_at": "2026-08-27T12:14:21.162682",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:19.626174",
+    "title": "User personas, ideation and large language models: A post-hoc study",
+    "title_zh": "用户画像、构思与大语言模型：事后研究",
+    "tldr": "针对用户画像(persona)与创意构思(ideation)任务，事后回溯性评估大语言模型(LLM)所生成结果的质量与可用性，考察 LLM 在 UX 实践中替代或辅助人类工作的潜力与局限。",
+    "topic_tags": [
+      "用户画像",
+      "人机交互(HCI)",
+      "用户体验(UX)"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2025.103690",
+    "volume": "208",
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI咨询场景比较，discrete choice用户调研方法",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -55279,6 +57093,59 @@
     "url": "https://doi.org/10.1177/14707853261423690",
     "volume": "68",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "ML预测用户疲劳/无聊，AI是工具，用户状态为核心",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Damien Lekkas",
+      "George D. Price",
+      "Nicholas C. Jacobson"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Damien Lekkas",
+        "orcid": "https://orcid.org/0000-0002-6995-9223"
+      },
+      {
+        "affiliation": [],
+        "name": "George D. Price",
+        "orcid": "https://orcid.org/0000-0002-9164-4973"
+      },
+      {
+        "affiliation": [],
+        "name": "Nicholas C. Jacobson",
+        "orcid": "https://orcid.org/0000-0002-8832-4741"
+      }
+    ],
+    "cited_by": 27,
+    "date": "2022-02",
+    "doi": "10.1016/j.chb.2021.107029",
+    "domain_score": 3.0,
+    "id": 24006,
+    "ingested_at": "2026-08-27T12:14:20.068862",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-27T12:15:32.014087",
+    "title": "Using smartphone app use and lagged-ensemble machine learning for the prediction of work fatigue and boredom",
+    "title_zh": "利用智能手机应用数据与滞后集成机器学习预测工作疲劳与厌倦",
+    "tldr": "基于智能手机 App 使用行为数据，结合滞后集成机器学习方法，预测职场员工的疲劳与无聊状态。利用 App 使用的时间序列特征，通过滞后窗口与集成模型捕捉行为与疲劳/无聊之间的时序关联，为职场健康监测与干预提供数据驱动支持。",
+    "topic_tags": [
+      "消费者行为",
+      "情感计算",
+      "AI 采用",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.107029",
+    "volume": "127",
+    "year": 2022
   },
   {
     "abstract": "Service failure and recovery (SFR) typically involves one or more people (or machines) talking or writing to each other in a goal-directed conversation. While SFR represents a prime context to understand how language reflects and shapes the service experience, this subfield has only begun to apply text analysis methods and language theories to this context. This tutorial offers a methodological guide for traditional text analysis methods and large language models and suggests some future research paths in SFR. We also provide user-friendly workflow repositories, in Python and KNIME Analytics, that researchers with (and without) coding experience can use. In doing so, we hope to encourage the next wave of text analysis in SFR research.",
@@ -56865,7 +58732,10 @@
     "abstract": null,
     "ai_reason": "机器学习用户隐私感知，用户视角研究",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "个性化",
+      "可解释AI"
+    ],
     "authors": [
       "Sangwook Lee",
       "Won-Ki Moon",
@@ -56906,8 +58776,13 @@
     "scored_at": "2026-08-23T03:00:50.328834",
     "title": "When the machine learns from users, is it helping or snooping?",
     "title_zh": "当机器从用户处学习时，它是在帮助还是窥探？",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "探讨当机器从用户行为中学习时，究竟是在提供个性化帮助还是在侵犯隐私。围绕人机交互中用户数据收集与利用的边界，分析用户对机器学习的信任与担忧，揭示用户如何在感知收益与隐私风险之间进行权衡，为设计兼顾个性化与隐私保护的系统提供启示。",
+    "topic_tags": [
+      "信任",
+      "伦理",
+      "人机交互(HCI)",
+      "AI采用"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2022.107427",
     "volume": "138",
     "year": 2023

@@ -1,0 +1,56 @@
+{
+  "abstract": "Automated applicant tracking systems increasingly decide who advances in hiring, and litigation and regulation now demand that those decisions be auditable. Existing tools sit at two extremes. Group fairness metrics such as the disparate impact ratio summarize a whole population but cannot say which individual decisions were unfair or why, while local explainers such as SHAP attribute a single prediction but are not connected to the legal standard by which hiring bias is judged. We present the AI Bias Firewall (AIBF), a method that audits an applicant tracking system one decision at a time. AIBF neutralizes a candidate's protected-attribute proxies, re-scores the decision, and measures the resulting counterfactual shift, which yields a signed per-decision bias in score points, a flag for decisions the protected attributes changed, and a plain-language explanation naming the responsible factors. We evaluate on two real public datasets, Adult and COMPAS, rather than on synthetic data. The per-decision counterfactual shift is faithful, aggregating to reproduce the known group level disparity, for example a mean shift of +7.5 points for the privileged group and -8.0 for the disadvantaged group on Adult, consistent with the measured statistical parity difference. AIBF identifies the decisions that protected attributes flipped with an area under the ROC curve of 0.963 on Adult, against 0.672 for a baseline that flags by group membership, and it identifies the harmed candidates so precisely that reviewing only five percent of decisions surfaces fifty-five percent of them, against six percent under group based review. We also report a limitation: correcting flagged decisions raises the disparate impact ratio substantially but not to legal parity, because features labeled as merit carry residual proxy correlation. AIBF is released under the Apache 2.0 license with code and experiments.",
+  "ai_type_tags": [
+    "算法决策",
+    "可解释AI",
+    "AI治理"
+  ],
+  "arxiv_id": "2608.21537",
+  "authors": [
+    "Jay Barach"
+  ],
+  "authors_full": [
+    {
+      "name": "Jay Barach"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心是AI招聘算法审计，HR/管理",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对自动化招聘系统偏见审计难题，提出AI偏见防火墙（AIBF），逐决策中和受保护属性的代理特征并重新评分，输出有符号的逐决策偏见分数及自然语言解释。在Adult与COMPAS真实数据集上验证，聚合结果可复现已知群体差异，识别受保护属性翻转决策的AUC达0.963，显著优于按群体归属标记的基线。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "算法管理",
+        "公平性",
+        "偏见",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-21",
+  "doi": null,
+  "id": "p_XNylFFMTmr_4p1K_",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2608.21537v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 62098,
+      "revision": "f501cbaffd95e09508e972f853f2a3ba12e6ded5"
+    }
+  ],
+  "title": "Counterfactual, Per-Decision Bias Auditing for Automated Hiring: Localizing and Explaining Disparate Impact in Applicant Tracking Systems",
+  "title_zh": "自动化招聘的反事实逐决策偏见审计：申请人追踪系统中差异化影响的定位与解释",
+  "unified_ingested_at": "2026-08-27T12:29:12.608241Z",
+  "url": "https://arxiv.org/abs/2608.21537v1",
+  "volume": null,
+  "year": 2026
+}

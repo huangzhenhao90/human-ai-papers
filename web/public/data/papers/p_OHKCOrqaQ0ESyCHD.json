@@ -35,6 +35,18 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM辅助心理咨询，AI核心",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对全球心理健康服务供需失衡，研发CAIA——一个协同设计、含七项LLM驱动功能并结合检索增强生成的在线文字心理咨询AI辅助系统。34名专业咨询师在真实异步咨询场景中的实地评估（36个对话线程、321条消息、1257次AI输出）显示系统采纳率较高，专业自主性与信息准确性是持续接受的决定因素，解释性功能因能提供新视角和促进专业反思而最受认可。",
+      "topic_tags": [
+        "人机协作",
+        "信任",
+        "AI治理",
+        "人机交互"
+      ]
+    },
     "ur": {
       "ai_reason": "AI咨询工具实地评估，34名咨询师用户研究",
       "ai_score": 4.0,
@@ -50,6 +62,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 0,
@@ -61,9 +74,14 @@
   "pdf_url": "https://arxiv.org/pdf/2608.22251v1",
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 62087,
+      "revision": "f501cbaffd95e09508e972f853f2a3ba12e6ded5"
+    },
+    {
       "channel": "ur",
       "legacy_id": 23902,
-      "revision": "fd75c9fccb9a10d9c5b1d6c791e4c1ce1f930b08"
+      "revision": "af2ea0d848754ce9aeef2d172405cf2505caa0e6"
     }
   ],
   "title": "CAIA in Practice: Field Evaluation of an AI-Assisted Support System for Text-Based Online Counselling",

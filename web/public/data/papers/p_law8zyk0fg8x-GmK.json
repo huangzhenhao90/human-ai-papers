@@ -1,6 +1,11 @@
 {
   "abstract": "Explainable AI (XAI) research has produced a plethora of explanation techniques, yet user studies repeatedly show that available explanations are not effective in practice. We argue that, given the siloed nature of conventional XAI, users are struggling to select the appropriate XAI technique. Viewing XAI through a philosophical lens, we offer a formalization of what we call the selection problem: the systematic failure of XAI interfaces to bridge the gap between a user's natural-language uncertainty and the explanation technique that resolves it. Following a logical premise-conclusion format, we show that conventional interfaces require users to translate their uncertainty into a technique selection, a challenging prerequisite to meet. We also propose a structural solution: a multi-agent LLM orchestration tool that translates the user's query to the proper XAI explanation technique. We provide an example of how this structural solution could be instantiated to address the selection problem.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "可解释AI",
+    "人机交互"
+  ],
   "arxiv_id": "2608.22356",
   "authors": [
     "Claire Vlases",
@@ -19,8 +24,12 @@
       "ai_reason": "XAI选择问题概念分析，有用户视角",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "XAI领域长期存在\"选择问题\"：用户难以将自然语言描述的不确定性与合适的解释技术匹配。以哲学视角形式化该问题后，论文论证传统界面要求用户自行完成技术选择这一高门槛任务，并提出基于多智能体LLM编排工具的结构性方案，自动将用户查询翻译为恰当的XAI技术。",
+      "topic_tags": [
+        "可解释性",
+        "人机交互(HCI)",
+        "人机协作"
+      ]
     }
   },
   "channels": [
@@ -37,7 +46,7 @@
     {
       "channel": "ur",
       "legacy_id": 23891,
-      "revision": "fd75c9fccb9a10d9c5b1d6c791e4c1ce1f930b08"
+      "revision": "af2ea0d848754ce9aeef2d172405cf2505caa0e6"
     }
   ],
   "title": "Addressing the Selection Problem in Explainable AI",
