@@ -1,6 +1,10 @@
 {
   "abstract": "A growing literature measures how far occupations are exposed to AI, but these measures capture where AI could perform tasks, not whether workers have adopted it. We propose a new layer of exposure, delegated exposure, which records whether a worker has committed a task to AI by building it into a workflow. We operationalize it as the Agentic Adoption Index (AAI), which measures how closely an occupation's tasks match the agentic routines practitioners have already built and shared. We embed roughly 53,000 agent skill specifications from the Manus Skills Marketplace, compute their semantic similarity to about 18,000 O*NET task statements, and aggregate to the occupation level. Three findings follow. First, the occupations where delegation concentrates differ sharply from those pre-AI frameworks identified as most at risk. Second, the AAI tracks what AI could do more closely than what workers currently use it for. Third, the AAI peaks below the top of the wage distribution and at the bachelor's level, declining at both extremes. Technical availability explains most of this variation, but not the shortfall among the most educated occupations, so feasibility alone cannot account for who adopts. That shortfall may reflect work that resists advance specification, or professional discretion over the pace of codification. Distinguishing the two, and tracking how these measures diverge over time, will require repeated measurement.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "机器学习",
+    "算法管理"
+  ],
   "arxiv_id": "2608.20425",
   "authors": [
     "Hyeongjae Lee",
@@ -23,8 +27,12 @@
       "ai_reason": "AI代理采用与职业暴露，关联劳动力/HR研究",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出\"委托式暴露\"概念与代理采用指数(AAI)，基于约53,000个代理技能规范与18,000项O*NET任务的语义相似度衡量职业层面AI实际采纳。发现委托高度集中于中高薪与学士层级职业，与传统AI风险预测差异显著；技术可及性解释大部分变异，高学历职业采纳不足可能源于工作难以预规格化或职业自主权对编码节奏的调节。",
+      "topic_tags": [
+        "工作未来",
+        "人机协作",
+        "创新"
+      ]
     }
   },
   "channels": [
@@ -41,7 +49,7 @@
     {
       "channel": "ob",
       "legacy_id": 59782,
-      "revision": "f501cbaffd95e09508e972f853f2a3ba12e6ded5"
+      "revision": "d96a07e308255371553e83e2602ff4f522d5a71d"
     }
   ],
   "title": "Who Delegates to AI? Evidence from 53,000 Agent Configurations",

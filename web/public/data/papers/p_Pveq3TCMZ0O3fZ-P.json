@@ -1,6 +1,9 @@
 {
   "abstract": "Large-scale population surveys are essential for generating robust social and scientific insights, yet they face significant challenges, including declining response rates, increasing data collection costs, long delays between data collection and data provision, and the risk of nonresponse bias. Advances in artificial intelligence (AI) have opened up new opportunities for AI-supported survey infrastructures where the goal is to overcome these challenges without limiting the data quality. A promising AI-enabled survey infrastructure for which we build a first pilot is a hybrid panel. A hybrid panel is a longitudinal AI-enabled survey which allows to iteratively improve the alignment between large language models (LLMs) and the population they aim to simulate and use the errors to inform the design and implementation of the next survey wave (e.g., inform the participant recruitment, assignment of questions to participants). It incorporates both human participants and LLMs as fundamental elements of its design. In this research note, we introduce the concept of a hybrid panel by providing a definition and outlining an overarching framework, spanning data collection to data validation. We detail results from a first pilot study to illustrate (open) challenges that we identify for hybrid panels.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "人机协作"
+  ],
   "arxiv_id": "2608.22582",
   "authors": [
     "Julia Romberg",
@@ -31,8 +34,12 @@
       "ai_reason": "LLM混合调查面板，AI核心",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出混合面板概念，将大语言模型与人类受访者共同纳入纵向调查设计。通过迭代让LLM模拟与目标人群对齐，并以模拟偏差指导下一波问卷设计（招募、题目分配），以应对响应率下降、成本上升与非响应偏差等挑战，文章给出定义、框架及首轮试点。",
+      "topic_tags": [
+        "人机协作",
+        "决策",
+        "伦理"
+      ]
     },
     "ur": {
       "ai_reason": "AI辅助调查基础设施，含用户对齐",
@@ -57,16 +64,16 @@
     {
       "channel": "ob",
       "legacy_id": 62076,
-      "revision": "f501cbaffd95e09508e972f853f2a3ba12e6ded5"
+      "revision": "d96a07e308255371553e83e2602ff4f522d5a71d"
     },
     {
       "channel": "ur",
       "legacy_id": 23904,
-      "revision": "af2ea0d848754ce9aeef2d172405cf2505caa0e6"
+      "revision": "7464d14d2e6e83ab1d1e5a56da5c985baf5f17d3"
     }
   ],
   "title": "Hybrid Panels: Toward Human-AI Collaboration in Survey Research",
-  "title_zh": "混合小组：迈向人机协作的调查研究",
+  "title_zh": "混合专家组：迈向调查研究中的Human-AI协作",
   "unified_ingested_at": "2026-08-26T03:08:17.087787Z",
   "url": "https://arxiv.org/abs/2608.22582v1",
   "volume": null,

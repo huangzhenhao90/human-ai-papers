@@ -1,6 +1,11 @@
 {
   "abstract": "Classical Chinese poetry composition has long valued Tuiqiao, the iterative refinement of words, imagery, and prosody. However, many current AI poetry systems follow a one-shot generation paradigm, which reduces users to prompt providers and weakens their creative agency. We present Jiuge-Tuiqiao, an interactive human-AI collaborative system for classical Chinese poetry composition. The system is designed around a triadic model: user-driven control, ancient-guided evidence, and AI-assisted generation. Users can lock characters or lines, receive real-time prosody feedback, and obtain interpretable refinement suggestions grounded in high-frequency collocations, PPL-ranked classical lines, and structured knowledge extracted from classical encyclopedias. This design turns AI from an autonomous generator into a background assistant that supports the user's own process of poetic refinement. Preliminary experiments and user feedback suggest that Jiuge-Tuiqiao improves controllability, interpretability, and user engagement in classical poetry composition.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "可解释 AI",
+    "多模态"
+  ],
   "arxiv_id": "2608.23098",
   "authors": [
     "Yufeng Han",
@@ -40,8 +45,13 @@
       "ai_reason": "人机协作诗歌系统，涉及用户控制但无用户评估",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对古诗创作中\"推敲\"式迭代打磨的需求，设计人机协作系统Jiuge-Tuiqiao，采用用户主导、古籍引导、AI辅助的三元模型，支持锁字锁行、韵律反馈与基于高频搭配、典籍知识的可解释修改建议，实验显示提升了创作可控性、可解释性与用户参与度。",
+      "topic_tags": [
+        "人机协作",
+        "可解释性",
+        "HCI",
+        "人机交互"
+      ]
     }
   },
   "channels": [
@@ -58,7 +68,7 @@
     {
       "channel": "ur",
       "legacy_id": 23920,
-      "revision": "af2ea0d848754ce9aeef2d172405cf2505caa0e6"
+      "revision": "7464d14d2e6e83ab1d1e5a56da5c985baf5f17d3"
     }
   ],
   "title": "Jiuge-Tuiqiao: An Interpretable Human-AI System for Classical Chinese Poetry Refinement",

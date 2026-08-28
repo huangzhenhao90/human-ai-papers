@@ -1,0 +1,83 @@
+{
+  "abstract": "Travel planning agents assist users in generating personalized travel plans by modeling their individual preferences. Existing agents either rely on explicit user instructions or engage in multi-turn clarification to elicit user preferences. However, both approaches overlook the rich behavioral signals latent in users' past behaviors, which implicitly encode their preferences. This over-reliance on active user input increases interaction burden and limits plan personalization. To bridge this gap, we introduce a new task, Behavior-Aware Travel Planning, which infers user preferences directly from past behaviors and generates personalized travel plans. To facilitate research on this task, we introduce Behavior2Trip, a benchmark constructed from one of the largest Chinese online travel platforms, comprising 11,400 instances. Each instance represents an average of 39.8 past user behaviors spanning 14 attributes across 5 preference dimensions. We further propose B2T-Agent, a reinforcement learning-based agent that leverages user behavior trajectories, interacts with external tools for preference-aligned retrieval, and maintains an internal memory module. Experiments on Behavior2Trip show that GPT-4.1 achieves a full-constraint pass rate of only 0.5\\% on the hardest tasks, while B2T-Agent built upon Qwen3-8B outperforms all baselines, highlighting the substantial challenge of this task. Moreover, Qwen3-8B trained with B2T-Agent also outperforms GPT-4.1 on the TravelPlanner benchmark, demonstrating strong generalization. Code and data are available at https://github.com/BUAA-IRIP-LLM/Behavior2Trip",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI 推荐",
+    "人机协作"
+  ],
+  "arxiv_id": "2608.26807",
+  "authors": [
+    "Zihao Cheng",
+    "Yingyu Shan",
+    "Hongru Wang",
+    "Zeming Liu",
+    "Xinyi Wang"
+  ],
+  "authors_full": [
+    {
+      "name": "Zihao Cheng"
+    },
+    {
+      "name": "Yingyu Shan"
+    },
+    {
+      "name": "Hongru Wang"
+    },
+    {
+      "name": "Zeming Liu"
+    },
+    {
+      "name": "Xinyi Wang"
+    },
+    {
+      "name": "Xiangrong Zhu"
+    },
+    {
+      "name": "Yuhang Guo"
+    },
+    {
+      "name": "Wei Lin"
+    },
+    {
+      "name": "Yunhong Wang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用户行为驱动的个性化规划，基准导向",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对旅行规划智能体过度依赖用户主动输入的局限，提出从用户历史行为轨迹隐式推断偏好的新任务，并构建含11,400实例的Behavior2Trip基准（平均39.8条历史行为、5维度14属性）；进一步设计基于强化学习的B2T-Agent，借助外部工具交互与记忆模块实现偏好对齐检索，实验显示其优于GPT-4.1等基线。",
+      "topic_tags": [
+        "推荐系统",
+        "个性化",
+        "智能体",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-27",
+  "doi": null,
+  "id": "p_biWESuLY94MCuX_k",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2608.26807v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 24884,
+      "revision": "7464d14d2e6e83ab1d1e5a56da5c985baf5f17d3"
+    }
+  ],
+  "title": "Behavior2Trip: Towards Personalized Travel Planning via User Behavior Trajectory",
+  "title_zh": "Behavior2Trip：基于用户行为轨迹的个性化旅行规划",
+  "unified_ingested_at": "2026-08-28T13:57:59.661142Z",
+  "url": "https://arxiv.org/abs/2608.26807v1",
+  "volume": null,
+  "year": 2026
+}

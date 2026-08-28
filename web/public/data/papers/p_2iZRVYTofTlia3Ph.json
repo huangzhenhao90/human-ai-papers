@@ -1,0 +1,74 @@
+{
+  "abstract": "Computer Use Agents (CUAs) are increasingly deployed to navigate mobile and desktop applications on behalf of users, yet no benchmark comprehensively evaluates whether they can safely interact with visual interfaces while handling ambiguous instructions. We introduce ADeptS-Bench, a dual-stream trustworthiness benchmark, grounded in the ADEPTS capability framework and general population user studies. The Safety stream provides paired benign/malicious tasks with threats embedded in the visual interface. The Disambiguation stream evaluates whether agents seek clarification when intent is ambiguous. Evaluating seven models reveals that no model consistently exceeds 80% task success while staying below 30% attack success; every model clicks \"Checkout\" on a $25K order without hesitation, and none detects that a \"factory reset\" button is mislabeled as \"Optimize.\" An ablation reveals three distinct safety architectures: tool-dependent (ASR +21-23pp without refusal tool), partially tool-dependent (+10-11pp), and no mechanism (unchanged). In disambiguation, all models overestimate consequence severity, mirroring the over-refusal bias observed in safety. We release all data, evaluation code, and analysis tools upon publication.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "LLM",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2608.26204",
+  "authors": [
+    "Joy Chen",
+    "Alejandro Castillejo Munoz",
+    "Pierluca D'Oro",
+    "Yuxuan Sun",
+    "Chloe Evans"
+  ],
+  "authors_full": [
+    {
+      "name": "Joy Chen"
+    },
+    {
+      "name": "Alejandro Castillejo Munoz"
+    },
+    {
+      "name": "Pierluca D'Oro"
+    },
+    {
+      "name": "Yuxuan Sun"
+    },
+    {
+      "name": "Chloe Evans"
+    },
+    {
+      "name": "Joseph Tighe"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "计算机使用智能体可信度基准，含用户研究支撑",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对跨设备计算机使用代理(CUA)提出 ADeptS-Bench 信任基准，基于 ADEPTS 框架构建安全与消歧双流评估。测试七款模型发现无模型能同时实现高任务成功与低攻击成功率，普遍存在过度点击与误识别问题，并识别出三种安全架构与过度拒绝偏差。",
+      "topic_tags": [
+        "AI 治理",
+        "可解释性",
+        "信任",
+        "人机交互(HCI)",
+        "可用性测试"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-25",
+  "doi": null,
+  "id": "p_2iZRVYTofTlia3Ph",
+  "issue": null,
+  "journal": "arXiv:cs.CR",
+  "pdf_url": "https://arxiv.org/pdf/2608.26204v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 24885,
+      "revision": "7464d14d2e6e83ab1d1e5a56da5c985baf5f17d3"
+    }
+  ],
+  "title": "ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices",
+  "title_zh": "ADeptS-Bench：跨设备计算机使用智能体可信度评测基准",
+  "unified_ingested_at": "2026-08-28T13:57:59.661142Z",
+  "url": "https://arxiv.org/abs/2608.26204v1",
+  "volume": null,
+  "year": 2026
+}

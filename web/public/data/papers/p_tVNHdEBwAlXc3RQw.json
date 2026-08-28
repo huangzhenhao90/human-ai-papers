@@ -1,0 +1,92 @@
+{
+  "abstract": "Shopping assistants are shifting from ranked product lists toward structured decision support, where systems must synthesize shopper context, product evidence, and next-step guidance into a coherent recommendation experience. This changes the unit of evaluation: a fluent response can still fail by ignoring shopper context, contradicting itself across components, or leaving defects too vague to localize. Existing personalization, grounding, and LLM-as-a-judge benchmarks cover pieces of this problem, but they do not define a joint evaluation target for structured shopping-assistant responses. We formulate this missing evaluation target as PACE: Personalized, Actionable, Compositional, and Evidence-grounded evaluation. We instantiate PACE with two artifacts: PACEShop, a benchmark dataset that makes the target measurable through 22,625 controlled records with structured personas, auditable evidence pools, GOOD/BAD labels, and gold defect family and location annotations; and PACEJudge, a training-free judging protocol that makes the target reportable through a structured output contract. Our experiments show that generic judges can recognize broad quality but fail to recover the diagnostic fields required for PACE; PACEShop makes these failures verifiable, and PACEJudge improves persona-source, cross-component, grounding, and family/location closure without retraining, showing that realistic shopping-assistant evaluation requires a task-matched output contract rather than only a stronger backbone or scalar prompt.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI 助手",
+    "AI 推荐"
+  ],
+  "arxiv_id": "2608.26180",
+  "authors": [
+    "Weimin Lyu",
+    "Chen Luo",
+    "Guangrui Li",
+    "Yaochen Xie",
+    "Dhineshkumar Ramasubbu"
+  ],
+  "authors_full": [
+    {
+      "name": "Weimin Lyu"
+    },
+    {
+      "name": "Chen Luo"
+    },
+    {
+      "name": "Guangrui Li"
+    },
+    {
+      "name": "Yaochen Xie"
+    },
+    {
+      "name": "Dhineshkumar Ramasubbu"
+    },
+    {
+      "name": "Arief Koesdwiady"
+    },
+    {
+      "name": "Wanqiu Long"
+    },
+    {
+      "name": "Hansu Gu"
+    },
+    {
+      "name": "Yutong Chen"
+    },
+    {
+      "name": "Zheshen Wang"
+    },
+    {
+      "name": "Dakuo Wang"
+    },
+    {
+      "name": "Yi Liu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM购物助手评估基准，面向消费者但非用研方法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对购物助手从排序列表向结构化决策支持转变的趋势，提出 PACE 评估目标（个性化、可执行、组合性、证据支撑），构建 PACEShop 基准数据集（含 22,625 条带结构化画像、证据池、GOOD/BAD 标签及缺陷族与位置标注的记录）和免训练评判协议 PACEJudge。实验显示通用评判器能识别整体质量但无法恢复 PACE 所需诊断字段，PACEJudge 在画像来源、跨组件一致性、证据锚定与缺陷定位上显著优于基线，验证任务匹配的输出契约是评估的关键。",
+      "topic_tags": [
+        "推荐系统",
+        "个性化",
+        "用户体验(UX)",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-20",
+  "doi": null,
+  "id": "p_tVNHdEBwAlXc3RQw",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2608.26180v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 24883,
+      "revision": "7464d14d2e6e83ab1d1e5a56da5c985baf5f17d3"
+    }
+  ],
+  "title": "PACEShop: Evaluating Personalized, Actionable, Compositional, and Evidence-grounded Shopping Assistants",
+  "title_zh": "PACEShop：评估个性化、可操作、组合式及基于证据的购物助手",
+  "unified_ingested_at": "2026-08-28T13:57:59.661142Z",
+  "url": "https://arxiv.org/abs/2608.26180v1",
+  "volume": null,
+  "year": 2026
+}
