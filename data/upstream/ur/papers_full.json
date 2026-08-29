@@ -13530,7 +13530,11 @@
     "abstract": "User behavior simulation with large language models~(LLMs) is increasingly used to support multi-agent ecosystem simulation. Existing simulators typically rely on static user profiles inferred from historical observations, which become inadequate in socially intensive environments such as live streaming where interaction dynamics continuously reshape user behavior. We propose \\textbf{LiveSim}, an LLM-based framework for live-stream ecosystem simulation. It represents users as editable behavioral hypotheses and progressively refines them through trajectory-grounded interactions, where discrepancies between simulated and observed trajectories reveal missing environmental shaping effects. These signals are further extracted as transferable environment-behavior patterns and accumulated in a collective behavioral memory to improve user-level behavioral fidelity and support ecosystem-level simulation. Experiments on real-world live-stream risk-control data validate the effectiveness of LiveSim in improving user-level behavioral fidelity and enabling ecosystem-level analysis of risk evolution and platform intervention effects.",
     "ai_reason": "LLM模拟直播用户行为，框架非用户研究",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "人机交互"
+    ],
     "authors": [
       "Jiaqi Xu",
       "Yiran Qiao",
@@ -13570,8 +13574,12 @@
     "scored_at": "2026-08-28T13:38:03.652468",
     "title": "LiveSim: Simulating Environment-Shaped Users in Multi-Agent Live-Stream Ecosystems",
     "title_zh": "LiveSim：多智能体直播生态系统中环境塑造型用户的模拟",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对直播等社交密集场景中用户行为持续被环境重塑的挑战，提出LiveSim框架，将用户建模为可编辑的行为假设，通过轨迹对接交互迭代修正，将模拟与观测差异提取为可迁移的环境-行为模式存入集体行为记忆，在真实直播风控数据上提升用户行为保真度并支持生态级风险演化与平台干预分析。",
+    "topic_tags": [
+      "用户研究方法",
+      "多智能体仿真",
+      "消费者行为"
+    ],
     "url": "https://arxiv.org/abs/2608.26849v1",
     "volume": null,
     "year": 2026
@@ -18031,6 +18039,71 @@
   },
   {
     "abstract": null,
+    "ai_reason": "AI核心的盲人辅助阅读技术，属HCI辅助技术",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "多模态"
+    ],
+    "authors": [
+      "Muiz Ahmed Khan",
+      "Pias Paul",
+      "Mahmudur Rashid",
+      "Mainul Hossain",
+      "Md Atiqur Rahman Ahad"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Muiz Ahmed Khan",
+        "orcid": "https://orcid.org/0000-0003-2039-7079"
+      },
+      {
+        "affiliation": [],
+        "name": "Pias Paul",
+        "orcid": "https://orcid.org/0000-0002-6616-3254"
+      },
+      {
+        "affiliation": [],
+        "name": "Mahmudur Rashid",
+        "orcid": "https://orcid.org/0000-0001-9748-0810"
+      },
+      {
+        "affiliation": [],
+        "name": "Mainul Hossain",
+        "orcid": "https://orcid.org/0000-0001-9011-9029"
+      },
+      {
+        "affiliation": [],
+        "name": "Md Atiqur Rahman Ahad",
+        "orcid": "https://orcid.org/0000-0001-8355-7004"
+      }
+    ],
+    "cited_by": 119,
+    "date": "2020-12",
+    "doi": "10.1109/thms.2020.3027534",
+    "domain_score": 4.0,
+    "id": 22605,
+    "ingested_at": "2026-08-23T03:00:03.956786",
+    "issue": "6",
+    "journal": "THMS",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:35.329811",
+    "title": "An AI-Based Visual Aid With Integrated Reading Assistant for the Completely Blind",
+    "title_zh": "面向全盲者的AI视觉辅助系统：集成阅读助手",
+    "tldr": "针对完全失明人群设计一款集成阅读助手的AI视觉辅助系统，利用计算机视觉识别场景与文字并通过语音反馈给用户，旨在帮助盲人独立完成阅读与环境感知等日常任务，探讨其可用性与无障碍交互效果。",
+    "topic_tags": [
+      "可访问性",
+      "人机交互(HCI)",
+      "AI 助手",
+      "多模态交互"
+    ],
+    "url": "https://doi.org/10.1109/thms.2020.3027534",
+    "volume": "50",
+    "year": 2020
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究人们对AI的风险收益感知",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -18097,6 +18170,90 @@
     "url": "https://doi.org/10.1016/j.chb.2023.107855",
     "volume": "149",
     "year": 2023
+  },
+  {
+    "abstract": "Successful social robot services depend on how robots can interact with users. The effective service can be obtained through smooth, engaged, and humanoid interactions in which robots react properly to a user’s affective state. This article proposes a novel Automatic Cognitive Empathy Model, ACEM, for humanoid robots to achieve longer and more engaged human-robot interactions (HRI) by considering humans’ emotions and replying to them appropriately. The proposed model continuously detects the affective states of a user based on facial expressions and generates desired, either parallel or reactive, empathic behaviors that are already adapted to the user’s personality. Users’ affective states are detected using a stacked autoencoder network that is trained and tested on the RAVDESS dataset.\n          The overall proposed empathic model is verified throughout an experiment, where different emotions are triggered in participants and then empathic behaviors are applied based on proposed hypothesis. The results confirm the effectiveness of the proposed model in terms of related social and friendship concepts that participants perceived during interaction with the robot.",
+    "ai_reason": "AI情感识别模型+人机交互用户体验研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "情感识别",
+      "多模态",
+      "人机交互",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Elahe Bagheri",
+      "Pablo G. Esteban",
+      "Hoang-Long Cao",
+      "Albert De Beir",
+      "Dirk Lefeber"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Robotics and Multibody Mechanics Research Group, Vrije Universiteit Brussel and Flanders Make, Brussels, Belgium"
+        ],
+        "name": "Elahe Bagheri",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Robotics and Multibody Mechanics Research Group, Vrije Universiteit Brussel and Flanders Make, Brussels, Belgium"
+        ],
+        "name": "Pablo G. Esteban",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Robotics and Multibody Mechanics Research Group, Vrije Universiteit Brussel and Flanders Make, Brussels, Belgium"
+        ],
+        "name": "Hoang-Long Cao",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Robotics and Multibody Mechanics Research Group, Vrije Universiteit Brussel and Flanders Make, Brussels, Belgium"
+        ],
+        "name": "Albert De Beir",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Robotics and Multibody Mechanics Research Group, Vrije Universiteit Brussel and Flanders Make, Brussels, Belgium"
+        ],
+        "name": "Dirk Lefeber",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Robotics and Multibody Mechanics Research Group, Vrije Universiteit Brussel and Flanders Make, Brussels, Belgium"
+        ],
+        "name": "Bram Vanderborght",
+        "orcid": null
+      }
+    ],
+    "cited_by": 31,
+    "date": "2020-09-30",
+    "doi": "10.1145/3341198",
+    "domain_score": 4.0,
+    "id": 24981,
+    "ingested_at": "2026-08-29T08:30:09.483081",
+    "issue": "3",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:36.032315",
+    "title": "An Autonomous Cognitive Empathy Model Responsive to Users’ Facial Emotion Expressions",
+    "title_zh": "响应用户面部情绪表达的自主认知共情模型",
+    "tldr": "针对类人机器人服务中的情感交互问题，提出自动认知共情模型ACEM。模型通过堆叠自编码器实时检测用户面部情绪状态，并结合用户人格生成平行或反应式共情行为。实验以RAVDESS数据集训练，并在受试者中诱发不同情绪进行验证，结果表明该模型显著提升了交互的社交感与友谊感。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "情感计算",
+      "多模态交互",
+      "可用性测试"
+    ],
+    "url": "https://doi.org/10.1145/3341198",
+    "volume": "10",
+    "year": 2020
   },
   {
     "abstract": null,
@@ -18567,7 +18724,7 @@
     "year": 2022
   },
   {
-    "abstract": null,
+    "abstract": "Although chatbots are increasingly used in mental health, Finnish professionals’ perceptions remain unknown. This cross-sectional study (n = 784) applied a modified UTAUT model to explore their perceptions of chatbots and their willingness to recommend them to clients or patients. Data were collected using non-probability sampling and analysed with confirmatory factor analysis, multinomial logistic regression, and descriptive statistics. Within the next five years, 51% of respondents were somewhat or very unlikely to recommend chatbots, whereas 49% were somewhat or very likely to do so. Perceived potential of chatbots was strongly associated with the recommendation intention (p < 0.001). Higher facilitating conditions (users’ skills, device availability; p = 0.003) and higher age increased recommendation willingness (B = 0.051, p = 0.004) with the age effect concentrating on the ‘somewhat likely’ category. Perceived risks statistically significantly hindered willingness to recommend a chatbot across all outcome categories (p = 0.010 to <0.001). Comprehensibility (72%) and professionalism (69%) were perceived as the most important chatbot features. Chatbots were seen as particularly suitable for assistive tasks such as sending reminders (77%) and instructing exercises (70%). Mental health professionals need training on chatbots’ benefits, risks, and underlying technologies. In the sensitive mental health context, chatbots’ roles should be clearly delimited, supporting their deployment in assistive, low-risk tasks.",
     "ai_reason": "聊天机器人(AI)用于心理健康，从专业人员视角调查",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -18577,59 +18734,70 @@
     "authors": [
       "Heidi Nieminen",
       "Kopra Juho",
-      "Vartiainen Anna-Kaisa",
+      "Vartiainen Anna‐Kaisa",
       "Bond Raymond",
       "Laukkanen Emilia"
     ],
     "authors_full": [
       {
         "affiliation": [
-          "University of Eastern Finland"
+          "University of Eastern Finland",
+          "Finland University"
         ],
         "name": "Heidi Nieminen",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0001-7496-8477",
+        "position": "first"
       },
       {
         "affiliation": [
-          "University of Eastern Finland"
+          "University of Eastern Finland",
+          "Finland University"
         ],
         "name": "Kopra Juho",
-        "orcid": null
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
-          "University of Eastern Finland"
+          "University of Eastern Finland",
+          "Finland University"
         ],
-        "name": "Vartiainen Anna-Kaisa",
-        "orcid": null
+        "name": "Vartiainen Anna‐Kaisa",
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
-          "School of Computing, Ulster University"
+          "University of Ulster"
         ],
         "name": "Bond Raymond",
-        "orcid": null
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
-          "School of Health Care and Social Services, Savonia University of Applied Sciences"
+          "Savonia University of Applied Sciences"
         ],
         "name": "Laukkanen Emilia",
-        "orcid": null
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
-          "School of Computing, Ulster University"
+          "University of Ulster"
         ],
-        "name": "Mulvenna Maurice",
-        "orcid": "https://orcid.org/0000-0002-1554-0785"
+        "name": "Maurice Mulvenna",
+        "orcid": "https://orcid.org/0000-0002-1554-0785",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "University of Eastern Finland"
+          "University of Eastern Finland",
+          "Finland University"
         ],
         "name": "Kuosmanen Lauri",
-        "orcid": null
+        "orcid": null,
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -18640,7 +18808,7 @@
     "ingested_at": "2026-08-28T13:37:09.071102",
     "issue": null,
     "journal": "BIT",
-    "pdf_url": null,
+    "pdf_url": "https://doi.org/10.1080/0144929x.2026.2716287",
     "scored_at": "2026-08-28T13:38:03.491858",
     "title": "Are chatbots acceptable in mental health promotion and care? A cross-sectional study of mental healthcare professionals",
     "title_zh": "聊天机器人在心理健康促进与护理中是否可接受？一项针对心理健康专业人员的横断面研究",
@@ -18761,6 +18929,64 @@
     "url": "https://doi.org/10.1080/0144929x.2025.2568928",
     "volume": "45",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "虚拟影响者涉及AI/数字人，广告效果与消费者感知",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "GenAI",
+      "图像生成"
+    ],
+    "authors": [
+      "Jeongmin Ham",
+      "Sitan Li",
+      "Pratik Shah",
+      "Matthew S. Eastin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jeongmin Ham",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Sitan Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Pratik Shah",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Matthew S. Eastin",
+        "orcid": null
+      }
+    ],
+    "cited_by": 11,
+    "date": "2024-06-24",
+    "doi": "10.2501/jar-2024-015",
+    "domain_score": 4.0,
+    "id": 25072,
+    "ingested_at": "2026-08-29T08:30:12.572414",
+    "issue": null,
+    "journal": "JAR",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:30:56.220072",
+    "title": "Are Virtual Influencers More Effective In Real-World Advertisement Settings?",
+    "title_zh": "虚拟影响者在现实广告场景中是否更有效？",
+    "tldr": "对比虚拟影响者与真人影响者在真实广告场景中的营销效果，探讨AI生成数字人物在品牌传播、消费者说服力与购买意愿方面的表现差异及边界条件。",
+    "topic_tags": [
+      "营销",
+      "广告",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.2501/jar-2024-015",
+    "volume": null,
+    "year": 2024
   },
   {
     "abstract": null,
@@ -19429,6 +19655,67 @@
       "AI采用"
     ],
     "url": "https://doi.org/10.1016/j.ijhcs.2026.103891",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI辅助决策反欺诈，核心AI议题与用户行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "人机协作",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Yicheng Sun",
+      "Jacky Keung",
+      "Hi Kuen Yu",
+      "Yuchen Cao"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yicheng Sun",
+        "orcid": "https://orcid.org/0009-0007-6555-0571"
+      },
+      {
+        "affiliation": [],
+        "name": "Jacky Keung",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hi Kuen Yu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yuchen Cao",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08",
+    "doi": "10.1016/j.chb.2026.109156",
+    "domain_score": 4.0,
+    "id": 24965,
+    "ingested_at": "2026-08-29T08:30:08.963684",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:30:52.894990",
+    "title": "At the point of risk: Can AI-assisted decision support reduce digital fraud vulnerability across age groups and scam types?",
+    "title_zh": "风险关口：AI辅助决策支持能否降低不同年龄群体与诈骗类型下的数字欺诈脆弱性？",
+    "tldr": "聚焦数字欺诈风险场景，探究AI辅助决策支持能否降低不同年龄群体对各类诈骗的易感性。通过比较有无AI辅助时的决策表现，评估AI在风险识别与干预中跨年龄、跨诈骗类型的有效性，揭示AI作为决策辅助对增强用户抵御数字欺诈的潜力与局限。",
+    "topic_tags": [
+      "AI 采用",
+      "人机交互(HCI)",
+      "信任",
+      "可访问性",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109156",
     "volume": null,
     "year": 2026
   },
@@ -24099,6 +24386,66 @@
     "url": "https://doi.org/10.1080/0144929x.2025.2541222",
     "volume": "45",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "语音助手交互的沟通社会后果，AI技术+用户研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "人机交互"
+    ],
+    "authors": [
+      "Sara Aeschlimann",
+      "Marco Bleiker",
+      "Michael Wechner",
+      "Anja Gampe"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sara Aeschlimann",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Bleiker",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Wechner",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Anja Gampe",
+        "orcid": null
+      }
+    ],
+    "cited_by": 66,
+    "date": "2020-11",
+    "doi": "10.1016/j.chb.2020.106466",
+    "domain_score": 4.0,
+    "id": 20673,
+    "ingested_at": "2026-08-18T02:52:07.104838",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:41.454983",
+    "title": "Communicative and social consequences of interactions with voice assistants",
+    "title_zh": "与语音助手互动的交际与社会后果",
+    "tldr": "聚焦用户与语音助手（如Alexa、Siri等）互动所带来的沟通层面与社会层面的影响。从交流与社会后果视角，探讨语音助手在人机沟通过程中如何塑造用户的语言表达、社交感知与关系建构，揭示语音交互在人机传播与社会互动中的双重作用。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "AI 助手",
+      "对话式 AI",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106466",
+    "volume": "112",
+    "year": 2020
   },
   {
     "abstract": "Human-in-the-loop methods leverage human feedback to enhance machine learning and AI. Manual review of outputs can correct errors, identify model weaknesses, or expand labels to broaden model capabilities. Feedback collection methods range from simple flagging of outputs as correct or incorrect to more complex feature-level adjustments or natural language interpretations. This article presents a user study evaluating changes in user performance over time and explores the tradeoff between feedback quality and human effort. We compare four interactive input methods for reviewing and correcting outcomes in object detection and activity recognition in videos. Our findings indicate that while some complex input methods, such as free-text, require more time, the quality and impact of their feedback on model accuracy often surpass those of simpler methods that require less effort. However, more effort does not always lead to better-quality feedback, especially when aiming to improve the model. Our VLM experiments show that the most accurate models were trained using detailed natural language feedback or precise word-level corrections, while simple yes/no judgments also led to solid performance at a much lower annotation cost.",
@@ -30460,6 +30807,72 @@
   },
   {
     "abstract": null,
+    "ai_reason": "XAI权力状态对用户感知影响，AI+用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI"
+    ],
+    "authors": [
+      "Taehyun Ha",
+      "Young June Sah",
+      "Yuri Park",
+      "Sangwon Lee"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Future Technology Analysis Center, Korea Institute of Science and Technology Information, Seoul, South Korea"
+        ],
+        "name": "Taehyun Ha",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "School of Media, Arts and Science, Sogang University, Seoul, South Korea"
+        ],
+        "name": "Young June Sah",
+        "orcid": "https://orcid.org/0000-0003-3901-148X"
+      },
+      {
+        "affiliation": [
+          "Department of ICT Industry Research, Korea Information Society Development Institute, Jincheon-gun, South Korea"
+        ],
+        "name": "Yuri Park",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Interaction Science / Department of Human-Artificial Intelligence Interaction, Sungkyunkwan University, Seoul, South Korea"
+        ],
+        "name": "Sangwon Lee",
+        "orcid": "https://orcid.org/0000-0002-9825-0854"
+      }
+    ],
+    "cited_by": 24,
+    "date": "2020-11-19",
+    "doi": "10.1080/0144929x.2020.1846789",
+    "domain_score": 4.0,
+    "id": 21101,
+    "ingested_at": "2026-08-18T02:52:19.553982",
+    "issue": "5",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:35.333978",
+    "title": "Examining the effects of power status of an explainable artificial intelligence system on users’ perceptions",
+    "title_zh": "可解释人工智能系统权力地位对用户感知的影响研究",
+    "tldr": "考察可解释AI系统的权力地位如何影响用户对其的感知，探究当AI拥有较高决策权或较低权力时，用户对系统解释、可信度与接受度的评价是否存在差异，为XAI的人机交互设计提供启示。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互(HCI)",
+      "信任",
+      "AI 采用"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2020.1846789",
+    "volume": "41",
+    "year": 2020
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI队友对人与AI团队影响,核心HCI",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -33493,6 +33906,130 @@
     "year": 2023
   },
   {
+    "abstract": "Hypotension during perioperative care, if undetected or uncontrolled, can lead to serious clinical complications. Predictive machine learning models, based on routinely collected EHR data, offer potential for early warning of hypotension to enable proactive clinical intervention. However, while research has demonstrated the feasibility of such machine learning models, little effort is made to ground their formulation and development in socio-technical context of perioperative care work. To address this, we present a study of collaborative work practices of clinical teams during and after surgery with specific emphasis on the organisation of hypotension management. The findings highlight where predictive insights could be usefully deployed to reconfigure care and facilitate more proactive management of hypotension. We further explore how the socio-technical insights help define key parameters of machine learning prediction tasks to align with the demands of collaborative clinical practice. We discuss more general implications for the design of predictive machine learning in hospital care.",
+    "ai_reason": "ML核心议题，社会技术HCI研究方法",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "人机协作"
+    ],
+    "authors": [
+      "Pratik Ghosh",
+      "Karen L. Posner",
+      "Stephanie L. Hyland",
+      "Wil van Cleve",
+      "Melissa Bristow"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Microsoft Research, Cambridge"
+        ],
+        "name": "Pratik Ghosh",
+        "orcid": "https://orcid.org/0000-0002-5131-0602"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Karen L. Posner",
+        "orcid": "https://orcid.org/0000-0001-6802-551X"
+      },
+      {
+        "affiliation": [
+          "Microsoft Research, Cambridge"
+        ],
+        "name": "Stephanie L. Hyland",
+        "orcid": "https://orcid.org/0000-0002-4812-792X"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Wil van Cleve",
+        "orcid": "https://orcid.org/0000-0001-5637-4966"
+      },
+      {
+        "affiliation": [
+          "Microsoft Research, Cambridge"
+        ],
+        "name": "Melissa Bristow",
+        "orcid": "https://orcid.org/0009-0009-7884-0214"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Dustin R. Long",
+        "orcid": "https://orcid.org/0000-0001-6365-953X"
+      },
+      {
+        "affiliation": [
+          "Microsoft Research, Cambridge"
+        ],
+        "name": "Konstantina Palla",
+        "orcid": "https://orcid.org/0000-0001-7066-0539"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Bala Nair",
+        "orcid": "https://orcid.org/0000-0002-0027-3979"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Christine Fong",
+        "orcid": "https://orcid.org/0000-0001-5090-273X"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Ronald Pauldine",
+        "orcid": "https://orcid.org/0000-0001-7924-3598"
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Monica S. Vavilala",
+        "orcid": "https://orcid.org/0000-0002-2354-5279"
+      },
+      {
+        "affiliation": [
+          "Microsoft Research, Cambridge"
+        ],
+        "name": "Kenton O'Hara",
+        "orcid": "https://orcid.org/0000-0001-8915-4572"
+      }
+    ],
+    "cited_by": 8,
+    "date": "2023-09-23",
+    "doi": "10.1145/3589953",
+    "domain_score": 5.0,
+    "id": 24968,
+    "ingested_at": "2026-08-29T08:30:09.061375",
+    "issue": "5",
+    "journal": "TOCHI",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:30:56.223756",
+    "title": "Framing Machine Learning Opportunities for Hypotension Prediction in Perioperative Care: A Socio-technical Perspective",
+    "title_zh": "构建围术期低血压预测的机器学习机遇：社会技术视角",
+    "tldr": "采用社会技术视角研究围术期临床团队的低血压管理协作流程，识别ML预测可改善的协作环节，并据此定义预测任务的关键参数，讨论医院预测性机器学习设计与临床实践对齐的设计启示。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "用户研究方法",
+      "可解释性"
+    ],
+    "url": "https://doi.org/10.1145/3589953",
+    "volume": "30",
+    "year": 2023
+  },
+  {
     "abstract": null,
     "ai_reason": "框架效应对机器代理感知，用户实验HCI感知",
     "ai_score": 5.0,
@@ -34224,6 +34761,64 @@
     "url": "https://doi.org/10.1080/0144929x.2026.2706666",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能可穿戴技术伦理接受度,HCI议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "可穿戴 AI"
+    ],
+    "authors": [
+      "Olarte-Pascual Cristina",
+      "Pelegrín-Borondo Jorge",
+      "Reinares-Lara Eva",
+      "Arias-Oliva Mario"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Olarte-Pascual Cristina",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Pelegrín-Borondo Jorge",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Reinares-Lara Eva",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Arias-Oliva Mario",
+        "orcid": null
+      }
+    ],
+    "cited_by": 35,
+    "date": "2021-01",
+    "doi": "10.1016/j.chb.2020.106559",
+    "domain_score": 4.0,
+    "id": 22042,
+    "ingested_at": "2026-08-21T03:00:02.915035",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:25.729089",
+    "title": "From wearable to insideable: Is ethical judgment key to the acceptance of human capacity-enhancing intelligent technologies?",
+    "title_zh": null,
+    "tldr": "从可穿戴延伸至'可植入'智能技术，探讨伦理判断是否是人机能力增强型设备接受度的关键因素。通过实证分析用户对侵入式智能技术的态度，揭示伦理考量在新技术采纳决策中的作用，为智能增强技术的伦理设计与推广提供启示。",
+    "topic_tags": [
+      "伦理",
+      "AI 采用",
+      "可穿戴设备",
+      "可访问性"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106559",
+    "volume": "114",
+    "year": 2021
   },
   {
     "abstract": "Experimental evidence on the impact of GenAI-created personalized video advertisements on engagement.",
@@ -39019,7 +39614,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-28T13:38:19.728594",
     "title": "I Know This Looks Bad, But I Can Explain: Understanding When AI Should Explain Actions In Human-AI Teams",
-    "title_zh": null,
+    "title_zh": "\"我知道这看起来很糟，但我能解释\"：理解人机团队中AI何时应解释其行为",
     "tldr": "通过156人在线实验，探究人机团队中AI解释行为对信任与团队效能的影响机制：解释AI违抗人类指令可增进信任，但解释AI说谎反而降低信任；用户性别与个人伦理框架调节对AI队友的感知，揭示了AI解释的边界条件。",
     "topic_tags": [
       "人机协作",
@@ -39154,7 +39749,10 @@
     "abstract": null,
     "ai_reason": "LLM合成角色偏见，参与式设计，核心HCI/UX研究",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "AI 用户画像"
+    ],
     "authors": [
       "Helena A. Haxvig",
       "Vincenzo D’Andrea",
@@ -39189,8 +39787,13 @@
     "scored_at": "2026-08-28T13:38:05.119110",
     "title": "“I’ve never seen a glass ceiling better represented”: Bias and gendering in LLM-generated synthetic personas from a participatory design perspective",
     "title_zh": "\"从未见过如此具象化的玻璃天花板\"：参与式设计视角下LLM合成人格的偏见与性别化",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "基于参与式设计视角，考察LLM生成合成人物画像时出现的性别偏见与刻板化表征问题，探讨如何通过参与式方法识别并缓释大模型人物画像中的偏见风险。",
+    "topic_tags": [
+      "伦理",
+      "用户画像",
+      "人机交互(HCI)",
+      "可解释性"
+    ],
     "url": "https://doi.org/10.1016/j.ijhcs.2025.103651",
     "volume": "205",
     "year": 2025
@@ -40807,6 +41410,63 @@
     "url": "https://doi.org/10.1080/0144929x.2023.2184174",
     "volume": "43",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "决策支持系统可解释性，HCI议题含AI解释性",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "可解释 AI"
+    ],
+    "authors": [
+      "Jasper van der Waa",
+      "Tjeerd Schoonderwoerd",
+      "Jurriaan van Diggelen",
+      "Mark Neerincx"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jasper van der Waa",
+        "orcid": "https://orcid.org/0000-0003-4648-2220"
+      },
+      {
+        "affiliation": [],
+        "name": "Tjeerd Schoonderwoerd",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jurriaan van Diggelen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mark Neerincx",
+        "orcid": "https://orcid.org/0000-0002-8161-5722"
+      }
+    ],
+    "cited_by": 63,
+    "date": "2020-12",
+    "doi": "10.1016/j.ijhcs.2020.102493",
+    "domain_score": 4.0,
+    "id": 20993,
+    "ingested_at": "2026-08-18T02:52:16.422226",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:35.332640",
+    "title": "Interpretable confidence measures for decision support systems",
+    "title_zh": "决策支持系统的可解释置信度度量方法",
+    "tldr": "研究决策支持系统中可解释的置信度度量方法，使AI输出不仅给出结果还能展示其判断的可信程度与依据，帮助使用者理解与评估建议，聚焦可解释性在人机决策中的设计与评估。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互(HCI)",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2020.102493",
+    "volume": "144",
+    "year": 2020
   },
   {
     "abstract": "Abstract\n                  Artificial intelligence (AI) is transforming word of mouth (WOM) and influencer marketing. This development gives rise to synthetic WOM, a form of WOM in which AI participates in creating, mediating, evaluating, and/or acting on the consumption-related communication. Despite its growing prevalence, existing research has not fully conceptualized synthetic WOM or explained how consumers perceive varying degrees of machine involvement in WOM content. This article addresses these gaps by developing a conceptual framework that integrates AI into the core WOM elements of source, message, channel, and receiver. This article also introduces the notion of degree of syntheticity, defined as consumers’ perceptions of the extent to which WOM reflects machine-driven rather than human-driven processes, and conceptualizes it as a multidimensional construct encompassing narrative, voice, appearance, and consumption syntheticity. Building on this framework, this article outlines key directions for future research, including the role of AI agents as communicators and receivers, AI-to-AI WOM environments, and the potential dark and regulatory implications of synthetic WOM. This work advances understanding of how AI reshapes WOM and offers a foundation for future theory and research.",
@@ -44099,6 +44759,52 @@
     "year": 2026
   },
   {
+    "abstract": null,
+    "ai_reason": "自动驾驶自动化可靠性,驾驶模拟用户研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "多模态"
+    ],
+    "authors": [
+      "Kuan-Ting Chen",
+      "Huei-Yen Winnie Chen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Kuan-Ting Chen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Huei-Yen Winnie Chen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 32,
+    "date": "2021-01",
+    "doi": "10.1016/j.ijhcs.2020.102518",
+    "domain_score": 5.0,
+    "id": 23123,
+    "ingested_at": "2026-08-26T03:02:33.248214",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:25.726072",
+    "title": "Manipulating music to communicate automation reliability in conditionally automated driving: A driving simulator study",
+    "title_zh": null,
+    "tldr": "研究在条件自动驾驶情境下，如何通过音乐设计向驾驶员传递自动化系统可靠性的信息。采用驾驶模拟器实验，操纵不同音乐参数以表征系统可信度，考察其对驾驶员感知、信任与接管行为的影响，为车内人机交互的多模态反馈设计提供依据。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可用性",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2020.102518",
+    "volume": "145",
+    "year": 2021
+  },
+  {
     "abstract": "Artificial intelligence (AI) is increasingly praised for its superior performance compared with that of humans. Some firms now strategically adopt a “better-than-human” framing to promote their AI products. Across four experimental studies, the authors investigate consumer responses to this better-than-human framing and identify significant risks associated with the strategy. Specifically, presenting AI through a better-than-human frame can trigger existential concerns, as reminders of AI dominance evoke perceived threats to humanity. Given that many consumers already experience anxiety about AI's advancement, such better-than-human framing can intensify these fears—particularly among those high in general AI anxiety. However, recognizing that firms may continue to use this approach for strategic purposes, the authors develop and test an interventional message designed to accompany the better-than-human frame, aiming to mitigate perceived threats to humanity. The findings provide critical insights for AI marketing and communication, highlighting the need for nuanced messaging that balances AI performance signals with consumer reassurance.",
     "ai_reason": "消费者对AI优越性营销框架反应的实验研究，属消费者行为研究",
     "ai_score": 4.0,
@@ -44889,6 +45595,66 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107296",
     "volume": "133",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "心理健康对话代理设计，HCI核心+AI",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "多模态"
+    ],
+    "authors": [
+      "Robert Bowman",
+      "Anja Thieme",
+      "Benjamin Cowan",
+      "Gavin Doherty"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Robert Bowman",
+        "orcid": "https://orcid.org/0000-0001-6614-0821"
+      },
+      {
+        "affiliation": [],
+        "name": "Anja Thieme",
+        "orcid": "https://orcid.org/0000-0002-9639-5531"
+      },
+      {
+        "affiliation": [],
+        "name": "Benjamin Cowan",
+        "orcid": "https://orcid.org/0000-0002-8595-8132"
+      },
+      {
+        "affiliation": [],
+        "name": "Gavin Doherty",
+        "orcid": "https://orcid.org/0000-0002-9617-7008"
+      }
+    ],
+    "cited_by": 3,
+    "date": "2025-11",
+    "doi": "10.1016/j.ijhcs.2025.103618",
+    "domain_score": 5.0,
+    "id": 24979,
+    "ingested_at": "2026-08-29T08:30:09.418340",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:30:52.897616",
+    "title": "Mental health management as a social endeavour: Challenges and opportunities for conversational agent design",
+    "title_zh": "心理健康管理作为一种社会努力：对话代理设计的挑战与机遇",
+    "tldr": "研究将心理健康管理视为社交活动，探讨对话式代理在该场景下的设计挑战与机遇，关注人际关系与社会互动如何塑造心理健康干预体验，为情感支持类对话系统设计提供启示。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "对话式 AI",
+      "情感计算",
+      "可访问性"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2025.103618",
+    "volume": "205",
+    "year": 2025
   },
   {
     "abstract": "AbstractPrior research revealed a striking heterogeneity of how consumers view smart objects, from seeing them as helpful partners to merely a useful tool. We draw on mind perception theory to assess whether the attribution of mental states to smart objects reveals differences in consumer–smart object relationships and device usage. We train a language model to unobtrusively predict mind perception in smart objects from consumer‐generated text. We provide a rich set of interpretable linguistic markers for mind perception, drawing on a diverse collection of text‐mining techniques, and demonstrate that greater mind perception is associated with expressing a more communal (vs. instrumental) relationship with the device and using it more expansively. We find converging evidence for these associations using over 20,000 real‐world customer reviews and also provide causal evidence that inducing a more communal (vs. instrumental) relationship with a smart object enhances mind perception and in turn increases the number of tasks consumers engage in with the device. These findings have important implications for the role of mind perception as a novel lens to study consumer–smart object relationships. We offer an easy‐to‐use web interface to access our language model using researchers own data or to fine‐tune the model to entirely new domains.",
@@ -45780,6 +46546,75 @@
     "year": 2026
   },
   {
+    "abstract": null,
+    "ai_reason": "知识工作者压力/专注度预测，ML为核心方法之一，HCI野外研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "Mauricio Soto",
+      "Chris Satterfield",
+      "Thomas Fritz",
+      "Gail C. Murphy",
+      "David C. Shepherd"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mauricio Soto",
+        "orcid": "https://orcid.org/0000-0002-1196-1646"
+      },
+      {
+        "affiliation": [],
+        "name": "Chris Satterfield",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas Fritz",
+        "orcid": "https://orcid.org/0000-0002-1834-6240"
+      },
+      {
+        "affiliation": [],
+        "name": "Gail C. Murphy",
+        "orcid": "https://orcid.org/0000-0001-6768-2649"
+      },
+      {
+        "affiliation": [],
+        "name": "David C. Shepherd",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nicholas Kraft",
+        "orcid": "https://orcid.org/0000-0002-7960-766X"
+      }
+    ],
+    "cited_by": 29,
+    "date": "2021-02",
+    "doi": "10.1016/j.ijhcs.2020.102560",
+    "domain_score": 4.0,
+    "id": 23125,
+    "ingested_at": "2026-08-26T03:02:33.307109",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:23.362073",
+    "title": "Observing and predicting knowledge worker stress, focus and awakeness in the wild",
+    "title_zh": "真实环境中知识工作者压力、专注度与清醒度的观察与预测",
+    "tldr": "在自然工作情境中持续观察知识工作者的压力、专注度与清醒度等状态，借助生理或行为信号构建预测模型，为职场健康与生产力管理提供支持。",
+    "topic_tags": [
+      "情感计算",
+      "用户体验(UX)",
+      "田野研究",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2020.102560",
+    "volume": "146",
+    "year": 2021
+  },
+  {
     "abstract": "AI decision-support tools typically offer a fixed type of assistance, like AI recommendations and explanations, regardless of the specific decision, individual, or broader context. This fixed design has been shown to hinder both human-AI decision accuracy and human skill improvement in the task. We posit that AI assistance needs to be dynamic, changing in response to contextual factors (e.g., AI uncertainty, task difficulty), individual differences, and specified objectives (e.g., decision accuracy, skill improvement). To enable such adaptive support, we propose Reinforcement Learning (RL) as a general approach for modeling human-AI decision-making to optimize human-AI interaction for diverse objectives. RL enables optimizing various objectives in AI-assisted decision-making by tailoring and adaptively providing decision support to humans—the right type of assistance, to the right person, at the right time. We instantiated our approach with two objectives: human-AI accuracy on the decision-making task and human skill improvement (i.e., learning about the task) and learned decision support policies from previous human-AI interaction data. We compared the optimized policies against several baselines in AI-assisted decision-making. Across two experiments (N = 316 and N = 964), our results consistently demonstrated that people interacting with policies optimized for accuracy achieve significantly higher accuracy—and even human-AI complementarity—compared to those interacting with any other type of AI support. Our results further indicated that human learning was more difficult to optimize than accuracy. While the policies learned the best available actions to optimize learning, participants who interacted with learning-optimized policies showed significant learning improvement only at times. Our research (1) demonstrates offline RL to be a promising approach to model the dynamics of human-AI decision-making, leading to policies that may optimize various objectives and provide novel insights about the AI-assisted decision-making space, and (2) emphasizes the importance of considering skill improvement and other human-centric objectives beyond accuracy in AI-assisted decision-making, opening up the novel research challenge of optimizing human-AI interaction for such objectives.",
     "ai_reason": "RL驱动AI辅助决策，人-AI交互核心议题",
     "ai_score": 5.0,
@@ -46172,7 +47007,10 @@
     "abstract": "Artificial intelligence (AI) in medicine offers a unique opportunity to improve the global health system. However, consumers remain skeptical about AI's ability to accurately assess their medical condition. The five studies here provide insights into consumers’ reluctance to use AI-produced health care recommendations. Consumers are less willing to follow a medical recommendation from AI (vs. from a human) when the medical diagnosis provides health results that are good (i.e., symptoms do not require medical care) versus bad (i.e., symptoms are worrisome and may require urgent care) (Study 1a). The effect is mediated by consumers’ perception of diagnosis trustworthiness (Study 1b) and enhanced by consumers’ health anxiety score (Study 2). Providing social proof (e.g., number of satisfied customers recommending the service) reduces the negative effect of health anxiety on consumers’ trust in the medical diagnosis and increases their willingness to follow the AI's recommendations (Study 3a). The findings provide insights into the psychological drivers of acceptance of automated health care and suggest possible actions to overcome consumers’ reluctance to follow AI medical recommendations.",
     "ai_reason": "AI医疗消费者抵制，五项研究核心议题",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "AI助手",
+      "可解释AI"
+    ],
     "authors": [
       "Piotr Gaczek",
       "Rumen Pozharliev",
@@ -46213,8 +47051,13 @@
     "scored_at": "2026-08-22T02:53:01.736078",
     "title": "Overcoming Consumer Resistance to AI in General Health Care",
     "title_zh": "克服消费者对AI在一般医疗保健中的抵触",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对消费者对AI医疗建议的抵触心理，通过五项研究揭示：消费者在诊断结果良好时更不愿采纳AI（vs.人类医生）的建议，原因是AI诊断可信度感知较低；该效应在健康焦虑水平高的消费者中更强；提供社会认同信息（如满意用户数量）可缓解健康焦虑对信任的负面影响，提升AI建议采纳意愿。",
+    "topic_tags": [
+      "消费者行为",
+      "信任",
+      "AI采用",
+      "AI拒绝"
+    ],
     "url": "https://doi.org/10.1177/10949968221151061",
     "volume": "58",
     "year": 2023
@@ -48051,6 +48894,65 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人形机器人交互中的用户感知研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI 助手"
+    ],
+    "authors": [
+      "Mako Okanda",
+      "Kosuke Taniguchi",
+      "Ying Wang",
+      "Shoji Itakura"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mako Okanda",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kosuke Taniguchi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ying Wang",
+        "orcid": "https://orcid.org/0000-0003-0023-2023"
+      },
+      {
+        "affiliation": [],
+        "name": "Shoji Itakura",
+        "orcid": null
+      }
+    ],
+    "cited_by": 44,
+    "date": "2021-05",
+    "doi": "10.1016/j.chb.2021.106688",
+    "domain_score": 4.0,
+    "id": 24386,
+    "ingested_at": "2026-08-28T13:37:02.577813",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:11.005436",
+    "title": "Preschoolers' and adults' animism tendencies toward a humanoid robot",
+    "title_zh": "学前儿童与成人对仿人机器人的泛灵论倾向",
+    "tldr": "比较学龄前儿童与成年人对仿人机器人的泛灵论倾向差异，探究不同年龄群体将生命、意图等属性赋予机器人的程度及其对人机交互体验的影响。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "儿童/老人/无障碍",
+      "情感计算",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106688",
+    "volume": "118",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "对话代理=AI，亲子共读=用户研究核心",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -48233,6 +49135,61 @@
     "url": "https://doi.org/10.1016/j.chb.2023.107917",
     "volume": "149",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI人脸识别的公众态度，AI核心+用户视角",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人脸识别",
+      "可解释 AI",
+      "AI 治理"
+    ],
+    "authors": [
+      "Anna Sagana",
+      "Mengying Zhang",
+      "Melanie Sauerland"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Anna Sagana",
+        "orcid": "https://orcid.org/0000-0003-4776-8431"
+      },
+      {
+        "affiliation": [],
+        "name": "Mengying Zhang",
+        "orcid": "https://orcid.org/0000-0002-3382-4538"
+      },
+      {
+        "affiliation": [],
+        "name": "Melanie Sauerland",
+        "orcid": "https://orcid.org/0000-0002-7401-1365"
+      }
+    ],
+    "cited_by": 4,
+    "date": "2026-01",
+    "doi": "10.1016/j.chb.2025.108821",
+    "domain_score": 4.0,
+    "id": 24963,
+    "ingested_at": "2026-08-29T08:30:08.898740",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:30:52.895913",
+    "title": "Public attitudes towards police use of AI-driven face recognition technology",
+    "title_zh": "公众对警方使用AI驱动人脸识别技术的态度",
+    "tldr": "调查公众对警方使用AI驱动人脸识别技术的态度，探讨隐私、监控偏见、技术信任等关键因素如何塑造社会接受度，为执法机构部署人脸识别提供民意基础与治理启示。",
+    "topic_tags": [
+      "AI 治理",
+      "伦理",
+      "信任",
+      "用户研究方法",
+      "问卷"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2025.108821",
+    "volume": "174",
+    "year": 2026
   },
   {
     "abstract": null,
@@ -49688,6 +50645,73 @@
     "year": 2026
   },
   {
+    "abstract": null,
+    "ai_reason": "推荐系统用户参与度与社交感知研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "AI 推荐"
+    ],
+    "authors": [
+      "Jeeyun Oh",
+      "Sabitha Sudarshan",
+      "Jung Ah Lee",
+      "Na Yu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Stan Richards School of Advertising and Public Relations, Moody College of Communication, The University of Texas, Austin, TX, USA"
+        ],
+        "name": "Jeeyun Oh",
+        "orcid": "https://orcid.org/0000-0003-4729-1370"
+      },
+      {
+        "affiliation": [
+          "Stan Richards School of Advertising and Public Relations, Moody College of Communication, The University of Texas, Austin, TX, USA"
+        ],
+        "name": "Sabitha Sudarshan",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Communication, Seoul National University, Seoul, South Korea"
+        ],
+        "name": "Jung Ah Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Stan Richards School of Advertising and Public Relations, Moody College of Communication, The University of Texas, Austin, TX, USA"
+        ],
+        "name": "Na Yu",
+        "orcid": null
+      }
+    ],
+    "cited_by": 16,
+    "date": "2021-05-03",
+    "doi": "10.1080/0144929x.2021.1921027",
+    "domain_score": 4.0,
+    "id": 24988,
+    "ingested_at": "2026-08-29T08:30:09.720393",
+    "issue": "11",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:11.003657",
+    "title": "Serendipity enhances user engagement and sociality perception: the combinatory effect of serendipitous movie suggestions and user motivations",
+    "title_zh": "意外发现提升用户参与感与社会性感知：偶遇式电影推荐与用户动机的组合效应",
+    "tldr": "研究电影推荐中意外发现（serendipity）对用户参与度和社交感知的影响，考察用户动机如何与意外推荐产生交互组合效应，探讨何种动机下意外推荐最能提升用户的社交体验与互动意愿。",
+    "topic_tags": [
+      "推荐系统",
+      "用户体验(UX)",
+      "消费者行为",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2021.1921027",
+    "volume": "41",
+    "year": 2021
+  },
+  {
     "abstract": "Abstract\n               Non-informational cues, such as facial expressions, can significantly influence judgments and interpersonal impressions. While past research has explored how smiling affects business outcomes in offline or in-store contexts, relatively less is known about how smiling influences consumer choice in e-commerce settings when there is no face-to-face interaction. In this article, we use a longitudinal Airbnb dataset and a facial attribute classifier to quantify the effect of a smile in the host’s profile photo on property demand and identify factors that influence when a host’s smile is likely to have the biggest effect. A smile in the host’s profile photo increases property demand by 3.5% on average. This effect is moderated by a variety of host and property characteristics that provide evidence for the role of uncertainty underlying why smiling increases demand. Specifically, when there is greater uncertainty regarding either the quality of the accommodations or the interaction with the host, a host’s smile will have a greater effect on demand. Online experiments confirm this pattern, offering further support for uncertainty perceptions driving the effect of smiling on increased Airbnb demand, and show that the effect of smiling on demand generalizes beyond Airbnb.",
     "ai_reason": "用AI面部识别分析消费者选择,纵向消费者行为研究",
     "ai_score": 3.0,
@@ -50521,6 +51545,72 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2025.103655",
     "volume": "205",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "组织AI采纳对员工留任意愿，AI为主变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机协作",
+      "AI 助手",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Li Jiang",
+      "Xuli Wang",
+      "Yuguang Xie",
+      "Junhong Zhu",
+      "Dongxiao Gu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Li Jiang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Xuli Wang",
+        "orcid": "https://orcid.org/0009-0003-3350-6219"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuguang Xie",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Junhong Zhu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dongxiao Gu",
+        "orcid": null
+      }
+    ],
+    "cited_by": 2,
+    "date": "2026-01",
+    "doi": "10.1016/j.chb.2025.108801",
+    "domain_score": 4.0,
+    "id": 24962,
+    "ingested_at": "2026-08-29T08:30:08.866401",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:30:52.896341",
+    "title": "Substitution or augmentation? How organisational AI adoption approaches influence the willingness to stay of caregivers",
+    "title_zh": "替代还是增强？组织AI采纳方式如何影响护理人员的留任意愿",
+    "tldr": "在护理人员面临AI引入的组织情境下，区分替代型与增强型两种AI采纳路径，分析其对员工留任意愿的差异化影响，揭示AI部署方式如何塑造人机关系与组织承诺。",
+    "topic_tags": [
+      "AI 采用",
+      "人机协作",
+      "服务体验",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2025.108801",
+    "volume": "174",
+    "year": 2026
   },
   {
     "abstract": null,
@@ -52669,7 +53759,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-28T13:38:21.036941",
     "title": "The ‘fourth wall’ and other usability issues in AI-generated personas: comparing chat-based and profile personas",
-    "title_zh": null,
+    "title_zh": "\"第四面墙\"及其他AI生成人物画像的可用性问题：对话式与档案式人物画像的比较",
     "tldr": "研究AI生成用户画像（persona）的可用性问题，对比聊天式与档案式两种呈现方式，揭示\"第四面墙\"等交互障碍，评估不同格式persona在用户研究中的可用性差异，为AI辅助用户画像方法提供设计启示。",
     "topic_tags": [
       "用户画像",
@@ -53119,6 +54209,46 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2022.102784",
     "volume": "161",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心AI信任议题,在线实验用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 治理",
+      "人机协作"
+    ],
+    "authors": [
+      "Naomi Aoki"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Naomi Aoki",
+        "orcid": null
+      }
+    ],
+    "cited_by": 96,
+    "date": "2021-01",
+    "doi": "10.1016/j.chb.2020.106572",
+    "domain_score": 5.0,
+    "id": 22545,
+    "ingested_at": "2026-08-23T03:00:01.917996",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-29T08:31:25.727369",
+    "title": "The importance of the assurance that “humans are still in the decision loop” for public trust in artificial intelligence: Evidence from an online experiment",
+    "title_zh": null,
+    "tldr": "通过在线实验探究'人类仍在决策回路中'这一保证对公众人工智能信任的影响。操纵人机决策权配置等情境变量，检验该保证是否以及在何种条件下能提升或维持公众对AI的信任，为AI治理与人机协作设计提供实证依据。",
+    "topic_tags": [
+      "信任",
+      "AI 治理",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106572",
+    "volume": "114",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -60536,7 +61666,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-28T13:38:21.039538",
     "title": "When being smart trumps AI: An exploration into consumer preferences for smart vs. AI-powered products",
-    "title_zh": null,
+    "title_zh": "当智能胜过AI：消费者对智能产品与AI驱动产品偏好的探索",
     "tldr": "探讨消费者对\"智能\"产品与\"AI驱动\"产品的偏好差异，发现\"智能\"标签在某些情境下比\"AI\"标签更受青睐，揭示AI标签对消费者感知的潜在负面影响，对AI产品定位与营销策略具有启示。",
     "topic_tags": [
       "消费者行为",
