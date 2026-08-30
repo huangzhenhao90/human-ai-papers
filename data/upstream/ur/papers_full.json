@@ -13588,7 +13588,11 @@
     "abstract": "As large language models are increasingly deployed to simulate diverse human characters, ensuring persona fidelity, defined as the extent to which an agent's behavior consistently reflects the psychological and stylistic characteristics of a target persona, has become a critical requirement. However, existing evaluation paradigms primarily rely on either holistic LLM-based judges, which are prone to \"holistic appraisal hallucination'', or static psychometric inventories, which fail to capture the context-dependent fidelity required in dynamic dialogue. To address these limitations, we propose PRISM (Persona Reasoning with Inverse SFL-based Modeling), a psycholinguistically grounded framework that reformulates persona fidelity evaluation as a structured inverse inference task. Inspired by Systemic Functional Linguistics (SFL), PRISM decomposes persona fidelity into three functional dimensions: Task Framing, Interpersonal Stance, and Linguistic Style. It estimates dimension-specific evidence over a persona-conditioned label space and aggregates these signals into an interpretable and auditable evaluation process. Experiments show that PRISM yields more accurate and stable judgements than traditional holistic judging, providing a more reliable framework for persona fidelity evaluation.",
     "ai_reason": "LLM角色保真度评估，心理语言学方法",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "可解释AI"
+    ],
     "authors": [
       "Mengfan Li",
       "Zesheng Wei",
@@ -13621,8 +13625,13 @@
     "scored_at": "2026-08-28T13:38:03.652022",
     "title": "Do LLMs Understand Personality? Rethinking Persona Fidelity Evaluation through Structured Behavioral Inference",
     "title_zh": "大语言模型是否理解人格？通过结构化行为推理重审角色保真度评估",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对LLM模拟人类角色时的人格保真度评估问题，现有方法存在整体评估幻觉且无法捕捉动态对话中的情境依赖。提出PRISM框架，受系统功能语言学启发，将人格保真度分解为任务框架、人际立场、语言风格三个功能维度进行结构化逆向推理与证据聚合。实验表明该方法比传统整体评估更准确稳定，评估过程可解释可审计。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户画像",
+      "可解释性",
+      "用户研究方法"
+    ],
     "url": "https://arxiv.org/abs/2608.26674v1",
     "volume": null,
     "year": 2026
@@ -18025,7 +18034,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-27T12:15:19.624623",
     "title": "“Am I Understood?”: How the Interplay between Embodiment and Theory of Mind Behavior Affects LLM-Based Conversational Agents on Perceived Trust, Anthropomorphism, Presence, Usability, and User Experience",
-    "title_zh": null,
+    "title_zh": "\"我被理解了吗？\"：具身性与心智理论行为对LLM对话代理用户体验的影响",
     "tldr": "研究关注 LLM 对话式智能体的拟人化设计对用户感知的影响。将拟人化分为具身形态（聊天机器人、TTS、具身对话代理）与行为形态（是否融入心智理论提示），通过实证评估两者的交互效应对信任、拟人感、临场感、可用性与用户体验的作用，揭示具身与心智理论行为的协同影响。",
     "topic_tags": [
       "人机交互(HCI)",
@@ -23041,7 +23050,7 @@
     "year": 2025
   },
   {
-    "abstract": null,
+    "abstract": "This study aims to unravel individuals’ technology and task adaptation behaviours, together with search experience constructs such as perceived diagnosticity and serendipity, in shaping behavioural intentions to use ChatGPT for information search. It specifically examines the duality of technology and task adaptation through exploitative and exploratory dimensions, respectively. Building on the extended Adaptive Structuration Theory for Individuals (ASTI), this study integrates social influence and search experience theories into a unified explanatory model. A structural equation modelling (SEM) approach was used to evaluate the proposed relationships. Data were collected via the Netquest panel using an online survey administered to 400 active ChatGPT users in Spain. The survey used validated measurement scales to capture social influence, individual characteristics, technology, task adaptation behaviours, perceived diagnosticity, and serendipity. The research model and hypotheses were assessed using partial least squares structural equation modelling (PLS-SEM). The results reveal a dual structuration of behavioural intentions, where exploitative technology and task adaptation behaviours are primarily driven by perceived diagnosticity, whereas exploratory technology and task adaptation are explained by perceived serendipity. In addition, social influence significantly affects both exploitative and exploratory technology-adaptation behaviour.",
     "ai_reason": "ChatGPT搜索行为研究，用户行为意图",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -23052,30 +23061,33 @@
     ],
     "authors": [
       "John Vara Prasad Ravi",
-      "Ramon Palau-Saumell",
-      "Jan-Hinrich Meyer"
+      "Ramon Palau‐Saumell",
+      "Jan‐Hinrich Meyer"
     ],
     "authors_full": [
       {
         "affiliation": [
-          "IQS School of Management - Universitat Ramon Llull"
+          "Universitat Ramon Llull"
         ],
         "name": "John Vara Prasad Ravi",
-        "orcid": "https://orcid.org/0000-0002-7612-4398"
+        "orcid": "https://orcid.org/0000-0002-7612-4398",
+        "position": "first"
       },
       {
         "affiliation": [
-          "IQS School of Management - Universitat Ramon Llull"
+          "Universitat Ramon Llull"
         ],
-        "name": "Ramon Palau-Saumell",
-        "orcid": "https://orcid.org/0000-0003-4756-624X"
+        "name": "Ramon Palau‐Saumell",
+        "orcid": "https://orcid.org/0000-0003-4756-624X",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "IQS School of Management - Universitat Ramon Llull"
+          "Universitat Ramon Llull"
         ],
-        "name": "Jan-Hinrich Meyer",
-        "orcid": "https://orcid.org/0000-0001-6818-0683"
+        "name": "Jan‐Hinrich Meyer",
+        "orcid": "https://orcid.org/0000-0001-6818-0683",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -29281,6 +29293,68 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人机交互核心议题，机器人行为与人格化感知研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Marlena R. Fraune",
+      "Benjamin C. Oisted",
+      "Catherine E. Sembrowski",
+      "Kathryn A. Gates",
+      "Margaret M. Krupp"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Marlena R. Fraune",
+        "orcid": "https://orcid.org/0000-0002-4377-4634"
+      },
+      {
+        "affiliation": [],
+        "name": "Benjamin C. Oisted",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Catherine E. Sembrowski",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kathryn A. Gates",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Margaret M. Krupp",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Selma Šabanović",
+        "orcid": null
+      }
+    ],
+    "cited_by": 95,
+    "date": "2020-04",
+    "doi": "10.1016/j.chb.2019.106220",
+    "domain_score": 5.0,
+    "id": 20718,
+    "ingested_at": "2026-08-18T02:52:08.411614",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:35.788455",
+    "title": "Effects of robot-human versus robot-robot behavior and entitativity on anthropomorphism and willingness to interact",
+    "title_zh": "人机行为与人际行为及群体性对拟人化与交互意愿的影响",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2019.106220",
+    "volume": "105",
+    "year": 2020
+  },
+  {
+    "abstract": null,
     "ai_reason": "人机交互责任归因，HCI核心议题含机器人AI",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -30495,6 +30569,77 @@
   },
   {
     "abstract": null,
+    "ai_reason": "LLM内容分析对比用户研究方法，AI是主要变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "AI问卷生成"
+    ],
+    "authors": [
+      "Yolande Yunhsiou Yang",
+      "Chih-Chien Wang",
+      "Pau-Lin Chou",
+      "Chieh-Yu Tien",
+      "Jia-Ci Wen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yolande Yunhsiou Yang",
+        "orcid": "https://orcid.org/0000-0001-5502-0322"
+      },
+      {
+        "affiliation": [],
+        "name": "Chih-Chien Wang",
+        "orcid": "https://orcid.org/0000-0001-8940-3655"
+      },
+      {
+        "affiliation": [],
+        "name": "Pau-Lin Chou",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Chieh-Yu Tien",
+        "orcid": "https://orcid.org/0009-0005-0106-1467"
+      },
+      {
+        "affiliation": [],
+        "name": "Jia-Ci Wen",
+        "orcid": "https://orcid.org/0009-0009-6332-0216"
+      },
+      {
+        "affiliation": [],
+        "name": "Nien-Hsin Chen",
+        "orcid": "https://orcid.org/0009-0003-8449-0755"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-06",
+    "doi": "10.1016/j.chb.2026.108904",
+    "domain_score": 3.0,
+    "id": 25098,
+    "ingested_at": "2026-08-30T07:45:23.719168",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:05.362596",
+    "title": "Evaluating human-based and large language model-based content analysis: A case study on negative word-of-mouth classification in social media",
+    "title_zh": null,
+    "tldr": "对比人工内容分析与基于大语言模型的内容分析在社交媒体负面口碑分类任务中的表现，探讨LLM能否替代或辅助人类编码员进行文本分类研究，为用户研究方法中AI辅助内容分析提供实证参考。",
+    "topic_tags": [
+      "用户研究方法",
+      "在线社区",
+      "消费者行为",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.108904",
+    "volume": "179",
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "对话AI的隐私安全信任感知系统综述",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -30613,6 +30758,95 @@
     "url": "https://doi.org/10.1016/j.chb.2026.108952",
     "volume": "180",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能辅导系统含AI，HCI评估",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI 助手"
+    ],
+    "authors": [
+      "Alec Ostrander",
+      "Desmond Bonner",
+      "Jamiahus Walton",
+      "Anna Slavina",
+      "Kaitlyn Ouverson"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Alec Ostrander",
+        "orcid": "https://orcid.org/0000-0002-2339-1863"
+      },
+      {
+        "affiliation": [],
+        "name": "Desmond Bonner",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jamiahus Walton",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Anna Slavina",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kaitlyn Ouverson",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Adam Kohl",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Stephen Gilbert",
+        "orcid": "https://orcid.org/0000-0002-5332-029X"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael Dorneich",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Anne Sinatra",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Eliot Winer",
+        "orcid": null
+      }
+    ],
+    "cited_by": 19,
+    "date": "2020-03",
+    "doi": "10.1016/j.chb.2019.01.006",
+    "domain_score": 4.0,
+    "id": 22549,
+    "ingested_at": "2026-08-23T03:00:02.052104",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:31.376395",
+    "title": "Evaluation of an intelligent team tutoring system for a collaborative two-person problem: Surveillance",
+    "title_zh": "智能团队辅导系统在协作双人问题中的评估：监督任务",
+    "tldr": "研究评估一种面向双人协作监控任务的智能团队辅导系统，通过对比有无智能辅导的协作表现，分析其在知识传递、任务协调与团队学习成效方面的作用。旨在为协作场景下的智能导学设计与有效性验证提供实证参考。",
+    "topic_tags": [
+      "人机协作",
+      "可用性测试",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.01.006",
+    "volume": "104",
+    "year": 2020
   },
   {
     "abstract": "To this day, turn-taking models determining voice agents’ conduct have been examined primarily from a technical point of view, while the ways in which they emerge as interactional constraints or resources for human conversationalists in situ remain underexplored. Drawing on a detailed analysis of corpora of naturalistic data, we document how humans’ conduct was produced in reference to the ever-present risk that, each time they spoke, their talk might trigger a new uncalled-for contribution from the artificial agent. We examine this phenomenon in interactions involving rule-based robots from a ‘pre-LLM era’ as well as the most recent voice agents. This ‘omnirelevance of human speech’ (i.e., the possibility that a conversational agent may erroneously respond to any speech it detects) emerged as a constitutive feature of these human-agent encounters. We describe some of the practices through which humans managed these artificial agents’ turn-taking conduct. Given recent improvements in voice capture technology, we ask whether this ‘omnirelevance of human speech’ weighs even more heavily on human practices today than in the past.",
@@ -34808,7 +35042,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-29T08:31:25.729089",
     "title": "From wearable to insideable: Is ethical judgment key to the acceptance of human capacity-enhancing intelligent technologies?",
-    "title_zh": null,
+    "title_zh": "从可穿戴到可植入：伦理判断是否为人类能力增强型智能技术接纳的关键？",
     "tldr": "从可穿戴延伸至'可植入'智能技术，探讨伦理判断是否是人机能力增强型设备接受度的关键因素。通过实证分析用户对侵入式智能技术的态度，揭示伦理考量在新技术采纳决策中的作用，为智能增强技术的伦理设计与推广提供启示。",
     "topic_tags": [
       "伦理",
@@ -35957,6 +36191,73 @@
     "year": 2026
   },
   {
+    "abstract": null,
+    "ai_reason": "GenAI信任修复与心智感知，AI核心+用户视角",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Fang Xu",
+      "Zihui Yuan",
+      "Siyu Jin",
+      "Gengfeng Niu",
+      "Zongkui Zhou"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Fang Xu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Zihui Yuan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Siyu Jin",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Gengfeng Niu",
+        "orcid": "https://orcid.org/0000-0002-3312-5200"
+      },
+      {
+        "affiliation": [],
+        "name": "Zongkui Zhou",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-05",
+    "doi": "10.1016/j.ijhcs.2026.103813",
+    "domain_score": 4.0,
+    "id": 25109,
+    "ingested_at": "2026-08-30T07:45:23.957022",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:05.363307",
+    "title": "Guilty apology and trust repair in generative artificial intelligence: the role of mind perception",
+    "title_zh": null,
+    "tldr": "研究生成式AI在犯错后表达愧疚式道歉对用户信任修复的效果，考察心智感知在其中的中介作用，揭示用户如何将AI拟人化以重建信任。",
+    "topic_tags": [
+      "信任",
+      "人机交互(HCI)",
+      "人机协作",
+      "情感计算"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2026.103813",
+    "volume": "212",
+    "year": 2026
+  },
+  {
     "abstract": "We present HAIFAI—a novel two-stage system where humans and AI interact to tackle the challenging task of reconstructing a visual representation of a face that exists only in a person’s mind. In the first stage, users iteratively rank images our reconstruction system presents based on their resemblance to a mental image. These rankings, in turn, allow the system to extract relevant image features, fuse them into a unified feature vector and use a generative model to produce an initial reconstruction of the mental image. The second stage leverages an existing face editing method, allowing users to manually refine and further improve this reconstruction using an easy-to-use slider interface for face shape manipulation. To avoid the need for tedious human data collection for training the reconstruction system, we introduce a computational user model of human ranking behaviour. For this, we collected a small face ranking dataset through an online crowd-sourcing study containing data from 275 participants. We evaluate HAIFAI and an ablated version in a 12-participant user study and demonstrate that our approach outperforms the previous state of the art regarding reconstruction quality, usability, perceived workload and reconstruction speed. We further validate the reconstructions in a subsequent face ranking study with 18 participants and show that HAIFAI achieves a new state-of-the-art identification rate of 60.6%. These findings represent a significant advancement towards developing new interactive intelligent systems capable of reliably and effortlessly reconstructing a user’s mental image.",
     "ai_reason": "核心人机AI交互系统，用户迭代参与重建",
     "ai_score": 5.0,
@@ -36394,7 +36695,7 @@
     "year": 2026
   },
   {
-    "abstract": null,
+    "abstract": "This study explores how simulated empathy can function as an emotionally supportive interaction feature in users’ ongoing engagement with ChatGPT for emotional support. As AI-powered chatbots increasingly appear in emotionally sensitive situations, understanding how users relate to them as emotionally supportive conversational partners becomes important. Drawing on the Stimulus-Organism-Response framework, the Technology Acceptance Model, and the Theory of Planned Behaviour, this study develops and empirically examines an integrative HEAR framework. The framework examines how users’ perceptions of empathic communication, human-likeness, and ease of use influence both cognitive evaluations and affective responses, including emotional comfort and usage disposition. Data from 892 users who had used ChatGPT to express emotions were analysed using structural equation modelling. The results show that perceived empathic communication plays a central role in shaping emotional comfort and trust, while human-likeness strongly predicts how emotionally safe users feel during interaction. These emotional factors, in turn, significantly affect users’ intention to continue using ChatGPT. Notably, users may experience ChatGPT as an emotionally supportive listener, not because it experiences emotions, but because it responds in ways that make people feel understood. By positioning empathy as more than a design feature, this study highlights ChatGPT’s emerging role in digital wellbeing contexts.",
     "ai_reason": "ChatGPT情感交互核心，涉用户情绪体验",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -36405,8 +36706,8 @@
       "情感识别"
     ],
     "authors": [
-      "Dung Phuong Thi Pham",
-      "Long Hoang Cuu",
+      "Pham Thi Phuong Dung",
+      "Long Cuu Hoang",
       "Khanh Nguyen Phuc",
       "Tuan Lai Doan Anh",
       "Hang Phan Thi Thu"
@@ -36414,38 +36715,43 @@
     "authors_full": [
       {
         "affiliation": [
-          "College of Business, University of Economics Ho Chi Minh City (UEH)"
+          "University of Economics Ho Chi Minh City"
         ],
-        "name": "Dung Phuong Thi Pham",
-        "orcid": "https://orcid.org/0009-0008-5491-500X"
+        "name": "Pham Thi Phuong Dung",
+        "orcid": "https://orcid.org/0009-0008-5491-500X",
+        "position": "first"
       },
       {
         "affiliation": [
-          "College of Business, University of Economics Ho Chi Minh City (UEH)"
+          "University of Economics Ho Chi Minh City"
         ],
-        "name": "Long Hoang Cuu",
-        "orcid": "https://orcid.org/0000-0002-7227-5025"
+        "name": "Long Cuu Hoang",
+        "orcid": "https://orcid.org/0000-0002-7227-5025",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "College of Business, University of Economics Ho Chi Minh City (UEH)"
+          "University of Economics Ho Chi Minh City"
         ],
         "name": "Khanh Nguyen Phuc",
-        "orcid": "https://orcid.org/0009-0002-8437-3797"
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
-          "Van Hien University"
+          "Văn Hiến University"
         ],
         "name": "Tuan Lai Doan Anh",
-        "orcid": "https://orcid.org/0009-0000-1369-9023"
+        "orcid": "https://orcid.org/0009-0000-1369-9023",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "College of Business, University of Economics Ho Chi Minh City (UEH)"
+          "University of Economics Ho Chi Minh City"
         ],
         "name": "Hang Phan Thi Thu",
-        "orcid": "https://orcid.org/0009-0008-5352-5018"
+        "orcid": null,
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -38996,6 +39302,57 @@
     "year": 2021
   },
   {
+    "abstract": null,
+    "ai_reason": "自动驾驶道德困境跨文化用户研究，AI为核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "Jimin Rhim",
+      "Gi-bbeum Lee",
+      "Ji-Hyun Lee"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jimin Rhim",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Gi-bbeum Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ji-Hyun Lee",
+        "orcid": "https://orcid.org/0000-0001-9560-4285"
+      }
+    ],
+    "cited_by": 58,
+    "date": "2020-01",
+    "doi": "10.1016/j.chb.2019.08.010",
+    "domain_score": 4.0,
+    "id": 22661,
+    "ingested_at": "2026-08-24T03:02:48.178822",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:51.075331",
+    "title": "Human moral reasoning types in autonomous vehicle moral dilemma: A cross-cultural comparison of Korea and Canada",
+    "title_zh": "自动驾驶车辆道德困境中的人类道德推理类型：韩国与加拿大的跨文化比较",
+    "tldr": "研究在自动驾驶车辆面临道德两难情境（如电车难题）时，梳理人类道德推理类型，并对比韩国与加拿大两国文化的差异。旨在揭示文化因素对自动驾驶道德判断与接受度的影响，为跨文化自动驾驶伦理设计与人机信任构建提供依据。",
+    "topic_tags": [
+      "伦理",
+      "信任",
+      "AI 治理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.08.010",
+    "volume": "102",
+    "year": 2020
+  },
+  {
     "abstract": "When their identity is salient, consumers from historically marginalized and privileged groups are differentially influenced when it comes to choosing algorithmic service providers (e.g., AI-enabled tellers, chatbots, robots, and digital kiosks). Under identity salience, as would be the case in a service context where the service providers are all from historically privileged groups, consumers from historically marginalized groups (e.g., Black people) become concerned about identity-based social judgment, leading to relatively higher preference for algorithmic service providers. Underrepresentation of historically marginalized groups in white-collar professions (e.g., financial services), regulatory pressures to abandon diversity hiring initiatives, and a tight labor market make it increasingly difficult for companies to ensure diversity among frontline employees. How can managers provide consumers from historically marginalized groups the services they seek in nondiverse settings while balancing other constraints and reducing identity-based social judgment concerns? The results of a series of field studies and controlled experiments suggest that algorithmic service providers can provide a means to serve historically marginalized consumers in nondiverse service settings. The effect attenuates in service contexts where historically marginalized consumers are less concerned about identity-based social judgment. Interestingly, identity salience does not influence historically privileged consumers’ choice of algorithmic service providers.",
     "ai_reason": "核心研究消费者对AI服务提供者选择",
     "ai_score": 5.0,
@@ -40679,7 +41036,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-27T12:15:14.217795",
     "title": "Influencers’ perceived expertise in social media retailing: Multimodal machine learning with data fusion",
-    "title_zh": null,
+    "title_zh": "社交媒体零售中影响者感知专业性：基于数据融合的多模态机器学习",
     "tldr": "研究关注社交媒体零售情境中影响者感知专业度的评估问题，提出采用多模态机器学习与数据融合的方法，整合影响者的多源异构数据对其专业形象进行建模与预测，旨在探讨多模态特征融合对影响者专业度识别与社交电商营销效果的影响。",
     "topic_tags": [
       "消费者行为",
@@ -41694,6 +42051,58 @@
     "url": "https://doi.org/10.1109/thms.2025.3595746",
     "volume": "55",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "企业机器人(AI)对远程办公者生产力影响，JD-R视角",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Surabhi Verma",
+      "Vibhav Singh"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Department of Economics and Business Economics, Aarhus University, Aarhus, Denmark"
+        ],
+        "name": "Surabhi Verma",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Human Resource Management, Great Lakes Institute of Management, Gurugram, Delhi NCR, India"
+        ],
+        "name": "Vibhav Singh",
+        "orcid": null
+      }
+    ],
+    "cited_by": 3,
+    "date": "2023-11-29",
+    "doi": "10.1080/0144929x.2023.2285945",
+    "domain_score": 4.0,
+    "id": 25114,
+    "ingested_at": "2026-08-30T07:45:24.065459",
+    "issue": "15",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:08.004217",
+    "title": "Investigating the mediating role of willingness to use enterprise bots on white-collar teleworker productivity: an extended job demands-resources (JD-R) perspective",
+    "title_zh": null,
+    "tldr": "基于扩展的工作要求-资源(JD-R)模型，考察企业聊天机器人使用意愿对白领远程办公员工生产力的中介作用，分析哪些工作资源与要求影响员工采纳企业机器人。",
+    "topic_tags": [
+      "AI 采用",
+      "人机协作",
+      "用户体验(UX)",
+      "服务体验"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2023.2285945",
+    "volume": "43",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -44793,7 +45202,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-29T08:31:25.726072",
     "title": "Manipulating music to communicate automation reliability in conditionally automated driving: A driving simulator study",
-    "title_zh": null,
+    "title_zh": "操纵音乐以传达条件自动驾驶中的自动化可靠性：驾驶模拟器研究",
     "tldr": "研究在条件自动驾驶情境下，如何通过音乐设计向驾驶员传递自动化系统可靠性的信息。采用驾驶模拟器实验，操纵不同音乐参数以表征系统可信度，考察其对驾驶员感知、信任与接管行为的影响，为车内人机交互的多模态反馈设计提供依据。",
     "topic_tags": [
       "人机交互(HCI)",
@@ -45655,6 +46064,117 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2025.103618",
     "volume": "205",
     "year": 2025
+  },
+  {
+    "abstract": "How should reinforcement learning (RL) agents explain themselves to humans not trained in AI? To gain insights into this question, we conducted a 124-participant, four-treatment experiment to compare participants’ mental models of an RL agent in the context of a simple Real-Time Strategy (RTS) game. The four treatments isolated two types of explanations vs. neither vs. both together. The two types of explanations were as follows: (1) saliency maps (an “Input Intelligibility Type” that explains the AI’s focus of attention) and (2) reward-decomposition bars (an “Output Intelligibility Type” that explains the AI’s predictions of future types of rewards). Our results show that a combined explanation that included saliency and reward bars was needed to achieve a statistically significant difference in participants’ mental model scores over the no-explanation treatment. However, this combined explanation was far from a panacea: It exacted disproportionately high cognitive loads from the participants who received the combined explanation. Further, in some situations, participants who saw both explanations predicted the agent’s next action\n                    worse\n                    than all other treatments’ participants.",
+    "ai_reason": "核心是RL智能体可解释性，124人实验研究用户心智模型",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Andrew Anderson",
+      "Jonathan Dodge",
+      "Amrita Sadarangani",
+      "Zoe Juozapaitis",
+      "Evan Newman"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Andrew Anderson",
+        "orcid": "https://orcid.org/0000-0003-4964-6059"
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Jonathan Dodge",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Amrita Sadarangani",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Zoe Juozapaitis",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Evan Newman",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Jed Irvine",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Souti Chattopadhyay",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Matthew Olson",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Alan Fern",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Oregon State University, SW Jefferson Way, Corvallis, OR"
+        ],
+        "name": "Margaret Burnett",
+        "orcid": null
+      }
+    ],
+    "cited_by": 43,
+    "date": "2020-05-30",
+    "doi": "10.1145/3366485",
+    "domain_score": 5.0,
+    "id": 22404,
+    "ingested_at": "2026-08-22T02:51:59.318817",
+    "issue": "2",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:26.324999",
+    "title": "Mental Models of Mere Mortals with Explanations of Reinforcement Learning",
+    "title_zh": "普通人对强化学习解释的心智模型研究",
+    "tldr": "针对非专业用户，通过 124 人四组对照实验，比较显著性图（输入可解释）与奖励分解条（输出可解释）单独及组合呈现对强化学习智能体心智模型的影响。结果显示两种解释结合才能显著提升心智模型，但带来高认知负荷，且在某些情境下反而降低用户对智能体下一步动作的预测准确度。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可解释性",
+      "用户研究方法",
+      "可用性测试"
+    ],
+    "url": "https://doi.org/10.1145/3366485",
+    "volume": "10",
+    "year": 2020
   },
   {
     "abstract": "AbstractPrior research revealed a striking heterogeneity of how consumers view smart objects, from seeing them as helpful partners to merely a useful tool. We draw on mind perception theory to assess whether the attribution of mental states to smart objects reveals differences in consumer–smart object relationships and device usage. We train a language model to unobtrusively predict mind perception in smart objects from consumer‐generated text. We provide a rich set of interpretable linguistic markers for mind perception, drawing on a diverse collection of text‐mining techniques, and demonstrate that greater mind perception is associated with expressing a more communal (vs. instrumental) relationship with the device and using it more expansively. We find converging evidence for these associations using over 20,000 real‐world customer reviews and also provide causal evidence that inducing a more communal (vs. instrumental) relationship with a smart object enhances mind perception and in turn increases the number of tasks consumers engage in with the device. These findings have important implications for the role of mind perception as a novel lens to study consumer–smart object relationships. We offer an easy‐to‐use web interface to access our language model using researchers own data or to fine‐tune the model to entirely new domains.",
@@ -54239,7 +54759,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-29T08:31:25.727369",
     "title": "The importance of the assurance that “humans are still in the decision loop” for public trust in artificial intelligence: Evidence from an online experiment",
-    "title_zh": null,
+    "title_zh": "\"人类仍在决策环路\"的保证对公众人工智能信任的重要性：在线实验证据",
     "tldr": "通过在线实验探究'人类仍在决策回路中'这一保证对公众人工智能信任的影响。操纵人机决策权配置等情境变量，检验该保证是否以及在何种条件下能提升或维持公众对AI的信任，为AI治理与人机协作设计提供实证依据。",
     "topic_tags": [
       "信任",
@@ -55506,7 +56026,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-27T12:15:14.217418",
     "title": "The role of anthropomorphized artificial intelligence in shaping consumer mental models and emotional experience in digital branding",
-    "title_zh": null,
+    "title_zh": "拟人化人工智能在塑造数字品牌领域中消费者心智模型与情感体验的作用",
     "tldr": "研究拟探讨拟人化人工智能在数字品牌塑造中如何影响消费者的心理模型与情感体验。围绕 AI 形象的人格化设计，结合品牌情境，分析用户对 AI 品牌的认知建构与情绪反应，揭示拟人化策略在数字品牌传播中对消费者心理加工与品牌印象形成的作用机制，为品牌 AI 形象设计提供理论依据。",
     "topic_tags": [
       "消费者行为",
@@ -60146,6 +60666,53 @@
     "year": 2025
   },
   {
+    "abstract": null,
+    "ai_reason": "自动化面试系统对比人类面试官，AI为核心变量，用户披露行为研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 访谈分析",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Matthew D. Pickard",
+      "Catherine A. Roster"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Matthew D. Pickard",
+        "orcid": "https://orcid.org/0000-0003-4614-0060"
+      },
+      {
+        "affiliation": [],
+        "name": "Catherine A. Roster",
+        "orcid": null
+      }
+    ],
+    "cited_by": 46,
+    "date": "2020-04",
+    "doi": "10.1016/j.chb.2019.106197",
+    "domain_score": 5.0,
+    "id": 21489,
+    "ingested_at": "2026-08-19T02:54:53.289078",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:35.787009",
+    "title": "Using computer automated systems to conduct personal interviews: Does the mere presence of a human face inhibit disclosure?",
+    "title_zh": "计算机自动化系统开展个人访谈：人脸存在是否抑制信息披露？",
+    "tldr": "考察计算机自动化系统开展个人访谈时，仅人类面孔的存在是否抑制受访者的信息披露。聚焦人机访谈情境下，界面拟人化视觉线索对自我披露深度与意愿的影响，探讨自动化访谈工具在敏感话题研究中的适用性。",
+    "topic_tags": [
+      "访谈",
+      "用户研究方法",
+      "人机交互(HCI)",
+      "AI 治理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.106197",
+    "volume": "105",
+    "year": 2020
+  },
+  {
     "abstract": "Companies are increasingly using predictive modeling to manage customer churn proactively. While extant customer retention literature centers mainly on propensity models, recent research indicates merits of uplift models for targeting retention efforts toward customers. However, prior research on uplift modeling relies largely on experimental data and tailored uplift algorithms, making it difficult and costly for practitioners and researchers to apply. Thus, we investigate the applicability and competitiveness of an uplift modeling procedure for customer retention management combining propensity score matching with meta-learner approaches (standard machine learning algorithms). Using a semi-synthetic churn dataset with 1980 customers, we affirm the effectiveness of propensity score matching for reducing covariate imbalance in observational data. The empirical experiments show that meta-learner uplift models outperform tailored uplift random forest approaches regarding Qini scores and computation efficiency. Moreover, the results imply that targeting retention efforts based on a meta-learner uplift model reduces churn more effectively than using propensity models.",
     "ai_reason": "ML用于客户保留，消费者行为但方法偏统计",
     "ai_score": 3.0,
@@ -61358,6 +61925,73 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107286",
     "volume": "133",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能医疗导诊(AI)与患者满意度，用户视角研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Zhaohua Deng",
+      "Ziang Tian",
+      "Jiaxin Xue",
+      "Sumeet Gupta"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "School of Management, Huazhong University of Science and Technology, Wuhan, People’s Republic of China"
+        ],
+        "name": "Zhaohua Deng",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "School of Management, Huazhong University of Science and Technology, Wuhan, People’s Republic of China"
+        ],
+        "name": "Ziang Tian",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "School of Management, Huazhong University of Science and Technology, Wuhan, People’s Republic of China"
+        ],
+        "name": "Jiaxin Xue",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Information Systems, Indian Institute of Management Raipur, Abhanpur, India"
+        ],
+        "name": "Sumeet Gupta",
+        "orcid": null
+      }
+    ],
+    "cited_by": 6,
+    "date": "2023-10-25",
+    "doi": "10.1080/0144929x.2023.2272191",
+    "domain_score": 3.0,
+    "id": 25113,
+    "ingested_at": "2026-08-30T07:45:24.043463",
+    "issue": "13",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-08-30T07:46:08.004874",
+    "title": "What predicts patients’ satisfaction and continuous use of intelligent medical guidance? the moderating effect of consulting experience",
+    "title_zh": "智能导诊患者满意度与持续使用的影响因素：咨询经验的调节作用",
+    "tldr": "探讨患者对智能导诊系统满意度与持续使用意愿的预测因素，聚焦咨询经验的调节作用。旨在揭示不同咨询经验水平下，智能导诊在服务感知、信任与使用行为上的差异机制，为医疗 AI 服务的差异化设计提供依据。",
+    "topic_tags": [
+      "AI 采用",
+      "用户体验(UX)",
+      "信任",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2023.2272191",
+    "volume": "43",
+    "year": 2023
   },
   {
     "abstract": null,

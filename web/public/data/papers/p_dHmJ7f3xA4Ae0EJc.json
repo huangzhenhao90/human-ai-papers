@@ -1,6 +1,10 @@
 {
   "abstract": "As large language models are increasingly deployed to simulate diverse human characters, ensuring persona fidelity, defined as the extent to which an agent's behavior consistently reflects the psychological and stylistic characteristics of a target persona, has become a critical requirement. However, existing evaluation paradigms primarily rely on either holistic LLM-based judges, which are prone to \"holistic appraisal hallucination'', or static psychometric inventories, which fail to capture the context-dependent fidelity required in dynamic dialogue. To address these limitations, we propose PRISM (Persona Reasoning with Inverse SFL-based Modeling), a psycholinguistically grounded framework that reformulates persona fidelity evaluation as a structured inverse inference task. Inspired by Systemic Functional Linguistics (SFL), PRISM decomposes persona fidelity into three functional dimensions: Task Framing, Interpersonal Stance, and Linguistic Style. It estimates dimension-specific evidence over a persona-conditioned label space and aggregates these signals into an interpretable and auditable evaluation process. Experiments show that PRISM yields more accurate and stable judgements than traditional holistic judging, providing a more reliable framework for persona fidelity evaluation.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "可解释AI"
+  ],
   "arxiv_id": "2608.26674",
   "authors": [
     "Mengfan Li",
@@ -27,8 +31,13 @@
       "ai_reason": "LLM角色保真度评估，心理语言学方法",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对LLM模拟人类角色时的人格保真度评估问题，现有方法存在整体评估幻觉且无法捕捉动态对话中的情境依赖。提出PRISM框架，受系统功能语言学启发，将人格保真度分解为任务框架、人际立场、语言风格三个功能维度进行结构化逆向推理与证据聚合。实验表明该方法比传统整体评估更准确稳定，评估过程可解释可审计。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户画像",
+        "可解释性",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -45,7 +54,7 @@
     {
       "channel": "ur",
       "legacy_id": 24882,
-      "revision": "a5799dc47899d9ddca369014fede4c3a4f12fc8a"
+      "revision": "d992a378f87ea3ca56f22bae228f4cab866c3cf3"
     }
   ],
   "title": "Do LLMs Understand Personality? Rethinking Persona Fidelity Evaluation through Structured Behavioral Inference",
