@@ -2,8 +2,7 @@
   "abstract": null,
   "ai_type_tags": [
     "LLM",
-    "GenAI",
-    "AI问卷生成"
+    "GenAI"
   ],
   "arxiv_id": null,
   "authors": [
@@ -46,6 +45,17 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM内容分析方法比较，AI为核心方法",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "比较人工编码与基于大语言模型的内容分析方法，以社交媒体负面口碑分类为案例，评估两类方法在分类准确性、效率和标注一致性上的差异，检验LLM替代或辅助人类进行消费者生成内容分析的可行性。",
+      "topic_tags": [
+        "消费者行为",
+        "营销",
+        "人机协作"
+      ]
+    },
     "ur": {
       "ai_reason": "LLM内容分析对比用户研究方法，AI是主要变量",
       "ai_score": 4.0,
@@ -60,6 +70,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 1,
@@ -71,13 +82,18 @@
   "pdf_url": null,
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 63685,
+      "revision": "5f7721a03cc207b3b1c901f5b49af99868f37d60"
+    },
+    {
       "channel": "ur",
       "legacy_id": 25098,
-      "revision": "d992a378f87ea3ca56f22bae228f4cab866c3cf3"
+      "revision": "b28478b68a938950e12181df24683438ca7d7b15"
     }
   ],
   "title": "Evaluating human-based and large language model-based content analysis: A case study on negative word-of-mouth classification in social media",
-  "title_zh": null,
+  "title_zh": "评估人工与大语言模型内容分析：以社交媒体负面口碑分类为例",
   "unified_ingested_at": "2026-08-30T08:01:30.516454Z",
   "url": "https://doi.org/10.1016/j.chb.2026.108904",
   "volume": "179",

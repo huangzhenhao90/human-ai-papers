@@ -13844,6 +13844,314 @@
     "year": 2026
   },
   {
+    "abstract": "Learning to Defer (LtD) extends supervised learning by allowing a Machine Learning (ML) model to defer harder or less confident decisions to a human expert. Despite being geared for human-AI collaboration, LtD strategies neglect the potential negative interference of human cognitive biases. Our contribution is twofold. First, we demonstrate that standard LtD strategies show class-dependent sampling bias in classification tasks in practice, and thus may disproportionately defer the minority classes when applied to imbalanced datasets. Second, we show that such asymmetries in task delegation may trigger human biases, ultimately leading to poorer downstream decision making. Specifically, we conduct a user study ($N=226$) where participants complete a classification task on a set of deferred items, with conditions presenting different levels of class imbalance. Our results show that participants exposed to a highly imbalanced rejection set achieved lower classification accuracy in the majority class compared to those exposed to a more balanced set, regardless of which class constituted the majority. Exploratory analyses suggest that this may be an instance of the Test-taker's effect, which stems from a mismatch between the actual distribution of classes and the participants' expectations about that distribution. Finally, we discuss the implications of these findings for the deployment of LtD algorithms.",
+    "ai_reason": "Learning to Defer核心AI议题，N=226用户研究，人-AI协作",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Dario Pesenti",
+      "Alessandro Bogani",
+      "Stefano Teso",
+      "Andrea Pugnana"
+    ],
+    "authors_full": [
+      {
+        "name": "Dario Pesenti"
+      },
+      {
+        "name": "Alessandro Bogani"
+      },
+      {
+        "name": "Stefano Teso"
+      },
+      {
+        "name": "Andrea Pugnana"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-28",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 25222,
+    "ingested_at": "2026-08-31T07:58:09.820476",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.28050v1",
+    "scored_at": "2026-08-31T07:58:43.174644",
+    "title": "Too Much of the Same: From Algorithmic to Human Bias in Learning to Defer",
+    "title_zh": "同质化之困：从算法偏见到人类偏见的学习延迟研究",
+    "tldr": "研究人机协作中的Learning to Defer(LtD)策略。发现标准LtD在不平衡数据集上存在类别依赖的采样偏差，可能将更多少数类样本分配给人类专家。226人用户实验表明，当被试接收到的拒绝集类别高度不平衡时，无论哪一类占多数，其在该多数类上的分类准确率均显著低于接收平衡集的组别。探索性分析指向测试者效应：人类判断受实际类别分布与自身预期之间错配的影响，提示部署LtD算法时需关注算法偏差如何级联放大人类认知偏差。",
+    "topic_tags": [
+      "人机协作",
+      "AI采用",
+      "用户研究方法",
+      "可用性测试",
+      "人机交互(HCI)"
+    ],
+    "url": "https://arxiv.org/abs/2608.28050v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large Language Models (LLMs) are increasingly equipped with augmented reasoning capabilities to generate rationales that support human decision-making. Yet these text-dense rationales often impose substantial cognitive burdens. Building on a formative co-design study that identified user preferences for non-linear reasoning representations, we developed Graphionale as a testbed for empirically studying argument-map-style rationale visualization. This system transforms linear LLM rationales into interactive, multi-level graphs. It explicitly structures logical relationships (e.g., conclusions, premises, support, and objections), while further extracting entities and relations within each statement to construct condensed node-link representations. We conduct a large-scale online user study (N = 204) to examine when graphical rationales are more effective than textual ones, across varying task modality (verbal vs. visual reasoning), rationale format (textual vs. graphical), and question difficulty (easy vs. hard). Our results show that graphical rationales do not help uniformly: they improve trust calibration for verbal reasoning yet feel more cognitively demanding and less satisfying; for visual reasoning, they impair calibration yet feel more engaging and helpful. In each modality, the format that better supports calibrated decisions is not the one users prefer, highlighting that matching rationale format to task modality is key to effective AI explanation design. Our findings contribute empirical design knowledge about when and how graphical rationales support human decision making, and inform the next-generation reasoning-aware AI interfaces.",
+    "ai_reason": "LLM推理图可视化，含co-design与大规模用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Xinru Wang",
+      "Zhexuan Ma",
+      "Ming Yin",
+      "Shuai Ma",
+      "Thomas W Malone"
+    ],
+    "authors_full": [
+      {
+        "name": "Xinru Wang"
+      },
+      {
+        "name": "Zhexuan Ma"
+      },
+      {
+        "name": "Ming Yin"
+      },
+      {
+        "name": "Shuai Ma"
+      },
+      {
+        "name": "Thomas W Malone"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-28",
+    "doi": "https://doi.org/10.1145/3830398.3830638",
+    "domain_score": 5.0,
+    "id": 25223,
+    "ingested_at": "2026-08-31T07:58:09.822247",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.27932v1",
+    "scored_at": "2026-08-31T07:58:44.660484",
+    "title": "Graphionale: How Graph Visualizations of LLM Rationales Affect Human Decision Making",
+    "title_zh": "Graphionale：LLM推理依据的图形可视化如何影响人类决策",
+    "tldr": "针对LLM生成的文本推理链认知负荷大、可读性差的问题，开发Graphionale系统，将线性推理理由转化为多层级交互式图结构，显式标注结论、前提、支持与反对等逻辑关系，并抽取实体关系构建节点链接表示。204人大规模在线实验对比图形与文本两种理由格式在口头/视觉推理任务中的效果，发现图形理由在口头推理中提升信任校准但更费力，在视觉推理中损害校准却更吸引人，揭示了理由格式需与任务模态匹配才能有效支持AI解释设计。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可解释性",
+      "可视化",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2608.27932v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Creative professionals rarely design for themselves--they design for audiences whose preferences they must anticipate. Yet current text-to-image exploration tools derive diversity entirely from the designer's own input--their prompts, their chosen dimensions, their search queries--confining exploration to what the designer already knows to look for. We present FocusGen, an interactive system that introduces external perspectives into visual design exploration through a \"virtual focus group\" of simulated persona agents. In contrast to prior persona systems in which multiple agents converge as critics on a single evolving artifact, FocusGen uses personas as parallel generators: each agent--constructed from demographic data, a procedurally generated backstory, and aesthetic preferences elicited through interviews--independently drives an iterative generation loop that produces its own visual concept, transforming one design brief into a spectrum of audience-conditioned directions. With real human participants, we confirm that the iterative refinement loop produces outputs people prefer over zero-shot generation. With synthetic agents at scale, we show that persona conditioning yields higher visual diversity than a generic-assistant baseline--measured by CLIP distance and corroborated by human perceptual judgments--and that open-ended preference interviews yield more diverse outputs than structured ones for both human and synthetic cohorts, while also revealing that agent cohorts recover only part of the diversity of comparable human cohorts. A qualitative study with 16 creative professionals suggests FocusGen helps designers discover unanticipated directions, overcome fixation, and probe audience contexts--while surfacing stereotyping risks that we analyze. We position FocusGen as a divergence scaffold for early-stage ideation rather than a substitute for audience research.",
+    "ai_reason": "生成式设计探索交互系统，含persona设计视角",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "GenAI",
+      "多模态"
+    ],
+    "authors": [
+      "Jaewon Choi",
+      "Helena Vasconcelos",
+      "Hyun Lee",
+      "Carolyn Zou",
+      "Tak Yeon Lee"
+    ],
+    "authors_full": [
+      {
+        "name": "Jaewon Choi"
+      },
+      {
+        "name": "Helena Vasconcelos"
+      },
+      {
+        "name": "Hyun Lee"
+      },
+      {
+        "name": "Carolyn Zou"
+      },
+      {
+        "name": "Tak Yeon Lee"
+      },
+      {
+        "name": "Michael Bernstein"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-28",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 25224,
+    "ingested_at": "2026-08-31T07:58:09.823769",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.28001v1",
+    "scored_at": "2026-08-31T07:58:44.660128",
+    "title": "FocusGen: Expanding Visual Design Exploration with a Simulated Focus Group of Persona Agents",
+    "title_zh": "FocusGen：基于角色代理模拟焦点小组拓展视觉设计探索",
+    "tldr": "面向视觉设计探索，提出FocusGen系统，通过模拟焦点小组的persona智能体引入外部视角。每个persona由人口统计数据、程序化生成背景和通过访谈获取的审美偏好构成，作为并行生成器独立驱动迭代生成循环，将单一设计简报转化为多样化的受众导向方向。实验证明persona条件生成在CLIP距离和人类感知判断上均优于通用助手基线，且开放式偏好访谈比结构化访谈产出更多样化的结果。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户画像",
+      "AI 辅助创意设计",
+      "可用性测试"
+    ],
+    "url": "https://arxiv.org/abs/2608.28001v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Recent advances in generative AI allow users to create 3D models from text or images. However, these models prioritize visual plausibility over geometric accuracy, often generating results with flaws that compromise their intended use post-fabrication. We present InstructMesh, an interactive post-generation refinement tool that enables selective repair of generative 3D models through region selection and targeted operations, such as opening or sealing voids, or adjusting local thickness. Users can invoke edit operations via natural language prompts or slider controls. By operating directly on the intermediate latent representation, InstructMesh allows users to apply robust geometric corrections without requiring expert modeling skills. To inform our design, we first analyze common fabrication-related failure modes in outputs from state-of-the-art generative tools. We then conduct two user studies, demonstrating that novices can identify and perform fabrication-relevant repairs on generative outputs using InstructMesh, and revealing user preference for hybrid interfaces that combine slider controls with natural language input.",
+    "ai_reason": "生成式3D模型交互精修工具，含用户fabrication分析",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "多模态",
+      "智能体/Agent",
+      "AI 助手"
+    ],
+    "authors": [
+      "Faraz Faruqi",
+      "Ahmed Katary",
+      "Demircan Tas",
+      "Theresa Hradilak",
+      "Ning Zhang"
+    ],
+    "authors_full": [
+      {
+        "name": "Faraz Faruqi"
+      },
+      {
+        "name": "Ahmed Katary"
+      },
+      {
+        "name": "Demircan Tas"
+      },
+      {
+        "name": "Theresa Hradilak"
+      },
+      {
+        "name": "Ning Zhang"
+      },
+      {
+        "name": "Jiaji Li"
+      },
+      {
+        "name": "Fabian Manhardt"
+      },
+      {
+        "name": "Martin Nisser"
+      },
+      {
+        "name": "Vrushank Phadnis"
+      },
+      {
+        "name": "Ruofei Du"
+      },
+      {
+        "name": "Federico Tombari"
+      },
+      {
+        "name": "Megan Hofmann"
+      },
+      {
+        "name": "Stefanie Mueller"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-28",
+    "doi": "https://doi.org/10.1145/3830398.3830647",
+    "domain_score": 4.0,
+    "id": 25230,
+    "ingested_at": "2026-08-31T07:58:09.832876",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2608.28534v1",
+    "scored_at": "2026-08-31T07:58:44.658346",
+    "title": "InstructMesh: Selective Refinement of Generative 3D Models for Fabrication",
+    "title_zh": "InstructMesh：面向制造的三维生成模型选择性精修",
+    "tldr": "针对生成式AI产出的3D模型常存在几何缺陷、难以直接用于制造的问题，提出交互式后处理工具InstructMesh，允许用户通过区域选择、自然语言指令或滑块控制，对模型局部空洞封闭、厚度调节等定向修复，在潜空间直接操作以避免专业建模门槛。两轮用户研究表明，普通人可识别并完成面向制造的修复，且用户偏好滑块与自然语言结合的混合交互方式。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户研究方法",
+      "可用性测试",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2608.28534v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Corporate training teams need scalable and explainable tools to improve workforce communication in multilingual settings. Existing systems often score text, audio, or video in isolation, or produce black-box outputs that are difficult to audit for coaching use. This paper presents SETU, an agentic ecosystem for corporate communication coaching aimed at recruiters, frontline sales professionals and training units who prepare for audience specific conversations. SETU is designed for two scoped scenarios: (i) recruiter-candidate eligibility-and-interest calls with persona context and (ii) sales pitches with target-audience adaptation; owing to limited evaluation resources, this paper reports results on scenario (ii) only. The ecosystem decomposes analysis into specialized video, audio-speech, text-relevance, scoring, notification and reporting agents coordinated through trust-aware orchestration. It generates modality-attributed coaching reports for formative training, with human reviewers retaining final judgment. The name SETU (bridge in several Indic languages) reflects the goal of bridging communication gaps across regional languages and audience expectations.",
+    "ai_reason": "Agentic AI生态为核心，系统导向但有用户场景",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "对话式 AI",
+      "多模态",
+      "可解释 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Jonnalagadda Maruthi Tejas",
+      "Uponika Barman Roy",
+      "Tilottama Goswami",
+      "Samir Goswami",
+      "Mousita Dhar"
+    ],
+    "authors_full": [
+      {
+        "name": "Jonnalagadda Maruthi Tejas"
+      },
+      {
+        "name": "Uponika Barman Roy"
+      },
+      {
+        "name": "Tilottama Goswami"
+      },
+      {
+        "name": "Samir Goswami"
+      },
+      {
+        "name": "Mousita Dhar"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-27",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 25232,
+    "ingested_at": "2026-08-31T07:58:09.834618",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2608.27524v1",
+    "scored_at": "2026-08-31T07:58:43.175864",
+    "title": "SETU: An Agentic Ecosystem for Multilingual, Persona-Aware Communication Coaching",
+    "title_zh": "SETU：面向多语言与角色感知的智能体式沟通辅导生态系统",
+    "tldr": "提出SETU——面向企业沟通辅导的多智能体生态系统，专为多语言场景下的招聘电话与销售推介设计。系统将分析任务分解为视频、音频-语音、文本相关性、评分、通知与报告等多个专用智能体，通过可信编排协同工作，生成可追溯至具体模态的辅导报告供人工审核。设计理念强调多语言适配与受众画像感知，旨在弥合跨地区语言及沟通期望差异。",
+    "topic_tags": [
+      "人机协作",
+      "服务设计",
+      "AI助手",
+      "可解释性",
+      "人机交互(HCI)"
+    ],
+    "url": "https://arxiv.org/abs/2608.27524v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "人-自主性团队协作，AI/HCI核心议题",
     "ai_score": 4.0,
@@ -18689,6 +18997,65 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人工代理拟人化引发公平/策略行为，人-AI交互行为研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Roy de Kleijn",
+      "Lisa van Es",
+      "George Kachergis",
+      "Bernhard Hommel"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Roy de Kleijn",
+        "orcid": "https://orcid.org/0000-0002-1759-3960"
+      },
+      {
+        "affiliation": [],
+        "name": "Lisa van Es",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "George Kachergis",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Bernhard Hommel",
+        "orcid": null
+      }
+    ],
+    "cited_by": 41,
+    "date": "2019-02",
+    "doi": "10.1016/j.ijhcs.2018.09.008",
+    "domain_score": 4.0,
+    "id": 21014,
+    "ingested_at": "2026-08-18T02:52:17.032104",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-08-31T07:59:17.234029",
+    "title": "Anthropomorphization of artificial agents leads to fair and strategic, but not altruistic behavior",
+    "title_zh": "人工智能体的拟人化引发公平与策略性行为，但不导致利他行为",
+    "tldr": "研究探讨人类将AI代理拟人化后，在社会困境或博弈情境中的合作行为变化。结果发现，拟人化促使人类表现得更加公平和策略化，但并未激发真正的利他行为，揭示了拟人化线索对合作决策的复杂影响机制。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "信任",
+      "消费者行为",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2018.09.008",
+    "volume": "122",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "护理机器人用户偏好特征组合，HCI用户评估",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -19154,7 +19521,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-20T02:54:55.763460",
     "title": "Artificial intelligence and human behavioral development: A perspective on new skills and competences acquisition for the educational context",
-    "title_zh": null,
+    "title_zh": "人工智能与人类行为发展：教育情境中新技能与能力习得之视角",
     "tldr": "从教育情境出发，探讨AI对人类行为发展的影响，聚焦学生在AI时代所需的新技能与新能力（如批判性思维、创造力、数字化素养、人机协作能力等）的习得与培养，为教育者与课程设计提供能力框架与实践方向。",
     "topic_tags": [
       "人机协作",
@@ -22528,6 +22895,59 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聊天机器人广告效果，AI为核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "ChatGPT"
+    ],
+    "authors": [
+      "Evert Van den Broeck",
+      "Brahim Zarouali",
+      "Karolien Poels"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Evert Van den Broeck",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Brahim Zarouali",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Karolien Poels",
+        "orcid": null
+      }
+    ],
+    "cited_by": 216,
+    "date": "2019-09",
+    "doi": "10.1016/j.chb.2019.04.009",
+    "domain_score": 4.0,
+    "id": 21459,
+    "ingested_at": "2026-08-19T02:54:52.450840",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-31T07:58:55.219988",
+    "title": "Chatbot advertising effectiveness: When does the message get through?",
+    "title_zh": "聊天机器人广告效果：信息何时能够有效传达？",
+    "tldr": "研究聊天机器人投放广告的有效性，探讨在何种条件下广告信息能有效传达给用户。结合标题推断：聚焦聊天机器人作为广告媒介的情境因素（如任务相关性、用户参与度、互动时机等）对广告效果的影响，为聊天机器人营销策略提供依据。",
+    "topic_tags": [
+      "广告",
+      "营销",
+      "AI 助手",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.04.009",
+    "volume": "98",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "对话式Chatbot设计含用户任务表现评估",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -23667,7 +24087,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-20T02:54:48.605690",
     "title": "CoAIcoder: Examining the Effectiveness of AI-assisted Human-to-Human Collaboration in Qualitative Analysis",
-    "title_zh": null,
+    "title_zh": "CoAIcoder：AI辅助人际协作在质性分析中的有效性考察",
     "tldr": "针对AI辅助协作式定性分析(CQA)研究不足的问题，通过形成性访谈识别CQA实践与设计机会，设计了CoAIcoder工具，以四种协作方式增强编码者间的人人协作。32对CQA受训参与者的被试间实验表明：共享AI模型作为中介可提升早期编码阶段的效率并更快达成一致，但可能影响最终编码多样性；需在不同CQA场景中权衡AI介入的独立程度，并提出设计启示。",
     "topic_tags": [
       "用户研究方法",
@@ -24765,6 +25185,66 @@
     "url": "https://doi.org/10.1093/jcr/ucag033",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自适应学习系统与AI学术顾问Agent",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI 助手",
+      "推荐算法"
+    ],
+    "authors": [
+      "Salah Hammami",
+      "Fahman Saeed",
+      "Hassan Mathkour",
+      "Mohammed Amer Arafah"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Salah Hammami",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Fahman Saeed",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hassan Mathkour",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mohammed Amer Arafah",
+        "orcid": null
+      }
+    ],
+    "cited_by": 14,
+    "date": "2019-03",
+    "doi": "10.1016/j.chb.2017.07.006",
+    "domain_score": 3.0,
+    "id": 24331,
+    "ingested_at": "2026-08-28T13:37:00.656134",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-31T07:59:16.808667",
+    "title": "Continuous improvement of deaf student learning outcomes based on an adaptive learning system and an Academic Advisor Agent",
+    "title_zh": "基于自适应学习系统与学术顾问Agent的听障学生学习成效持续改进",
+    "tldr": "针对聋哑学生群体，设计自适应学习系统与学术顾问智能体，通过持续改进机制提升学习效果，探索AI智能体在特殊教育场景中的辅助教学与人机协作应用。",
+    "topic_tags": [
+      "可访问性",
+      "儿童/老人/无障碍",
+      "个性化",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2017.07.006",
+    "volume": "92",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -28993,6 +29473,65 @@
   },
   {
     "abstract": null,
+    "ai_reason": "AI智能体作为行为模型，学习动机与成效",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI 助手"
+    ],
+    "authors": [
+      "Sofia Fountoukidou",
+      "Jaap Ham",
+      "Uwe Matzat",
+      "Cees Midden"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sofia Fountoukidou",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jaap Ham",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Uwe Matzat",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Cees Midden",
+        "orcid": null
+      }
+    ],
+    "cited_by": 27,
+    "date": "2019-08",
+    "doi": "10.1016/j.chb.2019.03.013",
+    "domain_score": 4.0,
+    "id": 22699,
+    "ingested_at": "2026-08-24T03:02:49.166022",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-31T07:58:55.590289",
+    "title": "Effects of an artificial agent as a behavioral model on motivational and learning outcomes",
+    "title_zh": "人工代理作为行为模型对动机与学习结果的影响",
+    "tldr": "探究将人工智能体作为行为榜样（behavioral model）对学习者动机与学习成效的影响。推断该研究通过实验比较有无AI示范条件下的学习表现与动机水平，揭示AI智能体作为社会化学习榜样在教育或培训场景中的作用机制与边界。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "AI 采用",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.03.013",
+    "volume": "97",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "自动驾驶AI接管性能，HCI用户评估研究",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -29295,7 +29834,10 @@
     "abstract": null,
     "ai_reason": "人机交互核心议题，机器人行为与人格化感知研究",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互"
+    ],
     "authors": [
       "Marlena R. Fraune",
       "Benjamin C. Oisted",
@@ -29347,8 +29889,12 @@
     "scored_at": "2026-08-30T07:46:35.788455",
     "title": "Effects of robot-human versus robot-robot behavior and entitativity on anthropomorphism and willingness to interact",
     "title_zh": "人机行为与人际行为及群体性对拟人化与交互意愿的影响",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究机器人与人类互动与机器人之间互动的行为差异，以及群体感知（entitativity）如何影响用户对机器人的拟人化程度和互动意愿。比较人机共处场景与机机交互场景下用户态度的差异，揭示行为模式与群体一致性线索对拟人化判断的作用机制。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "信任"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2019.106220",
     "volume": "105",
     "year": 2020
@@ -29591,6 +30137,75 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2024.103362",
     "volume": "192",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "具身对话代理（AI），患者横截面研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "多模态"
+    ],
+    "authors": [
+      "Thure Georg Weimann",
+      "Hannes Schlieter",
+      "Urszula Konofalska",
+      "Tjalf Ziemssen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "TUD Dresden University of Technology"
+        ],
+        "name": "Thure Georg Weimann",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "TUD Dresden University of Technology"
+        ],
+        "name": "Hannes Schlieter",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Faculty of Medicine and University Hospital Carl Gustav Carus, TUD Dresden University of Technology"
+        ],
+        "name": "Urszula Konofalska",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Faculty of Medicine and University Hospital Carl Gustav Carus, TUD Dresden University of Technology"
+        ],
+        "name": "Tjalf Ziemssen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 2,
+    "date": "2026-03-19",
+    "doi": "10.1080/0144929x.2026.2641598",
+    "domain_score": 4.0,
+    "id": 25194,
+    "ingested_at": "2026-08-31T07:58:07.269545",
+    "issue": "14",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-08-31T07:58:43.176985",
+    "title": "Embodied conversational agents for collecting patient-reported data: effective for some, challenging for others – results of a cross-sectional study in multiple sclerosis care",
+    "title_zh": "具身对话代理采集患者报告数据：多发性硬化症护理横断面研究",
+    "tldr": "在多发性硬化症护理场景中，对具身对话式智能体收集患者自报告数据的效果进行横断面调查。结果显示该技术对部分患者有效，但对另一些患者存在挑战，提示在临床数据采集应用中需关注用户异质性、可用性及可接受性差异。",
+    "topic_tags": [
+      "可用性",
+      "用户体验(UX)",
+      "人机交互(HCI)",
+      "AI采用",
+      "可访问性"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2641598",
+    "volume": "45",
+    "year": 2026
   },
   {
     "abstract": null,
@@ -30626,7 +31241,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-30T07:46:05.362596",
     "title": "Evaluating human-based and large language model-based content analysis: A case study on negative word-of-mouth classification in social media",
-    "title_zh": null,
+    "title_zh": "评估基于人工与大语言模型的内容分析：社交媒体负面口碑分类的案例研究",
     "tldr": "对比人工内容分析与基于大语言模型的内容分析在社交媒体负面口碑分类任务中的表现，探讨LLM能否替代或辅助人类编码员进行文本分类研究，为用户研究方法中AI辅助内容分析提供实证参考。",
     "topic_tags": [
       "用户研究方法",
@@ -31717,7 +32332,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-20T02:54:45.333364",
     "title": "Exploring effects of intelligent recommendation, interactivity, and playfulness on learning engagement: An application of TikTok considering the meditation of anxiety and moderation of virtual reward",
-    "title_zh": null,
+    "title_zh": "智能推荐、互动性与趣味性对学习投入的影响：基于抖音——焦虑的中介与虚拟奖励的调节",
     "tldr": "研究以TikTok为情境，考察智能推荐、互动性与趣味性对学习投入的影响机制，并分析焦虑的中介作用与虚拟奖励的调节效应。结果揭示算法推荐内容如何通过用户情感与动机因素作用于学习参与，为短视频平台的教育化设计与推荐算法优化提供实证参考。",
     "topic_tags": [
       "推荐系统",
@@ -36245,7 +36860,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-30T07:46:05.363307",
     "title": "Guilty apology and trust repair in generative artificial intelligence: the role of mind perception",
-    "title_zh": null,
+    "title_zh": "生成式人工智能中的愧疚式道歉与信任修复：心智感知的作用",
     "tldr": "研究生成式AI在犯错后表达愧疚式道歉对用户信任修复的效果，考察心智感知在其中的中介作用，揭示用户如何将AI拟人化以重建信任。",
     "topic_tags": [
       "信任",
@@ -42092,7 +42707,7 @@
     "pdf_url": null,
     "scored_at": "2026-08-30T07:46:08.004217",
     "title": "Investigating the mediating role of willingness to use enterprise bots on white-collar teleworker productivity: an extended job demands-resources (JD-R) perspective",
-    "title_zh": null,
+    "title_zh": "探究企业机器人使用意愿对白领远程办公者生产力的中介作用：基于扩展的工作要求-资源(JD-R)模型",
     "tldr": "基于扩展的工作要求-资源(JD-R)模型，考察企业聊天机器人使用意愿对白领远程办公员工生产力的中介作用，分析哪些工作资源与要求影响员工采纳企业机器人。",
     "topic_tags": [
       "AI 采用",
@@ -51950,6 +52565,59 @@
   },
   {
     "abstract": null,
+    "ai_reason": "自主技术厌恶,用户态度涉及AI自主性",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Jan-Philipp Stein",
+      "Benny Liebold",
+      "Peter Ohler"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jan-Philipp Stein",
+        "orcid": "https://orcid.org/0000-0003-3874-0277"
+      },
+      {
+        "affiliation": [],
+        "name": "Benny Liebold",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Peter Ohler",
+        "orcid": null
+      }
+    ],
+    "cited_by": 107,
+    "date": "2019-06",
+    "doi": "10.1016/j.chb.2019.01.021",
+    "domain_score": 3.0,
+    "id": 20957,
+    "ingested_at": "2026-08-18T02:52:15.358622",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-31T07:59:06.709727",
+    "title": "Stay back, clever thing! Linking situational control and human uniqueness concerns to the aversion against autonomous technology",
+    "title_zh": "保持距离，聪明家伙：情境控制与人类独特性关切对自主技术厌恶感的影响",
+    "tldr": "研究自主技术引发用户回避的心理机制，聚焦情境控制需求与人类独特性关切两大因素如何驱动对自主技术的厌恶态度，为理解人机交互中的抵触情绪提供理论解释。",
+    "topic_tags": [
+      "AI 拒绝",
+      "AI 采用",
+      "人机交互(HCI)",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.01.021",
+    "volume": "95",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "人-自主体团队，AI代理为核心议题之一",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -53219,6 +53887,66 @@
     "url": "https://doi.org/10.1145/3689040",
     "volume": "31",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "认知计算即AI，聚焦教育应用与展望",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "智能体/Agent",
+      "推荐算法"
+    ],
+    "authors": [
+      "Miltiadis Lytras",
+      "Anna Visvizi",
+      "Ernesto Damiani",
+      "Hassan Mathkour"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Miltiadis Lytras",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Anna Visvizi",
+        "orcid": "https://orcid.org/0000-0003-3240-3771"
+      },
+      {
+        "affiliation": [],
+        "name": "Ernesto Damiani",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hassan Mathkour",
+        "orcid": null
+      }
+    ],
+    "cited_by": 25,
+    "date": "2019-03",
+    "doi": "10.1016/j.chb.2018.11.011",
+    "domain_score": 4.0,
+    "id": 22682,
+    "ingested_at": "2026-08-24T03:02:48.720878",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-08-31T07:59:15.641379",
+    "title": "The cognitive computing turn in education: Prospects and application",
+    "title_zh": "教育中的认知计算转向：前景与应用",
+    "tldr": "探讨认知计算在教育领域的转型应用与前景，梳理相关技术如何重塑教学过程，分析认知计算在促进个性化学习与教育决策中的潜力与挑战。",
+    "topic_tags": [
+      "AI 采用",
+      "人机交互(HCI)",
+      "个性化",
+      "AI 治理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.11.011",
+    "volume": "92",
+    "year": 2019
   },
   {
     "abstract": "Recommender systems on online platforms are often accused of polarizing user attention and consumption. The authors examine this phenomenon using a quasi-experiment conducted by Zhihu, the largest online knowledge-sharing platform (or Q&amp;A community) in China. Zhihu originally used a content-based filtering algorithm, which recommends content to users on the basis of the topics to which each user has subscribed. After more than a year, Zhihu moved to a social filtering algorithm, which recommends content with which users’ social connections are already engaged. The authors find that this algorithm change increased the creation of social ties by approximately 15% but decreased question subscriptions by 20% and answer contributions by 23%. The authors show that users’ increased social interests mainly involved following popular users, leading to a greater concentration of social interests on the platform. However, users’ topical interests became less concentrated, as popular topics received significantly fewer subscribers than unpopular topics. The authors explain these findings by exploring the underlying mechanism. They show that compared with content-based filtering algorithms, social filtering algorithms are more likely to expose general users to content consumed by their followees, who are more interested in niche topics than general users are.",
@@ -57331,6 +58059,80 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2026.103765",
     "volume": "210",
     "year": 2026
+  },
+  {
+    "abstract": "A proposal for a unified theory of learned trust implemented in a cognitive architecture is presented. The theory is instantiated as a computational cognitive model of learned trust that integrates several seemingly unrelated categories of findings from the literature on interpersonal and human-machine interactions and makes unintuitive predictions for future studies. The model relies on a combination of learning mechanisms to explain a variety of phenomena such as trust asymmetry, the higher impact of early trust breaches, the black-hat/white-hat effect, the correlation between trust and cognitive ability, and the higher resilience of interpersonal as compared to human-machine trust. In addition, the model predicts that trust decays in the absence of evidence of trustworthiness or untrustworthiness. The implications of the model for the advancement of the theory on trust are discussed. Specifically, this work suggests two more trust antecedents on the trustor's side: perceived trust necessity and cognitive ability to detect cues of trustworthiness.",
+    "ai_reason": "人机交互中信任的计算认知模型，AI与HCI信任为核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Ion Juvina",
+      "Michael G. Collins",
+      "Othalia Larue",
+      "William G. Kennedy",
+      "Ewart De Visser"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Wright State University, Dayton, OH, USA"
+        ],
+        "name": "Ion Juvina",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Wright State University 8 Air Force Research Laboratory, Dayton, OH, USA"
+        ],
+        "name": "Michael G. Collins",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Wright State University, Dayton, OH, USA"
+        ],
+        "name": "Othalia Larue",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "George Mason University, Fairfax, VA, USA"
+        ],
+        "name": "William G. Kennedy",
+        "orcid": "https://orcid.org/0000-0001-9238-1215"
+      },
+      {
+        "affiliation": [
+          "George Mason University, Fairfax, VA, USA"
+        ],
+        "name": "Ewart De Visser",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Southern California, CA, USA"
+        ],
+        "name": "Celso De Melo",
+        "orcid": null
+      }
+    ],
+    "cited_by": 19,
+    "date": "2019-10-10",
+    "doi": "10.1145/3230735",
+    "domain_score": 4.0,
+    "id": 22138,
+    "ingested_at": "2026-08-21T03:00:05.102998",
+    "issue": "4",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-08-31T07:58:40.268626",
+    "title": "Toward a Unified Theory of Learned Trust in Interpersonal and Human-Machine Interactions",
+    "title_zh": "迈向人际与人机交互中习得性信任的统一理论",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1145/3230735",
+    "volume": "9",
+    "year": 2019
   },
   {
     "abstract": null,

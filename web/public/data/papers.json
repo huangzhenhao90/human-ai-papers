@@ -1256,6 +1256,84 @@
   },
   {
     "ai_type_tags": [
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Dario Pesenti",
+      "Alessandro Bogani",
+      "Stefano Teso",
+      "Andrea Pugnana"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "研究人机协作中的Learning to Defer(LtD)策略。发现标准LtD在不平衡数据集上存在类别依赖的采样偏差，可能将更多少数类样本分配给人类专家。226人用户实验表明，当被试接收到的拒绝集类别高度不平衡时，无论哪一类占多数，其在该多数类上的分类准确率均显著低于接收平衡集的组别。探索性分析指向测试者效应：人类判断受实际类别分布与自身预期之间错配的影响，提示部署LtD算法时需关注算法偏差如何级联放大人类认知偏差。",
+        "topic_tags": [
+          "人机协作",
+          "AI采用",
+          "用户研究方法",
+          "可用性测试",
+          "人机交互(HCI)"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-28",
+    "id": "p_drLvim4E33N7UgnI",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.28050v1",
+    "title": "Too Much of the Same: From Algorithmic to Human Bias in Learning to Defer",
+    "title_zh": "同质化之困：从算法偏见到人类偏见的学习延迟研究",
+    "url": "https://arxiv.org/abs/2608.28050v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "GenAI",
+      "多模态",
+      "智能体/Agent",
+      "AI 助手"
+    ],
+    "authors": [
+      "Faraz Faruqi",
+      "Ahmed Katary",
+      "Demircan Tas",
+      "Theresa Hradilak",
+      "Ning Zhang"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "针对生成式AI产出的3D模型常存在几何缺陷、难以直接用于制造的问题，提出交互式后处理工具InstructMesh，允许用户通过区域选择、自然语言指令或滑块控制，对模型局部空洞封闭、厚度调节等定向修复，在潜空间直接操作以避免专业建模门槛。两轮用户研究表明，普通人可识别并完成面向制造的修复，且用户偏好滑块与自然语言结合的混合交互方式。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "用户研究方法",
+          "可用性测试",
+          "人机协作"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-28",
+    "id": "p_Mr2CeeR3kqdf5bgY",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2608.28534v1",
+    "title": "InstructMesh: Selective Refinement of Generative 3D Models for Fabrication",
+    "title_zh": "InstructMesh：面向制造的三维生成模型选择性精修",
+    "url": "https://arxiv.org/abs/2608.28534v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "ChatGPT",
       "GenAI",
       "LLM",
@@ -1293,6 +1371,85 @@
     "title": "HEAR what AI says: simulated empathy and supportive ChatGPT interaction for emotional well-being",
     "title_zh": "HEAR项目：基于ChatGPT的模拟共情与支持性互动对情绪幸福感的影响",
     "url": "https://doi.org/10.1080/0144929x.2026.2722218",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Xinru Wang",
+      "Zhexuan Ma",
+      "Ming Yin",
+      "Shuai Ma",
+      "Thomas W Malone"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "针对LLM生成的文本推理链认知负荷大、可读性差的问题，开发Graphionale系统，将线性推理理由转化为多层级交互式图结构，显式标注结论、前提、支持与反对等逻辑关系，并抽取实体关系构建节点链接表示。204人大规模在线实验对比图形与文本两种理由格式在口头/视觉推理任务中的效果，发现图形理由在口头推理中提升信任校准但更费力，在视觉推理中损害校准却更吸引人，揭示了理由格式需与任务模态匹配才能有效支持AI解释设计。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "可解释性",
+          "可视化",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-28",
+    "id": "p_bddmW6Bgr3nDA1XN",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.27932v1",
+    "title": "Graphionale: How Graph Visualizations of LLM Rationales Affect Human Decision Making",
+    "title_zh": "Graphionale：LLM推理依据的图形可视化如何影响人类决策",
+    "url": "https://arxiv.org/abs/2608.27932v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "GenAI",
+      "多模态"
+    ],
+    "authors": [
+      "Jaewon Choi",
+      "Helena Vasconcelos",
+      "Hyun Lee",
+      "Carolyn Zou",
+      "Tak Yeon Lee"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "面向视觉设计探索，提出FocusGen系统，通过模拟焦点小组的persona智能体引入外部视角。每个persona由人口统计数据、程序化生成背景和通过访谈获取的审美偏好构成，作为并行生成器独立驱动迭代生成循环，将单一设计简报转化为多样化的受众导向方向。实验证明persona条件生成在CLIP距离和人类感知判断上均优于通用助手基线，且开放式偏好访谈比结构化访谈产出更多样化的结果。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "用户画像",
+          "AI 辅助创意设计",
+          "可用性测试"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-28",
+    "id": "p_AcXgKNnpahIt0oGu",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2608.28001v1",
+    "title": "FocusGen: Expanding Visual Design Exploration with a Simulated Focus Group of Persona Agents",
+    "title_zh": "FocusGen：基于角色代理模拟焦点小组拓展视觉设计探索",
+    "url": "https://arxiv.org/abs/2608.28001v1",
     "year": 2026
   },
   {
@@ -1368,6 +1525,58 @@
     "title": "Sophistication in GenAI Use: Field Evidence from a Large Firm",
     "title_zh": "GenAI应用的成熟度：来自一家大型企业的实地证据",
     "url": "https://arxiv.org/abs/2608.27364v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作",
+      "多模态"
+    ],
+    "authors": [
+      "Jonnalagadda Maruthi Tejas",
+      "Uponika Barman Roy",
+      "Tilottama Goswami",
+      "Samir Goswami",
+      "Mousita Dhar"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "针对企业培训中多语言沟通辅导需求，构建名为SETU的智能体生态系统，将分析分解为视频、语音、文本相关性、评分、通知与报告等专项智能体，通过信任感知编排进行协调，为销售场景生成可解释的、归因于具体模态的形成性辅导报告，人工审核保留最终判断权。",
+        "topic_tags": [
+          "培训",
+          "沟通",
+          "HR"
+        ]
+      },
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "提出SETU——面向企业沟通辅导的多智能体生态系统，专为多语言场景下的招聘电话与销售推介设计。系统将分析任务分解为视频、音频-语音、文本相关性、评分、通知与报告等多个专用智能体，通过可信编排协同工作，生成可追溯至具体模态的辅导报告供人工审核。设计理念强调多语言适配与受众画像感知，旨在弥合跨地区语言及沟通期望差异。",
+        "topic_tags": [
+          "人机协作",
+          "服务设计",
+          "AI助手",
+          "可解释性",
+          "人机交互(HCI)"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-27",
+    "id": "p_x5sNh8ylitGNJ9OT",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2608.27524v1",
+    "title": "SETU: An Agentic Ecosystem for Multilingual, Persona-Aware Communication Coaching",
+    "title_zh": "SETU：面向多语言与角色感知沟通指导的智能体生态系统",
+    "url": "https://arxiv.org/abs/2608.27524v1",
     "year": 2026
   },
   {
@@ -11166,9 +11375,8 @@
   },
   {
     "ai_type_tags": [
-      "AI 助手",
-      "人机协作",
-      "可解释 AI"
+      "AI决策",
+      "人机协作"
     ],
     "authors": [
       "Yicheng Sun",
@@ -11211,7 +11419,7 @@
     "journal": "CHB",
     "pdf_url": null,
     "title": "At the point of risk: Can AI-assisted decision support reduce digital fraud vulnerability across age groups and scam types?",
-    "title_zh": "风险关口：AI辅助决策支持能否降低不同年龄群体与诈骗类型下的数字欺诈脆弱性？",
+    "title_zh": "风险当口：AI辅助决策支持能否跨年龄群体与诈骗类型降低数字欺诈脆弱性？",
     "url": "https://doi.org/10.1016/j.chb.2026.109156",
     "year": 2026
   },
@@ -23741,8 +23949,7 @@
   {
     "ai_type_tags": [
       "LLM",
-      "GenAI",
-      "AI问卷生成"
+      "GenAI"
     ],
     "authors": [
       "Yolande Yunhsiou Yang",
@@ -23752,6 +23959,16 @@
       "Jia-Ci Wen"
     ],
     "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "比较人工编码与基于大语言模型的内容分析方法，以社交媒体负面口碑分类为案例，评估两类方法在分类准确性、效率和标注一致性上的差异，检验LLM替代或辅助人类进行消费者生成内容分析的可行性。",
+        "topic_tags": [
+          "消费者行为",
+          "营销",
+          "人机协作"
+        ]
+      },
       "ur": {
         "ai_score": 4.0,
         "domain_score": 3.0,
@@ -23765,6 +23982,7 @@
       }
     },
     "channels": [
+      "ob",
       "ur"
     ],
     "cited_by": 1,
@@ -23773,7 +23991,7 @@
     "journal": "CHB",
     "pdf_url": null,
     "title": "Evaluating human-based and large language model-based content analysis: A case study on negative word-of-mouth classification in social media",
-    "title_zh": null,
+    "title_zh": "评估人工与大语言模型内容分析：以社交媒体负面口碑分类为例",
     "url": "https://doi.org/10.1016/j.chb.2026.108904",
     "year": 2026
   },
@@ -26078,7 +26296,7 @@
     "journal": "IJHCS",
     "pdf_url": null,
     "title": "Guilty apology and trust repair in generative artificial intelligence: the role of mind perception",
-    "title_zh": null,
+    "title_zh": "生成式人工智能中的愧疚式道歉与信任修复：心智感知的作用",
     "url": "https://doi.org/10.1016/j.ijhcs.2026.103813",
     "year": 2026
   },
@@ -30494,6 +30712,45 @@
     "title": "From Accuracy to Readiness: Metrics and Benchmarks for Human-AI Decision-Making",
     "title_zh": "从准确性到就绪度：人机决策的度量指标与基准",
     "url": "https://arxiv.org/abs/2603.18895v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "多模态"
+    ],
+    "authors": [
+      "Thure Georg Weimann",
+      "Hannes Schlieter",
+      "Urszula Konofalska",
+      "Tjalf Ziemssen"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "在多发性硬化症护理场景中，对具身对话式智能体收集患者自报告数据的效果进行横断面调查。结果显示该技术对部分患者有效，但对另一些患者存在挑战，提示在临床数据采集应用中需关注用户异质性、可用性及可接受性差异。",
+        "topic_tags": [
+          "可用性",
+          "用户体验(UX)",
+          "人机交互(HCI)",
+          "AI采用",
+          "可访问性"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 2,
+    "date": "2026-03-19",
+    "id": "p_x3G7agj2DWZ_S6Xs",
+    "journal": "BIT",
+    "pdf_url": null,
+    "title": "Embodied conversational agents for collecting patient-reported data: effective for some, challenging for others – results of a cross-sectional study in multiple sclerosis care",
+    "title_zh": "具身对话代理采集患者报告数据：多发性硬化症护理横断面研究",
+    "url": "https://doi.org/10.1080/0144929x.2026.2641598",
     "year": 2026
   },
   {
@@ -38535,9 +38792,8 @@
   },
   {
     "ai_type_tags": [
-      "人机协作",
-      "AI 助手",
-      "智能体/Agent"
+      "算法管理",
+      "AI治理"
     ],
     "authors": [
       "Li Jiang",
@@ -38580,7 +38836,7 @@
     "journal": "CHB",
     "pdf_url": null,
     "title": "Substitution or augmentation? How organisational AI adoption approaches influence the willingness to stay of caregivers",
-    "title_zh": "替代还是增强？组织AI采纳方式如何影响护理人员的留任意愿",
+    "title_zh": "替代还是增强：组织AI采纳方式如何影响护理人员的留任意愿",
     "url": "https://doi.org/10.1016/j.chb.2025.108801",
     "year": 2026
   },
@@ -38734,9 +38990,8 @@
   },
   {
     "ai_type_tags": [
-      "人脸识别",
-      "可解释 AI",
-      "AI 治理"
+      "AI治理",
+      "人机交互"
     ],
     "authors": [
       "Anna Sagana",
@@ -90191,7 +90446,9 @@
   },
   {
     "ai_type_tags": [
-      "推荐算法"
+      "推荐算法",
+      "AI 推荐",
+      "多模态"
     ],
     "authors": [
       "Shaofeng Wang",
@@ -90232,7 +90489,7 @@
     "journal": "CHB",
     "pdf_url": null,
     "title": "Exploring effects of intelligent recommendation, interactivity, and playfulness on learning engagement: An application of TikTok considering the meditation of anxiety and moderation of virtual reward",
-    "title_zh": "智能推荐、交互性与趣味性对学习投入的影响：基于TikTok考察焦虑的中介与虚拟奖励的调节",
+    "title_zh": "智能推荐、互动性与趣味性对学习投入的影响：基于抖音——焦虑的中介与虚拟奖励的调节",
     "url": "https://doi.org/10.1016/j.chb.2023.107951",
     "year": 2023
   },
@@ -90770,7 +91027,7 @@
     "journal": "BIT",
     "pdf_url": null,
     "title": "Investigating the mediating role of willingness to use enterprise bots on white-collar teleworker productivity: an extended job demands-resources (JD-R) perspective",
-    "title_zh": null,
+    "title_zh": "探究企业机器人使用意愿对白领远程办公者生产力的中介作用：基于扩展的工作要求-资源(JD-R)模型",
     "url": "https://doi.org/10.1080/0144929x.2023.2285945",
     "year": 2023
   },
@@ -90846,7 +91103,7 @@
     "journal": "TOCHI",
     "pdf_url": null,
     "title": "CoAIcoder: Examining the Effectiveness of AI-assisted Human-to-Human Collaboration in Qualitative Analysis",
-    "title_zh": null,
+    "title_zh": "CoAIcoder：AI辅助人际协作在质性分析中的有效性考察",
     "url": "https://doi.org/10.1145/3617362",
     "year": 2023
   },
@@ -92070,7 +92327,7 @@
     "journal": "CHB",
     "pdf_url": null,
     "title": "Artificial intelligence and human behavioral development: A perspective on new skills and competences acquisition for the educational context",
-    "title_zh": null,
+    "title_zh": "人工智能与人类行为发展：教育情境中新技能与能力习得之视角",
     "url": "https://doi.org/10.1016/j.chb.2023.107903",
     "year": 2023
   },
