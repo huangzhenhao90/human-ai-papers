@@ -1,0 +1,81 @@
+{
+  "abstract": "While Large language models (LLMs) incorporate user personalization signals to improve usability and helpfulness, they increasingly shift from providing balanced, informative responses toward optimizing for user satisfaction when conditioned on personal context such as conversation history, inferred preferences, and user profiles. Specifically, we identify three emerging risks: (1) irrelevant personalization, where models reference personal information in unnecessary contexts; (2) preference narrowing, where models reinforce informational echo chambers; and (3) sycophantic bias, where models agree excessively with user opinions. As a result, models may reference personal information in contexts where it is unnecessary, inadvertently collapse response diversity, or agree excessively with user opinions. Despite the growing use of personalization in AI assistants, there has been limited systematic evaluation of its potential side effects. To bridge this gap, we propose PRISK, a dynamic evaluation framework with automated data generation and tailored metrics that uncovers systematic limitations in current LLM personalization and how personalized information shapes its responses. Our empirical analysis across 13 LLMs demonstrates the presence of user profiles and retrieved memories consistently exacerbates biases, resulting in an average drop of 45.9% in irrelevant personalization, 41.7% in preference narrowing and 61.7% in sycophantic bias.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 助手"
+  ],
+  "arxiv_id": "2608.28833",
+  "authors": [
+    "Yumeng Wang",
+    "Yuchen Wu",
+    "Cheng Qian",
+    "Zhiyuan Fan",
+    "Hyeonjeong Ha"
+  ],
+  "authors_full": [
+    {
+      "name": "Yumeng Wang"
+    },
+    {
+      "name": "Yuchen Wu"
+    },
+    {
+      "name": "Cheng Qian"
+    },
+    {
+      "name": "Zhiyuan Fan"
+    },
+    {
+      "name": "Hyeonjeong Ha"
+    },
+    {
+      "name": "Shujin Wu"
+    },
+    {
+      "name": "Jiayu Liu"
+    },
+    {
+      "name": "Heng Ji"
+    },
+    {
+      "name": "Ge Wang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM个性化风险核心议题，含用户视角但偏技术评估",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究大语言模型个性化带来的隐性代价，识别三类风险：不相关个性化、偏好窄化、谄媚偏见。提出PRISK动态评估框架，跨13个LLM的实证分析显示，引入用户画像与记忆检索会系统性加剧上述偏差，三项指标平均恶化45.9%至61.7%，揭示个性化在提升可用性的同时损害回复平衡性与多样性。",
+      "topic_tags": [
+        "个性化",
+        "AI 助手",
+        "信任",
+        "AI 治理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-28",
+  "doi": null,
+  "id": "p_MFeg2mwYK7ctYbFu",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2608.28833v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25427,
+      "revision": "49596a9e97c485db7d09ce23357114e6ebe337fc"
+    }
+  ],
+  "title": "Evaluating the Hidden Costs of Personalization in Large Language Models",
+  "title_zh": "评估大语言模型中个性化的隐藏成本",
+  "unified_ingested_at": "2026-09-01T07:25:49.900891Z",
+  "url": "https://arxiv.org/abs/2608.28833v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,77 @@
+{
+  "abstract": "Next-basket repurchase recommendation is commonly formulated as a ranking task: given a customer's purchase history, the system ranks previously purchased items that may be needed again. In production settings, however, ranking accuracy is only one component of recommendation quality. Customers may also benefit from concise evidence about why an item is recommended now. Large language models (LLMs) offer a potential way to surface such evidence through feature-based, human-readable rationales grounded in interpretable behavioral signals. We construct repurchase features spanning cadence, frequency, recency, user behavior, and item popularity, and evaluate LLMs on two public grocery datasets and one proprietary retail dataset. We investigate (1) whether off-the-shelf LLMs can use these features as next-basket scorers relative to heuristic and supervised rankers, and (2) whether LLM-cited features carry outcome-grounded ranking signal. For the latter, we compare LLM-cited features with model-specific attribution methods under a cross-model feature-masking protocol that measures ranking degradation after masking selected features. Our results show that LLM scores are not competitive with supervised rankers, suggesting that off-the-shelf LLMs should not be used as standalone repurchase recommenders. However, changes in prompt and evidence representation can improve outcome-grounded feature-masking results in some settings even when ranking performance does not improve; the effect is dataset-dependent and does not consistently match attribution baselines. These findings suggest a practical role for LLMs as validated explanation components rather than primary rankers, with rationale quality evaluated separately from ranking accuracy.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 推荐"
+  ],
+  "arxiv_id": "2608.30333",
+  "authors": [
+    "Yanan Cao",
+    "Anay Dombe",
+    "Murali Mohana Krishna Dandu",
+    "Shreeranjani Srirangamsridharan",
+    "Sinduja Subramaniam"
+  ],
+  "authors_full": [
+    {
+      "name": "Yanan Cao"
+    },
+    {
+      "name": "Anay Dombe"
+    },
+    {
+      "name": "Murali Mohana Krishna Dandu"
+    },
+    {
+      "name": "Shreeranjani Srirangamsridharan"
+    },
+    {
+      "name": "Sinduja Subramaniam"
+    },
+    {
+      "name": "Yogananth Mahalingam"
+    },
+    {
+      "name": "Evren Korpeoglu"
+    },
+    {
+      "name": "Kannan Achan"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM是核心变量，消费者推荐场景但缺用户研究方法",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究大语言模型在下次购物篮复购推荐中的特征归因能力。基于可解释行为信号构建复购特征,在两个公开杂货数据集和一个专有零售数据集上评估 LLM。结果表明,现成 LLM 评分不敌监督排序器,不适合作为独立推荐器;但通过调整提示与证据呈现方式,可在不提升排序性能的情况下改善基于结果的特征遮蔽效果,意味着 LLM 引用的特征仍携带可用的排序信号。",
+      "topic_tags": [
+        "推荐系统",
+        "可解释性",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-31",
+  "doi": null,
+  "id": "p_4ytYz1amhiJHbDp4",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2608.30333v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25426,
+      "revision": "49596a9e97c485db7d09ce23357114e6ebe337fc"
+    }
+  ],
+  "title": "Beyond Ranking Accuracy: Evaluating LLM-Cited Feature Rationales for Next Basket Repurchase Recommendation",
+  "title_zh": "超越排序准确率：评估LLM引用特征依据在下次购物篮复购推荐中的表现",
+  "unified_ingested_at": "2026-09-01T07:25:49.900891Z",
+  "url": "https://arxiv.org/abs/2608.30333v1",
+  "volume": null,
+  "year": 2026
+}

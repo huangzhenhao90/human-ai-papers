@@ -1,0 +1,95 @@
+{
+  "abstract": "We present OLIVE, a framework for adapting a foundation model to provide real-time assistance in temporally demanding, high-stakes, and dynamic tasks. We show that passive EEG, fused online with behavioral evidence, can meaningfully extend the number of targets users detect and engage beyond their unaided action bandwidth. OLIVE learns from both explicit behavioral signals (the targets the user shoots down in an XR first-person shooter game) and implicit physiological signals (fixation-locked EEG) to provide timely guidance, continuously adapting a frozen vision-language model's inference on which items are task-relevant by jointly estimating per-source reliability without manual labels or offline training. Through three user studies, including two live deployments of an assistive agent driven by OLIVE in XR, we show that OLIVE Pareto-dominates prior test-time adaptation frameworks, achieving the highest convergence rate at comparable convergence speed. Combining implicit physiological and explicit behavioral signals, the OLIVE agent produces the largest and most reliable within-session improvement to a user's ability to detect and engage targets, largely independent of the individual's skill. When the target switches silently, the agent that uses both behavioral and physiological signals reconverges significantly faster than the behavior-only agent (1.27 times faster on average, p = .008), restoring trustworthy guidance at the moment the task changes, precisely when reliable assistance matters most.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "多模态",
+    "AI 助手",
+    "人机协作"
+  ],
+  "arxiv_id": "2608.30369",
+  "authors": [
+    "Ziheng Li",
+    "Xichen He",
+    "Haoyan Chen",
+    "Charlie Zou",
+    "Sheng Bai"
+  ],
+  "authors_full": [
+    {
+      "name": "Ziheng Li"
+    },
+    {
+      "name": "Xichen He"
+    },
+    {
+      "name": "Haoyan Chen"
+    },
+    {
+      "name": "Charlie Zou"
+    },
+    {
+      "name": "Sheng Bai"
+    },
+    {
+      "name": "Benjamin Yang"
+    },
+    {
+      "name": "Mengyuan Wu"
+    },
+    {
+      "name": "Jake Ledner"
+    },
+    {
+      "name": "Yi-Jie Cheng"
+    },
+    {
+      "name": "Akito Yamauchi"
+    },
+    {
+      "name": "Dishita G Turakhia"
+    },
+    {
+      "name": "Steven Feiner"
+    },
+    {
+      "name": "Paul Sajda"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "基础模型+BCI核心，多次用户研究",
+      "ai_score": 4.0,
+      "domain_score": 5.0,
+      "tldr": "提出OLIVE框架，将基础模型适配于XR中时序紧迫的高风险任务，通过融合被动EEG与在线行为证据，无需人工标签即可联合估计各源可靠性。在XR射击游戏的三项用户研究中，OLIVE在目标检测与参与上Pareto优于现有测试时自适应方法，结合生理与行为信号实现1.27倍更快重收敛，显著提升人机协作表现。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "情感计算",
+        "可用性测试"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-31",
+  "doi": null,
+  "id": "p_fCmEDZiwjW77duxW",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2608.30369v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25395,
+      "revision": "49596a9e97c485db7d09ce23357114e6ebe337fc"
+    }
+  ],
+  "title": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence",
+  "title_zh": "利用XR智能体增强人类表现：基于在线行为与BCI证据的学习",
+  "unified_ingested_at": "2026-09-01T07:25:49.900891Z",
+  "url": "https://arxiv.org/abs/2608.30369v1",
+  "volume": null,
+  "year": 2026
+}

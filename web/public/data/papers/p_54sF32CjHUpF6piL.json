@@ -1,0 +1,85 @@
+{
+  "abstract": "Recent efforts have aimed to automate scientific diagram generation from paper content (Lin et al., 2026; Zhu et al., 2026a). However, fully satisfying an author's visual and communicative preferences in a single turn is challenging: in our formative user study (N = 14), all participants requested further revisions after viewing an initial draft, and 86% of them rated the refined diagrams as more satisfactory. Despite the clear demand, the multi-turn workflow remains largely underexplored. To bridge this gap, we present MTPaperBananaBench, a benchmark for multi-turn diagram generation containing 292 images annotated with 3,518 user requirements. To reduce expensive human studies and enable scalable benchmarking, we construct a user simulator that, at each turn, identifies unsatisfied requirements and converts k of them into natural language feedback. Evaluating both requirement satisfaction and overall diagram quality reveals two key failure modes shared across baseline multiturn systems: (1) quality drift, where diagram quality progressively declines over turns, and (2) forgetting, where previously implemented features are lost in subsequent turns. To address these issues, we introduce PaperBanana-Interact, a multi-agent system that refines diagrams via an internal critique-and-refine loop. PaperBanana-Interact consistently improves rather than degrades diagram quality across turns, outperforming baselines by 11.9-18.6 points in quality score and reducing forgetting by 3.7-6.2 points.",
+  "ai_type_tags": [
+    "GenAI",
+    "多模态",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2608.30241",
+  "authors": [
+    "Xueqing Wu",
+    "Ashwin Balasubramanian",
+    "Bingxuan Li",
+    "Dawei Zhu",
+    "Kai-Wei Chang"
+  ],
+  "authors_full": [
+    {
+      "name": "Xueqing Wu"
+    },
+    {
+      "name": "Ashwin Balasubramanian"
+    },
+    {
+      "name": "Bingxuan Li"
+    },
+    {
+      "name": "Dawei Zhu"
+    },
+    {
+      "name": "Kai-Wei Chang"
+    },
+    {
+      "name": "Yale Song"
+    },
+    {
+      "name": "Yiwen Song"
+    },
+    {
+      "name": "Rui Meng"
+    },
+    {
+      "name": "Tomas Pfister"
+    },
+    {
+      "name": "Nanyun Peng"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "N=14用户研究+用户模拟器，HCI评估",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对科学图表多轮修订需求,提出 MTPaperBananaBench 基准(含 292 张图与 3518 条用户需求)及可扩展的用户模拟器。诊断出多轮生成系统的两大共性失败模式:质量漂移与遗忘。进而提出多智能体系统 PaperBanana-Interact,采用内部 critique-and-refine 循环,跨多轮持续提升图表质量,在质量评分上较基线提升 11.9–18.6 分,遗忘率降低 3.7–6。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可视化",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-31",
+  "doi": null,
+  "id": "p_54sF32CjHUpF6piL",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2608.30241v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25411,
+      "revision": "49596a9e97c485db7d09ce23357114e6ebe337fc"
+    }
+  ],
+  "title": "PaperBanana-Interact: Scientific Diagram Refinement with Multi-Turn Human Feedback",
+  "title_zh": "PaperBanana-Interact：基于多轮人类反馈的科学图表优化",
+  "unified_ingested_at": "2026-09-01T07:25:49.900891Z",
+  "url": "https://arxiv.org/abs/2608.30241v1",
+  "volume": null,
+  "year": 2026
+}

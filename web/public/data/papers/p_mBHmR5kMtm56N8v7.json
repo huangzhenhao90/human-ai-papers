@@ -1,0 +1,69 @@
+{
+  "abstract": "Robust understanding of user input is a core requirement for voice assistants deployed in real-world environments. In practice, these systems encounter heterogeneous fallback situations caused by noisy audio input, transcription errors, ambiguous requests, incomplete utterances, or unintended activations. Existing systems typically respond with generic fallback messages, which do not resolve the underlying interaction failure and can degrade user experience. We study fallback handling in a deployed smartwatch-based voice assistant for general health support in everyday environments. Our analysis is based on six months of real-world usage data from more than 500 users, yielding a dataset of 3,030 anonymized, naturally occurring fallback-triggering utterances. We contribute (1) an operational taxonomy and the annotated VoxFallbacks dataset of these interactions, (2) a comparative evaluation of different models within a classification pipeline under practical deployment constraints, and (3) practical lessons for designing robust and cost-efficient fallback mechanisms. Results show that lightweight embedding-based classifiers outperform larger generative models on most classification tasks while requiring substantially fewer computational resources.",
+  "ai_type_tags": [
+    "对话式 AI",
+    "AI 助手"
+  ],
+  "arxiv_id": "2608.30738",
+  "authors": [
+    "Phillip Schneider",
+    "Alexandre Mercier",
+    "Joshua Oehms",
+    "Kristiina Jokinen",
+    "Florian Matthes"
+  ],
+  "authors_full": [
+    {
+      "name": "Phillip Schneider"
+    },
+    {
+      "name": "Alexandre Mercier"
+    },
+    {
+      "name": "Joshua Oehms"
+    },
+    {
+      "name": "Kristiina Jokinen"
+    },
+    {
+      "name": "Florian Matthes"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "500+用户六个月真实数据，UX评估研究",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "研究智能手表语音助手在真实环境中遇到的回退(fallback)交互,基于 500+ 用户六个月使用数据构建含 3030 条回退话语的 VoxFallbacks 数据集并提出操作分类法。比较多种分类模型后发现,轻量级嵌入分类器在多数任务上优于大型生成模型,且计算资源开销显著更低,为稳健且低成本的回退机制设计提供实践指导。",
+      "topic_tags": [
+        "对话式 AI",
+        "可用性",
+        "用户研究方法",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-31",
+  "doi": null,
+  "id": "p_mBHmR5kMtm56N8v7",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2608.30738v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25421,
+      "revision": "49596a9e97c485db7d09ce23357114e6ebe337fc"
+    }
+  ],
+  "title": "Not All Fallbacks Are Failures: Understanding and Recovering from Fallbacks in Mobile Voice Assistants",
+  "title_zh": "并非所有回退都是失败：理解与恢复移动语音助手中的回退行为",
+  "unified_ingested_at": "2026-09-01T07:25:49.900891Z",
+  "url": "https://arxiv.org/abs/2608.30738v1",
+  "volume": null,
+  "year": 2026
+}
