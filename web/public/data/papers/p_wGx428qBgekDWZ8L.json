@@ -1,0 +1,77 @@
+{
+  "abstract": "Reinforcement learning for user-centric agents is limited by the cost, latency, and risk of collecting online feedback, as well as by the lack of counterfactual comparisons under the same user state. In this paper, we propose World Model-Guided Reinforcement Learning via counterfactual user engagement simulation (WMG-RL), a framework in which a frozen user simulator provides reward supervision before real user exposure. Motivated by language world models, we instantiate the simulator as a User Engagement World Model (UEWM), which treats a recommended item as the agent action and the user's heterogeneous feedback as the environment observation. Rather than learning one fixed environment transition, UEWM learns to infer user-specific dynamics from engagement history and apply them to candidate items. In WMG-RL, a downstream policy proposes multiple candidate items for the same history; UEWM predicts the corresponding engagement feedback in parallel; and the simulated feedback is converted into dense rewards for policy optimization. Experiments show that UEWM provides reliable and transferable reward signals across domains, and that WMG-RL enables a compact 1.7B student policy to match or surpass much larger LLMs on downstream recommendation tasks.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法",
+    "智能体/Agent",
+    "强化学习"
+  ],
+  "arxiv_id": "2609.01067",
+  "authors": [
+    "Ang Li",
+    "Xin Xu",
+    "Bin Liang",
+    "Yue Ma",
+    "Fubang Zhao"
+  ],
+  "authors_full": [
+    {
+      "name": "Ang Li"
+    },
+    {
+      "name": "Xin Xu"
+    },
+    {
+      "name": "Bin Liang"
+    },
+    {
+      "name": "Yue Ma"
+    },
+    {
+      "name": "Fubang Zhao"
+    },
+    {
+      "name": "Yangyang Kang"
+    },
+    {
+      "name": "Kam-Fai Wong"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "RL+LLM世界模型核心AI，用户参与模拟为ML方法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对用户中心智能体强化学习在线反馈成本高、缺乏反事实比较的问题，提出WMG-RL框架：冻结的用户参与世界模型UEWM从历史推断用户专属动态，并行预测候选物品的反馈，转化为稠密奖励用于策略优化。实验显示UEWM跨域提供可靠可迁移奖励信号，1.7B学生策略在推荐任务上匹配或超越更大LLM。",
+      "topic_tags": [
+        "推荐系统",
+        "个性化",
+        "智能体",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-01",
+  "doi": null,
+  "id": "p_wGx428qBgekDWZ8L",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2609.01067v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25735,
+      "revision": "f7c5c3332eb14544d604a686c36252da7c406706"
+    }
+  ],
+  "title": "World Model-Guided Reinforcement Learning via Counterfactual User Engagement Simulation",
+  "title_zh": "世界模型引导的强化学习：基于反事实用户参与度模拟",
+  "unified_ingested_at": "2026-09-02T06:57:20.468704Z",
+  "url": "https://arxiv.org/abs/2609.01067v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,23 +1,44 @@
 {
   "dry_run": false,
   "facets": {
-    "ai_type_tags": {},
-    "journals": {},
-    "topic_tags": {}
-  },
-  "generated_at": "2026-09-01T07:25:48.851362Z",
-  "last_batch": {
-    "generated_at": "2026-09-01T07:25:48.851362Z",
-    "model": null,
-    "status": "empty_input",
-    "totals": {
-      "candidates_input": 0,
-      "failed": 0,
-      "papers_published": 0,
-      "papers_scored": 0
+    "ai_type_tags": {
+      "conversational_ai": 1,
+      "deep_learning": 1,
+      "llm_genai": 2,
+      "machine_learning": 1
+    },
+    "journals": {
+      "JMIR AI": 2,
+      "Translational Psychiatry": 1
+    },
+    "topic_tags": {
+      "anxiety": 1,
+      "clinical_decision_support": 1,
+      "clinical_patients": 3,
+      "clinicians": 1,
+      "depression": 2,
+      "digital_intervention": 1,
+      "general_population": 2,
+      "monitoring": 1,
+      "screening_assessment": 2,
+      "supportive_conversation": 2,
+      "transdiagnostic": 2,
+      "treatment_support": 1
     }
   },
-  "model": null,
+  "generated_at": "2026-09-02T06:57:19.517492Z",
+  "last_batch": {
+    "generated_at": "2026-09-02T06:57:19.517492Z",
+    "model": "MiniMax-M2.5-lightning",
+    "status": "success",
+    "totals": {
+      "candidates_input": 12,
+      "failed": 0,
+      "papers_published": 3,
+      "papers_scored": 12
+    }
+  },
+  "model": "MiniMax-M2.5-lightning",
   "processed_candidate_keys": [
     "doi:10.1001/jamapsychiatry.2025.3561",
     "doi:10.1001/jamapsychiatry.2025.3698",
@@ -133,7 +154,9 @@
     "doi:10.1016/j.jad.2026.122414",
     "doi:10.1016/j.jad.2026.122418",
     "doi:10.1016/j.jad.2026.122419",
+    "doi:10.1016/j.jad.2026.122420",
     "doi:10.1016/j.jad.2026.122422",
+    "doi:10.1016/j.jad.2026.122423",
     "doi:10.1016/j.jad.2026.122432",
     "doi:10.1016/j.jbi.2025.104848",
     "doi:10.1016/s0165-0327(26)01149-3",
@@ -249,7 +272,9 @@
     "doi:10.1038/s41398-026-04361-3",
     "doi:10.1038/s41398-026-04364-0",
     "doi:10.1038/s41398-026-04367-x",
+    "doi:10.1038/s41398-026-04368-w",
     "doi:10.1038/s41398-026-04370-2",
+    "doi:10.1038/s41398-026-04371-1",
     "doi:10.1038/s41398-026-04374-y",
     "doi:10.1038/s41398-026-04375-x",
     "doi:10.1038/s41398-026-04379-7",
@@ -264,11 +289,14 @@
     "doi:10.1038/s41398-026-04388-6",
     "doi:10.1038/s41398-026-04392-w",
     "doi:10.1038/s41398-026-04394-8",
+    "doi:10.1038/s41398-026-04395-7",
     "doi:10.1038/s41398-026-04396-6",
+    "doi:10.1038/s41398-026-04397-5",
     "doi:10.1038/s41398-026-04400-z",
     "doi:10.1038/s41398-026-04403-w",
     "doi:10.1038/s41398-026-04404-9",
     "doi:10.1038/s41398-026-04407-6",
+    "doi:10.1038/s41398-026-04413-8",
     "doi:10.1038/s41746-026-02842-9",
     "doi:10.1038/s41746-026-02852-7",
     "doi:10.1038/s41746-026-02928-4",
@@ -312,7 +340,10 @@
     "doi:10.1038/s44220-026-00710-9",
     "doi:10.1038/s44220-026-00711-8",
     "doi:10.1038/s44220-026-00714-5",
+    "doi:10.1038/s44220-026-00718-1",
     "doi:10.1038/s44220-026-00719-0",
+    "doi:10.1038/s44220-026-00722-5",
+    "doi:10.1038/s44220-026-00723-4",
     "doi:10.1038/s44220-026-00724-3",
     "doi:10.1038/s44220-026-00732-3",
     "doi:10.1056/aidbp2300192",
@@ -385,6 +416,7 @@
     "doi:10.2196/108162",
     "doi:10.2196/83927",
     "doi:10.2196/86633",
+    "doi:10.2196/87730",
     "doi:10.2196/88082",
     "doi:10.2196/88440",
     "doi:10.2196/88622",
@@ -396,6 +428,7 @@
     "doi:10.2196/90589",
     "doi:10.2196/92021",
     "doi:10.2196/92817",
+    "doi:10.2196/94503",
     "doi:10.2196/94819",
     "doi:10.2196/95063",
     "doi:10.2196/96389",
@@ -405,16 +438,16 @@
   "schema_version": 1,
   "scope": "cumulative",
   "slug": "mental-health",
-  "status": "empty_input",
+  "status": "success",
   "theme": "mh",
   "thresholds": {
     "ai_relevance": 3,
     "domain_relevance": 3
   },
   "totals": {
-    "candidates_input": 0,
+    "candidates_input": 12,
     "failed": 0,
-    "papers_published": 39,
-    "papers_scored": 0
+    "papers_published": 42,
+    "papers_scored": 12
   }
 }

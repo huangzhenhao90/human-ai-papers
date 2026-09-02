@@ -1116,6 +1116,53 @@
   },
   {
     "ai_type_tags": [
+      "GenAI",
+      "图像生成"
+    ],
+    "authors": [
+      "Delia Cristina Balaban",
+      "Joe Phua"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 4.0,
+        "domain_score": 5.0,
+        "tldr": "基于标题推断：研究在 Instagram 旅游目的地广告中，披露 AI 生成内容与信源类型如何影响消费者态度与行为意向，探讨 AI 内容真实性标识与信息来源（如网红 vs. 品牌官方）对受众感知的交互效应。",
+        "topic_tags": [
+          "广告",
+          "消费者行为",
+          "信任",
+          "伦理"
+        ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 5.0,
+        "tldr": "在Instagram旅游目的地广告情境下，考察披露AI生成内容（真实vs虚假）及信源类型对消费者态度与行为意图的影响，探究透明度与信源可信度的交互效应。",
+        "topic_tags": [
+          "广告",
+          "消费者行为",
+          "AI采用",
+          "可解释性"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 1,
+    "date": "2026-10",
+    "id": "p_3NF1Xiz43g8YP3ae",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Is this real or Fake? Examining the effects of disclosure of AI-generated content and source type in instagram-based travel destination advertising on consumer attitudes and behavioral intentions",
+    "title_zh": null,
+    "url": "https://doi.org/10.1016/j.chb.2026.109047",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "文本分析",
       "可解释 AI"
     ],
@@ -1222,6 +1269,410 @@
   },
   {
     "ai_type_tags": [
+      "LLM",
+      "推荐算法",
+      "智能体/Agent",
+      "强化学习"
+    ],
+    "authors": [
+      "Ang Li",
+      "Xin Xu",
+      "Bin Liang",
+      "Yue Ma",
+      "Fubang Zhao"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "针对用户中心智能体强化学习在线反馈成本高、缺乏反事实比较的问题，提出WMG-RL框架：冻结的用户参与世界模型UEWM从历史推断用户专属动态，并行预测候选物品的反馈，转化为稠密奖励用于策略优化。实验显示UEWM跨域提供可靠可迁移奖励信号，1.7B学生策略在推荐任务上匹配或超越更大LLM。",
+        "topic_tags": [
+          "推荐系统",
+          "个性化",
+          "智能体",
+          "人机协作"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_wGx428qBgekDWZ8L",
+    "journal": "arXiv:cs.IR",
+    "pdf_url": "https://arxiv.org/pdf/2609.01067v1",
+    "title": "World Model-Guided Reinforcement Learning via Counterfactual User Engagement Simulation",
+    "title_zh": "世界模型引导的强化学习：基于反事实用户参与度模拟",
+    "url": "https://arxiv.org/abs/2609.01067v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "图像生成",
+      "多模态",
+      "LLM",
+      "GenAI"
+    ],
+    "authors": [
+      "Dahyun Lee",
+      "Jiyoung Han",
+      "Kunwoo Park"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "针对新闻文章立场隐含、框架微妙且文本结构复杂的问题，提出VFStance方法，通过图像生成将隐性立场线索显式化。自动评估显示其优于现有基线；200人snippet新闻阅读对照实验进一步证明视觉框架能提升立场信号的可感知性，具自动化检测之外的实用价值。",
+        "topic_tags": [
+          "用户研究方法",
+          "可视化",
+          "信任"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_zhMTvSf2GnULuQwS",
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.00685v1",
+    "title": "Visual Framing for News Stance Detection via Image Generation",
+    "title_zh": "基于图像生成的新闻立场检测视觉框架",
+    "url": "https://arxiv.org/abs/2609.00685v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "AI推荐",
+      "GenAI"
+    ],
+    "authors": [
+      "Yiwen Jiang",
+      "Yang Deng",
+      "Stephanie Fong",
+      "Zimu Wang",
+      "Yaling Shen"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "研究个性化大语言模型在用户画像与查询偏好概念不对齐场景下的推理能力。提出VIBE-Bench基准（3,504人设、12,239对话，含人工验证测试集），揭示PRCM为独立失效模式：现有PLLM过度依赖浅层语义相关，无法建立跨概念稳健的偏好映射，呼吁研究超越语义匹配。",
+        "topic_tags": [
+          "个性化",
+          "用户画像",
+          "推荐系统",
+          "人机交互(HCI)"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_pmRyGypFOLF-_ELG",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.00921v1",
+    "title": "VIBE-Bench: Evaluating Personalized Large Language Models When Profiles Don't Mean Preferences",
+    "title_zh": "VIBE-Bench：当用户画像不代表真实偏好时的个性化大语言模型评估",
+    "url": "https://arxiv.org/abs/2609.00921v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "AI 助手",
+      "人机协作"
+    ],
+    "authors": [
+      "Masahiro Kono",
+      "Akinobu Maejima",
+      "Yuki Koyama",
+      "Yotam Sechayk",
+      "Takeo Igarashi"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 4.0,
+        "tldr": "针对动画线稿上色流程中常被遗漏的小区域\"间隙\"问题，通过对13名专业上色师的形成性研究，设计了基于深度学习的GapFill工具，自动检测间隙并参考周围区域推荐填充颜色。用户研究表明该工具在间隙填补任务中提升了效率和可用性，但发现预测准确度并非可用性的唯一决定因素，合适颜色本身具有上下文模糊性，工具能否被采纳取决于用户对AI辅助的信任程度。",
+        "topic_tags": [
+          "人机协作",
+          "可用性测试",
+          "用户研究方法",
+          "人机交互(HCI)"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_GHpfdOdGVqAno50r",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.00800v1",
+    "title": "No Pixel Left Behind: Filling Gaps in Anime Colorization",
+    "title_zh": "不落下一个像素：填补动漫着色中的空白",
+    "url": "https://arxiv.org/abs/2609.00800v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "行为模拟",
+      "GenAI"
+    ],
+    "authors": [
+      "Yi Fei Cheng",
+      "Fan Yang",
+      "Iremsu Bas",
+      "Koichiro Niinuma",
+      "Narishige Abe"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "LLM驱动的人类仿真器在长时域真实活动中的行为保真度尚未被充分研究。论文提出跨时间粒度与分析层级的评估框架，并采集43小时多摄像头办公室野外活动数据进行案例研究，比较persona描述、少样本示例与统计先验（时段/转移）三种条件机制。发现统计先验在分布层面最接近真实行为，但会过度切分日常并抑制个体内变异，呼吁多指标多粒度的整体性评估。",
+        "topic_tags": [
+          "用户研究方法",
+          "用户行为模拟",
+          "人机交互(HCI)",
+          "田野研究"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_bwi013wHRa_uaXQK",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.01257v1",
+    "title": "Measuring the Behavioral Fidelity of Long-Horizon Human Activity Simulations",
+    "title_zh": "长时序人类活动模拟的行为保真度度量",
+    "url": "https://arxiv.org/abs/2609.01257v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "推荐算法",
+      "人机协作"
+    ],
+    "authors": [
+      "Takashi Owaki",
+      "Yuki Koyama",
+      "Tomoyasu Nakano",
+      "Takahiro Yamaguchi",
+      "Masataka Goto"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 3.0,
+        "tldr": "面向汽车轮毂程序化设计中的偏好探索，提出交互导向的潜空间学习流程：先用几何规则与有限元分析筛选样本，再结合有监督功能对齐，使潜空间维度承载刚度、应力或重量等工程语义。仿真与40人对照实验表明，5D可行性感知空间在形状相似性与方案可行性上均优于原始9D程序化参数。",
+        "topic_tags": [
+          "人机协作",
+          "人机交互(HCI)",
+          "可视化",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_VXHfJLOBRys2jqpx",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.00527v1",
+    "title": "Learning Feasibility-Aware Latent Spaces for Preference-Based Exploration of Procedural Automotive Wheel Designs",
+    "title_zh": "学习可行性感知潜在空间以基于偏好探索程序化汽车车轮设计",
+    "url": "https://arxiv.org/abs/2609.00527v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [],
+    "authors": [
+      "Daeheon Jeong",
+      "Yoonjoo Lee",
+      "Eugene Choi",
+      "Sinie van der Ben",
+      "Juho Kim"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": null,
+        "topic_tags": []
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_KZbOxa3QQznVonQc",
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.00608v1",
+    "title": "Investigating Assistant Bias in LLM User Simulators Using a Role Vector",
+    "title_zh": "使用角色向量探究LLM用户模拟器中的助手偏见",
+    "url": "https://arxiv.org/abs/2609.00608v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作",
+      "AI 助手"
+    ],
+    "authors": [
+      "Isabella Carvalho Milano",
+      "Francine Zanin Bagatini",
+      "Marcelo Gattermann Perin",
+      "Lucia Salmonson Guimarães Barros"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "研究广告创意专业人士如何与生成式AI（GenAI）在创意构思阶段进行协作，探讨人机协同创作在广告领域的实践模式、效能感知与面临的挑战，为GenAI在专业创意工作流程中的整合提供经验参考。",
+        "topic_tags": [
+          "人机协作",
+          "广告",
+          "AI 采用"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_CVcNrbkIAbewhjZB",
+    "journal": "JAR",
+    "pdf_url": null,
+    "title": "Human-GenAI Collaboration in Creative Ideation: A Study with Advertising Professionals",
+    "title_zh": "人与生成式AI在创意构思中的协作：面向广告从业者的研究",
+    "url": "https://doi.org/10.1080/00218499.2026.2702092",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [],
+    "authors": [
+      "Yao Liu",
+      "Yu He"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": null,
+        "topic_tags": []
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_B9P3riK9OTcxV9-y",
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.00982v1",
+    "title": "Disclosure-Gated User Simulation for Companion-Agent Evaluation",
+    "title_zh": "面向陪伴代理评估的披露门控用户模拟",
+    "url": "https://arxiv.org/abs/2609.00982v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "GenAI",
+      "用户模拟"
+    ],
+    "authors": [
+      "Ziyad Benomar",
+      "Weronika Łajewska",
+      "Leonardo Perelli",
+      "Saab Mansour"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "A/B测试成本高、周期长，研究提出基于LLM智能体的仿真框架：由真实匿名行为数据构建数据驱动的persona，而非合成或规则persona。将A/B测试仿真建模为结构化问答任务，系统研究问题格式、persona数据源与领域对齐、行为深度与人群多样性的权衡以及高效子采样。在40个A/B测试基准上方向准确率达0.75–0.90，实现低成本实验预筛。",
+        "topic_tags": [
+          "用户画像",
+          "用户研究方法",
+          "A/B测试",
+          "推荐系统"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_UvhxqMz-GCk7xB2v",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.01038v1",
+    "title": "Data-Driven Persona-Conditioned Agents for A/B Test Simulation",
+    "title_zh": "数据驱动的角色条件智能体：用于A/B测试模拟",
+    "url": "https://arxiv.org/abs/2609.01038v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "智能体/Agent",
+      "多模态",
+      "人机协作"
+    ],
+    "authors": [
+      "Satwik Ram Kodandaram",
+      "Monalika Padma Reddy",
+      "Xiaojun Bi",
+      "Jiawei Zhou",
+      "I. V. Ramakrishnan"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "通过为期三周、8位盲用户的日记研究，评估屏幕阅读器可访问的计算机使用代理原型OLLA。收集12个应用共1258条命令的截图、UI树、模型响应与操作轨迹。GPT-5成功率最高达52.5%，轨迹分析揭示定位、规划、约束追踪与终止等失败模式，访谈进一步揭示超越自动化的需求。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "可用性测试",
+          "可访问性",
+          "田野研究"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_B8w0kq10TYM7ELSz",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.00524v1",
+    "title": "Are We There Yet? Assessing Computer-Use Agents for Blind Users' Accessible Interaction with Desktop Applications",
+    "title_zh": "我们到了吗？：评估盲用户与桌面应用无障碍交互的计算机使用代理",
+    "url": "https://arxiv.org/abs/2609.00524v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "GenAI",
       "人机协作"
     ],
@@ -1288,7 +1739,7 @@
     "journal": "HRM",
     "pdf_url": null,
     "title": "When\n                    <scp>AI</scp>\n                    Makes Final Decisions: The Effects of\n                    <scp>HR</scp>\n                    Decision Authority Within\n                    <scp>AI</scp>\n                    ‐Enabled\n                    <scp>HRM</scp>\n                    on Organizational Reputation",
-    "title_zh": null,
+    "title_zh": "当AI做出最终决策时：AI驱动的人力资源管理中HR决策权对组织声誉的影响",
     "url": "https://doi.org/10.1002/hrm.70091",
     "year": 2026
   },
@@ -1447,6 +1898,136 @@
   },
   {
     "ai_type_tags": [
+      "LLM",
+      "多模态"
+    ],
+    "authors": [
+      "Hangxiao Zhu",
+      "Suliu Qin",
+      "Zhuoyan Li",
+      "Ming Jiang",
+      "Yu Zhang"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "针对美中跨文化梗图理解鸿沟，构建MemeBridge基准数据集：经多阶段众包流水线收集中国参与者对美国梗图的真实解读，以及美国参与者对他文化受众误解的预期，每条样本标注情感、情绪、文化意义与知识类型。发现美国参与者对误读的预期常常不准确，揭示文化理解中的视角不对称，为评测与提升LLM跨文化理解提供新基准。",
+        "topic_tags": [
+          "众包",
+          "用户研究方法",
+          "可解释性",
+          "伦理"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_fWcrtT9p3yjy4Dqe",
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.00491v1",
+    "title": "MemeBridge: A Dataset for Benchmarking and Mitigating the Bidirectional Cultural Gap in Meme Interpretation",
+    "title_zh": "MemeBridge：面向模因解读中双向文化差距的基准测试与缓解数据集",
+    "url": "https://arxiv.org/abs/2609.00491v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "llm_genai"
+    ],
+    "authors": [
+      "Janni Leung",
+      "Benjamin Johnson",
+      "Kelsey Mcrae",
+      "Stephanie Fong",
+      "Paula Cardona Gonzalez",
+      "Caitlin McClure‐Thomas",
+      "Tianze Sun",
+      "Naomi Kern",
+      "Yuen Ming Wong",
+      "Richard Liu"
+    ],
+    "channel_profiles": {
+      "mh": {
+        "ai_score": 5,
+        "domain_score": 5,
+        "tldr": "66项研究的系统综述显示GPT-4在心理健康筛查诊断中的合并敏感度为0.83，但证据整体异质性高、不确定性大，尚不支持常规无监督临床应用。",
+        "topic_tags": [
+          "transdiagnostic",
+          "screening_assessment",
+          "clinical_decision_support",
+          "treatment_support",
+          "monitoring",
+          "supportive_conversation",
+          "clinical_patients",
+          "clinicians"
+        ]
+      }
+    },
+    "channels": [
+      "mh"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_F5UbDyLMy-apKnqO",
+    "journal": "JMIR AI",
+    "pdf_url": null,
+    "title": "Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis",
+    "title_zh": "心理健康护理场景中的生成式大语言模型：系统综述与meta分析",
+    "url": "https://doi.org/10.2196/87730",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Mohammad Saim",
+      "Tianyu Jiang"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "研究LLM在注入基于心理测量的人格角色后，能否复现人格驱动的情绪劳动策略选择模式。构建含500个社会情境、对应表面表演、深度表演与真实表达三种行为选项的数据集，并对50个虚构人物通过观察者评定与角色内自陈两种通道描绘人格，由5个LLM在两种人格条件下评估全部场景。结果显示模型整体更倾向深度表演，尽责性与情绪稳定性持续预测该偏好；熵分析进一步证实人格对输出的影响稳定且因模型和情绪类型而异。",
+        "topic_tags": [
+          "员工幸福感",
+          "人机协作",
+          "决策"
+        ]
+      },
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "研究LLM注入人格特质后能否复现情绪劳动策略的个体差异。构建500个社交场景（对应表层扮演、深层扮演、真实表达三种行为选择），用50个虚构角色经观察者评定和自陈报告双轨画像后，驱动5个LLM在两类人格条件下做选择。结果显示模型整体偏向深层扮演，尽责性和情绪稳定性显著预测该偏好，熵分析证实人格条件确实影响输出分布。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "情感计算",
+          "AI 助手",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_Y2G5TO8EZFovMyEa",
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.00310v1",
+    "title": "Emotional Labor Strategy Preferences in LLM Personas",
+    "title_zh": "LLM人格中的情绪劳动策略偏好",
+    "url": "https://arxiv.org/abs/2609.00310v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "GenAI",
       "LLM",
       "人机协作"
@@ -1478,6 +2059,125 @@
     "title": "Does generative AI make us think alike? A systematic review and meta-analysis of homogenisation effects in human–AI co-creation",
     "title_zh": "生成式AI是否让我们思维趋同：人机协同创作同质化效应的系统综述与元分析",
     "url": "https://doi.org/10.1080/0144929x.2026.2726451",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "AI治理",
+      "GenAI"
+    ],
+    "authors": [
+      "Hossein Arshadi Soufiani",
+      "Henry M. Kim",
+      "Hjalmar Turesson",
+      "Syed Mohammad Arham Noman",
+      "Anav Setia"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "针对数字职场中贬损、讽刺、隐性不文明等有毒语言侵蚀信任与协作的问题，采用设计科学研究方法构建负责任AI工件。该工件整合微调的Transformer分类器（DistilBERT、DistilRoBERTa）与生成式解毒模型（mT0-XL-Detox-ORPO），将有毒文本改写为语义等效且无冒犯的表述。技术评估显示毒性检测准确率高、改写语义保留强，兼顾对话连续性与尊重话语，并提炼了以意义保留和公平性为核心的负责任AI审核设计原则。",
+        "topic_tags": [
+          "伦理",
+          "人机协作",
+          "组织变革"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_RGw_NSRcL-ai4UXI",
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2609.00361v1",
+    "title": "Detoxifying Toxic Communication: A Design Science Approach to Responsible AI",
+    "title_zh": "净化有害沟通：负责任AI的设计科学方法",
+    "url": "https://arxiv.org/abs/2609.00361v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Fanyou Wu",
+      "Suraj Maharjan",
+      "Ainur Yessenalina",
+      "Dennis Xu Chen",
+      "Rahul Srivastava"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "针对管理者高成本沟通训练难题，提出语音优先的 AI 系统 Conversation Coach，支持模拟不同员工人格的难谈话话场景。比较端到端语音模型与 ASR+LLM+TTS 级联架构：前者延迟降低约 3 倍、成本约 1/8 且支持自然打断；后者推理能力更强、利于反馈质量。最终采用级联方案上线，六个月内 4 万余名管理者使用，数据显示其被选择性用于高难度谈话场景。",
+        "topic_tags": [
+          "人机协作",
+          "培训",
+          "领导力",
+          "工作设计"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_vwalrO_G9Jz0xT_D",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.00441v1",
+    "title": "Conversation Coach: A Voice-enabled AI System that Helps Practice Difficult Workplace Conversations",
+    "title_zh": null,
+    "url": "https://arxiv.org/abs/2609.00441v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "ChatGPT",
+      "人机交互"
+    ],
+    "authors": [
+      "Jacy Reese Anthis",
+      "Mark Díaz",
+      "Renee Shelby"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "针对人机社交陪伴研究数据稀缺问题，提出 CompanionSim 模拟框架，基于真实数据生成 2240 段多轮人机对话，覆盖 16 种陪伴行为与 7 类使用场景。通过两项大规模标注实验（美国 N=628；美英印尼四国 N=3646）发现：陪伴类行为反而降低用户对聊天机器人的喜爱度、类人感知与信任，且在女性与年长群体中负面效应更显著，主张结合真实与合成数据进行差异化评估。",
+        "topic_tags": [
+          "人机协作",
+          "信任",
+          "消费者行为",
+          "伦理"
+        ]
+      },
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": null,
+        "topic_tags": []
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_R92aUp1Cr3kB7QAA",
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2609.00250v1",
+    "title": "CompanionSim: Synthetic Data for Evaluating Anthropomorphism in Human-AI Relationships",
+    "title_zh": "CompanionSim：用于评估人机关系中拟人化的合成数据",
+    "url": "https://arxiv.org/abs/2609.00250v1",
     "year": 2026
   },
   {
@@ -1519,6 +2219,44 @@
   },
   {
     "ai_type_tags": [
+      "LLM",
+      "推荐算法",
+      "算法管理"
+    ],
+    "authors": [
+      "Kartik Ravisankar",
+      "Hojat Abdolanezhad",
+      "Daniel Capo",
+      "Sang Su Lee",
+      "Shishir Dash"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "针对双边服务市场从固定表单转向AI原生概率匹配的趋势，提出autoresearch循环，逐个职业迭代生成供方偏好标签体系。候选标签集由重新校准的六维LLM-as-judge框架评分，7位不同角色批评者施加加权惩罚，并设独立parity-mapping阶段将遗留表单问答对映射回新分类以提供覆盖信号与人工质检接口。该方法自2026年4月起在一家美国消费服务市场生产部署，已覆盖132个职业。",
+        "topic_tags": [
+          "推荐系统",
+          "营销",
+          "创新"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_AD-qzTK-XoOuIbap",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.00274v1",
+    "title": "Autoresearch for Marketplace Catalogs: From Legacy Forms to AI-Native Matching",
+    "title_zh": "市场目录的自动检索：从传统表单到AI原生匹配",
+    "url": "https://arxiv.org/abs/2609.00274v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "智能体/Agent",
       "多模态",
       "AI 助手",
@@ -1555,6 +2293,85 @@
     "title": "Augmenting Human Performance with an XR Agent Learning from Online Behavior and BCI Evidence",
     "title_zh": "利用XR智能体增强人类表现：基于在线行为与BCI证据的学习",
     "url": "https://arxiv.org/abs/2608.30369v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "machine_learning",
+      "deep_learning"
+    ],
+    "authors": [
+      "Yuyang Sha",
+      "Hongxin Pan",
+      "Gang Luo",
+      "Weiyu Meng",
+      "Wei Xu",
+      "Zhongwen Feng",
+      "Abao Xing",
+      "Zheng Weisi",
+      "Xiaobing Zhai",
+      "Henry H. Y. Tong"
+    ],
+    "channel_profiles": {
+      "mh": {
+        "ai_score": 5,
+        "domain_score": 5,
+        "tldr": "MD3S系统利用常规实验室数据在英国生物银行内部验证准确率86.57%，并在两个独立外部医院队列中保持稳健的跨人群泛化性能。",
+        "topic_tags": [
+          "depression",
+          "screening_assessment",
+          "general_population",
+          "clinical_patients"
+        ]
+      }
+    },
+    "channels": [
+      "mh"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_zvzfkugrD7J3m9L1",
+    "journal": "Translational Psychiatry",
+    "pdf_url": null,
+    "title": "Artificial intelligence-assisted screening of major depressive disorder using routine laboratory tests across multicenter cohorts",
+    "title_zh": "人工智能辅助基于常规实验室检测的重性抑郁障碍多中心筛查",
+    "url": "https://doi.org/10.1038/s41398-026-04413-8",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "对话式 AI",
+      "LLM",
+      "AI 治理"
+    ],
+    "authors": [
+      "Scott Compton",
+      "Arjun Nagendran"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "论文提出\"响应性\"（contingency）概念作为评估对话式AI的核心维度，指出当前RLHF等对齐方法过度迎合用户导致奉承式反馈，削弱了AI作为社会学习工具的价值。结合行为科学与社会学习理论，强调在青少年社会能力发展关键期，非响应性反馈可能阻碍适应性校准，提出轨迹评估与社会后果预测框架，呼吁从用户满意度扩展到对人类社会学习影响的多维评估。",
+        "topic_tags": [
+          "对话式 AI",
+          "伦理",
+          "AI 治理",
+          "人机交互(HCI)"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "id": "p_JuGaz1924vEh85Xo",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.00211v1",
+    "title": "AI Should Not Only Be Helpful. It Should Be Contingent. Artificial Intimacy, Sycophancy, and the Future of Social Learning",
+    "title_zh": "人工智能不仅应有用，更应具有回应性：人工亲密、谄媚迎合与社会学习的未来",
+    "url": "https://arxiv.org/abs/2609.00211v1",
     "year": 2026
   },
   {
@@ -2450,6 +3267,45 @@
     "title": "TailorCoPilot: Enabling Agentic Pattern Making with Version-Controlled State Tracking",
     "title_zh": "TailorCoPilot：基于版本控制状态追踪的智能体驱动制版",
     "url": "https://arxiv.org/abs/2608.25462v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "conversational_ai",
+      "llm_genai"
+    ],
+    "authors": [
+      "Michal Mahat‐Shamir",
+      "Maya Payes",
+      "Maya Kagan"
+    ],
+    "channel_profiles": {
+      "mh": {
+        "ai_score": 4,
+        "domain_score": 4,
+        "tldr": "论文认为AI聊天机器人可能主要通过结构化镜像和自我反思运作，而非治疗性转变所需的主体间互动，警告勿将感知支持混同于心理改变。",
+        "topic_tags": [
+          "depression",
+          "anxiety",
+          "transdiagnostic",
+          "supportive_conversation",
+          "digital_intervention",
+          "general_population",
+          "clinical_patients"
+        ]
+      }
+    },
+    "channels": [
+      "mh"
+    ],
+    "cited_by": 0,
+    "date": "2026-08-26",
+    "id": "p_5Pv3g5cqNBkjqGMk",
+    "journal": "JMIR AI",
+    "pdf_url": null,
+    "title": "Perceived Support Is Not Psychological Change: Reframing AI Chatbots in Mental Health Care",
+    "title_zh": "感知支持不等于心理改变：重新审视心理健康护理中的AI聊天机器人",
+    "url": "https://doi.org/10.2196/94503",
     "year": 2026
   },
   {
@@ -29718,9 +30574,8 @@
   },
   {
     "ai_type_tags": [
-      "AI助手",
-      "人机协作",
-      "GenAI"
+      "AI客服",
+      "人机协作"
     ],
     "authors": [
       "Erik Hermann",
@@ -29759,7 +30614,7 @@
     "journal": "CHB",
     "pdf_url": null,
     "title": "The Trusted Partner for financial decision making: Romantic partner or AI?",
-    "title_zh": "财务决策的可信赖伙伴：浪漫伴侣还是AI？",
+    "title_zh": "财务决策的可信赖伙伴：浪漫伴侣还是人工智能？",
     "url": "https://doi.org/10.1016/j.chb.2025.108877",
     "year": 2026
   },
@@ -40845,6 +41700,42 @@
     "title": "Algorithm Aversion: Evidence from Ridesharing Drivers",
     "title_zh": "算法厌恶：来自网约车司机的证据",
     "url": "https://doi.org/10.1287/mnsc.2022.02475",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Hyesun Chung",
+      "Shreyas Bhat",
+      "X. Jessie Yang"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 4.0,
+        "tldr": "针对人—自主系统交互场景，提出一种基于折扣模型的个性化信任预测方法，以更精准地刻画用户对自主系统（如自动驾驶、机器人）信任水平的动态变化。",
+        "topic_tags": [
+          "信任",
+          "人机交互(HCI)",
+          "人机协作",
+          "个性化"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026",
+    "id": "p_uafYvXUXDsxWG877",
+    "journal": "THMS",
+    "pdf_url": null,
+    "title": "Personalized Trust Prediction in Human–Autonomy Interaction: A Discounting Model",
+    "title_zh": null,
+    "url": "https://doi.org/10.1109/thms.2026.3718891",
     "year": 2026
   },
   {
@@ -56510,12 +57401,24 @@
           "消费者行为",
           "决策"
         ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "运用文本挖掘方法分析社交媒体中关于自动驾驶车辆事故的讨论，揭示公众对事故责任的归因倾向，探究制造商、驾驶员、行人及AI系统之间的责任分配认知。",
+        "topic_tags": [
+          "AI治理",
+          "消费者行为",
+          "在线社区",
+          "伦理"
+        ]
       }
     },
     "channels": [
-      "ob"
+      "ob",
+      "ur"
     ],
-    "cited_by": 6,
+    "cited_by": 7,
     "date": "2025-07",
     "id": "p_ZfbzWzmB6Vvloc1F",
     "journal": "CHB",
@@ -62548,6 +63451,43 @@
   },
   {
     "ai_type_tags": [
+      "推荐算法",
+      "AI 推荐"
+    ],
+    "authors": [
+      "Shuang Zheng",
+      "Siliang (Jack) Tong",
+      "Hyeokkoo Eric Kwon",
+      "Gordon Burtch",
+      "Xianneng Li"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 3.0,
+        "tldr": "研究查询推荐系统对用户搜索行为、销售额和消费多样性的影响。在电商场景中部署查询推荐器，通过实证数据分析，考察其能否引导用户产生新搜索、扩大消费品类与购买量，并权衡推荐多样性与转化效率之间的关系，为平台搜索设计与推荐策略提供营销启示。",
+        "topic_tags": [
+          "推荐系统",
+          "消费者行为",
+          "营销"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 12,
+    "date": "2025-05",
+    "id": "p_ajCL-hWNMIqPb73C",
+    "journal": "MktSci",
+    "pdf_url": null,
+    "title": "Frontiers: Recommending What to Search: Sales Volume and Consumption Diversity Effects of a Query Recommender System",
+    "title_zh": "前沿：推荐搜索内容：查询推荐系统对销售量与消费多样性的影响",
+    "url": "https://doi.org/10.1287/mksc.2024.1121",
+    "year": 2025
+  },
+  {
+    "ai_type_tags": [
       "机器学习"
     ],
     "authors": [
@@ -63393,6 +64333,40 @@
     "title": "Divergent LLM Adoption and Heterogeneous Convergence Paths in Research Writing",
     "title_zh": "LLM采纳的分歧与研究写作中的异质收敛路径",
     "url": "https://arxiv.org/abs/2504.13629v1",
+    "year": 2025
+  },
+  {
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Charlotte Elizabeth Griffin",
+      "Georgina Powell"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "对用户与智能音箱（如 Alexa）之间拟社会关系（parasocial relationship）的形成进行范围综述，并构建理论模型。梳理既有文献中拟社会关系的前因与后果，识别关键变量与形成机制，为理解语音对话式 AI 与用户之间的情感联结提供整合性框架。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "用户体验(UX)",
+          "消费者行为"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 7,
+    "date": "2025-04-17",
+    "id": "p_Mso9g7GcDvEK618M",
+    "journal": "BIT",
+    "pdf_url": null,
+    "title": "‘Alexa, what do you mean to me?’: a scoping review and model of parasocial relationship formation with smart speakers",
+    "title_zh": "Alexa，你对我意味着什么？：智能音箱准社会关系形成的范围综述与模型",
+    "url": "https://doi.org/10.1080/0144929x.2025.2492701",
     "year": 2025
   },
   {
@@ -75949,7 +76923,8 @@
   {
     "ai_type_tags": [
       "推荐算法",
-      "AI推荐"
+      "算法决策",
+      "算法管理"
     ],
     "authors": [
       "Junwen M. Hu"
@@ -75988,7 +76963,7 @@
     "journal": "CHB",
     "pdf_url": null,
     "title": "The affective and relational correlates of algorithmic beliefs among U.S. online daters: Extension of two previous studies",
-    "title_zh": "美国在线约会者算法信念的情感与人际关联：两项既有研究的拓展",
+    "title_zh": "美国在线约会者算法信念的情感与人际关联：对两项先前研究的扩展",
     "url": "https://doi.org/10.1016/j.chb.2024.108373",
     "year": 2024
   },
@@ -89884,7 +90859,8 @@
   },
   {
     "ai_type_tags": [
-      "算法决策",
+      "智能体/Agent",
+      "AI 助手",
       "人机协作"
     ],
     "authors": [
@@ -89901,10 +90877,21 @@
           "人机协作",
           "绩效评估"
         ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "针对 B2B 销售场景，提出人机混合定价决策方法，结合机器学习自动化模型与销售人员的经验判断。在企业销售现场开展定价实验，运用计量经济学方法评估混合决策相对纯人工或纯自动化方案在销售绩效上的提升效果。",
+        "topic_tags": [
+          "人机协作",
+          "营销",
+          "人机交互(HCI)"
+        ]
       }
     },
     "channels": [
-      "ob"
+      "ob",
+      "ur"
     ],
     "cited_by": 40,
     "date": "2024-01",
@@ -89912,7 +90899,7 @@
     "journal": "MktSci",
     "pdf_url": null,
     "title": "Automating the B2B Salesperson Pricing Decisions: A Human-Machine Hybrid Approach",
-    "title_zh": "B2B定价决策自动化：人机混合方法",
+    "title_zh": "B2B销售人员定价决策的自动化：人机混合方法",
     "url": "https://doi.org/10.1287/mksc.2023.1449",
     "year": 2024
   },
@@ -96808,6 +97795,40 @@
   },
   {
     "ai_type_tags": [
+      "人机交互",
+      "AI助手"
+    ],
+    "authors": [
+      "Changki Jang"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "研究AI服务使用中的脆弱性应对机制，考察用户对AI的信任与隐私保护行为如何影响其对AI服务的使用意愿与实际采用，旨在理解隐私担忧下用户如何权衡AI带来的便利与风险。",
+        "topic_tags": [
+          "信任",
+          "AI采用",
+          "隐私",
+          "消费者行为"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 22,
+    "date": "2023-08-11",
+    "id": "p_7e8II_rROBWi_UPR",
+    "journal": "BIT",
+    "pdf_url": null,
+    "title": "Coping with vulnerability: the effect of trust in AI and privacy-protective behaviour on the use of AI-based services",
+    "title_zh": "应对脆弱性：AI信任与隐私保护行为对AI服务使用的影响",
+    "url": "https://doi.org/10.1080/0144929x.2023.2246590",
+    "year": 2023
+  },
+  {
+    "ai_type_tags": [
       "语言模型",
       "自然语言处理",
       "文本挖掘"
@@ -97198,7 +98219,10 @@
     "year": 2023
   },
   {
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机交互",
+      "智能体/Agent"
+    ],
     "authors": [
       "Gaojian Huang",
       "Brandon J. Pitts"
@@ -97207,8 +98231,13 @@
       "ur": {
         "ai_score": 4.0,
         "domain_score": 4.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "研究在自动驾驶场景中，当系统请求驾驶员接管时，有意义的振动触觉模式应被设计为提供情境信息还是直接给出操作指令，以提升接管绩效与安全性。论文评估两类振动模式编码方式对驾驶员反应与接管质量的影响。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "多模态交互",
+          "可用性",
+          "信任"
+        ]
       }
     },
     "channels": [

@@ -58083,6 +58083,266 @@
     "year": 2026
   },
   {
+    "abstract": "Effective manager-employee communication is critical for retaining high performers and developing underperformers, yet training managers in these skills remains costly. Text-based chatbots offer a scalable approach but cannot provide realistic rehearsal: managers need to practice speaking aloud to build confidence before high-stakes conversations. In this paper, we propose Conversation Coach, a voice-first AI system that enables managers to rehearse difficult workplace conversations in a realistic spoken format. The system addresses three challenges: achieving low-latency interactions with strong language understanding, enabling adaptive conversations through configurable bot personalities that simulate different employee types, and generating personalized feedback on content and policy compliance. We compare an end-to-end speech-to-speech model with a cascaded approach combining automatic speech recognition, a large language model, and text-to-speech synthesis. The end-to-end approach achieves 3$\\times$ lower median (P50) latency with native barge-in capability at an estimated 8$\\times$ lower cost, while the cascaded approach offers superior reasoning essential for coaching quality. We deployed the cascaded architecture in production, where 40,000+ managers used it over six months, with adoption patterns indicating selective use for difficult conversations.",
+    "ai_reason": "Voice AI coach for manager training",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Fanyou Wu",
+      "Suraj Maharjan",
+      "Ainur Yessenalina",
+      "Dennis Xu Chen",
+      "Rahul Srivastava"
+    ],
+    "authors_full": [
+      {
+        "name": "Fanyou Wu"
+      },
+      {
+        "name": "Suraj Maharjan"
+      },
+      {
+        "name": "Ainur Yessenalina"
+      },
+      {
+        "name": "Dennis Xu Chen"
+      },
+      {
+        "name": "Rahul Srivastava"
+      },
+      {
+        "name": "Srinivasan H. Sengamedu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 64661,
+    "ingested_at": "2026-09-02T06:48:37.415835",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.00441v1",
+    "scored_at": "2026-09-02T06:48:51.182370",
+    "title": "Conversation Coach: A Voice-enabled AI System that Helps Practice Difficult Workplace Conversations",
+    "title_zh": null,
+    "tldr": "针对管理者高成本沟通训练难题，提出语音优先的 AI 系统 Conversation Coach，支持模拟不同员工人格的难谈话话场景。比较端到端语音模型与 ASR+LLM+TTS 级联架构：前者延迟降低约 3 倍、成本约 1/8 且支持自然打断；后者推理能力更强、利于反馈质量。最终采用级联方案上线，六个月内 4 万余名管理者使用，数据显示其被选择性用于高难度谈话场景。",
+    "topic_tags": [
+      "人机协作",
+      "培训",
+      "领导力",
+      "工作设计"
+    ],
+    "url": "https://arxiv.org/abs/2609.00441v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Many people now see AI systems as not just productivity tools but as social companions. Researchers are eager to study the consequences of AI companionship behaviors, such as validation, which evoke trust, empathy, and attachment in human-human interaction. However, human-AI interaction data is limited and unreliable, slowing research progress. We scale small amounts of real-world data by simulating multi-turn human-chatbot dialogue across a range of chatbot behaviors and use cases. We release CompanionSim: a simulation framework with 2,240 simulated human-chatbot conversations representing 16 chatbot behaviors across seven use cases. Human participants annotated the simulated conversations and real-world conversations in two experiments probing perceptions of companionship behaviors. We conducted Study 1 with a U.S. representative sample ($N_{1}~=~628$) and Study 2 across the U.S., U.K., India, and Nigeria ($N_{2}~=~3,646$). Surprisingly, we find that companionship behaviors reduced likability, humanlikeness, and trust in AI chatbots. These effects were larger in particular subgroups: women and older participants saw companionship chatbots as less likable, humanlike, and trustworthy. We encourage researchers to leverage real-world and synthetic data together to study the differential impacts of AI companions and to create benchmark evaluations of AI chatbots.",
+    "ai_reason": "AI companion simulation, human-AI interaction",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "ChatGPT",
+      "人机交互"
+    ],
+    "authors": [
+      "Jacy Reese Anthis",
+      "Mark Díaz",
+      "Renee Shelby"
+    ],
+    "authors_full": [
+      {
+        "name": "Jacy Reese Anthis"
+      },
+      {
+        "name": "Mark Díaz"
+      },
+      {
+        "name": "Renee Shelby"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 64665,
+    "ingested_at": "2026-09-02T06:48:37.419059",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2609.00250v1",
+    "scored_at": "2026-09-02T06:48:51.181140",
+    "title": "CompanionSim: Synthetic Data for Evaluating Anthropomorphism in Human-AI Relationships",
+    "title_zh": null,
+    "tldr": "针对人机社交陪伴研究数据稀缺问题，提出 CompanionSim 模拟框架，基于真实数据生成 2240 段多轮人机对话，覆盖 16 种陪伴行为与 7 类使用场景。通过两项大规模标注实验（美国 N=628；美英印尼四国 N=3646）发现：陪伴类行为反而降低用户对聊天机器人的喜爱度、类人感知与信任，且在女性与年长群体中负面效应更显著，主张结合真实与合成数据进行差异化评估。",
+    "topic_tags": [
+      "人机协作",
+      "信任",
+      "消费者行为",
+      "伦理"
+    ],
+    "url": "https://arxiv.org/abs/2609.00250v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Two-sided service marketplaces are moving from deterministic request-form intake to AI-native probabilistic matching, enabled by large language models (LLMs) that infer intent, preferences, and latent constraints from natural language. Relying on inferred intent rather than fixed-form fields forces these platforms to regenerate the provider-side preference taxonomy underwriting matching, search, and pricing: attributes interpretable to service providers while remaining a useful signal for marketplace decisions. We present an autoresearch loop that generates this taxonomy, one occupation at a time, and has been deployed in production at a major U.S. consumer services marketplace since April 2026, spanning 132 occupations. Instead of one global hierarchy, the loop treats each occupation as an independent generation problem and runs iterative propose-evaluate-keep refinement cycles. Each candidate tag set is scored by a recalibrated six-rubric LLM-as-judge framework, and a 7-critic panel of distinct personas contributes weighted penalties to an adjusted score, with no hard vetoes. A separate parity-mapping stage maps legacy request-form Q&A pairs back to the generated taxonomy, yielding both a coverage signal and an interface for human quality assurance; it does so by first inferring the provider attribute each legacy question was meant to measure, rather than translating questions to tags literally.",
+    "ai_reason": "LLM-based marketplace matching, AI-native",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "推荐算法",
+      "算法管理"
+    ],
+    "authors": [
+      "Kartik Ravisankar",
+      "Hojat Abdolanezhad",
+      "Daniel Capo",
+      "Sang Su Lee",
+      "Shishir Dash"
+    ],
+    "authors_full": [
+      {
+        "name": "Kartik Ravisankar"
+      },
+      {
+        "name": "Hojat Abdolanezhad"
+      },
+      {
+        "name": "Daniel Capo"
+      },
+      {
+        "name": "Sang Su Lee"
+      },
+      {
+        "name": "Shishir Dash"
+      },
+      {
+        "name": "Vijay Anand Raghavan"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 64668,
+    "ingested_at": "2026-09-02T06:48:37.421344",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.00274v1",
+    "scored_at": "2026-09-02T06:48:51.180707",
+    "title": "Autoresearch for Marketplace Catalogs: From Legacy Forms to AI-Native Matching",
+    "title_zh": "市场目录的自动检索：从传统表单到AI原生匹配",
+    "tldr": "针对双边服务市场从固定表单转向AI原生概率匹配的趋势，提出autoresearch循环，逐个职业迭代生成供方偏好标签体系。候选标签集由重新校准的六维LLM-as-judge框架评分，7位不同角色批评者施加加权惩罚，并设独立parity-mapping阶段将遗留表单问答对映射回新分类以提供覆盖信号与人工质检接口。该方法自2026年4月起在一家美国消费服务市场生产部署，已覆盖132个职业。",
+    "topic_tags": [
+      "推荐系统",
+      "营销",
+      "创新"
+    ],
+    "url": "https://arxiv.org/abs/2609.00274v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Toxic language in digital workplaces such as pejoratives, sarcasm, condescension, and subtle incivility can erode trust, morale, and collaboration. Existing moderation tools primarily delete or block harmful messages, disrupting communication and offering no constructive resolution. This study adopts a Design Science Research approach to create a responsible AI artifact that detects and detoxifies toxic communication. The artifact integrates fine-tuned transformer-based classifiers (DistilBERT, DistilRoBERTa) with a generative detoxification model (mT0-XL-Detox-ORPO) that rewrites toxic text into semantically equivalent, non-offensive paraphrases. Technical evaluation demonstrates high accuracy in toxicity detection and strong semantic preservation in rewritten messages, supporting conversation continuity while reinforcing respectful discourse. The paper contributes design principles for responsible AI moderation that prioritize meaning preservation and fairness.",
+    "ai_reason": "AI artifact for workplace toxic communication",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI治理",
+      "GenAI"
+    ],
+    "authors": [
+      "Hossein Arshadi Soufiani",
+      "Henry M. Kim",
+      "Hjalmar Turesson",
+      "Syed Mohammad Arham Noman",
+      "Anav Setia"
+    ],
+    "authors_full": [
+      {
+        "name": "Hossein Arshadi Soufiani"
+      },
+      {
+        "name": "Henry M. Kim"
+      },
+      {
+        "name": "Hjalmar Turesson"
+      },
+      {
+        "name": "Syed Mohammad Arham Noman"
+      },
+      {
+        "name": "Anav Setia"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 64669,
+    "ingested_at": "2026-09-02T06:48:37.422086",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2609.00361v1",
+    "scored_at": "2026-09-02T06:48:51.180284",
+    "title": "Detoxifying Toxic Communication: A Design Science Approach to Responsible AI",
+    "title_zh": "净化有害沟通：负责任AI的设计科学方法",
+    "tldr": "针对数字职场中贬损、讽刺、隐性不文明等有毒语言侵蚀信任与协作的问题，采用设计科学研究方法构建负责任AI工件。该工件整合微调的Transformer分类器（DistilBERT、DistilRoBERTa）与生成式解毒模型（mT0-XL-Detox-ORPO），将有毒文本改写为语义等效且无冒犯的表述。技术评估显示毒性检测准确率高、改写语义保留强，兼顾对话连续性与尊重话语，并提炼了以意义保留和公平性为核心的负责任AI审核设计原则。",
+    "topic_tags": [
+      "伦理",
+      "人机协作",
+      "组织变革"
+    ],
+    "url": "https://arxiv.org/abs/2609.00361v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Emotional labor is the effortful management of emotional displays to meet social or professional expectations. Personality traits have been correlated with emotional labor strategies, yet research on this link relies almost exclusively on self-report scales administered only in occupational settings. We investigate whether large language models injected with psychometrically grounded personas reproduce these personality-driven selection patterns across everyday social scenarios. We construct the first emotional labor strategy dataset of 500 socially situated events, each offering three behavioral choices corresponding to surface acting, deep acting, and genuine expression. We source 50 fictional characters from a large-scale personality repository and profile each through two parallel tracks: observer-rated bipolar adjective composites and in-character self-report items. Five LLMs evaluate all scenarios under both persona conditions. We find that models align more towards deep acting, and that Conscientiousness and Emotional Stability consistently predict this preference. Entropy analysis confirms that persona reliably influences the output and varies across models and emotions.",
+    "ai_reason": "LLM personas central, emotional labor OB topic",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Mohammad Saim",
+      "Tianyu Jiang"
+    ],
+    "authors_full": [
+      {
+        "name": "Mohammad Saim"
+      },
+      {
+        "name": "Tianyu Jiang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-08-31",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 64670,
+    "ingested_at": "2026-09-02T06:48:37.422798",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.00310v1",
+    "scored_at": "2026-09-02T06:48:51.179823",
+    "title": "Emotional Labor Strategy Preferences in LLM Personas",
+    "title_zh": "LLM人格中的情绪劳动策略偏好",
+    "tldr": "研究LLM在注入基于心理测量的人格角色后，能否复现人格驱动的情绪劳动策略选择模式。构建含500个社会情境、对应表面表演、深度表演与真实表达三种行为选项的数据集，并对50个虚构人物通过观察者评定与角色内自陈两种通道描绘人格，由5个LLM在两种人格条件下评估全部场景。结果显示模型整体更倾向深度表演，尽责性与情绪稳定性持续预测该偏好；熵分析进一步证实人格对输出的影响稳定且因模型和情绪类型而异。",
+    "topic_tags": [
+      "员工幸福感",
+      "人机协作",
+      "决策"
+    ],
+    "url": "https://arxiv.org/abs/2609.00310v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -78658,7 +78918,7 @@
     "pdf_url": null,
     "scored_at": "2026-09-01T07:13:16.001347",
     "title": "The affective and relational correlates of algorithmic beliefs among U.S. online daters: Extension of two previous studies",
-    "title_zh": null,
+    "title_zh": "美国在线约会者算法信念的情感与人际关联：对两项先前研究的扩展",
     "tldr": "扩展先前两项研究，考察美国在线约会者对算法（如匹配、推荐算法）的信念与情感及人际关系变量之间的关联，探索算法信念如何影响约会体验和关系结果。",
     "topic_tags": [
       "消费者行为",
@@ -78705,7 +78965,7 @@
     "pdf_url": null,
     "scored_at": "2026-09-01T07:13:16.000569",
     "title": "The Trusted Partner for financial decision making: Romantic partner or AI?",
-    "title_zh": null,
+    "title_zh": "财务决策的可信赖伙伴：浪漫伴侣还是人工智能？",
     "tldr": "探讨在金融决策场景下，消费者将AI视为可信赖伙伴的意愿，并与浪漫伴侣进行比较，考察AI作为财务建议/决策伙伴的信任机制及其与人类社交伙伴的差异。",
     "topic_tags": [
       "信任",
@@ -78714,6 +78974,144 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2025.108877",
     "volume": "177",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "神经植入涉及AI/BCI技术，CHB消费者接受研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Eva Reinares-Lara",
+      "Cristina Olarte-Pascual",
+      "Jorge Pelegrín-Borondo"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Eva Reinares-Lara",
+        "orcid": "https://orcid.org/0000-0002-5320-9268"
+      },
+      {
+        "affiliation": [],
+        "name": "Cristina Olarte-Pascual",
+        "orcid": "https://orcid.org/0000-0002-9853-0266"
+      },
+      {
+        "affiliation": [],
+        "name": "Jorge Pelegrín-Borondo",
+        "orcid": null
+      }
+    ],
+    "cited_by": 61,
+    "date": "2018-08",
+    "doi": "10.1016/j.chb.2018.03.032",
+    "domain_score": 4.0,
+    "id": 64282,
+    "ingested_at": "2026-09-02T06:48:06.291570",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-02T06:49:14.911850",
+    "title": "Do you want to be a cyborg? The moderating effect of ethics on neural implant acceptance",
+    "title_zh": "你想成为赛博格吗？伦理对神经植入物接受的调节效应",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1016/j.chb.2018.03.032",
+    "volume": "85",
+    "year": 2018
+  },
+  {
+    "abstract": null,
+    "ai_reason": "众筹内容分析，深度学习作方法，AI非核心议题",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "深度学习"
+    ],
+    "authors": [
+      "DongIl Lee",
+      "JaeHong Park"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "DongIl Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "JaeHong Park",
+        "orcid": null
+      }
+    ],
+    "cited_by": 39,
+    "date": "2020-05",
+    "doi": "10.1016/j.chb.2020.106261",
+    "domain_score": 4.0,
+    "id": 64290,
+    "ingested_at": "2026-09-02T06:48:06.514924",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-02T06:49:01.571702",
+    "title": "The relationship between a charity crowdfunding project's contents and donors' participation: An empirical study with deep learning methodologies",
+    "title_zh": "慈善众筹项目内容与捐赠者参与的关系：基于深度学习方法的实证研究",
+    "tldr": "研究慈善众筹项目内容特征与捐赠者参与行为之间的关系，采用深度学习方法进行实证分析。聚焦项目呈现的文本、视觉等要素如何影响潜在捐赠者的关注、信任与捐赠决策，为众筹项目的内容设计与传播策略提供依据。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106261",
+    "volume": "106",
+    "year": 2020
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI disclosure effects on consumer attitudes",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "图像生成"
+    ],
+    "authors": [
+      "Delia Cristina Balaban",
+      "Joe Phua"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Delia Cristina Balaban",
+        "orcid": "https://orcid.org/0000-0003-3509-533X"
+      },
+      {
+        "affiliation": [],
+        "name": "Joe Phua",
+        "orcid": "https://orcid.org/0000-0001-5883-089X"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109047",
+    "domain_score": 5.0,
+    "id": 64307,
+    "ingested_at": "2026-09-02T06:48:06.989519",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-02T06:48:51.182779",
+    "title": "Is this real or Fake? Examining the effects of disclosure of AI-generated content and source type in instagram-based travel destination advertising on consumer attitudes and behavioral intentions",
+    "title_zh": null,
+    "tldr": "基于标题推断：研究在 Instagram 旅游目的地广告中，披露 AI 生成内容与信源类型如何影响消费者态度与行为意向，探讨 AI 内容真实性标识与信息来源（如网红 vs. 品牌官方）对受众感知的交互效应。",
+    "topic_tags": [
+      "广告",
+      "消费者行为",
+      "信任",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109047",
+    "volume": "183",
     "year": 2026
   },
   {
@@ -79188,6 +79586,49 @@
     "url": "https://doi.org/10.1177/00187267221081295",
     "volume": "76",
     "year": 2022
+  },
+  {
+    "abstract": "Workplace authority in contemporary contexts is increasingly being constituted through online automatons, internet platforms whose logic is diametrically opposed to the notion of hierarchical knowledge. They govern the organization of work and derive legitimacy from three principles: (1) the streaming of information into a network composed of all workers; (2) the transparency of the information and measurements they provide to workers; and (3) their automatic self-regulation, which obscures the role of management in their design. Via interviews and on-site observation in a large computer chain store, I examined how one automaton controls workers through a complex system of sales contests. To lure workers into active engagement with the automaton, management offers hefty prizes to contest winners and also strives to legitimate the automaton’s operation by presenting the contests as fair and just. Through the behavioural scripts inscribed into it, the automaton fosters belief in markets as efficient means of resource allocation and promotes self-interested behaviour and arm’s-length social ties. Smart artefacts like this automaton, which foster belief and generate authority through workers’ prescribed engagement with them, are, I argue, emerging as effective managerial tools in a variety of work contexts, part of a pattern of increasing automation of workplace authority.",
+    "ai_reason": "算法平台控制工人，算法管理核心议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "算法管理",
+      "算法决策",
+      "人机协作"
+    ],
+    "authors": [
+      "Asaf Darr"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Haifa, Israel,"
+        ],
+        "name": "Asaf Darr",
+        "orcid": null
+      }
+    ],
+    "cited_by": 12,
+    "date": "2018-07-25",
+    "doi": "10.1177/0018726718783818",
+    "domain_score": 5.0,
+    "id": 64634,
+    "ingested_at": "2026-09-02T06:48:16.586889",
+    "issue": "5",
+    "journal": "HR",
+    "pdf_url": null,
+    "scored_at": "2026-09-02T06:49:14.914531",
+    "title": "Automatons, sales-floor control and the constitution of authority",
+    "title_zh": "自动装置、销售现场控制与权威的构成",
+    "tldr": "基于大型电脑连锁店的实地访谈与观察，考察在线自动系统（automatons）如何通过销售竞赛构成工作场所权威。研究识别其三大合法性原则：信息网络化、信息透明化与自动自我调节，揭示该类智能工具在模糊管理角色的同时塑造市场信念与自利行为，成为日益普遍的自动化管理工具。",
+    "topic_tags": [
+      "算法管理",
+      "组织变革",
+      "领导力"
+    ],
+    "url": "https://doi.org/10.1177/0018726718783818",
+    "volume": "72",
+    "year": 2018
   },
   {
     "abstract": "ABSTRACT\n                  The growing use of algorithmic management (AM) in human resource (HR) activities has attracted growing attention from HR scholars, as organizations increasingly rely on digital labor platforms to leverage external workers. This study examines how these platforms apply AM in human resource management (HRM) and how these algorithmic systems embed both market and hierarchy management principles for shaping worker control and autonomy. Specifically, we seek to examine how AM manifests in two distinct ways across these platforms: one involving hierarchy and control, and another involving matching and autonomy. Using an inductive qualitative design, we analyzed 33 semi‐structured interviews with platform workers and documentary data from 23 digital labor platforms. Whereas prior research often frames AM in binary terms—that is, market/autonomy versus hierarchy/control—we explore how task characteristics influence the joint application of both market and hierarchy principles in AM for HRM activities of digital labor platforms. Our findings show how platforms dynamically calibrate market and hierarchy approaches to AM in response to task demands, balancing flexibility, oversight, discretion, and incentives. For HR scholars, this study highlights the flexible and conditional nature of AM systems that blend autonomy and control in nuanced ways. By moving beyond the dominant autonomy‐versus‐control dichotomy, we show how AM is configured to align with diverse forms of work across platforms, enhancing efficiency while sustaining worker engagement amid evolving task demands.",
@@ -81356,25 +81797,27 @@
     "authors_full": [
       {
         "affiliation": [
-          "Business School Sun Yat‐Sen University  Shenzhen China",
-          "Research Center for Innovation, Entrepreneurship, and Technology Finance Sun Yat‐Sen University  Shenzhen China"
+          "Sun Yat-sen University"
         ],
         "name": "Xiaoying Zheng",
-        "orcid": "https://orcid.org/0000-0001-8637-2005"
+        "orcid": "https://orcid.org/0000-0001-8637-2005",
+        "position": "first"
       },
       {
         "affiliation": [
-          "Business School University of Aberdeen  Aberdeen UK"
+          "University of Aberdeen"
         ],
         "name": "Ye Li",
-        "orcid": "https://orcid.org/0000-0002-2752-4838"
+        "orcid": "https://orcid.org/0000-0002-2752-4838",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "Business School Sun Yat‐Sen University  Shenzhen China"
+          "Sun Yat-sen University"
         ],
         "name": "Qiaowei Liu",
-        "orcid": null
+        "orcid": null,
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -81388,7 +81831,7 @@
     "pdf_url": null,
     "scored_at": "2026-09-01T07:12:56.964187",
     "title": "When\n                    <scp>AI</scp>\n                    Makes Final Decisions: The Effects of\n                    <scp>HR</scp>\n                    Decision Authority Within\n                    <scp>AI</scp>\n                    ‐Enabled\n                    <scp>HRM</scp>\n                    on Organizational Reputation",
-    "title_zh": null,
+    "title_zh": "当AI做出最终决策时：AI驱动的人力资源管理中HR决策权对组织声誉的影响",
     "tldr": "基于信号理论，三项研究探讨AI与人类在HR决策中的最终权限分配如何作为组织信号影响外部利益相关者评价。研究发现：当AI（而非人类HR专家）掌握HR最终决策权时，外部利益相关者会推断出更高的员工物化感知，从而损害组织声誉。该效应受接收方异质性调节——AI拟人化程度高时削弱，HR议题相关度高时增强。",
     "topic_tags": [
       "HR",
@@ -89680,6 +90123,72 @@
     "url": "https://doi.org/10.1287/isre.2021.1071",
     "volume": "33",
     "year": 2022
+  },
+  {
+    "abstract": "Recently companies are increasingly adopting intelligent technologies, such as autonomous tools and artificial intelligence, to assist complex knowledge works that are traditionally carried out by human experts. These tools can independently learn and execute novel actions. The input–output relationships of these tools, however, are unknowable to human experts. This calls for analysis of how humans may work differently while interacting with such tools. To this end, we conduct a comparative case study at one of the world’s largest semiconductor manufacturers. We investigate how chip designers interact with two families of design technologies: one following a traditional designer-centric approach in which the designer knows what outputs particular inputs to the tools will generate, and another relying on autonomous tools that continually surprise the user. Our inquiry reveals that, when using autonomous tools, designers can hardly understand the design generated by the tools and become more like laboratory experimentalists in that their primary job is experimenting with different inputs and assessing the quality of the finished design. Their interactions with the tools are marked by ambiguity, and the design is moved forward along multiple design trajectories in accordance with a multifarious temporality.",
+    "ai_reason": "核心研究AI自主工具的不可知性，AI为中心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "机器学习"
+    ],
+    "authors": [
+      "Zhewei Zhang",
+      "Youngjin Yoo",
+      "Kalle Lyytinen",
+      "Aron Lindberg"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Warwick Business School, University of Warwick, Coventry CV4 7AL, United Kingdom;"
+        ],
+        "name": "Zhewei Zhang",
+        "orcid": "https://orcid.org/0000-0002-9884-1320"
+      },
+      {
+        "affiliation": [
+          "Weatherhead School of Management, Case Western Reserve University, Cleveland, Ohio 44106;"
+        ],
+        "name": "Youngjin Yoo",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Weatherhead School of Management, Case Western Reserve University, Cleveland, Ohio 44106;"
+        ],
+        "name": "Kalle Lyytinen",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "School of Business, Stevens Institute of Technology, Hoboken, New Jersey 07030"
+        ],
+        "name": "Aron Lindberg",
+        "orcid": "https://orcid.org/0000-0001-6920-6603"
+      }
+    ],
+    "cited_by": 29,
+    "date": "2021-12",
+    "doi": "10.1287/isre.2021.1022",
+    "domain_score": 4.0,
+    "id": 64537,
+    "ingested_at": "2026-09-02T06:48:13.760026",
+    "issue": "4",
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-09-02T06:48:58.100644",
+    "title": "The Unknowability of Autonomous Tools and the Liminal Experience of Their Use",
+    "title_zh": "自主工具的不可知性及其使用的阈限体验",
+    "tldr": "在大型半导体制造企业开展比较案例研究，对比传统设计师中心型设计工具与可自主学习的智能工具，揭示使用自主工具时设计师难以理解工具输出，角色从设计者转向实验室实验主义者，需反复试验输入并评估成品质量；交互过程充满模糊性，设计沿多条路径、以多元时间性推进，挑战了传统知识工作方式。",
+    "topic_tags": [
+      "人机协作",
+      "工作设计",
+      "知识管理"
+    ],
+    "url": "https://doi.org/10.1287/isre.2021.1022",
+    "volume": "32",
+    "year": 2021
   },
   {
     "abstract": "Abstract Companies are increasingly introducing conversational reviews —reviews solicited via chatbots—to gain customer feedback. However, little is known about how chatbot-mediated solicitation influences rating valence and review helpfulness compared to conventional online forms. Therefore, we conceptualized these review solicitation media on the continuum of anthropomorphism and investigated how various levels of anthropomorphism affect rating valence and review helpfulness, showing that more anthropomorphic media lead to more positive and less helpful reviews. We found that moderate levels of anthropomorphism lead to increased interaction enjoyment, and high levels increase social presence, thus inflating the rating valence and decreasing review helpfulness. Further, the effect of anthropomorphism remains robust across review solicitors’ salience (sellers vs. platforms) and expressed emotionality in conversations. Our study is among the first to investigate chatbots as a new form of technology to solicit online reviews, providing insights to inform various stakeholders of the advantages, drawbacks, and potential ethical concerns of anthropomorphic technology in customer feedback solicitation.",
@@ -98706,6 +99215,45 @@
     "year": 2021
   },
   {
+    "abstract": "Market structure maps spatially represent competitive relationships among brands and products. In these maps, each product is typically visualized in a single map location. Such visualization, however, does not adequately accommodate multimarket membership products (MMPs), which are products that compete in multiple submarkets that are each characterized by distinct competitors and consumer preferences. The author proposes a novel framework that accommodates MMPs by visualizing products in the local context of each submarket in which they compete. This framework is then used to study market structure in the digital camera market. Competitive relationships are inferred from consumers’ online searches using bootstrapped neural product embedding. The research shows that 8% of cameras are MMPs and that 50% of all submarkets are affected by MMPs. The map generated with the proposed framework uncovers mismatches between manufacturer positioning and consumer perception of several cameras. An extensive comparison of the proposed framework with alternative mapping methods reveals that (1) commonly used mapping methods misrepresent MMPs’ competitive positions in their maps and (2) ignoring MMPs can lead to distorted visualizations of the underlying market structure. Both problems compromise firms’ abilities to accurately assess products’ competitive positions and evaluate the effectiveness of their positioning strategies.",
+    "ai_reason": "神经嵌入为方法，营销市场结构核心",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习"
+    ],
+    "authors": [
+      "Daniel M. Ringel"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Daniel M. Ringel",
+        "orcid": "https://orcid.org/0000-0002-2070-000X"
+      }
+    ],
+    "cited_by": 12,
+    "date": "2022-11-03",
+    "doi": "10.1177/00222437221110460",
+    "domain_score": 5.0,
+    "id": 64586,
+    "ingested_at": "2026-09-02T06:48:15.219638",
+    "issue": "2",
+    "journal": "JMR",
+    "pdf_url": null,
+    "scored_at": "2026-09-02T06:48:52.890026",
+    "title": "Multimarket Membership Mapping",
+    "title_zh": "跨市场成员关系映射",
+    "tldr": "研究多市场竞争产品(MMP)在市场结构图中的可视化问题，提出基于消费者在线搜索的bootstrapped神经网络产品嵌入框架，在数码相机市场应用，发现8%相机属MMP，影响50%子市场；与现有映射方法对比，揭示传统方法对MMP竞争位置存在误判，忽视MMP会扭曲市场结构可视化，影响企业对产品竞争位势与定位策略效果的评估。",
+    "topic_tags": [
+      "营销",
+      "品牌",
+      "竞争策略"
+    ],
+    "url": "https://doi.org/10.1177/00222437221110460",
+    "volume": "60",
+    "year": 2022
+  },
+  {
     "abstract": "Abstract\n                  In the digital era, organizations are increasingly leveraging artificial intelligence (AI) to optimize their operations and decision‐making. However, the opaqueness of AI processes raises concerns over trust, fairness, and autonomy, especially in the gig economy, where AI‐driven management is ubiquitous. This study investigates how explainable AI (xAI), through the comparative use of counterfactual versus factual and local versus global explanations, shapes gig workers’ acceptance of AI‐driven decisions and management relations, drawing on cognitive load theory. Using experimental data from 1107 gig workers, we found that both counterfactual (relative to factual) and local (relative to global) explanations increase the acceptance of AI decisions. However, the combination of local and counterfactual explanations can overwhelm workers, thereby reducing these positive effects. Furthermore, worker acceptance mediated the relationship between xAI explanations and management relations. A follow‐up study using a simplified scenario and additional procedural controls confirmed the robustness of these effects. Our findings underscore the value of carefully tailored xAI in fostering equitable, transparent, and constructive organizational practices in digitally mediated work environments.",
     "ai_reason": "核心议题为可解释AI对Gig worker接受度的影响",
     "ai_score": 5.0,
@@ -107324,6 +107872,70 @@
     "url": "https://doi.org/10.25300/misq/2021/15434.1.1",
     "volume": "45",
     "year": 2021
+  },
+  {
+    "abstract": "Online retailers use product ratings to signal quality and help consumers identify products for purchase. These ratings commonly take the form of either non-personalized, aggregate product ratings (i.e., the average rating a product received from a number of consumers such as “the average rating is 4.5/5 based on 100 reviews”), or personalized predicted preference ratings for a product (i.e., recommender-system-generated predictions for a consumer’s rating of a product such as “we think you’d rate this product 4.5/5”). Ratings in either format can provide decision aid to the consumer, but the two formats convey different types of product quality information and operate with different psychological mechanisms. Prior research has indicated that each recommendation type can significantly affect consumer’s post-experience preference ratings, constituting a judgmental bias, but has not compared the effects of these two common product-rating formats. Using a laboratory experiment, we show that aggregate ratings and personalized recommendations create similar biases on post-experience preference ratings when shown separately. Shown together, there is no cumulative increase in the effect. Instead, personalized recommendations tend to dominate. Our findings can help retailers determine how to use these different types of product ratings to most effectively serve their customers. Additionally, these results help to educate the consumer on how product-rating displays influence their stated preferences.",
+    "ai_reason": "推荐系统属AI，对比聚合评分，营销消费者行为",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "推荐算法"
+    ],
+    "authors": [
+      "Gediminas Adomavicius",
+      "Jesse C. Bockstedt",
+      "Shawn P. Curley",
+      "Jingjing Zhang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Information and Decision Sciences, Carlson School of Management, University of Minnesota, 321 19th Avenue South, Minneapolis, MN 55455 U.S.A."
+        ],
+        "name": "Gediminas Adomavicius",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Information Systems and Operations Management, Goizueta Business School, Emory University, 1300 Clifton Road, Atlanta, GA 30322 U.S.A."
+        ],
+        "name": "Jesse C. Bockstedt",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Information and Decision Sciences, Carlson School of Management, University of Minnesota, 321 19th Avenue South, Minneapolis, MN 55455 U.S.A."
+        ],
+        "name": "Shawn P. Curley",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Operations and Decision Technologies, Kelley School of Business, Indiana University, 1309 East Tenth Street, Bloomington, IN 47405 U.S.A."
+        ],
+        "name": "Jingjing Zhang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 25,
+    "date": "2022-03-01",
+    "doi": "10.25300/misq/2022/16301",
+    "domain_score": 4.0,
+    "id": 64516,
+    "ingested_at": "2026-09-02T06:48:13.120327",
+    "issue": "1",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-09-02T06:48:53.638534",
+    "title": "Effects of Personalized Recommendations Versus Aggregate Ratings on Post-Consumption Preference Responses",
+    "title_zh": "个性化推荐与总体评分对消费后偏好反应的影响",
+    "tldr": "通过实验室实验比较聚合评分与个性化推荐评分对消费者消费后偏好评价的影响，发现两者单独呈现时产生相似的判断偏差，同时呈现时无累积增强效应，个性化推荐评分占主导；研究揭示两种评分格式传递不同质量信息并依赖不同心理机制，为零售商选择评分展示方式及消费者理解评分影响提供启示。",
+    "topic_tags": [
+      "消费者行为",
+      "推荐系统"
+    ],
+    "url": "https://doi.org/10.25300/misq/2022/16301",
+    "volume": "46",
+    "year": 2022
   },
   {
     "abstract": "We propose a new data-driven approach for addressing multistage stochastic linear optimization problems with unknown distributions. The approach consists of solving a robust optimization problem that is constructed from sample paths of the underlying stochastic process. We provide asymptotic bounds on the gap between the optimal costs of the robust optimization problem and the underlying stochastic problem as more sample paths are obtained, and we characterize cases in which this gap is equal to zero. To the best of our knowledge, this is the first sample path approach for multistage stochastic linear optimization that offers asymptotic optimality guarantees when uncertainty is arbitrarily correlated across time. Finally, we develop approximation algorithms for the proposed approach by extending techniques from the robust optimization literature and demonstrate their practical value through numerical experiments on stylized data-driven inventory management problems.  This paper was accepted by David Simchi-Levi, optimization.  Funding: S. Shtern was supported by the Israel Science Foundation [Grant 1460/19].  Supplemental Material: The online appendix is available at https://doi.org/10.1287/mnsc.2022.4352 .",

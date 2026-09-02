@@ -1,0 +1,49 @@
+{
+  "abstract": "Using a large language model to play the user is now standard in scalable evaluation. It has a repeatedly diagnosed failure: the simulated user is excessively cooperative, so a system under test can score by the sheer number of questions it asks rather than by making the user willing to speak. We answer with a disclosure gate conditioning information release on the companion agent's behaviour: its state is a ladder of five ordered gates, merged onto three observable depth layers. We specify, ablate, and audit it, and train a user simulator against that specification. Gating behaviour is learned from the training corpus's synthetic branch, while the real branch supplies how people speak and react; after training, the simulator need not be told at runtime which gate each item sits behind. The gate is a load-bearing component of the environment: on the English corpus of a published companion-agent benchmark (CompanionBench), once training no longer states per example which gate each item sits behind, the largest rank displacement across 12 systems under test exceeds the noise band set by re-running that environment under a new seed, while per-system scores show no detectable change. We state two acceptance criteria: a ranking must be order-preserving, and absolute scores must be scale-stable. Of the candidates we examine, only one passes both -- the simulator we release -- and its leaderboard correlates at 0.993 with the benchmark's original simulator. By contrast, prompting a frontier model as the simulator barely moves the ranking while shifting every score upward -- a shift invisible to anyone checking the ranking alone. The environment we specify is the one that benchmark already used. That publication describes the mechanism in about four hundred words, and we supply what it lacked: specification, ablations, human studies, negative controls, and downstream sensitivity analysis.",
+  "ai_type_tags": [],
+  "arxiv_id": "2609.00982",
+  "authors": [
+    "Yao Liu",
+    "Yu He"
+  ],
+  "authors_full": [
+    {
+      "name": "Yao Liu"
+    },
+    {
+      "name": "Yu He"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM用户模拟与陪伴智能体评估,涉及HCI方法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-01",
+  "doi": null,
+  "id": "p_B9P3riK9OTcxV9-y",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.00982v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25713,
+      "revision": "f7c5c3332eb14544d604a686c36252da7c406706"
+    }
+  ],
+  "title": "Disclosure-Gated User Simulation for Companion-Agent Evaluation",
+  "title_zh": "面向陪伴代理评估的披露门控用户模拟",
+  "unified_ingested_at": "2026-09-02T06:57:20.468704Z",
+  "url": "https://arxiv.org/abs/2609.00982v1",
+  "volume": null,
+  "year": 2026
+}

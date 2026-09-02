@@ -1,0 +1,91 @@
+{
+  "abstract": "Personalized Large Language Models (PLLMs) aim to tailor responses to individual users, where a central challenge is preference reasoning: inferring query-relevant preferences from user-related history. Existing benchmarks, however, largely assume that such preference can be retrieved from semantically related history. We study an underexplored but practically important regime, profile-preference conceptual misalignment (PRCM), where observable profile cues and query-specific preferences lie in different concept spaces, making semantic retrieval inconsistent for personalization. We introduce VIBE-Bench, a benchmark with two psychology-grounded tasks, 3,504 personas and 12,239 dialogues, including a manually verified gold test set, and requires cross-concept preference reasoning beyond surface semantic overlap. Experiments with several personalization methods show that current PLLMs largely rely on shallow semantic correlations and fail to acquire robust cross-concept mappings. These findings establish PRCM as a distinct failure regime in PLLMs and position VIBE-Bench as a focused testbed for advancing preference reasoning beyond semantic matching.",
+  "ai_type_tags": [
+    "LLM",
+    "AI推荐",
+    "GenAI"
+  ],
+  "arxiv_id": "2609.00921",
+  "authors": [
+    "Yiwen Jiang",
+    "Yang Deng",
+    "Stephanie Fong",
+    "Zimu Wang",
+    "Yaling Shen"
+  ],
+  "authors_full": [
+    {
+      "name": "Yiwen Jiang"
+    },
+    {
+      "name": "Yang Deng"
+    },
+    {
+      "name": "Stephanie Fong"
+    },
+    {
+      "name": "Zimu Wang"
+    },
+    {
+      "name": "Yaling Shen"
+    },
+    {
+      "name": "Wei Feng"
+    },
+    {
+      "name": "Hongxi Yang"
+    },
+    {
+      "name": "Xiangyu Zhao"
+    },
+    {
+      "name": "Zhongxing Xu"
+    },
+    {
+      "name": "Deval Mehta"
+    },
+    {
+      "name": "Xuelian Cheng"
+    },
+    {
+      "name": "Zongyuan Ge"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "个性化LLM基准，含用户偏好与persona建模",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究个性化大语言模型在用户画像与查询偏好概念不对齐场景下的推理能力。提出VIBE-Bench基准（3,504人设、12,239对话，含人工验证测试集），揭示PRCM为独立失效模式：现有PLLM过度依赖浅层语义相关，无法建立跨概念稳健的偏好映射，呼吁研究超越语义匹配。",
+      "topic_tags": [
+        "个性化",
+        "用户画像",
+        "推荐系统",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-01",
+  "doi": null,
+  "id": "p_pmRyGypFOLF-_ELG",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.00921v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25724,
+      "revision": "f7c5c3332eb14544d604a686c36252da7c406706"
+    }
+  ],
+  "title": "VIBE-Bench: Evaluating Personalized Large Language Models When Profiles Don't Mean Preferences",
+  "title_zh": "VIBE-Bench：当用户画像不代表真实偏好时的个性化大语言模型评估",
+  "unified_ingested_at": "2026-09-02T06:57:20.468704Z",
+  "url": "https://arxiv.org/abs/2609.00921v1",
+  "volume": null,
+  "year": 2026
+}

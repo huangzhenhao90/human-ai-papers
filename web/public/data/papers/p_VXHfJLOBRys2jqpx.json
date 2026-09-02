@@ -1,0 +1,72 @@
+{
+  "abstract": "Intelligent design interfaces that rely on preference-based optimization are most useful when their suggestions are both meaningful to users and feasible within the target domain. Procedural models offer compact and editable design spaces, but their native parameters can be entangled and can generate many invalid outputs, causing human-in-the-loop optimizers to waste comparisons. We propose an interaction-oriented representation-learning pipeline for procedural models and study it in automotive wheel design. The method first screens procedurally generated samples using geometric rules and finite-element analysis, then learns a reduced latent space from the screened subset. We further introduce supervised functional alignment, which reserves selected latent dimensions for stiffness, strength-related stress response, or weight so that search can be biased toward functionally meaningful regions. Simulation experiments show that screened reduction improves target-shape retrieval and the feasibility rate of suggestions, whereas unscreened reduction degrades both. Additional simulations show that constraining search along learned functional dimensions accelerates exploration toward target functional properties. A controlled study with 40 participants further shows that a 5D feasibility-aware space yields higher shape similarity and more feasible suggestions than the original 9D procedural parameterization. These results suggest that, for intelligent user interfaces in engineering design, the representation exposed to the user is a central part of the interaction design, not merely a preprocessing step for the optimizer.",
+  "ai_type_tags": [
+    "推荐算法",
+    "人机协作"
+  ],
+  "arxiv_id": "2609.00527",
+  "authors": [
+    "Takashi Owaki",
+    "Yuki Koyama",
+    "Tomoyasu Nakano",
+    "Takahiro Yamaguchi",
+    "Masataka Goto"
+  ],
+  "authors_full": [
+    {
+      "name": "Takashi Owaki"
+    },
+    {
+      "name": "Yuki Koyama"
+    },
+    {
+      "name": "Tomoyasu Nakano"
+    },
+    {
+      "name": "Takahiro Yamaguchi"
+    },
+    {
+      "name": "Masataka Goto"
+    },
+    {
+      "name": "Hiroyuki Sakai"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用户偏好驱动的程序化设计探索，HCI成分",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "面向汽车轮毂程序化设计中的偏好探索，提出交互导向的潜空间学习流程：先用几何规则与有限元分析筛选样本，再结合有监督功能对齐，使潜空间维度承载刚度、应力或重量等工程语义。仿真与40人对照实验表明，5D可行性感知空间在形状相似性与方案可行性上均优于原始9D程序化参数。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "可视化",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-01",
+  "doi": null,
+  "id": "p_VXHfJLOBRys2jqpx",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2609.00527v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25716,
+      "revision": "f7c5c3332eb14544d604a686c36252da7c406706"
+    }
+  ],
+  "title": "Learning Feasibility-Aware Latent Spaces for Preference-Based Exploration of Procedural Automotive Wheel Designs",
+  "title_zh": "学习可行性感知潜在空间以基于偏好探索程序化汽车车轮设计",
+  "unified_ingested_at": "2026-09-02T06:57:20.468704Z",
+  "url": "https://arxiv.org/abs/2609.00527v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,72 @@
+{
+  "abstract": "Two-sided service marketplaces are moving from deterministic request-form intake to AI-native probabilistic matching, enabled by large language models (LLMs) that infer intent, preferences, and latent constraints from natural language. Relying on inferred intent rather than fixed-form fields forces these platforms to regenerate the provider-side preference taxonomy underwriting matching, search, and pricing: attributes interpretable to service providers while remaining a useful signal for marketplace decisions. We present an autoresearch loop that generates this taxonomy, one occupation at a time, and has been deployed in production at a major U.S. consumer services marketplace since April 2026, spanning 132 occupations. Instead of one global hierarchy, the loop treats each occupation as an independent generation problem and runs iterative propose-evaluate-keep refinement cycles. Each candidate tag set is scored by a recalibrated six-rubric LLM-as-judge framework, and a 7-critic panel of distinct personas contributes weighted penalties to an adjusted score, with no hard vetoes. A separate parity-mapping stage maps legacy request-form Q&A pairs back to the generated taxonomy, yielding both a coverage signal and an interface for human quality assurance; it does so by first inferring the provider attribute each legacy question was meant to measure, rather than translating questions to tags literally.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法",
+    "算法管理"
+  ],
+  "arxiv_id": "2609.00274",
+  "authors": [
+    "Kartik Ravisankar",
+    "Hojat Abdolanezhad",
+    "Daniel Capo",
+    "Sang Su Lee",
+    "Shishir Dash"
+  ],
+  "authors_full": [
+    {
+      "name": "Kartik Ravisankar"
+    },
+    {
+      "name": "Hojat Abdolanezhad"
+    },
+    {
+      "name": "Daniel Capo"
+    },
+    {
+      "name": "Sang Su Lee"
+    },
+    {
+      "name": "Shishir Dash"
+    },
+    {
+      "name": "Vijay Anand Raghavan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM-based marketplace matching, AI-native",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对双边服务市场从固定表单转向AI原生概率匹配的趋势，提出autoresearch循环，逐个职业迭代生成供方偏好标签体系。候选标签集由重新校准的六维LLM-as-judge框架评分，7位不同角色批评者施加加权惩罚，并设独立parity-mapping阶段将遗留表单问答对映射回新分类以提供覆盖信号与人工质检接口。该方法自2026年4月起在一家美国消费服务市场生产部署，已覆盖132个职业。",
+      "topic_tags": [
+        "推荐系统",
+        "营销",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-31",
+  "doi": null,
+  "id": "p_AD-qzTK-XoOuIbap",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.00274v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 64668,
+      "revision": "7e7b3dd39736e73b79aa025ec54f0ddf03297ca7"
+    }
+  ],
+  "title": "Autoresearch for Marketplace Catalogs: From Legacy Forms to AI-Native Matching",
+  "title_zh": "市场目录的自动检索：从传统表单到AI原生匹配",
+  "unified_ingested_at": "2026-09-02T06:57:20.468704Z",
+  "url": "https://arxiv.org/abs/2609.00274v1",
+  "volume": null,
+  "year": 2026
+}

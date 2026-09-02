@@ -1,5 +1,384 @@
 [
   {
+    "abstract": "Major depressive disorder (MDD) is a prevalent psychiatric condition with substantial personal and societal impact, yet its identification in large-scale populations still relies primarily on symptom-based clinical assessment. We introduce MD 3 S ( M ajor D epressive D isorder D etection S ystem), an artificial intelligence-assisted screening framework for identifying individuals with documented MDD using routinely collected laboratory and clinical information. Leveraging over 180,000 real-world health assessment records from the UK Biobank, MD 3 S integrates hematological, biochemical, and physiological indicators to distinguish individuals with MDD from non-MDD controls in a retrospective multicenter setting. To evaluate cross-population generalizability, we further validated the framework in two independent external hospital-based cohorts. MD 3 S achieved an accuracy of 86.57% on the internal validation dataset and maintained robust performance across two independent external validation cohorts. Compared with conventional machine learning and deep learning approaches, MD 3 S demonstrates improved predictive performance, stable cross-cohort transferability, and high computational efficiency. These findings highlight that routine laboratory data may support scalable AI-assisted screening strategies for identifying individuals with MDD across diverse clinical and population settings.",
+    "ai_reason": "AI辅助MDD筛查框架为核心方法，纳入超18万真实世界健康记录，含内部和两个独立外部验证队列。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "machine_learning",
+      "deep_learning"
+    ],
+    "authors": [
+      "Yuyang Sha",
+      "Hongxin Pan",
+      "Gang Luo",
+      "Weiyu Meng",
+      "Wei Xu",
+      "Zhongwen Feng",
+      "Abao Xing",
+      "Zheng Weisi",
+      "Xiaobing Zhai",
+      "Henry H. Y. Tong"
+    ],
+    "authors_full": [
+      {
+        "name": "Yuyang Sha"
+      },
+      {
+        "name": "Hongxin Pan"
+      },
+      {
+        "name": "Gang Luo"
+      },
+      {
+        "name": "Weiyu Meng"
+      },
+      {
+        "name": "Wei Xu"
+      },
+      {
+        "name": "Zhongwen Feng"
+      },
+      {
+        "name": "Abao Xing"
+      },
+      {
+        "name": "Zheng Weisi"
+      },
+      {
+        "name": "Xiaobing Zhai"
+      },
+      {
+        "name": "Henry H. Y. Tong"
+      },
+      {
+        "name": "Yuanyuan Lv"
+      },
+      {
+        "name": "Xiaoyu Chen"
+      },
+      {
+        "name": "Mingxing Huang"
+      },
+      {
+        "name": "Kefeng Li"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "AI辅助MDD筛查框架为核心方法，纳入超18万真实世界健康记录，含内部和两个独立外部验证队列。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "machine_learning",
+        "deep_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [
+        "bias_fairness"
+      ],
+      "tldr": "MD3S系统利用常规实验室数据在英国生物银行内部验证准确率86.57%，并在两个独立外部医院队列中保持稳健的跨人群泛化性能。",
+      "topic_tags": [
+        "depression",
+        "screening_assessment",
+        "general_population",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "external",
+    "date": "2026-08-31",
+    "doi": "10.1038/s41398-026-04413-8",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W7204759524",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "AI辅助MDD筛查框架为核心方法，纳入超18万真实世界健康记录，含内部和两个独立外部验证队列。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "machine_learning",
+        "deep_learning"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning",
+          "deep_learning"
+        ],
+        "applications": [
+          "screening_assessment"
+        ],
+        "conditions": [
+          "depression"
+        ],
+        "populations": [
+          "general_population",
+          "clinical_patients"
+        ],
+        "risks": [
+          "bias_fairness"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "准确率86.57%，跨队列稳健迁移性能，与传统机器学习和深度学习方法的对比性能",
+        "sample": "英国生物银行超18万条健康评估记录 + 两个独立外部医院队列（具体规模未披露）",
+        "study_design": "回顾性多中心验证，含内部验证集和两个独立外部医院验证队列"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [
+          "artificial intelligence",
+          "machine learning",
+          "deep learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatric",
+          "depressive"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness"
+      ],
+      "safety_evaluated": false,
+      "tldr": "MD3S系统利用常规实验室数据在英国生物银行内部验证准确率86.57%，并在两个独立外部医院队列中保持稳健的跨人群泛化性能。",
+      "topic_tags": [
+        "depression",
+        "screening_assessment",
+        "general_population",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7204759524",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "bias_fairness"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Artificial intelligence-assisted screening of major depressive disorder using routine laboratory tests across multicenter cohorts",
+    "title_zh": "人工智能辅助基于常规实验室检测的重性抑郁障碍多中心筛查",
+    "tldr": "MD3S系统利用常规实验室数据在英国生物银行内部验证准确率86.57%，并在两个独立外部医院队列中保持稳健的跨人群泛化性能。",
+    "topic_tags": [
+      "depression",
+      "screening_assessment",
+      "general_population",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04413-8",
+    "year": 2026
+  },
+  {
+    "abstract": "Abstract Background General-purpose large language models (LLMs) are increasingly being tested in mental health care, where language is central to assessment, diagnosis, risk evaluation, therapeutic interaction, monitoring, and patient education. However, their clinical usefulness, safety, and readiness for implementation remain uncertain. Existing reviews have largely been descriptive or scoping in nature, and broad health care reviews have not examined in detail the distinctive risks and applications of LLMs in mental health care. Objective We aim to systematically review empirical evidence on the use of general-purpose LLMs in mental health care; characterize the clinical tasks, study designs, models, outcomes, and methodological quality of the evidence; and synthesize findings across clinically meaningful task domains, including quantitative synthesis where sufficiently comparable studies were available. Methods We followed PRISMA (Preferred Reporting Items for Systematic Reviews and Meta-Analyses) and searched PubMed, Embase, ACM Digital Library, IEEE Xplore, and Google Scholar from November 2022 to March 2026. Eligible studies reported quantitative data evaluating general-purpose LLMs for direct mental health care tasks. Methodological quality was assessed using the Mixed Methods Appraisal Tool and certainty of evidence using GRADE (Grading of Recommendations, Assessment, Development, and Evaluation) domains. Findings were narratively synthesized, and random-effects meta-analyses were conducted on studies that tested LLMs on screening and diagnosis by ChatGPT-4 (OpenAI), ChatGPT-3.5 (OpenAI), and GPT-3 (OpenAI) models for mental health outcomes that reported on specificity and sensitivity. Hartung-Knapp adjustments were applied, and prediction intervals (PIs) estimated. Results We included 66 studies, comprising 37 vignette or simulation studies, 22 retrospective studies, and 7 prospective studies. Applications included screening and diagnosis (n=29), clinical decision support (n=14), treatment support (n=10), documentation and monitoring (n=6), patient education (n=4), and patient engagement (n=3). In screening and diagnosis, meta-analysis of 8 studies found that GPT-4 had the higher pooled sensitivity (0.83, 95% CI 0.38‐0.97; 95% PI 0.02‐1.00) than GPT-3.5 (0.70, 95% CI 0.13‐0.97; 95% PI 0.00‐1.00) and GPT-3 (0.61, 95% CI 0.33‐0.82; 95% PI 0.10‐0.96). However, GPT-4 specificity was lower at 0.77 (95% CI 0.52‐0.91; 95% PI 0.10‐0.99). Narrative synthesis suggested that LLMs performed most consistently in structured and linguistically explicit tasks. Certainty of evidence was generally low across domains, although documentation and monitoring reached moderate certainty. Major limitations included indirectness from vignette-based designs, uncertain representativeness, inconsistent outcome reporting, and sparse prospective real-world evaluation. Conclusions General-purpose LLMs show promise for selected mental health care applications. However, current evidence remains too heterogeneous, indirect, and uncertain to support routine unsupervised use, particularly for diagnosis, risk assessment, crisis response, or therapeutic interaction. Broad accessibility should not be mistaken for clinical readiness. Future studies should move beyond simulations and retrospective evaluations toward prospective, real-world research assessing safety, reliability, equity, acceptability, clinical outcomes, and implementation in diverse mental health care settings.",
+    "ai_reason": "系统综述纳入66项研究，meta分析评估通用LLM在筛查诊断等多项心理健康护理任务中的表现，明确指出安全性和临床就绪度的局限性。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai"
+    ],
+    "authors": [
+      "Janni Leung",
+      "Benjamin Johnson",
+      "Kelsey Mcrae",
+      "Stephanie Fong",
+      "Paula Cardona Gonzalez",
+      "Caitlin McClure‐Thomas",
+      "Tianze Sun",
+      "Naomi Kern",
+      "Yuen Ming Wong",
+      "Richard Liu"
+    ],
+    "authors_full": [
+      {
+        "name": "Janni Leung"
+      },
+      {
+        "name": "Benjamin Johnson"
+      },
+      {
+        "name": "Kelsey Mcrae"
+      },
+      {
+        "name": "Stephanie Fong"
+      },
+      {
+        "name": "Paula Cardona Gonzalez"
+      },
+      {
+        "name": "Caitlin McClure‐Thomas"
+      },
+      {
+        "name": "Tianze Sun"
+      },
+      {
+        "name": "Naomi Kern"
+      },
+      {
+        "name": "Yuen Ming Wong"
+      },
+      {
+        "name": "Richard Liu"
+      },
+      {
+        "name": "Gary Chan"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "系统综述纳入66项研究，meta分析评估通用LLM在筛查诊断等多项心理健康护理任务中的表现，明确指出安全性和临床就绪度的局限性。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "systematic_review",
+      "risk_tags": [
+        "clinical_harm",
+        "crisis_safety",
+        "hallucination_misinformation"
+      ],
+      "tldr": "66项研究的系统综述显示GPT-4在心理健康筛查诊断中的合并敏感度为0.83，但证据整体异质性高、不确定性大，尚不支持常规无监督临床应用。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "clinical_decision_support",
+        "treatment_support",
+        "monitoring",
+        "supportive_conversation",
+        "clinical_patients",
+        "clinicians"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-08-31",
+    "doi": "10.2196/87730",
+    "domain_score": 5,
+    "evidence_stage": "systematic_review",
+    "ground_truth_quality": "unknown",
+    "id": "W7204825519",
+    "journal": "JMIR AI",
+    "mh_profile": {
+      "ai_reason": "系统综述纳入66项研究，meta分析评估通用LLM在筛查诊断等多项心理健康护理任务中的表现，明确指出安全性和临床就绪度的局限性。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai"
+        ],
+        "applications": [
+          "screening_assessment",
+          "clinical_decision_support",
+          "treatment_support",
+          "monitoring",
+          "supportive_conversation"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "clinical_patients",
+          "clinicians"
+        ],
+        "risks": [
+          "clinical_harm",
+          "crisis_safety",
+          "hallucination_misinformation"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "GPT-4合并敏感度0.83、特异度0.77；GPT-3.5敏感度0.70；GPT-3敏感度0.61；各领域证据确定性整体偏低",
+        "sample": "66项独立研究，涉及GPT-4/GPT-3.5/GPT-3在心理健康护理任务中的应用",
+        "study_design": "遵循PRISMA的系统综述与随机效应meta分析，纳入66项研究（37项模拟/病例研究、22项回顾性研究、7项前瞻性研究）"
+      },
+      "evidence_stage": "systematic_review",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language models",
+          "ChatGPT"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "clinical_harm",
+        "crisis_safety",
+        "hallucination_misinformation"
+      ],
+      "safety_evaluated": false,
+      "tldr": "66项研究的系统综述显示GPT-4在心理健康筛查诊断中的合并敏感度为0.83，但证据整体异质性高、不确定性大，尚不支持常规无监督临床应用。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "clinical_decision_support",
+        "treatment_support",
+        "monitoring",
+        "supportive_conversation",
+        "clinical_patients",
+        "clinicians"
+      ]
+    },
+    "openalex_id": "W7204825519",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "clinical_harm",
+      "crisis_safety",
+      "hallucination_misinformation"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4387286577",
+      "ingest_mode": "query",
+      "key": "jmir_ai",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis",
+    "title_zh": "心理健康护理场景中的生成式大语言模型：系统综述与meta分析",
+    "tldr": "66项研究的系统综述显示GPT-4在心理健康筛查诊断中的合并敏感度为0.83，但证据整体异质性高、不确定性大，尚不支持常规无监督临床应用。",
+    "topic_tags": [
+      "transdiagnostic",
+      "screening_assessment",
+      "clinical_decision_support",
+      "treatment_support",
+      "monitoring",
+      "supportive_conversation",
+      "clinical_patients",
+      "clinicians"
+    ],
+    "url": "https://doi.org/10.2196/87730",
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "更正通知指向RCT研究AI心理助手Tess干预抑郁焦虑，AI和心理健康均为核心。",
     "ai_score": 5,
@@ -136,6 +515,166 @@
       "general_population"
     ],
     "url": "https://doi.org/10.2196/108162",
+    "year": 2026
+  },
+  {
+    "abstract": "Abstract AI chatbots are increasingly used for emotional support, often outside formal care. Emerging evidence suggests that generative systems may produce modest reductions in symptoms of depression and anxiety. Yet a change in symptoms alone does not clarify the nature of the process involved. This viewpoint argues that chatbot interactions may primarily operate through structured mirroring and self-reflection rather than through the intersubjective engagement that underpins therapeutic transformation. We propose an implementation-focused distinction between tools that support symptom regulation and engagement and interventions that aim at enduring psychological change, emphasizing the need to specify mechanisms, relational conditions, and appropriate care pathways. Conflating perceived support with psychological change risks redefining therapeutic standards around technological affordance rather than relational encounters. As AI chatbots become embedded in mental health ecosystems, conceptual clarity and digital emotional literacy are essential to ensure that innovation strengthens rather than replaces the relational foundations of care.",
+    "ai_reason": "观点论文聚焦AI聊天机器人与心理健康护理的关系，区分症状调节工具与心理持久改变干预，探讨机制与适当护理路径。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "conversational_ai",
+      "llm_genai"
+    ],
+    "authors": [
+      "Michal Mahat‐Shamir",
+      "Maya Payes",
+      "Maya Kagan"
+    ],
+    "authors_full": [
+      {
+        "name": "Michal Mahat‐Shamir"
+      },
+      {
+        "name": "Maya Payes"
+      },
+      {
+        "name": "Maya Kagan"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "观点论文聚焦AI聊天机器人与心理健康护理的关系，区分症状调节工具与心理持久改变干预，探讨机制与适当护理路径。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "conceptual",
+      "risk_tags": [
+        "overreliance",
+        "clinical_harm"
+      ],
+      "tldr": "论文认为AI聊天机器人可能主要通过结构化镜像和自我反思运作，而非治疗性转变所需的主体间互动，警告勿将感知支持混同于心理改变。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "transdiagnostic",
+        "supportive_conversation",
+        "digital_intervention",
+        "general_population",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-08-26",
+    "doi": "10.2196/94503",
+    "domain_score": 4,
+    "evidence_stage": "conceptual",
+    "ground_truth_quality": "unknown",
+    "id": "W7204235445",
+    "journal": "JMIR AI",
+    "mh_profile": {
+      "ai_reason": "观点论文聚焦AI聊天机器人与心理健康护理的关系，区分症状调节工具与心理持久改变干预，探讨机制与适当护理路径。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "conversational_ai",
+          "llm_genai"
+        ],
+        "applications": [
+          "supportive_conversation",
+          "digital_intervention"
+        ],
+        "conditions": [
+          "depression",
+          "anxiety",
+          "transdiagnostic"
+        ],
+        "populations": [
+          "general_population",
+          "clinical_patients"
+        ],
+        "risks": [
+          "overreliance",
+          "clinical_harm"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "未报告原创实证结局；提出实施层面区分工具（症状调节）与干预（持久心理改变）的框架",
+        "sample": "引用现有证据称生成系统或产生抑郁焦虑症状的轻度减轻，但未开展原创实证研究",
+        "study_design": "观点/概念分析文章，引用现有经验证据讨论AI聊天机器人在心理健康护理中的机制与局限性"
+      },
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "chatbot"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "depression",
+          "anxiety"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "overreliance",
+        "clinical_harm"
+      ],
+      "safety_evaluated": false,
+      "tldr": "论文认为AI聊天机器人可能主要通过结构化镜像和自我反思运作，而非治疗性转变所需的主体间互动，警告勿将感知支持混同于心理改变。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "transdiagnostic",
+        "supportive_conversation",
+        "digital_intervention",
+        "general_population",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7204235445",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "overreliance",
+      "clinical_harm"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4387286577",
+      "ingest_mode": "query",
+      "key": "jmir_ai",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "Perceived Support Is Not Psychological Change: Reframing AI Chatbots in Mental Health Care",
+    "title_zh": "感知支持不等于心理改变：重新审视心理健康护理中的AI聊天机器人",
+    "tldr": "论文认为AI聊天机器人可能主要通过结构化镜像和自我反思运作，而非治疗性转变所需的主体间互动，警告勿将感知支持混同于心理改变。",
+    "topic_tags": [
+      "depression",
+      "anxiety",
+      "transdiagnostic",
+      "supportive_conversation",
+      "digital_intervention",
+      "general_population",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.2196/94503",
     "year": 2026
   },
   {
