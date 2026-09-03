@@ -1,5 +1,135 @@
 [
   {
+    "abstract": null,
+    "ai_reason": "题目明确为数字化干预（digital intervention）用于预防情绪障碍复发，属于AI/数字技术驱动的心理健康干预。",
+    "ai_score": 3,
+    "ai_type_tags": [
+      "digital_phenotyping"
+    ],
+    "authors": [
+      "Greg Murray",
+      "Rebecca Fitton",
+      "Ben Bullock"
+    ],
+    "authors_full": [
+      {
+        "name": "Greg Murray"
+      },
+      {
+        "name": "Rebecca Fitton"
+      },
+      {
+        "name": "Ben Bullock"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "题目明确为数字化干预（digital intervention）用于预防情绪障碍复发，属于AI/数字技术驱动的心理健康干预。",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "digital_phenotyping"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "randomized_controlled_trial",
+      "risk_tags": [],
+      "tldr": "一项关于昼夜节律信息引导的数字干预预防情绪障碍复发的随机对照试验（摘要缺失，基于标题推断）。",
+      "topic_tags": [
+        "depression",
+        "bipolar",
+        "transdiagnostic",
+        "digital_intervention",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 1,
+    "clinical_validation": "prospective",
+    "date": "2026-09-01",
+    "doi": "10.1176/appi.ajp.20260610",
+    "domain_score": 4,
+    "evidence_stage": "randomized_controlled_trial",
+    "ground_truth_quality": "unknown",
+    "id": "W7204886826",
+    "journal": "American Journal of Psychiatry",
+    "mh_profile": {
+      "ai_reason": "题目明确为数字化干预（digital intervention）用于预防情绪障碍复发，属于AI/数字技术驱动的心理健康干预。",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "digital_phenotyping"
+      ],
+      "clinical_validation": "prospective",
+      "controlled_tags": {
+        "ai_types": [
+          "digital_phenotyping"
+        ],
+        "applications": [
+          "digital_intervention"
+        ],
+        "conditions": [
+          "depression",
+          "bipolar",
+          "transdiagnostic"
+        ],
+        "populations": [
+          "clinical_patients"
+        ],
+        "risks": []
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": null,
+        "sample": null,
+        "study_design": "随机对照试验（题目已声明）"
+      },
+      "evidence_stage": "randomized_controlled_trial",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [],
+        "ai_signal": false,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [],
+        "mental_health_signal": false
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "一项关于昼夜节律信息引导的数字干预预防情绪障碍复发的随机对照试验（摘要缺失，基于标题推断）。",
+      "topic_tags": [
+        "depression",
+        "bipolar",
+        "transdiagnostic",
+        "digital_intervention",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7204886826",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S116025658",
+      "ingest_mode": "full",
+      "key": "american_journal_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Circadian-Informed Digital Intervention to Prevent Mood Disorder Recurrence: Findings and Questions From a Randomized Controlled Trial",
+    "title_zh": "昼夜节律指导的数字干预预防情绪障碍复发：随机对照试验的发现与问题",
+    "tldr": "一项关于昼夜节律信息引导的数字干预预防情绪障碍复发的随机对照试验（摘要缺失，基于标题推断）。",
+    "topic_tags": [
+      "depression",
+      "bipolar",
+      "transdiagnostic",
+      "digital_intervention",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.1176/appi.ajp.20260610",
+    "year": 2026
+  },
+  {
     "abstract": "Major depressive disorder (MDD) is a prevalent psychiatric condition with substantial personal and societal impact, yet its identification in large-scale populations still relies primarily on symptom-based clinical assessment. We introduce MD 3 S ( M ajor D epressive D isorder D etection S ystem), an artificial intelligence-assisted screening framework for identifying individuals with documented MDD using routinely collected laboratory and clinical information. Leveraging over 180,000 real-world health assessment records from the UK Biobank, MD 3 S integrates hematological, biochemical, and physiological indicators to distinguish individuals with MDD from non-MDD controls in a retrospective multicenter setting. To evaluate cross-population generalizability, we further validated the framework in two independent external hospital-based cohorts. MD 3 S achieved an accuracy of 86.57% on the internal validation dataset and maintained robust performance across two independent external validation cohorts. Compared with conventional machine learning and deep learning approaches, MD 3 S demonstrates improved predictive performance, stable cross-cohort transferability, and high computational efficiency. These findings highlight that routine laboratory data may support scalable AI-assisted screening strategies for identifying individuals with MDD across diverse clinical and population settings.",
     "ai_reason": "AI辅助MDD筛查框架为核心方法，纳入超18万真实世界健康记录，含内部和两个独立外部验证队列。",
     "ai_score": 5,

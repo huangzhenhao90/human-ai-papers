@@ -1,0 +1,62 @@
+{
+  "abstract": "Vision-language models (VLMs) are increasingly used to make decisions from visual inputs. We introduce FAIRLENS, a benchmark and evaluation framework for measuring both the fairness and the validity of VLM responses in three high-stakes domains: hiring, legal, and healthcare. FAIRLENS pairs real face images spanning gender, race, and age groups with closed- and open-ended questions, giving more than 100K image-question pairs per model, and evaluates responses from four complementary views: demographic parity over adverse outcome rates, soundness, demographic association over unsupported roles and statuses, and bias in free-text generation. Soundness is the central validity criterion: a response is sound when it follows the evidence stated in the question and abstains when the image cannot support an answer. Evaluating eight VLMs, we find that the primary failure is unwarranted inference rather than unequal treatment. Models routinely infer qualifications, threat, illness, or professional role from a face instead of abstaining, and the weakest model does so on 99% of the questions its input cannot answer. These failures are most severe in legal and healthcare, where recognizing insufficient evidence matters most, and disparity metrics alone would miss them: parity gaps are small in absolute terms, yet when baseline adverse rates are low the same gap means one demographic group receives adverse labels several times as often as another, and a small gap can equally reflect a model that treats every group unsafely. Bias in free-text responses is only loosely coupled to multiple-choice accuracy, so correct structured answers do not imply safe generation. FAIRLENS shows that fair high-stakes VLM behavior requires similar treatment across groups and refusal to infer high-stakes attributes from appearance, and its question suite transfers to any face corpus with demographic annotations.",
+  "ai_type_tags": [
+    "多模态",
+    "算法决策",
+    "可解释AI"
+  ],
+  "arxiv_id": "2609.01691",
+  "authors": [
+    "Vahid Reza Khazaie",
+    "Ahmed Y. Radwan",
+    "Shaina Raza"
+  ],
+  "authors_full": [
+    {
+      "name": "Vahid Reza Khazaie"
+    },
+    {
+      "name": "Ahmed Y. Radwan"
+    },
+    {
+      "name": "Shaina Raza"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "VLM公平性基准，含招聘但偏CS",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出FAIRLENS基准与评估框架，衡量视觉-语言模型在招聘、法律、医疗高风险决策中的公平性与有效性。借助跨性别、种族、年龄的真实人脸图像与封闭式及开放式问题配对，每模型构建逾10万图像-问题对，从人口统计均等、可靠性、对未获支持角色与身份的人口关联、自由文本生成偏差四个互补视角评估八款VLM。研究发现主要失败并非不平等待遇，而是无证据支撑的过度推断，差距指标若仅看绝对值易被掩盖。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "招聘",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-01",
+  "doi": null,
+  "id": "p_LWGzaO88NcjUutWE",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2609.01691v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 64948,
+      "revision": "39f0c25c1997dba88258ebf99aad18d0bfe3dcfb"
+    }
+  ],
+  "title": "FairLens: Benchmarking Fairness in Vision-Language Models for High-Stakes Decision-Making",
+  "title_zh": "FairLens：视觉-语言模型在高风险决策中的公平性基准测试",
+  "unified_ingested_at": "2026-09-03T06:59:02.986810Z",
+  "url": "https://arxiv.org/abs/2609.01691v1",
+  "volume": null,
+  "year": 2026
+}

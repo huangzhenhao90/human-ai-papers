@@ -1270,6 +1270,225 @@
   {
     "ai_type_tags": [
       "LLM",
+      "GenAI"
+    ],
+    "authors": [
+      "Wooyoung Jung",
+      "Prosper Babon-Ayeng"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "针对既有生态反馈忽视家庭个性化特征导致效果浅表的问题，研究构建基于大语言模型的上下文工程框架，通过自一致性结合思维链提示，整合家庭能耗分析数据、公用事业费率结构与特征信息，生成情境感知的生态反馈。经实证验证与组合评估分析，该框架在不同家庭配置下生成的反馈与参考方案平均吻合度达92%，能准确利用家庭数据生成定制化、数据驱动的环保建议。",
+        "topic_tags": [
+          "消费者行为",
+          "创新",
+          "算法管理"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-02",
+    "id": "p_dGTaYLnssM37xlR9",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.02719v1",
+    "title": "Large Language Model-Driven Context-Aware Eco-Feedback Generation and Evaluation",
+    "title_zh": "大语言模型驱动的上下文感知生态反馈生成与评估",
+    "url": "https://arxiv.org/abs/2609.02719v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "人机交互",
+      "AI治理"
+    ],
+    "authors": [
+      "Xinyu Fu",
+      "Narayan Ramasubbu",
+      "Dennis Galletta"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "针对大语言模型在组织工作中应用时错误常逃过人工审核的现象，研究提出基于检索的人为监督理论，认为错误检测的有效性取决于审核时相关信息是否可被获取。两项随机实地实验（640名面向客户的员工）显示，自生成解释能提升错误检测并强化验证相关推理的记忆，而再激活线索有助于在反复使用LLM中维持检测能力，由此识别信息可检索性作为有效监督的独立前置条件。",
+        "topic_tags": [
+          "人机协作",
+          "决策",
+          "组织学习"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-02",
+    "id": "p_cMvssQHbzr36z_eE",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.01976v1",
+    "title": "Knowing Is Not Enough: Information Retrievability as a Precondition to Effective LLM Oversight",
+    "title_zh": "知之非足：信息可检索性作为有效 LLM 监督的先决条件",
+    "url": "https://arxiv.org/abs/2609.01976v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "多模态",
+      "眼动 AI"
+    ],
+    "authors": [
+      "Ziqi Zhang",
+      "Emmanuele Chersoni",
+      "Mohammad Momenian"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "针对粤语阅读预测中语言变体适配能否提升心理语言学对齐的问题，收集自然粤语眼动数据，比较两组家族内适配对照（CKIP GPT-2 Tiny vs JED351、Qwen2.5-7B vs CantoneseLLM-7B），从模型中提取词惊奇度、词性惊奇度、目标前熵与熵减四类信息论指标。结果显示，词惊奇度与联合模型一致偏向深度粤语适配的 CantoneseLLM-7B，而熵减更偏向 CKIP，表明更充分的粤语训练能提升预测拟合度，但模型排序依赖所选指标。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "眼动追踪",
+          "可用性",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-02",
+    "id": "p_hYCfaJxg91nhcHCk",
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.02163v1",
+    "title": "Do Cantonese-Adapted Language Models Better Predict Cantonese Reading? A Cross-Model Eye-Tracking Evaluation",
+    "title_zh": "粤语适配语言模型能否更优预测粤语阅读:一项跨模型眼动追踪评估",
+    "url": "https://arxiv.org/abs/2609.02163v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "算法决策",
+      "人机协作"
+    ],
+    "authors": [
+      "Yiran Zhao",
+      "Lu Zhou",
+      "Liming Fang",
+      "Yufei Chen",
+      "Jiafei Wu"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "针对LLM多智能体招聘系统，揭示以结果公平掩盖过程不公平的诊断盲区。提出SCOPED-Hiring流程感知公平诊断流水线，构造受控简历变体并模拟角色化招聘委员会，记录31.1万条结构化决策轨迹，通过最终结果、反事实、过程、路径、动态与设计六类透镜量化公平信号。研究发现职业空窗引发怀疑、代理线索扭曲资历判断、身份线索导致调查投入不均。基于诊断的定向修复使总体分层负担降低72.3%，录用率仅变动1.86个百分点。",
+        "topic_tags": [
+          "招聘",
+          "公平性",
+          "偏见",
+          "AI治理"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-02",
+    "id": "p_Iv3G0SgP3VyUCVAy",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.02092v1",
+    "title": "Beyond Outcome Gaps: Process-Aware Fairness Diagnosis for LLM-based Multi-Agent Decision Systems",
+    "title_zh": "超越结果差距：面向LLM多智能体决策系统的过程感知公平性诊断",
+    "url": "https://arxiv.org/abs/2609.02092v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "AI 治理",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Pierre Haritz",
+      "Hendrik Krone",
+      "Thomas Liebig"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "针对机器学习教育中将模型呈现为黑箱、阻碍学习者形成校准信任的问题，提出 ICE-T 教学框架，融合 Bruner 具身—图像—符号三模态的跨模态迁移、Use-Modify-Create 计算思维进阶与过程模型支持的解释性思考。文章结合算法厌恶、AI 素养与心智模型形成的实证文献及 K-12 ML 活动综述，论证该框架能为信任校准提供表征丰富性、渐进过程控制与错误情境化能力，主张将信任校准作为显式教学目标。",
+        "topic_tags": [
+          "AI 采用",
+          "信任",
+          "人机交互(HCI)",
+          "可解释性"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-02",
+    "id": "p_NFhu7uD2uWvIb1Ua",
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2609.02453v1",
+    "title": "Addressing Trust in AI Systems through Education: A Didactic Perspective",
+    "title_zh": "通过教育构建AI系统信任:一种教学法视角",
+    "url": "https://arxiv.org/abs/2609.02453v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "机器学习",
+      "LLM",
+      "AI治理"
+    ],
+    "authors": [
+      "Wenxin Jiang",
+      "Xuyang Wang",
+      "Yuxiao Wu"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "针对AI构建社会、组织及职业特征测量但缺乏方法论评估框架的问题，研究提出AICOME框架，主张AI生成的个体层面测量可推导群体聚合值与个体偏差，从而在情境模型中同时估计组间和组内效应。利用2022年中国家庭追踪调查数据，以职业为分组结构，对计算机使用、外语使用、周工时和管理责任等变量进行响应层、模型层、情境层及边界条件的多重效度验证，表明AI情境测量在受访者与岗位特征丰富时可恢复观测调查变量中的大部分情境模型信息。",
+        "topic_tags": [
+          "绩效评估",
+          "HR",
+          "方法论"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-02",
+    "id": "p__jPX6oVh4PtJF7VO",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.02821v1",
+    "title": "AI Contextual Measurement for Recovering Individual and Group-Level Effects: Validation Against Survey Measures and an Occupational Application",
+    "title_zh": "AI 情境测量复原个体与群体效应：基于调查测量与职业应用的验证",
+    "url": "https://arxiv.org/abs/2609.02821v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
       "推荐算法",
       "智能体/Agent",
       "强化学习"
@@ -1381,6 +1600,42 @@
     "title": "VIBE-Bench: Evaluating Personalized Large Language Models When Profiles Don't Mean Preferences",
     "title_zh": "VIBE-Bench：当用户画像不代表真实偏好时的个性化大语言模型评估",
     "url": "https://arxiv.org/abs/2609.00921v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "智能体/Agent",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Aarthy Nagarajan"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "针对 AI 介导脑机接口从任务专用解码器演变为自适应系统时，传统性能指标可能掩盖意图保真度、作者署能、主体性、治疗挑战与持久临床收益等损失的问题，定义神经适应性过拟合为 AI 介导 BCI 对短期成功代理过度优化而偏离用户长期目标的闭环失效模式，并提出 Slow-Fast BCI 框架，依据解码证据、不确定性、情境与临床利害、疲劳及用户/临床目标调节 AI 辅助节奏，区分快速、审慎与慢速辅助，在沟通、运动控制、神经康复与闭环神经调控中给出相应保障与评估指标。",
+        "topic_tags": [
+          "人机协作",
+          "人机交互(HCI)",
+          "信任",
+          "AI 治理",
+          "伦理"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_122-wIxt909kiDhd",
+    "journal": "arXiv:q-bio.NC",
+    "pdf_url": "https://arxiv.org/pdf/2609.01767v1",
+    "title": "Slow-Fast Brain-Computer Interfaces: Preventing Neuroadaptive Overfitting in AI-Mediated Neural Interfaces",
+    "title_zh": "慢速-快速脑机接口:防止AI介导神经接口中的神经自适应过拟合",
+    "url": "https://arxiv.org/abs/2609.01767v1",
     "year": 2026
   },
   {
@@ -1567,6 +1822,43 @@
     "year": 2026
   },
   {
+    "ai_type_tags": [
+      "多模态",
+      "算法决策",
+      "可解释AI"
+    ],
+    "authors": [
+      "Vahid Reza Khazaie",
+      "Ahmed Y. Radwan",
+      "Shaina Raza"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "提出FAIRLENS基准与评估框架，衡量视觉-语言模型在招聘、法律、医疗高风险决策中的公平性与有效性。借助跨性别、种族、年龄的真实人脸图像与封闭式及开放式问题配对，每模型构建逾10万图像-问题对，从人口统计均等、可靠性、对未获支持角色与身份的人口关联、自由文本生成偏差四个互补视角评估八款VLM。研究发现主要失败并非不平等待遇，而是无证据支撑的过度推断，差距指标若仅看绝对值易被掩盖。",
+        "topic_tags": [
+          "公平性",
+          "偏见",
+          "招聘",
+          "AI治理"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-01",
+    "id": "p_LWGzaO88NcjUutWE",
+    "journal": "arXiv:cs.CV",
+    "pdf_url": "https://arxiv.org/pdf/2609.01691v1",
+    "title": "FairLens: Benchmarking Fairness in Vision-Language Models for High-Stakes Decision-Making",
+    "title_zh": "FairLens：视觉-语言模型在高风险决策中的公平性基准测试",
+    "url": "https://arxiv.org/abs/2609.01691v1",
+    "year": 2026
+  },
+  {
     "ai_type_tags": [],
     "authors": [
       "Yao Liu",
@@ -1630,6 +1922,42 @@
     "title": "Data-Driven Persona-Conditioned Agents for A/B Test Simulation",
     "title_zh": "数据驱动的角色条件智能体：用于A/B测试模拟",
     "url": "https://arxiv.org/abs/2609.01038v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "digital_phenotyping"
+    ],
+    "authors": [
+      "Greg Murray",
+      "Rebecca Fitton",
+      "Ben Bullock"
+    ],
+    "channel_profiles": {
+      "mh": {
+        "ai_score": 3,
+        "domain_score": 4,
+        "tldr": "一项关于昼夜节律信息引导的数字干预预防情绪障碍复发的随机对照试验（摘要缺失，基于标题推断）。",
+        "topic_tags": [
+          "depression",
+          "bipolar",
+          "transdiagnostic",
+          "digital_intervention",
+          "clinical_patients"
+        ]
+      }
+    },
+    "channels": [
+      "mh"
+    ],
+    "cited_by": 1,
+    "date": "2026-09-01",
+    "id": "p_cn8LmIkC6yBf_lIZ",
+    "journal": "American Journal of Psychiatry",
+    "pdf_url": null,
+    "title": "Circadian-Informed Digital Intervention to Prevent Mood Disorder Recurrence: Findings and Questions From a Randomized Controlled Trial",
+    "title_zh": "昼夜节律指导的数字干预预防情绪障碍复发：随机对照试验的发现与问题",
+    "url": "https://doi.org/10.1176/appi.ajp.20260610",
     "year": 2026
   },
   {
@@ -1703,6 +2031,83 @@
     "title": "Beyond composer labels: Aesthetic awe in music composed by humans and AI",
     "title_zh": "超越创作者标签：人类与AI所创作音乐中的审美敬畏",
     "url": "https://doi.org/10.1016/j.chb.2026.109020",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "可解释AI"
+    ],
+    "authors": [
+      "Felix Kares",
+      "Timo Speith",
+      "Hanwei Zhang",
+      "Markus Langer"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "针对可解释AI（XAI）评估方法的一致性问题，以显著性图(saliency maps)为载体，系统比较主观（用户感知）、客观（任务表现）与数学三类评估指标，检验不同方法之间是否对模型解释质量给出对齐的判断，揭示三者差异及各自适用场景。",
+        "topic_tags": [
+          "可解释性",
+          "人机交互(HCI)",
+          "用户研究方法",
+          "可用性测试"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "id": "p_F4oo3twjwDFouUqx",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Are explainable AI (XAI) evaluation strategies aligned? Comparing subjective, objective, and mathematical evaluation measures using saliency maps",
+    "title_zh": "可解释AI（XAI）评估策略是否一致：基于显著性图的主观、客观与数学评估方法比较",
+    "url": "https://doi.org/10.1016/j.chb.2026.109163",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "GenAI",
+      "AI治理"
+    ],
+    "authors": [
+      "William P. McClanahan",
+      "Timothy Dickinson"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "基于犯罪学视角，采用混合方法分析大学应对AI作弊的政策与策略，以单一案例探讨新型偏差与文化滞后现象。论文结合规范分析与实证调查，揭示高校制度面对生成式AI冲击时在规则制定、检测手段与学术诚信文化上的滞后与张力。",
+        "topic_tags": [
+          "伦理",
+          "教育",
+          "组织变革"
+        ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": null,
+        "topic_tags": []
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "id": "p_Ng9pjVv1BoRyqQhg",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "A Criminological Mixed-Methods Analysis of University Policies and Strategies Against AI Cheating: A Case Study of Novel Deviance and Cultural Lag",
+    "title_zh": "高校反AI作弊政策与策略的犯罪学混合方法分析：新兴失范与文化滞后的个案研究",
+    "url": "https://doi.org/10.1016/j.chb.2026.109164",
     "year": 2026
   },
   {
@@ -2139,8 +2544,10 @@
   },
   {
     "ai_type_tags": [
-      "ChatGPT",
-      "人机交互"
+      "LLM",
+      "GenAI",
+      "对话式 AI",
+      "AI 助手"
     ],
     "authors": [
       "Jacy Reese Anthis",
@@ -2162,8 +2569,13 @@
       "ur": {
         "ai_score": 5.0,
         "domain_score": 4.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "发布CompanionSim模拟框架，生成2240段人机对话覆盖16种聊天机器人行为与7类使用场景，经628名美国代表样本与3646名美英印尼四国参与者对真实与合成对话进行标注评估。出人意料的是，陪伴类行为反而降低了AI聊天机器人的喜爱度、人性化感知与信任，且对女性和年长群体影响更显著。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "消费者行为",
+          "用户体验(UX)",
+          "信任"
+        ]
       }
     },
     "channels": [
@@ -12710,6 +13122,51 @@
     "title": "Early and late adoption and appropriation of LLMs differs by gender, age, and technology education",
     "title_zh": "LLMs早期与晚期采纳及适应存在性别、年龄与技术教育差异",
     "url": "https://doi.org/10.1016/j.ijhcs.2026.103922",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "图像生成",
+      "GenAI"
+    ],
+    "authors": [
+      "Darian Harff"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "研究通过两项预注册实验，检验受众对政治信息中AI生成图像的辨别能力，以及接触AI生成图像后产生的溢出效应（如信任、真实性判断与态度变化），为政治传播中虚假信息治理与公众媒介素养提供实证依据。",
+        "topic_tags": [
+          "伦理",
+          "偏见",
+          "信任"
+        ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "通过两项预注册实验，考察受众对政治信息中AI生成图像的检测能力，以及即便未明确察觉，AI图像的存在是否会影响受众对信息可信度、来源判断和传播意愿的溢出效应。",
+        "topic_tags": [
+          "消费者行为",
+          "伦理",
+          "AI采用",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 2,
+    "date": "2026-08",
+    "id": "p_RwmL4P7YwpWZya5h",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Detection and spill-over effects of AI-generated images in political messages: Evidence from two pre-registered experiments",
+    "title_zh": "检测政治信息中AI生成图像及其溢出效应：两项预注册实验的证据",
+    "url": "https://doi.org/10.1016/j.chb.2026.108989",
     "year": 2026
   },
   {
@@ -37384,6 +37841,36 @@
     "year": 2026
   },
   {
+    "ai_type_tags": [],
+    "authors": [
+      "Hsueh-Yi Lai",
+      "Ching-Hao Chou",
+      "Pen-Kuei Wang",
+      "Tse-Yi Kuo",
+      "Yong-Jhih Chen"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 4.0,
+        "tldr": null,
+        "topic_tags": []
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 1,
+    "date": "2026-02",
+    "id": "p_xETGh3oUBsxQEvO5",
+    "journal": "THMS",
+    "pdf_url": null,
+    "title": "Effects of Readiness Deprivation on Takeover With Varying Time Budget in Conditional Automated Driving Scenarios",
+    "title_zh": "条件自动驾驶场景中不同时间预算下准备状态剥夺对接管的影响",
+    "url": "https://doi.org/10.1109/thms.2025.3595269",
+    "year": 2026
+  },
+  {
     "ai_type_tags": [
       "GenAI",
       "LLM",
@@ -43001,6 +43488,44 @@
     "title": "neuralFOMO: Can LLMs Handle Being Second Best? Measuring Envy-Like Preferences in Multi-Agent Settings",
     "title_zh": "neuralFOMO：LLM能否接受位居第二？多智能体环境中嫉妒样偏好的测量",
     "url": "https://arxiv.org/abs/2512.13481v2",
+    "year": 2025
+  },
+  {
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "对话式 AI",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Yunyao Li",
+      "Mary Lou Maher",
+      "Ziang Xiao"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "TiiS 人本生成式 AI 专刊导言，阐述 GenAI 正在重塑人与交互系统的关系。文章提出人本 GenAI 研究议程：将人的输入融入模型持续迭代、设计支持有效人机协作的交互范式、加深对模型能力的理解，并强调赋予多元利益相关者理解、引导和驾驭 AI 的能力，以推动负责任创新。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "人机协作",
+          "AI 治理",
+          "可解释性"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 1,
+    "date": "2025-12-15",
+    "id": "p_mG4NWz6lzfzx0FBx",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "title": "Introduction to the Special Issue on Human-Centric Generative AI",
+    "title_zh": "以人为本的生成式人工智能特刊导言",
+    "url": "https://doi.org/10.1145/3779127",
     "year": 2025
   },
   {
@@ -48660,6 +49185,36 @@
     "title": "Help me, Doctor AI? A cross-national experiment on the effects of disease threat and stigma on AI health information-seeking intentions",
     "title_zh": "救命，AI医生？疾病威胁与污名对AI健康信息寻求意愿影响的跨国实验",
     "url": "https://doi.org/10.1016/j.chb.2025.108718",
+    "year": 2025
+  },
+  {
+    "ai_type_tags": [],
+    "authors": [
+      "Danial Amin",
+      "Joni Salminen",
+      "Bernard J. Jansen",
+      "Joongi Shin",
+      "Dae Hyun Kim"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": null,
+        "topic_tags": []
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 12,
+    "date": "2025-11",
+    "id": "p_S8Gf-ACxpG1RMske",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "title": "Generative AI personas considered harmful? Putting forth twenty challenges of algorithmic user representation in human-computer interaction",
+    "title_zh": "生成式AI人物画像是否具有危害？：人机交互中算法用户表征的二十项挑战",
+    "url": "https://doi.org/10.1016/j.ijhcs.2025.103657",
     "year": 2025
   },
   {
@@ -57464,6 +58019,51 @@
     "title": "Whither bias goes, I will go: An integrative, systematic review of algorithmic bias mitigation.",
     "title_zh": "偏见的去向，吾之所往：算法偏见缓解的综合系统性综述",
     "url": "https://doi.org/10.1037/apl0001255",
+    "year": 2025
+  },
+  {
+    "ai_type_tags": [
+      "AI 客服",
+      "人机交互"
+    ],
+    "authors": [
+      "Jiunn-Woei Lian",
+      "Cai-Wei Li"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "基于推-拉-锚定模型，采用两阶段方法识别驱动消费者从传统银行服务转向AI驱动银行服务的关键因素，揭示阻碍与促成转换的核心变量，为银行推广AI服务、制定客户转化策略提供理论参考。",
+        "topic_tags": [
+          "消费者行为",
+          "营销",
+          "决策"
+        ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "研究客户从传统银行服务转向AI驱动银行服务的意愿。采用两阶段方法，结合推-拉-锚定(PPM)模型，识别影响迁移决策的关键因素，探讨驱动用户切换的推动力、拉力与锚定障碍，理解AI银行服务采纳过程中的用户行为动因。",
+        "topic_tags": [
+          "消费者行为",
+          "AI 采用",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 8,
+    "date": "2025-07",
+    "id": "p_wfyAp7Z7qI6wstPF",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Using a two-stage method to understand the critical factors influencing customers’ intention to switch from traditional to artificial intelligence based banking services: A perspective based on the push–pull–mooring model",
+    "title_zh": "两阶段方法探究顾客转向人工智能银行服务意愿的关键因素：基于推拉锚定模型视角",
+    "url": "https://doi.org/10.1016/j.chb.2025.108645",
     "year": 2025
   },
   {
@@ -72390,12 +72990,24 @@
           "人机协作",
           "培训"
         ]
+      },
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "研究在英语议论文写作中，基于ChatGPT的逻辑学习所引发的学习心流(Flow)体验，及其对学习者逻辑能力与自我效能感的影响，探讨对话式AI辅助写作教学中的学习者沉浸感与认知收益。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "用户体验(UX)",
+          "情感计算",
+          "人机协作"
+        ]
       }
     },
     "channels": [
-      "ob"
+      "ob",
+      "ur"
     ],
-    "cited_by": 35,
+    "cited_by": 36,
     "date": "2025-01",
     "id": "p_A2Y8BxvsZsGJ7lsS",
     "journal": "CHB",
@@ -100859,6 +101471,42 @@
     "title": "How children speak with their voice assistant Sila depends on what they think about her",
     "title_zh": "儿童与语音助手Sila的交谈方式取决于他们对她的看法",
     "url": "https://doi.org/10.1016/j.chb.2023.107693",
+    "year": 2023
+  },
+  {
+    "ai_type_tags": [
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Lie Guo",
+      "Linli Xu",
+      "Pingshu Ge",
+      "Xu Wang"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 4.0,
+        "tldr": "研究在条件自动驾驶情境下，非驾驶相关任务的资源需求与投入时长如何影响驾驶员的生理反应（心率等）与接管绩效，探讨多任务负荷与自动化交互中的人因与安全问题。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "可用性测试",
+          "情感计算",
+          "可用性"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 32,
+    "date": "2023-06",
+    "id": "p_nE4tk_AqsDmeec0O",
+    "journal": "THMS",
+    "pdf_url": null,
+    "title": "How Resource Demands of Nondriving-Related Tasks and Engagement Time Affect Drivers’ Physiological Response and Takeover Performance in Conditional Automated Driving",
+    "title_zh": null,
+    "url": "https://doi.org/10.1109/thms.2023.3268095",
     "year": 2023
   },
   {

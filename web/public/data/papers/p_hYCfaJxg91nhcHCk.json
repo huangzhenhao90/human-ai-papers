@@ -1,0 +1,62 @@
+{
+  "abstract": "Information-theoretic measures derived from autoregressive language models are widely used to characterize the expectations that shape human reading, but whether language-variety-specific training improves such psycholinguistic alignment remains unclear. This question is still open for Cantonese, where recent NLP evaluations reported mixed benefits from Cantonese-specific training relative to Mandarin-oriented or general-purpose models. Using naturalistic Cantonese eye-tracking data, we compare two within-family adaptation contrasts: CKIP GPT-2 Tiny versus its lightly Cantonese-adapted JED351 derivative, and Qwen2.5-7B versus CantoneseLLM-7B, which underwent substantially more extensive Cantonese continued pretraining and instruction tuning. From each model, we derive lexical surprisal, POS surprisal, entropy before the target, and entropy reduction. Lexical surprisal and the joint four-metric model consistently favor CantoneseLLM-7B, followed by Qwen2.5-7B, CKIP, and JED351, whereas entropy reduction favors CKIP. These results suggest that more extensive Cantonese-specific training can be associated with stronger predictive fit, while model rankings also depend on the information-theoretic measure being evaluated.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "眼动 AI"
+  ],
+  "arxiv_id": "2609.02163",
+  "authors": [
+    "Ziqi Zhang",
+    "Emmanuele Chersoni",
+    "Mohammad Momenian"
+  ],
+  "authors_full": [
+    {
+      "name": "Ziqi Zhang"
+    },
+    {
+      "name": "Emmanuele Chersoni"
+    },
+    {
+      "name": "Mohammad Momenian"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用眼动追踪评估语言模型，含用研方法",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对粤语阅读预测中语言变体适配能否提升心理语言学对齐的问题，收集自然粤语眼动数据，比较两组家族内适配对照（CKIP GPT-2 Tiny vs JED351、Qwen2.5-7B vs CantoneseLLM-7B），从模型中提取词惊奇度、词性惊奇度、目标前熵与熵减四类信息论指标。结果显示，词惊奇度与联合模型一致偏向深度粤语适配的 CantoneseLLM-7B，而熵减更偏向 CKIP，表明更充分的粤语训练能提升预测拟合度，但模型排序依赖所选指标。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "眼动追踪",
+        "可用性",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-02",
+  "doi": null,
+  "id": "p_hYCfaJxg91nhcHCk",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.02163v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 25922,
+      "revision": "eb900b4ded9853e64eba4a7d739b5f1076f912d4"
+    }
+  ],
+  "title": "Do Cantonese-Adapted Language Models Better Predict Cantonese Reading? A Cross-Model Eye-Tracking Evaluation",
+  "title_zh": "粤语适配语言模型能否更优预测粤语阅读:一项跨模型眼动追踪评估",
+  "unified_ingested_at": "2026-09-03T06:59:02.986810Z",
+  "url": "https://arxiv.org/abs/2609.02163v1",
+  "volume": null,
+  "year": 2026
+}
