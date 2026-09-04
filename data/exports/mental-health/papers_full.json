@@ -130,6 +130,171 @@
     "year": 2026
   },
   {
+    "abstract": "BACKGROUND: Post-traumatic stress disorder (PTSD) symptoms can fluctuate substantially over short periods, yet routine screening typically relies on infrequent self-report. Wearable sensors provide continuous behavioural and physiological signals that may help identify periods of elevated risk. AIMS: This study aimed to evaluate whether combining wearable sensor features with daily self-report data could identify short-term PTSD symptom increases among recently discharged veterans. METHOD: Seventy-four veterans wore commercial activity trackers and completed brief daily questionnaires over 87 days. For each participant, we defined an individual baseline by using the first 14 days of PTSD scores. Wearable variables were transformed into baseline-referenced deviation features to capture departures from personal norms. Missing data were addressed with multiple imputation by chained equations. Candidate predictors were prioritised with least absolute shrinkage and selection operator regression, and a set of machine-learning classifiers was evaluated. Primary performance was assessed by using the area under the precision-recall curve (PR AUC). RESULTS: = 17. At this iteration, LightGBM achieved the strongest discrimination (PR AUC 0.86 (s.d. 0.07); area under the receiver-operating characteristic curve 0.89 (s.d. 0.04)) with a precision of 0.67 (s.d. 0.08), recall of 0.64 (s.d. 0.08) and F1 of 0.65 (s.d. 0.07). Key predictors reflected a multimodal profile, combining self-reported affect and perceived stress with wearable indicators of sleep continuity, activity variability and autonomic regulation. CONCLUSIONS: Baseline-referenced wearable features combined with daily self-report may help identify near-term PTSD symptom increases among recently discharged veterans with elevated PTSD symptoms and problematic cannabis use. Future work should validate performance in broader PTSD populations, including samples without problematic cannabis use.",
+    "ai_reason": "机器学习（LGBM）联合可穿戴传感器与每日自评预测PTSD症状波动，AI为核心方法，PTSD症状检测属核心心理健康结局。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "machine_learning",
+      "multimodal"
+    ],
+    "authors": [
+      "Daniel Leightley",
+      "John Prindle",
+      "Shaddy Saba",
+      "Bistra Dilkina",
+      "Eric R. Pedersen",
+      "Emily Dworkin",
+      "Esther Howe",
+      "Praneeth Thota",
+      "Sriram Nuthi",
+      "Angeles Sedano"
+    ],
+    "authors_full": [
+      {
+        "name": "Daniel Leightley"
+      },
+      {
+        "name": "John Prindle"
+      },
+      {
+        "name": "Shaddy Saba"
+      },
+      {
+        "name": "Bistra Dilkina"
+      },
+      {
+        "name": "Eric R. Pedersen"
+      },
+      {
+        "name": "Emily Dworkin"
+      },
+      {
+        "name": "Esther Howe"
+      },
+      {
+        "name": "Praneeth Thota"
+      },
+      {
+        "name": "Sriram Nuthi"
+      },
+      {
+        "name": "Angeles Sedano"
+      },
+      {
+        "name": "Jordan P. Davis"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "机器学习（LGBM）联合可穿戴传感器与每日自评预测PTSD症状波动，AI为核心方法，PTSD症状检测属核心心理健康结局。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning",
+        "multimodal"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "prospective_study",
+      "risk_tags": [],
+      "tldr": "74名退伍军人87天前瞻性研究显示，LightGBM结合可穿戴特征与自评数据可高准确识别短期PTSD症状增加（PR AUC 0.86）。",
+      "topic_tags": [
+        "ptsd_trauma",
+        "risk_prediction",
+        "monitoring",
+        "adults"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "prospective",
+    "date": "2026-09-01",
+    "doi": "10.1192/bjo.2026.12055",
+    "domain_score": 5,
+    "evidence_stage": "prospective_study",
+    "ground_truth_quality": "self_report",
+    "id": "W7204919287",
+    "journal": "BJPsych Open",
+    "mh_profile": {
+      "ai_reason": "机器学习（LGBM）联合可穿戴传感器与每日自评预测PTSD症状波动，AI为核心方法，PTSD症状检测属核心心理健康结局。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning",
+        "multimodal"
+      ],
+      "clinical_validation": "prospective",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning",
+          "multimodal"
+        ],
+        "applications": [
+          "risk_prediction",
+          "monitoring"
+        ],
+        "conditions": [
+          "ptsd_trauma"
+        ],
+        "populations": [
+          "adults"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "PR AUC 0.86，精确率0.67，召回率0.64，F1 0.65",
+        "sample": "74名退伍军人（合并PTSD和问题性大麻使用）",
+        "study_design": "前瞻性队列研究，74名退伍军人，87天监测"
+      },
+      "evidence_stage": "prospective_study",
+      "ground_truth_quality": "self_report",
+      "local_recall_audit": {
+        "ai_matches": [],
+        "ai_signal": false,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "post-traumatic stress",
+          "PTSD",
+          "stress"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "74名退伍军人87天前瞻性研究显示，LightGBM结合可穿戴特征与自评数据可高准确识别短期PTSD症状增加（PR AUC 0.86）。",
+      "topic_tags": [
+        "ptsd_trauma",
+        "risk_prediction",
+        "monitoring",
+        "adults"
+      ]
+    },
+    "openalex_id": "W7204919287",
+    "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7D5E6777C1DEB9BF511278981D0D6104/S2056472426120559a.pdf/div-class-title-detecting-short-term-post-traumatic-stress-disorder-symptom-increases-among-veterans-machine-learning-analysis-integrating-wearable-sensor-and-daily-self-report-data-div.pdf",
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2764831659",
+      "ingest_mode": "full",
+      "key": "bjpsych_open",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Detecting short-term post-traumatic stress disorder symptom increases among veterans: machine-learning analysis integrating wearable sensor and daily self-report data",
+    "title_zh": "利用可穿戴传感器与每日自评数据机器学习分析检测退伍军人短期PTSD症状增加",
+    "tldr": "74名退伍军人87天前瞻性研究显示，LightGBM结合可穿戴特征与自评数据可高准确识别短期PTSD症状增加（PR AUC 0.86）。",
+    "topic_tags": [
+      "ptsd_trauma",
+      "risk_prediction",
+      "monitoring",
+      "adults"
+    ],
+    "url": "https://doi.org/10.1192/bjo.2026.12055",
+    "year": 2026
+  },
+  {
     "abstract": "Major depressive disorder (MDD) is a prevalent psychiatric condition with substantial personal and societal impact, yet its identification in large-scale populations still relies primarily on symptom-based clinical assessment. We introduce MD 3 S ( M ajor D epressive D isorder D etection S ystem), an artificial intelligence-assisted screening framework for identifying individuals with documented MDD using routinely collected laboratory and clinical information. Leveraging over 180,000 real-world health assessment records from the UK Biobank, MD 3 S integrates hematological, biochemical, and physiological indicators to distinguish individuals with MDD from non-MDD controls in a retrospective multicenter setting. To evaluate cross-population generalizability, we further validated the framework in two independent external hospital-based cohorts. MD 3 S achieved an accuracy of 86.57% on the internal validation dataset and maintained robust performance across two independent external validation cohorts. Compared with conventional machine learning and deep learning approaches, MD 3 S demonstrates improved predictive performance, stable cross-cohort transferability, and high computational efficiency. These findings highlight that routine laboratory data may support scalable AI-assisted screening strategies for identifying individuals with MDD across diverse clinical and population settings.",
     "ai_reason": "AI辅助MDD筛查框架为核心方法，纳入超18万真实世界健康记录，含内部和两个独立外部验证队列。",
     "ai_score": 5,
