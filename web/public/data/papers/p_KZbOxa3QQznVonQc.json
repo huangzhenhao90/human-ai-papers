@@ -1,6 +1,10 @@
 {
   "abstract": "LLM-based user simulators are increasingly used to evaluate autonomous agents at scale, in place of costly human evaluations. Despite this promise, these simulators exhibit \"assistant bias,\" a tendency to cooperate and pursue task goals. They rarely reproduce the frustration or disengagement that real users exhibit, compromising evaluation validity. Prior work outlines that this bias is baked in during model training, which role-playing prompts fail to override. We analyze this bias from model activations, extracting a user role vector by contrasting how the model represents user versus assistant perspectives on the same dialogue. We observe two findings: (i) the user direction is identifiable in activations, elicits user-like behaviors, and captures characteristics distinct from assistant traits; and (ii) although user-role activation associates with simulation realism and steering strengthens it, it can exaggerate user behaviors and override individual user profiles. Together, our findings provide a representation-level analysis of LLM user simulators, confirming that assistant bias is structurally identifiable and that user behavior can be directionally analyzed.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "可解释AI"
+  ],
   "arxiv_id": "2609.00608",
   "authors": [
     "Daeheon Jeong",
@@ -31,8 +35,13 @@
       "ai_reason": "核心研究LLM用户模拟器偏见,属HCI评估方法",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对LLM用户模拟器中普遍存在的'助手偏差'（即过于配合、缺乏真实用户的挫败或脱离行为）问题，从模型激活层面切入，通过对比同一对话中用户与助手视角的表征差异，提取出可定向操控的用户角色向量。研究发现该用户方向在激活中可识别并能诱发类用户行为，但过度引导会放大用户行为甚至覆盖个体画像，证实助手偏差是结构可识别、用户行为可定向操控的表征级现象。",
+      "topic_tags": [
+        "AI治理",
+        "人机交互(HCI)",
+        "用户研究方法",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -49,7 +58,7 @@
     {
       "channel": "ur",
       "legacy_id": 25714,
-      "revision": "eb900b4ded9853e64eba4a7d739b5f1076f912d4"
+      "revision": "e16a3df4001d7368fd67a0d19b240d6dfd5bc39f"
     }
   ],
   "title": "Investigating Assistant Bias in LLM User Simulators Using a Role Vector",

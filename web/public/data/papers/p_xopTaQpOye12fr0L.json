@@ -1,0 +1,80 @@
+{
+  "abstract": "Wildfire seasons have become 84 days longer in the current days than in the 1970s, causing enormous threats to one's financial status and short- and long-term health. During the fire, public agencies send out emergency messages to provide warnings and orders. Although 26 million people in the US have limited English proficiency, over 80% of those messages are only delivered in English, which can cause disproportionate information distribution and awareness. In order to better serve marginalized communities during emergencies, the authors developed BEACON, a service that provides comprehensive and personalized evacuation guidance, including navigation routes, personalized checklists, and a chatbot in the language that a user uses. Our current system ingests data including fire perimeter information, evacuation order status, and shelter information from Watch Duty. When a user is within a certain proximity from the fire, the system utilizes real-time GPS locations and nearby weather data from the National Oceanic and Atmospheric Administration (NOAA) to predict fire danger levels. The assessment model refreshment are dynamically scheduled based on fire progress and trends using XGBoost. If the location has a likelihood of fire danger, the system sends alerts with evacuation routes outputted from a polygon-avoidant routing pipeline. The application provides a context-aware multilingual agent that users can communicate with and is tightly connected to other features of the application. In addition, based on data that the user entered, the system dynamically generates and checks off personalized reminder items to provide an organized evacuation plan. The system's user interface dynamically changes its language settings based on the language the user most recently used in either setting or chatbot conversation for all the application elements.",
+  "ai_type_tags": [
+    "对话式 AI",
+    "AI 助手",
+    "智能体/Agent",
+    "GenAI"
+  ],
+  "arxiv_id": "2609.03301",
+  "authors": [
+    "Shruti Kulkarni",
+    "Lynn Tong",
+    "Aditi Namboodiripad",
+    "Chelyah Miller",
+    "Helen Lin"
+  ],
+  "authors_full": [
+    {
+      "name": "Shruti Kulkarni"
+    },
+    {
+      "name": "Lynn Tong"
+    },
+    {
+      "name": "Aditi Namboodiripad"
+    },
+    {
+      "name": "Chelyah Miller"
+    },
+    {
+      "name": "Helen Lin"
+    },
+    {
+      "name": "Peeyush Patel"
+    },
+    {
+      "name": "Bogdan Bistriceanu"
+    },
+    {
+      "name": "Diane Myung-kyung Woodbridge"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "多语言AI疏散服务，面向弱势用户的包容性设计",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "针对野火季延长及英语有限能力人群在紧急信息获取上的不平等问题,研究开发了BEACON多语言野火疏散引导服务,集成火场边界、撤离令、避难所等数据,结合用户实时GPS与NOAA气象数据,利用XGBoost动态预测火灾危险等级,提供规避火场多边形的多语言撤离路线、个性化清单与多语言对话代理,实现上下文感知的无障碍应急信息服务。",
+      "topic_tags": [
+        "服务设计",
+        "AI助手",
+        "可访问性",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-03",
+  "doi": null,
+  "id": "p_xopTaQpOye12fr0L",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2609.03301v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 26161,
+      "revision": "e16a3df4001d7368fd67a0d19b240d6dfd5bc39f"
+    }
+  ],
+  "title": "Multilingual Agent System for Inclusive Wildfire Evacuation Guidance",
+  "title_zh": "面向包容性野火疏散的多语言智能体系统",
+  "unified_ingested_at": "2026-09-05T06:47:00.630064Z",
+  "url": "https://arxiv.org/abs/2609.03301v1",
+  "volume": null,
+  "year": 2026
+}

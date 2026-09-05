@@ -1269,6 +1269,80 @@
   },
   {
     "ai_type_tags": [
+      "人机交互",
+      "算法决策",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Anna Taudien",
+      "Andreas Fügener",
+      "Alok Gupta",
+      "Wolfgang Ketter"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "研究人类与AI协作中的任务委派问题。通过实验考察AI系统信息的不同呈现方式（事前AI确定性信息与事后AI结果信息）对委派频率和有效性的影响。发现单独提供任一信息对人机综合绩效无改善甚至有负面影响，但同时提供两种信息能显著提升委派频率和有效性，降低算法厌恶，形成更准确的AI能力心智模型，最终实现人机互补绩效增益。",
+        "topic_tags": [
+          "人机协作",
+          "决策",
+          "算法管理",
+          "信任"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-04",
+    "id": "p_O2D1rTtfasrj3LqD",
+    "journal": "ISR",
+    "pdf_url": null,
+    "title": "Enhancing AI Use: How Complementary System Information Drives Delegation Frequency and Effectiveness",
+    "title_zh": "增强AI使用：互补系统信息如何提升委派频率与有效性",
+    "url": "https://doi.org/10.1287/isre.2024.1330",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "人机协作",
+      "人机交互",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Minji Park",
+      "Seunghyun Yoon",
+      "Hyuk Lim"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "针对长期人机交互中模型隐式更新信息而用户难以检视与控制的问题，提出 Transfiver 架构，通过单一持久状态 S_t 实现人机协同推理。模型以隐式流更新解读交互并增删状态项，人类以显式定向编辑直接修改指定项，二者作用于同一状态影响后续计算。架构将预训练共享参数 θ 与部署中演化的持久状态分离，但向自然语言、关系型及大规模共享状态的扩展仍待探索。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "人机协作",
+          "可解释性"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_6rbYKGjU5M4roTP3",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.03797v1",
+    "title": "Transfiver: Human-AI Co-Inference through a Shared Editable State",
+    "title_zh": "Transfiver：通过共享可编辑状态实现人机协同推理",
+    "url": "https://arxiv.org/abs/2609.03797v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "GenAI",
       "LLM",
       "人机协作"
@@ -1306,9 +1380,350 @@
   },
   {
     "ai_type_tags": [
-      "算法决策",
-      "AI治理",
+      "machine_learning"
+    ],
+    "authors": [
+      "J Havlík",
+      "Michael Murphy",
+      "Taeho Greg Rhee",
+      "Keith Humphreys",
+      "Robert A. Rosenheck"
+    ],
+    "channel_profiles": {
+      "mh": {
+        "ai_score": 4,
+        "domain_score": 5,
+        "tldr": "回顾性验证研究，使用监督机器学习基于EHR类数据识别未治疗物质使用障碍，AI作为主要技术手段。",
+        "topic_tags": [
+          "substance_use",
+          "screening_assessment",
+          "risk_prediction",
+          "clinical_patients"
+        ]
+      }
+    },
+    "channels": [
+      "mh"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_RfVAyBP24jGLUcNY",
+    "journal": "Nature Mental Health",
+    "pdf_url": null,
+    "title": "Supervised machine learning enables identification of people with untreated substance use disorders using EHR-like data",
+    "title_zh": "监督机器学习利用类EHR数据识别未经治疗物质使用障碍患者",
+    "url": "https://doi.org/10.1038/s44220-026-00717-2",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "llm_genai",
+      "nlp"
+    ],
+    "authors": [
+      "Andrea Raballo",
+      "Michele Poletti",
+      "Antonio Preti"
+    ],
+    "channel_profiles": {
+      "mh": {
+        "ai_score": 5,
+        "domain_score": 5,
+        "tldr": "概念性探索LLM如何编码精神病理语义结构以支持心理测量，可能为心理健康评估提供新方法。",
+        "topic_tags": [
+          "transdiagnostic",
+          "screening_assessment"
+        ]
+      }
+    },
+    "channels": [
+      "mh"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_M3pHOOcimn2lpllT",
+    "journal": "Nature Mental Health",
+    "pdf_url": null,
+    "title": "Semantic structure and measurement in large language models for psychopathology and psychometrics",
+    "title_zh": "大语言模型中精神病理与心理测量的语义结构与测量",
+    "url": "https://doi.org/10.1038/s44220-026-00712-7",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "AI助手",
+      "LLM",
+      "智能体/Agent",
+      "对话式AI"
+    ],
+    "authors": [
+      "Yoojin Kim",
+      "Jihyoung Jang",
+      "Hyounghun Kim"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "研究问题：个性化助手应评估用户请求的适当性，但现有冲突检测依赖显式因素，而真实场景中冲突线索常隐式存于知识库。方法：构建PACE数据集，将用户请求与人物画像、自我中心KB事实配对；提出多智能体框架PaceMaker，整合查询重写、多跳图遍历与冲突感知过滤以检索关键证据。核心发现：隐式检索设置阻碍请求与冲突知识的直接关联；PaceMaker通过多智能体协调提升证据检索质量与冲突识别。",
+        "topic_tags": [
+          "AI助手",
+          "人机协作",
+          "AI治理",
+          "伦理"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_i9dKaXaCeWT4uEaI",
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.03293v1",
+    "title": "PACE: Towards Surfacing Hidden Conflicts in User Requests",
+    "title_zh": "PACE：面向揭示用户请求中隐藏的冲突",
+    "url": "https://arxiv.org/abs/2609.03293v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "图像生成",
+      "多模态",
+      "GenAI"
+    ],
+    "authors": [
+      "Adheesh Sunil Juvekar",
+      "Onkar Kishor Susladkar",
+      "Kiet A. Nguyen",
+      "Muntasir Wahed",
+      "Nabeel Bashir"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "研究问题：视频编辑涵盖指令引导与主题引导等多种范式，在统一免训练框架内同时实现高质量编辑仍具挑战。方法：提出EditVid框架，结合稀疏因果记忆保证局部一致、对应关系后注意力令牌注入保持长程身份、软潜空间融合控制编辑范围。核心发现：在FiVE基准上达78.16准确率，显著优于最强免训练基线58.95；用户研究51.8%偏好EditVid，支持风格迁移、属性修改、对象插入等任务。",
+        "topic_tags": [
+          "多模态交互",
+          "用户体验(UX)",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_kQeK6O1Wb8ggMyrl",
+    "journal": "arXiv:cs.CV",
+    "pdf_url": "https://arxiv.org/pdf/2609.04190v1",
+    "title": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
+    "title_zh": "一位编辑器，多种编辑：面向多样化视频编辑的统一免训练框架",
+    "url": "https://arxiv.org/abs/2609.04190v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "智能体/Agent",
+      "GenAI"
+    ],
+    "authors": [
+      "Shruti Kulkarni",
+      "Lynn Tong",
+      "Aditi Namboodiripad",
+      "Chelyah Miller",
+      "Helen Lin"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 4.0,
+        "tldr": "针对野火季延长及英语有限能力人群在紧急信息获取上的不平等问题,研究开发了BEACON多语言野火疏散引导服务,集成火场边界、撤离令、避难所等数据,结合用户实时GPS与NOAA气象数据,利用XGBoost动态预测火灾危险等级,提供规避火场多边形的多语言撤离路线、个性化清单与多语言对话代理,实现上下文感知的无障碍应急信息服务。",
+        "topic_tags": [
+          "服务设计",
+          "AI助手",
+          "可访问性",
+          "人机协作"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_xopTaQpOye12fr0L",
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2609.03301v1",
+    "title": "Multilingual Agent System for Inclusive Wildfire Evacuation Guidance",
+    "title_zh": "面向包容性野火疏散的多语言智能体系统",
+    "url": "https://arxiv.org/abs/2609.03301v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "多模态",
+      "人机协作",
+      "AI 助手"
+    ],
+    "authors": [
+      "Johannes Eschner",
+      "Dominik Eitler",
+      "Max Irendorfer",
+      "Patrick Kramml",
+      "Matthias Zeppelzauer"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 4.0,
+        "tldr": "研究提出针对大规模非结构化数据的探索性分析(EluDA)概念框架,结合查询、可视化与主动知识构建。通过图像数据集的形成性研究,发现用户倾向于自底向上构建分面分类而非空间分类,评估CLIP零样本分类能力,发现其对用户自定义概念分配不可靠但支持语义分组。基于此提出四项人机协作机会:智能采样与可视化、增量与小样本学习、自动类别与分面建议,以及有效的信任校准方法。",
+        "topic_tags": [
+          "可视化",
+          "人机协作",
+          "人机交互(HCI)",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_W7KQsdf9BvpCU_be",
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.03678v1",
+    "title": "Exploratory Unstructured Data Analysis: A Formative Study and Implications for Human-AI Collaboration",
+    "title_zh": "探索性非结构化数据分析：形成性研究及其对人机协作的启示",
+    "url": "https://arxiv.org/abs/2609.03678v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "可解释 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Shai Vardi",
+      "João Sedoc"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "研究聚焦无法获取真实答案时，用户如何判断是否应依赖 LLM 的具体建议。从认识论出发提出\"认知授权\"概念，构建四级依赖证书，区分不稳定、情境依赖、局部支持和广泛支持的建议。验证实验显示该指标与专家判定和众包共识一致，且不同于模型自述置信度，不取决于决策难度，为缺乏客观标准的场景提供可操作的判断依据。",
+        "topic_tags": [
+          "信任",
+          "可解释性",
+          "AI 治理",
+          "人机交互"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_GVWJKvSrHdhfHx5K",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.04127v1",
+    "title": "Epistemic Warrant for LLM Recommendations: Characterizing the Basis for Reliance When Ground Truth Is Unavailable",
+    "title_zh": "LLM推荐的认知依据：真值不可用时依赖基础的特征化",
+    "url": "https://arxiv.org/abs/2609.04127v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "人机协作",
+      "可解释AI"
+    ],
+    "authors": [
+      "Zora Zhiruo Wang",
+      "Apurva Gandhi",
+      "Rulin Shao",
+      "Aspen Chen",
+      "Jonas Mueller"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 5.0,
+        "tldr": "针对AI代理在开放式任务中难以匹配个体专业标准的问题，提出TAHI方法，通过跨会话人机交互信号适应代理上下文与权重，并构建动态评分模块固化用户评价标准。在写作与视觉创作中，30名用户、600个任务的实验显示任务成功率提升4.5–20.9%，评分模块比单独使用LM或人类多捕获16.0–22.3%的失败，且个性化适应可跨用户泛化达8.8%。",
+        "topic_tags": [
+          "人机协作",
+          "个性化",
+          "可解释性",
+          "人机交互(HCI)"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_mc7zkCuL5M7-dY8U",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.04141v1",
+    "title": "Efficient Test-Time Adaptation through Human-AI Interaction",
+    "title_zh": "基于人机交互的高效测试时自适应",
+    "url": "https://arxiv.org/abs/2609.04141v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "智能体/Agent",
+      "多模态",
       "人机交互"
+    ],
+    "authors": [
+      "Zhaoyuan Huang",
+      "Tianjie Ju",
+      "Pengzhou Cheng",
+      "Zheng Wu",
+      "Yansi Li"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "针对GUI智能体面对不可行指令时盲目执行的问题，构建CONFLICTGUI基准（涵盖指令内部与指令-GUI上下文冲突），揭示严重的执行偏向过度顺从现象。提出推理时框架CONFLICTGUARD，包含可行性验证协议与条件动作调制机制，在五个主流智能体上显著提升冲突任务成功率，同时保持正常任务表现。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "智能体",
+          "信任",
+          "可用性"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_xfArPSgnjW0WWmiF",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.03438v1",
+    "title": "Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents",
+    "title_zh": "GUI代理是否知晓何时不行动：面向多模态GUI代理的冲突感知终止",
+    "url": "https://arxiv.org/abs/2609.03438v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "可解释 AI",
+      "人机协作",
+      "AI 治理"
     ],
     "authors": [
       "Maike Lindermayr",
@@ -1327,10 +1742,22 @@
           "信任",
           "人机协作"
         ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "针对算法决策中形式公平与感知公平脱节的挑战,论文以用户为中心设计视角,提出一个跨学科概念框架,融合计算机科学的正式公平指标与社会科学对感知公平、信任、技术接受的规范理论,并嵌入社会技术情境。通过理论文献综合、跨学科工作坊与利益相关者访谈,旨在将计算公平审计与用户中心评估相结合,指导公平算法系统的设计与评价。",
+        "topic_tags": [
+          "AI 治理",
+          "可解释性",
+          "信任",
+          "伦理"
+        ]
       }
     },
     "channels": [
-      "ob"
+      "ob",
+      "ur"
     ],
     "cited_by": 0,
     "date": "2026-09-03",
@@ -1338,8 +1765,45 @@
     "journal": "arXiv:cs.CY",
     "pdf_url": "https://arxiv.org/pdf/2609.03853v1",
     "title": "Bridging Formal and Perceived Fairness: Development of an Interdisciplinary Framework in Algorithmic Decision-Making",
-    "title_zh": "连接形式公平与感知公平：算法决策中跨学科框架的构建",
+    "title_zh": "弥合形式公平与感知公平：算法决策跨学科框架的构建",
     "url": "https://arxiv.org/abs/2609.03853v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "GenAI",
+      "LLM"
+    ],
+    "authors": [
+      "Qing Zhang",
+      "Yifei Huang",
+      "Juyoung Lee",
+      "Thad Starner",
+      "Jun Rekimoto"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 5.0,
+        "tldr": "针对生成式 AI 造成的\"流畅陷阱\"——用户既轻信流畅幻觉又因 AI 披露而贬低准确内容，研究提出\"来源密度\"可视化界面，在文本中展示已验证声明的密度。81人用户研究显示该界面带来+4.15分的真伪辨别力（d=1.82），200样本技术审计发现检索密度不够，\"一致性否决\"才是主要判别信号。主张透明度应从作者披露转向证据可视化。",
+        "topic_tags": [
+          "信任",
+          "可视化",
+          "AI 治理"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "id": "p_J0DICDgDZ9YSnvSi",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.03460v1",
+    "title": "Beyond \"Made with AI\": Visualizing Provenance Density to Mitigate the Transparency Penalty",
+    "title_zh": "超越\"Made with AI\"：可视化来源密度以缓解透明度惩罚",
+    "url": "https://arxiv.org/abs/2609.03460v1",
     "year": 2026
   },
   {
@@ -1830,7 +2294,11 @@
     "year": 2026
   },
   {
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "可解释AI"
+    ],
     "authors": [
       "Daeheon Jeong",
       "Yoonjoo Lee",
@@ -1842,8 +2310,13 @@
       "ur": {
         "ai_score": 5.0,
         "domain_score": 3.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "针对LLM用户模拟器中普遍存在的'助手偏差'（即过于配合、缺乏真实用户的挫败或脱离行为）问题，从模型激活层面切入，通过对比同一对话中用户与助手视角的表征差异，提取出可定向操控的用户角色向量。研究发现该用户方向在激活中可识别并能诱发类用户行为，但过度引导会放大用户行为甚至覆盖个体画像，证实助手偏差是结构可识别、用户行为可定向操控的表征级现象。",
+        "topic_tags": [
+          "AI治理",
+          "人机交互(HCI)",
+          "用户研究方法",
+          "可解释性"
+        ]
       }
     },
     "channels": [
@@ -1934,7 +2407,11 @@
     "year": 2026
   },
   {
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "对话式AI"
+    ],
     "authors": [
       "Yao Liu",
       "Yu He"
@@ -1943,8 +2420,13 @@
       "ur": {
         "ai_score": 5.0,
         "domain_score": 3.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "针对LLM用户模拟器过度配合、导致被测系统以提问数量而非用户参与意愿取胜的评估失效问题，提出披露门控机制：以五个有序门控制信息释放并融合为三层可观测深度。门控行为由训练语料合成分支学习，真实分支提供对话风格。在CompanionBench上，门控移除后12个系统排名位移超出噪声带而各系统分数保持稳定；仅一个候选模拟器同时通过排序保持与分数稳定双重标准，与原模拟器排行榜相关性达0.993。",
+        "topic_tags": [
+          "AI治理",
+          "人机交互(HCI)",
+          "用户研究方法",
+          "对话式AI"
+        ]
       }
     },
     "channels": [
@@ -2119,6 +2601,127 @@
   },
   {
     "ai_type_tags": [
+      "多模态",
+      "人机交互"
+    ],
+    "authors": [
+      "Chen Fang",
+      "Fu Guo",
+      "Meng Yu",
+      "Tony Belpaeme"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 5.0,
+        "tldr": "探究医疗情境中机器人多模态注意行为（如视线、姿态、语音等）对用户体验的影响。考察机器人如何通过展现关怀的注意行为塑造用户感知、信任与互动质量，分析不同注意表现对患者体验的作用机制。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "用户体验(UX)",
+          "多模态交互",
+          "情感计算"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "id": "p_n-24gzF4ReFTkbeC",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "title": "Show Me Your Care: The Impact of Multimodal Attentive Behaviours for Robots on User Experience in a Healthcare Context",
+    "title_zh": "展示你的关怀：多模态注意行为对机器人医疗情境中用户体验的影响",
+    "url": "https://doi.org/10.1016/j.ijhcs.2026.103927",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "GenAI",
+      "多模态"
+    ],
+    "authors": [
+      "Kuan Zhang",
+      "Junping Xu",
+      "Yuming Wang",
+      "Kewei Zhang",
+      "Jinho Yim"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "研究 AI 驱动的 VR 正念应用中，用户主体性（从控制到创作）与生成性在场感及治疗性自我归因之间的关系。探讨当用户在沉浸式 AI 正念情境中扮演不同角色时，对 AI 系统感知及心理疗愈效果的影响，关注主体性、临场感与自我归因的交互机制。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "用户体验(UX)",
+          "情感计算",
+          "AI 采用"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "id": "p_nXDbWkbIRZZ6NKCY",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "title": "From Control to Authorship: Exploring How User Agency Relates to Generative Presence and Therapeutic Self-Attribution in AI-Driven VR Mindfulness",
+    "title_zh": "从控制到作者性：AI驱动VR正念中用户主体性与生成临场感及治疗自我归因",
+    "url": "https://doi.org/10.1016/j.ijhcs.2026.103928",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "人机交互",
+      "GenAI"
+    ],
+    "authors": [
+      "Clin K.Y. Lai",
+      "Simone A. Luchini",
+      "Nina Lauharatanahirun",
+      "Roger Beaty"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "比较人类与AI在协作型创意任务中作为创意伙伴的表现差异，探讨AI作为协作伙伴在创造力方面的能力与局限，以及人类对AI创意伙伴的感知和互动模式。",
+        "topic_tags": [
+          "创意",
+          "人机协作"
+        ]
+      },
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "研究人类在协同创意任务中对AI作为合作伙伴的感知与评价，对比人机与人人协作在创意产出、互动过程与体验上的差异，探讨AI在创意场景中扮演建设性还是破坏性角色的边界条件，为人机协同创意设计提供启示。",
+        "topic_tags": [
+          "人机协作",
+          "人机交互(HCI)",
+          "用户体验(UX)"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "id": "p_hzl4zUKK7iqNBU4K",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Creative or Uncreative Partner: Comparing Humans and AI in Collaborative Creative Tasks",
+    "title_zh": "富有创意还是缺乏创意的伙伴：协作创意任务中人与AI的比较",
+    "url": "https://doi.org/10.1016/j.chb.2026.109172",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "GenAI",
       "人机协作"
     ],
@@ -2210,8 +2813,13 @@
       "ur": {
         "ai_score": 4.0,
         "domain_score": 3.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "从犯罪学视角，采用混合方法对某高校应对AI作弊的政策与策略进行案例研究，考察AI作弊作为新型偏差（novel deviance）的社会建构与文化滞后现象，揭示高校制度在面对生成式AI技术冲击时的应对张力与道德恐慌。",
+        "topic_tags": [
+          "伦理",
+          "AI治理",
+          "AI采用",
+          "在线社区"
+        ]
       }
     },
     "channels": [
@@ -3372,7 +3980,11 @@
     "year": 2026
   },
   {
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "AI 助手",
+      "人机协作"
+    ],
     "authors": [
       "Jared Ren",
       "Soobin Cho"
@@ -3381,8 +3993,13 @@
       "ur": {
         "ai_score": 5.0,
         "domain_score": 5.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "对12名学生进行访谈，考察生成式 AI 在学术专业沟通中的使用。学生将专业邮件等高压场景最大程度委托给 AI，介入程度从纠错到完全代写，并按\"是否像 AI\"和\"是否像自己\"两项标准检查。与无辅助写作模型比较后发现：写作技能的学习循环被移除，消息不再为特定收件人定制，成功交流带来的信心归属从写作者转向系统，由此提出能力难以形成、真实性与信任成为负担两项风险。",
+        "topic_tags": [
+          "访谈",
+          "AI 采用",
+          "AI 依赖",
+          "信任"
+        ]
       }
     },
     "channels": [
@@ -28344,6 +28961,43 @@
   },
   {
     "ai_type_tags": [
+      "人机交互",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Maximilian Wittmann",
+      "Runjie Xie",
+      "Jeanine Kirchner-Krath",
+      "Benedikt Morschheuser"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 5.0,
+        "tldr": "研究在工业仿真游戏情境下，探讨视角采择与拟人化两种策略对人机交互中信任建立的影响。通过实证对比，揭示二者协同或独立促进用户对机器人系统信任感的作用机制，为工业场景下人机协作中的信任设计提供依据。",
+        "topic_tags": [
+          "人机协作",
+          "信任",
+          "人机交互(HCI)",
+          "可用性"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 1,
+    "date": "2026-05",
+    "id": "p_xlVjWoRG7jqLoSNZ",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "title": "Fostering trust in human-robot interaction via perspective-taking and anthropomorphism: an empirical study in an industrial simulation game",
+    "title_zh": "在人机交互中通过视角采择与拟人化培养信任：一项工业仿真游戏实证研究",
+    "url": "https://doi.org/10.1016/j.ijhcs.2026.103807",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "AI开发",
       "AI部署"
     ],
@@ -29210,6 +29864,44 @@
   },
   {
     "ai_type_tags": [
+      "AI助手",
+      "AI客服",
+      "AI推荐",
+      "情感识别"
+    ],
+    "authors": [
+      "Kathleen J. Kennedy",
+      "Hongwei He",
+      "Panagiotis Sarantopoulos"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "基于设计科学研究与实证验证构建购物AI分类法,识别14个维度分属AI能力(知识、智能、自主性、使用广度、产出质量、数据隐私)与准社会技能(个性化、拟人化、沟通模式、情感识别与表达、共情、影响力、互动性)两大元特征,拓展客户体验管理理论,揭示AI通过无需顾客主动参与即可自主预创造价值的新路径,并剖析维度间增强或抵消的复杂交互,为管理者优化购物AI服务体验提供行动框架。",
+        "topic_tags": [
+          "客户体验(CX)",
+          "服务设计",
+          "个性化",
+          "AI采用"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 2,
+    "date": "2026-04-21",
+    "id": "p_pp5OEK7icfY12Zd7",
+    "journal": "JSR",
+    "pdf_url": null,
+    "title": "Shopper AI: Integrating Capabilities and Parasocial Skills",
+    "title_zh": "Shopper AI：整合能力与类社交技能",
+    "url": "https://doi.org/10.1177/10946705261433842",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "LLM",
       "ChatGPT"
     ],
@@ -29841,6 +30533,46 @@
     "title": "First-See-Then-Design: A Multi-Stakeholder View for Optimal Performance-Fairness Trade-Offs",
     "title_zh": "先审视后设计：多方利益相关者视角下的最优性能-公平权衡",
     "url": "https://arxiv.org/abs/2604.14035v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "对话式 AI",
+      "智能体/Agent",
+      "多模态",
+      "AI 助手"
+    ],
+    "authors": [
+      "Tamil Selvan Gunasekaran",
+      "Maryam Doosti",
+      "Kunal Gupta",
+      "Huidong Bai",
+      "Yun Suen Pai"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "针对远程会议易疲劳、社会临场感低的问题，提出AI中介促进器CLARA，实时多模态评估群体认知负荷与情感状态并提供适应性提示。N=48对照实验显示，认知反馈与情感反馈结合的CAF条件显著提升任务绩效、降低心理负荷并增强社会临场感，验证了人机协同促进远程协作的有效性。",
+        "topic_tags": [
+          "人机协作",
+          "情感计算",
+          "多模态交互",
+          "人机交互(HCI)"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 1,
+    "date": "2026-04-15",
+    "id": "p_b3nkK1Y89PnWaDR7",
+    "journal": "TOCHI",
+    "pdf_url": null,
+    "title": "CLARA: AI-Mediated Facilitation for Enhancing Group Cognition and Cohesion in Remote Collaboration",
+    "title_zh": "CLARA：AI中介的促进机制以增强远程协作中的群体认知与凝聚力",
+    "url": "https://doi.org/10.1145/3786325",
     "year": 2026
   },
   {
@@ -33022,6 +33754,45 @@
     "title": "Critical Thinking in the Age of Artificial Intelligence: A Survey-Based Study with Machine Learning Insights",
     "title_zh": "人工智能时代的批判性思维：一项基于调查的机器学习研究",
     "url": "https://arxiv.org/abs/2604.18590v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "AI 推荐",
+      "推荐算法",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Gabriel Garlough-Shah",
+      "Jong Inn Park",
+      "Shirley Anugrah Hayati",
+      "Dongyeop Kang",
+      "Jisu Huh"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "聚焦消费者与AI驱动搜索引擎的互动参与行为，探讨其对搜索广告研究范式与产业实践的影响。研究或涉及用户对AI搜索的信任、采纳与互动模式如何重塑广告投放逻辑，为未来搜索广告的策略与设计提供方向性启示。",
+        "topic_tags": [
+          "消费者行为",
+          "AI 采用",
+          "广告",
+          "人机交互(HCI)"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 1,
+    "date": "2026-03-18",
+    "id": "p_vY-y73CF2nyKtdWU",
+    "journal": "JAR",
+    "pdf_url": null,
+    "title": "Consumer Engagement With AI-Powered Search Engines: Implications for the Future of Search Advertising Research and Practice",
+    "title_zh": "消费者与AI驱动搜索引擎的互动：对搜索广告研究与实践未来的启示",
+    "url": "https://doi.org/10.1080/00218499.2025.2589501",
     "year": 2026
   },
   {
@@ -37959,7 +38730,10 @@
     "year": 2026
   },
   {
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机交互",
+      "AI助手"
+    ],
     "authors": [
       "Hsueh-Yi Lai",
       "Ching-Hao Chou",
@@ -37971,8 +38745,13 @@
       "ur": {
         "ai_score": 3.0,
         "domain_score": 4.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "在条件自动化驾驶场景下，考察驾驶员准备度不足（readiness deprivation）对接管行为的影响，并比较不同时间预算条件下接管表现的差异。研究关注当驾驶员未能进入充分准备状态时，剩余接管时间如何影响其反应与操控绩效，为自动驾驶人机界面设计及接管安全策略提供依据。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "可用性",
+          "信任",
+          "可用性测试"
+        ]
       }
     },
     "channels": [
@@ -40837,6 +41616,70 @@
   },
   {
     "ai_type_tags": [
+      "对话式AI",
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Shitao Fang",
+      "Xingyu Liu",
+      "Takeo Igarashi",
+      "Koji Yatani"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "梳理多人对话中的人际交互机制,探讨其向对话式智能体设计迁移的挑战,聚焦多方参与场景下智能体的角色(persona)设计策略,为人机多轮多角色对话体验优化提供理论参考。",
+        "topic_tags": [
+          "对话式AI",
+          "人机交互(HCI)",
+          "智能体"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 2,
+    "date": "2026-01",
+    "id": "p_NZz97_MpRYMFXFPn",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "title": "Unraveling multiparty conversations: From human interaction mechanisms to conversational agent challenges and persona design",
+    "title_zh": "解析多方对话：从人际交互机制到对话代理的挑战与角色设计",
+    "url": "https://doi.org/10.1016/j.ijhcs.2025.103719",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [],
+    "authors": [
+      "Xinyi Chen",
+      "Yao Yao"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 4.0,
+        "tldr": null,
+        "topic_tags": []
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 1,
+    "date": "2026-01",
+    "id": "p_6yt5l15uC-dQmUvm",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "title": "To ‘errr’ is robot: How humans interpret hesitations in the speech of a humanoid robot",
+    "title_zh": "机器人也会\"呃\"：人类如何理解类人机器人语音中的迟疑",
+    "url": "https://doi.org/10.1016/j.ijhcs.2025.103681",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "算法管理",
       "算法决策"
     ],
@@ -40869,6 +41712,55 @@
     "title": "Till Tech Do Us Part: Betrayal Aversion and Its Role in Algorithm Use",
     "title_zh": "技术分离之际：背叛厌恶及其在算法使用中的作用",
     "url": "https://doi.org/10.1287/mnsc.2022.03510",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Ting-Han Lin",
+      "Yuval Rubin Kopelman",
+      "Madeline Busse",
+      "Sarah Sebo",
+      "Hadas Erel"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 3.0,
+        "domain_score": 3.0,
+        "tldr": "研究在双人决策任务中，机器人表达同意或不同意对人类之间人际亲密度的影响，考察机器人作为第三方介入如何调节人际关系，揭示机器人社会行为对人际动态的溢出效应。",
+        "topic_tags": [
+          "人机协作",
+          "决策",
+          "人机交互"
+        ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "研究在双人协作决策任务中，机器人对人类对话表达同意或不同意时，会如何影响两位参与者彼此之间的人际亲密度与社会关系。聚焦人机交互中第三方机器人介入对人类群体动态的中介效应，揭示机器人立场表达对人际感知的调节作用。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "用户研究方法",
+          "信任",
+          "AI 助手"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 3,
+    "date": "2026-01",
+    "id": "p_CEZyZuwLNpPVGKtM",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "The impact of a robot's agreement (or disagreement) on human-human interpersonal closeness in a two-person decision-making task",
+    "title_zh": "机器人同意（或不同意）对双人决策任务中人人亲密关系的影响",
+    "url": "https://doi.org/10.1016/j.chb.2025.108807",
     "year": 2026
   },
   {
@@ -49306,7 +50198,11 @@
     "year": 2025
   },
   {
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "可解释AI"
+    ],
     "authors": [
       "Danial Amin",
       "Joni Salminen",
@@ -49318,8 +50214,14 @@
       "ur": {
         "ai_score": 5.0,
         "domain_score": 5.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "探讨生成式AI在HCI用户研究中自动构建用户画像(AI personas)的局限性，列举并剖析算法化用户表征面临的二十项挑战，包括刻板印象、代表性偏差、可解释性不足、伦理风险及对设计实践的潜在误导，主张审慎对待AI生成画像，强调真人研究在用户理解中的不可替代性。",
+        "topic_tags": [
+          "用户画像",
+          "人机交互(HCI)",
+          "用户研究方法",
+          "伦理",
+          "AI治理"
+        ]
       }
     },
     "channels": [
@@ -55716,6 +56618,45 @@
   },
   {
     "ai_type_tags": [
+      "智能体/Agent",
+      "AI 助手",
+      "人机交互"
+    ],
+    "authors": [
+      "Laura Villa",
+      "Ramón Hervás",
+      "Luis Cabañero",
+      "Jesús Fontecha",
+      "Gustavo López"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 5.0,
+        "tldr": "评估面向老年人护理的社会辅助机器人在不同主动交互水平下的用户采纳情况，分析主动性与接受度、使用意愿之间的关系，为老年照护场景中的机器人交互策略设计提供参考。",
+        "topic_tags": [
+          "AI 采用",
+          "人机交互(HCI)",
+          "儿童/老人/无障碍",
+          "服务设计"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 3,
+    "date": "2025-08-18",
+    "id": "p_sqY4BzogYPpZGza1",
+    "journal": "BIT",
+    "pdf_url": null,
+    "title": "Evaluating proactivity levels in socially assistive robots for elderly care: a user adoption assessment",
+    "title_zh": "评估老年护理社会辅助机器人的主动性水平：用户采纳度评估",
+    "url": "https://doi.org/10.1080/0144929x.2025.2546976",
+    "year": 2025
+  },
+  {
+    "ai_type_tags": [
       "GenAI",
       "LLM",
       "多模态",
@@ -58055,8 +58996,8 @@
   },
   {
     "ai_type_tags": [
-      "机器学习",
-      "人机交互"
+      "智能体/Agent",
+      "可解释AI"
     ],
     "authors": [
       "Heyuan Sun",
@@ -58097,7 +59038,7 @@
     "journal": "CHB",
     "pdf_url": null,
     "title": "Who is to blame for AV crashes? Public perceptions of blame attribution using text mining based on social media",
-    "title_zh": "谁该为自动驾驶汽车事故负责？基于社交媒体文本挖掘的公众归因感知",
+    "title_zh": "谁应为自动驾驶汽车事故负责：基于社交媒体文本挖掘的公众归因感知",
     "url": "https://doi.org/10.1016/j.chb.2025.108627",
     "year": 2025
   },
@@ -67799,7 +68740,9 @@
   },
   {
     "ai_type_tags": [
-      "GenAI"
+      "GenAI",
+      "LLM",
+      "AI 治理"
     ],
     "authors": [
       "Erik Hermann",
@@ -67816,12 +68759,24 @@
           "消费者权益",
           "价值共创"
         ]
+      },
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 3.0,
+        "tldr": "从营销与利益相关者视角探讨如何赋能 GenAI 生态系统中的各方主体，分析 GenAI 采纳过程中各利益相关者的角色、权力与价值共创机制，提出提升协同与治理的策略。",
+        "topic_tags": [
+          "AI 治理",
+          "AI 采用",
+          "营销",
+          "消费者行为"
+        ]
       }
     },
     "channels": [
-      "ob"
+      "ob",
+      "ur"
     ],
-    "cited_by": 7,
+    "cited_by": 12,
     "date": "2025-03-17",
     "id": "p_Ir_Azy0NqnqyMgaq",
     "journal": "JAMS",
@@ -68920,6 +69875,44 @@
     "title": "Targeted Advertising as Implicit Recommendation: Strategic Mistargeting and Personal Data Opt-out",
     "title_zh": "作为隐性推荐的定向广告：策略性错误定位与个人数据退出机制",
     "url": "https://doi.org/10.1287/mksc.2023.0117",
+    "year": 2025
+  },
+  {
+    "ai_type_tags": [
+      "可解释 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Francisco Maria Calisto",
+      "João Maria Abrantes",
+      "Carlos Santiago",
+      "Nuno J. Nunes",
+      "Jacinto C. Nascimento"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "针对乳腺影像诊断中临床医生与AI的交互场景，研究如何根据医生专业水平自适应地调整解释内容与方式，使AI输出的解释能匹配不同专业层级用户的需求，从而提升临床AI辅助诊断的可用性与信任度。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "可解释性",
+          "人机协作",
+          "个性化"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 41,
+    "date": "2025-03",
+    "id": "p_9G50aZ8sxicvTiF5",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "title": "Personalized explanations for clinician-AI interaction in breast imaging diagnosis by adapting communication to expertise levels",
+    "title_zh": "乳腺影像诊断中临床医生与AI交互的个性化解释：依据专业水平调整沟通",
+    "url": "https://doi.org/10.1016/j.ijhcs.2025.103444",
     "year": 2025
   },
   {
@@ -73089,8 +74082,9 @@
   {
     "ai_type_tags": [
       "ChatGPT",
-      "GenAI",
-      "LLM"
+      "LLM",
+      "对话式 AI",
+      "GenAI"
     ],
     "authors": [
       "Ruofei Zhang",
@@ -84975,6 +85969,40 @@
   },
   {
     "ai_type_tags": [
+      "AI 助手",
+      "人机交互"
+    ],
+    "authors": [
+      "Katrijn Gielens"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "聚焦零售场景下AI系统的落地应用，探讨人机交互在AI实际部署中扮演的关键角色，强调人作为价值创造与决策环节的核心作用，为零售业AI的有效实施提供人因视角。",
+        "topic_tags": [
+          "人机交互(HCI)",
+          "人机协作",
+          "AI 采用",
+          "服务体验"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 6,
+    "date": "2024-06",
+    "id": "p__IdBtldUBlVYR4Hj",
+    "journal": "JR",
+    "pdf_url": null,
+    "title": "Making AI work in retail: The vital role of human interaction",
+    "title_zh": "让AI在零售业发挥作用：人机交互的关键作用",
+    "url": "https://doi.org/10.1016/j.jretai.2024.05.006",
+    "year": 2024
+  },
+  {
+    "ai_type_tags": [
       "机器学习",
       "算法决策"
     ],
@@ -89303,6 +90331,44 @@
   },
   {
     "ai_type_tags": [
+      "AI 客服",
+      "可解释 AI",
+      "AI 治理"
+    ],
+    "authors": [
+      "Lena Katharina Wilms",
+      "Katharina Gerl",
+      "Anke Stoll",
+      "Marc Ziegele"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 4.0,
+        "tldr": "通过对公共在线讨论区版主的访谈，调研其对有毒语言自动分类技术的接受度与透明度诉求，揭示版主在 AI 辅助内容审核中对可解释性、可控性及人机分工边界的实际期望与担忧，为内容治理 AI 设计提供依据。",
+        "topic_tags": [
+          "在线社区",
+          "访谈",
+          "AI 治理",
+          "可解释性"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 6,
+    "date": "2024-02-18",
+    "id": "p_dXvUDZaU_-HGiHRS",
+    "journal": "HCI",
+    "pdf_url": null,
+    "title": "Technology acceptance and transparency demands for toxic language classification – interviews with moderators of public online discussion fora",
+    "title_zh": "有害语言分类的技术接受度与透明度需求——公共在线讨论论坛版主访谈研究",
+    "url": "https://doi.org/10.1080/07370024.2024.2307610",
+    "year": 2024
+  },
+  {
+    "ai_type_tags": [
       "LLM",
       "生成式AI",
       "共写作"
@@ -92222,6 +93288,43 @@
     "title": "No prejudice! Fair Federated Graph Neural Networks for Personalized Recommendation",
     "title_zh": "拒绝偏见！面向个性化推荐的公平联邦图神经网络",
     "url": "https://arxiv.org/abs/2312.10080v2",
+    "year": 2023
+  },
+  {
+    "ai_type_tags": [
+      "可解释 AI",
+      "人机协作"
+    ],
+    "authors": [
+      "Marc-André Zöller",
+      "Waldemar Titov",
+      "Thomas Schlegel",
+      "Marco F. Huber"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "针对 AutoML 系统因透明度不足导致用户不信任的问题，通过对 36 位领域专家、数据科学家与 AutoML 研究者的需求分析，提出 XAutoML 交互式可视化分析工具，结合 XAI 技术解释 AutoML 优化过程与生成的 ML 流水线，并与 JupyterLab 集成支持定制可视化，用户研究验证其有效性。",
+        "topic_tags": [
+          "可视化",
+          "可解释性",
+          "人机协作",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 19,
+    "date": "2023-12-08",
+    "id": "p_nObef3umLzc62ftp",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "title": "XAutoML: A Visual Analytics Tool for Understanding and Validating Automated Machine Learning",
+    "title_zh": "XAutoML：一种用于理解与验证自动化机器学习的可视化分析工具",
+    "url": "https://doi.org/10.1145/3625240",
     "year": 2023
   },
   {
@@ -96198,6 +97301,52 @@
     "title": "Distributionally Robust Batch Contextual Bandits",
     "title_zh": "分布鲁棒批量上下文赌博机",
     "url": "https://doi.org/10.1287/mnsc.2023.4678",
+    "year": 2023
+  },
+  {
+    "ai_type_tags": [
+      "机器学习",
+      "人机协作",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Pi-Jung Hsieh"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "基于整合性技术就绪度视角，探讨医生使用AI辅助诊断意愿的关键前因。整合个体、技术、组织及社会等多维度就绪度因素，构建结构方程模型检验各因素对使用意图的影响路径与作用机制。",
+        "topic_tags": [
+          "决策",
+          "创新",
+          "人机协作",
+          "信任"
+        ]
+      },
+      "ur": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "研究医师对AI辅助诊断的采纳意愿，基于整合性准备度视角，识别影响医生使用意愿的多重决定因素，涵盖个体、技术、组织及任务等层面，为医疗AI的临床落地提供理论依据。",
+        "topic_tags": [
+          "AI 采用",
+          "人机交互(HCI)",
+          "用户研究方法"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 50,
+    "date": "2023-10",
+    "id": "p_yiQh2BtZ2FLekao6",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Determinants of physicians’ intention to use AI-assisted diagnosis: An integrated readiness perspective",
+    "title_zh": "医生使用AI辅助诊断意愿的决定因素：基于整合准备度视角",
+    "url": "https://doi.org/10.1016/j.chb.2023.107868",
     "year": 2023
   },
   {
@@ -100360,6 +101509,54 @@
   },
   {
     "ai_type_tags": [
+      "机器学习",
+      "推荐算法"
+    ],
+    "authors": [
+      "Han Luo",
+      "Xiao Meng",
+      "Yifei Zhao",
+      "Meng Cai"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "基于中国新冠疫情期间数据，探讨情感倾向对多维度信息传播的影响。运用情感分析与传播建模方法，揭示不同情感极性在社交媒体跨平台、跨层级传播中的差异化作用及扩散机制。",
+        "topic_tags": [
+          "消费者行为",
+          "营销",
+          "推荐系统"
+        ]
+      },
+      "ur": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "基于中国新冠疫情相关数据，探讨情感因素对多维度信息传播的影响，分析不同情感倾向在社交媒体上如何驱动信息的扩散、转发与再生产，揭示情绪在公共危机信息传播中的差异化作用机制。",
+        "topic_tags": [
+          "社交媒体",
+          "情感计算",
+          "信息传播",
+          "消费者行为"
+        ]
+      }
+    },
+    "channels": [
+      "ob",
+      "ur"
+    ],
+    "cited_by": 44,
+    "date": "2023-07",
+    "id": "p_YrenFwberFOYX-X_",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Exploring the impact of sentiment on multi-dimensional information dissemination using COVID-19 data in China",
+    "title_zh": "探索情感对多维度信息传播的影响：基于中国新冠疫情数据",
+    "url": "https://doi.org/10.1016/j.chb.2023.107733",
+    "year": 2023
+  },
+  {
+    "ai_type_tags": [
       "双机器学习",
       "因果推断",
       "机器学习"
@@ -100515,6 +101712,40 @@
     "title": "Cold Start to Improve Market Thickness on Online Advertising Platforms: Data-Driven Algorithms and Field Experiments",
     "title_zh": "冷启动改善在线广告平台的市场厚度：数据驱动算法与现场实验",
     "url": "https://doi.org/10.1287/mnsc.2022.4550",
+    "year": 2023
+  },
+  {
+    "ai_type_tags": [
+      "多模态"
+    ],
+    "authors": [
+      "Jaehye Suk",
+      "Xu Li",
+      "Hyesun Hwang"
+    ],
+    "channel_profiles": {
+      "ur": {
+        "ai_score": 3.0,
+        "domain_score": 5.0,
+        "tldr": "通过对两本权威消费研究期刊共245篇摘要的系统性综述，梳理消费者赋权研究的发展脉络；引用网络分析显示研究主要集中于金融与教育领域，主题建模识别出六大主题，当前热点为金融素养教育与饮食行为/营养。",
+        "topic_tags": [
+          "消费者行为",
+          "用户研究方法",
+          "可视化"
+        ]
+      }
+    },
+    "channels": [
+      "ur"
+    ],
+    "cited_by": 4,
+    "date": "2023-07",
+    "id": "p_64D0YlnHxb0Pk7h8",
+    "journal": "JCA",
+    "pdf_url": null,
+    "title": "A systematic review of consumer empowerment research trends: Evidence from esteemed consumer studies journals",
+    "title_zh": "消费者赋权研究趋势的系统综述：来自知名消费者研究期刊的证据",
+    "url": "https://doi.org/10.1111/joca.12552",
     "year": 2023
   },
   {
@@ -101623,7 +102854,7 @@
     "journal": "THMS",
     "pdf_url": null,
     "title": "How Resource Demands of Nondriving-Related Tasks and Engagement Time Affect Drivers’ Physiological Response and Takeover Performance in Conditional Automated Driving",
-    "title_zh": null,
+    "title_zh": "非驾驶任务资源需求与参与时长对条件自动驾驶中驾驶员生理反应与接管绩效的影响",
     "url": "https://doi.org/10.1109/thms.2023.3268095",
     "year": 2023
   },
@@ -106761,6 +107992,39 @@
   },
   {
     "ai_type_tags": [
+      "机器学习",
+      "人机交互"
+    ],
+    "authors": [
+      "Inka Schmitz",
+      "Wolfgang Einhäuser"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "研究视频会议场景下的视线估计方法，识别远程沟通中用户注视方向与注意力焦点。聚焦算法精度、鲁棒性与实时性，为远程协作注意力评估、人机交互优化及在线沟通效果分析提供技术支持。",
+        "topic_tags": [
+          "人机协作",
+          "人机交互"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 14,
+    "date": "2023-02",
+    "id": "p_dgXcDWaApPuryWd1",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Gaze estimation in videoconferencing settings",
+    "title_zh": "视频会议场景下的视线估计",
+    "url": "https://doi.org/10.1016/j.chb.2022.107517",
+    "year": 2023
+  },
+  {
+    "ai_type_tags": [
       "AI 助手",
       "推荐算法",
       "多模态"
@@ -107496,6 +108760,40 @@
     "title": "Tools or peers? Impacts of anthropomorphism level and social role on emotional attachment and disclosure tendency towards intelligent agents",
     "title_zh": "工具还是同伴？拟人化程度与社会角色对智能体情感依恋和披露倾向的影响",
     "url": "https://doi.org/10.1016/j.chb.2022.107415",
+    "year": 2023
+  },
+  {
+    "ai_type_tags": [
+      "机器学习",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Linda Pospíšilová",
+      "Lucie Rohlíková"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 3.0,
+        "domain_score": 3.0,
+        "tldr": "探讨在高等教育改革中实施电子档案袋（ePortfolio）的路径与效果，并结合学习分析技术提升教学反馈与个性化学习。研究关注ePortfolio在学习评估与学生发展中的作用，以及学习分析如何赋能教育实践。",
+        "topic_tags": [
+          "教育",
+          "组织学习",
+          "知识管理"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 20,
+    "date": "2023-01",
+    "id": "p_sVboN3Nzv5xNhqby",
+    "journal": "CHB",
+    "pdf_url": null,
+    "title": "Reforming higher education with ePortfolio implementation, enhanced by learning analytics",
+    "title_zh": null,
+    "url": "https://doi.org/10.1016/j.chb.2022.107449",
     "year": 2023
   },
   {

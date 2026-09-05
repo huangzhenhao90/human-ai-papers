@@ -1,0 +1,63 @@
+{
+  "abstract": "Personalized assistants should not only comply with user requests but also assess whether those requests are appropriate given the user's current circumstances. However, prior work has primarily focused on accurately executing requests, overlooking the need for assistants to account for context and engage in conflict-based refusal. Furthermore, while existing work on conflict or safety detection relies on explicitly provided factors, real-world scenarios often involve implicit factors that must be retrieved from a knowledge base (KB). To this end, we introduce Personalized Assistants for Conflict Evaluation (PACE), a dataset for evaluating whether models can identify latent constraints, expressed as egocentric knowledge or events, that render seemingly reasonable user requests inappropriate. PACE pairs user requests grounded in well-defined personas with egocentric KB facts, requiring models to integrate contextual evidence to determine whether a request is conflicting. This implicit retrieval setting hinders the direct association between user requests and conflict-inducing knowledge, making it difficult for existing models to identify relevant user-specific facts. To address this challenge, we further propose PaceMaker, a multi-agent framework in which specialized agents coordinate across query reformulation, multi-hop graph traversal, and conflict-aware filtering to retrieve contextually decisive evidence. Experiments on PACE evaluate both evidence retrieval quality and conflict decision accuracy, showing that PaceMaker consistently outperforms existing approaches.",
+  "ai_type_tags": [
+    "AI助手",
+    "LLM",
+    "智能体/Agent",
+    "对话式AI"
+  ],
+  "arxiv_id": "2609.03293",
+  "authors": [
+    "Yoojin Kim",
+    "Jihyoung Jang",
+    "Hyounghun Kim"
+  ],
+  "authors_full": [
+    {
+      "name": "Yoojin Kim"
+    },
+    {
+      "name": "Jihyoung Jang"
+    },
+    {
+      "name": "Hyounghun Kim"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心是AI助手冲突检测数据集，用户视角较弱",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究问题：个性化助手应评估用户请求的适当性，但现有冲突检测依赖显式因素，而真实场景中冲突线索常隐式存于知识库。方法：构建PACE数据集，将用户请求与人物画像、自我中心KB事实配对；提出多智能体框架PaceMaker，整合查询重写、多跳图遍历与冲突感知过滤以检索关键证据。核心发现：隐式检索设置阻碍请求与冲突知识的直接关联；PaceMaker通过多智能体协调提升证据检索质量与冲突识别。",
+      "topic_tags": [
+        "AI助手",
+        "人机协作",
+        "AI治理",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-03",
+  "doi": null,
+  "id": "p_i9dKaXaCeWT4uEaI",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.03293v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 26162,
+      "revision": "e16a3df4001d7368fd67a0d19b240d6dfd5bc39f"
+    }
+  ],
+  "title": "PACE: Towards Surfacing Hidden Conflicts in User Requests",
+  "title_zh": "PACE：面向揭示用户请求中隐藏的冲突",
+  "unified_ingested_at": "2026-09-05T06:47:00.630064Z",
+  "url": "https://arxiv.org/abs/2609.03293v1",
+  "volume": null,
+  "year": 2026
+}

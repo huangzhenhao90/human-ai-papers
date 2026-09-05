@@ -1,0 +1,61 @@
+{
+  "abstract": "Long-term human-AI interaction is difficult because the information that guides inference is updated implicitly by the model and is not directly inspectable or controllable by the user. We introduce the TRANSparent Framework for Interactive, Verifiable, Editable Representation (Transfiver), an architecture for human-AI co-inference through a shared editable state. Its central idea is that interaction-specific information is maintained in a single persistent state $(S_t)$ that both the model and the human update.   Transfiver distinguishes two modes of state evolution. In an implicit stream update, the model interprets ongoing interaction and decides whether new information revises an existing state item or creates a new one. In an explicit directed edit, a human inspects and modifies an addressed item. Both act on the same underlying state, so a human correction changes the state that subsequent computation reads, rather than adding another instruction or separate record.   The architecture separates shared parameters $(θ)$, learned before ordinary use, from the persistent state $(S_t)$, which evolves during deployment without parameter retraining. Extending Transfiver to rich natural-language, relational, and large-scale shared states remains open.",
+  "ai_type_tags": [
+    "人机协作",
+    "人机交互",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2609.03797",
+  "authors": [
+    "Minji Park",
+    "Seunghyun Yoon",
+    "Hyuk Lim"
+  ],
+  "authors_full": [
+    {
+      "name": "Minji Park"
+    },
+    {
+      "name": "Seunghyun Yoon"
+    },
+    {
+      "name": "Hyuk Lim"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "人-AI协同推理架构，HCI交互核心议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对长期人机交互中模型隐式更新信息而用户难以检视与控制的问题，提出 Transfiver 架构，通过单一持久状态 S_t 实现人机协同推理。模型以隐式流更新解读交互并增删状态项，人类以显式定向编辑直接修改指定项，二者作用于同一状态影响后续计算。架构将预训练共享参数 θ 与部署中演化的持久状态分离，但向自然语言、关系型及大规模共享状态的扩展仍待探索。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可解释性"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-03",
+  "doi": null,
+  "id": "p_6rbYKGjU5M4roTP3",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.03797v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 26157,
+      "revision": "e16a3df4001d7368fd67a0d19b240d6dfd5bc39f"
+    }
+  ],
+  "title": "Transfiver: Human-AI Co-Inference through a Shared Editable State",
+  "title_zh": "Transfiver：通过共享可编辑状态实现人机协同推理",
+  "unified_ingested_at": "2026-09-05T06:47:00.630064Z",
+  "url": "https://arxiv.org/abs/2609.03797v1",
+  "volume": null,
+  "year": 2026
+}

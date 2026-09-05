@@ -1,0 +1,85 @@
+{
+  "abstract": "Graphical user interface (GUI) agents are increasingly used to execute natural-language instructions on user interfaces, yet real users may issue infeasible instructions due to benign mistakes. A reliable agent should not only know how to act, but also when not to act. In this work, we introduce CONFLICTGUI, a benchmark covering instruction-internal conflicts and instruction-GUI context conflicts to study conflict-aware termination. Our evaluation reveals severe execution-biased overcompliance: agents that perform well on feasible tasks often continue to execute blindly under conflicting instructions. To mitigate this behavior, we propose CONFLICTGUARD, an inference-time framework that aligns an agent's feasibility awareness with its action generation. CONFLICTGUARD contains two coupled components: a feasibility verification protocol that guides the agent to assess instruction logic and GUI-side evidence before acting, and a conditional action modulation mechanism that steers agents from over-compliant execution into termination-oriented behavior. Experiments across five widely-used agents demonstrate that CONFLICTGUARD improves average conflict task success rate significantly, while preserving normal GUI-task performance. These results validate that a lightweight inference-time intervention can substantially boost GUI Agent's competence to identify inappropriate execution scenarios and refrain from unnecessary actions.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "多模态",
+    "人机交互"
+  ],
+  "arxiv_id": "2609.03438",
+  "authors": [
+    "Zhaoyuan Huang",
+    "Tianjie Ju",
+    "Pengzhou Cheng",
+    "Zheng Wu",
+    "Yansi Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhaoyuan Huang"
+    },
+    {
+      "name": "Tianjie Ju"
+    },
+    {
+      "name": "Pengzhou Cheng"
+    },
+    {
+      "name": "Zheng Wu"
+    },
+    {
+      "name": "Yansi Li"
+    },
+    {
+      "name": "Chuanbiao Song"
+    },
+    {
+      "name": "Jun Lan"
+    },
+    {
+      "name": "Huijia Zhu"
+    },
+    {
+      "name": "Weiqiang Wang"
+    },
+    {
+      "name": "Zhuosheng Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "GUI智能体冲突终止，HCI议题但评估以技术指标为主",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对GUI智能体面对不可行指令时盲目执行的问题，构建CONFLICTGUI基准（涵盖指令内部与指令-GUI上下文冲突），揭示严重的执行偏向过度顺从现象。提出推理时框架CONFLICTGUARD，包含可行性验证协议与条件动作调制机制，在五个主流智能体上显著提升冲突任务成功率，同时保持正常任务表现。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "智能体",
+        "信任",
+        "可用性"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-03",
+  "doi": null,
+  "id": "p_xfArPSgnjW0WWmiF",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.03438v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 26169,
+      "revision": "e16a3df4001d7368fd67a0d19b240d6dfd5bc39f"
+    }
+  ],
+  "title": "Do GUI Agents Know When Not to Act? Enabling Conflict-Aware Termination for Multimodal GUI Agents",
+  "title_zh": "GUI代理是否知晓何时不行动：面向多模态GUI代理的冲突感知终止",
+  "unified_ingested_at": "2026-09-05T06:47:00.630064Z",
+  "url": "https://arxiv.org/abs/2609.03438v1",
+  "volume": null,
+  "year": 2026
+}
