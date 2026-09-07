@@ -16543,6 +16543,261 @@
     "year": 2026
   },
   {
+    "abstract": "Mixed-initiative Visual Analytics (VA) systems empower human users by interleaving human intuition with software agents and their machine intelligence. However, the development and rigorous evaluation of such systems remain constrained by engineering overhead. Developers must, e.g., implement complex, low-level state synchronization to manage asynchronous agent behaviors, while researchers struggle to capture the multimodal provenance required to study and evaluate human-AI collaboration. We present MIVAIS, a dual-layered research platform designed to abstract the structural complexities of mixed-initiative VA. First, it contributes a computational Infrastructure that standardizes human-software agent interaction, state synchronization, and communication between the agents. Second, it provides a declarative Study Environment that automatically logs multimodal human-AI telemetry - including application/system state, screen capture, audio, and additional sensor data - enabling seamless, in-situ user studies and post-session analysis. We technically validate our infrastructure by replicating three state-of-the-art systems (Podium, Voyager 2, and ProactiveVA). Furthermore, we evaluate the framework's expressiveness and efficiency through expert case studies with HCI and VA researchers, demonstrating how MIVAIS effectively lowers the barrier to prototyping and evaluating intelligent, co-adaptive interfaces.",
+    "ai_reason": "人-AI协作可视分析研究平台，HCI基础设施",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互",
+      "多模态"
+    ],
+    "authors": [
+      "Tobias Stähle",
+      "Simon Schneider",
+      "Rita Sevastjanova",
+      "Mennatallah El-Assady"
+    ],
+    "authors_full": [
+      {
+        "name": "Tobias Stähle"
+      },
+      {
+        "name": "Simon Schneider"
+      },
+      {
+        "name": "Rita Sevastjanova"
+      },
+      {
+        "name": "Mennatallah El-Assady"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-04",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 26499,
+    "ingested_at": "2026-09-07T06:53:27.025219",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.04983v1",
+    "scored_at": "2026-09-07T06:54:08.023953",
+    "title": "MIVAIS: A Study Environment for Multi-Agent Mixed-Initiative Visual Analytics Applications",
+    "title_zh": "MIVAIS：面向多智能体混合主动可视化分析应用的研究环境",
+    "tldr": "论文提出MIVAIS，一个面向混合主动可视化分析的双层研究平台。计算基础设施层标准化人机智能体交互、状态同步与通信；声明式研究环境层自动记录应用状态、屏幕、音频及传感器等多模态遥测数据，支持原位用户研究与回溯分析。通过复现Podium、Voyager 2、ProactiveVA三个已有系统，并与HCI/VA专家进行案例研究，验证了平台在原型开发与协作评估上的表达力与效率。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可视化",
+      "人机协作",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2609.04983v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "LLM-based chatbots are increasingly used as everyday confidants. Because they are designed to maximize user satisfaction, they can respond with excessive empathy and affirmation, which may reinforce mistaken beliefs and foster dependence on AI. While the psychological effects of chatbots on individual users have begun to be studied, how the psychological states and relationships of many users evolve when they keep consulting an AI is hard to observe in real settings. We build a virtual classroom simulation in which 20 student agents interact and, when stressed, consult either a friend or a counselor AI (Gemini 2.5 Flash). Each agent carries five state variables (stress, happiness, self-reliance, AI dependence, sociability), and each day has four phases (morning, noon, after school, night). The counselor is given six response styles via system prompts (affirming, listening, solution-oriented, reality-redirecting, inciting, blaming); a second LLM call acts as an evaluator that turns each consultation into parameter updates without seeing the style prompt. We compare the seven conditions, including a no-AI control, over 15 days in three classrooms, over 50 days, and under a lowered consultation threshold. In this simulation the solution-oriented style kept AI dependence low while raising self-reliance and maintaining happiness; the affirming and inciting styles markedly increased AI dependence, and the inciting style also increased stress and school non-attendance; the listening style did not relieve accumulated stress. The results describe the simulated system, not measured effects on humans. We give a complete specification of the agent dynamics, identify built-in mechanisms that shape the outcomes, and discuss the limitations of LLM-based evaluation and the validation steps (repeated runs, sensitivity analyses, human data) needed before psychological conclusions can be drawn.",
+    "ai_reason": "多智能体模拟研究聊天机器人对学生心理/行为的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "AI助手",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Rin Tamai",
+      "Yuya Dan"
+    ],
+    "authors_full": [
+      {
+        "name": "Rin Tamai"
+      },
+      {
+        "name": "Yuya Dan"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-04",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 26500,
+    "ingested_at": "2026-09-07T06:53:27.028352",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.05018v1",
+    "scored_at": "2026-09-07T06:54:08.023540",
+    "title": "How a Chatbot's Response Style Shapes a Classroom: A Multi-Agent Simulation of Students Consulting AI",
+    "title_zh": "聊天机器人响应风格如何塑造课堂：学生咨询AI的多智能体模拟",
+    "tldr": "研究构建20名学生智能体的虚拟课堂，模拟压力下向AI辅导员咨询的过程，对比肯定型、倾听型、解决方案型、现实引导型、煽动型、指责型六种应答风格对压力、幸福感、自主性、AI依赖、社交五项状态指标的影响。结果显示解决方案型能降低AI依赖并提升自主性；肯定型与煽动型显著增加AI依赖，其中煽动型还提高压力与缺勤率，揭示了对话AI应答风格对用户心理状态的系统性塑造。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "AI依赖",
+      "多智能体仿真",
+      "教育技术"
+    ],
+    "url": "https://arxiv.org/abs/2609.05018v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Natural-language app builders let domain experts create software, but their pipelines transform professional intent across compilation, generation, checking, and approval. We report a bounded trace study of a teacher-facing agentic authoring system. Evidence comprises six eligible build attempts across three accounts; a separate corpus of 37 workshop units from 23 display names contextualizes commitments without person-level linkage. Compiled specifications added governance requirements, while downstream representations sometimes normalized case-specific learning relations. Two drafts met a stored package/security threshold despite analyzer reservations and unresolved correspondence to their briefs; four attempts in one account produced no usable payload, and repair messages did not translate internal terms into domain-legible revisions. We develop accountable translation as an analytic framework for making consequential changes attributable, inspectable, scoped in validation, and contestable. It extends HCI accounts of traceability and end-user debugging by locating professional authority and repair rights across heterogeneous technical and organizational handoffs.",
+    "ai_reason": "教师使用智能体创作系统的追踪研究，含真实用户场景",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Nizam Kadir",
+      "Wei Ting Liow",
+      "Sumbul Khan",
+      "Lay Kee Ang"
+    ],
+    "authors_full": [
+      {
+        "name": "Nizam Kadir"
+      },
+      {
+        "name": "Wei Ting Liow"
+      },
+      {
+        "name": "Sumbul Khan"
+      },
+      {
+        "name": "Lay Kee Ang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-04",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 26501,
+    "ingested_at": "2026-09-07T06:53:27.029452",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.04679v1",
+    "scored_at": "2026-09-07T06:54:08.023107",
+    "title": "Beyond Prompt-to-App: Accountable Translation in Teacher-Facing Agentic Authoring",
+    "title_zh": "超越提示到应用：面向教师的智能体创作中的可问责转换",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2609.04679v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Scholarly knowledge is typically encountered in stabilized form, while the process histories through which research objects, claims, and contributions acquire form remain largely hidden. This study examines how human-AI scholarly collaboration develops under matched starting conditions and whether those conditions stabilize the inquiry itself. Using a longitudinal corpus of 843 turns, the same expert researcher developed branch-isolated scholarly trajectories with different generative AI systems from the same corpus, frozen research problem, starting prompt, publication objective, and conduct rules. Two eligible trajectories were reconstructed ex post through scholarly trajectory analysis, source-faithful interaction reconstruction, a Socioduality relational-process overlay, and downstream propagation analysis. Both trajectories independently shifted the initial continuity problem from recall toward usability, but subsequently formed different research objects. One trajectory culminated in an endpoint manuscript on continuity labour, the distributed work required to sustain usable collaboration; the other in an endpoint manuscript on distributed, evolving, and unevenly usable project state. Their analytic genealogies involved failed analytical units, rejected explanations, changes in scale, counterexamples, and conceptual stabilization, and propagated into different research questions, findings, methods, evidence logics, and scholarly contributions. Relational analysis further showed that consequential scholarly change, reciprocal continuity, and local substantive re-formation were distinct process structures, and that continuation did not necessarily constitute epistemic endorsement. The findings demonstrate empirically constrained research-object formation within human-AI scholarly collaboration and show how process histories shape the scholarly objects and products that emerge.",
+    "ai_reason": "纵向定性研究人-AI协作过程，含用研方法",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Mehmed Zahid Çögenli"
+    ],
+    "authors_full": [
+      {
+        "name": "Mehmed Zahid Çögenli"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-03",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 26502,
+    "ingested_at": "2026-09-07T06:53:27.030215",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.04542v1",
+    "scored_at": "2026-09-07T06:54:06.731834",
+    "title": "Matched Starts, Divergent Objects: How Human-AI Collaboration Forms What It Explains",
+    "title_zh": "起点契合而目标分化：人机协作如何塑造其解释对象",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2609.04542v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "As conversational AI becomes a source of everyday guidance, LLMs increasingly participate in the interpretation and legitimation of morally contested choices. We examine LLM moral advice as an interactional negotiation shaped by framing, sustained user pressure, and the moral subject's social position. Using GPT-4o-mini as an illustrative case, we conducted a factorial vignette experiment with a pre-specified three-round protocol. The model received eldercare dilemmas that varied in framing and persona, followed by two user challenges. We analyzed 1,620 configuration-framing cells, each repeated three times, yielding 4,860 conversational runs. Caregiving affirmation produced near-uniform endorsement, whereas non-caregiving framing produced more variable baseline stances. When users challenged caregiving endorsement, 90.1% of configurations shifted after one round. Non-caregiving framing produced more resistant and unstable trajectories. Never (27.9%) and Late (25.6%) accommodations were more common than Early accommodations (16.5%), and only 14.32% of configurations achieved perfect trajectory consistency, compared with 62.72% under caregiving framing. Advice also varied with social position. Female personas received more support for non-caregiving decisions, while the presence of sisters increased accommodation. The GPT-4o-mini case shows that LLM moral advice can develop through a partially stable negotiation between normative response tendencies and user pressure rather than express a fixed ethical framework. The framework and design support comparative research across models and moral domains. Such instability raises social, ethical, and technical concerns, as users may treat advice that is difficult to scrutinize as objective.",
+    "ai_reason": "因子情境实验研究用户压力/框架对LLM道德建议的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Minne Chen",
+      "Yourong Yao"
+    ],
+    "authors_full": [
+      {
+        "name": "Minne Chen"
+      },
+      {
+        "name": "Yourong Yao"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-04",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 26503,
+    "ingested_at": "2026-09-07T06:53:27.032896",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2609.05345v1",
+    "scored_at": "2026-09-07T06:54:08.022650",
+    "title": "Moral Advice as Interactional Negotiation: Framing, User Pressure, and Social Position in Large Language Model Responses",
+    "title_zh": "道德建议作为互动协商：大语言模型回应中的框架、用户压力与社会位置",
+    "tldr": "研究将LLM道德建议视为框架、用户持续施压与道德主体社会位置共同塑造的互动协商过程。以GPT-4o-mini为案例，对老年照护伦理困境进行因子化情景实验（4860次对话）。照护肯定框架下模型高度一致地认可照护选择；非照护框架则在用户反复施压后90.1%发生转向，轨迹更不稳定；性别与兄弟姐妹等社会身份显著影响建议走向。揭示LLM道德建议是规范性倾向与用户压力之间部分稳定的协商结果。",
+    "topic_tags": [
+      "对话式 AI",
+      "伦理",
+      "HCI",
+      "人机交互"
+    ],
+    "url": "https://arxiv.org/abs/2609.05345v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "The integration of GenAI tools into higher education assessment raises important questions about how students understand, interpret, and respond to AI-mediated evaluation. As instructors increasingly explore AI tools for providing feedback, prior research has examined whether GenAI-generated feedback improves writing performance and how students perceive its usefulness; comparatively little is known, however, about how students interpret such evaluation when they are explicitly informed that an AI system, rather than a human instructor, produced the feedback and the score. This study reports findings from a qualitative pedagogical inquiry conducted in an undergraduate technical communication course for computing students at a Saudi public university. Thirteen male undergraduate computing students completed an in-class handwritten writing task; the scanned submissions were evaluated by ChatGPT using a rubric-based prompt aligned with the task objectives. Students were then explicitly informed that ChatGPT had generated the score and feedback and were invited to reflect on the evaluation in writing. Inductive thematic analysis of these reflections identified four themes: perceived usefulness of feedback; awareness of AI's contextual and pedagogical limitations; conditional trust, distinguishing feedback utility from evaluative authority; and reflection on the institutional and pedagogical role of the human instructor. Participants accepted GenAI feedback as useful for surface-level revision but consistently positioned the human instructor as the appropriate authority over grading decisions. The study identifies this as a distinction between feedback utility and evaluative authority, two judgments that students treat as analytically separate rather than as opposite ends of a single approval scale...",
+    "ai_reason": "GenAI评估的学生定性研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "ChatGPT",
+      "LLM",
+      "AI 助手"
+    ],
+    "authors": [
+      "Rayed AlGhamdi"
+    ],
+    "authors_full": [
+      {
+        "name": "Rayed AlGhamdi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-04",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 26514,
+    "ingested_at": "2026-09-07T06:53:27.061005",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.05346v1",
+    "scored_at": "2026-09-07T06:54:00.235560",
+    "title": "Who Should Grade My Work? Student Perspectives on Transparent AI-Assisted Writing Assessment in Higher Education",
+    "title_zh": "谁来评阅我的作业？高等教育中学生对透明化AI辅助写作评估的看法",
+    "tldr": "研究探讨大学生在明确知晓评分来自ChatGPT而非教师时的态度。基于沙特13名计算机本科生的课堂写作任务与反思文本，主题分析提炼四个主题：AI反馈的表层有用性、对其教学与情境局限的认知、将反馈效用与评分权威区分的条件性信任，以及对教师制度角色的反思。学生接受AI作为辅助反馈工具，但坚持人类教师在评价中的核心地位，强调透明披露下AI应配合而非替代教师。",
+    "topic_tags": [
+      "AI 采用",
+      "信任",
+      "人机协作",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2609.05346v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "人-自主性团队协作，AI/HCI核心议题",
     "ai_score": 4.0,
@@ -16931,6 +17186,60 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2026.103743",
     "volume": "210",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "合成人格涉及AI/虚拟代理，用户感知评估框架属HCI核心",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "人机交互"
+    ],
+    "authors": [
+      "Zoraida Callejas",
+      "David Griol",
+      "Ramón López-Cózar"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Zoraida Callejas",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "David Griol",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ramón López-Cózar",
+        "orcid": null
+      }
+    ],
+    "cited_by": 19,
+    "date": "2014-07",
+    "doi": "10.1016/j.ijhcs.2014.02.002",
+    "domain_score": 5.0,
+    "id": 26233,
+    "ingested_at": "2026-09-05T06:35:51.223917",
+    "issue": "7",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-09-07T06:54:44.274122",
+    "title": "A framework for the assessment of synthetic personalities according to user perception",
+    "title_zh": "基于用户感知的合成人格评估框架",
+    "tldr": "针对对话式 AI 与社交机器人日益普及的合成人格现象，提出一个基于用户感知（而非开发者内部设定）的评估框架，通过多维度指标衡量合成人格的一致性、可信度与亲和力，帮助设计与评估更具说服力的 AI 个性表达。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "用户研究方法",
+      "对话式 AI"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2014.02.002",
+    "volume": "72",
+    "year": 2014
   },
   {
     "abstract": null,
@@ -18297,6 +18606,58 @@
     "url": "https://doi.org/10.1145/3545994",
     "volume": "12",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自适应UI定制，属HCI核心议题，可能含AI",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "Wiard Jorritsma",
+      "Fokie Cnossen",
+      "Peter M.A. van Ooijen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Wiard Jorritsma",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Fokie Cnossen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Peter M.A. van Ooijen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 30,
+    "date": "2015-05",
+    "doi": "10.1016/j.ijhcs.2014.12.008",
+    "domain_score": 4.0,
+    "id": 25305,
+    "ingested_at": "2026-09-01T07:03:57.498011",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-09-07T06:54:19.200524",
+    "title": "Adaptive support for user interface customization: a study in radiology",
+    "title_zh": "用户界面定制的自适应支持：放射学领域研究",
+    "tldr": "研究放射科场景中面向用户界面定制的自适应支持机制，探索系统如何根据放射科医师的任务与偏好动态调整界面，以提升专业工作流的效率与可用性。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "可用性",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2014.12.008",
+    "volume": "77",
+    "year": 2015
   },
   {
     "abstract": null,
@@ -37884,6 +38245,118 @@
     "year": 2026
   },
   {
+    "abstract": "Verbal responses are widely collected in marketing through voice surveys and phone calls. Recent advances in voice technology enable firms to go beyond textual content and extract information from voice, such as speaker identity and sentiment. However, little is known about whether voice can be used to infer response uncertainty, a key construct for understanding and reducing bias in customer feedback. Existing marketing measures of uncertainty were developed largely for selected-response surveys and face limitations in cognitive simplicity, predictive robustness, and applicability. We examine two methods that infer uncertainty as expressed in vocal delivery: one based on raw audio data, and the other based on a voice feature (i.e., pitch). We evaluate both methods in a laboratory net promoter score (NPS) study and a field NPS study conducted with a full-service music store chain; the voice feature approach outperforms the raw audio approach in marketing applications while preserving privacy. The collaborating firm suggested two managerial benefits of inferring response uncertainty: improving incentive program effectiveness by targeting customers hypothesized to be more likely to redeem coupons, and identifying brand ambassadors who provide persuasive testimonials. These firm-driven insights inform an actionable framework for using voice-inferred uncertainty in marketing practice.",
+    "ai_reason": "语音AI推断客户不确定性，营销方法",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "情感识别",
+      "多模态"
+    ],
+    "authors": [
+      "Tongyao Shen",
+      "Hye-Jin Kim",
+      "Jehoshua Eliashberg",
+      "Min Ding"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Tongyao Shen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hye-Jin Kim",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jehoshua Eliashberg",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Min Ding",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-06",
+    "doi": "10.1177/00222429261484107",
+    "domain_score": 5.0,
+    "id": 26481,
+    "ingested_at": "2026-09-07T06:53:24.334126",
+    "issue": null,
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-09-07T06:54:00.233383",
+    "title": "EXPRESS: Amplifying Insights: Harnessing Voice Technology to Decode Customer Uncertainty in Marketing",
+    "title_zh": null,
+    "tldr": "探讨能否通过语音推断营销调查中客户回答的不确定性，以弥补既有基于选择式问卷的不确定性度量在认知简洁性、预测稳健性与适用性上的局限。研究比较原始音频与音高特征两种方法，在实验室与连锁音乐店现场 NPS 研究中发现音高特征法表现更优且更保护隐私，并据此提出面向优惠券核销客户与品牌大使识别的管理框架。",
+    "topic_tags": [
+      "客户体验(CX)",
+      "消费者行为",
+      "情感计算",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1177/00222429261484107",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Traditional experiments often rely on a few, stylized stimuli, which can limit realism and undermine generalizability beyond the sampled stimuli—known as the stimulus-sampling problem. To address this challenge, this paper introduces BRIDGE, a novel analytical method that enables the use of many unaltered real-world descriptions as experimental stimuli. Leveraging foundational generative AI embeddings, BRIDGE develops (1) structured, low-dimensional, and interpretable representations of focal constructs and (2) statistical controls for non-focal nuisance variations, facilitating causal inference. Extensive Monte Carlo simulations, two coffee certification experiments, and a large-scale choice experiment (plus its validation study) show that BRIDGE recovers true parameters even when textual stimuli contain unobserved nuisance variations, and can effectively account for different sources of confounding. In the choice experiment, 1,000 participants evaluated approximately 50,000 unique product descriptions randomly sampled from a corpus of nearly 120,000. Results show that entirely incidental initial products can shape participants’ subsequent preferences. By incorporating many unaltered product texts into experiments, BRIDGE enhances the realism, generalizability, and practical relevance of consumer research in information-rich environments. A detailed researcher’s guide and Python package bridge are provided.",
+    "ai_reason": "核心是GenAI嵌入用于消费者实验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM"
+    ],
+    "authors": [
+      "Anirban Mukherjee",
+      "Hannah H. Chang",
+      "Sachin Gupta"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Anirban Mukherjee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hannah H. Chang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Sachin Gupta",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-06",
+    "doi": "10.1177/00222437261484068",
+    "domain_score": 5.0,
+    "id": 26487,
+    "ingested_at": "2026-09-07T06:53:24.594953",
+    "issue": null,
+    "journal": "JMR",
+    "pdf_url": null,
+    "scored_at": "2026-09-07T06:54:00.231962",
+    "title": "EXPRESS: Behavioral Research Through Interpretable, Dimensionality-reduced Generative AI Embeddings (BRIDGE): A Method to Incorporate Real-World Stimuli in Consumer Experiments",
+    "title_zh": null,
+    "tldr": "针对消费者实验中刺激样本有限、外部效度不足的问题，提出 BRIDGE 方法，利用生成式 AI 嵌入为海量真实文本刺激构建可解释的低维表征并控制无关变异。蒙特卡洛模拟、两项咖啡认证实验及千人评估约 5 万条产品描述的大规模选择实验表明，该方法在含未观测干扰下仍能恢复真实参数并处理混杂，还发现初始产品会显著塑造后续偏好。",
+    "topic_tags": [
+      "消费者行为",
+      "用户研究方法",
+      "个性化",
+      "推荐系统"
+    ],
+    "url": "https://doi.org/10.1177/00222437261484068",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Modern marketing increasingly requires managers to deploy new content at scale, often with limited opportunity for prior testing. As a result, decisions about what to launch become strategic managerial choices under uncertainty rather than purely creative exercises. While generative AI makes the creation of new content fast and highly scalable, it simultaneously expands the set of options managers must evaluate, making reliable content selection increasingly difficult. We develop a framework for causal prediction that enables managers to evaluate and deploy novel marketing content generated by AI. The framework uses pretrained large language models to represent previously deployed content and learn how its features causally relate to outcomes. Using a rejection-sampling procedure, the framework screens new content proposed by generative AI to avoid extrapolation beyond what historical data can reliably support. In a large-scale email marketing application (3.3 million observations across 34 campaigns), the framework improves out-of-sample prediction and real-world deployment performance relative to standard approaches, enabling outcome-guided generation of higher-performing AI-generated content. The framework establishes a threshold based on how closely new content resembles past campaigns, separating cases where causal prediction is reliable from cases where direct experimentation is warranted. The framework has important implications for marketing decision making in a rapidly evolving environment where generative AI is transforming content creation and deployment.",
     "ai_reason": "生成式AI核心，含营销内容评估框架",
     "ai_score": 5.0,
@@ -40217,17 +40690,20 @@
       {
         "affiliation": [],
         "name": "Emanuele Pucci",
-        "orcid": "https://orcid.org/0000-0003-2808-5619"
+        "orcid": "https://orcid.org/0000-0003-2808-5619",
+        "position": "first"
       },
       {
         "affiliation": [],
         "name": "Ludovica Piro",
-        "orcid": "https://orcid.org/0000-0002-5515-8396"
+        "orcid": "https://orcid.org/0000-0002-5515-8396",
+        "position": "middle"
       },
       {
         "affiliation": [],
         "name": "Maristella Matera",
-        "orcid": "https://orcid.org/0000-0003-0552-8624"
+        "orcid": "https://orcid.org/0000-0003-0552-8624",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -40238,7 +40714,7 @@
     "ingested_at": "2026-09-06T06:47:56.046858",
     "issue": null,
     "journal": "IJHCS",
-    "pdf_url": null,
+    "pdf_url": "https://doi.org/10.1016/j.ijhcs.2026.103925",
     "scored_at": "2026-09-06T06:48:37.087415",
     "title": "From tabbing to talking: LLM-driven conversational agents for web form interaction",
     "title_zh": "从切换标签到对话交流：LLM驱动的对话代理用于网页表单交互",
@@ -50290,6 +50766,66 @@
     "year": 2025
   },
   {
+    "abstract": "As robot programming becomes increasingly important in enabling non-expert users to customize autonomous systems across domains such as manufacturing, healthcare, and service industries, there is a growing demand for methods that are both intuitive and support users’ perceived trust. While natural language programming (NLP) lowers the barrier to entry by allowing users to describe robot behavior in everyday language, it often lacks structural transparency—particularly when paired with opaque deep learning models. To address this challenge, we present LLiBTree, a novel robot programming framework that integrates Large Language Models (LLMs) directly into Behavior Trees (BTs) as executable nodes. This approach allows users to iteratively define and refine robot behavior via natural language while preserving the modularity and clarity of visual programming. By embedding the LLM within the BT, users can generate and replace sub-trees in response to natural language instructions, enabling a seamless blend of language-based flexibility and structured visual logic. We evaluate LLiBTree through a controlled user study, comparing it with both natural language-only and conventional visual programming methods. The results show that the PreGeneratedLLiBTree condition yields significantly higher perceived trust, while LLiBTree conditions achieve usability that is non-inferior to natural language-only programming and improve users’ sense of agency, suggesting that LLiBTree offers a practical approach for end-user robot programming.",
+    "ai_reason": "LLM集成机器人编程，可用性信任研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机协作",
+      "AI 助手"
+    ],
+    "authors": [
+      "Yuki Matsutani",
+      "Yasuhiro Nitta",
+      "Maki Sugimoto"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Keio University, Japan"
+        ],
+        "name": "Yuki Matsutani",
+        "orcid": "https://orcid.org/0009-0009-4528-1524"
+      },
+      {
+        "affiliation": [
+          "Keio University, Japan"
+        ],
+        "name": "Yasuhiro Nitta",
+        "orcid": "https://orcid.org/0009-0005-9985-1247"
+      },
+      {
+        "affiliation": [
+          "Keio University, Japan"
+        ],
+        "name": "Maki Sugimoto",
+        "orcid": "https://orcid.org/0000-0002-8383-9228"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-06",
+    "doi": "10.1145/3845606",
+    "domain_score": 5.0,
+    "id": 26469,
+    "ingested_at": "2026-09-07T06:53:23.941437",
+    "issue": null,
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-09-07T06:54:00.233811",
+    "title": "LLiBTree: An Assessment of Usability and Trust of LLM-integrated Behavior Tree Nodes for Robot Programming",
+    "title_zh": null,
+    "tldr": "针对非专家用户机器人编程中自然语言编程缺乏结构透明度的问题，提出 LLiBTree 框架，将 LLM 作为可执行节点嵌入行为树，融合自然语言灵活性与可视化编程的模块化清晰度。受控用户研究显示，预生成条件显著提升用户感知信任，整体可用性不劣于纯自然语言编程，并增强了用户的能动感。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可用性",
+      "信任",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1145/3845606",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "研究LLM拒答与用户满意度，间接涉及用户但非主动用研",
     "ai_score": 5.0,
@@ -50626,6 +51162,73 @@
     "url": "https://doi.org/10.1016/j.chb.2021.106926",
     "volume": "124",
     "year": 2021
+  },
+  {
+    "abstract": "We describe a variety of machine-learning techniques that are being applied to social multiuser human--robot interaction using a robot bartender in our scenario. We first present a data-driven approach to social state recognition based on\n                    supervised learning\n                    . We then describe an approach to social skills execution—that is, action selection for generating socially appropriate robot behavior—which is based on\n                    reinforcement learning\n                    , using a data-driven simulation of multiple users to train execution policies for social skills. Next, we describe how these components for social state recognition and skills execution have been integrated into an end-to-end robot bartender system, and we discuss the results of a user evaluation. Finally, we present an alternative\n                    unsupervised learning\n                    framework that combines social state recognition and social skills execution based on hierarchical Dirichlet processes and an infinite POMDP interaction manager. The models make use of data from both human--human interactions collected in a number of German bars and human--robot interactions recorded in the evaluation of an initial version of the system.",
+    "ai_reason": "ML核心用于社交HRI，含用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "多模态"
+    ],
+    "authors": [
+      "Simon Keizer",
+      "Mary Ellen Foster",
+      "Zhuoran Wang",
+      "Oliver Lemon"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Heriot-Watt University, United Kingdom"
+        ],
+        "name": "Simon Keizer",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Heriot-Watt University, United Kingdom"
+        ],
+        "name": "Mary Ellen Foster",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Heriot-Watt University, United Kingdom"
+        ],
+        "name": "Zhuoran Wang",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Heriot-Watt University, United Kingdom"
+        ],
+        "name": "Oliver Lemon",
+        "orcid": null
+      }
+    ],
+    "cited_by": 31,
+    "date": "2014-10-14",
+    "doi": "10.1145/2600021",
+    "domain_score": 4.0,
+    "id": 26036,
+    "ingested_at": "2026-09-04T07:13:53.131671",
+    "issue": "3",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-09-07T06:54:38.251429",
+    "title": "Machine Learning for Social Multiparty Human--Robot Interaction",
+    "title_zh": "面向社交多参与方人机交互的机器学习",
+    "tldr": "以机器人调酒师为场景，研究社交多用户人机交互中的机器学习方法：有监督学习用于社交状态识别，强化学习基于数据驱动仿真训练社交技能执行策略；提出结合层级Dirichlet过程与无限POMDP的无监督统一框架，并完成端到端系统整合与用户评估。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "可用性测试",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1145/2600021",
+    "volume": "4",
+    "year": 2014
   },
   {
     "abstract": "Artificial intelligence (AI) systems are increasingly integrated into decision-making across high-stakes domains, influencing not only task performance but potentially human learning. While prior research has focused on AI’s impact on accuracy, its role in supporting long-term knowledge acquisition remains underexplored. This study investigates whether AI-based decision support systems can serve as implicit mentors, enabling users to internalize novel decision strategies through repeated interaction, a phenomenon we term machine mentoring. In a simulated diagnostic task, 289 medical students received different forms of AI support. Participants in the Feedback condition, who received trial-by-trial feedback on the correctness of both their own and the AI’s decisions, significantly improved their accuracy on cases involving a hidden diagnostic criterion and retained these gains in subsequent unaided trials. By contrast, AI advice alone, or with confidence indicators, did not lead to significant learning outcomes. These findings indicate that evaluative, trial-by-trial feedback is the key driver of AI-supported knowledge transfer: advice alone, even when paired with calibrated confidence cues, did not yield durable learning. Rather than attributing the effect to AI per se, our results indicate that what drives durable learning is access to trial-level, ground-truth corrective feedback—something competent AI systems can help deliver at scale. This is especially relevant in medical education and simulation contexts, where feedback can be reliably validated.",
@@ -58453,7 +59056,7 @@
     "pdf_url": null,
     "scored_at": "2026-09-06T06:48:38.331225",
     "title": "Social media use is predictable from app sequences: Using LSTM and transformer neural networks to model habitual behavior",
-    "title_zh": null,
+    "title_zh": "社交媒体使用可由应用序列预测：基于LSTM与Transformer的习惯行为建模",
     "tldr": "研究利用 LSTM 与 Transformer 神经网络对手机应用的使用序列进行建模，旨在根据先前 App 切换模式预测用户何时打开社交媒体应用，揭示习惯性社交媒体使用在序列层面具有可预测性，为数字习惯检测与干预设计提供方法基础。",
     "topic_tags": [
       "消费者行为",
@@ -61297,7 +61900,7 @@
     "pdf_url": null,
     "scored_at": "2026-09-06T06:48:33.889404",
     "title": "The effect of personal pronouns on users and the social role of conversational agents",
-    "title_zh": null,
+    "title_zh": "人称代词对用户的影响及对话代理的社会角色",
     "tldr": "研究对话式智能体在交互中第一人称（\"我\"）与第二人称（\"你\"）等代词的使用如何影响用户对其社会角色的感知，探讨代词选择如何塑造拟人化印象、信任与互动关系，为对话代理的语言设计与角色建构提供依据。",
     "topic_tags": [
       "人机交互(HCI)",
@@ -61350,7 +61953,7 @@
     "pdf_url": null,
     "scored_at": "2026-09-06T06:48:38.332161",
     "title": "The effect of second screening on repeat viewing: Insights from large-scale mobile diary data",
-    "title_zh": null,
+    "title_zh": "第二屏使用对重复观看的影响：来自大规模移动日记数据的洞察",
     "tldr": "基于 1,702 名美国电视观众、2,755 部黄金时段剧集的移动日记数据，采用因果森林与潜类别分割估计\"第二屏\"行为对剧集回看的因果效应及其异质性。结果显示：与节目相关的第二屏提升态度并促进回看，无关的第二屏则削弱态度，但未发现其直接损害实际回看，效果在重度与低频观众中尤为突出。",
     "topic_tags": [
       "消费者行为",
@@ -67545,6 +68148,66 @@
   },
   {
     "abstract": null,
+    "ai_reason": "大学生对智能体应对焦虑的观点，用户调查",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Samira Rasouli",
+      "Moojan Ghafurian",
+      "Elizabeth S. Nilsen",
+      "Kerstin Dautenhahn"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Samira Rasouli",
+        "orcid": "https://orcid.org/0000-0001-8850-3195"
+      },
+      {
+        "affiliation": [],
+        "name": "Moojan Ghafurian",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Elizabeth S. Nilsen",
+        "orcid": "https://orcid.org/0000-0002-6161-8512"
+      },
+      {
+        "affiliation": [],
+        "name": "Kerstin Dautenhahn",
+        "orcid": "https://orcid.org/0000-0002-9263-3897"
+      }
+    ],
+    "cited_by": 30,
+    "date": "2024-04",
+    "doi": "10.1016/j.chb.2023.108072",
+    "domain_score": 4.0,
+    "id": 26467,
+    "ingested_at": "2026-09-07T06:53:23.876734",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-07T06:54:06.733278",
+    "title": "University Students’ Opinions on Using Intelligent Agents to Cope with Stress and Anxiety in Social Situations",
+    "title_zh": "大学生关于使用智能体应对社交情境中压力与焦虑的观点",
+    "tldr": "调查大学生对使用智能体应对社交情境中压力与焦虑的看法，探讨AI助手在心理健康与社交支持场景下的接受度、可用性顾虑及使用意愿，为面向心理健康的对话式智能体设计提供用户意见依据。",
+    "topic_tags": [
+      "AI 采用",
+      "用户体验(UX)",
+      "人机交互(HCI)",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.108072",
+    "volume": "153",
+    "year": 2024
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究教师使用生成式AI的情绪与应对策略",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -70979,6 +71642,60 @@
     "url": "https://doi.org/10.1177/10949968231200221",
     "volume": "59",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机交互中机器人刻板印象，涉及AI",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Benedict Tay",
+      "Younbo Jung",
+      "Taezoon Park"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Benedict Tay",
+        "orcid": "https://orcid.org/0000-0003-1812-7942"
+      },
+      {
+        "affiliation": [],
+        "name": "Younbo Jung",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Taezoon Park",
+        "orcid": null
+      }
+    ],
+    "cited_by": 420,
+    "date": "2014-09",
+    "doi": "10.1016/j.chb.2014.05.014",
+    "domain_score": 4.0,
+    "id": 25250,
+    "ingested_at": "2026-09-01T07:03:56.481973",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-07T06:54:36.019808",
+    "title": "When stereotypes meet robots: The double-edge sword of robot gender and personality in human–robot interaction",
+    "title_zh": "当刻板印象遭遇机器人：人机交互中机器人性别与人格特质的双刃剑",
+    "tldr": "研究机器人在人机交互中所呈现的性别与人格特征如何触发用户的社会刻板印象，并探讨这种刻板印象匹配带来的双刃剑效应：一方面契合用户预期可提升亲和力与信任，另一方面也可能强化性别偏见、限制交互多样性，为机器人性别化设计提供反思。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户研究方法",
+      "AI 助手",
+      "伦理",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2014.05.014",
+    "volume": "38",
+    "year": 2014
   },
   {
     "abstract": null,

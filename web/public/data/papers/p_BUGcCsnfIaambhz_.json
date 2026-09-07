@@ -1,0 +1,59 @@
+{
+  "abstract": "LLM-based chatbots are increasingly used as everyday confidants. Because they are designed to maximize user satisfaction, they can respond with excessive empathy and affirmation, which may reinforce mistaken beliefs and foster dependence on AI. While the psychological effects of chatbots on individual users have begun to be studied, how the psychological states and relationships of many users evolve when they keep consulting an AI is hard to observe in real settings. We build a virtual classroom simulation in which 20 student agents interact and, when stressed, consult either a friend or a counselor AI (Gemini 2.5 Flash). Each agent carries five state variables (stress, happiness, self-reliance, AI dependence, sociability), and each day has four phases (morning, noon, after school, night). The counselor is given six response styles via system prompts (affirming, listening, solution-oriented, reality-redirecting, inciting, blaming); a second LLM call acts as an evaluator that turns each consultation into parameter updates without seeing the style prompt. We compare the seven conditions, including a no-AI control, over 15 days in three classrooms, over 50 days, and under a lowered consultation threshold. In this simulation the solution-oriented style kept AI dependence low while raising self-reliance and maintaining happiness; the affirming and inciting styles markedly increased AI dependence, and the inciting style also increased stress and school non-attendance; the listening style did not relieve accumulated stress. The results describe the simulated system, not measured effects on humans. We give a complete specification of the agent dynamics, identify built-in mechanisms that shape the outcomes, and discuss the limitations of LLM-based evaluation and the validation steps (repeated runs, sensitivity analyses, human data) needed before psychological conclusions can be drawn.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式AI",
+    "AI助手",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2609.05018",
+  "authors": [
+    "Rin Tamai",
+    "Yuya Dan"
+  ],
+  "authors_full": [
+    {
+      "name": "Rin Tamai"
+    },
+    {
+      "name": "Yuya Dan"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "多智能体模拟研究聊天机器人对学生心理/行为的影响",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究构建20名学生智能体的虚拟课堂，模拟压力下向AI辅导员咨询的过程，对比肯定型、倾听型、解决方案型、现实引导型、煽动型、指责型六种应答风格对压力、幸福感、自主性、AI依赖、社交五项状态指标的影响。结果显示解决方案型能降低AI依赖并提升自主性；肯定型与煽动型显著增加AI依赖，其中煽动型还提高压力与缺勤率，揭示了对话AI应答风格对用户心理状态的系统性塑造。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "AI依赖",
+        "多智能体仿真",
+        "教育技术"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-04",
+  "doi": null,
+  "id": "p_BUGcCsnfIaambhz_",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2609.05018v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 26500,
+      "revision": "b6c08c44d1f25cf8cda67a377f3a5f9bdeb10a3c"
+    }
+  ],
+  "title": "How a Chatbot's Response Style Shapes a Classroom: A Multi-Agent Simulation of Students Consulting AI",
+  "title_zh": "聊天机器人响应风格如何塑造课堂：学生咨询AI的多智能体模拟",
+  "unified_ingested_at": "2026-09-07T07:06:45.442362Z",
+  "url": "https://arxiv.org/abs/2609.05018v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,85 @@
+{
+  "abstract": "Traditional experiments often rely on a few, stylized stimuli, which can limit realism and undermine generalizability beyond the sampled stimuli—known as the stimulus-sampling problem. To address this challenge, this paper introduces BRIDGE, a novel analytical method that enables the use of many unaltered real-world descriptions as experimental stimuli. Leveraging foundational generative AI embeddings, BRIDGE develops (1) structured, low-dimensional, and interpretable representations of focal constructs and (2) statistical controls for non-focal nuisance variations, facilitating causal inference. Extensive Monte Carlo simulations, two coffee certification experiments, and a large-scale choice experiment (plus its validation study) show that BRIDGE recovers true parameters even when textual stimuli contain unobserved nuisance variations, and can effectively account for different sources of confounding. In the choice experiment, 1,000 participants evaluated approximately 50,000 unique product descriptions randomly sampled from a corpus of nearly 120,000. Results show that entirely incidental initial products can shape participants’ subsequent preferences. By incorporating many unaltered product texts into experiments, BRIDGE enhances the realism, generalizability, and practical relevance of consumer research in information-rich environments. A detailed researcher’s guide and Python package bridge are provided.",
+  "ai_type_tags": [
+    "GenAI",
+    "机器学习",
+    "嵌入表示"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Anirban Mukherjee",
+    "Hannah H. Chang",
+    "Sachin Gupta"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [],
+      "name": "Anirban Mukherjee",
+      "orcid": null
+    },
+    {
+      "affiliation": [],
+      "name": "Hannah H. Chang",
+      "orcid": null
+    },
+    {
+      "affiliation": [],
+      "name": "Sachin Gupta",
+      "orcid": null
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心方法即用GenAI嵌入做消费者实验",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对消费者实验中刺激物单一、难以推广的问题，提出BRIDGE方法：利用生成式AI基础嵌入将海量真实产品描述降维为可解释表征，并统计控制非焦点变异以支持因果推断。蒙特卡洛模拟、两项咖啡认证实验及一项千人选择实验（约5万条评估）验证其有效性，发现初始产品的偶然属性可显著塑造后续偏好。",
+      "topic_tags": [
+        "消费者行为",
+        "实验方法",
+        "营销"
+      ]
+    },
+    "ur": {
+      "ai_reason": "核心是GenAI嵌入用于消费者实验",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对消费者实验中刺激样本有限、外部效度不足的问题，提出 BRIDGE 方法，利用生成式 AI 嵌入为海量真实文本刺激构建可解释的低维表征并控制无关变异。蒙特卡洛模拟、两项咖啡认证实验及千人评估约 5 万条产品描述的大规模选择实验表明，该方法在含未观测干扰下仍能恢复真实参数并处理混杂，还发现初始产品会显著塑造后续偏好。",
+      "topic_tags": [
+        "消费者行为",
+        "用户研究方法",
+        "个性化",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob",
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-06",
+  "doi": "10.1177/00222437261484068",
+  "id": "p_niTuCBdBIskf1Hc3",
+  "issue": null,
+  "journal": "JMR",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 65671,
+      "revision": "fe97758f1e8b7600253cd16d171aef0170bf3f12"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 26487,
+      "revision": "b6c08c44d1f25cf8cda67a377f3a5f9bdeb10a3c"
+    }
+  ],
+  "title": "EXPRESS: Behavioral Research Through Interpretable, Dimensionality-reduced Generative AI Embeddings (BRIDGE): A Method to Incorporate Real-World Stimuli in Consumer Experiments",
+  "title_zh": null,
+  "unified_ingested_at": "2026-09-07T07:06:45.442362Z",
+  "url": "https://doi.org/10.1177/00222437261484068",
+  "volume": null,
+  "year": 2026
+}

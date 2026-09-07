@@ -1,0 +1,57 @@
+{
+  "abstract": "Runtime traces are becoming a central substrate for understanding agentic systems, yet interpretation has focused largely on what the agent did. Workplace agents face the complementary problem: interpreting the human activity that surrounds them. Hours of low-level events carry rich evidence about a user's state but are too granular to reason over directly, and flattening them into one stream or compressing them into a single embedding both treat \"summarize the user's behavior\" as if it had one correct answer. We argue instead that behavioral interpretation is resolution-dependent: the same trace should admit multiple addressable interpretations at different temporal resolutions. We construct a multi-resolution vocabulary of semantically normalized operators, recurring motifs, coherent episodes, and day-level rhythms, each preserving the structure salient at its own horizon. Applied to 667 million human-attributed events from a large commercial productivity suite (50,000 users, 100 organizations), it yields 120 operator types, thousands of motifs, 25 episode types, and five day-rhythm archetypes. We validate it on real telemetry: re-running the entire pipeline on a disjoint 2,000-user sample recovers the same taxonomy (structural stability), and on held-out users the full representation forecasts a user's next episode more accurately than a flat-operator baseline, a 17% relative macro-F1 gain (predictive validity), so the abstractions preserve future-relevant information rather than merely describe it. A controlled resolution ablation then shows that no single level is optimal across questions: different agent-facing questions about the same trace are best answered at different resolutions. Behavioral trace interpretation for agents should therefore be multi-resolution and query-conditioned: an agent should access the temporal grain a question needs, not one universal summary.",
+  "ai_type_tags": [
+    "人机协作",
+    "算法管理",
+    "机器学习"
+  ],
+  "arxiv_id": "2609.04556",
+  "authors": [
+    "Lin Ai",
+    "Scott Counts"
+  ],
+  "authors_full": [
+    {
+      "name": "Lin Ai"
+    },
+    {
+      "name": "Scott Counts"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "职场AI代理解释人类行为，AI与工作场景结合",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对工作场所智能体难以理解周围人类活动的问题，提出多分辨率行为解释框架：从6.67亿条生产力工具事件中构建涵盖操作、模式、情节与日节奏的多层次语义词汇表。在独立2000用户样本上验证了分类体系的结构稳定性，并因其在预测用户下一情节上较基线提升17%宏F1，证明了抽象保留了未来相关信息。",
+      "topic_tags": [
+        "人机协作",
+        "工作未来",
+        "组织学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-03",
+  "doi": null,
+  "id": "p_lBo_umkdUcZOcnKU",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.04556v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 65694,
+      "revision": "fe97758f1e8b7600253cd16d171aef0170bf3f12"
+    }
+  ],
+  "title": "Rhythms of Work: Multi-Scale Interpretation of Human Behavioral Traces for Workplace Agents",
+  "title_zh": null,
+  "unified_ingested_at": "2026-09-07T07:06:45.442362Z",
+  "url": "https://arxiv.org/abs/2609.04556v1",
+  "volume": null,
+  "year": 2026
+}
