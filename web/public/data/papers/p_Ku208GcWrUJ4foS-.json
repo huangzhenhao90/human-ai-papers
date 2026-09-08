@@ -1,0 +1,101 @@
+{
+  "abstract": "Abstract While artificial intelligence (AI) and large language models (LLMs) have shown promise in identifying and classifying suicidal ideation, their generalizability and equity in the presence of heterogeneous clinical data remain largely unexplored. This study hypothesized a subgroup disparity in a crude AI classifier of clinician-rated suicidal ideation because of the linguistic heterogeneity and proposed a factorization approach to decompose complex data into simpler components by reducing topic dimensions of clinical transcripts. Results showed that topic-specific classifiers reduced subgroup disparity compared to the topic-general classifier, with ΔAUC decreasing from 0.11 to 0.01 and 0.05—a noticeable reduction of 0.10 and 0.06, respectively. More specifically, with the topic-general classifier, the odds of missing a suicidal case increased by 2.39 times for alexithymia individuals, compared to non-alexithymia individuals (OR = 2.39, p = 0.002). These findings underscore the significance of data heterogeneity on AI classifiers of suicidal ideation and demonstrate the potential of the proposed factorization approach.",
+  "ai_type_tags": [
+    "llm_genai",
+    "nlp"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Rong Huang",
+    "Longdi Xian",
+    "Christopher Chi Wai Cheng",
+    "Jie Chen",
+    "Kit Ying Chan",
+    "Calvin Lam",
+    "Joey Wing Yan Chan",
+    "Steven Wai Ho Chau",
+    "Ngan Yin Chan",
+    "Bei Huang"
+  ],
+  "authors_full": [
+    {
+      "name": "Rong Huang"
+    },
+    {
+      "name": "Longdi Xian"
+    },
+    {
+      "name": "Christopher Chi Wai Cheng"
+    },
+    {
+      "name": "Jie Chen"
+    },
+    {
+      "name": "Kit Ying Chan"
+    },
+    {
+      "name": "Calvin Lam"
+    },
+    {
+      "name": "Joey Wing Yan Chan"
+    },
+    {
+      "name": "Steven Wai Ho Chau"
+    },
+    {
+      "name": "Ngan Yin Chan"
+    },
+    {
+      "name": "Bei Huang"
+    },
+    {
+      "name": "Yun Kwok Wing"
+    },
+    {
+      "name": "Tim M. H. Li"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "LLM是核心分类方法，直接用于临床评估自杀意念这一核心心理健康结局。",
+      "ai_score": 5,
+      "clinical_validation": "internal",
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness"
+      ],
+      "safety_evaluated": false,
+      "tldr": "通过因子分解降低临床转录主题维度，显著缩小了LLM在亚组间对自杀意念分类的差异（AUC差异从0.11降至0.01-0.05）。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "screening_assessment",
+        "clinical_patients"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-05",
+  "doi": "10.1038/s41746-026-03198-w",
+  "id": "p_Ku208GcWrUJ4foS-",
+  "issue": null,
+  "journal": "npj Digital Medicine",
+  "pdf_url": "https://www.nature.com/articles/s41746-026-03198-w_reference.pdf",
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7208817013"
+    }
+  ],
+  "title": "Exploring generalizability and explainability of LLMs in classifying clinically rated suicidal ideation using heterogeneous data",
+  "title_zh": "探索LLM在异构数据中分类临床评自杀意念的泛化性与可解释性",
+  "unified_ingested_at": "2026-09-08T07:00:46.680975Z",
+  "url": "https://doi.org/10.1038/s41746-026-03198-w",
+  "volume": null,
+  "year": 2026
+}
