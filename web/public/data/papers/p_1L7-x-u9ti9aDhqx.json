@@ -1,0 +1,78 @@
+{
+  "abstract": "Collecting survey data is laborious and limited by privacy constraints. Large language models (LLMs) have shown promise as predictive social simulations. It is unclear whether they can replicate population-level response distributions before and after a healthcare intervention. Using information derived from 4125 women aged 35-59 years, we evaluate whether agents informed solely by pre-intervention profile information can reproduce post-intervention response distributions. Groups of LLM agents (n=50) were created with Gemma 4 E4B and Qwen3.5 9B; conditions ranged from zero-shot prompting to agent profiles enriched with aggregate or individual-level demographic characteristics and pre-intervention questionnaire responses. We compared predicted and observed response distributions with Total Variation Distance (TVD) and Normalized Wasserstein Distance (NWD). Across both LLMs, profile-based agents improved distributional accuracy relative to zero-shot and random baselines. Nevertheless, direct sampling of 50 real participants remained more accurate. Prediction errors were also higher among participants aged 55-59 years and those living in private property. Errors also varied by question theme and LLM model, with the highest errors observed for cancer fatalism and post intervention attitudes toward genetics. Sensitivity analyses showed that performance was influenced by prompt template changes and temperature hyperparameter. Our results show the potential of LLM-based agents to model behavioral responses to interventions in silico. However, profiles containing additional information beyond demographics did not consistently outperform simpler ones. Certain cultural constructs and population groups also remain inadequately represented by the LLM models evaluated. Future work may include building behaviorally grounded and locally validated virtual populations.",
+  "ai_type_tags": [
+    "LLM",
+    "AI问卷生成",
+    "AI用户画像"
+  ],
+  "arxiv_id": "2609.07141",
+  "authors": [
+    "Kenneth Koh",
+    "Ryan Jak Yang Lim",
+    "Alessandro Sparacio",
+    "Peh Joo Ho",
+    "Mile Sikic"
+  ],
+  "authors_full": [
+    {
+      "name": "Kenneth Koh"
+    },
+    {
+      "name": "Ryan Jak Yang Lim"
+    },
+    {
+      "name": "Alessandro Sparacio"
+    },
+    {
+      "name": "Peh Joo Ho"
+    },
+    {
+      "name": "Mile Sikic"
+    },
+    {
+      "name": "Borame L Dickens"
+    },
+    {
+      "name": "Mikael Hartman"
+    },
+    {
+      "name": "Jingmei Li"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM模拟调查响应，涉调查方法但非用户研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "评估LLM智能体能否复现乳腺癌筛查干预前后的问卷响应分布。基于4125名女性数据，对比Gemma 4 E4B和Qwen3.5 9B在零样本及多种画像条件下的表现。画像增强型智能体优于零样本和随机基线，但仍逊于直接采样50名真实参与者。预测误差在55-59岁、私有住房群体中更高，并因问题主题和模型而异，提示词模板与温度参数影响结果。",
+      "topic_tags": [
+        "问卷",
+        "AI用户画像",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-07",
+  "doi": null,
+  "id": "p_1L7-x-u9ti9aDhqx",
+  "issue": null,
+  "journal": "arXiv:cs.SI",
+  "pdf_url": "https://arxiv.org/pdf/2609.07141v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 26896,
+      "revision": "702663414e9cd5e9b0c4e961bbf51b4566adb140"
+    }
+  ],
+  "title": "How Well Do LLMs Simulate Survey Responses Following a Breast Cancer Screening Intervention?",
+  "title_zh": null,
+  "unified_ingested_at": "2026-09-09T07:10:30.605950Z",
+  "url": "https://arxiv.org/abs/2609.07141v1",
+  "volume": null,
+  "year": 2026
+}

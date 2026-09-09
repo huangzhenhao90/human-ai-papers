@@ -1,5 +1,311 @@
 [
   {
+    "abstract": "Suicidal ideation (SI) and major depressive disorder (MDD) are complex psychiatric conditions arising from the interplay of genetic liability, molecular processes, and psychosocial factors. While these dimensions have been extensively studied in isolation, their joint contribution to SI and MDD remains unclear. This study integrates multi-modal data to elucidate these synergistic effects and develop robust models for individual-level risk stratification. Leveraging longitudinal multi-modal data from 13,085 UK Biobank participants, we integrated genomic, proteomic, and social connection profiles. We developed interpretable risk scores using a rigorous supervised machine learning framework encompassing diverse linear and ensemble classifiers. Permutation importance was employed to quantify feature contributions and derive transparent, weighted risk metrics across diverse classifiers. These scores were validated through association, interaction, and mediation analyses. Social connection-based risk scores significantly differentiated cases and controls across the two suicidal ideation phenotypes at 2017 and 2023 with cross-sectional analyses (AUCs: 0.70 - 0.73), outperforming proteomic-only models. Functional dimensions of social connection emerged as the most informative predictors. Longitudinal analyses revealed that social risk scores at baseline predicted suicidal ideation onset six years later, independent of demographic covariates. Interaction analyses demonstrated that polygenic risk for suicide attempt significantly interacted with both social and proteomic risk features in relation to depression. Structural equation models further confirmed that social disconnection acts as a key mediator linking genetic predisposition to MDD and SI. Social disconnection is a critical risk factor mediating the impact of genetic vulnerability on psychiatric outcomes. Integrating social, genetic, and molecular data supports a multilevel framework for risk stratification and highlights the potential of socially oriented interventions to mitigate biological risk.",
+    "ai_reason": "机器学习是核心建模方法但非主角，核心是自杀意念和抑郁症的多模态风险分层。",
+    "ai_score": 3,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Sihong Li",
+      "Zhongting Huang",
+      "Hui Chen",
+      "Xianliang Chen",
+      "Huajia Tang",
+      "Yanyue Ye",
+      "Jijun Zhu",
+      "Shenghan Wang",
+      "Li Pan",
+      "Shunjie Zhang"
+    ],
+    "authors_full": [
+      {
+        "name": "Sihong Li"
+      },
+      {
+        "name": "Zhongting Huang"
+      },
+      {
+        "name": "Hui Chen"
+      },
+      {
+        "name": "Xianliang Chen"
+      },
+      {
+        "name": "Huajia Tang"
+      },
+      {
+        "name": "Yanyue Ye"
+      },
+      {
+        "name": "Jijun Zhu"
+      },
+      {
+        "name": "Shenghan Wang"
+      },
+      {
+        "name": "Li Pan"
+      },
+      {
+        "name": "Shunjie Zhang"
+      },
+      {
+        "name": "Haowen Zhuang"
+      },
+      {
+        "name": "Weixin Liu"
+      },
+      {
+        "name": "Fuqiang Cai"
+      },
+      {
+        "name": "Zhijian Song"
+      },
+      {
+        "name": "Yuxin Liu"
+      },
+      {
+        "name": "Jiansong Zhou"
+      },
+      {
+        "name": "Junfang Chen"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "机器学习是核心建模方法但非主角，核心是自杀意念和抑郁症的多模态风险分层。",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "prospective_study",
+      "risk_tags": [],
+      "tldr": "UK Biobank 13,085人纵向研究显示社会断连风险评分(AUC 0.70-0.73)可预测6年后自杀意念，介导遗传易感性。",
+      "topic_tags": [
+        "depression",
+        "suicide_self_harm",
+        "risk_prediction",
+        "adults"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "external",
+    "date": "2026-09-07",
+    "doi": "10.1038/s41398-026-04276-z",
+    "domain_score": 5,
+    "evidence_stage": "prospective_study",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W7211900019",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "机器学习是核心建模方法但非主角，核心是自杀意念和抑郁症的多模态风险分层。",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "risk_prediction"
+        ],
+        "conditions": [
+          "depression",
+          "suicide_self_harm"
+        ],
+        "populations": [
+          "adults"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "2017和2023年自杀意念表型，AUC 0.70-0.73；社会风险评分预测自杀意念发生",
+        "sample": "13,085名UK Biobank参与者，随访6年",
+        "study_design": "纵向多模态队列研究，UK Biobank"
+      },
+      "evidence_stage": "prospective_study",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatric",
+          "depression",
+          "depressive",
+          "suicide",
+          "suicidal"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "UK Biobank 13,085人纵向研究显示社会断连风险评分(AUC 0.70-0.73)可预测6年后自杀意念，介导遗传易感性。",
+      "topic_tags": [
+        "depression",
+        "suicide_self_harm",
+        "risk_prediction",
+        "adults"
+      ]
+    },
+    "openalex_id": "W7211900019",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Social disconnection integrates genetic and proteomic risks in suicidal ideation and depression",
+    "title_zh": "社会断连整合遗传和蛋白组学风险预测自杀意念和抑郁",
+    "tldr": "UK Biobank 13,085人纵向研究显示社会断连风险评分(AUC 0.70-0.73)可预测6年后自杀意念，介导遗传易感性。",
+    "topic_tags": [
+      "depression",
+      "suicide_self_harm",
+      "risk_prediction",
+      "adults"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04276-z",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "心理健康应用程序(APP)为核心应用对象，但APP的AI特征需摘要补充确认。",
+    "ai_score": 4,
+    "ai_type_tags": [],
+    "authors": [
+      "Ashley D. Kendall",
+      "Noah Robinson",
+      "Robin J. Mermelstein",
+      "Steven D. Hollon"
+    ],
+    "authors_full": [
+      {
+        "name": "Ashley D. Kendall"
+      },
+      {
+        "name": "Noah Robinson"
+      },
+      {
+        "name": "Robin J. Mermelstein"
+      },
+      {
+        "name": "Steven D. Hollon"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "心理健康应用程序(APP)为核心应用对象，但APP的AI特征需摘要补充确认。",
+      "ai_score": 4,
+      "ai_type_tags": [],
+      "domain_score": 4,
+      "evidence_stage": "conceptual",
+      "risk_tags": [
+        "overreliance"
+      ],
+      "tldr": "概念/方法学论文，论证心理健康APP的疗效评估标准，不构成治疗失败的结论。",
+      "topic_tags": [
+        "digital_intervention",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-09-07",
+    "doi": "10.1038/s44220-026-00715-4",
+    "domain_score": 4,
+    "evidence_stage": "conceptual",
+    "ground_truth_quality": "unknown",
+    "id": "W7211882620",
+    "journal": "Nature Mental Health",
+    "mh_profile": {
+      "ai_reason": "心理健康应用程序(APP)为核心应用对象，但APP的AI特征需摘要补充确认。",
+      "ai_score": 4,
+      "ai_type_tags": [],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [],
+        "applications": [
+          "digital_intervention"
+        ],
+        "conditions": [],
+        "populations": [
+          "general_population"
+        ],
+        "risks": [
+          "overreliance"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": null,
+        "sample": null,
+        "study_design": null
+      },
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [],
+        "ai_signal": false,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "overreliance"
+      ],
+      "safety_evaluated": false,
+      "tldr": "概念/方法学论文，论证心理健康APP的疗效评估标准，不构成治疗失败的结论。",
+      "topic_tags": [
+        "digital_intervention",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7211882620",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "overreliance"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4387286578",
+      "ingest_mode": "full",
+      "key": "nature_mental_health",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Failure to outperform treatment controls does not imply treatment failure for mental health apps",
+    "title_zh": "未能超越治疗对照组并不意味心理健康APP的治疗失败",
+    "tldr": "概念/方法学论文，论证心理健康APP的疗效评估标准，不构成治疗失败的结论。",
+    "topic_tags": [
+      "digital_intervention",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1038/s44220-026-00715-4",
+    "year": 2026
+  },
+  {
     "abstract": "Abstract While artificial intelligence (AI) and large language models (LLMs) have shown promise in identifying and classifying suicidal ideation, their generalizability and equity in the presence of heterogeneous clinical data remain largely unexplored. This study hypothesized a subgroup disparity in a crude AI classifier of clinician-rated suicidal ideation because of the linguistic heterogeneity and proposed a factorization approach to decompose complex data into simpler components by reducing topic dimensions of clinical transcripts. Results showed that topic-specific classifiers reduced subgroup disparity compared to the topic-general classifier, with ΔAUC decreasing from 0.11 to 0.01 and 0.05—a noticeable reduction of 0.10 and 0.06, respectively. More specifically, with the topic-general classifier, the odds of missing a suicidal case increased by 2.39 times for alexithymia individuals, compared to non-alexithymia individuals (OR = 2.39, p = 0.002). These findings underscore the significance of data heterogeneity on AI classifiers of suicidal ideation and demonstrate the potential of the proposed factorization approach.",
     "ai_reason": "LLM是核心分类方法，直接用于临床评估自杀意念这一核心心理健康结局。",
     "ai_score": 5,
@@ -592,6 +898,179 @@
       "clinical_patients"
     ],
     "url": "https://doi.org/10.1038/s44220-026-00717-2",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "语音声学特征分析用于检测抑郁和自杀风险，AI/ML为方法核心之一，心理健康结局明确。",
+    "ai_score": 3,
+    "ai_type_tags": [
+      "speech_audio",
+      "machine_learning"
+    ],
+    "authors": [
+      "Qunxing Lin",
+      "Xiaohua Wu",
+      "Shan Huang",
+      "Yueshiyuan Lei",
+      "Wencan Cheng",
+      "Yiling Mai",
+      "Weijie Wang",
+      "Chong Li",
+      "Jiubo Zhao"
+    ],
+    "authors_full": [
+      {
+        "name": "Qunxing Lin"
+      },
+      {
+        "name": "Xiaohua Wu"
+      },
+      {
+        "name": "Shan Huang"
+      },
+      {
+        "name": "Yueshiyuan Lei"
+      },
+      {
+        "name": "Wencan Cheng"
+      },
+      {
+        "name": "Yiling Mai"
+      },
+      {
+        "name": "Weijie Wang"
+      },
+      {
+        "name": "Chong Li"
+      },
+      {
+        "name": "Jiubo Zhao"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "语音声学特征分析用于检测抑郁和自杀风险，AI/ML为方法核心之一，心理健康结局明确。",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "speech_audio",
+        "machine_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [
+        "bias_fairness",
+        "privacy_security"
+      ],
+      "tldr": "研究通过语音声学特征分析检测抑郁和自杀风险，属于精神健康筛查与风险预测应用。",
+      "topic_tags": [
+        "depression",
+        "suicide_self_harm",
+        "screening_assessment",
+        "risk_prediction",
+        "adults"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-09-03",
+    "doi": "10.1016/j.jad.2026.122439",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W7207840443",
+    "journal": "Journal of Affective Disorders",
+    "mh_profile": {
+      "ai_reason": "语音声学特征分析用于检测抑郁和自杀风险，AI/ML为方法核心之一，心理健康结局明确。",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "speech_audio",
+        "machine_learning"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "speech_audio",
+          "machine_learning"
+        ],
+        "applications": [
+          "screening_assessment",
+          "risk_prediction"
+        ],
+        "conditions": [
+          "depression",
+          "suicide_self_harm"
+        ],
+        "populations": [
+          "adults"
+        ],
+        "risks": [
+          "bias_fairness",
+          "privacy_security"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "抑郁和自杀风险识别",
+        "sample": "未知（摘要缺失）",
+        "study_design": "声学标记提取与分类模型训练"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [],
+        "ai_signal": false,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "depression",
+          "suicide"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "研究通过语音声学特征分析检测抑郁和自杀风险，属于精神健康筛查与风险预测应用。",
+      "topic_tags": [
+        "depression",
+        "suicide_self_harm",
+        "screening_assessment",
+        "risk_prediction",
+        "adults"
+      ]
+    },
+    "openalex_id": "W7207840443",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "bias_fairness",
+      "privacy_security"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S113871862",
+      "ingest_mode": "full",
+      "key": "journal_affective_disorders",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Emotionally engaged speech reveals acoustic markers of depression and suicide risk",
+    "title_zh": "情绪化语音揭示抑郁和自杀风险的声学标记",
+    "tldr": "研究通过语音声学特征分析检测抑郁和自杀风险，属于精神健康筛查与风险预测应用。",
+    "topic_tags": [
+      "depression",
+      "suicide_self_harm",
+      "screening_assessment",
+      "risk_prediction",
+      "adults"
+    ],
+    "url": "https://doi.org/10.1016/j.jad.2026.122439",
     "year": 2026
   },
   {

@@ -1,0 +1,83 @@
+{
+  "abstract": "Evaluating tool-augmented LLM agents requires diverse, realistic user inputs yet most evaluation frameworks use flat role descriptions (\"you are an angry customer\") that produce near-identical conversations regardless of the underlying scenario. In this paper, we propose a three-tier persona vector with 23 operationalized dimensions: 6 categorical demographics (jurisdiction, age, channel, device, language proficiency, time availability), 12 continuous behavioral traits (patience, assertiveness, digital literacy, etc.) sampled with Gaussian noise around curated profile base vectors, and 5 continuous emotional states (frustration, anxiety, trust, confidence, stress) that shift in response to scenario context. Orthogonal to the persona, a 4-level query-complexity overlay controls utterance phrasing from direct to deliberately vague. We evaluate the persona model inside a synthetic data generation pipeline across 64,698 multi-turn conversations spanning 8 named profiles and 3 production corpora. Key findings: (i) a 15.8 percentage-point spread in agent goal-achievement across personas confirms trait vectors produce measurably different user behavior; (ii) the same persona behaves differently across scenarios due to scenario-reactive emotional state shifts, validating the scenario-reactive design; (iii) domain-specific projects show persona sensitivity on booking-flow compliance (~15-20 percentage points gap between tier-aware and pressure-test personas), demonstrating the model faithfully reproduces real-world difficulty distributions; (iv) seven rule-described trait correlations produce auditable co-occurrence patterns without requiring learned covariance matrices. The persona model is fully specified for reproduction.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI用户画像",
+    "人机协作"
+  ],
+  "arxiv_id": "2609.08592",
+  "authors": [
+    "Rahul Khedar",
+    "Eshita",
+    "Sneha Teja Sree Reddy Thondapu",
+    "Mayank Malhotra",
+    "Arup Kumar Das"
+  ],
+  "authors_full": [
+    {
+      "name": "Rahul Khedar"
+    },
+    {
+      "name": "Eshita"
+    },
+    {
+      "name": "Sneha Teja Sree Reddy Thondapu"
+    },
+    {
+      "name": "Mayank Malhotra"
+    },
+    {
+      "name": "Arup Kumar Das"
+    },
+    {
+      "name": "Jitesh Chandra Mishra"
+    },
+    {
+      "name": "Arun Menon"
+    },
+    {
+      "name": "Avinash Karn"
+    },
+    {
+      "name": "Mouli V"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心为LLM智能体评估，用户画像模拟具用研色彩",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对工具增强型LLM智能体评估中用户模拟缺乏多样性的问题，构建含23个维度的三层人物画像向量（6项人口统计、12项行为特质、5项情感状态），并叠加4级查询复杂度。在64,698轮多场景对话中验证：不同画像使智能体目标达成率产生15.8个百分点差异；情境反应式情感偏移有效改变行为；预订流程合规率存在15-20个百分点的画像敏感差距。",
+      "topic_tags": [
+        "用户画像",
+        "用户研究方法",
+        "人机交互(HCI)",
+        "AI采用"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-08",
+  "doi": null,
+  "id": "p_KHomcyEYftk__n2L",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.08592v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 26879,
+      "revision": "702663414e9cd5e9b0c4e961bbf51b4566adb140"
+    }
+  ],
+  "title": "A Three-Tier Persona Vector for Controllable User Simulation in Agentic Evaluation",
+  "title_zh": null,
+  "unified_ingested_at": "2026-09-09T07:10:30.605950Z",
+  "url": "https://arxiv.org/abs/2609.08592v1",
+  "volume": null,
+  "year": 2026
+}
