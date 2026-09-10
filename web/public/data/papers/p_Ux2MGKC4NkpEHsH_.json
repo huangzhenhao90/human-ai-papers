@@ -1,6 +1,11 @@
 {
   "abstract": "AI systems increasingly answer scientific questions about health, safety, and the environment. But most retrieval-augmented generation systems are tuned to provide factually correct, on-topic answers rather than to help non-experts understand what those answers mean for their lives and decisions. We focus on consequential scientific questions whose results directly shape people's lives and study them through a public water-quality communication system, where residents and community leaders interpret the findings and choose actions. Their experiences show that on-topic answers can still be insufficient without explanation and context and that the emotional weight of risk information cannot be ignored. Our system first classifies each question by reasoning type (for example, causal versus policy-based), then generates follow-up questions to identify missing evidence and retrieve it. One component clearly distinguishes between what is known and what is uncertain, while another rewrites scientific details into accessible language, using persona-based styles, such as a caring neighbor or an administrative official, to adapt tone and readability. Ablations on over $160$ questions show that the system uses $\\textit{an order of magnitude less context}$ and, in several configurations, improves human-rated completeness. A completeness metric co-designed with community members and a fine-tuned learned judge reveal that standard relevance scores explain about $1\\%$ of variation in human completeness ratings, and even the tuned judge only moderately aligns with humans, indicating that completeness is a distinct human-centered objective that current metrics do not reliably capture.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "对话式 AI",
+    "AI 助手"
+  ],
   "arxiv_id": "2609.06222",
   "authors": [
     "Avina Nakarmi",
@@ -27,8 +32,13 @@
       "ai_reason": "RAG系统为核心，含居民/社区领导者实地研究",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "面向影响公众健康、安全与决策的科学问题，构建以沟通为导向的检索增强生成系统，并以公共水质沟通为场景。系统按因果/政策等推理类型分类问题，生成追问补足证据，区分已知与不确定信息，再以邻人或行政官员等角色风格改写。实验显示所用上下文减少一个量级且人类完整性评分提升。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "对话式 AI",
+        "服务设计"
+      ]
     }
   },
   "channels": [
@@ -45,7 +55,7 @@
     {
       "channel": "ur",
       "legacy_id": 26899,
-      "revision": "702663414e9cd5e9b0c4e961bbf51b4566adb140"
+      "revision": "ac7c1daa89223391810b1c27533013643e154378"
     }
   ],
   "title": "Relevance is not enough: A Communication-Oriented Retrieval System for Consequential Scientific Question Answering",
