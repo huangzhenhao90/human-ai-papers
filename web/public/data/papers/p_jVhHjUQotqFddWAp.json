@@ -1,9 +1,9 @@
 {
   "abstract": "Organizational design in the era of artificial intelligence requires experimental methods that can test how human-AI groups coordinate, delegate, and make decisions. Programmable platforms coordinate live human-to-human sessions or real-time human-AI chat, but researchers cannot easily declare experiment protocols in which AI participants both communicate and act on shared work within one auditable configuration. Here we introduce Pairit, an online platform that facilitates the design, testing, and deployment of experiments that test human-AI organizational designs and interventions. Through a single YAML configuration file, researchers declare an executable experiment graph (pages, routing, randomization, matchmaking, chat, shared workspaces, server-hosted agents, surveys, timers, and custom HTML components) and combine any number of humans and AI agents in live sessions. We have validated the feasibility of the platform through multiple live deployments, including peer-reviewed published studies, capturing high-resolution process traces of communication, negotiation, and collaborative work in live human-AI dyads. By representing complex interactive protocols as standardized, auditable configuration files, Pairit provides reusable infrastructure for specifying, deploying, and sharing live human-AI organizational experiments.",
   "ai_type_tags": [
-    "智能体/Agent",
     "人机协作",
-    "人机交互"
+    "人机交互",
+    "LLM"
   ],
   "arxiv_id": "2609.09789",
   "authors": [
@@ -19,6 +19,17 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "人机协作实验平台，AI与组织设计核心",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "组织设计在AI时代需要可实验的人机协作研究方法。论文介绍Pairit在线平台，通过单一YAML配置文件声明可执行实验图（页面、路由、随机化、匹配、聊天、共享工作空间、服务器托管AI代理、问卷等），将任意数量的人类与AI代理组合到实时会话中，为活体人机组织实验提供可复用、可审计、可共享的基础设施。",
+      "topic_tags": [
+        "人机协作",
+        "组织变革",
+        "工作设计"
+      ]
+    },
     "ur": {
       "ai_reason": "人机协作实验平台，HCI方法论平台构建",
       "ai_score": 4.0,
@@ -33,6 +44,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 0,
@@ -44,9 +56,14 @@
   "pdf_url": "https://arxiv.org/pdf/2609.09789v1",
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 66442,
+      "revision": "45cb6763ec77884dd611988fe1d725cbb5ce2ca4"
+    },
+    {
       "channel": "ur",
       "legacy_id": 27051,
-      "revision": "ac7c1daa89223391810b1c27533013643e154378"
+      "revision": "1d141f61dd149b61d6c12e47e678eb5f859c551f"
     }
   ],
   "title": "Pairit: A Platform for Live Experiments on Human-AI Collaboration",
