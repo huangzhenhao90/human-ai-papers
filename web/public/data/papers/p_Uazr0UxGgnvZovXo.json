@@ -1,0 +1,72 @@
+{
+  "abstract": "E-commerce platforms increasingly personalize user experiences through machine learning, yet page layout decisions remain dominated by static rules and manual curation. We present a scalable bandit-based system that optimizes product page layouts in real time while preserving human control over design intent. A contextual bandit model dynamically selects the most effective layout for each session using user, item, and category-level features. The system leverages a LinUCB-based policy to balance exploration and exploitation as it learns from live user interactions. The architecture is designed for seamless integration into large-scale web serving stacks, supporting low-latency inference and continuous model updates. The system was first tested on entry product pages. In online A/B deployments on a major retail platform, our approach achieved positive lifts in session-level performance metrics over a strong heuristic baseline. Our results demonstrate that contextual bandits can effectively optimize visual and structural aspects of product discovery for user engagement, providing a scalable path toward learning-to-design the web.",
+  "ai_type_tags": [
+    "推荐算法",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2608.29850",
+  "authors": [
+    "Bhavtosh Rath",
+    "Harshith Narasimhamurthy",
+    "Bob Eisinger",
+    "Cole Stiegler",
+    "Adnan Awow"
+  ],
+  "authors_full": [
+    {
+      "name": "Bhavtosh Rath"
+    },
+    {
+      "name": "Harshith Narasimhamurthy"
+    },
+    {
+      "name": "Bob Eisinger"
+    },
+    {
+      "name": "Cole Stiegler"
+    },
+    {
+      "name": "Adnan Awow"
+    },
+    {
+      "name": "Amit Pande"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "bandit+A/B测试,含用户交互但核心是系统",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "电商平台页面布局多依赖静态规则，难以针对每次访问实时个性化。论文设计了一套基于情境老虎机（LinUCB）的可扩展系统，在低延迟推理与持续学习的前提下，根据用户、商品与品类特征为每场会话动态选择最优商品页布局，同时保留人工对设计意图的控制。在大型零售平台在线 A/B 实验中，相较强启发式基线取得显著的会话级指标提升，验证了老虎机在视觉与结构层面优化产品发现体验的可行性。",
+      "topic_tags": [
+        "推荐系统",
+        "个性化",
+        "人机交互(HCI)",
+        "用户体验(UX)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-08-30",
+  "doi": "10.48550/arxiv.2608.29850",
+  "id": "p_Uazr0UxGgnvZovXo",
+  "issue": null,
+  "journal": "arXiv",
+  "pdf_url": "https://arxiv.org/pdf/2608.29850",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 27436,
+      "revision": "fd8d67f53a2e44682ff19d59d36a345c6d045d59"
+    }
+  ],
+  "title": "Designing for the Next Click: Bandits for Real-Time Page Layout",
+  "title_zh": "为下一次点击而设计：实时页面布局中的多臂老虎机方法",
+  "unified_ingested_at": "2026-09-12T07:00:34.867304Z",
+  "url": "https://arxiv.org/abs/2608.29850",
+  "volume": null,
+  "year": 2026
+}
