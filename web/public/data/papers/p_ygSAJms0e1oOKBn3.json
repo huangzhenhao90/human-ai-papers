@@ -1,6 +1,10 @@
 {
   "abstract": "Robotic ophthalmic surgery offers high precision but introduces a \"sensory gap\" by decoupling the surgeon from their instrument, resulting in a loss of tactile feedback. This paper presents a novel haptic feedback system for subretinal injection tasks leveraging Scene Graphs (SG). The system bridges the sensory gap by analyzing a physically simulated intraoperative Optical Coherence Tomography (iOCT) feed to construct a real-time surgical SG. The SG serves as a semantic abstraction layer for the surgical scene, which is then utilized by a deterministic, rule-based engine to generate state-dependent haptic feedback on a robotic input device. The system was evaluated in a user study (N=16) using an anthropomorphic head phantom and a custom-built surgical robot. Results demonstrate that the SG-driven haptic feedback improved surgical precision, reducing needle alignment error by 14% (p = 0.044) and improving System Usability Scale (SUS) scores by 8% (p = 0.015), while maintaining comparable task completion times. A needle trajectory analysis revealed the emergence of a safer \"Align-then-Approach\" strategy, in which our haptic negative reinforcement prompted users to fine-tune the tool's trajectory before approaching the retinal target. This work suggests that SGs can effectively serve as the direct computational foundation for real-time, safety-enhancing context-aware haptic feedback in robotic microsurgery.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "智能体/Agent",
+    "多模态",
+    "人机协作"
+  ],
   "arxiv_id": "2609.07857",
   "authors": [
     "Danial Arbabi",
@@ -31,8 +35,12 @@
       "ai_reason": "机器人手术触觉反馈N=16用户研究",
       "ai_score": 3.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对机器人眼科手术因工具脱耦导致的触觉丧失问题，提出基于场景图与物理模拟iOCT的实时触觉反馈系统。用户研究(N=16)显示该系统将针头对准误差降低14%、可用性量表(SUS)提升8%，并促使操作者形成更安全的'先对齐再进针'策略。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可用性测试",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -49,7 +57,7 @@
     {
       "channel": "ur",
       "legacy_id": 27423,
-      "revision": "fd8d67f53a2e44682ff19d59d36a345c6d045d59"
+      "revision": "64e4dd69e30bc9c45551a503f2448d03408b69a1"
     }
   ],
   "title": "Scene Graph-Driven Haptic Feedback for Safety Enhancement in Robotic Ophthalmic Surgery via Physically Simulated iOCT",

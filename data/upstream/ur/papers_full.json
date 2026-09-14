@@ -17398,7 +17398,7 @@
     "pdf_url": "https://arxiv.org/pdf/2609.07687v1",
     "scored_at": "2026-09-09T07:00:40.585201",
     "title": "Perspectives on Cross-Lingual Consistency in LLMs for Medical Questions",
-    "title_zh": null,
+    "title_zh": "大语言模型在医学问答中跨语言一致性的研究视角",
     "tldr": "探讨多语言LLM回答医学问题应跨语言一致还是文化适应，识别现有研究缺乏利益相关者视角和实证依据。调研德、西、美三国356名医学、NLP、人类学专家：人类学者一致倾向文化适应，医学和NLP从业者态度分歧，美欧医学专家差异显著。注入职业和国家画像的LLM未能复现群体间偏好分化，提示需更多实证以决定何者更优。",
     "topic_tags": [
       "问卷",
@@ -17851,7 +17851,11 @@
     "abstract": "Robotic ophthalmic surgery offers high precision but introduces a \"sensory gap\" by decoupling the surgeon from their instrument, resulting in a loss of tactile feedback. This paper presents a novel haptic feedback system for subretinal injection tasks leveraging Scene Graphs (SG). The system bridges the sensory gap by analyzing a physically simulated intraoperative Optical Coherence Tomography (iOCT) feed to construct a real-time surgical SG. The SG serves as a semantic abstraction layer for the surgical scene, which is then utilized by a deterministic, rule-based engine to generate state-dependent haptic feedback on a robotic input device. The system was evaluated in a user study (N=16) using an anthropomorphic head phantom and a custom-built surgical robot. Results demonstrate that the SG-driven haptic feedback improved surgical precision, reducing needle alignment error by 14% (p = 0.044) and improving System Usability Scale (SUS) scores by 8% (p = 0.015), while maintaining comparable task completion times. A needle trajectory analysis revealed the emergence of a safer \"Align-then-Approach\" strategy, in which our haptic negative reinforcement prompted users to fine-tune the tool's trajectory before approaching the retinal target. This work suggests that SGs can effectively serve as the direct computational foundation for real-time, safety-enhancing context-aware haptic feedback in robotic microsurgery.",
     "ai_reason": "机器人手术触觉反馈N=16用户研究",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "智能体/Agent",
+      "多模态",
+      "人机协作"
+    ],
     "authors": [
       "Danial Arbabi",
       "Korab Hoxha",
@@ -17888,8 +17892,12 @@
     "scored_at": "2026-09-12T06:55:08.398417",
     "title": "Scene Graph-Driven Haptic Feedback for Safety Enhancement in Robotic Ophthalmic Surgery via Physically Simulated iOCT",
     "title_zh": "场景图驱动的触觉反馈：基于物理模拟iOCT提升机器人眼科手术安全性",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对机器人眼科手术因工具脱耦导致的触觉丧失问题，提出基于场景图与物理模拟iOCT的实时触觉反馈系统。用户研究(N=16)显示该系统将针头对准误差降低14%、可用性量表(SUS)提升8%，并促使操作者形成更安全的'先对齐再进针'策略。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可用性测试",
+      "用户研究方法"
+    ],
     "url": "https://arxiv.org/abs/2609.07857",
     "volume": null,
     "year": 2026
@@ -17898,7 +17906,10 @@
     "abstract": "Human-robot collaboration describes the process of humans and autonomous agents working together to accomplish common goals. This process is facilitated best when robot policies, or behaviors in different situations, are made transparent to humans. Demonstration-based explanations have been a focus of human-robot collaboration research, and the field has frequently drawn upon literature from education to improve how humans are taught robot policies. However, no single teaching method has been proven effective across domains, difficulties, learners, and other variables; the question of how humans can most effectively be taught robot policies remains open. In traditional classrooms, learners are shown erroneous examples, in which they reflect on and correct incorrect responses to understand common pitfalls when learning a concept. We propose using erroneous examples to teach robot policies, extending an existing policy teaching framework. We conduct a user study in which participants view incorrect demonstrations of robot behavior and correct the actions to align with the actual policy. Our findings suggest that viewing these incorrect demonstrations and verbalizing one's reasoning in predicting a robot's actions improves retention of the policy over time, in agreement with the effect of erroneous examples in classrooms. We also categorize participants into distinct learning styles and establish that participants using inverse reinforcement learning-like reasoning perform best on policy prediction tasks. With this work, we aim to advance the methods by which robots educate humans on their policies.",
     "ai_reason": "人机协作教学,用户研究方法",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互"
+    ],
     "authors": [
       "Rithika Narayan",
       "Suresh Kumaar Jayaraman",
@@ -17927,8 +17938,12 @@
     "scored_at": "2026-09-12T06:55:14.060797",
     "title": "Teaching Robot Policies to Humans Using Erroneous Examples",
     "title_zh": "通过错误示例向人类传授机器人策略",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究将传统课堂中的'错误示例'教学法扩展至人机协作场景，让用户观看机器人行为错误演示并口头推理纠正。用户研究表明该方法能提升对机器人策略的长期记忆，并按学习风格将参与者分类，发现采用逆向强化学习式推理者表现最佳。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "用户研究方法"
+    ],
     "url": "https://arxiv.org/abs/2608.29023",
     "volume": null,
     "year": 2026
@@ -19931,6 +19946,62 @@
     "url": "https://doi.org/10.1016/j.chb.2013.12.016",
     "volume": "33",
     "year": 2014
+  },
+  {
+    "abstract": null,
+    "ai_reason": "谈判智能体涉及AI，但属IJHCS需用户评估",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Jose J. Castro-Schez",
+      "Nicholas R. Jennings",
+      "Xudong Luo",
+      "Nigel R. Shadbolt"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jose J. Castro-Schez",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nicholas R. Jennings",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Xudong Luo",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nigel R. Shadbolt",
+        "orcid": null
+      }
+    ],
+    "cited_by": 33,
+    "date": "2004-07",
+    "doi": "10.1016/j.ijhcs.2003.09.006",
+    "domain_score": 3.0,
+    "id": 26729,
+    "ingested_at": "2026-09-09T07:00:06.037988",
+    "issue": "1",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-09-14T07:39:05.521911",
+    "title": "Acquiring domain knowledge for negotiating agents: a case of study",
+    "title_zh": "面向谈判代理的领域知识获取：一项案例研究",
+    "tldr": "研究如何为自动谈判智能体获取领域知识，以案例分析形式探讨知识获取方法及其对谈判智能体决策与交互能力的影响，旨在提升智能体在特定领域谈判任务中的表现。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2003.09.006",
+    "volume": "61",
+    "year": 2004
   },
   {
     "abstract": null,
@@ -32726,17 +32797,20 @@
       {
         "affiliation": [],
         "name": "Hemad Fetrati",
-        "orcid": "https://orcid.org/0009-0007-9220-0147"
+        "orcid": "https://orcid.org/0009-0007-9220-0147",
+        "position": "first"
       },
       {
         "affiliation": [],
         "name": "Gerry Chan",
-        "orcid": "https://orcid.org/0000-0002-1004-1274"
+        "orcid": "https://orcid.org/0000-0002-1004-1274",
+        "position": "middle"
       },
       {
         "affiliation": [],
         "name": "Rita Orji",
-        "orcid": "https://orcid.org/0000-0001-6152-8034"
+        "orcid": "https://orcid.org/0000-0001-6152-8034",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -32747,7 +32821,7 @@
     "ingested_at": "2026-09-12T06:54:33.144284",
     "issue": null,
     "journal": "IJHCS",
-    "pdf_url": null,
+    "pdf_url": "https://doi.org/10.1016/j.ijhcs.2026.103944",
     "scored_at": "2026-09-12T06:55:08.971311",
     "title": "Design, development, and evaluation of STI shield: A multi-chatbot mobile application for sexual health education and behavior change in African young adults",
     "title_zh": "STI shield设计、开发与评估：面向非洲青年性健康教育的多聊天机器人应用",
@@ -36124,6 +36198,48 @@
     "url": "https://doi.org/10.1177/00222437221151039",
     "volume": "61",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "对比人声与AI合成声在广告中的效果",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "多模态",
+      "语音合成",
+      "GenAI"
+    ],
+    "authors": [
+      "Emma Rodero"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Emma Rodero",
+        "orcid": null
+      }
+    ],
+    "cited_by": 31,
+    "date": "2017-12",
+    "doi": "10.1016/j.chb.2017.08.044",
+    "domain_score": 4.0,
+    "id": 27475,
+    "ingested_at": "2026-09-13T07:14:46.550457",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-13T07:15:43.572651",
+    "title": "Effectiveness, attention, and recall of human and artificial voices in an advertising story. Prosody influence and functions of voices",
+    "title_zh": "广告叙事中人声与人工语音的有效性、注意力与回忆：韵律影响及语音功能",
+    "tldr": "对比人类声音与 AI 合成声音在广告叙事中的传播效果，考察注意力、记忆度与说服力的差异，并分析韵律特征及声音在广告中承担的功能角色。研究为 AI 语音在营销场景的应用提供效果证据与韵律设计启示。",
+    "topic_tags": [
+      "广告",
+      "消费者行为",
+      "营销",
+      "情感计算"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2017.08.044",
+    "volume": "77",
+    "year": 2017
   },
   {
     "abstract": "Existing eXplainable Artificial Intelligence (XAI) techniques support people in interpreting AI advice. However, although previous work evaluates the users’ understanding of explanations, factors influencing the decision support are largely overlooked in the literature. This article addresses this gap by studying the impact of\n            user uncertainty\n            ,\n            AI correctness\n            , and the interaction between\n            AI uncertainty\n            and\n            explanation logic-styles\n            for classification tasks. We conducted two separate studies: one requesting participants to recognize handwritten digits and one to classify the sentiment of reviews. To assess the decision making, we analyzed the\n            task performance, agreement\n            with the AI suggestion, and the user’s\n            reliance\n            on the XAI interface elements. Participants make their decision relying on three pieces of information in the XAI interface (image or text instance, AI prediction, and explanation). Participants were shown one explanation style (between-participants design) according to three styles of logical reasoning (inductive, deductive, and abductive). This allowed us to study how different levels of AI uncertainty influence the effectiveness of different explanation styles. The results show that user uncertainty and AI correctness on predictions significantly affected users’ classification decisions considering the analyzed metrics. In both domains (images and text), users relied mainly on the instance to decide. Users were usually overconfident about their choices, and this evidence was more pronounced for text. Furthermore, the inductive style explanations led to overreliance on the AI advice in both domains—it was the most persuasive, even when the AI was incorrect. The abductive and deductive styles have complex effects depending on the domain and the AI uncertainty levels.",
@@ -40492,7 +40608,11 @@
     "abstract": "Our research aims to develop intelligent collaborative agents that are\n            human-aware\n            : They can model, learn, and reason about their human partner’s physiological, cognitive, and affective states. In this article, we study how adaptive coaching interactions can be designed to help people develop sustainable healthy behaviors. We leverage the common model of cognition (CMC) [31] as a framework for unifying several behavior change theories that are known to be useful in human–human coaching. We motivate a set of interactive system desiderata based on the CMC-based view of behavior change. Then, we propose PARCoach, an interactive system that addresses the desiderata. PARCoach helps a trainee pick a relevant health goal, set an implementation intention, and track their behavior. During this process, the trainee identifies a specific goal-directed behavior as well as the situational context in which they will perform it. PARCCoach uses this information to send notifications to the trainee, reminding them of their chosen behavior and the context. We report the results from a 4-week deployment with 60 participants. Our results support the CMC-based view of behavior change and demonstrate that the desiderata for proposed interactive system design is useful in producing behavior change.",
     "ai_reason": "核心为智能协作agent，HCI健康行为",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机协作",
+      "AI助手"
+    ],
     "authors": [
       "Shiwali Mohan"
     ],
@@ -40517,8 +40637,13 @@
     "scored_at": "2026-09-12T06:55:23.750440",
     "title": "Exploring the Role of Common Model of Cognition in Designing Adaptive Coaching Interactions for Health Behavior Change",
     "title_zh": "探索认知通用模型在健康行为改变自适应辅导交互设计中的作用",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对健康行为改变设计人感知自适应协作型教练智能体，以Common Model of Cognition统一多种行为改变理论，提出PARCoach系统帮助用户选定目标、制定实施意图并推送情境化提醒；4周60人部署结果支持该CMC框架及设计需求的有效性。",
+    "topic_tags": [
+      "人机协作",
+      "个性化",
+      "用户研究方法",
+      "可用性测试"
+    ],
     "url": "https://doi.org/10.1145/3375790",
     "volume": "11",
     "year": 2021
@@ -40969,7 +41094,7 @@
     "pdf_url": null,
     "scored_at": "2026-09-07T06:54:00.233383",
     "title": "EXPRESS: Amplifying Insights: Harnessing Voice Technology to Decode Customer Uncertainty in Marketing",
-    "title_zh": null,
+    "title_zh": "EXPRESS：放大洞察——利用语音技术解码营销中的客户不确定性",
     "tldr": "探讨能否通过语音推断营销调查中客户回答的不确定性，以弥补既有基于选择式问卷的不确定性度量在认知简洁性、预测稳健性与适用性上的局限。研究比较原始音频与音高特征两种方法，在实验室与连锁音乐店现场 NPS 研究中发现音高特征法表现更优且更保护隐私，并据此提出面向优惠券核销客户与品牌大使识别的管理框架。",
     "topic_tags": [
       "客户体验(CX)",
@@ -41025,7 +41150,7 @@
     "pdf_url": null,
     "scored_at": "2026-09-07T06:54:00.231962",
     "title": "EXPRESS: Behavioral Research Through Interpretable, Dimensionality-reduced Generative AI Embeddings (BRIDGE): A Method to Incorporate Real-World Stimuli in Consumer Experiments",
-    "title_zh": null,
+    "title_zh": "EXPRESS：基于可解释降维生成式AI嵌入的消费者行为研究方法（BRIDGE）",
     "tldr": "针对消费者实验中刺激样本有限、外部效度不足的问题，提出 BRIDGE 方法，利用生成式 AI 嵌入为海量真实文本刺激构建可解释的低维表征并控制无关变异。蒙特卡洛模拟、两项咖啡认证实验及千人评估约 5 万条产品描述的大规模选择实验表明，该方法在含未观测干扰下仍能恢复真实参数并处理混杂，还发现初始产品会显著塑造后续偏好。",
     "topic_tags": [
       "消费者行为",
@@ -42663,49 +42788,54 @@
           "Sangmyung University"
         ],
         "name": "Soyoung Jung",
-        "orcid": "https://orcid.org/0009-0005-9498-5123"
+        "orcid": "https://orcid.org/0000-0002-1010-6250",
+        "position": "first"
       },
       {
         "affiliation": [
           "Sangmyung University"
         ],
         "name": "Hansol Kim",
-        "orcid": "https://orcid.org/0009-0009-1075-2322"
+        "orcid": "https://orcid.org/0000-0002-0689-176X",
+        "position": "middle"
       },
       {
         "affiliation": [
           "Sangmyung University"
         ],
         "name": "Seo Yeon Jeong",
-        "orcid": "https://orcid.org/0009-0000-6048-0630"
+        "orcid": "https://orcid.org/0009-0000-6048-0630",
+        "position": "middle"
       },
       {
         "affiliation": [
           "Sangmyung University"
         ],
         "name": "Jung Min Lee",
-        "orcid": "https://orcid.org/0009-0008-4635-8581"
+        "orcid": "https://orcid.org/0009-0008-4635-8581",
+        "position": "middle"
       },
       {
         "affiliation": [
           "Sangmyung University"
         ],
         "name": "Xuejiao Li",
-        "orcid": "https://orcid.org/0009-0001-4178-9680"
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
           "Sangmyung University"
         ],
         "name": "Young Jo Yoo",
-        "orcid": "https://orcid.org/0009-0002-1174-7639"
+        "orcid": null,
+        "position": "middle"
       },
       {
-        "affiliation": [
-          "Taejae University"
-        ],
+        "affiliation": [],
         "name": "Sung Park",
-        "orcid": "https://orcid.org/0000-0002-1242-9264"
+        "orcid": "https://orcid.org/0000-0002-1242-9264",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -44107,7 +44237,10 @@
     "abstract": "Using AI-generated headshots that vary only in femininity, a field experiment finds that consumers discriminate against femininity independently of gender identity.",
     "ai_reason": "AI生成刺激的田野实验，研究消费者歧视行为",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "图像生成"
+    ],
     "authors": [
       "Lan Luo",
       "Olivier Toubia"
@@ -44142,8 +44275,12 @@
     "scored_at": "2026-09-11T06:56:36.754395",
     "title": "Frontiers: Discrimination Against Femininity in Headshots: A Field Experiment with AI-Enabled Controllable Stimuli Generation",
     "title_zh": "前沿：头像照中对女性气质的歧视——基于AI可控刺激生成的现场实验",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究通过AI生成仅在女性化程度上变化的可控头像，在田野实验中发现消费者会歧视具有女性化外貌特征的头像，该效应独立于被试自身性别身份，揭示了外貌性别化表达在市场中的经济后果与歧视机制。",
+    "topic_tags": [
+      "消费者行为",
+      "偏见与歧视",
+      "田野研究"
+    ],
     "url": "https://doi.org/10.1287/mksc.2024.1176",
     "volume": null,
     "year": 2026
@@ -54184,7 +54321,11 @@
     "abstract": null,
     "ai_reason": "虚拟 instructor涉及AI，HCI教育研究",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "多模态",
+      "情感识别",
+      "AI助手"
+    ],
     "authors": [
       "Tal Horovitz",
       "Richard E. Mayer"
@@ -54213,8 +54354,13 @@
     "scored_at": "2026-09-12T06:55:23.749695",
     "title": "Learning with human and virtual instructors who display happy or bored emotions in video lectures",
     "title_zh": "与视频讲座中展现快乐或厌烦情绪的人类及虚拟教师学习",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "比较人类与虚拟讲师在视频课程中分别展现快乐或厌倦情绪时对学习者学习效果与感知的影响，探讨情绪表达在学习情境中的作用，为虚拟教学形象的设计提供启示。",
+    "topic_tags": [
+      "情感计算",
+      "人机交互(HCI)",
+      "多模态交互",
+      "用户体验(UX)"
+    ],
     "url": "https://doi.org/10.1016/j.chb.2021.106724",
     "volume": "119",
     "year": 2021
@@ -54704,6 +54850,66 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2022.107446",
     "volume": "138",
+    "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "语音助手声音与任务类型对用户体验影响，AI核心议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "语音合成"
+    ],
+    "authors": [
+      "Hyunjoo Im",
+      "Billy Sung",
+      "Garim Lee",
+      "Keegan Qi Xian Kok"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Hyunjoo Im",
+        "orcid": "https://orcid.org/0000-0002-7932-0087"
+      },
+      {
+        "affiliation": [],
+        "name": "Billy Sung",
+        "orcid": "https://orcid.org/0000-0003-0028-6574"
+      },
+      {
+        "affiliation": [],
+        "name": "Garim Lee",
+        "orcid": "https://orcid.org/0000-0002-7054-1967"
+      },
+      {
+        "affiliation": [],
+        "name": "Keegan Qi Xian Kok",
+        "orcid": "https://orcid.org/0000-0002-6623-8957"
+      }
+    ],
+    "cited_by": 50,
+    "date": "2023-08",
+    "doi": "10.1016/j.chb.2023.107791",
+    "domain_score": 5.0,
+    "id": 27485,
+    "ingested_at": "2026-09-13T07:14:46.767552",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-13T07:15:32.812336",
+    "title": "Let voice assistants sound like a machine: Voice and task type effects on perceived fluency, competence, and consumer attitude",
+    "title_zh": "让语音助手听上去像机器：语音与任务类型对感知流畅性、能力及消费者态度的影响",
+    "tldr": "研究语音助手的声音呈现方式（机械音 vs. 拟人音）如何影响用户对系统流畅度与胜任力的感知，以及不同任务类型下用户对语音助手的态度差异。核心关注声音拟人化程度对消费者接受度的调节作用，预期发现任务性质与声音类型存在交互效应。",
+    "topic_tags": [
+      "消费者行为",
+      "AI 助手",
+      "人机交互(HCI)",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107791",
+    "volume": "145",
     "year": 2023
   },
   {
@@ -60291,6 +60497,59 @@
     "year": 2026
   },
   {
+    "abstract": null,
+    "ai_reason": "说服性机器人助手，含AI并对老年人做用户评估",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Rosemarijn Looije",
+      "Mark A. Neerincx",
+      "Fokie Cnossen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Rosemarijn Looije",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mark A. Neerincx",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Fokie Cnossen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 203,
+    "date": "2010-06",
+    "doi": "10.1016/j.ijhcs.2009.08.007",
+    "domain_score": 5.0,
+    "id": 25830,
+    "ingested_at": "2026-09-03T06:44:53.257086",
+    "issue": "6",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-09-13T07:15:55.982508",
+    "title": "Persuasive robotic assistant for health self-management of older adults: Design and evaluation of social behaviors",
+    "title_zh": "面向老年人健康自我管理的劝说型机器人助手：社交行为的设计与评估",
+    "tldr": "面向老年人健康自我管理，设计并评估一款具有社交行为的劝导式机器助手，关注其在健康促导情境中的社交交互设计要素与说服效果，探索机器人辅助老年群体进行自我健康管理的可行性与用户体验。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "儿童/老人/无障碍",
+      "情感计算"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2009.08.007",
+    "volume": "68",
+    "year": 2010
+  },
+  {
     "abstract": "picoTrans is a prototype system that introduces a novel icon-based paradigm for cross-lingual communication on mobile devices. Our approach marries a machine translation system with the popular picture book. Users interact with picoTrans by pointing at pictures as if it were a picture book; the system generates natural language from these icons and the user is able to interact with the icon sequence to refine the meaning of the words that are generated. When users are satisfied that the sentence generated represents what they wish to express, they tap a translate button and picoTrans displays the translation. Structuring the process of communication in this way has many advantages. First, tapping icons is a very natural method of user input on mobile devices; typing is cumbersome and speech input errorful. Second, the sequence of icons which is annotated both with pictures and bilingually with words is meaningful to both users, and it opens up a second channel of communication between them that conveys the gist of what is being expressed. We performed a number of evaluations of picoTrans to determine: its coverage of a corpus of in-domain sentences; the input efficiency in terms of the number of key presses required relative to text entry; and users' overall impressions of using the system compared to using a picture book. Our results show that we are able to cover 74% of the expressions in our test corpus using a 2000-icon set; we believe that this icon set size is realistic for a mobile device. We also found that picoTrans requires fewer key presses than typing the input and that the system is able to predict the correct, intended natural language sentence from the icon sequence most of the time, making user interaction with the icon sequence often unnecessary. In the user evaluation, we found that in general users prefer using picoTrans and are able to communicate more rapidly and expressively. Furthermore, users had more confidence that they were able to communicate effectively using picoTrans.",
     "ai_reason": "结合机器翻译的图标交互系统,HCI系统+用户评估",
     "ai_score": 3.0,
@@ -61445,6 +61704,59 @@
     "url": "https://doi.org/10.1145/3817049",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "Argumentative discussion is a highly demanding task. In order to help people in such discussions, this article provides an innovative methodology for developing agents that can support people in argumentative discussions by proposing possible arguments. By gathering and analyzing human argumentative behavior from more than 1000 human study participants, we show that the prediction of human argumentative behavior using Machine Learning (ML) is possible and useful in designing argument provision agents. This paper first demonstrates that ML techniques can achieve up to 76% accuracy when predicting people’s top three argument choices given a partial discussion. We further show that well-established Argumentation Theory is not a good predictor of people’s choice of arguments. Then, we present 9 argument provision agents, which we empirically evaluate using hundreds of human study participants. We show that the Predictive and Relevance-Based Heuristic agent (PRH), which uses ML prediction with a heuristic that estimates the relevance of possible arguments to the current state of the discussion, results in significantly higher levels of satisfaction among study participants compared with the other evaluated agents. These other agents propose arguments based on Argumentation Theory; propose predicted arguments without the heuristics or with only the heuristics; or use Transfer Learning methods. Our findings also show that people use the PRH agents proposed arguments significantly more often than those proposed by the other agents.",
+    "ai_reason": "ML预测人类论证行为，HCI论证支持系统",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI助手",
+      "AI推荐",
+      "人机协作"
+    ],
+    "authors": [
+      "Ariel Rosenfeld",
+      "Sarit Kraus"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Bar-Ilan University, Israel"
+        ],
+        "name": "Ariel Rosenfeld",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Bar-Ilan University, Israel"
+        ],
+        "name": "Sarit Kraus",
+        "orcid": null
+      }
+    ],
+    "cited_by": 26,
+    "date": "2016-12-09",
+    "doi": "10.1145/2983925",
+    "domain_score": 4.0,
+    "id": 27500,
+    "ingested_at": "2026-09-13T07:14:47.094995",
+    "issue": "4",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-09-13T07:15:41.558205",
+    "title": "Providing Arguments in Discussions on the Basis of the Prediction of Human Argumentative Behavior",
+    "title_zh": "基于人类论证行为预测的讨论中论证生成",
+    "tldr": "针对论证式讨论支持难题，基于千名参与者的论证行为数据，探索机器学习预测人类论点选择的效果。实验显示ML预测前三论点的准确率达76%，而传统论证理论预测能力较弱；进而设计9种论点推荐智能体进行实证评估，结果表明融合ML预测与相关性启发式的PRH智能体在用户满意度和使用率上显著优于基于论证理论、纯预测或迁移学习等基线，验证了数据驱动方法在论证支持Agent中的有效性。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "推荐系统",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1145/2983925",
+    "volume": "6",
+    "year": 2016
   },
   {
     "abstract": null,
@@ -66990,6 +67302,48 @@
     "year": 2016
   },
   {
+    "abstract": null,
+    "ai_reason": "虚拟代理+用户愉悦感实验",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI助手",
+      "多模态"
+    ],
+    "authors": [
+      "Seung-A. Annie Jin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Seung-A. Annie Jin",
+        "orcid": null
+      }
+    ],
+    "cited_by": 57,
+    "date": "2010-05",
+    "doi": "10.1016/j.chb.2009.12.003",
+    "domain_score": 4.0,
+    "id": 25740,
+    "ingested_at": "2026-09-03T06:44:50.656003",
+    "issue": "3",
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-13T07:15:57.965196",
+    "title": "The effects of incorporating a virtual agent in a computer-aided test designed for stress management education: The mediating role of enjoyment",
+    "title_zh": "在压力管理教育计算机辅助测试中引入虚拟代理的效果：愉悦感的中介作用",
+    "tldr": "在用于压力管理教育的计算机辅助测试中引入虚拟代理（virtual agent），探究其对学习效果的影响机制，并检验愉悦感（enjoyment）在其中的中介作用，揭示虚拟化身对健康教育类应用的增益路径。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "情感计算",
+      "可用性测试"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2009.12.003",
+    "volume": "26",
+    "year": 2010
+  },
+  {
     "abstract": "Conditionally-automated vehicles require drivers to remain hazard-aware while disengaged from driving and engaged in non-driving related tasks (NDRTs), yet conventional visual warning interfaces do not fully address this attentional conflict. While psychological research demonstrates social cues are processed more efficiently than visual information, this has not been evaluated for safety-critical warnings in conditionally-automated driving. This paper presents the first empirical investigation into using a virtual agent to indicate danger and aid situational awareness while driver perform a NDRT. Across two experiments, hazard prediction ability was assessed with either a visual cue or virtual agent cueing danger. When including an attention-capturing element, both visual and social cue types mitigated driver distraction, maintaining hazard prediction comparable with undistracted driving. These findings demonstrate that virtual agents can be as effective as conventional visual cues in aiding situational awareness in safety-critical conditionally-automated driving contexts, offering design insights for in-vehicle attentional displays supporting driver awareness.",
     "ai_reason": "虚拟Agent在自动驾驶中 cue danger；含用户实验但核心是驾驶注意力机制",
     "ai_score": 3.0,
@@ -70834,7 +71188,9 @@
     "abstract": null,
     "ai_reason": "ML可视化的共创设计研究",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "可解释 AI"
+    ],
     "authors": [
       "Eric P. S. Baumer",
       "Drew Siedel",
@@ -70898,8 +71254,13 @@
     "scored_at": "2026-09-12T06:55:37.677613",
     "title": "Topicalizer: reframing core concepts in machine learning visualization by co-designing for interpretivist scholarship",
     "title_zh": "Topicalizer：面向解释主义学术的机器学习可视化核心概念重构",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "Topicalizer 通过与解释主义学者共同设计（co-design），重新审视机器学习可视化的核心概念，使可视化工具支持诠释性、定性取向的学术探究，帮助研究者以解释主义视角解读与呈现模型输出与不确定性。",
+    "topic_tags": [
+      "可视化",
+      "可解释性",
+      "人机交互(HCI)",
+      "用户研究方法"
+    ],
     "url": "https://doi.org/10.1080/07370024.2020.1734460",
     "volume": "35",
     "year": 2020
@@ -77248,6 +77609,60 @@
   },
   {
     "abstract": null,
+    "ai_reason": "AI作为社会影响变量，研究消费者相对影响",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 推荐",
+      "推荐算法",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Jinping Wang",
+      "Maria D. Molina",
+      "S. Shyam Sundar"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jinping Wang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Maria D. Molina",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "S. Shyam Sundar",
+        "orcid": null
+      }
+    ],
+    "cited_by": 81,
+    "date": "2020-06",
+    "doi": "10.1016/j.chb.2020.106278",
+    "domain_score": 4.0,
+    "id": 27480,
+    "ingested_at": "2026-09-13T07:14:46.658721",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-13T07:15:39.291857",
+    "title": "When expert recommendation contradicts peer opinion: Relative social influence of valence, group identity and artificial intelligence",
+    "title_zh": "当专家推荐与同伴意见相悖：效价、群体认同与人工智能的相对社会影响",
+    "tldr": "考察当专家推荐与同伴评价相矛盾时，来源效价、群体身份认同与人工智能属性如何相对影响消费者的社会遵从倾向。研究比较人类专家与 AI 推荐在信息正/负效价及内/外群体情境下的说服力差异，揭示 AI 在社会影响中的角色边界。",
+    "topic_tags": [
+      "消费者行为",
+      "信任",
+      "AI 采用",
+      "社会影响"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106278",
+    "volume": "107",
+    "year": 2020
+  },
+  {
+    "abstract": null,
     "ai_reason": "服务机器人交互核心，服务体验与客户满意度",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -77351,6 +77766,60 @@
     "url": "https://doi.org/10.1177/10949968231200221",
     "volume": "59",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "青少年与教学代理对话，涉智能代理与HCI",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "智能体/Agent",
+      "AI 助手"
+    ],
+    "authors": [
+      "George Veletsianos",
+      "Cassandra Scharber",
+      "Aaron Doering"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "George Veletsianos",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Cassandra Scharber",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Aaron Doering",
+        "orcid": null
+      }
+    ],
+    "cited_by": 46,
+    "date": "2008-05",
+    "doi": "10.1016/j.intcom.2008.02.007",
+    "domain_score": 4.0,
+    "id": 26384,
+    "ingested_at": "2026-09-06T06:47:56.071809",
+    "issue": "3",
+    "journal": "IwC",
+    "pdf_url": null,
+    "scored_at": "2026-09-14T07:38:29.937359",
+    "title": "When sex, drugs, and violence enter the classroom: Conversations between adolescents and a female pedagogical agent",
+    "title_zh": "当性、毒品与暴力进入课堂：青少年与女性教学代理的对话",
+    "tldr": "研究青少年与女性教学智能体在课堂场景中就性、毒品、暴力等敏感话题展开对话时的互动情况，探讨性别化教学代理对青少年参与度、信任感与话题开放度的影响，及其在敏感教育内容传递中的角色与伦理考量。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "对话式 AI",
+      "儿童/老人/无障碍",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1016/j.intcom.2008.02.007",
+    "volume": "20",
+    "year": 2008
   },
   {
     "abstract": null,
