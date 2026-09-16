@@ -505,6 +505,174 @@
     "year": 2026
   },
   {
+    "abstract": "Background: Psychiatric distress is common among patients with cancer; yet, systematic interview-based screening remains difficult to scale in routine clinical care. Large language models (LLMs) have shown promise as scalable tools for mental health assessment, but most existing evidence is derived from clinician-authored records, translated text, or proxy data. The performance characteristics, error patterns, and explanatory behaviors of contemporary LLMs when applied to authentic, non-English psychiatric interviews remain insufficiently characterized. Objective: This exploratory study evaluated how contemporary LLMs reproduced psycho-oncologists' item-level symptom ratings from real-world Korean psycho-oncology interviews, focusing on concordance, directional bias, and clinician-adjudicated error characteristics. Methods: Between April 2024 and May 2025, 101 adults receiving oncologic care in South Korea underwent semistructured interviews. Board-certified psycho-oncologists provided real-time, time-stamped ratings of 39 items. Generative pretrained transformer 4o (GPT-4o), Claude 3.5 Sonnet, and Gemini 2.5 Flash generated item scores and brief rationales using identical Korean zero-shot rubrics. Concordance between clinician ratings was evaluated using ordinal and binary screening metrics. A paired Wilcoxon test compared patient-level total symptom burden. Binary mismatches were clinically adjudicated as ambiguous or definite overestimation or underestimation with an 8-etiology taxonomy. Model-generated rationales were further meta-evaluated using GPT-5.4, Claude Sonnet 4.6, and Gemini Pro 3.1 across 4 dimensions: citation (use of quoted supporting statements), structure (logical organization of the rationale), mapping (consistency between the rationale and the assigned item rating), and expansion (degree of interpretive elaboration beyond the explicit transcript content). The associations between meta-evaluation results and absolute error were examined using cross-classified mixed-effects models. Results: =.15). Clinician adjudication attributed 97 of 248 (39.1%) GPT-4o mismatches, 88 of 301 (29.2%) Claude 3.5 mismatches, and 118 of 355 (33.2%) Gemini 2.5 mismatches to intrinsic ambiguity in patient speech. Among definite errors, misapplication of severity thresholds was the predominant mechanism across models. Exploratory mixed-effects models showed that higher expansion and lower mapping scores were associated with larger absolute errors. However, the association with expansion may reflect case difficulty or ambiguity rather than causation. Conclusions: In this exploratory clinician-benchmarked evaluation of authentic interviews from a Korean psycho-oncology sample comprising predominantly women and patients with breast cancer, LLMs showed high aggregate concordance with psycho-oncologists' item-level ratings while differing in their error profiles. These findings support further evaluation of LLM-based item-level symptom-rating approaches in psycho-oncology. Validation in larger, more diverse, and independent cohorts is needed.",
+    "ai_reason": "核心研究LLM对精神科访谈的心理困扰评分能力，AI是唯一研究对象。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai",
+      "nlp"
+    ],
+    "authors": [
+      "Jaehyun Kim",
+      "Kyung‐Lak Son",
+      "Chan‐Woo Yeom",
+      "Won‐Hyoung Kim",
+      "Sun Hyung Lee",
+      "Joon Sung Shin",
+      "Hyunsun Yang",
+      "Daehun Yoo",
+      "Bong‐Jin Hahm"
+    ],
+    "authors_full": [
+      {
+        "name": "Jaehyun Kim"
+      },
+      {
+        "name": "Kyung‐Lak Son"
+      },
+      {
+        "name": "Chan‐Woo Yeom"
+      },
+      {
+        "name": "Won‐Hyoung Kim"
+      },
+      {
+        "name": "Sun Hyung Lee"
+      },
+      {
+        "name": "Joon Sung Shin"
+      },
+      {
+        "name": "Hyunsun Yang"
+      },
+      {
+        "name": "Daehun Yoo"
+      },
+      {
+        "name": "Bong‐Jin Hahm"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "核心研究LLM对精神科访谈的心理困扰评分能力，AI是唯一研究对象。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "在101例真实韩国心理肿瘤学访谈中，GPT-4o等模型与_board-certified心理肿瘤科医生的39项症状评分高度一致，但错误特征各异。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "transdiagnostic",
+        "screening_assessment",
+        "clinical_patients",
+        "adults"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "internal",
+    "date": "2026-09-09",
+    "doi": "10.2196/91405",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W7212001009",
+    "journal": "Journal of Medical Internet Research",
+    "mh_profile": {
+      "ai_reason": "核心研究LLM对精神科访谈的心理困扰评分能力，AI是唯一研究对象。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "clinical_validation": "internal",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "nlp"
+        ],
+        "applications": [
+          "screening_assessment"
+        ],
+        "conditions": [
+          "depression",
+          "anxiety",
+          "transdiagnostic"
+        ],
+        "populations": [
+          "clinical_patients",
+          "adults"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "项目级序数/二元筛查一致性、患者级症状负担差异、错误分类及八因分类法、理由元评估与绝对误差关联",
+        "sample": "101名韩国癌症成人患者（含时间戳的39项半结构化访谈评分）",
+        "study_design": "探索性临床基准评估，模型与精神科医生评分对比"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language models",
+          "LLM"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "psychiatric"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "在101例真实韩国心理肿瘤学访谈中，GPT-4o等模型与_board-certified心理肿瘤科医生的39项症状评分高度一致，但错误特征各异。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "transdiagnostic",
+        "screening_assessment",
+        "clinical_patients",
+        "adults"
+      ]
+    },
+    "openalex_id": "W7212001009",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S17147534",
+      "ingest_mode": "query",
+      "key": "jmir",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "Large Language Models for Distress Rating in Korean Psycho-Oncology Interviews: Exploratory Clinician-Benchmarked Evaluation Study",
+    "title_zh": "大语言模型在韩国心理肿瘤学访谈中用于痛苦评定的探索性临床基准评估研究",
+    "tldr": "在101例真实韩国心理肿瘤学访谈中，GPT-4o等模型与_board-certified心理肿瘤科医生的39项症状评分高度一致，但错误特征各异。",
+    "topic_tags": [
+      "depression",
+      "anxiety",
+      "transdiagnostic",
+      "screening_assessment",
+      "clinical_patients",
+      "adults"
+    ],
+    "url": "https://doi.org/10.2196/91405",
+    "year": 2026
+  },
+  {
     "abstract": "Suicidal ideation (SI) and major depressive disorder (MDD) are complex psychiatric conditions arising from the interplay of genetic liability, molecular processes, and psychosocial factors. While these dimensions have been extensively studied in isolation, their joint contribution to SI and MDD remains unclear. This study integrates multi-modal data to elucidate these synergistic effects and develop robust models for individual-level risk stratification. Leveraging longitudinal multi-modal data from 13,085 UK Biobank participants, we integrated genomic, proteomic, and social connection profiles. We developed interpretable risk scores using a rigorous supervised machine learning framework encompassing diverse linear and ensemble classifiers. Permutation importance was employed to quantify feature contributions and derive transparent, weighted risk metrics across diverse classifiers. These scores were validated through association, interaction, and mediation analyses. Social connection-based risk scores significantly differentiated cases and controls across the two suicidal ideation phenotypes at 2017 and 2023 with cross-sectional analyses (AUCs: 0.70 - 0.73), outperforming proteomic-only models. Functional dimensions of social connection emerged as the most informative predictors. Longitudinal analyses revealed that social risk scores at baseline predicted suicidal ideation onset six years later, independent of demographic covariates. Interaction analyses demonstrated that polygenic risk for suicide attempt significantly interacted with both social and proteomic risk features in relation to depression. Structural equation models further confirmed that social disconnection acts as a key mediator linking genetic predisposition to MDD and SI. Social disconnection is a critical risk factor mediating the impact of genetic vulnerability on psychiatric outcomes. Integrating social, genetic, and molecular data supports a multilevel framework for risk stratification and highlights the potential of socially oriented interventions to mitigate biological risk.",
     "ai_reason": "机器学习是核心建模方法但非主角，核心是自杀意念和抑郁症的多模态风险分层。",
     "ai_score": 3,

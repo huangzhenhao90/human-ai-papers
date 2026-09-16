@@ -1,0 +1,97 @@
+{
+  "abstract": "Generative recommendation has emerged as a promising end-to-end paradigm for personalized recommendation. However, user preferences continuously evolve over time, making self-evolving an essential capability for generative recommender systems. Existing evolving strategies, such as continual retraining and distillation-based adaptation, directly update the shared model parameters using streaming interactions. Nevertheless, we find that directly applying such strategies to generative recommendation introduces a critical issue, termed evolution conflict. Specifically, heterogeneous preference shifts from different users are optimized within a fully shared autoregressive parameter space, causing dominant behavioral patterns to progressively dominate the model evolution process while underrepresented patterns become increasingly overlooked. To address this issue, we propose a self-evolving memory paradigm for generative recommendation, aiming to enable effective evolution across heterogeneous behavioral patterns. We further identify three key principles for effective self-evolving recommendation systems, including isolated memorization, reinforced evolution, and scalable application. Guided by these principles, we develop LION, a simple yet effective framework centered on a sparse Key-Value memory layer. Specifically, LION introduces sparse memory activation to isolate the evolution of different behavioral patterns, while a consolidation loss is designed to reinforce the learning of underrepresented preference dynamics during continual adaptation. Extensive experiments on diverse real-world datasets demonstrate the effectiveness of LION under various continual evolution settings (e.g., per-period evaluation, user/item group evaluation, and evolution convergence analysis). The codes are released at https://github.com/JazyJiang/Self-Evolving-Memory-for-Generative-Recommendation.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2609.15598",
+  "authors": [
+    "Xinyu Lin",
+    "Zhuosong Jiang",
+    "Zixiao Suo",
+    "Siqin Wang",
+    "Hanqing Zeng"
+  ],
+  "authors_full": [
+    {
+      "name": "Xinyu Lin"
+    },
+    {
+      "name": "Zhuosong Jiang"
+    },
+    {
+      "name": "Zixiao Suo"
+    },
+    {
+      "name": "Siqin Wang"
+    },
+    {
+      "name": "Hanqing Zeng"
+    },
+    {
+      "name": "Hanchao Yu"
+    },
+    {
+      "name": "Yinglong Xia"
+    },
+    {
+      "name": "Jiang Zhang"
+    },
+    {
+      "name": "Aashu Singh"
+    },
+    {
+      "name": "Fei Liu"
+    },
+    {
+      "name": "Wenjie Wang"
+    },
+    {
+      "name": "Fuli Feng"
+    },
+    {
+      "name": "Yang Song"
+    },
+    {
+      "name": "Qifan Wang"
+    },
+    {
+      "name": "Tat-Seng Chua"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "生成式推荐自演化，推荐系统方向",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对生成式推荐中用户偏好动态演化难题，指出持续训练等现有策略因共享自回归参数空间会引发\"演化冲突\"，使主导行为模式压制小众模式。提出自演化记忆范式及隔离记忆、强化演化、可扩展应用三项原则，并据此设计LION框架，通过稀疏键值记忆层隔离不同行为模式的演化，配合整合损失强化学习。",
+      "topic_tags": [
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-14",
+  "doi": null,
+  "id": "p_56kOLbhD_WC8gC5c",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2609.15598v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 67875,
+      "revision": "4d46c03d5abf0901d8bb802d6ee9e7205a20567b"
+    }
+  ],
+  "title": "Self-Evolving Memory for Generative Recommendation",
+  "title_zh": "生成式推荐的自演化记忆",
+  "unified_ingested_at": "2026-09-16T07:23:12.171877Z",
+  "url": "https://arxiv.org/abs/2609.15598v1",
+  "volume": null,
+  "year": 2026
+}

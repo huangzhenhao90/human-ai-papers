@@ -1,0 +1,57 @@
+{
+  "abstract": "Earnings conference calls are a primary channel through which managers disclose information under analyst scrutiny. Prior work has linked vocal and lexical cues to future adverse outcomes, but often pools features over an entire call and underuses the interactive structure of Q&A. We propose a two-branch late-fusion framework for detecting managerial evasiveness as a predictor of extrinsic SEC events (primarily late filings): (i) an LLM-as-a-judge that maps Q&A text to an interpretable call-level vector X_text via a structured binary rubric, and (ii) a frozen conversational encoder whose temporal hidden states are read by a DeepVoice-style sequential reader to produce an audio representation h. Late fusion of (X_text, h) yields a call-level risk score p. On n=1,039 calls (212 late filings) with firm-grouped 5-fold CV, fusion reaches AUROC approx. 0.89, versus 0.55 for the text judge and 0.71 for duration alone. These results show that conversational audio dynamics encode managerial evasiveness beyond lexical content and call length, yielding a stronger early-warning signal of adverse SEC outcomes.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "机器学习"
+  ],
+  "arxiv_id": "2609.13893",
+  "authors": [
+    "Huizhong Chen",
+    "Huan Zhang"
+  ],
+  "authors_full": [
+    {
+      "name": "Huizhong Chen"
+    },
+    {
+      "name": "Huan Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM与音频编码器检测管理层回避",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究电话会议中管理层闪避行为对SEC不良事件（主要为延迟提交）的预警能力。提出双分支晚期融合框架：LLM评委依结构化二元量表将问答文本映射为可解释向量，冻结的对话音频编码器配合DeepVoice式序列读取器生成声学表征。1039次电话会议(212次延迟提交)的公司分组5折交叉验证显示，融合模型AUROC约0.89，显著优于纯文本评委(0.55)与通话时长(0.71)，证明对话音频动态编码了超越词汇内容与时长的闪避信号。",
+      "topic_tags": [
+        "决策",
+        "信任",
+        "公平性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-12",
+  "doi": null,
+  "id": "p__5xJU7Ns6YvDO-hR",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2609.13893v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 67885,
+      "revision": "4d46c03d5abf0901d8bb802d6ee9e7205a20567b"
+    }
+  ],
+  "title": "Lie to me: Detecting Managerial Evasiveness in Earnings Calls via Conversational Audio Encoders",
+  "title_zh": "识别管理层在财报电话会议中的回避行为：基于对话音频编码器的方法",
+  "unified_ingested_at": "2026-09-16T07:23:12.171877Z",
+  "url": "https://arxiv.org/abs/2609.13893v1",
+  "volume": null,
+  "year": 2026
+}

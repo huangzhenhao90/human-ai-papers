@@ -1,0 +1,63 @@
+{
+  "abstract": "In industrial recommendation feeds, presenting a static headline for an item often fails to satisfy the diverse, multimodal interests of the user population, particularly suppressing the needs of long-tail audiences. While Large Language Models (LLMs) have been integrated into recommendation for content understanding or ranking, directly optimizing them to output a single best headline typically leads to mode collapse---converging to generic patterns that satisfy average tastes but miss specific latent intents. To bridge this gap, we introduce GESE (Generate to Explore, Select to Exploit), a framework operating at the system's presentation layer that decouples personalization into generative exploration and selective exploitation. First, we treat the LLM as a probabilistic explorer, utilizing Group Sequence Policy Optimization (GSPO) with a hierarchical reward mechanism to generate a candidate set that maximizes the semantic coverage of potential user interests. Subsequently, a lightweight, real-time feedback-aware selector acts as the exploiter, identifying the optimal realization from the candidate pool based on instant contextual signals. Extensive deployment on a commercial platform with over 100 million daily active users demonstrates that GESE significantly outperforms state-of-the-art baselines, achieving a 2.57% lift in CTR and 0.87% in dwell time. These results validate that decoupling diversity-oriented generation from precision-oriented selection offers a robust blueprint for aligning generative AI with dynamic user utility.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法"
+  ],
+  "arxiv_id": "2609.15094",
+  "authors": [
+    "Yi Chen",
+    "Rufeng Cheng",
+    "Qiang Xie",
+    "Tao Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Yi Chen"
+    },
+    {
+      "name": "Rufeng Cheng"
+    },
+    {
+      "name": "Qiang Xie"
+    },
+    {
+      "name": "Tao Li"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM驱动个性化推荐标题，营销场景",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对推荐场景中静态标题难以满足长尾用户多元兴趣的问题，提出GESE框架，将个性化拆分为生成探索与选择利用两阶段。以LLM为概率探索者，通过GSPO与分层奖励机制生成语义覆盖广的候选标题集，再由实时反馈选择器挑选最优标题。商业平台部署后点击率提升2.57%，停留时长提升0.87%，验证了解耦多样性与精确性策略的有效性。",
+      "topic_tags": [
+        "推荐系统",
+        "营销"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-14",
+  "doi": null,
+  "id": "p_8cm6wkJhOmqodBWF",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2609.15094v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 67876,
+      "revision": "4d46c03d5abf0901d8bb802d6ee9e7205a20567b"
+    }
+  ],
+  "title": "Generate to Explore, Select to Exploit: Aligning LLM-based Headline Generation with Personalized Recommendation",
+  "title_zh": "生成以探索，选择以利用：基于LLM的标题生成与个性化推荐对齐",
+  "unified_ingested_at": "2026-09-16T07:23:12.171877Z",
+  "url": "https://arxiv.org/abs/2609.15094v1",
+  "volume": null,
+  "year": 2026
+}
