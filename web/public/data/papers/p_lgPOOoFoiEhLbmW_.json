@@ -1,0 +1,67 @@
+{
+  "abstract": "Assistants built on large language models are expected to write in their users' own voice. Most systems summarise the user's preferences and include the summary in the prompt. This is the wrong way round. Preferences are only the surface of a person and change with the task, while the underlying personality stays the same, so storing preferences alone means relearning the user afresh whenever the task changes. This paper makes four contributions. First, we describe an effect we call personality seepage: the wording of a prompt carries traces of the writer's personality, which the assistant copies without knowing the writer. Second, we propose the Atomic User Model (AUM), a readable profile with a stable identity core surrounded by four layers covering psychological, cognitive, experiential, behavioral, and social details, plus notes on inner conflict and authenticity. Third, instead of inserting the entire profile, we use AUM as a searchable index, in which a task classifier, a selection step, and a budgeted retriever pass along only a few relevant fields. Fourth, we test the pipeline with 16 simulated users, 6 style-sensitive tasks, and 3 seeds. Eight retrieved fields matched the writing quality of the whole profile, while using only 23 percent of the context (211 tokens instead of 915). They scored 0.24 points higher than a plain preference note on a five-point scale. Accuracy in picking a user's own writing from four samples rose from 14.9 to 42.7 percent, where guessing gives 25 percent. Four pre-registered controls showed no effect, so the gain comes from the profile's structure rather than the search method. Personalization helps most for the users for whom a generic assistant imitates them the worst.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI 助手",
+    "人机交互"
+  ],
+  "arxiv_id": "2609.12086",
+  "authors": [
+    "B. Sankar",
+    "Deepthika S",
+    "Pawni Yadav",
+    "Amogh A S"
+  ],
+  "authors_full": [
+    {
+      "name": "B. Sankar"
+    },
+    {
+      "name": "Deepthika S"
+    },
+    {
+      "name": "Pawni Yadav"
+    },
+    {
+      "name": "Amogh A S"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM个性化用户建模，用户视角",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对 LLM 助手难以用用户个性化语气写作的问题，提出\"人格渗漏\"现象与原子级用户模型 AUM：以稳定身份核心叠加心理、认知、经验、行为、社会四层描述，并作为可检索索引，按任务分类与预算仅取相关字段。16 个模拟用户、6 项风格敏感任务测试表明，8 个检索字段以 23% 上下文（211 vs 915 tokens）达到全画像写作质量，比纯偏好描述高 0.24 分，写作归属识别率由 14.9% 升至 42.7%。",
+      "topic_tags": [
+        "用户画像",
+        "个性化",
+        "HCI",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-10",
+  "doi": null,
+  "id": "p_lgPOOoFoiEhLbmW_",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2609.12086v2",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 28342,
+      "revision": "e3378141e1e038f6eac9e874e708289604730e9a"
+    }
+  ],
+  "title": "Creating an Atomic User Model for Personality-Aware Large Language Model Interaction",
+  "title_zh": "构建原子化用户模型：面向个性感知大语言模型交互",
+  "unified_ingested_at": "2026-09-17T07:19:22.876178Z",
+  "url": "https://arxiv.org/abs/2609.12086v2",
+  "volume": null,
+  "year": 2026
+}

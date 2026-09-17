@@ -1,0 +1,65 @@
+{
+  "abstract": "Large language models (LLMs) have changed the way people engage with stories. Drawing on public chatbot logs, we can see that when users generate stories, they iteratively edit their prompts to explore narrative possibilities, adjusting characters, redirecting plots, and swapping fictional universes. As aggregated data, these prompts represent rich traces of creative preference at scale. Yet story generation evaluation benchmarks rely on static, one-shot prompts that cannot capture this exploratory behavior. In this work, we study how users revise consecutive story prompts in the wild. Using a dataset of naturally occurring user-chatbot conversations, we construct WildStories, a sample of 275,635 story generation prompts (labeled with story format, prompt components, and explicitness), and WildEdits, a collection of 24,291 edit trees that model how users iteratively edit base story prompts and explore branching story possibilities. From these trees we develop a framework of edit types crossing four directions (adding, removing, changing, and extending) with fourteen targets (e.g., plot, character, genre). We then use our datasets and this framework to analyze user behavior in navigating narrative space via LLMs. Finally, we show how automated permutations based on the framework can be used for story generation benchmarking. Content Warning: This paper works with \"wild\" chatbot logs, which often include toxic and sexually explicit themes.",
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "对话式AI"
+  ],
+  "arxiv_id": "2609.14677",
+  "authors": [
+    "Advait Deshmukh",
+    "Nora Benedict",
+    "Melanie Walsh",
+    "Maria Antoniak"
+  ],
+  "authors_full": [
+    {
+      "name": "Advait Deshmukh"
+    },
+    {
+      "name": "Nora Benedict"
+    },
+    {
+      "name": "Melanie Walsh"
+    },
+    {
+      "name": "Maria Antoniak"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM故事生成用户行为分析，27.5万提示语料",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究用户如何在大语言模型中迭代修改故事生成提示以探索叙事空间。基于公开聊天日志构建WildStories（275,635条提示）和WildEdits编辑树（24,291棵），提出涵盖四个编辑方向（增、删、改、扩展）与14个目标（如情节、人物、类型）的编辑类型框架，并展示如何将其用于故事生成基准测试。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户研究方法",
+        "消费者行为"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-13",
+  "doi": null,
+  "id": "p_f2mD4sUfzEB8wf0c",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.14677v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 28382,
+      "revision": "e3378141e1e038f6eac9e874e708289604730e9a"
+    }
+  ],
+  "title": "The Garden of Forking Prompts: How Users Explore Narrative Space in Story Generation",
+  "title_zh": "提示分叉之园：用户如何在故事生成中探索叙事空间",
+  "unified_ingested_at": "2026-09-17T07:19:22.876178Z",
+  "url": "https://arxiv.org/abs/2609.14677v1",
+  "volume": null,
+  "year": 2026
+}

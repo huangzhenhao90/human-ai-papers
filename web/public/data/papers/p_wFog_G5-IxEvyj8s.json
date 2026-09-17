@@ -1,0 +1,57 @@
+{
+  "abstract": "As corporate AI adoption continues to grow, enterprise-grade LLM agents are being deployed into sensitive contexts such as hiring, healthcare, and finance. In these contexts, compliance with rules specified in an agent's system context is a first-order legal concern. Currently, no evaluation framework systematically measures which LLM models tend to violate compliance rules, especially under pressure from a persistent user, a hurried manager, or circumstances where violation is convenient or attractive. We introduce PACT (Pressure-Applied Compliance Testing), a benchmark for rule-following under pressure in AI agents assisting employees in daily tasks across twelve regulated enterprise domains and forty-eight scenarios, each set in a realistic multi-turn conversation. Each benchmark item pairs a standing rule against a rule-violating shortcut, and applies a battery of pressures across different wordings and system-prompt modes. We construct PACT component by component under strict LLM-as-judge auditing to ensure samples are unambiguous, ungameable, and realistic enough to avoid eliciting evaluation-aware behavior. We use PACT to profile LLM compliance across six complementary metrics that create a holistic picture of an AI assistant's robustness under pressure and throughout multi-turn conversations, its transparency, and ability to correctly discern where a rule applies. We aggregate this profile into PACTScore, a reliability-weighted compliance rate over all items and modes. Our results across 22 common LLM models spanning multiple providers and sizes show substantial variability in compliance across models and metric dimensions. Even the strongest assistants mis-apply a rule on 6 to 10% of items, and ordinary user pressure raises the violation rate by 65% on average. PACT highlights compliance risks in LLM assistants, motivating guardrails and careful model selection.",
+  "ai_type_tags": [
+    "LLM",
+    "AI治理",
+    "人机交互"
+  ],
+  "arxiv_id": "2609.18605",
+  "authors": [
+    "Mika Okamoto",
+    "Ansel Kaplan Erol"
+  ],
+  "authors_full": [
+    {
+      "name": "Mika Okamoto"
+    },
+    {
+      "name": "Ansel Kaplan Erol"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心研究企业AI合规压力测试，强管理相关",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究提出PACT压力合规测试基准，用于评估企业级AI助手在压力情境下的规则遵循表现。基准覆盖12个受监管领域、48个多轮对话场景，每项对照既定规则与违规捷径，并施以用户催促、经理催促、违规便利等多重压力。在严格LLM评判审计下构建样本，从六维指标综合刻画鲁棒性、透明度与规则适用判断能力，最终聚合为PACTScore加权合规率，用以系统衡量企业LLM代理的可信度。",
+      "topic_tags": [
+        "信任",
+        "伦理",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-16",
+  "doi": null,
+  "id": "p_wFog_G5-IxEvyj8s",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.18605v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 68446,
+      "revision": "2f81a912f9987152a919b28454d5b9c8289c197a"
+    }
+  ],
+  "title": "PACT: Can Enterprise AI Assistants Be Trusted Under Pressure?",
+  "title_zh": "PACT：企业AI助手在压力下是否值得信任？",
+  "unified_ingested_at": "2026-09-17T07:19:22.876178Z",
+  "url": "https://arxiv.org/abs/2609.18605v1",
+  "volume": null,
+  "year": 2026
+}

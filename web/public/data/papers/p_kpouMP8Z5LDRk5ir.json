@@ -1,0 +1,57 @@
+{
+  "abstract": "Open-weight large language models are rapidly entering hiring pipelines, yet their discriminatory failure modes -- and the regulatory exposure these create under the EU AI Act high-risk classification (Annex III) and U.S. EEOC adverse-impact analysis -- remain poorly understood. We present the first systematic, multi-model audit of open-weight LLMs that treats job-posting language as the primary experimental variable, evaluating six models (Llama 3.2, Mistral, Gemma 3, Qwen 3, Phi 3, DeepSeek-R1) across four controlled experiments that jointly probe recruiter-simulation and job-seeker-simulation tasks. We find that (1) agentic posting language depresses recruiter recommendation scores for female candidates (r_rb = 0.309, p_Bonf = 7x10^-5; model-fixed-effects r_rb = 0.448), while communal language partially reverses the penalty; and (2) coded-exclusion language suppresses non-White recruiter scores at large effect sizes (r_rb = 0.646-0.758) and, on the job-seeker side, selectively deters non-White personas from expressing interest -- operationalizing a chilling-effect mechanism at scale. A label-ablation experiment isolates the explicit demographic persona label as the primary causal driver, and Word Embedding Association Tests corroborate these findings at the representational level (d = 1.01-1.45 under Caliskan et al.'s multi-word gender attribute lists). We translate these results into a concrete pre-deployment audit protocol -- posting-vocabulary scoring, persona-conditioned LLM probing, and adverse-impact flagging against the four-fifths threshold -- that operationalizes the documentation and risk-management obligations Annex III imposes on high-risk AI in recruitment.",
+  "ai_type_tags": [
+    "LLM",
+    "AI招聘",
+    "算法决策"
+  ],
+  "arxiv_id": "2609.18106",
+  "authors": [
+    "Kosuke Kitahara",
+    "Nobuhiro Yamaguchi"
+  ],
+  "authors_full": [
+    {
+      "name": "Kosuke Kitahara"
+    },
+    {
+      "name": "Nobuhiro Yamaguchi"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心研究LLM招聘偏见，AI+HR管理高度相关",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究对6个开源大语言模型（Llama 3.2、Mistral、Gemma 3、Qwen 3、Phi 3、DeepSeek-R1）进行系统性招聘偏见审计，以职位描述语言为核心实验变量。发现主动型语言显著降低女性候选人推荐分（r=0.309），共情型语言部分逆转该惩罚；编码排他性语言大幅抑制非白人候选人评分（r=0.646-0.758），并对非白人就职意愿产生寒蝉效应。标签消融实验证实人口统计标签为主要因果驱动，并据此提出部署前审计协议。",
+      "topic_tags": [
+        "招聘",
+        "公平性",
+        "偏见"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-16",
+  "doi": null,
+  "id": "p_kpouMP8Z5LDRk5ir",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.18106v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 68447,
+      "revision": "2f81a912f9987152a919b28454d5b9c8289c197a"
+    }
+  ],
+  "title": "Linguistic Triggers of Gender and Racial Bias in Open-Weight LLMs Applied to Recruitment",
+  "title_zh": "开放权重大语言模型在招聘中的性别与种族偏见语言触发因素",
+  "unified_ingested_at": "2026-09-17T07:19:22.876178Z",
+  "url": "https://arxiv.org/abs/2609.18106v1",
+  "volume": null,
+  "year": 2026
+}

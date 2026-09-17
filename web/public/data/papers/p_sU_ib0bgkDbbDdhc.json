@@ -1,0 +1,59 @@
+{
+  "abstract": "Can LLMs reason through new information like humans, or do they merely retrieve cached opinions? This is critical for silicon sampling, where LLM personas simulate public opinion at scale. Current evaluations test only whether personas hold the right opinions -- a static snapshot. But opinion research increasingly depends on dynamic fidelity: whether personas update beliefs in response to new arguments, as humans do during deliberation. No existing benchmark tests this. We introduce the Deliberative Polling Diagnostic Framework, which compares human and LLM belief shifts after identical informational interventions. Grounded in deliberative polling, it surfaces failures invisible to static evaluation: models that produce plausible partisan opinions can still misrepresent how those opinions change. Applying the framework to five frontier models using data from America in One Room (526 personas, 72 questions), we find that every model fails, each in a unique manner. GPT-5.1 exhibits reversal: its personas become more hostile toward the opposing party after balanced information, while humans become less so. This reversal is selective (80% on outgroup vs. 26% on policy questions) and symmetric across partisan identities. Gemini 2.0 Flash, Claude Sonnet 4.5, and Llama 3.3 70B exhibit overshoot, shifting correctly but at 5-7x human magnitude. DeepSeek V3 exhibits rigidity with near-zero change. Targeted ablations reveal that policy content triggers these failures and that they are identity-specific: GPT-5.1 reverses on outgroup questions but overshoots on ingroup; Gemini shows the inverse. We term this signature self-sycophancy: conformity to the model's internal stereotype of the persona rather than reasoning from the information provided. Our framework offers a concrete protocol: run the deliberative diagnostic before trusting LLM personas to mimic revised beliefs.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "可解释 AI",
+    "AI 治理"
+  ],
+  "arxiv_id": "2609.15849",
+  "authors": [
+    "Ahmed Wali",
+    "Hassaan Tayyab"
+  ],
+  "authors_full": [
+    {
+      "name": "Ahmed Wali"
+    },
+    {
+      "name": "Hassaan Tayyab"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "审议性民意调查方法比较人与LLM信念变化",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "提出\"审议式民意调查诊断框架\"，检验大语言模型角色在接收到新信息后能否像人类一样动态更新观点。基于美国America in One Room项目数据，在五款前沿模型上对比人与模型的信念变化，发现模型均存在独特失败：GPT-5.1出现反向极化，Gemini等出现5-7倍过冲，DeepSeek几乎不变。",
+      "topic_tags": [
+        "用户研究方法",
+        "人机交互(HCI)",
+        "AI 治理",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-14",
+  "doi": null,
+  "id": "p_sU_ib0bgkDbbDdhc",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.15849v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 28365,
+      "revision": "e3378141e1e038f6eac9e874e708289604730e9a"
+    }
+  ],
+  "title": "Before You Poll with LLMs: A Deliberative Diagnostic Framework",
+  "title_zh": "使用LLM进行民调之前：一种审慎诊断框架",
+  "unified_ingested_at": "2026-09-17T07:19:22.876178Z",
+  "url": "https://arxiv.org/abs/2609.15849v1",
+  "volume": null,
+  "year": 2026
+}
