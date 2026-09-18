@@ -1,0 +1,66 @@
+{
+  "abstract": "Deceptive online job advertisements have emerged as a primary pathway into forced labour, yet systematic detection methods remain underdeveloped due to data scarcity and absence of empirically validated indicators. We formalise this detection challenge as a classification problem under signalling theory, where exploiters transmit costless signals mimicking legitimate communications across textual, visual, and structural dimensions. Using 464 verified cases (164 deceptive, 300 legitimate) collected through anti-slavery charities across nine origin countries and 21 industries, we develop multimodal detection models combining computer vision, natural language processing, and semantic embeddings. Through systematic feature ablation experiments and repeated stratified cross-validation, we demonstrate that individual modalities achieve substantial discriminatory power (ROC-AUC: 0.87--0.97), whilst their integration yields modest further gains. SHAP-based analysis reveals that text quality and domain-specific risk language are the primary discriminators, with readability indices, risk keyword density, and visa sponsorship mentions ranking highest, followed by visual colour and texture features. These production quality gaps reflect resource constraints that prevent exploiters from maintaining professional standards across all communication channels simultaneously. We operationalise findings through a proof-of-concept decision support system providing interpretable risk scores for practitioners. This work demonstrates how rigorous analytical frameworks can address complex humanitarian operations challenges characterised by information asymmetry and limited ground-truth data.",
+  "ai_type_tags": [
+    "机器学习",
+    "多模态",
+    "算法决策"
+  ],
+  "arxiv_id": "2609.20336",
+  "authors": [
+    "Sajid Siraj",
+    "Mahnaz Hosseinzadeh",
+    "Amin Vafadarnikjoo",
+    "Shuyang Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Sajid Siraj"
+    },
+    {
+      "name": "Mahnaz Hosseinzadeh"
+    },
+    {
+      "name": "Amin Vafadarnikjoo"
+    },
+    {
+      "name": "Shuyang Li"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "ML检测欺诈招聘，HR/劳动相关",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "将虚假招聘检测形式化为信号理论下的分类问题，利用反奴役组织收集的464个跨九国21行业的真实案例，构建融合计算机视觉、自然语言处理与语义嵌入的多模态检测模型。单模态已达较高判别力（ROC-AUC 0.87–0.97），融合后增益有限。SHAP分析显示文本质量与领域风险语言为关键特征。最后开发可解释风险评分决策支持系统。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "伦理",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-17",
+  "doi": null,
+  "id": "p_T2uRSqoXUMnXI0rQ",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2609.20336v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 69224,
+      "revision": "f3270fa1233be693cc38e0a3130287dbbe81c331"
+    }
+  ],
+  "title": "Detecting Deceptive Recruitment: A Signal-theoretic Machine Learning Framework for Early Identification of Labour Exploitation",
+  "title_zh": "欺骗性招聘检测：早期识别劳动剥削的信号理论机器学习框架",
+  "unified_ingested_at": "2026-09-18T07:11:44.860472Z",
+  "url": "https://arxiv.org/abs/2609.20336v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,5 +1,167 @@
 [
   {
+    "abstract": "Abstract Sleep disturbance is common in First Episode Psychosis (FEP) and is associated with psychosis symptom exacerbation and functional decline, yet it remains unclear which sleep features predict relapse. In this longitudinal study, 269 FEP participants reported daily sleep during the first 30 days of the 12-month follow-up period via a smartphone app, including difficulty falling asleep, wake-up frequency, insufficient sleep, and sleep duration. These sleep characteristics were used to predict relapse and positive symptoms over the 12-month follow-up period, with outcomes assessed using structured interviews and clinical records. A Random Forest classifier was developed and validated using stratified nested cross-validation, achieving an AUC of 0.75 ± 0.13 and accuracy of 0.72 ± 0.16. Insufficient sleep and irregular sleep duration were identified as the strongest predictors of relapse risk. These findings were used to develop an open-access interactive web-based platform (a research prototype not intended for clinical use) to predict risk of relapse based on sleep disturbance, demonstrating the potential for real-time monitoring and personalised relapse prevention.",
+    "ai_reason": "机器学习随机森林是预测模型的核心方法；精神分裂症首次发作复发风险预测属于核心心理健康结局。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Anna Georgiades",
+      "S. Liu",
+      "Ryan Hammoud",
+      "Maria Chiara Del Piccolo",
+      "A. Almuqrin",
+      "Stefania Tognin",
+      "Andrea Mechelli"
+    ],
+    "authors_full": [
+      {
+        "name": "Anna Georgiades"
+      },
+      {
+        "name": "S. Liu"
+      },
+      {
+        "name": "Ryan Hammoud"
+      },
+      {
+        "name": "Maria Chiara Del Piccolo"
+      },
+      {
+        "name": "A. Almuqrin"
+      },
+      {
+        "name": "Stefania Tognin"
+      },
+      {
+        "name": "Andrea Mechelli"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "机器学习随机森林是预测模型的核心方法；精神分裂症首次发作复发风险预测属于核心心理健康结局。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [
+        "bias_fairness",
+        "clinical_harm"
+      ],
+      "tldr": "269名首发精神病患者纵向研究，使用随机森林基于30天睡眠数据预测12个月复发风险，AUC 0.75，为研究原型非临床应用。",
+      "topic_tags": [
+        "psychosis_schizophrenia",
+        "risk_prediction",
+        "monitoring",
+        "clinical_patients",
+        "adults"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "internal",
+    "date": "2026-09-17",
+    "doi": "10.1038/s41398-026-04444-1",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W7212103104",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "机器学习随机森林是预测模型的核心方法；精神分裂症首次发作复发风险预测属于核心心理健康结局。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "internal",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "risk_prediction",
+          "monitoring"
+        ],
+        "conditions": [
+          "psychosis_schizophrenia"
+        ],
+        "populations": [
+          "clinical_patients",
+          "adults"
+        ],
+        "risks": [
+          "bias_fairness",
+          "clinical_harm"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "12个月复发率和阳性症状",
+        "sample": "269名首发精神病患者",
+        "study_design": "纵向研究，嵌套交叉验证"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychosis"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "clinical_harm"
+      ],
+      "safety_evaluated": false,
+      "tldr": "269名首发精神病患者纵向研究，使用随机森林基于30天睡眠数据预测12个月复发风险，AUC 0.75，为研究原型非临床应用。",
+      "topic_tags": [
+        "psychosis_schizophrenia",
+        "risk_prediction",
+        "monitoring",
+        "clinical_patients",
+        "adults"
+      ]
+    },
+    "openalex_id": "W7212103104",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "bias_fairness",
+      "clinical_harm"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Predicting relapse risk in first episode psychosis using machine learning and sleep data",
+    "title_zh": "利用机器学习和睡眠数据预测首发精神病的复发风险",
+    "tldr": "269名首发精神病患者纵向研究，使用随机森林基于30天睡眠数据预测12个月复发风险，AUC 0.75，为研究原型非临床应用。",
+    "topic_tags": [
+      "psychosis_schizophrenia",
+      "risk_prediction",
+      "monitoring",
+      "clinical_patients",
+      "adults"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04444-1",
+    "year": 2026
+  },
+  {
     "abstract": "BACKGROUND: Major depressive disorder (MDD) is associated with high relapse rates, with around 20% of inpatients experiencing readmission within 90 days after discharge. Routinely collected clinical information may help identify individuals at higher risk of readmission. Machine learning (ML) models could complement more traditional statistical approaches by exploring complex relationships among multiple vulnerability factors. METHODS: The DEEP READ study is a prospective, multicentre cohort study conducted across 13 Italian provinces, enrolling adults aged 18-65 years with a DSM-5-TR MDD diagnosis between January 2024 and December 2025. The primary outcome was unplanned psychiatric readmission within 90 days. Sociodemographic and clinical features (including Hamilton Depression Rating Scale scores and DSM-5 specifiers), comorbidities, and pharmacological treatment at discharge were recorded. A Random Forest classifier was trained on 22 predictors and internally evaluated using stratified 5-fold cross-validation. RESULTS: The sample included 322 individuals (mean age 43.0 years; 38.5% men), of whom 15.5% (n = 50) were readmitted within 90 days. The model achieved a mean test AUC of 0.74 (range: 0.59-0.87). Suicide attempts, prior hospitalisations, anticonvulsant prescription, cluster B personality disorder, female sex, and anxious distress ranked among the leading predictors. Although exploratory, lithium prescription showed a negative SHapley Additive exPlanations (SHAP) pattern. CONCLUSIONS: A ML model based on routinely collected data showed moderate discrimination for 90-day readmission in MDD. These findings suggest that standard clinical variables may hold predictive value for early readmission. However, external validation, assessment of model calibration, and clinical utility are needed prior to clinical implementation.",
     "ai_reason": "ML是核心方法，构建Random Forest分类器预测MDD患者90天再入院率，直接解决精神健康服务结局。",
     "ai_score": 5,

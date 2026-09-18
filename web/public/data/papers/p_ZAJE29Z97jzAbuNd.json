@@ -1,6 +1,10 @@
 {
   "abstract": "Enterprise AI adoption has reached 78% of organizations globally, yet the infrastructure to govern that adoption has not kept pace. This paper identifies and characterizes the attestation deficit, a structural condition in which organizations maintain governance policies but cannot produce auditable, tamper-evident evidence of enforcement within regulatory timelines. Drawing on empirical data from the Stanford 2026 AI Index Report (362 documented incidents), the IBM/Ponemon 2026 Cost of a Data Breach study (USD 4.99M average cost, 92% lacking access controls), and the EY/AIUC-1 Consortium survey (38% end-to-end monitoring, 17% agent-to-agent coverage), this paper demonstrates that the governance failure is organizational and architectural rather than technical. To address this deficit, we propose AGIL (Adaptive Governance Intelligence Layer), a conceptual five-layer architecture designed to use machine learning for real-time AI governance enforcement. The proposed layers include: (1) Autonomous Discovery for shadow AI detection via behavioral fingerprinting, (2) Behavioral Risk Classification unifying security, hallucination, privacy, and accountability scoring, (3) a Policy Enforcement Gateway for inline permit/deny/modify decisions at sub-100ms latency, (4) a Continuous Attestation Engine generating tamper-evident audit trails as a byproduct of enforcement, and (5) Adaptive Policy Intelligence for ML-driven policy evolution across jurisdictions. AGIL is presented as a theoretical framework and architectural proposal; empirical validation through controlled deployment remains a direction for future work.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "AI治理",
+    "机器学习",
+    "算法管理"
+  ],
   "arxiv_id": "2609.13466",
   "authors": [
     "Sandeep Bokkasam",
@@ -19,8 +23,13 @@
       "ai_reason": "AI治理架构，涉及组织治理",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究企业AI治理中的'证明赤字'问题，即组织虽有治理政策却无法在监管时限内提供可审计的合规证据。基于斯坦福AI指数报告、IBM数据泄露成本研究等多源数据，指出治理失败源于组织与架构层面。提出五层AGIL架构：自主发现影子AI、行为风险分类、亚百毫秒策略执行网关、持续证明引擎及自适应策略智能，以实现实时AI治理。",
+      "topic_tags": [
+        "AI治理",
+        "伦理",
+        "组织变革",
+        "信任"
+      ]
     }
   },
   "channels": [
@@ -37,7 +46,7 @@
     {
       "channel": "ob",
       "legacy_id": 67869,
-      "revision": "2f81a912f9987152a919b28454d5b9c8289c197a"
+      "revision": "f3270fa1233be693cc38e0a3130287dbbe81c331"
     }
   ],
   "title": "Governing at Machine Speed: An Adaptive Intelligence Architecture for Real-Time AI Policy Enforcement",

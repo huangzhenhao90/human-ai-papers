@@ -1,0 +1,69 @@
+{
+  "abstract": "Physical teleoperation integrates human cognitive flexibility with robotic precision, yet demanding manipulation tasks frequently induce severe cognitive workload, acute frustration, and execution breakdown. Conventional shared autonomy paradigms rely primarily on task-based rules, such as spatial error boundaries, which disregard the operator's transient affective state and risk misaligned control interventions. To address this limitation, we propose an affect-aware shared autonomy teleoperation framework that dynamically modulates robotic assistance based on real-time operator state estimation. The system estimates operator affective states from synchronized facial video, cardiac signals, and bilateral arm kinematics, outputting a seven-state affective distribution and a three-category operational abstraction (neutral, productive, adverse). Affect-aware assistance is selectively triggered when the user is detected in a continuous adverse state, preserving task-positive engagement without unnecessary disruption. The empirical user study ($N = 30$) confirms that the proposed affective assistance increases the productive states by up to 39.7% without compromising user agency. The collected dataset represents the first multimodal dataset that provides continuous visual, physiological, and operator's bilateral motion tracking of temporal affective state shifts during bimanual teleoperation. Our multimodal fusion model outperforms zero-shot baselines (Qwen, MiniCPM-V) in tracking temporal state dynamics. This real-world deployment offers a new human-centric framework that integrates visual, physiological, and motion tracking for physical human-robot interaction.",
+  "ai_type_tags": [
+    "多模态",
+    "情感识别",
+    "人机协作"
+  ],
+  "arxiv_id": "2609.19802",
+  "authors": [
+    "Zhengji Liang",
+    "Guiyin Tian",
+    "Sijin Qu",
+    "Hainan Liu",
+    "Shiyan Hu"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhengji Liang"
+    },
+    {
+      "name": "Guiyin Tian"
+    },
+    {
+      "name": "Sijin Qu"
+    },
+    {
+      "name": "Hainan Liu"
+    },
+    {
+      "name": "Shiyan Hu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "情感共享自主遥操作，含主观评估",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对远程操作中高认知负荷与情绪崩溃问题，提出情感感知共享自主框架，融合面部视频、心电信号与双臂运动学实时估计操作者七种情感状态与三类操作抽象状态。持续检测到不良状态时选择性触发辅助，30人实验显示生产性状态提升39.7%且不损害用户控制感，并发布首个双臂遥操作多模态情感数据集。",
+      "topic_tags": [
+        "人机协作",
+        "情感计算",
+        "多模态交互"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-17",
+  "doi": null,
+  "id": "p_6-0ltxRk2yTLOs2k",
+  "issue": null,
+  "journal": "arXiv:cs.RO",
+  "pdf_url": "https://arxiv.org/pdf/2609.19802v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 28758,
+      "revision": "5560fbe285f58f35c20b3ced8638f42828a87feb"
+    }
+  ],
+  "title": "Affective Shared Autonomy: Temporal Affect Dynamics and Subjective Evaluation in Bimanual Teleoperation Tasks",
+  "title_zh": "情感共享自主性：双手遥操作任务中的时序情感动态与主观评估",
+  "unified_ingested_at": "2026-09-18T07:11:44.860472Z",
+  "url": "https://arxiv.org/abs/2609.19802v1",
+  "volume": null,
+  "year": 2026
+}

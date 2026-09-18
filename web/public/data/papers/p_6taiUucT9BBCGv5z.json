@@ -1,0 +1,57 @@
+{
+  "abstract": "Traditional dialogue systems for social robots require both dialogue strategies and user attribute recognition, each demanding specialized expertise. However, data collection is costly in real-world deployments, and the resulting datasets often include many failure cases. In this study, we aim to automate the acquisition of dialogue strategies by leveraging both successful and failed interactions using a vision-language model (VLM) and a large language model (LLM). We propose an architecture in which user attributes, recognized by the VLM, along with dialogue history, are fed into the LLM to generate dialogue strategies tailored to specific user attributes. We extracted dialogue strategies from an interaction dataset collected through a field experiment and evaluated their effectiveness. The results demonstrate that explicitly representing failure strategies complements success strategies and improves performance. Our findings highlight a practical pipeline for constructing and maintaining an interpretable strategy repository from in-the-wild deployment logs by recycling abundant failure interactions as reusable constraints, ultimately reducing the development cost of social robots.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2609.19570",
+  "authors": [
+    "Sanae Yamashita",
+    "Yuki Okafuji"
+  ],
+  "authors_full": [
+    {
+      "name": "Sanae Yamashita"
+    },
+    {
+      "name": "Yuki Okafuji"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "VLM/LLM对话策略，有田野实验但偏技术",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对社交机器人对话策略开发成本高、失败案例多的问题，提出利用VLM识别用户属性、LLM生成对话策略的架构，从野外部署日志中同时提取成功与失败策略。实验表明显式表征失败策略可补充成功策略并提升性能，构建可解释策略库，将大量失败交互转化为可复用约束，降低开发成本。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "智能体"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-17",
+  "doi": "10.1109/lra.2026.3704002",
+  "id": "p_6taiUucT9BBCGv5z",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2609.19570v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 28761,
+      "revision": "5560fbe285f58f35c20b3ced8638f42828a87feb"
+    }
+  ],
+  "title": "Learning from Success and Failure: Acquiring Adaptive Dialogue Strategies for Social Robots",
+  "title_zh": "从成败中学习：面向社交机器人的适应性对话策略获取",
+  "unified_ingested_at": "2026-09-18T07:11:44.860472Z",
+  "url": "https://arxiv.org/abs/2609.19570v1",
+  "volume": null,
+  "year": 2026
+}
