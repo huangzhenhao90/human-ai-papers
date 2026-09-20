@@ -19007,7 +19007,10 @@
     "abstract": "When foundation models describe people, recent work in AI fairness, accessibility, and ethics recommends avoiding inferred identity labels (e.g., \"she\", \"his\") in favor of seemingly \"objective\" physical descriptions (e.g., \"short hair\", \"a defined jawline\"). Yet whether such descriptive language achieves gender-neutral communication remains an open empirical question. To study this, we introduce GAPA (Gender Associations of Physical Attributes), a dataset of 316 common physical attributes drawn from diverse sources, paired with 14,706 gender-association ratings from 304 US-based annotators. Results show that physical descriptions carry structured and graded gender associations among readers, with more consistent and distinctive associations for women and men than for non-binary identities. Next, we evaluate 16 LLMs across model families, sizes, and post-training variants against human ratings. The models partially recover human associations but exhibit systematic alignment biases, including compressed rating distributions, weaker alignment for associations with men, and asymmetric abstention that disproportionately targets the non-binary category. Finally, we release the best-performing proxy model trained to predict humans' gender associations of descriptive language and demonstrate its utility through a sociolinguistic analysis of character descriptions in LitBank. Together, our findings provide the first empirical evidence that seemingly \"objective\" physical descriptions can retain systematic gender associations in human interpretation, and uncover systematic patterns of model-human misalignment. This challenges the assumption that replacing explicit gender labels with physical descriptions necessarily yields gender-neutral communication, and highlights downstream challenges in using such descriptions to communicate subjective identity categories in human-AI interaction.",
     "ai_reason": "304标注者性别联想评分，用户感知研究",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "可解释AI"
+    ],
     "authors": [
       "Yingjia Wan",
       "Lin Lin",
@@ -19036,8 +19039,13 @@
     "scored_at": "2026-09-17T07:01:39.577491",
     "title": "How Humans and LLMs Read Gender into Gender-Neutral Physical Descriptions",
     "title_zh": "人类与LLM如何从性别中立的外貌描述中读出性别",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究构建GAPA数据集（316个身体特征、304名标注者14,706条评分），发现看似客观的物理描述仍携带结构化且分级的性别联想，女性和男性联想比非二元更一致。评估16个LLM后，模型部分复现人类联想但存在系统性偏差：对男性联想对齐较弱，对非二元类别过度弃答，并压缩评分分布。",
+    "topic_tags": [
+      "AI治理",
+      "伦理",
+      "用户研究方法",
+      "可解释性"
+    ],
     "url": "https://arxiv.org/abs/2609.16366v1",
     "volume": null,
     "year": 2026
@@ -21494,6 +21502,54 @@
     "url": "https://doi.org/10.1111/joca.12552",
     "volume": "57",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "车载智能体系统综述，HCI设计核心，AI为主要变量",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI 助手",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Seul Chan Lee",
+      "Myounghoon Jeon"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Seul Chan Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Myounghoon Jeon",
+        "orcid": null
+      }
+    ],
+    "cited_by": 43,
+    "date": "2022-09",
+    "doi": "10.1016/j.ijhcs.2022.102864",
+    "domain_score": 4.0,
+    "id": 29254,
+    "ingested_at": "2026-09-20T07:22:54.566859",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-09-20T07:23:31.926233",
+    "title": "A systematic review of functions and design features of in-vehicle agents",
+    "title_zh": "车载代理功能与设计特征的系统综述",
+    "tldr": "对车载智能代理（如车内语音助手）的功能与设计特征进行系统综述，梳理其在驾驶场景下的交互方式、任务支持与用户体验设计要点。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "智能体",
+      "用户体验(UX)",
+      "服务设计"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2022.102864",
+    "volume": "165",
+    "year": 2022
   },
   {
     "abstract": "Anxiety disorders are highly prevalent, yet access to effective psychological treatments remains limited. Artificial intelligence (AI)-enabled mental health applications offer a scalable and accessible means to bridge treatment gaps. This study qualitatively explored the experiences of adults with anxiety symptoms using PATH, an AI-enabled mental health intervention. Participants (N = 100) with moderate-to-severe anxiety were recruited via Prolific and engaged with PATH before providing feedback. A total of 67 participants completed the qualitative questions at the 2-week timepoint, and 51 participants completed a further questionnaire at the 8-week timepoint. Participants had a mean age of 39.84 (SD = 11.19). Most were born in the UK (89.6%), and reported their ethnicity as White (92.5%), Asian (3.0%), mixed (3.0%) and Black (1.5%). Many worked full-time (53.7%) or part-time (20.9%), and a minority (14.9%) were students. Data were analysed using Qualitative Descriptive Analysis. Four overarching themes emerged: (1) Key Reasons for Use; (2) Usability and Functionality; (3) Preferred In-App Interventions; and (4) Facilitators and Barriers to Sustained Engagement. Findings underscore the value of empathetic, personalised and readily available AI-enabled interventions for anxiety management, while also highlighting design challenges requiring refinement.",
@@ -47483,6 +47539,104 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心研究人类对AI对话式搜索的健康信息信任",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "LLM"
+    ],
+    "authors": [
+      "Xin Sun",
+      "Rongjun Ma",
+      "Xiaochang Zhao",
+      "Janne Lindqvist",
+      "Jan de Wit"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Faculty of Social and Behavioural Sciences, University of Amsterdam, Amsterdam, The Netherlands"
+        ],
+        "name": "Xin Sun",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Computer Science, Aalto University, Espoo, Finland"
+        ],
+        "name": "Rongjun Ma",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Faculty of Social and Behavioural Sciences, University of Amsterdam, Amsterdam, The Netherlands"
+        ],
+        "name": "Xiaochang Zhao",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Computer Science, Aalto University, Espoo, Finland"
+        ],
+        "name": "Janne Lindqvist",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Communication and Cognition, Tilburg University, Tilburg, The Netherlands"
+        ],
+        "name": "Jan de Wit",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "School of Computer Science and Engineering, Southeast University, Nanjing, People's Republic of China"
+        ],
+        "name": "Zhuying Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Centrum Wiskunde & Informatica (CWI), Amsterdam, The Netherlands",
+          "Department of Information and Computing Sciences, Utrecht University, Utrecht, The Netherlands"
+        ],
+        "name": "Abdallah El Ali",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Faculty of Social and Behavioural Sciences, University of Amsterdam, Amsterdam, The Netherlands"
+        ],
+        "name": "Jos A. Bosch",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-19",
+    "doi": "10.1080/0144929x.2026.2719735",
+    "domain_score": 5.0,
+    "id": 29280,
+    "ingested_at": "2026-09-20T07:22:55.486517",
+    "issue": null,
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-09-20T07:23:28.215472",
+    "title": "From search agents to dissemination interfaces: understanding human trust in health information from conversational search",
+    "title_zh": "从搜索代理到传播界面：理解人类对对话式搜索健康信息的信任",
+    "tldr": "聚焦健康场景下对话式搜索（如对话代理）作为信息分发界面时，用户对其提供健康信息的信任机制与影响因素，探索从搜索工具到传播接口的信任转变。",
+    "topic_tags": [
+      "信任",
+      "对话式 AI",
+      "人机交互(HCI)",
+      "AI 助手"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2719735",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心为LLM驱动的对话代理，HCI交互研究",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -65723,6 +65877,74 @@
     "year": 2023
   },
   {
+    "abstract": "People are not infallible consistent “oracles”: their confidence in decision-making may vary significantly between tasks and over time. We have previously reported the benefits of using an interface and algorithms that\n            explicitly\n            captured and exploited users’ confidence: error rates were reduced by up to 50% for an industrial multi-class learning problem; and the number of interactions required in a design-optimisation context was reduced by 33%. Having access to users’ confidence judgements could significantly benefit intelligent interactive systems in industry, in areas such as intelligent tutoring systems and in health care. There are many reasons for wanting to capture information about confidence\n            implicitly\n            . Some are ergonomic, but others are more “social”—such as wishing to understand (and possibly take account of) users’ cognitive state without interrupting them.\n          \n          We investigate the hypothesis that users’ confidence can be accurately predicted from measurements of their behaviour. Eye-tracking systems were used to capture users’ gaze patterns as they undertook a series of visual decision tasks, after each of which they reported their confidence on a 5-point Likert scale. Subsequently, predictive models were built using “conventional” machine learning approaches for numerical summary features derived from users’ behaviour. We also investigate the extent to which the deep learning paradigm can reduce the need to design features specific to each application by creating “gaze maps”—visual representations of the trajectories and durations of users’ gaze fixations—and then training deep convolutional networks on these images.\n          Treating the prediction of user confidence as a two-class problem (confident/not confident), we attained classification accuracy of 88% for the scenario of new users on known tasks, and 87% for known users on new tasks. Considering the confidence as an ordinal variable, we produced regression models with a mean absolute error of ≈0.7 in both cases. Capturing just a simple subset of non-task-specific numerical features gave slightly worse, but still quite high accuracy (e.g., MAE ≈ 1.0). Results obtained with gaze maps and convolutional networks are competitive, despite not having access to longer-term information about users and tasks, which was vital for the “summary” feature sets. This suggests that the gaze-map-based approach forms a viable, transferable alternative to handcrafting features for each different application. These results provide significant evidence to confirm our hypothesis, and offer a way of substantially improving many interactive artificial intelligence applications via the addition of cheap non-intrusive hardware and computationally cheap prediction algorithms.",
+    "ai_reason": "智能交互系统预测用户信心，核心HCI用户研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Jim Smith",
+      "Phil Legg",
+      "Milos Matovic",
+      "Kristofer Kinsey"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of the West of England, Bristol, UK"
+        ],
+        "name": "Jim Smith",
+        "orcid": "https://orcid.org/0000-0001-7908-1859"
+      },
+      {
+        "affiliation": [
+          "University of the West of England, Bristol, UK"
+        ],
+        "name": "Phil Legg",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of the West of England, Bristol, UK"
+        ],
+        "name": "Milos Matovic",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of the West of England, Bristol, UK"
+        ],
+        "name": "Kristofer Kinsey",
+        "orcid": null
+      }
+    ],
+    "cited_by": 16,
+    "date": "2018-06-13",
+    "doi": "10.1145/3185524",
+    "domain_score": 5.0,
+    "id": 29268,
+    "ingested_at": "2026-09-20T07:22:55.058501",
+    "issue": "2",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-09-20T07:23:32.344150",
+    "title": "Predicting User Confidence During Visual Decision Making",
+    "title_zh": "视觉决策过程中用户置信度的预测",
+    "tldr": "研究用户视觉决策过程中置信度的隐式预测问题。通过眼动仪采集被试完成视觉决策任务时的注视行为，并让其以5点Likert量表自报置信度，随后用传统机器学习与深度学习方法从行为特征中建模预测用户置信度，旨在替代显式询问以减少交互干扰、感知用户认知状态，可为智能辅导、医疗等智能交互系统提供支持。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可用性",
+      "情感计算",
+      "眼动追踪",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1145/3185524",
+    "volume": "8",
+    "year": 2018
+  },
+  {
     "abstract": "Applications of large language models (LLMs) in software engineering are soaring quickly. Despite ample evidence supporting LLMs’ capabilities of generating high-quality and creative suggestions, human–LLM interactions in software testing remain under-explored, and there lacks empirical evidence supporting efficacious human–LLM system designs. In software testing, the industry’s pursuit of “autonomous” systems neglects intensive human involvement in prior-design and post-review processes. This article discusses two empirical user studies for a test case brainstorming task: (1) exploring user behaviors in human–LLM interactions compared to web search (\n                    \n                      \\(N_{1}=16\\)\n                    \n                    ) and (2) investigating three modified interaction strategies—preemptive prompting, buffered response, and guided input (\n                    \n                      \\(N_{2}=24\\)\n                    \n                    ). We consolidate nine cross-disciplinary metrics to quantitatively evaluate the holistic performance of the human–LLM system, covering three perspectives: test quality, creativity, and attention span. Our findings reveal that users spend 126% more time interacting with LLMs compared to Google search. Moreover, preemptively prompting the LLM system significantly improves test quality and task creativity by over 30%, while simultaneously reducing user idle time by up to 49%. Based on the results, this article discusses three interaction design principles—mixed initiative, acceptability, and appropriation—as guidance for future iterations of an efficacious LLM-assisted software testing system.",
     "ai_reason": "LLM为核心，两项实证用户研究(N=16)",
     "ai_score": 5.0,
@@ -83939,10 +84161,66 @@
     "year": 2026
   },
   {
+    "abstract": "In this paper, we present a deep learning-based decision support tool to assist individuals in writing effective creative appeals.",
+    "ai_reason": "深度学习为核心方法，辅助创意写作，属营销AI",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Jiyeon Hong",
+      "Paul R. Hoban"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Wisconsin-Madison, Madison, Wisconsin 53706;"
+        ],
+        "name": "Jiyeon Hong",
+        "orcid": "https://orcid.org/0000-0002-1762-8297"
+      },
+      {
+        "affiliation": [
+          "Amazon.com, Inc., Seattle, Washington 98109"
+        ],
+        "name": "Paul R. Hoban",
+        "orcid": "https://orcid.org/0000-0002-9868-6674"
+      }
+    ],
+    "cited_by": 26,
+    "date": "2022-09",
+    "doi": "10.1287/mksc.2022.1351",
+    "domain_score": 3.0,
+    "id": 29081,
+    "ingested_at": "2026-09-19T06:56:32.774986",
+    "issue": "5",
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-09-20T07:23:31.926708",
+    "title": "Writing More Compelling Creative Appeals: A Deep Learning-Based Approach",
+    "title_zh": "撰写更具说服力的创意诉求：一种基于深度学习的方法",
+    "tldr": "提出基于深度学习的决策支持工具，辅助个人撰写更具说服力的创意诉求文案，结合营销传播场景，评估其对创意效果与受众反应的提升作用。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "AI 助手",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2022.1351",
+    "volume": "41",
+    "year": 2022
+  },
+  {
     "abstract": "Stroke rehabilitation assessments compress clinicians’ nuanced observations into coarse scores, obscuring the relationship between movement quality and functional recovery. Through the development of\n                    xAARA\n                    , an explainable augmented assessment system, we present a three-stage methodology for augmenting expert assessment in complex embodied clinical work. In\n                    development\n                    , co-design with ten clinicians over 30 months produced an assessment ontology decomposing tasks into segments and movement-quality elements, with multi-view capture and annotation interfaces. In\n                    deployment\n                    , embedding these tools in routine assessment of 107 stroke survivors produced a clinical-scale corpus and trained computational experts whose recommendations reached over 90% agreement with high-confidence expert ratings and resolved 92% of ambiguous cases. In\n                    adoption\n                    , clinicians external to development reviewed, accepted, or refined these recommendations, both validating the system and supplying the signal that tunes it. Throughout, assessment entropy is the measure by which augmentation is designed and evaluated: observability increases while uncertainty is reduced and localized where it can guide therapy.",
     "ai_reason": "协同设计+107人部署，临床HCI研究",
     "ai_score": 3.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "可解释AI",
+      "人机协作",
+      "多模态交互"
+    ],
     "authors": [
       "Tamim Ahmed",
       "Thanassis Rikakis",
@@ -84006,8 +84284,14 @@
     "scored_at": "2026-09-18T07:00:32.667391",
     "title": "xAARA: Explainable and Augmented Automated Rehabilitation Assessment",
     "title_zh": "xAARA：可解释与增强的自动化康复评估",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "xAARA是面向中风康复评估的可解释增强系统，通过与10位临床医生30个月协同设计，将任务分解为动作片段与质量要素并建立本体。在107名患者的常规评估中部署，计算专家推荐与高置信度专家评分一致率超90%，解决92%的模糊案例。系统以评估熵为度量提升可观测性并局部化不确定性以指导治疗。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可解释性",
+      "人机协作",
+      "可用性测试",
+      "用户研究方法"
+    ],
     "url": "https://doi.org/10.1145/3848511",
     "volume": null,
     "year": 2026

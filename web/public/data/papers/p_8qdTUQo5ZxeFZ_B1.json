@@ -1,6 +1,10 @@
 {
   "abstract": "Stroke rehabilitation assessments compress clinicians’ nuanced observations into coarse scores, obscuring the relationship between movement quality and functional recovery. Through the development of\n                    xAARA\n                    , an explainable augmented assessment system, we present a three-stage methodology for augmenting expert assessment in complex embodied clinical work. In\n                    development\n                    , co-design with ten clinicians over 30 months produced an assessment ontology decomposing tasks into segments and movement-quality elements, with multi-view capture and annotation interfaces. In\n                    deployment\n                    , embedding these tools in routine assessment of 107 stroke survivors produced a clinical-scale corpus and trained computational experts whose recommendations reached over 90% agreement with high-confidence expert ratings and resolved 92% of ambiguous cases. In\n                    adoption\n                    , clinicians external to development reviewed, accepted, or refined these recommendations, both validating the system and supplying the signal that tunes it. Throughout, assessment entropy is the measure by which augmentation is designed and evaluated: observability increases while uncertainty is reduced and localized where it can guide therapy.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "可解释AI",
+    "人机协作",
+    "多模态交互"
+  ],
   "arxiv_id": null,
   "authors": [
     "Tamim Ahmed",
@@ -58,8 +62,14 @@
       "ai_reason": "协同设计+107人部署，临床HCI研究",
       "ai_score": 3.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "xAARA是面向中风康复评估的可解释增强系统，通过与10位临床医生30个月协同设计，将任务分解为动作片段与质量要素并建立本体。在107名患者的常规评估中部署，计算专家推荐与高置信度专家评分一致率超90%，解决92%的模糊案例。系统以评估熵为度量提升可观测性并局部化不确定性以指导治疗。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可解释性",
+        "人机协作",
+        "可用性测试",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -76,7 +86,7 @@
     {
       "channel": "ur",
       "legacy_id": 28487,
-      "revision": "d541dbc0258685b099b9cb464b54762635478814"
+      "revision": "2143c180830921a0fc9edc8f2a830238bf95c08d"
     }
   ],
   "title": "xAARA: Explainable and Augmented Automated Rehabilitation Assessment",

@@ -113812,6 +113812,63 @@
     "year": 2022
   },
   {
+    "abstract": "In this paper, we present a method to make personalized recommendations when user preferences change over time. Most of the works in the recommender systems literature have been developed under the assumption that user preference has a static pattern. However, this is a strong assumption especially when the user is observed over a long period of time. With the help of a data set on employees’ blog reading behavior, we show that users’ product selection behaviors change over time. We propose a hidden Markov model to correctly interpret the users’ product selection behaviors and make personalized recommendations. The user preference is modeled as a hidden Markov sequence. A variable number of product selections of different types by each user in each time period requires a novel observation model. We propose a negative binomial mixture of multi-nomial to model such observations. This allows us to identify stable global preferences of users and to track individual users through these preferences. We evaluate our model using three real-world data sets with different characteristics. They include data on employee blog reading behavior inside a firm, users’ movie rating behavior at Netflix, and users’ music listening behavior collected through last.fm. We compare the recommendation performance of the proposed model with that of a number of collaborative filtering algorithms and a recently proposed temporal link prediction algorithm. We find that the proposed HMM-based collaborative filter performs as well as the best among the alternative algorithms when the data is sparse or static. However, it outperforms the existing algorithms when the data is less sparse and the user preference is changing. We further examine the performances of the algorithms using simulated data with different characteristics and highlight the scenarios where it is beneficial to use a dynamic model to generate product recommendation.",
+    "ai_reason": "HMM机器学习用于推荐系统",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "机器学习"
+    ],
+    "authors": [
+      "Nachiketa Sahoo",
+      "Param Vir Singh",
+      "Tridas Mukhopadhyay"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "School of Management, Boston University, 595 Commonwealth Avenue, Boston, MA 02215 U.S.A. and iLab, Heinz College, Carnegie Mellon University, Pittsburgh, PA 15213 U.S.A."
+        ],
+        "name": "Nachiketa Sahoo",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "David A. Tepper School of Business and iLab, Heinz College, Carnegie Mellon University, Pittsburgh, PA 15213 U.S.A."
+        ],
+        "name": "Param Vir Singh",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "David A. Tepper School of Business and iLab, Heinz College, Carnegie Mellon University, Pittsburgh, PA 15213 U.S.A."
+        ],
+        "name": "Tridas Mukhopadhyay",
+        "orcid": null
+      }
+    ],
+    "cited_by": 109,
+    "date": "2012-12-01",
+    "doi": "10.2307/41703509",
+    "domain_score": 4.0,
+    "id": 68952,
+    "ingested_at": "2026-09-18T07:04:43.227078",
+    "issue": "4",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-09-20T07:29:39.947545",
+    "title": "A Hidden Markov Model for Collaborative Filtering1",
+    "title_zh": "一种用于协同过滤的隐马尔可夫模型",
+    "tldr": "针对用户偏好随时间动态变化使静态协同过滤假设失效的问题，提出基于隐马尔可夫模型的协同过滤方法，将用户偏好建模为隐马尔可夫序列，并设计负二项-多项混合分布以刻画每周期内多类型产品选择的可变观察。在企业博客阅读、Netflix电影评分和last.fm音乐三组真实数据上，推荐效果优于多种协同过滤与时序链路预测算法。",
+    "topic_tags": [
+      "推荐系统",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.2307/41703509",
+    "volume": "36",
+    "year": 2012
+  },
+  {
     "abstract": "We propose a new data-driven approach for addressing multistage stochastic linear optimization problems with unknown distributions. The approach consists of solving a robust optimization problem that is constructed from sample paths of the underlying stochastic process. We provide asymptotic bounds on the gap between the optimal costs of the robust optimization problem and the underlying stochastic problem as more sample paths are obtained, and we characterize cases in which this gap is equal to zero. To the best of our knowledge, this is the first sample path approach for multistage stochastic linear optimization that offers asymptotic optimality guarantees when uncertainty is arbitrarily correlated across time. Finally, we develop approximation algorithms for the proposed approach by extending techniques from the robust optimization literature and demonstrate their practical value through numerical experiments on stylized data-driven inventory management problems.  This paper was accepted by David Simchi-Levi, optimization.  Funding: S. Shtern was supported by the Israel Science Foundation [Grant 1460/19].  Supplemental Material: The online appendix is available at https://doi.org/10.1287/mnsc.2022.4352 .",
     "ai_reason": "数据驱动优化方法，运筹学技术研究",
     "ai_score": 3.0,
@@ -126278,6 +126335,57 @@
     "url": "https://doi.org/10.1287/mnsc.2024.04540",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "Personalized marketing in retail requires a model to predict how different marketing actions affect product choices by individual customers. Large retailers often handle millions of transactions daily, involving thousands of products in hundreds of categories. Product choice models thus need to scale to large product assortments and customer bases, without extensive product attribute information. To address these challenges, we propose a custom deep neural network model. The model incorporates bottleneck layers to encode cross-product relationships, calibrates time-series filters to capture purchase dynamics for products with different interpurchase times, and relies on weight sharing between the products to improve convergence and scale to large assortments. The model applies to loyalty card transaction data without predefined categories or product attributes to predict customer-specific purchase probabilities in response to marketing actions. In a simulation, the proposed product choice model predicts purchase decisions better than baseline methods by adjusting the predicted probabilities for the effects of recent purchases and price discounts. The improved predictions lead to substantially higher revenue gains in a simulated coupon personalization problem. We verify predictive performance using transaction data from a large retailer with experimental variation in price discounts.This paper was accepted by Gui Liberali, Management Science Special Section on Data-Driven Prescriptive Analytics.",
+    "ai_reason": "深度学习产品选择模型，核心AI+营销",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "推荐算法"
+    ],
+    "authors": [
+      "Sebastian Gabel",
+      "Artem Timoshenko"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Segment of One GmbH, 10243 Berlin, Germany;",
+          "Humboldt University of Berlin, 10117 Berlin, Germany;"
+        ],
+        "name": "Sebastian Gabel",
+        "orcid": "https://orcid.org/0000-0003-3522-2263"
+      },
+      {
+        "affiliation": [
+          "Kellogg School of Management, Northwestern University, Evanston, Illinois 60208"
+        ],
+        "name": "Artem Timoshenko",
+        "orcid": "https://orcid.org/0000-0002-5431-2136"
+      }
+    ],
+    "cited_by": 69,
+    "date": "2022-03",
+    "doi": "10.1287/mnsc.2021.3969",
+    "domain_score": 5.0,
+    "id": 70314,
+    "ingested_at": "2026-09-20T07:28:44.192693",
+    "issue": "3",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-09-20T07:29:23.046586",
+    "title": "Product Choice with Large Assortments: A Scalable Deep-Learning Model",
+    "title_zh": "大规模品类下的产品选择：一种可扩展的深度学习模型",
+    "tldr": "针对大规模零售场景下个性化产品选择预测难题，提出可扩展的深度神经网络模型，通过瓶颈层编码跨产品关系、校准的时间序列滤波器捕捉不同再购买间隔产品的动态，并利用权重共享应对大品类。在忠诚度卡交易数据上无需预定义品类或属性即可预测个体购买概率，在优惠券个性化模拟与实证中均显著优于基线，带来更高收入。",
+    "topic_tags": [
+      "营销",
+      "推荐系统",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2021.3969",
+    "volume": "68",
+    "year": 2022
   },
   {
     "abstract": "This paper presents a novel integrative approach that combines artificial intelligence-driven forecasting with behavioral interventions to help businesses optimize energy consumption under critical peak pricing schemes.",
