@@ -1,0 +1,61 @@
+{
+  "abstract": "Problematic internet use affects a growing share of the population, yet common interventions, e.g., time limits, blocking, forced breaks, are coercive and easily circumvented. We explore a less restrictive alternative: adapting the emotional intensity of visual content. Prior work has shown that optimization can steer an image's affective content, but its per-image optimization cost makes it impractical for real-time deployment. We instead learn a model that predicts this transformation in a single forward pass: a MobileNetV4 backbone with FiLM-based emotion conditioning outputs parameters for differentiable global transformations. This replaces prior iterative optimization (80 s per image) with a single 3.7 ms forward pass. In a user study (N = 54), the model reduced viewer-reported arousal relative to unedited images, comparably to the grayscale well-being filter, while being rated higher in perceived quality. We integrate the model into an Android app that adapts Instagram video in real time, sustaining 60 fps on a Samsung Galaxy S23.",
+  "ai_type_tags": [
+    "多模态",
+    "情感识别"
+  ],
+  "arxiv_id": "2609.21624",
+  "authors": [
+    "Musa Rochi",
+    "Marcel Schubert",
+    "Christoph Gebhardt"
+  ],
+  "authors_full": [
+    {
+      "name": "Musa Rochi"
+    },
+    {
+      "name": "Marcel Schubert"
+    },
+    {
+      "name": "Christoph Gebhardt"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "ML情感编辑为核心，含N=54用户研究评估viewer体验",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对问题性网络使用，提出通过调整视觉内容情感强度而非强制限制的替代方案。训练MobileNetV4+FiLM模型单次前向传播预测情感变换参数，将每图80秒迭代优化压缩至3.7毫秒。54人用户研究表明模型有效降低观看者唤醒度，效果与灰度滤镜相当且感知质量更高，已集成至Android应用对Instagram视频实现60fps实时处理。",
+      "topic_tags": [
+        "情感计算",
+        "可访问性",
+        "用户体验(UX)",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-18",
+  "doi": null,
+  "id": "p_3waJFu5Oa8LbsyVK",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2609.21624v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 29968,
+      "revision": "b0aa9efc174b938e579523ba7adfc4bbc8a25302"
+    }
+  ],
+  "title": "Learned Parametric Emotion Editing: Real-Time Affective Filtering for On-Device Social Media Video",
+  "title_zh": "学习的参数化情感编辑：面向端上社交媒体视频的实时情感过滤",
+  "unified_ingested_at": "2026-09-21T07:45:46.371949Z",
+  "url": "https://arxiv.org/abs/2609.21624v1",
+  "volume": null,
+  "year": 2026
+}

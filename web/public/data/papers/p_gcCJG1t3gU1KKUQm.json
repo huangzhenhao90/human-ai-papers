@@ -1,0 +1,74 @@
+{
+  "abstract": "Good tutoring adapts to the individual: it tracks what a learner knows, notices why they go wrong, and asks the next question that will help most. Most deployed tutoring tools instead serve fixed item banks and treat a wrong answer as a single bit of signal. We present CoLearn, an interactive, agentic tutor that supports an iterative tutoring loop: the learner practises, and the system builds an evidence-grounded memory of the learner's mastery and misconceptions. This memory is updated as evidence accumulates and is used to generate the next personalised question. CoLearn has three components: (i) a persistent learner-state memory that updates per-topic mastery with a soft-evidence variant of Bayesian Knowledge Tracing, where a large language model acts as a continuous observation function; (ii) adaptive question generation that targets the learner's weakest topic and recurring misconceptions; and (iii) an evidence view that makes personalisation visible and testable through live progress visualisation and blind A/B comparison. In blind A/B evaluation, questions conditioned on this memory are preferred over non-personalised ones 68-69% of the time, and in persona simulations with hidden ground-truth mastery the agent's belief converges toward the learner's true mastery.",
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "智能体/Agent",
+    "人机协作"
+  ],
+  "arxiv_id": "2609.21154",
+  "authors": [
+    "Kailai He",
+    "Zhihao Wu",
+    "Linhai Zhang",
+    "Runcong Zhao",
+    "Yulan He"
+  ],
+  "authors_full": [
+    {
+      "name": "Kailai He"
+    },
+    {
+      "name": "Zhihao Wu"
+    },
+    {
+      "name": "Linhai Zhang"
+    },
+    {
+      "name": "Runcong Zhao"
+    },
+    {
+      "name": "Yulan He"
+    },
+    {
+      "name": "Jiazheng Li"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM驱动的智能辅导系统，摘要偏系统设计少用户评估",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出CoLearn智能体导师，构建人机协同学习闭环：基于贝叶斯知识追踪（LLM充当连续观测函数）的持久学习者状态记忆、针对薄弱知识点与误解的自适应题目生成、以及支持A/B盲测与进度可视化的证据视图。盲测中个性化题目被偏好率68-69%，模拟实验中智能体对掌握度的信念收敛于真实水平。",
+      "topic_tags": [
+        "人机协作",
+        "个性化",
+        "可视化",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-17",
+  "doi": null,
+  "id": "p_gcCJG1t3gU1KKUQm",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.21154v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 29976,
+      "revision": "b0aa9efc174b938e579523ba7adfc4bbc8a25302"
+    }
+  ],
+  "title": "CoLearn: An Agentic Tutor that Learns its Learner in a Human--AI Co-Learning Loop",
+  "title_zh": "CoLearn：在人机协同学习循环中习得学习者特征的智能体导师",
+  "unified_ingested_at": "2026-09-21T07:45:46.371949Z",
+  "url": "https://arxiv.org/abs/2609.21154v1",
+  "volume": null,
+  "year": 2026
+}
