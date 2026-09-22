@@ -1,0 +1,66 @@
+{
+  "abstract": "Effective communication between users and AI agents is essential for human-AI collaboration. The XY problem is a well-known communication pitfall where a person asks about their attempted solution rather than their actual problem. We extend prior sycophancy evaluation to the XY problem in agentic settings, evaluating whether agents can resist plausible but misleading suggestions from users and communicate their reasoning. We introduce XYEval, a meta-evaluation framework that can transform an existing benchmark into an XY problem evaluation. We evaluate five models across six diverse benchmark suites. Agents suffer large XY drops under XY mutation across benchmarks, with relative drops reaching up to 46.7%. With $τ^2$-bench, we further show that agent performance drops more when encountering a pedantic user who requires detailed explanations before approving a better solution. Our findings suggest that current agents lack the ability to effectively reason and communicate when facing misleading suggestions. A simple system instruction baseline that encourages awareness of XY problems only offers partial mitigation. Extensive trace analyses provide behavioral insights into how and why these XY drops occur across execution trajectories. Our results show that mitigating the XY problem remains challenging, requiring agents to both recognize user misdirection and clearly communicate the underlying problem.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "可解释AI"
+  ],
+  "arxiv_id": "2609.23939",
+  "authors": [
+    "Zhengxuan Wu",
+    "Yuxuan Li",
+    "Oyvind Tafjord",
+    "Been Kim"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhengxuan Wu"
+    },
+    {
+      "name": "Yuxuan Li"
+    },
+    {
+      "name": "Oyvind Tafjord"
+    },
+    {
+      "name": "Been Kim"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "AI智能体评测，人-AI协作但无用户研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对AI代理在XY问题（用户询问错误解决方案而非真实问题）下的鲁棒性，提出XYEval元评估框架，将既有基准转化为XY评测；测试5个模型在6个基准上，代理在面对误导性建议时性能相对下降最高达46.7%，添加系统指令仅能部分缓解，揭示当前代理缺乏识别用户误导并清晰沟通推理的能力。",
+      "topic_tags": [
+        "HCI",
+        "人机协作",
+        "可解释性",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-20",
+  "doi": null,
+  "id": "p_C-I8Z0cWVQDY3Qrs",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.23939v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 30601,
+      "revision": "b6e72036f34f8a90644f7fb0871f0417c2843014"
+    }
+  ],
+  "title": "XYEval: Agents say yes to bad advice",
+  "title_zh": "XYEval：智能体对不良建议来者不拒",
+  "unified_ingested_at": "2026-09-22T07:26:43.544632Z",
+  "url": "https://arxiv.org/abs/2609.23939v1",
+  "volume": null,
+  "year": 2026
+}

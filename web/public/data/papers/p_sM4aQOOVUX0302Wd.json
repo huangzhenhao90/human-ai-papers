@@ -1,0 +1,67 @@
+{
+  "abstract": "Evaluating user experience (UX) on live websites through user testing is expensive, subjective, and difficult to scale. LLM agents offer a promising route to automating UX testing by simulating realistic user behaviour. However, existing simulation approaches typically lack multimodality and require time-consuming manual review to extract actionable insights. We formalise UX improvement recommendation from simulation data as a structured natural language generation and ranking problem, and establish an evaluation protocol using expert annotation and LLM-as-a-Judge. We present AMUSER, a multimodal framework which simulates user behaviour and automatically generates prioritised UX improvement recommendations from resulting data. We evaluate AMUSER on commercial websites and show that its recommendations substantially outperform those from text-only simulation (NDCG@3 = 0.758 versus 0.359) at an 89% lower simulation cost. Our results suggest an asymmetric role of multimodality: visual access during simulation improves recommendations through richer traces, while providing visual inputs during recommendation generation can modestly degrade quality. We also discuss practical deployment lessons from applying AMUSER to commercial websites.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "多模态",
+    "GenAI"
+  ],
+  "arxiv_id": "2609.22971",
+  "authors": [
+    "Anu Chowdhury",
+    "Bin Wu",
+    "Hossein A. Rahmani",
+    "Emine Yilmaz"
+  ],
+  "authors_full": [
+    {
+      "name": "Anu Chowdhury"
+    },
+    {
+      "name": "Bin Wu"
+    },
+    {
+      "name": "Hossein A. Rahmani"
+    },
+    {
+      "name": "Emine Yilmaz"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM智能体模拟UX测试，UX评估协议，专家标注",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对活体网站用户体验测试成本高、难以规模化的问题，研究将大语言模型智能体用于自动化UX测试。提出多模态框架AMUSER，模拟用户行为并自动从仿真数据中生成排序后的UX改进建议。商用网站评测显示，其建议质量显著优于纯文本仿真（NDCG@3 0.758 vs 0.359），仿真成本降低89%。还发现视觉模态存在不对称作用：仿真阶段引入视觉可丰富行为轨迹，而建议生成阶段引入视觉可能略降质量。",
+      "topic_tags": [
+        "用户体验(UX)",
+        "可用性测试",
+        "人机协作",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-19",
+  "doi": null,
+  "id": "p_sM4aQOOVUX0302Wd",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.22971v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 30586,
+      "revision": "b6e72036f34f8a90644f7fb0871f0417c2843014"
+    }
+  ],
+  "title": "Automatic multimodal UX improvement recommendations from LLM agent user simulations",
+  "title_zh": "基于LLM智能体用户模拟的自动多模态用户体验改进建议",
+  "unified_ingested_at": "2026-09-22T07:26:43.544632Z",
+  "url": "https://arxiv.org/abs/2609.22971v1",
+  "volume": null,
+  "year": 2026
+}

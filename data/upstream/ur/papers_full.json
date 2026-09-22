@@ -20234,6 +20234,60 @@
     "year": 2026
   },
   {
+    "abstract": "Generative User Interfaces (GenUIs) enable applications to generate interfaces on demand from user needs and context. Like conventional UIs, they must still reflect designers' intent and conform to requirements such as brand identity. Unlike conventional UIs, designers cannot directly specify or see every interface a GenUI may produce, making design intent harder to enforce. We introduce GUIDE (GenUI Development Environment), a system that lets designers continuously inspect and refine GenUI behavior as they create and edit interfaces. GUIDE uses designers' modifications and interactions to adapt GenUIs through prompt optimization and a novel adaptive conformance scoring model. We validate GUIDE's scoring model and system. The scoring model matched or outperformed proprietary LLM baselines on held-out comparisons of real and synthetic application screens. In a study with 12 UI/UX practitioners, participants found GUIDE effective and usable and significantly preferred aligned outputs over a strong baseline using exemplars and a model-generated design.md.",
+    "ai_reason": "设计师在环GenUI创作系统，HCI核心方法",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI"
+    ],
+    "authors": [
+      "Hyewon Lee",
+      "Ziying Wang",
+      "Aiden Moy",
+      "Saran Nagubandi",
+      "Jason Wu"
+    ],
+    "authors_full": [
+      {
+        "name": "Hyewon Lee"
+      },
+      {
+        "name": "Ziying Wang"
+      },
+      {
+        "name": "Aiden Moy"
+      },
+      {
+        "name": "Saran Nagubandi"
+      },
+      {
+        "name": "Jason Wu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-18",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 29970,
+    "ingested_at": "2026-09-21T07:30:17.246726",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.21285v1",
+    "scored_at": "2026-09-22T07:08:29.690450",
+    "title": "GUIDE: Designer-in-the-loop Authoring of Conformant Generative User Interfaces",
+    "title_zh": "GUIDE：设计师在环的一致性生成式用户界面构建",
+    "tldr": "生成式用户界面（GenUI）可按需自动生成界面，但设计师难以把控其全部输出是否符合品牌与设计意图。提出GUIDE系统，让设计师在创作与编辑过程中持续检视并调整GenUI行为，结合提示优化与自适应合规评分模型。评分模型在真实与合成界面对比中匹配或超越商用LLM基线；12名UI/UX从业者研究表明系统有效易用，输出对齐度显著优于强基线。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2609.21285v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "AI productivity is often measured by task completion time, economic value, or improvements in outcome quality. However, these measures usually treat collaboration as a black box where they capture what output was produced, but not the interaction cost required to produce it. Motivated by economics literature, we introduce a productivity-oriented framework for evaluating human-AI collaboration as outcome quality relative to interaction cost. Across two datasets spanning four tasks, we show that: (1) sessions with identical quality ratings can differ by up to 70 times in interaction cost; (2) quality-cost relationships vary by task, with some tasks rewarding extended interaction and others favoring fast convergence; (3) subjective user ratings are not reliable substitutes for productivity; and (4) productive sessions are characterized by agents probing earlier and users spending less effort repairing the interaction. By distinguishing productive success from costly success, our framework makes interactional cost visible and shows how dialogue analysis can inform the evaluation and design of AI systems.",
     "ai_reason": "人机协作评估框架，含主观用户评分数据",
     "ai_score": 5.0,
@@ -20676,6 +20730,754 @@
       "AI 拒绝"
     ],
     "url": "https://arxiv.org/abs/2609.20977v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Social Stories are widely used to support autistic children in understanding and preparing for everyday situations, but creating stories that are appropriately tailored to each child's needs remains labor-intensive for practitioners. Existing digital tools support story assembly and delivery, but much of the work of writing, visual preparation, and personalization remains manual. Recent AI-based approaches have enabled automated story generation, yet offer limited support for practitioner oversight, context-sensitive personalization, and the use of supportive visuals grounded in individual learner profiles. We present AdaptED Stories, a practitioner-guided system for authoring, personalizing, and delivering Social Stories in special-education contexts. The system uses student profiles to draft story text and visuals, supports review and refinement by practitioners, and includes reading-session support with comprehension activities and session records. We report findings from a practitioner-informed design process, assessments of generated stories and visuals, and a usability study with seven special-education practitioners. Our findings suggest that AI assistance can reduce story-preparation burden and support more individualized story creation, alongside the importance of practitioner oversight, cultural and contextual specificity, and designing for varied learner needs. These findings contribute design implications for AI-assisted accessibility tools in special-education.",
+    "ai_reason": "AI辅助特殊教育系统设计，HCI设计研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "多模态",
+      "AI 助手"
+    ],
+    "authors": [
+      "Buyankhishig Enkhjargal",
+      "Himanshi Lalwani",
+      "Hanan Salam"
+    ],
+    "authors_full": [
+      {
+        "name": "Buyankhishig Enkhjargal"
+      },
+      {
+        "name": "Himanshi Lalwani"
+      },
+      {
+        "name": "Hanan Salam"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-21",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 30578,
+    "ingested_at": "2026-09-22T07:08:09.014567",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.24245v1",
+    "scored_at": "2026-09-22T07:08:32.131327",
+    "title": "AI-Assisted Social Story Intervention for Special Education: The Design of AdaptED Stories",
+    "title_zh": "特殊教育中AI辅助的社交故事干预：AdaptED故事的设计",
+    "tldr": "针对自闭症儿童社交故事定制困难的问题，设计实践者引导的AI辅助系统AdaptED Stories，利用学生档案自动生成故事文本与配图，并支持教师审核与阅读会话跟踪。通过实践者参与设计、生成内容评估及7人可用性研究，发现AI能降低准备负担并支持个性化，但需重视教师监督、文化情境适配与学习者多样性。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可访问性",
+      "儿童/老人/无障碍",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2609.24245v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Students increasingly study alongside generative artificial intelligence (AI), yet unguided access to fluent answers invites cognitive offloading, and there is little evidence on which configurations of AI tutoring produce learning. Two design margins are usually bundled together: pedagogical structure (how the tutor teaches) and interaction modality (how students talk to it). We separate them. In a preregistered randomized field experiment in a graduate corporate-finance course of an online MBA, we randomized 86 students between a structured tutor grounded in the course materials and a holdout in which consumer AI remained freely available. Within the tutored arm, each student's channel alternated weekly between voice and text, so the modality effect is identified within student. Structure mattered: tutored students gained 6.63 points more than ability-matched peers (p=.007), and the gain was concentrated in written reasoning, where the share of answers reaching relational quality rose from 8% to 49% in the tutored arm against 8% to 27% in the holdout. Modality did not matter for learning. The instructor's own final, on file for all 86 randomized students, shows the same direction (2.6 points of 100, with no difference on a pre-treatment midterm). Voice nearly doubled conversational interaction and cost 2.8 times as much to deliver, yet it produced weekly mastery statistically equivalent to text, even as students came to prefer it. Pedagogical structure shapes what students practice, and modality shapes how they interact with the tutor. Making an AI more humanlike does not by itself make it more educational.",
+    "ai_reason": "AI辅导随机实验，教育HCI",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Shihao Yang",
+      "Marshall Van Alstyne",
+      "Chrysanthos Dellarocas"
+    ],
+    "authors_full": [
+      {
+        "name": "Shihao Yang"
+      },
+      {
+        "name": "Marshall Van Alstyne"
+      },
+      {
+        "name": "Chrysanthos Dellarocas"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-21",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 30580,
+    "ingested_at": "2026-09-22T07:08:09.016415",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.23958v1",
+    "scored_at": "2026-09-22T07:08:32.130864",
+    "title": "When AI Tutors Speak: Evidence from a Randomized Field Experiment",
+    "title_zh": "当AI导师发声：来自一项随机田野实验的证据",
+    "tldr": "通过86名MBA学生的预注册随机田野实验，分离AI辅导的教学结构与交互模态（语音vs文字）两个设计维度。结果显示教学结构显著提升学习成效（多6.63分），书面推理质量大幅改善（从8%升至49%）；而语音模态虽几乎翻倍交互量、成本高2.8倍且学生更偏好，却未带来学习收益。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户研究方法",
+      "AI 采用",
+      "可用性测试"
+    ],
+    "url": "https://arxiv.org/abs/2609.23958v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative user interfaces (GenUI) promise personalized interfaces to a user's tasks and needs. However, user needs are often implicit---difficult for systems to infer and users to articulate, making it hard for users to arrive at their ideal interface. We propose Elicitive User Interfaces, a design approach to GenUI that generates elicitation techniques as part of the interface itself. Elicitive UIs adapt these techniques to the user, task, and interface to draw out user preferences. To guide the design of Elicitive UIs, we synthesize a six-axis design space that shapes how an interface elicits user preferences. Across two user studies with a design probe, we found that while Elicitive UIs surfaced preferences users had not already formed, and that responses to elicitation varied more across users than across tasks. Users developed more consistent preferences for how they wanted to be elicited, suggesting an opportunity to personalize elicitation itself.",
+    "ai_reason": "GenUI设计研究，含两轮用户研究，HCI核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Eunhye Kim",
+      "Bryan Min",
+      "Haijun Xia",
+      "Juho Kim"
+    ],
+    "authors_full": [
+      {
+        "name": "Eunhye Kim"
+      },
+      {
+        "name": "Bryan Min"
+      },
+      {
+        "name": "Haijun Xia"
+      },
+      {
+        "name": "Juho Kim"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-20",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 30581,
+    "ingested_at": "2026-09-22T07:08:09.016979",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.23642v1",
+    "scored_at": "2026-09-22T07:08:29.688162",
+    "title": "Elicitive User Interfaces: Designing How Users Shape Generative Interfaces",
+    "title_zh": "引出式用户界面：用户塑造生成式界面的设计",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2609.23642v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Problem definition: Firms deploying large language model services must decide how their AI communicates, not just what it can do. We examine how a relational persona - warmer, more empathetic and more engaging than a non-relational persona - affects service consumption and the evolution of user objectives. Methodology/results: In a randomized field experiment with 9,586 newly registered users, we hold the underlying model and service capabilities constant. The relational persona increases interactions (sessions, +8.1%; duration, +10.6%; chat rounds, +24.2%; intent entropy, +5.8%) and outputs (files, +12.3%; distinct goals, +12.1%). Effects vary by entry intent. First-session effects are insignificant for Task Execution users. Socialization and Knowledge Exploration users show similar increases in chat rounds: Socialization increases intent entropy without more outputs, whereas Knowledge Exploration increases outputs without higher intent entropy. Modeling intent dynamics as a transition process, we find higher intent transition entropy for Socialization (+11.8%) but higher intent continuation probability for Knowledge Exploration (+12.8%), suggesting greater conversational breadth and persistence, respectively. In subsequent use, the relational persona increases aggregate chat rounds and outputs across all entry intents. Session count rises by 12.2% for Task Execution and 49.4% for Socialization, but not significantly for Knowledge Exploration. Effects on session count and intent entropy strengthen over time, whereas output effects remain stable. Managerial implications: AI persona is an operational design lever, not merely a presentation feature. Because more interactions do not uniformly generate more outputs, firms should evaluate interactions and outputs separately and consider matching persona to user intent, especially when added interactions consume costly computing resources.",
+    "ai_reason": "RCT研究LLM平台AI人格对用户行为影响，核心用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Junjie Li",
+      "Xiaofan Li",
+      "Lauren Xiaoyuan Lu",
+      "Yiwei Wang",
+      "Bruce Yang"
+    ],
+    "authors_full": [
+      {
+        "name": "Junjie Li"
+      },
+      {
+        "name": "Xiaofan Li"
+      },
+      {
+        "name": "Lauren Xiaoyuan Lu"
+      },
+      {
+        "name": "Yiwei Wang"
+      },
+      {
+        "name": "Bruce Yang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-20",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 30582,
+    "ingested_at": "2026-09-22T07:08:09.017359",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.23274v1",
+    "scored_at": "2026-09-22T07:08:29.687146",
+    "title": "AI Persona, Service Consumption, and User Intent Entropy: Field Experimental Evidence from an LLM Platform",
+    "title_zh": "AI人设、服务消费与用户意图熵：来自LLM平台的田野实验证据",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2609.23274v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI coding interfaces present generated code either all at once or token-by-token. These rendering strategies reflect model generation rather than how programmers actually read code: selectively, non-linearly, and guided by the structure. We argue that code rendering is a first-class interaction primitive that shapes how programmers read and understand code. To explore this design space, we introduce structured rendering, a technique that reveals code in semantically meaningful chunks derived from its syntactic hierarchy, exposing high-level structure before low-level details. To isolate rendering effects on visual attention, we conducted an eye-tracking study with 53 participants comparing static, character-based, and structured rendering. Our findings show that rendering alters visual attention and reading behavior: dynamic rendering induces fewer but longer fixations and more sustained focus, while structured rendering further guides attention toward semantically meaningful units and supports high-level understanding. We release the anonymized dataset with an interactive demo (https://codegaze.vercel.app/) to support future research.",
+    "ai_reason": "AI编码界面眼动追踪研究，核心HCI方法",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI 助手"
+    ],
+    "authors": [
+      "Xiaotian Su",
+      "Jan Brasser",
+      "David Robert Reich",
+      "Lena A. Jäger",
+      "April Yi Wang"
+    ],
+    "authors_full": [
+      {
+        "name": "Xiaotian Su"
+      },
+      {
+        "name": "Jan Brasser"
+      },
+      {
+        "name": "David Robert Reich"
+      },
+      {
+        "name": "Lena A. Jäger"
+      },
+      {
+        "name": "April Yi Wang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-21",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 30583,
+    "ingested_at": "2026-09-22T07:08:09.017891",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.24616v1",
+    "scored_at": "2026-09-22T07:08:32.130282",
+    "title": "Structure-Aware Rendering: How Code Reveal Shapes Programmers' Visual Attention",
+    "title_zh": "结构感知渲染：代码揭示如何塑造程序员的视觉注意",
+    "tldr": "研究AI编程界面的代码渲染策略对程序员视觉注意力的影响。提出结构感知渲染技术，按语法层级分块呈现代码。通过53人眼动实验对比静态、字符级和结构化渲染，发现动态渲染引发更少但更长的注视与持续聚焦，结构化渲染引导注意力转向语义单元并支持高层理解。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "眼动追踪",
+      "用户研究方法",
+      "可用性"
+    ],
+    "url": "https://arxiv.org/abs/2609.24616v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Evaluating user experience (UX) on live websites through user testing is expensive, subjective, and difficult to scale. LLM agents offer a promising route to automating UX testing by simulating realistic user behaviour. However, existing simulation approaches typically lack multimodality and require time-consuming manual review to extract actionable insights. We formalise UX improvement recommendation from simulation data as a structured natural language generation and ranking problem, and establish an evaluation protocol using expert annotation and LLM-as-a-Judge. We present AMUSER, a multimodal framework which simulates user behaviour and automatically generates prioritised UX improvement recommendations from resulting data. We evaluate AMUSER on commercial websites and show that its recommendations substantially outperform those from text-only simulation (NDCG@3 = 0.758 versus 0.359) at an 89% lower simulation cost. Our results suggest an asymmetric role of multimodality: visual access during simulation improves recommendations through richer traces, while providing visual inputs during recommendation generation can modestly degrade quality. We also discuss practical deployment lessons from applying AMUSER to commercial websites.",
+    "ai_reason": "LLM智能体模拟UX测试，UX评估协议，专家标注",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "多模态",
+      "GenAI"
+    ],
+    "authors": [
+      "Anu Chowdhury",
+      "Bin Wu",
+      "Hossein A. Rahmani",
+      "Emine Yilmaz"
+    ],
+    "authors_full": [
+      {
+        "name": "Anu Chowdhury"
+      },
+      {
+        "name": "Bin Wu"
+      },
+      {
+        "name": "Hossein A. Rahmani"
+      },
+      {
+        "name": "Emine Yilmaz"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-19",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 30586,
+    "ingested_at": "2026-09-22T07:08:09.019059",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.22971v1",
+    "scored_at": "2026-09-22T07:08:29.688908",
+    "title": "Automatic multimodal UX improvement recommendations from LLM agent user simulations",
+    "title_zh": "基于LLM智能体用户模拟的自动多模态用户体验改进建议",
+    "tldr": "针对活体网站用户体验测试成本高、难以规模化的问题，研究将大语言模型智能体用于自动化UX测试。提出多模态框架AMUSER，模拟用户行为并自动从仿真数据中生成排序后的UX改进建议。商用网站评测显示，其建议质量显著优于纯文本仿真（NDCG@3 0.758 vs 0.359），仿真成本降低89%。还发现视觉模态存在不对称作用：仿真阶段引入视觉可丰富行为轨迹，而建议生成阶段引入视觉可能略降质量。",
+    "topic_tags": [
+      "用户体验(UX)",
+      "可用性测试",
+      "人机协作",
+      "人机交互(HCI)"
+    ],
+    "url": "https://arxiv.org/abs/2609.22971v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Smartphone user experience (UX) is widely expressed in user-generated online discourse across platforms, creating opportunities for in-the-wild measurement at scale. However, existing UX instruments and review-mining approaches do not provide a smartphone-oriented, theory-grounded hierarchical measurement specification that supports consistent aggregation and comparison across heterogeneous platforms. In this research, we propose a hierarchical smartphone UX measurement framework and an interpretable computational pipeline that translates cross-platform reviews into structured UX metrics. The pipeline extracts localized experience evidence units, maps them to the hierarchy via coarse-to-fine classification, and quantifies evaluations with a unified five-level satisfaction sentiment model. We apply the approach to a stratified subset of approximately 20,000 Chinese social media reviews covering four major smartphone brands across three platforms. The resulting metrics separate what users discuss, captured by normalized mention frequency, from how they evaluate it, captured by mean five-level sentiment scores. This work provides a scalable and interpretable evidence base for cross-brand comparison and metric-level interpretation beyond raw review volume or single-platform observations.",
+    "ai_reason": "UX测量框架，社交媒体评论分析，UX核心",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "情感识别"
+    ],
+    "authors": [
+      "Xiaoteng Pan",
+      "Mingang Lan",
+      "Chenrui Zhang",
+      "Yu Su",
+      "Weijie Liu"
+    ],
+    "authors_full": [
+      {
+        "name": "Xiaoteng Pan"
+      },
+      {
+        "name": "Mingang Lan"
+      },
+      {
+        "name": "Chenrui Zhang"
+      },
+      {
+        "name": "Yu Su"
+      },
+      {
+        "name": "Weijie Liu"
+      },
+      {
+        "name": "Yue Gao"
+      },
+      {
+        "name": "Nan Gao"
+      },
+      {
+        "name": "Haining Zhang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-19",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 30587,
+    "ingested_at": "2026-09-22T07:08:09.020117",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.23101v1",
+    "scored_at": "2026-09-22T07:08:29.688674",
+    "title": "Measuring Smartphone User Experience through a Hierarchical Metric Framework via Social Media Reviews",
+    "title_zh": "基于层次化指标框架与社交媒体评论的智能手机用户体验测量",
+    "tldr": "提出一种基于社交媒体评论的智能手机UX分层度量框架与可解释计算流程，通过局部化经验证据抽取、由粗到细分类映射至层级结构，并采用统一五级满意度情感模型量化评估。应用于约2万条覆盖四大品牌、三平台的中文评论，将讨论内容（提及频率）与评价倾向（五级情感均值）解耦。该框架支持跨品牌、跨平台的可比UX度量与细粒度解读，弥补了现有UX量表与评论挖掘在智能手机领域缺乏理论支撑的分层规范的不足。",
+    "topic_tags": [
+      "用户体验(UX)",
+      "用户研究方法",
+      "情感计算",
+      "消费者行为"
+    ],
+    "url": "https://arxiv.org/abs/2609.23101v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "The ideation phase of participatory AI risk assessment often starts with a blank slate or a limited list of predefined risks, making it difficult to surface indirect or systemic harms. To address this limitation, we propose a three-stage ideation support tool. The tool complements participatory AI, rather than replacing it, and helps focus later engagement with affected communities. First, it dynamically discovers stakeholders depending on the given AI use and recursively expanding outward, allowing overlooked or indirect stakeholders to emerge. Second, it simulates these stakeholders with LLMs, connecting them into a network of a given topology, and having them ideate about risks. Third, it prioritizes risks using network centrality measures. In an initial evaluation, we found that betweenness centrality run through agents connected in a small-world network works best as it elevates risks raised by stakeholders who bridge disconnected groups, surfacing novel, systemic harms that traditional methods often miss. On an AI chatbot companion use case, this approach increased the novelty of the identified risks by approximately 1.1 points over single LLM brainstorming, and by 0.5 points over agentic LLM brainstorming, measured on a normalized five-point Likert scale, without reducing the plausibility or severity of the identified risks. To test whether our framework helps a human-led ideation session using the Futures Wheel approach, we divided 11 teams of non-western young chatbot users into two types: control (team) and treatment (team) in a participatory AI risk assessment. The control teams started from a list of risks generated by the 45 AI practitioners in the initial evaluation; the treatment teams started from a list generated by our framework. The treatment teams identified more risks overall, and more systemic, human-computer interaction, and environmental risks.",
+    "ai_reason": "AI风险构思工具含利益相关者评估",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Ke Zhou",
+      "Edyta Bogucka",
+      "Daniele Quercia"
+    ],
+    "authors_full": [
+      {
+        "name": "Ke Zhou"
+      },
+      {
+        "name": "Edyta Bogucka"
+      },
+      {
+        "name": "Daniele Quercia"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-21",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 30588,
+    "ingested_at": "2026-09-22T07:08:09.020828",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.24859v1",
+    "scored_at": "2026-09-22T07:08:31.703778",
+    "title": "Small-world Networks of Agents Brainstorm AI Risks to Support Ideation",
+    "title_zh": "智能体小世界网络协同头脑风暴AI风险以辅助创意构思",
+    "tldr": "针对参与式AI风险评估中构思阶段易遗漏间接或系统性危害的问题，提出三阶段工具：动态递归发现利益相关者、用LLM模拟并将其连入指定拓扑网络协作构思、以网络中心性指标优先排序风险。评估显示在小型世界网络中以介数中心性筛选效果最佳，AI聊天陪伴场景下风险新颖性较单LLM提升约1.1分、较智能体LLM提升0.5分，且不损失可信度与严重性。",
+    "topic_tags": [
+      "AI 治理",
+      "人机协作",
+      "众包"
+    ],
+    "url": "https://arxiv.org/abs/2609.24859v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Autobiographical remembering supports identity, well-being, and social connection in later life, yet voice-based memory technologies largely rely on isolated prompts. We designed and built MeBo, a fully functional relational voice-based memory companion, through participatory design with 11 older adults. Their accounts shaped four Design Strategies that guided MeBo's interaction design and multi-agent implementation. In a mixed-methods evaluation with 20 older adults, participants found MeBo exceptionally usable (SUS = 87.75), enjoyable, sociable, emotionally responsive, and trustworthy. Participants reported higher positive affect and momentary social connection and lower negative affect after the session than before. Participants described how MeBo followed their stories, returned to earlier memories, adapted to their preferences, and made its growing memory visible and controllable. MeBo's relational framing surfaces tensions around what it should remember, who may access memories produced through interaction, and what becomes of them when the user or MeBo is no longer present.",
+    "ai_reason": "11位老年人参与式设计+20人混合方法评估",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "智能体/Agent",
+      "LLM",
+      "多模态"
+    ],
+    "authors": [
+      "Hasibur Rahman",
+      "Mahsa Nasri",
+      "Manasi Vaidya",
+      "Melika Vafafar",
+      "Jessie Chin"
+    ],
+    "authors_full": [
+      {
+        "name": "Hasibur Rahman"
+      },
+      {
+        "name": "Mahsa Nasri"
+      },
+      {
+        "name": "Manasi Vaidya"
+      },
+      {
+        "name": "Melika Vafafar"
+      },
+      {
+        "name": "Jessie Chin"
+      },
+      {
+        "name": "Smit Desai"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-21",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 30589,
+    "ingested_at": "2026-09-22T07:08:09.021263",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.24706v1",
+    "scored_at": "2026-09-22T07:08:31.703583",
+    "title": "\"MeBo Leaves a Piece of You Behind\": Designing a Relational Voice-Based Memory Companion for Older Adults",
+    "title_zh": "\"MeBo留下你的一片记忆\"：面向老年人的关系型语音记忆伴侣设计",
+    "tldr": "通过参与式设计与11位老年人共同构建语音记忆伴侣MeBo，采用多智能体实现并提炼四条设计策略。20人混合方法评估显示MeBo可用性极高（SUS=87.75），增强积极情绪与短暂社交连接、降低消极情绪；其关系型设计使记忆可见可控，却也引发关于记忆归属、访问权限及用户或系统消逝后数据去向的伦理张力。",
+    "topic_tags": [
+      "老人",
+      "可用性测试",
+      "用户体验(UX)",
+      "情感计算",
+      "伦理"
+    ],
+    "url": "https://arxiv.org/abs/2609.24706v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "In agentic coding, developers shift from implementing changes themselves to specifying intent, evaluating the agent's work, and making approval decisions. However, delegating implementation can introduce cognitive debt that erodes project comprehension over time, constraining developers' ability to provide oversight. In this work, we investigate the role of persistent shared representations in supporting project comprehension and oversight of coding agents. We present Vibe-GUIDE, an agentic coding interface built around a structural, live, manipulable, and adaptive graph representation organized by functional modules. We evaluated our interface in a randomized between-subjects study comparing how 16 developers completed three cumulative coding tasks using our interface or a Chat-only baseline. We found that Vibe-GUIDE can support project comprehension and sustained task performance while keeping developers cognitively involved in oversight. These findings show how persistent shared representations can complement natural-language interaction and help developers maintain the understanding needed to oversee agent-generated changes as projects evolve.",
+    "ai_reason": "编码代理IDE用户研究N=16，HCI实验",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "GenAI",
+      "AI助手"
+    ],
+    "authors": [
+      "Chifang Chou",
+      "Sam Yu-Te Lee",
+      "Rudrajit Choudhuri",
+      "Kwan-Liu Ma"
+    ],
+    "authors_full": [
+      {
+        "name": "Chifang Chou"
+      },
+      {
+        "name": "Sam Yu-Te Lee"
+      },
+      {
+        "name": "Rudrajit Choudhuri"
+      },
+      {
+        "name": "Kwan-Liu Ma"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-20",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 30590,
+    "ingested_at": "2026-09-22T07:08:09.021616",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.23859v1",
+    "scored_at": "2026-09-22T07:08:32.132681",
+    "title": "Vibe-GUIDE: A Graph-based User Interface in IDEs for Oversight in Vibe Coding",
+    "title_zh": "Vibe-GUIDE：IDE中用于Vibe编程监督的基于图用户界面",
+    "tldr": "研究智能体编程中开发者从编码转向监督所引发的认知负债问题，提出Vibe-GUIDE IDE界面，以功能模块组织的结构化、实时、可操作、自适应图表示支持项目理解与代理监督；16人随机对照实验表明该界面有助于维持任务表现并保持开发者认知投入，证明持久共享表征可补充自然语言交互。",
+    "topic_tags": [
+      "HCI",
+      "人机协作",
+      "可视化",
+      "用户体验(UX)"
+    ],
+    "url": "https://arxiv.org/abs/2609.23859v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI auditing increasingly incorporates AI agents to expand the scale and breadth of audit coverage, yet little is known about how auditing work should be divided without displacing human judgment. We introduce Human-Agent Audit Collaboration (HAAC), a workflow and system for structuring human-AI collaboration in AI auditing. Drawing on prior work and formative consultations with AI auditing practitioners, HAAC specifies how agents can support exploration, assessment, reporting, and review while preserving human oversight where contextual judgment is critical. We instantiate HAAC for conversational shopping agents and evaluate it through two studies. With 71 auditors, AI assistance increased attack success and broadened exploration, while also shaping later attacks and increasing auditors' reliance on AI-generated assessments and reports. Interviews with Responsible AI practitioners showed that actionable audits require visibility into coverage, reproducible attack trajectories, and evaluation of the auditing agents themselves. Our findings identify design considerations for effective and accountable human-AI auditing.",
+    "ai_reason": "71名审计员参与的HCI人机协作研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "智能体/Agent",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Eunkyu Park",
+      "Markelle Roesti",
+      "Wesley Hanwen Deng",
+      "Renata Barreto",
+      "Mohammad Tahaei"
+    ],
+    "authors_full": [
+      {
+        "name": "Eunkyu Park"
+      },
+      {
+        "name": "Markelle Roesti"
+      },
+      {
+        "name": "Wesley Hanwen Deng"
+      },
+      {
+        "name": "Renata Barreto"
+      },
+      {
+        "name": "Mohammad Tahaei"
+      },
+      {
+        "name": "Kenneth Holstein"
+      },
+      {
+        "name": "Jason Hong"
+      },
+      {
+        "name": "Motahhare Eslami"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-21",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 30592,
+    "ingested_at": "2026-09-22T07:08:09.022763",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.24986v1",
+    "scored_at": "2026-09-22T07:08:31.703192",
+    "title": "Who Does What in AI Auditing? Designing Human-AI Collaboration for Auditing Generative AI",
+    "title_zh": "AI审计中的职责分工：面向生成式AI审计的人机协作设计",
+    "tldr": "研究AI审计中人与智能体的职责划分问题，提出人机审计协作框架HAAC，针对对话式购物智能体实例化。71名审计员实验显示AI辅助提升了攻击成功率与探索广度，但也增加了对AI评估和报告的依赖；与负责任AI从业者的访谈揭示审计需关注覆盖率可视化、攻击轨迹可复现性及对审计智能体自身的评估。",
+    "topic_tags": [
+      "AI 治理",
+      "人机协作",
+      "可解释性",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2609.24986v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI assistants increasingly mediate interpersonal communication on behalf of their primary user, but they risk violating the privacy expectations of third-party information owners. Resolving these tensions requires understanding how humans anticipate interpersonal privacy boundaries. Therefore, we conducted a dyadic study (N=76) and a matched evaluation of AI models across 18 information types and 3 recipient relationships. We found that data owners' privacy judgments are highly contextual and relationship dependent. While familiar data co-owners show meaningful alignment with owners' expectations, they significantly overestimate the need for permission. Interestingly, greater familiarity within the owner-co-owner dyad was associated with both higher disclosure acceptability and lower co-owner misalignment, whereas our exploratory four-item empathy measure was not. In contrast, AI models significantly underperform human co-owners in anticipating the data acceptability, even when provided with within-dyad examples. These findings underscore a core HCI design challenge to develop privacy-aware AI that respects multi-stakeholder information boundaries.",
+    "ai_reason": "隐私决策人际研究N=76，明确用户研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI助手",
+      "LLM",
+      "对话式AI"
+    ],
+    "authors": [
+      "Hanxiang Zeng",
+      "Shuning Zhang",
+      "Xinyuan Zhou",
+      "Tianqi Song",
+      "Yuhan Yuan"
+    ],
+    "authors_full": [
+      {
+        "name": "Hanxiang Zeng"
+      },
+      {
+        "name": "Shuning Zhang"
+      },
+      {
+        "name": "Xinyuan Zhou"
+      },
+      {
+        "name": "Tianqi Song"
+      },
+      {
+        "name": "Yuhan Yuan"
+      },
+      {
+        "name": "Yuting Yang"
+      },
+      {
+        "name": "Shuai Ma"
+      },
+      {
+        "name": "Xin Yi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-20",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 30593,
+    "ingested_at": "2026-09-22T07:08:09.026699",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.23403v1",
+    "scored_at": "2026-09-22T07:08:32.132496",
+    "title": "Alignment and Divergence between Humans and AI in Interpersonal Privacy Decisions",
+    "title_zh": "人机在人际隐私决策中的对齐与分歧",
+    "tldr": "通过76人配对研究及AI模型匹配评估，考察AI助手中介人际沟通时的隐私边界问题，覆盖18类信息与3种收信人关系；发现数据所有者的隐私判断高度依赖情境与关系，熟悉协作者虽与所有者较一致但仍系统性高估许可需求，AI模型即便提供同配对示例仍显著弱于人类，凸显多利益相关方隐私感知AI的设计挑战。",
+    "topic_tags": [
+      "HCI",
+      "人机交互",
+      "伦理",
+      "隐私"
+    ],
+    "url": "https://arxiv.org/abs/2609.23403v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Visual impairment affects over 2.2 billion people worldwide, yet conventional white canes cannot detect elevated hazards or provide semantic environmental context. Existing AI-assisted navigation systems typically rely on expensive hardware or cloud connectivity, limiting accessibility in resource-constrained settings. This paper presents an affordable (\\$88 USD), fully offline AI-integrated smart cane designed for multimodal mobility assistance on an ultra-low-power Raspberry Pi Zero 2W. The system fuses RGB vision sensing with Time-of-Flight (ToF) distance estimation, pairing an INT8-quantized SSD MobileNet V1 model with distance-aware vibrotactile feedback and real-time audio alerts. To ensure operational robustness on constrained hardware, a multiprocessing architecture isolates sensor acquisition, neural inference, and haptic feedback into independent processes with fail-safe sensing support. Experimental evaluation across indoor mobility scenarios demonstrates a macro-averaged F1-score of 0.82 (precision: 0.85, recall: 0.81), a mean end-to-end latency of 330\\,ms, and a peak power draw of 2.8\\,W. A preliminary usability study with 12 participants (SUS: 78.5, NASA-TLX) demonstrated positive user perception and enhanced obstacle awareness. The proposed prototype validates the feasibility of deploying privacy-preserving, edge-native assistive intelligence for cost-sensitive mobility assistance.",
+    "ai_reason": "核心AI(SSD MobileNet),面向视障用户,辅助HCI技术",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "多模态",
+      "边缘AI",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Ali Akarma",
+      "Adeel Ahmad",
+      "Toqeer Ali Syed"
+    ],
+    "authors_full": [
+      {
+        "name": "Ali Akarma"
+      },
+      {
+        "name": "Adeel Ahmad"
+      },
+      {
+        "name": "Toqeer Ali Syed"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-12",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 30594,
+    "ingested_at": "2026-09-22T07:08:09.027306",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.22277v1",
+    "scored_at": "2026-09-22T07:08:31.640423",
+    "title": "An Affordable AI-Integrated Smart Cane for Multimodal Mobility Assistance of Visually Impaired Users",
+    "title_zh": "面向视障用户多模态移动辅助的低成本AI集成智能手杖",
+    "tldr": "针对2.2亿视障人群传统盲杖无法检测高处障碍的不足，设计了一款88美元、完全离线、低功耗的多模态智能拐杖，基于树莓派Zero 2W，融合RGB视觉与ToF测距，搭载INT8量化的SSD MobileNet V1模型，通过距离感知的触觉振动与语音告警提示障碍。室内测试宏平均F1达0.82，端到端延迟330ms，峰值功耗2.8W；12人可用性研究SUS得分78.5，验证了边缘端隐私保护式辅助智能的可行性。",
+    "topic_tags": [
+      "可访问性",
+      "多模态交互",
+      "可用性测试"
+    ],
+    "url": "https://arxiv.org/abs/2609.22277v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Effective communication between users and AI agents is essential for human-AI collaboration. The XY problem is a well-known communication pitfall where a person asks about their attempted solution rather than their actual problem. We extend prior sycophancy evaluation to the XY problem in agentic settings, evaluating whether agents can resist plausible but misleading suggestions from users and communicate their reasoning. We introduce XYEval, a meta-evaluation framework that can transform an existing benchmark into an XY problem evaluation. We evaluate five models across six diverse benchmark suites. Agents suffer large XY drops under XY mutation across benchmarks, with relative drops reaching up to 46.7%. With $τ^2$-bench, we further show that agent performance drops more when encountering a pedantic user who requires detailed explanations before approving a better solution. Our findings suggest that current agents lack the ability to effectively reason and communicate when facing misleading suggestions. A simple system instruction baseline that encourages awareness of XY problems only offers partial mitigation. Extensive trace analyses provide behavioral insights into how and why these XY drops occur across execution trajectories. Our results show that mitigating the XY problem remains challenging, requiring agents to both recognize user misdirection and clearly communicate the underlying problem.",
+    "ai_reason": "AI智能体评测，人-AI协作但无用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "可解释AI"
+    ],
+    "authors": [
+      "Zhengxuan Wu",
+      "Yuxuan Li",
+      "Oyvind Tafjord",
+      "Been Kim"
+    ],
+    "authors_full": [
+      {
+        "name": "Zhengxuan Wu"
+      },
+      {
+        "name": "Yuxuan Li"
+      },
+      {
+        "name": "Oyvind Tafjord"
+      },
+      {
+        "name": "Been Kim"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-20",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 30601,
+    "ingested_at": "2026-09-22T07:08:09.030421",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2609.23939v1",
+    "scored_at": "2026-09-22T07:08:32.132127",
+    "title": "XYEval: Agents say yes to bad advice",
+    "title_zh": "XYEval：智能体对不良建议来者不拒",
+    "tldr": "针对AI代理在XY问题（用户询问错误解决方案而非真实问题）下的鲁棒性，提出XYEval元评估框架，将既有基准转化为XY评测；测试5个模型在6个基准上，代理在面对误导性建议时性能相对下降最高达46.7%，添加系统指令仅能部分缓解，揭示当前代理缺乏识别用户误导并清晰沟通推理的能力。",
+    "topic_tags": [
+      "HCI",
+      "人机协作",
+      "可解释性",
+      "AI治理"
+    ],
+    "url": "https://arxiv.org/abs/2609.23939v1",
     "volume": null,
     "year": 2026
   },
@@ -21298,6 +22100,82 @@
     "url": "https://doi.org/10.1080/00218499.2026.2620892",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "The complex nature of intelligent systems motivates work on supporting users during interaction, for example, through explanations. However, as of yet, there is little empirical evidence in regard to specific problems users face when applying such systems in everyday situations. This article contributes a novel method and analysis to investigate such problems\n            as reported by users:\n            We analysed 45,448 reviews of four apps on the Google Play Store (Facebook, Netflix, Google Maps, and Google Assistant) with sentiment analysis and topic modelling to reveal problems during interaction that can be attributed to the apps’ algorithmic decision-making. We enriched this data with users’ coping and support strategies through a follow-up online survey (N = 286). In particular, we found problems and strategies related to content, algorithm, user choice, and feedback. We discuss corresponding implications for designing user support, highlighting the importance of user control and explanations of output rather than processes.",
+    "ai_reason": "智能系统用户报告问题，大规模用户研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "对话式 AI",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Malin Eiband",
+      "Sarah Theres Völkel",
+      "Daniel Buschek",
+      "Sophia Cook",
+      "Heinrich Hussmann"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "LMU Munich, Frauenlobstraße, Munich, Germany"
+        ],
+        "name": "Malin Eiband",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "LMU Munich, Frauenlobstraße, Munich, Germany"
+        ],
+        "name": "Sarah Theres Völkel",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Bayreuth, Universitätsstraße, Bayreuth, Germany"
+        ],
+        "name": "Daniel Buschek",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "LMU Munich, Frauenlobstraße, Munich, Germany"
+        ],
+        "name": "Sophia Cook",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "LMU Munich, Frauenlobstraße, Munich, Germany"
+        ],
+        "name": "Heinrich Hussmann",
+        "orcid": null
+      }
+    ],
+    "cited_by": 5,
+    "date": "2020-11-08",
+    "doi": "10.1145/3370927",
+    "domain_score": 5.0,
+    "id": 30227,
+    "ingested_at": "2026-09-22T07:08:01.761627",
+    "issue": "4",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:08:45.689277",
+    "title": "A Method and Analysis to Elicit User-Reported Problems in Intelligent Everyday Applications",
+    "title_zh": "智能日常应用中用户报告问题的提取方法与分析",
+    "tldr": "研究智能日常应用中用户遇到的实际问题，分析Facebook、Netflix、Google Maps、Google Assistant四款应用共45,448条Google Play评论，结合情感分析与主题建模，并辅以286人在线调查，揭示用户在内容、算法、选择与反馈方面的困扰及应对策略，强调用户控制与输出解释比过程解释更重要，为智能应用用户支持设计提供依据。",
+    "topic_tags": [
+      "用户研究方法",
+      "用户体验(UX)",
+      "人机交互(HCI)",
+      "可解释性"
+    ],
+    "url": "https://doi.org/10.1145/3370927",
+    "volume": "10",
+    "year": 2020
   },
   {
     "abstract": "Smart speakers pose privacy risks to users and bystanders. We do not know how these risks are perceived depending on different factors, such as the potential privacy violators, the nature of the privacy violation, the different user groups, and culture. Understanding these perceptions is crucial to providing adequate privacy solutions and legislation. To this end, 1,768 participants from Germany and the UK answered our online-questionnaire about their perceptions of five different actors’\n                    possibilities\n                    ,\n                    intentions\n                    , and\n                    legal bases\n                    to commit five privacy violations: data access, data inference, overhearing conversations, secondary use, and passing data along. Participants expressed mild concerns about the main user but greater worry about manufacturers and the state. We observe growing concern among younger people, especially in the UK and that users who do not own the smart speaker are the least concerned group. Our approach can be used to better differentiate perceptions of concerns in other contexts.",
@@ -31348,6 +32226,57 @@
   },
   {
     "abstract": null,
+    "ai_reason": "对话系统涉及AI，核心是用户信任与满意度",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Gesa Alena Linnemann",
+      "Regina Jucks"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Institute of Psychology for Education, University of Muenster, Fliednerstr. 21, 48149 Muenster, Germany"
+        ],
+        "name": "Gesa Alena Linnemann",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Institute of Psychology for Education, University of Muenster, Fliednerstr. 21, 48149 Muenster, Germany"
+        ],
+        "name": "Regina Jucks",
+        "orcid": null
+      }
+    ],
+    "cited_by": 21,
+    "date": "2018-03-06",
+    "doi": "10.1093/iwc/iwy005",
+    "domain_score": 5.0,
+    "id": 30215,
+    "ingested_at": "2026-09-22T07:08:01.560702",
+    "issue": "3",
+    "journal": "IwC",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:08:56.105577",
+    "title": "‘Can I Trust the Spoken Dialogue System Because It Uses the Same Words as I Do?’—Influence of Lexically Aligned Spoken Dialogue Systems on Trustworthiness and User Satisfaction",
+    "title_zh": null,
+    "tldr": "研究口语对话系统在词汇层面与用户对齐（使用相同用词）如何影响用户对系统的信任度与满意度。核心关注词法匹配能否成为建立人机信任的信号，以及对交互体验产生的具体作用。",
+    "topic_tags": [
+      "信任",
+      "人机交互(HCI)",
+      "对话式 AI",
+      "用户体验(UX)"
+    ],
+    "url": "https://doi.org/10.1093/iwc/iwy005",
+    "volume": "30",
+    "year": 2018
+  },
+  {
+    "abstract": null,
     "ai_reason": "比较Eliza与现代对话系统，AI对话系统核心议题含用户评估",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -35094,6 +36023,59 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2025.103616",
     "volume": "205",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机协作（AI机器人），偏控制/工程，少用户研究成分",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "多模态",
+      "人机协作"
+    ],
+    "authors": [
+      "Stefano Scheggi",
+      "Marco Aggravi",
+      "Domenico Prattichizzo"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Stefano Scheggi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Aggravi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Domenico Prattichizzo",
+        "orcid": null
+      }
+    ],
+    "cited_by": 35,
+    "date": "2017-08",
+    "doi": "10.1109/thms.2016.2608936",
+    "domain_score": 3.0,
+    "id": 30269,
+    "ingested_at": "2026-09-22T07:08:02.430220",
+    "issue": "4",
+    "journal": "THMS",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:09:01.726479",
+    "title": "Cooperative Navigation for Mixed Human–Robot Teams Using Haptic Feedback",
+    "title_zh": null,
+    "tldr": "研究人机混合团队中的协作导航问题，通过触觉反馈通道在人与机器人之间传递方向与意图信息，探索多模态交互如何支持双方在动态环境中实现安全、高效的协同移动。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "多模态交互"
+    ],
+    "url": "https://doi.org/10.1109/thms.2016.2608936",
+    "volume": "47",
+    "year": 2017
   },
   {
     "abstract": null,
@@ -43327,6 +44309,47 @@
   },
   {
     "abstract": null,
+    "ai_reason": "算法过滤引发用户惊讶，HCI用户体验研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "AI 推荐"
+    ],
+    "authors": [
+      "Emilee Rader"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Emilee Rader",
+        "orcid": null
+      }
+    ],
+    "cited_by": 13,
+    "date": "2017-02",
+    "doi": "10.1016/j.ijhcs.2016.10.005",
+    "domain_score": 4.0,
+    "id": 30171,
+    "ingested_at": "2026-09-22T07:08:00.859264",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:09:07.263543",
+    "title": "Examining user surprise as a symptom of algorithmic filtering",
+    "title_zh": "考察用户惊讶：算法过滤的一种征兆",
+    "tldr": "研究将用户在算法过滤内容时的\"惊讶\"反应视为算法过滤生效的表征信号，考察用户何时、因何对推荐/过滤结果感到意外，以此推断算法过滤机制的运作方式及其对用户认知与体验的影响，为理解算法透明度与用户感知提供新视角。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "推荐系统",
+      "可解释性"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2016.10.005",
+    "volume": "98",
+    "year": 2017
+  },
+  {
+    "abstract": null,
     "ai_reason": "推荐系统使用与用户心理、问题性使用",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -49202,6 +50225,71 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心对话AI,用户评估,人机交互议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "GenAI"
+    ],
+    "authors": [
+      "Ye Wang",
+      "Xuxu Liu",
+      "Yaling Deng",
+      "Hongjiang Xiao",
+      "Yuan Zhang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ye Wang",
+        "orcid": "https://orcid.org/0000-0001-6073-4688"
+      },
+      {
+        "affiliation": [],
+        "name": "Xuxu Liu",
+        "orcid": "https://orcid.org/0009-0006-5221-9583"
+      },
+      {
+        "affiliation": [],
+        "name": "Yaling Deng",
+        "orcid": "https://orcid.org/0000-0003-2764-5645"
+      },
+      {
+        "affiliation": [],
+        "name": "Hongjiang Xiao",
+        "orcid": "https://orcid.org/0009-0004-5091-8829"
+      },
+      {
+        "affiliation": [],
+        "name": "Yuan Zhang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "doi": "10.1016/j.chb.2026.109198",
+    "domain_score": 4.0,
+    "id": 30074,
+    "ingested_at": "2026-09-22T07:07:59.304808",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:08:31.640999",
+    "title": "Gendering Conversational AI in Human–AI Interaction: The Role of Interaction Context and Sexist Ideology in Shaping User Evaluations",
+    "title_zh": "人机交互中对话式AI的性别化：交互情境与性别歧视意识形态对用户评价的影响",
+    "tldr": "研究对话式 AI 中性别化呈现如何影响用户评价，聚焦交互情境与用户性别歧视意识形态两个调节变量。通过实验考察不同性别化 AI（如语音、形象）在不同任务情境下引发的用户态度、信任与拟人化感知差异，揭示性别刻板印象如何与情境线索共同作用，塑造对 AI 的社会判断。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户研究方法",
+      "伦理",
+      "AI 助手"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109198",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI产品使用为核心，跨文化用户研究",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -50866,6 +51954,65 @@
     "url": "https://doi.org/10.1093/iwc/iwae031",
     "volume": "37",
     "year": 2024
+  },
+  {
+    "abstract": "Creating automation scripts for tasks involving Graphical User Interface (GUI) interactions is hard. It is challenging because not all software applications allow access to a program’s internal state, nor do they all have accessibility APIs. Although much of the internal state is exposed to the user through the GUI, it is hard to programmatically operate the GUI’s widgets.\n          \n            To that end, we developed a system prototype that learns by demonstration, called\n            HILC\n            (Help, It Looks Confusing). Users, both programmers and non-programmers, train HILC to synthesize a task script by demonstrating the task. A demonstration produces the needed screenshots and their corresponding mouse-keyboard signals. After the demonstration, the user answers follow-up questions.\n          \n          We propose a user-in-the-loop framework that learns to generate scripts of actions performed on visible elements of graphical applications. Although pure programming by demonstration is still unrealistic due to a computer’s limited understanding of user intentions, we use quantitative and qualitative experiments to show that non-programming users are willing and effective at answering follow-up queries posed by our system, to help with confusing parts of the demonstrations. Our models of events and appearances are surprisingly simple but are combined effectively to cope with varying amounts of supervision.\n          The best available baseline, Sikuli Slides, struggled to assist users in the majority of the tests in our user study experiments. The prototype with our proposed approach successfully helped users accomplish simple linear tasks, complicated tasks (monitoring, looping, and mixed), and tasks that span across multiple applications. Even when both systems could ultimately perform a task, ours was trained and refined by the user in less time.",
+    "ai_reason": "示范学习合成脚本，核心AI方法含用户参与",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Thanapong Intharah",
+      "Daniyar Turmukhambetov",
+      "Gabriel J. Brostow"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University College London and Khon Kaen University, Thailand"
+        ],
+        "name": "Thanapong Intharah",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University College London, United Kingdom"
+        ],
+        "name": "Daniyar Turmukhambetov",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University College London, United Kingdom"
+        ],
+        "name": "Gabriel J. Brostow",
+        "orcid": null
+      }
+    ],
+    "cited_by": 9,
+    "date": "2019-03-18",
+    "doi": "10.1145/3234508",
+    "domain_score": 3.0,
+    "id": 30226,
+    "ingested_at": "2026-09-22T07:08:01.746311",
+    "issue": "2-3",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:08:55.407719",
+    "title": "HILC",
+    "title_zh": "HILC",
+    "tldr": "针对GUI自动化脚本编写困难的问题，提出HILC系统，通过用户示教学习生成任务脚本，录制动作为截图与键鼠信号，并对示教中的模糊环节进行追问澄清意图。实验表明非编程用户能有效回答系统追问，简单的外观与事件模型结合不同程度的监督即可应对复杂GUI任务。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "可用性"
+    ],
+    "url": "https://doi.org/10.1145/3234508",
+    "volume": "9",
+    "year": 2019
   },
   {
     "abstract": "Although artificial intelligence (AI) has become deeply integrated into services, many customers exhibit low acceptance of AI-driven offerings. Identifying effective and efficient ways to enhance AI acceptance is both theoretically significant and practically valuable. Drawing on compensatory control theory, we propose that embedded nostalgic cues in AI services can increase customers’ acceptance of these services. The underlying mechanism is an enhanced, agent-specific sense of control: nostalgic cues reduce uncertainty associated with AI-mediated interactions and restore customers’ agent-specific sense of control over the AI service, thereby increasing their willingness to accept AI services. Moreover, the positive effect of nostalgic cues on AI acceptance is contingent upon moderators—AI role positioning and identity threat. We tested our proposed effect using field and online experiments. Our findings contribute theoretical insights into AI services and nostalgia while offering practical solutions for the service industry.",
@@ -55049,6 +56196,67 @@
     "url": "https://doi.org/10.1080/0144929x.2023.2210688",
     "volume": "43",
     "year": 2023
+  },
+  {
+    "abstract": "Social platforms have expanded opportunities for deliberation with the comments being used to inform one’s opinion. However, using such information to form opinions is challenged by unsubstantiated or false content. To enhance the quality of opinion formation and potentially confer resistance to misinformation, we developed Iffy-Or-Not (\n                    ION\n                    ), a browser extension that seeks to invoke critical thinking when reading texts. With three features guided by argumentation theory,\n                    ION\n                    highlights fallacious content, suggests diverse queries to probe them with, and offers deeper questions to consider and chat with others about. From a user study (\n                    \n                      \\(N=18\\)\n                    \n                    ), we found that\n                    ION\n                    encourages users to be more attentive to the content, suggests queries that align with or are preferable to their own, and poses thought-provoking questions that expands their perspectives. However, some participants expressed aversion to\n                    ION\n                    due to misalignments with their information goals and thinking predispositions. Potential backfiring effects with\n                    ION\n                    are discussed.",
+    "ai_reason": "核心LLM工具,含N=18用户研究,HCI",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "AI 助手",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Gionnieve Lim",
+      "Juho Kim",
+      "Simon Perrault"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Singapore University of Technology and Design, Singapore, Singapore"
+        ],
+        "name": "Gionnieve Lim",
+        "orcid": "https://orcid.org/0000-0002-8399-1633"
+      },
+      {
+        "affiliation": [
+          "Korea Advanced Institute of Science and Technology, Daejeon, Korea"
+        ],
+        "name": "Juho Kim",
+        "orcid": "https://orcid.org/0000-0001-6348-4127"
+      },
+      {
+        "affiliation": [
+          "Singapore University of Technology and Design, Singapore, Singapore and Télécom Paris, Institut Polytechnique de Paris, Palaiseau, France"
+        ],
+        "name": "Simon Perrault",
+        "orcid": "https://orcid.org/0000-0002-3105-9350"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-02-25",
+    "doi": "10.1145/3771935",
+    "domain_score": 4.0,
+    "id": 30108,
+    "ingested_at": "2026-09-22T07:07:59.850296",
+    "issue": "1",
+    "journal": "TOCHI",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:08:31.641886",
+    "title": "Iffy-or-Not: Critically Evaluating Potential Misinformation Using Fallacy Detection and Socratic Questioning with LLMs",
+    "title_zh": "Iffy-or-Not：基于谬误检测与苏格拉底式提问的大语言模型潜在错误信息批判性评估",
+    "tldr": "针对社交平台评论中潜在的谬误与误导信息，开发浏览器插件 ION，基于 LLM 实现谬误检测、苏格拉底式提问与深度追问三大功能，引导用户批判性阅读。用户研究（N=18）发现 ION 能提升内容关注度，提出的查询与用户偏好契合，追问可拓展视角；但部分用户因信息目标与思维倾向不匹配而抵触，存在反效果风险。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可用性",
+      "用户研究方法",
+      "在线社区"
+    ],
+    "url": "https://doi.org/10.1145/3771935",
+    "volume": "33",
+    "year": 2026
   },
   {
     "abstract": null,
@@ -62890,6 +64098,73 @@
   },
   {
     "abstract": null,
+    "ai_reason": "智能交互系统中用户反应建模，含AI成分",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互",
+      "多模态"
+    ],
+    "authors": [
+      "F. Cena",
+      "C. Gena",
+      "E. Mensa",
+      "F. Vernero"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Department of Computer Science, Università degli Studi di Torino, Torino, Italy"
+        ],
+        "name": "F. Cena",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Computer Science, Università degli Studi di Torino, Torino, Italy"
+        ],
+        "name": "C. Gena",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Computer Science, Università degli Studi di Torino, Torino, Italy"
+        ],
+        "name": "E. Mensa",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Department of Computer Science, Università degli Studi di Torino, Torino, Italy"
+        ],
+        "name": "F. Vernero",
+        "orcid": null
+      }
+    ],
+    "cited_by": 4,
+    "date": "2021-06-01",
+    "doi": "10.1080/0144929x.2021.1931450",
+    "domain_score": 3.0,
+    "id": 30246,
+    "ingested_at": "2026-09-22T07:08:02.070444",
+    "issue": "11",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:08:45.688189",
+    "title": "Modelling user reactions expressed through graphical widgets in intelligent interactive systems",
+    "title_zh": "智能交互系统中通过图形控件表达的用户反应建模",
+    "tldr": "研究在智能交互系统中如何通过图形化交互组件（如按钮、滑块、表情面板等）收集和建模用户反应。聚焦用户情感、偏好与态度的轻量化采集方法，探索图形控件作为非侵入式反馈通道的有效性，为情感计算与人机交互中的用户状态建模提供设计参考。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "情感计算",
+      "用户体验(UX)",
+      "可用性"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2021.1931450",
+    "volume": "41",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "专业司机对自动驾驶感知，定性研究",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -66671,6 +67946,73 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2023.103029",
     "volume": "175",
     "year": 2023
+  },
+  {
+    "abstract": "Images play a central role in digital marketing. They attract attention, trigger emotions, and shape consumers’ first impressions of products and brands. We propose that the shift from one‐to‐many mass communication to highly personalized one‐to‐one communication requires an understanding of image appeal at a personal level. Instead of asking “How appealing is this image?” we ask “How appealing is this image to this particular consumer?” Using the well‐established five‐factor model of personality, we apply machine learning algorithms to predict an image's personality appeal—the personality of consumers to which the image appeals most—from a set of 89 automatically extracted image features (Study 1). We subsequently apply the same algorithm on new images to predict consequential outcomes from the fit between consumer and image personality. We show that image‐person fit adds incremental predictive power over the images’ general appeal when predicting (a) consumers’ liking of new images (Study 2) and (b) consumers’ attitudes and purchase intentions (Study 3).",
+    "ai_reason": "ML预测消费者图像偏好，消费者心理学",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Sandra C. Matz",
+      "Cristina Segalin",
+      "David Stillwell",
+      "Sandrine R. Müller",
+      "Maarten W. Bos"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Columbia Business School"
+        ],
+        "name": "Sandra C. Matz",
+        "orcid": "https://orcid.org/0000-0002-0969-4403"
+      },
+      {
+        "affiliation": [
+          "California Institute of Technology"
+        ],
+        "name": "Cristina Segalin",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Cambridge"
+        ],
+        "name": "David Stillwell",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Cambridge"
+        ],
+        "name": "Sandrine R. Müller",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Snap Inc."
+        ],
+        "name": "Maarten W. Bos",
+        "orcid": null
+      }
+    ],
+    "cited_by": 59,
+    "date": "2019-03-07",
+    "doi": "10.1002/jcpy.1092",
+    "domain_score": 4.0,
+    "id": 30443,
+    "ingested_at": "2026-09-22T07:08:05.411038",
+    "issue": "3",
+    "journal": "JCP",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:08:55.407926",
+    "title": "Predicting the Personal Appeal of Marketing Images Using Computational Methods",
+    "title_zh": "基于计算方法的营销图像个人吸引力预测",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1002/jcpy.1092",
+    "volume": "29",
+    "year": 2019
   },
   {
     "abstract": "People are not infallible consistent “oracles”: their confidence in decision-making may vary significantly between tasks and over time. We have previously reported the benefits of using an interface and algorithms that\n            explicitly\n            captured and exploited users’ confidence: error rates were reduced by up to 50% for an industrial multi-class learning problem; and the number of interactions required in a design-optimisation context was reduced by 33%. Having access to users’ confidence judgements could significantly benefit intelligent interactive systems in industry, in areas such as intelligent tutoring systems and in health care. There are many reasons for wanting to capture information about confidence\n            implicitly\n            . Some are ergonomic, but others are more “social”—such as wishing to understand (and possibly take account of) users’ cognitive state without interrupting them.\n          \n          We investigate the hypothesis that users’ confidence can be accurately predicted from measurements of their behaviour. Eye-tracking systems were used to capture users’ gaze patterns as they undertook a series of visual decision tasks, after each of which they reported their confidence on a 5-point Likert scale. Subsequently, predictive models were built using “conventional” machine learning approaches for numerical summary features derived from users’ behaviour. We also investigate the extent to which the deep learning paradigm can reduce the need to design features specific to each application by creating “gaze maps”—visual representations of the trajectories and durations of users’ gaze fixations—and then training deep convolutional networks on these images.\n          Treating the prediction of user confidence as a two-class problem (confident/not confident), we attained classification accuracy of 88% for the scenario of new users on known tasks, and 87% for known users on new tasks. Considering the confidence as an ordinal variable, we produced regression models with a mean absolute error of ≈0.7 in both cases. Capturing just a simple subset of non-task-specific numerical features gave slightly worse, but still quite high accuracy (e.g., MAE ≈ 1.0). Results obtained with gaze maps and convolutional networks are competitive, despite not having access to longer-term information about users and tasks, which was vital for the “summary” feature sets. This suggests that the gaze-map-based approach forms a viable, transferable alternative to handcrafting features for each different application. These results provide significant evidence to confirm our hypothesis, and offer a way of substantially improving many interactive artificial intelligence applications via the addition of cheap non-intrusive hardware and computationally cheap prediction algorithms.",
@@ -70952,6 +72294,53 @@
     "url": "https://doi.org/10.1016/j.chb.2021.106787",
     "volume": "121",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自动驾驶（AI）人因研究，HCI人机交互议题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机协作"
+    ],
+    "authors": [
+      "Hyung Jun Kim",
+      "Ji Hyun Yang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Hyung Jun Kim",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ji Hyun Yang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 84,
+    "date": "2017-10",
+    "doi": "10.1109/thms.2017.2674998",
+    "domain_score": 4.0,
+    "id": 30270,
+    "ingested_at": "2026-09-22T07:08:02.460213",
+    "issue": "5",
+    "journal": "THMS",
+    "pdf_url": null,
+    "scored_at": "2026-09-22T07:09:01.725888",
+    "title": "Takeover Requests in Simulated Partially Autonomous Vehicles Considering Human Factors",
+    "title_zh": null,
+    "tldr": "在部分自动驾驶车辆模拟环境中研究接管请求的设计与呈现，考虑人为因素（如情境感知、注意力、工作负荷）对驾驶人从自动驾驶顺利切回手动驾驶的影响，旨在提升过渡安全与体验。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "信任",
+      "可用性"
+    ],
+    "url": "https://doi.org/10.1109/thms.2017.2674998",
+    "volume": "47",
+    "year": 2017
   },
   {
     "abstract": "Although in-feed advertising is popular on mainstream platforms, academic research on it is limited. Platforms typically deliver organic content through two methods: subscription by users or recommendation by artificial intelligence. However, little is known about the ad performance between these two channels. This research examines how the performance of in-feed ads, in terms of click-through rates and conversion rates, differs between subscription and recommendation channels and whether these effects are mediated by ad intrusiveness and moderated by ad attributes. Two ad attributes are investigated: ad appeal (informational vs. emotional) and ad link (direct vs. indirect). Study 1 finds that the recommendation channel generates higher click-through rates but lower conversion rates than the subscription channel, and these effects are amplified by informational ad appeal and direct ad links. Study 2 explores channel differences, revealing that the recommendation channel yields less source credibility and content control, reducing consumer engagement with organic content. Studies 3 and 4 validate the mediating role of ad intrusiveness and rule out ad recognition as an alternative explanation. Study 5 uses eye-tracking technology to show that the recommendation channel has lower content engagement, lower ad intrusiveness, and greater ad interest.",
@@ -82178,7 +83567,7 @@
     "year": 2024
   },
   {
-    "abstract": "Abstract Virtual influencers have become an established part of influencer marketing, yet their effectiveness, the mechanisms underlying their persuasive impact, and the boundary conditions shaping these effects remain unclear. We address these questions through a meta-analysis of 210 independent experimental studies and 643 effect sizes. Virtual influencers generate greater novelty but lower credibility than human influencers, revealing a systematic trade-off between novelty- and credibility-based persuasion, with the relative importance of these mechanisms shifting over time from novelty toward credibility. Virtual influencer effectiveness further depends on anthropomorphic design and contextual congruence. Highly anthropomorphic virtual influencers benefit from artificial intelligence integration, futuristic positioning, and rational, proximal messaging, whereas low-anthropomorphism virtual influencers perform better with emotional and distal framing. Meta-analytic structural equation modeling supports a dual-pathway process in which credibility-based indirect effects are stronger for highly anthropomorphic virtual influencers, whereas novelty-based indirect effects are stronger for low-anthropomorphism virtual influencers. These results establish anthropomorphism as a structural boundary condition in influencer marketing.",
+    "abstract": "Abstract\n                  Virtual influencers have become an established part of influencer marketing, yet their effectiveness, the mechanisms underlying their persuasive impact, and the boundary conditions shaping these effects remain unclear. We address these questions through a meta-analysis of 210 independent experimental studies and 643 effect sizes. Virtual influencers generate greater novelty but lower credibility than human influencers, revealing a systematic trade-off between novelty- and credibility-based persuasion, with the relative importance of these mechanisms shifting over time from novelty toward credibility. Virtual influencer effectiveness further depends on anthropomorphic design and contextual congruence. Highly anthropomorphic virtual influencers benefit from artificial intelligence integration, futuristic positioning, and rational, proximal messaging, whereas low-anthropomorphism virtual influencers perform better with emotional and distal framing. Meta-analytic structural equation modeling supports a dual-pathway process in which credibility-based indirect effects are stronger for highly anthropomorphic virtual influencers, whereas novelty-based indirect effects are stronger for low-anthropomorphism virtual influencers. These results establish anthropomorphism as a structural boundary condition in influencer marketing.",
     "ai_reason": "虚拟影响者与AI相关但非核心，消费者说服机制和效果的元分析，属CX/消费者行为",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -82216,7 +83605,7 @@
         "position": "last"
       }
     ],
-    "cited_by": 0,
+    "cited_by": 1,
     "date": "2026-07-28",
     "doi": "10.1007/s11747-026-01186-w",
     "domain_score": 5.0,

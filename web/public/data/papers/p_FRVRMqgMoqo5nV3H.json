@@ -1,0 +1,61 @@
+{
+  "abstract": "Visual impairment affects over 2.2 billion people worldwide, yet conventional white canes cannot detect elevated hazards or provide semantic environmental context. Existing AI-assisted navigation systems typically rely on expensive hardware or cloud connectivity, limiting accessibility in resource-constrained settings. This paper presents an affordable (\\$88 USD), fully offline AI-integrated smart cane designed for multimodal mobility assistance on an ultra-low-power Raspberry Pi Zero 2W. The system fuses RGB vision sensing with Time-of-Flight (ToF) distance estimation, pairing an INT8-quantized SSD MobileNet V1 model with distance-aware vibrotactile feedback and real-time audio alerts. To ensure operational robustness on constrained hardware, a multiprocessing architecture isolates sensor acquisition, neural inference, and haptic feedback into independent processes with fail-safe sensing support. Experimental evaluation across indoor mobility scenarios demonstrates a macro-averaged F1-score of 0.82 (precision: 0.85, recall: 0.81), a mean end-to-end latency of 330\\,ms, and a peak power draw of 2.8\\,W. A preliminary usability study with 12 participants (SUS: 78.5, NASA-TLX) demonstrated positive user perception and enhanced obstacle awareness. The proposed prototype validates the feasibility of deploying privacy-preserving, edge-native assistive intelligence for cost-sensitive mobility assistance.",
+  "ai_type_tags": [
+    "多模态",
+    "边缘AI",
+    "对话式 AI"
+  ],
+  "arxiv_id": "2609.22277",
+  "authors": [
+    "Ali Akarma",
+    "Adeel Ahmad",
+    "Toqeer Ali Syed"
+  ],
+  "authors_full": [
+    {
+      "name": "Ali Akarma"
+    },
+    {
+      "name": "Adeel Ahmad"
+    },
+    {
+      "name": "Toqeer Ali Syed"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心AI(SSD MobileNet),面向视障用户,辅助HCI技术",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对2.2亿视障人群传统盲杖无法检测高处障碍的不足，设计了一款88美元、完全离线、低功耗的多模态智能拐杖，基于树莓派Zero 2W，融合RGB视觉与ToF测距，搭载INT8量化的SSD MobileNet V1模型，通过距离感知的触觉振动与语音告警提示障碍。室内测试宏平均F1达0.82，端到端延迟330ms，峰值功耗2.8W；12人可用性研究SUS得分78.5，验证了边缘端隐私保护式辅助智能的可行性。",
+      "topic_tags": [
+        "可访问性",
+        "多模态交互",
+        "可用性测试"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-12",
+  "doi": null,
+  "id": "p_FRVRMqgMoqo5nV3H",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.22277v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 30594,
+      "revision": "b6e72036f34f8a90644f7fb0871f0417c2843014"
+    }
+  ],
+  "title": "An Affordable AI-Integrated Smart Cane for Multimodal Mobility Assistance of Visually Impaired Users",
+  "title_zh": "面向视障用户多模态移动辅助的低成本AI集成智能手杖",
+  "unified_ingested_at": "2026-09-22T07:26:43.544632Z",
+  "url": "https://arxiv.org/abs/2609.22277v1",
+  "volume": null,
+  "year": 2026
+}
