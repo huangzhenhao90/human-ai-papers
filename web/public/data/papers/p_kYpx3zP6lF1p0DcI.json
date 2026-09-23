@@ -1,0 +1,63 @@
+{
+  "abstract": "Causal inference guides operational and managerial decisions but remains challenging in high-dimensional panel or tensor settings, where decisions may depend on the joint conditional distribution of missing control outcomes. We develop \\emph{Counterfactual Tucker Diffusion} (\\CFTDiff), which integrates the treatment mask and latent Tucker structure into conditional diffusion to recover this distribution given observed control outcomes through efficient nonlinear score learning in a low-dimensional core. The masked Tucker score preserves dependence across tensor modes while reducing the dimension of nonlinear score learning from the product of mode dimensions to the much smaller product of Tucker ranks. We establish high-probability error bounds for conditional score estimation that depend on the Tucker ranks, largest mode dimension, and the factor-strength-adjusted number of missing outcomes, and show how these bounds translate into recovery guaranties for the conditional distribution of the missing control outcomes. Across missing rates, simulations show more accurate point recovery than common causal panel and matrix/tensor completion methods; comparisons with nested diffusion specifications further demonstrate the gains from masked conditioning and Tucker dimension reduction. In Norway's iFlex experiment, \\CFTDiff recovers missing outcomes more accurately than competing methods; when applied to causal analysis, its estimated conditional distributions yield counterfactual prediction intervals and target-attainment probabilities, allowing pricing interventions to be evaluated by demand-reduction magnitude and reliability.",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2609.25924",
+  "authors": [
+    "Xinbing Kong",
+    "Zeyu Li",
+    "Junfan Mao",
+    "Bin Wu"
+  ],
+  "authors_full": [
+    {
+      "name": "Xinbing Kong"
+    },
+    {
+      "name": "Zeyu Li"
+    },
+    {
+      "name": "Junfan Mao"
+    },
+    {
+      "name": "Bin Wu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "反事实扩散方法涉管理决策；属量化方法边缘相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对高维面板/张量数据中因果推断难题，提出Counterfactual Tucker Diffusion方法，将处理掩码与潜在Tucker结构融入条件扩散模型，在低维核空间高效学习非线性得分函数。理论上证明得分估计误差以Tucker秩等参数为界，模拟与挪威iFlex实验均显示其在缺失结果填补和反事实分布估计上优于现有因果面板与张量补全方法。",
+      "topic_tags": [
+        "决策",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-22",
+  "doi": null,
+  "id": "p_kYpx3zP6lF1p0DcI",
+  "issue": null,
+  "journal": "arXiv:stat.ML",
+  "pdf_url": "https://arxiv.org/pdf/2609.25924v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 72842,
+      "revision": "13b163fd0c424a47500b769448805e7b2fb193c8"
+    }
+  ],
+  "title": "Conditional Tensor Diffusion: Distributional Counterfactual Learning and Inference",
+  "title_zh": "条件张量扩散：分布反事实学习与推断",
+  "unified_ingested_at": "2026-09-23T07:31:09.818161Z",
+  "url": "https://arxiv.org/abs/2609.25924v1",
+  "volume": null,
+  "year": 2026
+}

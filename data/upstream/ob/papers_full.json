@@ -61169,6 +61169,197 @@
     "year": 2026
   },
   {
+    "abstract": "Marketers now deploy generative AI agents as synthetic consumers to pretest visual assets such as logos, packaging, and advertising at a fraction of human-panel cost. However, this procedure assumes that a model seeing a visual cue can also perceive its consumer meaning, which is largely untested. We stress-test the assumption using six canonical visual marketing experiments, varying the two levers managers control: model generation (GPT-4o-mini vs. GPT-5.4-mini) and input format (plain text vs. JSON). Every resulting configuration passed the manipulation checks; however, none of the configurations reproduced more than two of the six human effects, and the remainder were nonsignificant. The one exception was a significant reversal of the human pattern. Providing conceptual or empirical evidence through in-context learning steers average responses toward the human effect. Yet steering has a limit: even when it succeeds, a configuration reproduces less than half of the natural spread of human responses and so understates consumer heterogeneity. We integrate these results into an AI governance protocol (Calibrate, Intervene, Deploy) that delineates when synthetic consumers can responsibly screen creatives and when human panels remain necessary.",
+    "ai_reason": "AI合成消费者预测试视觉营销；核心AI+营销研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "多模态",
+      "AI治理"
+    ],
+    "authors": [
+      "Yi-Lin Tsai",
+      "Yung-Hsiu",
+      "Lai"
+    ],
+    "authors_full": [
+      {
+        "name": "Yi-Lin Tsai"
+      },
+      {
+        "name": "Yung-Hsiu"
+      },
+      {
+        "name": "Lai"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-22",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 72838,
+    "ingested_at": "2026-09-23T07:19:37.826691",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.25677v1",
+    "scored_at": "2026-09-23T07:19:54.852296",
+    "title": "Seeing Is Not Perceiving: When Synthetic Consumers Can and Cannot Pretest Visual Marketing",
+    "title_zh": "看见不等于感知：合成消费者预测试视觉营销的能与不能",
+    "tldr": "用六项经典视觉营销实验检验生成式AI代理作为合成消费者预测试视觉素材的有效性。变换模型版本与输入格式后，所有配置均通过操控检验，但均未能复现超过两项人类效应，多数不显著。上下文学习引导可部分提升方向一致性，但即便成功也难以再现人类反应的自然离散度。研究据此提出校准—干预—部署AI治理协议，界定合成消费者的适用边界。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "广告"
+    ],
+    "url": "https://arxiv.org/abs/2609.25677v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Causal inference guides operational and managerial decisions but remains challenging in high-dimensional panel or tensor settings, where decisions may depend on the joint conditional distribution of missing control outcomes. We develop \\emph{Counterfactual Tucker Diffusion} (\\CFTDiff), which integrates the treatment mask and latent Tucker structure into conditional diffusion to recover this distribution given observed control outcomes through efficient nonlinear score learning in a low-dimensional core. The masked Tucker score preserves dependence across tensor modes while reducing the dimension of nonlinear score learning from the product of mode dimensions to the much smaller product of Tucker ranks. We establish high-probability error bounds for conditional score estimation that depend on the Tucker ranks, largest mode dimension, and the factor-strength-adjusted number of missing outcomes, and show how these bounds translate into recovery guaranties for the conditional distribution of the missing control outcomes. Across missing rates, simulations show more accurate point recovery than common causal panel and matrix/tensor completion methods; comparisons with nested diffusion specifications further demonstrate the gains from masked conditioning and Tucker dimension reduction. In Norway's iFlex experiment, \\CFTDiff recovers missing outcomes more accurately than competing methods; when applied to causal analysis, its estimated conditional distributions yield counterfactual prediction intervals and target-attainment probabilities, allowing pricing interventions to be evaluated by demand-reduction magnitude and reliability.",
+    "ai_reason": "反事实扩散方法涉管理决策；属量化方法边缘相关",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策"
+    ],
+    "authors": [
+      "Xinbing Kong",
+      "Zeyu Li",
+      "Junfan Mao",
+      "Bin Wu"
+    ],
+    "authors_full": [
+      {
+        "name": "Xinbing Kong"
+      },
+      {
+        "name": "Zeyu Li"
+      },
+      {
+        "name": "Junfan Mao"
+      },
+      {
+        "name": "Bin Wu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-22",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 72842,
+    "ingested_at": "2026-09-23T07:19:37.829293",
+    "issue": null,
+    "journal": "arXiv:stat.ML",
+    "pdf_url": "https://arxiv.org/pdf/2609.25924v1",
+    "scored_at": "2026-09-23T07:19:54.851550",
+    "title": "Conditional Tensor Diffusion: Distributional Counterfactual Learning and Inference",
+    "title_zh": "条件张量扩散：分布反事实学习与推断",
+    "tldr": "针对高维面板/张量数据中因果推断难题，提出Counterfactual Tucker Diffusion方法，将处理掩码与潜在Tucker结构融入条件扩散模型，在低维核空间高效学习非线性得分函数。理论上证明得分估计误差以Tucker秩等参数为界，模拟与挪威iFlex实验均显示其在缺失结果填补和反事实分布估计上优于现有因果面板与张量补全方法。",
+    "topic_tags": [
+      "决策",
+      "创新"
+    ],
+    "url": "https://arxiv.org/abs/2609.25924v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI assistants that support email composition may shift cultural communication norms, such as the directness typical of low-context cultures like the US versus the indirectness and contextual sensitivity central to high-context cultures like Japan. Yet it remains unknown to what extent people adopt and edit AI drafts inconsistent with their cultural communication norms. We address this through a preregistered within-subject experiment in which Japanese and American participants wrote workplace emails in their native language without AI, with a low-context AI, and with a high-context AI. We found that Japanese participants wrote emails with significantly more high-context markers (politeness, apologies) than Americans. But AI drafts shifted participants' emails toward the draft's style, with larger shifts when the draft was culturally misaligned: Japanese drifted most under low-context drafts, Americans most under high-context drafts. These findings suggest AI drafts risk overwriting cultural communication norms unless they adapt to users' communication styles.",
+    "ai_reason": "AI邮件草稿改变跨文化沟通，属核心AI+职业沟通研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Shintaro Sakai",
+      "Alice Gao",
+      "Yuichi Shoda",
+      "Katharina Reinecke"
+    ],
+    "authors_full": [
+      {
+        "name": "Shintaro Sakai"
+      },
+      {
+        "name": "Alice Gao"
+      },
+      {
+        "name": "Yuichi Shoda"
+      },
+      {
+        "name": "Katharina Reinecke"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-22",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 72846,
+    "ingested_at": "2026-09-23T07:19:37.831779",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.26403v1",
+    "scored_at": "2026-09-23T07:19:54.849971",
+    "title": "AI-Generated Email Drafts Shift Culturally Distinctive Communication Styles in Professional Email",
+    "title_zh": "AI生成的邮件草稿改变专业邮件中的文化特色沟通风格",
+    "tldr": "通过预注册被试内实验，让日本和美国参与者在无AI、低语境AI与高语境AI辅助下撰写工作邮件。结果发现AI草稿会将邮件风格显著拉向草稿方向，且文化错配时偏移更大：日本人在低语境草稿下偏移最明显，美国人在高语境草稿下偏移最大。研究警示AI草稿可能覆写文化沟通规范，需适配用户沟通风格。",
+    "topic_tags": [
+      "人机协作",
+      "伦理",
+      "工作未来"
+    ],
+    "url": "https://arxiv.org/abs/2609.26403v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Emotion coping is inherently relational, unfolding through interactions with friends, family, professionals, and communities. Yet AI chatbots are largely designed around a user--AI dyad. Learning from the ethics of care, we examine how AI chatbots shape the relational conditions of emotion coping. We conducted a scenario-based study with 17 U.S. young adults across four emotion coping scenarios. Participants identified eight roles through which AI could support relational conditions, alongside three challenges: flattening distinct relational conditions, discouraging reciprocity, and shifting relational labor onto users. This study contributed a relational perspective of responsible AI in emotion coping. We argue that responsible AI should respond to individuals' situated relational conditions rather than provide general-purpose support. We further identify two design principles: fostering reciprocity by supplying materials to engage with others, and strengthening emotional self-efficacy. Together, we position responsible AI as AI in the loop of human relationships.",
+    "ai_reason": "AI聊天机器人情感支持，涉消费者心理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "ChatGPT",
+      "人机交互",
+      "AI 治理"
+    ],
+    "authors": [
+      "Jiaying Liu",
+      "Nimra Ishfaq"
+    ],
+    "authors_full": [
+      {
+        "name": "Jiaying Liu"
+      },
+      {
+        "name": "Nimra Ishfaq"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-21",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 72848,
+    "ingested_at": "2026-09-23T07:19:37.832972",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.25311v1",
+    "scored_at": "2026-09-23T07:19:52.376082",
+    "title": "\"I Talked an AI Chatbot, So What's Next?\" How U.S. Young Adults Imagine Responsible AI for Emotion Coping",
+    "title_zh": "\"我与AI聊天机器人聊过，接下来呢？\":美国青年对情绪应对中负责任AI的想象",
+    "tldr": "基于关怀伦理学，通过17名美国年轻人在四种情绪应对场景中的情景研究，探讨AI聊天机器人如何塑造情绪应对的关联条件。识别AI可扮演的八种支持角色及三类挑战：扁平化关联条件、抑制互惠性、将关联劳动转嫁给用户。提出负责任AI应响应个体情境化关联条件，并给出促进互惠与增强情绪自我效能两项设计原则。",
+    "topic_tags": [
+      "人机协作",
+      "伦理",
+      "消费者行为"
+    ],
+    "url": "https://arxiv.org/abs/2609.25311v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -64757,6 +64948,107 @@
     "url": "https://doi.org/10.5465/amd.2019.0048",
     "volume": "8",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "艺术与算法评论，AI非核心但实质涉及",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机协作",
+      "算法",
+      "GenAI"
+    ],
+    "authors": [
+      "Irene Vega-Ramón",
+      "Jaan-Pauli Kimpimäki"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "LUT University"
+        ],
+        "name": "Irene Vega-Ramón",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "LUT University"
+        ],
+        "name": "Jaan-Pauli Kimpimäki",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "doi": "10.5465/amd.2026.0224",
+    "domain_score": 3.0,
+    "id": 72651,
+    "ingested_at": "2026-09-23T07:19:19.222663",
+    "issue": "3",
+    "journal": "AOM-Discoveries",
+    "pdf_url": null,
+    "scored_at": "2026-09-23T07:19:52.378058",
+    "title": "The Medium of Meaning: A Commentary on “When Art Meets Algorithm” by Döring, Chae, Efendić, Finken, and Nikulina",
+    "title_zh": "意义的媒介：评Döring等《当艺术邂逅算法》",
+    "tldr": "对艺术与算法交叉领域研究的学术评论，聚焦AI作为意义生成媒介的角色，探讨人机协作创作中艺术性、作者主体性及算法中介的边界，反思算法时代艺术创作的本质与价值。",
+    "topic_tags": [
+      "创意",
+      "人机协作",
+      "创新"
+    ],
+    "url": "https://doi.org/10.5465/amd.2026.0224",
+    "volume": "12",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI在单口喜剧中的应用，AI是主要变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM"
+    ],
+    "authors": [
+      "Clayton Childress",
+      "Paul DiMaggio"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of British Columbia"
+        ],
+        "name": "Clayton Childress",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "New York University"
+        ],
+        "name": "Paul DiMaggio",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "doi": "10.5465/amd.2026.0227",
+    "domain_score": 3.0,
+    "id": 72652,
+    "ingested_at": "2026-09-23T07:19:19.241883",
+    "issue": "3",
+    "journal": "AOM-Discoveries",
+    "pdf_url": null,
+    "scored_at": "2026-09-23T07:19:52.377739",
+    "title": "Niche Partitioning, Local Scenes, and AI in Stand-Up Comedy",
+    "title_zh": "生态位划分、本地场景与人工智能在单口喜剧中的应用",
+    "tldr": "探讨AI在脱口秀喜剧领域的生态位划分，结合本地喜剧场景理论，分析人类喜剧演员与AI喜剧生成工具如何在不同受众、内容风格和表演场域中形成互补或竞争关系，揭示AI介入下喜剧创作的创新路径与生态重塑。",
+    "topic_tags": [
+      "创意",
+      "创新",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.5465/amd.2026.0227",
+    "volume": "12",
+    "year": 2026
   },
   {
     "abstract": "How do organizations reconcile the cross-pressures of conformity and differentiation? Existing research predominantly conceptualizes identity as something an organization has by virtue of the products or services it offers. Drawing on constructivist theories, we argue that organizational members’ interactions with external audiences also dynamically produce identity. We call the extent to which such interactions diverge from audience expectations performative atypicality. Applying a novel deep-learning method to conversational text in over 90,000 earnings calls, we find that performative atypicality leads to an evaluation premium by securities analysts, paradoxically resulting in a negative earnings surprise. Moreover, performances that correspond to those of celebrated innovators are received with higher enthusiasm. Our findings suggest that firms that conform to categorical expectations while being performatively atypical can navigate the conflicting demands of similarity and uniqueness, especially if they hew to popular notions of being different.",
@@ -84541,6 +84833,71 @@
     "year": 2026
   },
   {
+    "abstract": null,
+    "ai_reason": "核心议题即AI聊天机器人使用与心理健康",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机交互",
+      "AI客服"
+    ],
+    "authors": [
+      "Julia Brailovskaia",
+      "Lena-Marie Precht",
+      "Falk Gerrik Verhees",
+      "Pauline Schmidt",
+      "Jürgen Margraf"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Julia Brailovskaia",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Lena-Marie Precht",
+        "orcid": "https://orcid.org/0000-0002-6751-9144"
+      },
+      {
+        "affiliation": [],
+        "name": "Falk Gerrik Verhees",
+        "orcid": "https://orcid.org/0000-0002-6808-2968"
+      },
+      {
+        "affiliation": [],
+        "name": "Pauline Schmidt",
+        "orcid": "https://orcid.org/0009-0006-1577-326X"
+      },
+      {
+        "affiliation": [],
+        "name": "Jürgen Margraf",
+        "orcid": "https://orcid.org/0000-0001-5207-7016"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "doi": "10.1016/j.chb.2026.109199",
+    "domain_score": 4.0,
+    "id": 72336,
+    "ingested_at": "2026-09-23T07:19:12.921055",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-23T07:19:50.032479",
+    "title": "Comparing AI chatbot users and non-users in Germany: Reasons for use, addictive AI chatbot use, mental health, and loneliness",
+    "title_zh": "德国AI聊天机器人用户与非用户的比较：使用原因、成瘾性使用、心理健康与孤独感",
+    "tldr": "基于德国样本对比AI聊天机器人用户与非用户的使用动机、成瘾性使用倾向、心理健康与孤独感差异，揭示过度依赖AI陪伴可能带来的心理风险及其对使用者福祉的潜在影响。",
+    "topic_tags": [
+      "消费者行为",
+      "伦理",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109199",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Artificial intelligence (AI) has become part and parcel of scientific knowledge production since the latest iterations of generative AI models (e.g., ChatGPT, DeepSeek, Claude, or Gemini) became widely available. Given AI has rapidly evolved since the initial release of ChatGPT in 2022, researching how AI’s capabilities impact organizations and how researchers make use of AI tools can be likened to a moving target. In this editorial essay, we explore the implications of the introduction of AI in the context of academic research, both as the subject of investigation (i.e., research\n                    on\n                    AI) and as a research tool to facilitate academic writing, data generation, or the peer review process (i.e., research\n                    with\n                    AI). Specifically, concerning research\n                    on\n                    AI, we consider issues around clarity regarding both existing definitions and concepts in the AI literature and how these are influenced by the rapid technological evolution of AI’s capabilities. In regard to research\n                    with\n                    AI, we reflect on the advantages and disadvantages of the use of AI as a research tool and discuss the\n                    Human Relations AI Usage Policy\n                    . Overall, our aim is not to be overly prescriptive on how to conduct research on and with AI but to encourage authors to reflect on how to best capture AI as a moving target in the context of their research endeavors.",
     "ai_reason": "核心议题为AI对学术研究和组织的影响",
     "ai_score": 5.0,
@@ -96170,6 +96527,203 @@
     "year": 2026
   },
   {
+    "abstract": "Current reputation systems in online (labor) markets are overly positive and unidimensional. This article presents a new reputation framework that combines human input with machine learning to provide dynamic, multidimensional, and skill-set-specific quality assessments. The framework significantly outperforms current reputation systems. By providing more representative reputation scores, the framework helps workers to differentiate, employers to make informed decisions, and the market to improve its recommendation algorithms and understand the supply distributions across different dimensions. The framework generalizes in other contexts where reputation systems are overly positive and unidimensional. The framework highlights how combining human input with advanced machine learning techniques can augment intelligence by creating the necessary conditions for humans to make informed decisions. Such systems have the potential to increase efficiency and outcome quality precisely because they intelligently differentiate workers. The deployment of the proposed intelligence augmentation framework in different types of online platforms could have implications for workers, employers, businesses, and the future of work.",
+    "ai_reason": "核心是ML驱动声誉系统，属AI与平台管理交叉",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "人机协作",
+      "推荐算法"
+    ],
+    "authors": [
+      "Marios Kokkodis"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Carroll School of Management, Boston College, Chestnut Hill, Massachusetts 02467"
+        ],
+        "name": "Marios Kokkodis",
+        "orcid": "https://orcid.org/0000-0002-5037-6060"
+      }
+    ],
+    "cited_by": 34,
+    "date": "2021-09",
+    "doi": "10.1287/isre.2020.0972",
+    "domain_score": 4.0,
+    "id": 72643,
+    "ingested_at": "2026-09-23T07:19:19.059211",
+    "issue": "3",
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-09-23T07:19:57.061056",
+    "title": "Dynamic, Multidimensional, and Skillset-Specific Reputation Systems for Online Work",
+    "title_zh": "面向在线工作的动态、多维与技能专属声誉系统",
+    "tldr": "针对在线劳动力市场声誉系统过于正面且单一的缺陷，结合人类输入与机器学习，构建动态、多维度、基于技能集的声誉评估框架。该框架显著优于现有系统，能帮助劳动者差异化竞争、雇主明智决策、平台优化推荐与供需匹配，并可推广至其他过度正面与单一的声誉场景，揭示了人机协同智能增强的潜力。",
+    "topic_tags": [
+      "推荐系统",
+      "人机协作",
+      "绩效评估",
+      "工作未来"
+    ],
+    "url": "https://doi.org/10.1287/isre.2020.0972",
+    "volume": "32",
+    "year": 2021
+  },
+  {
+    "abstract": "Online labor markets play a vital role in connecting freelancers and employers worldwide. While most existing methods focus on helping employers find the best candidates, relatively little research addresses freelancer-centric approaches. In this study, we propose a freelancer-centric skill advisor (FESA) that combines a competitiveness evaluator and an optimization model. The competitiveness evaluator integrates a state-of-the-art deep learning recommender system with contrastive learning to calculate matching scores between freelancers and their desired tasks, while the optimization model prescribes skills a freelancer should acquire to improve their competitiveness for those tasks while making the learning experience manageable. FESA also supports two reskilling strategies: exploration and exploitation. We evaluate FESA against alternative recommendation models using a large-scale, real-world dataset collected from a leading online labor market. We also conduct a controlled experiment with human participants to examine how real-world users respond to FESA recommendations and whether disclosing a freelancer’s ranking, a key output of FESA, affects reskilling motivation. In contrast to prior findings from traditional organizational settings, where ranking information generally encourages greater effort, we find that disclosing a freelancer’s low ranking significantly reduces motivation to reskill. This demotivating effect of ranking disclosure is more pronounced under the exploration reskilling strategy, which requires freelancers to acquire more challenging and unfamiliar skills, than under the exploitation reskilling strategy where freelancers are advised to acquire skills that are more closely aligned with their existing expertise. Our research highlights that designing a freelancer-centric recommendation system requires not only algorithmic innovation but also careful attention of how system design influences user motivation and engagement.",
+    "ai_reason": "深度学习推荐系统是核心方法，应用于劳动力市场",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "机器学习",
+      "人机交互"
+    ],
+    "authors": [
+      "Haoxin Liu",
+      "Shuo Yu",
+      "Stephen X. He",
+      "Wen Wen",
+      "Yidong Chai"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Hefei University of Technology"
+        ],
+        "name": "Haoxin Liu",
+        "orcid": "https://orcid.org/0000-0002-9237-0708",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Texas Tech University"
+        ],
+        "name": "Shuo Yu",
+        "orcid": "https://orcid.org/0000-0002-1885-2813",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "The University of Texas at San Antonio"
+        ],
+        "name": "Stephen X. He",
+        "orcid": "https://orcid.org/0000-0003-0774-7476",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "The University of Texas at Austin"
+        ],
+        "name": "Wen Wen",
+        "orcid": "https://orcid.org/0000-0002-6868-5830",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Hefei University of Technology"
+        ],
+        "name": "Yidong Chai",
+        "orcid": "https://orcid.org/0000-0003-0260-7589",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-22",
+    "doi": "10.1287/isre.2023.0790",
+    "domain_score": 4.0,
+    "id": 72644,
+    "ingested_at": "2026-09-23T07:19:19.078796",
+    "issue": null,
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-09-23T07:19:52.373947",
+    "title": "Improving Competitiveness: A Freelancer-Centric Approach for Recommending Reskilling Strategies",
+    "title_zh": "提升竞争力：以自由职业者为核心的再培训策略推荐方法",
+    "tldr": "针对在线劳务市场，提出以零工者为中心的技能顾问FESA，结合深度学习推荐系统与对比学习评估人岗匹配度，并利用优化模型推荐再培训策略，支持探索与利用两种模式。基于大规模真实数据与受控实验验证，发现与组织情境中排名激励努力的结论相反，披露低排名信息显著降低再培训动机，该效应在探索策略下更为突出。",
+    "topic_tags": [
+      "零工经济",
+      "推荐系统",
+      "培训",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1287/isre.2023.0790",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Machine-learning-based artificial intelligence (AI) systems often perform well in controlled settings but fail when deployed in the real world. These failures stem from a fundamental problem: ML/AI models optimize data-model fit by increasing statistical performance on training data, whereas real-world deployment demands a new paradigm in ML/AI: model-world fit that preserves domain semantics and contextual understanding. We propose a Machine Learning Model-World Fit framework that provides both a conceptual structure for understanding how domain knowledge shapes ML/AI systems and a research roadmap for investigating these relationships. The framework identifies how domain knowledge can be integrated into ML/AI development process via external knowledge representations, such as data, value, process models or domain ontologies. Incorporating external knowledge representations can help overcome three types of knowledge deficiencies in AI: know-what, know-how, and know-why. To illustrate the framework, we apply it to a child welfare placement case, a domain where contextual understanding is critical and statistical accuracy is an insufficient evaluation criterion. Our insights lead to several directions for scholars working at the intersection of machine learning, design science, and knowledge representation.",
+    "ai_reason": "ISR期刊AI模型-世界契合框架；核心AI+管理信息系统",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Arturo Castellanos",
+      "Monica Chiarini Tremblay",
+      "Roman Lukyanenko",
+      "Jeffrey Parsons",
+      "Veda C. Storey"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "William & Mary"
+        ],
+        "name": "Arturo Castellanos",
+        "orcid": "https://orcid.org/0000-0002-7477-7379",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "William & Mary"
+        ],
+        "name": "Monica Chiarini Tremblay",
+        "orcid": "https://orcid.org/0000-0003-1289-6679",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "University of Virginia"
+        ],
+        "name": "Roman Lukyanenko",
+        "orcid": "https://orcid.org/0000-0001-8125-5918",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Memorial University of Newfoundland"
+        ],
+        "name": "Jeffrey Parsons",
+        "orcid": "https://orcid.org/0000-0002-4819-2801",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Georgia State University"
+        ],
+        "name": "Veda C. Storey",
+        "orcid": "https://orcid.org/0000-0002-8735-1553",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-22",
+    "doi": "10.1287/isre.2023.0031",
+    "domain_score": 4.0,
+    "id": 72645,
+    "ingested_at": "2026-09-23T07:19:19.098020",
+    "issue": null,
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-09-23T07:19:54.853572",
+    "title": "From Data-Model Fit to Model-World Fit: A Framework for Integrating Domain Knowledge into Artificial Intelligence",
+    "title_zh": "从数据-模型拟合到模型-世界拟合：将领域知识融入人工智能的框架",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1287/isre.2023.0031",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Abstract Companies are increasingly introducing conversational reviews —reviews solicited via chatbots—to gain customer feedback. However, little is known about how chatbot-mediated solicitation influences rating valence and review helpfulness compared to conventional online forms. Therefore, we conceptualized these review solicitation media on the continuum of anthropomorphism and investigated how various levels of anthropomorphism affect rating valence and review helpfulness, showing that more anthropomorphic media lead to more positive and less helpful reviews. We found that moderate levels of anthropomorphism lead to increased interaction enjoyment, and high levels increase social presence, thus inflating the rating valence and decreasing review helpfulness. Further, the effect of anthropomorphism remains robust across review solicitors’ salience (sellers vs. platforms) and expressed emotionality in conversations. Our study is among the first to investigate chatbots as a new form of technology to solicit online reviews, providing insights to inform various stakeholders of the advantages, drawbacks, and potential ethical concerns of anthropomorphic technology in customer feedback solicitation.",
     "ai_reason": "核心研究聊天机器人征集评论的偏差效应，直接涉及对话式AI",
     "ai_score": 5.0,
@@ -101425,7 +101979,10 @@
     "abstract": "Images play a central role in digital marketing. They attract attention, trigger emotions, and shape consumers’ first impressions of products and brands. We propose that the shift from one‐to‐many mass communication to highly personalized one‐to‐one communication requires an understanding of image appeal at a personal level. Instead of asking “How appealing is this image?” we ask “How appealing is this image to this particular consumer?” Using the well‐established five‐factor model of personality, we apply machine learning algorithms to predict an image's personality appeal—the personality of consumers to which the image appeals most—from a set of 89 automatically extracted image features (Study 1). We subsequently apply the same algorithm on new images to predict consequential outcomes from the fit between consumer and image personality. We show that image‐person fit adds incremental predictive power over the images’ general appeal when predicting (a) consumers’ liking of new images (Study 2) and (b) consumers’ attitudes and purchase intentions (Study 3).",
     "ai_reason": "机器学习预测营销图像个性吸引力",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器学习",
+      "推荐算法"
+    ],
     "authors": [
       "Sandra C. Matz",
       "Cristina Segalin",
@@ -101482,8 +102039,12 @@
     "scored_at": "2026-09-22T07:20:09.368834",
     "title": "Predicting the Personal Appeal of Marketing Images Using Computational Methods",
     "title_zh": "基于计算方法的营销图像个人吸引力预测",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对数字营销从大众传播向一对一个性化传播转变的需求，基于大五人格模型，利用机器学习算法从89个自动提取的图像特征中预测图像的人格吸引力，即图像最能吸引哪类人格特质的消费者。三项研究表明，消费者与图像的人格匹配度在预测图像喜好度、消费者态度和购买意向时，比图像的总体吸引力具有显著的增量预测力。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "品牌"
+    ],
     "url": "https://doi.org/10.1002/jcpy.1092",
     "volume": "29",
     "year": 2019

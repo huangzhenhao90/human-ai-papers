@@ -1,0 +1,75 @@
+{
+  "abstract": "Background Virtual clinical triage is central to digital front door strategies, yet how interaction mode—structured, closed-ended AI questionnaires vs large language model (LLM)–enabled conversational dialogue—affects information capture, engagement, and alignment with care recommendations is unclear. Objective This study compared demographics, clinical content, engagement, and alignment with recommended care between a traditional, structured questionnaire interface (traditional triage [TT]) and an LLM-enabled conversational interface (conversational triage [CT]) sharing the same validated Bayesian reasoning engine. Methods This comparative, retrospective observational study analyzed 116,890 encounters over 28 weeks (January 2025 to August 2025) completed on a virtual triage website. Users self-selected TT or CT. Primary end points included demographic and clinical characteristics, engagement patterns, and self-reported intended adherence to triage recommendations. Analyses used poststratification weighting by age and sex. Group differences were assessed with the chi-square test (with Rao-Scott correction for weighted data) and survey-weighted Wilcoxon rank-sum test; P values for comparisons of proportions were adjusted for multiple comparisons using the Benjamini-Hochberg false discovery rate procedure. For CT, opening and closing sentiment (positive, neutral, or negative) was labeled using a prompt in Gemini 2.5 Flash. Results Of 116,890 respondents, 100,533 (86%) used TT and 16,357 (14%) used CT. Female users were the majority in both groups but less predominant in CT (10,402/16,357, 64% vs 71,039/100,533, 71%) than in TT. TT users skewed younger (aged 18-29 years >50%), whereas CT was more evenly distributed with higher shares at ages 12 to 17, 30 to 44, and ≥45 years. Median session duration was longer with CT than with TT (8 minutes 21 seconds, IQR 6 minutes 10 seconds to 11 minutes 51 seconds vs 4 minutes 25 seconds, IQR 3 minutes 14 seconds to 6 minutes 22 seconds, respectively). CT elicited more clinical findings (median 36, IQR 31-43 vs 32, IQR 27-38; P<.001) and surfaced more mental health evidence (eg, depressive symptoms, 8.5% vs 6.2%; P<.001). Posttriage intent survey completion was higher with CT (5104/16,357, 31.2% vs 5968/100,533, 5.9%). Self-reported intended adherence to the recommended level of care was higher with CT (1749/5104, 34.3% vs 1740/5968, 29.2%; P<.001), especially at extremes of acuity: self-care (534/625, 85.4% vs 325/525, 61.9%), emergency room (171/723, 23.7% vs 100/949, 10.5%), and ambulance (39/339, 11.5% vs 27/554, 4.9%; all P<.001). Among CT encounters, positive sentiment increased markedly, while negative sentiment rose slightly. Conclusions The LLM-enabled CT was used by a more demographically diverse user base and was associated with richer clinical context, deeper engagement, and higher self-reported intended adherence among survey respondents, particularly for low-acuity self-care and high-acuity emergency scenarios, where reassurance or urgent escalation is critical. This highlights the potential of hybrid LLM tools that integrate validated clinical logic to support engagement, information gathering, and care navigation in digital front door settings.",
+  "ai_type_tags": [
+    "llm_genai",
+    "conversational_ai"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Maria Marecka",
+    "Anna Nowicka",
+    "Aleksandra Suwińska",
+    "Piotr Orzechowski"
+  ],
+  "authors_full": [
+    {
+      "name": "Maria Marecka"
+    },
+    {
+      "name": "Anna Nowicka"
+    },
+    {
+      "name": "Aleksandra Suwińska"
+    },
+    {
+      "name": "Piotr Orzechowski"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "LLM驱动对话分诊界面核心应用于临床分诊流程，11.7万真实就诊数据比较AI问卷与LLM对话在心理健康发现捕捉和护理建议依从性上的差异。",
+      "ai_score": 5,
+      "clinical_validation": "external",
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "self_report",
+      "real_world_deployment": true,
+      "risk_tags": [
+        "bias_fairness",
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "LLM对话分诊相比传统问卷吸引更多元用户、收集更丰富临床信息、自报护理建议依从性更高（34.3% vs 29.2%），但属回顾性观察研究。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "service_access",
+        "risk_prediction",
+        "general_population",
+        "clinical_patients"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-22",
+  "doi": "10.2196/84469",
+  "id": "p_pgcwMdnfC9YQE0FF",
+  "issue": null,
+  "journal": "JMIR AI",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7214052156"
+    }
+  ],
+  "title": "Demographics, Clinical Content, Use Patterns, and Care-Seeking Intent Across Two Generations of AI-Enabled Clinical Triage Tools (A Traditional Structured Questionnaire and a Large Language Model–Enabled Conversational Interface): Comparative Retrospective Observational Study",
+  "title_zh": "两代AI临床分诊工具在人口学、临床内容、使用模式和护理寻求意图上的比较：传统结构化问卷与LLM对话界面的回顾性观察研究",
+  "unified_ingested_at": "2026-09-23T07:31:09.818161Z",
+  "url": "https://doi.org/10.2196/84469",
+  "volume": null,
+  "year": 2026
+}
