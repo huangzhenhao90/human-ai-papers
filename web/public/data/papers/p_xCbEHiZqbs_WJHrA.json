@@ -1,6 +1,10 @@
 {
   "abstract": "Machine-learning-based artificial intelligence (AI) systems often perform well in controlled settings but fail when deployed in the real world. These failures stem from a fundamental problem: ML/AI models optimize data-model fit by increasing statistical performance on training data, whereas real-world deployment demands a new paradigm in ML/AI: model-world fit that preserves domain semantics and contextual understanding. We propose a Machine Learning Model-World Fit framework that provides both a conceptual structure for understanding how domain knowledge shapes ML/AI systems and a research roadmap for investigating these relationships. The framework identifies how domain knowledge can be integrated into ML/AI development process via external knowledge representations, such as data, value, process models or domain ontologies. Incorporating external knowledge representations can help overcome three types of knowledge deficiencies in AI: know-what, know-how, and know-why. To illustrate the framework, we apply it to a child welfare placement case, a domain where contextual understanding is critical and statistical accuracy is an insufficient evaluation criterion. Our insights lead to several directions for scholars working at the intersection of machine learning, design science, and knowledge representation.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "机器学习",
+    "可解释AI",
+    "AI治理"
+  ],
   "arxiv_id": "2023.0031",
   "authors": [
     "Arturo Castellanos",
@@ -56,8 +60,13 @@
       "ai_reason": "ISR期刊AI模型-世界契合框架；核心AI+管理信息系统",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对ML/AI模型在真实部署中因过度追求统计性能而忽视领域语义的问题，提出机器学习模型-世界匹配框架，通过数据、价值、流程模型或领域本体等外部知识表征弥补AI的know-what、know-how、know-why三类知识缺陷。以儿童福利安置案例说明，勾勒出机器学习、设计科学与知识表征交叉的研究路线图。",
+      "topic_tags": [
+        "知识管理",
+        "决策",
+        "AI治理",
+        "人机协作"
+      ]
     }
   },
   "channels": [
@@ -74,7 +83,7 @@
     {
       "channel": "ob",
       "legacy_id": 72645,
-      "revision": "13b163fd0c424a47500b769448805e7b2fb193c8"
+      "revision": "05b41f98414a28b204ac2fb3468dae8d7b89e0e8"
     }
   ],
   "title": "From Data-Model Fit to Model-World Fit: A Framework for Integrating Domain Knowledge into Artificial Intelligence",
