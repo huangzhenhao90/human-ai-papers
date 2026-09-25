@@ -1,6 +1,10 @@
 {
   "abstract": "Conversational AI systems can pose safety risks to their users such as hallucination, sycophancy, overconfidence, and anthropomorphism, but these risks are difficult for users to detect during everyday use. We introduce Safety Nudges, a browser-based tool that provides lightweight, in situ flags when concerning behavior is detected in chatbot conversations. We evaluated Safety Nudges in a two-week field study with 45 frequent chatbot users, collecting interaction logs, surveys, and feedback on individual nudges. Participants found the tool useful, clear, and minimally disruptive, with nearly all users reporting an increased awareness of potential AI harms, though we found that this improved awareness alone did not necessarily lead to discernible behavioral changes. Our results suggest that user facing safety nudges can complement model-level safeguards by helping people critically evaluate AI responses in context, while highlighting the importance of relevance, calibration, and user control in nudge design for conversational AI safety.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "对话式 AI",
+    "LLM",
+    "AI治理"
+  ],
   "arxiv_id": "2609.26865",
   "authors": [
     "Varshini Elangovan",
@@ -34,8 +38,13 @@
       "ai_reason": "AI安全核心议题,2周田野研究45用户",
       "ai_score": 5.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "对话式AI存在幻觉、谄媚、过度自信和拟人化等安全风险，用户日常使用时难以察觉。研究提出\"Safety Nudges\"浏览器工具，在聊天对话中实时轻量标记可疑行为。通过45名频繁使用者的两周田野研究发现，用户认为工具有用、清晰且干扰低，几乎所有人报告风险意识提升，但意识增强并未带来明显行为改变，提示用户面安全提示可补充模型层防护，但需关注相关性、校准与用户控制。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "AI治理",
+        "对话式 AI",
+        "信任"
+      ]
     }
   },
   "channels": [
@@ -52,7 +61,7 @@
     {
       "channel": "ur",
       "legacy_id": 31331,
-      "revision": "d7a40a4b252339a8880d554c52d91aca61ce04cb"
+      "revision": "dd14cf8e1365ee4881c5199ab8575a97282d3f44"
     }
   ],
   "title": "Safety Nudges: User-Facing Interventions for Real-Time AI Risk Awareness",

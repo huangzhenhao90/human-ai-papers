@@ -1,0 +1,62 @@
+{
+  "abstract": "Background: Code degradation in large, long-lived codebases is costly to remediate through manual refactoring and opportunistic clean-ups. LLM-based coding assistants can perform mechanical remediation at scale, but their impact on industrial workflows is underexplored. Objective: We investigate how massive AI-assisted code remediation affects build-on-commit continuous integration (CI), code review, and team coordination in a large industrial repository, and which socio-technical bottlenecks constrain such remediation when source editing becomes cheap through AI assistance. Method: We report on a 15-day exploratory single-case field study in which an experienced developer used a command-line AI coding buddy to remediate widespread issues in a closed-source industrial C++ repository. We triangulate Gerrit metadata with a developer diary and team chat, analyzed through descriptive statistics and qualitative coding. Results: AI-assisted remediation rapidly generated hundreds of commits touching thousands of lines, saturating CI and reviewer attention. Naïve per-file commits overloaded build-on-commit CI; Switching to directory-based batching and capping the number of files per change restored throughput, but still required explicit review solicitation, negotiation of acceptable commit granularity, and iterative follow-up to resolve build and static-analysis failures. Conclusion: When mechanical editing is cheap, CI capacity, review effort, and change orchestration become primary bottlenecks. Sustainable AI-assisted remediation in very large repositories requires deliberate control of commit, review, and CI batch granularity and treating semantic change sets, such as ``fix all instances of warning X'', as first-class units of work that can be sliced differently for developers, reviewers, and CI.",
+  "ai_type_tags": [
+    "LLM",
+    "AI助手",
+    "人机协作"
+  ],
+  "arxiv_id": "2609.29172",
+  "authors": [
+    "Andreas Bexell",
+    "Lo Gullstrand Heander",
+    "Emma söderberg"
+  ],
+  "authors_full": [
+    {
+      "name": "Andreas Bexell"
+    },
+    {
+      "name": "Lo Gullstrand Heander"
+    },
+    {
+      "name": "Emma söderberg"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "实地研究开发者使用AI编码助手的体验，HCI田野研究",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究LLM编程助手在大规模工业代码库中执行机械性代码修复的真实影响。通过15天探索性单案例田野研究，由资深开发者在闭源C++代码库中使用命令行AI编程伙伴进行批量修复，结合Gerrit元数据、开发者日记与团队聊天进行三角验证。结果显示AI辅助修复迅速产出大量提交，使构建式持续集成（CI）与代码审查饱和；改用目录级批量提交并限制单次变更文件数可恢复吞吐量，但仍需主动请求审查、协商提交粒度并迭代跟进构建与静态分析失败。结论：当机械编辑成本降低，CI容量、审查投入与变更编排成为主要社会技术瓶颈。",
+      "topic_tags": [
+        "人机协作",
+        "AI采用",
+        "田野研究",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-24",
+  "doi": null,
+  "id": "p_0ChdY30k5Vu68LFH",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2609.29172v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 31784,
+      "revision": "dd14cf8e1365ee4881c5199ab8575a97282d3f44"
+    }
+  ],
+  "title": "Orchestrating AI-Assisted Code Remediation: Socio-Technical Bottlenecks in a Large Industrial Repository",
+  "title_zh": "编排AI辅助代码修复：大型工业代码库中的社会技术瓶颈",
+  "unified_ingested_at": "2026-09-25T07:17:06.576256Z",
+  "url": "https://arxiv.org/abs/2609.29172v1",
+  "volume": null,
+  "year": 2026
+}

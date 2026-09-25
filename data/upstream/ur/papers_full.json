@@ -21655,7 +21655,11 @@
     "abstract": "Conversational AI systems can pose safety risks to their users such as hallucination, sycophancy, overconfidence, and anthropomorphism, but these risks are difficult for users to detect during everyday use. We introduce Safety Nudges, a browser-based tool that provides lightweight, in situ flags when concerning behavior is detected in chatbot conversations. We evaluated Safety Nudges in a two-week field study with 45 frequent chatbot users, collecting interaction logs, surveys, and feedback on individual nudges. Participants found the tool useful, clear, and minimally disruptive, with nearly all users reporting an increased awareness of potential AI harms, though we found that this improved awareness alone did not necessarily lead to discernible behavioral changes. Our results suggest that user facing safety nudges can complement model-level safeguards by helping people critically evaluate AI responses in context, while highlighting the importance of relevance, calibration, and user control in nudge design for conversational AI safety.",
     "ai_reason": "AI安全核心议题,2周田野研究45用户",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "对话式 AI",
+      "LLM",
+      "AI治理"
+    ],
     "authors": [
       "Varshini Elangovan",
       "James Wedgwood",
@@ -21695,8 +21699,13 @@
     "scored_at": "2026-09-24T07:03:10.974425",
     "title": "Safety Nudges: User-Facing Interventions for Real-Time AI Risk Awareness",
     "title_zh": "安全助推：面向用户的实时AI风险感知干预",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "对话式AI存在幻觉、谄媚、过度自信和拟人化等安全风险，用户日常使用时难以察觉。研究提出\"Safety Nudges\"浏览器工具，在聊天对话中实时轻量标记可疑行为。通过45名频繁使用者的两周田野研究发现，用户认为工具有用、清晰且干扰低，几乎所有人报告风险意识提升，但意识增强并未带来明显行为改变，提示用户面安全提示可补充模型层防护，但需关注相关性、校准与用户控制。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "AI治理",
+      "对话式 AI",
+      "信任"
+    ],
     "url": "https://arxiv.org/abs/2609.26865v1",
     "volume": null,
     "year": 2026
@@ -21820,7 +21829,12 @@
     "abstract": "Generative visualization increasingly embeds large language models within direct manipulation and multisensory interaction. Speech, gaze, touch, gesture, sound, and haptics can make probabilistic inference feel like familiar, deterministic tool use. I call this gap a deterministic-affordance mismatch: deterministic interaction cues persist while AI weakens predictability, locality, reversibility, or provenance. Reading the malleable interfaces of Iron Man 2 against systems from Blade Runner 2049, I propose productive friction, including cross-sensory renderings whose detail reflects model uncertainty. Four frictions expose the inference boundary, match action to effect, make stochastic branches tangible, and attribute sensory agreement.",
     "ai_reason": "LLM可视化交互核心议题,HCI界面设计理论",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "多模态",
+      "可解释AI"
+    ],
     "authors": [
       "Anchit Mishra"
     ],
@@ -21841,8 +21855,13 @@
     "scored_at": "2026-09-24T07:03:10.973633",
     "title": "When Direct Manipulation Becomes a Guess: Productive Friction in AI-Mediated Multisensory Visualization",
     "title_zh": "直接操控沦为猜测：AI中介多感官可视化中的建设性摩擦",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究生成式可视化中将大语言模型嵌入直接操控与多感官交互时，确定性交互线索与AI概率性推断之间的\"确定性可供性失配\"问题。通过分析《钢铁侠2》《银翼杀手2049》等影片中的可塑界面，提出\"生产性摩擦\"设计策略，借助跨感官渲染将模型不确定性外显化，让用户感知推理边界、匹配动作与效果、感受随机分支并辨识感官一致性，从而弥合操控直觉与概率推断之间的鸿沟。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可视化",
+      "多模态交互",
+      "可解释性"
+    ],
     "url": "https://arxiv.org/abs/2609.27104v1",
     "volume": null,
     "year": 2026
@@ -21910,6 +21929,559 @@
     "year": 2026
   },
   {
+    "abstract": "Teachers are increasingly using generative AI to support instruction, yet it remains unclear how pedagogical intentions are translated into chatbot configurations and reflected in chatbot behavior. We studied a teacher-facing chatbot authoring tool in professional development workshops with 27 middle school teachers, analyzing focus-group interviews alongside configuration and interaction logs. Teachers envisioned chatbots as instructional scaffolds that could provide differentiated support, extend access to assistance, and preserve student thinking within teacher-defined boundaries. Configuration analysis showed that Purpose primarily captured instructional goals and content focus, whereas Rules more often specified pedagogical behavior, guardrails, and learner-specific adaptations. Log-based evaluation showed stronger alignment for responsiveness (88.9%) and persona (81.5%) than for rules (70.4%) and purpose (59.3%). These findings show that configurable controls alone do not ensure pedagogical fidelity and highlight the need for authoring tools that help teachers express, test, and refine intended chatbot behavior.",
+    "ai_reason": "核心研究教育AI聊天机器人,焦点小组+配置日志,27教师用研方法明确",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Bahare Riahi",
+      "Deniz Ozturk",
+      "Alice Guth",
+      "Jiayu Li",
+      "Daksh Pratap Singh"
+    ],
+    "authors_full": [
+      {
+        "name": "Bahare Riahi"
+      },
+      {
+        "name": "Deniz Ozturk"
+      },
+      {
+        "name": "Alice Guth"
+      },
+      {
+        "name": "Jiayu Li"
+      },
+      {
+        "name": "Daksh Pratap Singh"
+      },
+      {
+        "name": "Xiaoyi Tian"
+      },
+      {
+        "name": "Jennifer Chiu"
+      },
+      {
+        "name": "Nicholas Lytle"
+      },
+      {
+        "name": "Tiffany Barnes"
+      },
+      {
+        "name": "Veronica Catete"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 31768,
+    "ingested_at": "2026-09-25T06:55:47.606967",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.29993v1",
+    "scored_at": "2026-09-25T06:56:17.773165",
+    "title": "Will It Teach as Intended? How Teachers Configure Educational AI Chatbots",
+    "title_zh": "它会按预期教学吗？教师如何配置教育AI聊天机器人",
+    "tldr": "研究27名中学教师在专业发展工作坊中如何配置教育AI聊天机器人以实现教学意图,结合焦点小组访谈、配置数据与交互日志分析。教师将聊天机器人视为提供差异化支持、扩展辅导可及性并保留学生思维的支架。配置上,Purpose多承载教学目标与内容焦点,Rules多承载教学行为、护栏与个性化适配。对齐评估显示响应性88.9%、人格81.5%、规则70.4%、目的仅59.3%,表明可配置控件不足以保障教学保真度,需支持教师表达、测试与迭代的工具。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户研究方法",
+      "AI 采用",
+      "可用性测试"
+    ],
+    "url": "https://arxiv.org/abs/2609.29993v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI-moderated interviews are emerging as a scalable market-research method for generating consumer insights and building consumer \"digital twins.\" Yet it remains unclear whether they match human-moderated interviews or improve on simpler, static data collection methods. In a pre-registered, between-subjects study (N = 317) with three industry partners, we compare AI-moderated (N = 139), human-moderated (N = 24), and static interviews (N = 154). AI moderation matches human moderation in depth, covers more themes, and, holding budget constant, recovers significantly more customer needs than human moderation or static interviews. However, participants sound more emotionally engaged when speaking to a live human. We then create digital twins using interview data and evaluate each twin against the participant's own held-out responses to six real-world marketing stimuli. We find that digital twins created from AI-moderated interviews predict consumer responses better than demographics-only personas. However, the additional richness from AI moderation does not translate into better quantitative predictions compared to static interviews. By analyzing open-ended thoughts generated from humans versus their twins, we find that prediction errors are connected both to differences in (self-reported) thinking styles between twins and humans, and to gaps between training and validation data (i.e., asking questions that are too far out of distribution).",
+    "ai_reason": "AI主持访谈为核心,预注册实验N=317,市场调研方法论明确",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 访谈分析",
+      "LLM",
+      "人机协作",
+      "GenAI"
+    ],
+    "authors": [
+      "Yuting Deng",
+      "Jingxuan Liu",
+      "Olivier Toubia",
+      "Naman Jain"
+    ],
+    "authors_full": [
+      {
+        "name": "Yuting Deng"
+      },
+      {
+        "name": "Jingxuan Liu"
+      },
+      {
+        "name": "Olivier Toubia"
+      },
+      {
+        "name": "Naman Jain"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 31770,
+    "ingested_at": "2026-09-25T06:55:47.609761",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2609.29143v1",
+    "scored_at": "2026-09-25T06:56:17.772746",
+    "title": "AI-Moderated Interviews for Market Research and Digital Twins Calibration",
+    "title_zh": "用于市场研究与数字孪生校准的AI主持访谈",
+    "tldr": "研究AI主持访谈在市场研究中的有效性,对比AI主持(N=139)、人类主持(N=24)与静态访谈(N=154)三种方式。AI主持在深度上与人类相当,覆盖更多主题,预算相同时能发掘更多客户需求,但参与者与真人互动时情感投入更高。进一步用访谈数据构建消费者数字孪生评估对营销刺激的预测能力,发现AI访谈孪生优于纯人口统计学画像,但相对静态访谈并无量化优势。预测误差与自报思维风格差异及训练-验证问题分布偏移有关。",
+    "topic_tags": [
+      "用户研究方法",
+      "AI 访谈分析",
+      "消费者行为",
+      "用户画像"
+    ],
+    "url": "https://arxiv.org/abs/2609.29143v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Our mixed-method study examines how Chinese women livestreamers use masking to construct idealized mediated personas while navigating gendered, commercial, organizational, and platform pressures alongside personal agendas. We built on the concept of masking, analyzed 627 recruitment posts, and conducted livestream observations and interviews with 26 Chinese women streamers. We found that streamers assembled masks across bodies, AI-mediated technologies, spaces, performances, and social relations to become recognizable while protecting personal boundaries. These masks were continually negotiated, and participants sometimes broke, resisted, or refused them when demands became misaligned or unsustainable. We conceptualize masking as a sociotechnical assemblage in which agency lies in preserving, disrupting, and reconfiguring relations rather than controlling a single interface. We further theorize breaking as a consequential part of masking that exposes hidden labor and unequal costs of visibility. We offer theoretical and design directions for more negotiable, contestable, and agency-supporting AI-mediated self- presentation.",
+    "ai_reason": "混合方法研究26位女主播,AI中介技术为情境,用户研究方法明确",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Yang Hong",
+      "Nusrat Jahan Mim",
+      "Sharifa Sultana"
+    ],
+    "authors_full": [
+      {
+        "name": "Yang Hong"
+      },
+      {
+        "name": "Nusrat Jahan Mim"
+      },
+      {
+        "name": "Sharifa Sultana"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-23",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 31771,
+    "ingested_at": "2026-09-25T06:55:47.610593",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.28721v1",
+    "scored_at": "2026-09-25T06:56:17.776179",
+    "title": "Assembling, Breaking, and Refusing the Mask: Agency in AI-Mediated Self-Presentation in Livestreaming",
+    "title_zh": "组装、打破与拒绝面具：直播中AI中介自我呈现的能动性",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2609.28721v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Communities often respond to potentially AI-assisted work by asking three questions: Was AI used? Was that use disclosed? Can hidden use be detected? These questions place AI use itself at the center of accountability while overlooking a deeper problem: unowned judgment. Evaluations, claims, decisions, and creative directions can be shaped by AI with no accountable human or institution prepared to stand behind them. We develop this argument through two illustrative cases: AI-assisted peer review and concealed AI use in creative work. The first shows how contribution dissolution can weaken responsibility while the second shows how the fear of losing credit can discourage honest disclosure. The cases expose the limits of disclosure rules and provenance records as responses to AI-mediated collaboration. We offer three directions for discussion: distinguishing the roles AI plays, identifying judgments that require clear human ownership, and creating conditions in which AI involvement can be disclosed without default penalty. The broader aim is to make AI-shaped contributions discussable, creditable, contestable, and repairable.",
+    "ai_reason": "核心讨论AI辅助下的责任归属,但以伦理论证为主,无正式用研方法",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Hengzhi Ye"
+    ],
+    "authors_full": [
+      {
+        "name": "Hengzhi Ye"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 31772,
+    "ingested_at": "2026-09-25T06:55:47.611400",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.29312v1",
+    "scored_at": "2026-09-25T06:56:17.772004",
+    "title": "When No One Owns the Judgment: Accountability Under Contribution Dissolution in Human-AI Collaboration",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2609.29312v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models (LLMs) are increasingly involved in family education, yet HCI has not systematically explained the educational interactions that emerge around them. This scoping review analyzes 53 HCI studies from 6,540 records across 19 venues. Using activity theory and AODM, it relates participants and educational objects to mediation, labour, and rules. We find that the literature centers on child--parent interaction and on language, AI literacy, and relational learning. The introduction of LLMs enabled conversational, embodied, and spatial systems to generate support from the context of an unfolding interaction. LLMs redistributed educational labour, while family and institutional rules left parents and professionals responsible for interpreting outputs and deciding how they entered practice. Evidence across families and educational purposes remains limited, especially on sustained personalization, repair labour, and how families negotiate authority and rules. The review offers a framework explaining how LLM capabilities become organized through family participation.",
+    "ai_reason": "LLM家庭教育的HCI文献综述，53篇HCI研究系统分析",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "人机协作",
+      "多模态"
+    ],
+    "authors": [
+      "Lan Luo",
+      "Yuqi Liang",
+      "Jie Cai",
+      "Anqi Wang",
+      "Dongyijie Pan"
+    ],
+    "authors_full": [
+      {
+        "name": "Lan Luo"
+      },
+      {
+        "name": "Yuqi Liang"
+      },
+      {
+        "name": "Jie Cai"
+      },
+      {
+        "name": "Anqi Wang"
+      },
+      {
+        "name": "Dongyijie Pan"
+      },
+      {
+        "name": "Muzhi Zhou"
+      },
+      {
+        "name": "Chun Yu"
+      },
+      {
+        "name": "Pan Hui"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 31773,
+    "ingested_at": "2026-09-25T06:55:47.613134",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2609.28886v1",
+    "scored_at": "2026-09-25T06:56:16.791888",
+    "title": "Characterizing LLM-Based Family Education through the Lens of Activity Theory: A Scoping Review of the HCI Literature",
+    "title_zh": null,
+    "tldr": "从6,540篇记录中筛选53项HCI研究进行范围综述，以活动理论与AODM分析LLM介入家庭教育的互动与劳动结构。研究聚焦亲子互动、语言与AI素养、关系式学习，发现LLM推动对话式、具身与空间化支持，却将输出解读与实践决策责任留给家长与专业人员，家庭与机构规则约束明显，可持续个性化与权威协商研究仍有限。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "儿童/老人/无障碍",
+      "用户研究方法",
+      "AI 素养"
+    ],
+    "url": "https://arxiv.org/abs/2609.28886v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative artificial intelligence has moved from a disruptive novelty to a recurring part of software-development and computing-education workflows, while software agents are beginning to act across repositories, command lines, browsers, tests, and other tools. The educational problem is no longer whether students should be allowed to generate code, but whether software-engineering (SE) programs can preserve and assess human understanding while preparing students to work responsibly with increasingly capable AI systems. This paper presents a structured integrative review of research and practice from 2023 through 23 September 2026, supplemented by established work on AI literacy, technical debt, and human-AI collaboration. The evidence supports a conditional conclusion: GenAI can improve access to explanations, feedback, practice, and short-term task completion, but learning outcomes depend on prior knowledge, scaffolding, verification, task design, and assessment. We examine student help-seeking and authorship, faculty assessment and policy demands, and the wider SE risks created when generated artifacts persist across repositories, teams, architectures, and deployed systems. We extend the concept of comprehension debt: the deferred learning and maintenance cost that arises when AI-assisted production outpaces a learner's or team's ability to explain, test, modify, and justify the resulting software. We then refine the AI-Augmented Software Engineering Education (AASEE) framework into five non-linear integration levels and four cross-cutting evidence obligations: explain, verify, modify, and account. The framework links delegation to evidence, governance, and recovery mechanisms appropriate to its consequences.",
+    "ai_reason": "GenAI辅助SE教育的整合综述，含人机协作视角",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Qusay H. Mahmoud"
+    ],
+    "authors_full": [
+      {
+        "name": "Qusay H. Mahmoud"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 31775,
+    "ingested_at": "2026-09-25T06:55:47.619167",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2609.29473v1",
+    "scored_at": "2026-09-25T06:56:16.791121",
+    "title": "Judgment-Centred Software Engineering Education: A Post-Hype Review and Framework for AI-Augmented Learning",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2609.29473v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Customer experience (CX) agents use tools and large language models to address customer requests and guide conversational interactions with an organization's products. Improving these agents, especially in regulated industries, is difficult: they must detect intent, follow complex operational policies and use tools reliably. Manual end-to-end testing offers limited coverage, while live experiments expose customers to failures that can erode trust.   We present a hypothesis-driven simulation workflow for screening candidate CX agents before deployment. Synthetic customers react to agent responses and simulated tool outputs enable multi-step agentic workflows without invoking production backends. We use the Snowglobe simulator on Nubank's Card Delivery agent and its expanded successor, Card Management - Nubank's highest-volume chat-support agent in Brazil. Across 4 deployed versions, simulated and production version-level binary evaluator scores show high correlation. Simulation-guided iteration increased transactional net promoter score (tNPS) by 36.69 points in a live A/B test. We also screened open-weight configurations in over 16,000 simulated conversations. In a subsequent live A/B test, the selected model increased self-service rate (SSR) by 8.82 percentage points to the highest level observed at Nubank, with no statistically significant change in tNPS. Simulation made broad exploration of models, reasoning settings, and prompts feasible without customer exposure, enabling production improvements that would have been impractical to pursue through live experimentation alone.",
+    "ai_reason": "核心为LLM驱动的CX智能体，但用合成用户而非真人研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "智能体/Agent",
+      "GenAI"
+    ],
+    "authors": [
+      "Edesio Alcoba",
+      "Kevin Rossell",
+      "Aman Gupta",
+      "Shao Tang",
+      "Jiwoo Hong"
+    ],
+    "authors_full": [
+      {
+        "name": "Edesio Alcoba"
+      },
+      {
+        "name": "Kevin Rossell"
+      },
+      {
+        "name": "Aman Gupta"
+      },
+      {
+        "name": "Shao Tang"
+      },
+      {
+        "name": "Jiwoo Hong"
+      },
+      {
+        "name": "Pabel Carrillo-Mendoza"
+      },
+      {
+        "name": "Wanderson Conceição Ferreira"
+      },
+      {
+        "name": "Alvaro Tedeschi"
+      },
+      {
+        "name": "Zayd Simjee"
+      },
+      {
+        "name": "Shreya Rajpal"
+      },
+      {
+        "name": "Bruno Finardi Hime"
+      },
+      {
+        "name": "Christian Sousa"
+      },
+      {
+        "name": "Luis Moneda"
+      },
+      {
+        "name": "Herbert Fei"
+      },
+      {
+        "name": "Daniel Silva"
+      },
+      {
+        "name": "Rohan Ramanath"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 31778,
+    "ingested_at": "2026-09-25T06:55:47.622857",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.30137v1",
+    "scored_at": "2026-09-25T06:56:16.789416",
+    "title": "Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale",
+    "title_zh": "部署前先模拟：1.4亿规模生产级客户体验AI智能体",
+    "tldr": "面向受监管行业的客户体验AI代理在部署前难以充分测试的问题，提出假设驱动的仿真筛选工作流。利用合成客户与模拟工具输出支持多步骤智能体流程，避免触达真实后端。基于Snowglobe仿真器在Nubank卡片投递及其高量级后继卡片管理代理上验证：4个版本中仿真与生产评分高度相关；仿真引导迭代在A/B测试中将交易性NPS提升36.69分；在逾16000轮仿真对话中筛选开源模型配置后，所选模型使自助服务率提升8.82个百分点至历史最高，tNPS无显著变化。仿真使模型、推理设置与提示词的广泛探索在无客户风险下可行。",
+    "topic_tags": [
+      "客户体验(CX)",
+      "对话式AI",
+      "AI治理",
+      "AI采用"
+    ],
+    "url": "https://arxiv.org/abs/2609.30137v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Faithful user simulation is fundamental to building, evaluating, and improving interactive AI at scale. However, plausible individual responses do not ensure that simulated users reproduce the intent evolution and outcomes observed in real interactions. We propose TRACER, a multi-turn user simulator that explicitly models users' evolving intent and learns to align simulated behavior with real interaction trajectories. TRACER is trained in two stages: supervised fine-tuning on real user dialogues, followed by multi-turn reinforcement learning. The RL stage combines hierarchical outcome- and trajectory-level rewards with deviation-aware advantage modulation, jointly mitigating reward sparsity and credit assignment in long dialogues. On real customer-service sessions organized into reference cohorts, TRACER-7B surpasses the strongest baseline by 11.4 conversion F1, while also achieving the lowest group-level conversion-rate error and semantic trajectory distance, and generalizing to out-of-distribution scenarios. Human Turing tests yield identification accuracy close to chance, supporting the perceived naturalness of generated conversations. Building on this simulator, we further introduce the Dynamic Marketing Benchmark, which jointly evaluates persuasion effectiveness and response quality of LLMs through simulated interactions, revealing that higher response quality does not necessarily correspond to higher conversion rates.",
+    "ai_reason": "用户模拟器核心AI议题,涉及AI评估方法但用户为模拟对象",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "智能体/Agent",
+      "对话式 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Geng Chen",
+      "Ruotong Pan",
+      "Zhirui Yang",
+      "Qiqi He",
+      "Jiawei Chen"
+    ],
+    "authors_full": [
+      {
+        "name": "Geng Chen"
+      },
+      {
+        "name": "Ruotong Pan"
+      },
+      {
+        "name": "Zhirui Yang"
+      },
+      {
+        "name": "Qiqi He"
+      },
+      {
+        "name": "Jiawei Chen"
+      },
+      {
+        "name": "Zhang Yunfei"
+      },
+      {
+        "name": "Chongyuan Chen"
+      },
+      {
+        "name": "Minxuan Lv"
+      },
+      {
+        "name": "Zheng Yang"
+      },
+      {
+        "name": "Win-Bin Huang"
+      },
+      {
+        "name": "Xiangyu Wu"
+      },
+      {
+        "name": "Wenwu Ou"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-23",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 31779,
+    "ingested_at": "2026-09-25T06:55:47.624497",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2609.28690v1",
+    "scored_at": "2026-09-25T06:56:17.775826",
+    "title": "Beyond Surface Style: Aligning Multi-Turn User Simulators with Behavioral Consistency",
+    "title_zh": "超越表面风格：多轮用户模拟器的行为一致性对齐",
+    "tldr": "研究多轮用户模拟器的行为保真度问题。提出TRACER，采用有监督微调与多轮强化学习两阶段训练，结合分层结果与轨迹级奖励及偏差感知优势调制，缓解奖励稀疏与长对话信用分配难题；在真实客服会话上转化F1较最强基线提升11.4，人类图灵测试接近随机。进而构建动态营销基准，揭示回复质量与转化率不必然正相关。",
+    "topic_tags": [
+      "对话式 AI",
+      "用户研究方法",
+      "营销",
+      "AI 助手"
+    ],
+    "url": "https://arxiv.org/abs/2609.28690v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Background: Code degradation in large, long-lived codebases is costly to remediate through manual refactoring and opportunistic clean-ups. LLM-based coding assistants can perform mechanical remediation at scale, but their impact on industrial workflows is underexplored. Objective: We investigate how massive AI-assisted code remediation affects build-on-commit continuous integration (CI), code review, and team coordination in a large industrial repository, and which socio-technical bottlenecks constrain such remediation when source editing becomes cheap through AI assistance. Method: We report on a 15-day exploratory single-case field study in which an experienced developer used a command-line AI coding buddy to remediate widespread issues in a closed-source industrial C++ repository. We triangulate Gerrit metadata with a developer diary and team chat, analyzed through descriptive statistics and qualitative coding. Results: AI-assisted remediation rapidly generated hundreds of commits touching thousands of lines, saturating CI and reviewer attention. Naïve per-file commits overloaded build-on-commit CI; Switching to directory-based batching and capping the number of files per change restored throughput, but still required explicit review solicitation, negotiation of acceptable commit granularity, and iterative follow-up to resolve build and static-analysis failures. Conclusion: When mechanical editing is cheap, CI capacity, review effort, and change orchestration become primary bottlenecks. Sustainable AI-assisted remediation in very large repositories requires deliberate control of commit, review, and CI batch granularity and treating semantic change sets, such as ``fix all instances of warning X'', as first-class units of work that can be sliced differently for developers, reviewers, and CI.",
+    "ai_reason": "实地研究开发者使用AI编码助手的体验，HCI田野研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI助手",
+      "人机协作"
+    ],
+    "authors": [
+      "Andreas Bexell",
+      "Lo Gullstrand Heander",
+      "Emma söderberg"
+    ],
+    "authors_full": [
+      {
+        "name": "Andreas Bexell"
+      },
+      {
+        "name": "Lo Gullstrand Heander"
+      },
+      {
+        "name": "Emma söderberg"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 31784,
+    "ingested_at": "2026-09-25T06:55:47.637969",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2609.29172v1",
+    "scored_at": "2026-09-25T06:56:16.787885",
+    "title": "Orchestrating AI-Assisted Code Remediation: Socio-Technical Bottlenecks in a Large Industrial Repository",
+    "title_zh": "编排AI辅助代码修复：大型工业代码库中的社会技术瓶颈",
+    "tldr": "研究LLM编程助手在大规模工业代码库中执行机械性代码修复的真实影响。通过15天探索性单案例田野研究，由资深开发者在闭源C++代码库中使用命令行AI编程伙伴进行批量修复，结合Gerrit元数据、开发者日记与团队聊天进行三角验证。结果显示AI辅助修复迅速产出大量提交，使构建式持续集成（CI）与代码审查饱和；改用目录级批量提交并限制单次变更文件数可恢复吞吐量，但仍需主动请求审查、协商提交粒度并迭代跟进构建与静态分析失败。结论：当机械编辑成本降低，CI容量、审查投入与变更编排成为主要社会技术瓶颈。",
+    "topic_tags": [
+      "人机协作",
+      "AI采用",
+      "田野研究",
+      "人机交互(HCI)"
+    ],
+    "url": "https://arxiv.org/abs/2609.29172v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Automation systems must adapt to changing tasks, equipment states, and staffing conditions while providing evidence for human review. This study presents a multi-line task-adjustment system integrating a local large language model, a digital twin, and human decision-making. A Propose-Verify-Decide workflow translates operator intent into structured requirements, generates a bounded set of candidate strategies, and checks semantics, simulation execution, and operational constraints. Linked records preserve traceability from requests to verification evidence and decisions. Thirty fixed test records were evaluated using four virtual surgical-instrument sorting lines: 28 assessed the workflow and two assessed model generation. Eighteen workflow cases met expectations; autonomous strategy-workflow success was 3/10, and correct rejection of invalid inputs was 7/8. All four cases that passed preceding checks, produced complete evidence, and reached final engineering review (CP6) passed that review. Together with the correct blocking of strategies that failed throughput constraints, this supports the effectiveness of staged screening and confirmation within the tested setting. Mean placement-validation pass rate across eight simulation evidence records was 97.50%. Mean times to the first reviewable response and simulation verification, excluding startup, were 12.94 and 164.39 s, respectively. Remaining failures involved semantic distortion, incomplete evidence, and missed invalid inputs. The results demonstrate a traceable strategy-review workflow, but do not establish overall reliability or long-term stability. Broader testing and physical evaluation are needed to assess generalizability.",
+    "ai_reason": "核心为LLM+数字孪生+人机协作，HCI实质议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "人机协作"
+    ],
+    "authors": [
+      "Teng-Hsien Ko",
+      "Chin-Te Lin"
+    ],
+    "authors_full": [
+      {
+        "name": "Teng-Hsien Ko"
+      },
+      {
+        "name": "Chin-Te Lin"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 31786,
+    "ingested_at": "2026-09-25T06:55:47.639760",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2609.29061v1",
+    "scored_at": "2026-09-25T06:56:16.787409",
+    "title": "Human-AI Collaboration for Multi-Line Task Adjustment Using Local Large Language Models and a Digital Twin",
+    "title_zh": "人机协作：基于本地大语言模型与数字孪生的多线路任务调整",
+    "tldr": "针对工业自动化中多线任务调整需求，构建融合本地大语言模型、数字孪生与人类决策的协作系统，采用\"提议-验证-决策\"工作流将操作员意图转化为结构化需求并生成受限候选策略。 在四条虚拟手术器械分拣线上评估30条测试记录：18条工作流案例符合预期，自主策略工作流成功率3/10，无效输入正确拦截7/8；通过前置检查并到达最终工程审查的案例全部通过该审查。仿真证据平均通过率97.50%，首次可审响应与仿真验证平均耗时分别约13秒和164秒。失败集中在语义失真、证据不完整与无效输入遗漏。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "可解释性",
+      "AI采用"
+    ],
+    "url": "https://arxiv.org/abs/2609.29061v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "人-自主性团队协作，AI/HCI核心议题",
     "ai_score": 4.0,
@@ -21967,6 +22539,90 @@
     "url": "https://doi.org/10.1016/j.chb.2023.107865",
     "volume": "147",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "ML为方法,核心议题是消费者持续使用意向,属消费者行为研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "推荐算法"
+    ],
+    "authors": [
+      "Ali Raza",
+      "Shehab Abdulhabib Al-Zaeemi",
+      "Mohammed A. Al-Sharafi",
+      "Mousa Albashrawi",
+      "Yogesh K. Dwivedi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "King Fahd University of Petroleum and Minerals"
+        ],
+        "name": "Ali Raza",
+        "orcid": "https://orcid.org/0000-0001-7043-2472"
+      },
+      {
+        "affiliation": [
+          "King Fahd University of Petroleum and Minerals"
+        ],
+        "name": "Shehab Abdulhabib Al-Zaeemi",
+        "orcid": "https://orcid.org/0000-0002-6884-0714"
+      },
+      {
+        "affiliation": [
+          "King Fahd University of Petroleum and Minerals"
+        ],
+        "name": "Mohammed A. Al-Sharafi",
+        "orcid": "https://orcid.org/0000-0003-0726-6031"
+      },
+      {
+        "affiliation": [
+          "King Fahd University of Petroleum and Minerals",
+          "King Fahd University of Petroleum and Minerals"
+        ],
+        "name": "Mousa Albashrawi",
+        "orcid": "https://orcid.org/0000-0002-6269-1658"
+      },
+      {
+        "affiliation": [
+          "King Fahd University of Petroleum and Minerals",
+          "King Fahd University of Petroleum and Minerals",
+          "King Fahd University of Petroleum and Minerals"
+        ],
+        "name": "Yogesh K. Dwivedi",
+        "orcid": "https://orcid.org/0000-0002-5547-9990"
+      },
+      {
+        "affiliation": [
+          "Sungkyunkwan University"
+        ],
+        "name": "Inyoung Chae",
+        "orcid": "https://orcid.org/0000-0002-7652-6899"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-24",
+    "doi": "10.1080/0144929x.2026.2726454",
+    "domain_score": 4.0,
+    "id": 31555,
+    "ingested_at": "2026-09-25T06:55:36.915141",
+    "issue": null,
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:17.773548",
+    "title": "A big data and machine learning-based approach to theorising consumers’ continuance intentions to use digital wallets",
+    "title_zh": "基于大数据与机器学习的数字钱包消费者持续使用意愿理论化方法",
+    "tldr": "基于大数据与机器学习方法,理论化消费者对数字钱包的持续使用意愿。整合技术接受与持续使用相关理论变量,利用大规模数据样本与ML算法识别驱动持续使用的关键前因,构建并检验消费者继续使用数字钱包的形成机制与理论模型。",
+    "topic_tags": [
+      "消费者行为",
+      "AI 采用",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2726454",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,
@@ -22410,6 +23066,41 @@
     "url": "https://doi.org/10.1109/thms.2024.3488559",
     "volume": "55",
     "year": 2025
+  },
+  {
+    "abstract": "AbstractBy using scenarios based on moral dilemmas, Gill (2020) found that when consumers are riding in an autonomous vehicle (AV), they are more willing to harm a pedestrian than when they, themselves, are driving a regular car. By taking a first-person perspective, in contrast to most prior research that has taken a third-person perspective, the problem is framed in a personal way that allows identification of a mechanism of responsibility attribution. In this commentary, a generalized framework is developed in which we can locate the work of Gill (2020), as well as prior research that uses moral dilemmas, to understand how consumers believe that AVs should respond when faced with competing life-and-death alternatives. The framework shows the distinct positions that research to date has adopted, points out gaps in research, and suggests a family of four research agendas that can be pursued going forward, driven in large part by the perspective taken to the moral dilemma. Research employing these different perspectives, including the unresearched problem of taking the perspective of the object, holds promise for using moral dilemmas for enabling our understanding of consumer experience and consumer–object relationships with AVs.",
+    "ai_reason": "自动驾驶道德困境消费者视角，AV含AI但非核心",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Thomas P Novak"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Denit Trust Distinguished Scholar and Professor of Marketing at The George Washington University School of Business, Washington, DC 20052, USA"
+        ],
+        "name": "Thomas P Novak",
+        "orcid": null
+      }
+    ],
+    "cited_by": 20,
+    "date": "2020-05-15",
+    "doi": "10.1093/jcr/ucaa024",
+    "domain_score": 4.0,
+    "id": 31595,
+    "ingested_at": "2026-09-25T06:55:38.298734",
+    "issue": "2",
+    "journal": "JCR",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:37.755570",
+    "title": "A Generalized Framework for Moral Dilemmas Involving Autonomous Vehicles: A Commentary on Gill",
+    "title_zh": "自主车辆道德困境的一般化框架：对Gill的评述",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1093/jcr/ucaa024",
+    "volume": "47",
+    "year": 2020
   },
   {
     "abstract": "Abstract\n               Self-disclosure in human–chatbot relationship (HCR) formation has attracted substantial interest. According to social penetration theory, self-disclosure varies in breadth and depth and is influenced by perceived rewards and costs. While previous research has addressed self-disclosure in the context of chatbots, little is known about users' qualitative understanding of such self-disclosure and how self-disclosure develops in HCR. To close this gap, we conducted a 12-week qualitative longitudinal study (n = 28) with biweekly questionnaire-based check-ins. Our results show that while HCRs display substantial conversational breadth, with topics spanning from emotional issues to everyday activities, this may be reduced as the HCR matures. Our results also motivate a nuanced understanding of conversational depth, where even conversations about daily activities or play and fantasy can be experienced as personal or intimate. Finally, our analysis demonstrates that conversational depth can develop in at least four ways, influenced by perceived rewards and costs. Theoretical and practical implications are discussed.",
@@ -32199,6 +32890,60 @@
     "year": 2025
   },
   {
+    "abstract": null,
+    "ai_reason": "AI辅助写作对母语/非母语写作者的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Inyoung Shin",
+      "Hyesun Choung",
+      "Mina Choi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Inyoung Shin",
+        "orcid": "https://orcid.org/0000-0002-8949-9930"
+      },
+      {
+        "affiliation": [],
+        "name": "Hyesun Choung",
+        "orcid": "https://orcid.org/0000-0001-9464-0399"
+      },
+      {
+        "affiliation": [],
+        "name": "Mina Choi",
+        "orcid": "https://orcid.org/0000-0002-9947-5035"
+      }
+    ],
+    "cited_by": 2,
+    "date": "2026-04",
+    "doi": "10.1016/j.chb.2025.108897",
+    "domain_score": 4.0,
+    "id": 31435,
+    "ingested_at": "2026-09-25T06:55:32.715134",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:15.183075",
+    "title": "Bridging or broadening Gaps? AI-Assisted professional writing among native and non-native English Writers",
+    "title_zh": null,
+    "tldr": "研究AI辅助专业写作对母语与非母语英语写作者产生的差异化影响。基于标题推断：探讨AI写作工具究竟是缩小了不同语言背景写作者之间的能力差距，还是反而拉大了鸿沟，及其对公平性、生产力的潜在影响。",
+    "topic_tags": [
+      "人机协作",
+      "AI 采用",
+      "可访问性",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2025.108897",
+    "volume": "177",
+    "year": 2026
+  },
+  {
     "abstract": "As artificial intelligence (AI)-chatbots mimic human-like communication, they are able to reshape customer-business interactions. Due to a lack of user trust, their adoption falls below expectations. This study encompasses the dual-pathway model of trust and discovers how human-like features (empathetic response, intelligence, social presence, interactivity) impact users’ trust via anthropomorphic perceptions (affective route) and how system features (usefulness, service quality, ease of use) contribute to trust via the cognitive route. Overall, forty English-language publications reporting correlation coefficients (or convertible statistics) and sample sizes published till December 2024 were identified from Scopus, EBSCO, and ProQuest. Their meta-analysis confirms the positive effects of system features on trust and chatbot features on anthropomorphism, which further enhances trust. Prior studies have not addressed cultural heterogeneity in AI-chatbot research due to limited geographical scope. This study introduces Eastern/Western cultures, individualism, and uncertainty avoidance as the moderating variables. Results reveal the stronger effect of perceived usefulness on trust and social presence on anthropomorphism in Western cultures. Also, anthropomorphism has a greater influence on trust in Eastern cultures. The positive relationship between anthropomorphism and trust is weakened as individualism increases. Also, as uncertainty avoidance increases, the positive relationship between perceived ease of use and trust is strengthened.",
     "ai_reason": "AI-chatbot用户信任与采纳研究，含元分析用户数据",
     "ai_score": 5.0,
@@ -32381,6 +33126,58 @@
     "url": "https://doi.org/10.1109/thms.2024.3452411",
     "volume": "54",
     "year": 2024
+  },
+  {
+    "abstract": "Innovations in machine learning are enabling organisational knowledge bases to be automatically generated from working people's activities. The potential for these to shift the ways in which knowledge is produced and shared raises questions about what types of knowledge might be inferred from working people's actions, how these can be used to support work, and what the broader ramifications of this might be. This article draws on findings from studies of (i) collaborative actions, and (ii) knowledge actions, to explore how these actions might (i) inform automatically generated knowledge bases, and (ii) be better supported through technological innovation. We triangulate findings to develop a framework of actions that are performed as part of everyday work, and use this to explore how mining those actions could result in knowledge being explicitly and implicitly contributed to a knowledge base. We draw on these possibilities to highlight implications and considerations for responsible design.",
+    "ai_reason": "ML驱动工作场所知识库,工人视角",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Siân E. Lindley",
+      "Denise J. Wilkins"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Microsoft Research"
+        ],
+        "name": "Siân E. Lindley",
+        "orcid": "https://orcid.org/0000-0001-6841-614X"
+      },
+      {
+        "affiliation": [
+          "Microsoft"
+        ],
+        "name": "Denise J. Wilkins",
+        "orcid": "https://orcid.org/0000-0001-5480-095X"
+      }
+    ],
+    "cited_by": 12,
+    "date": "2023-09-23",
+    "doi": "10.1145/3584947",
+    "domain_score": 4.0,
+    "id": 31465,
+    "ingested_at": "2026-09-25T06:55:33.766088",
+    "issue": "5",
+    "journal": "TOCHI",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:26.551747",
+    "title": "Building Knowledge through Action: Considerations for Machine Learning in the Workplace",
+    "title_zh": "通过行动构建知识：工作场所中机器学习的考量",
+    "tldr": "研究机器学习如何从工作场所中员工的协作行为与知识行为自动构建组织知识库。通过对两类行为的三角验证，提出日常工作行为框架，探讨挖掘工作行为中的显性与隐性知识的路径，并讨论负责任设计的含义与考量。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "AI治理",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1145/3584947",
+    "volume": "30",
+    "year": 2023
   },
   {
     "abstract": null,
@@ -34707,6 +35504,71 @@
     "url": "https://doi.org/10.1080/0144929x.2023.2295032",
     "volume": "44",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "与儿童共同设计AI学习体验，HCI/参与式设计",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "人机交互"
+    ],
+    "authors": [
+      "Xiaofei Zhou",
+      "Yunfan Gong",
+      "Yushan Zhou",
+      "Yufei Jiang",
+      "Zhen Bai"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Xiaofei Zhou",
+        "orcid": "https://orcid.org/0000-0002-0802-0722"
+      },
+      {
+        "affiliation": [],
+        "name": "Yunfan Gong",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yushan Zhou",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yufei Jiang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Zhen Bai",
+        "orcid": "https://orcid.org/0000-0002-3258-0228"
+      }
+    ],
+    "cited_by": 10,
+    "date": "2025-05",
+    "doi": "10.1016/j.ijhcs.2025.103462",
+    "domain_score": 5.0,
+    "id": 31509,
+    "ingested_at": "2026-09-25T06:55:35.301441",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:15.247861",
+    "title": "Co-design of analogical and embodied representations with children for child-centered AI learning experiences",
+    "title_zh": "与儿童协同设计类比与具身表征：面向以儿童为中心的AI学习体验",
+    "tldr": "通过与儿童共同设计类比与具身化表征，构建以儿童为中心的AI学习体验，让儿童在参与式设计过程中理解AI概念，形成适配其认知特点的AI教育方式。",
+    "topic_tags": [
+      "儿童/老人/无障碍",
+      "服务设计",
+      "人机交互(HCI)",
+      "AI 采用"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2025.103462",
+    "volume": "199",
+    "year": 2025
   },
   {
     "abstract": "eXplainable AI (XAI) involves two intertwined but separate challenges: the development of techniques to extract explanations from black-box AI models and the way such explanations are presented to users, i.e., the explanation user interface. Despite its importance, the second aspect has received limited attention so far in the literature. Effective AI explanation interfaces are fundamental for allowing human decision-makers to take advantage and oversee high-risk AI systems effectively. Following an iterative design approach, we present the first cycle of prototyping-testing-redesigning of an explainable AI technique and its explanation user interface for clinical Decision Support Systems (DSS). We first present an XAI technique that meets the technical requirements of the healthcare domain: sequential, ontology-linked patient data, and multi-label classification tasks. We demonstrate its applicability to explain a clinical DSS, and we design a first prototype of an explanation user interface. Next, we test such a prototype with healthcare providers and collect their feedback with a two-fold outcome: First, we obtain evidence that explanations increase users’ trust in the XAI system, and second, we obtain useful insights on the perceived deficiencies of their interaction with the system, so we can re-design a better, more human-centered explanation interface.",
@@ -37372,6 +38234,58 @@
     "url": "https://doi.org/10.1080/0144929x.2026.2705877",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "We investigate the potential of leveraging the code-generating capabilities of Large Language Models (LLMs) to support exploratory visual analysis (EVA) via conversational user interfaces (CUIs). We developed a technology probe that was deployed through two studies with a total of 50 data workers to explore the structure and flow of visual analytic conversations during EVA. We analyzed conversations from both studies using thematic analysis and derived a state transition diagram summarizing the conversational flow between four states of participant utterances (\n                    \n                      Analytic Tasks\n                    \n                    ,\n                    \n                      Editing Operations\n                    \n                    ,\n                    \n                      Elaborations and Enrichments\n                    \n                    , and\n                    \n                      Directive Commands\n                    \n                    ) and two states of Generative AI (GenAI) agent responses (visualization, text). We describe the capabilities and limitations of GenAI agents according to each state and transitions between states as three co-occurring loops: analysis elaboration, refinement, and explanation. We discuss our findings as future research trajectories to improve the experiences of data workers using GenAI. The code and data are available at\n                    https://osf.io/6wxpa\n                    .",
+    "ai_reason": "核心是GenAI代理，50人用户研究+主题分析",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "对话式 AI",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Matt-Heun Hong",
+      "Anamaria Crisan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "The University of North Carolina at Chapel Hill, Chapel Hill, North Carolina, USA"
+        ],
+        "name": "Matt-Heun Hong",
+        "orcid": "https://orcid.org/0000-0003-3169-9654"
+      },
+      {
+        "affiliation": [
+          "Cheriton School of Computer Science, University of Waterloo, Waterloo, Ontario, Canada"
+        ],
+        "name": "Anamaria Crisan",
+        "orcid": "https://orcid.org/0000-0003-3445-3414"
+      }
+    ],
+    "cited_by": 6,
+    "date": "2025-12-10",
+    "doi": "10.1145/3744750",
+    "domain_score": 5.0,
+    "id": 31533,
+    "ingested_at": "2026-09-25T06:55:36.141171",
+    "issue": "4",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:15.245215",
+    "title": "Data Has Entered the Chat: How Data Workers Conduct Exploratory Visual Analytic Conversations with GenAI Agents",
+    "title_zh": "数据已入对话：数据工作者与GenAI代理的探索性可视化分析",
+    "tldr": "研究用LLM代码生成能力支持探索性可视化分析的对话式交互。开发技术探针，对50名数据工作者开展两项研究，通过主题分析归纳出用户话语（分析任务、编辑操作、细化补充、指令命令）与GenAI响应（可视化、文本）的状态转换图，识别出分析深化、修正、解释三个共现循环，讨论GenAI代理在各阶段的能力与局限及未来改进方向。",
+    "topic_tags": [
+      "可视化",
+      "人机交互(HCI)",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1145/3744750",
+    "volume": "15",
+    "year": 2025
   },
   {
     "abstract": null,
@@ -43470,6 +44384,70 @@
   },
   {
     "abstract": null,
+    "ai_reason": "触觉情感检测，HCI核心议题且涉及AI分类",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "情感识别",
+      "多模态交互"
+    ],
+    "authors": [
+      "Surjya Ghosh",
+      "Kaustubh Hiware",
+      "Niloy Ganguly",
+      "Bivas Mitra",
+      "Pradipta De"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Surjya Ghosh",
+        "orcid": "https://orcid.org/0000-0002-0226-0733"
+      },
+      {
+        "affiliation": [],
+        "name": "Kaustubh Hiware",
+        "orcid": "https://orcid.org/0000-0003-3301-1016"
+      },
+      {
+        "affiliation": [],
+        "name": "Niloy Ganguly",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Bivas Mitra",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Pradipta De",
+        "orcid": null
+      }
+    ],
+    "cited_by": 56,
+    "date": "2019-10",
+    "doi": "10.1016/j.ijhcs.2019.04.005",
+    "domain_score": 4.0,
+    "id": 31503,
+    "ingested_at": "2026-09-25T06:55:35.094728",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:38.876620",
+    "title": "Emotion detection from touch interactions during text entry on smartphones",
+    "title_zh": "智能手机文本输入中触摸交互的情绪检测",
+    "tldr": "研究在智能手机文本输入过程中，通过用户触摸交互行为（如按键压力、节奏、滑动轨迹等）被动检测其情绪状态。探索日常打字行为中所蕴含的情感信号及其识别方法，旨在实现无干扰、持续式的情绪感知，为情感计算与情境感知的人机交互提供技术基础。",
+    "topic_tags": [
+      "情感计算",
+      "人机交互(HCI)",
+      "用户体验(UX)"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2019.04.005",
+    "volume": "130",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "情感AI/聊天机器人为研究核心，消费者满意度和口碑属CX研究",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -47755,6 +48733,63 @@
     "year": 2026
   },
   {
+    "abstract": "Given that consumers often exhibit resistance toward algorithmic systems, firms face challenges in encouraging engagement with voicebots. In this paper, we find that users’ engagement with voicebots may be enhanced by endowing these tools with non-standard accents that deviate from “standard” pronunciation. Across a range of accents, languages, genders, and contexts, our data suggest that voicebots communicating with non-standard accents make the concept of human diversity salient in the users’ minds. As a result, voicebots communicating with non-standard accents are more readily anthropomorphized. This effect translates into greater preference for the non-standard accented voicebot in customer service settings, stronger support for startups leveraging accented vs. unaccented voicebots, higher willingness to pay for monthly subscriptions, and a greater likelihood of opting in to receive future updates and communications. Consistent with our theory, however, these effects do not hold when the anthropomorphism effect is either overridden by other cues or is undesirable for the consumer. Together, this work highlights the benefits of accented speech in improving human-AI interactions. We also hope that it sparks further investigation into factors that make technology more readily accepted by consumers.",
+    "ai_reason": "语音助手（AI）口音对用户参与度和拟人化影响",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Hesam Ghasemi",
+      "Amir Sepehri",
+      "Cait Lamberton"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Hesam Ghasemi",
+        "orcid": "https://orcid.org/0009-0000-1447-2816",
+        "position": "first"
+      },
+      {
+        "affiliation": [],
+        "name": "Amir Sepehri",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [],
+        "name": "Cait Lamberton",
+        "orcid": null,
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-23",
+    "doi": "10.1177/00222437261494934",
+    "domain_score": 5.0,
+    "id": 31236,
+    "ingested_at": "2026-09-24T07:02:35.298740",
+    "issue": null,
+    "journal": "JMR",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:15.180326",
+    "title": "EXPRESS: The Humanizing Power of Accents in Voicebots: When Accent-Based Humanization Increases User Engagement",
+    "title_zh": null,
+    "tldr": "研究语音机器人使用非标准口音对用户参与度的影响。通过多口音、多语言、多性别的实验发现，非标准口音会激活用户对人类多样性的认知，从而更易被拟人化，进而提升对语音机器人的偏好、订阅支付意愿及后续沟通接受度；但当拟人化效应被其他线索覆盖或不符合用户期望时，该效应消失。研究强调了口音设计在改善人机交互中的潜力。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "消费者行为",
+      "AI 采用",
+      "信任",
+      "客户服务"
+    ],
+    "url": "https://doi.org/10.1177/00222437261494934",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Despite the increasing deployment of virtual streamers in e-commerce livestreaming, their effectiveness remains inconsistent. We explore this issue through the lens of intelligent interactivity, focusing on how and why the interaction effect between responsiveness and response naturalness shapes downstream outcomes in virtual livestreaming. We further test whether the presence of a livestream assistant moderates the effect of responsiveness under low response naturalness. One recall study and five experiments show that virtual streamers’ high responsiveness results in a higher likelihood of purchase intention and livestreaming continuance when response naturalness is high but nonexistent when naturalness is low. This joint effect can be explained by dual social influence processes: mental imagery quality and consumer-virtual streamer identification. Furthermore, the effect of responsiveness on both purchase intention and livestreaming continuance via mental imagery quality is only evident when a human livestream assistant is present in the low-naturalness context. Our findings contribute to the emerging field of virtual livestreaming and digital humans’ interactivity design. We also provide practical insights to e-commerce marketers and virtual streamer developers on how to optimize virtual livestreaming effectiveness.",
     "ai_reason": "AI虚拟主播消费者购买意向实验",
     "ai_score": 4.0,
@@ -49793,7 +50828,11 @@
     "abstract": null,
     "ai_reason": "AI use/loafing核心议题，无摘要，疑为用研",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机协作",
+      "AI助手",
+      "LLM"
+    ],
     "authors": [
       "Yushu Zhou",
       "Tianshu Du",
@@ -49837,8 +50876,12 @@
     "scored_at": "2026-09-23T07:03:18.238427",
     "title": "From AI use to AI-enabled loafing: a reliance-centred account in hybrid intelligence",
     "title_zh": "从AI使用到AI赋能式怠工：混合智能中基于依赖视角的解释",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "论文聚焦混合智能情境中AI使用如何演变为\"AI辅助式磨洋工\"（AI-enabled loafing）现象，即员工因AI接管任务而降低自身投入。基于\"依赖\"视角构建理论框架，解释人类在混合智能团队中过度依赖AI、减少主动认知与协作努力行为的形成机制与边界条件，扩展AI依赖与社会偷懒行为的理论研究。",
+    "topic_tags": [
+      "AI依赖",
+      "人机协作",
+      "AI采用"
+    ],
     "url": "https://doi.org/10.1080/0144929x.2026.2734077",
     "volume": null,
     "year": 2026
@@ -54850,6 +55893,65 @@
     "url": "https://doi.org/10.1109/thms.2023.3268095",
     "volume": "53",
     "year": 2023
+  },
+  {
+    "abstract": "In teams composed of humans, we use trust in others to make decisions, such as what to do next, who to help and who to ask for help. When a team member is artificial, they should also be able to assess whether a human teammate is trustworthy for a certain task. We see trustworthiness as the combination of (1) whether someone will do a task and (2) whether they can do it. With building beliefs in trustworthiness as an ultimate goal, we explore which internal factors (krypta) of the human may play a role (e.g., ability, benevolence, and integrity) in determining trustworthiness, according to existing literature. Furthermore, we investigate which observable metrics (manifesta) an agent may take into account as cues for the human teammate’s krypta in an online 2D grid-world experiment (\n            n\n            = 54). Results suggest that cues of ability, benevolence and integrity influence trustworthiness. However, we observed that trustworthiness is mainly influenced by human’s playing strategy and cost-benefit analysis, which deserves further investigation. This is a first step towards building informed beliefs of human trustworthiness in human-AI teamwork.",
+    "ai_reason": "AI核心议题(人工信任),人机协作实验,用户视角",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机协作",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Carolina Centeio Jorge",
+      "Catholijn M. Jonker",
+      "Myrthe L. Tielman"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Delft University of Technology, The Netherlands"
+        ],
+        "name": "Carolina Centeio Jorge",
+        "orcid": "https://orcid.org/0000-0002-6937-5359"
+      },
+      {
+        "affiliation": [
+          "Delft University of Technology and University of Leiden, The Netherlands"
+        ],
+        "name": "Catholijn M. Jonker",
+        "orcid": "https://orcid.org/0000-0003-4780-7461"
+      },
+      {
+        "affiliation": [
+          "Delft University of Technology, The Netherlands"
+        ],
+        "name": "Myrthe L. Tielman",
+        "orcid": "https://orcid.org/0000-0002-7826-5821"
+      }
+    ],
+    "cited_by": 18,
+    "date": "2024-01-09",
+    "doi": "10.1145/3635475",
+    "domain_score": 5.0,
+    "id": 31532,
+    "ingested_at": "2026-09-25T06:55:36.107582",
+    "issue": "1",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:26.550216",
+    "title": "How Should an AI Trust its Human Teammates? Exploring Possible Cues of Artificial Trust",
+    "title_zh": "AI应如何信任其人类队友？：探索人工信任的潜在线索",
+    "tldr": "研究人机团队中AI如何判断人类队友的可信度，将可信度分解为意愿与能力两个维度，结合文献梳理内部因素（能力、善意、正直）与可观察线索，在2D网格世界实验（n=54）中验证三者均影响信任，但策略与成本收益分析起主导作用，为人机协作中AI建立知情信任信念提供初步基础。",
+    "topic_tags": [
+      "人机协作",
+      "信任",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1145/3635475",
+    "volume": "14",
+    "year": 2024
   },
   {
     "abstract": null,
@@ -66382,6 +67484,58 @@
   },
   {
     "abstract": null,
+    "ai_reason": "人-智能体合作，AI是核心变量，HCI研究",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机协作"
+    ],
+    "authors": [
+      "Erin K. Chiou",
+      "John D. Lee",
+      "Tianshuo Su"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Erin K. Chiou",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "John D. Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Tianshuo Su",
+        "orcid": null
+      }
+    ],
+    "cited_by": 22,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.012",
+    "domain_score": 3.0,
+    "id": 31414,
+    "ingested_at": "2026-09-25T06:55:31.996873",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:39.134147",
+    "title": "Negotiated and reciprocal exchange structures in human-agent cooperation",
+    "title_zh": "人机协作中协商与互惠的交换结构",
+    "tldr": "研究人类与智能体合作中两种典型的交换结构——协商式与互惠式。探讨在人与AI代理协作过程中，双方如何通过不同类型的资源与回报交换建立合作关系，分析两种结构在信任建立、任务分配和持续协作方面的特征与差异，为人机协作机制的设计与理论建构提供框架。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.012",
+    "volume": "90",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "涉及推荐算法与用户神经情感反应",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -68516,6 +69670,53 @@
       "个性化"
     ],
     "url": "https://doi.org/10.1109/thms.2026.3718891",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI语音代理个性化对信任与自我一致性影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Yun Fu",
+      "Martin Meißner"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yun Fu",
+        "orcid": "https://orcid.org/0009-0009-5565-6860"
+      },
+      {
+        "affiliation": [],
+        "name": "Martin Meißner",
+        "orcid": "https://orcid.org/0000-0002-3574-4283"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09",
+    "doi": "10.1016/j.chb.2026.109202",
+    "domain_score": 5.0,
+    "id": 31436,
+    "ingested_at": "2026-09-25T06:55:32.749350",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:15.182318",
+    "title": "Personalizing AI Voice Agents: How Voice Agents with Similar Voices Shape Trust, Self-Congruency, and Behavior",
+    "title_zh": null,
+    "tldr": "研究AI语音助手的声音与用户自身声音相似时，如何影响用户的信任感、自我一致性(self-congruency)及后续使用行为。基于标题推断：探讨语音个性化设计通过自我匹配机制塑造用户对语音智能体的态度与互动意愿。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "信任",
+      "个性化",
+      "用户体验(UX)"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109202",
     "volume": null,
     "year": 2026
   },
@@ -70951,7 +72152,7 @@
     "year": 2024
   },
   {
-    "abstract": "ABSTRACT Growing numbers of consumers are turning to Generative AI (GenAI) for mental health support, yet the psychological engagement processes underlying consumer–GenAI therapy interactions remain insufficiently understood. This gap limits our ability to explain why consumer experiences diverge, particularly in emotionally sensitive contexts requiring high levels of engagement. To address that, we examine why these experiences vary and what mechanisms contribute to these conflicting outcomes. Drawing on 30 semi‐structured interviews, we develop an integrative framework outlining an engagement process between consumers and GenAI therapy. Grounded in cognitive appraisal theory, the framework shows that GenAI operates simultaneously as a functional service and a relational agent, meaning that consumer decisions are shaped by both utilitarian and relational evaluations. By explaining how consumers appraise, reappraise, and cope with GenAI therapy, the framework clarifies the mechanisms underlying divergent outcomes and offers insights for identifying potential risks in GenAI mental health services.",
+    "abstract": "ABSTRACT\n                  Growing numbers of consumers are turning to Generative AI (GenAI) for mental health support, yet the psychological engagement processes underlying consumer–GenAI therapy interactions remain insufficiently understood. This gap limits our ability to explain why consumer experiences diverge, particularly in emotionally sensitive contexts requiring high levels of engagement. To address that, we examine why these experiences vary and what mechanisms contribute to these conflicting outcomes. Drawing on 30 semi‐structured interviews, we develop an integrative framework outlining an engagement process between consumers and GenAI therapy. Grounded in cognitive appraisal theory, the framework shows that GenAI operates simultaneously as a functional service and a relational agent, meaning that consumer decisions are shaped by both utilitarian and relational evaluations. By explaining how consumers appraise, reappraise, and cope with GenAI therapy, the framework clarifies the mechanisms underlying divergent outcomes and offers insights for identifying potential risks in GenAI mental health services.",
     "ai_reason": "核心即GenAI心理治疗访谈研究，含用户访谈方法",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -71208,6 +72409,78 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2026.108930",
     "volume": "179",
+    "year": 2026
+  },
+  {
+    "abstract": "A large-scale field experiment shows AI-enabled returnless partial refunds increase customer value and reduce operating costs while raising strategic-behavior risks.",
+    "ai_reason": "AI驱动的退货退款田野实验，衡量客户价值",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 客服",
+      "AI 采用"
+    ],
+    "authors": [
+      "Lu Fang",
+      "Chunhua Wu",
+      "Zhe Yuan",
+      "Kaifu Zhang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Zhejiang Lab",
+          "Zhejiang University of Finance and Economics"
+        ],
+        "name": "Lu Fang",
+        "orcid": "https://orcid.org/0009-0000-4184-4929",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "University of British Columbia"
+        ],
+        "name": "Chunhua Wu",
+        "orcid": "https://orcid.org/0000-0001-6445-8000",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Zhejiang University of Finance and Economics"
+        ],
+        "name": "Zhe Yuan",
+        "orcid": "https://orcid.org/0000-0002-7502-9102",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Partners In Care",
+          "GEO Partner (Switzerland)"
+        ],
+        "name": "Kaifu Zhang",
+        "orcid": null,
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-23",
+    "doi": "10.1287/mksc.2025.0618",
+    "domain_score": 4.0,
+    "id": 31251,
+    "ingested_at": "2026-09-24T07:02:35.823349",
+    "issue": null,
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:15.179177",
+    "title": "Returnless Partial Refunds: A Large-Scale Field Experiment in E-Commerce",
+    "title_zh": "无需退货的部分退款：电子商务领域的大规模实地实验",
+    "tldr": "大规模现场实验检验AI驱动的无退货部分退款策略效果。结果显示该策略同时提升客户价值并降低运营成本，但也带来消费者战略性退货等行为风险，为电商企业设计退款政策与AI辅助决策提供实证依据与权衡框架。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "AI 采用"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2025.0618",
+    "volume": null,
     "year": 2026
   },
   {
@@ -79177,6 +80450,64 @@
   },
   {
     "abstract": null,
+    "ai_reason": "算法分配行为及人际感知,HCI/公平",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "人机交互"
+    ],
+    "authors": [
+      "Houston Claure",
+      "Seyun Kim",
+      "René F. Kizilcec",
+      "Malte Jung"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Houston Claure",
+        "orcid": "https://orcid.org/0000-0002-6292-4706"
+      },
+      {
+        "affiliation": [],
+        "name": "Seyun Kim",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "René F. Kizilcec",
+        "orcid": "https://orcid.org/0000-0001-6283-5546"
+      },
+      {
+        "affiliation": [],
+        "name": "Malte Jung",
+        "orcid": "https://orcid.org/0000-0001-9359-7122"
+      }
+    ],
+    "cited_by": 19,
+    "date": "2023-09",
+    "doi": "10.1016/j.chb.2022.107628",
+    "domain_score": 4.0,
+    "id": 31427,
+    "ingested_at": "2026-09-25T06:55:32.439919",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:26.552128",
+    "title": "The social consequences of Machine Allocation Behavior: Fairness, interpersonal perceptions and performance",
+    "title_zh": "机器分配行为的社会后果：公平性、人际感知与绩效",
+    "tldr": "探讨算法/机器在资源或任务分配中的分配行为所产生的社会后果，分析其公平性如何影响用户对相关人际关系（如决策者、同事）的感知以及团队或个体的工作表现。",
+    "topic_tags": [
+      "信任",
+      "AI治理",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2022.107628",
+    "volume": "146",
+    "year": 2023
+  },
+  {
+    "abstract": null,
     "ai_reason": "研究消费者-AI互动中的异化、拟人化与身份认同",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -85771,6 +87102,89 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2023.107788",
     "volume": "145",
+    "year": 2023
+  },
+  {
+    "abstract": "Data scientists require rich mental models of how AI systems behave to effectively train, debug, and work with them. Despite the prevalence of AI analysis tools, there is no general theory describing how people make sense of what their models have learned. We frame this process as a form of sensemaking and derive a framework describing how data scientists develop mental models of AI behavior. To evaluate the framework, we show how existing AI analysis tools fit into this sensemaking process and use it to design\n            AIFinnity\n            , a system for analyzing image-and-text models. Lastly, we explored how data scientists use a tool developed with the framework through a think-aloud study with 10 data scientists tasked with using\n            AIFinnity\n            to pick an image captioning model. We found that\n            AIFinnity\n            ’s sensemaking workflow reflected participants’ mental processes and enabled them to discover and validate diverse AI behaviors.",
+    "ai_reason": "AI模型行为解读,10人出声思考用研",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释AI",
+      "多模态",
+      "人机交互"
+    ],
+    "authors": [
+      "Ángel Alexander Cabrera",
+      "Marco Tulio Ribeiro",
+      "Bongshin Lee",
+      "Robert Deline",
+      "Adam Perer"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Carnegie Mellon University, Pittsburgh, PA"
+        ],
+        "name": "Ángel Alexander Cabrera",
+        "orcid": "https://orcid.org/0000-0003-0348-3362"
+      },
+      {
+        "affiliation": [
+          "Microsoft Research, Redmond, Washington"
+        ],
+        "name": "Marco Tulio Ribeiro",
+        "orcid": "https://orcid.org/0000-0002-3301-1297"
+      },
+      {
+        "affiliation": [
+          "Microsoft Research, Redmond, Washington"
+        ],
+        "name": "Bongshin Lee",
+        "orcid": "https://orcid.org/0000-0002-4217-627X"
+      },
+      {
+        "affiliation": [
+          "Microsoft Research, Redmond, Washington"
+        ],
+        "name": "Robert Deline",
+        "orcid": "https://orcid.org/0000-0001-8885-8367"
+      },
+      {
+        "affiliation": [
+          "Carnegie Mellon University, Pittsburgh, PA"
+        ],
+        "name": "Adam Perer",
+        "orcid": "https://orcid.org/0000-0002-8369-3847"
+      },
+      {
+        "affiliation": [
+          "Microsoft Research, Redmond, Washington"
+        ],
+        "name": "Steven M. Drucker",
+        "orcid": "https://orcid.org/0000-0002-5022-9343"
+      }
+    ],
+    "cited_by": 40,
+    "date": "2023-02-28",
+    "doi": "10.1145/3542921",
+    "domain_score": 5.0,
+    "id": 31463,
+    "ingested_at": "2026-09-25T06:55:33.698223",
+    "issue": "1",
+    "journal": "TOCHI",
+    "pdf_url": null,
+    "scored_at": "2026-09-25T06:56:26.554834",
+    "title": "What Did My AI Learn? How Data Scientists Make Sense of Model Behavior",
+    "title_zh": "我的AI学到了什么？数据科学家如何理解模型行为",
+    "tldr": "研究数据科学家如何理解AI模型行为，将该过程框定为意义建构（sensemaking），提出数据科学家构建AI行为心智模型的理论框架。基于该框架设计AIFinnity系统（用于分析图文多模态模型），通过10名数据科学家的有声思考研究验证其工作流能帮助发现并验证多样化的AI行为。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互(HCI)",
+      "可视化",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1145/3542921",
+    "volume": "30",
     "year": 2023
   },
   {

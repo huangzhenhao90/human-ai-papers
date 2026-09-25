@@ -1,0 +1,104 @@
+{
+  "abstract": "Customer experience (CX) agents use tools and large language models to address customer requests and guide conversational interactions with an organization's products. Improving these agents, especially in regulated industries, is difficult: they must detect intent, follow complex operational policies and use tools reliably. Manual end-to-end testing offers limited coverage, while live experiments expose customers to failures that can erode trust.   We present a hypothesis-driven simulation workflow for screening candidate CX agents before deployment. Synthetic customers react to agent responses and simulated tool outputs enable multi-step agentic workflows without invoking production backends. We use the Snowglobe simulator on Nubank's Card Delivery agent and its expanded successor, Card Management - Nubank's highest-volume chat-support agent in Brazil. Across 4 deployed versions, simulated and production version-level binary evaluator scores show high correlation. Simulation-guided iteration increased transactional net promoter score (tNPS) by 36.69 points in a live A/B test. We also screened open-weight configurations in over 16,000 simulated conversations. In a subsequent live A/B test, the selected model increased self-service rate (SSR) by 8.82 percentage points to the highest level observed at Nubank, with no statistically significant change in tNPS. Simulation made broad exploration of models, reasoning settings, and prompts feasible without customer exposure, enabling production improvements that would have been impractical to pursue through live experimentation alone.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式AI",
+    "智能体/Agent",
+    "GenAI"
+  ],
+  "arxiv_id": "2609.30137",
+  "authors": [
+    "Edesio Alcoba",
+    "Kevin Rossell",
+    "Aman Gupta",
+    "Shao Tang",
+    "Jiwoo Hong"
+  ],
+  "authors_full": [
+    {
+      "name": "Edesio Alcoba"
+    },
+    {
+      "name": "Kevin Rossell"
+    },
+    {
+      "name": "Aman Gupta"
+    },
+    {
+      "name": "Shao Tang"
+    },
+    {
+      "name": "Jiwoo Hong"
+    },
+    {
+      "name": "Pabel Carrillo-Mendoza"
+    },
+    {
+      "name": "Wanderson Conceição Ferreira"
+    },
+    {
+      "name": "Alvaro Tedeschi"
+    },
+    {
+      "name": "Zayd Simjee"
+    },
+    {
+      "name": "Shreya Rajpal"
+    },
+    {
+      "name": "Bruno Finardi Hime"
+    },
+    {
+      "name": "Christian Sousa"
+    },
+    {
+      "name": "Luis Moneda"
+    },
+    {
+      "name": "Herbert Fei"
+    },
+    {
+      "name": "Daniel Silva"
+    },
+    {
+      "name": "Rohan Ramanath"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心为LLM驱动的CX智能体，但用合成用户而非真人研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "面向受监管行业的客户体验AI代理在部署前难以充分测试的问题，提出假设驱动的仿真筛选工作流。利用合成客户与模拟工具输出支持多步骤智能体流程，避免触达真实后端。基于Snowglobe仿真器在Nubank卡片投递及其高量级后继卡片管理代理上验证：4个版本中仿真与生产评分高度相关；仿真引导迭代在A/B测试中将交易性NPS提升36.69分；在逾16000轮仿真对话中筛选开源模型配置后，所选模型使自助服务率提升8.82个百分点至历史最高，tNPS无显著变化。仿真使模型、推理设置与提示词的广泛探索在无客户风险下可行。",
+      "topic_tags": [
+        "客户体验(CX)",
+        "对话式AI",
+        "AI治理",
+        "AI采用"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-24",
+  "doi": null,
+  "id": "p_qZJdWGMaV21GWy1r",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.30137v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 31778,
+      "revision": "dd14cf8e1365ee4881c5199ab8575a97282d3f44"
+    }
+  ],
+  "title": "Screen Before You Serve: Simulation for Production Customer Experience AI Agents at 140M Scale",
+  "title_zh": "部署前先模拟：1.4亿规模生产级客户体验AI智能体",
+  "unified_ingested_at": "2026-09-25T07:17:06.576256Z",
+  "url": "https://arxiv.org/abs/2609.30137v1",
+  "volume": null,
+  "year": 2026
+}

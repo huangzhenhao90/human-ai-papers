@@ -1,0 +1,93 @@
+{
+  "abstract": "Faithful user simulation is fundamental to building, evaluating, and improving interactive AI at scale. However, plausible individual responses do not ensure that simulated users reproduce the intent evolution and outcomes observed in real interactions. We propose TRACER, a multi-turn user simulator that explicitly models users' evolving intent and learns to align simulated behavior with real interaction trajectories. TRACER is trained in two stages: supervised fine-tuning on real user dialogues, followed by multi-turn reinforcement learning. The RL stage combines hierarchical outcome- and trajectory-level rewards with deviation-aware advantage modulation, jointly mitigating reward sparsity and credit assignment in long dialogues. On real customer-service sessions organized into reference cohorts, TRACER-7B surpasses the strongest baseline by 11.4 conversion F1, while also achieving the lowest group-level conversion-rate error and semantic trajectory distance, and generalizing to out-of-distribution scenarios. Human Turing tests yield identification accuracy close to chance, supporting the perceived naturalness of generated conversations. Building on this simulator, we further introduce the Dynamic Marketing Benchmark, which jointly evaluates persuasion effectiveness and response quality of LLMs through simulated interactions, revealing that higher response quality does not necessarily correspond to higher conversion rates.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "智能体/Agent",
+    "对话式 AI",
+    "人机交互"
+  ],
+  "arxiv_id": "2609.28690",
+  "authors": [
+    "Geng Chen",
+    "Ruotong Pan",
+    "Zhirui Yang",
+    "Qiqi He",
+    "Jiawei Chen"
+  ],
+  "authors_full": [
+    {
+      "name": "Geng Chen"
+    },
+    {
+      "name": "Ruotong Pan"
+    },
+    {
+      "name": "Zhirui Yang"
+    },
+    {
+      "name": "Qiqi He"
+    },
+    {
+      "name": "Jiawei Chen"
+    },
+    {
+      "name": "Zhang Yunfei"
+    },
+    {
+      "name": "Chongyuan Chen"
+    },
+    {
+      "name": "Minxuan Lv"
+    },
+    {
+      "name": "Zheng Yang"
+    },
+    {
+      "name": "Win-Bin Huang"
+    },
+    {
+      "name": "Xiangyu Wu"
+    },
+    {
+      "name": "Wenwu Ou"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用户模拟器核心AI议题,涉及AI评估方法但用户为模拟对象",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究多轮用户模拟器的行为保真度问题。提出TRACER，采用有监督微调与多轮强化学习两阶段训练，结合分层结果与轨迹级奖励及偏差感知优势调制，缓解奖励稀疏与长对话信用分配难题；在真实客服会话上转化F1较最强基线提升11.4，人类图灵测试接近随机。进而构建动态营销基准，揭示回复质量与转化率不必然正相关。",
+      "topic_tags": [
+        "对话式 AI",
+        "用户研究方法",
+        "营销",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-23",
+  "doi": null,
+  "id": "p_8lB7sKCNEfV3Y0ww",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.28690v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 31779,
+      "revision": "dd14cf8e1365ee4881c5199ab8575a97282d3f44"
+    }
+  ],
+  "title": "Beyond Surface Style: Aligning Multi-Turn User Simulators with Behavioral Consistency",
+  "title_zh": "超越表面风格：多轮用户模拟器的行为一致性对齐",
+  "unified_ingested_at": "2026-09-25T07:17:06.576256Z",
+  "url": "https://arxiv.org/abs/2609.28690v1",
+  "volume": null,
+  "year": 2026
+}
