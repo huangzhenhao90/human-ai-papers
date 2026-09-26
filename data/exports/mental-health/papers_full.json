@@ -1,5 +1,150 @@
 [
   {
+    "abstract": "Abstract Background Mental health clinical notes contain decision-critical information often absent from structured electronic health record fields. Large language models (LLMs) can extract clinically relevant signals from narrative text; however, variability in output format, limited reproducibility, and inconsistent evaluation remain barriers to clinical deployment. Despite rapid advances in LLM-based information extraction, clear and reproducible guidance for interdisciplinary clinical teams is limited. Objective This tutorial aims to present a structured workflow for zero-shot information extraction from mental health clinical notes using locally deployed open-source LLMs. It aims to reduce barriers for clinicians and researchers with limited familiarity with natural language processing (NLP) or LLM-based pipelines. Each stage includes key decision points and examples. The workflow is illustrated on two tasks using synthetic notes: (1) detection of self-injurious thoughts and behaviors (SITB) in pediatric emergency department (ED) notes and (2) antipsychotic medication nonadherence detection in outpatient notes, using schema-constrained outputs and standardized evaluation. Methods We describe a five-stage zero-shot LLM pipeline: (1) infrastructure setup with local deployment via Ollama to prevent protected health information (PHI) transmission; (2) task definition specifying the clinical construct, output format, and evaluation; (3) dataset preparation using synthetic notes; (4) iterative prompt development using a hold-out development set with binary and Likert scale outputs constrained via JSON schemas; and (5) output parsing, normalization, and validation. We generated 300 synthetic notes per task using separate LLMs for generation and evaluation; 200 notes were used for evaluation, and 100 notes (50 positive and 50 negative) were used as a prompt-development set and excluded from final metrics. Evaluation used Large Language Model Meta AI (Llama) 3.2 and Llama 3.3 with deterministic decoding (temperature=0). Performance was assessed using accuracy, precision, recall, and F 1 -score; Likert thresholds were optimized using the Youden index with bootstrapped CIs. Results We demonstrated the pipeline’s functionality using 2 example behavioral health detection tasks. Across both examples, the more capable model (Llama 3.3) performed better than the lighter model used earlier in development (Llama 3.2), and we described how the pipeline’s evaluation and error-analysis steps work in practice. These examples also illustrated 2 useful design choices: requiring the model to output in a fixed format reduced errors, and using a graded rating scale, rather than a simple yes/no format, allowed the detection threshold to be adjusted based on clinical risk tolerance. These results are meant to show that the pipeline works as intended, not to serve as a benchmark of real-world accuracy. Conclusions A schema-driven, zero-shot LLM workflow can support reproducible extraction of clinically relevant information from narrative notes. Local deployment enables processing without transmitting PHI to external servers. This tutorial provides a transferable methodology for institutional adaptation and validation prior to clinical use. All prompts, code, and datasets are publicly available via Zenodo (European Organization for Nuclear Research [CERN]).",
+    "ai_reason": "LLM是核心方法，从行为健康临床笔记中提取自杀意念行为和用药依从性信息，技术层面完整，但使用合成数据而非真实临床数据。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai",
+      "nlp"
+    ],
+    "authors": [
+      "Saha Diya",
+      "Juliet Beni Edgcomb"
+    ],
+    "authors_full": [
+      {
+        "name": "Saha Diya"
+      },
+      {
+        "name": "Juliet Beni Edgcomb"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "LLM是核心方法，从行为健康临床笔记中提取自杀意念行为和用药依从性信息，技术层面完整，但使用合成数据而非真实临床数据。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "conceptual",
+      "risk_tags": [
+        "privacy_security"
+      ],
+      "tldr": "展示了基于本地部署LLM的零样本信息提取流程，使用合成笔记验证可行性，旨在为临床团队提供可复现的提取方法。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "bipolar",
+        "screening_assessment",
+        "clinical_patients",
+        "children_adolescents"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-09-24",
+    "doi": "10.2196/97498",
+    "domain_score": 4,
+    "evidence_stage": "conceptual",
+    "ground_truth_quality": "unknown",
+    "id": "W7214149160",
+    "journal": "JMIR Mental Health",
+    "mh_profile": {
+      "ai_reason": "LLM是核心方法，从行为健康临床笔记中提取自杀意念行为和用药依从性信息，技术层面完整，但使用合成数据而非真实临床数据。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "nlp"
+        ],
+        "applications": [
+          "screening_assessment"
+        ],
+        "conditions": [
+          "suicide_self_harm",
+          "bipolar"
+        ],
+        "populations": [
+          "clinical_patients",
+          "children_adolescents"
+        ],
+        "risks": [
+          "privacy_security"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "准确率、精确率、召回率、F1；明确说明非真实世界准确性基准",
+        "sample": "合成生成的儿科急诊和门诊笔记",
+        "study_design": "教程/概念验证，使用合成数据（300对合成笔记，200评估+100开发）"
+      },
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language model",
+          "large language models",
+          "LLM",
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "展示了基于本地部署LLM的零样本信息提取流程，使用合成笔记验证可行性，旨在为临床团队提供可复现的提取方法。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "bipolar",
+        "screening_assessment",
+        "clinical_patients",
+        "children_adolescents"
+      ]
+    },
+    "openalex_id": "W7214149160",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "privacy_security"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2764449704",
+      "ingest_mode": "full",
+      "key": "jmir_mental_health",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Practical Guide to Large Language Models for Information Extraction in Behavioral Health Notes: Tutorial",
+    "title_zh": "大型语言模型从行为健康笔记中提取信息的实用指南：教程",
+    "tldr": "展示了基于本地部署LLM的零样本信息提取流程，使用合成笔记验证可行性，旨在为临床团队提供可复现的提取方法。",
+    "topic_tags": [
+      "suicide_self_harm",
+      "bipolar",
+      "screening_assessment",
+      "clinical_patients",
+      "children_adolescents"
+    ],
+    "url": "https://doi.org/10.2196/97498",
+    "year": 2026
+  },
+  {
     "abstract": "Some digital single-session interventions (SSI) for depression appear effective, at least in youths, but not everyone benefits. In the present study, we use machine-learning methods to develop a treatment-matching algorithm for a digital SSI, the Common Elements Toolbox (COMET), versus a waitlist control. Eight hundred twenty-eight adults with a current or past mental-health problem were randomly assigned to COMET or a waitlist control. Elastic-net-regularization models with 10-fold cross-validation were used to develop a Personalized Advantage Index (PAI) indicating the relative benefit of receiving COMET over the waitlist in 2-week posttreatment depressive symptoms. In the 20% held-out test data, PAI did not interact with treatment to predict depression severity after treatment (β = 0.880, SE = 1.21, t = −0.72, p = .47), indicating that our treatment-matching algorithm was not able to provide statistically significant recommendations. Even in a large sample, personalized treatment recommendations for digital SSIs are difficult to develop.",
     "ai_reason": "机器学习弹性网模型开发个性化治疗优势指数(PAI)用于抑郁症治疗匹配，828人RCT验证，是AI方法核心驱动精神健康治疗决策的典型研究。",
     "ai_score": 5,

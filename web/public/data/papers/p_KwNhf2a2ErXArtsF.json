@@ -1,0 +1,65 @@
+{
+  "abstract": "Abstract Background Mental health clinical notes contain decision-critical information often absent from structured electronic health record fields. Large language models (LLMs) can extract clinically relevant signals from narrative text; however, variability in output format, limited reproducibility, and inconsistent evaluation remain barriers to clinical deployment. Despite rapid advances in LLM-based information extraction, clear and reproducible guidance for interdisciplinary clinical teams is limited. Objective This tutorial aims to present a structured workflow for zero-shot information extraction from mental health clinical notes using locally deployed open-source LLMs. It aims to reduce barriers for clinicians and researchers with limited familiarity with natural language processing (NLP) or LLM-based pipelines. Each stage includes key decision points and examples. The workflow is illustrated on two tasks using synthetic notes: (1) detection of self-injurious thoughts and behaviors (SITB) in pediatric emergency department (ED) notes and (2) antipsychotic medication nonadherence detection in outpatient notes, using schema-constrained outputs and standardized evaluation. Methods We describe a five-stage zero-shot LLM pipeline: (1) infrastructure setup with local deployment via Ollama to prevent protected health information (PHI) transmission; (2) task definition specifying the clinical construct, output format, and evaluation; (3) dataset preparation using synthetic notes; (4) iterative prompt development using a hold-out development set with binary and Likert scale outputs constrained via JSON schemas; and (5) output parsing, normalization, and validation. We generated 300 synthetic notes per task using separate LLMs for generation and evaluation; 200 notes were used for evaluation, and 100 notes (50 positive and 50 negative) were used as a prompt-development set and excluded from final metrics. Evaluation used Large Language Model Meta AI (Llama) 3.2 and Llama 3.3 with deterministic decoding (temperature=0). Performance was assessed using accuracy, precision, recall, and F 1 -score; Likert thresholds were optimized using the Youden index with bootstrapped CIs. Results We demonstrated the pipeline’s functionality using 2 example behavioral health detection tasks. Across both examples, the more capable model (Llama 3.3) performed better than the lighter model used earlier in development (Llama 3.2), and we described how the pipeline’s evaluation and error-analysis steps work in practice. These examples also illustrated 2 useful design choices: requiring the model to output in a fixed format reduced errors, and using a graded rating scale, rather than a simple yes/no format, allowed the detection threshold to be adjusted based on clinical risk tolerance. These results are meant to show that the pipeline works as intended, not to serve as a benchmark of real-world accuracy. Conclusions A schema-driven, zero-shot LLM workflow can support reproducible extraction of clinically relevant information from narrative notes. Local deployment enables processing without transmitting PHI to external servers. This tutorial provides a transferable methodology for institutional adaptation and validation prior to clinical use. All prompts, code, and datasets are publicly available via Zenodo (European Organization for Nuclear Research [CERN]).",
+  "ai_type_tags": [
+    "llm_genai",
+    "nlp"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Saha Diya",
+    "Juliet Beni Edgcomb"
+  ],
+  "authors_full": [
+    {
+      "name": "Saha Diya"
+    },
+    {
+      "name": "Juliet Beni Edgcomb"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "LLM是核心方法，从行为健康临床笔记中提取自杀意念行为和用药依从性信息，技术层面完整，但使用合成数据而非真实临床数据。",
+      "ai_score": 5,
+      "clinical_validation": "none",
+      "domain_score": 4,
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "展示了基于本地部署LLM的零样本信息提取流程，使用合成笔记验证可行性，旨在为临床团队提供可复现的提取方法。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "bipolar",
+        "screening_assessment",
+        "clinical_patients",
+        "children_adolescents"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-24",
+  "doi": "10.2196/97498",
+  "id": "p_KwNhf2a2ErXArtsF",
+  "issue": null,
+  "journal": "JMIR Mental Health",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7214149160"
+    }
+  ],
+  "title": "Practical Guide to Large Language Models for Information Extraction in Behavioral Health Notes: Tutorial",
+  "title_zh": "大型语言模型从行为健康笔记中提取信息的实用指南：教程",
+  "unified_ingested_at": "2026-09-26T07:12:43.399521Z",
+  "url": "https://doi.org/10.2196/97498",
+  "volume": null,
+  "year": 2026
+}
