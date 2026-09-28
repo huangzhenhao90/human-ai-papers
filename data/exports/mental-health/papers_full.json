@@ -1,5 +1,180 @@
 [
   {
+    "abstract": "Abstract Ecological Momentary Interventions (EMIs) using machine learning (ML)-based assignment algorithms may improve mental health outcomes by delivering more person-tailored content, but evidence is pending. The study aimed to determine whether ML–based assignment of EMI components augments effects on momentary mental health outcomes when compared to random assignment in youth from the general population and psychological counselling services. A within-subject micro-randomized trial was conducted. Participants were randomly assigned up to seven times daily (1:1 ratio; up to 210 decision points) to either an ML-based (experimental condition) or a random (active control condition) assignment of EMI components. Proximal outcomes were time-lagged changes in positive affect, momentary resilience, and negative affect at t n+1 . Feasibility and safety were assessed. Distal outcomes included psychological distress, resilience, and emotion regulation. A total of 49 youths (mean age 20.6; 78% female) were included. At baseline, participants reported mild-to-moderate psychological distress on average (K10 mean = 23.8, SD = 7.1), with more than one third reporting moderate or severe distress. An initial, outcome-specific signal favoring ML-based over random assignment was observed for momentary resilience ( B = 0.147, 95% confidence interval (CI), 0.004 – 0.290, p = 0.044), whereas there was no evidence of beneficial effects on positive or negative affect. Feasibility indicators supported delivery of the AI4U training, with favorable ratings of satisfaction, acceptability, and usability; no serious adverse events were reported. Uncontrolled pre-post comparisons suggested a small reduction in psychological distress (d = −0.23) and improvements in resilience (d = 0.55) and adaptive emotion regulation (d = 0.53). Taken together, this study demonstrates the feasibility and preliminary safety of a ML-based adaptive EMI in youth and provides an initial, outcome-specific signal that ML-based assignment may improve momentary resilience relative to random assignment, whilst underscoring the need for larger, adequately powered MRTs and formal validation of whether forecasting performance translates into policy value.",
+    "ai_reason": "ML是核心分配算法，嵌入式心理干预在青年群体中进行micro-randomized试验，测量心理韧性、情感等核心结局。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Christian Rauschenberg",
+      "Frederike Schirmbeck",
+      "Janik Fechtelpeter",
+      "Eva Wierzba",
+      "Selina Hiller",
+      "Katharina Kahr",
+      "A Sikora Kessler",
+      "Lale Hornbacher",
+      "Christian Götzl",
+      "Anita Schick"
+    ],
+    "authors_full": [
+      {
+        "name": "Christian Rauschenberg"
+      },
+      {
+        "name": "Frederike Schirmbeck"
+      },
+      {
+        "name": "Janik Fechtelpeter"
+      },
+      {
+        "name": "Eva Wierzba"
+      },
+      {
+        "name": "Selina Hiller"
+      },
+      {
+        "name": "Katharina Kahr"
+      },
+      {
+        "name": "A Sikora Kessler"
+      },
+      {
+        "name": "Lale Hornbacher"
+      },
+      {
+        "name": "Christian Götzl"
+      },
+      {
+        "name": "Anita Schick"
+      },
+      {
+        "name": "Daniel Durstewitz"
+      },
+      {
+        "name": "Silvia Krumm"
+      },
+      {
+        "name": "Georgia Koppe"
+      },
+      {
+        "name": "Ulrich Reininghaus"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "ML是核心分配算法，嵌入式心理干预在青年群体中进行micro-randomized试验，测量心理韧性、情感等核心结局。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "randomized_controlled_trial",
+      "risk_tags": [],
+      "tldr": "微随机试验(n=49)显示ML分配算法可能改善即时心理韧性，但需更大样本验证短期和长期效果。",
+      "topic_tags": [
+        "transdiagnostic",
+        "wellbeing_loneliness",
+        "digital_intervention",
+        "treatment_support",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "prospective",
+    "date": "2026-09-26",
+    "doi": "10.1038/s41398-026-04475-8",
+    "domain_score": 5,
+    "evidence_stage": "randomized_controlled_trial",
+    "ground_truth_quality": "validated_instrument",
+    "id": "W7214502471",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "ML是核心分配算法，嵌入式心理干预在青年群体中进行micro-randomized试验，测量心理韧性、情感等核心结局。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "prospective",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "digital_intervention",
+          "treatment_support"
+        ],
+        "conditions": [
+          "transdiagnostic",
+          "wellbeing_loneliness"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "positive affect, momentary resilience, negative affect (proximal); psychological distress, resilience, emotion regulation (distal)",
+        "sample": "49 youths (mean age 20.6, 78% female)",
+        "study_design": "within-subject micro-randomized trial"
+      },
+      "evidence_stage": "randomized_controlled_trial",
+      "ground_truth_quality": "validated_instrument",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "psychological distress"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": true,
+      "tldr": "微随机试验(n=49)显示ML分配算法可能改善即时心理韧性，但需更大样本验证短期和长期效果。",
+      "topic_tags": [
+        "transdiagnostic",
+        "wellbeing_loneliness",
+        "digital_intervention",
+        "treatment_support",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7214502471",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": true,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "A machine learning-based ecological momentary intervention for mental health promotion in youth: a micro-randomized trial",
+    "title_zh": "基于机器学习的生态瞬时干预促进青年心理健康：一项微随机试验",
+    "tldr": "微随机试验(n=49)显示ML分配算法可能改善即时心理韧性，但需更大样本验证短期和长期效果。",
+    "topic_tags": [
+      "transdiagnostic",
+      "wellbeing_loneliness",
+      "digital_intervention",
+      "treatment_support",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04475-8",
+    "year": 2026
+  },
+  {
     "abstract": "Abstract Background Mental health clinical notes contain decision-critical information often absent from structured electronic health record fields. Large language models (LLMs) can extract clinically relevant signals from narrative text; however, variability in output format, limited reproducibility, and inconsistent evaluation remain barriers to clinical deployment. Despite rapid advances in LLM-based information extraction, clear and reproducible guidance for interdisciplinary clinical teams is limited. Objective This tutorial aims to present a structured workflow for zero-shot information extraction from mental health clinical notes using locally deployed open-source LLMs. It aims to reduce barriers for clinicians and researchers with limited familiarity with natural language processing (NLP) or LLM-based pipelines. Each stage includes key decision points and examples. The workflow is illustrated on two tasks using synthetic notes: (1) detection of self-injurious thoughts and behaviors (SITB) in pediatric emergency department (ED) notes and (2) antipsychotic medication nonadherence detection in outpatient notes, using schema-constrained outputs and standardized evaluation. Methods We describe a five-stage zero-shot LLM pipeline: (1) infrastructure setup with local deployment via Ollama to prevent protected health information (PHI) transmission; (2) task definition specifying the clinical construct, output format, and evaluation; (3) dataset preparation using synthetic notes; (4) iterative prompt development using a hold-out development set with binary and Likert scale outputs constrained via JSON schemas; and (5) output parsing, normalization, and validation. We generated 300 synthetic notes per task using separate LLMs for generation and evaluation; 200 notes were used for evaluation, and 100 notes (50 positive and 50 negative) were used as a prompt-development set and excluded from final metrics. Evaluation used Large Language Model Meta AI (Llama) 3.2 and Llama 3.3 with deterministic decoding (temperature=0). Performance was assessed using accuracy, precision, recall, and F 1 -score; Likert thresholds were optimized using the Youden index with bootstrapped CIs. Results We demonstrated the pipeline’s functionality using 2 example behavioral health detection tasks. Across both examples, the more capable model (Llama 3.3) performed better than the lighter model used earlier in development (Llama 3.2), and we described how the pipeline’s evaluation and error-analysis steps work in practice. These examples also illustrated 2 useful design choices: requiring the model to output in a fixed format reduced errors, and using a graded rating scale, rather than a simple yes/no format, allowed the detection threshold to be adjusted based on clinical risk tolerance. These results are meant to show that the pipeline works as intended, not to serve as a benchmark of real-world accuracy. Conclusions A schema-driven, zero-shot LLM workflow can support reproducible extraction of clinically relevant information from narrative notes. Local deployment enables processing without transmitting PHI to external servers. This tutorial provides a transferable methodology for institutional adaptation and validation prior to clinical use. All prompts, code, and datasets are publicly available via Zenodo (European Organization for Nuclear Research [CERN]).",
     "ai_reason": "LLM是核心方法，从行为健康临床笔记中提取自杀意念行为和用药依从性信息，技术层面完整，但使用合成数据而非真实临床数据。",
     "ai_score": 5,
@@ -142,6 +317,155 @@
       "children_adolescents"
     ],
     "url": "https://doi.org/10.2196/97498",
+    "year": 2026
+  },
+  {
+    "abstract": "Depression represents a complex, multifactorial disorder influenced by the interplay of biological, behavioral, and social determinants. While extensive health surveys, including the National Health and Nutrition Examination Survey (NHANES), gather comprehensive multidomain data, existing studies tend to analyze these domains independently, overlooking the potential to identify integrated, data-driven patterns of depression risk. We have developed SYNERGY-VAE, an interpretable and multimodal deep learning framework that is designed to identify latent health subgroups and facilitate the transparent prediction of depression risk, utilizing NHANES-derived multimodal data from a large analytic cohort that spans five distinct domains from 2005 to 2018. SYNERGY-VAE utilizes a variational autoencoder to learn a shared latent representation derived from five modalities of NHANES, specifically demographic, dietary, examination, laboratory, and questionnaire data. Clustering within this latent space revealed subpopulations exhibiting distinct health signatures. To enhance interpretability, we triangulated insights utilizing encoder weights, standardized mean differences, and permutation feature importance (PFI). Machine learning classifiers were trained within each cluster employing the top 30 PFI-ranked features, with performance evaluated through the receiver operating characteristic area under the curve (AUC) in a 70/30 train-test split. Three latent clusters emerged, each demonstrating markedly different observed prevalence rates of depression within the analytic sample, ranging from 6.8% to 10.9%. Cluster-specific models consistently surpassed pooled models in performance, with the highest predictive accuracy identified in Cluster 2 utilizing XGBoost (AUC = 0.839, 95% CI:0.804-0.874). The importance of features varied across clusters, indicating unique depression risk profiles specific to each subgroup. SYNERGY-VAE demonstrates the power of generative, explainable deep learning for the identification of latent health phenotypes, thereby furthering the objectives of precision mental health. By integrating high-dimensional, multimodal data and facilitating transparent subgroup discovery, our model may inform future stratified and context-aware screening research and contribute to precision psychiatry-oriented research in large health survey datasets.",
+    "ai_reason": "SYNERGY-VAE框架使用变分自编码器和深度学习从多模态数据中发现抑郁亚组，XGBoost进行风险预测，核心是AI方法。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "deep_learning",
+      "multimodal"
+    ],
+    "authors": [
+      "Divya Sharma",
+      "Alice Rueda",
+      "Qiaowei Lin",
+      "Shakila Meshkat",
+      "Argyrios Perivolaris",
+      "Venkat Bhat"
+    ],
+    "authors_full": [
+      {
+        "name": "Divya Sharma"
+      },
+      {
+        "name": "Alice Rueda"
+      },
+      {
+        "name": "Qiaowei Lin"
+      },
+      {
+        "name": "Shakila Meshkat"
+      },
+      {
+        "name": "Argyrios Perivolaris"
+      },
+      {
+        "name": "Venkat Bhat"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "SYNERGY-VAE框架使用变分自编码器和深度学习从多模态数据中发现抑郁亚组，XGBoost进行风险预测，核心是AI方法。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "deep_learning",
+        "multimodal"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "基于NHANES数据(n=large cohort)，VAE发现3个抑郁风险亚群，XGBoost在Cluster 2达到AUC=0.839，但仅为回顾性建模。",
+      "topic_tags": [
+        "depression",
+        "screening_assessment",
+        "risk_prediction",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-09-24",
+    "doi": "10.1371/journal.pdig.0001719",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "self_report",
+    "id": "W7214214079",
+    "journal": "PLOS Digital Health",
+    "mh_profile": {
+      "ai_reason": "SYNERGY-VAE框架使用变分自编码器和深度学习从多模态数据中发现抑郁亚组，XGBoost进行风险预测，核心是AI方法。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "deep_learning",
+        "multimodal"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "deep_learning",
+          "multimodal"
+        ],
+        "applications": [
+          "screening_assessment",
+          "risk_prediction"
+        ],
+        "conditions": [
+          "depression"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "depression prevalence rates (6.8%-10.9% across clusters), AUC=0.839 for Cluster 2 XGBoost",
+        "sample": "NHANES data 2005-2018, five domains",
+        "study_design": "retrospective cohort analysis with 70/30 train-test split"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "self_report",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning",
+          "deep learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "psychiatry",
+          "depression"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "基于NHANES数据(n=large cohort)，VAE发现3个抑郁风险亚群，XGBoost在Cluster 2达到AUC=0.839，但仅为回顾性建模。",
+      "topic_tags": [
+        "depression",
+        "screening_assessment",
+        "risk_prediction",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7214214079",
+    "pdf_url": "https://journals.plos.org/digitalhealth/article/file?id=10.1371/journal.pdig.0001719&type=printable",
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4210221150",
+      "ingest_mode": "query",
+      "key": "plos_digital_health",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "SYNERGY-VAE: An explainable generative deep learning framework for discovering depression subgroups from multimodal population health data",
+    "title_zh": "SYNERGY-VAE：一种可解释的生成式深度学习框架，用于从多模态人群健康数据中发现抑郁亚组",
+    "tldr": "基于NHANES数据(n=large cohort)，VAE发现3个抑郁风险亚群，XGBoost在Cluster 2达到AUC=0.839，但仅为回顾性建模。",
+    "topic_tags": [
+      "depression",
+      "screening_assessment",
+      "risk_prediction",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1371/journal.pdig.0001719",
     "year": 2026
   },
   {

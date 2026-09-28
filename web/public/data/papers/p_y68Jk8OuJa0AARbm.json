@@ -1,0 +1,77 @@
+{
+  "abstract": "Depression represents a complex, multifactorial disorder influenced by the interplay of biological, behavioral, and social determinants. While extensive health surveys, including the National Health and Nutrition Examination Survey (NHANES), gather comprehensive multidomain data, existing studies tend to analyze these domains independently, overlooking the potential to identify integrated, data-driven patterns of depression risk. We have developed SYNERGY-VAE, an interpretable and multimodal deep learning framework that is designed to identify latent health subgroups and facilitate the transparent prediction of depression risk, utilizing NHANES-derived multimodal data from a large analytic cohort that spans five distinct domains from 2005 to 2018. SYNERGY-VAE utilizes a variational autoencoder to learn a shared latent representation derived from five modalities of NHANES, specifically demographic, dietary, examination, laboratory, and questionnaire data. Clustering within this latent space revealed subpopulations exhibiting distinct health signatures. To enhance interpretability, we triangulated insights utilizing encoder weights, standardized mean differences, and permutation feature importance (PFI). Machine learning classifiers were trained within each cluster employing the top 30 PFI-ranked features, with performance evaluated through the receiver operating characteristic area under the curve (AUC) in a 70/30 train-test split. Three latent clusters emerged, each demonstrating markedly different observed prevalence rates of depression within the analytic sample, ranging from 6.8% to 10.9%. Cluster-specific models consistently surpassed pooled models in performance, with the highest predictive accuracy identified in Cluster 2 utilizing XGBoost (AUC = 0.839, 95% CI:0.804-0.874). The importance of features varied across clusters, indicating unique depression risk profiles specific to each subgroup. SYNERGY-VAE demonstrates the power of generative, explainable deep learning for the identification of latent health phenotypes, thereby furthering the objectives of precision mental health. By integrating high-dimensional, multimodal data and facilitating transparent subgroup discovery, our model may inform future stratified and context-aware screening research and contribute to precision psychiatry-oriented research in large health survey datasets.",
+  "ai_type_tags": [
+    "deep_learning",
+    "multimodal"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Divya Sharma",
+    "Alice Rueda",
+    "Qiaowei Lin",
+    "Shakila Meshkat",
+    "Argyrios Perivolaris",
+    "Venkat Bhat"
+  ],
+  "authors_full": [
+    {
+      "name": "Divya Sharma"
+    },
+    {
+      "name": "Alice Rueda"
+    },
+    {
+      "name": "Qiaowei Lin"
+    },
+    {
+      "name": "Shakila Meshkat"
+    },
+    {
+      "name": "Argyrios Perivolaris"
+    },
+    {
+      "name": "Venkat Bhat"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "SYNERGY-VAE框架使用变分自编码器和深度学习从多模态数据中发现抑郁亚组，XGBoost进行风险预测，核心是AI方法。",
+      "ai_score": 5,
+      "clinical_validation": "none",
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "self_report",
+      "real_world_deployment": false,
+      "safety_evaluated": false,
+      "tldr": "基于NHANES数据(n=large cohort)，VAE发现3个抑郁风险亚群，XGBoost在Cluster 2达到AUC=0.839，但仅为回顾性建模。",
+      "topic_tags": [
+        "depression",
+        "screening_assessment",
+        "risk_prediction",
+        "general_population"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-24",
+  "doi": "10.1371/journal.pdig.0001719",
+  "id": "p_y68Jk8OuJa0AARbm",
+  "issue": null,
+  "journal": "PLOS Digital Health",
+  "pdf_url": "https://journals.plos.org/digitalhealth/article/file?id=10.1371/journal.pdig.0001719&type=printable",
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7214214079"
+    }
+  ],
+  "title": "SYNERGY-VAE: An explainable generative deep learning framework for discovering depression subgroups from multimodal population health data",
+  "title_zh": "SYNERGY-VAE：一种可解释的生成式深度学习框架，用于从多模态人群健康数据中发现抑郁亚组",
+  "unified_ingested_at": "2026-09-28T08:25:50.269363Z",
+  "url": "https://doi.org/10.1371/journal.pdig.0001719",
+  "volume": null,
+  "year": 2026
+}

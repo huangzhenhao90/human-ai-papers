@@ -1,0 +1,59 @@
+{
+  "abstract": "Contemporary large language model (LLM) chat systems treat conversation history as an immutable sequence of turns that defines the model's working context. However, user intent in real interactions is not static: it evolves through correction, refinement, and shifting constraints. This mismatch between dynamic intent and static transcripts can result in context pollution, where outdated or irrelevant information persists and continues to influence subsequent responses. We introduce mutable transcripts, a new interaction paradigm that enables users to revise prior turns through natural language edit requests, allowing the conversation history itself to be updated rather than appended. This reframes the transcript from a passive record into an editable representation of conversational state. We present a working prototype that integrates transcript-level revision into a standard chat interface and evaluate its feasibility through a controlled user study (n=17) and an illustrative transcript analysis of representative interaction scenarios. Participants significantly preferred mutable transcripts over standard chat across measures of clarity, confidence, and ease of use, with reduced intent to restart conversations. Transcript analysis of representative user study conversations shows that mutable transcripts can reduce conversation length and eliminate obsolete retained context. These findings provide initial evidence that user-driven revision of conversational history can improve interaction quality and help maintain a more current representation of user intent. The source code and prototype can be accessed at https://github.com/QxLabIreland/ReChat",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 助手",
+    "人机交互"
+  ],
+  "arxiv_id": "2609.31354",
+  "authors": [
+    "Dan Barry",
+    "Andrew Hines"
+  ],
+  "authors_full": [
+    {
+      "name": "Dan Barry"
+    },
+    {
+      "name": "Andrew Hines"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM交互新范式，HCI实质但无用户评估",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "当前LLM聊天系统将对话历史视为不可变序列，导致过时信息持续影响后续回复（上下文污染）。研究提出\"可变转录\"交互范式，允许用户通过自然语言编辑请求修改历史轮次，使对话记录从被动日志变为可编辑的对话状态表示。通过n=17用户研究和转录分析发现，参与者在清晰度、信心和易用性上显著偏好可变转录，减少了重开对话的意愿，且能缩短对话长度。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "对话式 AI",
+        "用户体验(UX)",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-25",
+  "doi": null,
+  "id": "p_bpbqYRw5uULH4ZPn",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2609.31354v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 32664,
+      "revision": "39be07767bc91189771bf149772faa0e3119d9ca"
+    }
+  ],
+  "title": "Mutable Transcripts: Mitigating Context Pollution through Editable Conversation State",
+  "title_zh": "可变对话记录：通过可编辑对话状态缓解上下文污染",
+  "unified_ingested_at": "2026-09-28T08:25:50.269363Z",
+  "url": "https://arxiv.org/abs/2609.31354v1",
+  "volume": null,
+  "year": 2026
+}
