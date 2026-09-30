@@ -1,6 +1,11 @@
 {
   "abstract": "Deepfakes have rapidly emerged as a pressing threat to information integrity and security because they exploit human trust in visual and auditory perception. Yet, little is known about whether humans and their underlying (sub)conscious neuro-physiological processes can reliably distinguish deepfake from real videos.   We introduce DECEIVE (Deepfake Exploitation of Cognitive Engagement and Implicit Visual Evaluation), a framework that models how deepfake videos are validated as adversarial payloads through behavioral and neuro-physiological screening of viewers, and how attacks can be refined by selecting payloads that evade detection. The framework is dataset agnostic and applies to synthetic or real media. It is inherently dual-use: an adversary with equivalent measurements could iterate on candidate manipulations and retain those that evade human detection. This motivates open, defensive evaluation. Measuring which deepfakes defeat human perception establishes a realistic bound on attacker capability against which detection tooling, provenance and watermarking mechanisms, and user-facing protections can be assessed.   As an instantiation, we conducted an EEG and eye-tracking study in which participants viewed real, deepfake, and look-alike videos drawn from Celeb-DF and a curated celebrity set, while behavioral judgments and implicit responses were recorded. Contrary to expectations of subconscious differentiation suggested by prior work on paintings and phishing websites, no statistically significant neuro-physiological differences emerged between real and deepfake videos, although clear distinctions were observed for look-alike videos. Behaviorally, participants accepted 26.68% of manipulated clips as authentic, rising to 31.94% for familiar identities, confirming the studied deepfakes as effective adversarial payloads within DECEIVE.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "深度伪造/Deepfake",
+    "多模态",
+    "眼动 AI",
+    "情感识别"
+  ],
   "arxiv_id": "2609.32769",
   "authors": [
     "Cagri Arisoy",
@@ -27,8 +32,13 @@
       "ai_reason": "深伪框架含神经生理用户筛选，AI非中心",
       "ai_score": 3.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出DECEIVE框架，建模深度伪造视频如何通过行为和神经生理筛选逃避人类检测，同时支持攻击者迭代优化及防御方评估。通过EEG与眼动追踪实验，让参与者观看Celeb-DF及自建名人数据集中的真实、深度伪造和高度相似视频，同步记录行为判断与隐性反应。与先前关于绘画和钓鱼网站的潜意识区分预期相反，结果表明人类的认知参与与隐性视觉评估机制难以可靠区分深度伪造与真实视频。",
+      "topic_tags": [
+        "信任",
+        "伦理",
+        "眼动追踪",
+        "可解释性"
+      ]
     }
   },
   "channels": [
@@ -45,7 +55,7 @@
     {
       "channel": "ur",
       "legacy_id": 32949,
-      "revision": "a5d178727b76e793b8a4bcc8bfc10d8c350063ef"
+      "revision": "f578c993669ecc253d210f4cb5f24dadd1a3b335"
     }
   ],
   "title": "You Can't Spot a Deepfake?And Neither Can Your Brain Nor Eyes: A Neurophysiological Framework for Deepfake Exploitation of Cognitive Engagement and Implicit Visual Evaluation",

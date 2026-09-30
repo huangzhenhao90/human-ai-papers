@@ -1,5 +1,141 @@
 [
   {
+    "abstract": "Abstract Social connectedness is a robust predictor of health and longevity. While previous research has mainly focused on the benefits of receiving social support, the neuroprotective potential of providing social support to others remains underexplored. Using data from the Midlife in the United States (MIDUS) study, we tested whether total monthly hours spent providing instrumental and emotional support prospectively predict a brain age estimation gap (BrainAGE), a transdiagnostic biomarker of neurodegenerative disorders, psychiatric conditions, and mortality. BrainAGE was estimated with a machine-learning algorithm trained to predict chronological age from structural magnetic resonance imaging (MRI) scans. Combining hierarchical regression with bootstrapping and data-driven variable selection, we found that greater support provision was significantly associated with a younger-appearing brain for a given chronological age. This association persisted after controlling for a comprehensive set of covariates, including demographic characteristics, health conditions, lifestyle factors, and broader psychosocial contexts, including social support received. Notably, the hourly measure of support provision explained incremental variance in BrainAGE beyond role-based indices such as caregiving status or grandparenthood. Exploratory analyses further indicated that emotional support was more strongly associated with lower BrainAGE than instrumental assistance. Our findings highlight everyday prosocial behavior as a potential neuroprotective pathway in mid-to-late adulthood, with implications for intervention and policies for healthy aging.",
+    "ai_reason": "使用机器学习算法从MRI预测脑年龄( BrainAGE)，是研究的核心方法；但AI仅为预测工具，核心科学问题仍是社会支持与神经保护的关系。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Minwoo Lee",
+      "James K. Rilling",
+      "Maxine Weinstein",
+      "Stacey M. Schaefer",
+      "Casey L. Brown"
+    ],
+    "authors_full": [
+      {
+        "name": "Minwoo Lee"
+      },
+      {
+        "name": "James K. Rilling"
+      },
+      {
+        "name": "Maxine Weinstein"
+      },
+      {
+        "name": "Stacey M. Schaefer"
+      },
+      {
+        "name": "Casey L. Brown"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "使用机器学习算法从MRI预测脑年龄( BrainAGE)，是研究的核心方法；但AI仅为预测工具，核心科学问题仍是社会支持与神经保护的关系。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "基于MIDUS研究，ML算法从结构MRI估计脑年龄，发现每月提供社会支持的小时数与较年轻的脑年龄显著相关，且独立于多种协变量。",
+      "topic_tags": [
+        "wellbeing_loneliness",
+        "screening_assessment",
+        "adults",
+        "older_adults"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "external",
+    "date": "2026-09-28",
+    "doi": "10.1038/s41398-026-04459-8",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "self_report",
+    "id": "W7214629504",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "使用机器学习算法从MRI预测脑年龄( BrainAGE)，是研究的核心方法；但AI仅为预测工具，核心科学问题仍是社会支持与神经保护的关系。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "screening_assessment"
+        ],
+        "conditions": [
+          "wellbeing_loneliness"
+        ],
+        "populations": [
+          "adults",
+          "older_adults"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "BrainAGE估计值（脑年龄差距），支持提供时间的预测效应",
+        "sample": "MIDUS研究参与者，具体样本量未在摘要中说明",
+        "study_design": "前瞻性队列研究 + 层次回归 + Bootstrap"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "self_report",
+      "local_recall_audit": {
+        "ai_matches": [],
+        "ai_signal": false,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatric"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "基于MIDUS研究，ML算法从结构MRI估计脑年龄，发现每月提供社会支持的小时数与较年轻的脑年龄显著相关，且独立于多种协变量。",
+      "topic_tags": [
+        "wellbeing_loneliness",
+        "screening_assessment",
+        "adults",
+        "older_adults"
+      ]
+    },
+    "openalex_id": "W7214629504",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Providing social support to others is associated with younger brain age in mid-to-late adulthood",
+    "title_zh": "向他人提供社会支持与中晚年的脑年龄更年轻相关",
+    "tldr": "基于MIDUS研究，ML算法从结构MRI估计脑年龄，发现每月提供社会支持的小时数与较年轻的脑年龄显著相关，且独立于多种协变量。",
+    "topic_tags": [
+      "wellbeing_loneliness",
+      "screening_assessment",
+      "adults",
+      "older_adults"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04459-8",
+    "year": 2026
+  },
+  {
     "abstract": "Abstract Ecological Momentary Interventions (EMIs) using machine learning (ML)-based assignment algorithms may improve mental health outcomes by delivering more person-tailored content, but evidence is pending. The study aimed to determine whether ML–based assignment of EMI components augments effects on momentary mental health outcomes when compared to random assignment in youth from the general population and psychological counselling services. A within-subject micro-randomized trial was conducted. Participants were randomly assigned up to seven times daily (1:1 ratio; up to 210 decision points) to either an ML-based (experimental condition) or a random (active control condition) assignment of EMI components. Proximal outcomes were time-lagged changes in positive affect, momentary resilience, and negative affect at t n+1 . Feasibility and safety were assessed. Distal outcomes included psychological distress, resilience, and emotion regulation. A total of 49 youths (mean age 20.6; 78% female) were included. At baseline, participants reported mild-to-moderate psychological distress on average (K10 mean = 23.8, SD = 7.1), with more than one third reporting moderate or severe distress. An initial, outcome-specific signal favoring ML-based over random assignment was observed for momentary resilience ( B = 0.147, 95% confidence interval (CI), 0.004 – 0.290, p = 0.044), whereas there was no evidence of beneficial effects on positive or negative affect. Feasibility indicators supported delivery of the AI4U training, with favorable ratings of satisfaction, acceptability, and usability; no serious adverse events were reported. Uncontrolled pre-post comparisons suggested a small reduction in psychological distress (d = −0.23) and improvements in resilience (d = 0.55) and adaptive emotion regulation (d = 0.53). Taken together, this study demonstrates the feasibility and preliminary safety of a ML-based adaptive EMI in youth and provides an initial, outcome-specific signal that ML-based assignment may improve momentary resilience relative to random assignment, whilst underscoring the need for larger, adequately powered MRTs and formal validation of whether forecasting performance translates into policy value.",
     "ai_reason": "ML是核心分配算法，嵌入式心理干预在青年群体中进行micro-randomized试验，测量心理韧性、情感等核心结局。",
     "ai_score": 5,
@@ -172,6 +308,183 @@
       "general_population"
     ],
     "url": "https://doi.org/10.1038/s41398-026-04475-8",
+    "year": 2026
+  },
+  {
+    "abstract": "Background: Machine learning and natural language processing have demonstrated significant potential for mental health assessment: describing your mental health in your own words can offer a more ecologically valid approach than traditional rating scales. However, most models focus on specific diagnoses, conditions, or symptoms, which may prematurely assign labels and potentially reinforce stigma in the context of early-stage mental health screening. Objective: This study develops a language-based assessment model that assesses the need for mental health support based on probed natural language and validates it against best-estimate assessments from multiple experienced psychotherapists. Methods: We analyzed an enriched online sample (n=600 for development and n=212 for validation), in which about half reported experiencing internalizing symptoms (depression or anxiety). Participants described their mental health using open-ended responses regarding (1) mental health, (2) suicidal thoughts, (3) medical history, and (4) depression. The responses were converted into contextual word embeddings using a large language model and entered as predictors in a ridge regression using nested cross-validation. Two to three experienced psychotherapists assessed each participant's need for mental health support on a scale from 1 (no support needed) to 5 (potential crisis). Their assessments were based on longitudinal clinical data (natural language, validated scales, clinical interview, sociodemographics, and clinical history) and were averaged into a best-estimate assessment for model validation. We used the Sequential Evaluation With Model Preregistration framework, which separates model development from validation in a held-out set to support robust estimations and generalizability. Results: =0.62-0.77). Language-based visualizations of topics and word embeddings showed that low need for support assessments was associated with mentioning well-being and good health, while high assessments were related to depression, anxiety, and suicidality. Conclusions: This study demonstrates that natural language responses analyzed through large language models and machine learning can be used to assess individuals' need for mental health support in close alignment with best-estimate assessments from experienced psychotherapists. Using less than 5 minutes of respondent time, this approach offers a practical tool for early-stage mental health screening in both clinical and self-guided screening contexts.",
+    "ai_reason": "LLM和NLP构建心理援助需求评估模型，以心理治疗师最佳评估为金标准验证，直接服务早期心理健康筛查。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "llm_genai",
+      "nlp"
+    ],
+    "authors": [
+      "Clara Wiebel",
+      "Veerle Celine Eijsbroek",
+      "Vasudha Varadarajan",
+      "Katarina Kjell",
+      "H. Andrew Schwartz",
+      "Oscar Kjell"
+    ],
+    "authors_full": [
+      {
+        "name": "Clara Wiebel"
+      },
+      {
+        "name": "Veerle Celine Eijsbroek"
+      },
+      {
+        "name": "Vasudha Varadarajan"
+      },
+      {
+        "name": "Katarina Kjell"
+      },
+      {
+        "name": "H. Andrew Schwartz"
+      },
+      {
+        "name": "Oscar Kjell"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "LLM和NLP构建心理援助需求评估模型，以心理治疗师最佳评估为金标准验证，直接服务早期心理健康筛查。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [
+        "bias_fairness",
+        "privacy_security"
+      ],
+      "tldr": "n=600开发+n=212验证表明，LLM分析自由文本可有效评估心理健康支持需求，与2-3名经验心理治疗师最佳评估高度一致(r=0.62-0.77)。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "suicide_self_harm",
+        "transdiagnostic",
+        "screening_assessment",
+        "adults",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "external",
+    "date": "2026-09-25",
+    "doi": "10.2196/105460",
+    "domain_score": 4,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W7214576342",
+    "journal": "JMIR Mental Health",
+    "mh_profile": {
+      "ai_reason": "LLM和NLP构建心理援助需求评估模型，以心理治疗师最佳评估为金标准验证，直接服务早期心理健康筛查。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "nlp"
+        ],
+        "applications": [
+          "screening_assessment"
+        ],
+        "conditions": [
+          "depression",
+          "anxiety",
+          "suicide_self_harm",
+          "transdiagnostic"
+        ],
+        "populations": [
+          "adults",
+          "clinical_patients"
+        ],
+        "risks": [
+          "bias_fairness",
+          "privacy_security"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "心理健康支持需求等级(1-5)，以心理治疗师纵向临床数据综合评估为金标准(r=0.62-0.77)；低需求与幸福感/健康提及相关，高需求与抑郁/焦虑/自杀念头相关",
+        "sample": "enriched在线样本812人(约半数有内化症状)，开发集600、验证集212；每人由2-3名经验心理治疗师独立评估",
+        "study_design": "嵌套交叉验证的ridge回归模型开发与外部验证"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning",
+          "large language model",
+          "large language models",
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "depression",
+          "anxiety",
+          "suicidal",
+          "well-being"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "n=600开发+n=212验证表明，LLM分析自由文本可有效评估心理健康支持需求，与2-3名经验心理治疗师最佳评估高度一致(r=0.62-0.77)。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "suicide_self_harm",
+        "transdiagnostic",
+        "screening_assessment",
+        "adults",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7214576342",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "bias_fairness",
+      "privacy_security"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2764449704",
+      "ingest_mode": "full",
+      "key": "jmir_mental_health",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Assessing the Need for Mental Health Support From Free-Text Responses: Development and Validation of Language-Based Assessments in Adults With Internalizing Symptoms",
+    "title_zh": "评估自由文本响应对心理健康支持需求的预测价值：成人内化症状语言评估工具的开发与验证",
+    "tldr": "n=600开发+n=212验证表明，LLM分析自由文本可有效评估心理健康支持需求，与2-3名经验心理治疗师最佳评估高度一致(r=0.62-0.77)。",
+    "topic_tags": [
+      "depression",
+      "anxiety",
+      "suicide_self_harm",
+      "transdiagnostic",
+      "screening_assessment",
+      "adults",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.2196/105460",
     "year": 2026
   },
   {
@@ -3257,6 +3570,216 @@
       "clinical_patients"
     ],
     "url": "https://doi.org/10.1176/appi.ajp.20260610",
+    "year": 2026
+  },
+  {
+    "abstract": "BACKGROUND: Mental disorders are a leading cause of disease burden in 10-24-year-olds. In Australia, fragmentation within and across health, mental health and human services sectors contributes to gaps in service provision and increased disease burden. Comprehensive methodologies are needed to identify service gaps and inefficiencies to shape policy, optimise resource allocation and improve outcomes for young people. AIMS: To describe the design and methodology of a population-based data linkage study involving evaluation of health, mental health and human service use among young people in Victoria and identify subgroups experiencing unmet mental health needs. METHOD: The primary cohort comprises young people aged 12-25 years in the period between January 2018 and December 2025. For comparative purposes, children aged 5-11 years and adults aged 26-53 years are also included. We describe data sources, linkage methodology and planned analyses. Traditional statistical methods alongside contemporary machine learning and natural language processing techniques will be used. RESULTS: The study will provide a comprehensive examination of the clinical characteristics of young people, their service use behaviour and typical pathways through care that cannot be gleaned from examining datasets in isolation. Ongoing consultation and engagement with young people and key stakeholders will inform interpretation, dissemination and translation of findings. CONCLUSIONS: By integrating data across multiple service sectors, this study will generate novel evidence regarding pathways through care and unmet mental health needs among Victorian young people. Findings will inform mental health service reform and support improvements in healthcare delivery, service integration and outcomes for young people.",
+    "ai_reason": "ML/NLP为辅助方法，核心是维多利亚12-25岁青年心理健康服务利用模式的人群数据联动研究，定位服务缺口与未满足需求。",
+    "ai_score": 3,
+    "ai_type_tags": [
+      "machine_learning",
+      "nlp"
+    ],
+    "authors": [
+      "Amity Watson",
+      "Jana M Menssink",
+      "Kate Filia",
+      "Matthew P. Hamilton",
+      "Mengmeng Wang",
+      "Shu Mei Teo",
+      "Daniel Z. Q. Gan",
+      "Debra Rickwood",
+      "Patrick D. McGorry",
+      "Ian Bernard Hickie"
+    ],
+    "authors_full": [
+      {
+        "name": "Amity Watson"
+      },
+      {
+        "name": "Jana M Menssink"
+      },
+      {
+        "name": "Kate Filia"
+      },
+      {
+        "name": "Matthew P. Hamilton"
+      },
+      {
+        "name": "Mengmeng Wang"
+      },
+      {
+        "name": "Shu Mei Teo"
+      },
+      {
+        "name": "Daniel Z. Q. Gan"
+      },
+      {
+        "name": "Debra Rickwood"
+      },
+      {
+        "name": "Patrick D. McGorry"
+      },
+      {
+        "name": "Ian Bernard Hickie"
+      },
+      {
+        "name": "Alison Ruth Yung"
+      },
+      {
+        "name": "Cathrine Mihalopoulos"
+      },
+      {
+        "name": "Alexandra G. Parker"
+      },
+      {
+        "name": "Victoria L. Ryall"
+      },
+      {
+        "name": "Magenta Bender Simmons"
+      },
+      {
+        "name": "Shelley Cox"
+      },
+      {
+        "name": "Ziad Nehme"
+      },
+      {
+        "name": "Sarah Elisabeth Hetrick"
+      },
+      {
+        "name": "Karen Smith"
+      },
+      {
+        "name": "Carl I. Moller"
+      },
+      {
+        "name": "Katrina Witt"
+      },
+      {
+        "name": "Caroline X. Gao"
+      },
+      {
+        "name": "Sue Cotton"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "ML/NLP为辅助方法，核心是维多利亚12-25岁青年心理健康服务利用模式的人群数据联动研究，定位服务缺口与未满足需求。",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "machine_learning",
+        "nlp"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "conceptual",
+      "risk_tags": [
+        "privacy_security"
+      ],
+      "tldr": "方案计划2018-2025年维多利亚12-25岁青年人群数据联动，结合传统统计与ML/NLP识别心理健康服务缺口，为服务改革提供依据。",
+      "topic_tags": [
+        "transdiagnostic",
+        "service_access",
+        "children_adolescents",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 1,
+    "clinical_validation": "none",
+    "date": "2026-09-01",
+    "doi": "10.1192/bjo.2026.12086",
+    "domain_score": 4,
+    "evidence_stage": "conceptual",
+    "ground_truth_quality": "unknown",
+    "id": "W4408493897",
+    "journal": "BJPsych Open",
+    "mh_profile": {
+      "ai_reason": "ML/NLP为辅助方法，核心是维多利亚12-25岁青年心理健康服务利用模式的人群数据联动研究，定位服务缺口与未满足需求。",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "machine_learning",
+        "nlp"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning",
+          "nlp"
+        ],
+        "applications": [
+          "service_access"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "children_adolescents",
+          "clinical_patients"
+        ],
+        "risks": [
+          "privacy_security"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "服务利用模式、护理路径、未满足心理健康需求亚组；尚未产生结果(方案阶段)",
+        "sample": "主要队列12-25岁青年(2018-2025)，对比队列5-11岁儿童和26-53岁成人",
+        "study_design": "人群水平回顾性数据联动研究方案，计划分析健康、心理健康及人类服务数据"
+      },
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning",
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "方案计划2018-2025年维多利亚12-25岁青年人群数据联动，结合传统统计与ML/NLP识别心理健康服务缺口，为服务改革提供依据。",
+      "topic_tags": [
+        "transdiagnostic",
+        "service_access",
+        "children_adolescents",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W4408493897",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "privacy_security"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2764831659",
+      "ingest_mode": "full",
+      "key": "bjpsych_open",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "A protocol for population-level data linkage to investigate patterns of service use and healthcare needs of young people experiencing mental ill-health in Victoria, Australia",
+    "title_zh": "澳大利亚维多利亚青年心理健康服务利用与医疗需求模式的人群级数据联动研究方案",
+    "tldr": "方案计划2018-2025年维多利亚12-25岁青年人群数据联动，结合传统统计与ML/NLP识别心理健康服务缺口，为服务改革提供依据。",
+    "topic_tags": [
+      "transdiagnostic",
+      "service_access",
+      "children_adolescents",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.1192/bjo.2026.12086",
     "year": 2026
   },
   {

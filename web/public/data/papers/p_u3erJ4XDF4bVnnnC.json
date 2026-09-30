@@ -1,0 +1,66 @@
+{
+  "abstract": "In-car conversational assistants (ICAs) are increasingly integrated into vehicles to support route planning, vehicle control, and information access. Ensuring their reliability is challenging due to multi-turn interactions, the absence of explicit ground truth, and strict safety constraints. Existing evaluation techniques fall short, as they target single-turn settings and fail to capture constraint handling, context retention, and safety-critical behavior across turns. We propose an automated framework for testing the multi-turn conversational capabilities of ICAs. The system is treated as a black box and evaluated via closed-loop simulation with a strategy-guided user simulator, an adversarial strategy manager, and a two-tier LLM judge assessing turn-level failures and conversation-level quality. We evaluate the approach on an industrial ICA with six LLM backends and twelve human annotators. The automated judge shows substantial agreement with humans, and strategy guidance uncovers 2.96 times more unique failure types per conversation and more than doubles the number of unique failing conversations compared to unguided simulation.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 助手",
+    "可用性 AI"
+  ],
+  "arxiv_id": "2609.35812",
+  "authors": [
+    "Vaishnav Negi",
+    "Lev Sorokin",
+    "Soroosh Tayebi Arasteh",
+    "Andrea Stocco"
+  ],
+  "authors_full": [
+    {
+      "name": "Vaishnav Negi"
+    },
+    {
+      "name": "Lev Sorokin"
+    },
+    {
+      "name": "Soroosh Tayebi Arasteh"
+    },
+    {
+      "name": "Andrea Stocco"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "车载AI助手自动评估框架，含用户模拟器",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对车载对话助手多轮交互可靠性评估难题，提出自动化黑盒测试框架：通过策略引导的用户模拟器、对抗策略管理器和两级LLM评判器，评估轮级失败与对话级质量。在工业级ICA上以6个LLM后端与12名人工标注者验证，自动化评判与人类达成实质性一致，策略引导使每轮对话发现的独特失败类型提升2.96倍，失败对话数翻倍以上。",
+      "topic_tags": [
+        "可用性测试",
+        "人机交互(HCI)",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-20",
+  "doi": null,
+  "id": "p_u3erJ4XDF4bVnnnC",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.35812v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 33362,
+      "revision": "f578c993669ecc253d210f4cb5f24dadd1a3b335"
+    }
+  ],
+  "title": "Automated Evaluation of Multi-Turn Dialogues in In-Car Conversational Assistants",
+  "title_zh": "车载会话助手中多轮对话的自动评估",
+  "unified_ingested_at": "2026-09-30T08:11:08.623995Z",
+  "url": "https://arxiv.org/abs/2609.35812v1",
+  "volume": null,
+  "year": 2026
+}

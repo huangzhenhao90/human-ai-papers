@@ -1,6 +1,10 @@
 {
   "abstract": "Explainable Artificial Intelligence (XAI) solutions are essential for building trust in AI technologies and their integration in real manufacturing lines. However, most existing methods are tailored to technical experts, limiting their accessibility to diverse user groups such as blue-collar workers in manufacturing lines who use AI for quality control. In this work, we introduce an XAI interface for object detection in industrial manufacturing based on a fine-tuned vision-language model, designed to generate intuitive explanations for non-expert users. We benchmark existing vision-language models and demonstrate that out-of-the-box models often fall short in delivering clear, context-relevant explanations for non-expert users. To address this, we fine-tune a vision-language model and integrate it into our interface, enabling contextualized, accessible explanations for non-expert users. We demonstrate improvements in explanation clarity, instruction adherence, image groundedness, and contextual awareness over GPT 4o-mini on proprietary and public robotics dataset. This approach advances the accessibility and usability of AI explanations, making them more intuitive and applicable in manufacturing domain.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "可解释AI",
+    "多模态",
+    "LLM"
+  ],
   "arxiv_id": "2609.31690",
   "authors": [
     "Sarvenaz Sardari",
@@ -31,8 +35,13 @@
       "ai_reason": "面向非专家用户的XAI设计，涉及用户视角",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对制造业质检场景中蓝领工人难以理解AI解释的问题，基准测试现有视觉语言模型后发现其输出不清晰、不贴合上下文，进而微调VLM并集成至XAI界面，在解释清晰度、指令遵循、图像关联与情境感知上超越GPT-4o-mini，提升了非专家用户对AI检测结果的可理解性与可用性。",
+      "topic_tags": [
+        "可解释性",
+        "可访问性",
+        "人机交互",
+        "可用性"
+      ]
     }
   },
   "channels": [
@@ -49,7 +58,7 @@
     {
       "channel": "ur",
       "legacy_id": 32987,
-      "revision": "a5d178727b76e793b8a4bcc8bfc10d8c350063ef"
+      "revision": "f578c993669ecc253d210f4cb5f24dadd1a3b335"
     }
   ],
   "title": "Adapting Vision-Language Models for Human-Readable XAI in Industrial Object Detection",

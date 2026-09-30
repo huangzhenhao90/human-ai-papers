@@ -1,0 +1,84 @@
+{
+  "abstract": "Background: Machine learning and natural language processing have demonstrated significant potential for mental health assessment: describing your mental health in your own words can offer a more ecologically valid approach than traditional rating scales. However, most models focus on specific diagnoses, conditions, or symptoms, which may prematurely assign labels and potentially reinforce stigma in the context of early-stage mental health screening. Objective: This study develops a language-based assessment model that assesses the need for mental health support based on probed natural language and validates it against best-estimate assessments from multiple experienced psychotherapists. Methods: We analyzed an enriched online sample (n=600 for development and n=212 for validation), in which about half reported experiencing internalizing symptoms (depression or anxiety). Participants described their mental health using open-ended responses regarding (1) mental health, (2) suicidal thoughts, (3) medical history, and (4) depression. The responses were converted into contextual word embeddings using a large language model and entered as predictors in a ridge regression using nested cross-validation. Two to three experienced psychotherapists assessed each participant's need for mental health support on a scale from 1 (no support needed) to 5 (potential crisis). Their assessments were based on longitudinal clinical data (natural language, validated scales, clinical interview, sociodemographics, and clinical history) and were averaged into a best-estimate assessment for model validation. We used the Sequential Evaluation With Model Preregistration framework, which separates model development from validation in a held-out set to support robust estimations and generalizability. Results: =0.62-0.77). Language-based visualizations of topics and word embeddings showed that low need for support assessments was associated with mentioning well-being and good health, while high assessments were related to depression, anxiety, and suicidality. Conclusions: This study demonstrates that natural language responses analyzed through large language models and machine learning can be used to assess individuals' need for mental health support in close alignment with best-estimate assessments from experienced psychotherapists. Using less than 5 minutes of respondent time, this approach offers a practical tool for early-stage mental health screening in both clinical and self-guided screening contexts.",
+  "ai_type_tags": [
+    "llm_genai",
+    "nlp"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Clara Wiebel",
+    "Veerle Celine Eijsbroek",
+    "Vasudha Varadarajan",
+    "Katarina Kjell",
+    "H. Andrew Schwartz",
+    "Oscar Kjell"
+  ],
+  "authors_full": [
+    {
+      "name": "Clara Wiebel"
+    },
+    {
+      "name": "Veerle Celine Eijsbroek"
+    },
+    {
+      "name": "Vasudha Varadarajan"
+    },
+    {
+      "name": "Katarina Kjell"
+    },
+    {
+      "name": "H. Andrew Schwartz"
+    },
+    {
+      "name": "Oscar Kjell"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "LLM和NLP构建心理援助需求评估模型，以心理治疗师最佳评估为金标准验证，直接服务早期心理健康筛查。",
+      "ai_score": 4,
+      "clinical_validation": "external",
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "privacy_security"
+      ],
+      "safety_evaluated": false,
+      "tldr": "n=600开发+n=212验证表明，LLM分析自由文本可有效评估心理健康支持需求，与2-3名经验心理治疗师最佳评估高度一致(r=0.62-0.77)。",
+      "topic_tags": [
+        "depression",
+        "anxiety",
+        "suicide_self_harm",
+        "transdiagnostic",
+        "screening_assessment",
+        "adults",
+        "clinical_patients"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-25",
+  "doi": "10.2196/105460",
+  "id": "p_agOo8WwSCycBCA8B",
+  "issue": null,
+  "journal": "JMIR Mental Health",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7214576342"
+    }
+  ],
+  "title": "Assessing the Need for Mental Health Support From Free-Text Responses: Development and Validation of Language-Based Assessments in Adults With Internalizing Symptoms",
+  "title_zh": "评估自由文本响应对心理健康支持需求的预测价值：成人内化症状语言评估工具的开发与验证",
+  "unified_ingested_at": "2026-09-30T08:11:08.623995Z",
+  "url": "https://doi.org/10.2196/105460",
+  "volume": null,
+  "year": 2026
+}
