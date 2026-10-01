@@ -1,0 +1,65 @@
+{
+  "abstract": "B2B advertising targets a viewer's professional attributes (employer size and industry, function, seniority) and has obtained them by matching identities across sites. Safari and Firefox block third-party cookies, Google retired the Privacy Sandbox cohort APIs in 2025, and reverse-IP firmographics decay under remote work. We present SIF (Sealed Inference Frame), which infers coarse professional cohorts on the device and emits only a locally differentially private, taxonomy-coded label into the OpenRTB bid stream, with no cross-site identifier. It rests on a property of the web platform we make precise: a navigated cross-origin iframe is the only way third-party code obtains a policy it controls, so inference runs in WebAssembly even where the publisher's CSP forbids it, and a nested worker served with default-src 'none' gives the model no network. Even a malicious model leaks at most about 5 bits per site per week. Labels pass through a memoised k-ary randomised response keyed to the publisher's first-party identifier, which gives $\\varepsilon$-local differential privacy, defeats averaging, and links requests no better than the identifier already sent. An org-conditional k-anonymity rule suppresses cells, more strictly on corporate networks than at home. Cohorts ride OpenRTB user.data in a LinkedIn-aligned taxonomy, and attribution uses LinkedIn's click-scoped li_fat_id without bridging identities. We report a crawl of CSP deployment on 7,969 top sites and 431 B2B publishers, Heavy-Ad budgets, closed-form privacy-utility trade-offs, a re-identification simulation, and an assessment of which attributes are predictable at all: company type and size are, seniority largely is not. On-device is a design property, not a consent exemption.",
+  "ai_type_tags": [
+    "机器学习",
+    "推荐算法"
+  ],
+  "arxiv_id": "2609.36153",
+  "authors": [
+    "Om Shankar Tiwari",
+    "Navnit Shukla",
+    "Guanyu Wang",
+    "Akshay Jain"
+  ],
+  "authors_full": [
+    {
+      "name": "Om Shankar Tiwari"
+    },
+    {
+      "name": "Navnit Shukla"
+    },
+    {
+      "name": "Guanyu Wang"
+    },
+    {
+      "name": "Akshay Jain"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "浏览器内ML推理用于B2B广告定向",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "针对第三方Cookie被屏蔽、Privacy Sandbox停用、反向IP受众在远程办公下失效的B2B广告困境，提出SIF框架：在浏览器跨源iframe中以WebAssembly本地推理专业人群属性，通过嵌套worker和默认CSP封锁网络，结合本地差分隐私、k-anonymity与OpenRTB user.data字段输出标签，实现无跨站标识符的隐私友好型B2B投放。",
+      "topic_tags": [
+        "广告",
+        "隐私",
+        "公平性",
+        "营销"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-28",
+  "doi": null,
+  "id": "p_hsscfbP_9AUQAtdH",
+  "issue": null,
+  "journal": "arXiv:cs.CR",
+  "pdf_url": "https://arxiv.org/pdf/2609.36153v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 76880,
+      "revision": "159bdca772993db1c5fa54ca392eba235e82b62f"
+    }
+  ],
+  "title": "Privacy-Friendly Cohort Determination: Sealed, CSP-Independent In-Browser ML Inference of Professional Segments for Identity-Less Advertising",
+  "title_zh": "隐私友好的群组判定：面向无身份广告的职业细分浏览器内机器学习推理",
+  "unified_ingested_at": "2026-10-01T08:31:24.894304Z",
+  "url": "https://arxiv.org/abs/2609.36153v1",
+  "volume": null,
+  "year": 2026
+}

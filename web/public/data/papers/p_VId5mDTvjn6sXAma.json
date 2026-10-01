@@ -1,0 +1,61 @@
+{
+  "abstract": "Automated skill extraction underpins workforce planning, yet most systems represent skills as flat labels with no notion of the responsibility level at which a skill is practiced. The Skills Framework for the Information Age (SFIA) captures exactly this dimension, defining 147 professional skills across seven responsibility levels, but no automated LLM-based extraction targeting SFIA has been reported. We formalize the task as structured prediction of (skill, level) pairs from free text and ask three questions: how accurately can text be mapped onto SFIA's closed vocabulary, which strategies reliably predict the level alongside the skill, and do agentic designs improve on simpler retrieval and prompting? We evaluate five strategies (a lexical baseline, dense retrieval with LLM reranking, a zero-shot schema-constrained LLM, single-agent agentic RAG, and a three-agent retriever--matcher--verifier crew) against expert-mapped European ICT role profiles, all drawing on an SFIA~9 corpus built by a fully automated agentic pipeline that we release. Retrieval-based matching identifies the most skills while generative strategies are markedly more precise; only strategies assigning the level as an explicit decision predict it reliably, with similarity-based selection more than twice as inaccurate; and the crew doubles latency without improving accuracy, so added agent roles do not automatically benefit closed-taxonomy matching. These results provide the first reproducible baseline for structured, level-aware skill extraction against SFIA.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法",
+    "人机协作"
+  ],
+  "arxiv_id": "2609.35806",
+  "authors": [
+    "Ranuga Disansa",
+    "U. S. Samarasinghe",
+    "Lasith Gunawardena"
+  ],
+  "authors_full": [
+    {
+      "name": "Ranuga Disansa"
+    },
+    {
+      "name": "U. S. Samarasinghe"
+    },
+    {
+      "name": "Lasith Gunawardena"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM技能提取，AI方法用于HR规划",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对劳动力规划中的技能自动提取问题，以SFIA框架（147项技能、7个责任层级）为封闭词表，将任务形式化为从自由文本中结构化预测（技能, 层级）配对。比较词法基线、稠密检索+LLM重排序、零样本模式约束LLM、单智能体RAG及三智能体crew五种策略，基于自动构建的SFIA 9语料与欧洲ICT岗位专家标注评测。检索式覆盖技能更多但精度低，生成式精度高；只有显式决策层级的策略才能可靠预测层级；多智能体增加延迟却未提升准确率。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "知识管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-19",
+  "doi": null,
+  "id": "p_VId5mDTvjn6sXAma",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2609.35806v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 76875,
+      "revision": "159bdca772993db1c5fa54ca392eba235e82b62f"
+    }
+  ],
+  "title": "From Lexical Baselines to Agentic Retrieval-Augmented Generation: Structured Skill and Responsibility-Level Extraction with the SFIA Framework",
+  "title_zh": "从词汇基线到智能体检索增强生成：基于SFIA框架的结构化技能与责任层级抽取",
+  "unified_ingested_at": "2026-10-01T08:31:24.894304Z",
+  "url": "https://arxiv.org/abs/2609.35806v1",
+  "volume": null,
+  "year": 2026
+}

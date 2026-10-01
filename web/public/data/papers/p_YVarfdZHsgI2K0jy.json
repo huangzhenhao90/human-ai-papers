@@ -1,6 +1,10 @@
 {
   "abstract": "Debate over synthetic data in marketing research has polarized between claims that large language models (LLMs) make human respondents obsolete and calls to avoid them entirely. We argue that both positions obscure the more useful question: not whether synthetic respondents work, but when. Building on Brand, Israeli, and Ngwe (2026), we make three contributions. First, we distinguish three types of synthetic data (ungrounded LLM responses, segment-level personas, and individual-level digital twins) and map each to the decisions it can support. Second, we develop a taxonomy of four families of accuracy measures and suggest that the wide range of reported twin accuracy, from near-perfect to near-chance, largely reflects differences in what is being measured rather than in method quality. Aggregate measures often perform well even when little information is supplied to the LLM, and can mask a complete absence of respondent-level differentiation. Third, we introduce the forgotten question problem, in which a question is omitted from a fielded study, as a setting for twin-based augmentation of existing data. We propose an ex-ante answerability diagnostic that requires no ground truth: the R^2 of a random forest predicting twin outputs from the data used to construct the twins. Across 108 attitude questions from a nationally representative survey (N = 3,063), screening at R^2 above 0.7 raises the mean twin-human individual-level correlation by 15% and reduces the share of poorly answered questions from 25.9% to 4.3%. Embedding similarity and experienced-researcher judgment provide correlated but weaker screens.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI 问卷生成"
+  ],
   "arxiv_id": "2609.13995",
   "authors": [
     "Oded Netzer",
@@ -19,8 +23,13 @@
       "ai_reason": "LLM合成数据在营销/消费者研究应用",
       "ai_score": 4.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对LLM合成受访者在营销研究中的争议，区分三类合成数据（无依据LLM响应、分群persona、个体数字孪生），提出四类准确性度量分类法，解释已有研究结论两极分化的原因。引入'被遗忘问题'场景，以随机森林R²为事前可答性诊断，在N=3063全国调查的108个态度题上验证：R²>0.7筛选使孪生-人类个体相关性提升15%。",
+      "topic_tags": [
+        "用户研究方法",
+        "营销",
+        "消费者行为",
+        "信任"
+      ]
     }
   },
   "channels": [
@@ -37,7 +46,7 @@
     {
       "channel": "ur",
       "legacy_id": 28386,
-      "revision": "f578c993669ecc253d210f4cb5f24dadd1a3b335"
+      "revision": "e3b54227f0db17a4db42b04bb334bed9b76099e7"
     }
   ],
   "title": "Synthetic Data in Marketing Research: How to Evaluate and When to Trust",

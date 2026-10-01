@@ -1,6 +1,11 @@
 {
   "abstract": "Natural-sounding multi-agent conversational AI is increasingly deployed, fundamentally altering human-machine interaction and human information processing. While prior work largely focuses on algorithmic failure, this study investigates the cognitive ergonomics and socio-cognitive impact of algorithmic competence. We present and evaluate FORMS (Framework for Opinion and Rhetoric in Multi-agent Simulations), a low-latency architecture for spatially mediated human-machine dialogue, driven by distinct LLM-based personas and real-time concurrency resolution. To conduct a system test and evaluation of its psychological impact, we exposed an adolescent cohort (n=120) and an adult pilot group (n=25) to a live, moderated synthetic debate. Our findings reveal that exposure to highly competent multi-agent systems triggers \"Cognitive Destabilization,\" fragmenting users' prior strategic consensus. Concurrently, we observe a \"Regulatory Awakening\" driven by the \"Normality Paradox\": fluid human-machine interactions inherently increase the baseline demand for external regulation. Furthermore, our pilot study suggests the presence of a \"Truthfulness Paradox\": despite understanding the risks of generative AI, participants in the adult cohort rated the synthetic debate as significantly more sincere than equivalent human discourse (Cohen's d=2.04). Supported by robust statistical effect sizes, this paper contributes the FORMS architecture and a replicable evaluation protocol, illustrating how high-fidelity conversational systems can reshape human information processing.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "多模态",
+    "对话式 AI"
+  ],
   "arxiv_id": "2609.37369",
   "authors": [
     "Marcos Rodriguez-Vega",
@@ -31,8 +36,14 @@
       "ai_reason": "多智能体LLM对用户的心理影响，用户研究(n=120)",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "提出 FORMS 框架，驱动多 LLM 智能体进行空间化实时对话，对 120 名青少年与 25 名成人开展受控实验，评估多智能体系统对人类心理的影响。发现高能力多智能体交互会引发\"认知失稳\"，并因\"常态悖论\"催生对外部监管的需求；成人组反而认为合成辩论比人类对话更真诚（d=2.04），揭示\"真实性悖论\"，引发 AI 治理与信任反思。",
+      "topic_tags": [
+        "AI 治理",
+        "伦理",
+        "人机交互(HCI)",
+        "信任",
+        "AI 采用"
+      ]
     }
   },
   "channels": [
@@ -49,7 +60,7 @@
     {
       "channel": "ur",
       "legacy_id": 33354,
-      "revision": "f578c993669ecc253d210f4cb5f24dadd1a3b335"
+      "revision": "e3b54227f0db17a4db42b04bb334bed9b76099e7"
     }
   ],
   "title": "Shaping Opinion: Quantifying the Psychological Impact of Autonomous Multi-Agent LLM Interactions",

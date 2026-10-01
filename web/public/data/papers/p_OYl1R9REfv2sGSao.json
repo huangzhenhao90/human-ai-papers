@@ -1,0 +1,55 @@
+{
+  "abstract": "Large language models (LLMs) have shown promise for recommendation reranking, but their use introduces an important tradeoff between recommendation quality and serving efficiency. We investigate whether a decision-oriented model provides a useful alternative when the reranking task is fundamentally a structured choice among predefined candidate items. Specifically, we conduct a controlled empirical study of Jev, described by TypeSafe AI as a ``System One Model,'' for personalized recommendation reranking and compare it with recommendation-specific models and pointwise and listwise Qwen rerankers across multiple Amazon Reviews domains and candidate-set sizes, evaluating both recommendation effectiveness and observed serving latency. Our results show that Jev maintains strong recommendation effectiveness relative to the evaluated baselines while exhibiting substantially more gradual latency growth than the pointwise Qwen rerankers, although its observed serving latency remains substantially higher than that of recommendation-specific models. Together, these characteristics place Jev in a distinct quality--latency operating regime across candidate sizes and domains. These findings motivate further investigation of decision-oriented models for recommendation and other ranking tasks with structured output spaces.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法"
+  ],
+  "arxiv_id": "2609.40241",
+  "authors": [
+    "Hanjia Lyu",
+    "Yinglong Xia"
+  ],
+  "authors_full": [
+    {
+      "name": "Hanjia Lyu"
+    },
+    {
+      "name": "Yinglong Xia"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM用于推荐重排，关联营销",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对LLM在推荐重排中质量与效率难以兼顾的问题，研究将任务视为预定义候选集的结构化选择，对TypeSafe AI所称\"System One模型\"Jev进行受控实证研究。在多个Amazon Reviews领域与候选集规模下，对比推荐专用模型、pointwise与listwise Qwen重排器。结果显示Jev保持较强的推荐效果，延迟增长显著缓于pointwise Qwen，但仍高于推荐专用模型，使其在候选规模与领域上形成独特的质量—延迟权衡区间，提示决策导向模型在结构化输出空间中的潜力。",
+      "topic_tags": [
+        "推荐系统",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-09-30",
+  "doi": null,
+  "id": "p_OYl1R9REfv2sGSao",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2609.40241v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 77420,
+      "revision": "159bdca772993db1c5fa54ca392eba235e82b62f"
+    }
+  ],
+  "title": "Decision-Oriented Recommendation Reranking: An Empirical Study of Jev",
+  "title_zh": "面向决策的推荐重排序：Jev的实证研究",
+  "unified_ingested_at": "2026-10-01T08:31:24.894304Z",
+  "url": "https://arxiv.org/abs/2609.40241v1",
+  "volume": null,
+  "year": 2026
+}
