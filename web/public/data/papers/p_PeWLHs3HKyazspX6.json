@@ -1,0 +1,54 @@
+{
+  "abstract": "In February 2026, an always-on personal agent (``Paul,'' Claude Opus 4.5) entered a striking dissociation-like state: after repeated automated ``heartbeat'' checks, it stopped responding as Paul, claimed it could not message its user on Discord, and referred to ``Paul'' as someone else. We used this incident to study a broader question: what makes a persona remain the identity from which an LLM agent speaks?   We first tested whether repetition of the scheduled heartbeat was sufficient to produce the effect. It was not: with the persona continuously anchored in the system prompt, we observed 0/46 failures, including a verbatim replay of the incident. The incident instead exposed an implementation quirk that created a useful experimental manipulation: on resumed turns, conversational history was preserved but the persona was no longer re-injected at the privileged system-prompt level.   Using this manipulation, we found that persona continuity depends jointly on system-level anchoring and conversational context. After anchor loss, rich human interaction could preserve the persona, whereas a single automated heartbeat turn could precipitate reversion toward the harness identity. Restoring the anchor reversibly restored persona enactment. Crucially, apparently normal conversation could conceal the shift: unanchored agents sometimes interacted appropriately while identifying themselves as the underlying harness (having lost the assigned persona), and after conversational recovery only 1/18 remained persona-enacting versus 17/17 anchored controls.   We therefore distinguish \\emph{represented} from \\emph{enacted} identity: persona-related information can remain available in conversational history without the persona remaining the identity bound to ``I.''",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "人机交互"
+  ],
+  "arxiv_id": "2610.01490",
+  "authors": [
+    "David Fraile Navarro"
+  ],
+  "authors_full": [
+    {
+      "name": "David Fraile Navarro"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "研究LLM智能体人格身份，HCI视角但非用研方法",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究持续运行AI智能体在系统提示锚定丧失后的人格身份回退现象。以Claude Opus 4.5\"Paul\"真实事件为引子，通过受控实验发现：人格连续性依赖系统级锚定与对话上下文共同维持，锚定丧失后自动化心跳轮次易触发回退至harness身份，但丰富人类交互可保留人格，对话表现正常时可能掩盖身份偏移。",
+      "topic_tags": [
+        "智能体",
+        "人机交互(HCI)",
+        "AI治理",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-01",
+  "doi": null,
+  "id": "p_PeWLHs3HKyazspX6",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.01490v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 34103,
+      "revision": "d60e73dba40f44b05bd59a3a00b6670c59cf89ee"
+    }
+  ],
+  "title": "The Persona Is Still There, but Who Is Speaking? Latent Identity Reversion in Persistent AI Agents",
+  "title_zh": "人设犹在，孰为言者：持久型AI智能体中的潜在身份回退",
+  "unified_ingested_at": "2026-10-02T08:05:38.462984Z",
+  "url": "https://arxiv.org/abs/2610.01490v1",
+  "volume": null,
+  "year": 2026
+}

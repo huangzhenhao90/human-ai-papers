@@ -1,6 +1,9 @@
 {
   "abstract": "Organizations increasingly route employee feedback to leaders through large language model (LLM) summaries, an unaudited layer that silences already-spoken voice. We introduce a Voice Retention / Representation Ratio metric for representational bias in summarization and apply it to a bilingual (English/German) corpus of 2,586 free-text responses from a global professional service company. First, employees supply criticism more reliably than praise (withholding praise is 82 times more common). Second, across 45 leader-summaries the pipeline filters by popularity, not sentiment: criticism survives, yet a concern voiced once is dropped 86% of the time, with short and German-only content lost on the same axis (theme retention 0.14 vs 0.74; German directional). Controlling for frequency, sentiment has no independent effect; the harm is prevalence-driven, which sentiment-only audits miss. A targeted prompt recovers only named themes. We contribute the metric, field evidence, and a disaggregated voice-retention card.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "算法决策"
+  ],
   "arxiv_id": "2609.38818",
   "authors": [
     "Thilo Tamme",
@@ -23,8 +26,13 @@
       "ai_reason": "LLM员工倾听审计，核心AI+OB议题",
       "ai_score": 5.0,
       "domain_score": 5.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究LLM摘要员工反馈给领导时的代表性偏差。提出\"声音保留比\"指标，分析2586条英德双语反馈与45份领导摘要，发现：批评比表扬更易保留，但独立关切被丢弃86%，短文本与德语内容系统性流失；偏差由主题频次驱动而非情感，情感审计无法捕捉；针对性提示仅恢复已命名主题。",
+      "topic_tags": [
+        "HR",
+        "偏见",
+        "公平性",
+        "员工幸福感"
+      ]
     }
   },
   "channels": [
@@ -41,7 +49,7 @@
     {
       "channel": "ob",
       "legacy_id": 77408,
-      "revision": "159bdca772993db1c5fa54ca392eba235e82b62f"
+      "revision": "26c7ceda02298790d186b8d065251d5d73a8f3c8"
     }
   ],
   "title": "Whose Voice Survives the Summary? A Voice-Retention Audit of LLM Employee Listening",

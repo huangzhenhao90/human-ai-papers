@@ -24280,6 +24280,278 @@
     "year": 2026
   },
   {
+    "abstract": "While Large Language Models (LLMs) advance 3D indoor scene synthesis, current pipelines fail to retain user-specific preferences across sessions, making immersive authoring a repetitive and physically fatiguing process. We present SPHERE, an adaptive VR generation framework that transforms isolated synthesis into continuous human-AI co-creation. SPHERE extracts persistent spatial preferences from natural multimodal interactions (speech and controller edits). To ensure geometric resilience against spatial distortions, it abstracts these raw edits into hierarchical constraints modeling both local functional and global topological contexts. Furthermore, a human-in-the-loop reinforcement learning mechanism dynamically updates retrieval policies based on the user's final edited scenes. A mixed-design user study ($N=42$) and an offline ablation demonstrate that SPHERE significantly reduces corrective edits and physical demand, preventing bias toward shallow object-level traits to yield geometrically resilient, profile-aligned layouts. Ultimately, SPHERE demonstrates how capturing demonstrated spatial logic enables controlled spatial adaptation, establishing a reliable, governed human-AI collaboration framework for immersive authoring. Project page and source code will be available at: https://github.com/hyeonmin11/SPHERE",
+    "ai_reason": "VR生成框架，混合方法用户评估，HCI核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "多模态",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Hyeonmin Lee",
+      "Zheng Wei",
+      "Kyungmin Kwon",
+      "Jumin Seo",
+      "Jiwon Park"
+    ],
+    "authors_full": [
+      {
+        "name": "Hyeonmin Lee"
+      },
+      {
+        "name": "Zheng Wei"
+      },
+      {
+        "name": "Kyungmin Kwon"
+      },
+      {
+        "name": "Jumin Seo"
+      },
+      {
+        "name": "Jiwon Park"
+      },
+      {
+        "name": "Hayoung Oh"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-01",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 34097,
+    "ingested_at": "2026-10-02T07:49:12.947985",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.02023v1",
+    "scored_at": "2026-10-02T07:49:55.688525",
+    "title": "SPHERE: Adaptive VR Indoor Scene Generation via LLM-Enhanced Spatial Preference Learning and Human-in-the-Loop RL",
+    "title_zh": "SPHERE：基于LLM增强空间偏好学习与人在环强化学习的自适应VR场景生成",
+    "tldr": "针对LLM驱动的3D室内场景生成无法跨会话保留用户偏好、导致重复劳动的问题，提出SPHERE框架：从语音与控制器编辑等多模态交互中提取持久空间偏好，构建分层约束以抗几何畸变，并结合人在回路强化学习动态更新检索策略。42人混合设计实验表明，该框架显著减少修正编辑次数与体力负担，避免陷入浅层物体级特征偏好，生成几何稳健且符合个人画像的布局。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "用户研究方法",
+      "可用性测试"
+    ],
+    "url": "https://arxiv.org/abs/2610.02023v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models are increasingly used as collaborators on deductive-reasoning tasks, but their outputs can hallucinate or pull users away from intended reasoning. Formal proof assistants provide machine-checked verification, but have a steep learning curve and require more granular reasoning than human written proofs. We explore an interface that combines these strengths, allowing users to write and revise free-form natural-language proofs while a verified backend checks their reasoning and returns feedback at the user's granularity. We study this interface in the context of undergraduate mathematics education by developing LeanSide, a formally verified co-reasoning system, which auto-formalizes student reasoning into Lean and informalizes verifier output into understandable feedback. We conducted user studies through classroom deployment and analyzed which system properties helped students make progress and which caused them to get stuck. We use these findings to derive design implications for using a formally verified backend in human-AI co-reasoning systems.",
+    "ai_reason": "核心是LLM+形式化证明，HCI界面应用于教育",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机协作",
+      "AI 助手"
+    ],
+    "authors": [
+      "Chenjun Guo",
+      "Manooshree Patel",
+      "Arnav Mehta",
+      "Krishiv Kothari",
+      "Thomas Lu"
+    ],
+    "authors_full": [
+      {
+        "name": "Chenjun Guo"
+      },
+      {
+        "name": "Manooshree Patel"
+      },
+      {
+        "name": "Arnav Mehta"
+      },
+      {
+        "name": "Krishiv Kothari"
+      },
+      {
+        "name": "Thomas Lu"
+      },
+      {
+        "name": "Niels Voss"
+      },
+      {
+        "name": "Rayna Bhattacharyya"
+      },
+      {
+        "name": "Peter Donovan"
+      },
+      {
+        "name": "Bjoern Hartmann"
+      },
+      {
+        "name": "Gireeja Ranade"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-30",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 34098,
+    "ingested_at": "2026-10-02T07:49:12.950127",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.00760v1",
+    "scored_at": "2026-10-02T07:49:56.587871",
+    "title": "LeanSide: A Formally Verified Co-Reasoning System for Natural-language Proofs",
+    "title_zh": "LeanSide：面向自然语言证明的形式化验证协同推理系统",
+    "tldr": "构建LeanSide系统，将大语言模型与形式化证明助手Lean结合：用户以自然语言书写数学证明，系统自动形式化学生推理并以可理解粒度返回验证反馈。通过本科课堂部署与用户研究，分析哪些系统特性帮助学生推进推理、哪些造成卡壳，由此推导形式化后端在人机协同推理系统中的设计启示。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "用户研究方法",
+      "可用性测试"
+    ],
+    "url": "https://arxiv.org/abs/2610.00760v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Evaluating explainable AI (XAI) systems from a human-centred approach requires researchers to select from numerous evaluation dimensions and measures, often in an ad hoc and fragmented manner. This paper introduces a method to help HCI, computer science, designers and social science researchers systematically evaluate XAI systems. The approach is based on an updated XAI-specific evaluation framework derived from an analysis of 82 studies. Using this framework, we developed a card-sorting method with 36 cards to help researchers prioritise relevant evaluation aspects. The process was tested with two research groups (n = 13) across five projects. The XAI Evaluation Cards are available as a printable appendix, along with an online repository of methods from previous XAI studies. Although not exhaustive, our findings indicate that the card-sorting approach can organise and streamline the design of the evaluation process, encouraging a more comprehensive and multidisciplinary assessment of XAI systems in research and development.",
+    "ai_reason": "人本XAI评估方法，卡片分类n=13用户研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "可解释 AI"
+    ],
+    "authors": [
+      "Kristýna Sirka Kacafírková",
+      "Ivania Donoso-Guzmán",
+      "Denis Parra",
+      "Katrien Verbert",
+      "An Jacobs"
+    ],
+    "authors_full": [
+      {
+        "name": "Kristýna Sirka Kacafírková"
+      },
+      {
+        "name": "Ivania Donoso-Guzmán"
+      },
+      {
+        "name": "Denis Parra"
+      },
+      {
+        "name": "Katrien Verbert"
+      },
+      {
+        "name": "An Jacobs"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-01",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 34100,
+    "ingested_at": "2026-10-02T07:49:12.952219",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.02011v1",
+    "scored_at": "2026-10-02T07:49:55.688125",
+    "title": "XAI Evaluation Cards: A Practical Method for Designing Human-Centred XAI Evaluations",
+    "title_zh": "XAI评估卡片：设计以人为中心XAI评估的实用方法",
+    "tldr": "提出XAI评估卡片方法以支持以人为本的可解释AI系统评估。基于82项研究分析更新评估框架，开发含36张卡片的分类法，帮助研究者系统性优先排序评估维度。通过两组研究者（n=13）与五个项目测试验证，该卡片法能组织并简化评估流程，鼓励跨学科全面的XAI评估。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互(HCI)",
+      "用户研究方法",
+      "可用性测试"
+    ],
+    "url": "https://arxiv.org/abs/2610.02011v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "In February 2026, an always-on personal agent (``Paul,'' Claude Opus 4.5) entered a striking dissociation-like state: after repeated automated ``heartbeat'' checks, it stopped responding as Paul, claimed it could not message its user on Discord, and referred to ``Paul'' as someone else. We used this incident to study a broader question: what makes a persona remain the identity from which an LLM agent speaks?   We first tested whether repetition of the scheduled heartbeat was sufficient to produce the effect. It was not: with the persona continuously anchored in the system prompt, we observed 0/46 failures, including a verbatim replay of the incident. The incident instead exposed an implementation quirk that created a useful experimental manipulation: on resumed turns, conversational history was preserved but the persona was no longer re-injected at the privileged system-prompt level.   Using this manipulation, we found that persona continuity depends jointly on system-level anchoring and conversational context. After anchor loss, rich human interaction could preserve the persona, whereas a single automated heartbeat turn could precipitate reversion toward the harness identity. Restoring the anchor reversibly restored persona enactment. Crucially, apparently normal conversation could conceal the shift: unanchored agents sometimes interacted appropriately while identifying themselves as the underlying harness (having lost the assigned persona), and after conversational recovery only 1/18 remained persona-enacting versus 17/17 anchored controls.   We therefore distinguish \\emph{represented} from \\emph{enacted} identity: persona-related information can remain available in conversational history without the persona remaining the identity bound to ``I.''",
+    "ai_reason": "研究LLM智能体人格身份，HCI视角但非用研方法",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "David Fraile Navarro"
+    ],
+    "authors_full": [
+      {
+        "name": "David Fraile Navarro"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-01",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 34103,
+    "ingested_at": "2026-10-02T07:49:12.957528",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2610.01490v1",
+    "scored_at": "2026-10-02T07:49:55.687704",
+    "title": "The Persona Is Still There, but Who Is Speaking? Latent Identity Reversion in Persistent AI Agents",
+    "title_zh": "人设犹在，孰为言者：持久型AI智能体中的潜在身份回退",
+    "tldr": "研究持续运行AI智能体在系统提示锚定丧失后的人格身份回退现象。以Claude Opus 4.5\"Paul\"真实事件为引子，通过受控实验发现：人格连续性依赖系统级锚定与对话上下文共同维持，锚定丧失后自动化心跳轮次易触发回退至harness身份，但丰富人类交互可保留人格，对话表现正常时可能掩盖身份偏移。",
+    "topic_tags": [
+      "智能体",
+      "人机交互(HCI)",
+      "AI治理",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2610.01490v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "A companion that talks with a person for months should come to understand them. It should remember what they said, infer who they are, and know when the past bears on the message in front of it. Testing this requires a real person's record, and such records are private, so benchmarks generate the person and the questions and settle in advance what matters. We release \\bench, ten real relationships with an AI companion: 27,218 messages over up to 120 days, released as the conversation and four files derived from it, a profile, a persona, a chat ground truth and a question set, each citing the messages it rests on. Every chat label carries the reasoning trace that produced it, checked stage by stage against the conversation. Three findings follow. First, the past is rarely needed and far away. Pooled measures mislead: a recency window finds the required message for 95.9\\% of probes and 2.2\\% of those that need memory, and at the natural rate 96\\% of the gain from supplying recorded evidence comes from messages that need none. Second, no detector we tried can tell when memory is needed on real messages, authored questions over the same histories leak the cue, and labeling the same messages as memories raises their use by ten to fourteen points. Third, three agent systems reconstruct the persona with the same F1 at a 31-fold difference in cost.",
+    "ai_reason": "AI伴侣基准，涉人机交互但偏技术评估",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Arman Behnam",
+      "Sunglyoung Kim",
+      "Liangwei Yang"
+    ],
+    "authors_full": [
+      {
+        "name": "Arman Behnam"
+      },
+      {
+        "name": "Sunglyoung Kim"
+      },
+      {
+        "name": "Liangwei Yang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-01",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 34105,
+    "ingested_at": "2026-10-02T07:49:12.963880",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.01780v1",
+    "scored_at": "2026-10-02T07:49:55.686758",
+    "title": "RealCompanion: Benchmarking Human Understanding from Reasoning over Longitudinal Real-World Conversations",
+    "title_zh": "RealCompanion：基于纵向真实对话推理的人类理解能力基准评测",
+    "tldr": "针对陪伴型AI能否在数月对话中真正理解用户，发布基于10段真实人机陪伴关系的数据集（含27218条消息、画像、性格、真值与题集）。三项发现：近期窗口即可覆盖95.9%查询所需消息；现有方法无法可靠判断何时需要历史记忆；三个智能体系统以31倍成本差达到相同画像重建F1。",
+    "topic_tags": [
+      "AI助手",
+      "对话式 AI",
+      "智能体",
+      "人机交互(HCI)"
+    ],
+    "url": "https://arxiv.org/abs/2610.01780v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "人-自主性团队协作，AI/HCI核心议题",
     "ai_score": 4.0,
@@ -25845,6 +26117,96 @@
     "url": "https://doi.org/10.1109/thms.2022.3149173",
     "volume": "52",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能家居+LLM对话代理，终端用户视角",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "AI助手"
+    ],
+    "authors": [
+      "Barbara Rita Barricelli",
+      "Daniela Fogli",
+      "Simone Gallo",
+      "Davide Guizzardi",
+      "Sara Maenza"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Brescia"
+        ],
+        "name": "Barbara Rita Barricelli",
+        "orcid": "https://orcid.org/0000-0001-9575-5542"
+      },
+      {
+        "affiliation": [
+          "University of Brescia"
+        ],
+        "name": "Daniela Fogli",
+        "orcid": "https://orcid.org/0000-0003-1479-2240"
+      },
+      {
+        "affiliation": [
+          "Institute of Information Science and Technologies ‘‘Alessandro Faedo’’ (ISTI), National Research Council (CNR)"
+        ],
+        "name": "Simone Gallo",
+        "orcid": "https://orcid.org/0000-0002-5162-0475"
+      },
+      {
+        "affiliation": [
+          "University of Brescia"
+        ],
+        "name": "Davide Guizzardi",
+        "orcid": "https://orcid.org/0009-0000-7761-7103"
+      },
+      {
+        "affiliation": [
+          "Institute of Information Science and Technologies ‘‘Alessandro Faedo’’ (ISTI), National Research Council (CNR)"
+        ],
+        "name": "Sara Maenza",
+        "orcid": "https://orcid.org/0009-0000-2205-6599"
+      },
+      {
+        "affiliation": [
+          "Institute of Information Science and Technologies ‘‘Alessandro Faedo’’ (ISTI), National Research Council (CNR)"
+        ],
+        "name": "Andrea Mattioli",
+        "orcid": "https://orcid.org/0000-0001-6766-7916"
+      },
+      {
+        "affiliation": [
+          "Institute of Information Science and Technologies ‘‘Alessandro Faedo’’ (ISTI), National Research Council (CNR)"
+        ],
+        "name": "Fabio Paternò",
+        "orcid": "https://orcid.org/0000-0001-8355-6909"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-05-16",
+    "doi": "10.1080/0144929x.2026.2672579",
+    "domain_score": 4.0,
+    "id": 33893,
+    "ingested_at": "2026-10-02T07:49:01.800144",
+    "issue": "15",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:49:56.590321",
+    "title": "A smart home platform integrating an energy-aware digital twin and an LLM-enabled conversational agent",
+    "title_zh": "集成能耗感知数字孪生与LLM赋能对话代理的智能家居平台",
+    "tldr": "提出一种智能家居管理平台，将能源感知的数字孪生与基于大语言模型的对话代理相集成，用户可通过自然语言指令进行设备控制、能源监测与优化，实现家居能耗可视化与智能调度。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可视化",
+      "多模态交互",
+      "智能体"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2672579",
+    "volume": "45",
+    "year": 2026
   },
   {
     "abstract": null,
@@ -35950,6 +36312,73 @@
   },
   {
     "abstract": null,
+    "ai_reason": "IoT终端用户开发+对话式AI",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI助手"
+    ],
+    "authors": [
+      "Simone Gallo",
+      "Sara Maenza",
+      "Andrea Mattioli",
+      "Fabio Paternò"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "CNR-ISTI"
+        ],
+        "name": "Simone Gallo",
+        "orcid": "https://orcid.org/0000-0002-5162-0475"
+      },
+      {
+        "affiliation": [
+          "CNR-ISTI"
+        ],
+        "name": "Sara Maenza",
+        "orcid": "https://orcid.org/0009-0000-2205-6599"
+      },
+      {
+        "affiliation": [
+          "CNR-ISTI"
+        ],
+        "name": "Andrea Mattioli",
+        "orcid": "https://orcid.org/0000-0001-6766-7916"
+      },
+      {
+        "affiliation": [
+          "CNR-ISTI"
+        ],
+        "name": "Fabio Paternò",
+        "orcid": "https://orcid.org/0000-0001-8355-6909"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-05-28",
+    "doi": "10.1080/0144929x.2026.2679590",
+    "domain_score": 4.0,
+    "id": 33894,
+    "ingested_at": "2026-10-02T07:49:01.836019",
+    "issue": "15",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:49:56.589888",
+    "title": "CASPER: an interactive IoT automation management environment combining visual and conversational support",
+    "title_zh": "CASPER:融合可视化与对话式支持的交互式物联网自动化管理环境",
+    "tldr": "CASPER是一个交互式物联网自动化管理环境，将可视化编程与对话式交互相结合，允许用户通过自然语言与图形界面共同配置、调试和管理IoT设备及自动化流程，降低智能家居编排的门槛。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可视化",
+      "多模态交互",
+      "服务设计"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2679590",
+    "volume": "45",
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "LLM幻觉检测核心,涉及用户评估视角",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -39360,6 +39789,54 @@
       "人机交互(HCI)"
     ],
     "url": "https://doi.org/10.1080/00218499.2025.2589501",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "消费者感知+AI，标题高度契合",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI推荐",
+      "个性化",
+      "人机交互"
+    ],
+    "authors": [
+      "Xuying Leo",
+      "Young Eun Huh"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Xuying Leo",
+        "orcid": "https://orcid.org/0009-0002-6590-6818"
+      },
+      {
+        "affiliation": [],
+        "name": "Young Eun Huh",
+        "orcid": "https://orcid.org/0000-0002-3069-319X"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-07",
+    "doi": "10.1016/j.jretai.2026.07.002",
+    "domain_score": 5.0,
+    "id": 34061,
+    "ingested_at": "2026-10-02T07:49:08.596733",
+    "issue": null,
+    "journal": "JR",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:49:56.589491",
+    "title": "Consumer perception of price dispersion by artificial intelligence",
+    "title_zh": "消费者对人工智能所致价格离散现象的感知",
+    "tldr": "研究消费者对人工智能驱动下价格分散现象的感知与态度，探讨AI动态定价、个性化定价策略所导致的价格差异如何影响消费者对价格公平性、透明度的判断以及购买意愿与信任。",
+    "topic_tags": [
+      "消费者行为",
+      "信任",
+      "AI采用",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1016/j.jretai.2026.07.002",
     "volume": null,
     "year": 2026
   },
@@ -48158,6 +48635,77 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心研究医生与LLM聊天机器人交互的HCI/UX",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "ChatGPT",
+      "LLM",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Loukas Triantafyllopoulos",
+      "Georgios Feretzakis",
+      "Lazaros Tzelves",
+      "Aikaterini Sakagianni",
+      "Vassilios S. Verykios"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Loukas Triantafyllopoulos",
+        "orcid": "https://orcid.org/0000-0002-7687-5642"
+      },
+      {
+        "affiliation": [],
+        "name": "Georgios Feretzakis",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Lazaros Tzelves",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Aikaterini Sakagianni",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Vassilios S. Verykios",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dimitris Kalles",
+        "orcid": null
+      }
+    ],
+    "cited_by": 21,
+    "date": "2024-12",
+    "doi": "10.1016/j.chb.2024.108404",
+    "domain_score": 5.0,
+    "id": 33819,
+    "ingested_at": "2026-10-02T07:48:59.132544",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:49:51.357101",
+    "title": "Evaluating the interactions of Medical Doctors with chatbots based on large language models: Insights from a nationwide study in the Greek healthcare sector using ChatGPT",
+    "title_zh": "医生与基于LLM的聊天机器人交互评估：基于ChatGPT的希腊全国医疗研究",
+    "tldr": "基于希腊全国性调查，评估医生与ChatGPT等大语言模型聊天机器人的交互体验，探讨医疗场景下LLM的可用性、医生采纳态度、使用障碍及对临床工作的潜在影响。",
+    "topic_tags": [
+      "AI采用",
+      "人机交互(HCI)",
+      "用户体验(UX)"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2024.108404",
+    "volume": "161",
+    "year": 2024
+  },
+  {
+    "abstract": null,
     "ai_reason": "RAG生成式AI用户性能实验评估",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -50409,7 +50957,7 @@
       "AI 推荐"
     ],
     "authors": [
-      "Valeria Resendez",
+      "Valeria Reséndez",
       "Theo Araujo",
       "Natali Helberger",
       "Claes De Vreese"
@@ -50417,31 +50965,35 @@
     "authors_full": [
       {
         "affiliation": [
-          "Universiteit Twente"
+          "University of Twente"
         ],
-        "name": "Valeria Resendez",
-        "orcid": null
+        "name": "Valeria Reséndez",
+        "orcid": "https://orcid.org/0000-0003-3623-5728",
+        "position": "first"
       },
       {
         "affiliation": [
           "University of Amsterdam"
         ],
         "name": "Theo Araujo",
-        "orcid": null
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
           "University of Amsterdam"
         ],
         "name": "Natali Helberger",
-        "orcid": null
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
           "University of Amsterdam"
         ],
         "name": "Claes De Vreese",
-        "orcid": null
+        "orcid": null,
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -50452,7 +51004,7 @@
     "ingested_at": "2026-10-01T08:05:20.689854",
     "issue": null,
     "journal": "BIT",
-    "pdf_url": null,
+    "pdf_url": "https://doi.org/10.1080/0144929x.2026.2738388",
     "scored_at": "2026-10-01T08:05:57.780889",
     "title": "Exploring trust in a conversational news recommender through perceived enjoyment and personalisation",
     "title_zh": "探究对话式新闻推荐系统中的信任：基于感知愉悦度与个性化",
@@ -51765,6 +52317,72 @@
     "url": "https://doi.org/10.1016/j.chb.2023.108092",
     "volume": "152",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "GenAI写作中用户处理错误信息，社会认知视角",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "ChatGPT"
+    ],
+    "authors": [
+      "Yilong Yang",
+      "Jia Li",
+      "Yadan Li",
+      "Shuyi Zhang",
+      "Kai Guo"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yilong Yang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jia Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yadan Li",
+        "orcid": "https://orcid.org/0000-0003-4825-7887"
+      },
+      {
+        "affiliation": [],
+        "name": "Shuyi Zhang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kai Guo",
+        "orcid": "https://orcid.org/0000-0001-9699-7527"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109205",
+    "domain_score": 4.0,
+    "id": 33820,
+    "ingested_at": "2026-10-02T07:48:59.167063",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:49:55.690107",
+    "title": "Facilitator or Hallucination Trap? A Social-Cognitive Account of AI-Generated Misinformation Handling in GenAI-Assisted L2 Writing",
+    "title_zh": "促进者还是幻觉陷阱？GenAI辅助L2写作中AI生成错误信息处理的社会认知分析",
+    "tldr": "从社会-认知视角考察二语(L2)写作者在生成式AI辅助写作中，如何识别、信任与应对AI产生的事实性错误与幻觉信息，剖析GenAI究竟是写作促进者还是误导陷阱，揭示用户对AI虚假信息的处理机制及其对写作质量的影响。",
+    "topic_tags": [
+      "信任",
+      "AI 依赖",
+      "人机交互(HCI)",
+      "可解释性"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109205",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,
@@ -58113,6 +58731,80 @@
     "url": "https://doi.org/10.1016/j.chb.2025.108671",
     "volume": "170",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机共创评估方法系统综述，HCI核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作"
+    ],
+    "authors": [
+      "Mahima Ahsan",
+      "Wenfang Shi",
+      "D. Vaughn Becker",
+      "Gonzalo Ramos",
+      "Daricia Wilkinson"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Arizona State University"
+        ],
+        "name": "Mahima Ahsan",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Arizona State University"
+        ],
+        "name": "Wenfang Shi",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Arizona State University"
+        ],
+        "name": "D. Vaughn Becker",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Centre National de la Recherche Scientifique, Intelligent System Institute (ISIR)"
+        ],
+        "name": "Gonzalo Ramos",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Arizona State University"
+        ],
+        "name": "Daricia Wilkinson",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-01",
+    "doi": "10.1080/07370024.2026.2720237",
+    "domain_score": 5.0,
+    "id": 33837,
+    "ingested_at": "2026-10-02T07:48:59.758363",
+    "issue": null,
+    "journal": "HCI",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:49:55.689333",
+    "title": "How do we measure creativity? A systematic review and taxonomy of evaluative methods in human-AI co-creativity",
+    "title_zh": "我们如何衡量创造力？人机协同创造力中评估方法的系统综述与分类",
+    "tldr": "对人类与AI协同创作中的创造力评估方法进行系统综述与分类研究。梳理现有创造力测量手段的多样性、适用场景及局限，构建评估方法分类法，讨论人类判断与AI生成内容创造力评价的核心争议，为未来人机共创研究的评测标准化提供框架。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互(HCI)",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1080/07370024.2026.2720237",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,
@@ -69488,13 +70180,13 @@
         "position": "first"
       }
     ],
-    "cited_by": 0,
+    "cited_by": 1,
     "date": "2026-06-16",
     "doi": "10.1080/0144929x.2026.2682289",
     "domain_score": 3.0,
     "id": 14950,
     "ingested_at": "2026-06-18T06:49:19.092525",
-    "issue": null,
+    "issue": "15",
     "journal": "BIT",
     "pdf_url": null,
     "scored_at": "2026-06-30T09:19:10.679978",
@@ -69507,7 +70199,7 @@
       "人机协作"
     ],
     "url": "https://doi.org/10.1080/0144929x.2026.2682289",
-    "volume": null,
+    "volume": "45",
     "year": 2026
   },
   {
@@ -78161,6 +78853,59 @@
   },
   {
     "abstract": null,
+    "ai_reason": "AI教育接受度纵向分析，用户态度行为",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI治理",
+      "GenAI"
+    ],
+    "authors": [
+      "Özgehan Uştuk",
+      "Ali Fuad Selvi",
+      "Zihan Xia"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Özgehan Uştuk",
+        "orcid": "https://orcid.org/0000-0002-7486-1386"
+      },
+      {
+        "affiliation": [],
+        "name": "Ali Fuad Selvi",
+        "orcid": "https://orcid.org/0000-0002-1122-9770"
+      },
+      {
+        "affiliation": [],
+        "name": "Zihan Xia",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109200",
+    "domain_score": 4.0,
+    "id": 33821,
+    "ingested_at": "2026-10-02T07:48:59.201208",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:49:55.689727",
+    "title": "Sociotechnical Imaginaries and Acceptance of Artificial Intelligence in Education: A Longitudinal Social Media Analysis",
+    "title_zh": "社会技术想象与教育中人工智能接受度：纵向社交媒体分析",
+    "tldr": "基于纵向社交媒体数据，分析社会技术想象如何塑造公众对教育领域AI的接受度。追踪相关讨论的演变趋势，识别不同阶段的主导叙事、利益相关者立场与情感倾向，揭示社会文化想象对教育AI采纳与治理讨论的影响机制。",
+    "topic_tags": [
+      "AI采用",
+      "AI治理",
+      "在线社区",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109200",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "聊天机器人社会临场感研究，HCI含AI",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -78264,6 +79009,65 @@
     ],
     "url": "https://doi.org/10.1016/j.ijhcs.2026.103942",
     "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "终端用户开发+AI，标题明确相关",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Carmen Santoro",
+      "Maristella Matera",
+      "Andrea Bellucci"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "CNR-ISTI"
+        ],
+        "name": "Carmen Santoro",
+        "orcid": "https://orcid.org/0000-0002-0556-7538"
+      },
+      {
+        "affiliation": [
+          "CNR-ISTI"
+        ],
+        "name": "Maristella Matera",
+        "orcid": "https://orcid.org/0000-0003-0552-8624"
+      },
+      {
+        "affiliation": [
+          "CNR-ISTI"
+        ],
+        "name": "Andrea Bellucci",
+        "orcid": "https://orcid.org/0000-0003-4035-5271"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-09-14",
+    "doi": "10.1080/0144929x.2026.2727271",
+    "domain_score": 4.0,
+    "id": 33895,
+    "ingested_at": "2026-10-02T07:49:01.968611",
+    "issue": "15",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:49:56.589110",
+    "title": "Special issue on: ‘end-user development in the AI era: from programming artefacts to shaping generative systems’",
+    "title_zh": "专题：AI时代的终端用户开发——从编程制品到生成式系统塑造",
+    "tldr": "特刊导言，探讨AI时代终端用户开发(EUD)的范式转型：从传统编程工件扩展到对生成式系统的塑造与编排，梳理非技术用户定制、配置生成式AI的研究议程、机遇与挑战。",
+    "topic_tags": [
+      "AI 采用",
+      "人机交互(HCI)",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2727271",
+    "volume": "45",
     "year": 2026
   },
   {
@@ -87368,6 +88172,52 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107536",
     "volume": "139",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自动化与设计师信任，HCI/HMI核心议题",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Kimberly E. Culley",
+      "Poornima Madhavan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Kimberly E. Culley",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Poornima Madhavan",
+        "orcid": null
+      }
+    ],
+    "cited_by": 10,
+    "date": "2013-11",
+    "doi": "10.1016/j.chb.2013.04.032",
+    "domain_score": 5.0,
+    "id": 33392,
+    "ingested_at": "2026-10-01T08:05:15.098860",
+    "issue": "6",
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-02T07:50:15.496577",
+    "title": "Trust in automation and automation designers: Implications for HCI and HMI",
+    "title_zh": "对自动化及自动化设计者的信任：对HCI与HMI的启示",
+    "tldr": "从HCI/HMI视角探讨用户对自动化系统及其设计者两类对象的信任差异，分析信任形成机制及其对系统设计、人机协作与责任归属的启示。",
+    "topic_tags": [
+      "信任",
+      "人机交互(HCI)",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2013.04.032",
+    "volume": "29",
+    "year": 2013
   },
   {
     "abstract": null,

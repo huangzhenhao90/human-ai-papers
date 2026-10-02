@@ -1,0 +1,62 @@
+{
+  "abstract": "A companion that talks with a person for months should come to understand them. It should remember what they said, infer who they are, and know when the past bears on the message in front of it. Testing this requires a real person's record, and such records are private, so benchmarks generate the person and the questions and settle in advance what matters. We release \\bench, ten real relationships with an AI companion: 27,218 messages over up to 120 days, released as the conversation and four files derived from it, a profile, a persona, a chat ground truth and a question set, each citing the messages it rests on. Every chat label carries the reasoning trace that produced it, checked stage by stage against the conversation. Three findings follow. First, the past is rarely needed and far away. Pooled measures mislead: a recency window finds the required message for 95.9\\% of probes and 2.2\\% of those that need memory, and at the natural rate 96\\% of the gain from supplying recorded evidence comes from messages that need none. Second, no detector we tried can tell when memory is needed on real messages, authored questions over the same histories leak the cue, and labeling the same messages as memories raises their use by ten to fourteen points. Third, three agent systems reconstruct the persona with the same F1 at a 31-fold difference in cost.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2610.01780",
+  "authors": [
+    "Arman Behnam",
+    "Sunglyoung Kim",
+    "Liangwei Yang"
+  ],
+  "authors_full": [
+    {
+      "name": "Arman Behnam"
+    },
+    {
+      "name": "Sunglyoung Kim"
+    },
+    {
+      "name": "Liangwei Yang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "AI伴侣基准，涉人机交互但偏技术评估",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对陪伴型AI能否在数月对话中真正理解用户，发布基于10段真实人机陪伴关系的数据集（含27218条消息、画像、性格、真值与题集）。三项发现：近期窗口即可覆盖95.9%查询所需消息；现有方法无法可靠判断何时需要历史记忆；三个智能体系统以31倍成本差达到相同画像重建F1。",
+      "topic_tags": [
+        "AI助手",
+        "对话式 AI",
+        "智能体",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-01",
+  "doi": null,
+  "id": "p_QtpYoeL8a2Iy2kmp",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.01780v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 34105,
+      "revision": "d60e73dba40f44b05bd59a3a00b6670c59cf89ee"
+    }
+  ],
+  "title": "RealCompanion: Benchmarking Human Understanding from Reasoning over Longitudinal Real-World Conversations",
+  "title_zh": "RealCompanion：基于纵向真实对话推理的人类理解能力基准评测",
+  "unified_ingested_at": "2026-10-02T08:05:38.462984Z",
+  "url": "https://arxiv.org/abs/2610.01780v1",
+  "volume": null,
+  "year": 2026
+}
