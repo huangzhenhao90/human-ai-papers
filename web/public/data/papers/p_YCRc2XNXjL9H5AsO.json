@@ -1,0 +1,58 @@
+{
+  "abstract": "LLM judges are increasingly used to assess whether AI outputs meet workplace requirements, but agreement on response rankings does not establish agreement on acceptance rates or occupational aggregates. We introduce O*NET-BENCH, an audit suite derived from an existing survey of 45,796 worker ratings, and evaluate 33 pre-existing judge configurations across six model families on 4,501 test ratings. Twenty-five configurations achieve tie-aware pair accuracy of at least 0.60, although a train-fitted response-only TF-IDF baseline nearly matches the strongest judge. Despite this ordering agreement, judges estimate that 3.0%-97.9% of responses are acceptable, compared with 61.1% for occupation-matched workers. In one fine-tuned lineage, changing from pointwise scoring to a bundled few-shot/listwise protocol improves response ordering while reducing agreement with worker means at the task and occupation levels; this reversal replicates on a task- and worker-disjoint validation split under prespecified criteria. Cross-validated calibration largely removes mean bias, but calibrated scores explain at most 8.5% of individual worker-rating variance. Prediction-assisted estimation yields at most small precision gains at the studied label budgets. These results show that ranking agreement alone is insufficient for occupational measurement. Judges should be validated against the acceptance rates and aggregates their scores will be used to estimate.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策",
+    "可解释AI"
+  ],
+  "arxiv_id": "2610.02492",
+  "authors": [
+    "Harry Lyu",
+    "Neil Thompson"
+  ],
+  "authors_full": [
+    {
+      "name": "Harry Lyu"
+    },
+    {
+      "name": "Neil Thompson"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM评判审计职业AI测量，AI核心",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究关注LLM评判器在职业AI输出评估中的可靠性，构建O*NET-BENCH审计套件评估33种评判器配置。多数配置对响应排序一致性尚可（配对准确率≥0.60），但对可接受率的估计范围高达3.0%–97.9%，与工人实际值61.1%严重偏离；点对点改列表式协议后排序改善却反而降低与工人均值的吻合。校准后最多仅解释8.5%的评分方差，排序一致不足以支撑职业层级测量。",
+      "topic_tags": [
+        "HR",
+        "绩效评估",
+        "公平性",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-01",
+  "doi": null,
+  "id": "p_YCRc2XNXjL9H5AsO",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.02492v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 80086,
+      "revision": "6a5128df51a5f1fa2d5176314b7ca83401f1ac73"
+    }
+  ],
+  "title": "Right Order, Wrong Scale: Auditing LLM Judges for Occupational AI Measurement",
+  "title_zh": "顺序正确，量度有误：职业AI测量中LLM评判者的审计",
+  "unified_ingested_at": "2026-10-05T08:34:13.386258Z",
+  "url": "https://arxiv.org/abs/2610.02492v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,65 @@
+{
+  "abstract": "Matching candidates to vacancies is central to recruitment, and a recruiter needs to see why a candidate fits, not only a single opaque relevance score. We provide this evidence as named, interpretable matching dimensions recruiters can act on - eight in our current deployment. We propose a two-part approach. The first is an LLM-based labeler whose prompts and feature definitions were refined from recruiter feedback while it served as an earlier production matching stage. In the current architecture, it is used only for offline labeling and is not called on online requests. The second is a feature bi-encoder distilled from it: a LoRA-adapted embedding backbone with compact per-dimension heads that runs on CPU and serves all online requests. Both parts keep improving: prompts are revised as feedback arrives, and the bi-encoder is retrained on the updated labels. The model is trained on 168,772 labeled vacancy-resume pairs (17,921 vacancies and 180,030 resumes). Recruiters using the service can confirm or revise surfaced feature predictions. On 927 recruiter-recorded values from this selected production-feedback subset, the deployed student agrees with the recorded decisions in 888 cases (95.79%). This is operational, non-blinded agreement rather than an independent human evaluation.",
+  "ai_type_tags": [
+    "LLM",
+    "AI招聘",
+    "可解释AI"
+  ],
+  "arxiv_id": "2610.03112",
+  "authors": [
+    "Ilya Chekin",
+    "Vyacheslav Malyugin",
+    "Vladimir Chirkov",
+    "Mikhail Yurushkin"
+  ],
+  "authors_full": [
+    {
+      "name": "Ilya Chekin"
+    },
+    {
+      "name": "Vyacheslav Malyugin"
+    },
+    {
+      "name": "Vladimir Chirkov"
+    },
+    {
+      "name": "Mikhail Yurushkin"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM简历-职位匹配，AI招聘核心议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "为提升招聘中简历—职位匹配的透明度，提出LLM标注器+蒸馏特征双编码器的两阶段方案：LLM负责离线生成8个可解释匹配维度的标签，双编码器（LoRA适配骨干+紧凑维度头）部署于CPU负责在线推理。在168,772对标注数据上训练，招聘人员可在界面确认或修改预测；927条反馈中双方一致率达95.79%，属非盲操作一致性。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "可解释性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-02",
+  "doi": null,
+  "id": "p_jPA6JSoyS1Q3vY2b",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.03112v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 80088,
+      "revision": "6a5128df51a5f1fa2d5176314b7ca83401f1ac73"
+    }
+  ],
+  "title": "Building Interpretable Feature Representations for Resume-Vacancy Matching by Distilling Production LLM Signals",
+  "title_zh": "通过蒸馏生产环境LLM信号构建可解释的简历-职位匹配特征表示",
+  "unified_ingested_at": "2026-10-05T08:34:13.386258Z",
+  "url": "https://arxiv.org/abs/2610.03112v1",
+  "volume": null,
+  "year": 2026
+}

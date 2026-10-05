@@ -1,0 +1,69 @@
+{
+  "abstract": "E-commerce videos are information-dense and frequently compared by consumers evaluating products and merchants assessing marketing strategies. However, existing multimodal models mainly focus on single-video understanding and have limited ability to compare information across videos. We introduce AdsCVR, the first e-commerce cross-video reasoning benchmark, containing 2,483 videos and 6,110 question-answer pairs across six reasoning dimensions. Cross- video reasoning requires models to locate fine-grained evidence among many redundant frames and integrate visual details, speech, and on-screen text. We therefore propose AdSeek, an agentic framework that dynamically selects visual and audio tools during multi-turn exploration, replacing static uniform sampling with active evidence acquisition. To address the sparse credit assignment of reinforcement learning, we develop an offline trajectory rectification mechanism that identifies reasoning errors and missing multimodal evidence in RL-generated trajectories. The corrected trajectories provide supervised fine-tuning signals that reduce biases learned during RL. This mechanism supports a rectified bootstrapping pipeline in which initial RL exposes reasoning bottlenecks, supervised fine-tuning corrects them, and a final RL stage further improves the policy. AdSeek achieves 74.30 percent accuracy on the AdsCVR test split, outperforming its Qwen3-VL-8B-Instruct backbone by 27.90 percentage points. It also generalizes to the open- domain CrossVid benchmark, demonstrating effective active evidence gathering.",
+  "ai_type_tags": [
+    "多模态",
+    "LLM",
+    "机器学习"
+  ],
+  "arxiv_id": "2610.03099",
+  "authors": [
+    "Jinghan Zhao",
+    "Yiman Hu",
+    "Liang Wu",
+    "Jian Xu",
+    "Bo Zheng"
+  ],
+  "authors_full": [
+    {
+      "name": "Jinghan Zhao"
+    },
+    {
+      "name": "Yiman Hu"
+    },
+    {
+      "name": "Liang Wu"
+    },
+    {
+      "name": "Jian Xu"
+    },
+    {
+      "name": "Bo Zheng"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "电商跨视频推理基准，AI核心，营销边缘",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对电商视频多源信息比较难题，构建首个跨视频推理基准AdsCVR（含2483个视频、6110个问答对，覆盖六类推理），并提出智能体框架AdSeek：在多轮探索中动态选择视听工具进行主动取证，配合离线轨迹矫正机制以缓解强化学习稀疏奖励问题。该方法在测试集上达74.30%准确率，较Qwen3-VL-8B基线提升27.90个百分点，并能泛化至开放域。",
+      "topic_tags": [
+        "营销",
+        "广告",
+        "消费者行为"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-02",
+  "doi": null,
+  "id": "p_YmGAO6KGyMgX-P05",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2610.03099v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 80087,
+      "revision": "6a5128df51a5f1fa2d5176314b7ca83401f1ac73"
+    }
+  ],
+  "title": "Beyond Single Videos: Benchmarking and Active Evidence Seeking for E-Commerce Cross-Video Reasoning",
+  "title_zh": "超越单一视频：电子商务跨视频推理的基准测试与主动证据寻求",
+  "unified_ingested_at": "2026-10-05T08:34:13.386258Z",
+  "url": "https://arxiv.org/abs/2610.03099v1",
+  "volume": null,
+  "year": 2026
+}
