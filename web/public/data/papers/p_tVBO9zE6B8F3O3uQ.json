@@ -1,0 +1,74 @@
+{
+  "abstract": "Building LLMs that behave well socially, not merely correctly, requires Building LLMs that behave well socially, not merely correctly, requires more than producing locally helpful responses. A socially competent agent must infer users' unstated goals, respect their preferences, and adapt as the conversation unfolds. These behaviors are inherently multi-turn and social, making them hard to optimize: real interaction data is scarce, and user preferences are typically latent rather than directly observable. To address these challenges, we build on a persona-driven social simulation environment (consisting of a persona library, LLM-based user simulators, and a user-satisfaction scoring system ranging from [0, 1]), to introduce preference-batched GRPO (PB-GRPO), a post-training algorithm that learns socially adaptive policies from conversation-level feedback. Compared to vanilla GRPO, PB-GRPO computes advantages using a normalization estimated across a bucket of users with similar preferences, stabilizing training across a diverse social population. Empirical evidence shows that PB-GRPO improves models' social behavior over strong reinforcement learning baselines in our simulated environment.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "对话式 AI",
+    "人机协作"
+  ],
+  "arxiv_id": "2610.04132",
+  "authors": [
+    "Jingquan Wang",
+    "Jun Yin",
+    "Xu Han",
+    "Yongsheng Mei",
+    "Jie Hao"
+  ],
+  "authors_full": [
+    {
+      "name": "Jingquan Wang"
+    },
+    {
+      "name": "Jun Yin"
+    },
+    {
+      "name": "Xu Han"
+    },
+    {
+      "name": "Yongsheng Mei"
+    },
+    {
+      "name": "Jie Hao"
+    },
+    {
+      "name": "Bin Guo"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM社会智能体训练，含用户满意度评分",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究如何让大语言模型在多轮对话中展现社交适应性。基于persona驱动的社会模拟环境（含persona库、LLM用户模拟器与0-1区间用户满意度评分），提出偏好分批GRPO（PB-GRPO）后训练算法，通过在偏好相似的用户桶上估计归一化优势来稳定多样化社会群体的训练。实验证明PB-GRPO在社交行为表现上优于强强化学习基线。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "用户画像",
+        "个性化"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-02",
+  "doi": null,
+  "id": "p_tVBO9zE6B8F3O3uQ",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.04132v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 35586,
+      "revision": "7f2cc2a7ef07de0c3691f6c2a060cae1de1ab7eb"
+    }
+  ],
+  "title": "PB-GRPO: Learning Socially Adaptive LLM Agents from Persona-Driven Simulation with Preference-Batched GRPO",
+  "title_zh": "PB-GRPO：基于人格驱动模拟与偏好批处理GRPO学习社会适应性LLM智能体",
+  "unified_ingested_at": "2026-10-06T08:41:43.176759Z",
+  "url": "https://arxiv.org/abs/2610.04132v1",
+  "volume": null,
+  "year": 2026
+}

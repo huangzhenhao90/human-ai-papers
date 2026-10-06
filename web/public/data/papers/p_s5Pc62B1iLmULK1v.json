@@ -1,0 +1,81 @@
+{
+  "abstract": "Workplace sensing studies combine long-running behaviour traces with self-reports, yet the tools that collect those data often sit apart from the interface that returns results. We present TrustmeWatcher, the application built for the TRUST-ME project to connect this work. TrustmeWatcher reuses ActivityWatch's OS-level watchers for computer-activity collection and adds its own application layer. It turns the collected traces into an interactive screen-time dashboard, synchronizes responses from short questionnaires completed on the StreamDeck, and presents questionnaires alongside video highlights. Activity records and self-reports are aligned into labelled records for model development. The scope of this paper is limited to ActivityWatch data as model input. Artificial intelligence (AI) uses these activity records to predict six normalized state scores and an overall well-being score. The trained model runs locally, and the dashboard presents its predictions in semantic bands. Explainable artificial intelligence (XAI) helps users understand how recorded activity contributed to a prediction. Privacy Control lets users pause or resume the camera and eye tracker used by the study. We describe the workflow, its user-device and sensing-setup boundaries, and its use with records from 17 participants. The result is a deployed application and study workflow that integrates activity review, study data collection, privacy control, local prediction, and a participant-facing interface for XAI evaluation.",
+  "ai_type_tags": [
+    "机器学习",
+    "可解释 AI",
+    "人机交互"
+  ],
+  "arxiv_id": "2610.06657",
+  "authors": [
+    "Chengyu Yu",
+    "Leon Jacopo Costa",
+    "Zoja Anžur",
+    "Mohan Li",
+    "Gašper Slapničar"
+  ],
+  "authors_full": [
+    {
+      "name": "Chengyu Yu"
+    },
+    {
+      "name": "Leon Jacopo Costa"
+    },
+    {
+      "name": "Zoja Anžur"
+    },
+    {
+      "name": "Mohan Li"
+    },
+    {
+      "name": "Gašper Slapničar"
+    },
+    {
+      "name": "Daniil Kirilenko"
+    },
+    {
+      "name": "Martin Gjoreski"
+    },
+    {
+      "name": "Mitja Luštrek"
+    },
+    {
+      "name": "Marc Langheinrich"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "工作场所微感知工具，涉及AI建模",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "TrustmeWatcher是一款整合工作场所感知与可解释幸福感反馈的应用，基于ActivityWatch采集电脑活动轨迹，结合StreamDeck问卷与视频片段生成带标签记录，训练本地AI模型预测六项标准化状态分与总体幸福感，通过XAI解释活动贡献，并提供摄像头与眼动仪的隐私暂停控制，以17名参与者验证完整工作流。",
+      "topic_tags": [
+        "员工幸福感",
+        "隐私",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-05",
+  "doi": null,
+  "id": "p_s5Pc62B1iLmULK1v",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2610.06657v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 80697,
+      "revision": "edc827a23fbdaa7ecd6006c332b33c56652c8db4"
+    }
+  ],
+  "title": "TrustmeWatcher: An Application for Workplace Micro-Sensing and Explainable Well-Being Feedback",
+  "title_zh": "TrustmeWatcher：工作场所微感知与可解释幸福感反馈应用",
+  "unified_ingested_at": "2026-10-06T08:41:43.176759Z",
+  "url": "https://arxiv.org/abs/2610.06657v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,63 @@
+{
+  "abstract": "This paper investigates the task of predicting job experience levels in recruitment texts, aiming to automatically identify the qualifications required for positions. Unlike traditional text classification, recruitment texts typically possess explicit internal structures, with different paragraphs playing disproportionate roles in conveying experience clues. To address this, we propose a structure-aware Section-Aware BERT approach that segments and encodes key paragraphs (titles, responsibilities, requirements) for integrated modeling, building upon rule-based systems and classical baselines TF-IDF. Simultaneously, we evaluate large language models under both few-shot and fine-tuning settings on the same dataset to compare the capability boundaries of different modeling paradigms. Experimental results demonstrate that explicitly leveraging text structure significantly improves experience level prediction performance, particularly in scenarios with ambiguous job titles. Further error analysis reveals systemic challenges in this task, including confusion between Entry and Senior levels and the blurred boundaries of Mid-level positions. This research provides an effective modeling approach and analytical framework for understanding structured recruitment texts.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 招聘"
+  ],
+  "arxiv_id": "2610.04304",
+  "authors": [
+    "Celia Liang",
+    "Eddie Wu",
+    "Shiqi Wang",
+    "Yonah You"
+  ],
+  "authors_full": [
+    {
+      "name": "Celia Liang"
+    },
+    {
+      "name": "Eddie Wu"
+    },
+    {
+      "name": "Shiqi Wang"
+    },
+    {
+      "name": "Yonah You"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM与BERT做招聘文本分类，AI核心",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对招聘文本中的岗位经验等级预测任务，提出结构感知的 Section-Aware BERT 方法，将职位描述分割为标题、职责、要求等关键段落进行联合编码，并与 TF-IDF 基线及大语言模型在少样本和微调设置下进行对比。实验表明，显式利用文本结构能显著提升经验等级预测效果，在职位名称模糊时尤为明显。误差分析揭示了入门级与高级混淆、中级边界模糊等系统性挑战。",
+      "topic_tags": [
+        "招聘",
+        "HR"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-03",
+  "doi": null,
+  "id": "p_-ONfGYJHydhnheEE",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.04304v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 80696,
+      "revision": "edc827a23fbdaa7ecd6006c332b33c56652c8db4"
+    }
+  ],
+  "title": "Evaluating Modeling Approaches for Experience-Level Classification in Job Description",
+  "title_zh": "评估职位描述中经验等级分类的建模方法",
+  "unified_ingested_at": "2026-10-06T08:41:43.176759Z",
+  "url": "https://arxiv.org/abs/2610.04304v1",
+  "volume": null,
+  "year": 2026
+}

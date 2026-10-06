@@ -62736,6 +62736,264 @@
     "year": 2026
   },
   {
+    "abstract": "Generative artificial intelligence (AI) models can perform increasingly complex tasks, yet greater AI usage does not necessarily translate into proportional productivity gains. We identify token-max as one source of this inefficiency: when token consumption is treated as productive effort, agents are encouraged to over-exert and expend computation beyond what is necessary. We instead propose outcome-max, which rewards independently verified task completion per unit cost and induces a principled stopping rule. Then, to study these objectives, we develop a three-level simulation framework spanning immediate interaction, long-run behavioral adaptation, and organizational collaboration. Across all three levels, outcome-max improves the efficiency of AI-assisted production while largely preserving verified task performance. To further align these incentives with outcome-max, we introduce OutcomeShare, an incentive mechanism. Theory and simulation show that OutcomeShare can induce participation while generating shared gains for employees, firms, and LLM providers. Together, our results suggest that AI productivity not only depends on model capability, but also on how to construct the objectives governing AI use.",
+    "ai_reason": "核心探讨AI使用与组织生产力",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Chen Xu",
+      "Mengqiao Liu",
+      "Beibei Li",
+      "Chenyan Xiong"
+    ],
+    "authors_full": [
+      {
+        "name": "Chen Xu"
+      },
+      {
+        "name": "Mengqiao Liu"
+      },
+      {
+        "name": "Beibei Li"
+      },
+      {
+        "name": "Chenyan Xiong"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-05",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 80689,
+    "ingested_at": "2026-10-06T08:33:29.387792",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.05697v1",
+    "scored_at": "2026-10-06T08:33:45.890775",
+    "title": "From Token-Max to Outcome-Max: How You Use AI Determines Its Productivity",
+    "title_zh": "从 Token 最大化到结果最大化：你使用 AI 的方式决定其生产力",
+    "tldr": "研究GenAI使用效率问题，识别token-max目标导致的过度计算消耗，提出outcome-max目标——按单位成本奖励独立验证的任务完成并给出原则性停止规则。通过覆盖个体交互、长期行为适应与组织协作的三层仿真，证明outcome-max在保持任务表现的同时提升效率；并设计OutcomeShare激励机制，实现员工、企业与LLM提供商间的收益共享。",
+    "topic_tags": [
+      "人机协作",
+      "绩效评估",
+      "工作设计"
+    ],
+    "url": "https://arxiv.org/abs/2610.05697v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "This paper investigates the task of predicting job experience levels in recruitment texts, aiming to automatically identify the qualifications required for positions. Unlike traditional text classification, recruitment texts typically possess explicit internal structures, with different paragraphs playing disproportionate roles in conveying experience clues. To address this, we propose a structure-aware Section-Aware BERT approach that segments and encodes key paragraphs (titles, responsibilities, requirements) for integrated modeling, building upon rule-based systems and classical baselines TF-IDF. Simultaneously, we evaluate large language models under both few-shot and fine-tuning settings on the same dataset to compare the capability boundaries of different modeling paradigms. Experimental results demonstrate that explicitly leveraging text structure significantly improves experience level prediction performance, particularly in scenarios with ambiguous job titles. Further error analysis reveals systemic challenges in this task, including confusion between Entry and Senior levels and the blurred boundaries of Mid-level positions. This research provides an effective modeling approach and analytical framework for understanding structured recruitment texts.",
+    "ai_reason": "LLM与BERT做招聘文本分类，AI核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI 招聘"
+    ],
+    "authors": [
+      "Celia Liang",
+      "Eddie Wu",
+      "Shiqi Wang",
+      "Yonah You"
+    ],
+    "authors_full": [
+      {
+        "name": "Celia Liang"
+      },
+      {
+        "name": "Eddie Wu"
+      },
+      {
+        "name": "Shiqi Wang"
+      },
+      {
+        "name": "Yonah You"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-03",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 80696,
+    "ingested_at": "2026-10-06T08:33:29.392692",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2610.04304v1",
+    "scored_at": "2026-10-06T08:33:36.214056",
+    "title": "Evaluating Modeling Approaches for Experience-Level Classification in Job Description",
+    "title_zh": "评估职位描述中经验等级分类的建模方法",
+    "tldr": "针对招聘文本中的岗位经验等级预测任务，提出结构感知的 Section-Aware BERT 方法，将职位描述分割为标题、职责、要求等关键段落进行联合编码，并与 TF-IDF 基线及大语言模型在少样本和微调设置下进行对比。实验表明，显式利用文本结构能显著提升经验等级预测效果，在职位名称模糊时尤为明显。误差分析揭示了入门级与高级混淆、中级边界模糊等系统性挑战。",
+    "topic_tags": [
+      "招聘",
+      "HR"
+    ],
+    "url": "https://arxiv.org/abs/2610.04304v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Workplace sensing studies combine long-running behaviour traces with self-reports, yet the tools that collect those data often sit apart from the interface that returns results. We present TrustmeWatcher, the application built for the TRUST-ME project to connect this work. TrustmeWatcher reuses ActivityWatch's OS-level watchers for computer-activity collection and adds its own application layer. It turns the collected traces into an interactive screen-time dashboard, synchronizes responses from short questionnaires completed on the StreamDeck, and presents questionnaires alongside video highlights. Activity records and self-reports are aligned into labelled records for model development. The scope of this paper is limited to ActivityWatch data as model input. Artificial intelligence (AI) uses these activity records to predict six normalized state scores and an overall well-being score. The trained model runs locally, and the dashboard presents its predictions in semantic bands. Explainable artificial intelligence (XAI) helps users understand how recorded activity contributed to a prediction. Privacy Control lets users pause or resume the camera and eye tracker used by the study. We describe the workflow, its user-device and sensing-setup boundaries, and its use with records from 17 participants. The result is a deployed application and study workflow that integrates activity review, study data collection, privacy control, local prediction, and a participant-facing interface for XAI evaluation.",
+    "ai_reason": "工作场所微感知工具，涉及AI建模",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Chengyu Yu",
+      "Leon Jacopo Costa",
+      "Zoja Anžur",
+      "Mohan Li",
+      "Gašper Slapničar"
+    ],
+    "authors_full": [
+      {
+        "name": "Chengyu Yu"
+      },
+      {
+        "name": "Leon Jacopo Costa"
+      },
+      {
+        "name": "Zoja Anžur"
+      },
+      {
+        "name": "Mohan Li"
+      },
+      {
+        "name": "Gašper Slapničar"
+      },
+      {
+        "name": "Daniil Kirilenko"
+      },
+      {
+        "name": "Martin Gjoreski"
+      },
+      {
+        "name": "Mitja Luštrek"
+      },
+      {
+        "name": "Marc Langheinrich"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-05",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 80697,
+    "ingested_at": "2026-10-06T08:33:29.393335",
+    "issue": null,
+    "journal": "arXiv:cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2610.06657v1",
+    "scored_at": "2026-10-06T08:33:45.889263",
+    "title": "TrustmeWatcher: An Application for Workplace Micro-Sensing and Explainable Well-Being Feedback",
+    "title_zh": "TrustmeWatcher：工作场所微感知与可解释幸福感反馈应用",
+    "tldr": "TrustmeWatcher是一款整合工作场所感知与可解释幸福感反馈的应用，基于ActivityWatch采集电脑活动轨迹，结合StreamDeck问卷与视频片段生成带标签记录，训练本地AI模型预测六项标准化状态分与总体幸福感，通过XAI解释活动贡献，并提供摄像头与眼动仪的隐私暂停控制，以17名参与者验证完整工作流。",
+    "topic_tags": [
+      "员工幸福感",
+      "隐私",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2610.06657v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "In this study, we propose a novel rule-based interpretable choice model, Logic-Logit, designed to effectively learn and explain human choices. Choice models have been widely applied across various domains---such as commercial demand forecasting, recommendation systems, and consumer behavior analysis---typically categorized as parametric, nonparametric, or deep network-based. While recent innovations have favored neural network approaches for their computational power, these flexible models often involve large parameter sets and lack interpretability, limiting their effectiveness in contexts where transparency is essential. Previous empirical evidence shows that individuals usually use heuristic decision rules to form their consideration sets, from which they then choose. These rules are often represented as disjunctions of conjunctions (i.e., OR-of-ANDs). These rules-driven, consider-then-choose decision processes enable people to quickly screen numerous alternatives while reducing cognitive and search costs. Motivated by this insight, our approach leverages logic rules to elucidate human choices, providing a fresh perspective on preference modeling. We introduce a unique combination of column generation techniques and the Frank-Wolfe algorithm to facilitate efficient rule extraction for preference modeling---a process recognized as NP-hard. Our empirical evaluation, conducted on both synthetic datasets and real-world data from commercial and healthcare domains, demonstrates that Logic-Logit significantly outperforms baseline models in terms of interpretability and accuracy.",
+    "ai_reason": "逻辑选择模型含ML方法，涉消费者行为",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "机器学习"
+    ],
+    "authors": [
+      "Shuhan Zhang",
+      "Wendi Ren",
+      "Shuang Li"
+    ],
+    "authors_full": [
+      {
+        "name": "Shuhan Zhang"
+      },
+      {
+        "name": "Wendi Ren"
+      },
+      {
+        "name": "Shuang Li"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-04",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 80700,
+    "ingested_at": "2026-10-06T08:33:29.395336",
+    "issue": null,
+    "journal": "arXiv:cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2610.05501v1",
+    "scored_at": "2026-10-06T08:33:36.212438",
+    "title": "Logic-Logit: A Logic-Based Approach to Choice Modeling",
+    "title_zh": "Logic-Logit：基于逻辑的选择建模方法",
+    "tldr": "提出Logic-Logit模型，基于逻辑规则（OR-of-ANDs的析取范式）解释人类选择行为。该模型结合列生成技术与Frank-Wolfe算法，高效提取可解释的偏好规则，解决神经网络模型参数庞大且缺乏透明度的问题。实证检验覆盖合成数据与商业、医疗真实场景，验证了模型在保持预测精度的同时提供决策可解释性的优势。",
+    "topic_tags": [
+      "决策",
+      "推荐系统",
+      "消费者行为"
+    ],
+    "url": "https://arxiv.org/abs/2610.05501v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "What role do journalists play in determining the political slant of the news they produce? We develop and estimate a model where journalists and newspaper outlets contract over both slant and wages. The model implies a set of conditions under which we can consistently estimate the role of journalist preferences in driving the observed variation in slant across outlets by leveraging journalist transitions between outlets. To measure slant, we train a transformer-based, machine learning model using articles tweeted by politicians and apply it to a full-text database of 9+ million newspaper articles published in the US between 2013 and 2018. Under our model and identifying assumptions, our estimates (a) reject the hypothesis that journalists have zero ideological preferences over the content they produce and (b) imply that 10% of the variation in slant can be explained by journalists. When journalists move across outlets, their average slant shifts by 77% of the gap between their destination and origin outlet averages. In counterfactuals that reweight journalist party composition, moving from the observed left-leaning distribution to an even distribution of Democrats, Republicans, and non-partisans shifts average article slant in a more conservative direction, but only by 0.04 standard deviations in slant.",
+    "ai_reason": "用transformer测媒体偏向，含ML方法",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习"
+    ],
+    "authors": [
+      "Levi Boxell",
+      "Jacob Conway",
+      "Nicolas Longuet-Marx"
+    ],
+    "authors_full": [
+      {
+        "name": "Levi Boxell"
+      },
+      {
+        "name": "Jacob Conway"
+      },
+      {
+        "name": "Nicolas Longuet-Marx"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-03",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 80704,
+    "ingested_at": "2026-10-06T08:33:29.397852",
+    "issue": null,
+    "journal": "arXiv:econ.GN",
+    "pdf_url": "https://arxiv.org/pdf/2610.04182v1",
+    "scored_at": "2026-10-06T08:33:36.213445",
+    "title": "Journalist Ideology and the Production of News: Evidence from Movers",
+    "title_zh": "记者意识形态与新闻生产：来自迁移者的证据",
+    "tldr": "构建记者与报社就政治倾向与薪酬签约的模型，利用记者跨报社流动的准自然实验识别记者偏好对新闻倾向的因果效应。基于训练好的transformer模型对2013–2018年美国900万篇报纸文章进行倾向测量，估计结果显示记者意识形态偏好解释了约10%的倾向变异；流动记者的倾向平均向目标报社偏移77%的差距，重新平衡党派构成仅使平均倾向右移0.04个标准差。",
+    "topic_tags": [
+      "决策",
+      "算法管理",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2610.04182v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -87349,6 +87607,50 @@
     "year": 2026
   },
   {
+    "abstract": null,
+    "ai_reason": "算法厌恶与金融科技管理，核心消费者行为",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "算法决策"
+    ],
+    "authors": [
+      "Yaping Chang",
+      "Ran Wang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yaping Chang",
+        "orcid": "https://orcid.org/0000-0003-0895-3589"
+      },
+      {
+        "affiliation": [],
+        "name": "Ran Wang",
+        "orcid": "https://orcid.org/0000-0002-2793-6314"
+      }
+    ],
+    "cited_by": 24,
+    "date": "2023-11",
+    "doi": "10.1016/j.chb.2023.107872",
+    "domain_score": 4.0,
+    "id": 80138,
+    "ingested_at": "2026-10-06T08:33:00.299352",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-06T08:33:44.089308",
+    "title": "Conservatives endorse Fintech? Individual regulatory focus attenuates the algorithm aversion effects in automated wealth management",
+    "title_zh": "保守派认同金融科技？个人调节聚焦削弱自动化财富管理中的算法厌恶效应",
+    "tldr": "探讨保守主义者对金融科技的态度。研究发现个体调节聚焦（促进聚焦 vs 防御聚焦）会调节算法厌恶效应：当促进聚焦较高时，即便偏好保守的个体也会减弱对自动化理财的抵触，更愿意接受算法驱动的财富管理建议，揭示了个人动机取向对算法接受度的边界作用。",
+    "topic_tags": [
+      "决策",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.107872",
+    "volume": "148",
+    "year": 2023
+  },
+  {
     "abstract": "Artificial intelligence (AI) has become part and parcel of scientific knowledge production since the latest iterations of generative AI models (e.g., ChatGPT, DeepSeek, Claude, or Gemini) became widely available. Given AI has rapidly evolved since the initial release of ChatGPT in 2022, researching how AI’s capabilities impact organizations and how researchers make use of AI tools can be likened to a moving target. In this editorial essay, we explore the implications of the introduction of AI in the context of academic research, both as the subject of investigation (i.e., research\n                    on\n                    AI) and as a research tool to facilitate academic writing, data generation, or the peer review process (i.e., research\n                    with\n                    AI). Specifically, concerning research\n                    on\n                    AI, we consider issues around clarity regarding both existing definitions and concepts in the AI literature and how these are influenced by the rapid technological evolution of AI’s capabilities. In regard to research\n                    with\n                    AI, we reflect on the advantages and disadvantages of the use of AI as a research tool and discuss the\n                    Human Relations AI Usage Policy\n                    . Overall, our aim is not to be overly prescriptive on how to conduct research on and with AI but to encourage authors to reflect on how to best capture AI as a moving target in the context of their research endeavors.",
     "ai_reason": "核心议题为AI对学术研究和组织的影响",
     "ai_score": 5.0,
@@ -99258,6 +99560,138 @@
     "url": "https://doi.org/10.1287/isre.1110.0415",
     "volume": "23",
     "year": 2012
+  },
+  {
+    "abstract": "Virtual profiles are critical elements of online social interactions, often featuring portraits enhanced by AI-driven tools such as beauty filters and virtual makeup. While the increasing use of these technologies reshapes how individuals present and perceive themselves, little is known about their implications for trust-related behavior. Drawing on self-presentation theory, this study examines how adopting an enhanced profile photo influences behavioral trust and trustworthiness toward others. We conducted a randomized experiment based on the trust game and adapted it by embedding a novel profile photo enhancement module. Participants were assigned to either a treatment group, in which they adopted an AI-enhanced profile photo, or a control group, in which they used their original photo. Our findings reveal an intriguing asymmetry. Senders with an enhanced photo demonstrated less trust by sending smaller amounts. Conversely, receivers with an enhanced photo displayed greater trustworthiness, returning higher percentages. These effects were offset when participants were interacting with an opponent using an enhanced photo. Further analysis indicates that enhanced self-presentation increases perceived risk, which explains the observed reduction in trust. We also document gender differences: female senders show a larger decline in trust, while male receivers exhibit a greater increase in trustworthiness. Overall, this research highlights the asymmetric behavioral consequences of AI-powered self-presentation and underscores the role of risk perception in linking profile photo enhancement to trust behavior in online interactions.",
+    "ai_reason": "AI增强头像为核心变量，研究信任行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 治理",
+      "人机交互"
+    ],
+    "authors": [
+      "Sijia Ma",
+      "Chong (Alex) Wang",
+      "Xiaoquan (Michael) Zhang",
+      "Tao Lu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Tilburg University Tilburg School of Economics and Management, Department of Management, Tilburg, 5037 AB, Netherlands"
+        ],
+        "name": "Sijia Ma",
+        "orcid": "https://orcid.org/0000-0002-9613-6628"
+      },
+      {
+        "affiliation": [
+          "Peking University, Information Systems, Beijing, Beijing, China"
+        ],
+        "name": "Chong (Alex) Wang",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Chinese University of Hong Kong, Decision Sciences and Managerial Economics, Shatin, N.T., CUHK Business School, Hong Kong"
+        ],
+        "name": "Xiaoquan (Michael) Zhang",
+        "orcid": "https://orcid.org/0000-0003-0690-2331"
+      },
+      {
+        "affiliation": [
+          "Southern University of Science and Technology, Information Systems, Shenzhen, Guangdong, China"
+        ],
+        "name": "Tao Lu",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-05",
+    "doi": "10.1287/isre.2023.0431",
+    "domain_score": 5.0,
+    "id": 80459,
+    "ingested_at": "2026-10-06T08:33:07.653046",
+    "issue": null,
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-10-06T08:33:36.209818",
+    "title": "Facade of Trust: The Impact of Adopting AI-Enhanced Profile Pictures on Trust",
+    "title_zh": "信任的虚饰：采用AI增强头像对信任的影响",
+    "tldr": "基于自我呈现理论，采用信任博弈随机实验，探讨AI美颜头像对行为信任与可信度的影响。研究发现发送者使用AI增强头像后信任度下降（转出金额更少），而接收者使用增强头像后可信度上升（返还比例更高）；当双方均使用增强头像时上述效应相互抵消。机制分析表明增强自我呈现提升了感知风险，从而降低信任，且存在性别差异。",
+    "topic_tags": [
+      "信任",
+      "消费者行为",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1287/isre.2023.0431",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Amidst the burgeoning incorporation of generative AI into commercial realms, numerous companies are exploring ways to leverage generative AI tools in practice. However, there is still a lack of empirical evidence to examine their effectiveness. In this research, we explore how AI-generated summaries (AIGS), a relatively new generative AI tool, influence consumer review behavior. While one may assume that AI-generated content diminishes users’ incentive to contribute by replacing user-generated content, we find the opposite: the introduction of AIGS actually leads to an increase in the volume of consumer reviews. We propose that this effect is driven by enhanced perceptions of collective efficacy. By highlighting the value of consumer reviews as a collective force, AIGS reinforces contributors’ belief that their individual input meaningfully contributes to a shared body of product knowledge, thus motivating participation. This mechanism is supported by an additional controlled laboratory experiment where we directly measure perceived collective efficacy and find that it mediates the effect of AIGS on the likelihood of leaving a review. Our moderation analysis results reveal that the positive effect of AIGS on review contributions is more pronounced among products that are well-reviewed (vs. under-reviewed) and polarizing (vs. non-polarizing). Moreover, a fine-grained review content analysis shows that reviews after the AIGS introduction exhibit enhanced content richness and provide complementary information beyond the AIGS content. Specifically, contributors discuss fewer product attributes already covered by AIGS, discuss more product attributes not covered by AIGS, and elaborate on AIGS product attributes rather than restating the summary. Taken together, these findings advance our understanding of how AI integration influences consumer review behaviors in e-commerce and offer valuable practical guidance for business strategies on employing generative AI.",
+    "ai_reason": "ISR: 电商AI生成摘要核心研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM"
+    ],
+    "authors": [
+      "Qili Wang",
+      "Yi SU",
+      "Liangfei Qiu",
+      "Runyu Chen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Florida Warrington College of Business, Department of Information Systems and Operations Management, Gainesville, Florida, United States"
+        ],
+        "name": "Qili Wang",
+        "orcid": "https://orcid.org/0000-0002-9080-5034"
+      },
+      {
+        "affiliation": [
+          "University of Florida, ISOM, Gainesville, Florida, United States"
+        ],
+        "name": "Yi SU",
+        "orcid": "https://orcid.org/0000-0002-7282-0636"
+      },
+      {
+        "affiliation": [
+          "University of Florida, Department of Information Systems and Operations Management, Gainesville, Florida, United States"
+        ],
+        "name": "Liangfei Qiu",
+        "orcid": "https://orcid.org/0000-0002-8771-9389"
+      },
+      {
+        "affiliation": [
+          "University of International Business and Economics, e-commerce, Beijing, China"
+        ],
+        "name": "Runyu Chen",
+        "orcid": "https://orcid.org/0000-0003-2704-8293"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-05",
+    "doi": "10.1287/isre.2024.1282",
+    "domain_score": 5.0,
+    "id": 80460,
+    "ingested_at": "2026-10-06T08:33:07.699193",
+    "issue": null,
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-10-06T08:33:45.892140",
+    "title": "Navigating the Sea of Reviews: Unveiling the Effects of Introducing AI-Generated Summaries in E-Commerce",
+    "title_zh": "穿越评论海洋：揭示电子商务中引入 AI 生成摘要的效果",
+    "tldr": "在电商平台引入AI生成评论摘要（AIGS）后，消费者撰写评论数量反而增加。现场实验与受控实验发现，机制在于AIGS强化了用户对集体效能的感知，使贡献者相信个人输入对产品知识共同体有实质贡献。调节分析显示该效应对好评较多与争议性产品更显著，内容分析亦发现AIGS引入后评论丰富度提升。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "推荐系统"
+    ],
+    "url": "https://doi.org/10.1287/isre.2024.1282",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": "Abstract Companies are increasingly introducing conversational reviews —reviews solicited via chatbots—to gain customer feedback. However, little is known about how chatbot-mediated solicitation influences rating valence and review helpfulness compared to conventional online forms. Therefore, we conceptualized these review solicitation media on the continuum of anthropomorphism and investigated how various levels of anthropomorphism affect rating valence and review helpfulness, showing that more anthropomorphic media lead to more positive and less helpful reviews. We found that moderate levels of anthropomorphism lead to increased interaction enjoyment, and high levels increase social presence, thus inflating the rating valence and decreasing review helpfulness. Further, the effect of anthropomorphism remains robust across review solicitors’ salience (sellers vs. platforms) and expressed emotionality in conversations. Our study is among the first to investigate chatbots as a new form of technology to solicit online reviews, providing insights to inform various stakeholders of the advantages, drawbacks, and potential ethical concerns of anthropomorphic technology in customer feedback solicitation.",

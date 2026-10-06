@@ -1,0 +1,230 @@
+{
+  "abstract": "Nasogastric tubes (NGTs) are feeding tubes that are inserted through the nose into the stomach to deliver nutrition or medication. If not placed correctly, they can cause serious harm, even death to patients. Recent AI developments demonstrate the feasibility of robustly detecting NGT placement from Chest X-ray images to reduce risks of sub-optimally or critically placed NGTs being missed or delayed in their detection, but gaps remain in clinical practice integration. In this study, we present a human-centered approach to the problem and describe insights derived following contextual inquiry and in-depth interviews with 15 clinical stakeholders. The interviews helped understand challenges in existing workflows, and how best to align technical capabilities with user needs and expectations. We discovered the tradeoffs and complexities that need consideration when choosing suitable workflow stages, target users, and design configurations for different AI proposals. We explored how to balance AI benefits and risks for healthcare staff and patients within broader organizational, technical, and medical-legal constraints. We also identified data issues related to edge cases and data biases that affect model training and evaluation; how data documentation practices influence data preparation and labeling; and how to measure relevant AI outcomes reliably in future evaluations. We discuss how our work informs design and development of AI applications that are clinically useful, ethical, and acceptable in real-world healthcare services.",
+  "ai_type_tags": [
+    "AI助手",
+    "可解释AI"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Anja Thieme",
+    "Abhijith Rajamohan",
+    "Benjamin Cooper",
+    "Heather Groombridge",
+    "Robert Simister"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Anja Thieme",
+      "orcid": "https://orcid.org/0000-0002-9639-5531"
+    },
+    {
+      "affiliation": [
+        "Intensive Care, University College London Hospitals NHS Foundation Trust, London, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Abhijith Rajamohan",
+      "orcid": "https://orcid.org/0009-0003-1538-7797"
+    },
+    {
+      "affiliation": [
+        "Imaging Department, University College London Hospitals NHS Foundation Trust, London, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Benjamin Cooper",
+      "orcid": "https://orcid.org/0009-0000-2830-9884"
+    },
+    {
+      "affiliation": [
+        "Imaging Department, University College London Hospitals NHS Foundation Trust, London, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Heather Groombridge",
+      "orcid": "https://orcid.org/0009-0005-9117-4405"
+    },
+    {
+      "affiliation": [
+        "Stroke, University College London Hospitals NHS Foundation Trust, London, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Robert Simister",
+      "orcid": "https://orcid.org/0000-0003-0578-6711"
+    },
+    {
+      "affiliation": [
+        "Stroke, University College London Hospitals NHS Foundation Trust, London, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Barney Wong",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "Imaging Department, University College London Hospitals NHS Foundation Trust, London, United Kingdom of Great Britain and Northern Ireland and Allied and Public Health, Canterbury Christ Church University, Canterbury, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Nicholas Woznitza",
+      "orcid": "https://orcid.org/0000-0001-9598-189X"
+    },
+    {
+      "affiliation": [
+        "Computing Science, University College London, London, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Mark A. Pinnock",
+      "orcid": "https://orcid.org/0000-0001-7928-2458"
+    },
+    {
+      "affiliation": [
+        "Radiology, Cambridge University, Cambridge, United Kingdom of Great Britain and Northern Ireland and Radiology, Cambridge University Hospitals NHS Foundation Trust, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Maria T. Wetscherek",
+      "orcid": "https://orcid.org/0000-0003-2924-7587"
+    },
+    {
+      "affiliation": [
+        "Human Computer Interaction, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Cecily Morrison",
+      "orcid": "https://orcid.org/0000-0001-5013-3715"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Hannah Richardson",
+      "orcid": "https://orcid.org/0000-0002-6550-1223"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Fernando Pérez-García",
+      "orcid": "https://orcid.org/0000-0001-9090-3024"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Stephanie L. Hyland",
+      "orcid": "https://orcid.org/0000-0001-7571-6036"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Shruthi Bannur",
+      "orcid": "https://orcid.org/0000-0001-5750-7628"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Daniel Coelho de Castro",
+      "orcid": "https://orcid.org/0000-0002-6829-7045"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Kenza Bouzid",
+      "orcid": "https://orcid.org/0000-0001-5864-2792"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Anton Schwaighofer",
+      "orcid": "https://orcid.org/0000-0003-1557-0527"
+    },
+    {
+      "affiliation": [
+        "Microsoft Research India, Bengaluru, India"
+      ],
+      "name": "Mercy P. Ranjit",
+      "orcid": "https://orcid.org/0000-0001-9281-9168"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Harshita Sharma",
+      "orcid": "https://orcid.org/0000-0003-4683-2606"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Mountain View, California, USA, Radiology, University of California San Francisco, San Francisco, California, USA and Medical School, Stanford University, Stanford, California, USA"
+      ],
+      "name": "Matthew P. Lungren",
+      "orcid": "https://orcid.org/0000-0002-8591-5861"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Ozan Oktay",
+      "orcid": "https://orcid.org/0000-0003-2976-0874"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Javier Alvarez-Valle",
+      "orcid": "https://orcid.org/0000-0003-0906-4177"
+    },
+    {
+      "affiliation": [
+        "Health Futures, Microsoft Research, Cambridge, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Aditya Nori",
+      "orcid": "https://orcid.org/0000-0002-9481-5539"
+    },
+    {
+      "affiliation": [
+        "Institute of Health Informatics, University College London, London, United Kingdom of Great Britain and Northern Ireland"
+      ],
+      "name": "Steve Harris",
+      "orcid": "https://orcid.org/0000-0002-4982-1374"
+    },
+    {
+      "affiliation": [
+        "Satsuma Lab, UCL Centre for Medical Imaging Computing, University College London, London, United Kingdom of Great Britain and Northern Ireland and Respiratory, University College London, London, United Kingdom of Great Britain"
+      ],
+      "name": "Joseph Jacob",
+      "orcid": "https://orcid.org/0000-0002-8054-2293"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "AI医疗影像HCI研究，情境调查+15人访谈",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对放射科鼻胃管(NGT)放置自动检测的负责任AI设计，采用以人为中心方法，对15名临床利益相关者进行情境调查与深度访谈，识别工作流整合中的权衡与复杂性，涵盖目标用户选择、流程阶段适配、风险收益平衡及数据偏倚等挑战，探讨在组织、技术与医患法律约束下如何设计临床有用且合乎伦理的AI应用。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户研究方法",
+        "访谈",
+        "AI治理",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 9,
+  "date": "2025-08-18",
+  "doi": "10.1145/3716500",
+  "id": "p_9XRmMrzx_CcBDO6G",
+  "issue": "4",
+  "journal": "TOCHI",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 35262,
+      "revision": "7f2cc2a7ef07de0c3691f6c2a060cae1de1ab7eb"
+    }
+  ],
+  "title": "Challenges for Responsible AI Design and Workflow Integration in Healthcare: A Case Study of Automatic Feeding Tube Qualification in Radiology",
+  "title_zh": null,
+  "unified_ingested_at": "2026-10-06T08:41:43.176759Z",
+  "url": "https://doi.org/10.1145/3716500",
+  "volume": "32",
+  "year": 2025
+}
