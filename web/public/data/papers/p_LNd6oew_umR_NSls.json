@@ -1,0 +1,63 @@
+{
+  "abstract": "When several people share a 3D virtual room with an LLM agent, the agent must decide not only what to say, but whether an utterance was addressed to it and, if accessible, what profile information about the others present it may use. To study both problems, we construct LookAway, a controlled corpus of 40 sessions involving 80 distinct personas and an LLM agent (1,200 turns), including ambiguous-addressee turns in which speaker orientation agrees or conflicts with the intended addressee. Across three open-weight large language models and five conditions varying which profiles the agent sees and whether it is told where each person faces (18,000 decisions), adding speaker orientation increased addressee accuracy from 56% to 99.5% when orientation was congruent, but when the speaker faced someone other than the addressee, two of the models went by where the speaker faced on more than 85% of those turns. Warning one model that orientation could be misleading reduced this only modestly. A browser-based 3D demonstrator shows the effect live: the same sentence gets an answer when the speaker faces the agent and silence when they face the other person. Providing both personas' profiles improved responses about the person being asked about, but also increased the use of profile attributes not revealed in the shared conversation, reaching 45.3% of answers for one model. More context thus improves multi-user interaction but also leads to oversharing, so shared LLM agents need mechanisms for weighing spatial cues and controlling when user-specific information enters a response.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "对话式 AI",
+    "多模态"
+  ],
+  "arxiv_id": "2610.07732",
+  "authors": [
+    "Mohammad Al-Ratrout",
+    "Shayla Sharmin",
+    "Roghayeh Leila Barmaki"
+  ],
+  "authors_full": [
+    {
+      "name": "Mohammad Al-Ratrout"
+    },
+    {
+      "name": "Shayla Sharmin"
+    },
+    {
+      "name": "Roghayeh Leila Barmaki"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM代理多用户3D环境HCI实证研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "研究多用户3D虚拟环境中LLM智能体如何判断谁在对自己说话以及如何处理他人档案信息。构建LookAway语料库（40场会话、80个角色、1200轮），测试3个开源大模型在5种条件下共18000次决策。结果显示说话朝向可将地址识别准确率提升至99.5%，但模型易被朝向误导；提供更多档案改善了回答质量，却也将信息过度共享推至最高45.3%。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "多模态交互",
+        "智能体",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-06",
+  "doi": null,
+  "id": "p_LNd6oew_umR_NSls",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2610.07732v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 35865,
+      "revision": "17b3f7c5f498809d0fb2286199e855363806bf68"
+    }
+  ],
+  "title": "Who Is Talking to the Agent? LLMs in Multi-User 3D Virtual Environments",
+  "title_zh": "谁在与智能体对话：LLM在多用户三维虚拟环境中的应用",
+  "unified_ingested_at": "2026-10-07T08:16:49.242237Z",
+  "url": "https://arxiv.org/abs/2610.07732v1",
+  "volume": null,
+  "year": 2026
+}

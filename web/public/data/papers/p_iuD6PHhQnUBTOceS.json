@@ -1,0 +1,68 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly used to judge how well an advertisement matches a query, but the fairness of these judgments has received limited attention. We conduct a systematic study of fairness in relevance judgments made by LLMs for queries and advertisements. Our counterfactual framework examines the effects of advertiser identity and possible popularity, input language, and demographic wording. We study GPT-4o as a categorical relevance judge and a Qwen-7B model trained specifically for relevance prediction. The advertiser and language experiments use query and advertisement pairs sampled from real advertising logs. Controlled synthetic queries are used to study demographic associations in employment, housing, and credit. For both models, changing the advertiser identity or input language can alter the relevance assessment. Selected demographic comparisons also show patterns consistent with common stereotypes, particularly those involving gender and occupation. We further study mitigation during model inference and training. The results indicate that its effectiveness depends on whether advertiser information is relevant to the query and how advertiser labels are distributed in the training data. These findings can help advertising practitioners identify fairness risks and develop suitable mitigation methods for LLM relevance systems.",
+  "ai_type_tags": [
+    "LLM",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2610.07544",
+  "authors": [
+    "Weiwei Wang",
+    "Yinchuan Xu",
+    "Jialu Gao",
+    "Youkow Homma",
+    "Jian Jiao"
+  ],
+  "authors_full": [
+    {
+      "name": "Weiwei Wang"
+    },
+    {
+      "name": "Yinchuan Xu"
+    },
+    {
+      "name": "Jialu Gao"
+    },
+    {
+      "name": "Youkow Homma"
+    },
+    {
+      "name": "Jian Jiao"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM广告相关性偏见，营销+AI核心",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "系统研究大语言模型在广告相关性判断中的公平性。通过反事实框架检验广告主身份、输入语言和人口统计措辞对GPT-4o和Qwen-7B判断的影响。发现改变广告主身份或输入语言会改变相关性评估；部分人口统计比较呈现与常见刻板印象一致的模式，尤以性别与职业为甚。推理与训练阶段的缓解策略效果取决于广告主信息与查询的相关性及训练数据中广告主标签分布，为广告从业者识别公平风险和制定缓解方案提供依据。",
+      "topic_tags": [
+        "广告",
+        "公平性",
+        "偏见"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-06",
+  "doi": null,
+  "id": "p_iuD6PHhQnUBTOceS",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.07544v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 81061,
+      "revision": "9baf22b7755cb0571379c266982d6d24d3bd83ae"
+    }
+  ],
+  "title": "A Systematic Investigation of Bias in Large Language Models for Advertising Relevance",
+  "title_zh": "面向广告相关性的LLM偏见系统性研究",
+  "unified_ingested_at": "2026-10-07T08:16:49.242237Z",
+  "url": "https://arxiv.org/abs/2610.07544v1",
+  "volume": null,
+  "year": 2026
+}
