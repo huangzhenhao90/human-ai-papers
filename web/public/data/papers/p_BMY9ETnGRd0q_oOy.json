@@ -1,0 +1,68 @@
+{
+  "abstract": "We propose interaction-mediated control via Active Inference as a general architectural approach to high-dimensional control problems in Human--Computer Interaction (HCI). This architecture recasts user interaction as the provision of evidence about a latent task objective, rather than the direct specification of plant-control inputs. The mediating function is distributed between an interaction broker, which selects informative user queries and performs Bayesian inference over user preferences, and an Active Inference controller, which autonomously plans and acts under the resulting preference information to control the plant. This division of labour decouples the semantics of user interaction from those of low-level plant control. We instantiate the architecture in a simulated, multi-link robotic arm to perform a simultaneous whole-arm target-coverage task. A simulated user communicates exclusively through a clutch-style binary evaluative channel, without specifying joint-torque commands. Across increasing arm dimensionalities, the architecture achieves successful interaction-mediated control, although task success is lower than when the controller receives the true target preferences directly. Exact target-subset identification also remains imperfect, highlighting the distinction between preference inference and successful task completion. The experimental findings provide an initial computational demonstration of the proposed architecture under controlled, matched-model assumptions and motivate its further investigation in broader HCI applications.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "人机交互"
+  ],
+  "arxiv_id": "2610.10275",
+  "authors": [
+    "Fraser C. Paterson",
+    "Sebastian Stein",
+    "Markus Klar",
+    "John H. Williamson",
+    "Roderick Murray-Smith"
+  ],
+  "authors_full": [
+    {
+      "name": "Fraser C. Paterson"
+    },
+    {
+      "name": "Sebastian Stein"
+    },
+    {
+      "name": "Markus Klar"
+    },
+    {
+      "name": "John H. Williamson"
+    },
+    {
+      "name": "Roderick Murray-Smith"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "主动推理HCI架构，含用户偏好推断",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "提出一种基于主动推理的交互中介控制架构，用于高维机器人臂的人机交互任务。架构将用户交互视为对潜在任务目标的贝叶斯证据而非直接控制指令，由交互代理选择信息性查询并推断用户偏好，控制器据此自主规划动作。在多自由度仿真机械臂的全臂目标覆盖任务中验证了可行性，但目标子集精确识别仍不完美。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "多模态交互",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-07",
+  "doi": null,
+  "id": "p_BMY9ETnGRd0q_oOy",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2610.10275v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 35995,
+      "revision": "6b60cb16e5908e4bc4c5e281d2d455d725e850de"
+    }
+  ],
+  "title": "Active Inference for Interaction-Mediated Control of a High-Dimensional Robotic Arm",
+  "title_zh": "主动推理用于交互介导的高维机械臂控制",
+  "unified_ingested_at": "2026-10-08T08:33:56.405133Z",
+  "url": "https://arxiv.org/abs/2610.10275v1",
+  "volume": null,
+  "year": 2026
+}

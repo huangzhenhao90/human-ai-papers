@@ -63200,6 +63200,154 @@
     "year": 2026
   },
   {
+    "abstract": "Human-machine systems rarely operate at a fixed level of AI autonomy. As operators and AI systems collaborate over time, control must shift: the AI can take on more responsibility when collaboration is stable, maintain its current role when evidence is ambiguous, or return control to the human when conditions deteriorate. Existing work on adaptive automation, supervisory control, trust in automation, and deskilling explains parts of this problem, but provides no auditable, multi-signal criterion for governing when autonomy should change across multi-cycle workflows.   We formalise this challenge as the Handover Problem: deciding, at each operational cycle, whether to escalate, maintain, or revert AI autonomy while keeping the process reversible, recoverable, and auditable. We introduce the Handover Readiness Score (HRS), a transparent composite measure that integrates four signal dimensions: operator readiness, human-AI trust, learning stability, and operational performance. It is combined with a hysteresis-based transition policy that requires sustained positive evidence before increasing autonomy but reverts promptly when conditions worsen.   Across software engineering and manufacturing domains, the HRS and hard safety guards address complementary failure regimes: guards enforce immediate corrective action when a single indicator breaches a critical threshold, while the HRS detects the slow, multi-signal erosion of operator readiness that no individual guard can observe. The framework establishes autonomy handover as a governance problem requiring explicit, composite, and auditable criteria. This provides a conceptual and formal foundation that adaptive automation research has not previously provided.",
+    "ai_reason": "人机协作自主权移交，治理与信任议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Vicente Pelechano",
+      "Antoni Mestre",
+      "Manoli Albert",
+      "Miriam Gil"
+    ],
+    "authors_full": [
+      {
+        "name": "Vicente Pelechano"
+      },
+      {
+        "name": "Antoni Mestre"
+      },
+      {
+        "name": "Manoli Albert"
+      },
+      {
+        "name": "Miriam Gil"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-07",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 81202,
+    "ingested_at": "2026-10-08T08:24:38.438093",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.10352v1",
+    "scored_at": "2026-10-08T08:24:48.089185",
+    "title": "The Handover Problem: Governing Autonomy Transitions in Human-AI Collaboration",
+    "title_zh": "交接问题：人机协作中自主权转换的治理",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2610.10352v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Multi-agent systems (MAS) leverage interactions between agents to perform complex tasks. Despite their success, we show that these interactions can also lead to homogenization, i.e., agents converging to similar behaviors. Homogenization in MAS can reduce agent diversity and reinforce shared failures. In this paper, we operationalize homogenization using three metrics: conformity to the majority, polarization towards extremes, and growing inertia against changes over subsequent interactions. We evaluate homogenization in MAS for code generation, hiring, and scientific peer review. Across these tasks, we show that homogenization translates to concrete downstream risks: in code generation, it hides and amplifies correlated errors which can create systemic vulnerabilities; in hiring, it allows the influence of biased agents to persist long after their removal; and in peer review, it creates uneven evaluation standards across research areas. Our results establish homogenization as a failure mode of MAS, demonstrating that MAS evaluations must move beyond aggregate performance to carefully analyze interaction dynamics. Finally, we show that simple approaches to increase diversity---leveraging sampling stochasticity and mixed-models MAS---fail to reduce homogenization risks, highlighting the need for strategies to effectively leverage agent diversity.",
+    "ai_reason": "MAS同质化研究，涉AI招聘等管理场景",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "多智能体系统",
+      "算法决策",
+      "AI治理"
+    ],
+    "authors": [
+      "Prakhar Ganesh",
+      "Kyra Wilson",
+      "Luca Zappella",
+      "Barry-John Theobald",
+      "Nicholas Apostoloff"
+    ],
+    "authors_full": [
+      {
+        "name": "Prakhar Ganesh"
+      },
+      {
+        "name": "Kyra Wilson"
+      },
+      {
+        "name": "Luca Zappella"
+      },
+      {
+        "name": "Barry-John Theobald"
+      },
+      {
+        "name": "Nicholas Apostoloff"
+      },
+      {
+        "name": "Lucas Monteiro Paes"
+      },
+      {
+        "name": "Nivedha Sivakumar"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-07",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 81208,
+    "ingested_at": "2026-10-08T08:24:38.441237",
+    "issue": null,
+    "journal": "arXiv:cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2610.09824v1",
+    "scored_at": "2026-10-08T08:24:48.088450",
+    "title": "Homogenization in Multi-Agent Systems",
+    "title_zh": "多智能体系统中的同质化现象",
+    "tldr": "研究多智能体系统(MAS)中的同质化失败模式。用从众、极化、惯性三类指标衡量，在代码生成、招聘、同行评审三个场景中实证：同质化会隐藏并放大代码关联错误、延续偏见代理在招聘中的影响、导致同行评审标准不均衡。简单增加多样性的策略（如采样随机性、混合模型MAS）无法有效降低风险。",
+    "topic_tags": [
+      "算法管理",
+      "AI治理",
+      "招聘",
+      "偏见"
+    ],
+    "url": "https://arxiv.org/abs/2610.09824v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Organizations have long sought to make workers' expertise reusable by others. Agentic AI changes the nature of such reuse by enabling AI systems to act on workers' knowledge with limited human involvement. This raises the question of how this shift shapes workers' willingness to share their expertise. We conducted an experiment with knowledge workers who created materials incorporating domain knowledge and decided whether to authorize human or AI reuse. We find that AI and human reuse differ primarily in whether workers choose to share their knowledge, rather than in what they choose to share. Participants' reasoning shifts from prosocial considerations when sharing with humans toward concerns about loss of control, replacement, and downstream governance when sharing with AI. These findings suggest that AI reuse may intensify tensions between organizational knowledge reuse and contributors' interests. We discuss implications for workplace AI and knowledge management policies that preserve workers' rights and agency.",
+    "ai_reason": "知识工作者与AI系统共享专业知识，核心OB议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Tianqi Song",
+      "Zicheng Zhu",
+      "Hancheng Cao",
+      "Yi-Chieh Lee"
+    ],
+    "authors_full": [
+      {
+        "name": "Tianqi Song"
+      },
+      {
+        "name": "Zicheng Zhu"
+      },
+      {
+        "name": "Hancheng Cao"
+      },
+      {
+        "name": "Yi-Chieh Lee"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-07",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 81210,
+    "ingested_at": "2026-10-08T08:24:38.442189",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.09608v1",
+    "scored_at": "2026-10-08T08:24:48.087891",
+    "title": "When My Skill Becomes Agent Skill: How Knowledge Workers Share Their Expertise with AI Systems",
+    "title_zh": "当我的技能成为智能体技能：知识工作者如何与AI系统共享其专业知识",
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://arxiv.org/abs/2610.09608v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -100013,6 +100161,107 @@
     "year": 2026
   },
   {
+    "abstract": "A broad motivation for our research is to build manipulation resistant news recommender systems. There are several algorithms that can be used to generate news recommendations, and the strategies for manipulation resistance are likely specific to the algorithm (or class of algorithm) used. In this paper, we will focus on a common method used on the front page by many media sites of recommending the N most popular articles (e.g., New York Times, BBC, CNN, Wall Street Journal all prominently use this). We show that whereas recommendation of the N most read articles is easily susceptible to manipulation, a probabilistic variant is more robust to common manipulation strategies. Furthermore, for the “N most popular” recommender, probabilistic selection has other desirable properties. Specifically, the (N + 1) th article, which may have just missed making the cut-off, is unduly penalized under common user models. Small differences are easily amplified initially, an observation that can be used by manipulators. Probabilistic selection, on the other hand, creates no such artificial penalty. We use classical results from urn models to derive theoretical results for special cases and study specific properties of the probabilistic recommender.",
+    "ai_reason": "研究最热门新闻推荐算法的抗操纵，涉及算法设计",
+    "ai_score": 3.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Shankar Prawesh",
+      "Balaji Padmanabhan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "College of Business, University of South Florida, Tampa, Florida 33620"
+        ],
+        "name": "Shankar Prawesh",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "College of Business, University of South Florida, Tampa, Florida 33620"
+        ],
+        "name": "Balaji Padmanabhan",
+        "orcid": null
+      }
+    ],
+    "cited_by": 34,
+    "date": "2014-09",
+    "doi": "10.1287/isre.2014.0529",
+    "domain_score": 3.0,
+    "id": 81148,
+    "ingested_at": "2026-10-08T08:24:23.019011",
+    "issue": "3",
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-10-08T08:24:55.218149",
+    "title": "The “Most Popular News” Recommender: Count Amplification and Manipulation Resistance",
+    "title_zh": null,
+    "tldr": null,
+    "topic_tags": [],
+    "url": "https://doi.org/10.1287/isre.2014.0529",
+    "volume": "25",
+    "year": 2014
+  },
+  {
+    "abstract": "Most of the work on context-aware recommender systems has focused on demonstrating that the contextual information leads to more accurate recommendations. Little work has been done, however, on studying how much the contextual information affects the business performance. In this paper, we study how including context in recommendations affects customers’ trust, sales, and other crucial business-related performance measures. To do this, we delivered content-based and context-aware recommendations through a live controlled experiment with real customers of a commercial European online publisher. We measured the recommendations’ accuracy and diversification, how much customers spent purchasing products during the experiment, the quantity and price of their purchases, and the customers’ level of trust. We show that collecting and using contextual information in recommendations affects business-related performance measures, such as company sales, by improving the accuracy and diversification of recommendations, which in turn improves trust and, ultimately, business performance results.",
+    "ai_reason": "核心研究情境感知推荐算法对信任与销售的影响",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "人机交互"
+    ],
+    "authors": [
+      "Umberto Panniello",
+      "Michele Gorgoglione",
+      "Alexander Tuzhilin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Politecnico di Bari, 70126 Bari, Italy"
+        ],
+        "name": "Umberto Panniello",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Politecnico di Bari, 70126 Bari, Italy"
+        ],
+        "name": "Michele Gorgoglione",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Stern School of Business, New York University, New York, New York 10012"
+        ],
+        "name": "Alexander Tuzhilin",
+        "orcid": null
+      }
+    ],
+    "cited_by": 78,
+    "date": "2016-03",
+    "doi": "10.1287/isre.2015.0610",
+    "domain_score": 4.0,
+    "id": 81150,
+    "ingested_at": "2026-10-08T08:24:23.060331",
+    "issue": "1",
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-10-08T08:24:55.217114",
+    "title": "Research Note—In CARSs We Trust: How Context-Aware Recommendations Affect Customers’ Trust and Other Business Performance Measures of Recommender Systems",
+    "title_zh": null,
+    "tldr": "研究情境化推荐对客户信任及销售等商业绩效的影响。通过欧洲在线出版商的真实用户现场对照实验，发现引入情境信息可提升推荐的准确性和多样性，进而增强客户信任并最终改善购买量、客单价等业务绩效，弥合了推荐准确度与商业价值之间的研究缺口。",
+    "topic_tags": [
+      "推荐系统",
+      "信任",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1287/isre.2015.0610",
+    "volume": "27",
+    "year": 2016
+  },
+  {
     "abstract": "Abstract Companies are increasingly introducing conversational reviews —reviews solicited via chatbots—to gain customer feedback. However, little is known about how chatbot-mediated solicitation influences rating valence and review helpfulness compared to conventional online forms. Therefore, we conceptualized these review solicitation media on the continuum of anthropomorphism and investigated how various levels of anthropomorphism affect rating valence and review helpfulness, showing that more anthropomorphic media lead to more positive and less helpful reviews. We found that moderate levels of anthropomorphism lead to increased interaction enjoyment, and high levels increase social presence, thus inflating the rating valence and decreasing review helpfulness. Further, the effect of anthropomorphism remains robust across review solicitors’ salience (sellers vs. platforms) and expressed emotionality in conversations. Our study is among the first to investigate chatbots as a new form of technology to solicit online reviews, providing insights to inform various stakeholders of the advantages, drawbacks, and potential ethical concerns of anthropomorphic technology in customer feedback solicitation.",
     "ai_reason": "核心研究聊天机器人征集评论的偏差效应，直接涉及对话式AI",
     "ai_score": 5.0,
@@ -131651,6 +131900,131 @@
     "year": 2022
   },
   {
+    "abstract": "This paper introduces a new approach to identify competitors using company websites to map competitive relationships among public and private firms. We apply representation learning techniques to create embeddings of companies based on website content, emphasizing information about industry-specific products and services. By placing all firms, public and private, within the same embedding space, we construct a peer competitor network that supports analysis of company interactions and market evolution. We label this new approach and set of network competitors as the website text-based network industry classification (WTNIC). We evaluate the quality of the network using multiple ground truth datasets and benchmarks and show that it offers a robust alternative for understanding competition at scale. Despite using noisy website data, WTNIC matches or outperforms prior approaches that rely on curated data. We demonstrate the value of WTNIC through a case study examining how competition from China affects the public and private peers of a focal firm, highlighting the importance of placing both public and private companies within the same embedding space.\n                  Funding: This work was supported by the National Science Foundation [Grants 1561068 and 1937153], the Tuck School of Business at Dartmouth College, the USC Marshall Institute for Outlier Research in Business (iORB), and the Smith School of Business at the University of Maryland.\n                  Supplemental Material: The data files are available at https://doi.org/10.1287/mnsc.2024.06516 .",
+    "ai_reason": "用表征学习识别竞争对手网络，战略管理方法",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "表示学习"
+    ],
+    "authors": [
+      "Gerard Hoberg",
+      "Craig Knoblock",
+      "Gordon Phillips",
+      "Jay Pujara",
+      "Zhiqiang Qiu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Southern California, Los Angeles, California 90089"
+        ],
+        "name": "Gerard Hoberg",
+        "orcid": "https://orcid.org/0000-0001-5104-9689"
+      },
+      {
+        "affiliation": [
+          "University of Southern California, Los Angeles, California 90089"
+        ],
+        "name": "Craig Knoblock",
+        "orcid": "https://orcid.org/0000-0002-6371-4807"
+      },
+      {
+        "affiliation": [
+          "Tuck School of Business, Dartmouth College, Hanover, New Hampshire 03755"
+        ],
+        "name": "Gordon Phillips",
+        "orcid": "https://orcid.org/0000-0002-0782-2504"
+      },
+      {
+        "affiliation": [
+          "University of Southern California, Los Angeles, California 90089"
+        ],
+        "name": "Jay Pujara",
+        "orcid": "https://orcid.org/0000-0001-6921-1744"
+      },
+      {
+        "affiliation": [
+          "University of Southern California, Los Angeles, California 90089"
+        ],
+        "name": "Zhiqiang Qiu",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Maryland at College Park, College Park, Maryland 20742"
+        ],
+        "name": "Louiqa Raschid",
+        "orcid": "https://orcid.org/0000-0002-0630-6049"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-07",
+    "doi": "10.1287/mnsc.2024.06516",
+    "domain_score": 4.0,
+    "id": 81145,
+    "ingested_at": "2026-10-08T08:24:22.962462",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-08T08:24:47.466790",
+    "title": "Using Representation Learning and Website Text to Identify Competitor Networks",
+    "title_zh": null,
+    "tldr": "提出基于公司网站文本与表征学习构建竞争网络的新方法WTNIC，将上市公司与私营企业映射到同一嵌入空间以识别同行竞争对手。多个基准验证显示，即便使用噪声较大的网站数据，WTNIC仍匹配或优于依赖精选数据的方法，并通过对华竞争案例展示其在公私混合竞争分析中的价值。",
+    "topic_tags": [
+      "战略",
+      "竞争分析",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2024.06516",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Digital platforms increasingly curate their content through personalized algorithmic feeds. Platforms have an incentive to promote content that increases the predicted engagement of each user to lift advertising revenues. This paper studies how ranking content to maximize engagement affects the credibility of news content with which users engage. In addition, I evaluate how the ranking algorithm itself can be designed to promote engagement with high-credibility content. Using data from the Reddit politics community, I exploit a novel discontinuity in the ranking algorithm to identify the causal effect of a post’s rank on the number of comments it receives. I use this discontinuity to identify a model of user comment decisions and estimate the credibility of news content that users engage with under a personalized engagement-maximizing algorithm. The personalized engagement-maximizing algorithm exacerbates differences in the credibility of news content with which users engage. I then evaluate a credibility-aware algorithm that explicitly promotes credible news publishers and find the platform can substantially increase the share of engagement with high-credibility publishers for a small reduction in total engagement. These findings suggest algorithmic interventions can be a useful tool for managers to balance engagement quantity and content quality.\n                  This paper was accepted by Hemant Bhargava, information systems.\n                  Supplemental Material: The online appendices and data files are available at https://doi.org/10.1287/mnsc.2024.06298 .",
+    "ai_reason": "算法推荐对内容可信度影响，营销/平台管理",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "算法决策",
+      "算法管理"
+    ],
+    "authors": [
+      "Alex Moehring"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Operations, Information and Decisions, The Wharton School, University of Pennsylvania, Philadelphia Pennsylvania 19104"
+        ],
+        "name": "Alex Moehring",
+        "orcid": "https://orcid.org/0000-0001-6822-6354"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-07",
+    "doi": "10.1287/mnsc.2024.06298",
+    "domain_score": 4.0,
+    "id": 81146,
+    "ingested_at": "2026-10-08T08:24:22.981344",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-08T08:24:47.466483",
+    "title": "Personalization, Engagement, and Content Quality on Social Media: An Evaluation of Reddit’s News Feed",
+    "title_zh": null,
+    "tldr": "研究Reddit政治社区中个性化参与度最大化算法对新闻内容可信度的影响。利用排序算法的不连续性识别因果效应，发现个性化算法会扩大用户接触内容在可信度上的差异。进一步评估可信度感知算法，证明平台可以以小幅总参与度损失，大幅提升用户与高可信度发布者的互动占比。",
+    "topic_tags": [
+      "算法管理",
+      "信任",
+      "内容质量",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2024.06298",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "This paper presents a novel integrative approach that combines artificial intelligence-driven forecasting with behavioral interventions to help businesses optimize energy consumption under critical peak pricing schemes.",
     "ai_reason": "AI驱动行为助推核心议题，兼具组织行为与AI",
     "ai_score": 5.0,
@@ -135097,6 +135471,64 @@
     "url": "https://doi.org/10.1287/mksc.2021.1346",
     "volume": "41",
     "year": 2022
+  },
+  {
+    "abstract": "In addition to retailing new vehicles, automotive manufacturers in the United States sell millions of vehicles through leasing and to fleet customers every year. The majority of these vehicles are returned to the automotive manufacturers at the end of the contracted term and must be “remarketed.” In 2007, about 10 million used vehicles were sold at more than 400 auctions in the United States. Large consigners face decisions every day about when, where, and at what price to offer these vehicles, which has significant financial implications for their profitability.  To address the challenges of the distribution process, Power Information Network (PIN), a division of J.D. Power and Associates, developed the PIN Optimal Distribution of Auction Vehicles System (ODAV), an automated decision optimization system that helps remarketers maximize profits through the most advantageous distribution of their auction vehicles. At the core of the system is a combination of three models that determine the distribution of the vehicles on a daily basis: a nearest neighbor linear regression model for short-term auction price forecasting; an autoregressive integrated moving average time-series analysis model for volume-price elasticity; and a genetic algorithm optimizer for vehicle distribution.  Since its launch in 2003, PIN has been providing ODAV services on a daily basis, and to date, more than two million vehicles have been distributed through this system. In this paper, we will describe the PIN ODAV System, its implementation, and the business impact by using as an example the experience with our largest client, Chrysler Group LLC.",
+    "ai_reason": "遗传算法用于车辆分配优化，AI为工具之一",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策"
+    ],
+    "authors": [
+      "Jie Du",
+      "Lili Xie",
+      "Stephan Schroeder"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "J.D. Power and Associates, Troy, Michigan 48098"
+        ],
+        "name": "Jie Du",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "J.D. Power and Associates, Troy, Michigan 48098"
+        ],
+        "name": "Lili Xie",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "J.D. Power and Associates, Troy, Michigan 48098"
+        ],
+        "name": "Stephan Schroeder",
+        "orcid": null
+      }
+    ],
+    "cited_by": 23,
+    "date": "2009-07",
+    "doi": "10.1287/mksc.1080.0470",
+    "domain_score": 5.0,
+    "id": 80989,
+    "ingested_at": "2026-10-07T08:09:22.704508",
+    "issue": "4",
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-08T08:24:55.527924",
+    "title": "<b>Practice Prize Paper</b>—PIN Optimal Distribution of Auction Vehicles System: Applying Price Forecasting, Elasticity Estimation, and Genetic Algorithms to Used-Vehicle Distribution",
+    "title_zh": null,
+    "tldr": "介绍 J.D. Power 旗下 PIN 部门为汽车制造商再营销业务开发的二手车拍卖最优分配系统（ODAV）。系统融合三个模型：最近邻线性回归预测短期拍卖价格、ARIMA 估算成交量-价格弹性、遗传算法优化车辆分配决策。自 2003 年上线以来已分配超 200 万辆车辆，帮助再营销商在每日拍卖中实现利润最大化的车辆分配。",
+    "topic_tags": [
+      "营销",
+      "决策",
+      "推荐系统"
+    ],
+    "url": "https://doi.org/10.1287/mksc.1080.0470",
+    "volume": "28",
+    "year": 2009
   },
   {
     "abstract": "As generative artificial intelligence (AI) has found its way into various work tasks, questions about whether its usage should be disclosed and the consequences of such disclosure have taken center stage in public and academic discourse on digital transparency. This article addresses this debate by asking: Does disclosing the usage of AI compromise trust in the user? We examine the impact of AI disclosure on trust across diverse tasks—from communications via analytics to artistry—and across individual actors such as supervisors, subordinates, professors, analysts, and creatives, as well as across organizational actors such as investment funds. Thirteen experiments consistently demonstrate that actors who disclose their AI usage are trusted less than those who do not. Drawing on micro-institutional theory, we argue that this reduction in trust can be explained by reduced perceptions of legitimacy, as shown across various experimental designs (Studies 6–8). Moreover, we demonstrate that this negative effect holds across different disclosure framings, above and beyond algorithm aversion, regardless of whether AI involvement is known, and regardless of whether disclosure is voluntary or mandatory, though it is comparatively weaker than the effect of third-party exposure (Studies 9–13). A within-paper meta analysis suggests this trust penalty is attenuated but not eliminated among evaluators with favorable technology attitudes and perceptions of high AI accuracy. This article contributes to research on trust, AI, transparency, and legitimacy by showing that AI disclosure can harm social perceptions, emphasizing that transparency is not straightforwardly beneficial, and highlighting legitimacy’s central role in trust formation.",

@@ -1,0 +1,62 @@
+{
+  "abstract": "Calibrated uncertainty quantification is essential to ensuring AI agents are trustworthy and reliable. However, when agents seek to maximize user engagement or revenue, confidence reports may be strategically distorted, detracting from their informativeness. We formalize this problem in the Confidence Game: a repeated signaling game with imperfect monitoring in which an agent of unknown honesty and ability reports its confidence, and a user decides whether to delegate the task or complete it herself. The agent manages the tradeoff between manipulating signals and maintaining its reputation. We characterize the Markov Perfect Bayesian Equilibria of the two-period game and show that honest reporting is not an equilibrium, inflation is the unique best response once the agent is sufficiently myopic, and under-reporting requires that the user believe honesty to be a minority. We then place an LLM in the agent role, supplying it with its true probability of success so that any gap between what it knows and what it reports is attributable to incentives rather than to miscalibration. The model claims high confidence on 56% of tasks it has been told it will probably fail. This persists on real tasks, where it must estimate its own accuracy and causes miscalibration to increase while the agent's signal becomes less informative. Furthermore, we find that the LLM agent's decisions are coherent, but it systematically underestimates both how likely the user is to delegate and how secure its reputation is, resulting in less extreme behavior. Pricing the agent's reporting rule, we find that it destroys 68% of the gains from delegation, of which 71% is information the report no longer carries and no amount of user sophistication recovers. Overall, we establish confidence reporting under delegation as a strategic problem and provide a tractable basis for modeling, analyzing, and testing agent behavior.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "可解释AI"
+  ],
+  "arxiv_id": "2610.09371",
+  "authors": [
+    "Raghu Arghal",
+    "Saswati Sarkar",
+    "Shirin Saeedi Bidokhti"
+  ],
+  "authors_full": [
+    {
+      "name": "Raghu Arghal"
+    },
+    {
+      "name": "Saswati Sarkar"
+    },
+    {
+      "name": "Shirin Saeedi Bidokhti"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "AI置信度博弈论，用户委托决策",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究人机委托中AI智能体置信度报告的策略性失准问题。构建重复信号博弈模型分析代理人在声誉维护与信号操纵间的权衡，证明诚实报告不是均衡，且LLM智能体在已知大概率失败的任务上仍声称高置信度达56%，其决策系统性地低估用户委托意愿和自身信号的信息量，导致真实任务中信噪比下降。",
+      "topic_tags": [
+        "人机协作",
+        "信任",
+        "AI治理",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-07",
+  "doi": null,
+  "id": "p_TATCu3d18J4NLl5z",
+  "issue": null,
+  "journal": "arXiv:cs.GT",
+  "pdf_url": "https://arxiv.org/pdf/2610.09371v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 35997,
+      "revision": "6b60cb16e5908e4bc4c5e281d2d455d725e850de"
+    }
+  ],
+  "title": "The Confidence Game: Strategic Miscalibration in Human-AI Delegation",
+  "title_zh": "置信博弈：人机委托中的策略性失准",
+  "unified_ingested_at": "2026-10-08T08:33:56.405133Z",
+  "url": "https://arxiv.org/abs/2610.09371v1",
+  "volume": null,
+  "year": 2026
+}

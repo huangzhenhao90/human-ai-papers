@@ -1,0 +1,70 @@
+{
+  "abstract": "Human-machine systems rarely operate at a fixed level of AI autonomy. As operators and AI systems collaborate over time, control must shift: the AI can take on more responsibility when collaboration is stable, maintain its current role when evidence is ambiguous, or return control to the human when conditions deteriorate. Existing work on adaptive automation, supervisory control, trust in automation, and deskilling explains parts of this problem, but provides no auditable, multi-signal criterion for governing when autonomy should change across multi-cycle workflows.   We formalise this challenge as the Handover Problem: deciding, at each operational cycle, whether to escalate, maintain, or revert AI autonomy while keeping the process reversible, recoverable, and auditable. We introduce the Handover Readiness Score (HRS), a transparent composite measure that integrates four signal dimensions: operator readiness, human-AI trust, learning stability, and operational performance. It is combined with a hysteresis-based transition policy that requires sustained positive evidence before increasing autonomy but reverts promptly when conditions worsen.   Across software engineering and manufacturing domains, the HRS and hard safety guards address complementary failure regimes: guards enforce immediate corrective action when a single indicator breaches a critical threshold, while the HRS detects the slow, multi-signal erosion of operator readiness that no individual guard can observe. The framework establishes autonomy handover as a governance problem requiring explicit, composite, and auditable criteria. This provides a conceptual and formal foundation that adaptive automation research has not previously provided.",
+  "ai_type_tags": [],
+  "arxiv_id": "2610.10352",
+  "authors": [
+    "Vicente Pelechano",
+    "Antoni Mestre",
+    "Manoli Albert",
+    "Miriam Gil"
+  ],
+  "authors_full": [
+    {
+      "name": "Vicente Pelechano"
+    },
+    {
+      "name": "Antoni Mestre"
+    },
+    {
+      "name": "Manoli Albert"
+    },
+    {
+      "name": "Miriam Gil"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "人机协作自主权移交，治理与信任议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": null,
+      "topic_tags": []
+    },
+    "ur": {
+      "ai_reason": "核心AI自主性切换问题，人-AI协作HCI议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ob",
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-07",
+  "doi": null,
+  "id": "p_CCrefXPsJsBQoFva",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.10352v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 81202,
+      "revision": "73679c6e4a8ac837e4c95328b80ce74c5001f9d7"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 35999,
+      "revision": "6b60cb16e5908e4bc4c5e281d2d455d725e850de"
+    }
+  ],
+  "title": "The Handover Problem: Governing Autonomy Transitions in Human-AI Collaboration",
+  "title_zh": "交接问题：人机协作中自主权转换的治理",
+  "unified_ingested_at": "2026-10-08T08:33:56.405133Z",
+  "url": "https://arxiv.org/abs/2610.10352v1",
+  "volume": null,
+  "year": 2026
+}

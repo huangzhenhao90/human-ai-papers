@@ -1,0 +1,80 @@
+{
+  "abstract": "Task-oriented conversational agents remain fragile under real world conversation scenarios as they rarely follow a predictable script, especially when users exhibit non-cooperative behavior. Existing function-calling benchmarks often emphasize successful, cooperative interactions and underrepresent adversarial conversation trajectories, thereby limiting the training resources available for developing robust agents. We present ToolRACER, a synthetic data generation pipeline that coordinates user, assistant and tool emulation models to generate and validated multi-turn interactions between a user and an agent. Using \\sysn, we construct ToolRACERBench a robust multi-turn conversation benchmark spanning six domains, ranging over 55 varied personas, generating a validated corpus of 5.6K conversation trajectories, with approximately 66\\% of conversations containing failure-prone conversation scenarios. We inject adversarial behaviors, producing validated conversational interaction trajectories that capture realistic, robust scenarios. We evaluate models trained on ToolRACERBench against internal benchmarks, as well as on function calling benchmarks such as $τ^2$-bench, BFCLv3 and ACEBench to evaluate agentic accuracy and robustness. Models trained on ToolRACERBench improve end to end agentic accuracy across $τ^2$-bench and ACEBench, demonstrating significant gains when mixed with in-domain dataset in small language models for agent capability tasks.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "对话式 AI",
+    "AI 助手"
+  ],
+  "arxiv_id": "2610.09163",
+  "authors": [
+    "Arkajyoti Chakraborty",
+    "Aryan Tayal",
+    "Ishika Agarwal",
+    "Tanner Sorensen",
+    "Justin Chiu"
+  ],
+  "authors_full": [
+    {
+      "name": "Arkajyoti Chakraborty"
+    },
+    {
+      "name": "Aryan Tayal"
+    },
+    {
+      "name": "Ishika Agarwal"
+    },
+    {
+      "name": "Tanner Sorensen"
+    },
+    {
+      "name": "Justin Chiu"
+    },
+    {
+      "name": "Alessandro Di Bari"
+    },
+    {
+      "name": "Neha Gupta"
+    },
+    {
+      "name": "Andreas Stolcke"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "对话agent与用户模拟，含用户画像",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对任务型对话智能体在真实非合作场景中易失效的问题，提出ToolRACER合成数据生成管道，协调用户、助手与工具仿真模型生成多轮对抗性对话轨迹，构建涵盖六个领域、55种人物画像、5.6K对话的ToolRACERBench基准。约66%对话包含易失败场景。基于其训练的小语言模型在τ²-bench、ACEBench等函数调用基准上端到端智能体准确率显著提升。",
+      "topic_tags": [
+        "人机协作",
+        "对话式 AI",
+        "AI 助手",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-06",
+  "doi": null,
+  "id": "p__EA3YBw-Ik_JfRAq",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.09163v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 36008,
+      "revision": "6b60cb16e5908e4bc4c5e281d2d455d725e850de"
+    }
+  ],
+  "title": "ToolRACER: A Robust Agentic Conversation Emulation Resource for Agent Training and Evaluation",
+  "title_zh": "ToolRACER：面向智能体训练与评估的鲁棒智能体对话仿真资源",
+  "unified_ingested_at": "2026-10-08T08:33:56.405133Z",
+  "url": "https://arxiv.org/abs/2610.09163v1",
+  "volume": null,
+  "year": 2026
+}
