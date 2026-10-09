@@ -1006,7 +1006,188 @@
     "year": 2026
   },
   {
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "LLM",
+      "AI治理"
+    ],
+    "authors": [
+      "Hanjun Luo",
+      "Junting Mao",
+      "Yuhan Lu",
+      "Haobo Zhang",
+      "Zhimu Huang"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "从组织行为学视角研究LLM智能体安全性，提出智能体反生产行为（ACB）框架，将组织前因（垂直领导关系、水平同伴规范、内部认知结构）映射到三类反生产结果（未授权披露、破坏性操作、生产偏离）。构建Workerville基准（16种组织配置、210个任务、3360个挑战），对6个前沿LLM评估，发现负面组织前因组合时呈非单调放大效应。",
+        "topic_tags": [
+          "伦理",
+          "组织变革",
+          "知识管理"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-08",
+    "id": "p_VNbzbtJqwwuKTbTW",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.11561v1",
+    "title": "Workerville: Towards an Organizational Behavior Account of Agent Safety",
+    "title_zh": "Workerville：迈向基于组织行为学的智能体安全解释",
+    "url": "https://arxiv.org/abs/2610.11561v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "算法决策"
+    ],
+    "authors": [
+      "Jun Yeong Lee"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 4.0,
+        "tldr": "研究不同语言模型定价算法在四企业伯特兰德市场中的合谋行为。通过对四个LLM（Claude、Gemini、DeepSeek、GPT）进行同质与混合组合的实验（11种配置、20次运行、200期），发现合谋程度是模型固有属性：Claude和Gemini市场达72%-79%垄断租金，DeepSeek仅24%，GPT几乎无合谋。混合本身未必降低合谋，含Gemini的市场更趋合谋，含Claude的则反之。租金按传递性秩序分配，验证价格领导模型预测。",
+        "topic_tags": [
+          "决策",
+          "战略",
+          "信任"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-08",
+    "id": "p_1pzIqn_ojfqBEYu3",
+    "journal": "arXiv:econ.GN",
+    "pdf_url": "https://arxiv.org/pdf/2610.11256v1",
+    "title": "Who Leads and Who Collects:Algorithmic Collusion in Markets of Heterogeneous Language Models",
+    "title_zh": "谁主导、谁获利：异构语言模型市场中的算法合谋",
+    "url": "https://arxiv.org/abs/2610.11256v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "机器学习",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Mayur Joshi",
+      "Ning Su",
+      "Mark Zbaracki"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 5.0,
+        "domain_score": 5.0,
+        "tldr": "基于对印度三家大型银行 18 个月的归纳研究，揭示数据科学家与领域专家在 AI 项目中围绕知识生产与评价标准产生的认识论冲突。研究区分认识论冲突与管辖权冲突，发现前者可经同化实践（追随单一认识论立场）缓解；当其失败后，数据科学家通过四项桥接实践，将预测嵌入领域专家既有的边界对象与实践，从而推动知识转化与模型部署，揭示了组织中专业知识权力的运作。",
+        "topic_tags": [
+          "知识管理",
+          "组织学习",
+          "人机协作"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-08",
+    "id": "p_BESNKyB3Zjoqp4Rw",
+    "journal": "OrgSci",
+    "pdf_url": null,
+    "title": "When Data Scientists Meet Domain Experts: Artificial Intelligence, Epistemic Conflict, and Knowledge Transformation",
+    "title_zh": "当数据科学家遇上领域专家：人工智能、认知冲突与知识转化",
+    "url": "https://doi.org/10.1287/orsc.2023.17369",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "机器学习"
+    ],
+    "authors": [
+      "Brett R. Gordon",
+      "Robert Moakler",
+      "Florian Zettelmeyer"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 3.0,
+        "domain_score": 5.0,
+        "tldr": "针对广告效果因果测量难以大规模开展 RCT 的痛点，提出 PIE 方法：以少量 RCT 估计的增量转化为标签，将广告活动特征映射到因果效应，从而对非实验活动做预测。允许使用活动结束后才可得的特征（如测试组结果、曝光率、最后点击转化），这些虽不可作因果控制变量，却能预测增量。在 Meta 2226 个广告实验上，PIE 对每美元增量转化的样本外 R² 显著高于行业标准的 7 天最后点击归因；在决策层面与 RCT 决策仅 8%–12% 不一致，优于归因法。",
+        "topic_tags": [
+          "广告",
+          "营销",
+          "决策"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-08",
+    "id": "p_gvbA692dp_uvCYoh",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "title": "Predicted Incrementality by Experimentation for Ad Measurement",
+    "title_zh": "基于实验的广告测量增量性预测",
+    "url": "https://doi.org/10.1287/mnsc.2023.01108",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Aisvarya Adeseye",
+      "Jouni Isoaho",
+      "Adeyemi Adeseye",
+      "Seppo Virtanen",
+      "Mohammad Tahir"
+    ],
+    "channel_profiles": {
+      "ob": {
+        "ai_score": 4.0,
+        "domain_score": 3.0,
+        "tldr": "提出基于本地LLM的证据可追溯动态访谈架构，根据参与者回复实时调整问题深度与语义递进。五模块提示驱动架构结合持久访谈状态记录，246名参与者评估显示：专业知识画像模块与自报水平一致率78.9%（加权Kappa=0.80），迭代问题生成模块展现强专业复杂度关联（r=0.79），参与者在相关性、投入度和满意度方面评分较高。",
+        "topic_tags": [
+          "招聘",
+          "教育",
+          "人机协作"
+        ]
+      }
+    },
+    "channels": [
+      "ob"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-08",
+    "id": "p_6h8WdNm7ZMefhpv4",
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.11651v1",
+    "title": "Evidence-Traceable Dynamic Interviewer Architecture for Expertise-Adaptive Qualitative Interviews Using Local LLMs",
+    "title_zh": "基于本地LLM的证据可追溯动态访谈架构：面向专业知识自适应的质性访谈",
+    "url": "https://arxiv.org/abs/2610.11651v1",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作",
+      "AI治理"
+    ],
     "authors": [
       "Tianqi Song",
       "Zicheng Zhu",
@@ -1017,8 +1198,13 @@
       "ob": {
         "ai_score": 5.0,
         "domain_score": 5.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "知识工作者将专业知识共享给AI系统时，更可能选择不共享（而非改变共享内容本身），其推理从面向人类的利他动机转向对失控、被替代及下游治理的担忧。实验表明AI重用会加剧组织知识复用与贡献者利益之间的张力，建议在AI与知识管理政策中保护员工的权利与自主性。",
+        "topic_tags": [
+          "知识管理",
+          "人机协作",
+          "工作设计",
+          "组织变革"
+        ]
       }
     },
     "channels": [
@@ -1036,13 +1222,49 @@
   },
   {
     "ai_type_tags": [
+      "speech_audio"
+    ],
+    "authors": [
+      "Isaac Akinkunmi Adedeji",
+      "Saheed Akinmayọwa Lawal",
+      "Andrew Sixsmith",
+      "David C. Henderson"
+    ],
+    "channel_profiles": {
+      "mh": {
+        "ai_score": 3,
+        "domain_score": 3,
+        "tldr": "该观点文章提出开发语音优先系统以支持非洲老年人心理健康护理，属于概念性建议而非实证研究",
+        "topic_tags": [
+          "wellbeing_loneliness",
+          "digital_intervention",
+          "service_access",
+          "older_adults"
+        ]
+      }
+    },
+    "channels": [
+      "mh"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-07",
+    "id": "p_lz577XWw23qiE68K",
+    "journal": "JAMA Psychiatry",
+    "pdf_url": null,
+    "title": "Voice-First Mental Health Care for Older Adults in Africa",
+    "title_zh": "非洲老年人语音优先心理健康护理",
+    "url": "https://doi.org/10.1001/jamapsychiatry.2026.3198",
+    "year": 2026
+  },
+  {
+    "ai_type_tags": [
       "机器学习",
       "表示学习"
     ],
     "authors": [
       "Gerard Hoberg",
-      "Craig Knoblock",
-      "Gordon Phillips",
+      "Craig A. Knoblock",
+      "Gordon M. Phillips",
       "Jay Pujara",
       "Zhiqiang Qiu"
     ],
@@ -1067,7 +1289,7 @@
     "journal": "MgmtSci",
     "pdf_url": null,
     "title": "Using Representation Learning and Website Text to Identify Competitor Networks",
-    "title_zh": null,
+    "title_zh": "利用表示学习与网站文本识别竞争者网络",
     "url": "https://doi.org/10.1287/mnsc.2024.06516",
     "year": 2026
   },
@@ -1110,7 +1332,11 @@
     "year": 2026
   },
   {
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机协作",
+      "算法决策",
+      "可解释AI"
+    ],
     "authors": [
       "Vicente Pelechano",
       "Antoni Mestre",
@@ -1121,8 +1347,13 @@
       "ob": {
         "ai_score": 5.0,
         "domain_score": 4.0,
-        "tldr": null,
-        "topic_tags": []
+        "tldr": "将人机协作中何时提升、维持或回退AI自主权形式化为\"交接问题\"。提出交接就绪度评分（HRS），整合操作者准备度、人机信任、学习稳定性与运行绩效四个信号维度，并结合迟滞转换策略与硬性安全护栏：护栏处理单指标越界，HRS识别多信号缓慢侵蚀，在软件工程与制造场景中实现可审计、可逆的自主权过渡。",
+        "topic_tags": [
+          "人机协作",
+          "决策",
+          "信任",
+          "AI治理"
+        ]
       },
       "ur": {
         "ai_score": 5.0,
@@ -1243,7 +1474,7 @@
     "journal": "MgmtSci",
     "pdf_url": null,
     "title": "Personalization, Engagement, and Content Quality on Social Media: An Evaluation of Reddit’s News Feed",
-    "title_zh": null,
+    "title_zh": "社交媒体中的个性化、参与度与内容质量：Reddit 新闻信息流评估",
     "url": "https://doi.org/10.1287/mnsc.2024.06298",
     "year": 2026
   },
@@ -41247,7 +41478,7 @@
     "channels": [
       "ob"
     ],
-    "cited_by": 0,
+    "cited_by": 1,
     "date": "2026-05-21",
     "id": "p_HF6dh1bgNxz4XvZR",
     "journal": "ISR",

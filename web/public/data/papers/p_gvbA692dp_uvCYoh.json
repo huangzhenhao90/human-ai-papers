@@ -1,0 +1,71 @@
+{
+  "abstract": "Randomized controlled trials (RCTs) provide the most credible estimates of advertising incrementality but are difficult to scale. We propose Predicted Incrementality by Experimentation (PIE), which reframes ad measurement as a campaign-level prediction problem. PIE uses a sample of RCTs to learn a mapping from campaign features to causal effects, then applies it to campaigns not run as RCTs. Because the RCTs identify the causal effects, PIE can incorporate post-determined features—campaign-level aggregates such as test-group outcomes, exposure rates, and last-click conversions, computed after campaign completion. These metrics reflect the consumer behaviors that generate treatment effects, so they carry predictive information about incrementality, even though they would be invalid controls in a causal model. Using 2,226 Meta ad experiments, PIE achieves an out-of-sample [Formula: see text] for incremental conversions per dollar, compared with [Formula: see text] for industry-standard seven-day last-click attribution. In a decision-making framework, PIE disagrees with RCT-based decisions in only 8%–12% of campaigns, compared with 12%–20% for last-click attribution. We conclude that PIE can help scale causal measurement from a limited number of RCTs to a large set of nonexperimental campaigns.\n                  This paper was accepted by Raphael Thomadsen, marketing.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.01108 .",
+  "ai_type_tags": [
+    "机器学习"
+  ],
+  "arxiv_id": "2023.01108",
+  "authors": [
+    "Brett R. Gordon",
+    "Robert Moakler",
+    "Florian Zettelmeyer"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Kellogg School of Management, Northwestern University, Evanston, Illinois 60208"
+      ],
+      "name": "Brett R. Gordon",
+      "orcid": "https://orcid.org/0000-0001-9081-569X"
+    },
+    {
+      "affiliation": [
+        "Ads Research, Meta, Menlo Park, California 94025"
+      ],
+      "name": "Robert Moakler",
+      "orcid": null
+    },
+    {
+      "affiliation": [
+        "Kellogg School of Management, Northwestern University, Evanston, Illinois 60208; and National Bureau of Economic Research, Cambridge, Massachusetts 02138"
+      ],
+      "name": "Florian Zettelmeyer",
+      "orcid": "https://orcid.org/0000-0003-0791-2849"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "MgmtSci广告测量，含ML预测方法",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "针对广告效果因果测量难以大规模开展 RCT 的痛点，提出 PIE 方法：以少量 RCT 估计的增量转化为标签，将广告活动特征映射到因果效应，从而对非实验活动做预测。允许使用活动结束后才可得的特征（如测试组结果、曝光率、最后点击转化），这些虽不可作因果控制变量，却能预测增量。在 Meta 2226 个广告实验上，PIE 对每美元增量转化的样本外 R² 显著高于行业标准的 7 天最后点击归因；在决策层面与 RCT 决策仅 8%–12% 不一致，优于归因法。",
+      "topic_tags": [
+        "广告",
+        "营销",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-08",
+  "doi": "10.1287/mnsc.2023.01108",
+  "id": "p_gvbA692dp_uvCYoh",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 81281,
+      "revision": "c607afe4d620c0f28d31a3f542f41f520dcf2503"
+    }
+  ],
+  "title": "Predicted Incrementality by Experimentation for Ad Measurement",
+  "title_zh": "基于实验的广告测量增量性预测",
+  "unified_ingested_at": "2026-10-09T08:37:56.403321Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.01108",
+  "volume": null,
+  "year": 2026
+}

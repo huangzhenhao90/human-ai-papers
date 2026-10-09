@@ -1,6 +1,10 @@
 {
   "abstract": "Human-machine systems rarely operate at a fixed level of AI autonomy. As operators and AI systems collaborate over time, control must shift: the AI can take on more responsibility when collaboration is stable, maintain its current role when evidence is ambiguous, or return control to the human when conditions deteriorate. Existing work on adaptive automation, supervisory control, trust in automation, and deskilling explains parts of this problem, but provides no auditable, multi-signal criterion for governing when autonomy should change across multi-cycle workflows.   We formalise this challenge as the Handover Problem: deciding, at each operational cycle, whether to escalate, maintain, or revert AI autonomy while keeping the process reversible, recoverable, and auditable. We introduce the Handover Readiness Score (HRS), a transparent composite measure that integrates four signal dimensions: operator readiness, human-AI trust, learning stability, and operational performance. It is combined with a hysteresis-based transition policy that requires sustained positive evidence before increasing autonomy but reverts promptly when conditions worsen.   Across software engineering and manufacturing domains, the HRS and hard safety guards address complementary failure regimes: guards enforce immediate corrective action when a single indicator breaches a critical threshold, while the HRS detects the slow, multi-signal erosion of operator readiness that no individual guard can observe. The framework establishes autonomy handover as a governance problem requiring explicit, composite, and auditable criteria. This provides a conceptual and formal foundation that adaptive automation research has not previously provided.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "人机协作",
+    "算法决策",
+    "可解释AI"
+  ],
   "arxiv_id": "2610.10352",
   "authors": [
     "Vicente Pelechano",
@@ -27,8 +31,13 @@
       "ai_reason": "人机协作自主权移交，治理与信任议题",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "将人机协作中何时提升、维持或回退AI自主权形式化为\"交接问题\"。提出交接就绪度评分（HRS），整合操作者准备度、人机信任、学习稳定性与运行绩效四个信号维度，并结合迟滞转换策略与硬性安全护栏：护栏处理单指标越界，HRS识别多信号缓慢侵蚀，在软件工程与制造场景中实现可审计、可逆的自主权过渡。",
+      "topic_tags": [
+        "人机协作",
+        "决策",
+        "信任",
+        "AI治理"
+      ]
     },
     "ur": {
       "ai_reason": "核心AI自主性切换问题，人-AI协作HCI议题",
@@ -53,7 +62,7 @@
     {
       "channel": "ob",
       "legacy_id": 81202,
-      "revision": "73679c6e4a8ac837e4c95328b80ce74c5001f9d7"
+      "revision": "c607afe4d620c0f28d31a3f542f41f520dcf2503"
     },
     {
       "channel": "ur",
