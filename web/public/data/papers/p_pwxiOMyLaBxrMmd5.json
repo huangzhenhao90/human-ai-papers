@@ -1,0 +1,65 @@
+{
+  "abstract": "Exploratory data analysis (EDA) is rarely open-ended in practice: analysts work from high-level domain questions toward the concrete analyses that can answer them, prioritizing directions with domain knowledge and prior hypotheses. Large language models (LLMs) can supply such knowledge, but their responses are unstructured, leaving analysts no way to see what has been explored, what is missing, or why one direction was chosen over another. We present DAG-EDA, a system that lets analysts and an LLM co-navigate the space of possible analyses through two linked structures. An intent graph, governed by a grammar of analytical intent, decomposes an ambiguous natural-language question into progressively concrete analysis tasks, keeping alternative framings open and letting analysts branch, backtrack, and compare paths. A multi-layered knowledge graph externalizes the LLM's domain knowledge, linking domain concepts to the dataset variables that can measure them, so analysts can inspect and contest how their question is grounded in the data. Both graphs are constructed from only the dataset and the analyst's question, and the analyses the analyst reaches are rendered as interactive dashboards. We illustrate the system through a usage scenario and describe a user study design for examining whether the system scaffold analysts' reasoning and navigation.",
+  "ai_type_tags": [
+    "LLM",
+    "人机协作",
+    "AI助手"
+  ],
+  "arxiv_id": "2610.11025",
+  "authors": [
+    "Junran Yang",
+    "Shruti Badrish",
+    "Teanna Barrett",
+    "Leilani Battle"
+  ],
+  "authors_full": [
+    {
+      "name": "Junran Yang"
+    },
+    {
+      "name": "Shruti Badrish"
+    },
+    {
+      "name": "Teanna Barrett"
+    },
+    {
+      "name": "Leilani Battle"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM辅助EDA系统，分析师交互视角但以技术为主",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "DAG-EDA 系统让分析师与 LLM 协同导航数据分析空间，借助两个链接结构：意图图基于分析意图语法将模糊自然语言问题逐层分解为具体分析任务，支持分支、回溯与路径比较；多层知识图谱外化 LLM 的领域知识，将概念关联到可衡量的数据变量，供分析师审视与质疑问题到数据的落地方式。两者仅由数据集与问题构建，最终分析以交互仪表盘呈现，并提出用户研究方案检验其对分析推理与导航的支撑效果。",
+      "topic_tags": [
+        "HCI",
+        "可视化",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-08",
+  "doi": null,
+  "id": "p_pwxiOMyLaBxrMmd5",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2610.11025v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 36105,
+      "revision": "ca6f9f970798c75383fac3acc4babd0e6bf8130c"
+    }
+  ],
+  "title": "Intent Graph: Navigating the Analytical Reasoning Space for Exploratory Data Analysis",
+  "title_zh": "Intent Graph：探索性数据分析中的分析推理空间导航",
+  "unified_ingested_at": "2026-10-10T08:15:00.259241Z",
+  "url": "https://arxiv.org/abs/2610.11025v1",
+  "volume": null,
+  "year": 2026
+}

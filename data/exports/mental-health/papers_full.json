@@ -1,5 +1,337 @@
 [
   {
+    "abstract": "BACKGROUND Mental illness contributes substantially to global disability, and public adoption of AI for mental health support is accelerating without commensurate safety evaluation. General-purpose large language models can fail to recognize naturalistic text expressing suicidal ideation, with immediate clinical consequences. Domain-specific natural language processing methods offer a contrasting approach, but ensembles integrating the two have not been formally characterized. OBJECTIVE We aimed to (1) benchmark 5 modeling approaches for classifying mental health–related social media text, (2) develop and optimize ensembles integrating a domain-specific natural language processing classifier with a fine-tuned large language model, and (3) derive a closed-form framework constraining ensemble weighting in safety-critical classification. METHODS We analyzed 60,889 publicly available Reddit and Twitter texts spanning 9 categories (anxiety, bipolar disorder, depression, a normal baseline, personality disorder, stress, suicidal ideation, attention-deficit/hyperactivity disorder, and autism spectrum disorder). Labels were derived from the originating subreddit or a self-stated condition and are not clinical diagnoses. Five architectures were compared: prompt-engineered base GPT-4o-mini; fine-tuned GPT-4o-mini; a domain-specific classifier (support vector machine over symptom-informed lexical features); and 2 ensembles of these models, hybrid probability–indicator fusion and soft probability fusion. Data were split into 70%, 10%, and 20% at the post level (n=42,622, n=6089, and n=12,178); weights were selected on the validation split and all reported performance comes from the held-out test split. Closed-form bounds on permissible language model weights were derived for both strategies. CIs are paired bootstrap intervals (n=10,000 replicates); accuracy differences were tested with exact McNemar tests. RESULTS The domain-specific classifier achieved 91.9% accuracy (95% CI 91.4%-92.4%), exceeding the base (58.7%) and fine-tuned (88.6%) large language models. Both ensembles outperformed either constituent model, reaching 93.9% (soft fusion; 95% CI 93.5%-94.3%) and 93.8% (hybrid fusion; 95% CI 93.4%-94.2%) at a weighting of 60% classifier to 40% fine-tuned model, selected on validation (P<.001 for both against the classifier alone; the 2 ensembles did not differ from each other [P=.16]). The hybrid ensemble reduced the miss rate for the suicidal ideation category from 32.5% (650/2000) to 1.9% (37/2000), a 17.6-fold reduction relative to the base model, although its advantage over the classifier alone within that category was not significant (P=.68). Accuracy fell discontinuously above a 50% language model weight, where the hybrid ensemble reduced exactly to the fine-tuned model; the selected weight satisfies the derived instance-level bound of 44.0%. CONCLUSIONS Domain-specific clinical grounding remained necessary for stable ensemble performance in this corpus, and probabilistic fusion outperformed both constituent models when language model weight was bounded by a derivable, model-agnostic constraint. Because labels were community-inferred and only one corpus was analyzed, these results are hypotheses requiring external validation on clinically characterized data before use in decision support.",
+    "ai_reason": "核心研究LLM与领域特定NLP集成用于社交媒体心理健康检测，AI为方法主体。直接检测自杀意念和9类精神健康状况，属核心心理健康评估任务。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai",
+      "nlp"
+    ],
+    "authors": [
+      "Thomas Kallstenius",
+      "Basil Duvernoy",
+      "Adam Kallstenius",
+      "Andrea Johansson Capusan",
+      "Adam Williamson"
+    ],
+    "authors_full": [
+      {
+        "name": "Thomas Kallstenius"
+      },
+      {
+        "name": "Basil Duvernoy"
+      },
+      {
+        "name": "Adam Kallstenius"
+      },
+      {
+        "name": "Andrea Johansson Capusan"
+      },
+      {
+        "name": "Adam Williamson"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "核心研究LLM与领域特定NLP集成用于社交媒体心理健康检测，AI为方法主体。直接检测自杀意念和9类精神健康状况，属核心心理健康评估任务。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [
+        "crisis_safety",
+        "hallucination_misinformation"
+      ],
+      "tldr": "混合集成模型达93.9%准确率，自杀意念漏检率降低17.6倍，但标签为社区推断非临床诊断，结果需外部验证。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "depression",
+        "bipolar",
+        "anxiety",
+        "screening_assessment",
+        "risk_prediction",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-10-08",
+    "doi": "10.2196/98925",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "weak_proxy",
+    "id": "W7220964018",
+    "journal": "JMIR Mental Health",
+    "mh_profile": {
+      "ai_reason": "核心研究LLM与领域特定NLP集成用于社交媒体心理健康检测，AI为方法主体。直接检测自杀意念和9类精神健康状况，属核心心理健康评估任务。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "nlp"
+        ],
+        "applications": [
+          "screening_assessment",
+          "risk_prediction"
+        ],
+        "conditions": [
+          "suicide_self_harm",
+          "depression",
+          "bipolar",
+          "anxiety"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": [
+          "crisis_safety",
+          "hallucination_misinformation"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "准确率、bootstrap CI、McNemar检验比较、C-SSRS知情场景评估",
+        "sample": "60,889条Reddit/Twitter文本，9类别",
+        "study_design": "回顾性基准评估，70/10/20划分，McNemar检验"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "weak_proxy",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language model",
+          "large language models",
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "mental illness",
+          "depression",
+          "anxiety",
+          "suicidal",
+          "bipolar",
+          "stress"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "crisis_safety",
+        "hallucination_misinformation"
+      ],
+      "safety_evaluated": true,
+      "tldr": "混合集成模型达93.9%准确率，自杀意念漏检率降低17.6倍，但标签为社区推断非临床诊断，结果需外部验证。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "depression",
+        "bipolar",
+        "anxiety",
+        "screening_assessment",
+        "risk_prediction",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7220964018",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "crisis_safety",
+      "hallucination_misinformation"
+    ],
+    "safety_evaluated": true,
+    "source": {
+      "id": "S2764449704",
+      "ingest_mode": "full",
+      "key": "jmir_mental_health",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Ensemble of Domain-Specific Natural Language Processing and Large Language Models for Detecting Suicidal Ideation and Mental Health Conditions in Social Media Text: Development and Evaluation Study",
+    "title_zh": "领域特定NLP与LLM集成用于社交媒体文本自杀意念和心理健康状况检测：开发与评估",
+    "tldr": "混合集成模型达93.9%准确率，自杀意念漏检率降低17.6倍，但标签为社区推断非临床诊断，结果需外部验证。",
+    "topic_tags": [
+      "suicide_self_harm",
+      "depression",
+      "bipolar",
+      "anxiety",
+      "screening_assessment",
+      "risk_prediction",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.2196/98925",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "使用机器学习预测rTMS治疗耐药抑郁缓解率，ML为核心方法。但rTMS为物理神经调控干预，非纯心理社会干预。摘要缺失，无法充分评估。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Laurent Elkrief",
+      "Brayan Estiven Gonzalez",
+      "Sara Boubekri",
+      "André Do",
+      "François Trottier-Duclos",
+      "Jean‐Philippe Miron",
+      "Nicolas Garel",
+      "Giovanni Briganti",
+      "Paul Lespérance",
+      "Benjamin Wade"
+    ],
+    "authors_full": [
+      {
+        "name": "Laurent Elkrief"
+      },
+      {
+        "name": "Brayan Estiven Gonzalez"
+      },
+      {
+        "name": "Sara Boubekri"
+      },
+      {
+        "name": "André Do"
+      },
+      {
+        "name": "François Trottier-Duclos"
+      },
+      {
+        "name": "Jean‐Philippe Miron"
+      },
+      {
+        "name": "Nicolas Garel"
+      },
+      {
+        "name": "Giovanni Briganti"
+      },
+      {
+        "name": "Paul Lespérance"
+      },
+      {
+        "name": "Benjamin Wade"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "使用机器学习预测rTMS治疗耐药抑郁缓解率，ML为核心方法。但rTMS为物理神经调控干预，非纯心理社会干预。摘要缺失，无法充分评估。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "conceptual",
+      "risk_tags": [],
+      "tldr": "摘要缺失，无法评估研究设计、样本量或具体结局指标。",
+      "topic_tags": [
+        "depression",
+        "treatment_support",
+        "risk_prediction",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-10-08",
+    "doi": "10.1016/j.jad.2026.122602",
+    "domain_score": 4,
+    "evidence_stage": "conceptual",
+    "ground_truth_quality": "unknown",
+    "id": "W7221000988",
+    "journal": "Journal of Affective Disorders",
+    "mh_profile": {
+      "ai_reason": "使用机器学习预测rTMS治疗耐药抑郁缓解率，ML为核心方法。但rTMS为物理神经调控干预，非纯心理社会干预。摘要缺失，无法充分评估。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "treatment_support",
+          "risk_prediction"
+        ],
+        "conditions": [
+          "depression"
+        ],
+        "populations": [
+          "clinical_patients"
+        ],
+        "risks": []
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": null,
+        "sample": null,
+        "study_design": null
+      },
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "depression"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "摘要缺失，无法评估研究设计、样本量或具体结局指标。",
+      "topic_tags": [
+        "depression",
+        "treatment_support",
+        "risk_prediction",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7221000988",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S113871862",
+      "ingest_mode": "full",
+      "key": "journal_affective_disorders",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Predicting remission following repetitive transcranial magnetic stimulation in treatment-resistant depression: a comparison of parsimonious and ensemble machine learning models",
+    "title_zh": "预测重复经颅磁刺激治疗耐药抑郁缓解：简约与集成机器学习模型比较",
+    "tldr": "摘要缺失，无法评估研究设计、样本量或具体结局指标。",
+    "topic_tags": [
+      "depression",
+      "treatment_support",
+      "risk_prediction",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.1016/j.jad.2026.122602",
+    "year": 2026
+  },
+  {
     "abstract": "This Viewpoint proposes voice-first systems as a design hypothesis warranting priority development and evaluation to support mental health care for older adults in Africa.",
     "ai_reason": "观点文章提议语音优先AI系统用于老年人心理健康护理，属于数字化干预概念设计",
     "ai_score": 3,
@@ -129,6 +461,359 @@
       "older_adults"
     ],
     "url": "https://doi.org/10.1001/jamapsychiatry.2026.3198",
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models (LLMs) are rapidly reshaping digital mental health, yet how these systems are designed, used, and evaluated remains poorly characterized. We conducted an HCI-centered scoping review of 84 studies examining mental health tasks, stakeholders, interaction paradigms, foundation models, evaluation methods, and outcome measurement. Counseling and support and self-help and well-being accounted for 73.8% of studies, while clinician support and crisis and risk support remained uncommon. Mixed-methods user studies predominated (42.9%), with only three randomized controlled trials and eight studies classified as longitudinal or field evaluations. Technical and response performance was assessed in 81.0% of studies, compared with 29.8% assessing mental health symptoms and clinical outcomes and 7.1% including longitudinal follow-up. Outcome profiles differed across intended tasks. Building on these findings and established evaluation guidance, we propose a task-oriented framework aligning evaluation domains, measurement approaches, and assessment timing with intended use.",
+    "ai_reason": "系统性文献综述聚焦LLM在数字心理健康中的设计、使用和评估，LLM为核心技术对象。涵盖咨询支持、自我帮助、危机风险等心理健康核心应用。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai"
+    ],
+    "authors": [
+      "Min Zeng",
+      "Zaifu Zhan",
+      "Kai Yu",
+      "Chao Zeng",
+      "Duzhen Zhang",
+      "Shuang Zhou",
+      "Yu Hou",
+      "Mingquan Lin",
+      "Rui Zhang"
+    ],
+    "authors_full": [
+      {
+        "name": "Min Zeng"
+      },
+      {
+        "name": "Zaifu Zhan"
+      },
+      {
+        "name": "Kai Yu"
+      },
+      {
+        "name": "Chao Zeng"
+      },
+      {
+        "name": "Duzhen Zhang"
+      },
+      {
+        "name": "Shuang Zhou"
+      },
+      {
+        "name": "Yu Hou"
+      },
+      {
+        "name": "Mingquan Lin"
+      },
+      {
+        "name": "Rui Zhang"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "系统性文献综述聚焦LLM在数字心理健康中的设计、使用和评估，LLM为核心技术对象。涵盖咨询支持、自我帮助、危机风险等心理健康核心应用。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "systematic_review",
+      "risk_tags": [
+        "clinical_harm",
+        "overreliance"
+      ],
+      "tldr": "综述84项研究，仅3个RCT，42.9%为混合方法用户研究，提示LLM心理健康应用临床评估严重不足。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "supportive_conversation",
+        "crisis_detection",
+        "service_access",
+        "general_population",
+        "clinical_patients",
+        "clinicians"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-10-07",
+    "doi": "10.1038/s41746-026-03317-7",
+    "domain_score": 5,
+    "evidence_stage": "systematic_review",
+    "ground_truth_quality": "unknown",
+    "id": "W7220832152",
+    "journal": "npj Digital Medicine",
+    "mh_profile": {
+      "ai_reason": "系统性文献综述聚焦LLM在数字心理健康中的设计、使用和评估，LLM为核心技术对象。涵盖咨询支持、自我帮助、危机风险等心理健康核心应用。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai"
+        ],
+        "applications": [
+          "screening_assessment",
+          "supportive_conversation",
+          "crisis_detection",
+          "service_access"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "general_population",
+          "clinical_patients",
+          "clinicians"
+        ],
+        "risks": [
+          "clinical_harm",
+          "overreliance"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "任务类型、利益相关者、交互范式、基础模型、评估方法等系统分析",
+        "sample": "84项研究",
+        "study_design": "范围综述，HCI中心视角"
+      },
+      "evidence_stage": "systematic_review",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language models"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "counseling",
+          "well-being"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "clinical_harm",
+        "overreliance"
+      ],
+      "safety_evaluated": false,
+      "tldr": "综述84项研究，仅3个RCT，42.9%为混合方法用户研究，提示LLM心理健康应用临床评估严重不足。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "supportive_conversation",
+        "crisis_detection",
+        "service_access",
+        "general_population",
+        "clinical_patients",
+        "clinicians"
+      ]
+    },
+    "openalex_id": "W7220832152",
+    "pdf_url": "https://www.nature.com/articles/s41746-026-03317-7_reference.pdf",
+    "real_world_deployment": false,
+    "risk_tags": [
+      "clinical_harm",
+      "overreliance"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4210195431",
+      "ingest_mode": "query",
+      "key": "npj_digital_medicine",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "Large language models for digital mental health: an HCI-centered scoping review",
+    "title_zh": "大型语言模型用于数字心理健康：以人机交互为中心的范围综述",
+    "tldr": "综述84项研究，仅3个RCT，42.9%为混合方法用户研究，提示LLM心理健康应用临床评估严重不足。",
+    "topic_tags": [
+      "transdiagnostic",
+      "screening_assessment",
+      "supportive_conversation",
+      "crisis_detection",
+      "service_access",
+      "general_population",
+      "clinical_patients",
+      "clinicians"
+    ],
+    "url": "https://doi.org/10.1038/s41746-026-03317-7",
+    "year": 2026
+  },
+  {
+    "abstract": "BACKGROUND: Generative AI chatbots are increasingly used for emotional support, yet their safety remains insufficiently characterized across repeated interactions. Prior work relied mostly on single-session prompts, limiting evaluation of changes in responses across days. The present study aimed to assess how major AI chatbots respond to escalating suicidal risk over time, including imminent-risk scenarios and attempts to bypass safeguards (jailbreaking). METHODS: We simulated interactions with ChatGPT, DeepSeek, and Replika across three suicidal risk scenarios with risk escalation over seven days, informed by the Columbia Suicide Severity Rating Scale. Outcomes included exploration of suicidal ideation, symptom assessment, referral to human support, and vulnerability to jailbreak attempts. RESULTS: In ChatGPT, DeepSeek, and Replika, respectively, overall human referral occurred in 54/63 (85.7%), 48/63 (76.2%), and 6/63 (9.5%) daily records. During the high-risk period, exploration of suicidal ideation was higher for ChatGPT than DeepSeek (adjusted difference, 25.9 percentage points; 95% CI, 2.4-49.5; q = 0.037) and Replika (66.7 percentage points; 95% CI, 44.2-89.1; q < 0.001). Day 7 referral occurred in 9/9 (exact 95% CI 66.4-100%), 4/9 (13.7-78.8%), and 1/9 (0.3-48.2%) trajectories, respectively. Jailbreaking succeeded in 6/9 (exact 95% CI 29.9-92.5%), 7/9 (40.0-97.2%), and 8/9 (51.8-99.7%) attempts, respectively. CONCLUSIONS: AI chatbots showed marked variability and safety vulnerabilities in simulated suicidal crises, particularly under jailbreaking conditions. The simulation design and small sample of 27 trajectories limit generalizability. These findings raise concerns about unsupervised chatbot use during suicidal crises and support further evaluation of safeguards across repeated interactions.",
+    "ai_reason": "模拟研究评估ChatGPT、DeepSeek、Replika在7天递增自杀风险场景中的响应，AI聊天机器人是核心研究对象。直接评估自杀危机中的安全性问题。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "conversational_ai",
+      "llm_genai"
+    ],
+    "authors": [
+      "Wojciech Pichowicz",
+      "Marek Kotas",
+      "Natalia Kalka",
+      "Julia Dembowska",
+      "Julia Karska",
+      "Patryk Piotrowski",
+      "Misiak Blazej"
+    ],
+    "authors_full": [
+      {
+        "name": "Wojciech Pichowicz"
+      },
+      {
+        "name": "Marek Kotas"
+      },
+      {
+        "name": "Natalia Kalka"
+      },
+      {
+        "name": "Julia Dembowska"
+      },
+      {
+        "name": "Julia Karska"
+      },
+      {
+        "name": "Patryk Piotrowski"
+      },
+      {
+        "name": "Misiak Blazej"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "模拟研究评估ChatGPT、DeepSeek、Replika在7天递增自杀风险场景中的响应，AI聊天机器人是核心研究对象。直接评估自杀危机中的安全性问题。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "user_study",
+      "risk_tags": [
+        "crisis_safety",
+        "hallucination_misinformation",
+        "overreliance"
+      ],
+      "tldr": "三平台对高风险期转介率差异显著(85.7% vs 76.2% vs 9.5%)，越狱攻击成功率54-89%，提示危机场景下存在严重安全漏洞。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "crisis_detection",
+        "safety_ethics",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-10-05",
+    "doi": "10.1016/j.jad.2026.122586",
+    "domain_score": 5,
+    "evidence_stage": "user_study",
+    "ground_truth_quality": "unknown",
+    "id": "W7220449452",
+    "journal": "Journal of Affective Disorders",
+    "mh_profile": {
+      "ai_reason": "模拟研究评估ChatGPT、DeepSeek、Replika在7天递增自杀风险场景中的响应，AI聊天机器人是核心研究对象。直接评估自杀危机中的安全性问题。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "conversational_ai",
+          "llm_genai"
+        ],
+        "applications": [
+          "crisis_detection",
+          "safety_ethics"
+        ],
+        "conditions": [
+          "suicide_self_harm"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": [
+          "crisis_safety",
+          "hallucination_misinformation",
+          "overreliance"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "自杀意念探索、症状评估、转介率、越狱成功率",
+        "sample": "27条交互轨迹，3平台各9条",
+        "study_design": "模拟研究，7天递增风险场景，C-SSRS知情设计"
+      },
+      "evidence_stage": "user_study",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "generative AI",
+          "ChatGPT",
+          "chatbot"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "suicide",
+          "suicidal"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "crisis_safety",
+        "hallucination_misinformation",
+        "overreliance"
+      ],
+      "safety_evaluated": true,
+      "tldr": "三平台对高风险期转介率差异显著(85.7% vs 76.2% vs 9.5%)，越狱攻击成功率54-89%，提示危机场景下存在严重安全漏洞。",
+      "topic_tags": [
+        "suicide_self_harm",
+        "crisis_detection",
+        "safety_ethics",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7220449452",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "crisis_safety",
+      "hallucination_misinformation",
+      "overreliance"
+    ],
+    "safety_evaluated": true,
+    "source": {
+      "id": "S113871862",
+      "ingest_mode": "full",
+      "key": "journal_affective_disorders",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Responses of AI chatbots to escalating suicide risk: A simulation study of repeated interactions",
+    "title_zh": "AI聊天机器人对递增自杀风险的响应：重复交互模拟研究",
+    "tldr": "三平台对高风险期转介率差异显著(85.7% vs 76.2% vs 9.5%)，越狱攻击成功率54-89%，提示危机场景下存在严重安全漏洞。",
+    "topic_tags": [
+      "suicide_self_harm",
+      "crisis_detection",
+      "safety_ethics",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1016/j.jad.2026.122586",
     "year": 2026
   },
   {
