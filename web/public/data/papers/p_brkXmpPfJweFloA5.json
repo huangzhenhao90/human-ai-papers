@@ -1,0 +1,93 @@
+{
+  "abstract": "Background: Conversational AI systems are increasingly being deployed in health care for clinical decision support, but their performance varies substantially across patient communication styles, health literacy levels, and behavioral patterns. Static benchmarks cannot capture multiturn dynamics through which this variation compounds, and no current evaluation framework implements structured AI risk management guidance for conversational health care AI. The result is a structural risk: AI systems may perform well in aggregate while failing disproportionately for the populations they are intended to help. Objective: This study aimed to develop and validate a patient simulation framework that aligns with the National Institute of Standards and Technology (NIST) AI Risk Management Framework (AI RMF) Map and Measure functions, providing an empirical basis for identifying and characterizing performance risks in conversational clinical AI across medical, linguistic, and behavioral patient variations. We applied the framework to a conversational decision aid for antidepressant selection in major depressive disorder (the AI decision aid). Methods: The simulator integrated three profile dimensions: (1) medical profiles constructed from All of Us electronic health records using risk ratio gating; (2) linguistic profiles modeling a health literacy gradient and condition-specific communication; and (3) behavioral profiles representing cooperative, distracted, and adversarial engagement. We generated 500 simulated conversations and evaluated profile fidelity through human annotation and a large language model (LLM) judge, and then assessed downstream effects on the AI decision aid's concept retrieval and antidepressant recommendations. Results: The patient simulator expressed medical concepts with high fidelity (96.6% accuracy across 8210 concepts), with substantial human interannotator agreement (κ=0.73) and LLM-judge agreement against human annotators (κ=0.78). Behavioral profiles were reliably distinguished (κ=0.93; near perfect agreement), and linguistic profiles showed substantial agreement at the lower bound of the substantial range (κ=0.61), which can be considered adequate to support profile-level analysis. The framework revealed monotonic degradation in AI decision aid performance across the health literacy gradient. Rank-1 concept retrieval increased from 47.6% for limited health literacy to 81.9% for proficient health literacy, with corresponding declines in antidepressant recommendation accuracy. Conclusions: Patient simulation grounded in the NIST AI RMF exposes measurable performance risks in conversational health care AI that static benchmarks miss, with direct equity implications. Health literacy operates as a structural risk factor, with degraded performance concentrated in patients carrying the greatest burden of psychiatric illness. The framework supports targeted risk-mitigation interventions before deployment. While we evaluated the framework only on antidepressant selection, extending it to other clinical decision-aid tasks remains an assignment for future work.",
+  "ai_type_tags": [
+    "conversational_ai",
+    "llm_genai"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Md. Tanvir Rouf Shawon",
+    "Mohammad Sabik Irbaz",
+    "Hadeel R A Elyazori",
+    "Keerti Reddy Resapu",
+    "Yili Lin",
+    "Vladimir Franzuela Cardenas",
+    "K. Pierre Eklou",
+    "Farrokh Alemi",
+    "Kevin Lybarger"
+  ],
+  "authors_full": [
+    {
+      "name": "Md. Tanvir Rouf Shawon"
+    },
+    {
+      "name": "Mohammad Sabik Irbaz"
+    },
+    {
+      "name": "Hadeel R A Elyazori"
+    },
+    {
+      "name": "Keerti Reddy Resapu"
+    },
+    {
+      "name": "Yili Lin"
+    },
+    {
+      "name": "Vladimir Franzuela Cardenas"
+    },
+    {
+      "name": "K. Pierre Eklou"
+    },
+    {
+      "name": "Farrokh Alemi"
+    },
+    {
+      "name": "Kevin Lybarger"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "AI模拟患者评估框架为核心方法，针对抑郁症药物选择的AI决策辅助进行风险评估，心理健康为明确应用场景。",
+      "ai_score": 5,
+      "clinical_validation": "none",
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "weak_proxy",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "clinical_harm"
+      ],
+      "safety_evaluated": false,
+      "tldr": "开发了基于NIST AI风险管理框架的患者模拟器，揭示健康素养梯度导致AI决策辅助性能单调下降，存在结构性公平风险。",
+      "topic_tags": [
+        "depression",
+        "risk_prediction",
+        "clinical_decision_support",
+        "clinical_patients"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-05",
+  "doi": "10.2196/100772",
+  "id": "p_brkXmpPfJweFloA5",
+  "issue": null,
+  "journal": "JMIR AI",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7220465620"
+    }
+  ],
+  "title": "A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study",
+  "title_zh": "患者模拟框架用于对话式医疗AI风险评估：开发与评估研究",
+  "unified_ingested_at": "2026-10-12T08:47:29.228745Z",
+  "url": "https://doi.org/10.2196/100772",
+  "volume": null,
+  "year": 2026
+}

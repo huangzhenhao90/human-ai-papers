@@ -1,0 +1,67 @@
+{
+  "abstract": "Alignment methods typically treat user behavior as a reliable proxy for underlying preferences. However, this assumption breaks down when users hold belief-dependent cognitive biases, risking irreversible ``confirmation traps'' and harmful feedback loops. In this paper, we formalize when an AI system can distinguish true user preferences from behavior shaped by cognitive bias. Modeling this interaction as a multi-armed bandit, we first prove a non-identifiability theorem: under passive observation, a static binary biased user produces action trajectory distributions strictly identical to an unbiased user in a transformed environment, forcing any action-only estimator to perform no better than random guessing. We then show that active preference elicitation breaks this observational equivalence. Specifically, we prove that an Observer applying a finite sequence of adversarial zero-reward interventions of length $m_δ$ makes the post-intervention action distributions arbitrarily separable. Our theoretical results suggest that robust alignment requires actively intervening to tell informed preferences from biases.",
+  "ai_type_tags": [
+    "可解释 AI",
+    "人机交互",
+    "AI 治理",
+    "推荐算法"
+  ],
+  "arxiv_id": "2610.13185",
+  "authors": [
+    "Lucas Biechy",
+    "Yuxiao Li",
+    "Zhonghao He",
+    "Tianyi Qiu"
+  ],
+  "authors_full": [
+    {
+      "name": "Lucas Biechy"
+    },
+    {
+      "name": "Yuxiao Li"
+    },
+    {
+      "name": "Zhonghao He"
+    },
+    {
+      "name": "Tianyi Qiu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "人-AI交互中用户认知偏差形式化，有用户行为成分",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究AI系统何时能区分用户真实偏好与认知偏差驱动的行为。将人机交互建模为多臂老虎机，证明非可识别性定理：被动观察下，静态二值偏差用户与无偏用户在变换环境中行为轨迹分布严格一致，任何仅基于动作的估计器表现不优于随机猜测。进而证明主动偏好引导可通过有限序列零奖励干预打破该观察等价性，强调鲁棒对齐需主动干预。",
+      "topic_tags": [
+        "人机协作",
+        "AI 治理",
+        "人机交互(HCI)",
+        "可解释性"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-09",
+  "doi": null,
+  "id": "p_Y0l026A27QDBaP-P",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2610.13185v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 36317,
+      "revision": "ce34a8de035adea8afe06e920eff2b7286add1dd"
+    }
+  ],
+  "title": "From Observation to Intervention: Identifiability of Latent User Bias in Human-AI Interaction",
+  "title_zh": "从观察到干预：人机交互中潜在用户偏见的可识别性",
+  "unified_ingested_at": "2026-10-12T08:47:29.228745Z",
+  "url": "https://arxiv.org/abs/2610.13185v1",
+  "volume": null,
+  "year": 2026
+}

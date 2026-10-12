@@ -1162,6 +1162,178 @@
     "year": 2026
   },
   {
+    "abstract": "Background: Conversational AI systems are increasingly being deployed in health care for clinical decision support, but their performance varies substantially across patient communication styles, health literacy levels, and behavioral patterns. Static benchmarks cannot capture multiturn dynamics through which this variation compounds, and no current evaluation framework implements structured AI risk management guidance for conversational health care AI. The result is a structural risk: AI systems may perform well in aggregate while failing disproportionately for the populations they are intended to help. Objective: This study aimed to develop and validate a patient simulation framework that aligns with the National Institute of Standards and Technology (NIST) AI Risk Management Framework (AI RMF) Map and Measure functions, providing an empirical basis for identifying and characterizing performance risks in conversational clinical AI across medical, linguistic, and behavioral patient variations. We applied the framework to a conversational decision aid for antidepressant selection in major depressive disorder (the AI decision aid). Methods: The simulator integrated three profile dimensions: (1) medical profiles constructed from All of Us electronic health records using risk ratio gating; (2) linguistic profiles modeling a health literacy gradient and condition-specific communication; and (3) behavioral profiles representing cooperative, distracted, and adversarial engagement. We generated 500 simulated conversations and evaluated profile fidelity through human annotation and a large language model (LLM) judge, and then assessed downstream effects on the AI decision aid's concept retrieval and antidepressant recommendations. Results: The patient simulator expressed medical concepts with high fidelity (96.6% accuracy across 8210 concepts), with substantial human interannotator agreement (κ=0.73) and LLM-judge agreement against human annotators (κ=0.78). Behavioral profiles were reliably distinguished (κ=0.93; near perfect agreement), and linguistic profiles showed substantial agreement at the lower bound of the substantial range (κ=0.61), which can be considered adequate to support profile-level analysis. The framework revealed monotonic degradation in AI decision aid performance across the health literacy gradient. Rank-1 concept retrieval increased from 47.6% for limited health literacy to 81.9% for proficient health literacy, with corresponding declines in antidepressant recommendation accuracy. Conclusions: Patient simulation grounded in the NIST AI RMF exposes measurable performance risks in conversational health care AI that static benchmarks miss, with direct equity implications. Health literacy operates as a structural risk factor, with degraded performance concentrated in patients carrying the greatest burden of psychiatric illness. The framework supports targeted risk-mitigation interventions before deployment. While we evaluated the framework only on antidepressant selection, extending it to other clinical decision-aid tasks remains an assignment for future work.",
+    "ai_reason": "AI模拟患者评估框架为核心方法，针对抑郁症药物选择的AI决策辅助进行风险评估，心理健康为明确应用场景。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "conversational_ai",
+      "llm_genai"
+    ],
+    "authors": [
+      "Md. Tanvir Rouf Shawon",
+      "Mohammad Sabik Irbaz",
+      "Hadeel R A Elyazori",
+      "Keerti Reddy Resapu",
+      "Yili Lin",
+      "Vladimir Franzuela Cardenas",
+      "K. Pierre Eklou",
+      "Farrokh Alemi",
+      "Kevin Lybarger"
+    ],
+    "authors_full": [
+      {
+        "name": "Md. Tanvir Rouf Shawon"
+      },
+      {
+        "name": "Mohammad Sabik Irbaz"
+      },
+      {
+        "name": "Hadeel R A Elyazori"
+      },
+      {
+        "name": "Keerti Reddy Resapu"
+      },
+      {
+        "name": "Yili Lin"
+      },
+      {
+        "name": "Vladimir Franzuela Cardenas"
+      },
+      {
+        "name": "K. Pierre Eklou"
+      },
+      {
+        "name": "Farrokh Alemi"
+      },
+      {
+        "name": "Kevin Lybarger"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "AI模拟患者评估框架为核心方法，针对抑郁症药物选择的AI决策辅助进行风险评估，心理健康为明确应用场景。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [
+        "bias_fairness",
+        "clinical_harm"
+      ],
+      "tldr": "开发了基于NIST AI风险管理框架的患者模拟器，揭示健康素养梯度导致AI决策辅助性能单调下降，存在结构性公平风险。",
+      "topic_tags": [
+        "depression",
+        "risk_prediction",
+        "clinical_decision_support",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-10-05",
+    "doi": "10.2196/100772",
+    "domain_score": 4,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "weak_proxy",
+    "id": "W7220465620",
+    "journal": "JMIR AI",
+    "mh_profile": {
+      "ai_reason": "AI模拟患者评估框架为核心方法，针对抑郁症药物选择的AI决策辅助进行风险评估，心理健康为明确应用场景。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "conversational_ai",
+          "llm_genai"
+        ],
+        "applications": [
+          "risk_prediction",
+          "clinical_decision_support"
+        ],
+        "conditions": [
+          "depression"
+        ],
+        "populations": [
+          "clinical_patients"
+        ],
+        "risks": [
+          "bias_fairness",
+          "clinical_harm"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "概念检索准确率、抗抑郁药推荐准确率、健康素养梯度下的性能差异",
+        "sample": "500个模拟对话，8210个医学概念",
+        "study_design": "模拟器开发与回顾性验证"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "weak_proxy",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language model",
+          "LLM"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatric",
+          "depressive"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness",
+        "clinical_harm"
+      ],
+      "safety_evaluated": false,
+      "tldr": "开发了基于NIST AI风险管理框架的患者模拟器，揭示健康素养梯度导致AI决策辅助性能单调下降，存在结构性公平风险。",
+      "topic_tags": [
+        "depression",
+        "risk_prediction",
+        "clinical_decision_support",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7220465620",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "bias_fairness",
+      "clinical_harm"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4387286577",
+      "ingest_mode": "query",
+      "key": "jmir_ai",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study",
+    "title_zh": "患者模拟框架用于对话式医疗AI风险评估：开发与评估研究",
+    "tldr": "开发了基于NIST AI风险管理框架的患者模拟器，揭示健康素养梯度导致AI决策辅助性能单调下降，存在结构性公平风险。",
+    "topic_tags": [
+      "depression",
+      "risk_prediction",
+      "clinical_decision_support",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.2196/100772",
+    "year": 2026
+  },
+  {
     "abstract": "Adaptive neuromodulation offers a path toward personalized neuropsychiatric treatment by allowing therapy to respond to clinically meaningful neurophysiological and behavioral changes. Its clearest clinical precedents are responsive neurostimulation for epilepsy and adaptive deep brain stimulation for movement disorders. Both rely on signals that can be measured reliably and linked directly to stimulation. Psychiatric disorders pose a different problem: symptoms are heterogeneous, evolve over multiple timescales, and are observed only indirectly through noisy and incomplete measurements. Artificial intelligence can provide data-driven components of an adaptive neuromodulation system, connecting multimodal sensing, inference of patient state, prediction of treatment response, and constrained therapeutic adaptation. Interpretability is required throughout to support clinician and patient trust. Clinical evidence, however, remains limited to small proof-of-concept studies. Translation to practice will require replicated biomarkers and prospective multisite validation. It will also require explicit management of uncertainty and system designs that match adaptation to symptom and treatment timescales. Clinician and patient oversight must be preserved throughout, alongside safety constraints and governance across the treatment life cycle. This review presents a system-design view of how these components combine into a single adaptive architecture for psychiatric neuromodulation.",
     "ai_reason": "AI作为自适应神经调控的计算框架，是核心方法论；精神疾病治疗为明确目标领域。",
     "ai_score": 4,
