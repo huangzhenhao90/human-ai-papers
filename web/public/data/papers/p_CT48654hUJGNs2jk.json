@@ -1,0 +1,62 @@
+{
+  "abstract": "Choosing the right physician is a key challenge for patients seeking medical care. Physician recommendation systems identify relevant doctors, but patients still find it difficult to compare their profiles to make a decision. We formulate slate presentation optimization: given a patient's medical case and a fixed, ranked list of physicians, we generate short, case-specific summaries that make doctors easier to compare, while remaining grounded in the information in their profiles. To optimize physician presentations without relying on real patient interactions, we develop an offline framework that uses persona-conditioned LLMs to simulate patient choices. We generate patient personas from attributes extracted from each medical case and evaluate presentations for factual accuracy, relevance, naturalness and simulated patient choice. We also use a second LLM judge, unseen during optimization, to assess simulator-specific overfitting. We compare automatic prompt-level optimization with GEPA, parameter-level optimization with GRPO, and their combination across two model sizes. GRPO substantially outperforms GEPA in satisfying the full set of constraints, and its gains in simulated conversion persist under the unseen judge. GEPA alone brings smaller improvements, but using its optimized prompt to initialize GRPO speeds up training and achieves the highest simulated conversion. These results show that prompt-level and parameter-level optimization play complementary roles in improving how physician recommendations are presented.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 推荐",
+    "智能体/Agent",
+    "AI 助手"
+  ],
+  "arxiv_id": "2610.18309",
+  "authors": [
+    "Andrei Niculae",
+    "Adrian Cosma",
+    "Emilian Radoi"
+  ],
+  "authors_full": [
+    {
+      "name": "Andrei Niculae"
+    },
+    {
+      "name": "Adrian Cosma"
+    },
+    {
+      "name": "Emilian Radoi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM患者模拟优化医生推荐呈现",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对患者难以比较医生档案的难题，提出列表展示优化任务：基于患者病例生成忠于档案信息的简短医生摘要以辅助决策；构建离线框架，利用人物角色条件化 LLM 模拟患者选择，对比提示级优化 GEPA 与参数级优化 GRPO；发现 GRPO 显著优于 GEPA，二者结合可加速训练并达到最高模拟转化率。",
+      "topic_tags": [
+        "用户体验(UX)",
+        "推荐系统",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-13",
+  "doi": null,
+  "id": "p_CT48654hUJGNs2jk",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.18309v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 36575,
+      "revision": "b55f6a469f7cca9fc17fe5eba54649299304ed9d"
+    }
+  ],
+  "title": "Prompt or Policy? Optimizing Physician Slate Presentations with LLM User Simulators",
+  "title_zh": null,
+  "unified_ingested_at": "2026-10-14T07:15:25.334530Z",
+  "url": "https://arxiv.org/abs/2610.18309v1",
+  "volume": null,
+  "year": 2026
+}

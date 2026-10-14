@@ -1,0 +1,73 @@
+{
+  "abstract": "Modern conversational information access systems continuously extract user information from conversations to build user profiles for personalized retrieval. As user profiles accumulate over time, they inevitably become noisy, making effective user profile denoising a fundamental challenge. Existing personalized conversational query reformulation methods rely on the black-box reasoning capability of LLMs to expand the original query with relevant user profile phrases, producing a verbose query for retrieval. Such rewrite-then-retrieve pipelines reduce user profile denoising to the explicit selection of profile phrases in the sparse token space, separating personalization from downstream relevance modeling. Consequently, they often fail to identify user information that is truly beneficial for retrieval.   To enable retrieval-aware user profile denoising, we propose Personalized Conversational Dense Retrieval (PCDR), which learns to jointly project the conversation history and user profile into a latent embedding space dedicated to retrieval. By inheriting the context denoising capability from conversational dense retrievers, PCDR requires only a handful of personalized relevance annotations for training. We evaluate PCDR on the iKAT 2026 tasks, where it serves as the core retrieval component of a conversational AI agent assisting users with complex information needs.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "智能体/Agent",
+    "AI 推荐"
+  ],
+  "arxiv_id": "2610.17673",
+  "authors": [
+    "Yuchen Hui",
+    "Fengran Mo",
+    "Jia Ao Sun",
+    "Yuxing Tian",
+    "Wenhao Xu"
+  ],
+  "authors_full": [
+    {
+      "name": "Yuchen Hui"
+    },
+    {
+      "name": "Fengran Mo"
+    },
+    {
+      "name": "Jia Ao Sun"
+    },
+    {
+      "name": "Yuxing Tian"
+    },
+    {
+      "name": "Wenhao Xu"
+    },
+    {
+      "name": "Jian-Yun Nie"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM个性化对话检索，含用户画像与个性化",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对对话式信息检索中用户画像随时间累积产生噪声的问题，提出个性化对话密集检索方法 PCDR，将对话历史与用户画像联合映射到面向检索的潜在嵌入空间，实现检索感知的画像去噪，仅需少量个性化相关性标注即可训练，在 iKAT 2026 任务中作为对话 AI 智能体的核心检索组件进行验证。",
+      "topic_tags": [
+        "个性化",
+        "推荐系统",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-13",
+  "doi": null,
+  "id": "p_z1t6TwiAEZ81eZ72",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2610.17673v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 36587,
+      "revision": "b55f6a469f7cca9fc17fe5eba54649299304ed9d"
+    }
+  ],
+  "title": "RALI@iKAT 2026: Retrieval-aware User Profile Denoising via Personalized Conversational Dense Retrieval",
+  "title_zh": null,
+  "unified_ingested_at": "2026-10-14T07:15:25.334530Z",
+  "url": "https://arxiv.org/abs/2610.17673v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,76 @@
+{
+  "abstract": "AI companions provide users with emotional support and ongoing companionship, but their sustained relational interactions also introduce distinct safety risks. Prior work largely targets general harms or specific companion platforms and risk categories, while relying on manually collected conversations, limiting scalable and user-grounded evaluation and mitigation. To address this, we introduce CompanionSafe, a unified evaluation-to-mitigation framework for AI companion safety. Its evaluation component, CompanionEval, provides scalable multi-turn evaluation by constructing 1,300 relationally grounded settings from diverse personas, matched companion characters, and dialogue scenarios across four turn tiers. Its mitigation component, CompanionGuard, converts benchmark-exposed failures into turn-localized supervision for companion-specific risk detection. Our results show that even strong LLMs and existing guard models remain vulnerable to companion-specific relational harms, while both closed- and open-source models exhibit increasing safety risks as interactions become longer. Together, CompanionEval and CompanionGuard form a practical evaluation-to-mitigation loop for AI companion safety, turning relational safety failures exposed during multi-turn interaction into supervision for companion-specific guardrails.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式AI",
+    "AI助手"
+  ],
+  "arxiv_id": "2610.18095",
+  "authors": [
+    "Xinyang Liao",
+    "Lingyu Li",
+    "Kaicheng Shen",
+    "Yang Yao",
+    "Na Lu"
+  ],
+  "authors_full": [
+    {
+      "name": "Xinyang Liao"
+    },
+    {
+      "name": "Lingyu Li"
+    },
+    {
+      "name": "Kaicheng Shen"
+    },
+    {
+      "name": "Yang Yao"
+    },
+    {
+      "name": "Na Lu"
+    },
+    {
+      "name": "Yan Teng"
+    },
+    {
+      "name": "Xia Hu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "AI伴侣安全评估，含用户角色与场景",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "CompanionSafe构建AI伴侣安全\"评估—缓解\"闭环：CompanionEval基于多样化人设与对话场景生成1300个关系型多轮设置并按四档轮次分层评估；CompanionGuard将暴露的失败转化为针对伴侣场景的轮次级风险检测监督。结果显示强LLM与现有防护模型在关系型危害上仍脆弱，且交互越长安全风险越高。",
+      "topic_tags": [
+        "伦理",
+        "AI治理",
+        "人机交互(HCI)",
+        "情感计算"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-13",
+  "doi": null,
+  "id": "p_8Qh3Pd3ApgoVsZEM",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.18095v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 36564,
+      "revision": "b55f6a469f7cca9fc17fe5eba54649299304ed9d"
+    }
+  ],
+  "title": "CompanionSafe: From Multi-turn Safety Evaluation to Guardrails for AI Companions",
+  "title_zh": "CompanionSafe：从多轮安全评估到AI伴侣的安全护栏",
+  "unified_ingested_at": "2026-10-14T07:15:25.334530Z",
+  "url": "https://arxiv.org/abs/2610.18095v1",
+  "volume": null,
+  "year": 2026
+}
