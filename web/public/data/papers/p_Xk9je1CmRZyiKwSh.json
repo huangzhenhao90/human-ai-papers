@@ -1,9 +1,10 @@
 {
   "abstract": "Artificial intelligence (AI) agents promise to extend what users can accomplish beyond their existing expertise, but they also raise the risk of producing plausible-looking work that users may struggle to evaluate. We ask how task-relevant expertise and trust in AI shape agent-assisted work. To isolate these factors, we conduct a think-aloud study in which 20 professionals with varying data-science expertise use the same agentic tool to complete the same data-science hiring assessment, used at a major U.S. company. We find that surface productivity can come at the expense of understanding: participants who delegated more completed more of the task, but were also more likely to produce invalid solutions. Experts more often resisted this tradeoff, sacrificing completion to decompose the task and scrutinize agent outputs. Our findings call for evaluating agentic assistance not only by how much it accomplishes, but by whether users remain able to evaluate the work they produce.",
   "ai_type_tags": [
-    "智能体/Agent",
-    "AI助手",
-    "人机协作"
+    "人机协作",
+    "人机交互",
+    "AI招聘",
+    "GenAI"
   ],
   "arxiv_id": "2610.14660",
   "authors": [
@@ -37,6 +38,18 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI辅助工作中专业性与信任，OB核心议题",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究以20名不同数据科学专业背景的从业者为对象，通过出声思考实验考察专业能力和对AI的信任如何影响智能体辅助工作质量。结果发现：委托AI程度高的参与者任务完成度更高，但更可能产出无效方案；专家更倾向于分解任务、审视AI输出，宁可降低完成度也保持评估能力。研究呼吁评估智能体辅助时不仅看完成量，还应关注用户能否有效评估产出。",
+      "topic_tags": [
+        "人机协作",
+        "信任",
+        "招聘",
+        "决策"
+      ]
+    },
     "ur": {
       "ai_reason": "think-aloud用研，核心研究AI辅助工作中信任与专长",
       "ai_score": 5.0,
@@ -51,6 +64,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 0,
@@ -62,13 +76,18 @@
   "pdf_url": "https://arxiv.org/pdf/2610.14660v1",
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 81877,
+      "revision": "8dd67cd3fe3763260e88ac79786b67feed9f6f06"
+    },
+    {
       "channel": "ur",
       "legacy_id": 36562,
-      "revision": "b55f6a469f7cca9fc17fe5eba54649299304ed9d"
+      "revision": "2947c8322055d9ba0d28310c5d601226c5855b06"
     }
   ],
   "title": "Impact of Expertise and Trust on AI-assisted Work",
-  "title_zh": "专业能力与信任对AI辅助工作的影响",
+  "title_zh": "专业知识与信任对AI辅助工作的影响",
   "unified_ingested_at": "2026-10-14T07:15:25.334530Z",
   "url": "https://arxiv.org/abs/2610.14660v1",
   "volume": null,

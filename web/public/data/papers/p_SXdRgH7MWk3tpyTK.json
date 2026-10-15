@@ -1,0 +1,54 @@
+{
+  "abstract": "Embedding models underpin modern job-candidate matching: resumes, job descriptions, and queries are encoded as dense vectors, and recommendations come from nearest-neighbor retrieval over that space. Any social bias in the embeddings therefore feeds directly into HR recommendations. We audit six multilingual sentence-embedding models (LaBSE- and E5-family, both public and custom fine-tuned) using Bias-in-Bios (occupational gender bias) and StereoSet (stereotypes across profession, race, gender, and religion). We treat statistical validity as a first-class concern: we identify a non-independence error in a naive significance test, where pooling non-independent pairwise similarities inflated a trivial 0.0046 mean difference to $p \\approx 0$, and replace it with a profession-level paired Wilcoxon signed-rank test, individual-resampling bootstrap confidence intervals, and permutation tests for StereoSet. Under the corrected methodology, knowledge-distillation (KD) fine-tuning of E5-Base significantly increases measured bias on Bias-in-Bios ($Δ= -0.177$, $p < 10^{-8}$; more negative means more bias), although this measure is sensitive to global embedding geometry. The KD result is corroborated by pro-stereotype patterns in the StereoSet profession category (uncorrected $p < 0.05$). Binary-classification fine-tuning of the same base model shows no statistically distinguishable change ($p = 0.218$). Fine-tuning strategy is thus an actionable design lever for practitioners building HR recommenders. We also report which benchmark categories are underpowered, and note that two domain-adapted models could not be included in significance testing due to a software-access constraint, which limits our conclusions.",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习",
+    "算法决策"
+  ],
+  "arxiv_id": "2610.14579",
+  "authors": [
+    "Ekta Yadav"
+  ],
+  "authors_full": [
+    {
+      "name": "Ekta Yadav"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "HR推荐系统中嵌入模型偏见审计，AI核心，HR强相关",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "研究审计六个多语言句嵌入模型在HR推荐中的偏见问题，纠正了原有统计检验中因非独立样本池化导致假阳性的方法学错误，改用配对Wilcoxon检验、bootstrap与置换检验。结果显示：知识蒸馏微调显著放大性别偏见（Δ=-0.177, p<10⁻⁸），二元分类微调则无显著差异（p=0.218）。微调策略是降低偏见的可操作设计杠杆。",
+      "topic_tags": [
+        "HR",
+        "招聘",
+        "偏见",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-10",
+  "doi": null,
+  "id": "p_SXdRgH7MWk3tpyTK",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2610.14579v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 81868,
+      "revision": "8dd67cd3fe3763260e88ac79786b67feed9f6f06"
+    }
+  ],
+  "title": "Fine-Tuning Strategy, Not Just Data: A Statistically Rigorous Audit of Gender and Stereotypical Bias in Embedding Models for HR Recommendation Systems",
+  "title_zh": "微调策略而非仅数据：HR推荐系统嵌入模型中性别与刻板印象偏见的统计严格审计",
+  "unified_ingested_at": "2026-10-15T07:07:20.000067Z",
+  "url": "https://arxiv.org/abs/2610.14579v1",
+  "volume": null,
+  "year": 2026
+}

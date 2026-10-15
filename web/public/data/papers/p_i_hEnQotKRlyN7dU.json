@@ -1,0 +1,63 @@
+{
+  "abstract": "We introduce UNISON, a unified framework that bridges multiple instance learning and recommendation systems by treating both as instances of learning from scored bag collections of (item, score) pairs. Unlike traditional approaches that address bag-level classification and personalized recommendation as separate problems, UNISON decomposes learning into three interconnected stages: (1) learning universal item representations, (2) modeling bag-specific preference patterns through lightweight personalized parameters, and (3) inferring bag-level characteristics from learned preferences. We justify the architectural choice of linear bag-specific scoring through a first-order analysis: when item embeddings are sufficiently smooth in the score, a linear function approximates the score up to a Taylor remainder controlled by the curvature of the underlying preference function. For cold-start scenarios, we show that the cold-bag fitting problem reduces to ridge-less linear regression with a closed-form solution, and provide convergence guarantees for the iterative variant. Empirically, UNISON matches or outperforms state-of-the-art approaches across diverse domains: entertainment (books, movies), immunology (T cell receptor (TCR) based classification), and microbiome, offering superior computational efficiency and interpretability. A controlled synthetic experiment further confirms that the bag-specific parameters ($w_j, b_j$) recover the latent factors that drive item scores even when the projection $φ$ has no access to the original scoring mechanism (AUC > 0.998). UNISON is available at https://github.com/louzounlab/UNISON.",
+  "ai_type_tags": [
+    "推荐算法",
+    "机器学习"
+  ],
+  "arxiv_id": "2610.15564",
+  "authors": [
+    "Ofek Kirshenboim",
+    "Or Shkuri",
+    "Shani Finkelshtein",
+    "Yoram Louzoun"
+  ],
+  "authors_full": [
+    {
+      "name": "Ofek Kirshenboim"
+    },
+    {
+      "name": "Or Shkuri"
+    },
+    {
+      "name": "Shani Finkelshtein"
+    },
+    {
+      "name": "Yoram Louzoun"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "推荐系统ML框架,与营销/信息系统相关",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "提出UNISON框架，将多示例学习与个性化推荐统一为从带评分包集合学习的问题，采用三阶段架构：学习通用物品表示、轻量参数建模包内偏好模式、从偏好推断包级特征。通过泰勒展开一阶分析证明线性打分的近似合理性，并给出冷启动闭式解与收敛保证。实验覆盖娱乐推荐、TCR免疫分类与微生物组，均匹配或超越领域最优方法。",
+      "topic_tags": [
+        "推荐系统",
+        "机器学习"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-11",
+  "doi": null,
+  "id": "p_i_hEnQotKRlyN7dU",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2610.15564v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 81876,
+      "revision": "8dd67cd3fe3763260e88ac79786b67feed9f6f06"
+    }
+  ],
+  "title": "UNISON: A Unified Framework for Learning from Scored Bags",
+  "title_zh": "UNISON：用于从评分包学习的统一框架",
+  "unified_ingested_at": "2026-10-15T07:07:20.000067Z",
+  "url": "https://arxiv.org/abs/2610.15564v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,9 +1,9 @@
 {
   "abstract": "Nurse scheduling is a complex optimization problem in which nurses are assigned to shifts to meet staffing demands while complying with working-time limits, qualification requirements, and other operational and regulatory constraints. Artificial intelligence is increasingly being used to support this process by forecasting future staffing needs and providing advice on how to improve shift scheduling. Effective human-AI collaboration in nurse scheduling requires users to understand, interpret, and appropriately act on AI forecasts and advice. However, it remains insufficiently understood how healthcare professionals use transparency mechanisms like uncertainty communication and AI advice explanations when making staffing decisions. Applying a human-centered design approach, we iteratively developed a prototype decision support system for nurse scheduling and evaluated it through a mixed-methods user study with expert users. Using thematic analysis, questionnaire data, and eye tracking, we examine how healthcare professionals interact with the system and how uncertainty communication and explanations of AI advice influence understanding, decision confidence, trust, and usability. We found that the uncertainty communicated in AI forecasts was frequently misinterpreted and reduced decision confidence. Explanations were generally perceived positively, but did not significantly affect decision confidence or advice acceptance. We conclude with eight design implications derived from our findings, providing insights for the design of more transparent and effective AI-supported decision support tools in healthcare.",
   "ai_type_tags": [
-    "可解释 AI",
-    "人机协作",
-    "AI 助手"
+    "可解释AI",
+    "人机交互",
+    "AI治理"
   ],
   "arxiv_id": "2610.18679",
   "authors": [
@@ -34,6 +34,19 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI护士排班可解释性,核心AI,医疗管理边缘相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对护士排班这一复杂优化问题，采用以人为中心的设计方法，迭代开发并评估了一款可解释AI决策支持原型系统。通过主题分析、问卷与眼动追踪的混合方法研究，发现AI预测中传达的不确定性常被误解并降低决策信心；解释机制虽获正面评价，却未显著提升信心或建议接受度。最终提炼八条可解释AI与不确定性沟通的设计启示，服务于医疗领域人机协同决策。",
+      "topic_tags": [
+        "人机协作",
+        "决策",
+        "工作设计",
+        "信任",
+        "HR"
+      ]
+    },
     "ur": {
       "ai_reason": "可解释AI+人中心设计，专家协同设计与评估",
       "ai_score": 4.0,
@@ -49,6 +62,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 0,
@@ -60,13 +74,18 @@
   "pdf_url": "https://arxiv.org/pdf/2610.18679v1",
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 81878,
+      "revision": "8dd67cd3fe3763260e88ac79786b67feed9f6f06"
+    },
+    {
       "channel": "ur",
       "legacy_id": 36554,
-      "revision": "b55f6a469f7cca9fc17fe5eba54649299304ed9d"
+      "revision": "2947c8322055d9ba0d28310c5d601226c5855b06"
     }
   ],
   "title": "Communicating Uncertainty in AI-Supported Nurse Scheduling: Expert Co-Design and Evaluation of an Explainable AI Prototype",
-  "title_zh": "AI辅助护士排班中不确定性的沟通：可解释AI原型的专家协同设计与评估",
+  "title_zh": "传达AI辅助护士排班中的不确定性：可解释AI原型的专家协同设计与评估",
   "unified_ingested_at": "2026-10-14T07:15:25.334530Z",
   "url": "https://arxiv.org/abs/2610.18679v1",
   "volume": null,

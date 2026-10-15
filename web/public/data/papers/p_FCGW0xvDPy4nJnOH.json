@@ -1,8 +1,9 @@
 {
   "abstract": null,
   "ai_type_tags": [
-    "可解释 AI",
-    "AI 治理"
+    "算法决策",
+    "可解释AI",
+    "机器学习"
   ],
   "arxiv_id": null,
   "authors": [
@@ -28,6 +29,18 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法偏见检测，AI相关行为研究",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "采用认知建模中的漂移扩散模型(drift-diffusion)刻画人类在交互中检测算法偏见的判断过程，揭示人们识别AI决策偏见时的信息累积与决策阈值机制，为理解人机协同中算法偏见的可感知性提供量化分析框架。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "决策",
+        "人机协作"
+      ]
+    },
     "ur": {
       "ai_reason": "用漂移扩散模型研究人类检测算法偏差，用户行为",
       "ai_score": 3.0,
@@ -42,6 +55,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 0,
@@ -53,13 +67,18 @@
   "pdf_url": null,
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 81631,
+      "revision": "8dd67cd3fe3763260e88ac79786b67feed9f6f06"
+    },
+    {
       "channel": "ur",
       "legacy_id": 36430,
-      "revision": "b55f6a469f7cca9fc17fe5eba54649299304ed9d"
+      "revision": "2947c8322055d9ba0d28310c5d601226c5855b06"
     }
   ],
   "title": "Understanding Human Detection of Algorithmic Bias Through Drift-Diffusion Modeling",
-  "title_zh": "基于漂移扩散模型探究人类对算法偏见的检测",
+  "title_zh": "基于漂移扩散模型理解人类对算法偏见的检测",
   "unified_ingested_at": "2026-10-14T07:15:25.334530Z",
   "url": "https://doi.org/10.1016/j.chb.2026.109209",
   "volume": null,
