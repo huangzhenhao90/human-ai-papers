@@ -1,0 +1,69 @@
+{
+  "abstract": "In this work, we study how the relevance/quality and quantity of past data influence performance by analyzing a contextual Newsvendor problem, in which a decision maker trades off between underage and overage costs under uncertain demand. We consider a setting in which past demands observed under “close-by” contexts come from close-by distributions and analyze the performance of data-driven algorithms through a notion of context-dependent worst-case expected regret. We analyze the broad class of Weighted Empirical Risk Minimization (WERM) policies which weigh past data according to their similarity in the contextual space. This class includes classical policies such as ERM, k-Nearest Neighbors, and kernel-based policies. Our main methodological contribution is to characterize exactly the worst-case regret of any WERM policy on any given configuration of contexts. To the best of our knowledge, this provides the first understanding of tight performance guarantees in any contextual decision-making problem, with past literature focusing on upper bounds via concentration inequalities. We instead take an optimization approach, and isolate a structure in the Newsvendor loss function that allows us to reduce the infinite-dimensional optimization problem over worst-case distributions to a simple line search. This in turn allows us to unveil fundamental insights that were obfuscated by previous general-purpose bounds. We characterize actual guaranteed performance as a function of the contexts, as well as granular insights on the learning curve of algorithms.\n                  This paper was accepted by Victor Martínez de Albéniz, operations management.\n                  Funding: This work was supported by the Deming Center for Operations Innovation and Excellence at Columbia Business School [Doctoral Fellowship (O. Mouchtaki)].\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.02068 .",
+  "ai_type_tags": [
+    "机器学习"
+  ],
+  "arxiv_id": "2023.02068",
+  "authors": [
+    "Omar Besbes",
+    "Will Ma",
+    "Omar Mouchtaki"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Graduate School of Business, Columbia University, New York, New York 10027"
+      ],
+      "name": "Omar Besbes",
+      "orcid": "https://orcid.org/0000-0002-2982-3794"
+    },
+    {
+      "affiliation": [
+        "Graduate School of Business, Columbia University, New York, New York 10027"
+      ],
+      "name": "Will Ma",
+      "orcid": "https://orcid.org/0000-0002-2420-4468"
+    },
+    {
+      "affiliation": [
+        "NYU Stern School of Business, New York, New York 10012"
+      ],
+      "name": "Omar Mouchtaki",
+      "orcid": "https://orcid.org/0000-0002-1734-9247"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "数据驱动算法(k-NN等)为核心",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究情境型Newsvendor问题中，历史数据的相关性/质量与数量如何影响数据驱动决策性能。分析加权经验风险最小化（WERM）策略类（含ERM、k近邻、核方法），提出上下文相关的最坏期望遗憾度量，精确刻画任意WERM策略在给定上下文配置下的最坏遗憾，揭示了先前泛界未能呈现的底层结构与数据规模-质量-分布的内在关系。",
+      "topic_tags": [
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 1,
+  "date": "2026-05-14",
+  "doi": "10.1287/mnsc.2023.02068",
+  "id": "p_sgNjgiXpTKdVOGD7",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 82116,
+      "revision": "f0e56dc268fa0318d820031bf2ae2cdb6fa30087"
+    }
+  ],
+  "title": "From Contextual Data to Newsvendor Decisions: On the Actual Performance of Data-Driven Algorithms",
+  "title_zh": "从上下文数据到报童决策：数据驱动算法的实际性能",
+  "unified_ingested_at": "2026-10-16T06:50:19.598041Z",
+  "url": "https://doi.org/10.1287/mnsc.2023.02068",
+  "volume": null,
+  "year": 2026
+}

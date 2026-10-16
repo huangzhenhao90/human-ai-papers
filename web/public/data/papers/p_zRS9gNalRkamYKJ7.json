@@ -1,0 +1,78 @@
+{
+  "abstract": "An agent that learns a user's preferences from their choices faces a cold start problem: before any choices are observed, it must rely solely on a prior. Informative priors are usually fitted to historical choice data, which new tasks and deployments lack. To address this, we present Agentic-Priors, which lets agentic systems use the implicit knowledge of large language models (LLMs) instead. Specifically, an LLM states a new user's trade-offs in interpretable terms, such as willingness to pay or value of time, which we map to a prior over multinomial logit coefficients. This prior is then refined by a Bayesian learner as choices are observed. Across seven choice datasets, Agentic-Priors improves cold start accuracy over an uninformed prior by 5-40 percentage points. It also outperforms AutoElicit, a state-of-the-art LLM prior-elicitation method, on three datasets and loses on one. It is up to 18 points more accurate than in-context learning, and never significantly worse. Against hierarchical Bayes models fitted to surveys of increasing size, our approach is worth roughly 6-40 surveyed users, in terms of log-loss, so its value is concentrated in a deployment's first users.",
+  "ai_type_tags": [
+    "LLM",
+    "推荐算法"
+  ],
+  "arxiv_id": "2610.21938",
+  "authors": [
+    "Bruno Arcanjo",
+    "Zhaoxing Li",
+    "Sebastian Stein"
+  ],
+  "authors_full": [
+    {
+      "name": "Bruno Arcanjo"
+    },
+    {
+      "name": "Zhaoxing Li"
+    },
+    {
+      "name": "Sebastian Stein"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM先验用于偏好获取，涉及选择建模",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对偏好获取中的冷启动难题，提出Agentic-Priors方法：让大语言模型以可解释方式陈述用户权衡（如支付意愿、时间价值），将其映射为多项Logit系数的先验，再由贝叶斯学习者随选择数据逐步更新。在7个选择数据集上，冷启动准确率较无信息先验提升5–40个百分点，多数场景优于AutoElicit与上下文学习，相当于省去6–40名用户调查的成本，价值集中在部署初期。",
+      "topic_tags": [
+        "决策",
+        "推荐系统",
+        "信任"
+      ]
+    },
+    "ur": {
+      "ai_reason": "LLM是核心，用户偏好学习属HCI/UX",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对偏好获取中的冷启动问题，Agentic-Priors 利用大语言模型的隐性知识，让 LLM 以可解释的术语（如支付意愿、时间价值）陈述新用户权衡，映射为多项 Logit 系数的先验，再由贝叶斯学习者随选择数据逐步精化。在 7 个选择数据集上，冷启动准确率较无信息先验提升 5–40 个百分点，优于现有 LLM 先验获取方法，log-loss 价值相当于 6–40 名被调查用户。",
+      "topic_tags": [
+        "用户研究方法",
+        "个性化",
+        "AI 助手",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob",
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-15",
+  "doi": null,
+  "id": "p_zRS9gNalRkamYKJ7",
+  "issue": null,
+  "journal": "arXiv:cs.MA",
+  "pdf_url": "https://arxiv.org/pdf/2610.21938v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 82157,
+      "revision": "f0e56dc268fa0318d820031bf2ae2cdb6fa30087"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 36843,
+      "revision": "afe3c5d2d77deb4e81a863a94959d17c7148a20a"
+    }
+  ],
+  "title": "Agentic-Priors: Using Large Language Models to Address the Cold Start Problem in Preference Elicitation",
+  "title_zh": "Agentic-Priors：利用大语言模型解决偏好引导中的冷启动问题",
+  "unified_ingested_at": "2026-10-16T06:50:19.598041Z",
+  "url": "https://arxiv.org/abs/2610.21938v1",
+  "volume": null,
+  "year": 2026
+}

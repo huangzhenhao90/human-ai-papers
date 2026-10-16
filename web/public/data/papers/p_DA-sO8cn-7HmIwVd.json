@@ -1,0 +1,81 @@
+{
+  "abstract": "High-fidelity user simulators are essential for evaluating and training agents in interactive environments. However, current LLM-based simulators struggle with reliability issues, such as goal omission and policy non-compliance. We propose ARGUS (Agenda-dRiven Goal-oriented User Simulator), a neuro-symbolic framework that maintains the user's goal state using a dynamic agenda stack manipulated via symbolic operations. By rigorously decoupling state tracking from natural language generation, ARGUS facilitates strict goal progression and constraint-aligned interactions. For cost-efficient deployment, we distill ARGUS into compact models using a unified pipeline: evaluator-guided SFT followed by online RL with dense step-level rewards. To rigorously evaluate behavioral fidelity, we introduce a rubric-based metric Composite Behavioral Score (CBS). Evaluations on $τ^3$-Bench and MultiWOZ demonstrate the significant superiority of the ARGUS architecture and the efficacy of our training pipeline. Code and data will be released soon.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "对话式 AI"
+  ],
+  "arxiv_id": "2610.21346",
+  "authors": [
+    "Hang Zheng",
+    "Nan Jiang",
+    "Zichen Zhu",
+    "Zixu Yang",
+    "Zhiyang Tang"
+  ],
+  "authors_full": [
+    {
+      "name": "Hang Zheng"
+    },
+    {
+      "name": "Nan Jiang"
+    },
+    {
+      "name": "Zichen Zhu"
+    },
+    {
+      "name": "Zixu Yang"
+    },
+    {
+      "name": "Zhiyang Tang"
+    },
+    {
+      "name": "Shuai Fan"
+    },
+    {
+      "name": "Lu Chen"
+    },
+    {
+      "name": "Xiaobao Wu"
+    },
+    {
+      "name": "Kai Yu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM用户模拟器，有用户行为评估",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "ARGUS 是一种面向可靠用户模拟的神经-符号框架，通过动态议程栈以符号操作维护用户目标状态，严格解耦状态追踪与自然语言生成，确保目标推进与约束一致性。训练上采用评估器引导的 SFT 配合带密集步级奖励的在线 RL，将框架蒸馏为轻量模型。提出基于评分量表的 Composite Behavioral Score 指标，在 τ³-Bench 与 MultiWOZ 上显著提升行为保真度。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "AI 助手",
+        "智能体"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-15",
+  "doi": null,
+  "id": "p_DA-sO8cn-7HmIwVd",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.21346v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 36841,
+      "revision": "afe3c5d2d77deb4e81a863a94959d17c7148a20a"
+    }
+  ],
+  "title": "ARGUS: An Agenda-Driven Framework for Reliable User Simulation",
+  "title_zh": "ARGUS：面向可靠用户模拟的议程驱动框架",
+  "unified_ingested_at": "2026-10-16T06:50:19.598041Z",
+  "url": "https://arxiv.org/abs/2610.21346v1",
+  "volume": null,
+  "year": 2026
+}

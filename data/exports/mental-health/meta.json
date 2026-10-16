@@ -1,20 +1,27 @@
 {
   "dry_run": false,
   "facets": {
-    "ai_type_tags": {},
-    "journals": {},
-    "topic_tags": {}
+    "ai_type_tags": {
+      "llm_genai": 1
+    },
+    "journals": {
+      "JAMA Psychiatry": 1
+    },
+    "topic_tags": {
+      "safety_ethics": 1,
+      "transdiagnostic": 1
+    }
   },
-  "generated_at": "2026-10-15T07:07:18.659952Z",
+  "generated_at": "2026-10-16T06:50:18.442273Z",
   "last_batch": {
-    "generated_at": "2026-10-15T07:07:18.659952Z",
+    "generated_at": "2026-10-16T06:50:18.442273Z",
     "model": "MiniMax-M2.5-lightning",
-    "status": "success",
+    "status": "partial_failure",
     "totals": {
-      "candidates_input": 9,
-      "failed": 0,
-      "papers_published": 0,
-      "papers_scored": 9
+      "candidates_input": 12,
+      "failed": 1,
+      "papers_published": 1,
+      "papers_scored": 11
     }
   },
   "model": "MiniMax-M2.5-lightning",
@@ -72,7 +79,10 @@
     "doi:10.1001/jamapsychiatry.2026.3136",
     "doi:10.1001/jamapsychiatry.2026.3139",
     "doi:10.1001/jamapsychiatry.2026.3165",
+    "doi:10.1001/jamapsychiatry.2026.3175",
     "doi:10.1001/jamapsychiatry.2026.3198",
+    "doi:10.1001/jamapsychiatry.2026.3226",
+    "doi:10.1001/jamapsychiatry.2026.3242",
     "doi:10.1001/jamapsychiatry.2026.3411",
     "doi:10.1002/wps.70040",
     "doi:10.1002/wps.70044",
@@ -241,6 +251,7 @@
     "doi:10.1016/j.jad.2026.122602",
     "doi:10.1016/j.jad.2026.122603",
     "doi:10.1016/j.jad.2026.122605",
+    "doi:10.1016/j.jad.2026.122620",
     "doi:10.1016/j.jbi.2025.104848",
     "doi:10.1016/s0165-0327(26)01149-3",
     "doi:10.1016/s0165-0327(26)01308-x",
@@ -264,13 +275,18 @@
     "doi:10.1016/s2215-0366(26)00242-7",
     "doi:10.1016/s2215-0366(26)00267-1",
     "doi:10.1016/s2215-0366(26)00271-3",
+    "doi:10.1016/s2215-0366(26)00274-9",
+    "doi:10.1016/s2215-0366(26)00275-0",
     "doi:10.1016/s2215-0366(26)00277-4",
     "doi:10.1016/s2215-0366(26)00278-6",
     "doi:10.1016/s2215-0366(26)00297-x",
     "doi:10.1016/s2215-0366(26)00299-3",
+    "doi:10.1016/s2215-0366(26)00301-9",
     "doi:10.1016/s2215-0366(26)00303-2",
     "doi:10.1016/s2215-0366(26)00304-4",
     "doi:10.1016/s2215-0366(26)00305-6",
+    "doi:10.1016/s2215-0366(26)00307-x",
+    "doi:10.1016/s2215-0366(26)00308-1",
     "doi:10.1017/s0033291725102808",
     "doi:10.1017/s0033291725102845",
     "doi:10.1017/s0033291725102924",
@@ -455,6 +471,7 @@
     "doi:10.1038/s41398-026-04465-w",
     "doi:10.1038/s41398-026-04466-9",
     "doi:10.1038/s41398-026-04467-8",
+    "doi:10.1038/s41398-026-04468-7",
     "doi:10.1038/s41398-026-04469-6",
     "doi:10.1038/s41398-026-04470-z",
     "doi:10.1038/s41398-026-04471-y",
@@ -605,6 +622,7 @@
     "doi:10.1176/appi.ajp.20260142",
     "doi:10.1176/appi.ajp.20260155",
     "doi:10.1176/appi.ajp.20260362",
+    "doi:10.1176/appi.ajp.20260398",
     "doi:10.1176/appi.ajp.20260411",
     "doi:10.1176/appi.ajp.20260426",
     "doi:10.1176/appi.ajp.20260449",
@@ -741,16 +759,16 @@
   "schema_version": 1,
   "scope": "cumulative",
   "slug": "mental-health",
-  "status": "success",
+  "status": "partial_failure",
   "theme": "mh",
   "thresholds": {
     "ai_relevance": 3,
     "domain_relevance": 3
   },
   "totals": {
-    "candidates_input": 9,
-    "failed": 0,
-    "papers_published": 84,
-    "papers_scored": 9
+    "candidates_input": 12,
+    "failed": 1,
+    "papers_published": 85,
+    "papers_scored": 11
   }
 }

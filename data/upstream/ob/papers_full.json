@@ -64047,7 +64047,12 @@
     "abstract": "Artificial intelligence is increasingly used to support product management tasks. At the same time, AI-native research and development (R&D) may increase software realization capacity. Organizations may realize software faster than they can identify, qualify, and reconsider what should be realized. This paper asks how product management should be re-envisioned under these conditions. We synthesize research on software product management, product learning, human-AI collaboration, and the Product Management and R&D boundary. We propose a vision in which AI becomes a persistent participant in product work. The vision covers sensing, exploration, decision-making, realization, and learning. We propose six principles and make the vision tangible through an operating model grounded in human professionals, AI personas, agents, skills, and a shared product context. We further argue that AI-native Product Management and AI-native R&D can form a continuous product-learning process. Finally, we identify four AI-specific research directions that require empirical investigation.",
     "ai_reason": "AI原生产品管理愿景，人机协作，R&D管理相关",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作",
+      "人机交互"
+    ],
     "authors": [
       "Ricardo Britto"
     ],
@@ -64068,8 +64073,13 @@
     "scored_at": "2026-10-15T06:57:33.745584",
     "title": "AI-Native Product Management: A Vision",
     "title_zh": "AI原生产品管理：一种愿景",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "探讨AI原生研发条件下产品管理如何被重新构想。综合软件产品管理、产品学习、人机协作及PM与R&D边界等文献，提出AI作为产品工作持续参与者的愿景，涵盖感知、探索、决策、实现与学习五个环节，给出六项原则及由人类专业人士、AI角色、代理、技能与共享产品上下文构成的运营模型，主张AI原生产品管理与R&D可形成持续的产品学习闭环，并提出四个待实证的AI专项研究方向。",
+    "topic_tags": [
+      "人机协作",
+      "创新",
+      "知识管理",
+      "组织变革"
+    ],
     "url": "https://arxiv.org/abs/2610.14823v1",
     "volume": null,
     "year": 2026
@@ -64211,6 +64221,53 @@
       "工作未来"
     ],
     "url": "https://arxiv.org/abs/2610.18921v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "An agent that learns a user's preferences from their choices faces a cold start problem: before any choices are observed, it must rely solely on a prior. Informative priors are usually fitted to historical choice data, which new tasks and deployments lack. To address this, we present Agentic-Priors, which lets agentic systems use the implicit knowledge of large language models (LLMs) instead. Specifically, an LLM states a new user's trade-offs in interpretable terms, such as willingness to pay or value of time, which we map to a prior over multinomial logit coefficients. This prior is then refined by a Bayesian learner as choices are observed. Across seven choice datasets, Agentic-Priors improves cold start accuracy over an uninformed prior by 5-40 percentage points. It also outperforms AutoElicit, a state-of-the-art LLM prior-elicitation method, on three datasets and loses on one. It is up to 18 points more accurate than in-context learning, and never significantly worse. Against hierarchical Bayes models fitted to surveys of increasing size, our approach is worth roughly 6-40 surveyed users, in terms of log-loss, so its value is concentrated in a deployment's first users.",
+    "ai_reason": "LLM先验用于偏好获取，涉及选择建模",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "推荐算法",
+      "人机协作"
+    ],
+    "authors": [
+      "Bruno Arcanjo",
+      "Zhaoxing Li",
+      "Sebastian Stein"
+    ],
+    "authors_full": [
+      {
+        "name": "Bruno Arcanjo"
+      },
+      {
+        "name": "Zhaoxing Li"
+      },
+      {
+        "name": "Sebastian Stein"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-15",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 82157,
+    "ingested_at": "2026-10-16T06:44:22.055977",
+    "issue": null,
+    "journal": "arXiv:cs.MA",
+    "pdf_url": "https://arxiv.org/pdf/2610.21938v1",
+    "scored_at": "2026-10-16T06:44:54.236183",
+    "title": "Agentic-Priors: Using Large Language Models to Address the Cold Start Problem in Preference Elicitation",
+    "title_zh": null,
+    "tldr": "针对偏好获取中的冷启动难题，提出Agentic-Priors方法：让大语言模型以可解释方式陈述用户权衡（如支付意愿、时间价值），将其映射为多项Logit系数的先验，再由贝叶斯学习者随选择数据逐步更新。在7个选择数据集上，冷启动准确率较无信息先验提升5–40个百分点，多数场景优于AutoElicit与上下文学习，相当于省去6–40名用户调查的成本，价值集中在部署初期。",
+    "topic_tags": [
+      "决策",
+      "推荐系统",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2610.21938v1",
     "volume": null,
     "year": 2026
   },
@@ -64950,7 +65007,7 @@
         "position": "last"
       }
     ],
-    "cited_by": 0,
+    "cited_by": 1,
     "date": "2026-06-12",
     "doi": "10.5465/amj.2024.0536",
     "domain_score": 4.0,
@@ -89862,6 +89919,102 @@
     "year": 2026
   },
   {
+    "abstract": null,
+    "ai_reason": "数据监控影响用户行为，涉AI数据系统",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "算法决策"
+    ],
+    "authors": [
+      "Jooyoung Kim",
+      "Hangjung Zo",
+      "Jongkun Jun"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jooyoung Kim",
+        "orcid": "https://orcid.org/0000-0002-2256-7927"
+      },
+      {
+        "affiliation": [],
+        "name": "Hangjung Zo",
+        "orcid": "https://orcid.org/0000-0002-2892-1659"
+      },
+      {
+        "affiliation": [],
+        "name": "Jongkun Jun",
+        "orcid": "https://orcid.org/0009-0009-9003-8371"
+      }
+    ],
+    "cited_by": 6,
+    "date": "2025-07",
+    "doi": "10.1016/j.chb.2025.108655",
+    "domain_score": 4.0,
+    "id": 82068,
+    "ingested_at": "2026-10-16T06:43:57.741165",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-16T06:44:55.454088",
+    "title": "How dataveillance shapes user behavior: The role of perceived value in disclosure and discontinuation",
+    "title_zh": "数据监控如何塑造用户行为：感知价值在披露与中止使用中的作用",
+    "tldr": "探讨数据监控（dataveillance）如何塑造用户行为，分析用户对数据收集的感知价值在信息披露意愿与平台中断使用决策中的中介作用，揭示数据监控情境下用户行为的形成机制。",
+    "topic_tags": [
+      "隐私",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2025.108655",
+    "volume": "168",
+    "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心议题即AI与人类思维惰性",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI治理"
+    ],
+    "authors": [
+      "Braden T. Hall",
+      "William Hart"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Braden T. Hall",
+        "orcid": "https://orcid.org/0009-0008-2164-4573"
+      },
+      {
+        "affiliation": [],
+        "name": "William Hart",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109222",
+    "domain_score": 4.0,
+    "id": 82069,
+    "ingested_at": "2026-10-16T06:43:57.769625",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-16T06:44:55.453324",
+    "title": "Does AI Encourage Lax Thinking, or Does the Human Preference for Validation Make It That Way?",
+    "title_zh": null,
+    "tldr": "探讨使用AI时人类思维是否会变得懒惰：究竟是AI本身助长了松懈思考，还是人类对确认与验证的偏好导致过度依赖AI。标题暗示需区分AI工具特性与用户心理动因，呼吁审视人机交互中认知投入与批判性思维的变化。",
+    "topic_tags": [
+      "决策",
+      "信任",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109222",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Artificial intelligence (AI) has become part and parcel of scientific knowledge production since the latest iterations of generative AI models (e.g., ChatGPT, DeepSeek, Claude, or Gemini) became widely available. Given AI has rapidly evolved since the initial release of ChatGPT in 2022, researching how AI’s capabilities impact organizations and how researchers make use of AI tools can be likened to a moving target. In this editorial essay, we explore the implications of the introduction of AI in the context of academic research, both as the subject of investigation (i.e., research\n                    on\n                    AI) and as a research tool to facilitate academic writing, data generation, or the peer review process (i.e., research\n                    with\n                    AI). Specifically, concerning research\n                    on\n                    AI, we consider issues around clarity regarding both existing definitions and concepts in the AI literature and how these are influenced by the rapid technological evolution of AI’s capabilities. In regard to research\n                    with\n                    AI, we reflect on the advantages and disadvantages of the use of AI as a research tool and discuss the\n                    Human Relations AI Usage Policy\n                    . Overall, our aim is not to be overly prescriptive on how to conduct research on and with AI but to encourage authors to reflect on how to best capture AI as a moving target in the context of their research endeavors.",
     "ai_reason": "核心议题为AI对学术研究和组织的影响",
     "ai_score": 5.0,
@@ -107462,6 +107615,59 @@
     "url": "https://doi.org/10.1207/s15327663jcp1401&2_10",
     "volume": "14",
     "year": 2004
+  },
+  {
+    "abstract": "Abstract\n                  We shine a spotlight on marketing misinformation—claims about products and brands that contradict or distort verifiable facts. Misinformation may be created unintentionally or intentionally by companies, competitors, customers, or third parties seeking to harm companies or consumers. We focus on the role of AI in creating, obfuscating, and disseminating misinformation in the form of text, audio, images, and videos generated using large language models. This type of information can pose a substantial risk for brand safety. Consumers may be aware that AI can generate misinformation but may lack the ability to guard against it. We discuss how different stakeholders in the information ecosystem can help in the prevention and correction of misinformation and propose a future research agenda in this critical and fast‐growing area.",
+    "ai_reason": "AI生成营销虚假信息，AI核心+营销核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "多模态",
+      "AI治理"
+    ],
+    "authors": [
+      "Gita Venkataramani Johar",
+      "Amna Kirmani"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Columbia Business School, Columbia University  New York New York USA"
+        ],
+        "name": "Gita Venkataramani Johar",
+        "orcid": "https://orcid.org/0000-0003-2643-5507"
+      },
+      {
+        "affiliation": [
+          "Robert H. Smith School of Business University of Maryland  College Park Maryland USA"
+        ],
+        "name": "Amna Kirmani",
+        "orcid": "https://orcid.org/0000-0002-9258-4327"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-15",
+    "doi": "10.1002/jcpy.70043",
+    "domain_score": 5.0,
+    "id": 82136,
+    "ingested_at": "2026-10-16T06:43:59.983304",
+    "issue": null,
+    "journal": "JCP",
+    "pdf_url": null,
+    "scored_at": "2026-10-16T06:44:54.237652",
+    "title": "Marketing misinformation in the age of\n                    <scp>AI</scp>",
+    "title_zh": null,
+    "tldr": "聚焦AI时代营销误导信息问题，系统讨论由大语言模型生成的文本、音频、图像与视频如何被企业、竞争对手、消费者或第三方用于制造、混淆与传播虚假品牌和产品信息，分析其对品牌安全的风险及消费者识别能力不足的现状，并从信息生态中各方利益相关者角度提出预防与纠正框架及未来研究方向。",
+    "topic_tags": [
+      "营销",
+      "品牌",
+      "消费者行为",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1002/jcpy.70043",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": "Abstract\n                  Prior literature is yet to explain how algorithms systematically constrain consumer experience (CX). To address this issue, we conducted a multi-method ethnographic study of consumers using fitness tracking software. We draw on the information science literature to demonstrate that the constitutive properties of information technology (IT) that underlie algorithms result in a set of restrictive fundamental interactional mechanisms imposed through algorithmic logics of legibility (what is selectively registered as input), visibility (what is selectively represented in output), and legitimacy (normative commitments embedded in input and output choices). We find that these mechanisms systematically constrain the distinct dimensions of the CX construct by eliciting consumption work. Consumers perform cognitive work to think through algorithmic limitations, practical work to accommodate those limitations, relational work to clarify algorithmic misrepresentation, and affective work to deal with algorithmic delegitimization. We make two contributions. First, our emergent framework not only demonstrates how algorithms systematically constrain CX, but is also more broadly relevant to consumer research because it enables accounting for the agency of IT. Second, we provide a corrective to the passive, emotion focused, view of CX by demonstrating how the consumption work of accommodating algorithmic limitations constrains the distinct dimensions of the CX construct.",
@@ -134097,7 +134303,12 @@
     "abstract": "We examine how different generations of artificial intelligence (AI) substitute for human knowledge worker tasks, leveraging two sequential natural experiments in the translation industry. We study the introduction of Google Neural Machine Translation (GNMT), a predictive, task-specific AI, as well as ChatGPT, a broad, general-purpose generative AI, in a major online labor market. Distinguishing between analytical tasks (regular translations) and intuitive tasks (transcreations, which require creative and cultural adaptation), we estimate difference-in-differences models on transaction-level data from 2016 to 2017 and 2022 to 2023. We find that GNMT reduced the demand for analytical tasks by economically meaningful magnitudes, while having no detectable effect on intuitive tasks. By contrast, ChatGPT produced substantially larger and more uniform reductions for both analytical and intuitive tasks, indicating a marked expansion in the scope and magnitude of AI substitution. By comparing these two technological shocks within the same labor market, we show that conclusions about which types of human work are resilient to automation do not straightforwardly generalize from predictive to generative AI.\n                  This paper was accepted by Joshua Gans, business strategy.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.06740 .",
     "ai_reason": "AI替代人力任务，核心管理+AI",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "ChatGPT",
+      "机器学习"
+    ],
     "authors": [
       "Erdem Dogukan Yilmaz",
       "Ivana Naumovska",
@@ -134106,24 +134317,27 @@
     "authors_full": [
       {
         "affiliation": [
-          "INSEAD, 77305 Fontainebleau, France"
+          "INSEAD"
         ],
         "name": "Erdem Dogukan Yilmaz",
-        "orcid": "https://orcid.org/0000-0002-2727-3557"
+        "orcid": "https://orcid.org/0000-0002-2727-3557",
+        "position": "first"
       },
       {
         "affiliation": [
-          "INSEAD, 77305 Fontainebleau, France"
+          "INSEAD"
         ],
         "name": "Ivana Naumovska",
-        "orcid": "https://orcid.org/0000-0001-8565-3649"
+        "orcid": "https://orcid.org/0000-0001-8565-3649",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "INSEAD, 77305 Fontainebleau, France"
+          "INSEAD"
         ],
         "name": "Vikas A. Aggarwal",
-        "orcid": "https://orcid.org/0000-0002-2040-6767"
+        "orcid": "https://orcid.org/0000-0002-2040-6767",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -134138,9 +134352,119 @@
     "scored_at": "2026-10-15T06:57:34.373382",
     "title": "AI-Driven Human Task Substitution: Evidence from Google Translate and ChatGPT",
     "title_zh": "AI驱动的人类任务替代：来自Google翻译与ChatGPT的证据",
+    "tldr": "利用翻译在线劳动力市场两个自然实验，比较预测式AI（Google GNMT）与生成式AI（ChatGPT）对人类知识工作的替代效应。基于2016–2017和2022–2023交易级数据的DiD分析显示，GNMT显著减少分析性翻译需求但不影响需创意文化适配的直译类任务；ChatGPT则对两类任务均产生更大且更均匀的替代，表明生成式AI显著扩大了自动化范围，过去关于人类工作韧性的结论不能简单从预测式AI推广到生成式AI。",
+    "topic_tags": [
+      "工作未来",
+      "战略",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2024.06740",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "This paper investigates the impact of pre-existing offline data on online learning in the context of dynamic pricing. We study a single-product dynamic pricing problem over a selling horizon of T periods. The demand in each period is determined by the price of the product according to a linear demand model with unknown parameters. We assume that before the start of the selling horizon, the seller already has some pre-existing offline data. The offline data set contains n samples, each of which is an input-output pair consisting of a historical price and an associated demand observation. The seller wants to use both the pre-existing offline data and the sequentially revealed online data to minimize the regret of the online learning process. We characterize the joint effect of the size, location, and dispersion of the offline data on the optimal regret of the online learning process. Specifically, the size, location, and dispersion of the offline data are measured by the number of historical samples, the distance between the average historical price and the optimal price, and the standard deviation of the historical prices, respectively. For both single-historical-price setting and multiple-historical-price setting, we design a learning algorithm based on the “Optimism in the Face of Uncertainty” principle, which strikes a balance between exploration and exploitation and achieves the optimal regret up to a logarithmic factor. Our results reveal surprising transformations of the optimal regret rate with respect to the size of the offline data, which we refer to as phase transitions. In addition, our results demonstrate that the location and dispersion of the offline data also have an intrinsic effect on the optimal regret, and we quantify this effect via the inverse-square law.  This paper was accepted by Omar Besbes, revenue management and market analytics.  Supplemental Material: The data files and online appendices are available at https://doi.org/10.1287/mnsc.2022.4322 .",
+    "ai_reason": "数据驱动在线定价算法为核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [],
+    "authors": [
+      "Jinzhi Bu",
+      "David Simchi-Levi",
+      "Yunzong Xu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Department of Logistics and Maritime Studies, Faculty of Business, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong;"
+        ],
+        "name": "Jinzhi Bu",
+        "orcid": "https://orcid.org/0000-0003-2355-5992"
+      },
+      {
+        "affiliation": [
+          "Institute for Data, Systems, and Society, Department of Civil and Environmental Engineering, and Operations Research Center, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139;"
+        ],
+        "name": "David Simchi-Levi",
+        "orcid": "https://orcid.org/0000-0002-4650-1519"
+      },
+      {
+        "affiliation": [
+          "Institute for Data, Systems, and Society and Statistics and Data Science Center, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+        ],
+        "name": "Yunzong Xu",
+        "orcid": "https://orcid.org/0000-0002-1682-419X"
+      }
+    ],
+    "cited_by": 17,
+    "date": "2022-12",
+    "doi": "10.1287/mnsc.2022.4322",
+    "domain_score": 3.0,
+    "id": 82115,
+    "ingested_at": "2026-10-16T06:43:59.192523",
+    "issue": "12",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-16T06:44:55.455552",
+    "title": "Online Pricing with Offline Data: Phase Transition and Inverse Square Law",
+    "title_zh": "基于离线数据的在线定价：相变与平方反比定律",
     "tldr": null,
     "topic_tags": [],
-    "url": "https://doi.org/10.1287/mnsc.2024.06740",
+    "url": "https://doi.org/10.1287/mnsc.2022.4322",
+    "volume": "68",
+    "year": 2022
+  },
+  {
+    "abstract": "In this work, we study how the relevance/quality and quantity of past data influence performance by analyzing a contextual Newsvendor problem, in which a decision maker trades off between underage and overage costs under uncertain demand. We consider a setting in which past demands observed under “close-by” contexts come from close-by distributions and analyze the performance of data-driven algorithms through a notion of context-dependent worst-case expected regret. We analyze the broad class of Weighted Empirical Risk Minimization (WERM) policies which weigh past data according to their similarity in the contextual space. This class includes classical policies such as ERM, k-Nearest Neighbors, and kernel-based policies. Our main methodological contribution is to characterize exactly the worst-case regret of any WERM policy on any given configuration of contexts. To the best of our knowledge, this provides the first understanding of tight performance guarantees in any contextual decision-making problem, with past literature focusing on upper bounds via concentration inequalities. We instead take an optimization approach, and isolate a structure in the Newsvendor loss function that allows us to reduce the infinite-dimensional optimization problem over worst-case distributions to a simple line search. This in turn allows us to unveil fundamental insights that were obfuscated by previous general-purpose bounds. We characterize actual guaranteed performance as a function of the contexts, as well as granular insights on the learning curve of algorithms.\n                  This paper was accepted by Victor Martínez de Albéniz, operations management.\n                  Funding: This work was supported by the Deming Center for Operations Innovation and Excellence at Columbia Business School [Doctoral Fellowship (O. Mouchtaki)].\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.02068 .",
+    "ai_reason": "数据驱动算法(k-NN等)为核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习"
+    ],
+    "authors": [
+      "Omar Besbes",
+      "Will Ma",
+      "Omar Mouchtaki"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Graduate School of Business, Columbia University, New York, New York 10027"
+        ],
+        "name": "Omar Besbes",
+        "orcid": "https://orcid.org/0000-0002-2982-3794"
+      },
+      {
+        "affiliation": [
+          "Graduate School of Business, Columbia University, New York, New York 10027"
+        ],
+        "name": "Will Ma",
+        "orcid": "https://orcid.org/0000-0002-2420-4468"
+      },
+      {
+        "affiliation": [
+          "NYU Stern School of Business, New York, New York 10012"
+        ],
+        "name": "Omar Mouchtaki",
+        "orcid": "https://orcid.org/0000-0002-1734-9247"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-05-14",
+    "doi": "10.1287/mnsc.2023.02068",
+    "domain_score": 3.0,
+    "id": 82116,
+    "ingested_at": "2026-10-16T06:43:59.220735",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-16T06:44:55.453710",
+    "title": "From Contextual Data to Newsvendor Decisions: On the Actual Performance of Data-Driven Algorithms",
+    "title_zh": "从上下文数据到报童决策：数据驱动算法的实际性能",
+    "tldr": "研究情境型Newsvendor问题中，历史数据的相关性/质量与数量如何影响数据驱动决策性能。分析加权经验风险最小化（WERM）策略类（含ERM、k近邻、核方法），提出上下文相关的最坏期望遗憾度量，精确刻画任意WERM策略在给定上下文配置下的最坏遗憾，揭示了先前泛界未能呈现的底层结构与数据规模-质量-分布的内在关系。",
+    "topic_tags": [
+      "决策"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2023.02068",
     "volume": null,
     "year": 2026
   },
@@ -137714,17 +138038,19 @@
     "authors_full": [
       {
         "affiliation": [
-          "Technical University of Munich, Munich, Germany"
+          "Technical University of Munich"
         ],
         "name": "Benedikt Roder",
-        "orcid": "https://orcid.org/0009-0000-2106-3033"
+        "orcid": null,
+        "position": "first"
       },
       {
         "affiliation": [
-          "Technical University of Munich, Munchen, Germany"
+          "Technical University of Munich"
         ],
         "name": "Jochen Hartmann",
-        "orcid": "https://orcid.org/0000-0002-1178-8708"
+        "orcid": "https://orcid.org/0000-0002-1178-8708",
+        "position": "last"
       }
     ],
     "cited_by": 0,
