@@ -64137,7 +64137,11 @@
     "abstract": "As artificial intelligence (AI) increasingly supports human decision-making in high-stakes domains, designing effective human-AI collaboration becomes critical. Successful collaboration requires humans to reflect on decision-making processes and adjust their strategies accordingly. Current research typically investigates interventions, such as explainable AI, that target reflection during the decision-making process (reflection-in-action). Less attention has been given to retrospective examination of decisions (reflection-on-action). This work explores reflection-on-action by studying the impact of feedback on reliance behavior and human-AI team performance. Specifically, we investigate feedback interventions targeting overrides of AI advice through a behavioral study (N=244). We find that such feedback influences reflection-on-action, while unidirectional feedback risks reducing subsequent reflection-in-action. Furthermore, we identify opposing shifts in reliance behavior that leave overall human-AI team performance unchanged but show context-dependent effects. Balanced feedback did not show these risks, preserving both concurrent and retrospective reflection, offering insights for designing for appropriate reliance on AI.",
     "ai_reason": "人机协作核心议题，涉及团队决策",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "人机协作",
+      "人机交互",
+      "可解释 AI"
+    ],
     "authors": [
       "Joshua Holstein",
       "Philipp Spitzer",
@@ -64174,8 +64178,12 @@
     "scored_at": "2026-10-15T06:57:34.370982",
     "title": "Think Once, Reflect Twice: How Feedback Shapes Human-AI Collaboration",
     "title_zh": "一思二省：反馈如何塑造人机协作",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究反馈干预如何影响人类与AI协作中的依赖行为。通过N=244行为实验，考察对AI建议覆盖行为的反馈如何塑造回顾性反思与即时反思。结果发现：单向反馈会削弱后续即时反思，并引发依赖行为的相反方向变化，使团队整体绩效不变；平衡反馈则能同时保留两种反思，为设计合理的AI依赖机制提供启示。",
+    "topic_tags": [
+      "人机协作",
+      "决策",
+      "信任"
+    ],
     "url": "https://arxiv.org/abs/2610.19991v1",
     "volume": null,
     "year": 2026
@@ -64260,7 +64268,7 @@
     "pdf_url": "https://arxiv.org/pdf/2610.21938v1",
     "scored_at": "2026-10-16T06:44:54.236183",
     "title": "Agentic-Priors: Using Large Language Models to Address the Cold Start Problem in Preference Elicitation",
-    "title_zh": null,
+    "title_zh": "Agentic-Priors：利用大语言模型解决偏好获取中的冷启动问题",
     "tldr": "针对偏好获取中的冷启动难题，提出Agentic-Priors方法：让大语言模型以可解释方式陈述用户权衡（如支付意愿、时间价值），将其映射为多项Logit系数的先验，再由贝叶斯学习者随选择数据逐步更新。在7个选择数据集上，冷启动准确率较无信息先验提升5–40个百分点，多数场景优于AutoElicit与上下文学习，相当于省去6–40名用户调查的成本，价值集中在部署初期。",
     "topic_tags": [
       "决策",
@@ -66805,6 +66813,72 @@
     "url": "https://doi.org/10.5465/amr.2026.0703",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "直接讨论机器学习时代的组织理论，AI核心议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法管理"
+    ],
+    "authors": [
+      "Keith Leavitt",
+      "Kira Schabram",
+      "Prashanth Hariharan",
+      "Christopher M. Barnes"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Oregon State University"
+        ],
+        "name": "Keith Leavitt",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Kira Schabram",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Indian School of Business"
+        ],
+        "name": "Prashanth Hariharan",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Washington"
+        ],
+        "name": "Christopher M. Barnes",
+        "orcid": null
+      }
+    ],
+    "cited_by": 91,
+    "date": "2021-10",
+    "doi": "10.5465/amr.2019.0247",
+    "domain_score": 5.0,
+    "id": 82328,
+    "ingested_at": "2026-10-18T06:58:15.373293",
+    "issue": "4",
+    "journal": "AMR",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:58:59.555433",
+    "title": "Ghost in the Machine: On Organizational Theory in the Age of Machine Learning",
+    "title_zh": "机器中的幽灵：论机器学习时代的组织理论",
+    "tldr": "探讨机器学习时代组织理论的演进与挑战,反思算法决策、数据驱动与自动化如何重塑组织的结构、流程及理论建构,呼吁发展契合智能时代的新型组织理论。",
+    "topic_tags": [
+      "组织变革",
+      "组织学习",
+      "算法管理"
+    ],
+    "url": "https://doi.org/10.5465/amr.2019.0247",
+    "volume": "46",
+    "year": 2021
   },
   {
     "abstract": "Managing with artificial intelligence (AI) refers to humans’ interaction with algorithms performing managerial tasks in organizations. Two literatures exploring this interaction—human-AI collaboration (HAIC) and algorithmic management (AM)—have focused on distinct managerial tasks: while HAIC examines executive decision-making, AM focuses on managerial control. This article presents a review of both literatures to identify opportunities for integration and advancement. We observe that HAIC’s and AM’s micro-level emphases on different managerial tasks have resulted in diverging conceptualizations of context, agency, interaction, and outcome. Adopting a more encompassing systems lens, we unveil previously concealed linkages between HAIC and AM, suggesting that the two literatures have analyzed two sides of the same phenomenon: while HAIC explores how humans use AI to manage, AM describes how humans are managed by AI. We develop an integrative framework that elevates the viewpoint from tasks to the organizational context, from individual to collective agency, from local to systemic interaction, and from micro-level to multilevel outcomes. By employing this framework, we lay the foundations for an organizational perspective on managing with AI.",
@@ -89039,6 +89113,50 @@
   },
   {
     "abstract": null,
+    "ai_reason": "认知辅导系统涉及AI，但焦点是教育效果",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "J.L Wheeler",
+      "J.W Regian"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "J.L Wheeler",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "J.W Regian",
+        "orcid": null
+      }
+    ],
+    "cited_by": 19,
+    "date": "1999-03",
+    "doi": "10.1016/s0747-5632(99)00021-7",
+    "domain_score": 3.0,
+    "id": 80706,
+    "ingested_at": "2026-10-07T08:09:14.337961",
+    "issue": "2",
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-17T07:00:21.604808",
+    "title": "The use of a cognitive tutoring system in the improvement of the abstract reasoning component of word problem solving",
+    "title_zh": "认知辅导系统在提升应用题抽象推理能力中的应用",
+    "tldr": "研究认知辅导系统对提升学生解决文字题时抽象推理能力的教学效果，关注智能辅导技术在数学应用题解题训练中的应用与改进。",
+    "topic_tags": [
+      "教育",
+      "培训"
+    ],
+    "url": "https://doi.org/10.1016/s0747-5632(99)00021-7",
+    "volume": "15",
+    "year": 1999
+  },
+  {
+    "abstract": null,
     "ai_reason": "语音识别属AI技术，研究用户行为",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -89195,7 +89313,7 @@
     "pdf_url": null,
     "scored_at": "2026-10-10T08:05:53.938392",
     "title": "Connections between e-learning, web science, cognitive computation and social sensing, and their relevance to learning analytics: A preliminary study",
-    "title_zh": null,
+    "title_zh": "电子学习、网络科学、认知计算与社会感知之间的关联及其对学习分析的相关性：一项初步研究",
     "tldr": "初步探讨电子学习、网络科学、认知计算与社会感知之间的关联，并分析其对学习分析学的意义。研究整合多源数据与计算方法，用于刻画学习行为、改进学习干预，为学习分析领域提供跨学科理论框架与方法路径。",
     "topic_tags": [
       "教育",
@@ -90003,7 +90121,7 @@
     "pdf_url": null,
     "scored_at": "2026-10-16T06:44:55.453324",
     "title": "Does AI Encourage Lax Thinking, or Does the Human Preference for Validation Make It That Way?",
-    "title_zh": null,
+    "title_zh": "AI助长思维懈怠，还是人类对获得肯定的偏好使之如此？",
     "tldr": "探讨使用AI时人类思维是否会变得懒惰：究竟是AI本身助长了松懈思考，还是人类对确认与验证的偏好导致过度依赖AI。标题暗示需区分AI工具特性与用户心理动因，呼吁审视人机交互中认知投入与批判性思维的变化。",
     "topic_tags": [
       "决策",
@@ -90011,6 +90129,203 @@
       "人机协作"
     ],
     "url": "https://doi.org/10.1016/j.chb.2026.109222",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "语义分析/NLP评估职业素养，AI文本分析是核心方法",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习"
+    ],
+    "authors": [
+      "Roger Blake",
+      "Oscar Gutierrez"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Roger Blake",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Oscar Gutierrez",
+        "orcid": null
+      }
+    ],
+    "cited_by": 15,
+    "date": "2011-11",
+    "doi": "10.1016/j.chb.2011.07.004",
+    "domain_score": 4.0,
+    "id": 82270,
+    "ingested_at": "2026-10-18T06:58:13.690593",
+    "issue": "6",
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:59:05.128194",
+    "title": "A semantic analysis approach for assessing professionalism using free-form text entered online",
+    "title_zh": "基于在线自由文本的评估专业素养语义分析方法",
+    "tldr": "研究采用语义分析方法，对在线自由文本进行专业度评估。基于标题推断，论文提出一套基于NLP的文本分析框架，用以从用户在在线场景中输入的非结构化文本（如申请材料、帖子、评论等）里自动判别其专业素养水平，应用于招聘筛选或在线行为评估等情境。",
+    "topic_tags": [
+      "招聘",
+      "HR"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2011.07.004",
+    "volume": "27",
+    "year": 2011
+  },
+  {
+    "abstract": null,
+    "ai_reason": "情境感知自适应反馈涉及AI技术",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互",
+      "推荐算法",
+      "机器学习"
+    ],
+    "authors": [
+      "Sandy C. Li",
+      "Stella Cheung",
+      "Ming Lui",
+      "Andrew K.F. Lui",
+      "Jackie W.W. Chan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sandy C. Li",
+        "orcid": "https://orcid.org/0000-0002-3136-1496"
+      },
+      {
+        "affiliation": [],
+        "name": "Stella Cheung",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ming Lui",
+        "orcid": "https://orcid.org/0000-0001-7996-0386"
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew K.F. Lui",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jackie W.W. Chan",
+        "orcid": "https://orcid.org/0000-0002-5847-2516"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109033",
+    "domain_score": 4.0,
+    "id": 82296,
+    "ingested_at": "2026-10-18T06:58:14.433066",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:59:00.392167",
+    "title": "Efficacy of a context-aware mobile app with adaptive feedback for promoting behavioral change in problematic smartphone use: Evidence from a randomized controlled trial",
+    "title_zh": null,
+    "tldr": "一项随机对照试验，评估具备情境感知与自适应反馈功能的移动应用在减少问题性手机使用、促进行为改变方面的干预效果。该应用能根据用户所处情境提供个性化提醒，验证其对手机过度使用行为的改善作用。",
+    "topic_tags": [
+      "健康行为",
+      "行为改变",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109033",
+    "volume": "183",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "ML/NLP预测游戏评分，AI为核心方法",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "NLP",
+      "推荐算法"
+    ],
+    "authors": [
+      "Yavuz Selim Balcioğlu",
+      "Erkut Altindağ"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yavuz Selim Balcioğlu",
+        "orcid": "https://orcid.org/0000-0001-7138-2972"
+      },
+      {
+        "affiliation": [],
+        "name": "Erkut Altindağ",
+        "orcid": "https://orcid.org/0000-0003-0173-0454"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109038",
+    "domain_score": 4.0,
+    "id": 82297,
+    "ingested_at": "2026-10-18T06:58:14.462252",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:59:00.391421",
+    "title": "From pixels to perceptions: Predicting video game ratings through reviews and metadata",
+    "title_zh": null,
+    "tldr": "利用游戏评论文本与元数据预测电子游戏评级，整合玩家评价和游戏类型、平台等元数据信息，通过机器学习方法建立预测模型，帮助理解市场感知与游戏表现的关系。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "推荐系统"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109038",
+    "volume": "183",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心研究GenAI聊天机器人在心理健康中的使用",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "聊天机器人"
+    ],
+    "authors": [
+      "Elyse J. Thulin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Elyse J. Thulin",
+        "orcid": "https://orcid.org/0000-0003-1724-4258"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109221",
+    "domain_score": 4.0,
+    "id": 82309,
+    "ingested_at": "2026-10-18T06:58:14.804914",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:58:58.292316",
+    "title": "Prevalence and Correlates of GenerativeAI Chatbot Use for Mental Health Concerns in Higher Education Students",
+    "title_zh": null,
+    "tldr": "调查大学生群体使用生成式AI聊天机器人处理心理健康问题的普遍率及相关因素。聚焦高等教育情境下学生借助ChatGPT等GenAI工具寻求心理支持的现象，分析使用率、相关人口学与心理变量，评估其在校园心理服务中的角色与潜在风险。",
+    "topic_tags": [
+      "教育",
+      "心理健康",
+      "幸福感"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109221",
     "volume": null,
     "year": 2026
   },
@@ -102161,7 +102476,7 @@
     "pdf_url": null,
     "scored_at": "2026-10-08T08:24:55.217114",
     "title": "Research Note—In CARSs We Trust: How Context-Aware Recommendations Affect Customers’ Trust and Other Business Performance Measures of Recommender Systems",
-    "title_zh": null,
+    "title_zh": "研究简报——我们信任情境感知推荐系统：情境感知推荐对顾客信任与推荐系统业务绩效的影响",
     "tldr": "研究情境化推荐对客户信任及销售等商业绩效的影响。通过欧洲在线出版商的真实用户现场对照实验，发现引入情境信息可提升推荐的准确性和多样性，进而增强客户信任并最终改善购买量、客单价等业务绩效，弥合了推荐准确度与商业价值之间的研究缺口。",
     "topic_tags": [
       "推荐系统",
@@ -102227,6 +102542,73 @@
       "推荐系统"
     ],
     "url": "https://doi.org/10.1287/isre.2021.1077",
+    "volume": "33",
+    "year": 2022
+  },
+  {
+    "abstract": "We develop a novel interpretable machine learning model, GANNM, and use newly available data to evaluate how different types of marketing campaigns and budget allocations influence malls’ customer traffic. We observe that the response curves that measure the impact of campaign budget on customer traffic differ for different categories of campaigns, with sales incentives or experience incentives, during peak periods, off-peak periods, or online promotion periods. Based on such accurate response curves from GANNM, the optimized budget allocation is estimated to yield a 11.2% increase in customer traffic compared with the original allocation. Our findings provide novel insights on managing mall campaigns. Mall managers should increase marketing spending to areas that were likely overlooked before and avoid over-crowding budget to campaigns during times with high levels of competition and are likely already over-marketed. We provide empirical evidence showing that the recent trend of employing novel approaches for enhancing customer experience in physical stores can effectively encourage customers to visit malls. Furthermore, we show that online promotions could also create opportunities for offline businesses—investing in campaigns in the major online promotion periods could significantly increase customer traffic for malls, given sufficient investment in the campaigns to raise customer awareness.",
+    "ai_reason": "可解释ML评估营销活动，营销+AI",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "可解释AI"
+    ],
+    "authors": [
+      "Tong Wang",
+      "Cheng He",
+      "Fujie Jin",
+      "Yu Jeffrey Hu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Tippie College of Business, University of Iowa, Iowa City, Iowa 52241;"
+        ],
+        "name": "Tong Wang",
+        "orcid": "https://orcid.org/0000-0001-8687-4208"
+      },
+      {
+        "affiliation": [
+          "Wisconsin School of Business, University of Wisconsin-Madison, Madison, Wisconsin 53706;"
+        ],
+        "name": "Cheng He",
+        "orcid": "https://orcid.org/0000-0003-4255-4151"
+      },
+      {
+        "affiliation": [
+          "Kelley School of Business, Indiana University, Bloomington, Indiana 47405;"
+        ],
+        "name": "Fujie Jin",
+        "orcid": "https://orcid.org/0000-0002-2817-5676"
+      },
+      {
+        "affiliation": [
+          "Scheller College of Business, Georgia Institute of Technology, Atlanta, Georgia 30308"
+        ],
+        "name": "Yu Jeffrey Hu",
+        "orcid": "https://orcid.org/0000-0001-8482-4899"
+      }
+    ],
+    "cited_by": 26,
+    "date": "2022-06",
+    "doi": "10.1287/isre.2021.1078",
+    "domain_score": 5.0,
+    "id": 82396,
+    "ingested_at": "2026-10-18T06:58:17.355276",
+    "issue": "2",
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:59:00.395746",
+    "title": "Evaluating the Effectiveness of Marketing Campaigns for Malls Using a Novel Interpretable Machine Learning Model",
+    "title_zh": "基于新型可解释机器学习模型的购物中心营销活动效果评估",
+    "tldr": "研究开发可解释机器学习模型GANNM,利用新数据评估购物中心不同类型营销活动及预算分配对客流的影响。发现销售激励、体验激励等不同类别活动在高峰、非高峰与线上促销期的响应曲线差异显著;基于优化预算分配可带来11.2%的客流提升。建议增加对曾被忽视领域的营销投入,避免在高竞争期过度投放,并验证线上促销对线下客流的带动作用。",
+    "topic_tags": [
+      "营销",
+      "广告",
+      "消费者行为",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1287/isre.2021.1078",
     "volume": "33",
     "year": 2022
   },
@@ -106114,6 +106496,43 @@
     "year": 2022
   },
   {
+    "abstract": null,
+    "ai_reason": "用神经网络方法预测员工离职，AI为方法",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习"
+    ],
+    "authors": [
+      "Mark John Somers"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mark John Somers",
+        "orcid": null
+      }
+    ],
+    "cited_by": 43,
+    "date": "1999",
+    "doi": "10.1037/0021-9010.84.2.177",
+    "domain_score": 5.0,
+    "id": 81669,
+    "ingested_at": "2026-10-14T07:17:42.750991",
+    "issue": "2",
+    "journal": "JAP",
+    "pdf_url": null,
+    "scored_at": "2026-10-17T07:00:24.659626",
+    "title": "Application of two neural network paradigms to the study of voluntary employee turnover.",
+    "title_zh": "两种神经网络范式在员工自愿离职研究中的应用",
+    "tldr": "应用两种神经网络范式对员工自愿离职行为进行建模与预测，探讨神经网络方法在人力资源管理研究中相较于传统统计方法的解释力与应用价值。",
+    "topic_tags": [
+      "HR"
+    ],
+    "url": "https://doi.org/10.1037/0021-9010.84.2.177",
+    "volume": "84",
+    "year": 1999
+  },
+  {
     "abstract": "Abstract Chatbots are now able to engage in sophisticated conversations with consumers. Due to the “black box” nature of the algorithms, it is impossible to predict in advance how these conversations will unfold. Behavioral research provides little insight into potential safety issues emerging from the current rapid deployment of this technology at scale. We begin to address this urgent question by focusing on the context of mental health and “companion AI”: Applications designed to provide consumers with synthetic interaction partners. Studies 1a and 1b present field evidence: Actual consumer interactions with two different companion AIs. Study 2 reports an extensive performance test of several commercially available companion AIs. Study 3 is an experiment testing consumer reaction to risky and unhelpful chatbot responses. The findings show that (1) mental health crises are apparent in a nonnegligible minority of conversations with users; (2) companion AIs are often unable to recognize, and respond appropriately to, signs of distress; and (3) consumers display negative reactions to unhelpful and risky chatbot responses, highlighting emerging reputational risks for generative AI companies.",
     "ai_reason": "核心研究GenAI伴侣应用的心理安全问题",
     "ai_score": 5.0,
@@ -107633,17 +108052,19 @@
     "authors_full": [
       {
         "affiliation": [
-          "Columbia Business School, Columbia University  New York New York USA"
+          "Columbia University"
         ],
         "name": "Gita Venkataramani Johar",
-        "orcid": "https://orcid.org/0000-0003-2643-5507"
+        "orcid": "https://orcid.org/0000-0003-2643-5507",
+        "position": "first"
       },
       {
         "affiliation": [
-          "Robert H. Smith School of Business University of Maryland  College Park Maryland USA"
+          "University of Maryland, College Park"
         ],
         "name": "Amna Kirmani",
-        "orcid": "https://orcid.org/0000-0002-9258-4327"
+        "orcid": null,
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -107654,10 +108075,10 @@
     "ingested_at": "2026-10-16T06:43:59.983304",
     "issue": null,
     "journal": "JCP",
-    "pdf_url": null,
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcpy.70043",
     "scored_at": "2026-10-16T06:44:54.237652",
     "title": "Marketing misinformation in the age of\n                    <scp>AI</scp>",
-    "title_zh": null,
+    "title_zh": "AI时代的营销虚假信息",
     "tldr": "聚焦AI时代营销误导信息问题，系统讨论由大语言模型生成的文本、音频、图像与视频如何被企业、竞争对手、消费者或第三方用于制造、混淆与传播虚假品牌和产品信息，分析其对品牌安全的风险及消费者识别能力不足的现状，并从信息生态中各方利益相关者角度提出预防与纠正框架及未来研究方向。",
     "topic_tags": [
       "营销",
@@ -134366,7 +134787,10 @@
     "abstract": "This paper investigates the impact of pre-existing offline data on online learning in the context of dynamic pricing. We study a single-product dynamic pricing problem over a selling horizon of T periods. The demand in each period is determined by the price of the product according to a linear demand model with unknown parameters. We assume that before the start of the selling horizon, the seller already has some pre-existing offline data. The offline data set contains n samples, each of which is an input-output pair consisting of a historical price and an associated demand observation. The seller wants to use both the pre-existing offline data and the sequentially revealed online data to minimize the regret of the online learning process. We characterize the joint effect of the size, location, and dispersion of the offline data on the optimal regret of the online learning process. Specifically, the size, location, and dispersion of the offline data are measured by the number of historical samples, the distance between the average historical price and the optimal price, and the standard deviation of the historical prices, respectively. For both single-historical-price setting and multiple-historical-price setting, we design a learning algorithm based on the “Optimism in the Face of Uncertainty” principle, which strikes a balance between exploration and exploitation and achieves the optimal regret up to a logarithmic factor. Our results reveal surprising transformations of the optimal regret rate with respect to the size of the offline data, which we refer to as phase transitions. In addition, our results demonstrate that the location and dispersion of the offline data also have an intrinsic effect on the optimal regret, and we quantify this effect via the inverse-square law.  This paper was accepted by Omar Besbes, revenue management and market analytics.  Supplemental Material: The data files and online appendices are available at https://doi.org/10.1287/mnsc.2022.4322 .",
     "ai_reason": "数据驱动在线定价算法为核心",
     "ai_score": 4.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策"
+    ],
     "authors": [
       "Jinzhi Bu",
       "David Simchi-Levi",
@@ -134407,8 +134831,11 @@
     "scored_at": "2026-10-16T06:44:55.455552",
     "title": "Online Pricing with Offline Data: Phase Transition and Inverse Square Law",
     "title_zh": "基于离线数据的在线定价：相变与平方反比定律",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "研究单产品动态定价中预存离线数据对在线学习后悔值的影响。需求服从线性模型且参数未知，基于OFU原则设计算法，联合刻画离线数据规模、位置与离散度对最优后悔的作用，发现相变现象与反平方律。算法在单/多历史价格设定下均达到近最优后悔界。",
+    "topic_tags": [
+      "决策",
+      "算法管理"
+    ],
     "url": "https://doi.org/10.1287/mnsc.2022.4322",
     "volume": "68",
     "year": 2022
@@ -134467,6 +134894,118 @@
     "url": "https://doi.org/10.1287/mnsc.2023.02068",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "Recent evidence, both in the laboratory and in the wild, suggests that the use of generative artificial intelligence reduces the diversity of content produced. As generative AI penetrates more markets and reaches widespread adoption, should we still expect to see content homogenization? Our work begins with a simple observation: content producers do not act in isolation. Instead, they compete with one another (e.g., for customers or attention). We explore the impact competition has on both content diversity and overall social welfare when producers use generative AI. Through a formal game-theoretic model, we show that competitive markets select for diverse AI models, mitigating monoculture. We further show that a generative AI model that performs well in isolation (i.e., according to a benchmark) may fail to provide value in a competitive market. Our results highlight the importance of evaluating generative AI models across the breadth of their output distributions, particularly when they will be deployed in competitive environments. We validate our theoretical results with a series of experiments involving generative text and image models. Overall, our results suggest that homogenization due to generative AI is unlikely to persist under strong competition.\n                  This paper was accepted by Itai Ashlagi, market design, platform, and demand analytics.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2025.02761 .",
+    "ai_reason": "核心研究生成式AI竞争与多样性，属AI+管理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "图像生成",
+      "多模态"
+    ],
+    "authors": [
+      "Manish Raghavan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "IIT@MIT"
+        ],
+        "name": "Manish Raghavan",
+        "orcid": "https://orcid.org/0000-0002-4155-8145",
+        "position": "first"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-16",
+    "doi": "10.1287/mnsc.2025.02761",
+    "domain_score": 4.0,
+    "id": 82226,
+    "ingested_at": "2026-10-17T06:59:24.564010",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": "https://arxiv.org/pdf/2412.08610",
+    "scored_at": "2026-10-17T07:00:04.767408",
+    "title": "Competition and Diversity in Generative AI",
+    "title_zh": "生成式人工智能中的竞争与多样性",
+    "tldr": "研究生成式AI市场中竞争对内容多样性的影响。通过博弈论模型与文本/图像生成实验发现，竞争性市场会筛选出差异化的AI模型，缓解内容同质化；在基准测试中表现优异的模型未必在竞争环境中创造价值，强调应从输出分布全貌评估生成式AI。",
+    "topic_tags": [
+      "创新",
+      "创意",
+      "营销",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2025.02761",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "We study a general problem of allocating limited resources to heterogeneous customers over time under model uncertainty. Each type of customer can be serviced using different actions, each of which stochastically consumes some combination of resources and returns different rewards for the resources consumed. We consider a general model in which the resource consumption distribution associated with each customer type–action combination is not known but is consistent and can be learned over time. In addition, the sequence of customer types to arrive over time is arbitrary and completely unknown. We overcome both the challenges of model uncertainty and customer heterogeneity by judiciously synthesizing two algorithmic frameworks from the literature: inventory balancing, which “reserves” a portion of each resource for high-reward customer types that could later arrive based on competitive ratio analysis, and online learning, which “explores” the resource consumption distributions for each customer type under different actions based on regret analysis. We define an auxiliary problem, which allows for existing competitive ratio and regret bounds to be seamlessly integrated. Furthermore, we propose a new variant of upper confidence bound (UCB), dubbed lazyUCB, which conducts less exploration in a bid to focus on “exploitation” in view of the resource scarcity. Finally, we construct an information-theoretic family of counterexamples to show that our integrated framework achieves the best possible performance guarantee. We demonstrate the efficacy of our algorithms on both synthetic instances generated for the online matching with stochastic rewards problem under unknown probabilities and a publicly available hotel data set. Our framework is highly practical in that it requires no historical data (no fitted customer choice models or forecasting of customer arrival patterns) and can be used to initialize allocation strategies in fast-changing environments.  This paper was accepted by J. George Shanthikumar, Management Science Special Section on Data-Driven Prescriptive Analytics.",
+    "ai_reason": "在线学习库存平衡，运筹/AI方法",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策"
+    ],
+    "authors": [
+      "Wang Chi Cheung",
+      "Will Ma",
+      "David Simchi-Levi",
+      "Xinshang Wang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Department of Industrial Systems Engineering and Management, National University of Singapore, Singapore, Singapore 117576"
+        ],
+        "name": "Wang Chi Cheung",
+        "orcid": "https://orcid.org/0000-0001-9380-5673"
+      },
+      {
+        "affiliation": [
+          "Graduate School of Business, Columbia University, New York, New York 10027"
+        ],
+        "name": "Will Ma",
+        "orcid": "https://orcid.org/0000-0002-2420-4468"
+      },
+      {
+        "affiliation": [
+          "Institute for Data, Systems, and Society, Department of Civil and Environmental Engineering, and Operations Research Center, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+        ],
+        "name": "David Simchi-Levi",
+        "orcid": "https://orcid.org/0000-0002-4650-1519"
+      },
+      {
+        "affiliation": [
+          "Alibaba Group US, San Mateo, California 94402",
+          "Antai College of Economics and Management, Shanghai Jiao Tong University, Shanghai 200240, China"
+        ],
+        "name": "Xinshang Wang",
+        "orcid": "https://orcid.org/0000-0003-4683-7167"
+      }
+    ],
+    "cited_by": 19,
+    "date": "2022-03",
+    "doi": "10.1287/mnsc.2021.4216",
+    "domain_score": 4.0,
+    "id": 82391,
+    "ingested_at": "2026-10-18T06:58:17.211813",
+    "issue": "3",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:59:00.396132",
+    "title": "Inventory Balancing with Online Learning",
+    "title_zh": "基于在线学习的库存平衡",
+    "tldr": "研究在模型不确定条件下向异质客户随时间分配有限资源的通用问题。通过整合库存平衡(基于竞争比)与在线学习(基于遗憾分析)两类算法框架,构造辅助问题统一两类性能保证,并提出新UCB变体lazyUCB以在资源稀缺下减少探索、强化利用。借助信息论反例族证明集成框架达到(近)最优性能。",
+    "topic_tags": [
+      "决策",
+      "战略"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2021.4216",
+    "volume": "68",
+    "year": 2022
   },
   {
     "abstract": "This paper presents a novel integrative approach that combines artificial intelligence-driven forecasting with behavioral interventions to help businesses optimize energy consumption under critical peak pricing schemes.",

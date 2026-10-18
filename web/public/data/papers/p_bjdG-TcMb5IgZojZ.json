@@ -1,6 +1,10 @@
 {
   "abstract": "Graphical user interface (GUI) agents now execute workflows across real applications, but when execution drifts, users must determine what changed, what should have remained untouched, and what can still be recovered. Plan-centric interfaces leave users supervising procedure, but users live with changes to application state. We introduce task-state governance, an interaction paradigm that represents a task as an editable contract linking desired outcomes, facts that must be preserved, and observed application state. We instantiate this paradigm in TaskVM, which projects live state into editable task controls, executes user edits as genuine interface actions, verifies outcomes through independent observation, and marks each action as reversible, compensatable, or irreversible. Across an automated contract benchmark, a controlled user study, and an open live-model exploration, the paradigm strengthened contract compliance and users' recovery control and trust, while execution outcomes were held constant. Task contracts open a design space for governable agent interfaces.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "智能体/Agent",
+    "AI治理",
+    "可解释AI"
+  ],
   "arxiv_id": "2610.20100",
   "authors": [
     "Wenkui Yang",
@@ -43,8 +47,13 @@
       "ai_reason": "GUI智能体交互范式，HCI界面设计与用户控制研究",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对GUI智能体执行漂移的治理难题，提出\"任务状态治理\"范式，将任务表达为可编辑契约。实例化系统TaskVM把实时应用状态投射为可编辑任务控件，将用户编辑转化为真实操作，独立验证结果并标注可逆/可补偿/不可逆。自动化基准、受控用户研究与开放探索显示其提升了契约合规性、用户恢复控制与信任。",
+      "topic_tags": [
+        "人机协作",
+        "HCI",
+        "AI治理",
+        "信任"
+      ]
     }
   },
   "channels": [
@@ -61,7 +70,7 @@
     {
       "channel": "ur",
       "legacy_id": 36737,
-      "revision": "afe3c5d2d77deb4e81a863a94959d17c7148a20a"
+      "revision": "58758eb1129b3f94a598164c073f441887c4535e"
     }
   ],
   "title": "Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution",

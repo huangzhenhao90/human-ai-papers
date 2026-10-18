@@ -28328,7 +28328,11 @@
     "abstract": "Graphical user interface (GUI) agents now execute workflows across real applications, but when execution drifts, users must determine what changed, what should have remained untouched, and what can still be recovered. Plan-centric interfaces leave users supervising procedure, but users live with changes to application state. We introduce task-state governance, an interaction paradigm that represents a task as an editable contract linking desired outcomes, facts that must be preserved, and observed application state. We instantiate this paradigm in TaskVM, which projects live state into editable task controls, executes user edits as genuine interface actions, verifies outcomes through independent observation, and marks each action as reversible, compensatable, or irreversible. Across an automated contract benchmark, a controlled user study, and an open live-model exploration, the paradigm strengthened contract compliance and users' recovery control and trust, while execution outcomes were held constant. Task contracts open a design space for governable agent interfaces.",
     "ai_reason": "GUI智能体交互范式，HCI界面设计与用户控制研究",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI治理",
+      "可解释AI"
+    ],
     "authors": [
       "Wenkui Yang",
       "Yiming Hao",
@@ -28377,8 +28381,13 @@
     "scored_at": "2026-10-15T06:47:57.099645",
     "title": "Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution",
     "title_zh": "任务状态治理：可验证且可恢复的 GUI 智能体执行虚拟机",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "针对GUI智能体执行漂移的治理难题，提出\"任务状态治理\"范式，将任务表达为可编辑契约。实例化系统TaskVM把实时应用状态投射为可编辑任务控件，将用户编辑转化为真实操作，独立验证结果并标注可逆/可补偿/不可逆。自动化基准、受控用户研究与开放探索显示其提升了契约合规性、用户恢复控制与信任。",
+    "topic_tags": [
+      "人机协作",
+      "HCI",
+      "AI治理",
+      "信任"
+    ],
     "url": "https://arxiv.org/abs/2610.20100v1",
     "volume": null,
     "year": 2026
@@ -30459,6 +30468,73 @@
     "url": "https://doi.org/10.1016/j.chb.2014.12.027",
     "volume": "45",
     "year": 2015
+  },
+  {
+    "abstract": "Time series anomaly detection is a critical machine learning task for numerous applications, such as finance, healthcare, and industrial systems. However, even high-performing models may exhibit potential issues such as biases, leading to unreliable outcomes and misplaced confidence. While model explanation techniques, particularly visual explanations, offer valuable insights by elucidating model attributions of their decision, many limitations still exist—They are primarily instance-based and not scalable across the dataset, and they provide one-directional information from the model to the human side, lacking a mechanism for users to address detected issues. To fulfill these gaps, we introduce\n                    HILAD\n                    , a novel framework designed to foster a dynamic and bidirectional collaboration between humans and AI for enhancing anomaly detection models in time series. Through our visual interface,\n                    HILAD\n                    empowers domain experts to detect, interpret, and correct unexpected model behaviors at scale. Our evaluation through user studies with two models and three time series datasets demonstrates the effectiveness of\n                    HILAD\n                    , which fosters a deeper model understanding, immediate corrective actions, and model reliability enhancement.",
+    "ai_reason": "人机协同异常检测框架，核心AI+HCI交互",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Ziquan Deng",
+      "Xiwei Xuan",
+      "Kwan-Liu Ma",
+      "Zhaodan Kong"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Mechanical and Aerospace Engineering, University of California Davis, Davis, California, USA"
+        ],
+        "name": "Ziquan Deng",
+        "orcid": "https://orcid.org/0000-0003-1548-5197"
+      },
+      {
+        "affiliation": [
+          "Computer Science, University of California Davis, Davis, California, USA"
+        ],
+        "name": "Xiwei Xuan",
+        "orcid": "https://orcid.org/0000-0002-0828-8761"
+      },
+      {
+        "affiliation": [
+          "Computer Science, University of California Davis, Davis, California, USA"
+        ],
+        "name": "Kwan-Liu Ma",
+        "orcid": "https://orcid.org/0000-0001-8086-0366"
+      },
+      {
+        "affiliation": [
+          "Mechanical and Aerospace Engineering, University of California Davis, Davis, California, USA"
+        ],
+        "name": "Zhaodan Kong",
+        "orcid": "https://orcid.org/0000-0002-2493-1366"
+      }
+    ],
+    "cited_by": 6,
+    "date": "2026-03-13",
+    "doi": "10.1145/3778167",
+    "domain_score": 3.0,
+    "id": 36994,
+    "ingested_at": "2026-10-18T06:52:35.996473",
+    "issue": "2",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:53:06.203260",
+    "title": "A Reliable Framework for Human-in-the-Loop Anomaly Detection in Time Series",
+    "title_zh": "时间序列中人机协同异常检测的可靠框架",
+    "tldr": "针对时序异常检测模型缺乏可扩展且双向人机协作的问题，提出HILAD框架，通过可视化界面让领域专家在大规模数据上检测、解释并即时修正模型的异常行为，经多数据集用户研究验证可提升模型理解与可靠性。",
+    "topic_tags": [
+      "人机协作",
+      "可解释性",
+      "可视化",
+      "HCI"
+    ],
+    "url": "https://doi.org/10.1145/3778167",
+    "volume": "16",
+    "year": 2026
   },
   {
     "abstract": null,
@@ -38148,7 +38224,7 @@
     "domain_score": 3.0,
     "id": 15293,
     "ingested_at": "2026-07-26T05:25:35.907395",
-    "issue": null,
+    "issue": "5",
     "journal": "JAMS",
     "pdf_url": null,
     "scored_at": "2026-07-26T05:26:21.386368",
@@ -38162,7 +38238,7 @@
       "对话式 AI"
     ],
     "url": "https://doi.org/10.1007/s11747-026-01177-x",
-    "volume": null,
+    "volume": "54",
     "year": 2026
   },
   {
@@ -50881,6 +50957,65 @@
   },
   {
     "abstract": null,
+    "ai_reason": "LLM教练信任模型,HCI人机信任",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Sophia Meywirth",
+      "Andreas Janson",
+      "Matthias Söllner"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Information Systems and Systems Engineering, University of Kassel, Research Center for IS Design (ITeG), Kassel, Germany"
+        ],
+        "name": "Sophia Meywirth",
+        "orcid": "https://orcid.org/0009-0005-6643-6864"
+      },
+      {
+        "affiliation": [
+          "University of St.Gallen"
+        ],
+        "name": "Andreas Janson",
+        "orcid": "https://orcid.org/0000-0003-3149-0340"
+      },
+      {
+        "affiliation": [
+          "Information Systems and Systems Engineering, University of Kassel, Research Center for IS Design (ITeG), Kassel, Germany"
+        ],
+        "name": "Matthias Söllner",
+        "orcid": "https://orcid.org/0000-0002-1347-8252"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-05-21",
+    "doi": "10.1080/0144929x.2026.2676746",
+    "domain_score": 4.0,
+    "id": 36885,
+    "ingested_at": "2026-10-17T06:43:00.953029",
+    "issue": null,
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-10-17T06:43:26.332750",
+    "title": "Do human trust models transfer to AI? a necessary condition analysis of interpersonal trust antecedents in large language model-based coaching",
+    "title_zh": "人类信任模型能否迁移至人工智能：大语言模型教练中人际信任前因的必要条件分析",
+    "tldr": "探讨人际关系中的信任前置因素能否迁移到AI场景，聚焦大语言模型驱动的辅导情境。通过必要条件分析，检验人际信任的经典前提条件在LLM教练交互中是否依然成立，对比人-人信任与人-AI信任的边界，为AI信任理论建构与人机交互中的信任设计提供依据。",
+    "topic_tags": [
+      "信任",
+      "人机交互(HCI)",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2676746",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "机器人拟人化与孤独感，跨文化用户比较研究",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -61785,6 +61920,53 @@
     ],
     "url": "https://doi.org/10.1080/0144929x.2026.2711012",
     "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "用评论和元数据预测游戏评级，ML方法+用户评论",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "LLM",
+      "推荐算法",
+      "多模态"
+    ],
+    "authors": [
+      "Yavuz Selim Balcioğlu",
+      "Erkut Altindağ"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yavuz Selim Balcioğlu",
+        "orcid": "https://orcid.org/0000-0001-7138-2972"
+      },
+      {
+        "affiliation": [],
+        "name": "Erkut Altindağ",
+        "orcid": "https://orcid.org/0000-0003-0173-0454"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109038",
+    "domain_score": 3.0,
+    "id": 36966,
+    "ingested_at": "2026-10-18T06:52:35.382091",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:53:06.201822",
+    "title": "From pixels to perceptions: Predicting video game ratings through reviews and metadata",
+    "title_zh": "从像素到感知：通过评论和元数据预测电子游戏评级",
+    "tldr": "基于游戏评论文本与元数据，利用自然语言处理与机器学习方法预测电子游戏的用户评分，探索从用户感知文本到量化评级的映射，为游戏推荐与市场分析提供支持。",
+    "topic_tags": [
+      "推荐系统",
+      "消费者行为",
+      "用户研究方法"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109038",
+    "volume": "183",
     "year": 2026
   },
   {
@@ -77983,17 +78165,19 @@
     "authors_full": [
       {
         "affiliation": [
-          "Columbia Business School, Columbia University  New York New York USA"
+          "Columbia University"
         ],
         "name": "Gita Venkataramani Johar",
-        "orcid": "https://orcid.org/0000-0003-2643-5507"
+        "orcid": "https://orcid.org/0000-0003-2643-5507",
+        "position": "first"
       },
       {
         "affiliation": [
-          "Robert H. Smith School of Business University of Maryland  College Park Maryland USA"
+          "University of Maryland, College Park"
         ],
         "name": "Amna Kirmani",
-        "orcid": "https://orcid.org/0000-0002-9258-4327"
+        "orcid": null,
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -78004,7 +78188,7 @@
     "ingested_at": "2026-10-16T06:39:19.737733",
     "issue": null,
     "journal": "JCP",
-    "pdf_url": null,
+    "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/jcpy.70043",
     "scored_at": "2026-10-16T06:39:57.360970",
     "title": "Marketing misinformation in the age of\n                    <scp>AI</scp>",
     "title_zh": "AI时代的营销虚假信息",
@@ -84686,6 +84870,49 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心研究GenAI聊天机器人使用与心理健康",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "ChatGPT",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Elyse J. Thulin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Elyse J. Thulin",
+        "orcid": "https://orcid.org/0000-0003-1724-4258"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10",
+    "doi": "10.1016/j.chb.2026.109221",
+    "domain_score": 4.0,
+    "id": 36978,
+    "ingested_at": "2026-10-18T06:52:35.645251",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-18T06:53:02.745306",
+    "title": "Prevalence and Correlates of GenerativeAI Chatbot Use for Mental Health Concerns in Higher Education Students",
+    "title_zh": "高等教育学生使用生成式AI聊天机器人应对心理健康问题的流行率及相关因素",
+    "tldr": "针对高等教育学生群体，调查使用生成式AI聊天机器人应对心理健康问题的普遍程度及其相关因素，揭示大学生在心理健康支持场景下采纳GenAI的现状、动机与潜在风险。",
+    "topic_tags": [
+      "用户研究方法",
+      "问卷",
+      "AI 采用",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109221",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "对话代理=AI，亲子共读=用户研究核心",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -85242,6 +85469,103 @@
     "url": "https://doi.org/10.1080/0144929x.2025.2553153",
     "volume": "45",
     "year": 2025
+  },
+  {
+    "abstract": "We introduce RadarHand, a wrist-worn wearable with millimetre wave radar that detects on-skin touch-based proprioceptive hand gestures. Radars are robust, private, small, penetrate materials, and require low computation costs. We first evaluated the proprioceptive and tactile perception nature of the back of the hand and found that tapping on the thumb is the least proprioceptive error of all the finger joints, followed by the index finger, middle finger, ring finger, and pinky finger in the eyes-free and high cognitive load situation. Next, we trained deep-learning models for gesture classification. We introduce two types of gestures based on the locations of the back of the hand: generic gestures and discrete gestures. Discrete gestures are gestures that start at specific locations and end at specific locations at the back of the hand, in contrast to generic gestures, which can start anywhere and end anywhere on the back of the hand. Out of 27 gesture group possibilities, we achieved 92% accuracy for a set of seven gestures and 93% accuracy for the set of eight discrete gestures. Finally, we evaluated RadarHand’s performance in real-time under two interaction modes: Active interaction and Reactive interaction. Active interaction is where the user initiates input to achieve the desired output, and reactive interaction is where the device initiates interaction and requires the user to react. We obtained an accuracy of 87% and 74% for active generic and discrete gestures, respectively, as well as 91% and 81.7% for reactive generic and discrete gestures, respectively. We discuss the implications of RadarHand for gesture recognition and directions for future works.",
+    "ai_reason": "深度学习手势识别可穿戴设备，用户感知评估",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "深度学习",
+      "人机交互",
+      "手势识别"
+    ],
+    "authors": [
+      "Ryo Hajika",
+      "Tamil Selvan Gunasekaran",
+      "Chloe Dolma Si Ying Haigh",
+      "Yun Suen Pai",
+      "Eiji Hayashi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "The University of Auckland, New Zealand"
+        ],
+        "name": "Ryo Hajika",
+        "orcid": "https://orcid.org/0000-0001-6392-7290"
+      },
+      {
+        "affiliation": [
+          "The University of Auckland, New Zealand"
+        ],
+        "name": "Tamil Selvan Gunasekaran",
+        "orcid": "https://orcid.org/0000-0001-7008-5458"
+      },
+      {
+        "affiliation": [
+          "The University of Auckland, New Zealand"
+        ],
+        "name": "Chloe Dolma Si Ying Haigh",
+        "orcid": "https://orcid.org/0009-0005-8592-1320"
+      },
+      {
+        "affiliation": [
+          "Keio University Graduate School of Media Design, Japan"
+        ],
+        "name": "Yun Suen Pai",
+        "orcid": "https://orcid.org/0000-0002-6090-2837"
+      },
+      {
+        "affiliation": [
+          "Google Inc., USA"
+        ],
+        "name": "Eiji Hayashi",
+        "orcid": "https://orcid.org/0009-0008-1248-554X"
+      },
+      {
+        "affiliation": [
+          "Google Inc., USA"
+        ],
+        "name": "Jaime Lien",
+        "orcid": "https://orcid.org/0009-0008-9083-4872"
+      },
+      {
+        "affiliation": [
+          "The University of Auckland, New Zealand"
+        ],
+        "name": "Danielle Lottridge",
+        "orcid": "https://orcid.org/0000-0002-5541-4425"
+      },
+      {
+        "affiliation": [
+          "The University of Auckland, New Zealand"
+        ],
+        "name": "Mark Billinghurst",
+        "orcid": "https://orcid.org/0000-0003-4172-6759"
+      }
+    ],
+    "cited_by": 23,
+    "date": "2024-01-29",
+    "doi": "10.1145/3617365",
+    "domain_score": 5.0,
+    "id": 36868,
+    "ingested_at": "2026-10-17T06:43:00.677827",
+    "issue": "2",
+    "journal": "TOCHI",
+    "pdf_url": null,
+    "scored_at": "2026-10-17T06:43:30.214958",
+    "title": "RadarHand: A Wrist-Worn Radar for On-Skin Touch-Based Proprioceptive Gestures",
+    "title_zh": "RadarHand：腕戴式雷达的肤触本体感觉手势识别",
+    "tldr": "研究手腕佩戴的毫米波雷达设备RadarHand，用于检测手背敲击式本体感觉手势。先评估手背各关节的本体感觉与触觉感知特性（拇指误差最小），再基于深度学习模型对通用手势与离散手势分类，在7-8种手势上分别达到92%与93%准确率。最后在主动与被动两种实时交互模式下实时测试，分别取得87%与74%的准确率。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可用性",
+      "可穿戴设备",
+      "多模态交互"
+    ],
+    "url": "https://doi.org/10.1145/3617365",
+    "volume": "31",
+    "year": 2024
   },
   {
     "abstract": null,
@@ -88650,7 +88974,7 @@
     "year": 2023
   },
   {
-    "abstract": null,
+    "abstract": "Social robots (SR) are increasingly developed to support users’ mental health needs. Previous research suggests that potential benefits of interacting with SR include reduction in depressive symptoms, loneliness and improved quality of life. Despite the promising impact of short-term robot use, little is known about how SRs are used beyond short interaction in the research environment, and what spontaneous robot adoption looks like. Thus, in this study we set out to address this gap through an analysis of user-generated robot reviews. We analysed online reviews of commercially available SRs to characterise their impact and user experience. We used qualitative content analysis to extract salient themes from 1350 user-generated reviews, supplemented by sentiment analysis of the full sample of 9333 reviews. The content analysis revealed a list of SR use cases, user circumstances and characteristics, the impact of using the robots and ethical challenges experienced by users. The results suggest that self-reported benefits, such as improved mood, reduced depression and loneliness, are maintained through long-term robot use. This study provides a novel qualitative insight into user experiences and SR use in the real world that will inform future robotic development and implementation efforts.",
     "ai_reason": "社交机器人涉及AI，评论分析属用户视角",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -88659,7 +88983,7 @@
     ],
     "authors": [
       "Katarzyna Kabacińska",
-      "Gabriella Guerra",
+      "Gabriella K. Guerra",
       "Mallorie T. Tam",
       "Julie M. Robillard"
     ],
@@ -88669,29 +88993,32 @@
           "University of British Columbia"
         ],
         "name": "Katarzyna Kabacińska",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0002-7382-7610",
+        "position": "first"
       },
       {
         "affiliation": [
           "University of British Columbia"
         ],
-        "name": "Gabriella Guerra",
-        "orcid": null
+        "name": "Gabriella K. Guerra",
+        "orcid": "https://orcid.org/0000-0003-0234-2234",
+        "position": "middle"
       },
       {
         "affiliation": [
           "University of British Columbia"
         ],
         "name": "Mallorie T. Tam",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0003-3751-1501",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "University of British Columbia",
-          "British Columbia Women's and Children's Hospital"
+          "University of British Columbia"
         ],
         "name": "Julie M. Robillard",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0001-5765-4927",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -89147,6 +89474,53 @@
     "url": "https://doi.org/10.1080/0144929x.2026.2727271",
     "volume": "45",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "ITS涉及AI技术；学习场景有用户视角但非核心用研",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "智能辅导系统",
+      "AI助手",
+      "人机协作"
+    ],
+    "authors": [
+      "Ab de Haan",
+      "Tinus Oppenhuizen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ab de Haan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Tinus Oppenhuizen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 8,
+    "date": "1994",
+    "doi": "10.1016/0747-5632(94)90026-4",
+    "domain_score": 3.0,
+    "id": 35193,
+    "ingested_at": "2026-10-06T08:23:32.859504",
+    "issue": "1",
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-17T06:43:49.352687",
+    "title": "Speller: A reflexive ITS to support the learning of second language spelling",
+    "title_zh": "Speller：支持二语拼写学习的反射式智能教学系统",
+    "tldr": "Speller是一款反思型智能辅导系统（ITS），用于支持第二语言拼写学习。系统结合AI技术为学习者提供个性化拼写练习与即时反馈，通过反思性交互机制辅助学习者巩固词汇拼写能力。",
+    "topic_tags": [
+      "个性化",
+      "AI采用",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/0747-5632(94)90026-4",
+    "volume": "10",
+    "year": 1994
   },
   {
     "abstract": "The need to generate a spider to provoke a desired anxiety response arises in the context of personalized virtual reality exposure therapy (VRET), a treatment approach for arachnophobia. This treatment involves patients observing virtual spiders in order to become desensitized and decrease their phobia, which requires that the spiders elicit specific anxiety responses. However, VRET approaches tend to require therapists to hand-select the appropriate spider for each patient, which is a time-consuming process and takes significant technical knowledge and patient insight. While automated methods exist, they tend to employ rules-based approaches with minimal ability to adapt to specific users. To address these challenges, we present a framework for VRET utilizing procedural content generation (PCG) and reinforcement learning (RL), which automatically adapts a spider to elicit a desired anxiety response. We demonstrate the superior performance of this system compared to a more common rules-based VRET method.",
@@ -91859,6 +92233,67 @@
     "url": "https://doi.org/10.1016/j.chb.2023.108008",
     "volume": "150",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "GenAI对话搜索代理信任,HCI核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Shatha Degachi",
+      "Evangelos Niforatos",
+      "Gerd Kortuem"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Delft University of Technology"
+        ],
+        "name": "Shatha Degachi",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Delft University of Technology"
+        ],
+        "name": "Evangelos Niforatos",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Delft University of Technology"
+        ],
+        "name": "Gerd Kortuem",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-04-06",
+    "doi": "10.1080/0144929x.2026.2638907",
+    "domain_score": 4.0,
+    "id": 36884,
+    "ingested_at": "2026-10-17T06:43:00.936921",
+    "issue": null,
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-10-17T06:43:26.333114",
+    "title": "The effect of agent persona on source-clicking, reliance and trust in generative conversational search and the moderating role of health literacy",
+    "title_zh": "智能体人格对生成式对话搜索中信息源点击、依赖与信任的影响及健康素养的调节作用",
+    "tldr": "考察生成式对话搜索中智能体人格（agent persona）对用户信息源点击、依赖与信任的影响，并探究健康素养的调节作用。研究揭示不同AI人格特征如何塑造用户对信息来源的选择与依赖程度，以及具备不同健康素养水平的用户在对话式AI搜索情境下的差异化反应，应用于健康信息获取场景。",
+    "topic_tags": [
+      "信任",
+      "人机交互(HCI)",
+      "AI 采用",
+      "可访问性"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2638907",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,
@@ -95000,10 +95435,13 @@
     "year": 2023
   },
   {
-    "abstract": null,
+    "abstract": "Leadership coaching develops managers but is expensive and difficult to scale. AI may be able to help scale access, but “answering machine” like AI coaching agents invite cognitive offloading and weaken learning. We instantiated a human coaching protocol, supported across prior cycles, as a text-based AI coach built to prompt reflective questioning. In the fourth cycle of a design-based research program at a global consulting firm, eight managers received the same protocol from a human coach and the AI coach, applied each session in an observed onboarding activity, and reflected on both in interviews. All eight welcomed the probing questions and preferred the human coach. Notably, they resisted the same protocol of questioning from the AI coach and wanted answers from it instead. This study’s theoretical contribution is the Reflection Penalty, the cost an AI coach pays for asking a user to do the reflective work that makes human coaching effective. Its practical contribution is a jobs-to-be-done map for AI coaching, assembled from proposals participants raised on their own. It divides coaching into distinct jobs and assigns each to the human or the AI best suited to it. Both contributions are offered to those designing AI tools that aim to support reflection",
     "ai_reason": "AI代理接受度，HCI/UX核心议题",
     "ai_score": 5.0,
-    "ai_type_tags": [],
+    "ai_type_tags": [
+      "AI助手",
+      "对话式AI"
+    ],
     "authors": [
       "Tessa Forshaw",
       "Jacob Hale",
@@ -95012,24 +95450,27 @@
     "authors_full": [
       {
         "affiliation": [
-          "Harvard Graduate School of Education"
+          "Harvard University"
         ],
         "name": "Tessa Forshaw",
-        "orcid": null
+        "orcid": "https://orcid.org/0009-0002-9182-0874",
+        "position": "first"
       },
       {
         "affiliation": [
-          "Harvard Graduate School of Education"
+          "Harvard University"
         ],
         "name": "Jacob Hale",
-        "orcid": null
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
-          "Harvard Graduate School of Education"
+          "Harvard University"
         ],
         "name": "Mari Longmire",
-        "orcid": null
+        "orcid": null,
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -95040,12 +95481,17 @@
     "ingested_at": "2026-10-16T06:39:18.298339",
     "issue": null,
     "journal": "HCI",
-    "pdf_url": null,
+    "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/07370024.2026.2744236?needAccess=true",
     "scored_at": "2026-10-16T06:39:57.363238",
     "title": "The Reflection Penalty: when managers accept leadership coaching from a human but not an AI agent",
     "title_zh": "反思惩罚：管理者接受人类而非AI代理领导力辅导的现象",
-    "tldr": null,
-    "topic_tags": [],
+    "tldr": "在全球咨询公司开展设计研究，8名管理者先后接受同一反思协议下的人类教练与AI文本教练辅导。结果显示尽管协议一致，管理者抗拒AI教练的发问式反思，期望其直接给答案。由此提出\"反思惩罚\"理论，并绘制人机协作的jobs-to-be-done地图，划分教练任务在人机间的分工。",
+    "topic_tags": [
+      "人机协作",
+      "HCI",
+      "AI拒绝",
+      "服务设计"
+    ],
     "url": "https://doi.org/10.1080/07370024.2026.2744236",
     "volume": null,
     "year": 2026
@@ -97262,24 +97708,27 @@
     "authors_full": [
       {
         "affiliation": [
-          "Department of Applied Artificial Intelligence, Hanyang University, South Korea"
+          "Hanyang University"
         ],
         "name": "Jiyoung Park",
-        "orcid": "https://orcid.org/0009-0005-5019-1436"
+        "orcid": "https://orcid.org/0009-0005-5019-1436",
+        "position": "first"
       },
       {
         "affiliation": [
-          "Department of Applied Artificial Intelligence, Hanyang University, South Korea"
+          "Hanyang University"
         ],
         "name": "Jaewan Lim",
-        "orcid": "https://orcid.org/0009-0000-3202-2296"
+        "orcid": "https://orcid.org/0009-0000-3202-2296",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "Department of Applied Artificial Intelligence, Hanyang University, South Korea"
+          "Hanyang University"
         ],
         "name": "Yongjae Yoo",
-        "orcid": "https://orcid.org/0000-0002-5831-6492"
+        "orcid": "https://orcid.org/0000-0002-5831-6492",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -104842,6 +105291,59 @@
     "url": "https://doi.org/10.1177/10949968231200221",
     "volume": "59",
     "year": 2023
+  },
+  {
+    "abstract": "ABSTRACT\n                  \n                    As algorithmic pricing becomes more prevalent, understanding consumer responses to AI‐set prices is increasingly important. Across two experiments with Chilean students (\n                    N\n                     = 165) and U.S. consumers (\n                    N\n                     = 631), we examined how the price‐setting agent (AI vs. human) and price format (round vs. just‐below) influence consumer responses. Study 1 provides directional evidence that consumers respond less favorably to AI‐set prices and supports a preference for round over just‐below prices when pricing is attributed to AI. Study 2 supports the less favorable response to AI pricing and provides directional evidence for the predicted price‐format effect. Importantly, Study 2 provides evidence consistent with perceived manipulation as an underlying mechanism: just‐below prices heighten perceptions that AI pricing is intended to influence or exploit consumers, reducing recommendation likelihood and purchase intention. These findings extend research on algorithmic pricing, psychological pricing, and digital nudging.",
+    "ai_reason": "AI定价为核心变量,消费者实验研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法定价",
+      "AI定价"
+    ],
+    "authors": [
+      "Alvaro Chacon",
+      "Ricardo Limongi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Universidad Técnica Federico Santa María"
+        ],
+        "name": "Alvaro Chacon",
+        "orcid": "https://orcid.org/0000-0001-6112-0098",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Universidade Federal de Goiás"
+        ],
+        "name": "Ricardo Limongi",
+        "orcid": "https://orcid.org/0000-0003-3231-7515",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-16",
+    "doi": "10.1111/joca.70080",
+    "domain_score": 5.0,
+    "id": 36922,
+    "ingested_at": "2026-10-17T06:43:01.652448",
+    "issue": "4",
+    "journal": "JCA",
+    "pdf_url": null,
+    "scored_at": "2026-10-17T06:43:26.331545",
+    "title": "When\n                    <scp>AI</scp>\n                    Sets the Price: How Consumers Interpret Price Formats and Intent",
+    "title_zh": "当AI设定价格：消费者如何解读价格形式与意图",
+    "tldr": "研究AI与人类定价对消费者反应的影响。两项实验（智利学生165人、美国消费者631人）发现：消费者对AI定价反应更消极；AI定价时偏好整数价格而非尾数价格；机制为尾数价格加剧了消费者对AI定价意图的操控感，进而降低推荐意愿与购买意向。",
+    "topic_tags": [
+      "消费者行为",
+      "定价策略",
+      "AI采用",
+      "心理定价"
+    ],
+    "url": "https://doi.org/10.1111/joca.70080",
+    "volume": "60",
+    "year": 2026
   },
   {
     "abstract": null,
