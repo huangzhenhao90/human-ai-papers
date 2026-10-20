@@ -1,0 +1,64 @@
+{
+  "abstract": "Personas are widely used in software engineering to support requirements elicitation, design, and validation, but their manual creation is costly, time-consuming, and hard to scale. Recent LLM-based approaches automate persona generation from textual data; however, they typically rely on single-shot generation and subjective evaluations, limiting practical reliability. We present PerGent, an industry-grade method for persona generation built around an iterative critique-refinement loop. Specifically, PerGent uses a generator and a critic LLM agent, coordinated by an orchestrator, to iteratively refine personas using external resources such as interviews, surveys, and job postings through a critique-refinement loop with a user-defined maximum number of rounds. We deploy and evaluate PerGent in an industrial setting at Kinaxis, comparing it with three baselines, including one-shot methods. In an expert in-situ evaluation, PerGent achieved the highest expert approval rate (96.9%), exceeding all baselines. We further compare PerGent-generated personas with best-practice personas manually created by domain experts prior to the adoption of LLMs. Compared to baselines, PerGent reproduces a larger proportion of expert content while also contributing substantial new content beyond the pre-LLM personas. We conclude with lessons learned from deploying and evaluating PerGent at Kinaxis.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2606.09637",
+  "authors": [
+    "Mohammad Hossein Amini",
+    "David Dewar",
+    "Shiva Nejati",
+    "Mehrdad Sabetzadeh"
+  ],
+  "authors_full": [
+    {
+      "name": "Mohammad Hossein Amini"
+    },
+    {
+      "name": "David Dewar"
+    },
+    {
+      "name": "Shiva Nejati"
+    },
+    {
+      "name": "Mehrdad Sabetzadeh"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心LLM智能体生成persona，含工业评估",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "PerGent 提出\"生成器-评论家\"双 LLM 智能体迭代优化框架用于工业级用户画像自动生成，由编排器协调多轮 critique-refinement，并整合访谈、问卷、职位等外部数据。在 Kinaxis 的现场专家评估中通过率达 96.9%，超越所有基线，且能复现更多既有专家内容并贡献新增维度，沉淀了工业部署经验教训。",
+      "topic_tags": [
+        "用户画像",
+        "用户研究方法",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-08",
+  "doi": null,
+  "id": "p_HPEZGIvSS74QX1x2",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2606.09637v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8125,
+      "revision": "4d76c9c0747ccac266cf09fe649479bc14feba23"
+    }
+  ],
+  "title": "Agentic Persona Generation with Critique-Refinement: An Industrial Evaluation",
+  "title_zh": "基于批评-精炼机制的智能体人格生成：工业评估",
+  "unified_ingested_at": "2026-10-20T07:16:44.559121Z",
+  "url": "https://arxiv.org/abs/2606.09637v1",
+  "volume": null,
+  "year": 2026
+}

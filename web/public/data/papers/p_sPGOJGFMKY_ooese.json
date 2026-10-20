@@ -1,0 +1,74 @@
+{
+  "abstract": "AI tools are increasingly integrated into real-world workflows. However, existing measures of reliance on these tools focus on AI output adoption or on self-reported indicators, rather than how task effort is distributed between users and tools. Here, we introduce offloading score, a measure of reliance that quantifies the fraction of cognitive effort offloaded to an AI tool. Offloading Score is simulation-based -- we construct a counterfactual workflow by estimating how the user would have completed the task without the tool, and then computing the fraction of steps saved by using the tool. We validate offloading score through intrinsic evaluations of metric validity, and a controlled user study ($n=40$) with developers performing programming tasks using AI tools. We vary time pressure to test whether reliance measures capture the known increase in reliance under time pressure. We show that offloading score detects significantly higher reliance in time-constrained settings ($+43\\%$, $p=0.018$), while usage-based and self-reported baseline measures of reliance do not distinguish the conditions. We complement this with descriptive insights showing that higher reliance manifests as greater delegation of subtasks to the tool and more direct reuse of AI outputs. Finally, we demonstrate an approach of using offloading score in combination with target outcomes of a task (e.g., code understanding) to identify when reliance may be (in)appropriate. Our framework offers two contributions: an instrument users can apply to measure and reflect on their own reliance, and a quantitative signal that agent designers can utilize to mitigate overreliance.",
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "AI助手",
+    "人机协作"
+  ],
+  "arxiv_id": "2605.29392",
+  "authors": [
+    "Vishakh Padmakumar",
+    "Lujain Ibrahim",
+    "Zora Zhiruo Wang",
+    "Jennifer Wang",
+    "Q. Vera Liao"
+  ],
+  "authors_full": [
+    {
+      "name": "Vishakh Padmakumar"
+    },
+    {
+      "name": "Lujain Ibrahim"
+    },
+    {
+      "name": "Zora Zhiruo Wang"
+    },
+    {
+      "name": "Jennifer Wang"
+    },
+    {
+      "name": "Q. Vera Liao"
+    },
+    {
+      "name": "Diyi Yang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心测AI依赖度，含n=40用户研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对AI工具中认知任务分配难以量化的难题，研究提出offloading score：通过模拟用户在没有AI时完成任务的反事实工作流，计算被AI替代步骤的占比，作为认知依赖的量化指标。40名开发者对照实验显示，时间压力下该指标检测出依赖显著上升(+43%, p=0.018)，而传统使用量与自报指标无法区分条件差异；高依赖表现为更多子任务委派与AI输出直接复用。该指标可与任务产出结合，判别依赖是否合理。",
+      "topic_tags": [
+        "AI依赖",
+        "人机交互(HCI)",
+        "用户研究方法",
+        "可用性测试"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-28",
+  "doi": null,
+  "id": "p_sPGOJGFMKY_ooese",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2605.29392v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7771,
+      "revision": "4d76c9c0747ccac266cf09fe649479bc14feba23"
+    }
+  ],
+  "title": "Offloading Score: Measuring AI Reliance Through Counterfactual Workflows",
+  "title_zh": "卸载分数：通过反事实工作流衡量AI依赖",
+  "unified_ingested_at": "2026-10-20T07:16:44.559121Z",
+  "url": "https://arxiv.org/abs/2605.29392v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,76 @@
+{
+  "abstract": "In this short experience paper, we present Pomona, a lightweight agentic tool that utilises agent skills for continuous automated code quality improvement. Inspired by the philosophy of Kaizen(TM), Pomona automates a cycle of discovery and incremental repair: a Scanning skill identifies improvement tasks (e.g., linting violations, technical debt markers, and test gaps) and prioritises them in a structured backlog, while a Repair skill generates tiny pull requests (PRs) targeting ~10 lines of diff. This human-in-the-loop design enables frequent, low-risk improvements while maintaining engineer trust and productivity and reducing technical debt. We evaluated Pomona through a one-month deployment in a team and a questionnaire distributed to 10 senior engineers. Our preliminary results are promising: 15 of 17 generated PRs were successfully merged with a median time-to-close of under 2 hours. Furthermore, 8/10 of surveyed engineers expressed a desire to adopt Pomona, praising small diff sizes and Pomona's focus on improving code quality. We conclude by discussing actionable insights for researchers and practitioners on strategies for effective agentic deployment in industry.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "LLM",
+    "AI 助手"
+  ],
+  "arxiv_id": "2606.06752",
+  "authors": [
+    "David Williams",
+    "Angelos Evripiotis",
+    "Serkan Kirbas",
+    "Harry Morgan",
+    "Sergey Magidovich"
+  ],
+  "authors_full": [
+    {
+      "name": "David Williams"
+    },
+    {
+      "name": "Angelos Evripiotis"
+    },
+    {
+      "name": "Serkan Kirbas"
+    },
+    {
+      "name": "Harry Morgan"
+    },
+    {
+      "name": "Sergey Magidovich"
+    },
+    {
+      "name": "Peter Wainwright"
+    },
+    {
+      "name": "Federica Sarro"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "代理式AI代码工具，问卷评估工程师体验",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "工业经验论文介绍 Bloomberg 内部轻量级智能体工具 Pomona，采用持续改进理念，通过 Scanning 技能识别代码质量任务并排序为结构化待办列表，Repair 技能自动生成约 10 行 diff 的小型 PR。一个月团队部署与 10 名资深工程师问卷显示，17 个 PR 中 15 个被合并、中位关闭时间不足 2 小时，80% 工程师希望采用；研究总结了在工业场景中部署智能体代码改进工具的可操作经验。",
+      "topic_tags": [
+        "人机协作",
+        "AI 采用",
+        "AI 助手",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-04",
+  "doi": null,
+  "id": "p_tZI-z_QKnwOi8aZQ",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2606.06752v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8127,
+      "revision": "4d76c9c0747ccac266cf09fe649479bc14feba23"
+    }
+  ],
+  "title": "Pomona: Continuous Code Quality Improvement via Small, Automated Changes at Bloomberg",
+  "title_zh": null,
+  "unified_ingested_at": "2026-10-20T07:16:44.559121Z",
+  "url": "https://arxiv.org/abs/2606.06752v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,77 @@
+{
+  "abstract": "With the advent of large language models, research in automated software engineering has increasingly focused on leveraging these models to achieve a deeper semantic understanding of code or to engineer sophisticated agent-based processes. However, this research trajectory has largely overlooked a critical factor: the developers themselves. Programming is a deeply individualized activity; developers exhibit significant variation in their tool-chain preferences, domain-specific expertise, and problem-solving strategies. Consequently, the current paradigm of one-size-fits-all code intelligence systems struggles to accommodate the needs of individual developers. To address this gap, we introduce VirtualME, a novel IDE-embedded data infrastructure designed to model the developer by continuously capturing and interpreting their dynamic programming behaviors and preferences. VirtualME contains three components. (1) Log-level Behavior Extraction: it captures and extracts developers' log-level behaviors from IDE. (2) Task-level Behavior Recognition: it aggregates log-level behaviors into task-level behaviors via a multi-agent pipeline. (3) Developer-personality Measurement: it builds a rule engine to distill a four-dimensional developer persona: technology stack, ability, behavioral habits, and learning style. On top of VirtualME, we propose a solution for personalized repository-level knowledge Q&A by integrating the developer persona into the Q&A agent. We evaluated VirtualME by building a multi-repository benchmark with real-world developer trajectories, balancing correctness and personalization. Experimental results show that VirtualME-enhanced answers outperform generic baselines on five dimensions, yielding an average 33.80% improvement. Our results demonstrate that abundant, continuous developer-behavior data can pave the new way for adaptive and personalized code intelligence.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI助手",
+    "人机交互"
+  ],
+  "arxiv_id": "2605.29372",
+  "authors": [
+    "Yuhong Liu",
+    "Yunhe Su",
+    "Zhipeng Peng",
+    "Zhiwen Luo",
+    "Lin Shi"
+  ],
+  "authors_full": [
+    {
+      "name": "Yuhong Liu"
+    },
+    {
+      "name": "Yunhe Su"
+    },
+    {
+      "name": "Zhipeng Peng"
+    },
+    {
+      "name": "Zhiwen Luo"
+    },
+    {
+      "name": "Lin Shi"
+    },
+    {
+      "name": "Zhi Jin"
+    },
+    {
+      "name": "Li Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM个性化代码助手，含开发者行为建模",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "VirtualME是嵌入IDE的开发者建模基础设施，通过日志级行为提取、多智能体流水线驱动的任务级行为识别以及规则引擎驱动的四维开发者人格测量（技术栈、能力、行为习惯、学习风格），持续刻画开发者动态偏好。基于此提出个性化仓库级知识问答方案，解决现有代码智能系统忽略个体差异的“一刀切”问题。",
+      "topic_tags": [
+        "人机协作",
+        "个性化",
+        "用户画像",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-05-28",
+  "doi": "10.1145/3797147",
+  "id": "p_Y4nuZg79y5-jCV_r",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2605.29372v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8131,
+      "revision": "4d76c9c0747ccac266cf09fe649479bc14feba23"
+    }
+  ],
+  "title": "On the Road to Personalized Code Intelligence: Portraiting and Assisting Developers Based on Their In-IDE Behaviors",
+  "title_zh": "迈向个性化代码智能之路：基于IDE内行为描绘与辅助开发者",
+  "unified_ingested_at": "2026-10-20T07:16:44.559121Z",
+  "url": "https://arxiv.org/abs/2605.29372v1",
+  "volume": null,
+  "year": 2026
+}

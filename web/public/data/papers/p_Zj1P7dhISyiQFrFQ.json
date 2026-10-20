@@ -1,0 +1,83 @@
+{
+  "abstract": "Designing a board game demands both thinking as a designer and experiencing as a player, while iterating through repeated prototyping and playtesting cycles, making it a cognitively intensive creative task well suited for human-AI collaboration. However, current systems lack end-to-end support to guide designers through the complete workflow from vague early ideation to iterative rulebook revision and audience testing. To this end, we present AutoBG, a board game design assistant built around critic-driven iterative refinement, comprising four specialized modules: BG-Ideator guides designers via multi-turn dialogue to produce structured design drafts; BG-Realizer generates complete rulebooks from drafts and revises them in a closed loop with BG-Critic, which diagnoses design flaws and gates each revision so that only verified improvements are accepted; and BG-Persona simulates individualized feedback from 150 real player profiles. Together, these modules enable designers to go from an initial idea to a polished, audience-tested rulebook within a single integrated workflow. The system is built on 2.2K structured rulebooks and 180K quality-filtered real player reviews, with task-specific training data derived for each module. Experiments on 207 held-out games show that AutoBG substantially outperforms state-of-the-art baselines (e.g., GPT-5.4), generating rulebooks that approach the quality of published games. Furthermore, a user study with 30 participants across diverse experience levels confirms that AutoBG effectively reduces blank-page anxiety, surfaces hidden design flaws, and provides highly rated, practical assistance throughout the creative process.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI助手",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2606.01976",
+  "authors": [
+    "Zizhen Li",
+    "Chuanhao Li",
+    "Yibin Wang",
+    "Jianwen Sun",
+    "Yukang Feng"
+  ],
+  "authors_full": [
+    {
+      "name": "Zizhen Li"
+    },
+    {
+      "name": "Chuanhao Li"
+    },
+    {
+      "name": "Yibin Wang"
+    },
+    {
+      "name": "Jianwen Sun"
+    },
+    {
+      "name": "Yukang Feng"
+    },
+    {
+      "name": "Fanrui Zhang"
+    },
+    {
+      "name": "Mingzhu Sun"
+    },
+    {
+      "name": "Yifei Huang"
+    },
+    {
+      "name": "Kaipeng Zhang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心是LLM驱动的设计助手系统，含人机协作",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "AutoBG是面向桌游设计的端到端AI助手，由四个模块组成：BG-Ideator通过多轮对话引导构思生成结构化草案，BG-Realizer生成完整规则手册，BG-Critic诊断设计缺陷并把关每次修订，BG-Persona基于150个真实玩家画像模拟个性化反馈。系统以2.2K规则手册与180K玩家评论训练，在207个游戏上生成质量超越GPT-5.4等基线，30人用户研究验证了从模糊构思到经受众测试的完整工作流价值。",
+      "topic_tags": [
+        "人机协作",
+        "AI助手",
+        "用户研究方法",
+        "服务设计"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-06-01",
+  "doi": null,
+  "id": "p_Zj1P7dhISyiQFrFQ",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2606.01976v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7679,
+      "revision": "4d76c9c0747ccac266cf09fe649479bc14feba23"
+    }
+  ],
+  "title": "AutoBG: A Board Game Design Assistant with Interactive Ideation, Iterative Rulebook Generation, and Individualized Feedback",
+  "title_zh": null,
+  "unified_ingested_at": "2026-10-20T07:16:44.559121Z",
+  "url": "https://arxiv.org/abs/2606.01976v1",
+  "volume": null,
+  "year": 2026
+}

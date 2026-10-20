@@ -1,0 +1,76 @@
+{
+  "abstract": "Tool-using language agents increasingly perform regulated customer-service workflows, where a correct final state is insufficient: agents must also provide disclosures, obtain consent, and follow required procedures. Existing tool-agent benchmarks largely score final business states, accepting trajectories that reach correct outcomes through non-compliant processes.   We introduce cxbench, a benchmark that evaluates outcome and process compliance separately across six regulated domains. Each task combines a customer request, a tool-based environment, and explicit process requirements. Rule cards link cited regulatory obligations to observable trace evidence. A hybrid grader combines deterministic checks for ordering and authority with an LLM judge for semantic requirements. We define a false-pass as an outcome-pass run that fails process checks.   Across seven models and 120 tasks, 55.5% of the 840 retained executions are false-passes, representing 80.1% of outcome-passing runs; only 13.8% pass both checks. Process-inclusive evaluation changes the observed model ordering and exposes differences hidden by outcome-only scoring. cxbench makes these failures inspectable through trace-linked criteria.",
+  "ai_type_tags": [],
+  "arxiv_id": "2610.25954",
+  "authors": [
+    "Boxi Yu",
+    "Yuzhong Zhang",
+    "Zhenfeng Su",
+    "Linfu Xi",
+    "Yinghan Yao"
+  ],
+  "authors_full": [
+    {
+      "name": "Boxi Yu"
+    },
+    {
+      "name": "Yuzhong Zhang"
+    },
+    {
+      "name": "Zhenfeng Su"
+    },
+    {
+      "name": "Linfu Xi"
+    },
+    {
+      "name": "Yinghan Yao"
+    },
+    {
+      "name": "Shitao Chen"
+    },
+    {
+      "name": "Yang Cao"
+    },
+    {
+      "name": "Liting Lin"
+    },
+    {
+      "name": "Lionel Briand"
+    },
+    {
+      "name": "Emir Muñoz"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心是LLM智能体评估，CX流程合规是中心议题",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-19",
+  "doi": null,
+  "id": "p_7hhBN4IDCVBOv53U",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.25954v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37204,
+      "revision": "4d76c9c0747ccac266cf09fe649479bc14feba23"
+    }
+  ],
+  "title": "CXBench: A Benchmark for Process-Compliant LLM Agents in Regulated Customer-Experience Workflows",
+  "title_zh": "CXBench：受监管客户体验工作流中流程合规的大语言模型智能体基准",
+  "unified_ingested_at": "2026-10-20T07:16:44.559121Z",
+  "url": "https://arxiv.org/abs/2610.25954v1",
+  "volume": null,
+  "year": 2026
+}

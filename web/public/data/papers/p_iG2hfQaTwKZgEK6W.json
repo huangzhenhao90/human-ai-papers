@@ -1,0 +1,74 @@
+{
+  "abstract": "Code generation models are increasingly used to produce interactive artifacts, such as websites and user interfaces. Many properties that determine whether these interfaces are useful only become apparent through realistic interaction, making them difficult to incorporate into model training. In this paper, we introduce RELIEF (REvision-based Learning from Interactive Experience and Feedback), a method for improving code generation models using feedback on their generated interfaces. RELIEF uses a coding agent to revise these interfaces, then incorporates the improvements into their original generation traces to produce supervision for fine-tuning. To evaluate RELIEF, we collected a dataset of 200 synthetically generated websites paired with 355 interaction recordings and accompanying feedback from 24 users. We used critiques derived from code inspection, automated interaction, explicit human feedback, and human interaction recordings to fine-tune variants of two code generation models. Our results show that feedback effectiveness varies with base model capabilities, with critiques inferred from human interaction recordings leading to the largest usability improvements overall under our tested models.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "GenAI",
+    "人机协作"
+  ],
+  "arxiv_id": "2610.26636",
+  "authors": [
+    "Jiawen Li",
+    "Chenming Ge",
+    "Alice Gao",
+    "Rishab Vempati",
+    "Yi-Hao Peng"
+  ],
+  "authors_full": [
+    {
+      "name": "Jiawen Li"
+    },
+    {
+      "name": "Chenming Ge"
+    },
+    {
+      "name": "Alice Gao"
+    },
+    {
+      "name": "Rishab Vempati"
+    },
+    {
+      "name": "Yi-Hao Peng"
+    },
+    {
+      "name": "Jason Wu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "代码生成模型训练为核心，仅涉及界面交互反馈",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "论文提出RELIEF方法，用编码智能体依据交互反馈修订生成网站/界面，再将改进融入原始生成轨迹以微调代码生成模型。基于200个合成网站、355段交互记录和24名用户反馈的数据集微调两类模型，发现反馈有效性因基模型而异，其中由人类交互记录推断的批评带来最大可用性提升。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "人机协作",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-19",
+  "doi": null,
+  "id": "p_iG2hfQaTwKZgEK6W",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.26636v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37203,
+      "revision": "4d76c9c0747ccac266cf09fe649479bc14feba23"
+    }
+  ],
+  "title": "Revision-Based Learning from Interactive Experience and Feedback",
+  "title_zh": "基于修订的交互式经验与反馈学习",
+  "unified_ingested_at": "2026-10-20T07:16:44.559121Z",
+  "url": "https://arxiv.org/abs/2610.26636v1",
+  "volume": null,
+  "year": 2026
+}

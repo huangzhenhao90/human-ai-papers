@@ -1,0 +1,64 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly used to simulate human behavior in social science research, including decisions, interactions, and social relationships. However, in network formation tasks, existing evaluations often focus on aggregate network properties, while networks with plausible structural properties may still fail to reproduce individuals' social and political environments. Here, we generate LLM-based political networks using personas sampled from the nationally representative ANES 2020--2022 Social Media Study and use respondents' survey-reported partisan exposure as an empirical benchmark for the political environments generated for the corresponding personas. We first characterize the structural properties and political assortativity of the generated networks, and then compare ego-level partisan exposure with the survey. We find that the structure and political assortativity of the generated networks vary across experimental configurations. More importantly, when comparing generated partisan exposure with the survey, some models generate stronger separation between Democratic and Republican egos than reported in the survey, with higher same-party and lower cross-party exposure, while others mainly underestimate Republican exposure across ego groups. Moreover, networks with similar political assortativity can still generate different partisan environments around the same personas, including among networks with plausible structural properties. Finally, generated networks show group-specific errors, under- or overestimating exposure to either Democrats or Republicans for specific social groups. These findings show that evaluating LLM-based social simulations only through aggregate outcomes can hide errors in the local environments through which those outcomes emerge, highlighting the importance of validation at both aggregate and individual levels.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI"
+  ],
+  "arxiv_id": "2610.23199",
+  "authors": [
+    "Marco Tonin",
+    "Michele Tizzoni",
+    "Bruno Lepri",
+    "Luca Maria Aiello"
+  ],
+  "authors_full": [
+    {
+      "name": "Marco Tonin"
+    },
+    {
+      "name": "Michele Tizzoni"
+    },
+    {
+      "name": "Bruno Lepri"
+    },
+    {
+      "name": "Luca Maria Aiello"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用ANES调查数据验证LLM模拟，有用研数据",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "基于美国国家选举研究(ANES)样本人物，使用大语言模型生成政治社交网络，并以受访者自报的党派接触度作为经验基准进行验证。发现不同模型配置生成的网络在结构与政治同质性上差异显著，部分模型过度夸大两党之间的社交隔离，即使结构合理的网络也可能产生与调查不一致的个体党派接触环境。",
+      "topic_tags": [
+        "用户研究方法",
+        "问卷",
+        "用户画像"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-16",
+  "doi": null,
+  "id": "p_mzXVxSvqn-1ar61f",
+  "issue": null,
+  "journal": "arXiv:cs.SI",
+  "pdf_url": "https://arxiv.org/pdf/2610.23199v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37200,
+      "revision": "4d76c9c0747ccac266cf09fe649479bc14feba23"
+    }
+  ],
+  "title": "Validating LLM-generated political networks with survey-reported partisan exposure",
+  "title_zh": "基于调查报道的党派接触验证LLM生成的政治网络",
+  "unified_ingested_at": "2026-10-20T07:16:44.559121Z",
+  "url": "https://arxiv.org/abs/2610.23199v1",
+  "volume": null,
+  "year": 2026
+}
