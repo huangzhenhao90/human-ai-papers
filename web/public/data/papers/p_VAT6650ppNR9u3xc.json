@@ -1,0 +1,79 @@
+{
+  "abstract": "Early detection of cognitive decline in older adults remains challenging due to the resource demands of standard neuropsychological assessments. Chatbot-based Intelligent Cognitive Assistants (ICAs) provide a scalable alternative by eliciting open-ended responses rich in linguistic, semantic, and autobiographical cues. This study evaluates whether ICA question-answer (Q/A) interviews with older adults can screen for participant-reported perceived cognitive decline and related cognitive, functional, and personality outcomes. We compare traditional machine learning, frozen transformer embeddings, fine-tuned transformers, and large language model (LLM) reasoning strategies across Global Q/A, Single Q/A confidence averaging, and Aggregated Q/A pipelines. Among text-based methods, Gemini 3.1 Flash Lite (1-example-per-class, Aggregated Q/A) achieved the highest held-out test performance (0.742 accuracy, 0.739 balanced accuracy, 0.728 macro-F1). Given the small test set (n = 31), these results are interpreted descriptively. Frozen clinical transformer embeddings with a random forest head led non-LLM text methods, whereas fine-tuned models showed limited generalization. Models utilizing structured questionnaires, cognitive tasks, and personality traits outperformed text-based models in classification. Continuous regression analyses revealed modest predictive signals for AD8, FAQ, IQCODE, neuroticism, and conscientiousness. Exploratory prompt-level analyses identified both direct symptom-related and indirect autobiographical questions with strong test metrics, though sample sizes varied across prompts. These findings indicate that ICA chatbot interviews capture meaningful signals of perceived cognitive decline, supporting scalable screening research. Larger, clinically diverse cohorts with validated clinical outcomes are needed for clinical translation.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "ChatGPT",
+    "多模态",
+    "GenAI"
+  ],
+  "arxiv_id": "2610.27344",
+  "authors": [
+    "Nikita Gautam",
+    "Moana Sargent",
+    "Kaitlyn Sievers",
+    "Ashley Sylvara",
+    "Doina Caragea"
+  ],
+  "authors_full": [
+    {
+      "name": "Nikita Gautam"
+    },
+    {
+      "name": "Moana Sargent"
+    },
+    {
+      "name": "Kaitlyn Sievers"
+    },
+    {
+      "name": "Ashley Sylvara"
+    },
+    {
+      "name": "Doina Caragea"
+    },
+    {
+      "name": "Heather Bailey"
+    },
+    {
+      "name": "Tianjun Sun"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "对话AI筛查认知衰退，老年人用户参与",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对老年人认知衰退筛查资源消耗大的问题，研究评估基于聊天机器人的智能认知助手（ICA）通过问答访谈进行感知认知衰退及相关认知、功能与人格结局筛查的效果。比较传统机器学习、冻结Transformer嵌入、微调Transformer及LLM推理等多种策略，结果显示Gemini Flash Lite在聚合问答流程中取得最高文本分类准确率（0.742），但结构化问卷与认知任务模型整体优于纯文本方法。",
+      "topic_tags": [
+        "AI 助手",
+        "对话式 AI",
+        "情感计算",
+        "人机协作",
+        "可用性"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-19",
+  "doi": null,
+  "id": "p_VAT6650ppNR9u3xc",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2610.27344v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37292,
+      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+    }
+  ],
+  "title": "Conversational AI for Perceived Cognitive Decline Screening in Older Adults",
+  "title_zh": "面向老年人主观认知衰退筛查的对话式人工智能",
+  "unified_ingested_at": "2026-10-21T07:14:21.155865Z",
+  "url": "https://arxiv.org/abs/2610.27344v1",
+  "volume": null,
+  "year": 2026
+}

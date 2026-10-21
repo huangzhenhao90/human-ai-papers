@@ -1,0 +1,62 @@
+{
+  "abstract": "User simulators promise to evaluate conversational search systems at a scale human studies cannot reach, but only if their behavior is realistic enough to trust. We study AutoSim, a conversational-search user simulator whose relevance judgments rank a controlled pool of retrieval systems in agreement with NIST across three TREC iKAT years (Kendall's $τ$ of $0.66$, $0.91$, and $0.91$; all $p{\\le}0.002$), an agreement that survives removing its persona. AutoSim self-improves against a held-out signal from real users, and we find that fine-tuning its weights makes it behave like real users, which in turn gives a more accurate estimate of how well a system serves them. Reaching that behavior takes more than prompting: when discriminating between real and simulated user sessions, no prompt we tried lowers a held-out real-versus-simulated classifier below AUC $0.85$, whereas fine-tuning the weights drives it to $0.45$, where neither the classifier nor a human reading full dialogues can tell it from a real user. That added realism is what makes the evaluation more accurate: where real users retrieve little, a prompted simulator over-estimates retrieval effectiveness by $+0.136$ nDCG and returns a relevant passage on $57\\%$ of the turns where real users find none, enough to change a deployment decision. Only the weight-level simulator escapes this bias. We release the framework and code.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 助手"
+  ],
+  "arxiv_id": "2610.28054",
+  "authors": [
+    "Saber Zerhoudi",
+    "Jelena Mitrovic",
+    "Michael Granitzer"
+  ],
+  "authors_full": [
+    {
+      "name": "Saber Zerhoudi"
+    },
+    {
+      "name": "Jelena Mitrovic"
+    },
+    {
+      "name": "Michael Granitzer"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用户模拟器与真实用户行为对比评估",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "研究对话搜索系统中用户模拟器评估的真实性问题。AutoSim通过微调自身权重（而非仅依赖提示工程）逼近真实用户行为，在TREC iKAT三个年份上与NIST评估达成高Kendall τ一致性（0.66–0.91）。微调后模拟会话与真实会话的分类AUC从0.85降至0.45，人类判读者亦无法区分。仅用提示的模拟器会高估检索效果达0.136 nDCG，足以改变部署决策；只有权重级模拟器能规避此偏差。",
+      "topic_tags": [
+        "用户研究方法",
+        "可用性测试",
+        "人机交互(HCI)",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-20",
+  "doi": null,
+  "id": "p_w-IycRDG25V7cgsO",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2610.28054v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37291,
+      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+    }
+  ],
+  "title": "AutoSim: A Self-Improving User Simulator for Conversational Search Evaluation",
+  "title_zh": "AutoSim：面向对话搜索评估的自改进用户模拟器",
+  "unified_ingested_at": "2026-10-21T07:14:21.155865Z",
+  "url": "https://arxiv.org/abs/2610.28054v1",
+  "volume": null,
+  "year": 2026
+}

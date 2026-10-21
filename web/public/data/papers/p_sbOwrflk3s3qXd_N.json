@@ -1,0 +1,72 @@
+{
+  "abstract": "Imitation learning increasingly relies on novice operators, whose demonstrations fall short of experts' in number and inter-trial consistency. Operators act on what they are shown, yet how the rendering of the robot affects their demonstrations, and the policies trained on them, has not been examined. We study this question with PointHand, a teleoperation interface that renders a multi-fingered robot hand as sparse keypoints at its fingertips and joints, the same keypoints a policy can observe. In a simulated mug-in-box task, 18 novices and 4 experts collected 2,200 trials under three renderings: the real shape of the hand, all keypoints emphasized, or the thumb and index finger alone emphasized. The novices shown the thumb and index finger emphasized collected 441 successful demonstrations from 600 trials, against 320 for those shown the real shape. We then trained diffusion policies on these demonstrations, replacing the scene point cloud and proprioceptive state they observe with the hand keypoints and two object keypoints. Within 400 steps these demonstrations went from the weakest of the three novice conditions under the point-cloud policy (46.3%) to the strongest under the keypoint policy (57.3%), a gain of +11.0 percentage points in all five seeds. Those collected with all keypoints emphasized changed by at most +0.7 percentage points, and in no more than three seeds. The value of a demonstration therefore depends on the rendering shown during collection and on what the policy observes together. A shared representation can pay off on both sides, in the number of successful demonstrations and in the success rate of the policy trained on them. Project page: https://omron-sinicx.github.io/point-hand/",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "模仿学习"
+  ],
+  "arxiv_id": "2610.27907",
+  "authors": [
+    "Amane Yamaguchi",
+    "Shohei Kamiguchi",
+    "Masashi Hamaya",
+    "Shigeo Yoshida",
+    "Takuji Narumi"
+  ],
+  "authors_full": [
+    {
+      "name": "Amane Yamaguchi"
+    },
+    {
+      "name": "Shohei Kamiguchi"
+    },
+    {
+      "name": "Masashi Hamaya"
+    },
+    {
+      "name": "Shigeo Yoshida"
+    },
+    {
+      "name": "Takuji Narumi"
+    },
+    {
+      "name": "Mai Nishimura"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "18名新手用户实验，模仿学习人机交互",
+      "ai_score": 3.0,
+      "domain_score": 4.0,
+      "tldr": "研究模仿学习中远程操作界面的视觉呈现如何影响新手操作者的示范数据及策略学习。以PointHand接口为载体，在mug-in-box任务中由18名新手和4名专家完成2200次试验。强调拇指与食指关键点的呈现使新手成功率从320/600提升至441/600；用关键点替换场景点云训练扩散策略后，五颗种子下提升达+11.0个百分点。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可视化",
+        "用户研究方法",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-20",
+  "doi": null,
+  "id": "p_sbOwrflk3s3qXd_N",
+  "issue": null,
+  "journal": "arXiv:cs.RO",
+  "pdf_url": "https://arxiv.org/pdf/2610.27907v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37274,
+      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+    }
+  ],
+  "title": "What Novice Operators See Changes What the Policy Learns: A User Study of Keypoint Hand Visual Representation for Teleoperated Demonstration",
+  "title_zh": "新手操作者所见改变策略所学：远程操作演示中关键点手部视觉表征的用户研究",
+  "unified_ingested_at": "2026-10-21T07:14:21.155865Z",
+  "url": "https://arxiv.org/abs/2610.27907v1",
+  "volume": null,
+  "year": 2026
+}

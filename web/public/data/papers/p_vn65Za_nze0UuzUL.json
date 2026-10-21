@@ -1,0 +1,79 @@
+{
+  "abstract": "Large Language Models (LLMs) have revolutionized code generation, evolving from static tools into dynamic conversational interfaces that facilitate complex, multi-turn collaborative programming. While LLMs exhibit remarkable proficiency in generating standalone code snippets, they often struggle to maintain contextual consistency during extended interactions, creating significant obstacles in the collaboration process. Existing benchmarks primarily emphasize the functional correctness of the final output, overlooking latent quality issues within the interaction process itself, which we term Interaction Smells. In this paper, we conduct an empirical study on sampled real-word user-LLM interactions from WildChat and LMSYS-Chat-1M datasets to systematically investigate Interaction Smells in human-LLM code generation tasks from the perspectives of phenomena, distribution, and mitigation. First, we establish the first taxonomy of Interaction Smells by manually performing open card sorting on real-world interaction logs. This taxonomy categorizes Interaction Smells into three primary categories, i.e., User Intent Quality, Historical Instruction Compliance, and Historical Response Violation, comprising nine specific subcategories. Next, we quantitatively evaluate six mainstream LLMs (i.e., GPT-4o, DeepSeek-Chat, Gemini 2.5, Qwen2.5-32B, Qwen2.5-72B, and Qwen3-235B-a22b) to analyze the distribution of Interaction Smells across different models. Finally, we propose Invariant-aware Constraint Evolution (InCE), a multi-agent framework designed to improve multi-turn interaction quality through explicit extraction of global invariants and pre-generation quality audits. Experimental results on the extended WildBench benchmark demonstrate that this lightweight mitigation approach significantly improves the Task Success Rate and effectively suppresses the occurrence of Interaction Smells.",
+  "ai_type_tags": [
+    "LLM",
+    "人机协作"
+  ],
+  "arxiv_id": "2603.09701",
+  "authors": [
+    "Binquan Zhang",
+    "Li Zhang",
+    "Lin Shi",
+    "Song Wang",
+    "Yuwei Qian"
+  ],
+  "authors_full": [
+    {
+      "name": "Binquan Zhang"
+    },
+    {
+      "name": "Li Zhang"
+    },
+    {
+      "name": "Lin Shi"
+    },
+    {
+      "name": "Song Wang"
+    },
+    {
+      "name": "Yuwei Qian"
+    },
+    {
+      "name": "Linhui Zhao"
+    },
+    {
+      "name": "Fang Liu"
+    },
+    {
+      "name": "An Fu"
+    },
+    {
+      "name": "Yida Ye"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM交互核心，含用户-LLM交互实证分析",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究关注多轮人机协作代码生成中的\"交互异味\"问题：LLM虽擅长生成独立代码片段，却难以在长交互中保持上下文一致性。基于WildChat和LMSYS-Chat-1M数据集，通过开放卡片分类建立首个含3大类（用户意图质量、历史指令遵从、历史响应违反）9子类的人机代码交互异味分类法，并对GPT-4o、DeepSeek-Chat、Gemini 2.5、Qwen2.5/3等6个主流LLM进行量化分布分析，提出不变性感知缓解策略。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-03-10",
+  "doi": null,
+  "id": "p_vn65Za_nze0UuzUL",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2603.09701v2",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8042,
+      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+    }
+  ],
+  "title": "An Empirical Study of Interaction Smells in Multi-Turn Human-LLM Collaborative Code Generation",
+  "title_zh": "人-LLM多轮协作代码生成中交互异味的实证研究",
+  "unified_ingested_at": "2026-10-21T07:14:21.155865Z",
+  "url": "https://arxiv.org/abs/2603.09701v2",
+  "volume": null,
+  "year": 2026
+}

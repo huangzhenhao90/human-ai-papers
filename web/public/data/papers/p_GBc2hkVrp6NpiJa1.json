@@ -1,0 +1,49 @@
+{
+  "abstract": "Multi-agent systems (MAS) built from language models are deployed on the premise that collaboration beats a single-agent system (SAS), yet when it pays is unclear. The most systematic study to date gives a capability-saturation rule: coordination helps while the SAS is weak and hurts once it is strong, with the crossing near 45% single-agent accuracy. That rule was derived on autonomous benchmarks, where no user takes part. We test it where agents now work: in conversation with a user under a written policy, on $τ^2$-bench, the dual-control benchmark. On its airline, retail and telecom domains we compare the stock SAS with a centralized MAS built from the same model for six models from three families, over about 7,950 simulated conversations, with one completion-token ledger per episode per system. The study was pre-registered with a public change log; the MAS is reported as built, with one validity bar unmet (its planner never saw the tool schemas). Under a fixed simulated user no cell shows a MAS benefit: the MAS is worse in 12 of the 13 valid cells and tied in the thirteenth, and the fitted gain is negative across the observed capability range (weighted mean -28 points, 95% CI [-44, -12]). On the two cells where the rule predicts a benefit, the MAS loses by 13 and 22 points, and without a budget ceiling it at best draws level at 5.5 times the SAS's token spend. The one gain appears on the cell nearest 45%, under a second simulator. Whether the gain declines with capability is unresolved (slope -0.41, 95% CI [-1.51, +0.68]), because model-by-domain effects dominate. The MAS does not detectably reduce wrongful database writes; it converts other failures into budget exhaustion and inaction. For agents that serve people, the SAS is the default; a multi-agent design must show compute-matched evidence from the setting itself. We release all trajectories, ledgers, prompts and code.",
+  "ai_type_tags": [],
+  "arxiv_id": "2610.27655",
+  "authors": [
+    "Ethan Yang",
+    "Xiangcheng Shi"
+  ],
+  "authors_full": [
+    {
+      "name": "Ethan Yang"
+    },
+    {
+      "name": "Xiangcheng Shi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "多智能体服务用户场景,含人机交互评估",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": null,
+      "topic_tags": []
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-20",
+  "doi": null,
+  "id": "p_GBc2hkVrp6NpiJa1",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.27655v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37285,
+      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+    }
+  ],
+  "title": "Does Multi-Agent Collaboration Pay When Agents Serve Users? Testing Agent Scaling in Dual-Control Settings",
+  "title_zh": "智能体服务用户时多智能体协作是否值得：双控制设置下智能体规模扩展测试",
+  "unified_ingested_at": "2026-10-21T07:14:21.155865Z",
+  "url": "https://arxiv.org/abs/2610.27655v1",
+  "volume": null,
+  "year": 2026
+}

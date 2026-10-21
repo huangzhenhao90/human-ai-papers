@@ -1,0 +1,61 @@
+{
+  "abstract": "Large Language Models (LLMs) are increasingly integrated into educational technologies for personalized support, creating opportunities for real-time learner modeling from dialogue. This study evaluates whether GPT-4o and Gemini 2.0 Flash can infer three Felder-Silverman Learning Style Model dimensions (Active-Reflective, Sensing-Intuitive, and Sequential-Global) from short, task-focused student-AI problem-solving dialogues. Using questionnaire-derived Index of Learning Styles labels from 153 undergraduate participants, we compared deterministic zero-shot and few-shot prompting under five-fold cross-validation. Although accuracy and support-weighted F1 were moderate for Sensing-Intuitive and Sequential-Global, majority-class baselines, macro-F1, balanced accuracy, and per-class recall showed that performance was often driven by dominant-label prediction rather than reliable recognition of both classes. The models substantially under-identified Intuitive and Global learners; few-shot prompting produced mixed effects and sometimes amplified majority-class bias. Active-Reflective classification remained unstable across models. These findings indicate that LLM-generated learner-style labels should be treated as uncertain, bias-prone signals rather than stable learner profiles, and that dialogue-based personalization systems require bias-aware evaluation and uncertainty-sensitive design.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 用户画像"
+  ],
+  "arxiv_id": "2610.27448",
+  "authors": [
+    "Samaneh Zamanifard",
+    "Sajad Goudarzi",
+    "Andrew Robb"
+  ],
+  "authors_full": [
+    {
+      "name": "Samaneh Zamanifard"
+    },
+    {
+      "name": "Sajad Goudarzi"
+    },
+    {
+      "name": "Andrew Robb"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM学习风格推断评估，153参与者问卷",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究评估GPT-4o与Gemini 2.0 Flash从学生—AI短对话中推断Felder-Silverman学习风格三维度的可靠性。基于153名本科生问卷标签，对零样本与少样本提示进行五折交叉验证。结果显示准确率虽居中，但模型严重依赖多数类预测，Intuitive与Global学习者被大幅低估，少样本提示效果不一且可能放大偏差，提示对话驱动的学习者建模需引入偏误感知与不确定性敏感设计。",
+      "topic_tags": [
+        "个性化",
+        "用户研究方法",
+        "可解释性",
+        "AI 采用"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-20",
+  "doi": null,
+  "id": "p_BQ4g9Hlv79zJLLVo",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2610.27448v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37277,
+      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+    }
+  ],
+  "title": "Bias and Reliability in Learning-Style Inference from Student--AI Dialogues: An Evaluation of GPT-4o and Gemini 2.0 Flash",
+  "title_zh": null,
+  "unified_ingested_at": "2026-10-21T07:14:21.155865Z",
+  "url": "https://arxiv.org/abs/2610.27448v1",
+  "volume": null,
+  "year": 2026
+}

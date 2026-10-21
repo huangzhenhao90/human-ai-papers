@@ -1,0 +1,63 @@
+{
+  "abstract": "Large language model (LLM) agents increasingly use persistent memory to personalize responses, and personal attributes in this memory pose a privacy risk if exposed. We ask how consulting memory during dialogue changes what users go on to say, and thus what the memory comes to reveal. In multi-session simulations, a simulated user with 24 personal attributes talks with a support agent that does or does not consult memory, and in both settings attributes are inferred from the full accumulated record. Across four support models, memory raises response quality but also empirical leakage, the share of attribute values correctly inferred from the record, by a margin that widens over sessions. The cause is a loop in ordinary, non-adversarial assistance. Memory-conditioned responses carry earlier values forward, often as presuppositions, and users affirm them or leave them uncorrected, so that cues and the agent's own guesses become recorded values. The loop reinforces itself, and removing the agent's mentions of an attribute lowers its later disclosure about twice as much as single-turn effects predict. Users cannot leave it on their own, since correcting a value discloses the attribute, declining to discuss it shifts later predictions toward sensitive values, and incorrect values left in place become entrenched. The loop is best weakened at the agent's response. Instructing the agent not to state or presuppose attributes brings leakage to about the no-memory level while keeping most of the quality gains, whereas filtering or anonymizing what users say or what is stored gives up much of them.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "对话式AI",
+    "个性化"
+  ],
+  "arxiv_id": "2610.28315",
+  "authors": [
+    "Masahiro Kaneko",
+    "Hiromi Arai",
+    "Timothy Baldwin"
+  ],
+  "authors_full": [
+    {
+      "name": "Masahiro Kaneko"
+    },
+    {
+      "name": "Hiromi Arai"
+    },
+    {
+      "name": "Timothy Baldwin"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM持久记忆隐私核心议题，模拟用户行为分析",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "探究LLM智能体持久记忆如何影响用户信息披露与隐私泄露。多会话模拟中，4个支持模型在有/无记忆条件下服务含24项个人属性的模拟用户。结果发现记忆虽提升回复质量，但引发表征泄露的自我强化循环：记忆条件下的回复将早期属性作为预设呈现，用户默认或更正后即被记录，错误值也会固化，用户难以自行脱离；最佳缓解点在智能体回复端，指令其不陈述或不预设属性可将泄露降至无记忆水平。",
+      "topic_tags": [
+        "伦理",
+        "信任",
+        "AI治理",
+        "个性化"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-20",
+  "doi": null,
+  "id": "p_D7WqGKQF5IFlARqP",
+  "issue": null,
+  "journal": "arXiv:cs.CR",
+  "pdf_url": "https://arxiv.org/pdf/2610.28315v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37280,
+      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+    }
+  ],
+  "title": "Disclosure Begets Disclosure: A Self-Reinforcing Privacy Loop in LLM Agents with Persistent Memory",
+  "title_zh": "披露引发披露：具备持久记忆的LLM智能体中的自我强化隐私循环",
+  "unified_ingested_at": "2026-10-21T07:14:21.155865Z",
+  "url": "https://arxiv.org/abs/2610.28315v1",
+  "volume": null,
+  "year": 2026
+}
