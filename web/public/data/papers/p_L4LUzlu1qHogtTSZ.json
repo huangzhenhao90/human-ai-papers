@@ -1,0 +1,65 @@
+{
+  "abstract": "Code summaries are essential for helping developers understand code functionality and reducing maintenance and collaboration costs. Although recent advances in large language models (LLMs) have significantly improved automatic code summarization, the practical usefulness of generated summaries in industrial settings remains insufficiently explored. In collaboration with documentation experts from the industrial HarmonyOS project, we conducted a questionnaire study showing that over 57.4% of code summaries produced by state-of-the-art approaches were rejected due to violations of developers' expectations for industrial documentation. Beyond semantic similarity to reference summaries, developers emphasize additional requirements, including the use of appropriate domain terminology, explicit function categorization, and the avoidance of redundant implementation details.   To address these expectations, we propose ExpSum, an expectation-aware code summarization approach that integrates function metadata abstraction, informative metadata filtering, context-aware domain knowledge retrieval, and constraint-driven prompting to guide LLMs in generating structured, expectation-aligned summaries. We evaluate ExpSum on the HarmonyOS project and widely used code summarization benchmarks. Experimental results show that ExpSum consistently outperforms all baselines, achieving improvements of up to 26.71% in BLEU-4 and 20.10% in ROUGE-L on HarmonyOS. Furthermore, LLM-based evaluations indicate that ExpSum-generated summaries better align with developer expectations across other projects, demonstrating its effectiveness for industrial code documentation.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI"
+  ],
+  "arxiv_id": "2602.03400",
+  "authors": [
+    "Jintai Li",
+    "Songqiang Chen",
+    "Shuo Jin",
+    "Xiaoyuan Xie"
+  ],
+  "authors_full": [
+    {
+      "name": "Jintai Li"
+    },
+    {
+      "name": "Songqiang Chen"
+    },
+    {
+      "name": "Shuo Jin"
+    },
+    {
+      "name": "Xiaoyuan Xie"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM代码摘要+文档专家问卷调查，含用户研究",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "针对工业场景代码摘要实用性不足的问题，研究团队与 HarmonyOS 文档专家开展问卷调查，发现超过 57.4% 的现有自动摘要因未满足开发者对领域术语、功能分类及避免冗余实现细节的期望而被拒。由此提出 ExpSum 方法，通过函数元数据抽象、上下文感知的领域知识检索与约束驱动提示引导 LLM 生成符合工业期望的结构化摘要，在 HarmonyOS 上 BLEU-4 和 ROUGE-L 分别最高提升 26.71% 和 20.10%。",
+      "topic_tags": [
+        "用户研究方法",
+        "问卷",
+        "人机交互(HCI)",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-02-03",
+  "doi": null,
+  "id": "p_L4LUzlu1qHogtTSZ",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2602.03400v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8158,
+      "revision": "25fdc188d35682dddb0ecd590be4958a4ebb3a2c"
+    }
+  ],
+  "title": "Precision in Practice: Knowledge Guided Code Summarizing Grounded in Industrial Expectations",
+  "title_zh": "实践中的精确性：基于工业期望的知识引导式代码摘要",
+  "unified_ingested_at": "2026-10-22T07:15:54.443190Z",
+  "url": "https://arxiv.org/abs/2602.03400v1",
+  "volume": null,
+  "year": 2026
+}

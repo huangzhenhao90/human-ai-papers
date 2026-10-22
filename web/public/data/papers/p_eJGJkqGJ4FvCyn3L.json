@@ -1,0 +1,72 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly used to support consequential decisions, yet their reliability under equivalent representations of uncertainty remains unclear. Existing work has documented prompt sensitivity, cognitive biases, and confidence miscalibration, but it is still unknown whether high-stakes advice changes when the same probability is expressed through complementary gain and loss frames. We introduce FrameBench-HPS, a controlled benchmark of 2,880 prompts derived from 240 high-stakes scenarios across healthcare, finance, education/career, and legal/consumer-rights domains. Across seven LLMs, gain-loss framing changes the recommendation category in 32.4% of complete groups, with most changes involving uncertainty rather than direct reversals. Human evaluation confirms corresponding shifts in perceived risk and directiveness. Robustness experiments show that framing effects persist under conversational paraphrases and exceed ordinary repeated-generation variability. Probability canonicalization substantially reduces framing sensitivity, identifying probability representation as a practical target for improving consistency in high-stakes LLM decision support.",
+  "ai_type_tags": [
+    "LLM",
+    "可解释AI",
+    "AI治理"
+  ],
+  "arxiv_id": "2610.29294",
+  "authors": [
+    "Yuyao Zhang",
+    "Yakun Cui",
+    "Han Zhu",
+    "Jinsong Lu",
+    "Yike Guo"
+  ],
+  "authors_full": [
+    {
+      "name": "Yuyao Zhang"
+    },
+    {
+      "name": "Yakun Cui"
+    },
+    {
+      "name": "Han Zhu"
+    },
+    {
+      "name": "Jinsong Lu"
+    },
+    {
+      "name": "Yike Guo"
+    },
+    {
+      "name": "Sirui Han"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM决策支持的框架效应，AI+管理决策",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "探究大语言模型在高风险决策建议中是否对同一概率的获益与损失框架表述产生差异。构建FrameBench-HPS基准（含2880条提示，覆盖医疗、金融、教育与法律四领域），在7个LLM上测试发现获益—损失框架使32.4%的建议类别发生变化，概率规范化可显著降低框架敏感性。",
+      "topic_tags": [
+        "决策",
+        "偏见",
+        "公平性"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-21",
+  "doi": null,
+  "id": "p_eJGJkqGJ4FvCyn3L",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.29294v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 82851,
+      "revision": "b7a0f7a4eef3a43127a58bc75926f8378a4017a4"
+    }
+  ],
+  "title": "Same Probabilities, Different Advice: Gain-Loss Framing Effects in High-Stakes LLM Decision Support",
+  "title_zh": "相同概率，不同建议：得失框架效应对高风险LLM决策支持的影响",
+  "unified_ingested_at": "2026-10-22T07:15:54.443190Z",
+  "url": "https://arxiv.org/abs/2610.29294v1",
+  "volume": null,
+  "year": 2026
+}

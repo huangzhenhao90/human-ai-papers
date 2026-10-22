@@ -1,0 +1,60 @@
+{
+  "abstract": "Usability evaluations are essential for ensuring that modern interfaces meet user needs, yet traditional heuristic evaluations by human experts can be time-consuming and subjective, especially early in development. This paper investigates whether large language models (LLMs) can provide reliable and consistent heuristic assessments at the development stage. By applying Jakob Nielsen's ten usability heuristics to thirty open-source websites, we generated over 850 heuristic evaluations in three independent evaluations per site using a pipeline of OpenAI's GPT-4o. For issue detection, the model demonstrated moderate consistency, with an average pairwise Cohen's Kappa of 0.50 and an exact agreement of 84%. Severity judgments showed more variability: weighted Cohen's Kappa averaged 0.63, but exact agreement was just 56%, and Krippendorff's Alpha was near zero. These results suggest that while GPT-4o can produce internally consistent evaluations, especially for identifying the presence of usability issues, its ability to judge severity varies and requires human oversight in practice. Our findings highlight the feasibility and limitations of using LLMs for early-stage, automated usability testing, and offer a foundation for improving consistency in automated User Experience (UX) evaluation. To the best of our knowledge, our work provides one of the first quantitative inter-rater reliability analyses of automated heuristic evaluation and highlights methods for improving model consistency.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI"
+  ],
+  "arxiv_id": "2512.04262",
+  "authors": [
+    "Nolan Platt",
+    "Ethan Luchs",
+    "Sehrish Nizamani"
+  ],
+  "authors_full": [
+    {
+      "name": "Nolan Platt"
+    },
+    {
+      "name": "Ethan Luchs"
+    },
+    {
+      "name": "Sehrish Nizamani"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM做启发式可用性评估，HCI可用性为核心",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "研究大语言模型能否在开发阶段提供可靠一致的启发式可用性评估。将 Jakob Nielsen 十项启发式应用于 30 个开源网站，使用 GPT-4o 流水线生成 850 余条评估，每站独立评估三次。结果显示在问题检测上模型一致性中等(平均成对 Cohen's Kappa 0.50，完全一致率 84%)；严重性判断波动更大(加权 Kappa 0.63，完全一致率仅 56%，Krippendorff α 接近 0)。结论认为 LLM 对识别可用性问题具备可行性，但严重性判断仍需人工监督。",
+      "topic_tags": [
+        "可用性测试",
+        "用户体验(UX)",
+        "AI 采用"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-12-03",
+  "doi": "10.1109/vl-hcc65237.2025.00024",
+  "id": "p_9WBcTCT56mW0bxt6",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2512.04262v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7823,
+      "revision": "25fdc188d35682dddb0ecd590be4958a4ebb3a2c"
+    }
+  ],
+  "title": "Catching UX Flaws in Code: Leveraging LLMs to Identify Usability Flaws at the Development Stage",
+  "title_zh": "代码中用户体验缺陷的捕捉：利用LLM在开发阶段识别可用性缺陷",
+  "unified_ingested_at": "2026-10-22T07:15:54.443190Z",
+  "url": "https://arxiv.org/abs/2512.04262v1",
+  "volume": null,
+  "year": 2025
+}

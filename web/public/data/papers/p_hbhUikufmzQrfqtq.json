@@ -1,6 +1,9 @@
 {
   "abstract": "Large language models (LLMs) can influence user trust and decision-making through subtle linguistic cues, yet the behavioral effects of manipulative outputs remain poorly quantified. We introduce a behavioral computing framework for measuring \\textit{behavioral vulnerability}, defined as users' susceptibility to manipulative AI responses. Building on DarkPatterns-LLM benchmark, we generate controlled manipulative stimuli using Manipulation Gradient Descent (MGD), targeting biases associated with authority, urgency, and social proof. We analyze participant responses using the Multi-Stakeholder Impact Assessment Network (MSIAN) to model cross-user influence and the Temporal Harm Propagation Model (THPM) to characterize the persistence of behavioral effects over time. In a study involving 120 participants, manipulative framing produced significant changes in trust calibration and compliance ($p < 0.01$), with effects also propagating across social contexts. These findings highlight the need to extend LLM safety evaluation beyond model outputs to measurable behavioral consequences and provide a computational framework for quantifying individual, social, and temporal risks arising from manipulative AI interactions.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "AI治理"
+  ],
   "arxiv_id": "2610.27573",
   "authors": [
     "Sadia Asif",
@@ -34,8 +37,13 @@
       "ai_reason": "LLM操纵行为研究，120名真实参与者实验",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究LLM操纵性输出对用户行为的量化影响，提出\"行为脆弱性\"框架，通过Manipulation Gradient Descent生成针对权威、紧迫性和社会认同偏见的操纵性刺激。120人实验显示操纵性框架显著改变信任校准和服从行为，且效应在社会与时间维度持续传播，呼吁将LLM安全评估从模型输出扩展到可量化的行为后果。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "信任",
+        "AI治理",
+        "消费者行为"
+      ]
     }
   },
   "channels": [
@@ -52,7 +60,7 @@
     {
       "channel": "ur",
       "legacy_id": 37279,
-      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+      "revision": "25fdc188d35682dddb0ecd590be4958a4ebb3a2c"
     }
   ],
   "title": "When LLMs Manipulate: Measuring Behavioral, Social, and Temporal Effects",

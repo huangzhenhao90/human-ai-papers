@@ -1,0 +1,93 @@
+{
+  "abstract": "While Large Language Model (LLM) agents show great potential for automated UI navigation such as automated UI testing and AI assistants, their efficiency has been largely overlooked. Our motivating study reveals that inefficient UI representation creates a critical performance bottleneck. However, UI representation optimization, formulated as the task of automatically generating programs that transform UI representations, faces two unique challenges. First, the lack of Boolean oracles, which traditional program synthesis uses to decisively validate semantic correctness, poses a fundamental challenge to co-optimization of token efficiency and completeness. Second, the need to process large, complex UI trees as input while generating long, compositional transformation programs, making the search space vast and error-prone. Toward addressing the preceding limitations, we present UIFormer, the first automated optimization framework that synthesizes UI transformation programs by conducting constraint-based optimization with structured decomposition of the complex synthesis task. First, UIFormer restricts the program space using a domain-specific language (DSL) that captures UI-specific operations. Second, UIFormer conducts LLM-based iterative refinement with correctness and efficiency rewards, providing guidance for achieving the efficiency-completeness co-optimization. UIFormer operates as a lightweight plugin that applies transformation programs for seamless integration with existing LLM agents, requiring minimal modifications to their core logic. Evaluations across three UI navigation benchmarks spanning Android and Web platforms with five LLMs demonstrate that UIFormer achieves 48.7% to 55.8% token reduction with minimal runtime overhead while maintaining or improving agent performance. Real-world industry deployment at WeChat further validates the practical impact of UIFormer.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI 助手"
+  ],
+  "arxiv_id": "2512.13438",
+  "authors": [
+    "Dezhi Ran",
+    "Zhi Gong",
+    "Yuzhe Guo",
+    "Mengzhou Wu",
+    "Yuan Cao"
+  ],
+  "authors_full": [
+    {
+      "name": "Dezhi Ran"
+    },
+    {
+      "name": "Zhi Gong"
+    },
+    {
+      "name": "Yuzhe Guo"
+    },
+    {
+      "name": "Mengzhou Wu"
+    },
+    {
+      "name": "Yuan Cao"
+    },
+    {
+      "name": "Haochuan Lu"
+    },
+    {
+      "name": "Hengyu Zhang"
+    },
+    {
+      "name": "Xia Zeng"
+    },
+    {
+      "name": "Gang Cao"
+    },
+    {
+      "name": "Liangchao Yao"
+    },
+    {
+      "name": "Yuetang Deng"
+    },
+    {
+      "name": "Wei Yang"
+    },
+    {
+      "name": "Tao Xie"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM Agent UI表征优化，HCI+AI核心",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对 LLM 智能体自动化 UI 导航中 UI 表征效率低下的瓶颈，提出 UIFormer 框架：使用领域特定语言约束搜索空间，并对合成任务进行结构化分解，再通过基于 LLM 的迭代优化在效率与完整性之间协同优化。实验证明该方法显著提升智能体任务效率与成功率。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "人机协作",
+        "可用性"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-12-15",
+  "doi": null,
+  "id": "p_LX130A7cTmpmlT1e",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2512.13438v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8389,
+      "revision": "25fdc188d35682dddb0ecd590be4958a4ebb3a2c"
+    }
+  ],
+  "title": "From User Interface to Agent Interface: Efficiency Optimization of UI Representations for LLM Agents",
+  "title_zh": "从用户界面到智能体界面：面向LLM智能体的UI表示效率优化",
+  "unified_ingested_at": "2026-10-22T07:15:54.443190Z",
+  "url": "https://arxiv.org/abs/2512.13438v1",
+  "volume": null,
+  "year": 2025
+}

@@ -1,6 +1,10 @@
 {
   "abstract": "AI assistants may carry forward not only observations but also interpretations of what a person is doing or may do next across time. Once retained, these interpretations become context for later predictions and system-triggered outputs. We study whether this representation step changes later behavior in gaze-aware streaming assistance. Holding retrieved events, their order, and the target input fixed, we find that Free-form Interpretation amplifies historical influence in both directions: correct histories produce more helpful changes and wrong histories more harmful changes. Unsupported and broader interpretations about activity or future behavior are associated with greater harmful influence. Evidence-Bounded Interpretation preserves distinctions between observation, inference, uncertainty, and temporal scope, reducing unsupported and overcertain content and lowering wrong-source harmful influence while retaining most helpful influence. The same effect structure appears with a second model. These findings identify persistent interpretation as a consequential design choice for history-aware human-AI systems.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "AI 助手",
+    "多模态",
+    "人机交互"
+  ],
   "arxiv_id": "2610.25512",
   "authors": [
     "Mingcong Ding",
@@ -34,8 +38,13 @@
       "ai_reason": "注视感知AI助手，HCI交互影响研究",
       "ai_score": 4.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "研究注视感知的流式 AI 助手在跨时间推理时，是否应保留对用户行为的解读而不仅是原始观察。控制检索事件、顺序与目标输入不变，对比自由解读与证据约束解读两种设计。结果显示自由解读同时放大正确历史的有助益影响与错误历史的有害影响，对活动或未来行为的无依据、宽泛解读与更大危害相关；证据约束解读区分观察、推断、不确定性与时间范围，降低无依据与过度确信内容及错误来源的危害，保留大部分有益影响，该效应在第二个模型上重现。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "AI 助手",
+        "可解释性",
+        "用户研究方法"
+      ]
     }
   },
   "channels": [
@@ -52,7 +61,7 @@
     {
       "channel": "ur",
       "legacy_id": 37179,
-      "revision": "cf887724918d8491dc0532b0e471ea026d88e49a"
+      "revision": "25fdc188d35682dddb0ecd590be4958a4ebb3a2c"
     }
   ],
   "title": "When Interpretations Persist: Downstream Influence in Gaze-Aware Assistants",
