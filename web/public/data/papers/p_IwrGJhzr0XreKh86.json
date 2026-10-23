@@ -1,0 +1,70 @@
+{
+  "abstract": "Large Language Models (LLMs) are increasingly applied to software engineering tasks, especially code repair. However, developers often struggle to interpret model outputs, limiting effective human-AI teaming. Prior work largely optimizes repaired code while under-addressing the natural-language feedback that enables comprehension and iterative improvement. We present DPO-f+, a novel framework that aligns code-repair feedback with developer needs and profiles. It (1) formalizes developer-profiled, domain-specific metrics for feedback alignment; (2) automatically constructs pairwise preference datasets from code-repair tasks; (3) fine-tunes using Direct Preference Optimization (DPO) augmented with a lightweight margin signal; and (4) provides an automated feedback evaluation protocol. Empirically, DPO-f+ outperforms both the baseline and standard DPO on generated-code accuracy and overall feedback alignment. On novice programming tasks, DPO-f+ raises the top-1 pass rate by 5.71 percentage points (pp) over the baseline and by 3.30 pp over DPO. On the more challenging SWE-bench Lite benchmark, it increases the issue-resolution rate by 1.67 pp over DPO and by 4.67 pp over the baseline. It also achieves the largest improvement in feedback alignment, outperforming DPO and the baseline. By aligning feedback more closely with developer needs, DPO-f+ turns LLM-assisted repair from one-shot outputs into a collaborative sensemaking workflow, providing a practical approach to enhancing code comprehension and fostering more effective human-AI teaming in software engineering.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "可解释 AI",
+    "人机协作"
+  ],
+  "arxiv_id": "2511.01043",
+  "authors": [
+    "Zihan Fang",
+    "Yifan Zhang",
+    "Yueke Zhang",
+    "Kevin Leach",
+    "Yu Huang"
+  ],
+  "authors_full": [
+    {
+      "name": "Zihan Fang"
+    },
+    {
+      "name": "Yifan Zhang"
+    },
+    {
+      "name": "Yueke Zhang"
+    },
+    {
+      "name": "Kevin Leach"
+    },
+    {
+      "name": "Yu Huang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM代码修复对齐开发者偏好，含开发者视角",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出DPO-F+框架，将LLM代码修复的自然语言反馈与开发者偏好对齐。设计开发者画像驱动的领域评测指标，自动构建代码修复的配对偏好数据集，并通过带轻量margin信号的DPO微调。实验显示在初学者任务上将top-1通过率较基线提升5.71pp，在SWE-bench Lite上将问题解决率较基线提升4.67pp，显著改善了反馈对齐效果，推动人机协作从单次输出走向协同推理。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "可解释性"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-02",
+  "doi": null,
+  "id": "p_IwrGJhzr0XreKh86",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2511.01043v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8626,
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
+    }
+  ],
+  "title": "DPO-F+: Aligning Code Repair Feedback with Developers' Preferences",
+  "title_zh": null,
+  "unified_ingested_at": "2026-10-23T07:08:15.753475Z",
+  "url": "https://arxiv.org/abs/2511.01043v1",
+  "volume": null,
+  "year": 2025
+}

@@ -1,6 +1,10 @@
 {
   "abstract": "Applications provide convenient features for users to complete daily tasks. However, different users may have different or even conflicting requirements for the same application, while the requirements of the same user may change over time. Personalizing applications produced by agent-to-app or UI-to-code approaches can require changes to the generated implementation. We propose Agent as App, a task in which users express their requirements in natural language and an agent creates a personalized application while continuing to supply its behavior during use. We implement LiveUIAgent, which generates a task-specific orchestration connecting the user interface, saved information, and service actions. A shared agent runtime renders and updates the interface while carrying out the requested operations. Revising the orchestration and interface while reusing that runtime provides a lightweight basis for personalization as requirements evolve. We introduce LiveUIBench, a benchmark with diverse requirements and ordered interactions across personal services. The empirical findings show that the evaluated models struggle to complete these workflows reliably. Applications can satisfy many local checks while leaving the overall task unfinished, and greater partial coverage can coincide with fewer completed workflows.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "智能体/Agent",
+    "LLM",
+    "GenAI"
+  ],
   "arxiv_id": "2610.27977",
   "authors": [
     "Tong Zhang",
@@ -31,8 +35,13 @@
       "ai_reason": "AI智能体生成个性化UI,核心HCI议题",
       "ai_score": 5.0,
       "domain_score": 4.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对不同用户对同一应用有不同且随时间变化的需求，提出\"Agent as App\"任务范式——用户以自然语言表达需求，智能体创建个性化应用并在使用中持续供给行为。实现LiveUIAgent生成任务编排，构建LiveUIBench基准评测。实证发现当前模型难以可靠完成工作流，局部检查可通过但整体任务未完成，部分覆盖率升高反而伴随完成工作流数下降。",
+      "topic_tags": [
+        "人机协作",
+        "HCI",
+        "个性化",
+        "AI助手"
+      ]
     }
   },
   "channels": [
@@ -49,7 +58,7 @@
     {
       "channel": "ur",
       "legacy_id": 37290,
-      "revision": "25fdc188d35682dddb0ecd590be4958a4ebb3a2c"
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
     }
   ],
   "title": "LiveUIBench: Evaluating Agent as App Workflows",

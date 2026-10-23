@@ -1,0 +1,67 @@
+{
+  "abstract": "Personal intelligence systems are taking on increasingly complex everyday tasks, yet repeated questions, unnecessary confirmations, and unwanted outreach can turn capable assistance into interaction burden. Reducing this burden requires agents to remember how users want to be assisted. However, existing memory benchmarks focus on factual recall and personalized answers and rarely test how agents learn and act on interaction preferences. We introduce MemPABench, an interactive environment for on-policy evaluation of memory in personal agents. MemPABench poses long-horizon tasks requiring agents to decide when to clarify, confirm, or act autonomously. Four grounded simulated users hold 14 preferences across work and personal contexts. Their feedback spans 99 sessions over four months, with five event-driven changes per user testing memory updates. We evaluate preference selection, delivered behavior, and sensitivity to context and preference change. Evaluating four memory systems across four LLM backbones, we find that current memory brings limited gains in preference selection. Retrieval-based systems (i.e. Mem0, MemOS, simple RAG) do not outperform No Memory, while File-based memory improves accuracy but applies preferences beyond relevant contexts. Our analysis shows that current memory struggles to retrieve interaction preferences and adapt to preference changes. Even with the correct preference available, overriding the agent's default interaction habits remains challenging. The environment and dataset are available at https://mempabench.com.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI 助手",
+    "个性化"
+  ],
+  "arxiv_id": "2610.30485",
+  "authors": [
+    "Jialin Li",
+    "Zhenhao Chen",
+    "Hanjun Luo",
+    "Hanan Salam"
+  ],
+  "authors_full": [
+    {
+      "name": "Jialin Li"
+    },
+    {
+      "name": "Zhenhao Chen"
+    },
+    {
+      "name": "Hanjun Luo"
+    },
+    {
+      "name": "Hanan Salam"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心为AI个人智能体记忆评估，含用户偏好与交互负担研究",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对个人智能体在长程任务中无法记忆与执行用户交互偏好的问题，提出MemPABench交互式评测环境，由4名模拟用户在4个月99次会话中持有14项偏好。评估4种记忆系统跨4种LLM的结果显示：当前记忆对偏好选择提升有限，检索式系统（Mem0、MemOS、RAG）不优于无记忆，文件式记忆虽提升准确但过度泛化，且难以适应偏好变化。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "智能体",
+        "人机协作",
+        "用户体验(UX)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-21",
+  "doi": null,
+  "id": "p_BYHzmR8-uiH8J6_q",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.30485v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37512,
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
+    }
+  ],
+  "title": "Why Bother Me Again? Benchmarking Personal Agent Memory for Interaction Preferences",
+  "title_zh": "为何再扰我？面向交互偏好的个人智能体记忆基准评估",
+  "unified_ingested_at": "2026-10-23T07:08:15.753475Z",
+  "url": "https://arxiv.org/abs/2610.30485v1",
+  "volume": null,
+  "year": 2026
+}

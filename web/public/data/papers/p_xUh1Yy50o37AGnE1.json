@@ -1,0 +1,82 @@
+{
+  "abstract": "Agentic recommendation pursues shopper goals through sequences of context-dependent decisions. Developing and evaluating such policies requires faithful recommendation world models that capture both the interactive shopping environment and users' behavioral responses over long interactions. Existing resources rarely provide long-horizon, fine-grained real-user trajectories or support trajectory-level evaluation and offline validation against production A/B results. We introduce UserArena, a real-world e-commerce interactive benchmark containing 64,729 session trajectories from 11,010 users, spanning 566,102 items and 13 action types. UserArena pairs these trajectories with an interactive environment and supports offline validation against outcomes from a controlled production A/B test, enabling five-level evaluation from output validity and local decisions to sequential behavior, personalization, and outcomes. To improve simulator fidelity over these long-horizon interactions, we further propose On-Policy Trajectory Distillation (OPTD), which uses trajectory-level intent to provide dense teacher targets on student-generated rollouts. Experiments show that OPTD achieves the strongest overall fidelity among the evaluated simulators under UserArena's evaluation protocol and most closely reproduces the production policy effect in offline simulation.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "LLM",
+    "AI 推荐"
+  ],
+  "arxiv_id": "2610.30932",
+  "authors": [
+    "Jujia Zhao",
+    "Jiakai Tang",
+    "Jing Yu",
+    "Wen Chen",
+    "Jian Wu"
+  ],
+  "authors_full": [
+    {
+      "name": "Jujia Zhao"
+    },
+    {
+      "name": "Jiakai Tang"
+    },
+    {
+      "name": "Jing Yu"
+    },
+    {
+      "name": "Wen Chen"
+    },
+    {
+      "name": "Jian Wu"
+    },
+    {
+      "name": "Han Zhu"
+    },
+    {
+      "name": "Fei Sun"
+    },
+    {
+      "name": "Suzan Verberne"
+    },
+    {
+      "name": "Zhaochun Ren"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心是AI智能体基准，含11010用户真实购物轨迹",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对长程购物智能体缺乏真实交互环境的问题，构建了基于真实电商数据的 UserArena 基准，包含 11,010 名用户的 64,729 条会话轨迹，支持五级评估与生产 A/B 离线验证。提出 On-Policy Trajectory Distillation（OPTD）方法，通过轨迹级意图为学生模拟器的自生成 rollout 提供密集教师目标，在保真度和复现生产策略效果上均达到最优。",
+      "topic_tags": [
+        "推荐系统",
+        "用户研究方法",
+        "人机协作",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-22",
+  "doi": null,
+  "id": "p_xUh1Yy50o37AGnE1",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2610.30932v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37519,
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
+    }
+  ],
+  "title": "UserArena: Benchmarking Interactive User Simulation for Long-Horizon Shopping Agents",
+  "title_zh": "UserArena：面向长周期购物代理的交互式用户模拟基准测试",
+  "unified_ingested_at": "2026-10-23T07:08:15.753475Z",
+  "url": "https://arxiv.org/abs/2610.30932v1",
+  "volume": null,
+  "year": 2026
+}

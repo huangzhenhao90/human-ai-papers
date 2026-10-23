@@ -1,0 +1,76 @@
+{
+  "abstract": "Traversability estimation is critical for ground vehicle teleoperation, yet existing methods often neglect the human operator's preferences for speed and risk tolerance. To address this gap, we propose PATH-Net, a Preference-Aware Traversability estimation Hierarchical Network that adaptively generates preference-conditioned traversability cost maps and speed profiles for off-road teleoperation. Our framework integrates visual and geometric bird's-eye-view features with short-term historical vehicle states through a multi-head shared-backbone architecture. Our PATH-Net infers traversability cost maps while optimizing speed recommendations by using maximum entropy inverse reinforcement learning and sparse speed supervision. Our method incorporates operator preference via an asymmetric feature aggregation mechanism, splitting inference into a cost branch that prioritizes high-risk traversability regions and a speed branch that outputs preference-adjusted recommended speeds. Experiments with 15 operators across 225 teleoperated trajectories show alignment with user-specific navigation strategies, achieving modified Hausdorff distance of 0.17 m (aggressive) and 0.15 m (conservative). In the questionnaire assessment, participants reported lower NASA-TLX workload scores with PATH-Net recommendations than without recommendations, decreasing from 34.7 to 22.2. These results support preference-conditioned trajectory and speed recommendation for off-road teleoperation.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "人机交互",
+    "AI 助手"
+  ],
+  "arxiv_id": "2610.30605",
+  "authors": [
+    "Xianghao Meng",
+    "Wenshuo Wang",
+    "Cheng Shao",
+    "Lewei Feng",
+    "Qingxiao Liu"
+  ],
+  "authors_full": [
+    {
+      "name": "Xianghao Meng"
+    },
+    {
+      "name": "Wenshuo Wang"
+    },
+    {
+      "name": "Cheng Shao"
+    },
+    {
+      "name": "Lewei Feng"
+    },
+    {
+      "name": "Qingxiao Liu"
+    },
+    {
+      "name": "Canyu Wang"
+    },
+    {
+      "name": "Junqiang Xi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "IRL/ML技术为主，含操作员偏好但非用户研究",
+      "ai_score": 3.0,
+      "domain_score": 3.0,
+      "tldr": "提出 PATH-Net，一种面向越野遥操作的可通行性估计分层网络，融合视觉、几何鸟瞰特征与短期车辆状态，通过最大熵逆强化学习生成偏好条件化的代价图与速度曲线。15 名操作员、225 条轨迹实验表明，该方法能匹配激进与保守两类导航策略，将 NASA-TLX 工作量评分从 34.7 降至 22.2。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "可用性测试",
+        "个性化"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-22",
+  "doi": null,
+  "id": "p_KifMFJalNL6aHuLo",
+  "issue": null,
+  "journal": "arXiv:cs.RO",
+  "pdf_url": "https://arxiv.org/pdf/2610.30605v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37502,
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
+    }
+  ],
+  "title": "PATH: Preference-Aware Traversability Estimation for Robotic Teleoperation in Off-Road Navigation",
+  "title_zh": "PATH:面向越野导航机器人遥操作的偏好感知可通行性估计",
+  "unified_ingested_at": "2026-10-23T07:08:15.753475Z",
+  "url": "https://arxiv.org/abs/2610.30605v1",
+  "volume": null,
+  "year": 2026
+}

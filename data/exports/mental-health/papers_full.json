@@ -1,5 +1,383 @@
 [
   {
+    "abstract": "Importance Early identification of patients at high risk of relapse is key to personalized preventive strategies in major depressive disorder (MDD). However, current predictive models do not adequately account for the multimodal factors contributing to MDD relapse and fail to provide clinically meaningful predictions. Objective To predict relapse within 2 years in patients with MDD by using a comprehensive machine learning pipeline that integrates an unprecedented set of multimodal data. Design, Setting, and Participants This naturalistic longitudinal prognostic study used data from the Marburg-Münster Affective Disorders Cohort Study, with baseline assessments collected from October 2014 to May 2019 and follow-up approximately 2 years later, between October 2016 and June 2021. Data analysis was conducted between July 2024 and June 2026. The study was performed at 2 sites in Germany (Marburg and Münster), with participants recruited from psychiatric inpatient and outpatient departments and the general population. Patients meeting diagnostic criteria for current or lifetime MDD without history of neurological or severe somatic conditions were included. Exposure Natural course of illness in patients with MDD. Main Outcomes and Measures Balanced accuracy (BACC) for binary prediction of relapse vs no relapse during 2-year follow-up served as the primary outcome. Baseline features comprised 9 modalities including clinical and psychometric data, 4 structural and functional magnetic resonance imaging modalities, genetics, neurocognition, blood markers, and gut microbiome. Results A total of 564 patients with a current or lifetime MDD diagnosis were included (367 female [65.1%]; mean [SD] age, 37.34 [13.38] years). A total of 270 patients relapsed during the 2-year follow-up, while 294 did not. Mean (SD) BACC for the prediction of relapse ranged from 47.21% (5.85%) to 64.43% (6.63%). The best-performing model was solely based on few clinical relapse risk factors, while multimodal data integration did not improve performance. Conclusions and Relevance In this prognostic study, the models achieved moderate accuracy, yet the results suggest limited scope for guiding individual-level clinical decision-making. Predictive performance was largely driven by established clinical risk factors, indicating limited incremental value of multimodal measures when assessed at a single time point. Future advances may instead benefit from dynamic modeling approaches that more closely align temporally evolving multimodal markers with longitudinal clinical outcomes.",
+    "ai_reason": "多模态机器学习预测重性抑郁障碍复发，属于核心临床风险预测研究。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "multimodal",
+      "machine_learning",
+      "deep_learning"
+    ],
+    "authors": [
+      "Lea Teutenberg",
+      "Nils Ralf Winter",
+      "Paula L Usemann",
+      "Frederike Stein",
+      "Florian Thomas‐Odenthal",
+      "Kira Flinkenflügel",
+      "Tiana Borgers",
+      "Susanne L. Meinert",
+      "Elisabeth Johanna Leehr",
+      "Dominik Grotegerd"
+    ],
+    "authors_full": [
+      {
+        "name": "Lea Teutenberg"
+      },
+      {
+        "name": "Nils Ralf Winter"
+      },
+      {
+        "name": "Paula L Usemann"
+      },
+      {
+        "name": "Frederike Stein"
+      },
+      {
+        "name": "Florian Thomas‐Odenthal"
+      },
+      {
+        "name": "Kira Flinkenflügel"
+      },
+      {
+        "name": "Tiana Borgers"
+      },
+      {
+        "name": "Susanne L. Meinert"
+      },
+      {
+        "name": "Elisabeth Johanna Leehr"
+      },
+      {
+        "name": "Dominik Grotegerd"
+      },
+      {
+        "name": "Sara Papenbrock"
+      },
+      {
+        "name": "Sabrina Teckentrup"
+      },
+      {
+        "name": "Anne Hildebrand"
+      },
+      {
+        "name": "Sarah Eva-Maria Wellms"
+      },
+      {
+        "name": "Keyvan Mahjoory"
+      },
+      {
+        "name": "Maximilian Konowski"
+      },
+      {
+        "name": "Jennifer Spanagel"
+      },
+      {
+        "name": "Leon Fehse"
+      },
+      {
+        "name": "Dominik Heider"
+      },
+      {
+        "name": "Till F. M. Andlauer"
+      },
+      {
+        "name": "Friederike Sophie David"
+      },
+      {
+        "name": "Andreas J. Forstner"
+      },
+      {
+        "name": "Philipp Schöppner"
+      },
+      {
+        "name": "Harald Renz"
+      },
+      {
+        "name": "Corinna Bang"
+      },
+      {
+        "name": "André Franke"
+      },
+      {
+        "name": "Stephanie H. Witt"
+      },
+      {
+        "name": "Marcella Rietschel"
+      },
+      {
+        "name": "Fabian Streit"
+      },
+      {
+        "name": "Nina Alexander"
+      },
+      {
+        "name": "Andreas Jansen"
+      },
+      {
+        "name": "Igor Nenadić"
+      },
+      {
+        "name": "Benjamín Straube"
+      },
+      {
+        "name": "Hamidreza Jamalabadi"
+      },
+      {
+        "name": "Udo Dannlowski"
+      },
+      {
+        "name": "Tim Hahn"
+      },
+      {
+        "name": "Tilo T. J. Kircher"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "多模态机器学习预测重性抑郁障碍复发，属于核心临床风险预测研究。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "multimodal",
+        "machine_learning",
+        "deep_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "基于564例患者的自然istic纵向预后研究显示，多模态模型预测2年内复发的准确度有限，临床风险因素贡献最大。",
+      "topic_tags": [
+        "depression",
+        "risk_prediction",
+        "adults",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "internal",
+    "date": "2026-10-21",
+    "doi": "10.1001/jamapsychiatry.2026.3232",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinical_outcome",
+    "id": "W7223082962",
+    "journal": "JAMA Psychiatry",
+    "mh_profile": {
+      "ai_reason": "多模态机器学习预测重性抑郁障碍复发，属于核心临床风险预测研究。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "multimodal",
+        "machine_learning",
+        "deep_learning"
+      ],
+      "clinical_validation": "internal",
+      "controlled_tags": {
+        "ai_types": [
+          "multimodal",
+          "machine_learning",
+          "deep_learning"
+        ],
+        "applications": [
+          "risk_prediction"
+        ],
+        "conditions": [
+          "depression"
+        ],
+        "populations": [
+          "adults",
+          "clinical_patients"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "2年内复发或未复发；主要指标为平衡准确率，最佳模型BACC为64.43%",
+        "sample": "564例当前或既往重性抑郁障碍患者，来自德国两站点；随访约2年",
+        "study_design": "自然istic纵向预后研究"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinical_outcome",
+      "local_recall_audit": {
+        "ai_matches": [
+          "machine learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatric",
+          "depressive"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "基于564例患者的自然istic纵向预后研究显示，多模态模型预测2年内复发的准确度有限，临床风险因素贡献最大。",
+      "topic_tags": [
+        "depression",
+        "risk_prediction",
+        "adults",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7223082962",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2495708506",
+      "ingest_mode": "full",
+      "key": "jama_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Multimodal Machine Learning–Based Prediction of Relapse in Major Depressive Disorder",
+    "title_zh": "基于多模态机器学习的重性抑郁障碍复发预测",
+    "tldr": "基于564例患者的自然istic纵向预后研究显示，多模态模型预测2年内复发的准确度有限，临床风险因素贡献最大。",
+    "topic_tags": [
+      "depression",
+      "risk_prediction",
+      "adults",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.1001/jamapsychiatry.2026.3232",
+    "year": 2026
+  },
+  {
+    "abstract": "This Viewpoint issues a call for community-wide coordination to evaluate large language models for mental health care.",
+    "ai_reason": "观点文章聚焦大语言模型在心理健康照护中的评估，但未开展实证研究。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "llm_genai"
+    ],
+    "authors": [
+      "Kevin W. Jin",
+      "Hua Xu",
+      "Sarah W. Yip",
+      "Carolyn I. Rodríguez"
+    ],
+    "authors_full": [
+      {
+        "name": "Kevin W. Jin"
+      },
+      {
+        "name": "Hua Xu"
+      },
+      {
+        "name": "Sarah W. Yip"
+      },
+      {
+        "name": "Carolyn I. Rodríguez"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "观点文章聚焦大语言模型在心理健康照护中的评估，但未开展实证研究。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "llm_genai"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "conceptual",
+      "risk_tags": [],
+      "tldr": "该观点呼吁社区协同建立大语言模型心理健康照护评估体系，但未报告研究样本、结果或部署。",
+      "topic_tags": [
+        "transdiagnostic",
+        "safety_ethics",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-10-21",
+    "doi": "10.1001/jamapsychiatry.2026.3229",
+    "domain_score": 5,
+    "evidence_stage": "conceptual",
+    "ground_truth_quality": "unknown",
+    "id": "W7223108689",
+    "journal": "JAMA Psychiatry",
+    "mh_profile": {
+      "ai_reason": "观点文章聚焦大语言模型在心理健康照护中的评估，但未开展实证研究。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai"
+        ],
+        "applications": [
+          "safety_ethics"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": null,
+        "sample": null,
+        "study_design": "观点文章"
+      },
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language models"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "该观点呼吁社区协同建立大语言模型心理健康照护评估体系，但未报告研究样本、结果或部署。",
+      "topic_tags": [
+        "transdiagnostic",
+        "safety_ethics",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7223108689",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2495708506",
+      "ingest_mode": "full",
+      "key": "jama_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Evaluating Large Language Models for Mental Health Care",
+    "title_zh": "评估大语言模型在心理健康照护中的应用",
+    "tldr": "该观点呼吁社区协同建立大语言模型心理健康照护评估体系，但未报告研究样本、结果或部署。",
+    "topic_tags": [
+      "transdiagnostic",
+      "safety_ethics",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1001/jamapsychiatry.2026.3229",
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "深度学习是识别跨诊断生物型的核心方法；ADHD和焦虑障碍是核心精神健康状况。",
     "ai_score": 4,
@@ -163,6 +541,160 @@
       "clinical_patients"
     ],
     "url": "https://doi.org/10.1038/s44220-026-00740-3",
+    "year": 2026
+  },
+  {
+    "abstract": "Major depressive disorder (MDD) susceptibility reflects both stable inherited liability and dynamic behavioral patterns, yet these dimensions are rarely examined together using long-term data in real-world settings. Here, we integrated genomic, electronic health record (EHR), and longitudinal Fitbit wearable data from 3030 adults of genetically inferred European ancestry in the All of Us Research Program, 284 of whom had an EHR-recorded MDD diagnosis during follow-up after a 180-day baseline period. Time-varying Cox models examined associations of the MDD polygenic score (PGS), monthly wearable-derived physical activity and sleep features, and wearable feature × MDD PGS interactions with EHR-recorded MDD. Higher MDD PGS, lower daily steps, lower light and vigorous physical activity, lower sleep efficiency, and greater sleep duration variability were associated with a higher hazard of EHR-recorded MDD. The associations of sedentary time and sleep duration variability with MDD differed across MDD PGS levels, with stronger associations among participants with higher MDD PGS. Model-estimated hazard ratio curves across MDD PGS levels further showed that the behavioral levels corresponding to the same relative hazard differed across levels of genetic liability, with more favorable behavioral levels observed at higher MDD PGS levels. Sequentially integrating MDD PGS, baseline wearable features, monthly wearable features, and selected wearable feature × MDD PGS interactions increased model discrimination, with the C-index increasing from 0.637 to 0.705. These findings support the complementary value of genetic liability and longitudinal behavioral monitoring for characterization of MDD susceptibility and may inform work on genetically informed digital phenotyping for personalized monitoring and prevention.",
+    "ai_reason": "整合基因组、电子病历和可穿戴设备数据预测MDD易感性，属于抑郁风险建模研究。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "machine_learning",
+      "digital_phenotyping"
+    ],
+    "authors": [
+      "Yuezhou Zhang",
+      "Amos Folarin",
+      "Rongrong Zhong",
+      "Hyunju Kim",
+      "Shaoxiong Sun",
+      "Callum Stewart",
+      "Richard Dobson"
+    ],
+    "authors_full": [
+      {
+        "name": "Yuezhou Zhang"
+      },
+      {
+        "name": "Amos Folarin"
+      },
+      {
+        "name": "Rongrong Zhong"
+      },
+      {
+        "name": "Hyunju Kim"
+      },
+      {
+        "name": "Shaoxiong Sun"
+      },
+      {
+        "name": "Callum Stewart"
+      },
+      {
+        "name": "Richard Dobson"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "整合基因组、电子病历和可穿戴设备数据预测MDD易感性，属于抑郁风险建模研究。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning",
+        "digital_phenotyping"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "在3030名成年人中，整合PGS与可穿戴活动睡眠特征的模型提高了MDD风险区分能力，但未进行前瞻性临床部署。",
+      "topic_tags": [
+        "depression",
+        "monitoring",
+        "risk_prediction",
+        "adults",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "internal",
+    "date": "2026-10-16",
+    "doi": "10.1016/j.jad.2026.122643",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinical_outcome",
+    "id": "W7222433226",
+    "journal": "Journal of Affective Disorders",
+    "mh_profile": {
+      "ai_reason": "整合基因组、电子病历和可穿戴设备数据预测MDD易感性，属于抑郁风险建模研究。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning",
+        "digital_phenotyping"
+      ],
+      "clinical_validation": "internal",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning",
+          "digital_phenotyping"
+        ],
+        "applications": [
+          "monitoring",
+          "risk_prediction"
+        ],
+        "conditions": [
+          "depression"
+        ],
+        "populations": [
+          "adults",
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "EHR记录的MDD；时间变化Cox模型风险和C指数，C指数由0.637升至0.705",
+        "sample": "All of Us研究计划中3030名欧洲血统成年人，其中284例随访期间有EHR记录的MDD诊断",
+        "study_design": "真实世界队列纵向关联与预测建模研究"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinical_outcome",
+      "local_recall_audit": {
+        "ai_matches": [
+          "digital phenotyping"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "depressive"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "在3030名成年人中，整合PGS与可穿戴活动睡眠特征的模型提高了MDD风险区分能力，但未进行前瞻性临床部署。",
+      "topic_tags": [
+        "depression",
+        "monitoring",
+        "risk_prediction",
+        "adults",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7222433226",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S113871862",
+      "ingest_mode": "full",
+      "key": "journal_affective_disorders",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Longitudinal wearable monitoring and polygenic score for major depressive disorder in the All of Us Research Program",
+    "title_zh": "All of Us研究计划中的重性抑郁障碍纵向可穿戴监测与多基因评分",
+    "tldr": "在3030名成年人中，整合PGS与可穿戴活动睡眠特征的模型提高了MDD风险区分能力，但未进行前瞻性临床部署。",
+    "topic_tags": [
+      "depression",
+      "monitoring",
+      "risk_prediction",
+      "adults",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1016/j.jad.2026.122643",
     "year": 2026
   },
   {
@@ -13141,6 +13673,180 @@
       "clinicians"
     ],
     "url": "https://doi.org/10.2196/92817",
+    "year": 2026
+  },
+  {
+    "abstract": "While established frameworks exist for assessing the clinical efficacy and effectiveness of human-delivered interventions, and standards are in place for pre-artificial intelligence (AI) chatbots that have achieved clearance from the US Food and Drug Administration (FDA) as companions to psychological treatment, a significant void remains. There are currently no defined standards to determine the efficacy of an AI agent in delivering validated treatment approaches, whether it is assisting with medication management, supporting clinicians, or directly delivering talk therapy. This gap leaves the field vulnerable, confronting a surge of emerging technologies without the necessary tools to ascertain their safety, and if – or for whom – they genuinely work. Autonomous or semi-autonomous AI agents, capable of interacting across diverse modalities – text, voice and images – can both understand and mirror the complex cues that human therapists utilize, thereby enhancing both engagement and assessment capabilities. This positions generative AI (GenAI) as a deeply promising solution for delivering psychological interventions, with the potential to significantly broaden treatment reach and reduce costs. However, the rapid proliferation of digital applications claiming therapeutic effects, coupled with their increasing adoption by the public1, underscores a crucial concern: the absence of established clinical standards for rigorously evaluating the safety and effectiveness of these GenAI agents. This regulatory void creates potential risks for patients and impedes the responsible and ethical integration of this transformative technology into validated clinical practice. Therefore, a robust evaluation framework, one that thoughtfully adapts established psychotherapy trial design principles to the unique characteristics of AI, is not only beneficial but urgently required. While sharing some commonalities with general wellness and coaching applications, GenAI agents explicitly intended for treatment of clinical disorders face distinct and amplified validation challenges. These encompass the intricate management of high-risk safety scenarios, the imperative for strict adherence to empirically supported therapeutic approaches, and the inherent complexities of clinical reasoning. Unlike traditional, deterministic chatbots that follow rigid decision trees, generative models operate probabilistically. Their dynamic, non-deterministic nature, while powerful, necessitates a novel dual approach to validation that seamlessly integrates meticulous human oversight with sophisticated agent-based evaluation, thereby ensuring uncompromised safety, efficacy and effectiveness. The concepts of efficacy (an intervention's effect under ideal conditions) and effectiveness (its performance in real-world settings) are foundational to therapeutic development. However, GenAI agents, with their dynamic, evolving models, directly challenge traditional validation paradigms. Their non-deterministic therapeutic actions mean that an agent may not produce identical responses to seemingly similar prompts. Consequently, the intervention cannot be defined by verbatim replication, but rather by the consistent and principled application of established therapeutic frameworks within clearly defined guardrails, much akin to how human-delivered treatments are evaluated for fidelity. Furthermore, the assumption that AI models can seamlessly mimic human clinical reasoning is inherently flawed. GenAI models are demonstrably prone to factual errors (often termed “hallucinations”), can inadvertently inherit biases embedded in their training data, and may exhibit deficits in episodic memory or subtle concept differentiation – all of which are critically important for sound clinical reasoning and avoiding problematic cognitions. Evaluating the cumulative impact of micro-interactions over extended periods is paramount, requiring analysis beyond simplistic single-turn benchmarks, to truly understand how an agent maintains therapeutic coherence, fosters an alliance, and effectively mitigates risks such as model sycophancy or the perpetuation of unhelpful thought patterns. Longitudinal studies, moreover, are particularly vulnerable to “model drift”, where updates to the underlying large language model (LLM) subtly alter the agent's therapeutic characteristics, necessitating rigorous version control and proactive clinical impact assessments. A particularly salient challenge, and potentially an opportunity, is the concept of the therapeutic alliance, which is an essential component of human-to-human treatment2, within human-AI interaction. Unlike humans, LLMs are not capable of complex cognitions that humans rely on to interact relationally3. Therefore, the nature of AI's alliance may rely on more concrete markers of trust and support – such as explicit goal-setting, the use of collaborative and validating language, and adaptive responsiveness. The “emotional bond” component, in this context, shifts from reciprocal human affection to the user's trust in the AI's consistency, reliability, helpfulness, and its demonstrated ability to deliver contextually appropriate and empathetic language. Evaluation, therefore, must involve analyzing the AI's dialogue for clear markers of active listening, validation, and empathetic resonance, alongside objective user interaction patterns such as sustained engagement and task adherence as robust behavioral proxies for a perceived positive alliance. To build patient confidence and ensure both safety and effectiveness, these core concepts must be rigorously adapted for GenAI. The efficacy of a GenAI therapeutic agent can be precisely defined as the capacity of a specific, version-controlled agent – meticulously characterized by its explicit model, knowledge grounding, therapeutic principles, and interaction protocols – to produce statistically and clinically significant improvement on validated primary outcome measures, relative to a robust control, in a randomly assigned population under optimized study conditions. This demands transparent documentation of the LLM version, fine-tuning data, and clearly defined guardrails4. Effectiveness is the extent to which an agent, deployed in representative real-world settings (including controlled updates), achieves clinically meaningful benefits across diverse outcome domains, demonstrates sustained user engagement, and consistently maintains an acceptable safety profile. Effectiveness studies therefore necessitate pragmatic designs that accurately reflect typical use-cases and heterogeneous populations, requiring robust strategies for managing model evolution through performance thresholds that trigger re-validation or continuous monitoring. To accelerate the responsible translation of GenAI into evidence-based mental health care, a multi-stage, hybrid validation process is essential, meticulously integrating rigorous technical AI evaluation with established clinical research methodologies. This comprehensive framework should be conceptualized in phases analogous to traditional therapeutic development: iterative development, pre-clinical validation, clinical trials, and post-deployment monitoring. The first phase, iterative development and benchmarking, involves rapid model refinement using simpler, initial benchmarks such as single-turn adherence checks. This phase focuses on foundational capabilities and preliminary alignment. The second phase, pre-clinical AI validation, moves beyond simple accuracy to rigorous in silico and simulated validation of the agent's behavior in complex, dynamic scenarios. This critical stage includes using LLM-to-LLM role-playing or human actors to simulate diverse therapeutic interactions, rigorous adversarial “red teaming” to proactively identify safety-critical failure modes5 (e.g., mismanaging crisis cues or providing harmful advice), and systematic bias and fairness audits to prevent the perpetuation or amplification of health disparities6. The third phase, clinical efficacy and effectiveness trials, establishes direct patient benefit. These demands validating longitudinal therapeutic coherence, as clinically relevant behaviors, therapeutic benefits, and potential risks often emerge and evolve over time. Trials must employ sophisticated methods to assess context retention, dialogue coherence, and task completion across extended, multi-session interactions. Human evaluation frameworks are paramount for assessing information quality, clinical reasoning, expression style, overall safety, and patient trust, alongside crucial ethical and practical considerations such as clinical credibility, user experience, user agency, equity, transparency, and crisis management protocols. The fourth phase, post-deployment and continuous validation, ensures sustained safety and efficacy in real-world use. GenAI agents require ongoing, vigilant monitoring to detect any performance degradation, drift, or the emergence of new risks. A one-time demonstration of effectiveness is insufficient for these rapidly evolving technologies. This phase demands pragmatic trial designs that accurately reflect real-world conditions7, clear and actionable protocols for re-validation when the underlying model is substantially updated or performance metrics fall below a pre-defined threshold, and robust continuous validation processes to re-establish therapeutic effects and comprehensively assess risk profiles. GenAI agents that interact directly with clinicians, caregivers and patients offer significant and transformative opportunities for psychotherapy. However, their responsible translation into validated clinical tools necessitates a clinically specific and robust research framework8, 9. The above-mentioned stages of development, which integrate traditional sequential clinical trial norms with emerging state-of-the-art AI validation strategies, provide a crucial path forward. The ultimate aim is to develop common standards and methodologies that facilitate unwavering transparency and engender deep trust across the entire ecosystem of mental health care.",
+    "ai_reason": "文章提出生成式AI心理治疗干预的临床验证框架，直接涉及治疗、疗效与安全。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai",
+      "conversational_ai"
+    ],
+    "authors": [
+      "Isaac R. Galatzer‐Levy",
+      "Nenad Tomašev",
+      "Carolyn I. Rodríguez",
+      "John Blake Torous"
+    ],
+    "authors_full": [
+      {
+        "name": "Isaac R. Galatzer‐Levy"
+      },
+      {
+        "name": "Nenad Tomašev"
+      },
+      {
+        "name": "Carolyn I. Rodríguez"
+      },
+      {
+        "name": "John Blake Torous"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "文章提出生成式AI心理治疗干预的临床验证框架，直接涉及治疗、疗效与安全。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "conversational_ai"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "conceptual",
+      "risk_tags": [
+        "clinical_harm",
+        "crisis_safety",
+        "hallucination_misinformation",
+        "bias_fairness",
+        "transparency_accountability"
+      ],
+      "tldr": "该文章提出结合心理治疗试验原则与智能体评估的生成式AI治疗验证框架，但尚未提供实证验证或安全结果。",
+      "topic_tags": [
+        "transdiagnostic",
+        "clinical_decision_support",
+        "digital_intervention",
+        "treatment_support",
+        "safety_ethics",
+        "clinicians"
+      ]
+    },
+    "cited_by": 3,
+    "clinical_validation": "none",
+    "date": "2026-05-15",
+    "doi": "10.1002/wps.70067",
+    "domain_score": 5,
+    "evidence_stage": "conceptual",
+    "ground_truth_quality": "unknown",
+    "id": "W7161274572",
+    "journal": "World Psychiatry",
+    "mh_profile": {
+      "ai_reason": "文章提出生成式AI心理治疗干预的临床验证框架，直接涉及治疗、疗效与安全。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "conversational_ai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "conversational_ai"
+        ],
+        "applications": [
+          "clinical_decision_support",
+          "digital_intervention",
+          "treatment_support",
+          "safety_ethics"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "clinicians"
+        ],
+        "risks": [
+          "clinical_harm",
+          "crisis_safety",
+          "hallucination_misinformation",
+          "bias_fairness",
+          "transparency_accountability"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": null,
+        "sample": null,
+        "study_design": "概念性验证框架与观点文章"
+      },
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [
+          "artificial intelligence",
+          "generative AI",
+          "large language model",
+          "LLM"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "psychotherapy"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "clinical_harm",
+        "crisis_safety",
+        "hallucination_misinformation",
+        "bias_fairness",
+        "transparency_accountability"
+      ],
+      "safety_evaluated": false,
+      "tldr": "该文章提出结合心理治疗试验原则与智能体评估的生成式AI治疗验证框架，但尚未提供实证验证或安全结果。",
+      "topic_tags": [
+        "transdiagnostic",
+        "clinical_decision_support",
+        "digital_intervention",
+        "treatment_support",
+        "safety_ethics",
+        "clinicians"
+      ]
+    },
+    "openalex_id": "W7161274572",
+    "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13176844/pdf/WPS-25-327.pdf",
+    "real_world_deployment": false,
+    "risk_tags": [
+      "clinical_harm",
+      "crisis_safety",
+      "hallucination_misinformation",
+      "bias_fairness",
+      "transparency_accountability"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S183644930",
+      "ingest_mode": "full",
+      "key": "world_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "A framework for clinical validation of generative artificial intelligence therapeutics",
+    "title_zh": "生成式人工智能治疗方法的临床验证框架",
+    "tldr": "该文章提出结合心理治疗试验原则与智能体评估的生成式AI治疗验证框架，但尚未提供实证验证或安全结果。",
+    "topic_tags": [
+      "transdiagnostic",
+      "clinical_decision_support",
+      "digital_intervention",
+      "treatment_support",
+      "safety_ethics",
+      "clinicians"
+    ],
+    "url": "https://doi.org/10.1002/wps.70067",
     "year": 2026
   },
   {

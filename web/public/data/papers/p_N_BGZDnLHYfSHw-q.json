@@ -1,0 +1,71 @@
+{
+  "abstract": "Failure of applied Reinforcement Learning (RL) to solve a given problem predominantly stems from unaddressed specification gaps, where the intent of human experts in the problem's domain is inaccurately or incompletely translated by AI into mathematical objectives, constraints, and reward functions. Failure can also stem from unaddressed performance gaps, where human domain experts are unable to determine the validity of the RL based solution or where parameters (i.e., hyperparameters or weights on the reward terms comprising the reward) are poorly chosen. Chat Assisted Reinforcement Learning (CARL) bridges these gaps through a human-AI co-design interface architecture that enforces interactive specification prior to code generation and then enables subsequent verification and parameter alterations via iteration. More specifically, CARL leads domain experts through a structured ten-step workflow for each iteration using step-specific skill files, domain-aware suggestions via an assistant persona (called Trillian), and compact decision summaries that maintain context across iterations without context overload. Once the domain expert confirms the Markov decision process (MDP) specified by this procedure, CARL's autonomous tool-use loop generates, tests, executes, and debugs an end-to-end RL training pipeline, followed by an interactive post-training diagnosis and revisit step that allows for verification and parameter alteration before running a new iteration if desired.",
+  "ai_type_tags": [
+    "对话式 AI",
+    "LLM",
+    "智能体/Agent",
+    "人机协作"
+  ],
+  "arxiv_id": "2610.31014",
+  "authors": [
+    "Sanjiv Das",
+    "Harshad Khadilkar",
+    "Sukrit Mittal",
+    "Daniel Ostrov",
+    "Jacob Sisk"
+  ],
+  "authors_full": [
+    {
+      "name": "Sanjiv Das"
+    },
+    {
+      "name": "Harshad Khadilkar"
+    },
+    {
+      "name": "Sukrit Mittal"
+    },
+    {
+      "name": "Daniel Ostrov"
+    },
+    {
+      "name": "Jacob Sisk"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM辅助RL的人机协作界面，HCI框架明确",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "提出 CARL（Chat Assisted Reinforcement Learning），一种聊天辅助的人机协同 RL 设计架构，通过结构化十步工作流、领域感知 AI 助手 Trillian 与紧凑决策摘要弥合规范与性能差距。用户确认 MDP 后，自主工具调用循环自动生成、测试、执行并调试端到端 RL 训练管线，并提供训练后交互式诊断与参数迭代修改。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "可解释性",
+        "AI 治理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-22",
+  "doi": null,
+  "id": "p_N_BGZDnLHYfSHw-q",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2610.31014v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37500,
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
+    }
+  ],
+  "title": "CARL: Chat Assisted Reinforcement Learning",
+  "title_zh": "CARL:对话辅助强化学习",
+  "unified_ingested_at": "2026-10-23T07:08:15.753475Z",
+  "url": "https://arxiv.org/abs/2610.31014v1",
+  "volume": null,
+  "year": 2026
+}

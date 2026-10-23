@@ -1,0 +1,76 @@
+{
+  "abstract": "The introduction of large language models into integrated development environments (IDEs) is revolutionizing software engineering, yet it poses challenges to the usefulness and reliability of Artificial Intelligence-generated code. Post-hoc calibration of internal model confidences aims to align probabilities with an acceptability measure. Prior work suggests calibration can improve alignment, but at-scale evidence is limited. In this work, we investigate the feasibility of applying calibration of code models to an in-IDE context. We study two aspects of the problem: (1) the technical method for implementing confidence calibration and improving the reliability of code generation models, and (2) the human-centered design principles for effectively communicating reliability signal to developers. First, we develop a scalable and flexible calibration framework which can be used to obtain calibration weights for open-source models using any dataset, and evaluate whether calibrators improve the alignment between model confidence and developer acceptance behavior. Through a large-scale analysis of over 24 million real-world developer interactions across multiple programming languages, we find that a general, post-hoc calibration model based on Platt-scaling does not, on average, improve the reliability of model confidence signals. We also find that while dynamically personalizing calibration to individual users can be effective, its effectiveness is highly dependent on the volume of user interaction data. Second, we conduct a multi-phase design study with 3 expert designers and 153 professional developers, combining scenario-based design, semi-structured interviews, and survey validation, revealing a clear preference for presenting reliability signals via non-numerical, color-coded indicators within the in-editor code generation workflow.",
+  "ai_type_tags": [
+    "LLM",
+    "可解释 AI",
+    "AI 助手"
+  ],
+  "arxiv_id": "2510.22614",
+  "authors": [
+    "Roham Koohestani",
+    "Agnia Sergeyuk",
+    "David Gros",
+    "Claudio Spiess",
+    "Sergey Titov"
+  ],
+  "authors_full": [
+    {
+      "name": "Roham Koohestani"
+    },
+    {
+      "name": "Agnia Sergeyuk"
+    },
+    {
+      "name": "David Gros"
+    },
+    {
+      "name": "Claudio Spiess"
+    },
+    {
+      "name": "Sergey Titov"
+    },
+    {
+      "name": "Prem Devanbu"
+    },
+    {
+      "name": "Maliheh Izadi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM校准+人本设计原则传达，含开发者研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "研究大语言模型在 IDE 环境中代码生成置信度校准的可行性。基于 2400 万条真实开发者交互数据，评估 Platt 缩放等后验校准方法能否让模型置信度与开发者接受行为对齐。结果显示通用校准模型平均未能提升可靠性，动态个性化校准虽有效但高度依赖用户交互量。",
+      "topic_tags": [
+        "人机协作",
+        "用户研究方法",
+        "可用性",
+        "软件工程"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-26",
+  "doi": null,
+  "id": "p_gM1KakD63ayYDEUZ",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2510.22614v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8063,
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
+    }
+  ],
+  "title": "Does In-IDE Calibration of Large Language Models work at Scale?",
+  "title_zh": "大语言模型IDE内校准能否规模化生效？",
+  "unified_ingested_at": "2026-10-23T07:08:15.753475Z",
+  "url": "https://arxiv.org/abs/2510.22614v1",
+  "volume": null,
+  "year": 2025
+}

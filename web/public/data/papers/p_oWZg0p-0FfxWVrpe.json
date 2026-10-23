@@ -1,6 +1,12 @@
 {
   "abstract": "This technical report documents the design and implementation of Scriptorium, a digital library search interface designed to support multi-human, multi-AI collaboration: full cross-user transparency of search activity combined with a Manager--Worker architecture of seven role-specialized generative AI agents. A companion short demonstration paper describes Scriptorium's interaction design; because a demonstration format is constrained to a few pages, it necessarily omits most implementation detail. This report documents Scriptorium's complete system architecture, data model, collaborative-interaction design rationale, and AI orchestration mechanism, including verbatim agent prompts, the deterministic guardrails that constrain them, the language model and retrieval configuration, and the steps needed to run the system, so that the design can be inspected, critiqued, reproduced, and reused by other researchers. We also discuss the system's current limitations and the user study we are planning to evaluate its central hypothesis: that combining collaborative transparency with scoped multi-agent AI assistance increases serendipitous cross-pollination between collaborators' research threads.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "GenAI",
+    "LLM",
+    "智能体/Agent",
+    "人机协作",
+    "AI助手"
+  ],
   "arxiv_id": "2610.28929",
   "authors": [
     "Abbas Pirmoradi",
@@ -27,8 +33,13 @@
       "ai_reason": "多AI协作系统设计核心；偏系统报告非用研",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "技术报告详述Scriptorium数字图书馆搜索平台的设计与实现：采用Manager-Worker架构与七个角色化生成式AI智能体，支持用户间搜索活动的全透明协作，文档涵盖系统架构、数据模型、协作交互逻辑、AI编排、提示词与确定性护栏、模型与检索配置，并规划用于检验\"协作透明+受限多智能体辅助能否促进跨研究线索意外交叉\"的用户研究。",
+      "topic_tags": [
+        "人机协作",
+        "HCI",
+        "信息检索",
+        "服务设计"
+      ]
     }
   },
   "channels": [
@@ -45,7 +56,7 @@
     {
       "channel": "ur",
       "legacy_id": 37384,
-      "revision": "25fdc188d35682dddb0ecd590be4958a4ebb3a2c"
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
     }
   ],
   "title": "Scriptorium: System Design and Implementation of a Multi-Human, Multi-AI Collaborative Digital Library Search Platform",

@@ -1,0 +1,62 @@
+{
+  "abstract": "Large Language Models (LLMs) are increasingly integrated into code editors to provide AI-powered code suggestions. Yet many of these suggestions are ignored, resulting in wasted computation, increased latency, and unnecessary interruptions. We introduce a lightweight pre-filtering model that predicts the likelihood of suggestion acceptance before invoking the LLM, using only real-time developer telemetry such as typing speed, file navigation, and editing activity. Deployed in a production-grade Visual Studio Code plugin over four months of naturalistic use, our approach nearly doubled acceptance rates (18.4% -> 34.2%) while suppressing 35% of low-value LLM calls. These findings demonstrate that behavioral signals alone can meaningfully improve both user experience and system efficiency in LLM-assisted programming, highlighting the value of timing-aware, privacy-preserving adaptation mechanisms. The filter operates solely on pre-invocation editor telemetry and never inspects code or prompts.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 助手",
+    "人机交互"
+  ],
+  "arxiv_id": "2511.18849",
+  "authors": [
+    "Mohammad Nour Al Awad",
+    "Sergey Ivanov",
+    "Olga Tikhonova"
+  ],
+  "authors_full": [
+    {
+      "name": "Mohammad Nour Al Awad"
+    },
+    {
+      "name": "Sergey Ivanov"
+    },
+    {
+      "name": "Olga Tikhonova"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM代码建议+开发者行为遥测，自然使用部署",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对LLM代码建议被频繁忽略导致算力浪费的问题，提出基于开发者行为遥测（打字速度、文件导航、编辑活动）的轻量预过滤模型，在调用LLM前预测接受概率。VS Code生产插件部署四个月，采纳率从18.4%翻倍至34.2%，抑制35%低价值调用，仅利用编辑器前置遥测、不查看代码，保护隐私。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "可用性",
+        "AI 采用"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-11-24",
+  "doi": "10.1109/asew67777.2025.00032",
+  "id": "p_SGaJz6_8ohwO2wys",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2511.18849v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8181,
+      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
+    }
+  ],
+  "title": "Pre-Filtering Code Suggestions using Developer Behavioral Telemetry to Optimize LLM-Assisted Programming",
+  "title_zh": "利用开发者行为遥测预过滤代码建议以优化LLM辅助编程",
+  "unified_ingested_at": "2026-10-23T07:08:15.753475Z",
+  "url": "https://arxiv.org/abs/2511.18849v1",
+  "volume": null,
+  "year": 2025
+}

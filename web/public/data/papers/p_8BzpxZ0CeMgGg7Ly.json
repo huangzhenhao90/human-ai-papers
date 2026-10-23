@@ -1,0 +1,78 @@
+{
+  "abstract": "While established frameworks exist for assessing the clinical efficacy and effectiveness of human-delivered interventions, and standards are in place for pre-artificial intelligence (AI) chatbots that have achieved clearance from the US Food and Drug Administration (FDA) as companions to psychological treatment, a significant void remains. There are currently no defined standards to determine the efficacy of an AI agent in delivering validated treatment approaches, whether it is assisting with medication management, supporting clinicians, or directly delivering talk therapy. This gap leaves the field vulnerable, confronting a surge of emerging technologies without the necessary tools to ascertain their safety, and if – or for whom – they genuinely work. Autonomous or semi-autonomous AI agents, capable of interacting across diverse modalities – text, voice and images – can both understand and mirror the complex cues that human therapists utilize, thereby enhancing both engagement and assessment capabilities. This positions generative AI (GenAI) as a deeply promising solution for delivering psychological interventions, with the potential to significantly broaden treatment reach and reduce costs. However, the rapid proliferation of digital applications claiming therapeutic effects, coupled with their increasing adoption by the public1, underscores a crucial concern: the absence of established clinical standards for rigorously evaluating the safety and effectiveness of these GenAI agents. This regulatory void creates potential risks for patients and impedes the responsible and ethical integration of this transformative technology into validated clinical practice. Therefore, a robust evaluation framework, one that thoughtfully adapts established psychotherapy trial design principles to the unique characteristics of AI, is not only beneficial but urgently required. While sharing some commonalities with general wellness and coaching applications, GenAI agents explicitly intended for treatment of clinical disorders face distinct and amplified validation challenges. These encompass the intricate management of high-risk safety scenarios, the imperative for strict adherence to empirically supported therapeutic approaches, and the inherent complexities of clinical reasoning. Unlike traditional, deterministic chatbots that follow rigid decision trees, generative models operate probabilistically. Their dynamic, non-deterministic nature, while powerful, necessitates a novel dual approach to validation that seamlessly integrates meticulous human oversight with sophisticated agent-based evaluation, thereby ensuring uncompromised safety, efficacy and effectiveness. The concepts of efficacy (an intervention's effect under ideal conditions) and effectiveness (its performance in real-world settings) are foundational to therapeutic development. However, GenAI agents, with their dynamic, evolving models, directly challenge traditional validation paradigms. Their non-deterministic therapeutic actions mean that an agent may not produce identical responses to seemingly similar prompts. Consequently, the intervention cannot be defined by verbatim replication, but rather by the consistent and principled application of established therapeutic frameworks within clearly defined guardrails, much akin to how human-delivered treatments are evaluated for fidelity. Furthermore, the assumption that AI models can seamlessly mimic human clinical reasoning is inherently flawed. GenAI models are demonstrably prone to factual errors (often termed “hallucinations”), can inadvertently inherit biases embedded in their training data, and may exhibit deficits in episodic memory or subtle concept differentiation – all of which are critically important for sound clinical reasoning and avoiding problematic cognitions. Evaluating the cumulative impact of micro-interactions over extended periods is paramount, requiring analysis beyond simplistic single-turn benchmarks, to truly understand how an agent maintains therapeutic coherence, fosters an alliance, and effectively mitigates risks such as model sycophancy or the perpetuation of unhelpful thought patterns. Longitudinal studies, moreover, are particularly vulnerable to “model drift”, where updates to the underlying large language model (LLM) subtly alter the agent's therapeutic characteristics, necessitating rigorous version control and proactive clinical impact assessments. A particularly salient challenge, and potentially an opportunity, is the concept of the therapeutic alliance, which is an essential component of human-to-human treatment2, within human-AI interaction. Unlike humans, LLMs are not capable of complex cognitions that humans rely on to interact relationally3. Therefore, the nature of AI's alliance may rely on more concrete markers of trust and support – such as explicit goal-setting, the use of collaborative and validating language, and adaptive responsiveness. The “emotional bond” component, in this context, shifts from reciprocal human affection to the user's trust in the AI's consistency, reliability, helpfulness, and its demonstrated ability to deliver contextually appropriate and empathetic language. Evaluation, therefore, must involve analyzing the AI's dialogue for clear markers of active listening, validation, and empathetic resonance, alongside objective user interaction patterns such as sustained engagement and task adherence as robust behavioral proxies for a perceived positive alliance. To build patient confidence and ensure both safety and effectiveness, these core concepts must be rigorously adapted for GenAI. The efficacy of a GenAI therapeutic agent can be precisely defined as the capacity of a specific, version-controlled agent – meticulously characterized by its explicit model, knowledge grounding, therapeutic principles, and interaction protocols – to produce statistically and clinically significant improvement on validated primary outcome measures, relative to a robust control, in a randomly assigned population under optimized study conditions. This demands transparent documentation of the LLM version, fine-tuning data, and clearly defined guardrails4. Effectiveness is the extent to which an agent, deployed in representative real-world settings (including controlled updates), achieves clinically meaningful benefits across diverse outcome domains, demonstrates sustained user engagement, and consistently maintains an acceptable safety profile. Effectiveness studies therefore necessitate pragmatic designs that accurately reflect typical use-cases and heterogeneous populations, requiring robust strategies for managing model evolution through performance thresholds that trigger re-validation or continuous monitoring. To accelerate the responsible translation of GenAI into evidence-based mental health care, a multi-stage, hybrid validation process is essential, meticulously integrating rigorous technical AI evaluation with established clinical research methodologies. This comprehensive framework should be conceptualized in phases analogous to traditional therapeutic development: iterative development, pre-clinical validation, clinical trials, and post-deployment monitoring. The first phase, iterative development and benchmarking, involves rapid model refinement using simpler, initial benchmarks such as single-turn adherence checks. This phase focuses on foundational capabilities and preliminary alignment. The second phase, pre-clinical AI validation, moves beyond simple accuracy to rigorous in silico and simulated validation of the agent's behavior in complex, dynamic scenarios. This critical stage includes using LLM-to-LLM role-playing or human actors to simulate diverse therapeutic interactions, rigorous adversarial “red teaming” to proactively identify safety-critical failure modes5 (e.g., mismanaging crisis cues or providing harmful advice), and systematic bias and fairness audits to prevent the perpetuation or amplification of health disparities6. The third phase, clinical efficacy and effectiveness trials, establishes direct patient benefit. These demands validating longitudinal therapeutic coherence, as clinically relevant behaviors, therapeutic benefits, and potential risks often emerge and evolve over time. Trials must employ sophisticated methods to assess context retention, dialogue coherence, and task completion across extended, multi-session interactions. Human evaluation frameworks are paramount for assessing information quality, clinical reasoning, expression style, overall safety, and patient trust, alongside crucial ethical and practical considerations such as clinical credibility, user experience, user agency, equity, transparency, and crisis management protocols. The fourth phase, post-deployment and continuous validation, ensures sustained safety and efficacy in real-world use. GenAI agents require ongoing, vigilant monitoring to detect any performance degradation, drift, or the emergence of new risks. A one-time demonstration of effectiveness is insufficient for these rapidly evolving technologies. This phase demands pragmatic trial designs that accurately reflect real-world conditions7, clear and actionable protocols for re-validation when the underlying model is substantially updated or performance metrics fall below a pre-defined threshold, and robust continuous validation processes to re-establish therapeutic effects and comprehensively assess risk profiles. GenAI agents that interact directly with clinicians, caregivers and patients offer significant and transformative opportunities for psychotherapy. However, their responsible translation into validated clinical tools necessitates a clinically specific and robust research framework8, 9. The above-mentioned stages of development, which integrate traditional sequential clinical trial norms with emerging state-of-the-art AI validation strategies, provide a crucial path forward. The ultimate aim is to develop common standards and methodologies that facilitate unwavering transparency and engender deep trust across the entire ecosystem of mental health care.",
+  "ai_type_tags": [
+    "llm_genai",
+    "conversational_ai"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Isaac R. Galatzer‐Levy",
+    "Nenad Tomašev",
+    "Carolyn I. Rodríguez",
+    "John Blake Torous"
+  ],
+  "authors_full": [
+    {
+      "name": "Isaac R. Galatzer‐Levy"
+    },
+    {
+      "name": "Nenad Tomašev"
+    },
+    {
+      "name": "Carolyn I. Rodríguez"
+    },
+    {
+      "name": "John Blake Torous"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "文章提出生成式AI心理治疗干预的临床验证框架，直接涉及治疗、疗效与安全。",
+      "ai_score": 5,
+      "clinical_validation": "none",
+      "domain_score": 5,
+      "evidence_stage": "conceptual",
+      "ground_truth_quality": "unknown",
+      "real_world_deployment": false,
+      "risk_tags": [
+        "clinical_harm",
+        "crisis_safety",
+        "hallucination_misinformation",
+        "bias_fairness",
+        "transparency_accountability"
+      ],
+      "safety_evaluated": false,
+      "tldr": "该文章提出结合心理治疗试验原则与智能体评估的生成式AI治疗验证框架，但尚未提供实证验证或安全结果。",
+      "topic_tags": [
+        "transdiagnostic",
+        "clinical_decision_support",
+        "digital_intervention",
+        "treatment_support",
+        "safety_ethics",
+        "clinicians"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 3,
+  "date": "2026-05-15",
+  "doi": "10.1002/wps.70067",
+  "id": "p_8BzpxZ0CeMgGg7Ly",
+  "issue": null,
+  "journal": "World Psychiatry",
+  "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13176844/pdf/WPS-25-327.pdf",
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7161274572"
+    }
+  ],
+  "title": "A framework for clinical validation of generative artificial intelligence therapeutics",
+  "title_zh": "生成式人工智能治疗方法的临床验证框架",
+  "unified_ingested_at": "2026-10-23T07:08:15.753475Z",
+  "url": "https://doi.org/10.1002/wps.70067",
+  "volume": null,
+  "year": 2026
+}
