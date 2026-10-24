@@ -1,0 +1,78 @@
+{
+  "abstract": "Conversational LLMs have been widely adopted by domain users with limited programming experience to solve domain problems. However, these users often face misalignment between their intent and generated code, resulting in frustration and rounds of clarification. This work first investigates the cause of this misalignment, which dues to bidirectional ambiguity: both user intents and coding tasks are inherently nonlinear, yet must be expressed and interpreted through linear prompts and code sequences. To address this, we propose direct intent-task matching, a new human-LLM interaction paradigm that externalizes and enables direct manipulation of the LLM understanding, i.e., the coding tasks and their relationships inferred by the LLM prior to code generation. As a proof-of-concept, this paradigm is then implemented in NeuroSync, which employs a knowledge distillation pipeline to extract LLM understanding, user intents, and their mappings, and enhances the alignment by allowing users to intuitively inspect and edit them via visualizations. We evaluate the algorithmic components of NeuroSync via technical experiments, and assess its overall usability and effectiveness via a user study (N=12). The results show that it enhances intent-task alignment, lowers cognitive effort, and improves coding efficiency.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "可解释 AI",
+    "人机交互",
+    "代码生成"
+  ],
+  "arxiv_id": "2508.02823",
+  "authors": [
+    "Wenshuo Zhang",
+    "Leixian Shen",
+    "Shuchang Xu",
+    "Jindu Wang",
+    "Jian Zhao"
+  ],
+  "authors_full": [
+    {
+      "name": "Wenshuo Zhang"
+    },
+    {
+      "name": "Leixian Shen"
+    },
+    {
+      "name": "Shuchang Xu"
+    },
+    {
+      "name": "Jindu Wang"
+    },
+    {
+      "name": "Jian Zhao"
+    },
+    {
+      "name": "Huamin Qu"
+    },
+    {
+      "name": "Linping Yuan"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "聚焦低编程用户与LLM意图对齐交互",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "为减少用户意图与生成代码的错位，提出可直接检查和编辑LLM所理解任务及其关系的交互范式NeuroSync，并以可视化、知识蒸馏和12人用户研究实现。该方法能提升意图—任务匹配度、降低认知负担并提高编码效率。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可视化",
+        "可用性",
+        "意图对齐"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-08-05",
+  "doi": "10.1145/3746059.3747668",
+  "id": "p_XJHz-sKmcM6alPtu",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2508.02823v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7867,
+      "revision": "9223d91d3cc8e01d7f9cde4721a31ba291018450"
+    }
+  ],
+  "title": "NeuroSync: Intent-Aware Code-Based Problem Solving via Direct LLM Understanding Modification",
+  "title_zh": "NeuroSync：通过直接修改LLM理解实现意图感知的代码问题求解",
+  "unified_ingested_at": "2026-10-24T06:58:17.628561Z",
+  "url": "https://arxiv.org/abs/2508.02823v1",
+  "volume": null,
+  "year": 2025
+}

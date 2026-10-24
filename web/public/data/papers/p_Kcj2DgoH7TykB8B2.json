@@ -1,6 +1,11 @@
 {
   "abstract": "LLM-powered coding agents are reshaping the development paradigm. However, existing evaluation systems, neither traditional tests for humans nor benchmarks for LLMs, fail to capture this shift, excluding problems that require both human reasoning to guide solutions and AI efficiency for implementation. We introduce CentaurEval, a unified, ecologically valid benchmark for measuring human-in-the-loop value in coding. CentaurEval's core innovation is its \"Collaboration-Necessary\" problem templates, which are intractable for standalone LLMs or humans, but solvable through effective collaboration. CentaurEval dynamically instantiates tasks from 45 templates, providing a standardized IDE for humans and a reproducible 450-task toolkit for LLMs. We benchmark 45 participants against 5 LLMs under 4 levels of human intervention. Results show that while LLMs or humans alone achieve poor pass rates (0.67% and 18.89%), human-AI collaboration significantly improves to 31.11%. Our analysis reveals an emerging co-reasoning partnership, challenging the traditional human-tool hierarchy by showing that strategic breakthroughs can originate from either humans or AI.",
-  "ai_type_tags": [],
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI 编程",
+    "人机协作"
+  ],
   "arxiv_id": "2512.04111",
   "authors": [
     "Hanjun Luo",
@@ -52,8 +57,13 @@
       "ai_reason": "核心为LLM编码智能体与人协作评测，45人参与",
       "ai_score": 5.0,
       "domain_score": 3.0,
-      "tldr": null,
-      "topic_tags": []
+      "tldr": "针对现有评测无法衡量人机协同编码价值，构建含45类“协作必要”模板的CentaurEval，让45名参与者与5个LLM在四档干预水平下完成450项任务。单独LLM和人类通过率仅为0.67%和18.89%，协作升至31.11%，表明战略突破可由人或AI发起。",
+      "topic_tags": [
+        "人机协作",
+        "用户研究方法",
+        "软件工程",
+        "AI 评测"
+      ]
     }
   },
   "channels": [
@@ -70,7 +80,7 @@
     {
       "channel": "ur",
       "legacy_id": 8625,
-      "revision": "4d31ebca2c308b48f561a799b9af406f16b5ec79"
+      "revision": "9223d91d3cc8e01d7f9cde4721a31ba291018450"
     }
   ],
   "title": "CentaurEval: Benchmarking Human-in-the-Loop Value in Agentic Coding",
