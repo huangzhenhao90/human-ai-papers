@@ -1,0 +1,69 @@
+{
+  "abstract": "The rapid advancement of large language models (LLMs) has led to the widespread adoption of AI-powered coding assistants integrated into a development environment. On one hand, low-latency code completion offers completion suggestions but is fundamentally constrained to the cursor's current position. On the other hand, chat-based editing can perform complex modifications, yet forces developers to stop their work, describe the intent in natural language, which causes a context-switch away from the code. This creates a suboptimal user experience, as neither paradigm proactively predicts the developer's next edit in a sequence of related edits. To bridge this gap and provide the seamless code edit suggestion, we introduce the task of Next Edit Prediction, a novel task designed to infer developer intent from recent interaction history to predict both the location and content of the subsequent edit. Specifically, we curate a high-quality supervised fine-tuning dataset and an evaluation benchmark for the Next Edit Prediction task. Then, we conduct supervised fine-tuning on a series of models and performed a comprehensive evaluation of both the fine-tuned models and other baseline models, yielding several novel findings. This work lays the foundation for a new interaction paradigm that proactively collaborate with developers by anticipating their following action, rather than merely reacting to explicit instructions. The code is available at https://github.com/lurf21/NextEditPrediction.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 助手",
+    "人机协作"
+  ],
+  "arxiv_id": "2508.10074",
+  "authors": [
+    "Ruofan Lu",
+    "Yintong Huo",
+    "Meng Zhang",
+    "Yichen Li",
+    "Michael R. Lyu"
+  ],
+  "authors_full": [
+    {
+      "name": "Ruofan Lu"
+    },
+    {
+      "name": "Yintong Huo"
+    },
+    {
+      "name": "Meng Zhang"
+    },
+    {
+      "name": "Yichen Li"
+    },
+    {
+      "name": "Michael R. Lyu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "AI编程助手以开发者交互与体验为核心",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "面向AI编程助手中补全受光标位置限制、聊天编辑又易打断工作的问题，构建“下一编辑预测”任务，利用近期交互历史预测后续编辑的位置与内容；经监督微调和基线评测，验证了主动预测开发者意图的可行性。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "开发者工具"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-08-13",
+  "doi": null,
+  "id": "p_6HdxAjFwtp2Lfdqz",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2508.10074v2",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8207,
+      "revision": "30763b41401f9711b3ea7ecaad62ed204d95a91b"
+    }
+  ],
+  "title": "Next Edit Prediction: Learning to Predict Code Edits from Context and Interaction History",
+  "title_zh": "下一次编辑预测：从上下文与交互历史中学习预测代码编辑",
+  "unified_ingested_at": "2026-10-25T07:22:21.004795Z",
+  "url": "https://arxiv.org/abs/2508.10074v2",
+  "volume": null,
+  "year": 2025
+}

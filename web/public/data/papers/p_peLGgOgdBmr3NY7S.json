@@ -1,0 +1,80 @@
+{
+  "abstract": "Large Language Models (LLMs) increasingly exhibit over-refusal - erroneously rejecting benign queries due to overly conservative safety measures - a critical functional flaw that undermines their reliability and usability. Current methods for testing this behavior are demonstrably inadequate, suffering from flawed benchmarks and limited test generation capabilities, as highlighted by our empirical user study. To the best of our knowledge, this paper introduces the first evolutionary testing framework, ORFuzz, for the systematic detection and analysis of LLM over-refusals. ORFuzz uniquely integrates three core components: (1) safety category-aware seed selection for comprehensive test coverage, (2) adaptive mutator optimization using reasoning LLMs to generate effective test cases, and (3) OR-Judge, a human-aligned judge model validated to accurately reflect user perception of toxicity and refusal. Our extensive evaluations demonstrate that ORFuzz generates diverse, validated over-refusal instances at a rate (6.98% average) more than double that of leading baselines, effectively uncovering vulnerabilities. Furthermore, ORFuzz's outputs form the basis of ORFuzzSet, a new benchmark of 1,855 highly transferable test cases that achieves a superior 63.56% average over-refusal rate across 10 diverse LLMs, significantly outperforming existing datasets. ORFuzz and ORFuzzSet provide a robust automated testing framework and a valuable community resource, paving the way for developing more reliable and trustworthy LLM-based software systems.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "AI 治理",
+    "可用性 AI"
+  ],
+  "arxiv_id": "2508.11222",
+  "authors": [
+    "Haonan Zhang",
+    "Dongxia Wang",
+    "Yi Liu",
+    "Kexin Chen",
+    "Jiashui Wang"
+  ],
+  "authors_full": [
+    {
+      "name": "Haonan Zhang"
+    },
+    {
+      "name": "Dongxia Wang"
+    },
+    {
+      "name": "Yi Liu"
+    },
+    {
+      "name": "Kexin Chen"
+    },
+    {
+      "name": "Jiashui Wang"
+    },
+    {
+      "name": "Xinlei Ying"
+    },
+    {
+      "name": "Long Liu"
+    },
+    {
+      "name": "Wenhai Wang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "聚焦LLM过度拒答，并含实证用户研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对大语言模型因安全策略过度保守而误拒无害请求的问题，构建进化式模糊测试框架ORFuzz，结合安全类别种子、推理模型变异与人工对齐评审器。其有效用例生成率较基线高出一倍以上，并形成可在10个LLM上验证的高迁移性基准，揭示现有安全测试的覆盖不足。",
+      "topic_tags": [
+        "AI 治理",
+        "伦理",
+        "软件测试",
+        "大语言模型安全"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-08-15",
+  "doi": "10.1109/ase63991.2025.00156",
+  "id": "p_peLGgOgdBmr3NY7S",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2508.11222v2",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7861,
+      "revision": "30763b41401f9711b3ea7ecaad62ed204d95a91b"
+    }
+  ],
+  "title": "ORFuzz: Fuzzing the \"Other Side\" of LLM Safety -- Testing Over-Refusal",
+  "title_zh": "ORFuzz：模糊测试 LLM 安全的“另一面”：测试过度拒答",
+  "unified_ingested_at": "2026-10-25T07:22:21.004795Z",
+  "url": "https://arxiv.org/abs/2508.11222v2",
+  "volume": null,
+  "year": 2025
+}
