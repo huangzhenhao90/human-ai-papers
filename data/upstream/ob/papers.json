@@ -11532,6 +11532,44 @@
     "year": 2026
   },
   {
+    "ai_reason": "LLM驱动风投项目筛选与证据审查",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI 智能体",
+      "人机协作",
+      "AI 治理"
+    ],
+    "authors": [
+      "Ming Ze Tang",
+      "David Cutting",
+      "Boyd Carson",
+      "Vasiliki Carson"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-23",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 83139,
+    "ingested_at": "2026-10-26T07:24:23.589293",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.32380v1",
+    "scored_at": "2026-10-26T07:24:42.580621",
+    "title": "DealsFlow: An Evidence-Gated Agentic Harness for Venture Capital Deal Triage",
+    "title_zh": "DealsFlow：用于风险投资交易初筛的证据门控智能体框架",
+    "tldr": "针对LLM风投筛选易出现分数虚高、波动和不可审计理由，构建证据门控的人机协同流程：预取证据、分项评分、设置证据上限，并由“怀疑者”仅下调分数。243笔投资中，以142笔已成熟案例评估，完整流程与总价值倍数相关性ρ=.45、识别核销AUC=.71，略优于无约束LLM；收益主要来自下调机制，但结果可能高估筛选能力。",
+    "topic_tags": [
+      "创业",
+      "风险投资",
+      "决策",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2610.32380v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "ai_reason": "核心议题人机交互与AI招聘代理，属HR领域",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -18766,6 +18804,45 @@
     "year": 2026
   },
   {
+    "ai_reason": "以LLM聊天机器人的事实性指标与用户信任为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Greta Warren",
+      "Jessica Heal",
+      "Sila Eser",
+      "Denise M. Leto",
+      "Christine M. Lehane"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-23",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 83141,
+    "ingested_at": "2026-10-26T07:24:23.590150",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.32883v1",
+    "scored_at": "2026-10-26T07:24:42.580157",
+    "title": "When Should I Trust This? Designing and Evaluating Factuality Indicators for LLM-based Chatbots",
+    "title_zh": "我应何时信任它：面向LLM聊天机器人的事实性指标设计与评估",
+    "tldr": "混合方法考察普通人如何评估LLM聊天机器人对园艺、数学和医疗问题的回答：访谈8人、调查1000人并开展5151人实验。用户会按情境选择性核验答案；置信度与来源提示能短期改变信任和准确性感知，但在得知答案对错后影响消失，医疗场景始终更审慎。设计应提升置信度可理解性并整合来源信息，以促成校准信任。",
+    "topic_tags": [
+      "信任",
+      "信息检索",
+      "人机交互",
+      "决策"
+    ],
+    "url": "https://arxiv.org/abs/2610.32883v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "ai_reason": "RAG人机协作工作场所研究，OB边缘相关",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -20178,6 +20255,45 @@
       "组织变革"
     ],
     "url": "https://arxiv.org/abs/2610.14823v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "ai_reason": "评估编码智能体的需求澄清与软件开发",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "代码生成",
+      "AI 智能体",
+      "人机交互"
+    ],
+    "authors": [
+      "Jialei Li",
+      "Dingxian Wang",
+      "Xiaoyan Zhao",
+      "Yimeng Bai",
+      "Xuanyi Zhu"
+    ],
+    "cited_by": 0,
+    "date": "2026-10-22",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 83138,
+    "ingested_at": "2026-10-26T07:24:23.588792",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2610.31854v1",
+    "scored_at": "2026-10-26T07:24:42.581042",
+    "title": "SWE-Clar: Can Coding Agents Clarify Incomplete Client Requirements and Deliver Greenfield Software?",
+    "title_zh": "SWE-Clar：编码智能体能否澄清不完整的客户需求并交付全新软件？",
+    "tldr": "面向自由职业软件开发中客户需求不完整的场景，构建SWE-Clar基准：基于Upwork真实高价值任务设置100项任务，让编码智能体先与客户代理多轮澄清，再独立实现代码，并用512道需求理解题和验收测试分别评估。九个前沿模型实验表明，即便最佳模型GPT-6 Astra也暴露出需求理解与可靠交付局限；先澄清再编码并单独测试理解，有助于诊断智能体能力。",
+    "topic_tags": [
+      "需求工程",
+      "软件开发",
+      "自由职业",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2610.31854v1",
     "volume": null,
     "year": 2026
   },
@@ -85771,6 +85887,43 @@
     "year": 2021
   },
   {
+    "ai_reason": "聚焦算法决策及不平等对偏好的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法决策",
+      "自动化决策"
+    ],
+    "authors": [
+      "Yochanan E. Bigman",
+      "Kai Chi Yam",
+      "Déborah Marciano",
+      "Scott J. Reynolds",
+      "Kurt Gray"
+    ],
+    "cited_by": 52,
+    "date": "2021-09",
+    "doi": "10.1016/j.chb.2021.106859",
+    "domain_score": 4.0,
+    "id": 52282,
+    "ingested_at": "2026-08-12T04:23:40.242215",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:33.829830",
+    "title": "Threat of racial and economic inequality increases preference for algorithm decision-making",
+    "title_zh": null,
+    "tldr": "通过不平等威胁情境及算法与人类决策比较，检验种族和经济不平等威胁对决策偏好的影响；标题显示两类威胁均会提高对算法决策的偏好，表明不平等焦虑可能促使人们选择看似更客观的算法判断。",
+    "topic_tags": [
+      "公平性",
+      "算法决策",
+      "信任",
+      "偏见"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106859",
+    "volume": "122",
+    "year": 2021
+  },
+  {
     "ai_reason": "比较人类与人工智能公平感知",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -85803,6 +85956,76 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2021.106920",
     "volume": "124",
+    "year": 2021
+  },
+  {
+    "ai_reason": "机器人拟人化特征与用户态度为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器人",
+      "拟人化",
+      "人机交互"
+    ],
+    "authors": [
+      "Spatola Nicolas",
+      "Wykowska Agnieszka"
+    ],
+    "cited_by": 63,
+    "date": "2021-09",
+    "doi": "10.1016/j.chb.2021.106841",
+    "domain_score": 4.0,
+    "id": 52468,
+    "ingested_at": "2026-08-12T04:23:44.588836",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.888122",
+    "title": "The personality of anthropomorphism: How the need for cognition and the need for closure define attitudes and anthropomorphic attributions toward robots",
+    "title_zh": null,
+    "tldr": "围绕机器人拟人化，采用个体心理需求与态度归因分析框架，考察认知需要和闭合需要如何塑造对机器人的态度及拟人化归因；标题表明两类需求共同影响拟人化理解，相关判断具有明显个体差异。",
+    "topic_tags": [
+      "机器人",
+      "拟人化",
+      "消费者态度",
+      "认知需要"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106841",
+    "volume": "122",
+    "year": 2021
+  },
+  {
+    "ai_reason": "AI服务设备拟人化与接受为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "拟人化"
+    ],
+    "authors": [
+      "Corina Pelau",
+      "Dan-Cristian Dabija",
+      "Irina Ene"
+    ],
+    "cited_by": 789,
+    "date": "2021-09",
+    "doi": "10.1016/j.chb.2021.106855",
+    "domain_score": 4.0,
+    "id": 52813,
+    "ingested_at": "2026-08-12T04:23:52.986045",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.887331",
+    "title": "What makes an AI device human-like? The role of interaction quality, empathy and perceived psychological anthropomorphic characteristics in the acceptance of artificial intelligence in the service industry",
+    "title_zh": null,
+    "tldr": "以服务行业AI设备为场景，通过变量关系检验，考察交互质量、感知同理心与心理拟人化特征对用户接受度的影响；标题指向三者均为重要前置因素，互动性、同理感和类人心理特征会增强设备接受度。",
+    "topic_tags": [
+      "消费者行为",
+      "服务营销",
+      "技术接受",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106855",
+    "volume": "122",
     "year": 2021
   },
   {
@@ -85840,6 +86063,77 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2021.106975",
     "volume": "125",
+    "year": 2021
+  },
+  {
+    "ai_reason": "人机团队协作与自主性为核心议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机协作",
+      "AI代理"
+    ],
+    "authors": [
+      "Geoff Musick",
+      "Thomas A. O'Neill",
+      "Beau G. Schelble",
+      "Nathan J. McNeese",
+      "Jonn B. Henke"
+    ],
+    "cited_by": 78,
+    "date": "2021-09",
+    "doi": "10.1016/j.chb.2021.106852",
+    "domain_score": 5.0,
+    "id": 53364,
+    "ingested_at": "2026-08-12T04:24:05.698708",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.886243",
+    "title": "What Happens When Humans Believe Their Teammate is an AI? An Investigation into Humans Teaming with Autonomy",
+    "title_zh": "当人类认为队友是AI时会怎样？人类与自主系统协作研究",
+    "tldr": "考察人类将队友识别为AI后，其信任、协作与自主性感知的变化，并分析“队友是AI”的认知如何影响人机团队互动及表现。",
+    "topic_tags": [
+      "团队",
+      "人机协作",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106852",
+    "volume": "122",
+    "year": 2021
+  },
+  {
+    "ai_reason": "综述算法决策与工作增强对员工的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法决策",
+      "算法管理",
+      "人机协作"
+    ],
+    "authors": [
+      "Markus Langer",
+      "Richard N. Landers"
+    ],
+    "cited_by": 286,
+    "date": "2021-10",
+    "doi": "10.1016/j.chb.2021.106878",
+    "domain_score": 5.0,
+    "id": 53880,
+    "ingested_at": "2026-08-12T05:42:24.574468",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:24:54.125406",
+    "title": "The future of artificial intelligence at work: A review on effects of decision automation and augmentation on workers targeted by algorithms and third-party observers",
+    "title_zh": "职场人工智能的未来：决策自动化与决策增强对受算法及第三方监测的劳动者的影响综述",
+    "tldr": "综述人工智能介入工作决策的自动化与增强路径，重点考察被算法及第三方观察者评价或管理的劳动者，讨论其对工作绩效、监控、公平与自主性的影响，并指出工作场所人机协作及算法治理的发展方向。",
+    "topic_tags": [
+      "工作未来",
+      "人机协作",
+      "算法管理",
+      "AI治理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106878",
+    "volume": "123",
     "year": 2021
   },
   {
@@ -86152,6 +86446,41 @@
     "year": 2021
   },
   {
+    "ai_reason": "机器学习用于众筹创意设计",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Yanhao “Max” Wei",
+      "Jihoon Hong",
+      "Gerard J. Tellis"
+    ],
+    "cited_by": 42,
+    "date": "2021-10-08",
+    "doi": "10.1177/00222429211005481",
+    "domain_score": 5.0,
+    "id": 46332,
+    "ingested_at": "2026-08-12T04:21:14.996778",
+    "issue": "2",
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:24:50.810875",
+    "title": "Machine Learning for Creativity: Using Similarity Networks to Design Better Crowdfunding Projects",
+    "title_zh": "面向创造力的机器学习：利用相似性网络优化众筹项目设计",
+    "tldr": "基于Kickstarter众筹项目文本，运用Word2Vec和词移动距离构建项目相似网络，检验创新与相似性的平衡如何影响融资表现。结果显示，相似项目既往成绩可预测新项目融资；适度新颖且兼顾常规模仿，并设定接近相似项目筹款额的目标，更易获得成功。",
+    "topic_tags": [
+      "营销",
+      "创意",
+      "创新",
+      "创业"
+    ],
+    "url": "https://doi.org/10.1177/00222429211005481",
+    "volume": "86",
+    "year": 2021
+  },
+  {
     "ai_reason": "核心研究客服聊天机器人及消费者反应",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -86299,6 +86628,113 @@
     "year": 2021
   },
   {
+    "ai_reason": "研究AI战略及CIO与董事会",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI治理",
+      "机器学习"
+    ],
+    "authors": [
+      "Jingyu Li",
+      "Mengxiang Li",
+      "Xincheng Wang",
+      "Jason Bennett Thatcher"
+    ],
+    "cited_by": 191,
+    "date": "2021-09-01",
+    "doi": "10.25300/misq/2021/16523",
+    "domain_score": 5.0,
+    "id": 43845,
+    "ingested_at": "2026-08-12T04:20:15.157202",
+    "issue": "3",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.626530",
+    "title": "Strategic Directions for AI: The Role of CIOs and Boards of Directors",
+    "title_zh": "人工智能的战略方向：CIO与董事会的角色",
+    "tldr": "基于高管梯队理论考察中国1454家上市公司的CIO与董事会如何塑造企业AI战略方向。发现CIO显著促进AI导向，董事会教育多样性、研发经验及AI经验进一步强化这一影响，并影响AI导向而非传统IT导向。",
+    "topic_tags": [
+      "战略",
+      "领导力",
+      "公司治理",
+      "组织变革"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/16523",
+    "volume": "45",
+    "year": 2021
+  },
+  {
+    "ai_reason": "主题即AI管理与人机决策",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI治理",
+      "机器学习",
+      "可解释AI",
+      "自主系统"
+    ],
+    "authors": [
+      "Nicholas Berente",
+      "Bin Gu",
+      "Jan Recker",
+      "Radhika Santhanam"
+    ],
+    "cited_by": 505,
+    "date": "2021-09-01",
+    "doi": "10.25300/misq/2021/16274",
+    "domain_score": 5.0,
+    "id": 43898,
+    "ingested_at": "2026-08-12T04:20:16.419885",
+    "issue": "3",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.626287",
+    "title": "Managing Artificial Intelligence",
+    "title_zh": "人工智能管理",
+    "tldr": "通过回顾AI管理前沿并整合7篇专题研究，归纳AI管理需协调自主性、学习能力与不可解释性三项相互依赖的议题，强调沟通、领导、控制及信息系统学科在塑造未来AI管理中的关键作用。",
+    "topic_tags": [
+      "AI治理",
+      "领导力",
+      "组织变革",
+      "战略"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/16274",
+    "volume": "45",
+    "year": 2021
+  },
+  {
+    "ai_reason": "AI能力是企业创新核心变量",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "人机协作"
+    ],
+    "authors": [
+      "Bowen Lou",
+      "Lynn Wu"
+    ],
+    "cited_by": 136,
+    "date": "2021-09-01",
+    "doi": "10.25300/misq/2021/16565",
+    "domain_score": 4.0,
+    "id": 43916,
+    "ingested_at": "2026-08-12T04:20:16.818463",
+    "issue": "3",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.626047",
+    "title": "AI on Drugs: Can Artificial Intelligence Accelerate Drug Development? Evidence from a Large-Scale Examination of Bio-Pharma Firms",
+    "title_zh": null,
+    "tldr": "检验企业AI创新能力能否加快药物靶点发现。基于专利和招聘信息发现，AI能力有助于发现新药物靶点，尤其适用于作用机制明确、化学新颖性中等的药物；其效果依赖员工兼具AI技能与药物发现领域专长。",
+    "topic_tags": [
+      "创新",
+      "人力资源管理",
+      "知识管理"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/16565",
+    "volume": "45",
+    "year": 2021
+  },
+  {
     "ai_reason": "算法管理是核心AI议题；属OB/平台用工研究",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -86333,6 +86769,225 @@
     ],
     "url": "https://doi.org/10.25300/misq/2021/15333",
     "volume": "45",
+    "year": 2021
+  },
+  {
+    "ai_reason": "核心分析AI建议下人机互补与知识",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法决策",
+      "人机协作",
+      "人在回路"
+    ],
+    "authors": [
+      "Andreas Fügener",
+      "Jörn Grahl",
+      "Alok Gupta",
+      "Wolfgang Ketter"
+    ],
+    "cited_by": 254,
+    "date": "2021-09-01",
+    "doi": "10.25300/misq/2021/16553",
+    "domain_score": 4.0,
+    "id": 44043,
+    "ingested_at": "2026-08-12T04:20:19.816727",
+    "issue": "3",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:19.367293",
+    "title": "Will Humans-in-the-Loop Become Borgs? Merits and Pitfalls of Working with AI",
+    "title_zh": null,
+    "tldr": "考察AI建议如何改变人机互补性及群体决策。分析模型、实验与仿真发现，AI可提高个体准确率，却使人的选择趋同并削弱独有知识，降低群体智慧；个性化AI建议可有效缓解这一问题。",
+    "topic_tags": [
+      "决策",
+      "人机协作",
+      "知识管理",
+      "组织学习"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/16553",
+    "volume": "45",
+    "year": 2021
+  },
+  {
+    "ai_reason": "研究人类与机器学习协同及组织学习",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "人机协作"
+    ],
+    "authors": [
+      "Timo Sturm",
+      "Jin P. Gerlach",
+      "Luisa Pumplun",
+      "Neda Mesbah",
+      "Felix Peters"
+    ],
+    "cited_by": 136,
+    "date": "2021-09-01",
+    "doi": "10.25300/misq/2021/16543",
+    "domain_score": 5.0,
+    "id": 44140,
+    "ingested_at": "2026-08-12T04:20:22.041195",
+    "issue": "3",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:19.366936",
+    "title": "Coordinating Human and Machine Learning for Effective Organizational Learning",
+    "title_zh": null,
+    "tldr": "探讨组织如何协调人类学习与机器学习以提升整体学习效能。主体仿真发现，机器学习可减少探索性人力投入；人类调整机器学习系统通常有益，但条件不当时可能适得其反；动荡环境中依赖机器知识更具优势，但需高额初始投入与有效协调。",
+    "topic_tags": [
+      "组织学习",
+      "知识管理",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/16543",
+    "volume": "45",
+    "year": 2021
+  },
+  {
+    "ai_reason": "评估医院AI工具及专家知识局限",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "AI评估",
+      "人机协作"
+    ],
+    "authors": [
+      "Sarah Lebovitz",
+      "Natalia Levina",
+      "Hila Lifshitz-Assaf"
+    ],
+    "cited_by": 305,
+    "date": "2021-09-01",
+    "doi": "10.25300/misq/2021/16564",
+    "domain_score": 4.0,
+    "id": 44203,
+    "ingested_at": "2026-08-12T04:20:23.489062",
+    "issue": "3",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:19.366729",
+    "title": "Is AI Ground Truth Really True? The Dangers of Training and Evaluating AI Tools Based on Experts’ Know-What",
+    "title_zh": "AI的基准真值真的可靠吗？基于专家实践知识训练与评估AI工具的风险",
+    "tldr": "医院管理者如何可信评估知识工作中的AI性能？对美国大型医院开展田野研究，考察五款机器学习工具的使用与评价。标准准确率均较高却未达预期，原因是专家标注仅包含事实性知识，未纳入应对不确定性的实践知识；因此专家标签不能被直接视为客观真值，AI开发、训练与评估须纳入隐性知识。",
+    "topic_tags": [
+      "知识管理",
+      "决策",
+      "人机协作",
+      "组织学习"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/16564",
+    "volume": "45",
+    "year": 2021
+  },
+  {
+    "ai_reason": "聚焦自动化公平及人机协同机制",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策",
+      "AI治理",
+      "人机协作"
+    ],
+    "authors": [
+      "Mike H. M. Teodorescu",
+      "Lily Morse",
+      "Yazeed Awwad",
+      "Gerald C. Kane"
+    ],
+    "cited_by": 157,
+    "date": "2021-09-01",
+    "doi": "10.25300/misq/2021/16535",
+    "domain_score": 4.0,
+    "id": 44249,
+    "ingested_at": "2026-08-12T04:20:24.657675",
+    "issue": "3",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:19.366535",
+    "title": "Failures of Fairness in Automation Require a Deeper Understanding of Human–ML Augmentation",
+    "title_zh": "自动化中的公平性失灵要求深化对人类—ML增强的理解",
+    "tldr": "探讨自动化公平为何常失效，以及人机增强应如何设计。基于信息系统研究构建“反应式监督、主动式监督、知情依赖、监督式依赖”四象限类型学，揭示不同增强模式对应不同管理路径，并指出数据驱动的机器学习可能挑战经典信息系统理论的基本假设。",
+    "topic_tags": [
+      "公平性",
+      "人机协作",
+      "算法管理",
+      "决策"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/16535",
+    "volume": "45",
+    "year": 2021
+  },
+  {
+    "ai_reason": "核心研究机器学习招聘系统及人机协作",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "AI招聘",
+      "人机协作"
+    ],
+    "authors": [
+      "Elmira van den Broek",
+      "Anastasia Sergeeva",
+      "Marleen Huysman"
+    ],
+    "cited_by": 267,
+    "date": "2021-09-01",
+    "doi": "10.25300/misq/2021/16559",
+    "domain_score": 5.0,
+    "id": 44276,
+    "ingested_at": "2026-08-12T04:20:25.271048",
+    "issue": "3",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:19.366325",
+    "title": "When the Machine Meets the Expert: An Ethnography of Developing AI for Hiring",
+    "title_zh": "当机器遇见专家：开发用于招聘的AI的民族志研究",
+    "tldr": "聚焦机器学习招聘系统能否替代招聘专家。通过两年民族志发现，开发者在“去专家化”与保留领域专长间反复迭代；技术使用促发双方反思知识生产方式，最终形成依赖机器学习与专家知识的混合实践，表明人机知识相互依存而非对立。",
+    "topic_tags": [
+      "招聘",
+      "人机协作",
+      "知识管理",
+      "组织学习"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/16559",
+    "volume": "45",
+    "year": 2021
+  },
+  {
+    "ai_reason": "多臂老虎机算法驱动动态定价",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "多臂老虎机",
+      "上下文老虎机",
+      "机器学习",
+      "算法决策"
+    ],
+    "authors": [
+      "Yining Wang",
+      "Boxiao Chen",
+      "David Simchi-Levi"
+    ],
+    "cited_by": 58,
+    "date": "2021-10",
+    "doi": "10.1287/mnsc.2020.3819",
+    "domain_score": 5.0,
+    "id": 41593,
+    "ingested_at": "2026-08-12T04:19:20.714856",
+    "issue": "10",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:06.736163",
+    "title": "Multimodal Dynamic Pricing",
+    "title_zh": "多模态动态定价",
+    "tldr": "针对需求未知且奖励多峰的非凹动态定价，将连续需求函数离散为多臂老虎机区间，并用线性上下文老虎机估计局部多项式；算法在广泛光滑需求类别中达到最优最坏情形遗憾界，特殊情形下亦匹配既有最优结果。",
+    "topic_tags": [
+      "动态定价",
+      "机器学习",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2020.3819",
+    "volume": "67",
     "year": 2021
   },
   {
@@ -86371,6 +87026,40 @@
     "year": 2021
   },
   {
+    "ai_reason": "以AI服务机器人为核心，研究消费者采用",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Stephanie Hui-Wen Chuah",
+      "Eugene Cheng-Xi Aw",
+      "Dewey Yee"
+    ],
+    "cited_by": 186,
+    "date": "2021-10",
+    "doi": "10.1016/j.chb.2021.106870",
+    "domain_score": 5.0,
+    "id": 52183,
+    "ingested_at": "2026-08-12T04:23:38.015172",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:24:58.294265",
+    "title": "Unveiling the complexity of consumers’ intention to use service robots: An fsQCA approach",
+    "title_zh": "揭示消费者使用服务机器人意愿的复杂性：一种 fsQCA 方法",
+    "tldr": "采用集合型配置比较方法（fsQCA）分析消费者使用服务机器人的意愿，识别形成高使用意愿的多种前因组合，揭示消费者决策的复杂性与组态特征，为服务机器人的应用和推广提供配置视角。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "技术接受"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106870",
+    "volume": "123",
+    "year": 2021
+  },
+  {
     "ai_reason": "人形机器人的恐怖谷与去人化",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -86403,6 +87092,43 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2021.106945",
     "volume": "125",
+    "year": 2021
+  },
+  {
+    "ai_reason": "比较人类与自动代理的公平感知",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "算法决策",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Nadine Schlicker",
+      "Markus Langer",
+      "Sonja K. Ötting",
+      "Kevin Baum",
+      "Cornelius J. König"
+    ],
+    "cited_by": 90,
+    "date": "2021-09",
+    "doi": "10.1016/j.chb.2021.106837",
+    "domain_score": 5.0,
+    "id": 54251,
+    "ingested_at": "2026-08-12T05:42:35.443880",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.627527",
+    "title": "What to expect from opening up ‘black boxes’? Comparing perceptions of justice between human and automated agents",
+    "title_zh": "打开“黑箱”后可期待什么？人类与自动化代理的公正感知比较",
+    "tldr": "比较人类与自动化代理的正义感知，考察打开算法“黑箱”对自动化决策的公平感、信任与接受度的影响，突出透明性和可解释性的作用。",
+    "topic_tags": [
+      "公平性",
+      "信任",
+      "算法决策"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106837",
+    "volume": "122",
     "year": 2021
   },
   {
@@ -86507,6 +87233,80 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2021.106787",
     "volume": "121",
+    "year": 2021
+  },
+  {
+    "ai_reason": "服务机器人拟人情感是核心变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互",
+      "情感计算"
+    ],
+    "authors": [
+      "Kai Chi Yam",
+      "Yochanan E. Bigman",
+      "Pok Man Tang",
+      "Remus Ilies",
+      "David De Cremer"
+    ],
+    "cited_by": 303,
+    "date": "2021-10",
+    "doi": "10.1037/apl0000834",
+    "domain_score": 5.0,
+    "id": 35395,
+    "ingested_at": "2026-08-12T04:16:56.535771",
+    "issue": "10",
+    "journal": "JAP",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:02.905463",
+    "title": "Robots at work: People prefer—and forgive—service robots with perceived feelings.",
+    "title_zh": "机器人上岗：人们偏好并宽容具有感知情感的服务机器人",
+    "tldr": "标题显示，消费者更偏好被感知具有情感的服务机器人，也更愿意原谅其服务失误；因缺少摘要，具体实验设计、样本及适用边界尚无法判断。",
+    "topic_tags": [
+      "服务机器人",
+      "消费者行为",
+      "信任",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1037/apl0000834",
+    "volume": "106",
+    "year": 2021
+  },
+  {
+    "ai_reason": "深度网络是识别市场结构的核心方法",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "深度学习",
+      "表示学习",
+      "自编码器"
+    ],
+    "authors": [
+      "Yi Yang",
+      "Kunpeng Zhang",
+      "P.K. Kannan"
+    ],
+    "cited_by": 57,
+    "date": "2021-10-16",
+    "doi": "10.1177/00222429211033585",
+    "domain_score": 5.0,
+    "id": 46187,
+    "ingested_at": "2026-08-12T04:21:11.541463",
+    "issue": "4",
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:24:48.507653",
+    "title": "Identifying Market Structure: A Deep Network Representation Learning of Social Engagement",
+    "title_zh": "识别市场结构：社会参与的深度网络表征学习",
+    "tldr": "为识别传统行业分类难以捕捉的动态产品市场边界，构建品牌—用户网络，用深度自编码器从数百万条社交媒体互动数据中学习低维品牌表示，并通过多源外部数据及Whole Foods收购、特斯拉Model 3发布等事件验证。该方法可揭示跨类别竞争关系、潜在威胁与市场机会。",
+    "topic_tags": [
+      "营销",
+      "战略",
+      "市场结构",
+      "竞争"
+    ],
+    "url": "https://doi.org/10.1177/00222429211033585",
+    "volume": "86",
     "year": 2021
   },
   {
@@ -86783,6 +87583,78 @@
     "year": 2021
   },
   {
+    "ai_reason": "以Transformer模型分析消费者感知",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "自然语言处理",
+      "情感分析"
+    ],
+    "authors": [
+      "Dinesh Puranam",
+      "Vrinda Kadiyali",
+      "Vishal Narayan"
+    ],
+    "cited_by": 48,
+    "date": "2021-09",
+    "doi": "10.1287/mksc.2021.1294",
+    "domain_score": 5.0,
+    "id": 48071,
+    "ingested_at": "2026-08-12T04:21:57.739758",
+    "issue": "5",
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:33.831527",
+    "title": "The Impact of Increase in Minimum Wages on Consumer Perceptions of Service: A Transformer Model of Online Restaurant Reviews",
+    "title_zh": "最低工资提高对消费者服务感知的影响：基于在线餐厅评论的 Transformer 模型",
+    "tldr": "考察最低工资上调对消费者感知餐饮服务质量的影响，利用Transformer模型分析在线餐厅评论中的情感与主题信息，识别工资政策变化对应的消费者服务评价，为评估其服务效应提供文本证据。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "劳动经济"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2021.1294",
+    "volume": "40",
+    "year": 2021
+  },
+  {
+    "ai_reason": "深度学习用于分析慕课认知情绪",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "深度学习",
+      "情感识别",
+      "社交网络分析"
+    ],
+    "authors": [
+      "Zhong-Mei Han",
+      "Chang-Qin Huang",
+      "Jian-Hui Yu",
+      "Chin-Chung Tsai"
+    ],
+    "cited_by": 52,
+    "date": "2021-09",
+    "doi": "10.1016/j.chb.2021.106843",
+    "domain_score": 3.0,
+    "id": 53107,
+    "ingested_at": "2026-08-12T04:23:59.742639",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.886727",
+    "title": "Identifying patterns of epistemic emotions with respect to interactions in massive online open courses using deep learning and social network analysis",
+    "title_zh": "利用深度学习与社会网络分析识别慕课互动中的认知情绪模式",
+    "tldr": "利用深度学习和社交网络分析识别MOOC互动中的认识情绪模式，揭示学习者情绪及其与课程参与关系网络在在线学习中的作用。",
+    "topic_tags": [
+      "教育",
+      "在线学习",
+      "学习分析",
+      "情绪"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106843",
+    "volume": "122",
+    "year": 2021
+  },
+  {
     "ai_reason": "聚焦短信广告与购买意愿，神经网络辅助建模",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -86815,6 +87687,39 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2021.106919",
     "volume": "124",
+    "year": 2021
+  },
+  {
+    "ai_reason": "自主技术涉及AI但侧重社会认知",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "自主系统",
+      "人机交互"
+    ],
+    "authors": [
+      "Ruth Frischknecht"
+    ],
+    "cited_by": 37,
+    "date": "2021-09",
+    "doi": "10.1016/j.chb.2021.106815",
+    "domain_score": 3.0,
+    "id": 54380,
+    "ingested_at": "2026-08-12T05:42:39.258980",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:36.627337",
+    "title": "A social cognition perspective on autonomous technology",
+    "title_zh": "自主技术的社会认知视角",
+    "tldr": "仅据标题推断，研究从社会认知视角分析自主技术，考察用户如何形成对其能力、意图与风险的认知，以及这些认知如何影响信任、接受和行为反应；具体方法与实证结论仍需全文验证。",
+    "topic_tags": [
+      "信任",
+      "消费者行为",
+      "人机交互",
+      "技术接受"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106815",
+    "volume": "122",
     "year": 2021
   },
   {
@@ -87027,6 +87932,45 @@
     "year": 2021
   },
   {
+    "ai_reason": "人脸情绪识别用于测量，核心是销售效果",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "计算机视觉",
+      "面部情绪识别",
+      "情感计算",
+      "算法管理"
+    ],
+    "authors": [
+      "Neeraj Bharadwaj",
+      "Michel Ballings",
+      "Prasad A. Naik",
+      "Miller Moore",
+      "Mustafa Murat Arat"
+    ],
+    "cited_by": 175,
+    "date": "2021-09-30",
+    "doi": "10.1177/00222429211013042",
+    "domain_score": 5.0,
+    "id": 46442,
+    "ingested_at": "2026-08-12T04:21:17.718347",
+    "issue": "1",
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:25:41.311200",
+    "title": "A New Livestream Retail Analytics Framework to Assess the Sales Impact of Emotional Displays",
+    "title_zh": "评估情感展示销售影响的新型直播零售分析框架",
+    "tldr": "构建直播销售的人脸检测与六类情绪提取框架，将99,451段销售话术匹配实际交易；各情绪造成的销售阻力均呈负U形，中段最大，主张面无表情销售，并推导人脸与情绪展示的最优配置及更客观的销售人员排名。",
+    "topic_tags": [
+      "直播营销",
+      "消费者行为",
+      "绩效评估",
+      "人员分析"
+    ],
+    "url": "https://doi.org/10.1177/00222429211013042",
+    "volume": "86",
+    "year": 2021
+  },
+  {
     "ai_reason": "营销新技术框架，可能涉及AI但无摘要确认",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -87061,6 +88005,78 @@
     ],
     "url": "https://doi.org/10.1177/00222429211061636",
     "volume": "86",
+    "year": 2021
+  },
+  {
+    "ai_reason": "用自动化文本与视觉分析品牌情绪",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "情感分析",
+      "计算机视觉",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Jeffrey K. Lee"
+    ],
+    "cited_by": 63,
+    "date": "2021-10-12",
+    "doi": "10.1177/00222437211037340",
+    "domain_score": 5.0,
+    "id": 47343,
+    "ingested_at": "2026-08-12T04:21:39.700656",
+    "issue": "6",
+    "journal": "JMR",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:24:48.510264",
+    "title": "Emotional Expressions and Brand Status",
+    "title_zh": "情感表达与品牌地位",
+    "tldr": "考察品牌社交媒体情绪表达与地位感知的关系：以自动文本分析和计算机视觉处理20余万条图文帖子，再通过四项研究检验机制与边界。品牌降低情绪表达可强化高地位沟通规范，唤起高地位参照群体，进而提升感知地位；效果受品牌地位情境和产品类型调节。",
+    "topic_tags": [
+      "品牌",
+      "营销",
+      "消费者行为",
+      "社交媒体"
+    ],
+    "url": "https://doi.org/10.1177/00222437211037340",
+    "volume": "58",
+    "year": 2021
+  },
+  {
+    "ai_reason": "以CNN和语言模型分析品牌自拍",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "计算机视觉",
+      "自然语言处理",
+      "机器学习",
+      "可解释AI"
+    ],
+    "authors": [
+      "Jochen Hartmann",
+      "Mark Heitmann",
+      "Christina Schamp",
+      "Oded Netzer"
+    ],
+    "cited_by": 169,
+    "date": "2021-10-16",
+    "doi": "10.1177/00222437211037258",
+    "domain_score": 5.0,
+    "id": 47690,
+    "ingested_at": "2026-08-12T04:21:48.423108",
+    "issue": "6",
+    "journal": "JMR",
+    "pdf_url": null,
+    "scored_at": "2026-10-26T07:24:36.819294",
+    "title": "The Power of Brand Selfies",
+    "title_zh": "品牌自拍的力量",
+    "tldr": "针对社交媒体品牌图像如何影响互动与品牌效果，融合卷积神经网络分类和语言模型，分析185个品牌在Twitter和Instagram的逾26万条帖子，并开展实验室实验。消费者自拍更能带来点赞评论，品牌自拍更能提升购买意愿和广告点击；自我参照是关键，传统社交指标可能误判品牌参与度。",
+    "topic_tags": [
+      "营销",
+      "品牌",
+      "消费者行为",
+      "社交媒体"
+    ],
+    "url": "https://doi.org/10.1177/00222437211037258",
+    "volume": "58",
     "year": 2021
   },
   {

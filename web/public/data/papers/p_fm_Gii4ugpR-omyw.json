@@ -1,0 +1,59 @@
+{
+  "abstract": "The rapid adoption of large language models (LLMs) like ChatGPT has introduced new dynamics in software development, particularly within pull request workflows. While prior research has examined the quality of AI-generated code, less is known about how developers evaluate, adapt, and integrate these suggestions in real-world collaboration. We analyze 338 pull requests from 255 GitHub repositories containing self-admitted ChatGPT usage, comprising 645 AI-generated snippets and 3,486 developer-authored patches. To support this analysis at scale, we use PatchTrack, an automated classifier that identifies whether AI-generated patches were applied, partially reused, or not integrated. Our findings reveal that full adoption of ChatGPT-generated code is uncommon: the median integration rate is 25%. Qualitative analysis of 89 pull requests with integrated patches reveals recurring patterns of structural integration, selective extraction, and iterative refinement, indicating that developers typically treat AI output as a starting point rather than a final implementation. Even when code is not directly adopted, ChatGPT influences workflows through conceptual guidance, documentation, and debugging strategies. Integration decisions reflect contextual fit, integration effort, maintainer trust, and established pull request review norms rather than serving as direct indicators of code correctness. Overall, this study provides empirical insight into AI-mediated decision-making in collaborative software development, showing that the influence of generative AI extends beyond patch generation to how developers reason about, adapt, and negotiate code during review within pull request workflows. These findings inform the design of AI-assisted tools and support more transparent and effective use of LLMs in practice.",
+  "ai_type_tags": [
+    "ChatGPT",
+    "LLM",
+    "AI编程",
+    "AI辅助开发"
+  ],
+  "arxiv_id": "2505.07700",
+  "authors": [
+    "Daniel Ogenrwot",
+    "John Businge"
+  ],
+  "authors_full": [
+    {
+      "name": "Daniel Ogenrwot"
+    },
+    {
+      "name": "John Businge"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "实证分析开发者采纳ChatGPT代码的真实行为",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "分析255个GitHub仓库的338个拉取请求，并用自动分类器与定性研究追踪ChatGPT代码的采纳过程。AI代码完整采纳较少，中位集成率仅25%；开发者多将其作为起点，选择性复用并迭代修改。即使未直接采用，ChatGPT仍通过思路、文档和调试影响协作。",
+      "topic_tags": [
+        "软件工程",
+        "AI采用",
+        "人机协作",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-05-12",
+  "doi": null,
+  "id": "p_fm_Gii4ugpR-omyw",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2505.07700v3",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8664,
+      "revision": "3f45754ffd80d0e60f3dfc5b2f558ff0ea69354c"
+    }
+  ],
+  "title": "PatchTrack: A Comprehensive Analysis of ChatGPT's Influence on Pull Request Outcomes",
+  "title_zh": "PatchTrack：ChatGPT对拉取请求结果影响的综合分析",
+  "unified_ingested_at": "2026-10-26T07:31:06.041921Z",
+  "url": "https://arxiv.org/abs/2505.07700v3",
+  "volume": null,
+  "year": 2025
+}

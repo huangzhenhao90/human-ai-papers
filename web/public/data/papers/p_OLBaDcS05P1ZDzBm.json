@@ -1,0 +1,63 @@
+{
+  "abstract": "Accessing quality preparation and feedback for the Romanian Bacalaureat exam is challenging, particularly for students in remote or underserved areas. This paper presents BacPrep, an experimental online platform exploring Large Language Model (LLM) potential for automated assessment, aiming to offer a free, accessible resource. Using official exam questions from the last 5 years, BacPrep employs the latest available Gemini Flash model (currently Gemini 2.5 Flash, via the \\texttt{gemini-flash-latest} endpoint) to prioritize user experience quality during the data collection phase, with model versioning to be locked for subsequent rigorous evaluation. The platform has collected over 100 student solutions across Computer Science and Romanian Language exams, enabling preliminary assessment of LLM grading quality. This revealed several significant challenges: grading inconsistency across multiple runs, arithmetic errors when aggregating fractional scores, performance degradation under large prompt contexts, failure to apply subject-specific rubric weightings, and internal inconsistencies between generated scores and qualitative feedback. These findings motivate a redesigned architecture featuring subject-level prompt decomposition, specialized per-subject graders, and a median-selection strategy across multiple runs. Expert validation against human-graded solutions remains the critical next step.",
+  "ai_type_tags": [
+    "LLM",
+    "Gemini",
+    "AI 评分",
+    "人机交互"
+  ],
+  "arxiv_id": "2506.04989",
+  "authors": [
+    "Adrian-Marius Dumitran",
+    "Radu Dita",
+    "Angela Liliana Dumitran"
+  ],
+  "authors_full": [
+    {
+      "name": "Adrian-Marius Dumitran"
+    },
+    {
+      "name": "Radu Dita"
+    },
+    {
+      "name": "Angela Liliana Dumitran"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM自动评估学生作答并收集百余份方案",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "面向罗马尼亚高中毕业考试备考资源不足，构建基于 Gemini Flash 的免费在线自动评分平台并收集百余份答卷。初步测试发现多次评分不一致、长提示下性能下降、未按学科权重计分及分数与反馈矛盾；拟采用学科提示分解、专用评分器和多次运行中位数，并待专家验证。",
+      "topic_tags": [
+        "用户体验(UX)",
+        "可用性",
+        "自动化评估",
+        "教育科技"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-06-05",
+  "doi": null,
+  "id": "p_OLBaDcS05P1ZDzBm",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2506.04989v2",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8228,
+      "revision": "3f45754ffd80d0e60f3dfc5b2f558ff0ea69354c"
+    }
+  ],
+  "title": "BacPrep: Lessons from Deploying an LLM-Based Bacalaureat Assessment Platform",
+  "title_zh": "BacPrep：部署基于LLM的Bacalaureat评估平台之经验",
+  "unified_ingested_at": "2026-10-26T07:31:06.041921Z",
+  "url": "https://arxiv.org/abs/2506.04989v2",
+  "volume": null,
+  "year": 2025
+}

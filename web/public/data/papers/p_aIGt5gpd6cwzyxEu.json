@@ -1,0 +1,67 @@
+{
+  "abstract": "Large language models (LLMs) can read startup pitch decks, but letting them emit investment scores directly invites score inflation, run-to-run variance and rationales that are hard to audit. We describe DealsFlow, a human-in-the-loop agentic harness deployed at a UK early-stage fund. The LLM reads the deck, cites evidence and rates each category; code combines the ratings, caps them and only ever lowers them. Three mechanisms implement this: a stage-aware corroboration ceiling (78, 70 or 60 out of 100) on factual categories without external evidence; a sceptic call that may lower but never raise a score; and a pre-fetch pattern that retrieves and indexes all evidence before a single generation pass. We evaluate on $N=243$ SEIS/EIS investments with recorded outcomes. Because recent investments have unresolved outcomes, we use the 142 that are at least three years old. There, the full pipeline's score has Spearman $ρ=0.45$ (95% CI 0.32 to 0.57) with the total-value multiple and AUC 0.71 for identifying write-offs, against $ρ=0.38$ and AUC 0.68 for an unconstrained LLM. The gain is small and comes mostly from the sceptic call; we did not test whether its lower-only rule matters. Investments that later exceeded $2\\times$ had 64% of factual categories corroborated, against 38% for write-offs (omnibus Kruskal-Wallis test over five outcome groups, $p=0.031$), and our retrieval was not date-restricted, so these figures may overstate screening skill. In a study of 20 inbound applications, analyst time per application fell from 44.7 to 18.9 minutes including verification and correction, and 84% of 240 cited claims were fully supported by their sources, but 70% of reports needed at least one correction.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 智能体",
+    "人机协作",
+    "AI 治理"
+  ],
+  "arxiv_id": "2610.32380",
+  "authors": [
+    "Ming Ze Tang",
+    "David Cutting",
+    "Boyd Carson",
+    "Vasiliki Carson"
+  ],
+  "authors_full": [
+    {
+      "name": "Ming Ze Tang"
+    },
+    {
+      "name": "David Cutting"
+    },
+    {
+      "name": "Boyd Carson"
+    },
+    {
+      "name": "Vasiliki Carson"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM驱动风投项目筛选与证据审查",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对LLM风投筛选易出现分数虚高、波动和不可审计理由，构建证据门控的人机协同流程：预取证据、分项评分、设置证据上限，并由“怀疑者”仅下调分数。243笔投资中，以142笔已成熟案例评估，完整流程与总价值倍数相关性ρ=.45、识别核销AUC=.71，略优于无约束LLM；收益主要来自下调机制，但结果可能高估筛选能力。",
+      "topic_tags": [
+        "创业",
+        "风险投资",
+        "决策",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-23",
+  "doi": null,
+  "id": "p_aIGt5gpd6cwzyxEu",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.32380v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83139,
+      "revision": "e0f6116683bbc8bf0777e895a1d4acf1bb7b1ecd"
+    }
+  ],
+  "title": "DealsFlow: An Evidence-Gated Agentic Harness for Venture Capital Deal Triage",
+  "title_zh": "DealsFlow：用于风险投资交易初筛的证据门控智能体框架",
+  "unified_ingested_at": "2026-10-26T07:31:06.041921Z",
+  "url": "https://arxiv.org/abs/2610.32380v1",
+  "volume": null,
+  "year": 2026
+}

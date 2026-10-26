@@ -1,0 +1,71 @@
+{
+  "abstract": "Building Task-Oriented Dialogue (TOD) systems for high-value scenarios such as financial marketing requires large volumes of domain-specific dialogue data, which privacy regulations, annotation costs, and the need for expert labor make hard to obtain. User simulation offers a remedy, but existing methods target general-domain dialogue and exhibit two key limitations: insufficient modeling of domain-specific business processes and compliance constraints, and inadequate capture of the colloquial, spoken-language character of voice interactions. We propose ProfileSim, a profile-driven user simulation framework for financial marketing outbound calls. It jointly models user profiles---demographics and Big Five personality traits---and business profiles---intents reverse-engineered from real call logs---enabling fine-grained control over simulated behavior. The base model is fine-tuned on real voice dialogue data and refined by Group Relative Policy Optimization (GRPO) with hierarchical rewards at the dialogue and utterance levels. Paired with a customer service agent integrating Standard Operating Procedure (SOP) constraints and Retrieval-Augmented Generation (RAG), ProfileSim achieves the highest colloquial naturalness, the strongest user profile adherence and the lowest agent score on long-tail intents among all evaluated user generators, while producing substantially shorter user utterances at comparable business compliance. The generated dialogue data is designed to support intent recognition training, agent evaluation, and rapid cold-start deployment.",
+  "ai_type_tags": [
+    "对话式 AI",
+    "用户模拟",
+    "强化学习",
+    "RAG"
+  ],
+  "arxiv_id": "2610.32435",
+  "authors": [
+    "Juan Li",
+    "Fangshu Chang",
+    "Xinyi Jiang",
+    "Ling Huang",
+    "Yunzhang Chen"
+  ],
+  "authors_full": [
+    {
+      "name": "Juan Li"
+    },
+    {
+      "name": "Fangshu Chang"
+    },
+    {
+      "name": "Xinyi Jiang"
+    },
+    {
+      "name": "Ling Huang"
+    },
+    {
+      "name": "Yunzhang Chen"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "建模用户画像与业务意图，但无真人评估",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "为解决金融营销任务型对话数据受隐私、成本和专家需求限制的问题，ProfileSim融合人口特征、大五人格及真实通话意图构建用户与业务画像，以真实语音数据微调，并用分层奖励GRPO强化学习优化。配合SOP约束和RAG客服智能体后，模拟对话更口语化、用户画像更贴合、发言更短，且业务合规相当。",
+      "topic_tags": [
+        "用户画像",
+        "对话式 AI",
+        "语音交互",
+        "金融营销"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-23",
+  "doi": null,
+  "id": "p_dXQ-y7M1S2J-Lcbf",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.32435v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37705,
+      "revision": "3f45754ffd80d0e60f3dfc5b2f558ff0ea69354c"
+    }
+  ],
+  "title": "Profile-Driven User Simulation via Reinforcement Learning with Hierarchical Rewards for Task-Oriented Dialogues",
+  "title_zh": null,
+  "unified_ingested_at": "2026-10-26T07:31:06.041921Z",
+  "url": "https://arxiv.org/abs/2610.32435v1",
+  "volume": null,
+  "year": 2026
+}

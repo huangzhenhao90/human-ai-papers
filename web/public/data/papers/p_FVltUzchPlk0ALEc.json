@@ -1,0 +1,98 @@
+{
+  "abstract": "Greenfield software development in freelance settings requires coding agents to turn incomplete client requests into working software. This makes requirement clarification essential, yet clients may be unable to provide continuous feedback over long development cycles, and receiving their answers does not guarantee correct understanding of complex requirements. These challenges motivate two benchmark design choices: clarification precedes code implementation, and its effectiveness is assessed through explicit tests of requirement understanding. Guided by these choices, we introduce SWE-Clar, a benchmark grounded in real, high-value client commissions to evaluate requirement clarification and code implementation in this setting. It comprises 100 tasks based on real software development jobs on Upwork, each with at least US\\$4,000 in total payments. Each task begins with multi-round interaction between a coding agent and a client agent, followed by separate runs for code implementation with acceptance testing and clarification assessment. For the latter, we construct 512 questions paired with reference answers from real client-freelancer interactions, covering both explicitly stated requirements and those inferred from the conversational context. Both runs begin from the same clarification context but remain isolated, preventing assessment questions from guiding code implementation. Experiments with nine frontier models show that even GPT-6 Astra, which has the highest observed implementation score, achieves a task pass rate of only 67%, underscoring the challenge of independent software delivery in this setting. The dataset and evaluation code are available at https://github.com/upwork/SWE-Clar.",
+  "ai_type_tags": [
+    "LLM",
+    "代码生成",
+    "AI 智能体",
+    "人机交互"
+  ],
+  "arxiv_id": "2610.31854",
+  "authors": [
+    "Jialei Li",
+    "Dingxian Wang",
+    "Xiaoyan Zhao",
+    "Yimeng Bai",
+    "Xuanyi Zhu"
+  ],
+  "authors_full": [
+    {
+      "name": "Jialei Li"
+    },
+    {
+      "name": "Dingxian Wang"
+    },
+    {
+      "name": "Xiaoyan Zhao"
+    },
+    {
+      "name": "Yimeng Bai"
+    },
+    {
+      "name": "Xuanyi Zhu"
+    },
+    {
+      "name": "Yang Zhang"
+    },
+    {
+      "name": "Chao Yin"
+    },
+    {
+      "name": "Wentao Shi"
+    },
+    {
+      "name": "Ganesh Prabhu"
+    },
+    {
+      "name": "Karthik Gomadam Rajagopal"
+    },
+    {
+      "name": "Brett Levert"
+    },
+    {
+      "name": "Darvin Yi"
+    },
+    {
+      "name": "Andrew Rabinovich"
+    },
+    {
+      "name": "Zhao Chen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "评估编码智能体的需求澄清与软件开发",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "面向自由职业软件开发中客户需求不完整的场景，构建SWE-Clar基准：基于Upwork真实高价值任务设置100项任务，让编码智能体先与客户代理多轮澄清，再独立实现代码，并用512道需求理解题和验收测试分别评估。九个前沿模型实验表明，即便最佳模型GPT-6 Astra也暴露出需求理解与可靠交付局限；先澄清再编码并单独测试理解，有助于诊断智能体能力。",
+      "topic_tags": [
+        "需求工程",
+        "软件开发",
+        "自由职业",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-22",
+  "doi": null,
+  "id": "p_FVltUzchPlk0ALEc",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2610.31854v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83138,
+      "revision": "e0f6116683bbc8bf0777e895a1d4acf1bb7b1ecd"
+    }
+  ],
+  "title": "SWE-Clar: Can Coding Agents Clarify Incomplete Client Requirements and Deliver Greenfield Software?",
+  "title_zh": "SWE-Clar：编码智能体能否澄清不完整的客户需求并交付全新软件？",
+  "unified_ingested_at": "2026-10-26T07:31:06.041921Z",
+  "url": "https://arxiv.org/abs/2610.31854v1",
+  "volume": null,
+  "year": 2026
+}
