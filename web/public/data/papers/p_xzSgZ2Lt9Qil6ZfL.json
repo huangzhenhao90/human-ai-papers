@@ -1,0 +1,63 @@
+{
+  "abstract": "In autonomous driving, robot teleoperation serves as a critical safety fallback mechanism, requiring operators to assume direct control in the event of system failure. While recent research has pivoted toward high-level supervisory control or simulation-based studies, these approaches often fail to capture the physical dynamics and sensory demands of driving a full-scale vehicle. To address this gap, we evaluated the impact of spatial data representation on operator performance using a real car-sized vehicle in a field experiment with $N = 18$ participants. We compared three visualization interfaces: (i) a standard camera feed baseline, with two bird's-eye views (BEV) from (ii) a raw LiDAR point cloud, and (iii) a sensor fusion of LiDAR and camera data streams. Contrary to prior passive observation studies suggesting that sensor-fusion BEV may hinder awareness, our active-control results demonstrate that such representation significantly outperforms the standard LiDAR BEV in perceived usability ($p \\leq 0.0001$) and cognitive task load ($p = 0.01$, NASA-TLX score: 34.58/100) while also being significantly better than the Camera-only view ($p = 0.043$). The fused interface also led to statistically significant reductions in task completion time ($p = 0.0461$) and superior usability (SUS: 77.9/100) compared to those of the Camera-only and LiDAR-only views. By synthesizing objective performance data with comprehensive subjective assessments, we demonstrate that BEV fusion maximizes safety margins while minimizing the operator's mental demand. These findings challenge existing teleoperation conventions and provide an empirically validated approach for designing robust remote piloting systems.",
+  "ai_type_tags": [
+    "多模态",
+    "传感器融合",
+    "自动驾驶",
+    "机器人远程操作"
+  ],
+  "arxiv_id": "2610.35630",
+  "authors": [
+    "Stanisław Kuczma",
+    "Sławomir K. Tadeja",
+    "Michał R. Nowicki"
+  ],
+  "authors_full": [
+    {
+      "name": "Stanisław Kuczma"
+    },
+    {
+      "name": "Sławomir K. Tadeja"
+    },
+    {
+      "name": "Michał R. Nowicki"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "自动驾驶操作界面，含18人实地实验",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "在18人操控真车规模自动驾驶车辆的实地实验中，融合激光雷达与摄像头数据的鸟瞰视图比单一视图具有更高可用性、更低认知负荷和更短任务时间，优于传统摄像头及原始点云界面。",
+      "topic_tags": [
+        "可视化",
+        "人机交互(HCI)",
+        "可用性测试",
+        "自动驾驶"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-26",
+  "doi": null,
+  "id": "p_xzSgZ2Lt9Qil6ZfL",
+  "issue": null,
+  "journal": "arXiv:cs.RO",
+  "pdf_url": "https://arxiv.org/pdf/2610.35630v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37780,
+      "revision": "1d92ea0aa0a0aeb3231a57db03a91ca60a4c8866"
+    }
+  ],
+  "title": "Revisiting Direct Control: A Field Evaluation of Sensor Fusion Efficacy in Teleoperating Full-Scale Autonomous Vehicles via Bird's Eye View",
+  "title_zh": "直接控制再评估：鸟瞰视角下全尺寸自动驾驶车辆遥操作中传感器融合效能的实地评测",
+  "unified_ingested_at": "2026-10-27T07:27:05.140011Z",
+  "url": "https://arxiv.org/abs/2610.35630v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,85 @@
+{
+  "abstract": "An agent that truly knows and acts on behalf of its user has been a long-standing promise of AI assistants. Computer-use agents bring this promise within reach by capably executing fully specified tasks across apps. However, real-world user requests are often underspecified. To act correctly for the particular user, an agent must infer some missing information from the user's activity history and ask for other information that only the user can provide, without making unsupported assumptions or burdening the user with unnecessary questions. We present iPrefBench, a benchmark for evaluating the infer and ask capabilities of personal mobile-use agents in an executable iOS environment with an interactive simulated user. Grounded in a coherent persona with 3,051 past activity events, iPrefBench comprises 130 underspecified user tasks across 26 apps. Each omitted user-dependent requirement is, by construction, either history-inferable or ask-only. iPrefBench evaluates personalized mobile agents on both whether agents complete tasks correctly for the user (i.e., personalized task completion) and whether they seek user input when necessary (i.e., user-agent interaction). Evaluation of 7 frontier agents reveals a substantial gap between execution and personalization. Agents achieve high action completion scores (up to 91.6%) but low full task success (up to 47.7%) because personalization lags behind. They especially struggle with ask-only information, failing to request enough necessary information. Our findings highlight a challenge for personalized agents in knowing what to infer and when to ask. We hope that iPrefBench can serve as a valuable testbed for building agents that know their user and work with them.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "AI 助手",
+    "计算机操作智能体",
+    "个性化 AI"
+  ],
+  "arxiv_id": "2610.34735",
+  "authors": [
+    "Yuting Ning",
+    "Ruijia Cheng",
+    "Sushobhan Ghosh",
+    "Peitong Duan",
+    "HungShi Lin"
+  ],
+  "authors_full": [
+    {
+      "name": "Yuting Ning"
+    },
+    {
+      "name": "Ruijia Cheng"
+    },
+    {
+      "name": "Sushobhan Ghosh"
+    },
+    {
+      "name": "Peitong Duan"
+    },
+    {
+      "name": "HungShi Lin"
+    },
+    {
+      "name": "Abhishek Sundararajan"
+    },
+    {
+      "name": "Shreyash Pandey"
+    },
+    {
+      "name": "Huan Sun"
+    },
+    {
+      "name": "Jeffrey Nichols"
+    },
+    {
+      "name": "Eldon Schoop"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以画像和模拟交互评测个性化代理",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "iPrefBench在可交互iOS环境中以130个欠明确任务评估移动智能体能否从历史推断信息、必要时向用户追问。七个前沿智能体虽最高完成91.6%的操作，但完整任务成功率仅47.7%，尤其难以识别只能询问的信息。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "个性化",
+        "AI 助手"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-26",
+  "doi": null,
+  "id": "p_ulg7J8s1TkCdhpXA",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.34735v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 37793,
+      "revision": "1d92ea0aa0a0aeb3231a57db03a91ca60a4c8866"
+    }
+  ],
+  "title": "iPrefBench: A User-Centric Benchmark for Personalized Mobile Use Agents",
+  "title_zh": "iPrefBench：面向用户的个性化移动使用智能体基准",
+  "unified_ingested_at": "2026-10-27T07:27:05.140011Z",
+  "url": "https://arxiv.org/abs/2610.34735v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,0 +1,78 @@
+{
+  "abstract": "Training large language models (LLMs) for multi-turn strategic persuasion faces two coupled obstacles: (i) realistic simulation of psychologically grounded persuadees, and (ii) dense, faithful supervision for credit assignment in strategic dialogues. Outcome-only rewards are sparse and uninformative about which conversational moves drove success, while LLM-judge process rewards are expensive and decoupled from the underlying interaction dynamics. We address both challenges with a unified framework. First, we introduce PersuArena, a persuasion simulation environment that produces realistic, non-monotonic trajectories. Second, building directly on this environment, we propose Process Rewards via Online Belief Elicitation for Relative Policy Optimization (Probe-RPO), an online RL framework that converts the persuadee's internal state into dense process rewards. At each turn, three introspective probes are read from the frozen persuadee's logits, yielding a multi-dimensional reward signal that is faithfully aligned with persuasion dynamics. With extensive experiments on PersuArena spanning healthcare, financial advising, workplace management, education, and personal relationships, we demonstrate that our Probe-RPO achieves the full acceptance rate of 52.5%, compared with the 35.8% for the strongest GRPO ablation and 25.8% for the best off-the-shelf LLM. We also conduct comprehensive analyses on the generalization across persuadee models and the persuasion dynamics across conversations. Our work offers a promising paradigm that can provide effective process supervision for strategic dialogue.",
+  "ai_type_tags": [
+    "LLM",
+    "强化学习",
+    "信念建模"
+  ],
+  "arxiv_id": "2610.33527",
+  "authors": [
+    "Minqian Liu",
+    "Yuexi Shen",
+    "Heajun An",
+    "Qi Zhang",
+    "Pamela J. Wisniewski"
+  ],
+  "authors_full": [
+    {
+      "name": "Minqian Liu"
+    },
+    {
+      "name": "Yuexi Shen"
+    },
+    {
+      "name": "Heajun An"
+    },
+    {
+      "name": "Qi Zhang"
+    },
+    {
+      "name": "Pamela J. Wisniewski"
+    },
+    {
+      "name": "Sang Won Lee"
+    },
+    {
+      "name": "Jin-Hee Cho"
+    },
+    {
+      "name": "Lifu Huang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM多轮说服训练，关联营销心理",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对多轮策略说服中仿真不真实与奖励稀疏，构建PersuArena及在线信念探测强化学习框架Probe-RPO，从冻结被说服者模型的logits提取过程奖励；跨医疗、金融等五类场景，接受率达52.5%，优于GRPO与现成LLM。",
+      "topic_tags": [
+        "策略说服",
+        "人机交互",
+        "心理机制"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-24",
+  "doi": null,
+  "id": "p_AuVLMYQvsZz1qOf7",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2610.33527v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83245,
+      "revision": "f6abe1af39dbd5a824d173eb17655dc65ba6216f"
+    }
+  ],
+  "title": "Implicit Beliefs as Scalable Process Rewards for Strategic Persuasion",
+  "title_zh": "隐式信念作为战略说服的可扩展过程奖励",
+  "unified_ingested_at": "2026-10-27T07:27:05.140011Z",
+  "url": "https://arxiv.org/abs/2610.33527v1",
+  "volume": null,
+  "year": 2026
+}

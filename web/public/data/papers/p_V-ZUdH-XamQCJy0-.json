@@ -1,0 +1,59 @@
+{
+  "abstract": "Machine learning (ML) systems increasingly make consequential decisions about individuals, including credit, hiring, and insurance. Research on ML-driven insurance pricing has asked how the pricing mechanism itself can be made accountable. Yet it remains unclear how an individual policyholder's algorithmically determined premium should be explained to them. We argue that a useful explanation must be valid, actionable, and reliable. A valid recommendation lowers the premium according to the model. An actionable recommendation changes only characteristics the policyholder can control. A reliable recommendation has an actual outcome that is likely to meet the target, even in sparsely observed regions of the feature space where the model is uncertain. We formalize these three requirements as axioms and develop a method that turns an algorithmic premium into recommendations that meet them. The method meets the third requirement with a Conformal Prediction constraint, which screens out recommendations that the model is too uncertain about and thereby bounds the rate of unreliable recommendations. We apply four Counterfactual Explanation techniques to 57,832 real Florida flood-insurance claims and 98,058 synthetic driver-telematics policies. We adapt these techniques for insurance applications, so that their recommendations change only controllable characteristics and resemble policyholders observed in the data. In our illustrations, the constrained recommendations for high-risk policyholders are both more reliable and associated with larger predicted risk reductions than the unconstrained ones. These results suggest that insurers can give policyholders explanations that are both actionable and trustworthy. The work contributes to research on algorithmic accountability and offers implications for insurers and regulators.",
+  "ai_type_tags": [
+    "机器学习",
+    "可解释AI",
+    "算法决策",
+    "共形预测"
+  ],
+  "arxiv_id": "2610.34459",
+  "authors": [
+    "Agathe Fernandes Machado",
+    "Fei Huang"
+  ],
+  "authors_full": [
+    {
+      "name": "Agathe Fernandes Machado"
+    },
+    {
+      "name": "Fei Huang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "算法保险定价与透明解释，管理相关",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对机器学习保险定价，构建兼顾有效性、可执行性与可靠性的解释框架；以共形预测约束四类反事实解释，并在真实与合成保险数据上应用，限制高不确定区域中的不可靠建议。",
+      "topic_tags": [
+        "保险定价",
+        "算法决策",
+        "可解释AI",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-25",
+  "doi": null,
+  "id": "p_V-ZUdH-XamQCJy0-",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2610.34459v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83248,
+      "revision": "f6abe1af39dbd5a824d173eb17655dc65ba6216f"
+    }
+  ],
+  "title": "From Explaining to Enabling: Actionable Transparency in Algorithmic Insurance Pricing",
+  "title_zh": "从解释到赋能：算法化保险定价中的可操作透明度",
+  "unified_ingested_at": "2026-10-27T07:27:05.140011Z",
+  "url": "https://arxiv.org/abs/2610.34459v1",
+  "volume": null,
+  "year": 2026
+}
