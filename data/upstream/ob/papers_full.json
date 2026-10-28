@@ -65709,6 +65709,132 @@
     "year": 2026
   },
   {
+    "abstract": "Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constructing coherent and executable professional tasks. Starting from professional intents, information-level planning builds an information support graph to guide task instantiation, explicitly representing the dependencies and locations of information required for the intended outputs. Probe executions then identify support failures and guide repairs while preserving the intended work. We construct 112,686 tasks spanning 612 occupations and use the collected teacher trajectories to fine-tune Qwen models at 4B, 27B, and 35B-A3B scales, yielding the WorkPilot family. All three models improve over their respective base models across four professional-work benchmarks, with WorkPilot-35B-A3B improving from 879 to 1565 Elo on GDPval-AA v2.1. Scaling analyses reveal model-dependent diminishing returns, with execution length first increasing and then decreasing. Controlled component analyses show that planning and repair reduce probe-diagnosed task environment defects and improve downstream performance. The data and models are available at https://github.com/IQuestLab/WorkFactory.",
+    "ai_reason": "LLM职业任务与智能体训练，非组织研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体",
+      "监督学习"
+    ],
+    "authors": [
+      "Ziyang Zeng",
+      "Tingyang Chen",
+      "Jia Deng",
+      "Qiyao Wang",
+      "Shuo Tang"
+    ],
+    "authors_full": [
+      {
+        "name": "Ziyang Zeng"
+      },
+      {
+        "name": "Tingyang Chen"
+      },
+      {
+        "name": "Jia Deng"
+      },
+      {
+        "name": "Qiyao Wang"
+      },
+      {
+        "name": "Shuo Tang"
+      },
+      {
+        "name": "Yike Yang"
+      },
+      {
+        "name": "Tao Ren"
+      },
+      {
+        "name": "Wayne Xin Zhao"
+      },
+      {
+        "name": "Feng Chang"
+      },
+      {
+        "name": "Jujie He"
+      },
+      {
+        "name": "Chuan Hao"
+      },
+      {
+        "name": "Ran Tao"
+      },
+      {
+        "name": "Bryan Dai"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-27",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 83347,
+    "ingested_at": "2026-10-28T07:55:52.164703",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.37161v1",
+    "scored_at": "2026-10-28T07:56:29.248286",
+    "title": "WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training",
+    "title_zh": "WorkFactory：将专业意图转化为可执行任务，支撑可扩展智能体训练",
+    "tldr": "针对专业任务信息缺失或不一致导致智能体监督训练质量下降的问题，构建WorkFactory：以信息支持图规划任务，并通过探针执行诊断、修复环境缺陷。基于112,686个任务微调不同规模Qwen模型，专业基准均提升，表明规划与修复可减少任务缺陷并改善模型表现。",
+    "topic_tags": [
+      "人机协作",
+      "工作设计",
+      "知识管理"
+    ],
+    "url": "https://arxiv.org/abs/2610.37161v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative AI changes the scarcity of different forms of human capital. It makes codified knowledge cheaply available at the point of production, while judgment acquired through practice remains tied more closely to the worker. We ask what this does to two familiar prices in the wage structure: the return to schooling and the return to experience. In a short-run framework, machine-supplied codified knowledge substitutes directly for the codified component of worker human capital, lowering the schooling gradient. If codified and practice-based knowledge are complements, the return to experience rises where learning through practice is fastest; technology-specific experience can also become obsolete, rotating the experience profile rather than shifting it uniformly. Using US Current Population Survey earnings data from 2018 through June 2026, we compare occupations in the top and bottom quartiles of the pre-ChatGPT Felten-Raj-Seamans exposure index. After the public release of ChatGPT, the return to a year of schooling falls by 0.55 log points in exposed occupations. The return to a year of experience rises by 0.26 log points at three years of potential experience, is unchanged at fifteen, and falls by 0.12 log points at twenty-five; under the baseline quadratic, the effect crosses zero at 18.1 years. These breaks appear with the release, disappear under a pandemic placebo, survive a common censoring rule across the full sample, and remain when each occupation is allowed its own pre-shock schooling and experience gradients. The pattern is a repricing of human capital inside exposed occupations: codifiable knowledge becomes less scarce, while the value of experience depends increasingly on whether it transfers to the new technology.",
+    "ai_reason": "核心研究生成式AI与人力资本回报",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "ChatGPT"
+    ],
+    "authors": [
+      "Eduardo Levy Yeyati",
+      "Darío Judzik",
+      "Juan Ignacio Barbiero"
+    ],
+    "authors_full": [
+      {
+        "name": "Eduardo Levy Yeyati"
+      },
+      {
+        "name": "Darío Judzik"
+      },
+      {
+        "name": "Juan Ignacio Barbiero"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-26",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 83352,
+    "ingested_at": "2026-10-28T07:55:52.169185",
+    "issue": null,
+    "journal": "arXiv:econ.GN",
+    "pdf_url": "https://arxiv.org/pdf/2610.36008v1",
+    "scored_at": "2026-10-28T07:56:18.339739",
+    "title": "Practice Makes Perfect: Tacit Knowledge, Generative AI, and Returns to Schooling and Experience",
+    "title_zh": "熟能生巧：隐性知识、生成式AI与教育年限和经验回报",
+    "tldr": "考察生成式AI对人力资本工资回报的影响。基于美国当前人口调查数据比较高、低AI暴露职业，发现ChatGPT发布后高暴露职业的学历回报下降0.55个对数点，早期经验回报上升，并在潜在经验约18.1年后转为下降。",
+    "topic_tags": [
+      "人力资本",
+      "技能溢价",
+      "劳动力市场",
+      "工作未来"
+    ],
+    "url": "https://arxiv.org/abs/2610.36008v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -71983,6 +72109,107 @@
   },
   {
     "abstract": null,
+    "ai_reason": "用机器学习提炼社媒疫苗立场群体特征",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "自然语言处理",
+      "机器学习",
+      "文本挖掘"
+    ],
+    "authors": [
+      "Marco Furini"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Marco Furini",
+        "orcid": null
+      }
+    ],
+    "cited_by": 15,
+    "date": "2021-07",
+    "doi": "10.1016/j.chb.2021.106751",
+    "domain_score": 4.0,
+    "id": 51899,
+    "ingested_at": "2026-08-12T04:23:31.167578",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:57:43.839046",
+    "title": "Identifying the features of ProVax and NoVax groups from social media conversations",
+    "title_zh": "从社交媒体对话中识别ProVax与NoVax群体的特征",
+    "tldr": "从社交媒体对话中提取疫苗接种支持者（ProVax）与反对者（NoVax）的语言及群体特征，比较两类用户观点表达上的差异，以识别可区分特征并揭示疫苗态度的群体分化；具体特征与方法需以正文为准。",
+    "topic_tags": [
+      "社交媒体",
+      "疫苗态度",
+      "群体分化",
+      "文本分析"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106751",
+    "volume": "120",
+    "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "聚焦人机聊天中的冒犯性语言与心理机制",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "聊天机器人",
+      "自然语言处理",
+      "AI伦理"
+    ],
+    "authors": [
+      "Namkee Park",
+      "Kyungeun Jang",
+      "Seonggyeol Cho",
+      "Jinyoung Choi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Namkee Park",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kyungeun Jang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Seonggyeol Cho",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jinyoung Choi",
+        "orcid": "https://orcid.org/0000-0002-2470-9722"
+      }
+    ],
+    "cited_by": 54,
+    "date": "2021-08",
+    "doi": "10.1016/j.chb.2021.106795",
+    "domain_score": 4.0,
+    "id": 51920,
+    "ingested_at": "2026-08-12T04:23:31.662317",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:57:06.046103",
+    "title": "Use of offensive language in human-artificial intelligence chatbot interaction: The effects of ethical ideology, social competence, and perceived humanlikeness",
+    "title_zh": null,
+    "tldr": "考察人在与AI聊天机器人互动时面对冒犯性语言的反应，检验伦理意识形态、社会能力及感知拟人化程度的影响。",
+    "topic_tags": [
+      "人机交互",
+      "伦理",
+      "沟通"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106795",
+    "volume": "121",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "自动化响应，AI驱动决策，属行为决策研究",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -72708,6 +72935,66 @@
     "url": "https://doi.org/10.1016/j.chb.2026.108999",
     "volume": "181",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心对象为语音数字助手及隐私接受",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "语音助手",
+      "语音识别",
+      "自然语言处理"
+    ],
+    "authors": [
+      "M. Vimalkumar",
+      "Sujeet Kumar Sharma",
+      "Jang Bahadur Singh",
+      "Yogesh K. Dwivedi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "M. Vimalkumar",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Sujeet Kumar Sharma",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jang Bahadur Singh",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yogesh K. Dwivedi",
+        "orcid": null
+      }
+    ],
+    "cited_by": 359,
+    "date": "2021-07",
+    "doi": "10.1016/j.chb.2021.106763",
+    "domain_score": 4.0,
+    "id": 52090,
+    "ingested_at": "2026-08-12T04:23:35.802717",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:57:43.837975",
+    "title": "‘Okay google, what about my privacy?’: User's privacy perceptions and acceptance of voice based digital assistants",
+    "title_zh": "“好吧，Google，我的隐私呢？”：用户对基于语音的数字助理的隐私感知与接受度",
+    "tldr": "分析用户对语音数字助手隐私风险的感知，考察隐私关注、信任与感知收益如何共同影响其使用和接受意愿。",
+    "topic_tags": [
+      "隐私",
+      "信任",
+      "消费者行为",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106763",
+    "volume": "120",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -80661,6 +80948,59 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聚焦金融业管理者对聊天机器人的理解",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "聊天机器人",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Moonkyoung Jang",
+      "Yoonhyuk Jung",
+      "Seongcheol Kim"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Moonkyoung Jang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yoonhyuk Jung",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Seongcheol Kim",
+        "orcid": "https://orcid.org/0000-0001-6703-4465"
+      }
+    ],
+    "cited_by": 99,
+    "date": "2021-07",
+    "doi": "10.1016/j.chb.2021.106747",
+    "domain_score": 5.0,
+    "id": 53902,
+    "ingested_at": "2026-08-12T05:42:25.219655",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:57:43.836404",
+    "title": "Investigating managers' understanding of chatbots in the Korean financial industry",
+    "title_zh": "韩国金融行业管理者对聊天机器人的理解研究",
+    "tldr": "聚焦韩国金融行业管理者对聊天机器人的理解，考察其对技术能力、应用价值与潜在局限的认知，为金融场景的引入和管理提供参考。",
+    "topic_tags": [
+      "人机协作",
+      "金融业",
+      "组织变革",
+      "管理认知"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106747",
+    "volume": "120",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "LSTM/Transformer建模习惯行为",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -83625,6 +83965,66 @@
   },
   {
     "abstract": null,
+    "ai_reason": "机器人叙事影响情感、认知与说服",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互",
+      "情感计算"
+    ],
+    "authors": [
+      "Markus Appel",
+      "Birgit Lugrin",
+      "Mayla Kühle",
+      "Corinna Heindl"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Markus Appel",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Birgit Lugrin",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Mayla Kühle",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Corinna Heindl",
+        "orcid": "https://orcid.org/0000-0001-9755-2773"
+      }
+    ],
+    "cited_by": 60,
+    "date": "2021-07",
+    "doi": "10.1016/j.chb.2021.106749",
+    "domain_score": 5.0,
+    "id": 54694,
+    "ingested_at": "2026-08-12T05:42:48.498097",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:57:44.484949",
+    "title": "The emotional robotic storyteller: On the influence of affect congruency on narrative transportation, robot perception, and persuasion",
+    "title_zh": "情感机器人叙事者：情感一致性对叙事沉浸、机器人感知与说服力的影响",
+    "tldr": "考察机器人故事讲述者的情感与叙事是否一致，以及这种一致性如何影响受众的叙事沉浸、机器人感知和说服效果。",
+    "topic_tags": [
+      "人机交互",
+      "叙事说服",
+      "消费者行为",
+      "机器人"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106749",
+    "volume": "120",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "智能代理透明度,核心AI议题",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -84104,6 +84504,59 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108422",
     "volume": "161",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "前沿技术消费者互动综述，AI为议题之一",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互",
+      "新兴技术"
+    ],
+    "authors": [
+      "Nisreen Ameen",
+      "Sameer Hosany",
+      "Ali Tarhini"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Nisreen Ameen",
+        "orcid": "https://orcid.org/0000-0002-1794-9103"
+      },
+      {
+        "affiliation": [],
+        "name": "Sameer Hosany",
+        "orcid": "https://orcid.org/0000-0003-2654-9096"
+      },
+      {
+        "affiliation": [],
+        "name": "Ali Tarhini",
+        "orcid": "https://orcid.org/0000-0002-8698-1764"
+      }
+    ],
+    "cited_by": 151,
+    "date": "2021-07",
+    "doi": "10.1016/j.chb.2021.106761",
+    "domain_score": 5.0,
+    "id": 54873,
+    "ingested_at": "2026-08-12T05:42:53.799379",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:57:44.484384",
+    "title": "Consumer interaction with cutting-edge technologies: Implications for future research",
+    "title_zh": null,
+    "tldr": "围绕消费者与前沿技术的互动开展概念性归纳，梳理相关研究启示并指明未来议程，为理解技术采纳、互动体验及其营销影响提供研究方向。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "技术采纳",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2021.106761",
+    "volume": "120",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -102725,7 +103178,7 @@
         "position": "last"
       }
     ],
-    "cited_by": 0,
+    "cited_by": 1,
     "date": "2026-05-20",
     "doi": "10.1287/isre.2023.0797",
     "domain_score": 4.0,
@@ -106038,6 +106491,99 @@
     "url": "https://doi.org/10.1287/isre.2025.1970",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "In this paper the author describes a formal language for communication based on linguistics—more specifically, a theory of natural language communication and models of natural language conversations. The language has a small number of general message types that are formally defined by their intended effects on the recipient. For each message type he defines a standard automated method of responding that depends only on the message type and is independent of the message's content. For more complex conversations he provides methods for responding that do depend on the content. In this system, a message's sender—automated or human—constructs and sends a message knowing that he cannot know, but can only predict, how it will be interpreted. The agent receiving the message interprets it and then uses it as a basis for inferring how he should respond. The message interpretation mechanism for this language is reusable, modular, and shared by all applications. The benefit of this communication system is that it makes the communication infrastructure more flexible, easier to modify, easier to expand, and more capable.",
+    "ai_reason": "自然语言通信与自动响应机制",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "自然语言处理",
+      "人机交互"
+    ],
+    "authors": [
+      "Scott A. Moore"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Michigan Business School, 701 Tappan, Ann Arbor, Michigan 48109-1234"
+        ],
+        "name": "Scott A. Moore",
+        "orcid": null
+      }
+    ],
+    "cited_by": 28,
+    "date": "2001-03",
+    "doi": "10.1287/isre.12.1.34.9716",
+    "domain_score": 4.0,
+    "id": 83314,
+    "ingested_at": "2026-10-28T07:55:36.218206",
+    "issue": "1",
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:56:24.010263",
+    "title": "A Foundation for Flexible Automated Electronic Communication",
+    "title_zh": "灵活自动电子通信的基础",
+    "tldr": "建立基于语言学的自然语言通信形式体系，以通用消息类型界定预期效果，并配置内容无关的标准自动回复及复杂对话机制。模块化、可复用的消息解释器支持各类应用，使通信系统更易修改、扩展和自动化。",
+    "topic_tags": [
+      "电子通信",
+      "通信自动化",
+      "模块化系统"
+    ],
+    "url": "https://doi.org/10.1287/isre.12.1.34.9716",
+    "volume": "12",
+    "year": 2001
+  },
+  {
+    "abstract": "This report is concerned with a rule learning system called the Distributed Learning System (DLS). Its objective is two-fold: First, as the main contribution, the DLS as a rule-learning technique is described and the resulting computational performance is presented, with definitive computational benefits clearly demonstrated to show the efficacy of using the DLS. Second, the important parameters of the DLS are identified to show the characteristics of the Group Problem Solving (GPS) strategy as implemented in the DLS. On one hand this helps us pinpoint the critical designs of the DLS for effective rule learning; on the other hand this analysis can provide insight into the use of GPS as a more general rule-learning strategy.",
+    "ai_reason": "核心为分布式规则学习系统",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "规则学习",
+      "分布式学习",
+      "机器学习"
+    ],
+    "authors": [
+      "Riyaz Sikora",
+      "Michael J. Shaw"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Industrial and Manufacturing Systems Engineering, The University of Michigan-Dearborn, 4901 Evergreen Road, Dearborn, Michigan 48128"
+        ],
+        "name": "Riyaz Sikora",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Beckman Institute for Advanced Science and Technology, The University of Illinois at Urbana-Champaign, 405 N. Mathews Avenue, Urbana, Illinois 61801"
+        ],
+        "name": "Michael J. Shaw",
+        "orcid": null
+      }
+    ],
+    "cited_by": 14,
+    "date": "1996-06",
+    "doi": "10.1287/isre.7.2.189",
+    "domain_score": 3.0,
+    "id": 83315,
+    "ingested_at": "2026-10-28T07:55:36.238233",
+    "issue": "2",
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:56:30.900886",
+    "title": "A Computational Study of Distributed Rule Learning",
+    "title_zh": "分布式规则学习的计算研究",
+    "tldr": "评估分布式规则学习系统DLS的计算性能，并识别群体问题求解策略的关键参数。计算结果证实DLS在规则学习方面的优势；参数分析揭示影响学习效果的关键设计，为将群体问题求解用作通用规则学习策略提供依据。",
+    "topic_tags": [
+      "知识管理",
+      "组织学习",
+      "群体问题求解"
+    ],
+    "url": "https://doi.org/10.1287/isre.7.2.189",
+    "volume": "7",
+    "year": 1996
   },
   {
     "abstract": "Abstract Companies are increasingly introducing conversational reviews —reviews solicited via chatbots—to gain customer feedback. However, little is known about how chatbot-mediated solicitation influences rating valence and review helpfulness compared to conventional online forms. Therefore, we conceptualized these review solicitation media on the continuum of anthropomorphism and investigated how various levels of anthropomorphism affect rating valence and review helpfulness, showing that more anthropomorphic media lead to more positive and less helpful reviews. We found that moderate levels of anthropomorphism lead to increased interaction enjoyment, and high levels increase social presence, thus inflating the rating valence and decreasing review helpfulness. Further, the effect of anthropomorphism remains robust across review solicitors’ salience (sellers vs. platforms) and expressed emotionality in conversations. Our study is among the first to investigate chatbots as a new form of technology to solicit online reviews, providing insights to inform various stakeholders of the advantages, drawbacks, and potential ethical concerns of anthropomorphic technology in customer feedback solicitation.",
@@ -140328,6 +140874,48 @@
     "year": 2022
   },
   {
+    "abstract": "Data-extrapolation technologies enable progress by importing and applying empirical patterns from one domain to another. Their reliance on empirical patterns, however, is also their limitation: these tools can only be applied where data are abundant. Using the setting of structural biology, I investigate the impact of a data-extrapolation technology on innovation. I exploit the variation in prior data availability to compare areas in which the tool was usable to those in which it was not. I find that the tool increased the quantity of research in data-rich areas: the resulting output yielded limited biological insights but was methodologically rigorous and contributed to downstream research.\n                  This paper was accepted by Toby Stuart, entrepreneurship and innovation.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2023.04115 .",
+    "ai_reason": "数据外推技术影响创新与知识生产，管理研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "数据外推"
+    ],
+    "authors": [
+      "Soomi Kim"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Columbia Business School, New York, New York 10027"
+        ],
+        "name": "Soomi Kim",
+        "orcid": "https://orcid.org/0009-0005-2780-2737"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-27",
+    "doi": "10.1287/mnsc.2023.04115",
+    "domain_score": 5.0,
+    "id": 83311,
+    "ingested_at": "2026-10-28T07:55:36.158503",
+    "issue": null,
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:56:29.249739",
+    "title": "Navigating the Rugged Data Landscape: The Impact of Data-Extrapolation Technologies on Knowledge Production",
+    "title_zh": "应对复杂数据环境：数据外推技术对知识生产的影响",
+    "tldr": "考察数据外推技术如何影响跨领域知识生产：以结构生物学中先验数据可获得性的差异，识别工具可用与不可用研究区域。结果显示，技术增加数据丰富领域的研究数量，但新增产出生物学洞见有限，方法严谨性较高并促进后续研究。",
+    "topic_tags": [
+      "知识管理",
+      "创新",
+      "组织学习"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2023.04115",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "This paper presents a novel integrative approach that combines artificial intelligence-driven forecasting with behavioral interventions to help businesses optimize energy consumption under critical peak pricing schemes.",
     "ai_reason": "AI驱动行为助推核心议题，兼具组织行为与AI",
     "ai_score": 5.0,
@@ -144074,6 +144662,64 @@
     "year": 2026
   },
   {
+    "abstract": "A machine learning framework for constructing strong instrumental variables from weak exogenous data achieves semiparametric efficiency with applications to advertising and demand estimation.",
+    "ai_reason": "机器学习构造工具变量，广告营销应用",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "因果推断"
+    ],
+    "authors": [
+      "Amandeep Singh",
+      "Kartik Hosanagar",
+      "Amit Gandhi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Washington, Seattle, Washington 98195"
+        ],
+        "name": "Amandeep Singh",
+        "orcid": "https://orcid.org/0000-0003-1755-6753"
+      },
+      {
+        "affiliation": [
+          "The Wharton School, University of Pennsylvania, Philadelphia, Pennsylvania 19104"
+        ],
+        "name": "Kartik Hosanagar",
+        "orcid": "https://orcid.org/0000-0002-6442-9434"
+      },
+      {
+        "affiliation": [
+          "University of Pennsylvania, Philadelphia, Pennsylvania 19104"
+        ],
+        "name": "Amit Gandhi",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-27",
+    "doi": "10.1287/mksc.2023.0340",
+    "domain_score": 4.0,
+    "id": 83331,
+    "ingested_at": "2026-10-28T07:55:36.656675",
+    "issue": null,
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:56:29.249219",
+    "title": "Machine Learning Instrument Variables for Causal Inference",
+    "title_zh": "用于因果推断的机器学习工具变量",
+    "tldr": "针对弱外生数据难以形成强工具变量的问题，提出机器学习工具变量框架，在半参数效率下构造有效工具变量，并用于广告与需求估计，为因果识别和营销决策提供更可靠的估计基础。",
+    "topic_tags": [
+      "营销",
+      "广告",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2023.0340",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "As generative artificial intelligence (AI) has found its way into various work tasks, questions about whether its usage should be disclosed and the consequences of such disclosure have taken center stage in public and academic discourse on digital transparency. This article addresses this debate by asking: Does disclosing the usage of AI compromise trust in the user? We examine the impact of AI disclosure on trust across diverse tasks—from communications via analytics to artistry—and across individual actors such as supervisors, subordinates, professors, analysts, and creatives, as well as across organizational actors such as investment funds. Thirteen experiments consistently demonstrate that actors who disclose their AI usage are trusted less than those who do not. Drawing on micro-institutional theory, we argue that this reduction in trust can be explained by reduced perceptions of legitimacy, as shown across various experimental designs (Studies 6–8). Moreover, we demonstrate that this negative effect holds across different disclosure framings, above and beyond algorithm aversion, regardless of whether AI involvement is known, and regardless of whether disclosure is voluntary or mandatory, though it is comparatively weaker than the effect of third-party exposure (Studies 9–13). A within-paper meta analysis suggests this trust penalty is attenuated but not eliminated among evaluators with favorable technology attitudes and perceptions of high AI accuracy. This article contributes to research on trust, AI, transparency, and legitimacy by showing that AI disclosure can harm social perceptions, emphasizing that transparency is not straightforwardly beneficial, and highlighting legitimacy’s central role in trust formation.",
     "ai_reason": "核心议题为AI披露对信任的影响",
     "ai_score": 5.0,
@@ -145545,31 +146191,34 @@
       "AI研究方法"
     ],
     "authors": [
-      "Andrew Nelson",
-      "Anne-Laure Fayard",
-      "Alex Murray"
+      "Andrew J. Nelson",
+      "Anne‐Laure Fayard",
+      "Alex Michael Murray"
     ],
     "authors_full": [
       {
         "affiliation": [
-          "Lundquist College of Business, University of Oregon, Eugene, Oregon 97403;"
+          "University of Oregon"
         ],
-        "name": "Andrew Nelson",
-        "orcid": "https://orcid.org/0000-0001-7838-1198"
+        "name": "Andrew J. Nelson",
+        "orcid": "https://orcid.org/0000-0001-7838-1198",
+        "position": "first"
       },
       {
         "affiliation": [
-          "Nova School of Business and Economics, 2775-405 Carcavelos, Portugal"
+          "NOVA School of Business and Economics"
         ],
-        "name": "Anne-Laure Fayard",
-        "orcid": "https://orcid.org/0000-0001-5274-3760"
+        "name": "Anne‐Laure Fayard",
+        "orcid": "https://orcid.org/0000-0001-5274-3760",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "Lundquist College of Business, University of Oregon, Eugene, Oregon 97403;"
+          "University of Oregon"
         ],
-        "name": "Alex Murray",
-        "orcid": "https://orcid.org/0000-0001-6161-8363"
+        "name": "Alex Michael Murray",
+        "orcid": "https://orcid.org/0000-0001-6161-8363",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -148722,6 +149371,73 @@
     "url": "https://doi.org/10.1002/smj.3387",
     "volume": "44",
     "year": 2022
+  },
+  {
+    "abstract": "Abstract\n                  \n                    \n                    Companies are increasingly using artificial intelligence (AI) to provide performance feedback to employees, by tracking employee behavior at work, automating performance evaluations, and recommending job improvements. However, this application of AI has provoked much debate. On the one hand, powerful AI data analytics increase the quality of feedback, which may enhance employee productivity (“deployment effect”). On the other hand, employees may develop a negative perception of AI feedback once it is disclosed to them, thus harming their productivity (“disclosure effect”). We examine these two effects theoretically and test them empirically using data from a field experiment. We find strong evidence that both effects coexist, and that the adverse disclosure effect is mitigated by employees' tenure in the firm. These findings offer pivotal implications for management theory, practice, and public policies.\n                  \n                  \n                    Managerial abstract\n                    Artificial intelligence (AI) technologies are bound to transform how companies manage employees. We examine the use of AI to generate performance feedback for employees. We demonstrate that AI significantly increases the accuracy and consistency of the analyses of information collected, and the relevance of feedback to each employee. These advantages of AI help employees achieve greater job performance at scale, and thus create value for companies. However, our study also alerts companies to the negative effect of disclosing using AI to employee that results from employees' negative perceptions about the deployment of AI, which offsets the business value created by AI. To alleviate value‐destroying disclosure effect, we suggest that companies be more proactive in communicating with their employees about the objectives, benefits, and scope of AI applications in order to assuage their concerns. Moreover, the result of the allayed negative AI disclosure effect among employees with a longer tenure in the company suggests that companies may consider deploying AI in a tiered instead of a uniform fashion, that is, using AI to provide performance feedback to veteran employees but using human managers to provide performance feedback to novices.",
+    "ai_reason": "AI反馈部署与披露影响员工绩效",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法管理",
+      "算法决策",
+      "机器学习"
+    ],
+    "authors": [
+      "Siliang Tong",
+      "Nan Jia",
+      "Xueming Luo",
+      "Zheng Fang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Nanyang Business School Nanyang Technological University  Singapore Singapore"
+        ],
+        "name": "Siliang Tong",
+        "orcid": "https://orcid.org/0000-0002-1730-1075"
+      },
+      {
+        "affiliation": [
+          "Marshall School of Business University of Southern California  Los Angeles California USA"
+        ],
+        "name": "Nan Jia",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Fox School of Business Temple University  Philadelphia Pennsylvania USA"
+        ],
+        "name": "Xueming Luo",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Business School of Sichuan University Sichuan University  Chengdu China"
+        ],
+        "name": "Zheng Fang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 448,
+    "date": "2021-07-12",
+    "doi": "10.1002/smj.3322",
+    "domain_score": 5.0,
+    "id": 40734,
+    "ingested_at": "2026-08-12T04:19:00.178852",
+    "issue": "9",
+    "journal": "SMJ",
+    "pdf_url": null,
+    "scored_at": "2026-10-28T07:57:13.639249",
+    "title": "The Janus face of artificial intelligence feedback: Deployment versus disclosure effects on employee performance",
+    "title_zh": null,
+    "tldr": "通过现场实验检验AI绩效反馈的部署与披露效应：部署可借助更准确、一致和相关的反馈提升员工绩效，但披露AI参与会引发负面感知并降低绩效，且该不利影响随员工任期延长而减弱。",
+    "topic_tags": [
+      "绩效评估",
+      "HR",
+      "算法管理"
+    ],
+    "url": "https://doi.org/10.1002/smj.3322",
+    "volume": "42",
+    "year": 2021
   },
   {
     "abstract": "A\n                    bstract\n                  \n                  \n                    Research Summary\n                    Researchers increasingly use unstructured text data to construct quantitative variables for analysis. This goal has traditionally been achieved using keyword‐based approaches, which require researchers to specify a dictionary of keywords mapped to the theoretical concepts of interest. However, recent machine learning (ML) tools for text classification and natural language processing can be used to construct quantitative variables and to classify unstructured text documents. In this paper, we demonstrate how to employ ML tools for this purpose and discuss one application for identifying artificial intelligence (AI) technologies in patents. We compare and contrast various ML methods with the keyword‐based approach, demonstrating the advantages of the ML approach. We also leverage the classification outcomes generated by ML models to demonstrate general patterns of AI technological innovation development.\n                  \n                  \n                    Managerial Summary\n                    Text‐based documents offer a wealth of information for researchers and business analysts. However, researchers often need to find a way to classify these documents to use in subsequent research projects. In this paper, we demonstrate how supervised ML methods can be used to automate the process of classifying textual documents into pre‐defined categories or groups. We provide an overview of when such techniques may be used in comparison to other methods, and the considerations and tradeoffs associated with each method. We apply these methods to identify AI‐based technologies from all patents in the United States, based on patent abstract text. This allows us to show interesting patterns of AI innovation development in the United States. We also provide the code and data used in this paper for future research.",

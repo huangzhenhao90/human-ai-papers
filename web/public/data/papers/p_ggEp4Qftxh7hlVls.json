@@ -1,0 +1,93 @@
+{
+  "abstract": "Scaling supervised training for working agents requires diverse professional tasks that yield reliable expert demonstrations. However, missing or inconsistent task information can obstruct teacher execution and weaken the resulting supervision. We propose WorkFactory, a scalable framework for constructing coherent and executable professional tasks. Starting from professional intents, information-level planning builds an information support graph to guide task instantiation, explicitly representing the dependencies and locations of information required for the intended outputs. Probe executions then identify support failures and guide repairs while preserving the intended work. We construct 112,686 tasks spanning 612 occupations and use the collected teacher trajectories to fine-tune Qwen models at 4B, 27B, and 35B-A3B scales, yielding the WorkPilot family. All three models improve over their respective base models across four professional-work benchmarks, with WorkPilot-35B-A3B improving from 879 to 1565 Elo on GDPval-AA v2.1. Scaling analyses reveal model-dependent diminishing returns, with execution length first increasing and then decreasing. Controlled component analyses show that planning and repair reduce probe-diagnosed task environment defects and improve downstream performance. The data and models are available at https://github.com/IQuestLab/WorkFactory.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体",
+    "监督学习"
+  ],
+  "arxiv_id": "2610.37161",
+  "authors": [
+    "Ziyang Zeng",
+    "Tingyang Chen",
+    "Jia Deng",
+    "Qiyao Wang",
+    "Shuo Tang"
+  ],
+  "authors_full": [
+    {
+      "name": "Ziyang Zeng"
+    },
+    {
+      "name": "Tingyang Chen"
+    },
+    {
+      "name": "Jia Deng"
+    },
+    {
+      "name": "Qiyao Wang"
+    },
+    {
+      "name": "Shuo Tang"
+    },
+    {
+      "name": "Yike Yang"
+    },
+    {
+      "name": "Tao Ren"
+    },
+    {
+      "name": "Wayne Xin Zhao"
+    },
+    {
+      "name": "Feng Chang"
+    },
+    {
+      "name": "Jujie He"
+    },
+    {
+      "name": "Chuan Hao"
+    },
+    {
+      "name": "Ran Tao"
+    },
+    {
+      "name": "Bryan Dai"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM职业任务与智能体训练，非组织研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对专业任务信息缺失或不一致导致智能体监督训练质量下降的问题，构建WorkFactory：以信息支持图规划任务，并通过探针执行诊断、修复环境缺陷。基于112,686个任务微调不同规模Qwen模型，专业基准均提升，表明规划与修复可减少任务缺陷并改善模型表现。",
+      "topic_tags": [
+        "人机协作",
+        "工作设计",
+        "知识管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-27",
+  "doi": null,
+  "id": "p_ggEp4Qftxh7hlVls",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.37161v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83347,
+      "revision": "3ea71b31ea8425f8f565abfc79fae757c674f6f7"
+    }
+  ],
+  "title": "WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training",
+  "title_zh": "WorkFactory：将专业意图转化为可执行任务，支撑可扩展智能体训练",
+  "unified_ingested_at": "2026-10-28T08:01:35.974620Z",
+  "url": "https://arxiv.org/abs/2610.37161v1",
+  "volume": null,
+  "year": 2026
+}
