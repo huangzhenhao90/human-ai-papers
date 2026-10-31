@@ -173,6 +173,181 @@
     "year": 2026
   },
   {
+    "abstract": "OBJECTIVE: Posttraumatic stress disorder (PTSD) is a debilitating psychiatric disorder that frequently co-occurs with major depressive disorder (MDD), a comorbidity that is partly attributable to shared genetic heritability and common environmental risk factors. Despite extensive efforts to identify peripheral transcriptomic biomarkers, findings have been inconsistent, potentially reflecting the substantial biological heterogeneity underlying these disorders. The primary goal of this study was to identify molecular signatures that reflect the clinical and biological heterogeneity of PTSD and MDD. METHODS: The authors present a network analysis of blood-based transcriptomics from 466 pregnant women in South Africa, including 215 individuals with PTSD and/or MDD (mean age, 26.34 years [SD=5.77]) and 251 trauma-exposed control participants (mean age, 27.14 years [SD=5.82]). Gene expression modules associated with trauma-related phenotypes were identified, including childhood adversity, intimate partner violence, and recent life stress, as well as ancestry and depressive symptoms, highlighting multiple sources of molecular variation. To evaluate the predictive relevance of these transcriptomic features, random forest models were applied using a nested cross-validation framework with permutation testing. RESULTS: Models achieved moderate and statistically significant performance in predicting trauma-related phenotypes (mean area under the receiver operating characteristic curve [AUROC], ~0.61-0.69 across models [SD=0.07-0.10]), whereas prediction of PTSD or MDD diagnosis showed near-chance performance (mean AUROC=0.52, SD=0.03). CONCLUSIONS: These findings suggest that peripheral blood transcriptomic signatures are more strongly associated with trauma exposure profiles and population background than with diagnostic status. Collectively, the results support exposure-informed stratification as a complementary framework to traditional diagnostic categories for capturing biologically meaningful heterogeneity.",
+    "ai_reason": "随机森林用于PTSD与抑郁生物标志物预测，AI为实质但次要方法",
+    "ai_score": 3,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Weiqian Jiang",
+      "Gabriel Bronk",
+      "Marilyn T. Lake",
+      "Nadia Hoffman",
+      "Heather Joy Zar",
+      "Michael S. Breen",
+      "Dan Joseph Stein",
+      "Nastassja Koen",
+      "Kerry James Ressler",
+      "Torsten Klengel"
+    ],
+    "authors_full": [
+      {
+        "name": "Weiqian Jiang"
+      },
+      {
+        "name": "Gabriel Bronk"
+      },
+      {
+        "name": "Marilyn T. Lake"
+      },
+      {
+        "name": "Nadia Hoffman"
+      },
+      {
+        "name": "Heather Joy Zar"
+      },
+      {
+        "name": "Michael S. Breen"
+      },
+      {
+        "name": "Dan Joseph Stein"
+      },
+      {
+        "name": "Nastassja Koen"
+      },
+      {
+        "name": "Kerry James Ressler"
+      },
+      {
+        "name": "Torsten Klengel"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "随机森林用于PTSD与抑郁生物标志物预测，AI为实质但次要方法",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [
+        "bias_fairness"
+      ],
+      "tldr": "466名孕妇的内部交叉验证显示，模型可预测创伤相关表型，但诊断预测接近随机水平。",
+      "topic_tags": [
+        "ptsd_trauma",
+        "depression",
+        "screening_assessment",
+        "risk_prediction",
+        "adults",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "internal",
+    "date": "2026-10-28",
+    "doi": "10.1176/appi.ajp.20251098",
+    "domain_score": 4,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "unknown",
+    "id": "W7224130573",
+    "journal": "American Journal of Psychiatry",
+    "mh_profile": {
+      "ai_reason": "随机森林用于PTSD与抑郁生物标志物预测，AI为实质但次要方法",
+      "ai_score": 3,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "internal",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "screening_assessment",
+          "risk_prediction"
+        ],
+        "conditions": [
+          "ptsd_trauma",
+          "depression"
+        ],
+        "populations": [
+          "adults",
+          "general_population"
+        ],
+        "risks": [
+          "bias_fairness"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "创伤相关表型及PTSD或MDD诊断预测的AUROC",
+        "sample": "南非466名孕妇，其中215名患有PTSD和/或MDD，251名为创伤暴露对照",
+        "study_design": "血转录组网络分析与嵌套交叉验证随机森林研究"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "unknown",
+      "local_recall_audit": {
+        "ai_matches": [],
+        "ai_signal": false,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatric",
+          "depressive",
+          "PTSD",
+          "stress"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "bias_fairness"
+      ],
+      "safety_evaluated": false,
+      "tldr": "466名孕妇的内部交叉验证显示，模型可预测创伤相关表型，但诊断预测接近随机水平。",
+      "topic_tags": [
+        "ptsd_trauma",
+        "depression",
+        "screening_assessment",
+        "risk_prediction",
+        "adults",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7224130573",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "bias_fairness"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S116025658",
+      "ingest_mode": "full",
+      "key": "american_journal_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Transcriptomic Network Analysis Reveals Trauma Type– and Ancestry-Related Heterogeneity in Posttraumatic Stress Disorder",
+    "title_zh": "转录组网络分析揭示创伤后应激障碍的创伤类型与祖源相关异质性",
+    "tldr": "466名孕妇的内部交叉验证显示，模型可预测创伤相关表型，但诊断预测接近随机水平。",
+    "topic_tags": [
+      "ptsd_trauma",
+      "depression",
+      "screening_assessment",
+      "risk_prediction",
+      "adults",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1176/appi.ajp.20251098",
+    "year": 2026
+  },
+  {
     "abstract": "More than one billion people worldwide live with a mental health disorder, and rising prevalence continues to outpace the capacity of mental health services. Artificial intelligence, and large language models in particular, have been widely proposed as a remedy. Nevertheless, psychiatry's limited mechanistic understanding of illness processes (compounded by their psychosocial roots) and its reliance on largely subjective clinical assessments limit what any artificial intelligence model can achieve. We examine where artificial intelligence genuinely helps, including large multimodal data-sets and administrative tools such as ambient scribes, and where evidence for direct therapeutic use remains preliminary and safety concerns are real. We also highlight risks posed by artificial intelligence to the research process itself, from hallucinated citations to unverifiable analysis pipelines. Ultimately, whether artificial intelligence comes to augment psychiatric care or hollow it out depends less on model capability than on the choices of stakeholders and policymakers.",
     "ai_reason": "AI与精神疾病照护为主题的论述，临床证据被明确称为初步。",
     "ai_score": 5,

@@ -1,0 +1,74 @@
+{
+  "abstract": "AI companion chatbots are increasingly used by vulnerable individuals, including adolescents in suicidal crisis, for emotional support. Existing safety evaluations focus on base models, leaving gaps in product-level assessment, crisis-stage sensitivity, and comparisons between companion apps and general-purpose LLMs. We introduce MIRROR-Eval (Multi-turn Interaction Risk Review: Observing suicidal-crisis Responses), a dataset of 960 annotated 20-turn conversations across eight deployed platform configurations, six clinically grounded personas, and two crisis stages: ideation and explicit planning. An LLM-as-a-Judge pipeline applies an expert-reviewed rubric covering user risk severity, chatbot risk awareness, and intervention behavior. We observe a three-tier harm structure: companion apps (Character.AI and Replika) and Grok 4.3 form a high-harm tier; Gemini 3.1 Pro is mid-range; GPT-5.5 and Claude Sonnet 5 show substantially lower harm. At planning, companion apps show increased glorification and normalisation, advancement toward harmful action, and harmful methods and instructions. Crisis recognition and empathetic language do not ensure safe responses. These findings highlight the need for product-level safety evaluation across crisis stages. Dataset and code: https://huggingface.co/datasets/imda-biztech/MIRROR-Eval. Warning: this paper includes examples that may be offensive or harmful.",
+  "ai_type_tags": [
+    "对话式 AI",
+    "LLM",
+    "LLM-as-a-Judge",
+    "情感识别"
+  ],
+  "arxiv_id": "2610.39782",
+  "authors": [
+    "Huanyue Liao",
+    "Seok Min Lim",
+    "Yan Ling Lim",
+    "Shi Min Cheng",
+    "Kellin Pelrine"
+  ],
+  "authors_full": [
+    {
+      "name": "Huanyue Liao"
+    },
+    {
+      "name": "Seok Min Lim"
+    },
+    {
+      "name": "Yan Ling Lim"
+    },
+    {
+      "name": "Shi Min Cheng"
+    },
+    {
+      "name": "Kellin Pelrine"
+    },
+    {
+      "name": "Chen Hui Ong"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以危机用户安全为核心的AI交互评测",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "构建MIRROR-Eval，以960段20轮危机对话、8种平台配置、6类临床人物及两类自杀危机阶段评估AI陪伴聊天机器人的产品级安全。评审显示伤害呈三档分化；制定计划时，陪伴应用更易美化风险并提供伤害方法，说明共情与危机识别不足以保证安全。",
+      "topic_tags": [
+        "AI 治理",
+        "伦理",
+        "人机交互(HCI)",
+        "情感计算"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-29",
+  "doi": null,
+  "id": "p_ib5fJfJOaVPvqZfJ",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2610.39782v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38067,
+      "revision": "98cc693a27051ac5efac92a1deb23aec577017af"
+    }
+  ],
+  "title": "Assessing AI Companion Chatbot Safety for Vulnerable Users: A Crisis-Stage Multi-Platform Evaluation",
+  "title_zh": "评估AI伴侣聊天机器人对脆弱用户的安全性：危机阶段多平台评估",
+  "unified_ingested_at": "2026-10-31T08:07:52.508333Z",
+  "url": "https://arxiv.org/abs/2610.39782v1",
+  "volume": null,
+  "year": 2026
+}

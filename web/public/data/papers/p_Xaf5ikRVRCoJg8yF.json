@@ -1,0 +1,60 @@
+{
+  "abstract": "Automatically predicting how difficult it is for humans to understand a code snippet can assist developers in tasks like deciding when and where to refactor. Despite many proposed code comprehensibility metrics, studies have shown they often correlate poorly with actual measurements of human comprehensibility. This has motivated the use of machine learning models to predict human comprehensibility directly from code, but these models have also shown limited accuracy.   We argue that model inaccuracy stems from inherent noise in human comprehensibility data, which confuses models trained to predict it directly. To address this, we propose training models to predict the relative comprehensibility of two code snippets - that is, predicting which snippet a human would find easier to understand without predicting each snippet's comprehensibility in isolation. This mitigates noise in predicting 'absolute' comprehensibility measurements, but is still useful for downstream software-engineering tasks like assessing whether refactoring improves or hinders comprehensibility.   We conducted a study to assess and compare the effectiveness of absolute and relative code comprehensibility prediction via machine learning. We used a dataset of 150 Java code snippets and 12.5k human comprehensibility measurements from prior user studies, comparing the models' performance with naive baselines (eg 'always predict the majority class'). Our findings indicate that absolute comprehensibility models improve over the baselines by at most 33.4% and frequently underperform. In contrast, relative comprehensibility models are substantially better, with average improvements of 137.8% and 74.7% for snippet-wise and developer-wise prediction, respectively. These results suggest that relative comprehensibility models learn more effectively from the data, supporting their practical applicability for downstream SE tasks.",
+  "ai_type_tags": [
+    "机器学习",
+    "代码理解"
+  ],
+  "arxiv_id": "2510.03474",
+  "authors": [
+    "Nadeeshan De Silva",
+    "Martin Kellogg",
+    "Oscar Chaparro"
+  ],
+  "authors_full": [
+    {
+      "name": "Nadeeshan De Silva"
+    },
+    {
+      "name": "Martin Kellogg"
+    },
+    {
+      "name": "Oscar Chaparro"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "机器学习预测人类代码可理解性但无新用研",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对人类代码可理解性数据噪声导致预测不准，改为比较两段代码的相对可理解性。基于150段Java代码及1.25万次人类测量进行实验，结果显示相对预测能缓解标注噪声，并优于绝对可理解性模型和朴素基线，可用于评估重构效果。",
+      "topic_tags": [
+        "代码可理解性",
+        "软件工程",
+        "开发者体验"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-10-03",
+  "doi": null,
+  "id": "p_Xaf5ikRVRCoJg8yF",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2510.03474v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7838,
+      "revision": "98cc693a27051ac5efac92a1deb23aec577017af"
+    }
+  ],
+  "title": "Relative Code Comprehensibility Prediction",
+  "title_zh": "相对代码可理解性预测",
+  "unified_ingested_at": "2026-10-31T08:07:52.508333Z",
+  "url": "https://arxiv.org/abs/2510.03474v1",
+  "volume": null,
+  "year": 2025
+}

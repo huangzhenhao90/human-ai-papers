@@ -1,9 +1,10 @@
 {
   "abstract": "Artificial intelligence (AI) technology has gradually been integrated into automated vehicles. However, how this technology could systematically support takeover transitions in SAE Level 3 automated vehicles remains unknown, even though this level may remain a major form of driving automation in the near future. To address this, we implemented the three AI roles proposed by the triadic Human-AI collaboration framework (Advisor, Co-pilot, and Guardian) as potential authority-ability configurations for AI agents within an automated system. We then examined their interactions with explanation type (why and action) and directional semantics (ipsilateral and contralateral) in an automated driving simulator study with 24 participants. Results showed that, across the three AI roles, Advisor had the shortest decision-making time, followed by Guardian and Co-pilot. Advisor and Guardian were associated with higher decision-making accuracy and higher satisfaction ratings than Co-pilot. Guardian was associated with the lowest workload, followed by Advisor and Co-pilot. The effect of explanation type on decision-making time depended on AI role. Action explanations were faster under Advisor, whereas why explanations were faster under Co-pilot. For directional semantics, ipsilateral semantics were associated with shorter decision-making time than contralateral semantics. Overall, these findings provide preliminary guidance for designing AI-role authority-ability configurations and their associated speech-based takeover messages.",
   "ai_type_tags": [
-    "自动驾驶",
+    "人机协作",
     "可解释 AI",
-    "人机协作"
+    "自然语言解释",
+    "可用性 AI"
   ],
   "arxiv_id": "2610.37892",
   "authors": [
@@ -33,10 +34,23 @@
         "人机交互",
         "决策"
       ]
+    },
+    "ur": {
+      "ai_reason": "AI角色与解释操控接管实验",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "模拟器实验比较顾问、协同驾驶员与守护者三种AI角色在L3自动驾驶接管中的表现。顾问决策最快，顾问与守护者准确性、满意度更高，守护者工作负荷最低；解释类型与提示方向会调节决策效率。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "自动驾驶",
+        "可用性",
+        "可解释性"
+      ]
     }
   },
   "channels": [
-    "ob"
+    "ob",
+    "ur"
   ],
   "cited_by": 0,
   "date": "2026-10-27",
@@ -49,11 +63,16 @@
     {
       "channel": "ob",
       "legacy_id": 83495,
-      "revision": "85e549c994d6fa6b47bda3f5d6a8e298c275dbf1"
+      "revision": "64192b59df9403ce1758e2f2903684b0b5c57321"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 38076,
+      "revision": "98cc693a27051ac5efac92a1deb23aec577017af"
     }
   ],
   "title": "Advisor, Co-pilot, or Guardian? AI Role Framing and Human Decision Behavior in Automated Vehicle Takeovers",
-  "title_zh": "顾问、副驾驶还是守护者：自动车辆接管中的AI角色框定与人类决策行为",
+  "title_zh": "顾问、副驾驶还是守护者？AI角色界定与自动驾驶车辆接管中的人类决策行为",
   "unified_ingested_at": "2026-10-30T08:14:43.238634Z",
   "url": "https://arxiv.org/abs/2610.37892v1",
   "volume": null,

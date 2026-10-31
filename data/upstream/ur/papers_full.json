@@ -2523,6 +2523,100 @@
     "year": 2025
   },
   {
+    "abstract": "Automatically predicting how difficult it is for humans to understand a code snippet can assist developers in tasks like deciding when and where to refactor. Despite many proposed code comprehensibility metrics, studies have shown they often correlate poorly with actual measurements of human comprehensibility. This has motivated the use of machine learning models to predict human comprehensibility directly from code, but these models have also shown limited accuracy.   We argue that model inaccuracy stems from inherent noise in human comprehensibility data, which confuses models trained to predict it directly. To address this, we propose training models to predict the relative comprehensibility of two code snippets - that is, predicting which snippet a human would find easier to understand without predicting each snippet's comprehensibility in isolation. This mitigates noise in predicting 'absolute' comprehensibility measurements, but is still useful for downstream software-engineering tasks like assessing whether refactoring improves or hinders comprehensibility.   We conducted a study to assess and compare the effectiveness of absolute and relative code comprehensibility prediction via machine learning. We used a dataset of 150 Java code snippets and 12.5k human comprehensibility measurements from prior user studies, comparing the models' performance with naive baselines (eg 'always predict the majority class'). Our findings indicate that absolute comprehensibility models improve over the baselines by at most 33.4% and frequently underperform. In contrast, relative comprehensibility models are substantially better, with average improvements of 137.8% and 74.7% for snippet-wise and developer-wise prediction, respectively. These results suggest that relative comprehensibility models learn more effectively from the data, supporting their practical applicability for downstream SE tasks.",
+    "ai_reason": "机器学习预测人类代码可理解性但无新用研",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "代码理解"
+    ],
+    "authors": [
+      "Nadeeshan De Silva",
+      "Martin Kellogg",
+      "Oscar Chaparro"
+    ],
+    "authors_full": [
+      {
+        "name": "Nadeeshan De Silva"
+      },
+      {
+        "name": "Martin Kellogg"
+      },
+      {
+        "name": "Oscar Chaparro"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-10-03",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 7838,
+    "ingested_at": "2026-06-14T13:03:19.909796",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2510.03474v1",
+    "scored_at": "2026-10-31T07:50:31.228881",
+    "title": "Relative Code Comprehensibility Prediction",
+    "title_zh": "相对代码可理解性预测",
+    "tldr": "针对人类代码可理解性数据噪声导致预测不准，改为比较两段代码的相对可理解性。基于150段Java代码及1.25万次人类测量进行实验，结果显示相对预测能缓解标注噪声，并优于绝对可理解性模型和朴素基线，可用于评估重构效果。",
+    "topic_tags": [
+      "代码可理解性",
+      "软件工程",
+      "开发者体验"
+    ],
+    "url": "https://arxiv.org/abs/2510.03474v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Explainability is increasingly seen as an essential feature of rule-based smart environments. While counterfactual explanations, which describe what could have been done differently to achieve a desired outcome, are a powerful tool in eXplainable AI (XAI), no established methods exist for generating them in these rule-based domains. In this paper, we present the first formalization and implementation of counterfactual explanations tailored to this domain. It is implemented as a plugin that extends an existing explanation engine for smart environments. We conducted a user study (N=17) to evaluate our generated counterfactuals against traditional causal explanations. The results show that user preference is highly contextual: causal explanations are favored for their linguistic simplicity and in time-pressured situations, while counterfactuals are preferred for their actionable content, particularly when a user wants to resolve a problem. Our work contributes a practical framework for a new type of explanation in smart environments and provides empirical evidence to guide the choice of when each explanation type is most effective.",
+    "ai_reason": "XAI反事实解释为核心并开展17人用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "反事实解释",
+      "规则智能系统"
+    ],
+    "authors": [
+      "Anna Trapp",
+      "Mersedeh Sadeghi",
+      "Andreas Vogelsang"
+    ],
+    "authors_full": [
+      {
+        "name": "Anna Trapp"
+      },
+      {
+        "name": "Mersedeh Sadeghi"
+      },
+      {
+        "name": "Andreas Vogelsang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-10-03",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 7839,
+    "ingested_at": "2026-06-14T13:03:19.910207",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2510.03078v1",
+    "scored_at": "2026-10-31T07:50:31.228429",
+    "title": "From Facts to Foils: Designing and Evaluating Counterfactual Explanations for Smart Environments",
+    "title_zh": "从事实到反例：面向智能环境的反事实解释设计与评估",
+    "tldr": "针对规则驱动智能环境缺乏反事实解释生成方法，构建形式化框架与解释引擎插件；17人研究表明，因果解释更简洁且适合时间紧迫情境，反事实解释则因可操作性更利于解决问题。",
+    "topic_tags": [
+      "可解释性",
+      "用户研究",
+      "智能环境",
+      "决策支持"
+    ],
+    "url": "https://arxiv.org/abs/2510.03078v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Recent advancements in natural language processing (NLP) have enabled the development of automated tools that support various domains, including software engineering. However, while NLP and artificial intelligence (AI) research has extensively focused on tasks such as code generation, less attention has been given to automating support for the adoption of best practices, the evolution of ways of working, and the monitoring of process health. This study addresses this gap by exploring the integration of Essence, a standard and thinking framework for managing software engineering practices, with large language models (LLMs). To this end, a specialised chatbot was developed to assist students and professionals in understanding and applying Essence. The chatbot employs a retrieval-augmented generation (RAG) system to retrieve relevant contextual information from a curated knowledge base. Four different LLMs were used to create multiple chatbot configurations, each evaluated both as a base model and augmented with the RAG system. The system performance was evaluated through both the relevance of retrieved context and the quality of generated responses. Comparative analysis against the general-purpose LLMs demonstrated that the proposed system consistently outperforms its baseline counterpart in domain-specific tasks. By facilitating access to structured software engineering knowledge, this work contributes to bridging the gap between theoretical frameworks and practical application, potentially improving process management and the adoption of software development practices. While further validation through user studies is required, these findings highlight the potential of LLM-based automation to enhance learning and decision-making in software engineering.",
     "ai_reason": "以LLM聊天机器人辅助软件实践采纳",
     "ai_score": 5.0,
@@ -3825,6 +3919,57 @@
       "用户体验(UX)"
     ],
     "url": "https://arxiv.org/abs/2510.12364v2",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "This paper presents eye2vec, an infrastructure for analyzing software developers' eye movements while reading source code. In common eye-tracking studies in program comprehension, researchers must preselect analysis targets such as control flow or syntactic elements, and then develop analysis methods to extract appropriate metrics from the fixation for source code. Here, researchers can define various levels of AOIs like words, lines, or code blocks, and the difference leads to different results. Moreover, the interpretation of fixation for word/line can vary across the purposes of the analyses. Hence, the eye-tracking analysis is a difficult task that depends on the time-consuming manual work of the researchers. eye2vec represents continuous two fixations as transitions between syntactic elements using distributed representations. The distributed representation facilitates the adoption of diverse data analysis methods with rich semantic interpretations.",
+    "ai_reason": "眼动追踪与表示学习用于开发者代码理解",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "眼动 AI",
+      "表示学习"
+    ],
+    "authors": [
+      "Haruhiko Yoshioka",
+      "Kazumasa Shimari",
+      "Hidetake Uwano",
+      "Kenichi Matsumoto"
+    ],
+    "authors_full": [
+      {
+        "name": "Haruhiko Yoshioka"
+      },
+      {
+        "name": "Kazumasa Shimari"
+      },
+      {
+        "name": "Hidetake Uwano"
+      },
+      {
+        "name": "Kenichi Matsumoto"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-10-03",
+    "doi": "https://doi.org/10.1145/3715669.3726801",
+    "domain_score": 4.0,
+    "id": 8067,
+    "ingested_at": "2026-06-14T13:03:20.128157",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2510.11722v2",
+    "scored_at": "2026-10-31T07:50:31.227747",
+    "title": "eye2vec: Learning Distributed Representations of Eye Movement for Program Comprehension Analysis",
+    "title_zh": "eye2vec：用于程序理解分析的眼动分布式表征学习",
+    "tldr": "eye2vec将开发者阅读代码时连续两次注视间的语法元素转换建模为分布式表示，减少预设注视区域与人工指标依赖，并支持具有语义解释的多样化眼动分析。",
+    "topic_tags": [
+      "眼动追踪",
+      "用户研究方法",
+      "程序理解",
+      "可视化"
+    ],
+    "url": "https://arxiv.org/abs/2510.11722v2",
     "volume": null,
     "year": 2025
   },
@@ -38727,6 +38872,55 @@
     "year": 2026
   },
   {
+    "abstract": "Conversational interfaces may make explainable AI (XAI) more accessible to users without machine learning expertise, but their benefits over dashboards remain insufficiently characterised in healthcare. Existing systems have typically been evaluated in isolation, leaving unclear whether conversational interaction improves interpretability beyond the underlying explanation methods.   We report a within-subjects user study comparing the Explainability Assistant, an LLM function-calling conversational XAI system, with a traditional dashboard for explaining a heart disease classification model trained on the Cleveland Heart Disease dataset. Both interfaces expose the same Decision Tree classifier and post-hoc explanation methods: SHAP feature attribution, DiCE counterfactuals, and what-if analysis. This design supports comparison of interaction modalities while holding the model and explanation methods constant.   Five participants with healthcare backgrounds, from medical students to practising clinicians and public health researchers, completed parallel task blocks on both interfaces; three participated in follow-up interviews. Task accuracy, Likert ratings, free-text questionnaire responses, and interviews revealed complementary strengths and weaknesses rather than a clear preference for either modality. The assistant offered easier entry and patient-specific explanations, while the dashboard supported simultaneous inspection of global and local information. All three interview participants recommended integrating conversational and dashboard elements within a single clinical workflow.",
+    "ai_reason": "核心为LLM-XAI界面对照用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "LLM",
+      "对话式 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Eduard Barbu",
+      "Rodion Krjutškov",
+      "Anneli Uusküla"
+    ],
+    "authors_full": [
+      {
+        "name": "Eduard Barbu"
+      },
+      {
+        "name": "Rodion Krjutškov"
+      },
+      {
+        "name": "Anneli Uusküla"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38062,
+    "ingested_at": "2026-10-30T07:58:52.197809",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.39634v1",
+    "scored_at": "2026-10-31T07:48:38.096842",
+    "title": "Evaluating Conversational Explainability in Healthcare: Comparing the Explainability Assistant and a Traditional XAI Dashboard",
+    "title_zh": "评估医疗领域的对话式可解释性：比较Explainability Assistant与传统XAI仪表板",
+    "tldr": "让5名医疗背景参与者交叉使用基于同一决策树及SHAP、反事实和what-if解释的LLM对话助手与仪表盘。对话助手更易进入并提供患者化解释，仪表盘便于同时查看全局与局部信息；两者优劣互补，未形成明确偏好。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互(HCI)",
+      "用户研究方法",
+      "可视化"
+    ],
+    "url": "https://arxiv.org/abs/2610.39634v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Human evaluation of AI-generated videos has so far relied on explicit human feedback, such as judgments or ratings. While these signals capture the conclusions viewers reach, they fail to offer insights into the perception that leads to them. This paper investigates eye tracking as a complementary human evaluation signal for AI-generated videos. We conducted two Visual Turing Test (VTT) experiments with a total of 90 participants on videos generated by latest generative models, in which participants watched each video twice and then gave their feedback. Across the experiments, we collected 4,286 valid eye-tracking trials on 438 videos. Our analysis indicates that gaze patterns offer informative evaluation signals that align with explicit human feedback. Building on the findings, we propose the first computational method GazeEval to predict the perceived visual realism of AI-generated videos from eye-tracking data. It achieves 71.3% accuracy in prediction, providing evidence that eye tracking data carries informative signals about how people evaluate a video. We release the study data to support further research on eye tracking for evaluating AI-generated video.",
     "ai_reason": "眼动实验评估用户对AI视频的真实感",
     "ai_score": 4.0,
@@ -38775,6 +38969,111 @@
       "视觉真实感"
     ],
     "url": "https://arxiv.org/abs/2610.38825v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI companion chatbots are increasingly used by vulnerable individuals, including adolescents in suicidal crisis, for emotional support. Existing safety evaluations focus on base models, leaving gaps in product-level assessment, crisis-stage sensitivity, and comparisons between companion apps and general-purpose LLMs. We introduce MIRROR-Eval (Multi-turn Interaction Risk Review: Observing suicidal-crisis Responses), a dataset of 960 annotated 20-turn conversations across eight deployed platform configurations, six clinically grounded personas, and two crisis stages: ideation and explicit planning. An LLM-as-a-Judge pipeline applies an expert-reviewed rubric covering user risk severity, chatbot risk awareness, and intervention behavior. We observe a three-tier harm structure: companion apps (Character.AI and Replika) and Grok 4.3 form a high-harm tier; Gemini 3.1 Pro is mid-range; GPT-5.5 and Claude Sonnet 5 show substantially lower harm. At planning, companion apps show increased glorification and normalisation, advancement toward harmful action, and harmful methods and instructions. Crisis recognition and empathetic language do not ensure safe responses. These findings highlight the need for product-level safety evaluation across crisis stages. Dataset and code: https://huggingface.co/datasets/imda-biztech/MIRROR-Eval. Warning: this paper includes examples that may be offensive or harmful.",
+    "ai_reason": "以危机用户安全为核心的AI交互评测",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "LLM",
+      "LLM-as-a-Judge",
+      "情感识别"
+    ],
+    "authors": [
+      "Huanyue Liao",
+      "Seok Min Lim",
+      "Yan Ling Lim",
+      "Shi Min Cheng",
+      "Kellin Pelrine"
+    ],
+    "authors_full": [
+      {
+        "name": "Huanyue Liao"
+      },
+      {
+        "name": "Seok Min Lim"
+      },
+      {
+        "name": "Yan Ling Lim"
+      },
+      {
+        "name": "Shi Min Cheng"
+      },
+      {
+        "name": "Kellin Pelrine"
+      },
+      {
+        "name": "Chen Hui Ong"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38067,
+    "ingested_at": "2026-10-30T07:58:52.204068",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.39782v1",
+    "scored_at": "2026-10-31T07:48:38.095621",
+    "title": "Assessing AI Companion Chatbot Safety for Vulnerable Users: A Crisis-Stage Multi-Platform Evaluation",
+    "title_zh": "评估AI伴侣聊天机器人对脆弱用户的安全性：危机阶段多平台评估",
+    "tldr": "构建MIRROR-Eval，以960段20轮危机对话、8种平台配置、6类临床人物及两类自杀危机阶段评估AI陪伴聊天机器人的产品级安全。评审显示伤害呈三档分化；制定计划时，陪伴应用更易美化风险并提供伤害方法，说明共情与危机识别不足以保证安全。",
+    "topic_tags": [
+      "AI 治理",
+      "伦理",
+      "人机交互(HCI)",
+      "情感计算"
+    ],
+    "url": "https://arxiv.org/abs/2610.39782v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative artificial intelligence (GenAI) is increasingly embedded in university learning, yet effective human-GenAI interaction depends not only on access to these tools but also on students' ability to formulate, evaluate, and refine prompts for academic tasks. This study examined university students' perceived GenAI prompting capability and reported prompting strategies. Questionnaire data from 234 students were analyzed using descriptive statistics, measurement modelling, scenario comparisons, structural associations, and qualitative coding of optional comments. Students reported using GenAI across diverse academic activities and generally expressed confidence in their prompting capabilities, particularly in providing relevant context and refining prompts following initial outputs. However, prompting strategies showed limited sensitivity to task types: specifying output format was more strongly endorsed in a creative workshop preparation scenario than in a research-oriented assignment, whereas other matched strategies showed no adjusted differences. Students also commonly endorsed both concise instructions and providing all relevant information at the outset, suggesting that effective brevity may depend more on selecting and organizing task-relevant information than on prompt length alone. By contrast, fixed prompt templates received lower endorsement than other prompting strategies. In the adopted factor model, perceived cognition showed the clearest unique association with perceived prompting capability, while open-ended responses highlighted prompt-intent alignment as a common challenge.",
+    "ai_reason": "问卷调查234名大学生的GenAI提示能力",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "提示工程",
+      "人机交互"
+    ],
+    "authors": [
+      "Lei Fan",
+      "Fangxue Liu"
+    ],
+    "authors_full": [
+      {
+        "name": "Lei Fan"
+      },
+      {
+        "name": "Fangxue Liu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38068,
+    "ingested_at": "2026-10-30T07:58:52.204954",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.39571v1",
+    "scored_at": "2026-10-31T07:48:38.095197",
+    "title": "Generative artificial intelligence prompting strategies among Chinese university students across academic tasks",
+    "title_zh": "中国大学生不同学术任务中的生成式人工智能提示策略",
+    "tldr": "基于234名中国大学生的问卷与开放评论，考察其在不同学术任务中的生成式AI提示能力与策略。学生总体有信心，常用相关背景、迭代优化及预先筛选信息；策略对任务类型敏感有限，固定模板认可度较低，提示效果更取决于信息组织而非单纯长度。",
+    "topic_tags": [
+      "用户研究方法",
+      "问卷",
+      "人机交互(HCI)",
+      "AI 采用"
+    ],
+    "url": "https://arxiv.org/abs/2610.39571v1",
     "volume": null,
     "year": 2026
   },
@@ -38893,6 +39192,118 @@
       "人格化交互"
     ],
     "url": "https://arxiv.org/abs/2610.38608v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "As AI agents increasingly participate in creative teamwork, writing emerges from hybrid human-AI teams. Although AI can improve the creativity of individual outputs, these gains may come at the cost of homogenization. What is the best role for human intervention? We introduce a transmission-chain paradigm inspired by cognitive models of writing, with four stages: Plan, Write, Review, and Revise. Each stage receives the previous output and passes its own forward. Using data from 333 participants across 427 stories, we compared creativity, diversity, and enjoyment across human, AI, and hybrid chains. Consistent with prior work, all-AI chains produced more creative but less diverse stories than all-human chains. Introducing a single human into an otherwise all-AI chain increased diversity depending on role. Human planning provided the best balance: it preserved AI-level creativity, increased diversity that persisted through downstream AI stages, and maintained enjoyment. We discuss implications for designing human-in-the-loop creative pipelines.",
+    "ai_reason": "333人参与的人机写作对照实验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作"
+    ],
+    "authors": [
+      "Chenyi Li",
+      "Haoyu Hu",
+      "Raja Marjieh",
+      "Katherine M Collins",
+      "Max Kreminski"
+    ],
+    "authors_full": [
+      {
+        "name": "Chenyi Li"
+      },
+      {
+        "name": "Haoyu Hu"
+      },
+      {
+        "name": "Raja Marjieh"
+      },
+      {
+        "name": "Katherine M Collins"
+      },
+      {
+        "name": "Max Kreminski"
+      },
+      {
+        "name": "Ilia Sucholutsky"
+      },
+      {
+        "name": "Dalton Conley"
+      },
+      {
+        "name": "Nori Jacoby"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-27",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38075,
+    "ingested_at": "2026-10-30T07:58:52.214416",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.37916v1",
+    "scored_at": "2026-10-31T07:48:42.945462",
+    "title": "What Is the Role for Humans in Creative Writing? Creativity and Diversity in Human-AI Collaboration",
+    "title_zh": "人类在创意写作中扮演何种角色？人机协作中的创造性与多样性",
+    "tldr": "基于计划、写作、审阅和修改四阶段传递链，比较人类、AI及混合创作团队。全AI创作更有创意但同质化；仅在计划阶段引入人类，可在保持创造性和愉悦度的同时提升作品多样性。",
+    "topic_tags": [
+      "人机协作",
+      "创造性写作",
+      "人机交互(HCI)"
+    ],
+    "url": "https://arxiv.org/abs/2610.37916v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Artificial intelligence (AI) technology has gradually been integrated into automated vehicles. However, how this technology could systematically support takeover transitions in SAE Level 3 automated vehicles remains unknown, even though this level may remain a major form of driving automation in the near future. To address this, we implemented the three AI roles proposed by the triadic Human-AI collaboration framework (Advisor, Co-pilot, and Guardian) as potential authority-ability configurations for AI agents within an automated system. We then examined their interactions with explanation type (why and action) and directional semantics (ipsilateral and contralateral) in an automated driving simulator study with 24 participants. Results showed that, across the three AI roles, Advisor had the shortest decision-making time, followed by Guardian and Co-pilot. Advisor and Guardian were associated with higher decision-making accuracy and higher satisfaction ratings than Co-pilot. Guardian was associated with the lowest workload, followed by Advisor and Co-pilot. The effect of explanation type on decision-making time depended on AI role. Action explanations were faster under Advisor, whereas why explanations were faster under Co-pilot. For directional semantics, ipsilateral semantics were associated with shorter decision-making time than contralateral semantics. Overall, these findings provide preliminary guidance for designing AI-role authority-ability configurations and their associated speech-based takeover messages.",
+    "ai_reason": "AI角色与解释操控接管实验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机协作",
+      "可解释 AI",
+      "自然语言解释",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Wei-Hsiang Lo",
+      "Jingyi Xie",
+      "Gaojian Huang"
+    ],
+    "authors_full": [
+      {
+        "name": "Wei-Hsiang Lo"
+      },
+      {
+        "name": "Jingyi Xie"
+      },
+      {
+        "name": "Gaojian Huang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-27",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38076,
+    "ingested_at": "2026-10-30T07:58:52.215338",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.37892v1",
+    "scored_at": "2026-10-31T07:48:42.945075",
+    "title": "Advisor, Co-pilot, or Guardian? AI Role Framing and Human Decision Behavior in Automated Vehicle Takeovers",
+    "title_zh": "顾问、副驾驶还是守护者？AI角色界定与自动驾驶车辆接管中的人类决策行为",
+    "tldr": "模拟器实验比较顾问、协同驾驶员与守护者三种AI角色在L3自动驾驶接管中的表现。顾问决策最快，顾问与守护者准确性、满意度更高，守护者工作负荷最低；解释类型与提示方向会调节决策效率。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "自动驾驶",
+      "可用性",
+      "可解释性"
+    ],
+    "url": "https://arxiv.org/abs/2610.37892v1",
     "volume": null,
     "year": 2026
   },
@@ -50862,6 +51273,47 @@
   },
   {
     "abstract": null,
+    "ai_reason": "纵向研究儿童与机器人导师互动及故障",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Sofia Serholt"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Sofia Serholt",
+        "orcid": null
+      }
+    ],
+    "cited_by": 74,
+    "date": "2018-04",
+    "doi": "10.1016/j.chb.2017.12.030",
+    "domain_score": 5.0,
+    "id": 37988,
+    "ingested_at": "2026-10-30T07:58:46.538831",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-10-31T07:49:05.632500",
+    "title": "Breakdowns in children's interactions with a robotic tutor: A longitudinal study",
+    "title_zh": "儿童与机器人导师互动中的故障：纵向研究",
+    "tldr": "基于标题可推断，纵向追踪儿童与机器人导师的互动，识别并刻画互动故障及其随时间的变化，揭示机器人教学中的持续性交互问题。",
+    "topic_tags": [
+      "儿童",
+      "人机交互(HCI)",
+      "可用性",
+      "机器人导师"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2017.12.030",
+    "volume": "81",
+    "year": 2018
+  },
+  {
+    "abstract": null,
     "ai_reason": "语音助手为AI系统，针对视障用户进行用户体验研究",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -55926,7 +56378,7 @@
     "pdf_url": null,
     "scored_at": "2026-10-30T08:00:10.708452",
     "title": "Comprehension is a double-edged sword: Over-interpreting unspecified information in intelligible machine learning explanations",
-    "title_zh": null,
+    "title_zh": "理解是一把双刃剑：机器学习可解释说明中未明确信息的过度解读",
     "tldr": "检验用户理解机器学习解释时，是否会将未明确呈现的信息自行补全并过度解读，从而形成错误判断。可理解性可能具有双刃剑效应：解释越易读，用户越有信心，却也更易推断模型并未支持的结论。",
     "topic_tags": [
       "可解释性",
@@ -70660,6 +71112,60 @@
       "客户服务"
     ],
     "url": "https://doi.org/10.1177/00222437261494934",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Technology-mediated service interactions, such as phone calls, generate rich behavioral signals that firms currently struggle to monitor in real time. Post-interaction surveys provide delayed and unrepresentative feedback, leaving satisfaction invisible as calls unfold. Satisfaction judgments depend on how evaluative meaning is communicated across two channels, verbal content and vocal delivery, whose relative contribution varies by outcome type. The authors analyze 1,144 real-world service calls, each coded as dissatisfied, neutral, or satisfied, using text-only, audio-only, and multimodal deep learning models. Dissatisfied calls are identified from transcripts alone as accurately as by multimodal models, since customers articulate problems and remedy expectations explicitly. Neutral and satisfied calls depend more strongly on vocal interpretation, and cross-attention models outperform text-only alternatives precisely where verbal content is absent or insufficiently distinctive to separate outcomes. The findings identify a boundary condition on interactivity, whereby vocal cues add predictive value when evaluative meaning is absent or insufficiently distinctive between outcomes, not when it is explicit and clearly distinguishes outcomes, as is the case for dissatisfied calls.",
+    "ai_reason": "以深度学习分析真实服务电话与满意度",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "多模态",
+      "情感识别",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Bea Waelbers",
+      "Alexander P. Henkel",
+      "Stefano Bromuri"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Bea Waelbers",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander P. Henkel",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Stefano Bromuri",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": "10.1177/10949968261506232",
+    "domain_score": 5.0,
+    "id": 38047,
+    "ingested_at": "2026-10-30T07:58:48.337974",
+    "issue": null,
+    "journal": "JIM",
+    "pdf_url": null,
+    "scored_at": "2026-10-31T07:48:38.098002",
+    "title": "EXPRESS: THE SOUND OF WORDS: VERBAL AND VOCAL CUES IN CUSTOMER SATISFACTION",
+    "title_zh": "EXPRESS：词语之声：客户满意度中的语言与声音线索",
+    "tldr": "分析1,144通真实客服电话，以文本、音频及跨注意力多模态模型识别满意状态。不满可由明确表述准确识别；中立与满意更依赖语调，语音线索仅在语言信息不足或区分度低时增加预测价值。",
+    "topic_tags": [
+      "服务体验",
+      "消费者行为",
+      "情感计算",
+      "多模态交互"
+    ],
+    "url": "https://doi.org/10.1177/10949968261506232",
     "volume": null,
     "year": 2026
   },
@@ -85413,7 +85919,7 @@
     "pdf_url": null,
     "scored_at": "2026-10-28T07:50:12.984238",
     "title": "Interfacing in Crisis: Five Parables for Interface Thinking",
-    "title_zh": null,
+    "title_zh": "危机中的界面交互：界面思维的五个寓言",
     "tldr": "生成式AI正动摇传统界面对中介、可读性与控制的支撑，使界面呈现、交互形式及“谁在思考或发声”的主体位置同时失序。文章以五个物理变形寓言为隐喻框架，重新推想生成式时代界面的可能形态。",
     "topic_tags": [
       "人机交互",
@@ -88984,6 +89490,89 @@
     "url": "https://doi.org/10.1080/0144929x.2025.2496722",
     "volume": null,
     "year": 2025
+  },
+  {
+    "abstract": "Artificial intelligence (AI) systems increasingly support decision-making across critical domains, yet explainable AI (XAI) approaches prioritise algorithmic transparency over human comprehension. While XAI reveals computational processes for model validation, end users require explanations integrating domain knowledge, contextual reasoning, and professional frameworks. This disconnect reveals a design challenge: existing approaches fail to address how practitioners need to understand and act upon AI recommendations. This paper introduces Explanatory AI as an emerging complementary paradigm where AI systems leverage generative and multimodal capabilities to serve as explanatory partners for human understanding. Unlike traditional XAI, which answers ‘How did the algorithm decide?’ for validation purposes, Explanatory AI addresses ‘Why does this make sense?’ for practitioners making informed decisions. Through theory-informed design, we synthesise multidisciplinary perspectives from cognitive science, communication research, and education with empirical evidence from healthcare and AI expert interviews. Our analysis identifies five dimensions distinguishing Explanatory AI from XAI: explanatory purpose, communication mode, epistemic stance, adaptivity, and cognitive design. We derive five meta-requirements and formulate ten design principles prescribing how to build such systems, illustrated through five UI mockups exemplifying implementation. Explanatory AI operates standalone or combined with XAI, serving distinct purposes in creating systems that genuinely support human reasoning and decision-making.",
+    "ai_reason": "生成式XAI核心，聚焦实践者理解",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "多模态",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Christian Meske",
+      "Justin Brenne",
+      "Erdi Ünal",
+      "Sabahat Ölçer",
+      "Ayşegül Doğangün"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Ruhr University Bochum"
+        ],
+        "name": "Christian Meske",
+        "orcid": "https://orcid.org/0000-0001-5637-9433",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Ruhr University Bochum"
+        ],
+        "name": "Justin Brenne",
+        "orcid": null,
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Ruhr University Bochum"
+        ],
+        "name": "Erdi Ünal",
+        "orcid": "https://orcid.org/0009-0007-2809-030X",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Ruhr West University of Applied Sciences",
+          "University of Göttingen"
+        ],
+        "name": "Sabahat Ölçer",
+        "orcid": "https://orcid.org/0000-0002-3124-8039",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Ruhr West University of Applied Sciences"
+        ],
+        "name": "Ayşegül Doğangün",
+        "orcid": "https://orcid.org/0000-0002-4287-3884",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": "10.1080/0144929x.2026.2740084",
+    "domain_score": 4.0,
+    "id": 38026,
+    "ingested_at": "2026-10-30T07:58:47.677518",
+    "issue": null,
+    "journal": "BIT",
+    "pdf_url": "https://doi.org/10.1080/0144929x.2026.2740084",
+    "scored_at": "2026-10-31T07:48:42.943065",
+    "title": "Leveraging generative AI for human understanding: meta-requirements and design principles for Explanatory AI as an emerging paradigm",
+    "title_zh": "利用生成式AI促进人类理解：新兴范式下解释型AI的元需求与设计原则",
+    "tldr": "针对传统XAI偏重算法透明、难支持实践者理解与行动的问题，结合多学科理论、医疗与AI专家访谈，提出“解释型AI”：利用生成式与多模态能力充当解释伙伴，界定五个区别维度，并导出五项元需求、十项设计原则及界面原型。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互",
+      "可用性",
+      "AI 伦理"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2740084",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": "Research in human-centered AI has shown the benefits of systems that can explain their predictions. Methods that allow AI to take advice from humans in response to explanations are similarly useful. While both capabilities are well developed for\n            transparent\n            learning models (e.g., linear models and GA\n            2\n            Ms) and recent techniques (e.g., LIME and SHAP) can generate explanations for\n            opaque\n            models, little attention has been given to advice methods for opaque models. This article introduces LIMEADE, the first general framework that translates both positive and negative advice (expressed using high-level vocabulary such as that employed by post hoc explanations) into an update to an arbitrary, underlying opaque model. We demonstrate the generality of our approach with case studies on 70 real-world models across two broad domains: image classification and text recommendation. We show that our method improves accuracy compared to a rigorous baseline on the image classification domains. For the text modality, we apply our framework to a neural recommender system for scientific papers on a public website; our user study shows that our framework leads to significantly higher perceived user control, trust, and satisfaction.",
@@ -103270,6 +103859,67 @@
   },
   {
     "abstract": null,
+    "ai_reason": "以语音识别和触觉支持聋盲祈祷交互",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "语音识别",
+      "多模态",
+      "感官替代",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Muhammad Azhar Hussain",
+      "Kamran Ahsan",
+      "Sarwat Iqbal",
+      "Adnan Nadeem"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Muhammad Azhar Hussain",
+        "orcid": "https://orcid.org/0000-0002-9004-9275"
+      },
+      {
+        "affiliation": [],
+        "name": "Kamran Ahsan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Sarwat Iqbal",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Adnan Nadeem",
+        "orcid": null
+      }
+    ],
+    "cited_by": 12,
+    "date": "2019-03",
+    "doi": "10.1016/j.ijhcs.2018.11.002",
+    "domain_score": 4.0,
+    "id": 37949,
+    "ingested_at": "2026-10-29T07:52:57.876652",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-10-31T07:49:05.630445",
+    "title": "Supporting deafblind in congregational prayer using speech recognition and vibro-tactile stimuli",
+    "title_zh": "利用语音识别与振动触觉刺激支持聋盲人士参与集体祈祷",
+    "tldr": "探索利用语音识别将礼拜 spoken 内容转换为振动触觉提示，帮助聋盲参与者感知并参与集体祈祷，呈现感官替代与无障碍辅助技术的应用方向。",
+    "topic_tags": [
+      "可访问性",
+      "无障碍",
+      "辅助技术",
+      "宗教服务体验"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2018.11.002",
+    "volume": "123",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "人-AI团队透明度与可解释性，核心HCI+AI研究",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -109708,6 +110358,75 @@
     "url": "https://doi.org/10.1080/0144929x.2025.2545313",
     "volume": "45",
     "year": 2025
+  },
+  {
+    "abstract": "Artificial intelligence (AI) voice assistants (VAs) function as service agents, delivering information and recommendations tailored to users’ specific needs. VA agents can engage in voice conversations, in which they may convey dominance or submissiveness in response to consumer requests, thereby shaping consumer experiences across service settings. Drawing on the notion of master–servant relationships from assemblage theory, this research examines how, and in which contexts, VAs should use dominant and submissive language to shape consumer interactions. Across six experimental studies, we find that VAs’ submissive language increases usage intentions and perceived interaction value by enhancing rapport and, in turn, comfort, which ultimately drives these consumer responses, even in authority-oriented service settings. However, under time pressure, VAs’ use of either dominant or submissive language equally predicts rapport, thereby disrupting the serial pathway through comfort that leads to usage intentions and perceived interaction value. Together, these findings help specify how service managers can best design VA language to enhance the value of consumer interactions with this technology in service contexts.",
+    "ai_reason": "AI语音助手语言风格为实验核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手",
+      "语音交互"
+    ],
+    "authors": [
+      "Daniel Ruiz-Equihua",
+      "Jano Jiménez-Barreto",
+      "Jaime Romero",
+      "Francisco Villarroel Ordenes"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Departamento de Financiación e Investigación Comercial, Universidad Autónoma de Madrid, Spain"
+        ],
+        "name": "Daniel Ruiz-Equihua",
+        "orcid": "https://orcid.org/0000-0002-3684-9474"
+      },
+      {
+        "affiliation": [
+          "Departamento de Dirección de Empresas e Historia Económica, Universidad de La Laguna, San Cristóbal de La Laguna, Spain",
+          "Oxford Brookes Business School, Oxford Brookes University, UK"
+        ],
+        "name": "Jano Jiménez-Barreto",
+        "orcid": "https://orcid.org/0000-0002-1953-6863"
+      },
+      {
+        "affiliation": [
+          "Departamento de Financiación e Investigación Comercial, Universidad Autónoma de Madrid, Spain"
+        ],
+        "name": "Jaime Romero",
+        "orcid": "https://orcid.org/0000-0002-7563-2964"
+      },
+      {
+        "affiliation": [
+          "Department of Management, University of Bologna, Italy"
+        ],
+        "name": "Francisco Villarroel Ordenes",
+        "orcid": "https://orcid.org/0000-0002-3321-3729"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": "10.1177/10946705261492116",
+    "domain_score": 5.0,
+    "id": 38044,
+    "ingested_at": "2026-10-30T07:58:48.247408",
+    "issue": null,
+    "journal": "JSR",
+    "pdf_url": null,
+    "scored_at": "2026-10-31T07:48:38.098788",
+    "title": "The Sound of Good Service: How Dominant and Submissive Language in AI Voice Assistants Shapes Consumer Responses Across Service Settings",
+    "title_zh": "优质服务之声：AI语音助手中的支配性与顺从性语言如何影响不同服务情境下的消费者反应",
+    "tldr": "六项实验显示，AI语音助手采用顺从式语言可通过提升融洽感与舒适感，提高使用意愿和互动价值，且在权威型服务中仍成立；时间压力下，两类语言对融洽感的影响相当，舒适感的中介作用失效。",
+    "topic_tags": [
+      "AI 助手",
+      "服务体验",
+      "消费者行为",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1177/10946705261492116",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,
