@@ -2,7 +2,8 @@
   "abstract": "Large language models (LLMs) are increasingly used to measure human preferences and opinions, but their outputs can diverge from human responses. We introduce human mimicry calibration (HuMCal), a post hoc, model-agnostic method that uses aggregate human benchmark data to learn how to combine LLM outputs from different prompts, personas, and model checkpoints. In applications to consumer transaction data and public opinion surveys, HuMCal improves agreement with human benchmarks over standard aggregation rules, and the calibrated weights often remain useful across time, geography, industry, and question clusters.",
   "ai_type_tags": [
     "LLM",
-    "算法校准"
+    "人格模拟",
+    "模型校准"
   ],
   "arxiv_id": "2024.0983",
   "authors": [
@@ -13,24 +14,27 @@
   "authors_full": [
     {
       "affiliation": [
-        "The University of Texas at Austin, Austin, Texas 78712"
+        "The University of Texas at Austin"
       ],
       "name": "Yan Leng",
-      "orcid": "https://orcid.org/0000-0002-7084-2700"
+      "orcid": "https://orcid.org/0000-0002-7084-2700",
+      "position": "first"
     },
     {
       "affiliation": [
-        "The University of Texas at Austin, Austin, Texas 78712"
+        "The University of Texas at Austin"
       ],
       "name": "Yunxin Sang",
-      "orcid": "https://orcid.org/0009-0002-4521-5796"
+      "orcid": null,
+      "position": "middle"
     },
     {
       "affiliation": [
-        "The University of Texas at Austin, Austin, Texas 78712"
+        "The University of Texas at Austin"
       ],
       "name": "Ashish Agarwal",
-      "orcid": "https://orcid.org/0000-0001-9259-0113"
+      "orcid": "https://orcid.org/0000-0001-9259-0113",
+      "position": "last"
     }
   ],
   "channel_profiles": {
@@ -45,10 +49,23 @@
         "人机差异",
         "模型校准"
       ]
+    },
+    "ur": {
+      "ai_reason": "以人类偏好及消费者数据评估LLM校准",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对大语言模型测得的人类偏好常偏离真人回答的问题，提出模型无关的后处理方法HuMCal，以人类基准数据学习跨提示词、角色和模型检查点的组合权重。在消费交易与民意调查中，其一致性优于常规聚合，且权重可跨时间、地域、行业及问题簇复用。",
+      "topic_tags": [
+        "用户模拟",
+        "模型校准",
+        "消费者偏好",
+        "民意调查"
+      ]
     }
   },
   "channels": [
-    "ob"
+    "ob",
+    "ur"
   ],
   "cited_by": 0,
   "date": "2026-10-30",
@@ -61,7 +78,12 @@
     {
       "channel": "ob",
       "legacy_id": 83559,
-      "revision": "64192b59df9403ce1758e2f2903684b0b5c57321"
+      "revision": "1f51116bf3d421388215fe6dc4f1fc65389e7130"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 38126,
+      "revision": "9b1de0608ccc68b1a43b2f3d0f5b3555d8427404"
     }
   ],
   "title": "Frontiers: Reducing Disparity Between LLMs and Humans: Optimal LLM Sample Calibration",

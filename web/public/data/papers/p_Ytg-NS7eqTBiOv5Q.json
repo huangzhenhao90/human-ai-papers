@@ -1,0 +1,70 @@
+{
+  "abstract": "When persona-conditioned responses are read as respondent-level simulations, each response should reflect the described persona's knowledge, and the respondent written to know nothing must act as if the model's knowledge were not there. We test whether it can, and find persistent favourable-item real-twin rating separation under the tested low-knowledge and explicit-ignorance prompts. We define the resulting problem (knowledge leakage: a response bias that arises when knowledge the real user could not have enters the simulated response) and present a methodology for measuring it quantitatively. The core instrument pairs real items with fabricated twins matched in surface form: screened fabricated variants designed to minimize prior item-specific knowledge. The paired difference therefore provides a diagnostic contrast for knowledge leakage even in rating tasks where no answer is correct. In a rating experiment across three knowledge-handling arms and five API endpoints from two model families, we find, first, that the personas we test do not fully suppress real-item existence and familiarity signals: a favourable-item real-twin rating contrast remains under an explicit in-context statement that the persona has never heard of the item. Second, the unfavourable-item contrast reverses sign across domain groups: pooling all unfavourable-content items across domains the contrast sits near zero (+0.077 [-0.057, +0.204]), yet the same estimator in the same conditions returns -0.359 where the rating scale asks about an item's documented hazard and +0.438 where it asks about a company or an organisation. A pooled analysis of unfavourable-content items against zero therefore does not detect the opposing domain-group differences. All estimates are conditional on the adequacy of twin construction and screening; human low-knowledge baselines remain necessary for population-level interpretation.",
+  "ai_type_tags": [
+    "LLM",
+    "人格条件化生成",
+    "模型评测"
+  ],
+  "arxiv_id": "2610.39939",
+  "authors": [
+    "Sangmin Lee",
+    "Sangwon Lee",
+    "Sungbeom Choi",
+    "Jeeseung Park",
+    "Kibeom Myoung"
+  ],
+  "authors_full": [
+    {
+      "name": "Sangmin Lee"
+    },
+    {
+      "name": "Sangwon Lee"
+    },
+    {
+      "name": "Sungbeom Choi"
+    },
+    {
+      "name": "Jeeseung Park"
+    },
+    {
+      "name": "Kibeom Myoung"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "量化检验人格化用户模拟的知识泄漏",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "定义角色模拟中的“知识泄漏”，并以真实题目及表面匹配、经筛查降低先验知识的虚构孪生题构成诊断量表。跨三种知识处理条件、五个API端点和两个模型家族，低知识及明确无知提示仍无法消除真实题的熟悉度偏差；不利题的泄漏方向还随领域改变，显示模型知识与角色知识难以分离。",
+      "topic_tags": [
+        "用户研究方法",
+        "用户模拟",
+        "知识泄漏",
+        "模型评测"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-29",
+  "doi": null,
+  "id": "p_Ytg-NS7eqTBiOv5Q",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.39939v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38083,
+      "revision": "9b1de0608ccc68b1a43b2f3d0f5b3555d8427404"
+    }
+  ],
+  "title": "Can LLMs Ignore What They Know? Measuring Knowledge Leakage in Persona-Based User Simulation",
+  "title_zh": "LLMs能否无视其所知：基于人物画像的用户模拟知识泄漏测量",
+  "unified_ingested_at": "2026-11-01T08:52:38.384973Z",
+  "url": "https://arxiv.org/abs/2610.39939v1",
+  "volume": null,
+  "year": 2026
+}
