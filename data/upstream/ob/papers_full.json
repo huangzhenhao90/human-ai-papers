@@ -66153,6 +66153,158 @@
     "year": 2026
   },
   {
+    "abstract": "Job applicants increasingly use large language models (LLMs) to write cover letters, while employers deploy LLMs to screen them. In this all-AI setting, we ask whether the \\emph{choice of model} affects hiring outcomes independently of candidate qualifications. We introduce a multi-model auditing framework pairing eleven LLM writer agents with nine API-hosted evaluator agents across ten job descriptions and fifty candidates per job. Four findings emerge. First, we identify a generative preference hierarchy: a consistent global ranking of writer models by evaluator acceptance, in which locally hosted models are systematically disadvantaged regardless of their license, compounded by self-preference bias where evaluators favour their own outputs. Second, evaluator models differ substantially in how much bias they introduce based on applicants' tool choice, offering actionable guidance for fairer screening design. Third, this hierarchy has measurable competitive consequences: in the most adverse pairing, approximately two (1.8) out of twenty-five qualified candidates are filtered out purely due to model mismatch. Fourth, a common mechanism explains the patterns above: writer preference and self-preference trace to a combination of how much each writer leans on specific stylistic cues and how strongly evaluators, often unanimously, reward or penalise those same cues. A further check finds little evidence that an unmeasured \"writer fingerprint\" remains once these same features are accounted for. We discuss implications for algorithmic fairness in employment, regulation of AI-assisted screening, and the design of auditing frameworks that can be reapplied as the model landscape evolves.",
+    "ai_reason": "聚焦LLM求职与AI招聘评估偏差",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI招聘",
+      "算法决策"
+    ],
+    "authors": [
+      "Nicolò Pagan",
+      "Michael Andreas Ebling",
+      "Stefania Ionescu",
+      "Anikó Hannák"
+    ],
+    "authors_full": [
+      {
+        "name": "Nicolò Pagan"
+      },
+      {
+        "name": "Michael Andreas Ebling"
+      },
+      {
+        "name": "Stefania Ionescu"
+      },
+      {
+        "name": "Anikó Hannák"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 83623,
+    "ingested_at": "2026-11-02T08:52:10.958463",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2610.41866v1",
+    "scored_at": "2026-11-02T08:52:40.004267",
+    "title": "AI evaluators favor job applications written by certain AI models, independent of candidate quality",
+    "title_zh": "AI评估者偏好特定AI模型撰写的求职申请，与候选人质量无关",
+    "tldr": "在求职申请由AI撰写、AI筛选的条件下，模型选择会否在候选人质量之外影响录用？多模型审计将11个LLM写作者与9个API评审者跨10类职位配对，发现评审者对写作模型存在稳定偏好：本地部署模型系统吃亏，评审者偏好自身输出；最不利配对会仅因模型错配淘汰25名合格者中的约2名，根源是对文体线索的共同奖惩。",
+    "topic_tags": [
+      "招聘",
+      "HR",
+      "公平性",
+      "偏见"
+    ],
+    "url": "https://arxiv.org/abs/2610.41866v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Payroll-fraud screening requires finding hidden employee--payee links while distinguishing suspicious relationships from legitimate ones. We formulate this problem as inductive link prediction and entity ranking on synthetic human-resources and enterprise resource planning (HR/ERP) graphs, with unseen organizations and a matched benign twin for every planted case. An original study on 24 held-out organizations and a prospectively frozen extension compare analyst rules, explicit path features and graph neural networks (GNNs). A tuned gradient-boosted model on chained-join features achieved the highest overall link average precision (AP; 0.823), above the GraIL-style GNN (0.663); its 4-hop AP was 0.646 versus 0.272. Thus, the observed multi-hop gain is not specific to GNNs. On a new synthetic cohort with 2.0% positive entities, chained-join boosting again led (AP 0.798); the relational entity GNN also exceeded record-aware rules (0.707 versus 0.504). At a 2% review budget, their precision was 0.695 versus 0.602. Under 40% failed identifier joins, the entity GNN ranked above chained-join boosting (AP 0.712 versus 0.683, descriptively). Structure-only auditing exposed a shortcut in the initial generator; matched twins reduced the audited twin-pool AUROC to 0.493--0.514. These results separate multi-hop candidate discovery, record-based discrimination and review prioritization within an explicit synthetic evaluation design. Code and data are available from the authors on request.",
+    "ai_reason": "机器学习用于HR薪资欺诈检测",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "图神经网络",
+      "机器学习",
+      "链接预测",
+      "异常检测"
+    ],
+    "authors": [
+      "Xiaobo Chen",
+      "Genliang Zhu",
+      "Ziyuan Wang",
+      "Chu Wang"
+    ],
+    "authors_full": [
+      {
+        "name": "Xiaobo Chen"
+      },
+      {
+        "name": "Genliang Zhu"
+      },
+      {
+        "name": "Ziyuan Wang"
+      },
+      {
+        "name": "Chu Wang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 83625,
+    "ingested_at": "2026-11-02T08:52:10.960845",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.41085v1",
+    "scored_at": "2026-11-02T08:52:40.004652",
+    "title": "Payroll Fraud Detection in Synthetic HR/ERP Graphs: An Inductive Comparison of Rules, Path Features, and Graph Neural Networks",
+    "title_zh": "合成HR/ERP图中的薪资欺诈检测：规则、路径特征与图神经网络的归纳式比较",
+    "tldr": "在合成HR/ERP图谱上，以未见组织为归纳场景，比较规则、路径特征、梯度提升与GNN的薪资欺诈检测效果。链式连接特征模型总体最优，表明多跳优势并非GNN特有；连接失败时实体GNN略优，匹配孪生审计还揭示了数据生成器的结构捷径。",
+    "topic_tags": [
+      "HR",
+      "欺诈检测",
+      "知识图谱",
+      "算法决策"
+    ],
+    "url": "https://arxiv.org/abs/2610.41085v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "As generative artificial intelligence (AI) becomes more capable and widely used, understanding when and how humans should work with these systems is becoming increasingly important. However, the empirical evidence in this space offers conflicting recommendations, which leaves individuals and organizations without clear guidance on when to combine human and AI capabilities. Existing meta-analyses can help reconcile these findings, but they require substantial manual effort and cannot readily incorporate new evidence as it emerges. To address this challenge, we introduce AutoAnalysis: an automated, self-updating meta-analysis of when humans and AI work better together, and when they work better alone. AutoAnalysis' most recent run synthesizes 1,955 effect sizes from 420 papers. Across this body of work, we found that, on average, human-AI combinations performed significantly better than humans alone, but they performed significantly worse than the better of humans or AI alone. These findings highlight the important distinction between improving human performance and achieving human-AI synergy and underscore the need to evaluate collaboration against both human and AI performance alone. As new studies emerge, AutoAnalysis will integrate their findings into the meta-analysis, providing cumulative evidence about when humans and AI perform better together and how human-AI performance varies across AI agents, tasks, and processes.",
+    "ai_reason": "聚焦人机协作绩效及适用情境",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Michelle Vaccaro",
+      "Abdullah Almaatouq",
+      "Thomas W. Malone"
+    ],
+    "authors_full": [
+      {
+        "name": "Michelle Vaccaro"
+      },
+      {
+        "name": "Abdullah Almaatouq"
+      },
+      {
+        "name": "Thomas W. Malone"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 83626,
+    "ingested_at": "2026-11-02T08:52:10.961793",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.42001v1",
+    "scored_at": "2026-11-02T08:52:40.003508",
+    "title": "AutoAnalysis: An automated, self-updating meta-analysis of human-AI collaboration",
+    "title_zh": "AutoAnalysis：人类与AI协作的自动化自我更新元分析",
+    "tldr": "人何时应与生成式AI协作，何时应单独完成任务？自动更新的元分析整合420篇论文、1,955个效应量后发现，人机组合平均优于人类单独作业，却落后于人类与AI中表现更优的一方。因此，判断协作价值应同时比较人和AI的单独表现，而非仅以人机组合是否优于人为标准。",
+    "topic_tags": [
+      "人机协作",
+      "工作设计",
+      "绩效评估"
+    ],
+    "url": "https://arxiv.org/abs/2610.42001v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -68500,6 +68652,58 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心讨论人工智能管理中的自动化增强悖论",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人工智能",
+      "自动化",
+      "人机协作"
+    ],
+    "authors": [
+      "Sebastian Raisch",
+      "Sebastian Krakowski"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Geneva"
+        ],
+        "name": "Sebastian Raisch",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Stockholm School of Economics"
+        ],
+        "name": "Sebastian Krakowski",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1966,
+    "date": "2021-01",
+    "doi": "10.5465/amr.2018.0072",
+    "domain_score": 5.0,
+    "id": 34118,
+    "ingested_at": "2026-08-12T04:16:26.122888",
+    "issue": "1",
+    "journal": "AMR",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:52:56.525073",
+    "title": "Artificial Intelligence and Management: The Automation–Augmentation Paradox",
+    "title_zh": "人工智能与管理：自动化—增强悖论",
+    "tldr": "从管理视角讨论人工智能的自动化—增强悖论：AI既可能替代任务，也可能补充能力并提升管理者与员工绩效。管理设计需要协调效率、赋能与就业影响，避免把AI应用等同于简单替代。",
+    "topic_tags": [
+      "工作设计",
+      "组织变革",
+      "人机协作",
+      "战略"
+    ],
+    "url": "https://doi.org/10.5465/amr.2018.0072",
+    "volume": "46",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心议题即AI与平台生态系统",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -70516,6 +70720,48 @@
     "year": 2022
   },
   {
+    "abstract": "Prior scholarship on technology and organizations has focused either on how innovations are designed or how they are used, often assuming that successful selection stems from successful design. But this assumption has limited our understanding of patterns of resistance and advocacy that can influence how and whether innovations reach organizations in the first place. To explore these patterns, this study asks, how does selection unfold within organizations, and what are the consequences of this process for the design and use of innovations? Drawing on a two-year ethnographic study, I examine how entrepreneurs piloted their AI-based innovations with potential adopting organizations. Rather than testing for learning or generalizability, organizations set up committees that engaged in process manipulation by narrowing the scope of pilots, controlling conversations, assigning pilot responsibility, and using goal claiming to align pilot outcomes with committees’ majority preferences. Committees with more adversarial members designed pilots that tested advanced aspects of entrepreneurs’ innovations, hoping for failure. Committees with a majority that championed the innovations tested basic aspects, ensuring success. While pilots run by champions mostly succeeded, these innovations faced more resistance later, during implementation, than did innovations piloted successfully by adversaries. This study shows that innovation is endogenous to selection, and reveals that champions can temper innovation, while adversaries can enable it.",
+    "ai_reason": "研究组织采纳AI创新及选择过程",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI治理"
+    ],
+    "authors": [
+      "Rebecca Karp"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Harvard Business School"
+        ],
+        "name": "Rebecca Karp",
+        "orcid": "https://orcid.org/0000-0002-7219-0486"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-01",
+    "doi": "10.1177/00018392261493079",
+    "domain_score": 5.0,
+    "id": 83610,
+    "ingested_at": "2026-11-02T08:51:49.148760",
+    "issue": null,
+    "journal": "ASQ",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:52:40.001069",
+    "title": "Crossing the Design–Use Divide: How Organizations Select Innovations to Adopt",
+    "title_zh": "跨越设计—使用鸿沟：组织如何选择采纳的创新",
+    "tldr": "组织如何筛选并采用创新？两年民族志显示，潜在采用组织的委员会会通过缩窄试点、控制讨论和目标宣称操纵创新选择。支持者主导的试点多只测试基础功能以确保成功，却在后續实施中遭遇更强阻力，说明创新及其采用结果由组织内部的选择过程共同塑造。",
+    "topic_tags": [
+      "创新",
+      "组织变革",
+      "决策",
+      "组织学习"
+    ],
+    "url": "https://doi.org/10.1177/00018392261493079",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "深伪色情涉及AI生成；社会心理学边缘相关",
     "ai_score": 4.0,
@@ -71056,6 +71302,52 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107468",
     "volume": "138",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心比较AI生成与人类诗歌；偏认知与审美判断",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "自然语言生成"
+    ],
+    "authors": [
+      "Nils Köbis",
+      "Luca D. Mossink"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Nils Köbis",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Luca D. Mossink",
+        "orcid": null
+      }
+    ],
+    "cited_by": 326,
+    "date": "2021-01",
+    "doi": "10.1016/j.chb.2020.106553",
+    "domain_score": 3.0,
+    "id": 51706,
+    "ingested_at": "2026-08-12T04:23:26.659826",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:11.993076",
+    "title": "Artificial intelligence versus Maya Angelou: Experimental evidence that people cannot differentiate AI-generated from human-written poetry",
+    "title_zh": "人工智能与Maya Angelou：实验证明人们无法区分AI生成诗歌与人类诗歌",
+    "tldr": "通过实验检验人们能否区分AI生成诗歌与人类诗歌，结果显示参与者无法可靠辨别两者，表明生成式AI作品在来源辨识上已难以与人类创作区分。",
+    "topic_tags": [
+      "创意",
+      "创作评价",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106553",
+    "volume": "114",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -72584,6 +72876,66 @@
     "url": "https://doi.org/10.1016/j.chb.2026.109148",
     "volume": "186",
     "year": 2027
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI时代顾客体验为核心，属营销与消费者行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人工智能",
+      "人机交互",
+      "AI治理"
+    ],
+    "authors": [
+      "Nisreen Ameen",
+      "Ali Tarhini",
+      "Alexander Reppel",
+      "Amitabh Anand"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Nisreen Ameen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ali Tarhini",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Alexander Reppel",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Amitabh Anand",
+        "orcid": null
+      }
+    ],
+    "cited_by": 647,
+    "date": "2021-01",
+    "doi": "10.1016/j.chb.2020.106548",
+    "domain_score": 5.0,
+    "id": 51892,
+    "ingested_at": "2026-08-12T04:23:31.006884",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:11.992205",
+    "title": "Customer experiences in the age of artificial intelligence",
+    "title_zh": "人工智能时代的顾客体验",
+    "tldr": "从顾客旅程和服务接触点整合AI相关研究，考察自动化、个性化与智能代理如何改变顾客体验。AI不仅提升服务效率，也重塑品牌关系、信任与价值创造，其应用需兼顾透明度、隐私和责任治理。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "人机交互",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106548",
+    "volume": "114",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -75716,6 +76068,72 @@
   },
   {
     "abstract": null,
+    "ai_reason": "机器人与虚拟代理为核心，研究AI诱发亲社会行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互",
+      "虚拟代理"
+    ],
+    "authors": [
+      "Raquel Oliveira",
+      "Patrícia Arriaga",
+      "Fernando P. Santos",
+      "Samuel Mascarenhas",
+      "Ana Paiva"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Raquel Oliveira",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Patrícia Arriaga",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Fernando P. Santos",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Samuel Mascarenhas",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ana Paiva",
+        "orcid": null
+      }
+    ],
+    "cited_by": 88,
+    "date": "2021-01",
+    "doi": "10.1016/j.chb.2020.106547",
+    "domain_score": 3.0,
+    "id": 52362,
+    "ingested_at": "2026-08-12T04:23:42.012646",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:11.989382",
+    "title": "Towards prosocial design: A scoping review of the use of robots and virtual agents to trigger prosocial behaviour",
+    "title_zh": "迈向亲社会设计：利用机器人与虚拟代理激发亲社会行为的范围综述",
+    "tldr": "采用范围综述梳理机器人和虚拟代理诱发亲社会行为的研究，归纳作用机制、应用情境与设计原则。社会互动代理可促进礼让、捐助和合作，但效果受任务情境、代理特征及责任归因影响，仍需严格验证。",
+    "topic_tags": [
+      "亲社会行为",
+      "人机交互",
+      "机器人",
+      "虚拟代理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106547",
+    "volume": "114",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究AI自主决策委托，属管理决策",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -75760,6 +76178,53 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107308",
     "volume": "134",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "比较机器人与人类服务归因，AI为主变量",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Xuying Leo",
+      "Young Eun Huh"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Xuying Leo",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Young Eun Huh",
+        "orcid": null
+      }
+    ],
+    "cited_by": 210,
+    "date": "2020-12",
+    "doi": "10.1016/j.chb.2020.106520",
+    "domain_score": 5.0,
+    "id": 52378,
+    "ingested_at": "2026-08-12T04:23:42.378843",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:14.427783",
+    "title": "Who gets the blame for service failures? Attribution of responsibility toward robot versus human service providers and service firms",
+    "title_zh": "谁该为服务失误负责？机器人与人类服务提供商及服务企业的责任归因",
+    "tldr": "基于标题推断，研究服务失败后消费者对机器人服务提供者、人工服务提供者及服务企业的责任归因，比较机器人与人类服务情境下以及企业与员工之间的 blame locus 差异。标题未提供方法、样本与结果，无法判断效应方向。",
+    "topic_tags": [
+      "消费者行为",
+      "责任归因",
+      "服务失败",
+      "机器人服务"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106520",
+    "volume": "113",
+    "year": 2020
   },
   {
     "abstract": null,
@@ -82138,6 +82603,85 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心研究社交机器人恢复策略及信任评价",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "David Cameron",
+      "Stevienna de Saille",
+      "Emily C. Collins",
+      "Jonathan M. Aitken",
+      "Hugo Cheung"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "David Cameron",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Stevienna de Saille",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Emily C. Collins",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jonathan M. Aitken",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hugo Cheung",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Adriel Chua",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ee Jing Loh",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "James Law",
+        "orcid": null
+      }
+    ],
+    "cited_by": 96,
+    "date": "2021-01",
+    "doi": "10.1016/j.chb.2020.106561",
+    "domain_score": 4.0,
+    "id": 53865,
+    "ingested_at": "2026-08-12T05:42:24.144438",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:52:43.416902",
+    "title": "The effect of social-cognitive recovery strategies on likability, capability and trust in social robots",
+    "title_zh": "社会认知恢复策略对社交机器人亲和力、能力与信任的影响",
+    "tldr": "针对社交机器人失误后用户评价受损的问题，比较社会认知恢复策略对机器人讨喜度、能力感知与信任的影响。结果表明，不同恢复策略会产生差异化的评价修复效果，恰当的社会认知线索有助于重建信任。",
+    "topic_tags": [
+      "人机交互",
+      "信任",
+      "机器人"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106561",
+    "volume": "114",
+    "year": 2021
+  },
+  {
+    "abstract": null,
     "ai_reason": "综述算法决策与工作增强对员工的影响",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -82552,6 +83096,48 @@
     "url": "https://doi.org/10.1016/j.chb.2025.108786",
     "volume": "173",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心检验人类监督对AI公众信任的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI治理",
+      "人机协作",
+      "人类监督"
+    ],
+    "authors": [
+      "Naomi Aoki"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Naomi Aoki",
+        "orcid": null
+      }
+    ],
+    "cited_by": 94,
+    "date": "2021-01",
+    "doi": "10.1016/j.chb.2020.106572",
+    "domain_score": 4.0,
+    "id": 54003,
+    "ingested_at": "2026-08-12T05:42:28.191621",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:52:43.416479",
+    "title": "The importance of the assurance that “humans are still in the decision loop” for public trust in artificial intelligence: Evidence from an online experiment",
+    "title_zh": "确保“人类仍处于决策环中”对公众信任AI的重要性：在线实验证据",
+    "tldr": "通过在线实验检验“人类仍处于决策回路”的保证是否以及如何影响公众对AI的信任，结果强调保留人类监督与决策责任是建立AI公众信任的重要条件。",
+    "topic_tags": [
+      "信任",
+      "AI治理",
+      "人机协作",
+      "算法决策"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2020.106572",
+    "volume": "114",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -110209,6 +110795,67 @@
     "year": 2022
   },
   {
+    "abstract": "AbstractAn increasing number of firms introduce service robots, such as physical robots and virtual chatbots, to provide services to customers. While some firms use robots that resemble human beings by looking and acting humanlike to increase customers’ use intention of this technology, others employ machinelike robots to avoid uncanny valley effects, assuming that very humanlike robots may induce feelings of eeriness. There is no consensus in the service literature regarding whether customers’ anthropomorphism of robots facilitates or constrains their use intention. The present meta-analysis synthesizes data from 11,053 individuals interacting with service robots reported in 108 independent samples. The study synthesizes previous research to clarify this issue and enhance understanding of the construct. We develop a comprehensive model to investigate relationships between anthropomorphism and its antecedents and consequences. Customer traits and predispositions (e.g., computer anxiety), sociodemographics (e.g., gender), and robot design features (e.g., physical, nonphysical) are identified as triggers of anthropomorphism. Robot characteristics (e.g., intelligence) and functional characteristics (e.g., usefulness) are identified as important mediators, although relational characteristics (e.g., rapport) receive less support as mediators. The findings clarify contextual circumstances in which anthropomorphism impacts customer intention to use a robot. The moderator analysis indicates that the impact depends on robot type (i.e., robot gender) and service type (i.e., possession-processing service, mental stimulus-processing service). Based on these findings, we develop a comprehensive agenda for future research on service robots in marketing.",
+    "ai_reason": "核心研究服务机器人、聊天机器人与AI拟人化",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器人",
+      "聊天机器人",
+      "拟人化",
+      "人机交互"
+    ],
+    "authors": [
+      "Markus Blut",
+      "Cheng Wang",
+      "Nancy V. Wünderlich",
+      "Christian Brock"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Markus Blut",
+        "orcid": "https://orcid.org/0000-0003-0436-6846"
+      },
+      {
+        "affiliation": [],
+        "name": "Cheng Wang",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nancy V. Wünderlich",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Christian Brock",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1040,
+    "date": "2021-01-06",
+    "doi": "10.1007/s11747-020-00762-y",
+    "domain_score": 5.0,
+    "id": 48798,
+    "ingested_at": "2026-08-12T04:22:15.163222",
+    "issue": "4",
+    "journal": "JAMS",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:52:32.961476",
+    "title": "Understanding anthropomorphism in service provision: a meta-analysis of physical robots, chatbots, and other AI",
+    "title_zh": "服务提供中的拟人化：实体机器人、聊天机器人及其他AI的元分析",
+    "tldr": "整合108个独立样本、11,053名互动者的数据，考察服务机器人的拟人化如何影响顾客使用意愿。顾客特征、人口属性与机器人设计会触发拟人化；智能性和有用性是重要中介，关系感的中介作用较弱，拟人化的效果取决于具体情境。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "服务机器人",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1007/s11747-020-00762-y",
+    "volume": "49",
+    "year": 2021
+  },
+  {
     "abstract": null,
     "ai_reason": "AI设计奢侈品对消费者反应影响",
     "ai_score": 5.0,
@@ -116853,6 +117500,49 @@
     "year": 2021
   },
   {
+    "abstract": null,
+    "ai_reason": "核心讨论AI如何塑造消费者体验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人工智能",
+      "推荐算法",
+      "人机协作",
+      "AI治理"
+    ],
+    "authors": [
+      "Kenneth Cukier"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Kenneth Cukier",
+        "orcid": null
+      }
+    ],
+    "cited_by": 49,
+    "date": "2020-12-11",
+    "doi": "10.1177/0022242920972932",
+    "domain_score": 5.0,
+    "id": 46233,
+    "ingested_at": "2026-08-12T04:21:12.615236",
+    "issue": "1",
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:04.212069",
+    "title": "Commentary: How AI Shapes Consumer Experiences and Expectations",
+    "title_zh": "评述：AI如何塑造消费者体验与期望",
+    "tldr": "以评论性讨论为主，分析AI如何塑造消费者体验与预期，指出智能服务、个性化交互及潜在信任与伦理问题将影响消费者判断，并为企业调整营销与体验设计提供启示。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "人机交互",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1177/0022242920972932",
+    "volume": "85",
+    "year": 2020
+  },
+  {
     "abstract": "Sales, product design, and engineering teams benefit immensely from better understanding customer perspectives. How do customers combine a product's technical specifications (i.e., engineered attributes) to form abstract product benefits (i.e., meta-attributes)? To address this question, the authors use machine learning and natural language processing to develop a methodological framework that extracts a hierarchy of product attributes based on contextual information of how attributes are expressed in consumer reviews. The attribute hierarchy reveals linkages between engineered attributes and meta-attributes within a product category, enabling flexible sentiment analysis that can identify how consumers receive meta-attributes, and which engineered attributes are main drivers. The framework can guide managers to monitor only portions of review content that are relevant to specific attributes of interest. Moreover, managers can compare products within and between brands, where different names and attribute combinations are often associated with similar benefits. The authors apply the framework to the tablet computer category to generate dashboards and perceptual maps and provide validations of the attribute hierarchy using both primary and secondary data. Resultant insights allow the exploration of substantive questions, such as how Apple improved successive generations of iPads and why Hewlett-Packard and Toshiba discontinued their tablet product lines.",
     "ai_reason": "用机器学习从评论学习产品属性层级",
     "ai_score": 3.0,
@@ -117151,6 +117841,52 @@
     "url": "https://doi.org/10.1177/00222429211045687",
     "volume": "86",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心讨论人工智能对营销的挑战",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人工智能",
+      "算法决策"
+    ],
+    "authors": [
+      "Robert V. Kozinets",
+      "Ulrike Gretzel"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Robert V. Kozinets",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ulrike Gretzel",
+        "orcid": null
+      }
+    ],
+    "cited_by": 83,
+    "date": "2020-12-11",
+    "doi": "10.1177/0022242920972933",
+    "domain_score": 5.0,
+    "id": 46642,
+    "ingested_at": "2026-08-12T04:21:22.391466",
+    "issue": "1",
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:04.211174",
+    "title": "Commentary: Artificial Intelligence: The Marketer’s Dilemma",
+    "title_zh": "评论：人工智能：营销者的两难",
+    "tldr": "以评论方式聚焦营销者采用人工智能时的决策困境，讨论效率与规模化收益同营销价值、顾客体验及组织能力之间的张力，指出营销管理者需在技术收益与潜在代价之间审慎取舍。",
+    "topic_tags": [
+      "营销",
+      "决策",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1177/0022242920972933",
+    "volume": "85",
+    "year": 2020
   },
   {
     "abstract": "Algorithms, increasingly used by brands, sometimes fail to perform as expected or, even worse, cause harm, leading to brand harm crises. Algorithm failures are unfortunately increasing in frequency, yet little is known about consumers’ responses to brands following such crises. Extending developments in the theory of mind perception, the authors hypothesize that, following a brand harm crisis, consumers respond less negatively if the error was caused by an algorithm (vs. a human). The authors further hypothesize that consumers’ lower mind perception of agency of the algorithm (vs. a human), which lowers their perceptions of the algorithm’s responsibility for the harm, mediates this relationship. Four moderators of this relationship are hypothesized: two algorithm characteristics (whether the algorithm is anthropomorphized and whether it involves machine learning) and two characteristics of the task for which the algorithm is deployed (whether the task is subjective [vs. objective] and whether it is interactive [vs. noninteractive]). The authors find support for the hypotheses in eight experimental studies. The effects of two managerial interventions to manage brand harm crises caused by algorithm errors are examined. This research advances the literature on brand harm crises, algorithm usage, and algorithmic marketing and generates managerial guidelines to address such crises.",
@@ -128079,6 +128815,65 @@
     "year": 2021
   },
   {
+    "abstract": "Echo chambers and filter bubbles are potent metaphors that encapsulate widespread public fear that the use of social media may limit the information that users encounter or consume online. Specifically, the concern is that social media algorithms combined with tendencies to interact with like-minded others both limits users’ exposure to diverse viewpoints and encourages the adoption of more extreme ideological positions. Yet empirical evidence about how social media shapes information consumption is inconclusive. We articulate how characteristics of platform algorithms and users’ online social networks may combine to shape user behavior. We bring greater conceptual clarity to this phenomenon by expanding beyond discussion of a binary presence or absence of echo chambers and filter bubbles to a richer set of outcomes incorporating changes in both diversity and slant of users’ information sources. Using a data set with over four years of web browsing history for a representative panel of nearly 200,000 U.S. adults, we analyzed how individuals’ social media usage was associated with changes in the information sources they chose to consume. We find differentiated impacts on news consumption by platform. Increased use of Facebook was associated with increased information source diversity and a shift toward more partisan sites in news consumption; increased use of Reddit with increased diversity and a shift toward more moderate sites; and increased use of Twitter with little to no change in either. Our results demonstrate the value of adopting a nuanced multidimensional view of how social media use may shape information consumption.",
+    "ai_reason": "平台算法与用户网络共同影响新闻消费",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "算法管理"
+    ],
+    "authors": [
+      "Brent Kitchens",
+      "Steven L. Johnson",
+      "Peter Gray"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Virginia McIntire School of Commerce, P.O. Box 400173, Charlottesville, VA 22904 U.S.A."
+        ],
+        "name": "Brent Kitchens",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Virginia McIntire School of Commerce, P.O. Box 400173, Charlottesville, VA 22904 U.S.A."
+        ],
+        "name": "Steven L. Johnson",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Virginia McIntire School of Commerce, P.O. Box 400173, Charlottesville, VA 22904 U.S.A."
+        ],
+        "name": "Peter Gray",
+        "orcid": null
+      }
+    ],
+    "cited_by": 304,
+    "date": "2020-12-01",
+    "doi": "10.25300/misq/2020/16371",
+    "domain_score": 4.0,
+    "id": 43992,
+    "ingested_at": "2026-08-12T04:20:18.584905",
+    "issue": "4",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:22.866717",
+    "title": "Understanding Echo Chambers and Filter Bubbles: The Impact of Social Media on Diversification and Partisan Shifts in News Consumption",
+    "title_zh": "理解回音室与过滤气泡：社交媒体对新闻消费多元化及党派倾向转变的影响",
+    "tldr": "基于近20万名美国成年人四年浏览历史，分析社交媒体使用、平台算法与同质化社交网络如何共同影响新闻来源的多样性和党派倾向。Facebook使用增加与来源多样性及党派化上升相关，Reddit与多样性增加及温和转向相关，Twitter影响有限。",
+    "topic_tags": [
+      "社交媒体",
+      "消费者行为",
+      "信息消费",
+      "算法管理"
+    ],
+    "url": "https://doi.org/10.25300/misq/2020/16371",
+    "volume": "44",
+    "year": 2020
+  },
+  {
     "abstract": "Online labor platforms (OLPs) can use algorithms along two dimensions: matching and control. While previous research has paid considerable attention to how OLPs optimize matching and accommodate market needs, OLPs can also employ algorithms to monitor and tightly control platform work. In this paper, we examine the nature of platform work on OLPs, and the role of algorithmic management in organizing how such work is conducted. Using a qualitative study of Uber drivers’ perceptions, supplemented by interviews with Uber executives and engineers, we present a grounded theory that captures the algorithmic management of work on OLPs. In the context of both algorithmic matching and algorithmic control, platform workers experience tensions relating to work execution, compensation, and belonging. We show that these tensions trigger market-like and organization-like response behaviors by platform workers. Our research contributes to the emerging literature on OLPs.",
     "ai_reason": "算法管理是核心AI议题；属OB/平台用工研究",
     "ai_score": 5.0,
@@ -128214,6 +129009,90 @@
     "url": "https://doi.org/10.25300/misq/2021/16553",
     "volume": "45",
     "year": 2021
+  },
+  {
+    "abstract": "This research methods article proposes a visual data analytics framework to enhance social media research using deep learning models. Drawing on the literature of information systems and marketing, complemented with data-driven methods, we propose a number of visual and textual content features including complexity, similarity, and consistency measures that can play important roles in the persuasiveness of social media content. We then employ state-of-the-art machine learning approaches such as deep learning and text mining to operationalize these new content features in a scalable and systematic manner. For the newly developed features, we validate them against human coders on Amazon Mechanical Turk. Furthermore, we conduct two case studies with a large social media dataset from Tumblr to show the effectiveness of the proposed content features. The first case study demonstrates that both theoretically motivated and data-driven features significantly improve the model’s power to predict the popularity of a post, and the second one highlights the relationships between content features and consumer evaluations of the corresponding posts. The proposed research framework illustrates how deep learning methods can enhance the analysis of unstructured visual and textual data for social media research.",
+    "ai_reason": "深度学习为核心方法，用于社交媒体营销分析",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "深度学习",
+      "机器学习",
+      "文本挖掘",
+      "计算机视觉"
+    ],
+    "authors": [
+      "Donghyuk Shin",
+      "Shu He",
+      "Gene Moo Lee",
+      "Andrew B. Whinston",
+      "Suleyman Cetintas"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "W. P. Carey School of Business, Arizona State University, Tempe, AZ 85281 U.S.A."
+        ],
+        "name": "Donghyuk Shin",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "School of Business, University of Connecticut, 2100 Hillside Road, Storrs, CT 06269 U.S.A."
+        ],
+        "name": "Shu He",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Sauder School of Business, The University of British Columbia, 2053 Main Mall, Vancouver, BC V6T 1Z2 Canada"
+        ],
+        "name": "Gene Moo Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "McCombs School of Business, The University of Texas at Austin, 2110 Speedway, Austin, TX 78705 U.S.A."
+        ],
+        "name": "Andrew B. Whinston",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Advertising Science, Yahoo! Research, 701 First Avenue, Sunnyvale CA 94089 U.S.A."
+        ],
+        "name": "Suleyman Cetintas",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Marketplace Optimization, Alibaba Group, 400 S. El Camino Real, San Mateo, CA 94402 U.S.A."
+        ],
+        "name": "Kuang-Chih Lee",
+        "orcid": null
+      }
+    ],
+    "cited_by": 203,
+    "date": "2020-12-01",
+    "doi": "10.25300/misq/2020/14870",
+    "domain_score": 4.0,
+    "id": 44051,
+    "ingested_at": "2026-08-12T04:20:19.994465",
+    "issue": "4",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:22.866301",
+    "title": "Enhancing Social Media Analysis with Visual Data Analytics: A Deep Learning Approach",
+    "title_zh": "利用可视数据分析增强社交媒体分析：深度学习方法",
+    "tldr": "提出融合视觉与文本特征的社会媒体分析框架，以深度学习和文本挖掘规模化测量内容复杂性、相似性与一致性，并经人工编码验证。Tumblr案例表明，这些特征可提升帖子热度预测能力，也能刻画内容特征与消费者评价的关系。",
+    "topic_tags": [
+      "社交媒体",
+      "营销",
+      "消费者行为",
+      "内容分析"
+    ],
+    "url": "https://doi.org/10.25300/misq/2020/14870",
+    "volume": "44",
+    "year": 2020
   },
   {
     "abstract": "With the rise of machine learning (ML), humans are no longer the only ones capable of learning and contributing to an organization’s stock of knowledge. We study how organizations can coordinate human learning and ML in order to learn effectively as a whole. Based on a series of agent-based simulations, we find that, first, ML can reduce an organization’s demand for human explorative learning that is aimed at uncovering new ideas; second, adjustments to ML systems made by humans are largely beneficial, but this effect can diminish or even become harmful under certain conditions; and third, reliance on knowledge created by ML systems can facilitate organizational learning in turbulent environments, but this requires significant investments in the initial setup of these systems as well as adequately coordinating them with humans. These insights contribute to rethinking organizational learning in the presence of ML and can aid organizations in reallocating scarce resources to facilitate organizational learning in practice.",
@@ -128487,6 +129366,67 @@
     "url": "https://doi.org/10.25300/misq/2021/1578",
     "volume": "45",
     "year": 2021
+  },
+  {
+    "abstract": "The scholarly information-seeking process for behavioral research consists of three phases: searching, accessing, and processing of past research. Existing IT artifacts, such as Google Scholar, have in part addressed the searching and accessing phases, but fall short of facilitating the processing phase, creating a knowledge inaccessibility problem. We propose a behavioral ontology learning from text (BOLT) design framework that presents concrete prescriptions for developing systems capable of supporting researchers during their processing of behavioral knowledge. Based upon BOLT, we developed a search engine—TheoryOn—to allow researchers to directly search for constructs, construct relationships, antecedents, and consequents, and to easily integrate related theories. Our design framework and search engine were rigorously evaluated through a series of data mining experiments, a randomized user experiment, and an applicability check. The data mining experiment results lent credence to the design principles prescribed by BOLT. The randomized experiment compared TheoryOn with EBSCOhost and Google Scholar across four information retrieval tasks, illustrating TheoryOn’s ability to reduce false positives and false negatives during the information-seeking process. Furthermore, an in-depth applicability check with IS scholars offered qualitative support for the efficacy of an ontology-based search and the usefulness of TheoryOn during the processing phase of existing research. The evaluation results collectively underscore the significance of our proposed design artifacts for addressing the knowledge inaccessibility problem for behavioral research literature.",
+    "ai_reason": "文本本体学习涉及AI，重点是行为知识系统",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "自然语言处理",
+      "机器学习",
+      "本体学习",
+      "知识图谱"
+    ],
+    "authors": [
+      "Jingjing Li",
+      "Kai Larsen",
+      "Ahmed Abbasi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "McIntire School of Commerce, University of Virginia, Charlottesville, VA 22903 U.S.A."
+        ],
+        "name": "Jingjing Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Leeds School of Business, University of Colorado, Boulder, CO 80309 U.S.A."
+        ],
+        "name": "Kai Larsen",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Mendoza College of Business, University of Notre Dame, Notre Dame, IN 46556 U.S.A."
+        ],
+        "name": "Ahmed Abbasi",
+        "orcid": null
+      }
+    ],
+    "cited_by": 50,
+    "date": "2020-12-01",
+    "doi": "10.25300/misq/2020/15323",
+    "domain_score": 3.0,
+    "id": 44199,
+    "ingested_at": "2026-08-12T04:20:23.395837",
+    "issue": "4",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:53:22.865128",
+    "title": "TheoryOn: A Design Framework and System for Unlocking Behavioral Knowledge Through Ontology Learning",
+    "title_zh": "TheoryOn：通过本体学习揭示行为知识的设计框架与系统",
+    "tldr": "针对行为研究者难以加工既有理论知识的“知识不可及”问题，构建行为本体文本学习框架BOLT及TheoryOn搜索引擎。数据挖掘、随机实验和适用性检验显示，该系统可搜索构念及其关系、前因和后果，减少误检漏检并支持理论整合。",
+    "topic_tags": [
+      "知识管理",
+      "信息检索",
+      "行为研究",
+      "研究方法"
+    ],
+    "url": "https://doi.org/10.25300/misq/2020/15323",
+    "volume": "44",
+    "year": 2020
   },
   {
     "abstract": "Organizational decision-makers need to evaluate AI tools in light of increasing claims that such tools outperform human experts. Yet, measuring the quality of knowledge work is challenging, raising the question of how to evaluate AI performance in such contexts. We investigate this question through a field study of a major U.S. hospital, observing how managers evaluated five different machine-learning (ML) based AI tools. Each tool reported high performance according to standard AI accuracy measures, which were based on ground truth labels provided by qualified experts. Trying these tools out in practice, however, revealed that none of them met expectations. Searching for explanations, managers began confronting the high uncertainty of experts’ know-what knowledge captured in ground truth labels used to train and validate ML models. In practice, experts address this uncertainty by drawing on rich know-how practices, which were not incorporated into these ML-based tools. Discovering the disconnect between AI’s know-what and experts’ know-how enabled managers to better understand the risks and benefits of each tool. This study shows dangers of treating ground truth labels used in ML models objectively when the underlying knowledge is uncertain. We outline implications of our study for developing, training, and evaluating AI for knowledge work.",
@@ -141454,6 +142394,58 @@
     "year": 2021
   },
   {
+    "abstract": "We investigate the moderating effect of product attributes and review ratings on views, conversion|views (conversion conditional on views), and final conversion of a purchase-based collaborative filtering recommender system on an e-commerce site. We run a randomized field experiment on a top retailer with 184,375 users split into a recommender-treated group and a control group. We tag theory-driven attributes of 37,125 unique products via Amazon Mechanical Turk to augment the usual product data (e.g., review ratings, descriptions). By examining the recommender’s impact through different stages—awareness (views), salience (conversion|views), and final conversion—and across product types, we provide nuanced insights. The study confirms that the recommender increases views, conversion|views, and final conversion rates by 15.3%, 21.6%, and 7.5%, respectively, but this lift is moderated by product attributes and review ratings. We find that the lift on product views is greater for utilitarian products compared with hedonic products as well as for experience products compared with search products. In contrast, the lift on conversion|views rate is greater for hedonic products compared with utilitarian products. Furthermore, the lift on views rate is greater for products with higher average review ratings, which suggests that a recommender acts as a complement to review ratings, whereas the opposite is true for conversion|views, where recommender and review ratings are substitutes. Additionally, a recommender’s awareness lift is greater than its saliency impact. We discuss the potential mechanisms behind our results as well as their managerial implications.  This paper was accepted by David Simchi-Levi, information systems.",
+    "ai_reason": "推荐算法及电商消费者转化",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "协同过滤",
+      "机器学习"
+    ],
+    "authors": [
+      "Dokyun Lee",
+      "Kartik Hosanagar"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Carnegie Mellon University, Pittsburgh, Pennsylvania 15213;"
+        ],
+        "name": "Dokyun Lee",
+        "orcid": "https://orcid.org/0000-0002-3186-3349"
+      },
+      {
+        "affiliation": [
+          "The Wharton School, University of Pennsylvania, Philadelphia, Pennsylvania 19104"
+        ],
+        "name": "Kartik Hosanagar",
+        "orcid": "https://orcid.org/0000-0002-6442-9434"
+      }
+    ],
+    "cited_by": 116,
+    "date": "2021-01",
+    "doi": "10.1287/mnsc.2019.3546",
+    "domain_score": 5.0,
+    "id": 41988,
+    "ingested_at": "2026-08-12T04:19:30.065406",
+    "issue": "1",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:52:56.665423",
+    "title": "How Do Product Attributes and Reviews Moderate the Impact of Recommender Systems Through Purchase Stages?",
+    "title_zh": "产品属性与评论如何调节推荐系统在购买各阶段的影响？",
+    "tldr": "在拥有18.4万用户的大型零售商开展随机现场实验，分阶段检验协同过滤推荐系统的效果：推荐使浏览、浏览后转化和最终购买分别提升15.3%、21.6%和7.5%，但产品属性与评论评分会调节各阶段影响。",
+    "topic_tags": [
+      "推荐系统",
+      "消费者行为",
+      "营销",
+      "电商"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2019.3546",
+    "volume": "67",
+    "year": 2021
+  },
+  {
     "abstract": "Revenue management has evolved over the years from its origins in the airline industry into a much broader discipline that analyzes algorithmic methods for demand and marketplace management, but many outside of the discipline are not aware of this transformation. The field’s transition tracks the widespread adoption of algorithmic decision-making techniques by businesses in a wide variety of industries over the last decade. We study this evolution in the field’s breadth of research, with a particular focus on revenue-management papers that study online marketplaces such as e-commerce retailing, digital advertisement, and ride-hailing markets for urban transportation.  This paper was accepted by David Simchi-Levi, Special Section of Management Science: 65th Anniversary.",
     "ai_reason": "核心研究收入管理与算法决策",
     "ai_score": 5.0,
@@ -146735,6 +147727,66 @@
     "year": 2022
   },
   {
+    "abstract": "We show that the long-run prices from independent machine learning algorithms depend on the informational value of price experiments. If low, the long-run prices are consistent with the static Nash equilibrium; however, if high, the long-run prices are supra-competitive.",
+    "ai_reason": "核心研究机器学习算法合谋定价",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策",
+      "定价算法"
+    ],
+    "authors": [
+      "Karsten T. Hansen",
+      "Kanishka Misra",
+      "Mallesh M. Pai"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Rady School of Management, University of California, San Diego, La Jolla, California 92093;"
+        ],
+        "name": "Karsten T. Hansen",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Rady School of Management, University of California, San Diego, La Jolla, California 92093;"
+        ],
+        "name": "Kanishka Misra",
+        "orcid": "https://orcid.org/0000-0002-0106-1230"
+      },
+      {
+        "affiliation": [
+          "Department of Economics, Rice University, Houston, Texas 77005"
+        ],
+        "name": "Mallesh M. Pai",
+        "orcid": null
+      }
+    ],
+    "cited_by": 125,
+    "date": "2021-01",
+    "doi": "10.1287/mksc.2020.1276",
+    "domain_score": 5.0,
+    "id": 47945,
+    "ingested_at": "2026-08-12T04:21:54.717238",
+    "issue": "1",
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:52:50.263854",
+    "title": "Frontiers: Algorithmic Collusion: Supra-competitive Prices via Independent Algorithms",
+    "title_zh": "Frontiers：算法共谋：独立算法形成超竞争性价格",
+    "tldr": "运用价格实验与信息学习模型分析独立机器学习算法的长期定价；发现价格实验信息价值较低时结果接近静态纳什均衡，信息价值较高时则出现高于竞争水平的共谋价格。",
+    "topic_tags": [
+      "定价",
+      "竞争战略",
+      "市场结构",
+      "营销"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2020.1276",
+    "volume": "40",
+    "year": 2021
+  },
+  {
     "abstract": "Mobile in-app advertising is now the dominant form of digital advertising. Although these ads have excellent user-tracking properties, they have raised concerns among privacy advocates. This has resulted in an ongoing debate on the value of different types of targeting information, the incentives of ad networks to engage in behavioral targeting, and the role of regulation. To answer these questions, we propose a unified modeling framework that consists of two components—a machine learning framework for targeting and an analytical auction model for examining market outcomes under counterfactual targeting regimes. We apply our framework to large-scale data from the leading in-app ad network of an Asian country. We find that an efficient targeting policy based on our machine learning framework improves the average click-through rate by 66.80% over the current system. These gains mainly stem from behavioral information compared with contextual information. Theoretical and empirical counterfactuals show that although total surplus grows with more granular targeting, the ad network’s revenues are nonmonotonic; that is, the most efficient targeting does not maximize ad network revenues. Rather, it is maximized when the ad network does not allow advertisers to engage in behavioral targeting. Our results suggest that ad networks may have economic incentives to preserve users’ privacy without external regulation.",
     "ai_reason": "机器学习用于广告定向，是主要方法",
     "ai_score": 4.0,
@@ -149355,6 +150407,74 @@
     "url": "https://doi.org/10.1287/orsc.2021.1557",
     "volume": "33",
     "year": 2022
+  },
+  {
+    "abstract": "When actors deem technological change undesirable, they may act symbolically by pretending to comply while avoiding real change. In our study of the introduction of an algorithmic technology in a sales organization, we found that such symbolic conformity led unintendedly to the full implementation of the suggested technological change. To explain this surprising outcome, we advance a regime-of-knowing lens that helps to analyze deep challenges happening under the surface during the process of technology introduction. A regime of knowing guides what is worth knowing, what actions matter to acquire this knowledge, and who has the authority to make decisions around those issues. We found that both the technologists who introduced the algorithmic technology, and the incumbent workers whose work was affected by the change, used symbolic actions to either defend the established regime of knowing or to advocate a radical change. Although the incumbent workers enacted symbolic conformity by pretending to comply with suggested changes, the technologists performed symbolic advocacy by presenting a positive side of the technological change. Ironically, because the symbolic conformity enabled and was reinforced by symbolic advocacy, reinforcing cycles of symbolic actions yielded a radical change in the sales' regime of knowing: from one focused on a deep understanding of customers via personal contact and strong relationships, to one based on model predictions from the processing of large datasets. We discuss the theoretical implications of these findings for the introduction of technology at work and for knowing in the workplace.",
+    "ai_reason": "聚焦组织变革，算法技术为背景",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法管理",
+      "算法决策"
+    ],
+    "authors": [
+      "Stella Pachidi",
+      "Hans Berends",
+      "Samer Faraj",
+      "Marleen Huysman"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Judge Business School, University of Cambridge, Cambridge CB2 1AG, United Kingdom;"
+        ],
+        "name": "Stella Pachidi",
+        "orcid": "https://orcid.org/0000-0003-4024-079X"
+      },
+      {
+        "affiliation": [
+          "School of Business and Economics, KIN Center for Digital Innovation, Vrije Universiteit Amsterdam, 1081 HV Amsterdam, Netherlands;"
+        ],
+        "name": "Hans Berends",
+        "orcid": "https://orcid.org/0000-0002-3334-2926"
+      },
+      {
+        "affiliation": [
+          "Desautels Faculty of Management, McGill University, Montreal, Quebec H3A 1G5, Canada"
+        ],
+        "name": "Samer Faraj",
+        "orcid": "https://orcid.org/0000-0002-6585-0351"
+      },
+      {
+        "affiliation": [
+          "School of Business and Economics, KIN Center for Digital Innovation, Vrije Universiteit Amsterdam, 1081 HV Amsterdam, Netherlands;"
+        ],
+        "name": "Marleen Huysman",
+        "orcid": "https://orcid.org/0000-0002-9005-8200"
+      }
+    ],
+    "cited_by": 160,
+    "date": "2021-01",
+    "doi": "10.1287/orsc.2020.1377",
+    "domain_score": 5.0,
+    "id": 37380,
+    "ingested_at": "2026-08-12T04:17:42.258317",
+    "issue": "1",
+    "journal": "OrgSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-02T08:52:56.668214",
+    "title": "Make Way for the Algorithms: Symbolic Actions and Change in a Regime of Knowing",
+    "title_zh": "为算法让路：知识秩序下的符号行动与变迁",
+    "tldr": "以销售组织引入算法技术为案例，考察抵触变革者如何通过象征性行动影响技术落地。员工表面服从、技术人员正面鼓动，互动反而促成彻底变革，并推动组织由客户关系型知识体系转向模型预测型体系。",
+    "topic_tags": [
+      "组织变革",
+      "算法管理",
+      "知识管理",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1287/orsc.2020.1377",
+    "volume": "32",
+    "year": 2021
   },
   {
     "abstract": "I theorize that candidate filters, a core technology in digital labor markets considered central to cost-effective matching, redistributes costs from the search-and-screening stage to the job-offer stage of hiring. Filters cause employers to focus on applicants who display common preferred characteristics. At the search-and-screening stage, filters reduce the number of applicants interviewed and alter the composition of the interviewed pool by removing both lower- and higher-quality candidates. At the job-offer stage, filters lead employers to make job offers to candidates with easily observable signals of quality and higher wage demands. Additionally, I theorize that if many firms target the same signals of quality, they may all pursue similar candidates. This increases bargaining power for those applicants, leading to more rejected job offers and higher wage demands. A randomized field experiment in a large online labor market confirms that filters redistribute hiring costs. The experiment shows that employers with access to filters interview 3.4% fewer applicants. Using a machine learning algorithm to proxy for unobservable-to-the-employer applicant quality, I show that filters cause employers to interview 28.9% fewer lower-quality applicants and 36.9% fewer high-quality applicants per job. Among employers who actively used filters, I find suggestive evidence of worse job-offer outcomes: offers are 8.9% more likely to be rejected, and contracted wages are 2.5% higher. I discuss the implications of this cost redistribution for organizations, labor markets, and strategy research.",

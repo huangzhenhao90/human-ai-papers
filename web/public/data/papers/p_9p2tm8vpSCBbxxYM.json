@@ -1,0 +1,67 @@
+{
+  "abstract": "Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that is simple to pose and hard to answer: does everyone get the same advice? We audit six widely deployed LLMs from four providers on smoking cessation, a domain with codified clini- cal guidance and substantial public-health stakes, by putting the same four cessation questions to twelve user personas that differ in life stage, self-described expertise, and smoking history, for a total of 2,880 responses. What the models say depends on who appears to be asking. Every model named FDA-approved prescription cessation medications less often to teen personas than to adult personas, by 32 to 67 percentage points, and in five of six models a persona presenting health- care expertise received fewer facts than a persona presenting none. We then evaluate one deployable intervention: a short system prompt specifying a factual floor, the set of core med- ical facts every user should receive when they are relevant, while leaving tone, vocabulary, and framing free to adapt. The prompt narrows persona differences in every model, but its effect on overall fact coverage varies in both magnitude and direction across models, so a prompt validated on one system cannot be assumed to transfer to another. Two cautions frame these results. Equal mention rates are not always the correct clinical target, because prescription cessation pharmacother- apy is not recommended for minors, so a defensible factual floor must be age-aware rather than uniform. And because our personas vary on several attributes at once, we report scenario- level differences rather than isolated effects of age or expertise. We release all 2,880 responses and the analysis code.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 健康顾问",
+    "系统提示工程"
+  ],
+  "arxiv_id": "2610.42039",
+  "authors": [
+    "Artin Yousefi",
+    "Aizierjiang Aiersilan",
+    "Lorien C Abroms",
+    "David A Broniatowski"
+  ],
+  "authors_full": [
+    {
+      "name": "Artin Yousefi"
+    },
+    {
+      "name": "Aizierjiang Aiersilan"
+    },
+    {
+      "name": "Lorien C Abroms"
+    },
+    {
+      "name": "David A Broniatowski"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "按用户画像审计LLM戒烟建议差异",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "以12种用户画像向六款LLM提出相同的戒烟问题，共审计2880次回答，发现模型建议随身份显著变化：青少年更少获知处方药信息，具备医疗专业知识的画像反而常获得更少事实。设定医学事实下限的系统提示可缩小差异，但效果难以跨模型迁移。",
+      "topic_tags": [
+        "用户画像",
+        "个性化",
+        "算法审计",
+        "医疗健康"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-30",
+  "doi": null,
+  "id": "p_9p2tm8vpSCBbxxYM",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2610.42039v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38215,
+      "revision": "2e7b52e2f9313bfc3256182d2eca8d4995a5166c"
+    }
+  ],
+  "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
+  "title_zh": "相同问题，不同答案：六个 LLM 戒烟建议中的人格依赖差异审计",
+  "unified_ingested_at": "2026-11-02T08:59:43.516990Z",
+  "url": "https://arxiv.org/abs/2610.42039v1",
+  "volume": null,
+  "year": 2026
+}

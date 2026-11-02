@@ -2617,6 +2617,205 @@
     "year": 2025
   },
   {
+    "abstract": "Large Language Models are transforming software engineering, yet prompt management in practice remains ad hoc, hindering reliability, reuse, and integration into industrial workflows. We present Prompt-with-Me, a practical solution for structured prompt management embedded directly in the development environment. The system automatically classifies prompts using a four-dimensional taxonomy encompassing intent, author role, software development lifecycle stage, and prompt type. To enhance prompt reuse and quality, Prompt-with-Me suggests language refinements, masks sensitive information, and extracts reusable templates from a developer's prompt library. Our taxonomy study of 1108 real-world prompts demonstrates that modern LLMs can accurately classify software engineering prompts. Furthermore, our user study with 11 participants shows strong developer acceptance, with high usability (Mean SUS=73), low cognitive load (Mean NASA-TLX=21), and reported gains in prompt quality and efficiency through reduced repetitive effort. Lastly, we offer actionable insights for building the next generation of prompt management and maintenance tools for software engineering workflows.",
+    "ai_reason": "面向开发者的IDE内LLM提示管理与评估",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "人机交互"
+    ],
+    "authors": [
+      "Ziyou Li",
+      "Agnia Sergeyuk",
+      "Maliheh Izadi"
+    ],
+    "authors_full": [
+      {
+        "name": "Ziyou Li"
+      },
+      {
+        "name": "Agnia Sergeyuk"
+      },
+      {
+        "name": "Maliheh Izadi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-21",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 7845,
+    "ingested_at": "2026-06-14T13:03:19.913735",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2509.17096v1",
+    "scored_at": "2026-11-02T08:44:52.733914",
+    "title": "Prompt-with-Me: in-IDE Structured Prompt Management for LLM-Driven Software Engineering",
+    "title_zh": "Prompt-with-Me：IDE内LLM驱动软件工程的结构化提示管理",
+    "tldr": "针对软件开发中提示词管理随意、难复用的问题，推出集成于IDE的结构化提示词工具，可自动分类、润色、提取模板并屏蔽敏感信息。1108个真实提示词验证分类效果，11人研究显示工具易用、认知负担低，并提升提示词质量与效率。",
+    "topic_tags": [
+      "开发者体验",
+      "人机交互(HCI)",
+      "可用性测试",
+      "软件工程"
+    ],
+    "url": "https://arxiv.org/abs/2509.17096v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Code comprehension and analysis of open-source project codebases is a task frequently performed by developers and researchers. However, existing tools that practitioners use for assistance with such tasks often require prior project setup, lack context-awareness, and involve significant manual effort. To address this, we present CLARA, a browser extension that utilizes a state-of-the-art inference model to assist developers and researchers in: (i) comprehending code files and code fragments, (ii) code refactoring, and (iii) code quality attribute detection. We qualitatively evaluated CLARA's inference model using existing datasets and methodology, and performed a comprehensive user study with 10 developers and academic researchers to assess its usability and usefulness. The results show that CLARA is useful, accurate, and practical in code comprehension and analysis tasks. CLARA is an open-source tool available at https://github.com/SaadNoor555/CLARA_tool_demo. A video showing the full capabilities of CLARA can be found at https://youtu.be/VDKVXvIH41Q?si=qBFsmS_Y4m_9x3YH.",
+    "ai_reason": "开发者工具含10人可用性用户研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "自然语言生成"
+    ],
+    "authors": [
+      "Ahmed Adnan",
+      "Mushfiqur Rahman",
+      "Saad Sakib Noor",
+      "Kazi Sakib"
+    ],
+    "authors_full": [
+      {
+        "name": "Ahmed Adnan"
+      },
+      {
+        "name": "Mushfiqur Rahman"
+      },
+      {
+        "name": "Saad Sakib Noor"
+      },
+      {
+        "name": "Kazi Sakib"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-11",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 7851,
+    "ingested_at": "2026-06-14T13:03:19.916984",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2509.09072v1",
+    "scored_at": "2026-11-02T08:44:52.735296",
+    "title": "CLARA: A Developer's Companion for Code Comprehension and Analysis",
+    "title_zh": "CLARA：开发者代码理解与分析助手",
+    "tldr": "针对开源代码理解工具配置繁琐、缺乏上下文且手工操作多的问题，开发浏览器扩展CLARA，利用推理模型辅助代码理解、重构与质量属性检测。经数据集评估及10名开发者和研究人员试用，工具在准确性、实用性与可用性方面表现良好。",
+    "topic_tags": [
+      "代码理解与重构",
+      "开发工具",
+      "可用性",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2509.09072v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Large Language Models (LLMs) often produce monolithic text that is hard to edit in parts, which can slow down collaborative workflows. We present componentization, an approach that decomposes model outputs into modular, independently editable units while preserving context. We describe Modular and Adaptable Output Decomposition (MAOD), which segments responses into coherent components and maintains links among them, and we outline the Component-Based Response Architecture (CBRA) as one way to implement this idea. Our reference prototype, MAODchat, uses a microservices design with state-machine-based decomposition agents, vendor-agnostic model adapters, and real-time component manipulation with recomposition.   In an exploratory study with four participants from academic, engineering, and product roles, we observed that component-level editing aligned with several common workflows and enabled iterative refinement and selective reuse. Participants also mentioned possible team workflows. Our contributions are: (1) a definition of componentization for transforming monolithic outputs into manipulable units, (2) CBRA and MAODchat as a prototype architecture, (3) preliminary observations from a small user study, (4) MAOD as an algorithmic sketch for semantic segmentation, and (5) example Agent-to-Agent protocols for automated decomposition. We view componentization as a promising direction for turning passive text consumption into more active, component-level collaboration.",
+    "ai_reason": "小规模探索研究评估LLM响应编辑协作",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Ryan Lingo",
+      "Rajeev Chhajer",
+      "Martin Arroyo",
+      "Luka Brkljacic",
+      "Ben Davis"
+    ],
+    "authors_full": [
+      {
+        "name": "Ryan Lingo"
+      },
+      {
+        "name": "Rajeev Chhajer"
+      },
+      {
+        "name": "Martin Arroyo"
+      },
+      {
+        "name": "Luka Brkljacic"
+      },
+      {
+        "name": "Ben Davis"
+      },
+      {
+        "name": "Nithin Santhanam"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-10",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 7852,
+    "ingested_at": "2026-06-14T13:03:19.917495",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2509.08203v1",
+    "scored_at": "2026-11-02T08:44:52.735519",
+    "title": "Componentization: Decomposing Monolithic LLM Responses into Manipulable Semantic Units",
+    "title_zh": "组件化：将单体式LLM响应分解为可操作语义单元",
+    "tldr": "为解决LLM整体式输出难以局部修改、协作效率低的问题，提出组件化方法，将响应拆分为保留上下文关联、可独立编辑的语义单元，并构建MAOD、CBRA及原型MAODchat。四名跨职能参与者的探索研究表明，该设计支持局部编辑、迭代优化、内容复用及潜在团队协作。",
+    "topic_tags": [
+      "人机协作",
+      "协作工作流",
+      "生成式AI界面",
+      "可用性"
+    ],
+    "url": "https://arxiv.org/abs/2509.08203v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Developers rely on API documentation, but official sources are often lengthy, complex, or incomplete. Many turn to community-driven forums like Stack Overflow for practical insights. We propose automating the summarization of informal sources, focusing on Android APIs. Using BERTopic, we extracted prevalent topics from 3.6 million Stack Overflow posts and applied extractive summarization techniques to generate concise summaries, including code snippets. A user study with 30 Android developers assessed the summaries for coherence, relevance, informativeness, and satisfaction, showing improved productivity. Integrating formal API knowledge with community-generated content enhances documentation, making API resources more accessible and actionable work.",
+    "ai_reason": "30名开发者用户研究评估文档摘要",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "主题建模",
+      "摘要生成"
+    ],
+    "authors": [
+      "AmirHossein Naghshzan"
+    ],
+    "authors_full": [
+      {
+        "name": "AmirHossein Naghshzan"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-06",
+    "doi": "https://doi.org/10.1145/3696630.3728615",
+    "domain_score": 4.0,
+    "id": 7853,
+    "ingested_at": "2026-06-14T13:03:19.917946",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2509.05749v1",
+    "scored_at": "2026-11-02T08:44:52.736052",
+    "title": "Automating API Documentation with LLMs: A BERTopic Approach",
+    "title_zh": "借助LLM实现API文档自动化：一种BERTopic方法",
+    "tldr": "针对官方API文档冗长、复杂且不完整的问题，利用BERTopic从360万条Stack Overflow帖子提取主题并生成含代码片段的精炼摘要，结合正式API知识形成更易用的文档。30名Android开发者评估显示，摘要在连贯性、相关性、信息量与满意度方面提升开发效率。",
+    "topic_tags": [
+      "开发者体验",
+      "API文档",
+      "信息检索",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2509.05749v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Recent advancements in natural language processing (NLP) have enabled the development of automated tools that support various domains, including software engineering. However, while NLP and artificial intelligence (AI) research has extensively focused on tasks such as code generation, less attention has been given to automating support for the adoption of best practices, the evolution of ways of working, and the monitoring of process health. This study addresses this gap by exploring the integration of Essence, a standard and thinking framework for managing software engineering practices, with large language models (LLMs). To this end, a specialised chatbot was developed to assist students and professionals in understanding and applying Essence. The chatbot employs a retrieval-augmented generation (RAG) system to retrieve relevant contextual information from a curated knowledge base. Four different LLMs were used to create multiple chatbot configurations, each evaluated both as a base model and augmented with the RAG system. The system performance was evaluated through both the relevance of retrieved context and the quality of generated responses. Comparative analysis against the general-purpose LLMs demonstrated that the proposed system consistently outperforms its baseline counterpart in domain-specific tasks. By facilitating access to structured software engineering knowledge, this work contributes to bridging the gap between theoretical frameworks and practical application, potentially improving process management and the adoption of software development practices. While further validation through user studies is required, these findings highlight the potential of LLM-based automation to enhance learning and decision-making in software engineering.",
     "ai_reason": "以LLM聊天机器人辅助软件实践采纳",
     "ai_score": 5.0,
@@ -3090,6 +3289,55 @@
       "开发者工具"
     ],
     "url": "https://arxiv.org/abs/2505.23239v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Software development is a cognitively intensive process requiring multitasking, adherence to evolving workflows, and continuous learning. With the rise of large language model (LLM)-based tools, such as conversational agents (CAs), there is growing interest in supporting developers through natural language interaction. However, little is known about the specific features developers seek in these systems. We conducted a user study with 29 developers using a prototype text-based chatbot to investigate preferred functionalities. Our findings reveal strong interest in task automation, version control support, and contextual adaptability, especially the need to tailor assistance for both novice and experienced users. We highlight the importance of deep contextual understanding, historical interaction awareness, and personalized support in CA design. This study contributes to the development of context-aware chatbots that enhance productivity and satisfaction, and it outlines opportunities for future research on human-AI collaboration in software engineering.",
+    "ai_reason": "29名开发者用户研究，聚焦交互需求",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "AI 助手",
+      "人机协作"
+    ],
+    "authors": [
+      "Glaucia Melo",
+      "Paulo Alencar",
+      "Donald Cowan"
+    ],
+    "authors_full": [
+      {
+        "name": "Glaucia Melo"
+      },
+      {
+        "name": "Paulo Alencar"
+      },
+      {
+        "name": "Donald Cowan"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-05-13",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 7883,
+    "ingested_at": "2026-06-14T13:03:19.942037",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2505.08648v1",
+    "scored_at": "2026-11-02T08:44:57.483874",
+    "title": "Enhancing Software Development with Context-Aware Conversational Agents: A User Study on Developer Interactions with Chatbots",
+    "title_zh": "上下文感知对话智能体提升软件开发：开发者与聊天机器人交互的用户研究",
+    "tldr": "面向软件开发中的任务自动化、版本控制与情境适配需求，对29名开发者开展文本聊天机器人原型用户研究。开发者偏好自动化、版本控制和上下文适应，期望系统结合历史交互及新手与资深差异提供个性化支持，以提升生产力与满意度。",
+    "topic_tags": [
+      "用户研究方法",
+      "对话式 AI",
+      "个性化",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2505.08648v1",
     "volume": null,
     "year": 2025
   },
@@ -3970,6 +4218,63 @@
       "可视化"
     ],
     "url": "https://arxiv.org/abs/2510.11722v2",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Vibe coding, a term coined by Andrej Karpathy in February 2025, has quickly become a compelling and controversial natural language programming paradigm in AI-assisted software development. Centered on iterative co-design with an AI assistant, vibe coding emphasizes flow and experimentation over strict upfront specification. While initial studies have begun to explore this paradigm, most focus on analyzing code artifacts or proposing theories with limited empirical backing. There remains a need for a grounded understanding of vibe coding as it is perceived and experienced by developers. We present the first systematic qualitative investigation of vibe coding perceptions and practice. Drawing on over 190,000 words from semi-structured interviews, Reddit threads, and LinkedIn posts, we characterize what vibe coding is, why and how developers use it, where it breaks down, and which emerging practices aim to support it. We propose a qualitatively grounded theory of vibe coding centered on conversational interaction with AI, co-creation, and developer flow and joy. We find that AI trust regulates movement along a continuum from delegation to co-creation and supports the developer experience by sustaining flow. We surface recurring pain points and risks in areas including specification, reliability, debugging, latency, code review burden, and collaboration. We also present best practices that have been discovered and shared to mitigate these challenges. We conclude with implications for the future of AI dev tools and directions for researchers investigating vibe coding.",
+    "ai_reason": "访谈及社交媒体资料研究开发者体验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "AI编程",
+      "人机协作"
+    ],
+    "authors": [
+      "Veronica Pimenova",
+      "Sarah Fakhoury",
+      "Christian Bird",
+      "Margaret-Anne Storey",
+      "Madeline Endres"
+    ],
+    "authors_full": [
+      {
+        "name": "Veronica Pimenova"
+      },
+      {
+        "name": "Sarah Fakhoury"
+      },
+      {
+        "name": "Christian Bird"
+      },
+      {
+        "name": "Margaret-Anne Storey"
+      },
+      {
+        "name": "Madeline Endres"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-15",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 8068,
+    "ingested_at": "2026-06-14T13:03:20.129684",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2509.12491v1",
+    "scored_at": "2026-11-02T08:44:52.734793",
+    "title": "Good Vibrations? A Qualitative Study of Co-Creation, Communication, Flow, and Trust in Vibe Coding",
+    "title_zh": "“感觉不错？”：Vibe Coding中共创、沟通、心流与信任的定性研究",
+    "tldr": "基于半结构化访谈、Reddit与LinkedIn帖文的19万余字资料，系统刻画开发者对氛围编程的理解和使用实践。研究发现，AI信任塑造从委托到共创的连续体，AI对话可维持心流与愉悦，但也会带来规格不清、可靠性、调试、延迟及审查协作等风险。",
+    "topic_tags": [
+      "用户研究方法",
+      "访谈",
+      "在线社区",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2509.12491v1",
     "volume": null,
     "year": 2025
   },
@@ -5132,6 +5437,63 @@
       "人机协作"
     ],
     "url": "https://arxiv.org/abs/2511.13271v2",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Automated web testing plays a critical role in ensuring high-quality user experiences and delivering business value. Traditional approaches primarily focus on code coverage and load testing, but often fall short of capturing complex user behaviors, leaving many usability issues undetected. The emergence of large language models (LLM) and AI agents opens new possibilities for web testing by enabling human-like interaction with websites and a general awareness of common usability problems. In this work, we present WebProber, a prototype AI agent-based web testing framework. Given a URL, WebProber autonomously explores the website, simulating real user interactions, identifying bugs and usability issues, and producing a human-readable report. We evaluate WebProber through a case study of 120 academic personal websites, where it uncovered 29 usability issues--many of which were missed by traditional tools. Our findings highlight agent-based testing as a promising direction while outlining directions for developing next-generation, user-centered testing frameworks.",
+    "ai_reason": "AI代理模拟用户行为检测可用性问题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "可用性 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Naimeng Ye",
+      "Xiao Yu",
+      "Ruize Xu",
+      "Tianyi Peng",
+      "Zhou Yu"
+    ],
+    "authors_full": [
+      {
+        "name": "Naimeng Ye"
+      },
+      {
+        "name": "Xiao Yu"
+      },
+      {
+        "name": "Ruize Xu"
+      },
+      {
+        "name": "Tianyi Peng"
+      },
+      {
+        "name": "Zhou Yu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-05",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 8203,
+    "ingested_at": "2026-06-14T13:03:20.409138",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2509.05197v1",
+    "scored_at": "2026-11-02T08:44:52.736545",
+    "title": "AI Agents for Web Testing: A Case Study in the Wild",
+    "title_zh": "AI智能体在Web测试中的应用：真实环境案例研究",
+    "tldr": "针对传统网页测试难以发现复杂用户行为相关可用性缺陷的问题，构建WebProber智能体：给定URL即可自主模拟用户、探索网站、识别缺陷并生成报告。对120个学术个人网站的案例显示其发现29项可用性问题，许多为传统工具遗漏。",
+    "topic_tags": [
+      "可用性",
+      "用户体验(UX)",
+      "可用性测试",
+      "软件测试"
+    ],
+    "url": "https://arxiv.org/abs/2509.05197v1",
     "volume": null,
     "year": 2025
   },
@@ -6802,6 +7164,51 @@
       "开发者研究"
     ],
     "url": "https://arxiv.org/abs/2504.20329v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Integration of Large Language Models (LLMs) with Learning Management Systems (LMSs) can enhance task automation and accessibility in education. However, hallucination where LLMs generate inaccurate or misleading information remains a challenge. This study introduces the Dynamic Course Content Integration (DCCI) mechanism, which dynamically retrieves course content from Canvas LMS and structures it within an LLM's context window via prompt engineering, enabling the LLM-powered assistant, Ask ME, to deliver context-aware, curriculum-aligned responses while mitigating hallucinations. A mixed-methods pilot study grounded in Self-Determination Theory (autonomy, competence) and the Technology Acceptance Model (perceived usefulness, ease of use) evaluated DCCI's effectiveness with 120 first-year programming students at Eötvös Loránd University. The course focused on foundational programming patterns in C#, including writing program specifications. We analyzed 14,746 logged interactions and a post-course survey completed by 101 students. User satisfaction was measured via a 5-point Likert scale (turn-level ratings), while the survey assessed usability, engagement, and ethical concerns. Results indicated high satisfaction (mean 4.65/5) and strong recognition of Ask ME's ability to provide timely, contextually relevant answers to administrative and course-related queries. 78.06% agreed that Ask ME's Canvas integration reduced platform switching, improving usability, engagement, comprehension, and topic exploration. Many students reported reduced hesitation to ask questions and increased motivation for self-directed learning, though concerns about over-reliance on AI and reduced student-teacher interaction emerged. This study demonstrates that DCCI enhances LLM reliability, student satisfaction, and engagement in AI-driven educational automation, while highlighting the importance of balancing",
+    "ai_reason": "LLM助教并对120名学生混合方法评估",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI 助手",
+      "检索增强生成（RAG）",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Kovan Mzwri",
+      "Márta Turcsányi-Szabo"
+    ],
+    "authors_full": [
+      {
+        "name": "Kovan Mzwri"
+      },
+      {
+        "name": "Márta Turcsányi-Szabo"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-04-04",
+    "doi": "https://doi.org/10.1007/s40692-025-00367-w",
+    "domain_score": 5.0,
+    "id": 8558,
+    "ingested_at": "2026-06-14T13:03:20.774248",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2504.03966v2",
+    "scored_at": "2026-11-02T08:44:57.485293",
+    "title": "Bridging LMS and generative AI: dynamic course content integration (DCCI) for enhancing student satisfaction and engagement via the ask ME assistant",
+    "title_zh": "LMS对接生成式AI：ask ME动态课程集成（DCCI），提高满意度与参与度",
+    "tldr": "针对LLM接入LMS时回答偏离课程且易产生幻觉的问题，Ask ME通过DCCI动态检索Canvas课程内容并注入上下文。以120名编程学生开展混合方法试点，分析14,746次交互和101份问卷：满意度均值4.65/5，78.06%认为集成减少了平台切换并改善可用性、投入度与理解。",
+    "topic_tags": [
+      "教育技术",
+      "人机交互(HCI)",
+      "AI 助手",
+      "用户体验(UX)"
+    ],
+    "url": "https://arxiv.org/abs/2504.03966v2",
     "volume": null,
     "year": 2025
   },
@@ -39711,6 +40118,497 @@
     "year": 2026
   },
   {
+    "abstract": "Image-based dietary assessment can automate initial food logging, but meal photographs often leave food identity, hidden ingredients, preparation, and portion uncertain, making correction a recurring part of use. We introduce Human-AI Collaborative Correction, which reframes correction as communicate intent $\\rightarrow$ regenerate $\\rightarrow$ verify: users express what should change through text, voice, or guided clarification, the AI regenerates the linked dietary record, and users verify the result. In a within-participant study with 30 participants, compared with conventional Manual Search-and-Edit Correction, collaborative correction was associated with lower workload (Raw TLX: 35.83 vs. 55.00; p < .001), 21.0% lower recorded usage time, 51.1% fewer recorded clicks, and more favorable user-experience ratings; 90.0% preferred it overall. An exploratory nutrient analysis also found lower energy MAE. These findings support intent-driven regeneration as a promising interaction pattern for reducing correction burden while preserving user verification and making image-based dietary tracking easier to sustain.",
+    "ai_reason": "30人实验评估协同纠错负担与体验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "多模态",
+      "AI助手",
+      "人机协作"
+    ],
+    "authors": [
+      "Darren Liu",
+      "Andrew Lu",
+      "Zhiyuan \"Ryan\" Wang",
+      "Hanqi Luo",
+      "Xiao Hu"
+    ],
+    "authors_full": [
+      {
+        "name": "Darren Liu"
+      },
+      {
+        "name": "Andrew Lu"
+      },
+      {
+        "name": "Zhiyuan \"Ryan\" Wang"
+      },
+      {
+        "name": "Hanqi Luo"
+      },
+      {
+        "name": "Xiao Hu"
+      },
+      {
+        "name": "Runze Yan"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38206,
+    "ingested_at": "2026-11-02T08:41:59.357237",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.41300v1",
+    "scored_at": "2026-11-02T08:42:49.161284",
+    "title": "Toward Low-Burden Image-Based Dietary Assessment Through Human-AI Collaborative Correction",
+    "title_zh": "通过人机协同纠错实现低负担图像饮食评估",
+    "tldr": "面向图像饮食记录的纠错负担，将交互重构为“表达意图—AI重生成—用户核验”。30人被试内研究显示，相比手动搜索编辑，该方式降低任务负荷、使用时间和点击次数，改善体验与能量估算误差，并获90%用户偏好。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "可用性测试",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2610.41300v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "As generative artificial intelligence (AI) becomes more capable and widely used, understanding when and how humans should work with these systems is becoming increasingly important. However, the empirical evidence in this space offers conflicting recommendations, which leaves individuals and organizations without clear guidance on when to combine human and AI capabilities. Existing meta-analyses can help reconcile these findings, but they require substantial manual effort and cannot readily incorporate new evidence as it emerges. To address this challenge, we introduce AutoAnalysis: an automated, self-updating meta-analysis of when humans and AI work better together, and when they work better alone. AutoAnalysis' most recent run synthesizes 1,955 effect sizes from 420 papers. Across this body of work, we found that, on average, human-AI combinations performed significantly better than humans alone, but they performed significantly worse than the better of humans or AI alone. These findings highlight the important distinction between improving human performance and achieving human-AI synergy and underscore the need to evaluate collaboration against both human and AI performance alone. As new studies emerge, AutoAnalysis will integrate their findings into the meta-analysis, providing cumulative evidence about when humans and AI perform better together and how human-AI performance varies across AI agents, tasks, and processes.",
+    "ai_reason": "自动元分析人机协作绩效与适用条件",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Michelle Vaccaro",
+      "Abdullah Almaatouq",
+      "Thomas W. Malone"
+    ],
+    "authors_full": [
+      {
+        "name": "Michelle Vaccaro"
+      },
+      {
+        "name": "Abdullah Almaatouq"
+      },
+      {
+        "name": "Thomas W. Malone"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38208,
+    "ingested_at": "2026-11-02T08:41:59.359585",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.42001v1",
+    "scored_at": "2026-11-02T08:42:49.161051",
+    "title": "AutoAnalysis: An automated, self-updating meta-analysis of human-AI collaboration",
+    "title_zh": "AutoAnalysis：人机协作的自动化自我更新元分析",
+    "tldr": "AutoAnalysis自动汇总并持续更新人机协作元分析，最新纳入420篇论文和1955个效应量。总体上，人机组合显著优于人类单独工作，却通常不及人类与AI中表现更优的一方，说明“优于人类”并不等于实现人机协同。",
+    "topic_tags": [
+      "人机协作",
+      "人机交互",
+      "元分析"
+    ],
+    "url": "https://arxiv.org/abs/2610.42001v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Conversational assistants are expected to help people with diverse backgrounds, preferences, and communication styles. Yet evaluations centered on a single cooperative user provide limited insight into how reliably an assistant serves users with different personas. We introduce PersonaChatBench, a framework for evaluating task competence and responsiveness to diverse user needs. PersonaChatBench pairs the same underlying task with multiple simulated users, each guided by a private persona card that specifies distinct needs, preferences, and interaction behaviors. By holding the task fixed while varying the user, the framework examines how assistant performance changes across user conditions. We evaluate 20 language models across six domains, separately assessing native task outcomes, fulfillment of expressed persona needs, and simulator fidelity. Our results show that task performance and need fulfillment vary across personas and domains. Strong task performance does not necessarily translate into satisfying individual needs, and models' relative strengths in meeting those needs are not consistent across domains. PersonaChatBench makes these differences measurable, revealing gaps obscured by aggregate scores and helping identify which users an assistant serves well and where adaptation is needed. It provides a basis for evaluating consistency across users and guiding the development of assistants that better accommodate diverse needs in everyday applications.",
+    "ai_reason": "用模拟画像评估助手对用户差异",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "AI助手",
+      "AI用户画像"
+    ],
+    "authors": [
+      "Zheyuan Deng",
+      "Taoran Li",
+      "Jingwen Zhang",
+      "Yuante Li",
+      "Dachuan Zhao"
+    ],
+    "authors_full": [
+      {
+        "name": "Zheyuan Deng"
+      },
+      {
+        "name": "Taoran Li"
+      },
+      {
+        "name": "Jingwen Zhang"
+      },
+      {
+        "name": "Yuante Li"
+      },
+      {
+        "name": "Dachuan Zhao"
+      },
+      {
+        "name": "Fulei Zhang"
+      },
+      {
+        "name": "Yunkai Zhang"
+      },
+      {
+        "name": "Zhikun Xu"
+      },
+      {
+        "name": "Yajie Liao"
+      },
+      {
+        "name": "Haichao Zhang"
+      },
+      {
+        "name": "Haodi Hu"
+      },
+      {
+        "name": "Cong Wang"
+      },
+      {
+        "name": "Chen Yang"
+      },
+      {
+        "name": "Siyang Wu"
+      },
+      {
+        "name": "Defu Cao"
+      },
+      {
+        "name": "Xu Hu"
+      },
+      {
+        "name": "Haoming Li"
+      },
+      {
+        "name": "Haixin Wang"
+      },
+      {
+        "name": "Robert George"
+      },
+      {
+        "name": "Weizhi Zhang"
+      },
+      {
+        "name": "Yuchu Wang"
+      },
+      {
+        "name": "Zhejian Peng"
+      },
+      {
+        "name": "Yueying Li"
+      },
+      {
+        "name": "Wanting Jiang"
+      },
+      {
+        "name": "Shushu Liang"
+      },
+      {
+        "name": "Zhiyuan Yu"
+      },
+      {
+        "name": "Yifan Wang"
+      },
+      {
+        "name": "Jintao Huang"
+      },
+      {
+        "name": "Yijun Wang"
+      },
+      {
+        "name": "Yuexing Hao"
+      },
+      {
+        "name": "Xiaomin Li"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38210,
+    "ingested_at": "2026-11-02T08:41:59.369584",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2610.42060v1",
+    "scored_at": "2026-11-02T08:42:49.160543",
+    "title": "PersonaChatBench: Evaluating Chat Assistants with Diverse Simulated Users",
+    "title_zh": "PersonaChatBench：基于多样化模拟用户评估对话助手",
+    "tldr": "提出PersonaChatBench，以相同任务配对不同背景、需求和交互风格的模拟用户，评估20个语言模型在六个领域的能力、需求满足度及模拟器保真度。结果表明，综合任务得分无法反映个体需求满足，不同模型面向不同用户群体存在稳定的服务差距。",
+    "topic_tags": [
+      "用户画像",
+      "对话式AI",
+      "个性化",
+      "用户体验(UX)"
+    ],
+    "url": "https://arxiv.org/abs/2610.42060v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language model (LLM)-based agents interact with external tools through protocols such as the Model Context Protocol (MCP), producing tool-call traces that may expose behavioral signals about users. In this work, we systematically study the risk of user-profile inference from MCP tool-call traces, where observers infer user attributes from protocol-valid tool interactions without access to user conversations. We introduce PrivacyTrace, a benchmark containing 1,000 synthetic user profiles and 4,000 agent trajectories across four domains, generated with real MCP tools from 25 servers. Experiments with four mainstream LLM attackers show that tool-call traces enable a 26.25% attack success rate for profile inference, compared with 17.97% from prior-based guessing. Further analysis reveals that tool arguments and returned results provide the main trace-grounded evidence, while linking traces across sessions further amplifies profiling risk. These findings demonstrate that MCP tool-call traces can act as effective behavioral side channels for user profiling, motivating the development of privacy-aware mechanisms for agent-tool interactions. Code and data are available at https://github.com/AI45Lab/PrivacyTrace.",
+    "ai_reason": "以工具轨迹推断用户属性，聚焦隐私",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Donghang Duan",
+      "Qingyu Liu",
+      "Yifei Liu",
+      "Na Zou",
+      "Xia Hu"
+    ],
+    "authors_full": [
+      {
+        "name": "Donghang Duan"
+      },
+      {
+        "name": "Qingyu Liu"
+      },
+      {
+        "name": "Yifei Liu"
+      },
+      {
+        "name": "Na Zou"
+      },
+      {
+        "name": "Xia Hu"
+      },
+      {
+        "name": "Dongrui Liu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38211,
+    "ingested_at": "2026-11-02T08:41:59.370382",
+    "issue": null,
+    "journal": "arXiv:cs.CR",
+    "pdf_url": "https://arxiv.org/pdf/2610.41885v1",
+    "scored_at": "2026-11-02T08:42:49.160295",
+    "title": "How Much Can Tool Calls Reveal About You? Privacy Leakage from Tool-Call Traces",
+    "title_zh": "工具调用能泄露多少个人信息？工具调用轨迹的隐私泄漏",
+    "tldr": "构建包含1000个合成用户画像、4000条代理轨迹和25个MCP服务的PrivacyTrace基准。实验显示，四种LLM攻击者可从工具调用轨迹推断用户属性，成功率达26.25%，高于先验猜测的17.97%；工具参数、返回结果及跨会话关联是主要泄露来源。",
+    "topic_tags": [
+      "隐私",
+      "用户画像",
+      "AI治理"
+    ],
+    "url": "https://arxiv.org/abs/2610.41885v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that is simple to pose and hard to answer: does everyone get the same advice? We audit six widely deployed LLMs from four providers on smoking cessation, a domain with codified clini- cal guidance and substantial public-health stakes, by putting the same four cessation questions to twelve user personas that differ in life stage, self-described expertise, and smoking history, for a total of 2,880 responses. What the models say depends on who appears to be asking. Every model named FDA-approved prescription cessation medications less often to teen personas than to adult personas, by 32 to 67 percentage points, and in five of six models a persona presenting health- care expertise received fewer facts than a persona presenting none. We then evaluate one deployable intervention: a short system prompt specifying a factual floor, the set of core med- ical facts every user should receive when they are relevant, while leaving tone, vocabulary, and framing free to adapt. The prompt narrows persona differences in every model, but its effect on overall fact coverage varies in both magnitude and direction across models, so a prompt validated on one system cannot be assumed to transfer to another. Two cautions frame these results. Equal mention rates are not always the correct clinical target, because prescription cessation pharmacother- apy is not recommended for minors, so a defensible factual floor must be age-aware rather than uniform. And because our personas vary on several attributes at once, we report scenario- level differences rather than isolated effects of age or expertise. We release all 2,880 responses and the analysis code.",
+    "ai_reason": "按用户画像审计LLM戒烟建议差异",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "AI 健康顾问",
+      "系统提示工程"
+    ],
+    "authors": [
+      "Artin Yousefi",
+      "Aizierjiang Aiersilan",
+      "Lorien C Abroms",
+      "David A Broniatowski"
+    ],
+    "authors_full": [
+      {
+        "name": "Artin Yousefi"
+      },
+      {
+        "name": "Aizierjiang Aiersilan"
+      },
+      {
+        "name": "Lorien C Abroms"
+      },
+      {
+        "name": "David A Broniatowski"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38215,
+    "ingested_at": "2026-11-02T08:41:59.374627",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.42039v1",
+    "scored_at": "2026-11-02T08:42:49.159787",
+    "title": "Same Question, Different Answers: Auditing Persona-Dependent Variation in Six LLMs on Smoking-Cessation Advice",
+    "title_zh": "相同问题，不同答案：六个 LLM 戒烟建议中的人格依赖差异审计",
+    "tldr": "以12种用户画像向六款LLM提出相同的戒烟问题，共审计2880次回答，发现模型建议随身份显著变化：青少年更少获知处方药信息，具备医疗专业知识的画像反而常获得更少事实。设定医学事实下限的系统提示可缩小差异，但效果难以跨模型迁移。",
+    "topic_tags": [
+      "用户画像",
+      "个性化",
+      "算法审计",
+      "医疗健康"
+    ],
+    "url": "https://arxiv.org/abs/2610.42039v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Cultural value alignment requires not only model optimization but also a well-specified target grounded in real-human evidence. Yet how such targets should be grounded in human data remains largely unexplored, raising three fundamental questions: (1) whose values should be represented? (2) where should cultural values be observed? and (3) what signals reveal underlying values? We investigate these questions through Re3Culture, a large-scale dataset linking (i) Representative communities: 700+ human participants across four cultures recruited through cultural-affiliation screening and demographic-aware sampling; (ii) Realistic scenario: culturally sensitive scenarios selected by community members, e.g., family and kinship; and (iii) Revealed value signals: 1,400+ value surveys, 20,000+ topic-grounded behavioral principles and explicit value priorities with responses for 6,000+ situated questions. Our analysis shows why these choices matter for defining the target, with three implications. First, estimating cultural values requires both community affiliation and broad internal coverage. Substituting other cultures or restricting subgroup coverage shifts value estimates. LLM simulations also disproportionately reflect particular subgroups. Second, values must be observed in concrete, community-guided situations. Abstract questionnaire profiles weakly recover situated priorities, and communities differ in which scenarios they identify as culturally value-revealing. Third, value priorities should be elicited explicitly, not learned from response preferences or bottom-line answers alone. Preferences conflate value agreement with other response-level qualities, and similar answers can be derived from different value priorities. By addressing these requirements, Re3Culture provides the first human-grounded resource that explicitly informs target definition for cultural value alignment.",
+    "ai_reason": "跨文化参与者与问卷构成核心实证",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI 价值对齐",
+      "合成数据"
+    ],
+    "authors": [
+      "Jing Yao",
+      "Hyunjin Hwang",
+      "Weihua Zheng",
+      "Bryan Chen Zhengyu Tan",
+      "Jia Wang Peh"
+    ],
+    "authors_full": [
+      {
+        "name": "Jing Yao"
+      },
+      {
+        "name": "Hyunjin Hwang"
+      },
+      {
+        "name": "Weihua Zheng"
+      },
+      {
+        "name": "Bryan Chen Zhengyu Tan"
+      },
+      {
+        "name": "Jia Wang Peh"
+      },
+      {
+        "name": "Dylan Raharja"
+      },
+      {
+        "name": "JinYeong Bak"
+      },
+      {
+        "name": "Roy Ka-Wei Lee"
+      },
+      {
+        "name": "Rui Cao"
+      },
+      {
+        "name": "Yuki Arase"
+      },
+      {
+        "name": "Jacki O'Neill"
+      },
+      {
+        "name": "Zhicheng Dou"
+      },
+      {
+        "name": "Xing Xie"
+      },
+      {
+        "name": "Xiaoyuan Yi"
+      },
+      {
+        "name": "Furu Wei"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38217,
+    "ingested_at": "2026-11-02T08:41:59.376288",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2610.41793v1",
+    "scored_at": "2026-11-02T08:42:49.159240",
+    "title": "Whose Values, Which Contexts, and What Signals? Grounding Cultural Value Alignment with Re3Culture",
+    "title_zh": "谁的价值、何种情境与何种信号：基于 Re3Culture 的文化价值对齐",
+    "tldr": "Re3Culture汇集四种文化700余名参与者的社区成员、自选情境及多类价值信号，分析文化价值对齐中应代表谁、在何处观察及如何识别价值。结果表明，仅靠抽象问卷或LLM模拟会产生群体偏差，价值目标需基于具代表性社区与具体情境。",
+    "topic_tags": [
+      "文化价值对齐",
+      "用户研究方法",
+      "数据集构建",
+      "AI 公平性"
+    ],
+    "url": "https://arxiv.org/abs/2610.41793v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI coding assistants are commonly used for daily software development tasks. While prior research has examined their impact on productivity and code quality, less is understood about how these tools support diverse ways of thinking. Evidence from non-AI software engineering tools suggests that mismatches between tool design and users' cognitive styles can introduce inclusivity barriers, but it remains unclear whether similar issues arise in AI coding assistants. We investigate how developers with different cognitive styles experience and interact with these tools and whether they exhibit cognitive inclusivity challenges. We conducted a controlled laboratory study with 20 student participants using GitHub Copilot to complete code generation, debugging, and refactoring tasks. Using think-aloud protocols, semi-structured interviews, and inductive thematic analysis, we identify patterns in user interaction. We then apply the GenderMag framework to examine how these patterns differ across cognitive styles. We identify five inclusivity issues concerning how Copilot explains suggestions, supports validation, facilitates learning, exposes its features, and influences the problem-solving process. Our findings suggest that common interaction paradigms in AI coding assistants can privilege certain cognitive styles while introducing additional cognitive effort for others. We derive design implications for more inclusive AI coding assistants.",
+    "ai_reason": "Copilot受控实验并分析认知包容性",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 编程助手",
+      "LLM",
+      "人机交互",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Grace Kerr",
+      "Aarushi Parasrampuria",
+      "Faith Culas",
+      "Kelly Blincoe"
+    ],
+    "authors_full": [
+      {
+        "name": "Grace Kerr"
+      },
+      {
+        "name": "Aarushi Parasrampuria"
+      },
+      {
+        "name": "Faith Culas"
+      },
+      {
+        "name": "Kelly Blincoe"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38219,
+    "ingested_at": "2026-11-02T08:41:59.381724",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2610.41192v1",
+    "scored_at": "2026-11-02T08:42:49.158914",
+    "title": "Cognitive Inclusivity in AI Coding Assistants: Evidence from GitHub Copilot",
+    "title_zh": "AI 编程助手的认知包容性：来自 GitHub Copilot 的证据",
+    "tldr": "通过20名学生的实验室任务、出声思考、半结构访谈和主题分析，比较不同认知风格开发者使用GitHub Copilot的体验，发现建议解释、验证、学习支持、功能呈现及问题解决流程可能偏向部分认知风格，增加其他用户认知负担。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "认知包容性",
+      "可用性",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2610.41192v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "人-自主性团队协作，AI/HCI核心议题",
     "ai_score": 4.0,
@@ -71199,7 +72097,7 @@
     "year": 2026
   },
   {
-    "abstract": "#MeToo is one of the most influential social movements of recent decades, yet its marketplace effects remain underexplored. The authors investigate how #MeToo reshaped both consumer responses to gender portrayals and short-run content change in the U.S. entertainment industry. Drawing on social role theory, social movement framing and consumer behavior research, they analyze a unique data set of 1,523 top-grossing films released between 2010 and 2023. Using artificial intelligence–assisted content analysis validated by human coders and supplemented with text analysis of 334,917 crowdsourced movie keywords, the authors measure portrayals of sexual misconduct, female objectification, and stereotypical and counter-stereotypical gender roles. The findings show little evidence of meaningful short-run content change following #MeToo. While audiences penalize films featuring problematic behaviors targeted by the movement, they have enduring preferences for traditional gender roles, showing resistance to counter-stereotypical male portrayals while only selectively embracing counter-stereotypical female representations. These findings reveal the complex and uneven ways the #MeToo movement reshaped marketplace behavior, and they provide implications for entertainment firms, marketers and social movement organizers navigating changing cultural norms.",
+    "abstract": "#MeToo is one of the most influential social movements of recent decades, yet its marketplace effects remain underexplored. The authors investigate how #MeToo reshaped both consumer responses to gender portrayals and short-run content change in the U.S. entertainment industry. Drawing on social role theory, social movement framing, and consumer behavior research, they analyze a unique dataset of 1,523 top-grossing films released between 2010 and 2023. Using artificial intelligence–assisted content analysis validated by human coders and supplemented with text analysis of 334,917 crowdsourced movie keywords, the authors measure portrayals of sexual misconduct, female objectification, and stereotypical and counterstereotypical gender roles. The findings show little evidence of meaningful short-run content change following #MeToo. While audiences penalize films featuring problematic behaviors targeted by the movement, they have enduring preferences for traditional gender roles, showing resistance to counterstereotypical male portrayals while only selectively embracing counterstereotypical female representations. These findings reveal the complex and uneven ways in which the #MeToo movement reshaped marketplace behavior, and they provide implications for entertainment firms, marketers, and social movement organizers navigating changing cultural norms.",
     "ai_reason": "#MeToo消费者响应研究，AI辅助内容分析为核心方法",
     "ai_score": 3.0,
     "ai_type_tags": [

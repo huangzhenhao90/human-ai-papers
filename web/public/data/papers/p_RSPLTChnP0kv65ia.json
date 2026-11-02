@@ -1,0 +1,74 @@
+{
+  "abstract": "Large Language Models (LLMs) often produce monolithic text that is hard to edit in parts, which can slow down collaborative workflows. We present componentization, an approach that decomposes model outputs into modular, independently editable units while preserving context. We describe Modular and Adaptable Output Decomposition (MAOD), which segments responses into coherent components and maintains links among them, and we outline the Component-Based Response Architecture (CBRA) as one way to implement this idea. Our reference prototype, MAODchat, uses a microservices design with state-machine-based decomposition agents, vendor-agnostic model adapters, and real-time component manipulation with recomposition.   In an exploratory study with four participants from academic, engineering, and product roles, we observed that component-level editing aligned with several common workflows and enabled iterative refinement and selective reuse. Participants also mentioned possible team workflows. Our contributions are: (1) a definition of componentization for transforming monolithic outputs into manipulable units, (2) CBRA and MAODchat as a prototype architecture, (3) preliminary observations from a small user study, (4) MAOD as an algorithmic sketch for semantic segmentation, and (5) example Agent-to-Agent protocols for automated decomposition. We view componentization as a promising direction for turning passive text consumption into more active, component-level collaboration.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "智能体/Agent",
+    "人机交互"
+  ],
+  "arxiv_id": "2509.08203",
+  "authors": [
+    "Ryan Lingo",
+    "Rajeev Chhajer",
+    "Martin Arroyo",
+    "Luka Brkljacic",
+    "Ben Davis"
+  ],
+  "authors_full": [
+    {
+      "name": "Ryan Lingo"
+    },
+    {
+      "name": "Rajeev Chhajer"
+    },
+    {
+      "name": "Martin Arroyo"
+    },
+    {
+      "name": "Luka Brkljacic"
+    },
+    {
+      "name": "Ben Davis"
+    },
+    {
+      "name": "Nithin Santhanam"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "小规模探索研究评估LLM响应编辑协作",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "为解决LLM整体式输出难以局部修改、协作效率低的问题，提出组件化方法，将响应拆分为保留上下文关联、可独立编辑的语义单元，并构建MAOD、CBRA及原型MAODchat。四名跨职能参与者的探索研究表明，该设计支持局部编辑、迭代优化、内容复用及潜在团队协作。",
+      "topic_tags": [
+        "人机协作",
+        "协作工作流",
+        "生成式AI界面",
+        "可用性"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-09-10",
+  "doi": null,
+  "id": "p_RSPLTChnP0kv65ia",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2509.08203v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7852,
+      "revision": "2e7b52e2f9313bfc3256182d2eca8d4995a5166c"
+    }
+  ],
+  "title": "Componentization: Decomposing Monolithic LLM Responses into Manipulable Semantic Units",
+  "title_zh": "组件化：将单体式LLM响应分解为可操作语义单元",
+  "unified_ingested_at": "2026-11-02T08:59:43.516990Z",
+  "url": "https://arxiv.org/abs/2509.08203v1",
+  "volume": null,
+  "year": 2025
+}

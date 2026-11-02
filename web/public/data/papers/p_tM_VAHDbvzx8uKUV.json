@@ -1,0 +1,66 @@
+{
+  "abstract": "Job applicants increasingly use large language models (LLMs) to write cover letters, while employers deploy LLMs to screen them. In this all-AI setting, we ask whether the \\emph{choice of model} affects hiring outcomes independently of candidate qualifications. We introduce a multi-model auditing framework pairing eleven LLM writer agents with nine API-hosted evaluator agents across ten job descriptions and fifty candidates per job. Four findings emerge. First, we identify a generative preference hierarchy: a consistent global ranking of writer models by evaluator acceptance, in which locally hosted models are systematically disadvantaged regardless of their license, compounded by self-preference bias where evaluators favour their own outputs. Second, evaluator models differ substantially in how much bias they introduce based on applicants' tool choice, offering actionable guidance for fairer screening design. Third, this hierarchy has measurable competitive consequences: in the most adverse pairing, approximately two (1.8) out of twenty-five qualified candidates are filtered out purely due to model mismatch. Fourth, a common mechanism explains the patterns above: writer preference and self-preference trace to a combination of how much each writer leans on specific stylistic cues and how strongly evaluators, often unanimously, reward or penalise those same cues. A further check finds little evidence that an unmeasured \"writer fingerprint\" remains once these same features are accounted for. We discuss implications for algorithmic fairness in employment, regulation of AI-assisted screening, and the design of auditing frameworks that can be reapplied as the model landscape evolves.",
+  "ai_type_tags": [
+    "LLM",
+    "AI招聘",
+    "算法决策"
+  ],
+  "arxiv_id": "2610.41866",
+  "authors": [
+    "Nicolò Pagan",
+    "Michael Andreas Ebling",
+    "Stefania Ionescu",
+    "Anikó Hannák"
+  ],
+  "authors_full": [
+    {
+      "name": "Nicolò Pagan"
+    },
+    {
+      "name": "Michael Andreas Ebling"
+    },
+    {
+      "name": "Stefania Ionescu"
+    },
+    {
+      "name": "Anikó Hannák"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "聚焦LLM求职与AI招聘评估偏差",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "在求职申请由AI撰写、AI筛选的条件下，模型选择会否在候选人质量之外影响录用？多模型审计将11个LLM写作者与9个API评审者跨10类职位配对，发现评审者对写作模型存在稳定偏好：本地部署模型系统吃亏，评审者偏好自身输出；最不利配对会仅因模型错配淘汰25名合格者中的约2名，根源是对文体线索的共同奖惩。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "公平性",
+        "偏见"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-30",
+  "doi": null,
+  "id": "p_tM_VAHDbvzx8uKUV",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2610.41866v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83623,
+      "revision": "e75abb58491dad45027af4bd7b1187d181eade5f"
+    }
+  ],
+  "title": "AI evaluators favor job applications written by certain AI models, independent of candidate quality",
+  "title_zh": "AI评估者偏好特定AI模型撰写的求职申请，与候选人质量无关",
+  "unified_ingested_at": "2026-11-02T08:59:43.516990Z",
+  "url": "https://arxiv.org/abs/2610.41866v1",
+  "volume": null,
+  "year": 2026
+}

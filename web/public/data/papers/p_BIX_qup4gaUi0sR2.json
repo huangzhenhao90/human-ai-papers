@@ -1,0 +1,72 @@
+{
+  "abstract": "Large language model (LLM)-based agents interact with external tools through protocols such as the Model Context Protocol (MCP), producing tool-call traces that may expose behavioral signals about users. In this work, we systematically study the risk of user-profile inference from MCP tool-call traces, where observers infer user attributes from protocol-valid tool interactions without access to user conversations. We introduce PrivacyTrace, a benchmark containing 1,000 synthetic user profiles and 4,000 agent trajectories across four domains, generated with real MCP tools from 25 servers. Experiments with four mainstream LLM attackers show that tool-call traces enable a 26.25% attack success rate for profile inference, compared with 17.97% from prior-based guessing. Further analysis reveals that tool arguments and returned results provide the main trace-grounded evidence, while linking traces across sessions further amplifies profiling risk. These findings demonstrate that MCP tool-call traces can act as effective behavioral side channels for user profiling, motivating the development of privacy-aware mechanisms for agent-tool interactions. Code and data are available at https://github.com/AI45Lab/PrivacyTrace.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "人机交互"
+  ],
+  "arxiv_id": "2610.41885",
+  "authors": [
+    "Donghang Duan",
+    "Qingyu Liu",
+    "Yifei Liu",
+    "Na Zou",
+    "Xia Hu"
+  ],
+  "authors_full": [
+    {
+      "name": "Donghang Duan"
+    },
+    {
+      "name": "Qingyu Liu"
+    },
+    {
+      "name": "Yifei Liu"
+    },
+    {
+      "name": "Na Zou"
+    },
+    {
+      "name": "Xia Hu"
+    },
+    {
+      "name": "Dongrui Liu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以工具轨迹推断用户属性，聚焦隐私",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "构建包含1000个合成用户画像、4000条代理轨迹和25个MCP服务的PrivacyTrace基准。实验显示，四种LLM攻击者可从工具调用轨迹推断用户属性，成功率达26.25%，高于先验猜测的17.97%；工具参数、返回结果及跨会话关联是主要泄露来源。",
+      "topic_tags": [
+        "隐私",
+        "用户画像",
+        "AI治理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-30",
+  "doi": null,
+  "id": "p_BIX_qup4gaUi0sR2",
+  "issue": null,
+  "journal": "arXiv:cs.CR",
+  "pdf_url": "https://arxiv.org/pdf/2610.41885v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38211,
+      "revision": "2e7b52e2f9313bfc3256182d2eca8d4995a5166c"
+    }
+  ],
+  "title": "How Much Can Tool Calls Reveal About You? Privacy Leakage from Tool-Call Traces",
+  "title_zh": "工具调用能泄露多少个人信息？工具调用轨迹的隐私泄漏",
+  "unified_ingested_at": "2026-11-02T08:59:43.516990Z",
+  "url": "https://arxiv.org/abs/2610.41885v1",
+  "volume": null,
+  "year": 2026
+}
