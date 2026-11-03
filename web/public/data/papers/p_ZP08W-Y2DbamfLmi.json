@@ -1,0 +1,98 @@
+{
+  "abstract": "Our digital life consists of activities that are organized around tasks and exhibit different user states in the digital contexts around these activities. Previous works have shown that digital activity monitoring can be used to predict entities that users will need to perform digital tasks. There have been methods developed to automatically detect the tasks of a user. However, these studies typically support only specific applications and tasks, and relatively little research has been conducted on real-life digital activities. This article introduces user state modeling and prediction with contextual information captured as entities, recorded from real-world digital user behavior, called\n            entity footprinting\n            —a system that records users’ digital activities on their screens and proactively provides useful entities across application boundaries without requiring explicit query formulation. Our methodology is to detect contextual user states using latent representations of entities occurring in digital activities. Using topic models and recurrent neural networks, the model learns the latent representation of concurrent entities and their sequential relationships. We report a field study in which the digital activities of 13 people were recorded continuously for 14 days. The model learned from this data is used to (1) predict contextual user states and (2) predict relevant entities for the detected states. The results show improved user state detection accuracy and entity prediction performance compared to static, heuristic, and basic topic models. Our findings have implications for the design of proactive recommendation systems that can implicitly infer users’ contextual state by monitoring users’ digital activities and proactively recommending the right information at the right time.",
+  "ai_type_tags": [
+    "推荐算法",
+    "AI 助手",
+    "人机交互",
+    "时序建模"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Zeinab R. Yousefi",
+    "Tung Vuong",
+    "Marie AlGhossein",
+    "Tuukka Ruotsalo",
+    "Giulio Jaccuci"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Aalto University, Helsinki, Finland"
+      ],
+      "name": "Zeinab R. Yousefi",
+      "orcid": "https://orcid.org/0000-0002-0318-7136"
+    },
+    {
+      "affiliation": [
+        "University of Helsinki, Helsinki, Finland"
+      ],
+      "name": "Tung Vuong",
+      "orcid": "https://orcid.org/0000-0002-3317-3421"
+    },
+    {
+      "affiliation": [
+        "University of Helsinki, Helsinki, Finland"
+      ],
+      "name": "Marie AlGhossein",
+      "orcid": "https://orcid.org/0000-0002-0729-6954"
+    },
+    {
+      "affiliation": [
+        "LUT University, Lappeenranta, Finland and University of Copenhagen, Kobenhavn, Denmark"
+      ],
+      "name": "Tuukka Ruotsalo",
+      "orcid": "https://orcid.org/0000-0002-2203-4928"
+    },
+    {
+      "affiliation": [
+        "University of Helsinki, Helsinki, Finland"
+      ],
+      "name": "Giulio Jaccuci",
+      "orcid": "https://orcid.org/0000-0002-9185-7928"
+    },
+    {
+      "affiliation": [
+        "Aalto University, Helsinki, Finland and University of Manchester, Manchester, UK"
+      ],
+      "name": "Samuel Kaski",
+      "orcid": "https://orcid.org/0000-0003-1925-9154"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以机器学习预测用户任务与状态",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "针对数字活动跨应用情境下用户状态难以持续建模的问题，结合屏幕活动记录、实体潜表示、主题模型与RNN学习并发实体及序列关系；14天田野研究显示，该方法可提升用户状态检测，并跨应用主动提供相关实体。",
+      "topic_tags": [
+        "用户画像",
+        "个性化",
+        "人机交互(HCI)",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 4,
+  "date": "2024-04-22",
+  "doi": "10.1145/3643893",
+  "id": "p_ZP08W-Y2DbamfLmi",
+  "issue": "2",
+  "journal": "TiiS",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38170,
+      "revision": "10f0b106b6a1bcda5ce8dc256f1223417a5150a9"
+    }
+  ],
+  "title": "Entity Footprinting: Modeling Contextual User States via Digital Activity Monitoring",
+  "title_zh": "实体足迹：通过数字活动监测建模情境化用户状态",
+  "unified_ingested_at": "2026-11-03T09:08:24.566438Z",
+  "url": "https://doi.org/10.1145/3643893",
+  "volume": "14",
+  "year": 2024
+}

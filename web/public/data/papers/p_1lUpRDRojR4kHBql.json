@@ -1,0 +1,66 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly used to simulate human behavior, but which descriptions of people improve prediction when experimental designs change remains unclear. We develop a framework that draws candidate behavioral features from the literature and constructs profiles from earlier human experiments. A profile-generation LLM assigns feature values from observed actions, messages, and surveys; a separate LLM simulates behavior using these profiles. By comparing simulated and observed outcomes in the learning data, we select profile contents through forward feature selection, adding features while they improve prediction. We then evaluate the selected contents without modification against outcomes from new participants under new designs. Across 616 public-goods games, 144 multi-party bargaining games, and 1,480 generalized 11-20 money-request designs, leading one-feature profiles predict human outcome distributions better than no profile or general-purpose personas. Profiles with more features provide no clear additional benefit, and features' relative predictive value largely persists across learning and validation. Using profiles from one game family to simulate another produces uneven gains and can make predictions less accurate than simulations without profiles. The framework makes the choice of behavioral information a testable part of simulation design, helping researchers assess which descriptions remain useful as experimental conditions change.",
+  "ai_type_tags": [
+    "LLM",
+    "AI用户模拟",
+    "AI用户画像"
+  ],
+  "arxiv_id": "2611.00661",
+  "authors": [
+    "Robin Na",
+    "Kehang Zhu",
+    "Logan Cross",
+    "Michiel A. Bakker"
+  ],
+  "authors_full": [
+    {
+      "name": "Robin Na"
+    },
+    {
+      "name": "Kehang Zhu"
+    },
+    {
+      "name": "Logan Cross"
+    },
+    {
+      "name": "Michiel A. Bakker"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用人类实验数据评估LLM行为模拟",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "从既往人类实验数据中提取行为特征，为语言模型生成行为档案并筛选可预测特征，再用新参与者和新设计验证。公共品、议价和金钱请求实验显示，单一有效特征优于无档案或通用人格；特征过多无额外收益，跨博弈迁移有时反而降低准确性。",
+      "topic_tags": [
+        "用户模拟",
+        "行为实验",
+        "实验设计",
+        "分布外泛化"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-31",
+  "doi": null,
+  "id": "p_1lUpRDRojR4kHBql",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.00661v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38319,
+      "revision": "10f0b106b6a1bcda5ce8dc256f1223417a5150a9"
+    }
+  ],
+  "title": "Designing Behavioral Profiles for Language Model Simulation of Out-of-Distribution Human Behavior",
+  "title_zh": "面向分布外人类行为模拟的语言模型行为画像设计",
+  "unified_ingested_at": "2026-11-03T09:08:24.566438Z",
+  "url": "https://arxiv.org/abs/2611.00661v1",
+  "volume": null,
+  "year": 2026
+}

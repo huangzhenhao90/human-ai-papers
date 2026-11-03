@@ -1,0 +1,72 @@
+{
+  "abstract": "With the popularization of livestreaming applications, automatic camera tuning has become indispensable for ordinary users to enjoy high Quality of Experience (QoE). However, the existing Image Quality Assessment (IQA) methods face two challenges in camera tuning. First, they struggle to identify subtle quality difference between images, which is common in camera tuning. Second, the ability to explain fine-grained differences and to provide suggestions for camera tuning are even more lacking. To address these challenges, we first construct FGLive-Comments, an instruction tuning dataset with rich annotations of both preferences for fine-grained image pairs and quality reasoning from global and local visual evidence, which supports selective adjustment recommendations of camera parameters. Based on FGLive-Comments, we develop Q-CamTuning, a multimodal large language model for livestreaming camera tuning. Its progressive perception-evidence-guidance framework learns quality-aware visual representations, enhances fine-grained reasoning with global-local evidence, and maps quality issues to camera-parameter adjustment directions. Extensive experimental results demonstrate that Q-CamTuning outperforms existing IQA models in both quality scoring and fine-grained image pair ranking. User study also validates its ability to recommend camera tuning suggestions.",
+  "ai_type_tags": [
+    "多模态大语言模型",
+    "图像质量评估",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2611.03007",
+  "authors": [
+    "Yanchao Bi",
+    "Pengfei Chen",
+    "Yulong Yan",
+    "Qian Zhang",
+    "Biao Wang"
+  ],
+  "authors_full": [
+    {
+      "name": "Yanchao Bi"
+    },
+    {
+      "name": "Pengfei Chen"
+    },
+    {
+      "name": "Yulong Yan"
+    },
+    {
+      "name": "Qian Zhang"
+    },
+    {
+      "name": "Biao Wang"
+    },
+    {
+      "name": "Leida Li"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "面向直播QoE，以评论偏好数据支持相机调参",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "面向直播相机调参中细微画质差异难辨、调参建议缺乏解释的问题，构建含细粒度偏好及全局—局部质量推理标注的FGLive-Comments，并训练Q-CamTuning按感知—证据—引导流程评分、排序画质并给出参数调整方向。实验显示其优于既有IQA模型，用户研究也验证了建议的有效性。",
+      "topic_tags": [
+        "多模态交互",
+        "用户体验(UX)",
+        "直播画质优化"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-02",
+  "doi": null,
+  "id": "p_tqTR-_PrZ6WAzlGa",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2611.03007v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38311,
+      "revision": "10f0b106b6a1bcda5ce8dc256f1223417a5150a9"
+    }
+  ],
+  "title": "Q-CamTuning: A Multimodal Large Language Model for Fine-Grained Quality Reasoning in Livestreaming Camera Tuning",
+  "title_zh": "Q-CamTuning：面向直播相机调优细粒度质量推理的多模态LLM",
+  "unified_ingested_at": "2026-11-03T09:08:24.566438Z",
+  "url": "https://arxiv.org/abs/2611.03007v1",
+  "volume": null,
+  "year": 2026
+}

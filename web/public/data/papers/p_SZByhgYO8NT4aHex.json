@@ -1,0 +1,65 @@
+{
+  "abstract": "Personalizing large language model assistants requires adapting their responses to individual users, including the selection of content, reasoning approach, level of detail, and form of presentation. Such preferences are often latent, becoming visible only when users respond to an initial answer and request revisions. We investigate whether these feedback trajectories can be converted into a reusable personalization signal without explicit preference profiles or labels, prompt-time access to interaction histories, or model parameter updates. We introduce UPSHIFT (User Preference Steering from Human-AI Interaction Feedback Traces), a training-free method that compares the hidden representations of initial and feedback-conditioned responses within each session, averages the resulting trajectory displacements across a user's sessions, and injects the aggregated preference direction when answering a new query. The method is motivated by the implicit-preference hypothesis: although an individual conversational transition may reflect topic progression or task-specific correction, changes that recur across sessions retain a component that captures how the user wants responses to be adjusted. We validate the preference-representation capability of UPSHIFT on PrefEval. In evaluations with 40 simulated users, every tested configuration improves preference alignment over the unsteered baseline on held-out topics for both Qwen3-8B and Qwen3-32B; the best configuration increases macro-averaged Elo from 1364.0 to 1605.2 and from 1341.9 to 1591.8, respectively. Matched-user and positive-versus-negative controls further demonstrate that these gains arise from the user-specific preference direction and its learned orientation. These results show that interaction histories can provide compact, reusable supervision for lightweight personalization.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 助手",
+    "偏好建模"
+  ],
+  "arxiv_id": "2611.02667",
+  "authors": [
+    "Jingping Wang",
+    "Zhanhao Li",
+    "Shao Zhang",
+    "Shuyue Hu"
+  ],
+  "authors_full": [
+    {
+      "name": "Jingping Wang"
+    },
+    {
+      "name": "Zhanhao Li"
+    },
+    {
+      "name": "Shao Zhang"
+    },
+    {
+      "name": "Shuyue Hu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "核心是利用人机反馈轨迹建模用户偏好",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对大模型助手难以利用修订反馈持续贴合用户的问题，UPSHIFT免训练地比较初始回答与反馈后回答的隐藏表示，跨会话聚合偏好方向并注入新回答。PrefEval的40名模拟用户实验显示，Qwen3-8B与32B在未见主题上的偏好一致性均优于未引导基线。",
+      "topic_tags": [
+        "个性化",
+        "用户画像",
+        "人机交互"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-02",
+  "doi": null,
+  "id": "p_SZByhgYO8NT4aHex",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.02667v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38316,
+      "revision": "10f0b106b6a1bcda5ce8dc256f1223417a5150a9"
+    }
+  ],
+  "title": "UPSHIFT: User Preference Steering from Human-AI Interaction Feedback Traces",
+  "title_zh": "UPSHIFT：基于人机交互反馈轨迹的用户偏好引导",
+  "unified_ingested_at": "2026-11-03T09:08:24.566438Z",
+  "url": "https://arxiv.org/abs/2611.02667v1",
+  "volume": null,
+  "year": 2026
+}

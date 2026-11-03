@@ -518,6 +518,167 @@
     "year": 2026
   },
   {
+    "abstract": "Abstract The accurate detection of clinical phenotypes from electronic health records (EHRs) is pivotal for advancing large-scale genetic and longitudinal studies in psychiatry. Free-text clinical notes are an essential source of symptom-level information, particularly in psychiatry. However, the automated extraction of symptoms from clinical text remains challenging. Here, we tested 11 open-source generative large language models (LLMs) for their ability to detect 109 psychiatric phenotypes from clinical text, using annotated EHR notes from a psychiatric clinic in Colombia. The LLMs were evaluated both “out-of-the-box” and after fine-tuning, and compared against a traditional natural language processing (tNLP) method developed from the same data. We show that while base LLM performance was poor to moderate (0.2-0.6 macro-F1 for zero-shot; 0.2-0.74 macro-F1 for few shot), it improved significantly after fine-tuning (0.75-0.86 macro-F1), with several fine-tuned LLMs outperforming the tNLP method. In total, 100 phenotypes could be reliably detected (F1>0.8) using either a fine-tuned LLM or tNLP. To generate a fine-tuned LLM that can be shared with the scientific and medical community, we created a fully synthetic dataset free of patient information but based on original annotations. We fine-tuned a top-performing LLM on this data, creating “Mistral-small-psych”, an LLM that can detect psychiatric phenotypes from Spanish text with performance comparable to that of LLMs trained on real EHR data (macro-F1=0.79). Finally, the fine-tuned LLMs underwent an external validation using data from a large psychiatric hospital in Colombia, the Hospital Mental de Antioquia, highlighting that most LLMs generalized well (0.02-0.16 point loss in macro-F1). Our study underscores the value of domain-specific adaptation of LLMs and introduces a new model for accurate psychiatric phenotyping in Spanish text, paving the way for global precision psychiatry.",
+    "ai_reason": "以微调大模型检测精神科表型，并进行跨医院外部验证",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai",
+      "nlp"
+    ],
+    "authors": [
+      "Clara Frydman-Gani",
+      "Alejandro Arias",
+      "Maria Perez Vallejo",
+      "John Daniel Londoño Martínez",
+      "Johanna Valencia Echeverry",
+      "Mauricio Castano",
+      "Alex A. T. Bui",
+      "Nelson B. Freimer",
+      "Carlos López‐Jaramillo",
+      "Loes M. Olde Loohuis"
+    ],
+    "authors_full": [
+      {
+        "name": "Clara Frydman-Gani"
+      },
+      {
+        "name": "Alejandro Arias"
+      },
+      {
+        "name": "Maria Perez Vallejo"
+      },
+      {
+        "name": "John Daniel Londoño Martínez"
+      },
+      {
+        "name": "Johanna Valencia Echeverry"
+      },
+      {
+        "name": "Mauricio Castano"
+      },
+      {
+        "name": "Alex A. T. Bui"
+      },
+      {
+        "name": "Nelson B. Freimer"
+      },
+      {
+        "name": "Carlos López‐Jaramillo"
+      },
+      {
+        "name": "Loes M. Olde Loohuis"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "以微调大模型检测精神科表型，并进行跨医院外部验证",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "benchmark_development",
+      "risk_tags": [],
+      "tldr": "微调模型在西班牙语精神科文本表型检测中达到较高宏F1，并在另一家精神专科医院完成外部验证。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 1,
+    "clinical_validation": "external",
+    "date": "2026-10-26",
+    "doi": "10.2196/93328",
+    "domain_score": 5,
+    "evidence_stage": "benchmark_development",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W4413127433",
+    "journal": "Journal of Medical Internet Research",
+    "mh_profile": {
+      "ai_reason": "以微调大模型检测精神科表型，并进行跨医院外部验证",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "nlp"
+        ],
+        "applications": [
+          "screening_assessment"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "clinical_patients"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "宏F1；外部验证宏F1下降0.02—0.16点",
+        "sample": null,
+        "study_design": "模型开发与评估研究；外部验证"
+      },
+      "evidence_stage": "benchmark_development",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language models",
+          "LLM",
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatric",
+          "psychiatry"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "微调模型在西班牙语精神科文本表型检测中达到较高宏F1，并在另一家精神专科医院完成外部验证。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W4413127433",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S17147534",
+      "ingest_mode": "query",
+      "key": "jmir",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "Generative Large Language Models for Psychiatric Concept Detection in Spanish-Language Electronic Health Records: Development and Evaluation Study",
+    "title_zh": "用于西班牙语电子健康记录中精神科概念检测的生成式大语言模型：开发与评估研究",
+    "tldr": "微调模型在西班牙语精神科文本表型检测中达到较高宏F1，并在另一家精神专科医院完成外部验证。",
+    "topic_tags": [
+      "transdiagnostic",
+      "screening_assessment",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.2196/93328",
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "机器学习自适应测验直接用于PHQ-8和GAD-7精神评估。",
     "ai_score": 5,

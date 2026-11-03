@@ -1,0 +1,53 @@
+{
+  "abstract": "User simulators generate responses in place of human participants, allowing researchers to estimate the result of a study. To use these estimates before collecting human responses, researchers need a way to assess their reliability. We test whether disagreement among simulators can identify unreliable estimates of a group's response proportions and of differences between groups. We evaluate this signal using 6 language-model simulators and existing GlobalOpinionQA responses for 60 questions in 12 countries. Disagreement predicts invalidity more accurately for differences between two groups than for a single group's response proportions (AUC 0.87 versus 0.71). Errors shared by the simulators remain invisible to this signal. When such an error affects both groups equally, it cancels in the comparison, helping explain the stronger result for group differences. We test this explanation by estimating the shared bias using one set of groups and subtracting it from predictions for a separate set. This correction reduces prediction error without changing disagreement among the simulators. In a retrospective analysis, we simulate referring the 20% of group comparisons with the greatest disagreement for human assessment. Among the remaining comparisons with a conclusive validity judgment, 54.8% are judged invalid, compared with 63.7% before referral.",
+  "ai_type_tags": [
+    "LLM",
+    "AI用户模拟"
+  ],
+  "arxiv_id": "2611.01354",
+  "authors": [
+    "Saber Zerhoudi"
+  ],
+  "authors_full": [
+    {
+      "name": "Saber Zerhoudi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用LLM模拟用户并检验人类调查估计可靠性",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "以6个语言模型模拟器在GlobalOpinionQA的60题、12国数据上的分歧作为可靠性信号。分歧更能识别群组差异而非单组比例的无效估计，但多个模拟器共有的偏差不会被发现；估计并扣除共享偏差可降低误差，将高分歧比较转交人工复核也能改善判断。",
+      "topic_tags": [
+        "用户模拟",
+        "研究方法",
+        "群体比较",
+        "偏差校正"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-31",
+  "doi": null,
+  "id": "p_pfrS_tt7hVUtSkvb",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.01354v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38306,
+      "revision": "10f0b106b6a1bcda5ce8dc256f1223417a5150a9"
+    }
+  ],
+  "title": "Wrong Together: Shared Bias in User Simulation",
+  "title_zh": "错误同频：用户模拟中的共享偏差",
+  "unified_ingested_at": "2026-11-03T09:08:24.566438Z",
+  "url": "https://arxiv.org/abs/2611.01354v1",
+  "volume": null,
+  "year": 2026
+}
