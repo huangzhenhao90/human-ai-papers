@@ -1,0 +1,75 @@
+{
+  "abstract": "Synthetic populations, large sets of simulated people, are increasingly used in place of real people to pretest surveys, simulate users and communities, and evaluate AI systems. Each simulated person is defined by a persona, a written profile of fixed traits, demographics, and attitudes that a language model is instructed to act out. Every such system assumes that a person's identity is a stable attribute that behaves the same way in every situation the simulation presents. We show that this assumption is not a harmless simplification. Three decades of personality research find the opposite. How a given person behaves varies more across contexts than people vary from one another. Drawing on identity economics, which describes how different situations activate different identities and norms within the same person, we separate behavior into three parts, which are stable traits, the identity a context calls up, and the situation itself. We then prove, under two stated assumptions, that any simulation built on fixed personas, no matter how detailed the personas or how large the underlying model, cannot reproduce the part of a population's behavior that is specific to it and its circumstances. We propose a new evaluation criterion based on this result and a person-in-context design that can meet it in principle. We test one version on a naturalistic Reddit personality corpus and on a published clinical-trial recruitment survey of a community with documented distrust of medical institutions. The design does produce context-dependent behavior when tested directly, but in neither setting does it fully match the real population, and we show where it falls short. The consequence for practice is a risk that synthetic-population evaluations misrepresent the groups whose behavior is most shaped by context, a distortion that richer personas cannot correct.",
+  "ai_type_tags": [
+    "LLM",
+    "合成人群",
+    "AI代理"
+  ],
+  "arxiv_id": "2611.05292",
+  "authors": [
+    "Tamunotonye Harry",
+    "Yuanyuan Feng"
+  ],
+  "authors_full": [
+    {
+      "name": "Tamunotonye Harry"
+    },
+    {
+      "name": "Yuanyuan Feng"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": " critique 模拟消费者与身份理论",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对以固定人格档案模拟人群的做法，结合身份经济学与人格研究证明：个体行为随情境变化的幅度往往大于人与人之间的差异，固定人格无法再现情境特异行为。进一步提出“情境中的人”设计与评估标准，并用 Reddit 数据及临床试验招募调查检验其可行性。",
+      "topic_tags": [
+        "人机交互",
+        "社会心理学",
+        "算法评估"
+      ]
+    },
+    "ur": {
+      "ai_reason": "聚焦LLM合成人群及用户画像效度",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对固定人格模拟无法复现具体情境中群体行为的问题，区分稳定特质、情境唤起的身份与情境本身，证明固定人格方案存在理论局限，并提出以人在情境中为核心的评价标准与设计方法，在Reddit语料及临床试验招募调查上进行了验证。",
+      "topic_tags": [
+        "AI 用户画像",
+        "用户研究方法",
+        "情境行为",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob",
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-03",
+  "doi": null,
+  "id": "p_WSXWR4wbPex_NFHT",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.05292v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83800,
+      "revision": "35195481e7758ad9bde28bfaa114f14fdfcbf52d"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 38404,
+      "revision": "c60c526127756b1a54efa374f01f7f58a1b163e6"
+    }
+  ],
+  "title": "Personas Are Not People: Identity as State, Not Attribute",
+  "title_zh": "角色并非人：身份是状态而非属性",
+  "unified_ingested_at": "2026-11-04T08:44:46.773545Z",
+  "url": "https://arxiv.org/abs/2611.05292v1",
+  "volume": null,
+  "year": 2026
+}

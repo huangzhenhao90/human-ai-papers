@@ -1,0 +1,74 @@
+{
+  "abstract": "Robotics and AI systems are increasingly deploying large vision-language models (LVLMs) to follow high-level instructions, from routine household chores to more complex organizational tasks. Yet, broad directives like \"clean the room\" or \"organize the desk\" frequently omit crucial details about user preferences and specific arrangement of objects that influence the desired outcome. Without any further guidance, such models tend to overestimate their grasp of ambiguous instructions and frequently assume they have sufficient understanding despite missing important details. In this paper, we propose CLARA (Conversational cLArification for Robotic Arrangement), a cognitively-driven clarification framework that proactively elicits key information from users, in a similar fashion as humans' clarification seeking behavior. Through targeted questioning, CLARA refines ambiguous requests into structured, detailed instructions describing precisely how objects should be organized or rearranged, according to the user's preferences. These clarifications then guide a diffusion-based image generation pipeline, producing realistic visual renderings of the final, desired scene. This final rendering also serves as a visual confirmation of the system's understanding from the user. Experimental results and user studies demonstrate that CLARA leads to more accurate and consistent outcomes compared to another State-of-the-Art LVLM system, highlighting the importance of interactive clarification for bridging the gap between vague directives and fully grounded task specifications.",
+  "ai_type_tags": [
+    "多模态",
+    "LLM",
+    "图像生成",
+    "对话式 AI"
+  ],
+  "arxiv_id": "2611.04708",
+  "authors": [
+    "Dimitrios Bekris",
+    "Marios Glytsos",
+    "Panagiotis P. Filntisis",
+    "Niki Efthymiou",
+    "George Retsinas"
+  ],
+  "authors_full": [
+    {
+      "name": "Dimitrios Bekris"
+    },
+    {
+      "name": "Marios Glytsos"
+    },
+    {
+      "name": "Panagiotis P. Filntisis"
+    },
+    {
+      "name": "Niki Efthymiou"
+    },
+    {
+      "name": "George Retsinas"
+    },
+    {
+      "name": "Petros Maragos"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "机器人交互中的用户澄清框架",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对大视觉语言模型面对模糊指令时过度自信的问题，设计认知驱动的主动澄清框架，通过针对性提问将宽泛请求细化为结构化偏好，并以扩散模型生成场景供用户确认。实验与用户研究表明，该方法能获得更准确、一致的整理结果。",
+      "topic_tags": [
+        "对话式 AI",
+        "人机交互",
+        "歧义澄清",
+        "机器人"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-03",
+  "doi": null,
+  "id": "p_JnHi_17ZAWdIdt9d",
+  "issue": null,
+  "journal": "arXiv:cs.RO",
+  "pdf_url": "https://arxiv.org/pdf/2611.04708v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38409,
+      "revision": "c60c526127756b1a54efa374f01f7f58a1b163e6"
+    }
+  ],
+  "title": "CLARA: A Cognitively-Driven Clarification Framework for Grounding Ambiguous Requests",
+  "title_zh": "CLARA：认知驱动的歧义请求澄清框架",
+  "unified_ingested_at": "2026-11-04T08:44:46.773545Z",
+  "url": "https://arxiv.org/abs/2611.04708v1",
+  "volume": null,
+  "year": 2026
+}

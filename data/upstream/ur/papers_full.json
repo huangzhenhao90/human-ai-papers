@@ -40417,6 +40417,65 @@
     "year": 2026
   },
   {
+    "abstract": "Human preferences change over time: an established preference may remain valid over time, become uncertain as context shifts, or be explicitly revised. Effective personalization requires conversational AI to adapt its response strategy to evolving preferences rather than relying on passive memory retrieval. We formalize this capability as adaptive personalization under epistemic uncertainty. A human preference study further confirms that people favor state-contingent response strategies as preference uncertainty changes. To evaluate whether language models mirror this adaptation, we create a multilingual benchmark spanning 250 personas, 5 languages, and 25K conversational turns that decouples strategy selection from response execution. Across eight closed- and open-weight models, we uncover a recognition-generation gap: models reliably identify appropriate strategies when selecting among candidate options, but collapse during open-ended generation, suffering a 35-46% drop in strategy calibration. Crucially, this failure is systematic: models default to exploit-first behavior, over-relying on existing preferences regardless of preference epistemic uncertainty. We show this failure is addressable: while prompting interventions fail, targeted training that supervises models' internal strategy representations toward state-conditional human preferences narrows the user acceptability generalization gap by a third on out-of-distribution personas and conversational styles.",
+    "ai_reason": "含人类偏好研究，聚焦对话AI个性化",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Priyanka Dey",
+      "Rajarshi Das",
+      "Vikas Bahirwani",
+      "Qi Zeng",
+      "Julia Kruk"
+    ],
+    "authors_full": [
+      {
+        "name": "Priyanka Dey"
+      },
+      {
+        "name": "Rajarshi Das"
+      },
+      {
+        "name": "Vikas Bahirwani"
+      },
+      {
+        "name": "Qi Zeng"
+      },
+      {
+        "name": "Julia Kruk"
+      },
+      {
+        "name": "Qi Qi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38212,
+    "ingested_at": "2026-11-02T08:41:59.370991",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2610.40930v1",
+    "scored_at": "2026-11-04T08:24:11.704336",
+    "title": "Adaptive Personalization Under Preference Epistemic Uncertainty",
+    "title_zh": "偏好认知不确定性下的自适应个性化",
+    "tldr": "针对偏好随情境变化而产生的不确定性，比较人类偏好的情境依赖策略与8个语言模型在多语种多轮对话中的策略选择。模型虽能识别合适策略，实际生成时校准却下降35%—46%，且偏爱沿用既有偏好；提示无效，定向训练内部策略表示可缩小分布外用户可接受性差距约三分之一。",
+    "topic_tags": [
+      "个性化",
+      "对话式 AI",
+      "人机交互",
+      "用户偏好"
+    ],
+    "url": "https://arxiv.org/abs/2610.40930v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Hundreds of millions of people now ask large language model (LLM) chatbots for health advice, which raises a question that is simple to pose and hard to answer: does everyone get the same advice? We audit six widely deployed LLMs from four providers on smoking cessation, a domain with codified clini- cal guidance and substantial public-health stakes, by putting the same four cessation questions to twelve user personas that differ in life stage, self-described expertise, and smoking history, for a total of 2,880 responses. What the models say depends on who appears to be asking. Every model named FDA-approved prescription cessation medications less often to teen personas than to adult personas, by 32 to 67 percentage points, and in five of six models a persona presenting health- care expertise received fewer facts than a persona presenting none. We then evaluate one deployable intervention: a short system prompt specifying a factual floor, the set of core med- ical facts every user should receive when they are relevant, while leaving tone, vocabulary, and framing free to adapt. The prompt narrows persona differences in every model, but its effect on overall fact coverage varies in both magnitude and direction across models, so a prompt validated on one system cannot be assumed to transfer to another. Two cautions frame these results. Equal mention rates are not always the correct clinical target, because prescription cessation pharmacother- apy is not recommended for minors, so a defensible factual floor must be age-aware rather than uniform. And because our personas vary on several attributes at once, we report scenario- level differences rather than isolated effects of age or expertise. We release all 2,880 responses and the analysis code.",
     "ai_reason": "按用户画像审计LLM戒烟建议差异",
     "ai_score": 5.0,
@@ -40894,6 +40953,63 @@
     "year": 2026
   },
   {
+    "abstract": "Technology-mediated audience participation (TMAP) enables audiences to influence live performances, yet balancing interaction with meaningful agency remains challenging. While AI-generated music and MR enable new forms of audio and visual audience participation, little is known about how these participation modalities influence audience experiences during live musical performance. In particular, it remains unclear how they shape perceived agency, collaboration, and engagement, and how they complement one another within TMAP systems. We present CrowdForge, an AI- and MR-mediated paradigm where audiences collectively control generative music and virtual environments during a live performance featuring a guitarist and DJ. Through a mixedmethods concert study evaluating three interaction conditions (audio, visual, and combined audio-visual), we demonstrate that observability is the primary driver of audience agency. While visual interaction provided easily observable feedback, audio parameters offered macro-structural control over the music. Audiences tended to use the control enabled by AI audio generation to test musical boundaries, introducing a productive adversarial tension between the crowd and the musicians. This dynamic pushed creative limits, deepened engagement, and generated moments of musical coherence when performers successfully resolved audience-induced challenges. We argue future TMAP systems should prioritize human-centered, highly observable interactions to build agency, while combining the expressiveness of music with the clarity of visual feedback.",
+    "ai_reason": "AI生成与MR为核心，并做观众混合方法实验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "生成式 AI",
+      "生成式音乐",
+      "混合现实",
+      "多模态"
+    ],
+    "authors": [
+      "Torin Hopkins",
+      "Shih-Yu Ma",
+      "Zander Trafton-Hancock",
+      "Ellen Yi-Luen Do",
+      "Luca Turchet"
+    ],
+    "authors_full": [
+      {
+        "name": "Torin Hopkins"
+      },
+      {
+        "name": "Shih-Yu Ma"
+      },
+      {
+        "name": "Zander Trafton-Hancock"
+      },
+      {
+        "name": "Ellen Yi-Luen Do"
+      },
+      {
+        "name": "Luca Turchet"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-02",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38299,
+    "ingested_at": "2026-11-03T08:56:16.010783",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.03389v1",
+    "scored_at": "2026-11-04T08:24:11.699811",
+    "title": "CrowdForge: Effects of Audio and Visual Audience Participation Modalities on Agency, Collaboration, and Engagement in AI-Mediated MR Performances",
+    "title_zh": null,
+    "tldr": "混合方法音乐会研究比较音频、视觉及音视频参与条件。可观察性是受众感知主导权的主要驱动因素：视觉交互提供清晰反馈，音频生成提供音乐结构控制；受众借此突破边界并加深参与，表演者成功化解挑战时产生创作连贯性。",
+    "topic_tags": [
+      "人机交互",
+      "人机协作",
+      "多模态交互",
+      "服务体验"
+    ],
+    "url": "https://arxiv.org/abs/2611.03389v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Background: Much of the enthusiasm for vibe coding rests on two intuitive beliefs: (1) that developers stay invested even when they no longer write the code, and (2) that delegating more of the work to AI lowers their cognitive load. Objective: Our goal was to investigate whether developers' neurophysiological states and interactions with AI are consistent with these beliefs when they work with agentic vs. non-agentic AI on their own project vs. a legacy codebase.   Method: We conducted an exploratory within-subjects crossover study with 11 participants across 22 sessions. Each participant used GitHub Copilot Chat in one session and Cursor Agents in the other, working on their own project and a legacy codebase, with tool-codebase pairings randomly assigned and session order counterbalanced. We recorded participants' EEG, on-screen activity, and prompts, and analyzed 7,924 EEG data points, 984 activities, and 141 prompts.   Results: Our findings contradict both beliefs. With the agent, participants remained indifferent to task outcomes, even on their own projects, and cognitive load was higher than with non-agentic AI. Furthermore, their ways of interacting shifted: with non-agentic AI, participants asked how the code worked and read it to verify changes; with the agent, they described desired app behavior and checked results in the running app.   Conclusion: Our study reveals a vibe paradox: delegating to an agent left participants motivationally disinterested, even on their own projects, without relieving cognitive load, while coinciding with increased trust in AI. The community should treat this paradox as a first-class concern if developers and their AI agents are to go far together, and not just fast.",
     "ai_reason": "开发者脑电实验，比较两类智能体",
     "ai_score": 5.0,
@@ -41206,6 +41322,523 @@
       "分布外泛化"
     ],
     "url": "https://arxiv.org/abs/2611.00661v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Multi-agent systems offer significant advantages in terms of flexibility and redundancy, enabling the efficient distribution of complex tasks among multiple robots. However, their deployment requires advanced control strategies to ensure optimal cooperation between autonomous agents and human operators. We propose a modification of the global connectivity maintenance algorithm to incorporate measurements taken in agent's local frame, using sensors with limited fields of view. This algorithm, responsible for the autonomous behavior of the multi-robot system, is combined with different adaptive supervision strategies, allowing the user to exert control at varying scales over the entire group. (i) Single Agent Control (S): The operator directly controls a single robot, (ii) Pinning Control (P): The operator imposes constraints on multiple robots to influence the group, (iii) Centroid Control (C): The operator acts on the system's center of mass to steer the entire fleet. In conjunction with the connectivity maintenance algorithm, these methods ensure compliance with inter-agent constraints while providing haptic feedback to the user regarding the system's connectivity state. The effectiveness of these approaches was evaluated through a user study, comparing performance with and without haptic feedback across multiple scenarios tailored to the different control modes.",
+    "ai_reason": "机器人自主协同与触觉共享控制",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Maxime Bernard"
+    ],
+    "authors_full": [
+      {
+        "name": "Maxime Bernard"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38398,
+    "ingested_at": "2026-11-04T08:23:33.091361",
+    "issue": null,
+    "journal": "arXiv:cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.05027v1",
+    "scored_at": "2026-11-04T08:24:07.633496",
+    "title": "Haptic Shared Control for Multi-Robot Systems",
+    "title_zh": "面向多机器人系统的触觉共享控制",
+    "tldr": "针对多机器人系统需在人工介入时兼顾群体连接约束的问题，将基于局部视野传感器的连接维护算法与单机器人控制、钉住约束和质心控制三种监督策略结合，并以触觉反馈呈现连接状态。用户研究比较有无触觉反馈的表现，评估三种共享控制模式的有效性。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "多智能体系统",
+      "共享控制",
+      "触觉交互"
+    ],
+    "url": "https://arxiv.org/abs/2611.05027v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "People like to keep their music listening fresh and interesting, but recommender systems often struggle to support this need. Even when a recommended song is potentially refreshing and enriching, listeners may not perceive it as such. Building on Silvia's appraisal theory of interest, this paper studies whether enhancing recommendations with spoken introductions, immersive or informative, can stimulate two distinct flavors of experienced serendipity: taste-broadening (sparking interest in music outside one's typical preferences) and taste-deepening (deepening interest in music within one's typical preferences). Results from a large-scale user study show that both introduction types stimulate taste-broadening and taste-deepening serendipity. Taste-broadening is most effectively stimulated through transportation (absorption in a narrative world), whereas taste-deepening is most effectively stimulated through cognitive elaboration (learning something new about the artist or the social context in which the music emerged). We discuss how these findings could be translated into practice through curated taste-broadening playlists, where both introduction types appear promising, and taste-deepening playlists, where informative introductions seem particularly effective.",
+    "ai_reason": "推荐系统实验检验听众新奇体验",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "AI 推荐",
+      "推荐算法",
+      "语音交互"
+    ],
+    "authors": [
+      "Brett Binst"
+    ],
+    "authors_full": [
+      {
+        "name": "Brett Binst"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38399,
+    "ingested_at": "2026-11-04T08:23:33.093588",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.04570v1",
+    "scored_at": "2026-11-04T08:24:07.633066",
+    "title": "Setting the Stage: Enhancing Music Recommendations with Spoken Introductions to Stimulate Serendipity",
+    "title_zh": "搭建舞台：以口播导语增强音乐推荐并激发意外发现",
+    "tldr": "针对音乐推荐中新奇事物却未被感知的问题，比较沉浸式与信息型口头导览对品味拓宽和品味深化两类意外性的作用。大规模用户研究发现两类导览均有效：叙事沉浸更利于拓宽品味，认知深化更利于加深品味，可据此设计差异化歌单。",
+    "topic_tags": [
+      "推荐系统",
+      "个性化",
+      "消费者行为",
+      "用户体验(UX)"
+    ],
+    "url": "https://arxiv.org/abs/2611.04570v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Recent advances in large language models (LLMs) have enabled coding agents to autonomously perform complex software development tasks, yet their long-running execution remains difficult for users to inspect, understand, and steer. We present Vibetrace, an interactive trace visualization and intervention system for agentic programming built upon OpenCode. Vibetrace introduces a human-agent collaboration paradigm of Observe, Understand, Intervene, and Evolve. It (1) visualizes agent workflows as interactive execution traces for inspecting actions, intermediate states, and failures; (2) enables users to fork execution from prior steps and provide targeted corrections without restarting validated progress; and (3) distills traces and human feedback into reusable skills for continual agent evolution. On SWE-bench Verified, distilled skills reduce input tokens by 23.0% and cost by 15.5%, while improving pass rate from 65.0% to 68.0%. User studies further demonstrate improved accuracy and efficiency over conventional log-based interaction.",
+    "ai_reason": "LLM编码代理交互与可干预轨迹可视化",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "人机交互",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Xiaoke Yan",
+      "Jiaying Lei",
+      "Danqing Shi",
+      "Zichen Wang",
+      "Nan Cao"
+    ],
+    "authors_full": [
+      {
+        "name": "Xiaoke Yan"
+      },
+      {
+        "name": "Jiaying Lei"
+      },
+      {
+        "name": "Danqing Shi"
+      },
+      {
+        "name": "Zichen Wang"
+      },
+      {
+        "name": "Nan Cao"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38400,
+    "ingested_at": "2026-11-04T08:23:33.095007",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.04466v1",
+    "scored_at": "2026-11-04T08:24:07.631761",
+    "title": "From Watching to Steering: Enabling Human-Coding Agent Collaboration through Execution Traces",
+    "title_zh": "从旁观到接管：通过执行轨迹实现人类与编程智能体协作",
+    "tldr": "Vibetrace 将编码智能体的长程执行过程呈现为可交互轨迹，支持从历史步骤分叉、定向纠错，并将轨迹与反馈沉淀为可复用技能。用户研究显示其提升任务准确率与效率；在 SWE-bench Verified 上，技能蒸馏使输入令牌和成本分别下降23.0%与15.5%，通过率由65.0%升至68.0%。",
+    "topic_tags": [
+      "可视化",
+      "人机协作",
+      "人机交互(HCI)",
+      "可解释性"
+    ],
+    "url": "https://arxiv.org/abs/2611.04466v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "When an AI agent executes an underspecified task, it embeds choices that may contradict unarticulated user context and preferences. However, interrupting the user for clarification on all such decisions is untenable. How might agents communicate impactful, but unexplored, paths to the user after execution? To investigate, we first distill a design space for communicating alternative paths, supporting the generation of new systems and structuring dimensions of future study. We then measure the impact of one vital design space dimension on user comprehension: the number of alternatives displayed. Through a user study (n=48) in the data analysis domain, we find that participants rarely consider alternative paths of their own volition, but AI overreliance reduces when alternative paths are visualized for them. By revealing paths the agent did not take, we demonstrate how users can better interpret results and incorporate personal context.",
+    "ai_reason": "智能体路径呈现，含48人用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "可解释AI",
+      "人机交互",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Madeleine Grunde-McLaughlin",
+      "Hafsah Usman",
+      "Daniel Mitroshkov",
+      "Emily Reif",
+      "Nino Migineishvili"
+    ],
+    "authors_full": [
+      {
+        "name": "Madeleine Grunde-McLaughlin"
+      },
+      {
+        "name": "Hafsah Usman"
+      },
+      {
+        "name": "Daniel Mitroshkov"
+      },
+      {
+        "name": "Emily Reif"
+      },
+      {
+        "name": "Nino Migineishvili"
+      },
+      {
+        "name": "Lakshya Chauhan. Kevin Yu"
+      },
+      {
+        "name": "Jeffrey Heer"
+      },
+      {
+        "name": "Daniel S. Weld"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38401,
+    "ingested_at": "2026-11-04T08:23:33.096245",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.04183v1",
+    "scored_at": "2026-11-04T08:24:14.013463",
+    "title": "Agentic Path Maps: Exposing an Agent's Traversal Through the Garden of Forking Paths",
+    "title_zh": "智能体路径图：揭示智能体穿行岔路花园的过程",
+    "tldr": "针对智能体执行含歧义任务时暗含选择、用户又难以逐项追问的问题，归纳“路径地图”设计空间，并在数据分析场景开展48人实验。用户很少主动设想替代路径，但可视化这些路径可减少对AI的过度依赖，并帮助其结合个人情境理解结果。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可解释性",
+      "可视化",
+      "AI依赖"
+    ],
+    "url": "https://arxiv.org/abs/2611.04183v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models (LLMs) are increasingly being used to turn citizens' opinions into collective proposals. These proposals can make assignments: who should act, what must be done, how much one should spend and by when. However, if the assignments change when the same opinions are processed again, publishing a single proposal can hide alternatives that participants never get to see. We examined this issue in four LLM mediators (three open-weight and one commercial) using opinions from DeliberationBank and Polis. For each task, a mediator drafted a proposal from thirty opinions five times, varying either the random seed or the order of the opinions. In 17% of five-run sets from the open-weight mediators and 20% from the commercial one, some runs contained assignments while others did not. Reordering the opinions changed the assignments almost as often as replacing them with opinions from different citizens. Three human annotators confirmed that the detected differences between runs were real, although the LLM judge overstated how often they occurred. Substantial variation remained under four safeguards: temperature zero, a commercial mediator, draft selection, and draft merging. The mediator's objective also shaped representation: prompts seeking agreement covered minority positions much less often than prompts asking to describe differences. A single proposal can therefore obscure choices in both the assignments it proposes and the views it excludes. We propose audits that make alternative assignments visible and disclose the objective behind each proposal.",
+    "ai_reason": "LLM辅助集体决策，含公民视角",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "AI治理",
+      "可解释AI"
+    ],
+    "authors": [
+      "Sachit Mahajan",
+      "Javier Argota S{á}nchez-Vaquerizo",
+      "Arthur Capozzi",
+      "Dirk Helbing"
+    ],
+    "authors_full": [
+      {
+        "name": "Sachit Mahajan"
+      },
+      {
+        "name": "Javier Argota S{á}nchez-Vaquerizo"
+      },
+      {
+        "name": "Arthur Capozzi"
+      },
+      {
+        "name": "Dirk Helbing"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38402,
+    "ingested_at": "2026-11-04T08:23:33.098429",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.05135v1",
+    "scored_at": "2026-11-04T08:24:14.013087",
+    "title": "From Opinions to Commitments: Unstable Assignments and Silent Choices in AI-Mediated Proposals",
+    "title_zh": "从意见到承诺：AI介导提案中的不稳定分配与无声选择",
+    "tldr": "检验LLM将公众意见汇总为集体提案时，重复运行与意见排序是否改变任务分工及沉默选项。四个中介模型显示，17%—20%的五轮结果存在差异，四项稳定性措施仍无法消除；追求共识还会减少少数立场，单份提案可能掩盖未呈现的选择。",
+    "topic_tags": [
+      "AI治理",
+      "伦理",
+      "集体决策",
+      "可解释性"
+    ],
+    "url": "https://arxiv.org/abs/2611.05135v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "In shared settings, social robots may need to exchange information with an individual while limiting co-present others' access to or interpretation of that information. Publicly observable speech and gestures may not adequately support such exchanges. We investigate a wearable-mediated channel for discreet interaction that combines in-ear audio messages with deliberate rightward head tilts as responses. To examine its feasibility and participants' experiences, we studied 20 pairs (40 participants) playing a card game with a screen-based conversational agent representing a social robot, controlled by a researcher in a Wizard-of-Oz setup. Each pair played with and without the channel. One participant wore the device (the wearer), while the other (the non-wearer) was informed about the channel after gameplay. The channel conveyed information that could help the wearer or robot character select an opponent they could defeat. The information exchange and subsequent opponent selection occurred as intended in 39 of 40 channel-mediated turns. Wearers reported low perceived pressure/tension in both conditions, with no statistically significant difference between conditions, and favorable usability immediately after use. Retrospective interviews, however, revealed varied accounts of noticing the interaction among non-wearers and contrasting perceptions of teamwork and unfairness. These findings support the feasibility of wearable-mediated exchanges within this game and identify awareness and fairness as considerations for future designs.",
+    "ai_reason": "可穿戴设备支持人机交互，含40人实验",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "人机交互",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Atikkhan Faridkhan Nilgar",
+      "Manuel Dietrich",
+      "Kristof Van Laerhoven"
+    ],
+    "authors_full": [
+      {
+        "name": "Atikkhan Faridkhan Nilgar"
+      },
+      {
+        "name": "Manuel Dietrich"
+      },
+      {
+        "name": "Kristof Van Laerhoven"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": "https://doi.org/10.1145/3861188.3861215",
+    "domain_score": 5.0,
+    "id": 38403,
+    "ingested_at": "2026-11-04T08:23:33.101546",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.04692v1",
+    "scored_at": "2026-11-04T08:24:14.012662",
+    "title": "Just Between Us? Exploring a Wearable-Mediated Channel for Discreet Human-Agent Interaction in a Shared Game Setting",
+    "title_zh": "只在我们之间吗：探索共享游戏场景中可穿戴设备介导的隐秘人机交互通道",
+    "tldr": "在共享卡牌场景中，检验耳内语音配合右倾头的可穿戴隐蔽交互通道。40人双组实验显示，40次交互中39次按预期完成，佩戴者压力低且可用性好，但旁观者察觉程度不一，并形成不同的团队与公平性认知。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可用性测试",
+      "可穿戴交互",
+      "共享空间"
+    ],
+    "url": "https://arxiv.org/abs/2611.04692v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Synthetic populations, large sets of simulated people, are increasingly used in place of real people to pretest surveys, simulate users and communities, and evaluate AI systems. Each simulated person is defined by a persona, a written profile of fixed traits, demographics, and attitudes that a language model is instructed to act out. Every such system assumes that a person's identity is a stable attribute that behaves the same way in every situation the simulation presents. We show that this assumption is not a harmless simplification. Three decades of personality research find the opposite. How a given person behaves varies more across contexts than people vary from one another. Drawing on identity economics, which describes how different situations activate different identities and norms within the same person, we separate behavior into three parts, which are stable traits, the identity a context calls up, and the situation itself. We then prove, under two stated assumptions, that any simulation built on fixed personas, no matter how detailed the personas or how large the underlying model, cannot reproduce the part of a population's behavior that is specific to it and its circumstances. We propose a new evaluation criterion based on this result and a person-in-context design that can meet it in principle. We test one version on a naturalistic Reddit personality corpus and on a published clinical-trial recruitment survey of a community with documented distrust of medical institutions. The design does produce context-dependent behavior when tested directly, but in neither setting does it fully match the real population, and we show where it falls short. The consequence for practice is a risk that synthetic-population evaluations misrepresent the groups whose behavior is most shaped by context, a distortion that richer personas cannot correct.",
+    "ai_reason": "聚焦LLM合成人群及用户画像效度",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "合成人群",
+      "用户模拟",
+      "AI 评估"
+    ],
+    "authors": [
+      "Tamunotonye Harry",
+      "Yuanyuan Feng"
+    ],
+    "authors_full": [
+      {
+        "name": "Tamunotonye Harry"
+      },
+      {
+        "name": "Yuanyuan Feng"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38404,
+    "ingested_at": "2026-11-04T08:23:33.103476",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.05292v1",
+    "scored_at": "2026-11-04T08:24:14.012151",
+    "title": "Personas Are Not People: Identity as State, Not Attribute",
+    "title_zh": "人物角色并非人：身份是状态而非属性",
+    "tldr": "针对固定人格模拟无法复现具体情境中群体行为的问题，区分稳定特质、情境唤起的身份与情境本身，证明固定人格方案存在理论局限，并提出以人在情境中为核心的评价标准与设计方法，在Reddit语料及临床试验招募调查上进行了验证。",
+    "topic_tags": [
+      "AI 用户画像",
+      "用户研究方法",
+      "情境行为",
+      "伦理"
+    ],
+    "url": "https://arxiv.org/abs/2611.05292v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language model (LLM) assistants increasingly advise backers on which crowdfunding campaigns to support. LLMs have known race and gender problems, and it is unsettled whether they reproduce, erase, or reverse the discrimination documented in entrepreneurial finance. We ask when, and through which decision process, LLM assistants use founders' gender and ethnicity. In a pre-specified choice-based conjoint experiment, seven LLMs chose among five synthetic campaigns with independently randomized quality signals and founder names, under three backer personas and a persona-free control (40,248 responses). By default, founder names barely matter: under budget-conscious and delivery-focused personas, gender and Black-name effects are statistically equivalent to zero. When the backer wants to support underrepresented creators, the models favor Black-signaled (+8.1 percentage points; positive in all seven models) and female-signaled (+5.1) founders. They do so most strongly among near-tied campaigns and for the founder who alone carries the signal, and they almost never name gender or ethnicity in their reasons. The results fit an agency account of algorithmic discrimination: an aligned assistant takes its demographic preferences from its user rather than from its training data.",
+    "ai_reason": "联合实验审计LLM对众筹消费者建议",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI 推荐",
+      "决策支持",
+      "AI 治理"
+    ],
+    "authors": [
+      "Mirza Samad Ahmed Baig",
+      "Syeda Anshrah Gillani"
+    ],
+    "authors_full": [
+      {
+        "name": "Mirza Samad Ahmed Baig"
+      },
+      {
+        "name": "Syeda Anshrah Gillani"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-02",
+    "doi": "https://doi.org/10.1016/j.jbvi.2026.e00682",
+    "domain_score": 5.0,
+    "id": 38405,
+    "ingested_at": "2026-11-04T08:23:33.105667",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.03993v1",
+    "scored_at": "2026-11-04T08:24:07.635524",
+    "title": "Whose startup does the AI back? An algorithm audit of reputation and demographic signals in LLM-assisted crowdfunding",
+    "title_zh": null,
+    "tldr": "基于预注册联合分析实验，审计7个LLM助手在众筹建议中的创始人性别与族裔使用。默认情况下模型很少受姓名影响；当用户表达支持弱势群体的偏好时，模型更倾向推荐黑人或女性创始人，且几乎不解释这些影响，呈现用户偏好驱动的算法歧视。",
+    "topic_tags": [
+      "算法审计",
+      "伦理",
+      "公平性",
+      "消费者行为"
+    ],
+    "url": "https://arxiv.org/abs/2611.03993v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Robotics and AI systems are increasingly deploying large vision-language models (LVLMs) to follow high-level instructions, from routine household chores to more complex organizational tasks. Yet, broad directives like \"clean the room\" or \"organize the desk\" frequently omit crucial details about user preferences and specific arrangement of objects that influence the desired outcome. Without any further guidance, such models tend to overestimate their grasp of ambiguous instructions and frequently assume they have sufficient understanding despite missing important details. In this paper, we propose CLARA (Conversational cLArification for Robotic Arrangement), a cognitively-driven clarification framework that proactively elicits key information from users, in a similar fashion as humans' clarification seeking behavior. Through targeted questioning, CLARA refines ambiguous requests into structured, detailed instructions describing precisely how objects should be organized or rearranged, according to the user's preferences. These clarifications then guide a diffusion-based image generation pipeline, producing realistic visual renderings of the final, desired scene. This final rendering also serves as a visual confirmation of the system's understanding from the user. Experimental results and user studies demonstrate that CLARA leads to more accurate and consistent outcomes compared to another State-of-the-Art LVLM system, highlighting the importance of interactive clarification for bridging the gap between vague directives and fully grounded task specifications.",
+    "ai_reason": "机器人交互中的用户澄清框架",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "多模态",
+      "LLM",
+      "图像生成",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Dimitrios Bekris",
+      "Marios Glytsos",
+      "Panagiotis P. Filntisis",
+      "Niki Efthymiou",
+      "George Retsinas"
+    ],
+    "authors_full": [
+      {
+        "name": "Dimitrios Bekris"
+      },
+      {
+        "name": "Marios Glytsos"
+      },
+      {
+        "name": "Panagiotis P. Filntisis"
+      },
+      {
+        "name": "Niki Efthymiou"
+      },
+      {
+        "name": "George Retsinas"
+      },
+      {
+        "name": "Petros Maragos"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38409,
+    "ingested_at": "2026-11-04T08:23:33.112567",
+    "issue": null,
+    "journal": "arXiv:cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.04708v1",
+    "scored_at": "2026-11-04T08:24:14.010422",
+    "title": "CLARA: A Cognitively-Driven Clarification Framework for Grounding Ambiguous Requests",
+    "title_zh": "CLARA：认知驱动的歧义请求澄清框架",
+    "tldr": "针对大视觉语言模型面对模糊指令时过度自信的问题，设计认知驱动的主动澄清框架，通过针对性提问将宽泛请求细化为结构化偏好，并以扩散模型生成场景供用户确认。实验与用户研究表明，该方法能获得更准确、一致的整理结果。",
+    "topic_tags": [
+      "对话式 AI",
+      "人机交互",
+      "歧义澄清",
+      "机器人"
+    ],
+    "url": "https://arxiv.org/abs/2611.04708v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Collaborative search enables users to address complex information needs jointly. Advances in large language models (LLMs) enable autonomous agents to support collaborative information seeking within shared communication spaces. However, little is known about how these agents shape search experiences, behaviors, and outcomes compared with conventional search tools. We conduct a user study with 80 students working in 40 pairs. Each pair completes four collaborative search tasks under four scenarios: QAAgent, which answers queries using an LLM's parametric knowledge; CoSearchAgent, which uses multi-user conversational context to reformulate queries, retrieve web information, and generate source-grounded answers, while asking clarifying questions when needed; an in-chat search plugin that returns result lists; and manual Google Search. After each task, participants complete several questionnaires assessing their search experience and independently write a report; after all tasks, they participate in individual interviews. Results show that LLM-based agents reduce perceived workload, support collaboration, and reshape communication and evidence-use practices. They also encourage more independent paraphrasing, albeit at the cost of report richness. To the best of our knowledge, this is the first systematic empirical comparison of LLM-based agents and conventional tools for collaborative search across search experience, user behavior, and collaborative outcomes.",
+    "ai_reason": "LLM协作搜索，含80人配对用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "对话式 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Peiyuan Gong",
+      "Jiamian Li",
+      "Erhan Zhang",
+      "Fengming Liang",
+      "Kexin Liu"
+    ],
+    "authors_full": [
+      {
+        "name": "Peiyuan Gong"
+      },
+      {
+        "name": "Jiamian Li"
+      },
+      {
+        "name": "Erhan Zhang"
+      },
+      {
+        "name": "Fengming Liang"
+      },
+      {
+        "name": "Kexin Liu"
+      },
+      {
+        "name": "Yue Chen"
+      },
+      {
+        "name": "Jiaxin Mao"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38413,
+    "ingested_at": "2026-11-04T08:23:33.127979",
+    "issue": null,
+    "journal": "arXiv:cs.IR",
+    "pdf_url": "https://arxiv.org/pdf/2611.04619v1",
+    "scored_at": "2026-11-04T08:24:14.009170",
+    "title": "Collaborative Search Meets Large Language Models: An Empirical Study",
+    "title_zh": "协作式搜索遇上大语言模型：实证研究",
+    "tldr": "80名学生组成40组，对比问答智能体、协作搜索智能体、聊天搜索插件与人工谷歌搜索。结合问卷、报告和访谈发现，LLM智能体可降低感知负担、促进协作，并改变沟通与证据使用方式；其促进独立改写，但也可能降低报告丰富度。",
+    "topic_tags": [
+      "用户研究方法",
+      "协作搜索",
+      "信息检索",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2611.04619v1",
     "volume": null,
     "year": 2026
   },
@@ -83722,6 +84355,65 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107239",
     "volume": "131",
     "year": 2022
+  },
+  {
+    "abstract": "While machine learning can produce complex models beyond those that a human could produce manually, incorporating human input can often improve intelligent system performance beyond purely data-driven models. These human-in-the-loop approaches can also be used to dynamically update a model in the presence of shifting data or system goals. While this feedback could come from system designers or domain experts, in many cases, the end users who regularly use the system will naturally develop an understanding of its flaws and desire the ability to change the system’s behavior based on their knowledge. While soliciting feedback from end users can result in significant model improvement over time, introducing these feedback techniques can also affect several human factors—such as trust or perception of system accuracy—that are not yet fully understood and have different effects reported in the existing literature. Therefore, we sought to build on the existing research to further explore how the act of providing feedback can affect user understanding of an intelligent system and its accuracy in different contexts. We present three controlled experiments that study the effects of interactive feedback collections on user impressions in domains with objective and subjective feedback. The results show that in a context where there is an objectively correct answer, providing human-in-the-loop feedback lowered both participants’ trust in the system and their perception of system accuracy, regardless of whether the system accuracy improved in response to their feedback. However, when the feedback being provided involved subjective opinion, no such negative bias was observed. Furthermore, in the objective context, participants distrusted the system over time, whereas participants in the subjective context mistrusted the system over time. These results highlight the importance of considering the effects of allowing different types of end-user feedback on user trust when designing intelligent systems.",
+    "ai_reason": "实验检验用户反馈、准确感知与信任",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人在回路",
+      "交互式机器学习"
+    ],
+    "authors": [
+      "Donald R. Honeycutt",
+      "Mahsan Nourani",
+      "Eric D. Ragan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Florida, USA"
+        ],
+        "name": "Donald R. Honeycutt",
+        "orcid": "https://orcid.org/0000-0002-2188-3266"
+      },
+      {
+        "affiliation": [
+          "Northeastern University, USA"
+        ],
+        "name": "Mahsan Nourani",
+        "orcid": "https://orcid.org/0000-0002-8823-9635"
+      },
+      {
+        "affiliation": [
+          "University of Florida, USA"
+        ],
+        "name": "Eric D. Ragan",
+        "orcid": "https://orcid.org/0000-0002-7192-3457"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-03",
+    "doi": "10.1145/3858336",
+    "domain_score": 5.0,
+    "id": 38366,
+    "ingested_at": "2026-11-04T08:23:27.797202",
+    "issue": null,
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-11-04T08:24:07.634699",
+    "title": "Human-in-the-Loop User Feedback Affects Perceived Accuracy and Trust, but Task Subjectivity Matters",
+    "title_zh": null,
+    "tldr": "三项受控实验比较客观与主观任务中的终端用户反馈。结果表明，反馈对信任和感知准确性的影响取决于任务主观性；在存在客观正确答案的情境中，提供反馈反而降低了对系统的信任及其准确性的感知。",
+    "topic_tags": [
+      "人机交互",
+      "信任",
+      "人机协作",
+      "用户反馈"
+    ],
+    "url": "https://doi.org/10.1145/3858336",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,

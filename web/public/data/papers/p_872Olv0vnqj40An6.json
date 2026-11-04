@@ -1,0 +1,58 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly used to annotate text for social science research, content moderation, and training data. Their broad knowledge of real-world entities raises a concern: when labeling a text, do they rely on its evidence or substitute what they already know? We call this behavior a memory shortcut and examine when it emerges, what amplifies it, and how to mitigate it. Using 995 widely recognized public figures and four matched control names per figure, we construct counterfactual texts that separate textual evidence from prior knowledge, and evaluate three commercial LLMs on 121,594 prompts each across five stages. We find a striking asymmetry. Although all models recognize nearly every figure, none follows memory over the text when the two conflict. Shortcuts instead emerge when evidence is absent: for one model, famous names raise the rate of remembered occupations, ages, and countries by 17.0, 14.9, and 6.8 percentage points relative to synthetic names. These effects occur only for recognized figures, and 98.6% of the resulting labels are factually correct about the namesake while none is supported by the text. Evaluation threats and answer-contingent rewards amplify shortcuts by 8.7 and 12.4 points. Famous names also raise leadership ratings of sparsely documented applicants by 0.22 and 0.28 points in two models. A namesake reminder and name masking each eliminate the shortcuts, with trade-offs in gender annotation. LLM annotations can thus be factually correct yet methodologically invalid. Trustworthy LLM annotation requires audits that test evidence absence, account for incentives in annotation instructions, and evaluate the attribute-specific trade-offs of mitigation.",
+  "ai_type_tags": [
+    "LLM",
+    "文本标注",
+    "算法偏见"
+  ],
+  "arxiv_id": "2611.02273",
+  "authors": [
+    "Wenchang Wang",
+    "Yue Song"
+  ],
+  "authors_full": [
+    {
+      "name": "Wenchang Wang"
+    },
+    {
+      "name": "Yue Song"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "聚焦LLM标注效度，属社会科学方法研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "用995名知名人物及匹配对照构造证据与既有知识冲突的反事实文本，对三种商业LLM开展大规模标注实验。发现模型在证据缺失时会凭记忆补全人物属性，产生文本不支持但事实正确的标签；评估威胁与奖励会加剧该捷径，姓名遮蔽或提醒可缓解，但存在性别标注代价。",
+      "topic_tags": [
+        "偏见",
+        "信任",
+        "内容审核",
+        "研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-01",
+  "doi": null,
+  "id": "p_872Olv0vnqj40An6",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2611.02273v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83726,
+      "revision": "35195481e7758ad9bde28bfaa114f14fdfcbf52d"
+    }
+  ],
+  "title": "When the Text Is Silent: Memory Shortcuts and the Validity of LLM Annotation under Evidence Insufficiency",
+  "title_zh": "文本缄默时：证据不足下记忆捷径与LLM标注效度",
+  "unified_ingested_at": "2026-11-04T08:44:46.773545Z",
+  "url": "https://arxiv.org/abs/2611.02273v1",
+  "volume": null,
+  "year": 2026
+}

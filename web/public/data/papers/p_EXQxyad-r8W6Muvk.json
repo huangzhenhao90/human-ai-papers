@@ -1,0 +1,61 @@
+{
+  "abstract": "Career-support assistants must distinguish user claims from evidence of current ability and withhold judgments when evidence is insufficient. DrawOffer separates language-model observation extraction from deterministic inference over source-linked records to maintain uncertain ability estimates, experience assessments, and revisable issues. We evaluate 102 fictional personas with 580 scored checkpoints, a historical full-context and Mem0 comparison, and three auxiliary knowledge-tracing datasets. On 37 test personas, DrawOffer passes 169/210 checkpoints; checkpoint-defined issue precision and recall are 0.875 and 0.636. Across three development simulations, 87.0% of checkpoint verdicts agree, including persistent failures. A cache-only development ablation replacing answer-evidence requirements with confidence-only settlement reduces majority-vote passes from 306 to 293 of 370 and issue precision from 0.927 to 0.725. Equalizing positive source weights improves predictive metrics without changing total passes; removing decay gives mixed results. These findings support an exploratory systems contribution centered on evidence sufficiency. Developer-authored scenarios, unmatched baseline models, historical test exposure, and incomplete public artifacts limit generalization and independent reproduction.",
+  "ai_type_tags": [
+    "LLM",
+    "人机协作",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2611.02793",
+  "authors": [
+    "Lele Xu",
+    "Yuning Bian",
+    "Yifan Yuan"
+  ],
+  "authors_full": [
+    {
+      "name": "Lele Xu"
+    },
+    {
+      "name": "Yuning Bian"
+    },
+    {
+      "name": "Yifan Yuan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "以语言模型建模职业支持能力与证据",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "考察职业支持助手能否区分用户自述与能力证据，并在证据不足时避免武断。DrawOffer将LLM观察抽取与基于可溯源记录的确定性推断分离，以102个角色、580个检查点及对照数据集评测；37个测试角色通过169/210项检查，证据门槛提高问题识别精确率，但泛化与复现仍受限。",
+      "topic_tags": [
+        "职业发展",
+        "决策",
+        "知识管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-02",
+  "doi": null,
+  "id": "p_EXQxyad-r8W6Muvk",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.02793v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83719,
+      "revision": "35195481e7758ad9bde28bfaa114f14fdfcbf52d"
+    }
+  ],
+  "title": "DrawOffer: Evidence-Grounded Longitudinal User-State Modeling for Career Support",
+  "title_zh": "DrawOffer：面向职业支持的循证纵向用户状态建模",
+  "unified_ingested_at": "2026-11-04T08:44:46.773545Z",
+  "url": "https://arxiv.org/abs/2611.02793v1",
+  "volume": null,
+  "year": 2026
+}

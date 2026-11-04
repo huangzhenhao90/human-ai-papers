@@ -1,10 +1,9 @@
 {
   "abstract": "Scholarly sensemaking requires researchers to iteratively retrieve, collect, and synthesize literature as their understanding evolves. However, existing scholarly tools provide only partial support for this process. Recent artificial intelligence (AI)-based systems generally rely on opaque submit-and-wait pipelines that it users' ability to inspect, revise, and validate intermediate outputs. In this study, we present HiPaper, a human-AI collaborative literature review system informed by a formative study with academic experts. HiPaper organizes scholarly sensemaking as a three-stage interactive workflow spanning Retrieval, Collection, andSynthesis, centralized on the human-in-the-loop paradigm that exposes intermediate AI-generated content for user inspection and intervention through a persistent workspace called Knowledge Pocket. Through this workflow, users can iteratively refine search intent, curate and organize papers with AI-enriched metadata and clustering, and conduct evidence-traceable synthesis over selected literature. Our user study with 14 Ph.D. students showed that HiPaper efficiently supports scholarly sensemaking by enabling human-AI collaboration in both familiar and unfamiliar domains. Furthermore, the findings highlight how staged interactions with intermediate AI-generated content successfully scaffold user interactions throughout the sensemaking process.",
   "ai_type_tags": [
-    "AI助手",
     "人机协作",
     "人机交互",
-    "可解释AI"
+    "AI辅助科研"
   ],
   "arxiv_id": "2611.00762",
   "authors": [
@@ -44,6 +43,18 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "研究人机协同文献筛选与知识整合",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "面向学术文献筛选与意义建构中现有工具支持局部、黑箱式“提交—等待”流程的问题，基于专家形成性研究与14名博士生用户研究，设计检索、收集、综合三阶段人机协同系统HiPaper。结果表明，分阶段暴露并允许干预中间生成内容，可提升跨熟悉与陌生领域的文献理解效率。",
+      "topic_tags": [
+        "知识管理",
+        "信息检索",
+        "人机协作",
+        "科研工作流"
+      ]
+    },
     "ur": {
       "ai_reason": "专家形成性研究驱动人机协同文献工作流",
       "ai_score": 5.0,
@@ -58,6 +69,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 0,
@@ -69,13 +81,18 @@
   "pdf_url": "https://arxiv.org/pdf/2611.00762v1",
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 83716,
+      "revision": "35195481e7758ad9bde28bfaa114f14fdfcbf52d"
+    },
+    {
       "channel": "ur",
       "legacy_id": 38291,
-      "revision": "10f0b106b6a1bcda5ce8dc256f1223417a5150a9"
+      "revision": "c60c526127756b1a54efa374f01f7f58a1b163e6"
     }
   ],
   "title": "HiPaper: A Human-AI Collaborative System for Academic Literature Triage and Scholarly Sensemaking",
-  "title_zh": "HiPaper：用于学术文献甄选与科研意义建构的人机协作系统",
+  "title_zh": "HiPaper：用于学术文献甄选与意义构建的人机协同系统",
   "unified_ingested_at": "2026-11-03T09:08:24.566438Z",
   "url": "https://arxiv.org/abs/2611.00762v1",
   "volume": null,

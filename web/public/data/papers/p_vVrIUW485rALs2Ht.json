@@ -2,8 +2,9 @@
   "abstract": "As AI systems are increasingly deployed in high-stakes domains such as healthcare, effectively integrating human expertise with AI outputs is critical for reliable decision-making. A substantial body of theoretical work studies optimal mechanisms for human-AI collaboration (HAC), focusing on when to involve humans and how to combine their expertise with AI predictions. However, these approaches largely overlook a key factor highlighted by empirical evidence: human judgments are impressionable and can vary depending on how AI outputs are presented. For example, when AI systems defer decisions to humans, revealing or withholding the AI prediction can significantly influence human judgments. Moreover, existing work neglects deployment-time variability, where conditions, particularly the cost of eliciting human input, may differ substantially from those observed during training. To address these challenges, we introduce a rigorous and theoretically grounded framework for human-AI collaboration, termed collaborative omnimechanism design, based on a novel and computationally efficient contextual bandit variant of boosting for outcome indistinguishability. In particular, we reduce a calibration-type outcome indistinguishability condition to weighted calibration, providing a novel time-efficiency result, bypassing the high-dimension curse induced by complicated collaboration methods and outcome space. Our framework provides a principled characterization of human impressionability and introduces a unified optimization scheme that enables robust and adaptable decision-making across diverse query costs and evaluation objectives without retraining. We evaluate the framework in three HAC settings, examining adaptation to query costs and prediction objectives without retraining, and show that its induced policies perform comparably to or better than the evaluated baselines.",
   "ai_type_tags": [
     "人机协作",
-    "决策支持 AI",
-    "上下文老虎机"
+    "上下文赌博机",
+    "机器学习",
+    "算法决策"
   ],
   "arxiv_id": "2611.00441",
   "authors": [
@@ -37,6 +38,18 @@
     }
   ],
   "channel_profiles": {
+    "ob": {
+      "ai_reason": "机制设计优化人机协同决策",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对高风险场景中人类判断易受AI呈现方式影响、且部署环境与训练环境不一致的问题，构建人机协作全机制设计框架。以提升算法为基础的上下文赌博机变体刻画结果不可区分性，并将其化归为加权校准，兼顾人类判断、征询成本与在线适应。",
+      "topic_tags": [
+        "人机协作",
+        "决策",
+        "算法管理",
+        "人机交互"
+      ]
+    },
     "ur": {
       "ai_reason": "核心研究AI呈现如何影响人类判断与协作",
       "ai_score": 5.0,
@@ -51,6 +64,7 @@
     }
   },
   "channels": [
+    "ob",
     "ur"
   ],
   "cited_by": 0,
@@ -62,13 +76,18 @@
   "pdf_url": "https://arxiv.org/pdf/2611.00441v1",
   "source_refs": [
     {
+      "channel": "ob",
+      "legacy_id": 83717,
+      "revision": "35195481e7758ad9bde28bfaa114f14fdfcbf52d"
+    },
+    {
       "channel": "ur",
       "legacy_id": 38297,
-      "revision": "10f0b106b6a1bcda5ce8dc256f1223417a5150a9"
+      "revision": "c60c526127756b1a54efa374f01f7f58a1b163e6"
     }
   ],
   "title": "OmniMechanism Design for Human-AI Collaboration with Impressionable Minds",
-  "title_zh": "OmniMechanism 设计：面向易受影响心智的人机协作",
+  "title_zh": "OmniMechanism：面向易受影响心智的人机协作设计",
   "unified_ingested_at": "2026-11-03T09:08:24.566438Z",
   "url": "https://arxiv.org/abs/2611.00441v1",
   "volume": null,

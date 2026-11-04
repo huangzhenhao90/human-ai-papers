@@ -1,0 +1,73 @@
+{
+  "abstract": "Human preferences change over time: an established preference may remain valid over time, become uncertain as context shifts, or be explicitly revised. Effective personalization requires conversational AI to adapt its response strategy to evolving preferences rather than relying on passive memory retrieval. We formalize this capability as adaptive personalization under epistemic uncertainty. A human preference study further confirms that people favor state-contingent response strategies as preference uncertainty changes. To evaluate whether language models mirror this adaptation, we create a multilingual benchmark spanning 250 personas, 5 languages, and 25K conversational turns that decouples strategy selection from response execution. Across eight closed- and open-weight models, we uncover a recognition-generation gap: models reliably identify appropriate strategies when selecting among candidate options, but collapse during open-ended generation, suffering a 35-46% drop in strategy calibration. Crucially, this failure is systematic: models default to exploit-first behavior, over-relying on existing preferences regardless of preference epistemic uncertainty. We show this failure is addressable: while prompting interventions fail, targeted training that supervises models' internal strategy representations toward state-conditional human preferences narrows the user acceptability generalization gap by a third on out-of-distribution personas and conversational styles.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "人机交互"
+  ],
+  "arxiv_id": "2610.40930",
+  "authors": [
+    "Priyanka Dey",
+    "Rajarshi Das",
+    "Vikas Bahirwani",
+    "Qi Zeng",
+    "Julia Kruk"
+  ],
+  "authors_full": [
+    {
+      "name": "Priyanka Dey"
+    },
+    {
+      "name": "Rajarshi Das"
+    },
+    {
+      "name": "Vikas Bahirwani"
+    },
+    {
+      "name": "Qi Zeng"
+    },
+    {
+      "name": "Julia Kruk"
+    },
+    {
+      "name": "Qi Qi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "含人类偏好研究，聚焦对话AI个性化",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "针对偏好随情境变化而产生的不确定性，比较人类偏好的情境依赖策略与8个语言模型在多语种多轮对话中的策略选择。模型虽能识别合适策略，实际生成时校准却下降35%—46%，且偏爱沿用既有偏好；提示无效，定向训练内部策略表示可缩小分布外用户可接受性差距约三分之一。",
+      "topic_tags": [
+        "个性化",
+        "对话式 AI",
+        "人机交互",
+        "用户偏好"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-29",
+  "doi": null,
+  "id": "p_Xa56dr6JGcnlk5uR",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2610.40930v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38212,
+      "revision": "c60c526127756b1a54efa374f01f7f58a1b163e6"
+    }
+  ],
+  "title": "Adaptive Personalization Under Preference Epistemic Uncertainty",
+  "title_zh": "偏好认知不确定性下的自适应个性化",
+  "unified_ingested_at": "2026-11-04T08:44:46.773545Z",
+  "url": "https://arxiv.org/abs/2610.40930v1",
+  "volume": null,
+  "year": 2026
+}

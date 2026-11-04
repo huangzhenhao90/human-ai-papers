@@ -1,0 +1,55 @@
+{
+  "abstract": "An online retailer launching a perishable product bids for sponsored-search clicks, discounts a bundle with an always-stocked staple and displays its remaining stock, which raises willingness to pay. It knows neither how clicks respond to its bid nor how strong and dispersed its market is, and learns both over repeated seasons from data its own decisions censor: a zero bid reveals nothing about paid clicks, and choices follow only clicks. We design a posterior-sampling agent for it. Each period it draws a market from an exact posterior and posts the bid and discount of that market's exactly solved season plan, so every action is one a fully informed seller could take. In a simulated online florist it has the lowest regret averaged over markets. In weak markets it gives up 12% to 23% of one season's revenue over 500 seasons, four to seven times less than drawing once per season. A planner acting on point estimates can stop bidding and never learn that bidding pays. The agent escapes after about three seasons on average, against fifty with one draw per season. Where displayed scarcity keeps willingness to pay above the posted price, the discount needs no learning. Customers waiting for the discount to return to its recent level look like lost sales, so frequent waiting makes the agent underrate its market. One discount per season removes waiting at a cost of 5.9% of clairvoyant revenue in a weak market and none in a strong one.",
+  "ai_type_tags": [
+    "机器学习",
+    "强化学习",
+    "贝叶斯决策",
+    "算法决策"
+  ],
+  "arxiv_id": "2611.00165",
+  "authors": [
+    "Hadi Mohammadi"
+  ],
+  "authors_full": [
+    {
+      "name": "Hadi Mohammadi"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "学习代理优化零售竞价与产品捆绑",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对在线零售商在需求响应与市场强度未知、决策造成数据删失条件下学习竞价和捆绑折扣的问题，设计精确后验抽样智能体，并在模拟花店中比较后悔值与学习速度。该方法平均后悔最低，能在约3个季节内发现竞价收益，明显优于每季仅抽样一次及依赖点估计的规划者。",
+      "topic_tags": [
+        "营销",
+        "定价决策",
+        "在线零售",
+        "消费者行为"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-30",
+  "doi": null,
+  "id": "p_F1gG-D2NZI07mlJT",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.00165v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83724,
+      "revision": "35195481e7758ad9bde28bfaa114f14fdfcbf52d"
+    }
+  ],
+  "title": "Learning to bid and bundle: a posterior-sampling agent for online retail",
+  "title_zh": "学习竞价与捆绑：面向在线零售的后验采样智能体",
+  "unified_ingested_at": "2026-11-04T08:44:46.773545Z",
+  "url": "https://arxiv.org/abs/2611.00165v1",
+  "volume": null,
+  "year": 2026
+}

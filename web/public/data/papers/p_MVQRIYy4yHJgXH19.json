@@ -1,0 +1,52 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly considered for education, recruitment, workplace decision support, and other consequential applications, making pre-deployment social-bias detection essential. Yet major benchmarks are English-centred or translated, focus mainly on negative stereotypes, and may miss linguistic and cultural variation. We investigate gender, racial, and religious bias using 12,000 locally written Reddit posts in English, Spanish, French, and German. Only search terms are translated, preserving local context. The dataset is balanced by language and category; English gender is additionally balanced by stereotype valence. Three open-weight and three proprietary API-based models are evaluated with a two-blank design that reduces grammatical-gender cues. Religion has the highest absolute choice imbalance in every model-language condition. Spanish is highest for gender, whereas German is highest for race and religion. The evaluated API models score below the open-weight models throughout. Negative English-gender items exceed positive items; Australian and Mexican contexts exceed their Canadian and Spanish counterparts. These descriptive differences measure choice concentration, not stereotype endorsement or causal country effects. The crossed patterns show how aggregate scores can conceal category- and context-specific behaviour, motivating closer inspection before deployment.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策"
+  ],
+  "arxiv_id": "2611.02585",
+  "authors": [
+    "Zihao Sun"
+  ],
+  "authors_full": [
+    {
+      "name": "Zihao Sun"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "审计多语种LLM刻板偏见，含职场应用",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对英语中心、仅测负面刻板印象的评测缺口，以英、西、法、德语1.2万条本地Reddit帖子审计6个LLM的性别、种族和宗教偏差。宗教在所有模型—语言组合中失衡最高，差异随语言和效价变化，API模型得分整体低于开放权重模型；结果仅反映选择集中度，不等同于刻板印象认同。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-02",
+  "doi": null,
+  "id": "p_MVQRIYy4yHJgXH19",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.02585v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83725,
+      "revision": "35195481e7758ad9bde28bfaa114f14fdfcbf52d"
+    }
+  ],
+  "title": "From Language to Country to Valence: A Multilingual Audit of Stereotype Bias Across LLMs",
+  "title_zh": "从语言到国别再到效价：LLMs刻板印象偏见的多语言审计",
+  "unified_ingested_at": "2026-11-04T08:44:46.773545Z",
+  "url": "https://arxiv.org/abs/2611.02585v1",
+  "volume": null,
+  "year": 2026
+}

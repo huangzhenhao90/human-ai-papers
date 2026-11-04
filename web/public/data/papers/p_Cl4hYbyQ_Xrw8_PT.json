@@ -1,0 +1,58 @@
+{
+  "abstract": "Organizations adopting AI face the challenge of deciding which outputs can be released without human review while meeting the quality standards of human experts. We develop a statistical framework for delegating tasks between experts and black-box generate-verify workflows, in which AI-generated answers are verified and revised over multiple rounds. Before deployment, human experts evaluate selected outputs, and their judgments are used to calibrate the verifier threshold and number of attempts. Our method selects the policy with the highest estimated automation rate among statistically approved candidates, without modifying the generator or verifier. We establish finite-sample control of the error rate among released outputs, characterize the expert evaluations sufficient to attain a target automation rate, and derive a minimax lower bound establishing rate optimality in the quality margin and required confidence. In a MultiHiertt financial question-answering case study, average held-out automation increases from 2.50% to 24.17% as expert evaluations accumulate, while released-output error rates remain around 1.20%. In contrast, heuristics that release answers after consistently high verifier scores either violate the 5% error tolerance or automate at most 1.30% of tasks. Synthetic experiments further examine these theoretical predictions under controlled settings.",
+  "ai_type_tags": [
+    "GenAI",
+    "智能体",
+    "算法决策"
+  ],
+  "arxiv_id": "2611.01566",
+  "authors": [
+    "Young Hyun Cho",
+    "Will Wei Sun"
+  ],
+  "authors_full": [
+    {
+      "name": "Young Hyun Cho"
+    },
+    {
+      "name": "Will Wei Sun"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "聚焦组织中的人机协作与任务授权",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "提出专家与黑盒生成—验证流程间的任务委派框架，利用专家评价校准阈值，在控制发布错误率的同时最大化自动化；金融问答实验中，自动化率由2.50%升至24.17%，错误率约1.20%。",
+      "topic_tags": [
+        "人机协作",
+        "决策",
+        "质量控制",
+        "工作设计"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-01",
+  "doi": null,
+  "id": "p_Cl4hYbyQ_Xrw8_PT",
+  "issue": null,
+  "journal": "arXiv:stat.ML",
+  "pdf_url": "https://arxiv.org/pdf/2611.01566v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83715,
+      "revision": "35195481e7758ad9bde28bfaa114f14fdfcbf52d"
+    }
+  ],
+  "title": "Principled Human-AI Collaboration in Agentic Workflows",
+  "title_zh": "智能体工作流中基于原理的人机协作",
+  "unified_ingested_at": "2026-11-04T08:44:46.773545Z",
+  "url": "https://arxiv.org/abs/2611.01566v1",
+  "volume": null,
+  "year": 2026
+}
