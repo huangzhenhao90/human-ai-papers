@@ -1,0 +1,59 @@
+{
+  "abstract": "In natural human-AI dialogue, users' corrections, requests, and self-descriptions carry reusable signals about how they want work to be done. These signals reveal individual process preferences, user-specific standards for evidence, depth, analytical focus, procedure, and delivery. We ask whether a preference revealed in one dialogue can shape an assistant's later answer when the task does not restate it. ProcessPrefBench uses three months of natural dialogues from two knowledge workers to build 66 source-target cases separately judged for source evidence and target applicability. Sources are preselected, so the benchmark tests application rather than retrieval. We test three models with target-only, full-history, and distilled-preference prompts. Target-specific 0-2 rubrics score preference realization, and a task gate flags severe failures. Compared with target-only prompting, full-history and imperative distilled-preference prompting raise preference realization by 0.204 and 0.244 points on the 0-2 scale, respectively, with no reliable advantage from distillation. Fabricated-evidence failures rise from 5.8% under target-only prompting to 10.1% under full-history and 10.4% under imperative prompting. ProcessPrefBench highlights a tension in learning from dialogue, where drawing on prior interactions can improve preference realization yet also invite fabricated evidence. We hope it helps build assistants that honor a user's process preferences without sacrificing factual reliability.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "AI 助手",
+    "人机交互"
+  ],
+  "arxiv_id": "2611.06065",
+  "authors": [
+    "Yiwen Yang",
+    "Guanming Liu"
+  ],
+  "authors_full": [
+    {
+      "name": "Yiwen Yang"
+    },
+    {
+      "name": "Guanming Liu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以自然人机对话评测个体流程偏好",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "基于两名知识工作者三个月自然对话构建66组跨任务偏好迁移案例，对比三种提示策略；历史信息使偏好落实提高0.204—0.244分，却使捏造证据率由5.8%升至约10%，揭示个性化收益与事实风险的权衡。",
+      "topic_tags": [
+        "个性化",
+        "对话式 AI",
+        "用户画像",
+        "人机交互"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-04",
+  "doi": "10.18653/2026.lmplayschool-1.3",
+  "id": "p_hzvwmzzhuGIA0jqa",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.06065v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38536,
+      "revision": "5407bea2c6289c1b7ca142efb3fcf1fec231db75"
+    }
+  ],
+  "title": "ProcessPrefBench: Evaluating Cross-Task Transfer of Individual Process Preferences from Naturalistic Human-AI Interaction",
+  "title_zh": "ProcessPrefBench：评估自然情境人机交互中个体过程偏好的跨任务迁移",
+  "unified_ingested_at": "2026-11-05T09:07:57.666513Z",
+  "url": "https://arxiv.org/abs/2611.06065v1",
+  "volume": null,
+  "year": 2026
+}
