@@ -1,0 +1,79 @@
+{
+  "abstract": "Large language models have made rapid progress in agentic reasoning and tool use, raising expectations for agents that can take over realistic productivity work from humans. However, current agents still struggle to finish such tasks, where success requires following long-horizon professional workflows, understanding heterogeneous file contexts, and producing usable deliverables under fine-grained requirements. A key bottleneck is the lack of scalable post-training data that reflects real work intent, authentic file environments, and deliverable-level evaluation. To close this gap, we introduce Agent-R$^2$, a $\\textbf{r}$eal-source data synthesis framework that scales training data for $\\textbf{r}$ealistic productivity work. Instead of relying on manually specified workflows or LLM-generated files, Agent-R$^2$ grounds synthesis throughout the pipeline in real occupational seeds, corpus-derived workflow evidence, and authentic web-sourced files. From 10k web-corpus candidates, Agent-R$^2$ distills 4k task instances that pair real multi-format attachments with fine-grained, deliverable-level rubrics. On this data, we train Agent-R$^2$-4B via supervised fine-tuning and rubric-based reinforcement learning, improving both end-to-end productivity performance and file-grounded reasoning. Trained on only 4k instances, Agent-R$^2$-4B surpasses Qwen3-235B-A22B-Thinking-2507 on both GDPval (51.0$\\%$ vs. 48.0$\\%$) and OfficeQA (14.8$\\%$ vs. 13.8$\\%$). Further analysis shows that Agent-R$^2$ mitigates shortcut behavior, where agents produce superficially plausible deliverables before sufficiently grounding, constructing, or verifying them, while promoting sustained exploration.",
+  "ai_type_tags": [
+    "LLM",
+    "AI智能体",
+    "监督微调",
+    "强化学习"
+  ],
+  "arxiv_id": "2611.08219",
+  "authors": [
+    "Teng Pan",
+    "Zixuan Wang",
+    "Yuchen Yan",
+    "Qifei Wu",
+    "Yao Chen"
+  ],
+  "authors_full": [
+    {
+      "name": "Teng Pan"
+    },
+    {
+      "name": "Zixuan Wang"
+    },
+    {
+      "name": "Yuchen Yan"
+    },
+    {
+      "name": "Qifei Wu"
+    },
+    {
+      "name": "Yao Chen"
+    },
+    {
+      "name": "Yingqi Qu"
+    },
+    {
+      "name": "Ruiqing Zhang"
+    },
+    {
+      "name": "Yongliang Shen"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心为LLM智能体与真实任务训练",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对智能体难以完成长流程生产力任务及真实训练数据稀缺的问题，构建基于职业任务、语料工作流和真实网页文件的数据合成框架，生成4000个含多格式附件与细粒度评分的任务。经监督微调和评分强化学习训练后，4B模型在GDPval与OfficeQA上超过235B模型。",
+      "topic_tags": [
+        "工作未来",
+        "知识管理",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-05",
+  "doi": null,
+  "id": "p_xUO0lTH94VWI5JXA",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.08219v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83974,
+      "revision": "891ef3daa1c1c8b601f721a20cdecc46ce8dd348"
+    }
+  ],
+  "title": "Agent-R$^2$: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+  "title_zh": "Agent-R^2：通过真实来源数据合成扩展智能体以提升真实工作生产力",
+  "unified_ingested_at": "2026-11-06T09:00:55.953239Z",
+  "url": "https://arxiv.org/abs/2611.08219v1",
+  "volume": null,
+  "year": 2026
+}

@@ -1,5 +1,196 @@
 [
   {
+    "abstract": "Abstract Psychotropic medications are commonly prescribed to children with neurodevelopmental conditions, but responses vary widely, prescribing is largely off-label, and the expertise required is concentrated in specialized programs. We developed artificial intelligence models to predict prescribing patterns of stimulants, anti-depressants, and anti-psychotics. Feasibility was established in research cohorts by predicting cross-sectional medication use from the Child Behaviour Checklist, with training and internal testing in the Province of Ontario Neurodevelopmental network ( N =598) and external testing in the Healthy Brain Network ( N =1,764) and Adolescent Brain Cognitive Development ( N =2,396) studies. Clinical evaluation used electronic medical records (EMRs) from the Psychopharmacology Program ( N =312) at Holland Bloorview Kids Rehabilitation Hospital to predict the medication class prescribed at a follow-up visit (∼3 months later). In all cohorts, the modelled outcome was the clinician’s prescribing decision, which reflects clinician judgement, family preference, tolerability, and access to care in addition to expected effectiveness, and does not directly measure treatment response or clinical benefit. In the research cohorts, internal testing achieved an area under the receiver operating characteristic curve (median [IQR]) of 0.75 [0.73,0.80] for stimulants, 0.83 [0.78,0.87] for anti-depressants, and 0.79 [0.72,0.86] for anti-psychotics, and external testing confirmed generalizability. In the EMR cohort, values were 0.84 [0.81,0.88] for stimulants, 0.82 [0.77,0.87] for anti-depressants, and 0.87 [0.83,0.91] for anti-psychotics. Findings demonstrate that AI can accurately learn expert prescribing patterns and predict medication prescribing decisions, supporting the potential of data-driven tools to guide personalized medication management for neurodevelopmental conditions.",
+    "ai_reason": "AI预测儿童神经发育疾病用药决策，并完成内外验证",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Marlee M. Vandewouw",
+      "Kamran Niroomand",
+      "Harshit Bokadia",
+      "Sophia M. Lenz",
+      "Jesiqua Rapley",
+      "Alfredo Arias",
+      "Jennifer Crosbie",
+      "Elisabetta Trinari",
+      "Elizabeth A. Kelley",
+      "Rob Nicolson"
+    ],
+    "authors_full": [
+      {
+        "name": "Marlee M. Vandewouw"
+      },
+      {
+        "name": "Kamran Niroomand"
+      },
+      {
+        "name": "Harshit Bokadia"
+      },
+      {
+        "name": "Sophia M. Lenz"
+      },
+      {
+        "name": "Jesiqua Rapley"
+      },
+      {
+        "name": "Alfredo Arias"
+      },
+      {
+        "name": "Jennifer Crosbie"
+      },
+      {
+        "name": "Elisabetta Trinari"
+      },
+      {
+        "name": "Elizabeth A. Kelley"
+      },
+      {
+        "name": "Rob Nicolson"
+      },
+      {
+        "name": "Russell James Schachar"
+      },
+      {
+        "name": "Paul Daniel Arnold"
+      },
+      {
+        "name": "Alana Iaboni"
+      },
+      {
+        "name": "Jason P. Lerch"
+      },
+      {
+        "name": "Melanie Penner"
+      },
+      {
+        "name": "Danielle A. Baribeau"
+      },
+      {
+        "name": "Evdokia A. Anagnostou"
+      },
+      {
+        "name": "Azadeh Kushki"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "AI预测儿童神经发育疾病用药决策，并完成内外验证",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [
+        "overreliance",
+        "access_inequality"
+      ],
+      "tldr": "AI模型在多队列中较准确预测兴奋剂、抗抑郁药和抗精神病药处方决策，但结局并非治疗反应或临床获益。",
+      "topic_tags": [
+        "clinical_decision_support",
+        "treatment_support",
+        "children_adolescents",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 3,
+    "clinical_validation": "external",
+    "date": "2026-11-04",
+    "doi": "10.1038/s41398-026-04541-1",
+    "domain_score": 4,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W4408497566",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "AI预测儿童神经发育疾病用药决策，并完成内外验证",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "clinical_decision_support",
+          "treatment_support"
+        ],
+        "conditions": [],
+        "populations": [
+          "children_adolescents",
+          "clinical_patients"
+        ],
+        "risks": [
+          "overreliance",
+          "access_inequality"
+        ]
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "预测随访时药物类别处方的AUC；未直接测量治疗反应或临床获益",
+        "sample": "研究队列598人；外部队列1764人和2396人；临床EMR队列312人",
+        "study_design": "预测模型开发、内部测试、外部测试及电子病历临床评估"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [
+          "artificial intelligence"
+        ],
+        "ai_signal": true,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [],
+        "mental_health_signal": false
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "overreliance",
+        "access_inequality"
+      ],
+      "safety_evaluated": false,
+      "tldr": "AI模型在多队列中较准确预测兴奋剂、抗抑郁药和抗精神病药处方决策，但结局并非治疗反应或临床获益。",
+      "topic_tags": [
+        "clinical_decision_support",
+        "treatment_support",
+        "children_adolescents",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W4408497566",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "overreliance",
+      "access_inequality"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "A precision health approach to medication management in neurodevelopmental conditions: a model development and validation study using four international cohorts",
+    "title_zh": "神经发育疾病用药管理的精准健康方法：基于四个国际队列的模型开发与验证",
+    "tldr": "AI模型在多队列中较准确预测兴奋剂、抗抑郁药和抗精神病药处方决策，但结局并非治疗反应或临床获益。",
+    "topic_tags": [
+      "clinical_decision_support",
+      "treatment_support",
+      "children_adolescents",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04541-1",
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "AI聊天机器人工具以青少年心理健康为核心，摘要缺失。",
     "ai_score": 5,

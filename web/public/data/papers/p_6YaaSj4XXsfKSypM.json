@@ -1,0 +1,70 @@
+{
+  "abstract": "We present an automated method for auditing text-to-image generators for representational bias against ground-truth demographic benchmarks. Our approach adapts the racial proxy variables used in U.S. antidiscrimination law to provide a fine-grained comparative analysis of variations in racial representation in generated images. We classify each generated image by race and then compare the model's distribution to publicly available demographic benchmark data to identify patterns of over- and under-representation. We also measure skin tone using CIELAB values and calculate cosine similarity amongst groups of images in order to capture biases that don't show up in demographic comparisons such as differences in image quality across races and skin tones. We report on experiments testing three models (Imagen 4 Fast, Stable Diffusion 3.5 Large Turbo, and Flux Schnell) using three categories of proxies (geographic, occupational, and surname) and 50 variants within each category. We find notable variation across the models as well as by proxy category. For example, Imagen 4 Fast overrepresents white classified images more than the other models tested and produces images with lighter, more homogeneous skin tones. Imagen 4 Fast also had the largest representational disparity for Black demographics among surname and geographical prompts. Stable Diffusion 3.5 Large Turbo produces results that overall diverge most from census data but yield the most diverse range of skin tones. Our method yields a generalizable and legally-grounded auditing tool that surfaces detailed information about model outputs without relying on implicit normative definitions of fairness.",
+  "ai_type_tags": [
+    "GenAI",
+    "图像生成",
+    "AI 治理",
+    "偏差审计"
+  ],
+  "arxiv_id": "2611.07132",
+  "authors": [
+    "Nia Mucher",
+    "Ngan Pham",
+    "Jason Chin",
+    "Aaron Brown",
+    "David Evans"
+  ],
+  "authors_full": [
+    {
+      "name": "Nia Mucher"
+    },
+    {
+      "name": "Ngan Pham"
+    },
+    {
+      "name": "Jason Chin"
+    },
+    {
+      "name": "Aaron Brown"
+    },
+    {
+      "name": "David Evans"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "审计文本生图模型的种族偏见",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "以人口统计基准及地理、职业、姓氏代理变量审计文本生成图像中的种族表征偏差，并结合肤色和图像相似度比较三种模型；不同模型偏差差异显著，部分模型过度呈现白人且肤色更浅。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-04",
+  "doi": null,
+  "id": "p_6YaaSj4XXsfKSypM",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2611.07132v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 83977,
+      "revision": "891ef3daa1c1c8b601f721a20cdecc46ce8dd348"
+    }
+  ],
+  "title": "A Proxy-Based Method for Measuring Racial Disparities in~Text-to-Image~Generators",
+  "title_zh": "基于代理指标衡量文本到图像生成器中的种族差异",
+  "unified_ingested_at": "2026-11-06T09:00:55.953239Z",
+  "url": "https://arxiv.org/abs/2611.07132v1",
+  "volume": null,
+  "year": 2026
+}
