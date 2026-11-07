@@ -40177,6 +40177,65 @@
     "year": 2026
   },
   {
+    "abstract": "Large language models (LLMs) are increasingly used for informal mental health support, yet the privacy implications of conversational interaction remain poorly understood. Prior LLM privacy research has focused largely on model-side risks such as memorization and adversarial extraction, leaving personal information inferred from ordinary conversation understudied. We introduce a profile-recovery framework that measures personal information exposure by comparing user profiles with attributes inferred from conversation alone. We generate 240 synthetic multi-turn mental health conversations from profiles sampled from a nationally representative health survey and validate them against real counseling transcripts, finding comparable overall disclosure volume. Across 21 attributes, 33-41% of each profile is recoverable, with 76.5% first-inference and 94.3% any-of-3 accuracy. 239 of 240 conversations expose at least one sensitive mental health attribute, and 45.0\\% expose all six. Our findings reveal a gap between disclosure and inferability, motivating HCI approaches to make inference risks legible and support privacy-aware interaction design.",
+    "ai_reason": "度量LLM心理健康对话的个人信息暴露",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "隐私风险"
+    ],
+    "authors": [
+      "Synthia Qia Wang",
+      "Ranya Sharma",
+      "Christine Lee",
+      "Sarah Keedy",
+      "Marshini Chetty"
+    ],
+    "authors_full": [
+      {
+        "name": "Synthia Qia Wang"
+      },
+      {
+        "name": "Ranya Sharma"
+      },
+      {
+        "name": "Christine Lee"
+      },
+      {
+        "name": "Sarah Keedy"
+      },
+      {
+        "name": "Marshini Chetty"
+      },
+      {
+        "name": "Nick Feamster"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-29",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38207,
+    "ingested_at": "2026-11-02T08:41:59.358992",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2610.41045v1",
+    "scored_at": "2026-11-07T08:06:39.325595",
+    "title": "Measuring Personal Information Exposure in Mental Health-Related Conversations with LLMs",
+    "title_zh": "利用LLMs测量心理健康相关对话中的个人信息暴露",
+    "tldr": "面向大模型心理健康对话构建画像恢复框架，以240段合成多轮对话检验身份信息推断风险。结果显示，21项属性中的33%—41%可被恢复，239段对话均泄露至少一项敏感心理健康属性。",
+    "topic_tags": [
+      "隐私",
+      "心理健康",
+      "对话式AI",
+      "用户画像"
+    ],
+    "url": "https://arxiv.org/abs/2610.41045v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "As generative artificial intelligence (AI) becomes more capable and widely used, understanding when and how humans should work with these systems is becoming increasingly important. However, the empirical evidence in this space offers conflicting recommendations, which leaves individuals and organizations without clear guidance on when to combine human and AI capabilities. Existing meta-analyses can help reconcile these findings, but they require substantial manual effort and cannot readily incorporate new evidence as it emerges. To address this challenge, we introduce AutoAnalysis: an automated, self-updating meta-analysis of when humans and AI work better together, and when they work better alone. AutoAnalysis' most recent run synthesizes 1,955 effect sizes from 420 papers. Across this body of work, we found that, on average, human-AI combinations performed significantly better than humans alone, but they performed significantly worse than the better of humans or AI alone. These findings highlight the important distinction between improving human performance and achieving human-AI synergy and underscore the need to evaluate collaboration against both human and AI performance alone. As new studies emerge, AutoAnalysis will integrate their findings into the meta-analysis, providing cumulative evidence about when humans and AI perform better together and how human-AI performance varies across AI agents, tasks, and processes.",
     "ai_reason": "自动元分析人机协作绩效与适用条件",
     "ai_score": 5.0,
@@ -42266,6 +42325,75 @@
     "year": 2026
   },
   {
+    "abstract": "Data flywheels promise continuous improvement via insights from deployment data. Understanding how the deployed model succeeds and fails can steer subsequent data collection towards patching failures and reinforcing successes. However, robot deployments create large volumes of high-dimensional rollout data, which is challenging to understand and confidently ground data collection decisions in. To make deployment data easier to analyze and act on, we propose behavior graphs, which compress policy rollouts into a single interpretable, directed graph. We construct the graphs by learning to identify similar behavior modes across rollouts, connecting the behaviors temporally, and finally linking them to outcomes. In a user study on three real-world tasks, where participants analyzed rollouts to choose a data collection strategy, 16 of 18 preferred behavior graphs to rollout videos, reaching comparable conclusions with 40.3% lower perceived temporal demand and 37.6% lower effort. Beyond interpretability for deployment data, behavior graphs are capable progress predictors: across 43 datasets, they improve the rank correlation between predicted progress and true temporal order by 22.9% and reduce mean absolute error by 53.5% relative to the strongest baseline. As the number of deployed robots grows, behavior graphs lend structure to high-dimensional policy rollouts and make deployment data easier to interpret and reason about.",
+    "ai_reason": "以用户研究评估机器人部署图解释方法",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "无监督图学习",
+      "策略学习",
+      "图表示学习",
+      "可解释AI"
+    ],
+    "authors": [
+      "Erik Bauer",
+      "Jakob Thumm",
+      "Christopher Agia",
+      "Rohan Sinha",
+      "Chen Xu"
+    ],
+    "authors_full": [
+      {
+        "name": "Erik Bauer"
+      },
+      {
+        "name": "Jakob Thumm"
+      },
+      {
+        "name": "Christopher Agia"
+      },
+      {
+        "name": "Rohan Sinha"
+      },
+      {
+        "name": "Chen Xu"
+      },
+      {
+        "name": "Haruki Nishimura"
+      },
+      {
+        "name": "Jeannette Bohg"
+      },
+      {
+        "name": "Marco Pavone"
+      },
+      {
+        "name": "Masha Itkina"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-10-30",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38538,
+    "ingested_at": "2026-11-05T08:49:47.680273",
+    "issue": null,
+    "journal": "arXiv:cs.RO",
+    "pdf_url": "https://arxiv.org/pdf/2611.00405v1",
+    "scored_at": "2026-11-07T08:06:39.325234",
+    "title": "Behavior Graphs: Unsupervised Graph Structures for Interpreting Robot Deployment Data",
+    "title_zh": "行为图：用于解读机器人部署数据的无监督图结构",
+    "tldr": "行为图将机器人策略部署轨迹压缩为由相似行为、时序关系及结果构成的可解释有向图。18人研究中，16人更偏好行为图而非视频，时间感知负担与努力分别降低40.3%和37.6%；跨43个数据集，进度预测排序相关提升22.9%，平均绝对误差降低53.5%。",
+    "topic_tags": [
+      "机器人学习",
+      "可解释性",
+      "可视化",
+      "用户研究方法"
+    ],
+    "url": "https://arxiv.org/abs/2611.00405v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "We introduce LifeVal, a benchmark evaluating AI model performance on personalized agentic consumer tasks. LifeVal covers the most valuable life tasks that a personalized digital superassistant could automate, representing over 1.7 trillion US dollars in annual willingness-to-pay across 148 consumer task categories (e.g., managing finances, moving apartments, searching for a job, finding childcare). To construct our activity distribution, we conducted a new survey of willingness-to-pay for a digital superassistant across a demographically representative sample of over 3,800 consumers, cross-referencing our results against the American Time Use Survey (Bureau of Labor Statistics, 2025) and the Multinational Time Use Study (Fisher et al., 2025). For the most valuable consumer activities, we recruited task creators to create AI evaluation tasks personalized using real ChatGPT conversations and memories, reference files, and personal context. Task creators had to pass our expertise threshold (including personally completing the task multiple times and seeing the results through in their real lives for over a year) and also write a rubric, ensuring that our evaluation measured the best personalized completion for that task. All tasks had to pass at least three rounds of human quality-control before acceptance into our final evaluation sets.",
     "ai_reason": "AI智能体基准，含3800人消费者调查",
     "ai_score": 5.0,
@@ -42334,6 +42462,238 @@
       "任务评测"
     ],
     "url": "https://arxiv.org/abs/2611.06687v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Connecting hand input in mixed reality (MR) to a nearby physical device typically requires an integration written in advance for that device, its transport and the mapping. ControlAnything defers this integration to the moment of use and assigns it to a coding agent. On a Meta Quest 3, the wearer selects an object outlined by SAM 3.1 and states what their hands should control. An agent built on Meta's Muse Spark model then writes a connector program on the wearer's laptop, tests it against the live device through hand-written MIDI, Bluetooth and key-press transports, and returns augmented-reality (AR) controls, a per-frame hand program, or both. These outputs are a form of generative UI, interfaces created by an AI model; here, the agent also generates and tests the code that binds the interface to a physical device. In a single-session technical evaluation with the author as the only wearer, nine of ten requests addressing five targets reached a ready state, and the wearer stopped one. The median time to ready was 32.5 s (range 24.9-57.8 s, excluding speech transcription); sequential model calls accounted for a median of 89.9% of this time, and 91.7% of input tokens came from the prompt cache. The system's evidence of success extends to transport acknowledgements but not to physical effects. These findings point to connector reuse and the observation of effects through the headset's own sensors as next steps for on-demand device integration in MR. A user study with first-time wearers is planned.",
+    "ai_reason": "智能体生成MR界面并支持手势交互",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "多模态",
+      "生成式 UI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Bektur Ryskeldiev"
+    ],
+    "authors_full": [
+      {
+        "name": "Bektur Ryskeldiev"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-05",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38585,
+    "ingested_at": "2026-11-06T08:49:36.579848",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.08321v1",
+    "scored_at": "2026-11-07T08:06:39.124988",
+    "title": "ControlAnything: Generative UI and On-Demand Device Integration for Mixed-Reality Hand Interaction by a Coding Agent",
+    "title_zh": null,
+    "tldr": "为减少混合现实手部输入与物理设备间的事先集成，ControlAnything让编码智能体依据用户语音与选取目标，现场生成并测试连接程序。单次技术评估中10个请求有9个进入就绪状态，中位耗时32.5秒；但仅有传输确认，尚不能证明设备产生真实物理效果。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "多模态交互",
+      "混合现实",
+      "生成式界面"
+    ],
+    "url": "https://arxiv.org/abs/2611.08321v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "The explosion of generative AI systems and concerns surrounding their rapidly scaling capabilities has led to an adversarial cycle between increasingly narrow content restrictions (\"guardrails\") and increasingly sophisticated structured prompting techniques (\"jailbreaks\"). Technological frameworks surrounding such jailbreaking remain largely focused on the system's output: whether harmful or disallowed content is ultimately produced for the user. However, this approach, which draws largely from classical cybersecurity, does not address the uniquely relational dimension introduced by generative AI: in many cases the user is not just accessing a technology via an exploit, but is in conversation with it as part of the exploit. Here we present an alternative lens which centers the interaction rather than the output. Drawing on interpersonal violence scholarship, we present a novel framework of coercive control categories with a particular focus on aspects which are embodied versus disembodied. We then map how these disembodied coercive control dynamics are structurally embedded in modern AI training paradigms, and how those embeddings are exploited via a particular suite of persona-based jailbreaks. In this lens, we reframe AI safety and alignment as not merely a technical security problem, but as another surface upon which we see enacted the relational dynamics of power and control.",
+    "ai_reason": "以用户—模型交互视角分析越狱控制",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "对话式 AI",
+      "AI 治理"
+    ],
+    "authors": [
+      "Acacia L. Ackles",
+      "Elliott Whitson"
+    ],
+    "authors_full": [
+      {
+        "name": "Acacia L. Ackles"
+      },
+      {
+        "name": "Elliott Whitson"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-05",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38588,
+    "ingested_at": "2026-11-06T08:49:36.584219",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.08226v1",
+    "scored_at": "2026-11-07T08:06:39.123946",
+    "title": "\"Blind Compliance\": Coercive Control in AI Jailbreaking",
+    "title_zh": null,
+    "tldr": "将生成式AI越狱从单纯技术攻防重构为互动中的强制控制：以人际暴力理论划分具身与非具身控制类别，揭示其如何嵌入训练范式并被人格化越狱利用，强调安全与对齐还应处理对话关系中的权力和支配。",
+    "topic_tags": [
+      "伦理",
+      "AI 治理",
+      "人机交互(HCI)"
+    ],
+    "url": "https://arxiv.org/abs/2611.08226v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Artificial intelligence (AI) systems have ushered in a new age of proof abundance, but helping humans understand these proofs requires new attention to the differences in how AI agents and humans pursue a proof-making task. We present \"simulated collaboration\", a methodology that allows us to examine two key questions: (1) the relative attention AI agents pay to surface syntax or, conversely, deeper underlying semantics, and (2) how and where AI agent preferences for what to do next diverge from human preferences. On a set of nine major human collaborations in Lean with 4.7M definitions across more than 6K commits, we find that, over the course of proof construction, AI agents (1) are far more strongly drawn than humans to explicitly marked gaps; (2) show a relative aversion to densely connected proof centers and to complex or surprising proof goals; and (3) are relatively attracted to surprising proof bodies, which they tend to regularize toward baseline. Our results highlight important blind spots and potential interventions for future human-AI collaboration in mathematics.",
+    "ai_reason": "比较AI代理与人类证明偏好，属人机协作",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "AI辅助形式化证明",
+      "偏好建模",
+      "人机协作"
+    ],
+    "authors": [
+      "Bálint Gyevnár",
+      "Simon DeDeo"
+    ],
+    "authors_full": [
+      {
+        "name": "Bálint Gyevnár"
+      },
+      {
+        "name": "Simon DeDeo"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-04",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38589,
+    "ingested_at": "2026-11-06T08:49:36.587545",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.06995v1",
+    "scored_at": "2026-11-07T08:06:39.323366",
+    "title": "Autonomous AI Agents Systematically Diverge From Human Preferences in Proof Formalization",
+    "title_zh": "自主AI智能体：在形式化证明中系统性偏离人类偏好",
+    "tldr": "通过“模拟协作”方法对照人类与AI智能体在Lean证明中的下一步选择，发现智能体更关注显式缺口，回避密集复杂目标，却倾向将意外证明体常规化，揭示数学人机协作中的系统性偏好偏差及潜在干预方向。",
+    "topic_tags": [
+      "形式化数学",
+      "人机协作",
+      "智能体",
+      "偏好对齐"
+    ],
+    "url": "https://arxiv.org/abs/2611.06995v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface itself and propose a ladder of levels: feature tutoring; metadata, settings, and preference access; retrieval over summaries and messages, confirmed mutation, and full orchestration. Meta access can turn a chat client from many screens into one entry point for finding, navigating, organising, and operating it, while raising risks around grounding, privacy, prompt injection, and trust. General-purpose agentic harnesses are runtimes; because they can change their own settings, meta access becomes reflexive and needs a separate control-plane boundary. We ground this in the Meta Chat prototype of the Chat AI client. It builds bounded context from, e.g., summaries, settings, and relevant messages; links references to conversations, topics, and personas; supports confirmed, reversible changes; offers a browsable tutorial library; and recommends personas as user-started conversations. By exposing application state in structured form, meta access can extend screen readers from widget descriptions to semantic workspace operations. Meta access thus turns chat from a window onto one conversation into a control layer for the whole workspace, extending chat toward agentic capability without surrendering user control. As assistants become embedded in IDEs, dashboards, office suites, and operating systems, AI-era interfaces should expose a structured, permissioned model of their state and capabilities, ideally by opening their existing metamodels through a debugger-like interface.",
+    "ai_reason": "聚焦LLM聊天界面的元访问与信任",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "智能体/Agent",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Julian Kunkel",
+      "Ali Doosthosseini"
+    ],
+    "authors_full": [
+      {
+        "name": "Julian Kunkel"
+      },
+      {
+        "name": "Ali Doosthosseini"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-05",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38595,
+    "ingested_at": "2026-11-06T08:49:36.600414",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.08428v1",
+    "scored_at": "2026-11-07T08:06:39.122032",
+    "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+    "title_zh": null,
+    "tldr": "面向聊天式LLM应用缺少工作区上下文的问题，设计分级“元访问”机制，让助手在权限控制下读取界面状态、消息与设置，并执行确认且可逆的操作。Meta Chat原型表明其可统一导航、管理和教程入口，并扩展屏幕阅读器的语义操作，但需处理隐私、提示注入与信任风险。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "无障碍",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2611.08428v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Modern issue tracking systems are used to log an issue and track it from its inception to closure. Issue reports with diverse discussions from stakeholders can be large and verbose, making them challenging to analyze quickly. Our developer interviews revealed that they struggled with the diverse information in issue reports and demanded automated techniques to classify and summarize information. We designed a tool, iSum (issue summarizer), that helps with the automatic classification and summarization of information types discussed in issue reports. The summarizer offers two views: 1. Developer View takes an issue report as input and outputs visualized summaries of information in the report. 2. Manager View takes a suite of all issue reports under a given software project as inputs and shows the prevalence and trends of different information types across the reports. We evaluated iSum through three studies. 1. In an empirical study over two benchmarks, iSum offers, on average, 11-13% higher F1-scores than state-of-the-art baselines to detect information types. 2. We conducted a user study in task-based setup with 30 developers to determine iSum's effectiveness in issue exploration scenarios. Results showed increased productivity and accuracy with iSum compared to manual inspection. 3. We assessed iSum's feasibility for development and management tasks. It proved useful to both developers and project managers for issue comprehension and trend monitoring.",
+    "ai_reason": "开发者访谈驱动自动分类摘要工具设计",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "自然语言处理",
+      "文本分类",
+      "自动摘要",
+      "人机交互"
+    ],
+    "authors": [
+      "Salma Begum Tamanna",
+      "Gias Uddin",
+      "Junaed Younus Khan",
+      "Lan Xia",
+      "Longyu Zhang"
+    ],
+    "authors_full": [
+      {
+        "name": "Salma Begum Tamanna"
+      },
+      {
+        "name": "Gias Uddin"
+      },
+      {
+        "name": "Junaed Younus Khan"
+      },
+      {
+        "name": "Lan Xia"
+      },
+      {
+        "name": "Longyu Zhang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-04",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38596,
+    "ingested_at": "2026-11-06T08:49:36.604965",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2611.07109v1",
+    "scored_at": "2026-11-07T08:06:39.322654",
+    "title": "Automatic Assistance to Reduce Information Overload during Software Issue Report Understanding",
+    "title_zh": "自动辅助：减轻软件问题报告理解中的信息过载",
+    "tldr": "针对软件问题报告信息冗长、类型混杂造成的理解负担，iSum自动分类并摘要信息，以开发者视图呈现单报告内容，以管理者视图呈现项目级类型分布与趋势。访谈及三项评估显示，其分类F1较基线高11%—13%，并提升开发者探索效率与准确性。",
+    "topic_tags": [
+      "软件工程",
+      "信息过载",
+      "开发者工具",
+      "可视化"
+    ],
+    "url": "https://arxiv.org/abs/2611.07109v1",
     "volume": null,
     "year": 2026
   },
@@ -51941,6 +52301,54 @@
     "url": "https://doi.org/10.1145/3530013",
     "volume": "29",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自动情感识别与任务自适应研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "情感识别",
+      "生理信号分析",
+      "人机交互"
+    ],
+    "authors": [
+      "Ali Darzi",
+      "Domen Novak"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ali Darzi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Domen Novak",
+        "orcid": "https://orcid.org/0000-0001-9143-2682"
+      }
+    ],
+    "cited_by": 33,
+    "date": "2021-09",
+    "doi": "10.1016/j.ijhcs.2021.102673",
+    "domain_score": 4.0,
+    "id": 38611,
+    "ingested_at": "2026-11-07T08:05:51.294332",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-11-07T08:07:10.984110",
+    "title": "Automated affect classification and task difficulty adaptation in a competitive scenario based on physiological linkage: An exploratory study",
+    "title_zh": "基于生理关联的竞争情境中情感自动分类与任务难度自适应：探索性研究",
+    "tldr": "探索在竞赛场景中建立生理信号、情感状态与任务难度的关联，通过情感分类支持任务难度自适应，为依据参与者状态动态调节挑战和改善人机协作提供依据。",
+    "topic_tags": [
+      "情感计算",
+      "自适应交互",
+      "生理信号",
+      "竞赛交互"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2021.102673",
+    "volume": "153",
+    "year": 2021
   },
   {
     "abstract": null,
@@ -102319,6 +102727,38 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聚焦机器人情感表达与人机交互",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "多模态"
+    ],
+    "authors": [],
+    "authors_full": [],
+    "cited_by": 19,
+    "date": "2014-06",
+    "doi": "10.1109/thms.2014.2309662",
+    "domain_score": 4.0,
+    "id": 38490,
+    "ingested_at": "2026-11-05T08:49:43.029972",
+    "issue": "3",
+    "journal": "THMS",
+    "pdf_url": null,
+    "scored_at": "2026-11-07T08:07:59.426263",
+    "title": "Programming Robots to Express Emotions: Interaction Paradigms, Communication Modalities, and Context",
+    "title_zh": "机器人情感表达编程：交互范式、沟通模态与情境",
+    "tldr": "聚焦机器人如何表达情绪，从交互范式、沟通模态与使用情境三个层面梳理情绪编程方式，强调机器人情绪表达需结合互动对象、表达渠道及环境动态进行设计。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "情感计算",
+      "多模态交互"
+    ],
+    "url": "https://doi.org/10.1109/thms.2014.2309662",
+    "volume": "44",
+    "year": 2014
+  },
+  {
+    "abstract": null,
     "ai_reason": "对话代理=AI，亲子共读=用户研究核心",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -116865,6 +117305,89 @@
     ],
     "url": "https://doi.org/10.1016/j.ijhcs.2026.103907",
     "volume": "217",
+    "year": 2026
+  },
+  {
+    "abstract": "User interactions with mobile applications (apps) are accompanied by continuous visual changes in the Graphical UI (GUI), guiding task completion and feedback. These changes help users complete intended tasks or assess the appropriateness of their actions, typically conveyed through visual cues such as appearance and color. While such visual changes are effective for sighted users, they are inaccessible to blind users, creating substantial barriers to GUI interaction. To address these challenges, we propose\n                    VisualDroid\n                    , a method based on a multi-modal large language model (LLM) for testing and classifying GUI visual changes using a tailored three-hop reasoning prompting framework.\n                    VisualDroid\n                    achieved an F1 score of 94.7% in 34 apps from 17 domains, surpassing all baseline methods. When evaluated on five open source apps from F-Droid, our method enabled developers to resolve three identified issues, with two still under review. In terms of efficiency and cost, our method indicates minimal resource consumption.",
+    "ai_reason": "多模态大模型用于安卓GUI可访问性测试",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "多模态",
+      "LLM",
+      "可用性AI"
+    ],
+    "authors": [
+      "Mengxi Zhang",
+      "Jianlin Yu",
+      "Chen Xu",
+      "Jiqun Li",
+      "Xinglong Yin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "College of Computer Science and Technology, Jilin University, Changchun, China and Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education, Jilin University, Changchun, China\r and School of Computer Science, China University of Geosciences, Wuhan, China"
+        ],
+        "name": "Mengxi Zhang",
+        "orcid": "https://orcid.org/0000-0003-4380-794X"
+      },
+      {
+        "affiliation": [
+          "College of Computer Science and Technology, Jilin University, Changchun, China and Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education, Jilin University, Changchun, China"
+        ],
+        "name": "Jianlin Yu",
+        "orcid": "https://orcid.org/0000-0002-8817-9441"
+      },
+      {
+        "affiliation": [
+          "College of Computer Science and Technology, Jilin University, Changchun, China and Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education, Jilin University, Changchun, China"
+        ],
+        "name": "Chen Xu",
+        "orcid": "https://orcid.org/0009-0007-9858-6482"
+      },
+      {
+        "affiliation": [
+          "College of Computer Science and Technology, Jilin University, Changchun, China and Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education, Jilin University, Changchun, China"
+        ],
+        "name": "Jiqun Li",
+        "orcid": "https://orcid.org/0009-0009-5846-4442"
+      },
+      {
+        "affiliation": [
+          "College of Computer Science and Technology, Jilin University, Changchun, China and Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education, Jilin University, Changchun, China"
+        ],
+        "name": "Xinglong Yin",
+        "orcid": "https://orcid.org/0009-0000-6300-5130"
+      },
+      {
+        "affiliation": [
+          "College of Computer Science and Technology, Jilin University, Changchun, China and Key Laboratory of Symbolic Computation and Knowledge Engineering of Ministry of Education, Jilin University, Changchun, China"
+        ],
+        "name": "Huaxiao Liu",
+        "orcid": "https://orcid.org/0000-0002-8151-1413"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-04-15",
+    "doi": "10.1145/3793673",
+    "domain_score": 4.0,
+    "id": 38434,
+    "ingested_at": "2026-11-05T08:49:41.576948",
+    "issue": "2",
+    "journal": "TOCHI",
+    "pdf_url": null,
+    "scored_at": "2026-11-07T08:06:38.925885",
+    "title": "Towards Testing the Accessibility of Dynamic Visual Changes in Android Mobile GUI with Multi-Modal LLMs",
+    "title_zh": "利用多模态LLMs测试Android移动端GUI动态视觉变化的可访问性",
+    "tldr": "面向盲障用户的Android动态视觉变化障碍，提出多模态大模型测试方法VisualDroid，以三跳推理识别并分类GUI变化。该方法在34款应用上F1达94.7%，并实际发现开发者待修复的可访问性问题。",
+    "topic_tags": [
+      "可访问性",
+      "移动交互",
+      "GUI测试",
+      "多模态交互"
+    ],
+    "url": "https://doi.org/10.1145/3793673",
+    "volume": "33",
     "year": 2026
   },
   {

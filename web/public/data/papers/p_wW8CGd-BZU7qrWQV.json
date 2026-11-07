@@ -1,0 +1,83 @@
+{
+  "abstract": "Data flywheels promise continuous improvement via insights from deployment data. Understanding how the deployed model succeeds and fails can steer subsequent data collection towards patching failures and reinforcing successes. However, robot deployments create large volumes of high-dimensional rollout data, which is challenging to understand and confidently ground data collection decisions in. To make deployment data easier to analyze and act on, we propose behavior graphs, which compress policy rollouts into a single interpretable, directed graph. We construct the graphs by learning to identify similar behavior modes across rollouts, connecting the behaviors temporally, and finally linking them to outcomes. In a user study on three real-world tasks, where participants analyzed rollouts to choose a data collection strategy, 16 of 18 preferred behavior graphs to rollout videos, reaching comparable conclusions with 40.3% lower perceived temporal demand and 37.6% lower effort. Beyond interpretability for deployment data, behavior graphs are capable progress predictors: across 43 datasets, they improve the rank correlation between predicted progress and true temporal order by 22.9% and reduce mean absolute error by 53.5% relative to the strongest baseline. As the number of deployed robots grows, behavior graphs lend structure to high-dimensional policy rollouts and make deployment data easier to interpret and reason about.",
+  "ai_type_tags": [
+    "无监督图学习",
+    "策略学习",
+    "图表示学习",
+    "可解释AI"
+  ],
+  "arxiv_id": "2611.00405",
+  "authors": [
+    "Erik Bauer",
+    "Jakob Thumm",
+    "Christopher Agia",
+    "Rohan Sinha",
+    "Chen Xu"
+  ],
+  "authors_full": [
+    {
+      "name": "Erik Bauer"
+    },
+    {
+      "name": "Jakob Thumm"
+    },
+    {
+      "name": "Christopher Agia"
+    },
+    {
+      "name": "Rohan Sinha"
+    },
+    {
+      "name": "Chen Xu"
+    },
+    {
+      "name": "Haruki Nishimura"
+    },
+    {
+      "name": "Jeannette Bohg"
+    },
+    {
+      "name": "Marco Pavone"
+    },
+    {
+      "name": "Masha Itkina"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以用户研究评估机器人部署图解释方法",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "行为图将机器人策略部署轨迹压缩为由相似行为、时序关系及结果构成的可解释有向图。18人研究中，16人更偏好行为图而非视频，时间感知负担与努力分别降低40.3%和37.6%；跨43个数据集，进度预测排序相关提升22.9%，平均绝对误差降低53.5%。",
+      "topic_tags": [
+        "机器人学习",
+        "可解释性",
+        "可视化",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-10-30",
+  "doi": null,
+  "id": "p_wW8CGd-BZU7qrWQV",
+  "issue": null,
+  "journal": "arXiv:cs.RO",
+  "pdf_url": "https://arxiv.org/pdf/2611.00405v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38538,
+      "revision": "a4fb180ff7a58bbe563dd970f3cf259a24e98c2c"
+    }
+  ],
+  "title": "Behavior Graphs: Unsupervised Graph Structures for Interpreting Robot Deployment Data",
+  "title_zh": "行为图：用于解读机器人部署数据的无监督图结构",
+  "unified_ingested_at": "2026-11-07T08:30:00.514073Z",
+  "url": "https://arxiv.org/abs/2611.00405v1",
+  "volume": null,
+  "year": 2026
+}

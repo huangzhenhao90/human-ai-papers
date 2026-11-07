@@ -1,0 +1,59 @@
+{
+  "abstract": "Chat remains the default surface for many large language model (LLM) tasks, even as agentic tools such as OpenCode excel at coding and automation. Yet the model sees the current dialogue but not the workspace around it. We explore meta access---giving the assistant a structured, permissioned view of the interface itself and propose a ladder of levels: feature tutoring; metadata, settings, and preference access; retrieval over summaries and messages, confirmed mutation, and full orchestration. Meta access can turn a chat client from many screens into one entry point for finding, navigating, organising, and operating it, while raising risks around grounding, privacy, prompt injection, and trust. General-purpose agentic harnesses are runtimes; because they can change their own settings, meta access becomes reflexive and needs a separate control-plane boundary. We ground this in the Meta Chat prototype of the Chat AI client. It builds bounded context from, e.g., summaries, settings, and relevant messages; links references to conversations, topics, and personas; supports confirmed, reversible changes; offers a browsable tutorial library; and recommends personas as user-started conversations. By exposing application state in structured form, meta access can extend screen readers from widget descriptions to semantic workspace operations. Meta access thus turns chat from a window onto one conversation into a control layer for the whole workspace, extending chat toward agentic capability without surrendering user control. As assistants become embedded in IDEs, dashboards, office suites, and operating systems, AI-era interfaces should expose a structured, permissioned model of their state and capabilities, ideally by opening their existing metamodels through a debugger-like interface.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "智能体/Agent",
+    "可用性 AI"
+  ],
+  "arxiv_id": "2611.08428",
+  "authors": [
+    "Julian Kunkel",
+    "Ali Doosthosseini"
+  ],
+  "authors_full": [
+    {
+      "name": "Julian Kunkel"
+    },
+    {
+      "name": "Ali Doosthosseini"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "聚焦LLM聊天界面的元访问与信任",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "面向聊天式LLM应用缺少工作区上下文的问题，设计分级“元访问”机制，让助手在权限控制下读取界面状态、消息与设置，并执行确认且可逆的操作。Meta Chat原型表明其可统一导航、管理和教程入口，并扩展屏幕阅读器的语义操作，但需处理隐私、提示注入与信任风险。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "无障碍",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-05",
+  "doi": null,
+  "id": "p_IJuvqeYFTWnaKIAd",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.08428v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38595,
+      "revision": "a4fb180ff7a58bbe563dd970f3cf259a24e98c2c"
+    }
+  ],
+  "title": "The Power of Meta Access in the Software of the Future --- Demonstrated on LLM Chat UIs and Chat AI",
+  "title_zh": null,
+  "unified_ingested_at": "2026-11-07T08:30:00.514073Z",
+  "url": "https://arxiv.org/abs/2611.08428v1",
+  "volume": null,
+  "year": 2026
+}

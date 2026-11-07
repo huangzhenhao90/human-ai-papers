@@ -1,0 +1,55 @@
+{
+  "abstract": "Connecting hand input in mixed reality (MR) to a nearby physical device typically requires an integration written in advance for that device, its transport and the mapping. ControlAnything defers this integration to the moment of use and assigns it to a coding agent. On a Meta Quest 3, the wearer selects an object outlined by SAM 3.1 and states what their hands should control. An agent built on Meta's Muse Spark model then writes a connector program on the wearer's laptop, tests it against the live device through hand-written MIDI, Bluetooth and key-press transports, and returns augmented-reality (AR) controls, a per-frame hand program, or both. These outputs are a form of generative UI, interfaces created by an AI model; here, the agent also generates and tests the code that binds the interface to a physical device. In a single-session technical evaluation with the author as the only wearer, nine of ten requests addressing five targets reached a ready state, and the wearer stopped one. The median time to ready was 32.5 s (range 24.9-57.8 s, excluding speech transcription); sequential model calls accounted for a median of 89.9% of this time, and 91.7% of input tokens came from the prompt cache. The system's evidence of success extends to transport acknowledgements but not to physical effects. These findings point to connector reuse and the observation of effects through the headset's own sensors as next steps for on-demand device integration in MR. A user study with first-time wearers is planned.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "多模态",
+    "生成式 UI",
+    "AI 助手"
+  ],
+  "arxiv_id": "2611.08321",
+  "authors": [
+    "Bektur Ryskeldiev"
+  ],
+  "authors_full": [
+    {
+      "name": "Bektur Ryskeldiev"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "智能体生成MR界面并支持手势交互",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "为减少混合现实手部输入与物理设备间的事先集成，ControlAnything让编码智能体依据用户语音与选取目标，现场生成并测试连接程序。单次技术评估中10个请求有9个进入就绪状态，中位耗时32.5秒；但仅有传输确认，尚不能证明设备产生真实物理效果。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "多模态交互",
+        "混合现实",
+        "生成式界面"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-05",
+  "doi": null,
+  "id": "p_fqpu_9y_IogBDykw",
+  "issue": null,
+  "journal": "arXiv:cs.HC",
+  "pdf_url": "https://arxiv.org/pdf/2611.08321v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38585,
+      "revision": "a4fb180ff7a58bbe563dd970f3cf259a24e98c2c"
+    }
+  ],
+  "title": "ControlAnything: Generative UI and On-Demand Device Integration for Mixed-Reality Hand Interaction by a Coding Agent",
+  "title_zh": null,
+  "unified_ingested_at": "2026-11-07T08:30:00.514073Z",
+  "url": "https://arxiv.org/abs/2611.08321v1",
+  "volume": null,
+  "year": 2026
+}

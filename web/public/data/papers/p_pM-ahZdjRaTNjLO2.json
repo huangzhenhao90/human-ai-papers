@@ -1,0 +1,82 @@
+{
+  "abstract": "BACKGROUND: Psychotherapy is a primary treatment for many mental health conditions, yet the dynamic interplay among therapist behaviors, client responses, and the therapeutic relationship remains difficult to disentangle at scale. Traditional process research relies on labor-intensive human coding, limiting the ability to model moment-to-moment therapeutic dynamics across large datasets. OBJECTIVE: This study aimed to develop and validate a computational framework for modeling therapist-client interaction processes and to examine how therapist behaviors and relational qualities relate to client self-disclosure and emotional expression in psychotherapy sessions. METHODS: We developed automated assessment pipelines using large language models (LLMs) to measure therapist behaviors (empathy, exploration), relational quality (rapport), and client outcomes (self-disclosure, self-directed negative emotion, outward-directed negative emotion). Model-generated scores were validated against human annotations. We then applied these measures to approximately 2,000 hours of psychotherapy transcripts from the Alexander Street corpus. This yielded an estimation sample of 119,233 client utterances from 1,573 sessions and 37 clients. Because utterances are nested within sessions and sessions within clients, we estimated a saturated multivariate structural equation model (SEM) with standard errors clustered at the session level. Results were confirmed in a multilevel regression model with random intercepts for session and client. RESULTS: Following comparative validation of six candidate language models, automated measures showed good to excellent agreement with human annotations (ICC = 0.60-0.81), with rapport (ICC = 0.81), self-disclosure (ICC = 0.78), empathy components (ICC = 0.60-0.75), and emotion measurements (ICC = 0.66-0.80). SEM analyses revealed that therapist empathy and exploration were each associated with increased client disclosure (empathy β=0.086, 95% CI 0.078 to 0.095; exploration β=0.086, 95% CI 0.078 to 0.094; both P<.001) and increased expression of self-directed negative emotions, comprising sadness, anxiety, fear, and depression (empathy β=0.118, 95% CI 0.110 to 0.127; exploration β=0.078, 95% CI 0.070 to 0.087; both P<.001). Both behaviors were also associated with reduced expressions of enjoyment (empathy β=-0.037; exploration β=-0.041; both P<.001). Surprisingly, rapport in the prior session showed no association with client self-disclosure or negative emotion expression. CONCLUSIONS: This study demonstrates that LLM-based measurement combined with structural modeling can capture core therapeutic processes at scale. Empathy and exploration showed small but consistent turn-level associations with client disclosure and emotional expression, whereas prior-session rapport did not show a robust association. These findings provide a computational foundation for precision modeling of psychotherapy processes and may offer actionable insights for scalable therapist training and AI-supported clinical education systems.",
+  "ai_type_tags": [
+    "llm_genai",
+    "nlp"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Angela Chen",
+    "Siwei Jin",
+    "Canwen Wang",
+    "Holly A. Swartz",
+    "Tongshuang Wu",
+    "Robert E. Kraut",
+    "Haiyi Zhu"
+  ],
+  "authors_full": [
+    {
+      "name": "Angela Chen"
+    },
+    {
+      "name": "Siwei Jin"
+    },
+    {
+      "name": "Canwen Wang"
+    },
+    {
+      "name": "Holly A. Swartz"
+    },
+    {
+      "name": "Tongshuang Wu"
+    },
+    {
+      "name": "Robert E. Kraut"
+    },
+    {
+      "name": "Haiyi Zhu"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "LLM自动评估心理治疗过程并关联披露与情绪表达",
+      "ai_score": 5,
+      "clinical_validation": "internal",
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "unknown",
+      "real_world_deployment": false,
+      "safety_evaluated": false,
+      "tldr": "回顾性研究显示，LLM评估与人工标注一致性良好，但治疗过程关联并非临床干预效果。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "clinician_workflow",
+        "treatment_support",
+        "clinical_patients"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 1,
+  "date": "2026-10-13",
+  "doi": "10.2196/95389",
+  "id": "p_pM-ahZdjRaTNjLO2",
+  "issue": null,
+  "journal": "JMIR Mental Health",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7221713085"
+    }
+  ],
+  "title": "Modeling of Therapist-Client Dynamics in Psychotherapy Using Large Language Model–Based Assessments: Retrospective Observational Study of 1573 Psychotherapy Sessions",
+  "title_zh": "利用基于大语言模型的评估建模心理治疗中的治疗师—来访者动态：一项涵盖1573次心理治疗会话的回顾性观察研究",
+  "unified_ingested_at": "2026-11-07T08:30:00.514073Z",
+  "url": "https://doi.org/10.2196/95389",
+  "volume": null,
+  "year": 2026
+}
