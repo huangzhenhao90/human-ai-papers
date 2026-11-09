@@ -2617,6 +2617,54 @@
     "year": 2025
   },
   {
+    "abstract": "Evaluating developer satisfaction with conversational AI assistants at scale is critical but challenging. User studies provide rich insights, but are unscalable, while large-scale quantitative signals from logs or in-product ratings are often too shallow or sparse to be reliable. To address this gap, we propose and evaluate a new approach: using sentiment analysis of developer prompts to identify implicit signals of user satisfaction. With an analysis of industrial usage logs of 372 professional developers, we show that this approach can identify a signal in ~8% of all interactions, a rate more than 13 times higher than explicit user feedback, with reasonable accuracy even with an off-the-shelf sentiment analysis approach. This new practical approach to complement existing feedback channels would open up new directions for building a more comprehensive understanding of the developer experience at scale.",
+    "ai_reason": "以372名开发者日志评估AI助手满意度",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "情感识别",
+      "对话式 AI",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Daye Nam",
+      "Malgorzata Salawa",
+      "Satish Chandra"
+    ],
+    "authors_full": [
+      {
+        "name": "Daye Nam"
+      },
+      {
+        "name": "Malgorzata Salawa"
+      },
+      {
+        "name": "Satish Chandra"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-22",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 7844,
+    "ingested_at": "2026-06-14T13:03:19.913275",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2509.18361v1",
+    "scored_at": "2026-11-09T08:59:52.802017",
+    "title": "Reading Between the Lines: Scalable User Feedback via Implicit Sentiment in Developer Prompts",
+    "title_zh": "弦外之音：基于开发者提示中隐式情感的可扩展用户反馈",
+    "tldr": "分析372名专业开发者的工业日志，利用提示词中的隐式情绪识别对话式AI助手满意度；该信号覆盖约8%的交互，是显式反馈的13倍以上，现成情绪分析工具仍具合理准确性，可补充难以扩展的用户研究与稀疏评分。",
+    "topic_tags": [
+      "用户研究方法",
+      "日志分析",
+      "开发工具",
+      "用户体验(UX)"
+    ],
+    "url": "https://arxiv.org/abs/2509.18361v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Large Language Models are transforming software engineering, yet prompt management in practice remains ad hoc, hindering reliability, reuse, and integration into industrial workflows. We present Prompt-with-Me, a practical solution for structured prompt management embedded directly in the development environment. The system automatically classifies prompts using a four-dimensional taxonomy encompassing intent, author role, software development lifecycle stage, and prompt type. To enhance prompt reuse and quality, Prompt-with-Me suggests language refinements, masks sensitive information, and extracts reusable templates from a developer's prompt library. Our taxonomy study of 1108 real-world prompts demonstrates that modern LLMs can accurately classify software engineering prompts. Furthermore, our user study with 11 participants shows strong developer acceptance, with high usability (Mean SUS=73), low cognitive load (Mean NASA-TLX=21), and reported gains in prompt quality and efficiency through reduced repetitive effort. Lastly, we offer actionable insights for building the next generation of prompt management and maintenance tools for software engineering workflows.",
     "ai_reason": "面向开发者的IDE内LLM提示管理与评估",
     "ai_score": 5.0,
@@ -3289,6 +3337,63 @@
       "开发者工具"
     ],
     "url": "https://arxiv.org/abs/2505.23239v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Code reviews are a critical yet time-consuming aspect of modern software development, increasingly challenged by growing system complexity and the demand for faster delivery. This paper presents a study conducted at WirelessCar Sweden AB, combining an exploratory field study of current code review practices with a field experiment involving two variations of an LLM-assisted code review tool. The field study identifies key challenges in traditional code reviews, including frequent context switching, insufficient contextual information, and highlights both opportunities (e.g., automatic summarization of complex pull requests) and concerns (e.g., false positives and trust issues) in using LLMs. In the field experiment, we developed two prototype variations: one offering LLM-generated reviews upfront and the other enabling on-demand interaction. Both utilize a semantic search pipeline based on retrieval-augmented generation to assemble relevant contextual information for the review, thereby tackling the uncovered challenges. Developers evaluated both variations in real-world settings: AI-led reviews are overall more preferred, while still being conditional on the reviewers' familiarity with the code base, as well as on the severity of the pull request.",
+    "ai_reason": "开发者实地研究与LLM工具实验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "检索增强生成(RAG)",
+      "AI 助手",
+      "人机协作"
+    ],
+    "authors": [
+      "Fannar Steinn Aðalsteinsson",
+      "Björn Borgar Magnússon",
+      "Mislav Milicevic",
+      "Adam Nirving Davidsson",
+      "Chih-Hong Cheng"
+    ],
+    "authors_full": [
+      {
+        "name": "Fannar Steinn Aðalsteinsson"
+      },
+      {
+        "name": "Björn Borgar Magnússon"
+      },
+      {
+        "name": "Mislav Milicevic"
+      },
+      {
+        "name": "Adam Nirving Davidsson"
+      },
+      {
+        "name": "Chih-Hong Cheng"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-05-22",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 7882,
+    "ingested_at": "2026-06-14T13:03:19.941607",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2505.16339v1",
+    "scored_at": "2026-11-09T08:59:52.804378",
+    "title": "Rethinking Code Review Workflows with LLM Assistance: An Empirical Study",
+    "title_zh": "LLM辅助下代码审查工作流的再思考：实证研究",
+    "tldr": "在WirelessCar Sweden AB开展代码审查的探索性田野研究与现场实验，比较前置式和按需式LLM审查原型，并以RAG补充相关上下文。开发者总体更偏好AI先给出审查结果，但其效果取决于代码库熟悉度和请求严重性，并受误报与信任问题制约。",
+    "topic_tags": [
+      "人机协作",
+      "代码审查",
+      "软件工程",
+      "田野研究"
+    ],
+    "url": "https://arxiv.org/abs/2505.16339v1",
     "volume": null,
     "year": 2025
   },
@@ -6099,6 +6204,50 @@
     "year": 2025
   },
   {
+    "abstract": "In the rapidly evolving world of software development, the surge in developers' reliance on AI-driven tools has transformed Integrated Development Environments into powerhouses of advanced features. This transformation, while boosting developers' productivity to unprecedented levels, comes with a catch: increased hardware demands for software development. Moreover, the significant economic and environmental toll of using these sophisticated models necessitates mechanisms that reduce unnecessary computational burdens. We propose HyperSeq - Hyper-Adaptive Representation for Predictive Sequencing of States - a novel, resource-efficient approach designed to model developers' cognitive states. HyperSeq facilitates precise action sequencing and enables real-time learning of user behavior. Our preliminary results show how HyperSeq excels in forecasting action sequences and achieves remarkable prediction accuracies that go beyond 70%. Notably, the model's online-learning capability allows it to substantially enhance its predictive accuracy in a majority of cases and increases its capability in forecasting next user actions with sufficient iterations for adaptation. Ultimately, our objective is to harness these predictions to refine and elevate the user experience dynamically within the IDE.",
+    "ai_reason": "聚焦开发者认知状态建模与行为学习",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "序列预测",
+      "在线学习",
+      "人机交互"
+    ],
+    "authors": [
+      "Roham Koohestani",
+      "Maliheh Izadi"
+    ],
+    "authors_full": [
+      {
+        "name": "Roham Koohestani"
+      },
+      {
+        "name": "Maliheh Izadi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-03-13",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 8246,
+    "ingested_at": "2026-06-14T13:03:20.451130",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2503.10254v1",
+    "scored_at": "2026-11-09T09:00:05.780851",
+    "title": "HyperSeq: A Hyper-Adaptive Representation for Predictive Sequencing of States",
+    "title_zh": "HyperSeq：状态预测性排序的超自适应表示",
+    "tldr": "针对AI辅助开发带来的算力与体验负担，HyperSeq以资源高效表示学习开发者认知状态并预测后续操作，支持在线自适应；初步实验中动作序列预测准确率超过70%，有望动态优化IDE交互。",
+    "topic_tags": [
+      "IDE",
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "用户行为预测"
+    ],
+    "url": "https://arxiv.org/abs/2503.10254v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Configuration is a key technology for tailoring complex software systems, services, and products. A successful application of configurators not only depends on technical correctness, performance, and domain modeling but also on their usability. While general usability heuristics are widely used, configurator-specific criteria and tool support for systematic user interface (UI) analysis are limited. This paper explores the use of multimodal large language models (MLLMs) for scalable and semi-automated usability analysis of configurator UIs. We synthesize 18 configurator-specific usability criteria from the literature and apply these criteria in an MLLM-based analysis of 16 real-world configurators. Each criterion is assessed individually to generate severity ratings for usability issues and actionable improvement suggestions. A review of the results confirms that MLLMs can reliably identify configurator-specific usability issues and provide domain-aware improvement recommendations. Although human validation remains necessary, this approach has the potential to significantly reduce the required effort to analyze configurator usability.",
     "ai_reason": "MLLM用于可用性分析，UX方法应用",
     "ai_score": 5.0,
@@ -6598,6 +6747,128 @@
     "year": 2025
   },
   {
+    "abstract": "One important step in software development is testing the finished product with actual users. These tests aim, among other goals, at determining unintuitive behavior of the software as it is presented to the end-user. Moreover, they aim to determine inconsistencies in the user-facing interface. They provide valuable feedback for the development of the software, but are time-intensive to conduct. In this work, we present GERALLT, a system that uses Large Language Models (LLMs) to perform exploratory tests of the Graphical User Interface (GUI) of a real-life engineering software. GERALLT automatically generates a list of potential unintuitive and inconsistent parts of the interface. We present the architecture of GERALLT and evaluate it on a real-world use case of the engineering software, which has been extensively tested by developers and users. Our results show that GERALLT is able to determine issues with the interface that support the software development team in future development of the software.",
+    "ai_reason": "LLM自动探索GUI可用性问题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Tim Rosenbach",
+      "David Heidrich",
+      "Alexander Weinert"
+    ],
+    "authors_full": [
+      {
+        "name": "Tim Rosenbach"
+      },
+      {
+        "name": "David Heidrich"
+      },
+      {
+        "name": "Alexander Weinert"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-05-23",
+    "doi": "https://doi.org/10.1109/icstw64639.2025.10962502",
+    "domain_score": 3.0,
+    "id": 8429,
+    "ingested_at": "2026-06-14T13:03:20.674458",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2505.17839v1",
+    "scored_at": "2026-11-09T08:59:52.804149",
+    "title": "Automated Testing of the GUI of a Real-Life Engineering Software using Large Language Models",
+    "title_zh": "利用LLM自动测试真实工程软件的GUI",
+    "tldr": "GERALLT利用大语言模型对真实工程软件的图形界面开展探索性测试，自动生成潜在不直观和不一致的问题清单。评估显示，该系统能识别出可供开发团队改进的界面缺陷，可减少人工GUI测试负担并支持真实工程软件的质量控制。",
+    "topic_tags": [
+      "可用性测试",
+      "用户界面",
+      "软件测试",
+      "用户体验(UX)"
+    ],
+    "url": "https://arxiv.org/abs/2505.17839v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Code completion technology based on large language model has significantly improved the development efficiency of programmers. However, in practical applications, there remains a gap between current commonly used code completion evaluation metrics and users' actual perception. To address this issue, we propose two evaluation metrics for code completion tasks--LCP and ROUGE-LCP, from the perspective of probabilistic modeling. Furthermore, to tackle the lack of effective structural semantic modeling and cross-module dependency information in LLMs for repository-level code completion scenarios, we propose a data processing method based on a Structure-Preserving and Semantically-Reordered Code Graph (SPSR-Graph). Through theoretical analysis and experimental validation, we demonstrate the superiority of the proposed evaluation metrics in terms of user perception consistency, as well as the effectiveness of the data processing method in enhancing model performance.",
+    "ai_reason": "指标对齐开发者感知，但无用户实验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "代码补全",
+      "图结构建模"
+    ],
+    "authors": [
+      "Dengfeng Liu",
+      "Jucai Zhai",
+      "Xiaoguang Jiang",
+      "Ziqun Li",
+      "Qianjin Yu"
+    ],
+    "authors_full": [
+      {
+        "name": "Dengfeng Liu"
+      },
+      {
+        "name": "Jucai Zhai"
+      },
+      {
+        "name": "Xiaoguang Jiang"
+      },
+      {
+        "name": "Ziqun Li"
+      },
+      {
+        "name": "Qianjin Yu"
+      },
+      {
+        "name": "Feng Liu"
+      },
+      {
+        "name": "Rui Ye"
+      },
+      {
+        "name": "Huang Liu"
+      },
+      {
+        "name": "Zhiguo Yang"
+      },
+      {
+        "name": "Yongsheng Du"
+      },
+      {
+        "name": "Fang Tan"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-05-19",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 8431,
+    "ingested_at": "2026-06-14T13:03:20.675814",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2505.13073v1",
+    "scored_at": "2026-11-09T08:59:52.804805",
+    "title": "Structure-Aware Corpus Construction and User-Perception-Aligned Metrics for Large-Language-Model Code Completion",
+    "title_zh": "面向LLM代码补全的结构感知语料构建与用户感知对齐指标",
+    "tldr": "针对LLM代码补全指标与开发者感知脱节的问题，提出概率式LCP与ROUGE-LCP指标，并用保结构、重语义排序的SPSR-Graph处理仓库数据；实验显示前者更贴合用户评价，后者可提升模型补全表现。",
+    "topic_tags": [
+      "代码补全",
+      "评估指标",
+      "用户感知",
+      "软件工程"
+    ],
+    "url": "https://arxiv.org/abs/2505.13073v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Trust is a fundamental concept in human decision-making and collaboration that has long been studied in philosophy and psychology. However, software engineering (SE) articles often use the term trust informally; providing an explicit definition or embedding results in established trust models is rare. In SE research on AI assistants, this practice culminates in equating trust with the likelihood of accepting generated content, which, in isolation, does not capture the full conceptual complexity of trust. Without a common definition, true secondary research on trust is impossible. The objectives of our research were: (1) to present the psychological and philosophical foundations of human trust, (2) to systematically study how trust is conceptualized in SE and the related disciplines human-computer interaction and information systems, and (3) to discuss limitations of equating trust with content acceptance, outlining how SE research can adopt existing trust models to overcome the widespread informal use of the term trust. We conducted a literature review across disciplines and a critical review of recent SE articles with a focus on trust conceptualizations. We found that trust is rarely defined or conceptualized in SE articles. Related disciplines commonly embed their methodology and results in established trust models, clearly distinguishing, for example, between initial trust and trust formation and between appropriate and inappropriate trust. On a meta-scientific level, other disciplines even discuss whether and when trust can be applied to AI assistants at all. Our study reveals a significant maturity gap of trust research in SE compared to other disciplines. We provide concrete recommendations on how SE researchers can adopt established trust models and instruments to study trust in AI assistants beyond the acceptance of generated software artifacts.",
     "ai_reason": "综述AI助手中的信任与协作概念",
     "ai_score": 5.0,
@@ -6651,6 +6922,58 @@
       "人机协作"
     ],
     "url": "https://arxiv.org/abs/2504.12461v4",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "The integration of Artificial Intelligence (AI) into Integrated Development Environments (IDEs) is reshaping software development, fundamentally altering how developers interact with their tools. This shift marks the emergence of Human-AI Experience in Integrated Development Environment (in-IDE HAX), a field that explores the evolving dynamics of Human-Computer Interaction in AI-assisted coding environments. Despite rapid adoption, research on in-IDE HAX remains fragmented, which highlights the need for a unified overview of current practices, challenges, and opportunities. To provide a structured overview of existing research, we conduct a systematic literature review of 90 studies, summarizing current findings and outlining areas for further investigation.   We organize key insights from reviewed studies into three aspects: Impact, Design, and Quality of AI-based systems inside IDEs. Impact findings show that AI-assisted coding enhances developer productivity but also introduces challenges, such as verification overhead and over-reliance. Design studies show that effective interfaces surface context, provide explanations and transparency of suggestion, and support user control. Quality studies document risks in correctness, maintainability, and security. For future research, priorities include productivity studies, design of assistance, and audit of AI-generated code. The agenda calls for larger and longer evaluations, stronger audit and verification assets, broader coverage across the software life cycle, and adaptive assistance under user control.",
+    "ai_reason": "系统综述IDE中的人机AI交互研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI编程助手",
+      "人机交互",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Agnia Sergeyuk",
+      "Ilya Zakharov",
+      "Ekaterina Koshchenko",
+      "Maliheh Izadi"
+    ],
+    "authors_full": [
+      {
+        "name": "Agnia Sergeyuk"
+      },
+      {
+        "name": "Ilya Zakharov"
+      },
+      {
+        "name": "Ekaterina Koshchenko"
+      },
+      {
+        "name": "Maliheh Izadi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-03-08",
+    "doi": "https://doi.org/10.1007/s10664-025-10793-0",
+    "domain_score": 4.0,
+    "id": 8439,
+    "ingested_at": "2026-06-14T13:03:20.682253",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2503.06195v3",
+    "scored_at": "2026-11-09T09:00:05.782423",
+    "title": "Human-AI Experience in Integrated Development Environments: A Systematic Literature Review",
+    "title_zh": "集成开发环境中的人机协同体验：系统性文献综述",
+    "tldr": "系统综述90项IDE内人机体验研究，从影响、设计与质量归纳AI辅助编码的作用：可提升生产力但增加验证负担并诱发过度依赖；有效设计需呈现上下文、解释与控制，同时关注正确性、可维护性和安全。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "AI依赖",
+      "可解释性"
+    ],
+    "url": "https://arxiv.org/abs/2503.06195v3",
     "volume": null,
     "year": 2025
   },
@@ -7064,6 +7387,74 @@
     "year": 2025
   },
   {
+    "abstract": "Explainability has become a crucial non-functional requirement to enhance transparency, build user trust, and ensure regulatory compliance. However, translating explanation needs expressed in user feedback into structured requirements and corresponding explanations remains challenging. While existing methods can identify explanation-related concerns in user reviews, there is no established approach for systematically deriving requirements and generating aligned explanations. To contribute toward addressing this gap, we introduce a tool-supported approach that automates this process. To evaluate its effectiveness, we collaborated with an industrial automation manufacturer to create a dataset of 58 user reviews, each annotated with manually crafted explainability requirements and explanations. Our evaluation shows that while AI-generated requirements often lack relevance and correctness compared to human-created ones, the AI-generated explanations are frequently preferred for their clarity and style. Nonetheless, correctness remains an issue, highlighting the importance of human validation. This work contributes to the advancement of explainability requirements in software systems by (1) introducing an automated approach to derive requirements from user reviews and generate corresponding explanations, (2) providing empirical insights into the strengths and limitations of automatically generated artifacts, and (3) releasing a curated dataset to support future research on the automatic generation of explainability requirements.",
+    "ai_reason": "从用户评论生成需求并人工标注",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "可解释 AI",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Martin Obaidi",
+      "Jannik Fischbach",
+      "Jakob Droste",
+      "Hannah Deters",
+      "Marc Herrmann"
+    ],
+    "authors_full": [
+      {
+        "name": "Martin Obaidi"
+      },
+      {
+        "name": "Jannik Fischbach"
+      },
+      {
+        "name": "Jakob Droste"
+      },
+      {
+        "name": "Hannah Deters"
+      },
+      {
+        "name": "Marc Herrmann"
+      },
+      {
+        "name": "Jil Klünder"
+      },
+      {
+        "name": "Steffen Krätzig"
+      },
+      {
+        "name": "Hugo Villamizar"
+      },
+      {
+        "name": "Kurt Schneider"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-07-10",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 8552,
+    "ingested_at": "2026-06-14T13:03:20.770606",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2507.07344v1",
+    "scored_at": "2026-11-09T08:59:52.802909",
+    "title": "Automatic Generation of Explainability Requirements and Software Explanations From User Reviews",
+    "title_zh": "从用户评论自动生成可解释性需求与软件解释",
+    "tldr": "构建从用户评论中自动提取结构化可解释性需求并生成配套说明的工具流程。基于工业自动化企业58条评论及人工标注数据评估发现：AI需求的相关性和正确性较弱，生成的说明在清晰度与风格上更受偏好，但正确性仍需人工校验。",
+    "topic_tags": [
+      "可解释性",
+      "需求工程",
+      "用户评论分析",
+      "软件质量"
+    ],
+    "url": "https://arxiv.org/abs/2507.07344v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "In today's digitalized world, where software systems are becoming increasingly ubiquitous and complex, the quality aspect of explainability is gaining relevance. A major challenge in achieving adequate explanations is the elicitation of individual explanation needs, as it may be subject to severe hypothetical or confirmation biases. To address these challenges, we aim to establish user-based indicators concerning user behavior or system events that can be captured at runtime to determine when a need for explanations arises. In this work, we conducted explorative research in form of an online study to collect self-reported indicators that could indicate a need for explanation. We compiled a catalog containing 17 relevant indicators concerning user behavior, 8 indicators concerning system events and 14 indicators concerning emotional states or physical reactions. We also analyze the relationships between these indicators and different types of need for explanation. The established indicators can be used in the elicitation process through prototypes, as well as after publication to gather requirements from already deployed applications using telemetry and usage data. Moreover, these indicators can be used to trigger explanations at appropriate moments during the runtime.",
     "ai_reason": "在线研究识别解释需求，属核心用研",
     "ai_score": 5.0,
@@ -7461,6 +7852,59 @@
       "可解释性"
     ],
     "url": "https://arxiv.org/abs/2511.01043v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Requirement Engineering (RE) is the foundation of successful software development. In RE, the goal is to ensure that implemented systems satisfy stakeholder needs through rigorous requirements elicitation, validation, and evaluation processes. Despite its critical role, RE continues to face persistent challenges, such as ambiguity, conflicting stakeholder needs, and the complexity of managing evolving requirements. A common view is that Artificial Intelligence (AI) has the potential to streamline the RE process, resulting in improved efficiency, accuracy, and management actions. However, using AI also introduces new concerns, such as ethical issues, biases, and lack of transparency. This paper explores how AI can enhance traditional RE practices by automating labor-intensive tasks, supporting requirement prioritization, and facilitating collaboration between stakeholders and AI systems. The paper also describes the opportunities and challenges that AI brings to RE. In particular, the vision calls for ethical practices in AI, along with a much-enhanced collaboration between academia and industry professionals. The focus should be on creating not only powerful but also trustworthy and practical AI solutions ready to adapt to the fast-paced world of software development.",
+    "ai_reason": "核心讨论AI辅助需求工程与人机协作",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "人机协作",
+      "AI 治理",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Mateen Ahmed Abbasi",
+      "Petri Ihantola",
+      "Tommi Mikkonen",
+      "Niko Mäkitalo"
+    ],
+    "authors_full": [
+      {
+        "name": "Mateen Ahmed Abbasi"
+      },
+      {
+        "name": "Petri Ihantola"
+      },
+      {
+        "name": "Tommi Mikkonen"
+      },
+      {
+        "name": "Niko Mäkitalo"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-10-05",
+    "doi": "https://doi.org/10.1007/978-3-032-04190-6_11",
+    "domain_score": 3.0,
+    "id": 8630,
+    "ingested_at": "2026-06-14T13:03:20.858284",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2510.04380v1",
+    "scored_at": "2026-11-09T08:59:51.722695",
+    "title": "Reconsidering Requirements Engineering: Human-AI Collaboration in AI-Native Software Development",
+    "title_zh": "重思需求工程：AI原生软件开发中的人机协作",
+    "tldr": "AI可自动化需求工程中的高负担任务、支持需求排序并促进利益相关者与AI协作，但伦理、偏差和透明度问题要求兼顾可信度、实用性与快速适应性，并通过加强产学合作推动AI原生软件需求工程。",
+    "topic_tags": [
+      "软件工程",
+      "需求工程",
+      "人机协作",
+      "伦理"
+    ],
+    "url": "https://arxiv.org/abs/2510.04380v1",
     "volume": null,
     "year": 2025
   },
@@ -42698,6 +43142,218 @@
     "year": 2026
   },
   {
+    "abstract": "AI agents can execute multi-step tasks on users' behalf, yet the boundaries of acceptable delegation remain unclear. We report a scenario-based survey of 289 U.S. adults with prior AI experience covering 45 use cases across nine life domains. Each respondent evaluated one scenario per domain, producing repeated measures of automation preference, trust, collaboration, AI leadership, privacy concern, and willingness to pay. Automation preferences varied substantially across domains. Generalized estimating equation models showed that greater trust in the AI agent, desired AI leadership, prior task-specific AI use, and anticipated financial savings were associated with greater automation preference. In contrast, concerns that automation would reduce personal fulfillment predicted lower automation preference. Open-ended responses further revealed a preference for bounded autonomy, with participants often favoring substantial AI execution while retaining human involvement, oversight, or final authority. We argue that delegation is best understood as a configuration of execution, collaboration, leadership, and authority.",
+    "ai_reason": "289人情景调查代理AI委托与信任偏好",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互"
+    ],
+    "authors": [
+      "Sarah Wheeler",
+      "Veronica Rammouz",
+      "Yaoyao Qian",
+      "Zexuan Liu",
+      "Mengyi Wei"
+    ],
+    "authors_full": [
+      {
+        "name": "Sarah Wheeler"
+      },
+      {
+        "name": "Veronica Rammouz"
+      },
+      {
+        "name": "Yaoyao Qian"
+      },
+      {
+        "name": "Zexuan Liu"
+      },
+      {
+        "name": "Mengyi Wei"
+      },
+      {
+        "name": "Anthony Rios"
+      },
+      {
+        "name": "Tianzhi He"
+      },
+      {
+        "name": "Kyrie Zhou"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-06",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38737,
+    "ingested_at": "2026-11-09T08:57:48.060529",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.09730v1",
+    "scored_at": "2026-11-09T08:58:30.766827",
+    "title": "What to Delegate, What to Preserve: Human Preferences for Agentic AI Across Everyday Life and Work",
+    "title_zh": "何者委派，何者保留：日常生活与工作中人类对智能体AI的偏好",
+    "tldr": "基于289名有AI使用经验的美国成年人、45个日常与工作场景，刻画用户对智能体自动化的接受边界。信任、AI领导偏好、既往使用和预期节省成本会提高委托意愿，个人成就感顾虑则降低意愿；用户总体偏好有限自主并保留监督或最终决策权。",
+    "topic_tags": [
+      "问卷",
+      "用户研究方法",
+      "人机协作",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2611.09730v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "A growing literature examines the impact of engaging with AI chatbots on our relationality: our ability to form relationships with others, maintain them through life's changes, and exit when needed. Currently, substantial work focuses on purpose-built AI companions (e.g. Replika, Character.AI), with less work investigating socioemotional uses of the more widely-used general-purpose chatbots. In this paper, we present a 100-person investigation into how people engage general-purpose AI for socioemotional needs. Participants' AI uses varied, from practicing specific social skills to seeking additional bandwidth and information as they navigated their social contexts. To explain this heterogeneity, we provide 8 states that describe how AI expands or contracts relationality for people with different levels of skills, bandwidth, and information. We then present a unified conceptual model for the role of technology in mediating human relationality, the Relational Capacity Framework, and outline future research designing appropriate roles for AI in human connection.",
+    "ai_reason": "100人调查AI社交情感使用与关系体验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "AI助手"
+    ],
+    "authors": [
+      "Emily Tseng",
+      "Patrick Gage Kelley",
+      "Renee Shelby",
+      "Ashley M. Walker"
+    ],
+    "authors_full": [
+      {
+        "name": "Emily Tseng"
+      },
+      {
+        "name": "Patrick Gage Kelley"
+      },
+      {
+        "name": "Renee Shelby"
+      },
+      {
+        "name": "Ashley M. Walker"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-06",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38738,
+    "ingested_at": "2026-11-09T08:57:48.061828",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.08877v1",
+    "scored_at": "2026-11-09T08:58:30.766600",
+    "title": "The Relational Capacity Framework: A Lens for AI-Mediated Relationality",
+    "title_zh": "关系能力框架：审视AI介导关系性的视角",
+    "tldr": "通过100人研究考察通用聊天机器人满足社会情感需求的方式，提出关系能力框架与八种状态，依据个体的社交技能、可用精力和信息解释AI如何扩展或压缩其建立、维持及退出关系的能力。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "人机协作",
+      "在线社区"
+    ],
+    "url": "https://arxiv.org/abs/2611.08877v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models are increasingly used to resolve consumer complaints, and the way complainants write varies with age, education and socioeconomic status (SES). We audit three remedy-decision systems using sociolinguistic rewrites of US consumer financial complaints that are instructed to preserve every fact: two generative LLMs that return a single label (GPT-4o-mini and GPT-5-mini) and a probabilistic \"System One\" model that returns a distribution over remedies (Jev). Using pre-registered hypotheses tested once on held-out complaints, we separate two phenomena that single-label audits conflate. At the group scale, older, college-educated and higher-SES styles receive slightly more generous remedies; these effects replicate but are small, with every monetary-remedy gap within 0.5 percentage points. At the individual scale, two style versions of the same complaint receive different monetary decisions 2.6-6.3% of the time. In a variance-component analysis of the probabilistic model, persona components shared across the two rewrite models account for about 1.6% of within-complaint variation. The persona gaps are associated mainly with delivery (vocabulary, grammar, politeness) rather than content. Positive controls show that all three systems respond 49-387 times more strongly to remedy-relevant facts than to style. Rewriting every complaint into one standard style reduced GPT-4o-mini's education and SES gaps by 94% and 87% while retaining fact sensitivity, but reversed two of the probabilistic model's gaps and did not make individual decisions more stable. Independent LLM auditors flagged material fact changes in 3.3% and 11.7% of rewrites, and instability persisted among unflagged rewrites. Fairness audits of LLM decision systems should report group disparities and individual instability as separate outcomes.",
+    "ai_reason": "研究LLM处理消费者投诉及人口群体差异",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "生成式AI",
+      "算法公平",
+      "语言偏差"
+    ],
+    "authors": [
+      "Colin Priest"
+    ],
+    "authors_full": [
+      {
+        "name": "Colin Priest"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-06",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38741,
+    "ingested_at": "2026-11-09T08:57:48.066013",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.08995v1",
+    "scored_at": "2026-11-09T08:58:30.766124",
+    "title": "Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions",
+    "title_zh": "相同事实，不同对策：LLM与System One决策中的语言画像与任意性",
+    "tldr": "以保留事实的语言改写审计LLM与概率模型处理金融投诉的补救决策。群体差异较小，但同一事实因表达风格不同而有2.6%—6.3%的决策差异；统一表达可显著缩窄教育与SES差距。",
+    "topic_tags": [
+      "伦理",
+      "消费者行为",
+      "用户画像",
+      "服务体验"
+    ],
+    "url": "https://arxiv.org/abs/2611.08995v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Estimating advertising performance in cold-start settings is challenging because historical logs are unavailable before launch. Large language models (LLMs) offer a potential alternative by simulating persona-conditioned user responses, but it remains unclear which design choices actually drive LLM-based persona simulation. Using real Google Ads e-commerce campaign data across five demographic segments, we identify three signal-form dimensions that affect simulation quality: (i) a demographic anchor without noisy rich attributes, (ii) a relative qualitative banner-blindness signal rather than quantitative anchors, and (iii) prompt phrasing. On this campaign, our method attains an MAE of 24.9 and a MAPE of 26.1%, a 51.3% lower MAE than the best tested non-LLM baseline and 77.3% lower than an LLM configuration using explicit CTR anchors. Systematic ablations show that minimal demographic descriptions achieve lower mean error than richer persona configurations, while relative qualitative cues substantially outperform the tested quantitative anchors. We additionally compare these configurations with direct-prior and rule-based baselines and with alternative LLM configurations.",
+    "ai_reason": "LLM模拟电商用户响应，含真实广告数据",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "用户画像模拟",
+      "广告效果预测"
+    ],
+    "authors": [
+      "Jiwoo Choi",
+      "In Ik Lee",
+      "Woo Sung Seo",
+      "Minho Lee",
+      "Yun Young Choi"
+    ],
+    "authors_full": [
+      {
+        "name": "Jiwoo Choi"
+      },
+      {
+        "name": "In Ik Lee"
+      },
+      {
+        "name": "Woo Sung Seo"
+      },
+      {
+        "name": "Minho Lee"
+      },
+      {
+        "name": "Yun Young Choi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-06",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38744,
+    "ingested_at": "2026-11-09T08:57:48.070771",
+    "issue": null,
+    "journal": "arXiv:cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2611.08840v1",
+    "scored_at": "2026-11-09T08:58:30.765610",
+    "title": "What Matters for LLM Persona Simulation: Signal Form in Cold-Start E-Commerce Advertising",
+    "title_zh": "LLM角色模拟的关键因素：冷启动电商广告中的信号形式",
+    "tldr": "针对冷启动电商广告缺少历史数据的问题，比较真实广告活动中的LLM用户画像模拟配置。最小人口描述、相对定性盲测信号及提示措辞效果最佳，MAE较最佳非LLM基线降低51.3%。",
+    "topic_tags": [
+      "广告",
+      "用户画像",
+      "冷启动预测"
+    ],
+    "url": "https://arxiv.org/abs/2611.08840v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "人-自主性团队协作，AI/HCI核心议题",
     "ai_score": 4.0,
@@ -50418,7 +51074,7 @@
     "year": 2023
   },
   {
-    "abstract": null,
+    "abstract": "Anthropomorphic design is increasingly used to make conversational AI systems more approachable and socially engaging, yet its effects on users’ risk judgments remain unclear. Drawing on theories of anthropomorphism and cognitive–affective trust, we develop a moderated mediation model explaining how perceived anthropomorphism relates to risk perception in AI decision support. We conducted a large-scale between-subjects online experiment (N = 1,256) using a simulated financial advisor chatbot with a 2 2 2 anthropomorphic design manipulation varying visual cues (human vs. machine avatar), identity cues (human name vs. bot identifier), and communication style (human-like vs. machine-like communication). Results show that perceived anthropomorphism was positively associated with both cognitive trust and affective trust, but these trust dimensions had different relationships with perceived risk. Cognitive trust consistently predicted lower risk perception, whereas affective trust showed a weaker positive association with risk perception that was not robust across model specifications. Self-reported domain knowledge moderated these relationships: higher domain knowledge attenuated the association between perceived anthropomorphism and both trust dimensions, while participants with lower domain knowledge showed a stronger negative indirect association between anthropomorphism and risk perception through cognitive trust. By treating the perceived risk of following AI advice as a focal outcome, this study extends anthropomorphism research beyond trust formation and distinguishes how cognitive and affective trust relate to users’ risk judgments. The findings highlight the importance of calibrating, rather than simply maximizing, anthropomorphic cues in high-stakes AI decision-support systems.",
     "ai_reason": "决策支持AI的拟人化、信任与风险感知",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -50429,26 +51085,36 @@
     "authors": [
       "Manuele Reani",
       "Xiangyang He",
-      "Zhoulan Bao"
+      "Zuolan Bao"
     ],
     "authors_full": [
       {
-        "affiliation": [],
+        "affiliation": [
+          "Chinese University of Hong Kong, Shenzhen"
+        ],
         "name": "Manuele Reani",
-        "orcid": "https://orcid.org/0000-0003-2430-9232"
+        "orcid": "https://orcid.org/0000-0003-2430-9232",
+        "position": "first"
       },
       {
-        "affiliation": [],
+        "affiliation": [
+          "Hong Kong University of Science and Technology",
+          "The Hong Kong University of Science and Technology (Guangzhou)"
+        ],
         "name": "Xiangyang He",
-        "orcid": null
+        "orcid": "https://orcid.org/0009-0006-9055-2547",
+        "position": "middle"
       },
       {
-        "affiliation": [],
-        "name": "Zhoulan Bao",
-        "orcid": null
+        "affiliation": [
+          "Chinese University of Hong Kong, Shenzhen"
+        ],
+        "name": "Zuolan Bao",
+        "orcid": null,
+        "position": "last"
       }
     ],
-    "cited_by": 0,
+    "cited_by": 1,
     "date": "2026-10",
     "doi": "10.1016/j.ijhcs.2026.103956",
     "domain_score": 5.0,
@@ -50456,7 +51122,7 @@
     "ingested_at": "2026-10-29T07:52:57.911492",
     "issue": null,
     "journal": "IJHCS",
-    "pdf_url": null,
+    "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1071581926002314/pdf",
     "scored_at": "2026-10-29T07:53:34.044813",
     "title": "Anthropomorphism and risk perception: The role of trust and domain knowledge in decision-support AI",
     "title_zh": "拟人化与风险感知：信任和领域知识在决策支持AI中的作用",
@@ -50468,7 +51134,7 @@
       "决策支持"
     ],
     "url": "https://doi.org/10.1016/j.ijhcs.2026.103956",
-    "volume": null,
+    "volume": "219",
     "year": 2026
   },
   {

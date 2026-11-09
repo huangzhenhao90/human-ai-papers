@@ -1,0 +1,58 @@
+{
+  "abstract": "Fairness analyses of algorithmic decision systems typically treat the feature representation of individuals as an a priori fixed input. How well a feature representation captures what is actually decision-relevant for different people and their unique backgrounds, however, is typically left unexamined. We address this gap by modeling feature engineering as a stochastic selection process over the pooled characteristics as candidate features for a finite training population. Based on this model, we develop a new framework for uniqueness-aware feature engineering which operates in two layers. The first layer measures population heterogeneity using a multivariate hypergeometric model of feature prevalence. It shows how well an individual is represented by any given input representation and which individual of the population is \"least represented\" compared to their personal, reference characteristics. The second layer acts on this assessment using set-similarity measures to search for an optimum between representational fit of the population and predictive accuracy. Without assuming prior knowledge about unseen individuals, our framework grants represented humans agency over what counts as decision-relevant in their case, gives deploying institutions accountability through a publishable representation fit report, and provides each person subject to a decision transparency about their personal representation fit. We operationalize our framework as a six-step pipeline and show a proof-of-principle using synthetic data. Our approach offers a blueprint for making algorithmic decision systems accountable for how well they represent individuals during development and in production.",
+  "ai_type_tags": [
+    "算法决策",
+    "机器学习",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2611.09403",
+  "authors": [
+    "Theresa Elstner",
+    "Martin Potthast"
+  ],
+  "authors_full": [
+    {
+      "name": "Theresa Elstner"
+    },
+    {
+      "name": "Martin Potthast"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "聚焦算法决策中的特征工程与公平",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对公平审计忽视个体特征代表性差异的问题，将特征工程建模为从群体特征池中随机选择的过程，以多元超几何模型识别代表不足，并用集合相似度平衡表征适配与预测准确率，形成六步管线、适配报告和个人透明度机制。",
+      "topic_tags": [
+        "公平性",
+        "伦理",
+        "决策",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-06",
+  "doi": null,
+  "id": "p_IQQ0w5MXd39LH97E",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2611.09403v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 84211,
+      "revision": "87786637b85e30cdd14b16715347a9ba81880ba7"
+    }
+  ],
+  "title": "Uniqueness-Aware Feature Engineering for Representing Humans in Algorithmic Decision Making",
+  "title_zh": "独特性感知特征工程：算法决策中的人类表征",
+  "unified_ingested_at": "2026-11-09T09:20:38.732537Z",
+  "url": "https://arxiv.org/abs/2611.09403v1",
+  "volume": null,
+  "year": 2026
+}

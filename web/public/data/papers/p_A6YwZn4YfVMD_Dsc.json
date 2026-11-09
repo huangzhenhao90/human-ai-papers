@@ -1,0 +1,55 @@
+{
+  "abstract": "Large language models are increasingly used to resolve consumer complaints, and the way complainants write varies with age, education and socioeconomic status (SES). We audit three remedy-decision systems using sociolinguistic rewrites of US consumer financial complaints that are instructed to preserve every fact: two generative LLMs that return a single label (GPT-4o-mini and GPT-5-mini) and a probabilistic \"System One\" model that returns a distribution over remedies (Jev). Using pre-registered hypotheses tested once on held-out complaints, we separate two phenomena that single-label audits conflate. At the group scale, older, college-educated and higher-SES styles receive slightly more generous remedies; these effects replicate but are small, with every monetary-remedy gap within 0.5 percentage points. At the individual scale, two style versions of the same complaint receive different monetary decisions 2.6-6.3% of the time. In a variance-component analysis of the probabilistic model, persona components shared across the two rewrite models account for about 1.6% of within-complaint variation. The persona gaps are associated mainly with delivery (vocabulary, grammar, politeness) rather than content. Positive controls show that all three systems respond 49-387 times more strongly to remedy-relevant facts than to style. Rewriting every complaint into one standard style reduced GPT-4o-mini's education and SES gaps by 94% and 87% while retaining fact sensitivity, but reversed two of the probabilistic model's gaps and did not make individual decisions more stable. Independent LLM auditors flagged material fact changes in 3.3% and 11.7% of rewrites, and instability persisted among unflagged rewrites. Fairness audits of LLM decision systems should report group disparities and individual instability as separate outcomes.",
+  "ai_type_tags": [
+    "LLM",
+    "生成式AI",
+    "算法公平",
+    "语言偏差"
+  ],
+  "arxiv_id": "2611.08995",
+  "authors": [
+    "Colin Priest"
+  ],
+  "authors_full": [
+    {
+      "name": "Colin Priest"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "研究LLM处理消费者投诉及人口群体差异",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "以保留事实的语言改写审计LLM与概率模型处理金融投诉的补救决策。群体差异较小，但同一事实因表达风格不同而有2.6%—6.3%的决策差异；统一表达可显著缩窄教育与SES差距。",
+      "topic_tags": [
+        "伦理",
+        "消费者行为",
+        "用户画像",
+        "服务体验"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-06",
+  "doi": null,
+  "id": "p_A6YwZn4YfVMD_Dsc",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2611.08995v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38741,
+      "revision": "7930065881c74562cef8f9891537419549474cfd"
+    }
+  ],
+  "title": "Same Facts, Different Remedy: Linguistic Profiling and Arbitrariness in LLM and System One Decisions",
+  "title_zh": "相同事实，不同对策：LLM与System One决策中的语言画像与任意性",
+  "unified_ingested_at": "2026-11-09T09:20:38.732537Z",
+  "url": "https://arxiv.org/abs/2611.08995v1",
+  "volume": null,
+  "year": 2026
+}

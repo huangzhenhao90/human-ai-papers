@@ -1,0 +1,69 @@
+{
+  "abstract": "Estimating advertising performance in cold-start settings is challenging because historical logs are unavailable before launch. Large language models (LLMs) offer a potential alternative by simulating persona-conditioned user responses, but it remains unclear which design choices actually drive LLM-based persona simulation. Using real Google Ads e-commerce campaign data across five demographic segments, we identify three signal-form dimensions that affect simulation quality: (i) a demographic anchor without noisy rich attributes, (ii) a relative qualitative banner-blindness signal rather than quantitative anchors, and (iii) prompt phrasing. On this campaign, our method attains an MAE of 24.9 and a MAPE of 26.1%, a 51.3% lower MAE than the best tested non-LLM baseline and 77.3% lower than an LLM configuration using explicit CTR anchors. Systematic ablations show that minimal demographic descriptions achieve lower mean error than richer persona configurations, while relative qualitative cues substantially outperform the tested quantitative anchors. We additionally compare these configurations with direct-prior and rule-based baselines and with alternative LLM configurations.",
+  "ai_type_tags": [
+    "LLM",
+    "用户画像模拟",
+    "广告效果预测"
+  ],
+  "arxiv_id": "2611.08840",
+  "authors": [
+    "Jiwoo Choi",
+    "In Ik Lee",
+    "Woo Sung Seo",
+    "Minho Lee",
+    "Yun Young Choi"
+  ],
+  "authors_full": [
+    {
+      "name": "Jiwoo Choi"
+    },
+    {
+      "name": "In Ik Lee"
+    },
+    {
+      "name": "Woo Sung Seo"
+    },
+    {
+      "name": "Minho Lee"
+    },
+    {
+      "name": "Yun Young Choi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM模拟电商用户响应，含真实广告数据",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对冷启动电商广告缺少历史数据的问题，比较真实广告活动中的LLM用户画像模拟配置。最小人口描述、相对定性盲测信号及提示措辞效果最佳，MAE较最佳非LLM基线降低51.3%。",
+      "topic_tags": [
+        "广告",
+        "用户画像",
+        "冷启动预测"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-06",
+  "doi": null,
+  "id": "p_ssGuRnD4MCXJnxhK",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2611.08840v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38744,
+      "revision": "7930065881c74562cef8f9891537419549474cfd"
+    }
+  ],
+  "title": "What Matters for LLM Persona Simulation: Signal Form in Cold-Start E-Commerce Advertising",
+  "title_zh": "LLM角色模拟的关键因素：冷启动电商广告中的信号形式",
+  "unified_ingested_at": "2026-11-09T09:20:38.732537Z",
+  "url": "https://arxiv.org/abs/2611.08840v1",
+  "volume": null,
+  "year": 2026
+}
