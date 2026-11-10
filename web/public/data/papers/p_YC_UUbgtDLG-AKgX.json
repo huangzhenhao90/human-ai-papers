@@ -1,0 +1,74 @@
+{
+  "abstract": "Human attention provides valuable yet underexploited signals for code LLM training, offering a perspective beyond purely machine-driven attention. Despite the complexity and cost of collecting eye-tracking data, there has also been limited progress in systematically using these signals for code LLM training. To address both issues, we propose a cohesive pipeline spanning augmentation and reward-based fine-tuning. Specifically, we introduce (1) an eye-tracking path augmentation method to expand programmer attention datasets, (2) a pattern abstraction step that refines raw fixations into learnable attention motifs, and (3) a reward-guided strategy for integrating these insights directly into a CodeT5 supervised fine-tuning process. Our experiments yield +7.16 in CodeBLEU on the CodeXGlue benchmark for code summarization, underscoring how uniting human and machine attention can boost code intelligence. We hope this work encourages broader exploration of human-centric methods in next-generation AI4SE.",
+  "ai_type_tags": [
+    "代码 LLM",
+    "眼动 AI",
+    "奖励微调",
+    "代码生成"
+  ],
+  "arxiv_id": "2503.14936",
+  "authors": [
+    "Yifan Zhang",
+    "Chen Huang",
+    "Zachary Karas",
+    "Dung Thuy Nguyen",
+    "Kevin Leach"
+  ],
+  "authors_full": [
+    {
+      "name": "Yifan Zhang"
+    },
+    {
+      "name": "Chen Huang"
+    },
+    {
+      "name": "Zachary Karas"
+    },
+    {
+      "name": "Dung Thuy Nguyen"
+    },
+    {
+      "name": "Kevin Leach"
+    },
+    {
+      "name": "Yu Huang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用程序员眼动数据训练代码LLM",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "将程序员眼动注视转化为代码模型可学习的注意力模式，通过眼动路径增强、模式抽象和奖励引导微调CodeT5完成代码摘要。实验在CodeXGlue上使CodeBLEU提升7.16分，表明人类视觉注意信号可有效补充机器训练信号，提升代码模型能力。",
+      "topic_tags": [
+        "眼动追踪",
+        "用户研究方法",
+        "人机交互(HCI)",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-03-19",
+  "doi": "10.1145/3696630.3728510",
+  "id": "p_YC_UUbgtDLG-AKgX",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2503.14936v2",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 8082,
+      "revision": "37f9293768f2a9b1d5b9f25707c546444482342a"
+    }
+  ],
+  "title": "Enhancing Code LLM Training with Programmer Attention",
+  "title_zh": "利用程序员注意力增强代码LLM训练",
+  "unified_ingested_at": "2026-11-10T09:24:42.507870Z",
+  "url": "https://arxiv.org/abs/2503.14936v2",
+  "volume": null,
+  "year": 2025
+}

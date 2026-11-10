@@ -1,0 +1,73 @@
+{
+  "abstract": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance requires a model to maintain an evolving representation of user requirements and to reason over it before complying with later requests. Failures can therefore be subtle: models may fail to recognize a changed constraint or hidden conflict, or recognize it without enforcing it in the final response. Existing benchmarks primarily test fully specified prompts, long-context recall, or controlled domain environments, leaving open-domain requirement reconciliation undermeasured. We introduce TurnFlow, an interactive benchmark for evaluating whether models preserve, revise, and act on user requirements across turns. TurnFlow combines adaptive user simulation with verifiable judging, allowing conversations to unfold naturally while keeping hidden requirements and pass/fail criteria controlled. In our evaluation, nine LLMs achieve overall pass rates from 42.86% to 59.59% on 490 scenarios. Performance varies substantially across challenge types: models perform well on Stateful Multi-Constraint Following but remain considerably less reliable on Scope Creep and Goal Shift. These results reveal persistent limitations in reasoning over evolving user requirements across turns.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2611.10412",
+  "authors": [
+    "Zhixun Chen",
+    "Ming Li",
+    "Anjie Liu",
+    "Xiaoyuan Zhang",
+    "Quanyu Dai"
+  ],
+  "authors_full": [
+    {
+      "name": "Zhixun Chen"
+    },
+    {
+      "name": "Ming Li"
+    },
+    {
+      "name": "Anjie Liu"
+    },
+    {
+      "name": "Xiaoyuan Zhang"
+    },
+    {
+      "name": "Quanyu Dai"
+    },
+    {
+      "name": "Huangxun Chen"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以用户模拟评测多轮需求理解",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对多轮对话中模型难以持续追踪并执行变化后需求的问题，TurnFlow结合自适应用户模拟与可验证评判，以490个场景检验9种LLM。总体通过率为42.86%—59.59%，模型虽擅长多约束遵循，却在范围蔓延与目标转移上明显失效。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "对话式 AI",
+        "用户状态推理",
+        "基准测试"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-07",
+  "doi": null,
+  "id": "p_VVagdDXjVpMX1CtP",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.10412v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38810,
+      "revision": "37f9293768f2a9b1d5b9f25707c546444482342a"
+    }
+  ],
+  "title": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+  "title_zh": "TurnFlow：通过场景引导的用户模拟评测多轮LLM智能体用户状态推理",
+  "unified_ingested_at": "2026-11-10T09:24:42.507870Z",
+  "url": "https://arxiv.org/abs/2611.10412v1",
+  "volume": null,
+  "year": 2026
+}

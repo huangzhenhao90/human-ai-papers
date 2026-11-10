@@ -3614,6 +3614,124 @@
     "year": 2025
   },
   {
+    "abstract": "As Large Language Models for Code (LM4Code) become integral to software engineering, establishing trust in their output becomes critical. However, standard accuracy metrics obscure the underlying reasoning of generative models, offering little insight into how decisions are made. Although post-hoc interpretability methods attempt to fill this gap, they often restrict explanations to local, token-level insights, which fail to provide a developer-understandable global analysis. Our work highlights the urgent need for \\textbf{global, code-based} explanations that reveal how models reason across code. To support this vision, we introduce \\textit{code rationales} (CodeQ), a framework that enables global interpretability by mapping token-level rationales to high-level programming categories. Aggregating thousands of these token-level explanations allows us to perform statistical analyses that expose systemic reasoning behaviors. We validate this aggregation by showing it distills a clear signal from noisy token data, reducing explanation uncertainty (Shannon entropy) by over 50%. Additionally, we find that a code generation model (\\textit{codeparrot-small}) consistently favors shallow syntactic cues (e.g., \\textbf{indentation}) over deeper semantic logic. Furthermore, in a user study with 37 participants, we find its reasoning is significantly misaligned with that of human developers. These findings, hidden from traditional metrics, demonstrate the importance of global interpretability techniques to foster trust in LM4Code.",
+    "ai_reason": "LLM可解释性面向开发者理解与信任",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "代码生成",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Dipin Khati",
+      "Daniel Rodriguez-Cardenas",
+      "David N. Palacio",
+      "Alejandro Velasco",
+      "Michele Tufano"
+    ],
+    "authors_full": [
+      {
+        "name": "Dipin Khati"
+      },
+      {
+        "name": "Daniel Rodriguez-Cardenas"
+      },
+      {
+        "name": "David N. Palacio"
+      },
+      {
+        "name": "Alejandro Velasco"
+      },
+      {
+        "name": "Michele Tufano"
+      },
+      {
+        "name": "Denys Poshyvanyk"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-03-21",
+    "doi": "https://doi.org/10.1145/3744916.3787764",
+    "domain_score": 3.0,
+    "id": 7893,
+    "ingested_at": "2026-06-14T13:03:19.948705",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2503.16771v3",
+    "scored_at": "2026-11-10T09:12:09.863923",
+    "title": "Enabling Global, Human-Centered Explanations for LLMs:From Tokens to Interpretable Code and Test Generation",
+    "title_zh": "实现以人为中心的LLM全局解释：从词元到可解释代码与测试生成",
+    "tldr": "面向代码大模型构建全局解释框架CodeQ，将令牌级归因映射、聚合为高层编程类别，使解释不确定性降低逾50%。分析显示，codeparrot-small偏重缩进等浅层句法，37名开发者研究还证实其推理与人类显著错位，说明仅凭准确率不足以建立信任。",
+    "topic_tags": [
+      "可解释性",
+      "人机交互(HCI)",
+      "用户研究",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2503.16771v3",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "The Graphical User Interface (GUI) plays a critical role in the interaction between users and mobile applications (apps), aiming at facilitating the operation process. However, due to the variety of functions and non-standardized design, GUIs might have many accessibility issues, like the size of components being too small or their intervals being narrow. These issues would hinder the operation of low vision users, preventing them from obtaining information accurately and conveniently. Although several technologies and methods have been proposed to address these issues, they are typically confined to issue identification, leaving the resolution in the hands of developers. Moreover, it can be challenging to ensure that the color, size, and interval of the fixed GUIs are appropriately compared to the original ones. In this work, we propose a novel approach named AccessFixer, which utilizes the Relational-Graph Convolutional Neural Network (R-GCN) to simultaneously fix three kinds of accessibility issues, including small sizes, narrow intervals, and low color contrast in GUIs. With AccessFixer, the fixed GUIs would have a consistent color palette, uniform intervals, and adequate size changes achieved through coordinated adjustments to the attributes of related components. Our experiments demonstrate the effectiveness and usefulness of AccessFixer in fixing GUI accessibility issues. After fixing 30 real-world apps, our approach solves an average of 81.2% of their accessibility issues. Also, we apply AccessFixer to 10 open-source apps by submitting the fixed results with pull requests (PRs) on GitHub. The results demonstrate that developers approve of our submitted fixed GUIs, with 8 PRs being merged or under fixing. A user study examines that low vision users host a positive attitude toward the GUIs fixed by our method.",
+    "ai_reason": "以图卷积模型修复低视力用户GUI问题",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "图神经网络",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Mengxi Zhang",
+      "Huaxiao Liu",
+      "Chunyang Chen",
+      "Guangyong Gao",
+      "Han Li"
+    ],
+    "authors_full": [
+      {
+        "name": "Mengxi Zhang"
+      },
+      {
+        "name": "Huaxiao Liu"
+      },
+      {
+        "name": "Chunyang Chen"
+      },
+      {
+        "name": "Guangyong Gao"
+      },
+      {
+        "name": "Han Li"
+      },
+      {
+        "name": "Jian Zhao"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-02-21",
+    "doi": "https://doi.org/10.1109/tse.2023.3337421",
+    "domain_score": 4.0,
+    "id": 7902,
+    "ingested_at": "2026-06-14T13:03:19.954383",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2502.15142v1",
+    "scored_at": "2026-11-10T09:12:04.037974",
+    "title": "AccessFixer: Enhancing GUI Accessibility for Low Vision Users With R-GCN Model",
+    "title_zh": "AccessFixer：基于R-GCN模型提升低视力用户的GUI无障碍性",
+    "tldr": "面向低视力用户面临的组件过小、间距过窄和对比度不足问题，AccessFixer利用关系图卷积网络协调调整关联界面属性，同时修复三类无障碍缺陷；在30个真实应用中将这些问题平均解决81.2%。",
+    "topic_tags": [
+      "可访问性",
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "低视力用户"
+    ],
+    "url": "https://arxiv.org/abs/2502.15142v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Developers often struggle to design truly accessible digital solutions in corporate environments. In these environments, accessibility is usually treated as a compliance requirement rather than an innovation opportunity. By analyzing 14 LLM-based accessibility project proposals and focus group discussions with 9 participants at a Brazilian tech company, we found that inclusive innovation can emerge particularly when initiatives are led by People with Disabilities (PWD) themselves. If organizations adopt similar participatory approaches, accessibility would evolve from an afterthought into a driving force for technological excellence and cultural transformation.",
     "ai_reason": "LLM辅助无障碍开发，含焦点小组用户研究，属HCI",
     "ai_score": 4.0,
@@ -4543,6 +4661,66 @@
       "访谈与问卷"
     ],
     "url": "https://arxiv.org/abs/2505.23684v4",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Human attention provides valuable yet underexploited signals for code LLM training, offering a perspective beyond purely machine-driven attention. Despite the complexity and cost of collecting eye-tracking data, there has also been limited progress in systematically using these signals for code LLM training. To address both issues, we propose a cohesive pipeline spanning augmentation and reward-based fine-tuning. Specifically, we introduce (1) an eye-tracking path augmentation method to expand programmer attention datasets, (2) a pattern abstraction step that refines raw fixations into learnable attention motifs, and (3) a reward-guided strategy for integrating these insights directly into a CodeT5 supervised fine-tuning process. Our experiments yield +7.16 in CodeBLEU on the CodeXGlue benchmark for code summarization, underscoring how uniting human and machine attention can boost code intelligence. We hope this work encourages broader exploration of human-centric methods in next-generation AI4SE.",
+    "ai_reason": "用程序员眼动数据训练代码LLM",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "代码 LLM",
+      "眼动 AI",
+      "奖励微调",
+      "代码生成"
+    ],
+    "authors": [
+      "Yifan Zhang",
+      "Chen Huang",
+      "Zachary Karas",
+      "Dung Thuy Nguyen",
+      "Kevin Leach"
+    ],
+    "authors_full": [
+      {
+        "name": "Yifan Zhang"
+      },
+      {
+        "name": "Chen Huang"
+      },
+      {
+        "name": "Zachary Karas"
+      },
+      {
+        "name": "Dung Thuy Nguyen"
+      },
+      {
+        "name": "Kevin Leach"
+      },
+      {
+        "name": "Yu Huang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-03-19",
+    "doi": "https://doi.org/10.1145/3696630.3728510",
+    "domain_score": 3.0,
+    "id": 8082,
+    "ingested_at": "2026-06-14T13:03:20.152816",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2503.14936v2",
+    "scored_at": "2026-11-10T09:12:09.864624",
+    "title": "Enhancing Code LLM Training with Programmer Attention",
+    "title_zh": "利用程序员注意力增强代码LLM训练",
+    "tldr": "将程序员眼动注视转化为代码模型可学习的注意力模式，通过眼动路径增强、模式抽象和奖励引导微调CodeT5完成代码摘要。实验在CodeXGlue上使CodeBLEU提升7.16分，表明人类视觉注意信号可有效补充机器训练信号，提升代码模型能力。",
+    "topic_tags": [
+      "眼动追踪",
+      "用户研究方法",
+      "人机交互(HCI)",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2503.14936v2",
     "volume": null,
     "year": 2025
   },
@@ -8093,6 +8271,50 @@
     "year": 2025
   },
   {
+    "abstract": "Computational notebooks, while essential for data science, are limited by their one-dimensional interface, which poorly aligns with non-linear developer workflows and complicates collaboration and human-AI interaction. In this work, we focus on features of Computational Canvas, a novel two-dimensional interface that evolves notebooks to enhance data analysis and AI-assisted development within integrated development environments (IDEs). We present vital features, including freely arrangeable code cells, separate environments, and improved output management. These features are designed to facilitate intuitive organization, visual exploration, and natural collaboration with other users and AI agents. We also show the implementation of Computational Canvas with designed features as a Visual Studio Code plugin. By shifting from linear to two-dimensional spatial interfaces, we aim to significantly boost developers' productivity in data exploration, experimentation, and AI-assisted development, addressing the current limitations of traditional notebooks and fostering more flexible, collaborative data science workflows.",
+    "ai_reason": "人机协作界面设计，但缺少用户评估",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "AI 助手",
+      "智能体/Agent",
+      "人机协作"
+    ],
+    "authors": [
+      "Konstantin Grotov",
+      "Dmitry Botov"
+    ],
+    "authors_full": [
+      {
+        "name": "Konstantin Grotov"
+      },
+      {
+        "name": "Dmitry Botov"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-03-21",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 8642,
+    "ingested_at": "2026-06-14T13:03:20.885054",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2503.16967v1",
+    "scored_at": "2026-11-10T09:12:09.863559",
+    "title": "Evolving the Computational Notebook: A Two-Dimensional Canvas for Enhanced Human-AI Interaction",
+    "title_zh": "计算笔记本的演化：用于增强人机交互的二维画布",
+    "tldr": "传统计算笔记本的一维界面难以支持非线性探索与协作；Computational Canvas将其扩展为二维空间，提供自由排布代码单元、环境隔离和输出管理，并以VS Code插件实现，旨在提升数据分析、实验及与AI代理协作的灵活性和生产力。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可视化",
+      "用户体验(UX)",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2503.16967v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Large Language Models (LLMs) have become part of how students solve programming tasks, offering immediate explanations and even full solutions. Previous work has highlighted that novice programmers often heavily rely on LLMs, thereby neglecting their own problem-solving skills. To address this challenge, we designed a course-specific online Python tutor that provides retrieval-augmented, course-aligned guidance without generating complete solutions. The tutor integrates a web-based programming environment with a conversational agent that offers hints, Socratic questions, and explanations grounded in course materials. Students used the system during self-study to work on homework assignments, and the tutor also supported questions about the broader course material. We collected structured student feedback and analyzed interaction logs to investigate how they engaged with the tutor's guidance. We observed that students used the tutor primarily for conceptual understanding, implementation guidance, and debugging, and perceived it as a course-aligned, context-aware learning support that encourages engagement rather than direct solution copying.",
     "ai_reason": "LLM辅导系统部署，学生实际使用并收集数据",
     "ai_score": 5.0,
@@ -8291,6 +8513,50 @@
       "信任"
     ],
     "url": "https://arxiv.org/abs/2505.07700v3",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Recent advances in AI reasoning models provide unprecedented transparency into their decision-making processes, transforming them from traditional black-box systems into models that articulate step-by-step chains of thought rather than producing opaque outputs. This shift has the potential to improve software quality, explainability, and trust in AI-augmented development. However, software engineers rarely have the time or cognitive bandwidth to analyze, verify, and interpret every AI-generated thought in detail. Without an effective interface, this transparency could become a burden rather than a benefit.   In this paper, we propose a vision for structuring the interaction between AI reasoning models and software engineers to maximize trust, efficiency, and decision-making power. We argue that simply exposing AI's reasoning is not enough -- software engineers need tools and frameworks that selectively highlight critical insights, filter out noise, and facilitate rapid validation of key assumptions. To illustrate this challenge, we present motivating examples in which AI reasoning models state their assumptions when deciding which external library to use and produce divergent reasoning paths and recommendations about security vulnerabilities, highlighting the need for an interface that prioritizes actionable insights while managing uncertainty and resolving conflicts. We then outline a research roadmap for integrating automated summarization, assumption validation, and multi-model conflict resolution into software engineering workflows. Achieving this vision will unlock the full potential of AI reasoning models to enable software engineers to make faster, more informed decisions without being overwhelmed by unnecessary detail.",
+    "ai_reason": "聚焦开发者与AI推理模型的交互及信任",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "可解释 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Christoph Treude",
+      "Raula Gaikovina Kula"
+    ],
+    "authors_full": [
+      {
+        "name": "Christoph Treude"
+      },
+      {
+        "name": "Raula Gaikovina Kula"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-03-01",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 8665,
+    "ingested_at": "2026-06-14T13:03:20.976943",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2503.00483v1",
+    "scored_at": "2026-11-10T09:12:12.599696",
+    "title": "Interacting with AI Reasoning Models: Harnessing \"Thoughts\" for AI-Driven Software Engineering",
+    "title_zh": "与AI推理模型交互：利用“思维”赋能AI驱动的软件工程",
+    "tldr": "针对推理模型逐步暴露思路可能加重软件工程师核验负担的问题，构想以选择性呈现、噪声过滤、自动摘要和假设校验突出关键洞察，辅助快速验证并解决冲突推理，在软件工程中兼顾信任、效率与决策质量，并提出研究路线。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可解释性",
+      "可用性",
+      "软件工程"
+    ],
+    "url": "https://arxiv.org/abs/2503.00483v1",
     "volume": null,
     "year": 2025
   },
@@ -43354,6 +43620,533 @@
     "year": 2026
   },
   {
+    "abstract": "Large language models (LLMs) can introduce unexpected ideas through hallucinations, yet little is known about when creative practitioners find these errors inspiring or how these judgments shape interactions. We conducted a retrospective qualitative study with 20 experienced practitioners in research, design, and social media content creation, thematically analyzing 41 hallucination cases and 20 semi-structured interviews. Our framework links inspiration judgments of hallucinations based on goal relevance, task stage, content adaptability, and type-specific factors to behaviors across not-inspired, inspired-by, and inspired-to states. We characterize downstream interaction consequences, showing how hallucination-inspired experiences vary across creative stages and reshape role-differentiated trust, and propose these consequences as a dimension of hallucination evaluation. Finally, we derive design recommendations for stage-sensitive control of divergence and adherence, user-defined constraint priorities, differentiated hallucination labels, and salvage support for preserving useful ideas while correcting errors. These contributions deepen HCI understanding of hallucinations and responsible LLM design in creative work.",
+    "ai_reason": "访谈20名创作者并分析幻觉案例",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "人机交互"
+    ],
+    "authors": [
+      "Xinrui Lin",
+      "Heyan Huang",
+      "Shuning Zhang",
+      "Qi Wang",
+      "Youchao Zhou"
+    ],
+    "authors_full": [
+      {
+        "name": "Xinrui Lin"
+      },
+      {
+        "name": "Heyan Huang"
+      },
+      {
+        "name": "Shuning Zhang"
+      },
+      {
+        "name": "Qi Wang"
+      },
+      {
+        "name": "Youchao Zhou"
+      },
+      {
+        "name": "John Vines"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38796,
+    "ingested_at": "2026-11-10T09:09:40.488692",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.12337v1",
+    "scored_at": "2026-11-10T09:10:15.407467",
+    "title": "From LLM Hallucinations to Inspiration in Creative Work",
+    "title_zh": "从LLM幻觉到创作灵感",
+    "tldr": "基于20名创意从业者的41个幻觉案例及20次半结构访谈，归纳幻觉在目标相关性、任务阶段和内容可改造性下转化为灵感的状态及行为后果，并揭示其对角色差异化信任的重塑，提出分阶段控制、差异化标注与创意挽救等设计建议。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "生成式AI创作",
+      "信任",
+      "LLM幻觉"
+    ],
+    "url": "https://arxiv.org/abs/2611.12337v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI models' growing capacity for complex reasoning has made them attractive tools for forecasting, or the systematic prediction of the future based on past and present data. However, should AI forecasting systems be adopted, human builders will shoulder the work of building and evaluating them. In this paper, we explore what this work looks like with a qualitative interview study with 15 builders of forecasting bots, sampled from among successful participants in a recent AI forecasting competition. Our analysis surfaces the challenges around (1) tuning a bot to acquire factual research, (2) implementing coherent reasoning, and (3) understanding how well one's bot actually does. During their work, builders frequently introduced complexity that did not pay off, and tested in ways that were opportunistic and piecemeal. Our detailed account of their challenges helps clarify what problems should be targeted in upcoming innovations in process, tools, and human-AI teaming for forecasting.",
+    "ai_reason": "访谈15名预测机器人构建者",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "推理AI",
+      "人机协作"
+    ],
+    "authors": [
+      "Priya Dhawka",
+      "Benjamin Wilson",
+      "Andrew Head"
+    ],
+    "authors_full": [
+      {
+        "name": "Priya Dhawka"
+      },
+      {
+        "name": "Benjamin Wilson"
+      },
+      {
+        "name": "Andrew Head"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38799,
+    "ingested_at": "2026-11-10T09:09:40.493674",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.12834v1",
+    "scored_at": "2026-11-10T09:10:15.407075",
+    "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
+    "title_zh": "预知编程：人类构建预测机器人所面临的问题",
+    "tldr": "访谈15名AI预测竞赛获奖方案的构建者，归纳其在获取事实资料、实现连贯推理和评估机器人表现上的困难；构建者常引入无效复杂度并采取机会化、碎片化测试，凸显预测机器人开发工具、流程与人机协作设计需求。",
+    "topic_tags": [
+      "用户研究方法",
+      "访谈",
+      "AI预测",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2611.12834v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language model (LLM) agents are increasingly used as synthetic participants in social, behavioural, and decision-making research, yet it remains unclear whether they can express graded cognitive diversity as assigned when engaging in simulated behaviour. We introduce a cognition-suite evaluation that tests whether simulated populations reproduce human variation in reasoning, self-reported traits, their associations, and downstream behaviour. Agents conditioned on synthetic or human-derived profiles of cognitive reflection, Need for Cognition, and Big Five personality answer the same suite as a cohort of 473 adults: two newly assembled tests, a Cognitive Reflection Test (CRT) and a Behavioural Reflection Test (BRT) whose decision scenarios measure reflection in behaviour, alongside an established CRT and the two trait questionnaires. Across seven full-battery simulation runs of four models, agents recover Need for Cognition and Big Five trait distributions on self-report questionnaires, but fall short on simulating diversity of cognitive task performance and downstream behaviours. In the four Claude Sonnet 4.6 runs, every agent scores full marks on both CRTs, whatever reflection level its persona was assigned. In the other three runs agents make intuitive-lure errors (the tempting wrong answers CRT items invite), but 49 to 85% score full marks, against under 10% in the human sample. Claude Sonnet 5 comes closest to people's item-by-item pattern of lures; the other two runs give fewer lures and vary less between items. In the BRT scenarios, every run over-produces 8 to 11 of 15 coded behaviours by at least 20 percentage points, and people's links between reflection and behaviour carry over only in part. Useful synthetic populations must preserve not only trait descriptors but the structured variation in reasoning, error type, and behaviour those descriptors are meant to organise.",
+    "ai_reason": "以473名成人检验模拟人群认知差异",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "AI 用户画像"
+    ],
+    "authors": [
+      "Sion Weatherhead",
+      "Ben Newell",
+      "Aaron Belbasis",
+      "Flora Salim"
+    ],
+    "authors_full": [
+      {
+        "name": "Sion Weatherhead"
+      },
+      {
+        "name": "Ben Newell"
+      },
+      {
+        "name": "Aaron Belbasis"
+      },
+      {
+        "name": "Flora Salim"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-07",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38800,
+    "ingested_at": "2026-11-10T09:09:40.500185",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.10508v1",
+    "scored_at": "2026-11-10T09:10:20.494581",
+    "title": "Imperfectly Imperfect: Evaluating Graded Cognitive Diversity in LLM Persona Simulations",
+    "title_zh": "不完美中的不完美：评估LLM人格模拟中的分级认知多样性",
+    "tldr": "为检验LLM角色模拟能否复现人类认知差异，团队以认知反思、认知需求与大五人格设定代理，并与473名成年人完成同一套测验。模型能再现自陈人格分布，却难以反映推理任务和行为差异；Claude Sonnet 4.6无论人格设定均获CRT满分，显著偏离人类。",
+    "topic_tags": [
+      "用户画像",
+      "用户研究方法",
+      "合成参与者",
+      "认知差异"
+    ],
+    "url": "https://arxiv.org/abs/2611.10508v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Language models are used as simulated psychiatric patients to train clinicians and evaluate AI therapists, and are judged by plausibility or total scores. We give a framework for simulated respondents: an information budget bounds how much simulated patients can differ, and an average-patient hypothesis, that a model answers each item at the level typical of the named condition and severity, implies little variation, a full profile of the condition's typical symptoms and totals at or above the top of the stated severity band. We examine these implications at matched totals on item-level data from eight human samples, including a clinical and an instructed-feigning sample. Across 17 models, simulated patients vary 1.5 to 11 times less than real respondents with the same total and on most questionnaires endorse nearly every symptom at a middling level; on the PHQ-9 their symptoms covary less like real ones. People, honest or feigning, answer \"not at all\" about as often as genuine patients with the same totals, and more often than every model. Single answers are highly concentrated, and prompt changes, published personas, larger models and reasoning reduce the pattern without removing it. In interviews, patients told a severity are rated as having nearly every symptom, so an assessment agent's recognition of absent symptoms goes untested, and scored against the stated severity the agent places a quarter of them in their band, against about half of patients given a real symptom profile. Having the model word such a profile restores half to two thirds of the variation.",
+    "ai_reason": "用八组真人样本校验模拟患者回答",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "心理模拟",
+      "评估智能体"
+    ],
+    "authors": [
+      "Weixiang Sun",
+      "Zehong Wang",
+      "Kaiwen Shi",
+      "Hong Huang",
+      "Colby Nelson"
+    ],
+    "authors_full": [
+      {
+        "name": "Weixiang Sun"
+      },
+      {
+        "name": "Zehong Wang"
+      },
+      {
+        "name": "Kaiwen Shi"
+      },
+      {
+        "name": "Hong Huang"
+      },
+      {
+        "name": "Colby Nelson"
+      },
+      {
+        "name": "Yiyang Li"
+      },
+      {
+        "name": "Yanfang Ye"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-08",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38803,
+    "ingested_at": "2026-11-10T09:09:40.505499",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.11679v1",
+    "scored_at": "2026-11-10T09:10:20.492162",
+    "title": "The Average Patient: Do Simulated Psychiatric Patients Answer Like Real People?",
+    "title_zh": "平均患者：模拟精神科患者的回答是否与真实患者相似？",
+    "tldr": "以“信息预算”和“平均患者”假设检验17个模型模拟精神科患者的逼真度：相较8组真人样本，模型变异低1.5—11倍，常将多数症状评为中等，也较少回答“无症状”；提示、人格、模型规模与推理仅能减弱该模式，使AI治疗师对无症状的识别能力缺乏有效检验。",
+    "topic_tags": [
+      "用户研究方法",
+      "心理模拟",
+      "评估效度",
+      "访谈"
+    ],
+    "url": "https://arxiv.org/abs/2611.11679v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models are widely used in e-commerce user simulation, providing a foundation for understanding users and predicting human decisions. However, existing simulators still struggle to achieve both personalization and behavioral realism. Most methods predict the next action directly from interaction histories and the current context, without accounting for the evolving mental world that underlies user behavior. Theory of Mind suggests that behavior is driven by mental states, including beliefs, uncertainties, and intentions. Users may interpret the same information in distinct ways, leading to divergent behaviors, while an individual's mental state evolves through interaction and shapes subsequent actions. Ignoring this process prevents simulators from faithfully capturing individual differences and realistic behavior patterns, and undermines its effectiveness in downstream applications. To address this, we propose ShopMind, a Mental World Model for e-commerce user simulation that captures how consumers interpret shopping information and how their mental states evolve, better reflecting individual users and real-world behavior patterns. We further use behavior-mental state pairs synthesized by ShopMind to train a Mental State Reconstruction (MSR) model, which infers consumers' latent mental states from observable behavior. Experiments show that ShopMind improves personalization by 18.0% and behavioral realism by 19.6% over the strongest alternatives. Moreover, MSR improves performance on consumption value measurement and CTR prediction, showing the utility of ShopMind for understanding and predicting real user behavior.",
+    "ai_reason": "LLM仿真电商用户行为，无真人研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI用户画像",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Peixuan Hou",
+      "Bin Chen",
+      "Li He",
+      "Jian Xu",
+      "Xiuli Ma"
+    ],
+    "authors_full": [
+      {
+        "name": "Peixuan Hou"
+      },
+      {
+        "name": "Bin Chen"
+      },
+      {
+        "name": "Li He"
+      },
+      {
+        "name": "Jian Xu"
+      },
+      {
+        "name": "Xiuli Ma"
+      },
+      {
+        "name": "Guojie Song"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38806,
+    "ingested_at": "2026-11-10T09:09:40.508189",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.11897v1",
+    "scored_at": "2026-11-10T09:10:15.405901",
+    "title": "ShopMind: A Mental World Model for Personalized and Realistic E-commerce User Simulation",
+    "title_zh": "ShopMind：用于个性化且逼真的电子商务用户模拟的心理世界模型",
+    "tldr": "针对电商用户模拟中个性化与行为真实性不足，构建以信念、不确定性和意图为核心的ShopMind心理世界模型，并用合成行为—心理状态数据训练MSR以推断潜在状态；相比最强基线，个性化与行为真实性分别提升18.0%和19.6%。",
+    "topic_tags": [
+      "用户画像",
+      "个性化",
+      "消费者行为",
+      "推荐系统"
+    ],
+    "url": "https://arxiv.org/abs/2611.11897v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language model (LLM) agents acting across web applications and online services often need multi-turn corrections to align their work with users' underspecified goals and preferences. In practice, users may identify problems in the current outcome without specifying the desired result, so learning user intentions requires interpreting each correction against the agent's preceding and revised outcomes. These expectations are often connected to a particular context, making it hard to know when they apply and how to ensure the agent later acts as the user expects. To this end, we propose LiveAsset, an intent harness that learns reusable intent assets from corrective interactions and uses them for runtime control of agent execution. LiveAsset jointly interprets each correction with the agent's original and revised results to infer user intent, incrementally updating the assets while preserving earlier requirements that remain applicable. The learned requirements guide agent execution from task entry and provide criteria for runtime verification, which uses the explanations to assess applicability before each reply is delivered and directs the agent to revise the result to address unmet requirements while preserving those already satisfied. Following a learning phase in which simulated users progressively reveal requirements through multi-turn corrections, we evaluate LiveAsset using same-task replay of the original requests on π-Bench, PERMA, and Vita and cross-task transfer on PAST-Bench and SkillEvolBench. Experiments show that LiveAsset better fulfills requirements learned from corrective interactions and improves performance on these benchmarks compared with memory, skill, and rule-based harness baselines. Code is available at github.com/landian60/LiveAsset.",
+    "ai_reason": "以纠正交互学习用户意图并控制代理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "智能体/Agent",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Guanming Liu",
+      "Weihang Wang",
+      "Peng Zhang",
+      "Meng Wu",
+      "Kainan Tu"
+    ],
+    "authors_full": [
+      {
+        "name": "Guanming Liu"
+      },
+      {
+        "name": "Weihang Wang"
+      },
+      {
+        "name": "Peng Zhang"
+      },
+      {
+        "name": "Meng Wu"
+      },
+      {
+        "name": "Kainan Tu"
+      },
+      {
+        "name": "Jiahao Liu"
+      },
+      {
+        "name": "Yu Zhang"
+      },
+      {
+        "name": "Liuxin Zhang"
+      },
+      {
+        "name": "Qianying Wang"
+      },
+      {
+        "name": "Ning Gu"
+      },
+      {
+        "name": "Tun Lu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-08",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38808,
+    "ingested_at": "2026-11-10T09:09:40.522907",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.11560v1",
+    "scored_at": "2026-11-10T09:10:20.490962",
+    "title": "LiveAsset: Learning Intent Assets from Corrective Interactions for Agent Runtime Control",
+    "title_zh": "LiveAsset：从纠正性交互中学习意图资产以实现智能体运行时控制",
+    "tldr": "针对网页LLM智能体难以从纠错中持续理解未明示意图的问题，LiveAsset联合解释原始与修订结果，积累带适用条件的需求资产，并在回复前核验，保留已满足要求、修订未满足项，以支持同任务重放与跨任务迁移。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "个性化",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2611.11560v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance requires a model to maintain an evolving representation of user requirements and to reason over it before complying with later requests. Failures can therefore be subtle: models may fail to recognize a changed constraint or hidden conflict, or recognize it without enforcing it in the final response. Existing benchmarks primarily test fully specified prompts, long-context recall, or controlled domain environments, leaving open-domain requirement reconciliation undermeasured. We introduce TurnFlow, an interactive benchmark for evaluating whether models preserve, revise, and act on user requirements across turns. TurnFlow combines adaptive user simulation with verifiable judging, allowing conversations to unfold naturally while keeping hidden requirements and pass/fail criteria controlled. In our evaluation, nine LLMs achieve overall pass rates from 42.86% to 59.59% on 490 scenarios. Performance varies substantially across challenge types: models perform well on Stateful Multi-Constraint Following but remain considerably less reliable on Scope Creep and Goal Shift. These results reveal persistent limitations in reasoning over evolving user requirements across turns.",
+    "ai_reason": "以用户模拟评测多轮需求理解",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "智能体/Agent"
+    ],
+    "authors": [
+      "Zhixun Chen",
+      "Ming Li",
+      "Anjie Liu",
+      "Xiaoyuan Zhang",
+      "Quanyu Dai"
+    ],
+    "authors_full": [
+      {
+        "name": "Zhixun Chen"
+      },
+      {
+        "name": "Ming Li"
+      },
+      {
+        "name": "Anjie Liu"
+      },
+      {
+        "name": "Xiaoyuan Zhang"
+      },
+      {
+        "name": "Quanyu Dai"
+      },
+      {
+        "name": "Huangxun Chen"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-07",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 38810,
+    "ingested_at": "2026-11-10T09:09:40.524717",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.10412v1",
+    "scored_at": "2026-11-10T09:10:20.493434",
+    "title": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+    "title_zh": "TurnFlow：通过场景引导的用户模拟评测多轮LLM智能体用户状态推理",
+    "tldr": "针对多轮对话中模型难以持续追踪并执行变化后需求的问题，TurnFlow结合自适应用户模拟与可验证评判，以490个场景检验9种LLM。总体通过率为42.86%—59.59%，模型虽擅长多约束遵循，却在范围蔓延与目标转移上明显失效。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "对话式 AI",
+      "用户状态推理",
+      "基准测试"
+    ],
+    "url": "https://arxiv.org/abs/2611.10412v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Software architecture is one of the skills novice developers must master to succeed in industry, and as AI disrupts software development, it is also transforming how students learn architecture. Existing work on how students and novices work with AI has mostly focused on small programming exercises or on students' perceptions of AI, so little is known about how students experience AI as they learn software architecture in larger team projects. We report on an exploratory case study of 43 senior software engineering students who used AI throughout a semester-long, team-based software architecture project. We combined surveys with focus groups and analyzed the focus group transcripts and the open survey responses through Braun and Clarke's reflexive thematic analysis. We constructed two themes. The first, Surrendering Judgment to AI, traces how participants' reliance on AI deepened as they used it to architect and implement their systems, until they surrendered their judgment and became stuck in a codebase they had created but could not understand, which made them rely on AI even more. Participants described feeling ashamed, frustrated, and emotionally disconnected from their work, a toll that, in our reading, left them with even less reason to break their reliance. The second, Applying Human Judgment, centers on participants who kept or reclaimed their judgment: the knowledge and experience it rested on, and the strategies they used to apply it. Participants' accounts suggest that relaxed deadlines and a lecture and lab on working with AI gave them room to acquire knowledge and reclaim judgment. Given the expectations placed on junior developers and the widespread adoption of AI, we believe these first-hand accounts can help software engineering education and industry adopt AI in ways that preserve novice developers' judgment, ownership, and motivation.",
+    "ai_reason": "问卷与焦点小组研究学生AI依赖",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI助手",
+      "人机协作"
+    ],
+    "authors": [
+      "Nathan Cassee",
+      "Umit Akirmak",
+      "Luiz Guerra",
+      "Margaret-Anne Storey",
+      "Neil Ernst"
+    ],
+    "authors_full": [
+      {
+        "name": "Nathan Cassee"
+      },
+      {
+        "name": "Umit Akirmak"
+      },
+      {
+        "name": "Luiz Guerra"
+      },
+      {
+        "name": "Margaret-Anne Storey"
+      },
+      {
+        "name": "Neil Ernst"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38812,
+    "ingested_at": "2026-11-10T09:09:40.536763",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2611.12646v1",
+    "scored_at": "2026-11-10T09:10:15.405044",
+    "title": "Surrendering and Reclaiming Judgment: How Software Engineering Students Experience AI Reliance",
+    "title_zh": "让渡与重拾判断力：软件工程学生如何体验AI依赖",
+    "tldr": "对43名高年级软件工程学生开展学期项目的探索性案例研究，结合问卷、焦点小组与主题分析，揭示AI依赖加深会让学生交出判断、陷入无法理解的代码并产生羞愧和疏离；保留或重建判断是摆脱依赖的关键。",
+    "topic_tags": [
+      "AI依赖",
+      "用户研究方法",
+      "访谈",
+      "软件工程教育"
+    ],
+    "url": "https://arxiv.org/abs/2611.12646v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "The growing presence of AI overviews in everyday search makes their effective evaluation essential. Response quality has been the primary focus of existing evaluation research, with only a small number of studies examining the user perspective. These evaluations rely on queries and response content, leaving the information conveyed by user behavior insufficiently utilized. This work investigates satisfaction prediction for AI overviews from a user-centered perspective and incorporates behavioral signals into the prediction process. Applying existing behavior-based satisfaction prediction methods from traditional information retrieval to this setting, however, presents limitations. We address these limitations with STaRS, an LLM-based approach designed specifically for predicting satisfaction with AI overviews. At its core is a structured reasoning procedure: individual behavioral signals are interpreted first, and their implications then inform the prediction of user satisfaction. Reinforcement learning further optimizes this procedure, while a reward shaping mechanism alleviates reward sparsity during training. Evaluation on two real-world datasets demonstrates that STaRS outperforms the comparison methods in satisfaction prediction, providing search providers with a practical means of accurately estimating users' satisfaction with AI overviews.",
+    "ai_reason": "核心预测AI概览的用户满意度",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "强化学习"
+    ],
+    "authors": [
+      "Xingzhu Wang",
+      "Yitong Xu",
+      "Yue Li",
+      "Daiting Shi",
+      "Jingzhou He"
+    ],
+    "authors_full": [
+      {
+        "name": "Xingzhu Wang"
+      },
+      {
+        "name": "Yitong Xu"
+      },
+      {
+        "name": "Yue Li"
+      },
+      {
+        "name": "Daiting Shi"
+      },
+      {
+        "name": "Jingzhou He"
+      },
+      {
+        "name": "Jiaxin Mao"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-07",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 38814,
+    "ingested_at": "2026-11-10T09:09:40.542509",
+    "issue": null,
+    "journal": "arXiv:cs.IR",
+    "pdf_url": "https://arxiv.org/pdf/2611.10715v1",
+    "scored_at": "2026-11-10T09:10:20.493027",
+    "title": "From User Behaviors to Satisfaction Judgments: Reasoning about User Satisfaction with AI Overviews",
+    "title_zh": "从用户行为到满意度判断：推理用户对 AI Overviews 的满意度",
+    "tldr": "面向搜索场景中的AI概览，现有满意度评估未充分利用用户行为。STaRS让LLM先解释单项行为信号，再综合推断满意度，并以强化学习和奖励塑形优化稀疏奖励下的推理流程；两个真实数据集上，其预测表现优于对比方法。",
+    "topic_tags": [
+      "用户体验(UX)",
+      "用户行为",
+      "满意度预测",
+      "信息检索"
+    ],
+    "url": "https://arxiv.org/abs/2611.10715v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "人-自主性团队协作，AI/HCI核心议题",
     "ai_score": 4.0,
@@ -73231,6 +74024,74 @@
     "year": 2025
   },
   {
+    "abstract": null,
+    "ai_reason": "比较AI推荐解释的视频与文本格式",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "AI 推荐",
+      "多模态"
+    ],
+    "authors": [
+      "Jekaterina Basjuka",
+      "Carl Westin",
+      "Gustaf Söderholm",
+      "Jonas Lundberg"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Linköping University"
+        ],
+        "name": "Jekaterina Basjuka",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Linköping University"
+        ],
+        "name": "Carl Westin",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Linköping University"
+        ],
+        "name": "Gustaf Söderholm",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Linköping University"
+        ],
+        "name": "Jonas Lundberg",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": "10.1080/0144929x.2026.2756333",
+    "domain_score": 4.0,
+    "id": 38769,
+    "ingested_at": "2026-11-10T09:09:35.191676",
+    "issue": null,
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:10:15.408370",
+    "title": "Explaining conceptual AI recommendations in urban air mobility: a comparison of storytelling video-based and text-based presentation formats for explanations",
+    "title_zh": "解释城市空中交通中的概念性AI推荐：叙事视频与文本式说明的呈现格式比较",
+    "tldr": "比较故事化视频与文本两种解释形式，探讨如何呈现城市空中交通中的AI概念性推荐，以增强建议依据的可理解性；因缺少摘要，哪种形式更优及其作用机制仍待验证。",
+    "topic_tags": [
+      "可解释性",
+      "信息可视化",
+      "多模态交互",
+      "智能交通"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2756333",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Explaining system-generated recommendations based on user reviews can foster users’ understanding and assessment of the recommended items and the recommender system (RS) as a whole. While up to now explanations have mostly been static, shown in a single presentation unit, some interactive explanatory approaches have emerged in explainable artificial intelligence (XAI), making it easier for users to examine system decisions and to explore arguments according to their information needs. However, little is known about how interactive interfaces should be conceptualized and designed to meet the explanatory aims of transparency, effectiveness, and trust in RS. Thus, we investigate the potential of interactive, conversational explanations in review-based RS and propose an explanation approach inspired by dialog models and formal argument structures. In particular, we investigate users’ perception of two different interface types for presenting explanations, a graphical user interface (GUI)-based dialog consisting of a sequence of explanatory steps, and a chatbot-like natural-language interface.\n          Since providing explanations by means of natural language conversation is a novel approach, there is a lack of understanding how users would formulate their questions with a corresponding lack of datasets. We thus propose an intent model for explanatory queries and describe the development of ConvEx-DS, a dataset containing intent annotations of 1,806 user questions in the domain of hotels, that can be used to to train intent detection methods as part of the development of conversational agents for explainable RS. We validate the model by measuring user-perceived helpfulness of answers given based on the implemented intent detection. Finally, we report on a user study investigating users’ evaluation of the two types of interactive explanations proposed (GUI and chatbot), and to test the effect of varying degrees of interactivity that result in greater or lesser access to explanatory information. By using Structural Equation Modeling, we reveal details on the relationships between the perceived quality of an explanation and the explanatory objectives of transparency, trust, and effectiveness. Our results show that providing interactive options for scrutinizing explanatory arguments has a significant positive influence on the evaluation by users (compared to low interactive alternatives). Results also suggest that user characteristics such as decision-making style may have a significant influence on the evaluation of different types of interactive explanation interfaces.",
     "ai_reason": "对话式推荐解释的用户研究，测试界面类型和交互性",
     "ai_score": 4.0,
@@ -78478,6 +79339,75 @@
       "可解释性"
     ],
     "url": "https://doi.org/10.1080/0144929x.2026.2686168",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "生成式AI聊天机器人复用意愿研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "对话式 AI",
+      "LLM"
+    ],
+    "authors": [
+      "Serge-Lopez Wamba-Taguimdje",
+      "Samuel Fosso Wamba",
+      "Maciel M. Queiroz",
+      "Hossana Twinomurinzi"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Université Côte d'Azur"
+        ],
+        "name": "Serge-Lopez Wamba-Taguimdje",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "TBS Business School, Toulouse, France"
+        ],
+        "name": "Samuel Fosso Wamba",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "FGV EAESP, Sao Paulo, Brazil"
+        ],
+        "name": "Maciel M. Queiroz",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "University of Johannesburg, Centre for Applied Data Science, Corner Kingsway",
+          "University of South Africa"
+        ],
+        "name": "Hossana Twinomurinzi",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": "10.1080/0144929x.2026.2752035",
+    "domain_score": 4.0,
+    "id": 38770,
+    "ingested_at": "2026-11-10T09:09:35.223703",
+    "issue": null,
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:10:15.407839",
+    "title": "From complex myth to easy-peasy: unveiling factors driving mainstream user re-use intention of generative AI-chatbots systems",
+    "title_zh": "从复杂迷思到轻而易举：生成式AI聊天机器人系统主流用户复用意愿驱动因素",
+    "tldr": "聚焦主流用户重复使用生成式AI聊天机器人系统的意愿，考察系统从复杂难懂转变为简单易用的过程中有哪些驱动因素；因缺少摘要，具体理论、变量及实证结论尚无法判断。",
+    "topic_tags": [
+      "用户接受",
+      "可用性",
+      "用户体验(UX)",
+      "持续使用"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2752035",
     "volume": null,
     "year": 2026
   },
@@ -125513,6 +126443,74 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聚焦AI广告对奢侈品消费者反应",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "AI 营销",
+      "AI 生成内容"
+    ],
+    "authors": [
+      "Rita Ngoc To",
+      "Yi-Chia Wu",
+      "Parichehr Kianian",
+      "Zhe Zhang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Tarleton State University"
+        ],
+        "name": "Rita Ngoc To",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Tarleton State University"
+        ],
+        "name": "Yi-Chia Wu",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Sam Houston State University"
+        ],
+        "name": "Parichehr Kianian",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Western University"
+        ],
+        "name": "Zhe Zhang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 22,
+    "date": "2025-03-17",
+    "doi": "10.1080/00218499.2025.2454120",
+    "domain_score": 5.0,
+    "id": 7342,
+    "ingested_at": "2026-06-14T01:18:24.597888",
+    "issue": "2",
+    "journal": "JAR",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:12:12.597278",
+    "title": "When AI Doesn’t Sell Prada: Why Using AI-Generated Advertisements Backfires for Luxury Brands",
+    "title_zh": "当AI无法为Prada带货：AI生成广告为何反噬奢侈品牌",
+    "tldr": "从品牌高端性与消费者真实性认知出发，审视AI生成广告对奢侈品牌的潜在反效果：机械化内容可能被视作廉价、品牌稀释或缺乏工艺价值，削弱信任与购买意愿。奢侈品牌采用此类广告时，应保留稀缺性和工艺叙事，并检验受众反应。",
+    "topic_tags": [
+      "消费者行为",
+      "营销",
+      "广告",
+      "品牌体验"
+    ],
+    "url": "https://doi.org/10.1080/00218499.2025.2454120",
+    "volume": "65",
+    "year": 2025
+  },
+  {
+    "abstract": null,
     "ai_reason": "算法vs人类专家冲突时用户信任行为，AI+用户视角",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -127095,6 +128093,48 @@
     "url": "https://doi.org/10.1016/j.chb.2026.109219",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "纵向研究聊天机器人交互与利他意愿",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式 AI",
+      "AI 助手"
+    ],
+    "authors": [
+      "Zehang Xie"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Shanghai Jiao Tong University"
+        ],
+        "name": "Zehang Xie",
+        "orcid": null
+      }
+    ],
+    "cited_by": 6,
+    "date": "2025-03-19",
+    "doi": "10.1080/0144929x.2025.2481640",
+    "domain_score": 5.0,
+    "id": 1419,
+    "ingested_at": "2026-06-14T01:16:56.785474",
+    "issue": "18",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:12:09.864990",
+    "title": "Will you help AI? A longitudinal study on the relationship between interacting with chatbots and altruistic willingness towards AI",
+    "title_zh": "你会帮助AI吗？纵向研究：聊天机器人交互与利他意愿的关系",
+    "tldr": "通过长期追踪研究探讨用户与聊天机器人交互频率对其帮助AI的利他意愿的影响。结果显示，交互频次与利他意愿呈正相关；具备情感支持和解释功能的聊天机器人更能提升用户的帮助意愿。",
+    "topic_tags": [
+      "人机交互",
+      "情感计算",
+      "AI 采用"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2025.2481640",
+    "volume": "44",
+    "year": 2025
   },
   {
     "abstract": null,

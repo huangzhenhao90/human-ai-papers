@@ -1,0 +1,74 @@
+{
+  "abstract": "As Large Language Models for Code (LM4Code) become integral to software engineering, establishing trust in their output becomes critical. However, standard accuracy metrics obscure the underlying reasoning of generative models, offering little insight into how decisions are made. Although post-hoc interpretability methods attempt to fill this gap, they often restrict explanations to local, token-level insights, which fail to provide a developer-understandable global analysis. Our work highlights the urgent need for \\textbf{global, code-based} explanations that reveal how models reason across code. To support this vision, we introduce \\textit{code rationales} (CodeQ), a framework that enables global interpretability by mapping token-level rationales to high-level programming categories. Aggregating thousands of these token-level explanations allows us to perform statistical analyses that expose systemic reasoning behaviors. We validate this aggregation by showing it distills a clear signal from noisy token data, reducing explanation uncertainty (Shannon entropy) by over 50%. Additionally, we find that a code generation model (\\textit{codeparrot-small}) consistently favors shallow syntactic cues (e.g., \\textbf{indentation}) over deeper semantic logic. Furthermore, in a user study with 37 participants, we find its reasoning is significantly misaligned with that of human developers. These findings, hidden from traditional metrics, demonstrate the importance of global interpretability techniques to foster trust in LM4Code.",
+  "ai_type_tags": [
+    "LLM",
+    "代码生成",
+    "可解释 AI",
+    "人机交互"
+  ],
+  "arxiv_id": "2503.16771",
+  "authors": [
+    "Dipin Khati",
+    "Daniel Rodriguez-Cardenas",
+    "David N. Palacio",
+    "Alejandro Velasco",
+    "Michele Tufano"
+  ],
+  "authors_full": [
+    {
+      "name": "Dipin Khati"
+    },
+    {
+      "name": "Daniel Rodriguez-Cardenas"
+    },
+    {
+      "name": "David N. Palacio"
+    },
+    {
+      "name": "Alejandro Velasco"
+    },
+    {
+      "name": "Michele Tufano"
+    },
+    {
+      "name": "Denys Poshyvanyk"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM可解释性面向开发者理解与信任",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "面向代码大模型构建全局解释框架CodeQ，将令牌级归因映射、聚合为高层编程类别，使解释不确定性降低逾50%。分析显示，codeparrot-small偏重缩进等浅层句法，37名开发者研究还证实其推理与人类显著错位，说明仅凭准确率不足以建立信任。",
+      "topic_tags": [
+        "可解释性",
+        "人机交互(HCI)",
+        "用户研究",
+        "信任"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-03-21",
+  "doi": "10.1145/3744916.3787764",
+  "id": "p_9GyB7w_7MNm1a1td",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2503.16771v3",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7893,
+      "revision": "37f9293768f2a9b1d5b9f25707c546444482342a"
+    }
+  ],
+  "title": "Enabling Global, Human-Centered Explanations for LLMs:From Tokens to Interpretable Code and Test Generation",
+  "title_zh": "实现以人为中心的LLM全局解释：从词元到可解释代码与测试生成",
+  "unified_ingested_at": "2026-11-10T09:24:42.507870Z",
+  "url": "https://arxiv.org/abs/2503.16771v3",
+  "volume": null,
+  "year": 2025
+}

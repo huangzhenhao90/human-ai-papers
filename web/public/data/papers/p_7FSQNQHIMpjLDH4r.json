@@ -1,0 +1,87 @@
+{
+  "abstract": "Large language model (LLM) agents acting across web applications and online services often need multi-turn corrections to align their work with users' underspecified goals and preferences. In practice, users may identify problems in the current outcome without specifying the desired result, so learning user intentions requires interpreting each correction against the agent's preceding and revised outcomes. These expectations are often connected to a particular context, making it hard to know when they apply and how to ensure the agent later acts as the user expects. To this end, we propose LiveAsset, an intent harness that learns reusable intent assets from corrective interactions and uses them for runtime control of agent execution. LiveAsset jointly interprets each correction with the agent's original and revised results to infer user intent, incrementally updating the assets while preserving earlier requirements that remain applicable. The learned requirements guide agent execution from task entry and provide criteria for runtime verification, which uses the explanations to assess applicability before each reply is delivered and directs the agent to revise the result to address unmet requirements while preserving those already satisfied. Following a learning phase in which simulated users progressively reveal requirements through multi-turn corrections, we evaluate LiveAsset using same-task replay of the original requests on π-Bench, PERMA, and Vita and cross-task transfer on PAST-Bench and SkillEvolBench. Experiments show that LiveAsset better fulfills requirements learned from corrective interactions and improves performance on these benchmarks compared with memory, skill, and rule-based harness baselines. Code is available at github.com/landian60/LiveAsset.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "对话式 AI"
+  ],
+  "arxiv_id": "2611.11560",
+  "authors": [
+    "Guanming Liu",
+    "Weihang Wang",
+    "Peng Zhang",
+    "Meng Wu",
+    "Kainan Tu"
+  ],
+  "authors_full": [
+    {
+      "name": "Guanming Liu"
+    },
+    {
+      "name": "Weihang Wang"
+    },
+    {
+      "name": "Peng Zhang"
+    },
+    {
+      "name": "Meng Wu"
+    },
+    {
+      "name": "Kainan Tu"
+    },
+    {
+      "name": "Jiahao Liu"
+    },
+    {
+      "name": "Yu Zhang"
+    },
+    {
+      "name": "Liuxin Zhang"
+    },
+    {
+      "name": "Qianying Wang"
+    },
+    {
+      "name": "Ning Gu"
+    },
+    {
+      "name": "Tun Lu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以纠正交互学习用户意图并控制代理",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对网页LLM智能体难以从纠错中持续理解未明示意图的问题，LiveAsset联合解释原始与修订结果，积累带适用条件的需求资产，并在回复前核验，保留已满足要求、修订未满足项，以支持同任务重放与跨任务迁移。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "个性化",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-08",
+  "doi": null,
+  "id": "p_7FSQNQHIMpjLDH4r",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.11560v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38808,
+      "revision": "37f9293768f2a9b1d5b9f25707c546444482342a"
+    }
+  ],
+  "title": "LiveAsset: Learning Intent Assets from Corrective Interactions for Agent Runtime Control",
+  "title_zh": "LiveAsset：从纠正性交互中学习意图资产以实现智能体运行时控制",
+  "unified_ingested_at": "2026-11-10T09:24:42.507870Z",
+  "url": "https://arxiv.org/abs/2611.11560v1",
+  "volume": null,
+  "year": 2026
+}

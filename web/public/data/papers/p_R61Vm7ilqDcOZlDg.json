@@ -1,0 +1,73 @@
+{
+  "abstract": "Large language models are widely used in e-commerce user simulation, providing a foundation for understanding users and predicting human decisions. However, existing simulators still struggle to achieve both personalization and behavioral realism. Most methods predict the next action directly from interaction histories and the current context, without accounting for the evolving mental world that underlies user behavior. Theory of Mind suggests that behavior is driven by mental states, including beliefs, uncertainties, and intentions. Users may interpret the same information in distinct ways, leading to divergent behaviors, while an individual's mental state evolves through interaction and shapes subsequent actions. Ignoring this process prevents simulators from faithfully capturing individual differences and realistic behavior patterns, and undermines its effectiveness in downstream applications. To address this, we propose ShopMind, a Mental World Model for e-commerce user simulation that captures how consumers interpret shopping information and how their mental states evolve, better reflecting individual users and real-world behavior patterns. We further use behavior-mental state pairs synthesized by ShopMind to train a Mental State Reconstruction (MSR) model, which infers consumers' latent mental states from observable behavior. Experiments show that ShopMind improves personalization by 18.0% and behavioral realism by 19.6% over the strongest alternatives. Moreover, MSR improves performance on consumption value measurement and CTR prediction, showing the utility of ShopMind for understanding and predicting real user behavior.",
+  "ai_type_tags": [
+    "LLM",
+    "AI用户画像",
+    "智能体/Agent"
+  ],
+  "arxiv_id": "2611.11897",
+  "authors": [
+    "Peixuan Hou",
+    "Bin Chen",
+    "Li He",
+    "Jian Xu",
+    "Xiuli Ma"
+  ],
+  "authors_full": [
+    {
+      "name": "Peixuan Hou"
+    },
+    {
+      "name": "Bin Chen"
+    },
+    {
+      "name": "Li He"
+    },
+    {
+      "name": "Jian Xu"
+    },
+    {
+      "name": "Xiuli Ma"
+    },
+    {
+      "name": "Guojie Song"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM仿真电商用户行为，无真人研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对电商用户模拟中个性化与行为真实性不足，构建以信念、不确定性和意图为核心的ShopMind心理世界模型，并用合成行为—心理状态数据训练MSR以推断潜在状态；相比最强基线，个性化与行为真实性分别提升18.0%和19.6%。",
+      "topic_tags": [
+        "用户画像",
+        "个性化",
+        "消费者行为",
+        "推荐系统"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-09",
+  "doi": null,
+  "id": "p_R61Vm7ilqDcOZlDg",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.11897v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38806,
+      "revision": "37f9293768f2a9b1d5b9f25707c546444482342a"
+    }
+  ],
+  "title": "ShopMind: A Mental World Model for Personalized and Realistic E-commerce User Simulation",
+  "title_zh": "ShopMind：用于个性化且逼真的电子商务用户模拟的心理世界模型",
+  "unified_ingested_at": "2026-11-10T09:24:42.507870Z",
+  "url": "https://arxiv.org/abs/2611.11897v1",
+  "volume": null,
+  "year": 2026
+}

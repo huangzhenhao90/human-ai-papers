@@ -68631,6 +68631,598 @@
     "year": 2026
   },
   {
+    "abstract": "As LLM agents become more autonomous, they are increasingly expected to run as always-on assistants on a user's behalf, identifying work to be done and completing it without being asked. Yet existing benchmarks usually give the agent its task, whereas in knowledge work the requests sit in the user's workspace and the agent must first recognise which obligations exist. We study proactive task discovery and execution, in which an agent must infer a user's pending tasks from their workspace and complete them in the systems where the work lives. This setting poses two challenges. For the agent, the tasks are buried in a large volume of mail, chat, documents and records. For evaluation, a benchmark needs a simulated organisation whose people, events and documents are mutually consistent, so that tasks arise realistically and their correct outcomes are known. We introduce AutoBuddy-Bench, a simulator that addresses these challenges. It models an organisation's employees, projects, business systems and event history as a temporal graph, renders it into realistic workspace artefacts, derives ground-truth tasks from the events that create obligations, and computes each task's outcome from the world state; execution is judged by the agent's changes to the workspace. To evaluate current LLMs, we build AutoBuddy, a reference agent with interchangeable backbone LLMs: it identifies tasks from the workspace, grounding each in its source records, and executes each in a separate session with write access. Varying only the backbone, we find a systematic shift in where tasks are lost: weaker models fail mainly at discovery, intermediate models identify tasks but often stop short of carrying them out, and the strongest models fail mainly during execution, most often on business-system operations. Discovery precision is only weakly related to execution quality, suggesting the two are distinct capabilities.",
+    "ai_reason": "LLM智能体执行职场任务，非OB实证",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "自主AI代理",
+      "人机交互"
+    ],
+    "authors": [
+      "Shiqi Chen",
+      "Daniel Madrigal Diaz",
+      "Wei-Ning Chen",
+      "Gbola Afonja",
+      "Fangkai Yang"
+    ],
+    "authors_full": [
+      {
+        "name": "Shiqi Chen"
+      },
+      {
+        "name": "Daniel Madrigal Diaz"
+      },
+      {
+        "name": "Wei-Ning Chen"
+      },
+      {
+        "name": "Gbola Afonja"
+      },
+      {
+        "name": "Fangkai Yang"
+      },
+      {
+        "name": "Rujia Wang"
+      },
+      {
+        "name": "Chetan Bansal"
+      },
+      {
+        "name": "Victor Rühle"
+      },
+      {
+        "name": "Saravan Rajmohan"
+      },
+      {
+        "name": "Dongge Han"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 84264,
+    "ingested_at": "2026-11-10T09:14:48.621581",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.12393v1",
+    "scored_at": "2026-11-10T09:15:15.180820",
+    "title": "AutoBuddy: Evaluating Proactive, Always-On Agents on Task Discovery and Execution in a Simulated Workplace",
+    "title_zh": "AutoBuddy：模拟职场中主动型常驻智能体的任务发现与执行评估",
+    "tldr": "面向知识工作中的主动型LLM助理，构建AutoBuddy-Bench：以时间图模拟员工、项目、业务系统和事件，将待办义务嵌入邮件、聊天与文档，并按工作区状态变化评估执行效果；配套可替换骨干模型的AutoBuddy代理，将评价范围由给定任务扩展至任务发现与执行。",
+    "topic_tags": [
+      "人机协作",
+      "知识管理",
+      "工作未来"
+    ],
+    "url": "https://arxiv.org/abs/2611.12393v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "AI models' growing capacity for complex reasoning has made them attractive tools for forecasting, or the systematic prediction of the future based on past and present data. However, should AI forecasting systems be adopted, human builders will shoulder the work of building and evaluating them. In this paper, we explore what this work looks like with a qualitative interview study with 15 builders of forecasting bots, sampled from among successful participants in a recent AI forecasting competition. Our analysis surfaces the challenges around (1) tuning a bot to acquire factual research, (2) implementing coherent reasoning, and (3) understanding how well one's bot actually does. During their work, builders frequently introduced complexity that did not pay off, and tested in ways that were opportunistic and piecemeal. Our detailed account of their challenges helps clarify what problems should be targeted in upcoming innovations in process, tools, and human-AI teaming for forecasting.",
+    "ai_reason": "AI预测机器人构建中的人机协作",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI预测",
+      "推理模型",
+      "人机协作",
+      "AI评估"
+    ],
+    "authors": [
+      "Priya Dhawka",
+      "Benjamin Wilson",
+      "Andrew Head"
+    ],
+    "authors_full": [
+      {
+        "name": "Priya Dhawka"
+      },
+      {
+        "name": "Benjamin Wilson"
+      },
+      {
+        "name": "Andrew Head"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 84267,
+    "ingested_at": "2026-11-10T09:14:48.623919",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.12834v1",
+    "scored_at": "2026-11-10T09:15:15.180452",
+    "title": "Programming Prescience: Issues in Human Construction of Forecasting Bots",
+    "title_zh": "编程预见性：人类构建预测型机器人所面临的问题",
+    "tldr": "对15名AI预测竞赛获胜者进行访谈，梳理人类构建预测机器人的三类工作：获取事实研究资料、设计连贯推理及判断实际表现。发现构建者常引入无收益复杂度，并以机会式、零散方式测试，凸显流程、工具和人机协作创新的改进方向。",
+    "topic_tags": [
+      "AI预测",
+      "人机协作",
+      "模型评估",
+      "创新"
+    ],
+    "url": "https://arxiv.org/abs/2611.12834v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Software developers spend significant time reading and understanding code, increasingly supplemented by generative AI. While these tools aim to reduce the difficulty of reading code, interacting with them introduces a dual-task environment that may impose extraneous cognitive load that is challenging to capture. This study investigates how access to generative AI affects developers' real-time cognitive workload, code comprehension performance, and self-perceived code comprehension strategies. We conducted a 3x2 within-subjects study with 20 novice CS students reviewing Java code snippets of varying lengths with or without AI assistance, followed by an AI-unassisted comprehension quiz. Cognitive workload was continuously captured using a Detection-Response Task (tDRT) during both reading and quiz phases, and compared to post-quiz NASA-TLX and SEQ scores. AI assistance significantly increased objective cognitive workload, raising tDRT reaction times by 11.2%, yet participants' perceived workload remained unchanged. Code comprehension scores were high under both conditions, with no evidence that AI assistance improved comprehension at the difficulty levels evaluated; a ceiling effect limited power to detect benefits on harder tasks. Qualitatively, participants reported trusting the AI conditionally -verifying its output against their own reading for more complex snippets, but directly trusting it for simpler code- and, while many felt their reading process was unchanged, a notable subset shifted toward skimming or reading the AI's explanations in place of the code itself. These findings reveal that developers do not accurately perceive the cognitive resources they expend when managing AI tools. This study provides evidence of added cognitive effort associated with using generative AI, pointing towards a need to account for this dual-task penalty in software engineering tools and education.",
+    "ai_reason": "AI辅助代码理解与认知负荷",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "GenAI",
+      "AI编程",
+      "人机协作"
+    ],
+    "authors": [
+      "Maryangela White",
+      "Maximilian Rose",
+      "Matthew Buckman",
+      "Amy McDonnell",
+      "Francisco Ortega"
+    ],
+    "authors_full": [
+      {
+        "name": "Maryangela White"
+      },
+      {
+        "name": "Maximilian Rose"
+      },
+      {
+        "name": "Matthew Buckman"
+      },
+      {
+        "name": "Amy McDonnell"
+      },
+      {
+        "name": "Francisco Ortega"
+      },
+      {
+        "name": "Bianca Trinkenreich"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 84268,
+    "ingested_at": "2026-11-10T09:14:48.624333",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2611.12019v1",
+    "scored_at": "2026-11-10T09:15:15.180261",
+    "title": "Feeling Easier, Working Harder: Cognitive Load in AI-Assisted Code Comprehension",
+    "title_zh": "感觉更轻松，工作却更费力：AI辅助代码理解中的认知负荷",
+    "tldr": "研究生成式AI辅助代码阅读是否减轻认知负荷。20名计算机新手参与3×2被试内实验，结合tDRT、NASA-TLX和理解测验发现：AI使客观负荷反应时上升11.2%，主观负荷不变；所测难度下未提升理解成绩，复杂代码时仍会核验AI输出。",
+    "topic_tags": [
+      "人机协作",
+      "认知负荷",
+      "代码理解",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2611.12019v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models (LLMs) can generate personalized recommendations without task-specific training, but changing a protected attribute while holding interaction history fixed can alter the semantic content of recommended items. We study fairness control when model weights and full-vocabulary logits are unavailable. We propose Fair- Rec, an item-level decoding framework that uses an offline-calibrated semantic-disparity threshold and controls candidate selection as recommendation lists are generated. A hard variant filters candidates against the threshold; a soft variant trades off candidate likelihood and disparity while adapting a penalty using observed violations. Under an explicit uniform enforceability assumption, we establish a pathwise O(1/T) upper bound on the excess empirical violation rate of the soft decoder. Experiments on MovieLens-1M and Amazon Movies & TV using Qwen3-8B and Llama3.1-8B-Instruct show that the soft variant lowers measured counterfactual disparity relative to zero- =shot recommendation, UP5, and FACTER, while retaining competitive HR@10 and NDCG@10.",
+    "ai_reason": "核心为LLM推荐公平性，属推荐系统研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "推荐算法",
+      "生成式推荐"
+    ],
+    "authors": [
+      "Ziwei Wu",
+      "Jingrui He"
+    ],
+    "authors_full": [
+      {
+        "name": "Ziwei Wu"
+      },
+      {
+        "name": "Jingrui He"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-06",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 84272,
+    "ingested_at": "2026-11-10T09:14:48.625933",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.10285v1",
+    "scored_at": "2026-11-10T09:15:10.605753",
+    "title": "Conformal Fair Decoding for Large Language Model Recommenders",
+    "title_zh": "面向大语言模型推荐器的保形公平解码",
+    "tldr": "针对LLM推荐在无法访问模型权重和完整词表概率时难以控制公平性的问题，Fair-Rec以离线校准的语义差异阈值进行候选解码，并设计自适应软惩罚机制；实验显示，该方法可降低反事实差异，同时保持有竞争力的HR@10与NDCG@10。",
+    "topic_tags": [
+      "推荐系统",
+      "公平性",
+      "算法决策"
+    ],
+    "url": "https://arxiv.org/abs/2611.10285v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Frontier AI Safety and Governance 2026: Risk Understanding and Coordinated Governance is a key outcome of the AI Safety and Governance Program of World Internet Conference Specialized Committee on AI in 2026. Drawing on the latest developments in frontier AI capabilities and applications, the report systematically examines the evolving risk landscape, analyzing key risk areas, their severity and response priorities. Building on a review of existing global governance practices and an assessment of frontier AI governance readiness, it identifies key governance gaps and weaknesses and proposes directions and practical mechanisms for coordinated responses. The report provides a reference for government departments, international organizations, businesses, research institutions and other stakeholders. It aims to strengthen the international community's understanding of and consensus on frontier AI risks, enhance preparedness and collective response capacity, and advance the safe, reliable and responsible development of frontier AI to better serve the common well-being of humanity.",
+    "ai_reason": "聚焦前沿AI风险与协同治理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "前沿AI",
+      "AI治理",
+      "风险评估"
+    ],
+    "authors": [
+      "Zeng Yi",
+      "Seán Ó hÉigeartaigh",
+      "Cao Gongce",
+      "Lu Enmeng",
+      "Chen Yu"
+    ],
+    "authors_full": [
+      {
+        "name": "Zeng Yi"
+      },
+      {
+        "name": "Seán Ó hÉigeartaigh"
+      },
+      {
+        "name": "Cao Gongce"
+      },
+      {
+        "name": "Lu Enmeng"
+      },
+      {
+        "name": "Chen Yu"
+      },
+      {
+        "name": "Han Kaiyu"
+      },
+      {
+        "name": "Li Kai"
+      },
+      {
+        "name": "Wang Zhengqi"
+      },
+      {
+        "name": "Chang Yao"
+      },
+      {
+        "name": "Xie Jiawei"
+      },
+      {
+        "name": "Peng Yuxuan"
+      },
+      {
+        "name": "Wang Peining"
+      },
+      {
+        "name": "Nirosha Ananda"
+      },
+      {
+        "name": "Bao Chenfu"
+      },
+      {
+        "name": "Chris Brown"
+      },
+      {
+        "name": "Chang Jiang"
+      },
+      {
+        "name": "Chen Huijie"
+      },
+      {
+        "name": "Chen Jingjing"
+      },
+      {
+        "name": "Cheng Kai"
+      },
+      {
+        "name": "Cheng Ming"
+      },
+      {
+        "name": "Charuka Senal Damunupola"
+      },
+      {
+        "name": "Tom David"
+      },
+      {
+        "name": "Duan Weiwen"
+      },
+      {
+        "name": "Fu Chunhui"
+      },
+      {
+        "name": "Luigi Gambardella"
+      },
+      {
+        "name": "Gao Xuesong"
+      },
+      {
+        "name": "Gong Ke"
+      },
+      {
+        "name": "Gong Xinqi"
+      },
+      {
+        "name": "Sebastian Sunday Grève"
+      },
+      {
+        "name": "Guo Sumin"
+      },
+      {
+        "name": "Dame Wendy Hall"
+      },
+      {
+        "name": "John Higgins"
+      },
+      {
+        "name": "Cyrus Hodes"
+      },
+      {
+        "name": "Bernd Holznagel"
+      },
+      {
+        "name": "Hu Naying"
+      },
+      {
+        "name": "Hu Yongqi"
+      },
+      {
+        "name": "Hu Zhuang"
+      },
+      {
+        "name": "Jiang Chen"
+      },
+      {
+        "name": "Danil Kerimi"
+      },
+      {
+        "name": "Nada Laabidi"
+      },
+      {
+        "name": "Liang Ye"
+      },
+      {
+        "name": "Lin Lin"
+      },
+      {
+        "name": "Lin Mingfeng"
+      },
+      {
+        "name": "Lin Qiushi"
+      },
+      {
+        "name": "Lin Xueyan"
+      },
+      {
+        "name": "Liu Jiaqi"
+      },
+      {
+        "name": "Liu Weichen"
+      },
+      {
+        "name": "Ma Lan"
+      },
+      {
+        "name": "Ma Lin"
+      },
+      {
+        "name": "Helen Meng"
+      },
+      {
+        "name": "Meng Wei"
+      },
+      {
+        "name": "Nicolas Miailhe"
+      },
+      {
+        "name": "Malcolm Murray"
+      },
+      {
+        "name": "Niu Xiaoling"
+      },
+      {
+        "name": "Didier Nkurikiyimfura"
+      },
+      {
+        "name": "Pan Jianfeng"
+      },
+      {
+        "name": "Pang Xiaogang"
+      },
+      {
+        "name": "Henry Papadatos"
+      },
+      {
+        "name": "Peng Tao"
+      },
+      {
+        "name": "Edson Prestes"
+      },
+      {
+        "name": "Qiao Qian"
+      },
+      {
+        "name": "Qiao Yu"
+      },
+      {
+        "name": "Shen Juncheng"
+      },
+      {
+        "name": "Tan Zhixing"
+      },
+      {
+        "name": "Tang Yinshan"
+      },
+      {
+        "name": "Tao Feng"
+      },
+      {
+        "name": "Jimena Sofia Viveros Alvarez"
+      },
+      {
+        "name": "Wang Feng"
+      },
+      {
+        "name": "Wang Fengqiong"
+      },
+      {
+        "name": "Wang Jianbing"
+      },
+      {
+        "name": "Wang Mengyin"
+      },
+      {
+        "name": "Wang Qianyu"
+      },
+      {
+        "name": "Wang Rong"
+      },
+      {
+        "name": "Wang Shengjie"
+      },
+      {
+        "name": "Wang Wei"
+      },
+      {
+        "name": "Wang Xiaozhen"
+      },
+      {
+        "name": "Wang Xin"
+      },
+      {
+        "name": "Wang Xingguang"
+      },
+      {
+        "name": "Wei Kai"
+      },
+      {
+        "name": "Rob Wortham"
+      },
+      {
+        "name": "Wu Shuyan"
+      },
+      {
+        "name": "Wu Yinyu"
+      },
+      {
+        "name": "Xia Hehua"
+      },
+      {
+        "name": "Xia Wenhui"
+      },
+      {
+        "name": "Xiao Jianwu"
+      },
+      {
+        "name": "Xu Deliang"
+      },
+      {
+        "name": "Xu Jiming"
+      },
+      {
+        "name": "Xu Mengwen"
+      },
+      {
+        "name": "Xue Lan"
+      },
+      {
+        "name": "Yang Bo"
+      },
+      {
+        "name": "Yang Lingling"
+      },
+      {
+        "name": "Yang Mingchuan"
+      },
+      {
+        "name": "Yang Shaobo"
+      },
+      {
+        "name": "Yang Yaodong"
+      },
+      {
+        "name": "Yang Zhongliang"
+      },
+      {
+        "name": "Yao Xin"
+      },
+      {
+        "name": "John Yeoh"
+      },
+      {
+        "name": "Ammar Younas"
+      },
+      {
+        "name": "Yuchi Xuebiao"
+      },
+      {
+        "name": "Yue Qiaoli"
+      },
+      {
+        "name": "Zhang Linghan"
+      },
+      {
+        "name": "Zhang Rong"
+      },
+      {
+        "name": "Zhang Xiaohe"
+      },
+      {
+        "name": "Zhang Ya-Qin"
+      },
+      {
+        "name": "Zhang Yong"
+      },
+      {
+        "name": "Zhang Ziting"
+      },
+      {
+        "name": "Zhou Kai"
+      },
+      {
+        "name": "Zhang Xueli"
+      },
+      {
+        "name": "Liang Hao"
+      },
+      {
+        "name": "Ren Xianliang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-09",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 84280,
+    "ingested_at": "2026-11-10T09:14:48.628934",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.12434v1",
+    "scored_at": "2026-11-10T09:15:15.178920",
+    "title": "Frontier AI Safety and Governance 2026: Risk Understanding and Coordinated Governance",
+    "title_zh": "2026年前沿AI安全与治理：风险理解与协同治理",
+    "tldr": "面向前沿AI能力演进带来的新型风险，报告通过梳理全球治理实践并评估治理准备度，识别关键风险、治理缺口及薄弱环节，提出国际协同响应方向与务实机制，提升前沿AI安全、可靠和负责任发展的集体应对能力。",
+    "topic_tags": [
+      "AI治理",
+      "风险治理",
+      "国际治理",
+      "伦理"
+    ],
+    "url": "https://arxiv.org/abs/2611.12434v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -70975,6 +71567,58 @@
     "url": "https://doi.org/10.5465/amr.2019.0470",
     "volume": "47",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "标题聚焦人工智能与管理自动化",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人工智能",
+      "自动化",
+      "人机协作"
+    ],
+    "authors": [
+      "Sebastian Raisch",
+      "Sebastian Krakowski"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Universite de Geneve Faculte d'economie et de management, 418780, 40 Blvd Pont-d'Arve, Geneve, Switzerland, 1211;"
+        ],
+        "name": "Sebastian Raisch",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Universite de Geneve Faculte d'economie et de management, 418780, Geneve, GE, Switzerland;"
+        ],
+        "name": "Sebastian Krakowski",
+        "orcid": null
+      }
+    ],
+    "cited_by": 95,
+    "date": "2020-02-11",
+    "doi": "10.5465/2018.0072",
+    "domain_score": 5.0,
+    "id": 33956,
+    "ingested_at": "2026-08-12T04:16:22.110499",
+    "issue": null,
+    "journal": "AMR",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:41.834465",
+    "title": "Artificial Intelligence and Management: The Automation-Augmentation Paradox",
+    "title_zh": "人工智能与管理：自动化—增强悖论",
+    "tldr": "从管理视角审视人工智能带来的“自动化—增强悖论”：AI既可能替代岗位任务，也可能提升员工能力，但二者并非简单互补。组织需重新配置任务、技能与权责，使技术主要用于增强人力而非单纯削减岗位。",
+    "topic_tags": [
+      "人机协作",
+      "工作设计",
+      "组织变革",
+      "管理战略"
+    ],
+    "url": "https://doi.org/10.5465/2018.0072",
+    "volume": null,
+    "year": 2020
   },
   {
     "abstract": null,
@@ -79368,6 +80012,65 @@
   },
   {
     "abstract": null,
+    "ai_reason": "核心考察消费者对AI艺术作品的感知",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "图像生成"
+    ],
+    "authors": [
+      "Yuheng Wu",
+      "Yi Mou",
+      "Zhipeng Li",
+      "Kun Xu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yuheng Wu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yi Mou",
+        "orcid": "https://orcid.org/0000-0002-6836-5933"
+      },
+      {
+        "affiliation": [],
+        "name": "Zhipeng Li",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kun Xu",
+        "orcid": null
+      }
+    ],
+    "cited_by": 77,
+    "date": "2020-03",
+    "doi": "10.1016/j.chb.2019.106186",
+    "domain_score": 4.0,
+    "id": 52454,
+    "ingested_at": "2026-08-12T04:23:44.267831",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:27.949901",
+    "title": "Investigating American and Chinese Subjects’ explicit and implicit perceptions of AI-Generated artistic work",
+    "title_zh": "考察美国与中国被试对AI生成艺术作品的显性与隐性感知",
+    "tldr": "比较美国与中国受访者对AI生成艺术作品的显式评价与隐性反应，考察文化背景对审美判断、创作接受度及AI艺术认知的影响；标题未说明具体差异方向。",
+    "topic_tags": [
+      "AI艺术",
+      "审美评价",
+      "跨文化比较",
+      "公众态度"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.106186",
+    "volume": "104",
+    "year": 2020
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI回应是核心变量，消费者服务失败与重用意图",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -85399,6 +86102,105 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聚焦类人系统感知分类，兼具行为研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Maya B. Mathur",
+      "David B. Reichling",
+      "Francesca Lunardini",
+      "Alice Geminiani",
+      "Alberto Antonietti"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Maya B. Mathur",
+        "orcid": "https://orcid.org/0000-0001-6698-2607"
+      },
+      {
+        "affiliation": [],
+        "name": "David B. Reichling",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Francesca Lunardini",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Alice Geminiani",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Alberto Antonietti",
+        "orcid": "https://orcid.org/0000-0003-0388-6321"
+      },
+      {
+        "affiliation": [],
+        "name": "Peter A.M. Ruijten",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Carmel A. Levitan",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Gideon Nave",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dylan Manfredi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Brandy Bessette-Symons",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Attila Szuts",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Balazs Aczel",
+        "orcid": null
+      }
+    ],
+    "cited_by": 82,
+    "date": "2020-02",
+    "doi": "10.1016/j.chb.2019.08.029",
+    "domain_score": 4.0,
+    "id": 53843,
+    "ingested_at": "2026-08-12T05:42:23.501112",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:45.192666",
+    "title": "Uncanny but not confusing: Multisite study of perceptual category confusion in the Uncanny Valley",
+    "title_zh": null,
+    "tldr": "通过多地点研究考察“恐怖谷”情境中的感知类别混淆，检验外形高度逼真但仍略显 uncanny 的对象是否会因难以归类而引发困惑，区分“怪异感”与“类别混淆”两种反应。",
+    "topic_tags": [
+      "人机交互",
+      "感知",
+      "机器人"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.08.029",
+    "volume": "103",
+    "year": 2020
+  },
+  {
+    "abstract": null,
     "ai_reason": "深伪视频涉AI技术,消费者情感行为反应",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -85574,6 +86376,79 @@
     "url": "https://doi.org/10.1016/j.chb.2020.106561",
     "volume": "114",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机比较为核心情境，关注社会创造力",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "Young-Jae Cha",
+      "Sojung Baek",
+      "Grace Ahn",
+      "Hyoungsuk Lee",
+      "Boyun Lee"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Young-Jae Cha",
+        "orcid": "https://orcid.org/0000-0002-2194-1788"
+      },
+      {
+        "affiliation": [],
+        "name": "Sojung Baek",
+        "orcid": "https://orcid.org/0000-0002-4087-9019"
+      },
+      {
+        "affiliation": [],
+        "name": "Grace Ahn",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Hyoungsuk Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Boyun Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ji-eun Shin",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dayk Jang",
+        "orcid": "https://orcid.org/0000-0002-3488-4858"
+      }
+    ],
+    "cited_by": 58,
+    "date": "2020-02",
+    "doi": "10.1016/j.chb.2019.08.027",
+    "domain_score": 4.0,
+    "id": 53870,
+    "ingested_at": "2026-08-12T05:42:24.294599",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:45.321833",
+    "title": "Compensating for the loss of human distinctiveness: The use of social creativity under Human–Machine comparisons",
+    "title_zh": "弥补人类独特性的丧失：人机比较情境下社会创造力的运用",
+    "tldr": "聚焦人机比较可能削弱人类独特性与自我价值的问题，考察社会创造如何作为一种补偿与应对机制，帮助人们在人机共存情境中维持积极的社会认知与心理感受。",
+    "topic_tags": [
+      "人机协作",
+      "创意",
+      "身份认同"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2019.08.027",
+    "volume": "103",
+    "year": 2020
   },
   {
     "abstract": null,
@@ -99147,6 +100022,107 @@
     "year": 2027
   },
   {
+    "abstract": null,
+    "ai_reason": "智能养老机器人是核心研究对象",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "服务机器人",
+      "人机交互",
+      "人机协作"
+    ],
+    "authors": [
+      "Caihua Yu",
+      "Siwen Xu",
+      "Tonghui Lian"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Caihua Yu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Siwen Xu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Tonghui Lian",
+        "orcid": "https://orcid.org/0000-0002-3512-0972"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-11",
+    "doi": "10.1016/j.chb.2026.109090",
+    "domain_score": 4.0,
+    "id": 84222,
+    "ingested_at": "2026-11-10T09:14:37.161541",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:17.113923",
+    "title": "Blessed or not? The dual-path influence mechanism of intelligent elderly care service robots' roles on Chinese family caregivers' well-being",
+    "title_zh": "有福还是无福：智能养老服务机器人角色影响中国家庭照护者福祉的双路径机制",
+    "tldr": "以中国家庭照护者为对象，考察智能养老服务机器人承担不同角色时对幸福感的影响，并检验其促进与抑制幸福感的双路径机制；标题未披露具体效应方向。",
+    "topic_tags": [
+      "老年照护",
+      "家庭照护者",
+      "幸福感",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109090",
+    "volume": "184",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心为老年用户生成式AI体验与个性化",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机交互"
+    ],
+    "authors": [
+      "Mingxi Sun",
+      "Jingxi Chen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Mingxi Sun",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jingxi Chen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11",
+    "doi": "10.1016/j.chb.2026.109260",
+    "domain_score": 4.0,
+    "id": 84223,
+    "ingested_at": "2026-11-10T09:14:37.175668",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:10.606322",
+    "title": "Designing Human-Centered Generative AI for Older Adults: Understanding Personalization and Credibility Across Interaction Contexts",
+    "title_zh": "面向老年人的人本生成式AI设计：跨交互情境下的个性化与可信度理解",
+    "tldr": "聚焦老年人使用生成式AI时的个性化与可信度，比较不同交互情境下的体验差异，提示设计应兼顾个体需求、内容可信度与沟通适配，以维护老年用户信任和接受度。",
+    "topic_tags": [
+      "人机交互",
+      "信任",
+      "个性化",
+      "数字包容"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109260",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Artificial intelligence (AI) has become part and parcel of scientific knowledge production since the latest iterations of generative AI models (e.g., ChatGPT, DeepSeek, Claude, or Gemini) became widely available. Given AI has rapidly evolved since the initial release of ChatGPT in 2022, researching how AI’s capabilities impact organizations and how researchers make use of AI tools can be likened to a moving target. In this editorial essay, we explore the implications of the introduction of AI in the context of academic research, both as the subject of investigation (i.e., research\n                    on\n                    AI) and as a research tool to facilitate academic writing, data generation, or the peer review process (i.e., research\n                    with\n                    AI). Specifically, concerning research\n                    on\n                    AI, we consider issues around clarity regarding both existing definitions and concepts in the AI literature and how these are influenced by the rapid technological evolution of AI’s capabilities. In regard to research\n                    with\n                    AI, we reflect on the advantages and disadvantages of the use of AI as a research tool and discuss the\n                    Human Relations AI Usage Policy\n                    . Overall, our aim is not to be overly prescriptive on how to conduct research on and with AI but to encourage authors to reflect on how to best capture AI as a moving target in the context of their research endeavors.",
     "ai_reason": "核心议题为AI对学术研究和组织的影响",
     "ai_score": 5.0,
@@ -109900,6 +110876,75 @@
     "url": "https://doi.org/10.1287/isre.2021.1082",
     "volume": "33",
     "year": 2022
+  },
+  {
+    "abstract": "We develop a general-purpose agent-based simulation and modeling approach to analyze how user–recommender interactions affect recommender systems in the long run. Our explorations show that, over time, user–recommender interactions consistently lead to the longitudinal performance paradox of recommender systems. In particular, users’ reliance on recommendations, while helping users discover relevant items, actually hurts the future diversity of items that are recommended and consumed as well as slows down the system’s learning pace (i.e., the rate of predictive accuracy improvement). We also demonstrate unique benefits of certain hybrid consumption strategies—that is, that take advantage of both popularity- and personalization-based recommendations—in facilitating improvements in consumption relevance over time. Because users’ consumption strategies can significantly influence the longitudinal performance of recommender systems, it is important for designers to analyze the histories of a system’s recommendations and users’ choices to infer and understand users’ consumption strategies. This would enable the system to anticipate users’ consumption behavior and strategically adjust the system’s parameters according to its long-term performance objectives.",
+    "ai_reason": "推荐系统性能与消费，AI为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "机器学习",
+      "算法管理"
+    ],
+    "authors": [
+      "Jingjing Zhang",
+      "Gediminas Adomavicius",
+      "Alok Gupta",
+      "Wolfgang Ketter"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Department of Operations and Decision Technologies, Kelley School of Business, Indiana University, Bloomington, Indiana 47405;"
+        ],
+        "name": "Jingjing Zhang",
+        "orcid": "https://orcid.org/0000-0002-6805-8685"
+      },
+      {
+        "affiliation": [
+          "Department of Information and Decision Sciences, Carlson School of Management, University of Minnesota, Minneapolis, Minnesota 55455;"
+        ],
+        "name": "Gediminas Adomavicius",
+        "orcid": "https://orcid.org/0000-0001-5251-5098"
+      },
+      {
+        "affiliation": [
+          "Department of Information and Decision Sciences, Carlson School of Management, University of Minnesota, Minneapolis, Minnesota 55455;"
+        ],
+        "name": "Alok Gupta",
+        "orcid": "https://orcid.org/0000-0002-2097-1643"
+      },
+      {
+        "affiliation": [
+          "Department of Management, Economics, and Social Sciences, University of Cologne, 50923 Cologne, Germany;",
+          "Department of Technology and Operations Management, Rotterdam School of Management, Erasmus University Rotterdam, 3062 PA Rotterdam, Netherlands"
+        ],
+        "name": "Wolfgang Ketter",
+        "orcid": "https://orcid.org/0000-0001-9008-142X"
+      }
+    ],
+    "cited_by": 104,
+    "date": "2020-03",
+    "doi": "10.1287/isre.2019.0876",
+    "domain_score": 4.0,
+    "id": 44418,
+    "ingested_at": "2026-08-12T04:20:28.647769",
+    "issue": "1",
+    "journal": "ISR",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:29.536493",
+    "title": "Consumption and Performance: Understanding Longitudinal Dynamics of Recommender Systems via an Agent-Based Simulation Framework",
+    "title_zh": "消费与绩效：通过基于主体的仿真框架理解推荐系统的纵向动态",
+    "tldr": "构建通用代理仿真框架，分析用户与推荐系统的长期互动。依赖推荐虽提升当前相关性，却会降低未来内容多样性、减慢预测学习速度；融合热门与个性化推荐有助于改善长期表现。",
+    "topic_tags": [
+      "推荐系统",
+      "消费者行为",
+      "算法管理",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1287/isre.2019.0876",
+    "volume": "31",
+    "year": 2020
   },
   {
     "abstract": "Does fake news in financial markets attract more investor attention and have a significant impact on stock prices? The authors use the SEC crackdown of stock promotion schemes in April 2017 to examine investor attention and the stock price reaction to fake news articles. Using data from Seeking Alpha, the authors find that fake news stories generate significantly more attention than a control sample of legitimate articles. The authors find no evidence that article commenters can detect fake news, and they find that Seeking Alpha editors have only modest ability to detect fake news. However, the authors implement several well-known machine learning algorithms based on linguistic characteristics and show that machine learning algorithms can successfully identify fake news. In addition, the stock market appears to price fake news correctly. While abnormal trading volume increases around the release of fake news, the increase is less than that observed for legitimate news. The stock price reaction to fake news is discounted when compared with legitimate news articles.",
@@ -146865,6 +147910,59 @@
     "year": 2022
   },
   {
+    "abstract": "We combine ideas from machine learning (ML) and operations research and management science (OR/MS) in developing a framework, along with specific methods, for using data to prescribe optimal decisions in OR/MS problems. In a departure from other work on data-driven optimization, we consider data consisting, not only of observations of quantities with direct effect on costs/revenues, such as demand or returns, but also predominantly of observations of associated auxiliary quantities. The main problem of interest is a conditional stochastic optimization problem, given imperfect observations, where the joint probability distributions that specify the problem are unknown. We demonstrate how our proposed methods are generally applicable to a wide range of decision problems and prove that they are computationally tractable and asymptotically optimal under mild conditions, even when data are not independent and identically distributed and for censored observations. We extend these to the case in which some decision variables, such as price, may affect uncertainty and their causal effects are unknown. We develop the coefficient of prescriptiveness P to measure the prescriptive content of data and the efficacy of a policy from an operations perspective. We demonstrate our approach in an inventory management problem faced by the distribution arm of a large media company, shipping 1 billion units yearly. We leverage both internal data and public data harvested from IMDb, Rotten Tomatoes, and Google to prescribe operational decisions that outperform baseline measures. Specifically, the data we collect, leveraged by our methods, account for an 88% improvement as measured by our coefficient of prescriptiveness.  This paper was accepted by Noah Gans, optimization.",
+    "ai_reason": "机器学习结合运筹优化决策",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策",
+      "因果推断",
+      "优化算法"
+    ],
+    "authors": [
+      "Dimitris Bertsimas",
+      "Nathan Kallus"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Operations Research Center, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139;"
+        ],
+        "name": "Dimitris Bertsimas",
+        "orcid": "https://orcid.org/0000-0002-1985-1003"
+      },
+      {
+        "affiliation": [
+          "Cornell Tech and School of Operations Research and Information Engineering, Cornell University, New York, New York 10044"
+        ],
+        "name": "Nathan Kallus",
+        "orcid": "https://orcid.org/0000-0003-1672-0507"
+      }
+    ],
+    "cited_by": 607,
+    "date": "2020-03",
+    "doi": "10.1287/mnsc.2018.3253",
+    "domain_score": 5.0,
+    "id": 42099,
+    "ingested_at": "2026-08-12T04:19:32.882096",
+    "issue": "3",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:33.590205",
+    "title": "From Predictive to Prescriptive Analytics",
+    "title_zh": "从预测性分析到处方性分析",
+    "tldr": "针对观测不完整、分布未知且非独立同分布时如何利用数据给出最优决策，融合机器学习与运筹优化，构造可处理删失、因果不确定及辅助变量的随机优化框架，并提出衡量数据与策略“处方价值”的P指标；库存案例显示其可扩展且渐近最优。",
+    "topic_tags": [
+      "决策",
+      "运营管理",
+      "库存管理",
+      "因果推断"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2018.3253",
+    "volume": "66",
+    "year": 2020
+  },
+  {
     "abstract": "We compare the ability of dictionary-based and machine-learning methods to capture disclosure sentiment at 10-K filing and conference-call dates. Like Loughran and McDonald [Loughran T, McDonald B (2011) When is a liability not a liability? Textual analysis, dictionaries, and 10-Ks. J. Finance 66(1):35–65.], we use returns to assess sentiment. We find that measures based on machine learning offer a significant improvement in explanatory power over dictionary-based measures. Specifically, machine-learning measures explain returns at 10-K filing dates, whereas measures based on the Loughran and McDonald dictionary only explain returns at 10-K filing dates during the time period of their study. Moreover, at conference-call dates, machine-learning methods offer an improvement over the Loughran and McDonald dictionary method of a greater magnitude than the improvement of the Loughran and McDonald dictionary over the Harvard Psychosociological Dictionary. We further find that the random-forest-regression-tree method better captures disclosure sentiment than alternative algorithms, simplifying the application of the machine-learning approach. Overall, our results suggest that machine-learning methods offer an easily implementable, more powerful, and reliable measure of disclosure sentiment than dictionary-based methods.  This paper was accepted by Brian Bushee, accounting.",
     "ai_reason": "用ML方法测度披露情绪,AI是方法非主题",
     "ai_score": 3.0,
@@ -147682,6 +148780,50 @@
     "url": "https://doi.org/10.1287/mnsc.2021.4211",
     "volume": "68",
     "year": 2022
+  },
+  {
+    "abstract": "Firms typically use query-based search to help consumers find information/products on their websites. We consider the problem of optimally ranking a set of results shown in response to a query. We propose a personalized ranking mechanism based on a user’s search and click history. Our machine-learning framework consists of three modules: (a) feature generation, (b) normalized discounted cumulative gain–based LambdaMART algorithm, and (c) feature selection wrapper. We deploy our framework on large-scale data from a leading search engine using Amazon EC2 servers and present results from a series of counterfactual analyses. We find that personalization improves clicks to the top position by 3.5% and reduces the average error in rank of a click by 9.43% over the baseline. Personalization based on short-term history or within-session behavior is shown to be less valuable than long-term or across-session personalization. We find that there is significant heterogeneity in returns to personalization as a function of user history and query type. The quality of personalized results increases monotonically with the length of a user’s history. Queries can be classified based on user intent as transactional, informational, or navigational, and the former two benefit more from personalization. We also find that returns to personalization are negatively correlated with a query’s past average performance. Finally, we demonstrate the scalability of our framework and derive the set of optimal features that maximizes accuracy while minimizing computing time.  This paper was accepted by Juanjuan Zhang, marketing.",
+    "ai_reason": "机器学习驱动搜索个性化，AI为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "推荐算法",
+      "算法决策"
+    ],
+    "authors": [
+      "Hema Yoganarasimhan"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Foster School of Business, University of Washington, Seattle, Washington 98195"
+        ],
+        "name": "Hema Yoganarasimhan",
+        "orcid": "https://orcid.org/0000-0003-0703-5196"
+      }
+    ],
+    "cited_by": 147,
+    "date": "2020-03",
+    "doi": "10.1287/mnsc.2018.3255",
+    "domain_score": 4.0,
+    "id": 43748,
+    "ingested_at": "2026-08-12T04:20:12.781734",
+    "issue": "3",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:29.536702",
+    "title": "Search Personalization Using Machine Learning",
+    "title_zh": "利用机器学习实现搜索个性化",
+    "tldr": "基于搜索与点击历史构建融合特征生成、NDCG-LambdaMART及特征选择的个性化排序框架，并通过大规模反事实分析发现：首位点击提升3.5%，点击排名误差降低9.43%，长期历史及交易型、信息型查询收益更高。",
+    "topic_tags": [
+      "搜索个性化",
+      "营销",
+      "消费者行为",
+      "推荐系统"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2018.3255",
+    "volume": "66",
+    "year": 2020
   },
   {
     "abstract": "We develop a new framework for designing online policies given access to an oracle providing statistical information about an off-line benchmark. Having access to such prediction oracles enables simple and natural Bayesian selection policies and raises the question as to how these policies perform in different settings. Our work makes two important contributions toward this question: First, we develop a general technique we call compensated coupling, which can be used to derive bounds on the expected regret (i.e., additive loss with respect to a benchmark) for any online policy and off-line benchmark. Second, using this technique, we show that a natural greedy policy, which we call the Bayes selector, has constant expected regret (i.e., independent of the number of arrivals and resource levels) for a large class of problems we refer to as “online allocation with finite types,” which includes widely studied online packing and online matching problems. Our results generalize and simplify several existing results for online packing and online matching and suggest a promising pathway for obtaining oracle-driven policies for other online decision-making settings.  This paper was accepted by George Shanthikumar, big data analytics.",
@@ -149411,6 +150553,58 @@
     "url": "https://doi.org/10.1287/mnsc.2026.00623",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "Product and content personalization is now ubiquitous in e-commerce. There are typically not enough available transactional data for this task. As such, companies today seek to use a variety of information on the interactions between a product and a customer to drive personalization decisions. We formalize this problem as one of recovering a large-scale matrix with side information in the form of additional matrices of conforming dimension. Viewing the matrix we seek to recover and the side information we have as slices of a tensor, we consider the problem of slice recovery, which is to recover specific slices of “simple” tensors from noisy observations of the entire tensor. We propose a definition of simplicity that on the one hand elegantly generalizes a standard generative model for our motivating problem and on the other hand subsumes low-rank tensors for a variety of existing definitions of tensor rank. We provide an efficient algorithm for slice recovery that is practical for massive data sets and provides a significant performance improvement over state-of-the-art incumbent approaches to tensor recovery. Furthermore, we establish near-optimal recovery guarantees that, in an important regime, represent an order improvement over the best available results for this problem. Experiments on data from a music streaming service demonstrate the performance and scalability of our algorithm.  The e-companion is available at https://doi.org/10.1287/mnsc.2018.3092 .  This paper was accepted by Noah Gans, stochastic models and simulation.",
+    "ai_reason": "以机器学习建模电商个性化",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "机器学习",
+      "张量分解"
+    ],
+    "authors": [
+      "Vivek F. Farias",
+      "Andrew A. Li"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Sloan School of Management, Massachusetts Institute of Technology, Cambridge, Massachusetts 02142;"
+        ],
+        "name": "Vivek F. Farias",
+        "orcid": "https://orcid.org/0000-0002-5856-9246"
+      },
+      {
+        "affiliation": [
+          "Operations Research Center, Massachusetts Institute of Technology, Cambridge, Massachusetts 02142"
+        ],
+        "name": "Andrew A. Li",
+        "orcid": "https://orcid.org/0000-0002-9552-6421"
+      }
+    ],
+    "cited_by": 58,
+    "date": "2019-07",
+    "doi": "10.1287/mnsc.2018.3092",
+    "domain_score": 4.0,
+    "id": 84240,
+    "ingested_at": "2026-11-10T09:14:37.417384",
+    "issue": "7",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:17.116333",
+    "title": "Learning Preferences with Side Information",
+    "title_zh": "基于辅助信息的学习偏好",
+    "tldr": "针对电商交易数据不足下的个性化偏好学习，将问题形式化为带侧信息的大规模矩阵与张量切片恢复，定义广义低秩结构并给出高效算法及近最优恢复保证；音乐流媒体实验显示其可扩展性并优于现有方法。",
+    "topic_tags": [
+      "推荐系统",
+      "个性化",
+      "电商",
+      "机器学习"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2018.3092",
+    "volume": "65",
+    "year": 2019
   },
   {
     "abstract": "This paper presents a novel integrative approach that combines artificial intelligence-driven forecasting with behavioral interventions to help businesses optimize energy consumption under critical peak pricing schemes.",
@@ -152294,6 +153488,58 @@
     "year": 2021
   },
   {
+    "abstract": "Do curation and personalization algorithms on social media create filter bubbles and increase content polarization?",
+    "ai_reason": "核心研究平台策展算法与信息茧房",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "算法管理",
+      "个性化排序"
+    ],
+    "authors": [
+      "Ron Berman",
+      "Zsolt Katona"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "The Wharton School, University of Pennsylvania, Philadelphia, Pennsylvania 19104;"
+        ],
+        "name": "Ron Berman",
+        "orcid": "https://orcid.org/0000-0002-8594-3627"
+      },
+      {
+        "affiliation": [
+          "Haas School of Business, University of California, Berkeley, Berkeley, California 94720"
+        ],
+        "name": "Zsolt Katona",
+        "orcid": "https://orcid.org/0000-0001-8411-6040"
+      }
+    ],
+    "cited_by": 107,
+    "date": "2020-03",
+    "doi": "10.1287/mksc.2019.1208",
+    "domain_score": 4.0,
+    "id": 48036,
+    "ingested_at": "2026-08-12T04:21:56.866326",
+    "issue": "2",
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:27.951953",
+    "title": "Curation Algorithms and Filter Bubbles in Social Networks",
+    "title_zh": "社交网络中的内容策展算法与信息茧房",
+    "tldr": "考察社交媒体的策展与个性化算法是否会形成信息茧房并加剧内容极化；摘要仅提出研究问题，未报告明确结论。",
+    "topic_tags": [
+      "算法管理",
+      "信息茧房",
+      "内容极化",
+      "社交媒体"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2019.1208",
+    "volume": "39",
+    "year": 2020
+  },
+  {
     "abstract": "We study the impact of an increase in minimum wages on consumer perceptions of service quality in the restaurant industry.",
     "ai_reason": "以Transformer模型分析消费者感知",
     "ai_score": 4.0,
@@ -153753,6 +154999,58 @@
     "url": "https://doi.org/10.1016/j.obhdp.2021.01.001",
     "volume": "164",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心研究算法预测速度对信任的影响",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "算法决策",
+      "人机交互"
+    ],
+    "authors": [
+      "Emir Efendić",
+      "Philippe P.F.M. Van de Calseyde",
+      "Anthony M. Evans"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Emir Efendić",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Philippe P.F.M. Van de Calseyde",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Anthony M. Evans",
+        "orcid": null
+      }
+    ],
+    "cited_by": 85,
+    "date": "2020-03",
+    "doi": "10.1016/j.obhdp.2020.01.008",
+    "domain_score": 4.0,
+    "id": 37919,
+    "ingested_at": "2026-08-12T04:17:54.313849",
+    "issue": null,
+    "journal": "OBHDP",
+    "pdf_url": null,
+    "scored_at": "2026-11-10T09:15:34.435187",
+    "title": "Slow response times undermine trust in algorithmic (but not human) predictions",
+    "title_zh": "响应缓慢削弱人们对算法预测的信任，但不影响对人类预测的信任",
+    "tldr": "考察预测响应速度对信任的影响。结果表明，响应迟缓会削弱人们对算法预测的信任，却不会同等削弱对人类预测的信任，说明等待延迟可能造成算法来源的隐性劣势。",
+    "topic_tags": [
+      "信任",
+      "人机协作",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.obhdp.2020.01.008",
+    "volume": "157",
+    "year": 2020
   },
   {
     "abstract": null,

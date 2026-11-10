@@ -1,0 +1,72 @@
+{
+  "abstract": "The Graphical User Interface (GUI) plays a critical role in the interaction between users and mobile applications (apps), aiming at facilitating the operation process. However, due to the variety of functions and non-standardized design, GUIs might have many accessibility issues, like the size of components being too small or their intervals being narrow. These issues would hinder the operation of low vision users, preventing them from obtaining information accurately and conveniently. Although several technologies and methods have been proposed to address these issues, they are typically confined to issue identification, leaving the resolution in the hands of developers. Moreover, it can be challenging to ensure that the color, size, and interval of the fixed GUIs are appropriately compared to the original ones. In this work, we propose a novel approach named AccessFixer, which utilizes the Relational-Graph Convolutional Neural Network (R-GCN) to simultaneously fix three kinds of accessibility issues, including small sizes, narrow intervals, and low color contrast in GUIs. With AccessFixer, the fixed GUIs would have a consistent color palette, uniform intervals, and adequate size changes achieved through coordinated adjustments to the attributes of related components. Our experiments demonstrate the effectiveness and usefulness of AccessFixer in fixing GUI accessibility issues. After fixing 30 real-world apps, our approach solves an average of 81.2% of their accessibility issues. Also, we apply AccessFixer to 10 open-source apps by submitting the fixed results with pull requests (PRs) on GitHub. The results demonstrate that developers approve of our submitted fixed GUIs, with 8 PRs being merged or under fixing. A user study examines that low vision users host a positive attitude toward the GUIs fixed by our method.",
+  "ai_type_tags": [
+    "图神经网络",
+    "可用性 AI"
+  ],
+  "arxiv_id": "2502.15142",
+  "authors": [
+    "Mengxi Zhang",
+    "Huaxiao Liu",
+    "Chunyang Chen",
+    "Guangyong Gao",
+    "Han Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Mengxi Zhang"
+    },
+    {
+      "name": "Huaxiao Liu"
+    },
+    {
+      "name": "Chunyang Chen"
+    },
+    {
+      "name": "Guangyong Gao"
+    },
+    {
+      "name": "Han Li"
+    },
+    {
+      "name": "Jian Zhao"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以图卷积模型修复低视力用户GUI问题",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "面向低视力用户面临的组件过小、间距过窄和对比度不足问题，AccessFixer利用关系图卷积网络协调调整关联界面属性，同时修复三类无障碍缺陷；在30个真实应用中将这些问题平均解决81.2%。",
+      "topic_tags": [
+        "可访问性",
+        "人机交互(HCI)",
+        "用户体验(UX)",
+        "低视力用户"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2025-02-21",
+  "doi": "10.1109/tse.2023.3337421",
+  "id": "p_5lHPtaw7c9HijaAf",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2502.15142v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 7902,
+      "revision": "37f9293768f2a9b1d5b9f25707c546444482342a"
+    }
+  ],
+  "title": "AccessFixer: Enhancing GUI Accessibility for Low Vision Users With R-GCN Model",
+  "title_zh": "AccessFixer：基于R-GCN模型提升低视力用户的GUI无障碍性",
+  "unified_ingested_at": "2026-11-10T09:24:42.507870Z",
+  "url": "https://arxiv.org/abs/2502.15142v1",
+  "volume": null,
+  "year": 2025
+}
