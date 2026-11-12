@@ -1,0 +1,62 @@
+{
+  "abstract": "Do large language models represent psychological constructs internally, or do they only generate outputs that resemble psychometric structure? We address this question using a cross-persona paradigm across 14 model variants from two families (Llama 3 and Qwen 2.5, 0.5B-14B, base and instruct). Given responses on one psychological scale from real individuals (N = 272 Taiwanese university students), models predict responses on six other scales. At the behavioral level, larger variants reproduce and amplify human cross-scale correlations; amplification persists after correcting the seven-scale human correlations for measurement attenuation. We then examine whether this structure is reflected internally. Contrastive direction analysis finds geometry aligned with the human matrix in larger instruct variants, but little alignment in base variants under this assay. Across models, geometry strength is associated with behavioral amplification (r = 0.68, p = 0.008; partial r = 0.69 controlling for log size). To relate internal structure to output behavior, a matched activation-probing paradigm shows that probe slopes vary less than behavioral slopes (1.38-1.77 vs 0.52-1.53). A synthetic control shows that ridge probing can inflate these slopes; after subtracting a baseline based on a reliability proxy from another analysis, adjusted slopes remain associated with behavior (r = 0.88). We term the measured probe-behavior gap readout attenuation. These results establish decodability and geometric alignment under the tested assays, without showing that the measured directions mediate the cross-persona answers.",
+  "ai_type_tags": [
+    "LLM",
+    "可解释 AI",
+    "心理测量推断"
+  ],
+  "arxiv_id": "2611.12937",
+  "authors": [
+    "Chih-Hao Hsu",
+    "Feng-Chun B. Chou",
+    "Pin-Hao A. Chen"
+  ],
+  "authors_full": [
+    {
+      "name": "Chih-Hao Hsu"
+    },
+    {
+      "name": "Feng-Chun B. Chou"
+    },
+    {
+      "name": "Pin-Hao A. Chen"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "含学生心理量表数据，重心在模型",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "基于272名大学生的心理量表数据及14个Llama 3、Qwen 2.5变体，研究发现大模型能复现并放大跨量表相关，且较大指令模型的内部几何结构与人类结构更一致；但探针斜率低于行为斜率，提示存在读出衰减及探测偏差。",
+      "topic_tags": [
+        "心理测量学",
+        "大语言模型",
+        "可解释性",
+        "表征分析"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-06",
+  "doi": null,
+  "id": "p_cT3IKbPOjriBwjfA",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.12937v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38887,
+      "revision": "0d99ab47084315d90f13bb1b3c3552209790481c"
+    }
+  ],
+  "title": "Tracing Psychometric Inference in Large Language Models",
+  "title_zh": "追踪大型语言模型中的心理测量推断",
+  "unified_ingested_at": "2026-11-12T09:25:37.511169Z",
+  "url": "https://arxiv.org/abs/2611.12937v1",
+  "volume": null,
+  "year": 2026
+}

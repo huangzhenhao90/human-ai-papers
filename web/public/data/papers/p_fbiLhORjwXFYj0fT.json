@@ -1,0 +1,85 @@
+{
+  "abstract": "We develop a framework for improving the effectiveness of marketing communications by aligning a language model to the causal signal in A/B tests. The core idea is that randomized experiments reveal not just which content performs best, but directions of improvement that can serve as supervision for a generative model. Using within-experiment comparisons, we fine-tune a language model to create an\n                    improver\n                    architecture that transforms lower-performing content into higher-performing content. The resulting model can be composed with any baseline decision-maker, e.g. a human expert, to suggest improvements to new content. We validate our framework through a large-scale field experiment in email marketing spanning 36 new campaigns and 283 million impressions. Subject lines improved by our aligned model achieve click-through rates 32% higher than those from unassisted human experts, while a general-purpose language model with 30 times as many parameters as our fine-tuned model does not improve outcomes. This suggests that alignment to experimental data adds value beyond model capabilities alone. Our findings provide the first field evidence that aligning language models to A/B tests improves outcomes in real marketing campaigns and show that integrating AI with experimentation can train systems that make better future decisions.",
+  "ai_type_tags": [
+    "LLM",
+    "GenAI",
+    "算法决策"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Panagiotis Angelopoulos",
+    "Kevin Lee",
+    "Sanjog Misra"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [],
+      "name": "Panagiotis Angelopoulos",
+      "orcid": null
+    },
+    {
+      "affiliation": [],
+      "name": "Kevin Lee",
+      "orcid": null
+    },
+    {
+      "affiliation": [],
+      "name": "Sanjog Misra",
+      "orcid": null
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "以语言模型和A/B测试优化营销传播",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "利用A/B测试中的因果比较信号微调语言模型，使其把低绩效营销内容改写为更优版本。36场邮件营销活动、2.83亿次曝光显示，优化后的主题行点击率比无辅助专家高32%，且效果优于规模大30倍的通用模型。",
+      "topic_tags": [
+        "营销",
+        "广告",
+        "决策"
+      ]
+    },
+    "ur": {
+      "ai_reason": "以语言模型和营销实验优化沟通内容",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "利用A/B测试的因果信号微调语言模型，使其把低绩效营销文案改写为更优版本。36场邮件营销活动、2.83亿次曝光显示，AI辅助标题的点击率较未辅助专家高32%，参数量大30倍的通用模型却未带来改善。",
+      "topic_tags": [
+        "营销",
+        "广告",
+        "因果推断",
+        "A/B测试"
+      ]
+    }
+  },
+  "channels": [
+    "ob",
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-11",
+  "doi": "10.1177/00222437261510017",
+  "id": "p_fbiLhORjwXFYj0fT",
+  "issue": null,
+  "journal": "JMR",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 84390,
+      "revision": "4e546024bd6ae03ab709573140cfd66d36f47e75"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 38909,
+      "revision": "0d99ab47084315d90f13bb1b3c3552209790481c"
+    }
+  ],
+  "title": "EXPRESS: Causal Alignment: Augmenting Language Models with A/B Tests",
+  "title_zh": "EXPRESS：因果对齐：以A/B测试增强语言模型",
+  "unified_ingested_at": "2026-11-12T09:25:37.511169Z",
+  "url": "https://doi.org/10.1177/00222437261510017",
+  "volume": null,
+  "year": 2026
+}

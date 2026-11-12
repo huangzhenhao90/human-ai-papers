@@ -1,0 +1,71 @@
+{
+  "abstract": "Static application security testing (SAST) tools surface vulnerabilities early and their verdicts are rule-based and auditable. Yet developers routinely dismiss findings they cannot interpret. Large language models can supply the missing explanation, but designs that also hand the model the detection give up the auditability that makes static analysis defensible. We keep detection with the analyser and give the model only the explaining. A preliminary user study with 20 participants and a workshop with 19 practitioners yielded five requirements. Guided by these we redesigned SAFE, an open-source IntelliJ IDEA plugin that explains findings from any analyser reporting in the Static Analysis Results Interchange Format. It tiers explanations by demand, ties them to the reported data flow, and replaces the single-prompt backend with an agent that must consult the repository and the rule that fired before answering. A within-subjects crossover experiment with 24 participants compared the redesign against its predecessor. Perceived usability rose from 77.3 to 85.0 on the System Usability Scale. Actionability gained most among the explanation-quality items, the aspect both earlier studies flagged as weakest, and the odds of a correct remediation were 2.6 times higher. Triage accuracy and time per finding were indistinguishable, which we read as uninformative rather than as equivalence. Trust was the one measure that did not move, and the closing interviews indicate that grounding made findings easier to understand rather than easier to believe. Participants also drew a boundary no requirement anticipated, wanting the tool to find and explain while they judge and apply.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "可解释 AI",
+    "人机协作"
+  ],
+  "arxiv_id": "2611.13041",
+  "authors": [
+    "Oshando Johnson",
+    "Ranjith Krishnamurthy",
+    "Rohith Kumar Shanmuganathan",
+    "Goran Piskachev",
+    "Eric Bodden"
+  ],
+  "authors_full": [
+    {
+      "name": "Oshando Johnson"
+    },
+    {
+      "name": "Ranjith Krishnamurthy"
+    },
+    {
+      "name": "Rohith Kumar Shanmuganathan"
+    },
+    {
+      "name": "Goran Piskachev"
+    },
+    {
+      "name": "Eric Bodden"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以LLM生成解释，并含用户研究",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "SAFE将静态分析漏洞检测与LLM解释解耦，由智能体查阅代码库和触发规则后生成可追溯解释。实验显示，重构后可用性评分升至85.0，正确修复概率增至2.6倍，但分诊准确率、处理时间与信任未显著改善。",
+      "topic_tags": [
+        "软件工程",
+        "可解释性",
+        "可用性",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-09",
+  "doi": null,
+  "id": "p_AqXaQs3OBUcTeu8D",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2611.13041v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 38879,
+      "revision": "0d99ab47084315d90f13bb1b3c3552209790481c"
+    }
+  ],
+  "title": "Code-Grounded Agentic Explanations for Static Analysis Vulnerability Findings",
+  "title_zh": "面向静态分析漏洞发现结果的代码依据型智能体解释",
+  "unified_ingested_at": "2026-11-12T09:25:37.511169Z",
+  "url": "https://arxiv.org/abs/2611.13041v1",
+  "volume": null,
+  "year": 2026
+}
