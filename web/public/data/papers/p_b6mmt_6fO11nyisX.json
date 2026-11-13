@@ -1,0 +1,54 @@
+{
+  "abstract": "In interactive systems where users engage with LLMs, users are adaptive and, after observing LLM responses, can change their prompting strategy, as well as the type and difficulty of subsequent tasks. Thus model responses can influence the set of prompts on which the model is subsequently evaluated. We study the implications of this user adaptivity and prompt endogeneity for the evaluation of LLMs. We define two classes of estimands for comparing models: the common-distribution effect, which compares model performance on the same distribution of prompts, and the induced-distribution effect, which compares each model on the prompt distribution generated through user interaction. We show that offline benchmark evaluation and live A/B testing target different quantities, with the standard difference-in-means estimators for the two methods converging to the common-distribution effect and the induced-distribution effect, respectively. This distinction can affect decision-making: the two comparisons can rank models differently and lead to discrepancies in deployment recommendations. We characterize when such ranking reversals occur and provide a sufficient condition under which the rankings are guaranteed to agree. This result provides a practical heuristic for assessing whether offline evaluation is sufficient to reproduce the decision suggested by a live experiment. Third, we show, in a stylized linear model of interactions, that user adaptivity can increase variance in estimation. Finally, we discuss implications of user adaptivity for the interpretation of experiments and show that adaptivity creates a common mechanism leading to common evaluation challenges, such as reward hacking and novelty effects. Together, this work highlights the necessity of measuring both model performance as well as changes in the user behavior that the model induces.",
+  "ai_type_tags": [
+    "LLM",
+    "人机交互",
+    "AI评估"
+  ],
+  "arxiv_id": "2611.17239",
+  "authors": [
+    "Hannah Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Hannah Li"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "聚焦用户自适应与交互式LLM评估",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "交互式LLM评估中，用户会依据模型回答调整提示与任务难度，导致后续评测分布内生。区分固定提示分布效应与交互诱导分布效应后发现，离线基准和在线A/B测试估计不同对象，可能给出相反的模型排名；据此可判断何时离线结果足以支持部署决策。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "用户研究方法",
+        "实验设计",
+        "在线实验"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-12",
+  "doi": null,
+  "id": "p_b6mmt_6fO11nyisX",
+  "issue": null,
+  "journal": "arXiv:stat.ME",
+  "pdf_url": "https://arxiv.org/pdf/2611.17239v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39014,
+      "revision": "2678cf6b74ebb8e8d195925301aa931b19f73e71"
+    }
+  ],
+  "title": "When Both Sides Adapt: The Challenges of Evaluating Interactive LLM Systems",
+  "title_zh": "当双方均适应时：评估交互式 LLM 系统的挑战",
+  "unified_ingested_at": "2026-11-13T09:13:49.662803Z",
+  "url": "https://arxiv.org/abs/2611.17239v1",
+  "volume": null,
+  "year": 2026
+}

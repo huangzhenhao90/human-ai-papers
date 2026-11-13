@@ -1,0 +1,71 @@
+{
+  "abstract": "Planning agents and benchmarks treat a user's initial specification as fixed. Yet the requests users write exclude plans they would gladly take, since they rarely discover the possible trade-offs they would accept until seeing the options. Agents already revise requests through interaction, but whether this helps planning is unknown. We formalize this step as the ReSHAPE task, which judges a revision by whether its search space matches the acceptable plans and a planner finds one there. Using ReSHAPE Planter, which builds instances from planning benchmarks with a human-validated simulated user, we analyze 5,800 agent-revised specifications in travel and shopping. We find that reshaping matters: one correct trade-off makes the same planner reach an acceptable plan up to 4.6x as often, and search space quality predicts what the planner finds. Current agents, however, admit at most 32% of the acceptable plans, where that trade-off alone admits over 52%, because they ask about preferences instead of showing plans; in travel, showing plans raises F1 by 9.7 points over asking, with two model families. Planning agents should thus treat a request as a hypothesis to test against the user's reactions to concrete plans to recognize user trade-offs.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "LLM",
+    "人机交互",
+    "规划"
+  ],
+  "arxiv_id": "2611.16466",
+  "authors": [
+    "Yilin Zhang",
+    "Xinran Zhao",
+    "Tong Chen",
+    "Ziming Yuan",
+    "Tongshuang Wu"
+  ],
+  "authors_full": [
+    {
+      "name": "Yilin Zhang"
+    },
+    {
+      "name": "Xinran Zhao"
+    },
+    {
+      "name": "Tong Chen"
+    },
+    {
+      "name": "Ziming Yuan"
+    },
+    {
+      "name": "Tongshuang Wu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以人为验证模拟用户评估规划交互",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "将规划智能体修订用户请求是否符合可接受方案空间形式化为ReSHAPE任务，并分析旅行与购物中5800次修订。揭示一个正确权衡即可使规划器找到可接受方案的概率最高提升4.6倍；现有智能体因询问偏好而非展示方案，遗漏大量可接受方案。",
+      "topic_tags": [
+        "智能体",
+        "人机协作",
+        "交互式规划",
+        "偏好获取"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-12",
+  "doi": null,
+  "id": "p_erfh5kKpmFNnqoAn",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.16466v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39006,
+      "revision": "2678cf6b74ebb8e8d195925301aa931b19f73e71"
+    }
+  ],
+  "title": "How Should Planning Agents ReSHAPE Their Search Space?",
+  "title_zh": "规划智能体应如何 ReSHAPE 其搜索空间？",
+  "unified_ingested_at": "2026-11-13T09:13:49.662803Z",
+  "url": "https://arxiv.org/abs/2611.16466v1",
+  "volume": null,
+  "year": 2026
+}

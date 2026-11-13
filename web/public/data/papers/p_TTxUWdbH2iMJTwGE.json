@@ -1,0 +1,59 @@
+{
+  "abstract": "Oral exams are compelling because (1) students can be asked to provide their reasoning for an answer and (2) their interactive nature permits follow-up questions to resolve ambiguous answers. But oral exams scale poorly. In this paper, we present scalable conversational assessment, an LLM-based system that conducts interactive text-based conversations with students to assess their ability to make and support an argument. We use a two-agent architecture to separate concerns and reduce the likelihood that answers are leaked to the student: the interviewer interacts directly with the student, but only receives guidance about the next question to ask the student; the hidden evaluator knows the goals of the whole activity, tracks the student's progress using a rubric, and guides the interviewer on when to follow-up on the current question or proceed to the next question. The system was first tested using a collection of simulated students with LLM personas of a particular ability level or adversarial tactic (e.g., answer-extractors, prompt-injectors, confident fabricators). A novel element of this evaluation was that it required the use of a fictional assessment topic to prevent personas that shouldn't have information from using knowledge present in the LLM's pre-training. The system was also deployed in a small, elective AI literacy course in both formative and summative contexts. Through manual and post-facto AI review of the transcripts we identified opportunities to improve the follow-up question generation and ensure that grading only credited ideas that the student (and not the interviewer) contributed.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式AI",
+    "智能体/Agent",
+    "AI面试"
+  ],
+  "arxiv_id": "2611.17220",
+  "authors": [
+    "Geoffrey Challen",
+    "Craig Zilles"
+  ],
+  "authors_full": [
+    {
+      "name": "Geoffrey Challen"
+    },
+    {
+      "name": "Craig Zilles"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM与学生交互并评估论证能力",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "口试难以扩展且难以追问。构建双智能体LLM评分系统，分离提问与隐藏评估功能，并通过能力人格、提示注入等模拟学生及AI素养课程检验，证明其可支持交互式论证评估，同时暴露出流程改进空间。",
+      "topic_tags": [
+        "教育技术",
+        "形成性评价",
+        "AI素养",
+        "多智能体系统"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-12",
+  "doi": null,
+  "id": "p_TTxUWdbH2iMJTwGE",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2611.17220v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39001,
+      "revision": "2678cf6b74ebb8e8d195925301aa931b19f73e71"
+    }
+  ],
+  "title": "Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline",
+  "title_zh": "可扩展的对话式评估：基于双智能体LLM流程的聊天式考试",
+  "unified_ingested_at": "2026-11-13T09:13:49.662803Z",
+  "url": "https://arxiv.org/abs/2611.17220v1",
+  "volume": null,
+  "year": 2026
+}

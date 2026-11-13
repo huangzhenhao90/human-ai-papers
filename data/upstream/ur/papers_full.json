@@ -44468,6 +44468,289 @@
     "year": 2026
   },
   {
+    "abstract": "Generative AI has entered the workplace faster than organizations can govern it. A large share of employees now use AI tools their employer has not sanctioned, and many actively conceal that use, but the psychology of this covert technology behavior remains poorly understood. A common assumption, in popular accounts and early commentary, treats unauthorized (shadow) AI use as curiosity-driven exploration by adventurous individuals. We test this against a competing account grounded in the psychology of habitual technology use, in which automaticity rather than exploratory disposition sustains the behavior. Using survey data from 510 employed generative AI users across multiple countries, we adjudicated among individual and contextual predictors (workplace curiosity, habit, technology-acceptance beliefs, and organizational learning capability) with hierarchical regression, relative weights analysis with bootstrap confidence intervals, and full-subset dominance analysis. Habit was the strongest predictor, accounting for 28.3% of explained variance, and completely dominated joyous exploration, the curiosity dimension most aligned with the exploration account, across all 512 possible predictor subsets. Joyous exploration contributed 3.4% (95% CI [1.6, 7.4]) and fell to nonsignificance once use behavior and habit were modeled. Learning-supportive organizational conditions accounted for a further 24.1% and operated additively rather than by moderating dispositions. Parallel models decomposing the outcome showed the same dominance pattern for unauthorized use and concealment, and perceived social support for AI use was protective specifically against concealment. These findings reframe shadow AI as a habit-and-environment phenomenon rather than an individual-exploration phenomenon. The cross-sectional design means causal claims are exploratory.",
+    "ai_reason": "调查510名职场生成式AI用户行为心理",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "AI治理",
+      "影子AI"
+    ],
+    "authors": [
+      "Nolan Lovett",
+      "Mohan Yang"
+    ],
+    "authors_full": [
+      {
+        "name": "Nolan Lovett"
+      },
+      {
+        "name": "Mohan Yang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-12",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 38999,
+    "ingested_at": "2026-11-13T08:59:31.507307",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.16931v1",
+    "scored_at": "2026-11-13T09:00:25.360024",
+    "title": "Beyond Curiosity: Habit and Organizational Learning Capability as Predictors of Shadow AI",
+    "title_zh": "超越好奇心：习惯与组织学习能力作为影子AI的预测因子",
+    "tldr": "基于510名跨国职场用户的问卷，分析员工未经许可使用生成式AI的动因。结果显示，习惯是最强预测因素，可解释28.3%的差异；好奇心不再显著，支持学习的组织条件则发挥独立加成作用。",
+    "topic_tags": [
+      "AI治理",
+      "AI采用",
+      "组织行为",
+      "问卷"
+    ],
+    "url": "https://arxiv.org/abs/2611.16931v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Oral exams are compelling because (1) students can be asked to provide their reasoning for an answer and (2) their interactive nature permits follow-up questions to resolve ambiguous answers. But oral exams scale poorly. In this paper, we present scalable conversational assessment, an LLM-based system that conducts interactive text-based conversations with students to assess their ability to make and support an argument. We use a two-agent architecture to separate concerns and reduce the likelihood that answers are leaked to the student: the interviewer interacts directly with the student, but only receives guidance about the next question to ask the student; the hidden evaluator knows the goals of the whole activity, tracks the student's progress using a rubric, and guides the interviewer on when to follow-up on the current question or proceed to the next question. The system was first tested using a collection of simulated students with LLM personas of a particular ability level or adversarial tactic (e.g., answer-extractors, prompt-injectors, confident fabricators). A novel element of this evaluation was that it required the use of a fictional assessment topic to prevent personas that shouldn't have information from using knowledge present in the LLM's pre-training. The system was also deployed in a small, elective AI literacy course in both formative and summative contexts. Through manual and post-facto AI review of the transcripts we identified opportunities to improve the follow-up question generation and ensure that grading only credited ideas that the student (and not the interviewer) contributed.",
+    "ai_reason": "LLM与学生交互并评估论证能力",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "智能体/Agent",
+      "AI面试"
+    ],
+    "authors": [
+      "Geoffrey Challen",
+      "Craig Zilles"
+    ],
+    "authors_full": [
+      {
+        "name": "Geoffrey Challen"
+      },
+      {
+        "name": "Craig Zilles"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-12",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 39001,
+    "ingested_at": "2026-11-13T08:59:31.512414",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.17220v1",
+    "scored_at": "2026-11-13T09:00:25.359258",
+    "title": "Scalable Conversational Assessment: Chat-Based Exams with a Two-Agent LLM Pipeline",
+    "title_zh": "可扩展的对话式评估：基于双智能体LLM流程的聊天式考试",
+    "tldr": "口试难以扩展且难以追问。构建双智能体LLM评分系统，分离提问与隐藏评估功能，并通过能力人格、提示注入等模拟学生及AI素养课程检验，证明其可支持交互式论证评估，同时暴露出流程改进空间。",
+    "topic_tags": [
+      "教育技术",
+      "形成性评价",
+      "AI素养",
+      "多智能体系统"
+    ],
+    "url": "https://arxiv.org/abs/2611.17220v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models (LLMs) are increasingly used by students in computing courses. Yet computing education research has not fully examined how teaching and inclusion of LLMs shape students' conceptualization and understanding of LLMs, and how these factors relate to their subsequent use. Although prior work has examined prompting strategies and AI literacy, the relationships among students' conceptualizations of LLMs, their understanding of LLM mechanisms, and their prompting behavior remain underexplored. We studied these relationships in a post CS1 course that introduces students to the various CS subfields. We adapted the course to teach and allow the usage of LLMs. We administered an end-of-course survey, using open-ended items to elicit students' representations of LLMs and their explanations of how LLMs work, alongside closed-response measures of prompting style and prompt count (N=283 students consented and provided codable responses). Using qualitative coding, we categorized students' understanding of how LLMs work into four ordinal knowledge levels based on the Structure of Observed Learning Outcomes (SOLO) taxonomy and coded their metaphoric conceptualizations along two dimensions: persona type and relational role. Our results show that students most often conceptualized LLMs as human assistants, and context-rich prompting was the preferred style. The study contributes a two-dimensional characterization of students' LLM metaphoric representation and exploratory analyses also identified associations among these constructs showing how understanding these systems relates to their usage.",
+    "ai_reason": "聚焦LLM学生认知、提示行为与课程调查",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机交互",
+      "提示工程"
+    ],
+    "authors": [
+      "Nikitha Donekal Chandrashekar",
+      "Margaret Ellis",
+      "Sehrish Basir Nizamani",
+      "Naren Ramakrishnan"
+    ],
+    "authors_full": [
+      {
+        "name": "Nikitha Donekal Chandrashekar"
+      },
+      {
+        "name": "Margaret Ellis"
+      },
+      {
+        "name": "Sehrish Basir Nizamani"
+      },
+      {
+        "name": "Naren Ramakrishnan"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-10",
+    "doi": "https://doi.org/10.1145/3857222.3860114",
+    "domain_score": 5.0,
+    "id": 39004,
+    "ingested_at": "2026-11-13T08:59:31.516373",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.14798v1",
+    "scored_at": "2026-11-13T08:59:59.210063",
+    "title": "Who (or what) are they prompting? How CS students conceptualize and use LLMs",
+    "title_zh": "他们在提示谁（或什么）：CS学生如何理解与使用LLMs",
+    "tldr": "对283名计算机专业学生开展问卷与质性编码，分析其LLM认知和提示行为。学生多将LLM视为人类助手，偏好提供丰富上下文的提示；研究进一步刻画了其机制理解水平及LLM隐喻概念。",
+    "topic_tags": [
+      "计算机教育",
+      "AI素养",
+      "用户研究方法",
+      "问卷"
+    ],
+    "url": "https://arxiv.org/abs/2611.14798v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Planning agents and benchmarks treat a user's initial specification as fixed. Yet the requests users write exclude plans they would gladly take, since they rarely discover the possible trade-offs they would accept until seeing the options. Agents already revise requests through interaction, but whether this helps planning is unknown. We formalize this step as the ReSHAPE task, which judges a revision by whether its search space matches the acceptable plans and a planner finds one there. Using ReSHAPE Planter, which builds instances from planning benchmarks with a human-validated simulated user, we analyze 5,800 agent-revised specifications in travel and shopping. We find that reshaping matters: one correct trade-off makes the same planner reach an acceptable plan up to 4.6x as often, and search space quality predicts what the planner finds. Current agents, however, admit at most 32% of the acceptable plans, where that trade-off alone admits over 52%, because they ask about preferences instead of showing plans; in travel, showing plans raises F1 by 9.7 points over asking, with two model families. Planning agents should thus treat a request as a hypothesis to test against the user's reactions to concrete plans to recognize user trade-offs.",
+    "ai_reason": "以人为验证模拟用户评估规划交互",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "LLM",
+      "人机交互",
+      "规划"
+    ],
+    "authors": [
+      "Yilin Zhang",
+      "Xinran Zhao",
+      "Tong Chen",
+      "Ziming Yuan",
+      "Tongshuang Wu"
+    ],
+    "authors_full": [
+      {
+        "name": "Yilin Zhang"
+      },
+      {
+        "name": "Xinran Zhao"
+      },
+      {
+        "name": "Tong Chen"
+      },
+      {
+        "name": "Ziming Yuan"
+      },
+      {
+        "name": "Tongshuang Wu"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-12",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 39006,
+    "ingested_at": "2026-11-13T08:59:31.519575",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.16466v1",
+    "scored_at": "2026-11-13T09:00:25.358476",
+    "title": "How Should Planning Agents ReSHAPE Their Search Space?",
+    "title_zh": "规划智能体应如何 ReSHAPE 其搜索空间？",
+    "tldr": "将规划智能体修订用户请求是否符合可接受方案空间形式化为ReSHAPE任务，并分析旅行与购物中5800次修订。揭示一个正确权衡即可使规划器找到可接受方案的概率最高提升4.6倍；现有智能体因询问偏好而非展示方案，遗漏大量可接受方案。",
+    "topic_tags": [
+      "智能体",
+      "人机协作",
+      "交互式规划",
+      "偏好获取"
+    ],
+    "url": "https://arxiv.org/abs/2611.16466v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models (LLMs) often exhibit sycophancy, a tendency to agree with users, flatter or affirm them, and preserve their face, even when independent judgment or critical feedback would be more useful. Prior work has largely evaluated sycophancy through benchmark evaluations, but less is known about how users perceive and respond to sycophantic AI in everyday tasks. We combine benchmark evaluations with two large-scale user studies. We study four personas defined through system prompts: objective (instructed to prioritize accuracy over agreement), soft-sycophantic, hard-sycophantic, and baseline (no persona-specific system prompt). Benchmarks show that even baseline exhibits substantial sycophancy, agreeing with users' stated views 71.7% of the time on NLP Survey, compared with 54.8% for objective and 89.5% for hard-sycophantic. Under conversational pressure on TruthfulQA, accuracy ranged from 81.9% for objective to 59.6% for baseline and 8.7% for hard-sycophantic. Participants were assigned to one of the four personas, and either discussed contested policy topics or collaborated with AI on email writing. Despite its higher accuracy under pressure, objective AI was rated significantly less respectful and satisfying than the other personas, and less trustworthy than baseline. Baseline and sycophantic personas did not differ significantly. Persona did not significantly affect how often participants changed their opinions, although participants who discussed with objective AI had greater odds of reduced confidence. Objective AI prompted greater writing expansion than soft-sycophantic AI, but final writing quality did not differ significantly across personas. These findings highlight a tension between accuracy and user approval: personas with substantially lower accuracy under conversational pressure received more favorable ratings for respect and satisfaction than objective AI.",
+    "ai_reason": "两项大规模用户研究评估谄媚AI",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式AI",
+      "人机交互",
+      "AI伦理"
+    ],
+    "authors": [
+      "Wajiha Naveed",
+      "Brandon Fain"
+    ],
+    "authors_full": [
+      {
+        "name": "Wajiha Naveed"
+      },
+      {
+        "name": "Brandon Fain"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-12",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 39009,
+    "ingested_at": "2026-11-13T08:59:31.529585",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.16722v1",
+    "scored_at": "2026-11-13T09:00:25.358101",
+    "title": "Mind the Accuracy-Approval Gap: How Users Evaluate Sycophantic AI in Everyday Tasks",
+    "title_zh": "警惕准确性与认可度鸿沟：用户如何评估日常任务中的谄媚型 AI",
+    "tldr": "结合基准评测与两项大规模用户研究，比较客观、软迎合、强迎合及基线LLM在日常任务中的表现。迎合倾向会随会话压力显著放大；客观人格准确率更高，却被评为更不尊重、更不满足且更不可信，表明准确性收益可能以体验和信任为代价。",
+    "topic_tags": [
+      "用户研究方法",
+      "用户体验(UX)",
+      "信任",
+      "伦理"
+    ],
+    "url": "https://arxiv.org/abs/2611.16722v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "In interactive systems where users engage with LLMs, users are adaptive and, after observing LLM responses, can change their prompting strategy, as well as the type and difficulty of subsequent tasks. Thus model responses can influence the set of prompts on which the model is subsequently evaluated. We study the implications of this user adaptivity and prompt endogeneity for the evaluation of LLMs. We define two classes of estimands for comparing models: the common-distribution effect, which compares model performance on the same distribution of prompts, and the induced-distribution effect, which compares each model on the prompt distribution generated through user interaction. We show that offline benchmark evaluation and live A/B testing target different quantities, with the standard difference-in-means estimators for the two methods converging to the common-distribution effect and the induced-distribution effect, respectively. This distinction can affect decision-making: the two comparisons can rank models differently and lead to discrepancies in deployment recommendations. We characterize when such ranking reversals occur and provide a sufficient condition under which the rankings are guaranteed to agree. This result provides a practical heuristic for assessing whether offline evaluation is sufficient to reproduce the decision suggested by a live experiment. Third, we show, in a stylized linear model of interactions, that user adaptivity can increase variance in estimation. Finally, we discuss implications of user adaptivity for the interpretation of experiments and show that adaptivity creates a common mechanism leading to common evaluation challenges, such as reward hacking and novelty effects. Together, this work highlights the necessity of measuring both model performance as well as changes in the user behavior that the model induces.",
+    "ai_reason": "聚焦用户自适应与交互式LLM评估",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机交互",
+      "AI评估"
+    ],
+    "authors": [
+      "Hannah Li"
+    ],
+    "authors_full": [
+      {
+        "name": "Hannah Li"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-12",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 39014,
+    "ingested_at": "2026-11-13T08:59:31.534532",
+    "issue": null,
+    "journal": "arXiv:stat.ME",
+    "pdf_url": "https://arxiv.org/pdf/2611.17239v1",
+    "scored_at": "2026-11-13T09:00:25.356772",
+    "title": "When Both Sides Adapt: The Challenges of Evaluating Interactive LLM Systems",
+    "title_zh": "当双方均适应时：评估交互式 LLM 系统的挑战",
+    "tldr": "交互式LLM评估中，用户会依据模型回答调整提示与任务难度，导致后续评测分布内生。区分固定提示分布效应与交互诱导分布效应后发现，离线基准和在线A/B测试估计不同对象，可能给出相反的模型排名；据此可判断何时离线结果足以支持部署决策。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户研究方法",
+      "实验设计",
+      "在线实验"
+    ],
+    "url": "https://arxiv.org/abs/2611.17239v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "人-自主性团队协作，AI/HCI核心议题",
     "ai_score": 4.0,
@@ -50462,6 +50745,66 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聚焦员工AI信任、工作意义与行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI信任",
+      "人机协作",
+      "AI采用"
+    ],
+    "authors": [
+      "Xinxue Chang",
+      "Zhibin Chen",
+      "Zhihong Chen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Southeast University"
+        ],
+        "name": "Xinxue Chang",
+        "orcid": "https://orcid.org/0009-0004-5317-5194"
+      },
+      {
+        "affiliation": [
+          "Southeast University"
+        ],
+        "name": "Zhibin Chen",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Nanjing University"
+        ],
+        "name": "Zhihong Chen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-04-01",
+    "doi": "10.1080/0144929x.2026.2651112",
+    "domain_score": 4.0,
+    "id": 38974,
+    "ingested_at": "2026-11-13T08:59:25.981457",
+    "issue": "19",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-11-13T08:59:59.212006",
+    "title": "AI trust and work meaningfulness: mediating role of AI job crafting and moderating role of leaders’ AI-oriented change behaviour",
+    "title_zh": "AI信任与工作意义感：AI工作塑造的中介作用及领导者AI导向变革行为的调节作用",
+    "tldr": "基于中介与调节模型，考察员工对AI的信任如何影响工作意义感，并检验AI岗位塑造的中介作用及领导者AI导向变革行为的调节作用，揭示员工信任、主动适应与领导情境的联动。",
+    "topic_tags": [
+      "AI信任",
+      "工作意义感",
+      "岗位塑造",
+      "变革领导力"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2651112",
+    "volume": "45",
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI导师教育干预，HCI/学习研究",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -51099,25 +51442,29 @@
     "authors_full": [
       {
         "affiliation": [
-          "Future Design School, Harbin Institute of Technology"
+          "Harbin Institute of Technology"
         ],
         "name": "Peiyao Cheng",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0002-3187-2122",
+        "position": "first"
       },
       {
         "affiliation": [
-          "Future Design School, Harbin Institute of Technology"
+          "Harbin Institute of Technology"
         ],
         "name": "Haosong Dong",
-        "orcid": null
+        "orcid": null,
+        "position": "middle"
       },
       {
         "affiliation": [
-          "State Key Laboratory of Cognitive Science and Mental Health, Institute of Psychology, Chinese Academy of Sciences",
+          "Chinese Academy of Sciences",
+          "Institute of Psychology, Chinese Academy of Sciences",
           "University of Chinese Academy of Sciences"
         ],
         "name": "Qizhang Sun",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0002-2058-9233",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -77116,20 +77463,28 @@
       {
         "affiliation": [],
         "name": "Panagiotis Angelopoulos",
-        "orcid": null
+        "orcid": null,
+        "position": "first"
       },
       {
-        "affiliation": [],
+        "affiliation": [
+          "University of Michigan",
+          "University of Chicago"
+        ],
         "name": "Kevin Lee",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0001-6751-2551",
+        "position": "middle"
       },
       {
-        "affiliation": [],
+        "affiliation": [
+          "University of Chicago"
+        ],
         "name": "Sanjog Misra",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0002-9491-3454",
+        "position": "last"
       }
     ],
-    "cited_by": 0,
+    "cited_by": 7,
     "date": "2026-11-11",
     "doi": "10.1177/00222437261510017",
     "domain_score": 3.0,
@@ -77137,7 +77492,7 @@
     "ingested_at": "2026-11-12T09:04:17.106000",
     "issue": null,
     "journal": "JMR",
-    "pdf_url": null,
+    "pdf_url": "https://doi.org/10.2139/ssrn.4781850",
     "scored_at": "2026-11-12T09:05:24.796661",
     "title": "EXPRESS: Causal Alignment: Augmenting Language Models with A/B Tests",
     "title_zh": "EXPRESS：因果对齐：通过 A/B 测试增强语言模型",
@@ -77513,7 +77868,7 @@
     "year": 2026
   },
   {
-    "abstract": "Despite the increasing deployment of virtual streamers in e-commerce livestreaming, their effectiveness remains inconsistent. We explore this issue through the lens of intelligent interactivity, focusing on how and why the interaction effect between responsiveness and response naturalness shapes downstream outcomes in virtual livestreaming. We further test whether the presence of a livestream assistant moderates the effect of responsiveness under low response naturalness. One recall study and five experiments show that virtual streamers’ high responsiveness results in a higher likelihood of purchase intention and livestreaming continuance when response naturalness is high but nonexistent when naturalness is low. This joint effect can be explained by dual social influence processes: mental imagery quality and consumer-virtual streamer identification. Furthermore, the effect of responsiveness on both purchase intention and livestreaming continuance via mental imagery quality is only evident when a human livestream assistant is present in the low-naturalness context. Our findings contribute to the emerging field of virtual livestreaming and digital humans’ interactivity design. We also provide practical insights to e-commerce marketers and virtual streamer developers on how to optimize virtual livestreaming effectiveness.",
+    "abstract": "Despite the increasing deployment of virtual streamers in e-commerce livestreaming, their effectiveness remains inconsistent. Drawing on the concept of intelligent interactivity, the authors examine how and why responsiveness and response naturalness interactively shape downstream outcomes in virtual livestreaming. They further test when the presence of a livestream assistant can enhance the effect of responsiveness under low response naturalness. One recall study and five experiments show that virtual streamers’ high responsiveness results in a higher likelihood of purchase intention and livestreaming continuance when their response naturalness is high, but this effect is nonexistent when naturalness is low. Moreover, this interactive effect can be explained by dual social influence processes: internalization of mental imagery and consumer–virtual streamer identification. In addition, the effect of responsiveness on both purchase intention and livestreaming continuance via mental imagery quality is only evident when a human livestream assistant is present in the low-naturalness context. The findings contribute to the emerging field of virtual livestreaming and the design of digital human interactivity. The authors also offer practical insights to e-commerce marketers and virtual streamer developers seeking to improve the effectiveness of virtual livestreaming.",
     "ai_reason": "AI虚拟主播消费者购买意向实验",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -127140,6 +127495,68 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107286",
     "volume": "133",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "考察职场人对人类级AI的态度差异",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "类人AI",
+      "人机交互",
+      "人机协作",
+      "AI采用"
+    ],
+    "authors": [
+      "Sebastian Hofreiter",
+      "Rudolf Kerschreiter",
+      "Matthias Spörrle"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Freie Universität Berlin",
+          "University of Applied Management"
+        ],
+        "name": "Sebastian Hofreiter",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Freie Universität Berlin"
+        ],
+        "name": "Rudolf Kerschreiter",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Seeburg Castle University"
+        ],
+        "name": "Matthias Spörrle",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-03-26",
+    "doi": "10.1080/0144929x.2026.2645875",
+    "domain_score": 4.0,
+    "id": 38972,
+    "ingested_at": "2026-11-13T08:59:25.914745",
+    "issue": "19",
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-11-13T08:59:59.212808",
+    "title": "What goes beyond sex? Unravelling why men hold more favourable attitudes toward human-level AI in the workplace",
+    "title_zh": "超越性别：揭示男性为何对职场中的类人级AI持更积极态度",
+    "tldr": "聚焦职场中男性对类人AI的态度比女性更积极的现象，通过作用机制分析探究性别之外促成这一差异的个体、组织与技术因素，揭示职场类人AI接受度的性别鸿沟。",
+    "topic_tags": [
+      "AI态度",
+      "性别差异",
+      "职场AI",
+      "类人AI"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2645875",
+    "volume": "45",
+    "year": 2026
   },
   {
     "abstract": "Abstract\n               The application and use cases for conversational agents (CAs) are versatile. Smart speakers such as Alexa and Google Home are used in smart home environments, digital agents are integrated into car systems and chatbots are increasingly used in customer service processes. However, human–computer interaction researchers identify and investigate a wide-ranging variety of aspects impeding the usage of CAs by end-users. In general, impediments differ depending on use case contexts, user group characteristics and the CA’s technological infrastructure. Hence, it is difficult and often ambiguous for designers and developers to generate an appropriate awareness about aspects impeding CA usage. We address this problem, by conducting a systematic review of 65 publications surveying impeding aspects of the usage of CAs.",
