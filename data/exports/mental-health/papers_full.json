@@ -1841,6 +1841,140 @@
     "year": 2026
   },
   {
+    "abstract": "Abstract Background Natural language processing and AI models are increasingly used to extract emotional signals from textual data; however, systematic validation of different computational paradigms in emotionally complex relational contexts remains limited. Such approaches may contribute to digital health research, particularly in the fields of digital mental health and couples therapy, where understanding emotional expressions within romantic relationships is especially relevant. Objective This study aimed to compare a lexicon-based approach (NRC Emotion Lexicon) and a transformer-based model (Pysentimiento) in detecting affective patterns within spontaneous romantic relationship narratives and to evaluate their criterion-related associations with a theory-driven measure of relational well-being. Methods In this cross-sectional exploratory study, 112 Spanish adults completed the Couple Flourishing Measure (CFM) and provided an open-ended description of their romantic relationship. Narratives were analyzed using both computational approaches to generate emotion and sentiment indices. Pearson correlations were computed between model outputs and CFM scores. Steiger Z tests were conducted to compare dependent correlations across models. Results Both approaches showed significant associations with couple flourishing, although the transformer-based model yielded stronger correlations for several affective dimensions, particularly positive sentiment ( r =0.66, 95% CI 0.54-0.76) and negative sentiment ( r =−0.74, 95% CI −0.82 to −0.65). The lexicon-based approach showed smaller associations, primarily for negative emotions. Steiger Z tests identified significant between-model differences for disgust ( P =.04), joy ( P =.01), sadness ( P =.004), surprise ( P =.03), and positive and negative sentiment (both P <.001), but not for anger or fear. Conclusions In this sample, Pysentimiento showed stronger associations with couple flourishing than the NRC Emotion Lexicon across several affective dimensions, although differences were not consistent across all categories. These findings support the value of theory-driven external criteria for evaluating computational emotion detection in relational narratives and underscore the importance of context-sensitive interpretation when applying AI tools in psychologically sensitive domains. These findings also highlight the potential relevance of computational emotion analysis for digital health research, particularly in digital mental health and couples therapy research, although further validation in clinical settings is needed before clinical implementation.",
+    "ai_reason": "AI为核心方法，并以关系幸福量表检验情绪信号效度",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "nlp",
+      "machine_learning"
+    ],
+    "authors": [
+      "Alejandro Saavedra-Roa",
+      "Claudia Pineda‐Marín",
+      "Pablo Vallejo‐Medina",
+      "Adrián Montesano"
+    ],
+    "authors_full": [
+      {
+        "name": "Alejandro Saavedra-Roa"
+      },
+      {
+        "name": "Claudia Pineda‐Marín"
+      },
+      {
+        "name": "Pablo Vallejo‐Medina"
+      },
+      {
+        "name": "Adrián Montesano"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "AI为核心方法，并以关系幸福量表检验情绪信号效度",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "nlp",
+        "machine_learning"
+      ],
+      "domain_score": 3,
+      "evidence_stage": "user_study",
+      "risk_tags": [],
+      "tldr": "在112名西班牙成年人的横断面研究中，两类模型输出均与伴侣幸福感显著相关，但Transformer在部分情绪维度关联更强。",
+      "topic_tags": [
+        "wellbeing_loneliness",
+        "adults",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-10-20",
+    "doi": "10.2196/94097",
+    "domain_score": 3,
+    "evidence_stage": "user_study",
+    "ground_truth_quality": "validated_instrument",
+    "id": "W7223038865",
+    "journal": "JMIR AI",
+    "mh_profile": {
+      "ai_reason": "AI为核心方法，并以关系幸福量表检验情绪信号效度",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "nlp",
+        "machine_learning"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "nlp",
+          "machine_learning"
+        ],
+        "applications": [],
+        "conditions": [
+          "wellbeing_loneliness"
+        ],
+        "populations": [
+          "adults",
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 3,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "模型情绪与情感指标和Couple Flourishing Measure得分的相关性及模型间差异",
+        "sample": "112名西班牙成年人",
+        "study_design": "横断面探索性研究"
+      },
+      "evidence_stage": "user_study",
+      "ground_truth_quality": "validated_instrument",
+      "local_recall_audit": {
+        "ai_matches": [
+          "natural language processing"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "well-being"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "在112名西班牙成年人的横断面研究中，两类模型输出均与伴侣幸福感显著相关，但Transformer在部分情绪维度关联更强。",
+      "topic_tags": [
+        "wellbeing_loneliness",
+        "adults",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7223038865",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S4387286577",
+      "ingest_mode": "query",
+      "key": "jmir_ai",
+      "layer": "query",
+      "type": "journal"
+    },
+    "title": "Detecting Emotional Signals of Relationship Well-Being Using AI: A Cross-Sectional Comparison of Transformer-Based and Lexicon-Based Models for Couples Therapy Research",
+    "title_zh": "使用AI检测关系幸福感中的情绪信号：用于伴侣治疗研究的Transformer与词典模型横断面比较",
+    "tldr": "在112名西班牙成年人的横断面研究中，两类模型输出均与伴侣幸福感显著相关，但Transformer在部分情绪维度关联更强。",
+    "topic_tags": [
+      "wellbeing_loneliness",
+      "adults",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.2196/94097",
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "深度学习是识别跨诊断生物型的核心方法；ADHD和焦虑障碍是核心精神健康状况。",
     "ai_score": 4,
