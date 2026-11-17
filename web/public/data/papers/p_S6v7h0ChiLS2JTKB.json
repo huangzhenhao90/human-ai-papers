@@ -1,0 +1,61 @@
+{
+  "abstract": "Large Language Models (LLMs) have been known to exhibit a wide range of social biases including name-nationality associations, occupation-gender associations and racial stereotypes. Existing approaches to evaluating these biases typically involve measuring surface-level behavior where a model is fed a dataset of prompts and its outputs are scored relative to ground-truth answers. Inspired by prior elicitation in cognitive science, we propose a different perspective that reconstructs latent bias as a prior underlying the model's behavior. We formulate the problem as a Bayesian inverse problem where, given prompt-response observations on a bias benchmark dataset, we infer a low-dimensional latent distribution that summarizes the model's stereotyping tendencies. This paper develops the mathematical foundation, a practical reconstruction algorithm, and experiments using the Bias Benchmark for QA (BBQ) benchmark to infer the prior distributions of LLMs over responses in ambiguous social contexts.",
+  "ai_type_tags": [
+    "LLM",
+    "可解释 AI",
+    "机器学习"
+  ],
+  "arxiv_id": "2611.18996",
+  "authors": [
+    "Joshua Ryo Cheng",
+    "Thomas L. Griffiths",
+    "Jake C. Snell"
+  ],
+  "authors_full": [
+    {
+      "name": "Joshua Ryo Cheng"
+    },
+    {
+      "name": "Thomas L. Griffiths"
+    },
+    {
+      "name": "Jake C. Snell"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心评估LLM偏见及潜在分布",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对现有方法仅测量大语言模型表层偏见的问题，将提示—回答观测建模为贝叶斯逆问题，重建潜在先验分布，并在BBQ基准上验证其概括模型刻板化倾向的能力。",
+      "topic_tags": [
+        "偏见",
+        "公平性",
+        "伦理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-13",
+  "doi": null,
+  "id": "p_S6v7h0ChiLS2JTKB",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2611.18996v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 84877,
+      "revision": "6ed239aae93118a619785679723cf12688225949"
+    }
+  ],
+  "title": "Revealing the Biases of Large Language Models By Inferring Prior Distributions",
+  "title_zh": "通过推断先验分布揭示大语言模型的偏差",
+  "unified_ingested_at": "2026-11-17T10:19:52.001363Z",
+  "url": "https://arxiv.org/abs/2611.18996v1",
+  "volume": null,
+  "year": 2026
+}

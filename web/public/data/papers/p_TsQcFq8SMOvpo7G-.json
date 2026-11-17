@@ -1,0 +1,73 @@
+{
+  "abstract": "Ambiguity is a core challenge in human--AI interaction, where models must decide when to make assumptions and when to seek clarification. Existing approaches to ambiguity evaluation largely focus on coverage over multiple interpretations using static metrics, offering limited insight into how efficiently a model converges toward a single user-intended interpretation through interaction. We introduce a preference-grounded simulated user framework for controlled, multi-turn evaluation of ambiguity resolution, grounding simulator responses strictly in user disambiguation preferences to avoid hallucination and over-disclosure. Alongside this, we define three observable dissatisfaction signals --- incorrect assumptions, repeating clarifications, and irrelevant clarifications --- that characterize interaction quality beyond task accuracy. Our analysis reveals a clear trade-off: models that frequently seek clarification tend to over-clarify and prolong interactions, while assumption-driven models are more prone to misaligning with user intent. We demonstrate that system prompts optimized on these dissatisfaction signals achieve a Pareto-optimal balance across all three metrics, reducing overall error rates by up to 7.65%, underscoring the value of our framework in designing agents that ask precisely and assume wisely.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式 AI",
+    "智能体/Agent",
+    "可用性 AI"
+  ],
+  "arxiv_id": "2611.18905",
+  "authors": [
+    "Avik Dutta",
+    "Aayush Kumar",
+    "Zahra Ashktorab",
+    "Hosein Hasanbeig",
+    "Austin Z. Henley"
+  ],
+  "authors_full": [
+    {
+      "name": "Avik Dutta"
+    },
+    {
+      "name": "Aayush Kumar"
+    },
+    {
+      "name": "Zahra Ashktorab"
+    },
+    {
+      "name": "Hosein Hasanbeig"
+    },
+    {
+      "name": "Austin Z. Henley"
+    },
+    {
+      "name": "Gustavo Soares"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "模拟用户评估LLM交互与歧义",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "构建偏好约束的模拟用户框架，以多轮交互评估大模型处理歧义的能力，并从错误假设、重复追问和无关追问刻画用户不满。结果显示，勤于追问易导致过度澄清，偏好假设则易偏离意图；据此优化提示可降低最高7.65%的错误率。",
+      "topic_tags": [
+        "人机交互(HCI)",
+        "可用性",
+        "用户研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-13",
+  "doi": null,
+  "id": "p_TsQcFq8SMOvpo7G-",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.18905v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39288,
+      "revision": "e65cfd3040ec0cc36b5e3db81d785c92df3f1753"
+    }
+  ],
+  "title": "Ask Precisely, Assume Wisely: Interactive Evaluation of Ambiguity Resolution in Large Language Models",
+  "title_zh": "精准提问，审慎推断：大型语言模型歧义消解的交互式评估",
+  "unified_ingested_at": "2026-11-17T10:19:52.001363Z",
+  "url": "https://arxiv.org/abs/2611.18905v1",
+  "volume": null,
+  "year": 2026
+}

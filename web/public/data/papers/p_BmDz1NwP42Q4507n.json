@@ -1,0 +1,133 @@
+{
+  "abstract": "A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it delivers. We introduce SWE-CoWork, a benchmark comprising 101 development assignments across 101 real repositories, 11 programming languages, and 12 application domains. Each assignment places an agent in a simulated engineering organization with 26 colleagues who have distinct responsibilities, bounded knowledge, and controlled collaboration behavior. Starting from a brief handoff, agents must recover requirements distributed across colleagues and workplace records, reconcile conflicting evidence, and implement changes evaluated by private executable tests. We evaluate eleven models and find a substantial gap between partial implementation and complete task delivery. The two leading models satisfy approximately 63% of fail-to-pass (F2P) tests but complete fewer than 8% of assignments. Providing complete requirements upfront improves F2P by approximately 16 percentage points for Seed Evolving and GPT-6 Astra, yet leaves complete task success unchanged. Requirement-level trajectory analysis reveals failures throughout the delivery process: Claude-Opus-5.5 directs a mean of 93% of first questions about queried cards to their accountable owners across runs but obtains only 64% of colleague-held requirements. Deferred questions go unfollowed, implementations remain incomplete even after requirements are acquired, and 31% of requirements reported as completed fail their tests. These findings highlight sustained requirement tracking, from clarification through implementation, verification, and handoff, as a key challenge for reliable autonomous software engineering.",
+  "ai_type_tags": [
+    "AI代理",
+    "LLM",
+    "人机协作"
+  ],
+  "arxiv_id": "2611.20218",
+  "authors": [
+    "Xinping Lei",
+    "Minghao Liu",
+    "Ruijie Zhu",
+    "Xiaohui Hu",
+    "Xingqiao Li"
+  ],
+  "authors_full": [
+    {
+      "name": "Xinping Lei"
+    },
+    {
+      "name": "Minghao Liu"
+    },
+    {
+      "name": "Ruijie Zhu"
+    },
+    {
+      "name": "Xiaohui Hu"
+    },
+    {
+      "name": "Xingqiao Li"
+    },
+    {
+      "name": "Ao Zhang"
+    },
+    {
+      "name": "Wenhao Chai"
+    },
+    {
+      "name": "Han Li"
+    },
+    {
+      "name": "Tao Wang"
+    },
+    {
+      "name": "Jingyuan Zhang"
+    },
+    {
+      "name": "Enduo Zhao"
+    },
+    {
+      "name": "Yunfeng Shi"
+    },
+    {
+      "name": "Yiming Liang"
+    },
+    {
+      "name": "Zetao Yang"
+    },
+    {
+      "name": "Xingjian Wang"
+    },
+    {
+      "name": "Yifan Yao"
+    },
+    {
+      "name": "Xinkai Ma"
+    },
+    {
+      "name": "Yingru Li"
+    },
+    {
+      "name": "Tianhan Yang"
+    },
+    {
+      "name": "Huan Zhou"
+    },
+    {
+      "name": "Weiran Shi"
+    },
+    {
+      "name": "Shen Yan"
+    },
+    {
+      "name": "Jiaheng Liu"
+    },
+    {
+      "name": "Stephen Huang"
+    },
+    {
+      "name": "Eli Cheung"
+    },
+    {
+      "name": "Weihao Xuan"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "评测组织情境中的AI编码代理",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "推出SWE-CoWork基准，以101个真实仓库任务模拟编码智能体与26名同事协作。11个模型中，头部模型通过约63%的失效转通过测试，却仅完成不足8%的任务；提前提供完整需求可提高测试通过率，却未提升完整交付率，表明编码能力不等于可靠的“数字员工”能力。",
+      "topic_tags": [
+        "人机协作",
+        "知识管理",
+        "工作设计",
+        "创新"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-15",
+  "doi": null,
+  "id": "p_BmDz1NwP42Q4507n",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2611.20218v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 84867,
+      "revision": "6ed239aae93118a619785679723cf12688225949"
+    }
+  ],
+  "title": "SWE-CoWork: Benchmarking Coding Agents as Digital Employees in Organizations",
+  "title_zh": "SWE-CoWork：组织中作为数字员工的编码智能体基准评测",
+  "unified_ingested_at": "2026-11-17T10:19:52.001363Z",
+  "url": "https://arxiv.org/abs/2611.20218v1",
+  "volume": null,
+  "year": 2026
+}

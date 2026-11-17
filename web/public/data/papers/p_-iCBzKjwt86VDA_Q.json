@@ -1,0 +1,63 @@
+{
+  "abstract": "Recorded sessions between users and coding agents offer a way to evaluate how agents complete real-world tasks and interact with users. However, these sessions cannot simply be replayed with new agents, because recorded user replies may no longer apply when an agent takes a different trajectory. We introduce SWE-WhatIf, which replays recorded sessions with new agents by modeling the user's intents, the criteria for satisfying them, and the conditions under which they arise. Using this model, a user simulator generates replies that adapt to unseen agent turns while remaining grounded in the recording. Across 89 real-world sessions, SWE-WhatIf generated the replies most similar to those of real users and matched the strongest baseline when sessions were rewritten. To test adaptation, we replay sessions with agents instructed to avoid or repeat actions that the recorded user pushed back on. SWE-WhatIf produced the highest win rate for avoiding these actions (66.3%), significantly above chance. We further demonstrate its utility by ranking five LLMs as coding agents, where the highest-ranked model depended on how users specified and developed their intents, and a study with 16 users, where replaying their own sessions changed 14 participants' rankings and informed their future agent use.",
+  "ai_type_tags": [
+    "LLM",
+    "智能体/Agent",
+    "AI 助手",
+    "人机交互"
+  ],
+  "arxiv_id": "2611.21095",
+  "authors": [
+    "Tae Soo Kim",
+    "Tongshuang Wu",
+    "Juho Kim"
+  ],
+  "authors_full": [
+    {
+      "name": "Tae Soo Kim"
+    },
+    {
+      "name": "Tongshuang Wu"
+    },
+    {
+      "name": "Juho Kim"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以真实会话评测编码智能体及用户模拟",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对录制会话难以直接评测新型编码智能体的问题，构建基于用户意图、验收标准及触发条件的自适应用户模拟器。89个真实会话中，其回复与真人最相似；扰动智能体行为后，避免用户反对行为的成功率达66.3%。重放自身会话还改变了14名参与者的模型排序及后续使用判断。",
+      "topic_tags": [
+        "用户研究方法",
+        "人机交互(HCI)",
+        "软件工程",
+        "人机协作"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-16",
+  "doi": null,
+  "id": "p_-iCBzKjwt86VDA_Q",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.21095v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39273,
+      "revision": "e65cfd3040ec0cc36b5e3db81d785c92df3f1753"
+    }
+  ],
+  "title": "SWE-WhatIf: Simulating Real Users of Coding Agents from Recorded Session",
+  "title_zh": "SWE-WhatIf：从录制会话中模拟编码智能体的真实用户",
+  "unified_ingested_at": "2026-11-17T10:19:52.001363Z",
+  "url": "https://arxiv.org/abs/2611.21095v1",
+  "volume": null,
+  "year": 2026
+}

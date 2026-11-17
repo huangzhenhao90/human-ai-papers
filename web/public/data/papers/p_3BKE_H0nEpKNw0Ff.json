@@ -1,0 +1,63 @@
+{
+  "abstract": "Delegating resume screening to large language models (LLMs) requires organizations to establish whether they can distinguish candidates by relevant qualifications while allowing only authorized users to change screening rules or approve exceptions. To this end, we develop a system architecture that separates candidate evidence, evaluation, permission controls, and assessment record, and empirically examine two complementary dimensions of its deployment readiness. First, we assess its operational readiness on four LLMs using a controlled experiment on 210 resumes across 14 job roles and six decision interfaces. Second, we assess its compliance readiness by testing how it handles unauthorized user requests and instructions embedded in resumes. We find that operational performance depends on the choice of evaluation interface: scalar scores generally distinguish qualification changes better than simple pass/fail judgments, while comparative judgments are sensitive to presentation order. Explicit permission rules and separation of resume content from instructions reduce unauthorized compliance, to a varying degree of effectiveness across LLMs and usage contexts. Finally, we find that LLM evaluators often diverge between their decisions and offered justifications. Going beyond simply evaluating LLMs for hiring tasks, our framework supports an audit of a fully configured resume evaluation system to enable its deployment decision.",
+  "ai_type_tags": [
+    "LLM",
+    "AI招聘",
+    "AI治理",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2611.20140",
+  "authors": [
+    "Spandan Roy",
+    "Subhabrata Majumdar",
+    "Soudeep Deb"
+  ],
+  "authors_full": [
+    {
+      "name": "Spandan Roy"
+    },
+    {
+      "name": "Subhabrata Majumdar"
+    },
+    {
+      "name": "Soudeep Deb"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "以LLM招聘为核心，聚焦部署与合规",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "构建分离候选人证据、评价、权限与审计记录的系统，在210份简历、14个岗位和6种界面上测试4种LLM，并审计越权请求及简历内嵌指令。连续评分较能识别资质变化，但比较判断受顺序影响；权限隔离可减少违规服从，模型决策与理由亦常不一致。",
+      "topic_tags": [
+        "AI招聘",
+        "算法决策",
+        "公平性",
+        "组织治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-15",
+  "doi": null,
+  "id": "p_3BKE_H0nEpKNw0Ff",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2611.20140v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 84868,
+      "revision": "6ed239aae93118a619785679723cf12688225949"
+    }
+  ],
+  "title": "Can AI Judge You? An Empirical Audit of Deployment Readiness in LLM-assisted Hiring Systems",
+  "title_zh": "AI会评判你吗：LLM辅助招聘系统部署就绪度的实证审查",
+  "unified_ingested_at": "2026-11-17T10:19:52.001363Z",
+  "url": "https://arxiv.org/abs/2611.20140v1",
+  "volume": null,
+  "year": 2026
+}

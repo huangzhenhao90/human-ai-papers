@@ -1,9 +1,9 @@
 {
   "abstract": "User research and system testing reveal whether products and services meet user needs, yet recruiting specialized participants, designing controlled what-if comparisons, and repeating studies as designs evolve often bottleneck design iteration and data-driven decision-making. We present a framework and execution infrastructure that translates real-world industry inquiries into controlled experiments with simulated users. Our methodology formally defines the target cohort, experimental stimuli, and decision-relevant metrics, while the pipeline supports large-scale concurrent runs over cohort-stimulus-environment combinations (survey, web, chatbot, and OS app), auditable trial-level logging, cohort-level outcome aggregation, and cross-cohort and cross-variant statistical reports. Across twelve industry partner cases spanning five domains, we show how constructing hard-to-reach or what-if persona cohorts supports exploratory studies and distills simulated responses into testable design hypotheses. Cross-model comparisons on selected cases largely preserve primary conclusions, whereas perturbing or ablating persona attributes alters service outcomes, effect sizes, and inter-group differences, indicating that grounding target cohorts in detailed personas materially shapes simulation results. Together, these studies show that persona-enabled agents can test specified cohorts at design speed, diagnose systems under test, and deliver directional evidence that focuses problem definition, steers design and strategic decisions, and guides further study.",
   "ai_type_tags": [
-    "GenAI",
     "LLM",
-    "智能体"
+    "智能体/Agent",
+    "AI 用户画像"
   ],
   "arxiv_id": "2611.14700",
   "authors": [
@@ -98,10 +98,23 @@
         "产品设计",
         "决策"
       ]
+    },
+    "ur": {
+      "ai_reason": "以AI模拟用户进行产品决策实验",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "提出将真实行业问题转化为受控“假设情境”实验的用户画像模拟框架与执行基础设施，可按目标人群、刺激和指标批量运行问卷、网页、聊天机器人及操作系统应用测试，并汇总可审计结果。12个跨领域案例显示，模拟人群可快速形成可检验的设计假设；画像属性及其消融会显著改变服务结果，说明结论高度依赖人群设定。",
+      "topic_tags": [
+        "用户研究方法",
+        "用户画像",
+        "服务设计",
+        "情境模拟"
+      ]
     }
   },
   "channels": [
-    "ob"
+    "ob",
+    "ur"
   ],
   "cited_by": 0,
   "date": "2026-11-10",
@@ -114,11 +127,16 @@
     {
       "channel": "ob",
       "legacy_id": 84470,
-      "revision": "47cdd59226daba90d85ecf0e772c1aae9fdfd777"
+      "revision": "6ed239aae93118a619785679723cf12688225949"
+    },
+    {
+      "channel": "ur",
+      "legacy_id": 39005,
+      "revision": "e65cfd3040ec0cc36b5e3db81d785c92df3f1753"
     }
   ],
   "title": "Probe What-If Worlds Before You Ship: Persona Simulation for Real-World Decision Making",
-  "title_zh": "上线前探索假设情境：面向现实决策的角色模拟",
+  "title_zh": "上线前推演假设世界：面向现实决策的角色模拟",
   "unified_ingested_at": "2026-11-13T09:13:49.662803Z",
   "url": "https://arxiv.org/abs/2611.14700v1",
   "volume": null,
