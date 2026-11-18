@@ -1,23 +1,41 @@
 {
   "dry_run": false,
   "facets": {
-    "ai_type_tags": {},
-    "journals": {},
-    "topic_tags": {}
-  },
-  "generated_at": "2026-11-17T10:19:50.437730Z",
-  "last_batch": {
-    "generated_at": "2026-11-17T10:19:50.437730Z",
-    "model": null,
-    "status": "empty_input",
-    "totals": {
-      "candidates_input": 0,
-      "failed": 0,
-      "papers_published": 0,
-      "papers_scored": 0
+    "ai_type_tags": {
+      "conversational_ai": 1,
+      "llm_genai": 2,
+      "machine_learning": 1,
+      "nlp": 1
+    },
+    "journals": {
+      "JMIR Mental Health": 1,
+      "Translational Psychiatry": 1
+    },
+    "topic_tags": {
+      "adults": 1,
+      "anxiety": 1,
+      "depression": 1,
+      "general_population": 2,
+      "risk_prediction": 1,
+      "supportive_conversation": 1,
+      "transdiagnostic": 2,
+      "treatment_support": 1,
+      "wellbeing_loneliness": 1
     }
   },
-  "model": null,
+  "generated_at": "2026-11-18T09:52:21.037966Z",
+  "last_batch": {
+    "generated_at": "2026-11-18T09:52:21.037966Z",
+    "model": "MiniMax-M2.5-lightning",
+    "status": "success",
+    "totals": {
+      "candidates_input": 7,
+      "failed": 0,
+      "papers_published": 2,
+      "papers_scored": 7
+    }
+  },
+  "model": "MiniMax-M2.5-lightning",
   "processed_candidate_keys": [
     "doi:10.1001/jamapsychiatry.2025.2834",
     "doi:10.1001/jamapsychiatry.2025.3561",
@@ -337,8 +355,11 @@
     "doi:10.1016/j.jad.2026.122716",
     "doi:10.1016/j.jad.2026.122722",
     "doi:10.1016/j.jad.2026.122727",
+    "doi:10.1016/j.jad.2026.122728",
     "doi:10.1016/j.jad.2026.122737",
     "doi:10.1016/j.jad.2026.122738",
+    "doi:10.1016/j.jad.2026.122742",
+    "doi:10.1016/j.jad.2026.122745",
     "doi:10.1016/j.jbi.2025.104848",
     "doi:10.1016/s0165-0327(26)01149-3",
     "doi:10.1016/s0165-0327(26)01308-x",
@@ -530,6 +551,7 @@
     "doi:10.1038/s41398-026-04407-6",
     "doi:10.1038/s41398-026-04408-5",
     "doi:10.1038/s41398-026-04409-4",
+    "doi:10.1038/s41398-026-04410-x",
     "doi:10.1038/s41398-026-04411-w",
     "doi:10.1038/s41398-026-04412-9",
     "doi:10.1038/s41398-026-04413-8",
@@ -649,6 +671,8 @@
     "doi:10.1038/s41398-026-04546-w",
     "doi:10.1038/s41398-026-04547-9",
     "doi:10.1038/s41398-026-04548-8",
+    "doi:10.1038/s41398-026-04551-z",
+    "doi:10.1038/s41398-026-04571-9",
     "doi:10.1038/s41746-026-02842-9",
     "doi:10.1038/s41746-026-02852-7",
     "doi:10.1038/s41746-026-02928-4",
@@ -924,6 +948,7 @@
     "doi:10.2196/102927",
     "doi:10.2196/104118",
     "doi:10.2196/104297",
+    "doi:10.2196/104812",
     "doi:10.2196/105052",
     "doi:10.2196/105460",
     "doi:10.2196/106791",
@@ -973,16 +998,16 @@
   "schema_version": 1,
   "scope": "cumulative",
   "slug": "mental-health",
-  "status": "empty_input",
+  "status": "success",
   "theme": "mh",
   "thresholds": {
     "ai_relevance": 3,
     "domain_relevance": 3
   },
   "totals": {
-    "candidates_input": 0,
+    "candidates_input": 7,
     "failed": 0,
-    "papers_published": 105,
-    "papers_scored": 0
+    "papers_published": 107,
+    "papers_scored": 7
   }
 }

@@ -1,0 +1,53 @@
+{
+  "abstract": "Organizations increasingly use large language models (LLMs) for decisions about people, such as hiring, investment and employee evaluation, and rely on them over long periods of time. Fairness audits of such systems, however, are conducted only once. We examine how the biases of LLMs change over time. In a venture screening setting, models from five providers decided whether and how much to invest in startups whose founders differed only in gender, origin and university. We repeated this audit three times over 13 months (248,400 API calls). Study 1 shows that the same model, called under the same identifier one year later, displayed a significantly different bias pattern. Study 2 shows that the successors of retired models carried the same bias as their predecessors, but in a significantly different size and form. Study 3 shows that the bias does not depend on the industry of the startup. A document analysis further shows that providers change and retire models at their discretion, with notice periods of zero to six months. Drawing on these findings, we develop a theory of evidence anchoring. We theorize that bias resides in the model class and persists, whereas audit evidence is anchored to a single model and expires when the provider decides. We derive policy advice for organizations and regulators, namely audits of model classes instead of single models, a version record for every model response, and re-audits triggered by model changes.",
+  "ai_type_tags": [
+    "LLM",
+    "算法决策",
+    "AI治理"
+  ],
+  "arxiv_id": "2611.20901",
+  "authors": [
+    "Mika Facchini"
+  ],
+  "authors_full": [
+    {
+      "name": "Mika Facchini"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "追踪供应商LLM偏见及审计时效",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "对5家供应商的LLM创业投资模型在13个月内重复审计248,400次，比较创始人性别、来源和大学差异下的偏差。结果显示，同一模型的偏差会显著变化，模型继任者延续偏差但形式与幅度不同；偏差源于模型类别而非行业。建议审计模型类别、记录版本并在变更时复审。",
+      "topic_tags": [
+        "公平性",
+        "偏见",
+        "模型审计"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-16",
+  "doi": null,
+  "id": "p_rizjan-TYyvzd2yf",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2611.20901v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 84866,
+      "revision": "053496c1d57c9a49bb5b129950925ebde38c783b"
+    }
+  ],
+  "title": "Auditing a Moving Target: Evidence Anchoring and the Expiry of Fairness Audits of Provider-Served Language Models",
+  "title_zh": "审计流动目标：证据锚定与提供商语言模型公平性审计的时效性",
+  "unified_ingested_at": "2026-11-18T09:52:22.617209Z",
+  "url": "https://arxiv.org/abs/2611.20901v1",
+  "volume": null,
+  "year": 2026
+}

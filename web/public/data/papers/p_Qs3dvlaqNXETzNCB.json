@@ -1,0 +1,67 @@
+{
+  "abstract": "Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their work and industry applications, we design and compare two methods based on deep learning and transformer representations using 36,081 early-career job postings collected from LinkedIn in the United States between December 2025 and October 2026.   We first apply PERC, short for Preprocessing (P), Embedding (E), Dimensionality Reduction (R) and Clustering (C). We employ GPT-6 Luna to classify job description passages into Team context, Role task and Qualifications. We then create combinations of these sections and examine whether embedding and clustering the segmented passages produce meaningful semantic clusters about different job roles. We use Maximum Mean Discrepancy (MMD) to rank observed differences between embedding distributions and employ a pretrained sparse autoencoder (SAE) to extract features from layer-19 representations of Llama-3.1-8B-Instruct. Lastly, we employ GPT-6 Luna to come up with hypotheses about job roles' feature patterns, and GPT-6.1 Terra to investigate whether those patterns exist in held-out job descriptions from unseen companies.   Some example findings include Data Scientist advertisements placing more emphasis on machine learning model development, Data Analyst advertisements on reporting business performance, and Machine Learning Engineer advertisements on applying developed models in real-world settings. We also observe differences in the applications described by Data Analyst and Business Analyst advertisements across selected months, although our dataset's scale and uneven coverage limit their interpretation. Overall, we present a realistic application of SAEs and PERC to unstructured textual data and examine how automated insight extraction could support manual analysis of job descriptions.",
+  "ai_type_tags": [
+    "LLM",
+    "自然语言处理",
+    "机器学习",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2611.21586",
+  "authors": [
+    "Yisong Cao",
+    "Leah Kim",
+    "Brian Wright",
+    "Ali Rivera"
+  ],
+  "authors_full": [
+    {
+      "name": "Yisong Cao"
+    },
+    {
+      "name": "Leah Kim"
+    },
+    {
+      "name": "Brian Wright"
+    },
+    {
+      "name": "Ali Rivera"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "以GPT和Transformer聚类分析职位描述",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "为区分早期职业岗位的任务与行业场景，基于36,081份LinkedIn招聘广告，用GPT-6分类、语义嵌入与聚类、MMD及稀疏自编码器提取并验证特征。数据科学家侧重模型开发，分析师侧重业务绩效报告，机器学习工程师侧重模型应用。",
+      "topic_tags": [
+        "招聘",
+        "HR",
+        "工作设计",
+        "劳动力市场"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-16",
+  "doi": null,
+  "id": "p_Qs3dvlaqNXETzNCB",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.21586v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 84874,
+      "revision": "053496c1d57c9a49bb5b129950925ebde38c783b"
+    }
+  ],
+  "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
+  "title_zh": "超越职位名称：利用稀疏自编码器与语义聚类解析初级职位广告",
+  "unified_ingested_at": "2026-11-18T09:52:22.617209Z",
+  "url": "https://arxiv.org/abs/2611.21586v1",
+  "volume": null,
+  "year": 2026
+}

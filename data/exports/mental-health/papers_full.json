@@ -1,5 +1,149 @@
 [
   {
+    "abstract": "Psychotropic drug-induced weight change is clinically important but remains difficult to compare across large numbers of medications. We analysed 222,545 deduplicated user-generated reviews covering 176 psychotropic medications and acetaminophen as a negative control. A fine-tuned classifier identified reviews describing weight gain, weight loss, or no change, and a Qwen3-8B language model extracted quantified weight changes in kilograms. We derived a Net Weight Effect (NWE), defined as the proportion of reviews describing weight gain minus the proportion describing weight loss (range −1 to +1), and the mean weight change in kilograms, both with bootstrap 95% confidence intervals. Antipsychotics had the highest class-level weight liability (NWE + 0.154; mean +12.6 kg), whereas stimulants showed the most weight-reducing profile (NWE − 0.050; mean −7.1 kg). Olanzapine, mirtazapine, and risperidone ranked highest for weight gain, whereas bupropion/naltrexone and topiramate ranked lowest. Long-term use (>6 months) was associated with a larger mean gain than medium-term use (+8.8 kg vs +2.3 kg), and females reported weight gain more frequently than males. Per-drug rankings were highly concordant across the four source platforms (Kendall’s W = 0.83). In an exploratory receptor-affinity analysis, alpha-2 adrenergic affinity was the strongest correlate of NWE (rho = 0.594; permutation FDR p = 0.006), whereas H1 histamine affinity was the strongest correlate of mean weight change (rho = 0.638; permutation FDR p = 0.042). Large-scale AI-assisted analysis of patient narratives can therefore generate clinically useful real-world rankings of psychotropic weight liability while also highlighting mechanistically plausible, though correlational, pharmacological associations.",
+    "ai_reason": "用分类器和LLM从患者叙事量化精神类药物体重效应，未作临床验证。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "machine_learning",
+      "nlp",
+      "llm_genai"
+    ],
+    "authors": [
+      "Johan H. G. Natter",
+      "Taïoh Yokoyama",
+      "Michel Bruno",
+      "Hervé Javelot",
+      "Julien Godet"
+    ],
+    "authors_full": [
+      {
+        "name": "Johan H. G. Natter"
+      },
+      {
+        "name": "Taïoh Yokoyama"
+      },
+      {
+        "name": "Michel Bruno"
+      },
+      {
+        "name": "Hervé Javelot"
+      },
+      {
+        "name": "Julien Godet"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "用分类器和LLM从患者叙事量化精神类药物体重效应，未作临床验证。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "machine_learning",
+        "nlp",
+        "llm_genai"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "对222545篇去重患者叙事的回顾性分析显示AI可估计176种精神类药物的体重效应且跨平台一致，但结论仅为相关性且缺乏临床验证。",
+      "topic_tags": [
+        "transdiagnostic",
+        "risk_prediction",
+        "treatment_support",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-11-16",
+    "doi": "10.1038/s41398-026-04551-z",
+    "domain_score": 4,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "weak_proxy",
+    "id": "W7234224067",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "用分类器和LLM从患者叙事量化精神类药物体重效应，未作临床验证。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "machine_learning",
+        "nlp",
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning",
+          "nlp",
+          "llm_genai"
+        ],
+        "applications": [
+          "risk_prediction",
+          "treatment_support"
+        ],
+        "conditions": [
+          "transdiagnostic"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "体重增加、减轻或不变的净体重效应、平均体重变化及药物排名",
+        "sample": "222545篇去重用户评论，涉及176种精神类药物及对乙酰氨基酚",
+        "study_design": "真实世界患者叙事的回顾性多源分析"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "weak_proxy",
+      "local_recall_audit": {
+        "ai_matches": [
+          "LLM"
+        ],
+        "ai_signal": true,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [],
+        "mental_health_signal": false
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "对222545篇去重患者叙事的回顾性分析显示AI可估计176种精神类药物的体重效应且跨平台一致，但结论仅为相关性且缺乏临床验证。",
+      "topic_tags": [
+        "transdiagnostic",
+        "risk_prediction",
+        "treatment_support",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7234224067",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Large-Scale mapping of psychotropic weight effects: LLM-Based event detection across 222,545 deduplicated real-world patient narratives",
+    "title_zh": "精神类药物体重效应的大规模图谱：基于LLM的事件检测与222545篇真实世界患者叙事分析",
+    "tldr": "对222545篇去重患者叙事的回顾性分析显示AI可估计176种精神类药物的体重效应且跨平台一致，但结论仅为相关性且缺乏临床验证。",
+    "topic_tags": [
+      "transdiagnostic",
+      "risk_prediction",
+      "treatment_support",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04551-z",
+    "year": 2026
+  },
+  {
     "abstract": "Importance Universities have become frontline mental health care settings for adolescents and young adults, a group with rapidly rising rates of common psychiatric disorders. Conventional campus counseling services cannot meet this demand. Students are increasingly turning to unregulated generative artificial intelligence (AI) tools. There is an urgent need for an evidence-informed architecture that integrates digital tools and AI into university mental health systems safely, equitably, and at scale. Objective To synthesize epidemiologic and clinical trial data on student mental health and digital interventions and integrate these findings with experience in institutional governance to propose an integrated, data-driven, stepped-care model for student mental health, implemented and governed at the university level, that begins with universal prevention, tracks need, and uses precision treatment selection to monitor and match students in need with the least-intensive effective level of care. Evidence Review We draw on findings from the World Mental Health International College Student (WMH-ICS) initiative, national surveys of student mental health and service use, randomized clinical trials of student internet-delivered digital interventions, implementation studies of digital navigators and task sharing, and emerging evaluations of AI-supported mental health systems. Findings WMH-ICS studies find that 37% to 58% of first-year students worldwide meet 12-month criteria for a DSM-5 disorder, with low treatment rates and substantial impairment in academic performance. This unmet need exceeds the capacity of traditional short-term, face-to-face counseling services, even with expanded staffing and telehealth contracts. Hybrid stepped-care models combining universal prevention with light-touch human support (eg, digital navigators) and low-intensity digital interventions offer a more scalable approach that can expand reach, optimize use of clinicians’ limited time, and improve outcomes. Building on these strands, we outline a 2-step system anchored in prematriculation life skills training and a guided first-year cohort model, embedded within a broader digital ecosystem that includes measurement, precision treatment algorithms, and explicit AI governance. Conclusions and Relevance Reframing student mental health as core to the mission of universities justifies investment in digitally enabled care. With appropriate guardrails, AI can be integrated as a regulated component of this ecosystem, extending the reach of effective interventions while maintaining safety, equity, and institutional accountability.",
     "ai_reason": "综述证据并提出AI参与的高校阶梯式心理健康模式",
     "ai_score": 4,
@@ -635,6 +779,161 @@
       "clinical_patients"
     ],
     "url": "https://doi.org/10.1038/s41398-026-04541-1",
+    "year": 2026
+  },
+  {
+    "abstract": "Background Generative AI chatbots are increasingly used for mental health–related purposes, yet little is known about the factors associated with such use or AI chatbot dependence. Objective This study examined factors associated with young adults’ use of AI chatbots for emotional self-disclosure and mental health–related support, as well as the associations between AI chatbot use and dependence. Methods A cross-sectional online survey of individuals aged 18 to 29 years was conducted in Japan. Self-report measures assessed psychosocial factors (self-esteem and loneliness), mental health symptoms (anxiety and depression), AI chatbot use (emotional self-disclosure and mental health–related support), and AI chatbot dependence (emotional dependence and social anxiety–related dependence). Results Of 820 participants, 381 (46.5%) reported using AI chatbots for emotional self-disclosure at least once in the past month, including 65 (7.9%) who reported doing so every day or almost every day. In addition, 336 (41%) reported using AI chatbots for mental health–related support, including 53 (6.5%) who reported doing so every day or almost every day. Anxiety and depressive symptoms were combined into a composite measure of mental health symptoms because they are highly correlated. Multivariable logistic regression showed that greater mental health symptom severity, but not self-esteem or loneliness, was associated with both emotional self-disclosure (odds ratio [OR] 2.23, 95% CI 1.85-2.69; P<.001) and mental health–related support (OR 2.42, 95% CI 2.01-2.94; P<.001). Among emotional self-disclosure users (n=381), the frequency of emotional self-disclosure was positively associated with emotional dependence (β=0.334; P<.001) and social anxiety–related dependence (β=0.307; P<.001). Path analyses indicated that a model specifying psychosocial factors and mental health symptoms as antecedent variables to AI chatbot use and dependence fit the data better than an alternative model specifying AI chatbot use and dependence as the antecedent variables (comparative fit index [CFI]=0.994 vs 0.583; root mean square error of approximation [RMSEA]=0.033 vs 0.293). In this model, lower self-esteem and greater loneliness were associated with more severe mental health symptoms, which, in turn, were associated with greater AI chatbot dependence, primarily through direct pathways and, to a lesser extent, through more frequent emotional self-disclosure. Among emotional self-disclosure users, loneliness was the only significant psychosocial correlate of emotional dependence (F1,369=7.78; P=.006). Conclusions Emotional engagement with AI chatbots was common in this sample of young adults in Japan. Findings suggest that young adults experiencing mental health symptoms may be more likely to use AI chatbots for emotional self-disclosure and mental health–related support, while loneliness may be particularly relevant to emotional dependence among users. These findings highlight the need to understand AI chatbot use not only as a technological behavior but also as part of young adults’ broader emotional and help-seeking landscape.",
+    "ai_reason": "核心研究生成式AI聊天机器人用于情感支持及依赖，横断面自报。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "conversational_ai",
+      "llm_genai"
+    ],
+    "authors": [
+      "Tamaki Hosoda-Urban",
+      "Ben E. Urban"
+    ],
+    "authors_full": [
+      {
+        "name": "Tamaki Hosoda-Urban"
+      },
+      {
+        "name": "Ben E. Urban"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "核心研究生成式AI聊天机器人用于情感支持及依赖，横断面自报。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "user_study",
+      "risk_tags": [
+        "overreliance"
+      ],
+      "tldr": "日本820名18—29岁参与者的横断面调查显示，焦虑抑郁症状较重及孤独感与AI聊天机器人支持使用或依赖相关，但未验证因果或临床效果。",
+      "topic_tags": [
+        "anxiety",
+        "depression",
+        "transdiagnostic",
+        "wellbeing_loneliness",
+        "supportive_conversation",
+        "adults",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "none",
+    "date": "2026-10-29",
+    "doi": "10.2196/104812",
+    "domain_score": 5,
+    "evidence_stage": "user_study",
+    "ground_truth_quality": "self_report",
+    "id": "W7165484713",
+    "journal": "JMIR Mental Health",
+    "mh_profile": {
+      "ai_reason": "核心研究生成式AI聊天机器人用于情感支持及依赖，横断面自报。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "conversational_ai",
+        "llm_genai"
+      ],
+      "clinical_validation": "none",
+      "controlled_tags": {
+        "ai_types": [
+          "conversational_ai",
+          "llm_genai"
+        ],
+        "applications": [
+          "supportive_conversation"
+        ],
+        "conditions": [
+          "anxiety",
+          "depression",
+          "transdiagnostic",
+          "wellbeing_loneliness"
+        ],
+        "populations": [
+          "adults",
+          "general_population"
+        ],
+        "risks": [
+          "overreliance"
+        ]
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "情感自我披露、心理健康支持使用、使用频率、情感依赖及社交焦虑相关依赖",
+        "sample": "日本18—29岁个体820人",
+        "study_design": "横断面在线调查及多变量回归、路径分析"
+      },
+      "evidence_stage": "user_study",
+      "ground_truth_quality": "self_report",
+      "local_recall_audit": {
+        "ai_matches": [
+          "generative AI",
+          "chatbot"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "mental health",
+          "depression",
+          "depressive",
+          "anxiety",
+          "loneliness"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [
+        "overreliance"
+      ],
+      "safety_evaluated": false,
+      "tldr": "日本820名18—29岁参与者的横断面调查显示，焦虑抑郁症状较重及孤独感与AI聊天机器人支持使用或依赖相关，但未验证因果或临床效果。",
+      "topic_tags": [
+        "anxiety",
+        "depression",
+        "transdiagnostic",
+        "wellbeing_loneliness",
+        "supportive_conversation",
+        "adults",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7165484713",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [
+      "overreliance"
+    ],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S2764449704",
+      "ingest_mode": "full",
+      "key": "jmir_mental_health",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Psychosocial Correlates of AI Chatbot Use for Emotional Support Among Young Adults: Cross-Sectional Study",
+    "title_zh": "年轻成人使用AI聊天机器人寻求情感支持的心理社会相关因素：横断面研究",
+    "tldr": "日本820名18—29岁参与者的横断面调查显示，焦虑抑郁症状较重及孤独感与AI聊天机器人支持使用或依赖相关，但未验证因果或临床效果。",
+    "topic_tags": [
+      "anxiety",
+      "depression",
+      "transdiagnostic",
+      "wellbeing_loneliness",
+      "supportive_conversation",
+      "adults",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.2196/104812",
     "year": 2026
   },
   {

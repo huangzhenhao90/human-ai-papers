@@ -1,0 +1,74 @@
+{
+  "abstract": "Psychotropic drug-induced weight change is clinically important but remains difficult to compare across large numbers of medications. We analysed 222,545 deduplicated user-generated reviews covering 176 psychotropic medications and acetaminophen as a negative control. A fine-tuned classifier identified reviews describing weight gain, weight loss, or no change, and a Qwen3-8B language model extracted quantified weight changes in kilograms. We derived a Net Weight Effect (NWE), defined as the proportion of reviews describing weight gain minus the proportion describing weight loss (range −1 to +1), and the mean weight change in kilograms, both with bootstrap 95% confidence intervals. Antipsychotics had the highest class-level weight liability (NWE + 0.154; mean +12.6 kg), whereas stimulants showed the most weight-reducing profile (NWE − 0.050; mean −7.1 kg). Olanzapine, mirtazapine, and risperidone ranked highest for weight gain, whereas bupropion/naltrexone and topiramate ranked lowest. Long-term use (>6 months) was associated with a larger mean gain than medium-term use (+8.8 kg vs +2.3 kg), and females reported weight gain more frequently than males. Per-drug rankings were highly concordant across the four source platforms (Kendall’s W = 0.83). In an exploratory receptor-affinity analysis, alpha-2 adrenergic affinity was the strongest correlate of NWE (rho = 0.594; permutation FDR p = 0.006), whereas H1 histamine affinity was the strongest correlate of mean weight change (rho = 0.638; permutation FDR p = 0.042). Large-scale AI-assisted analysis of patient narratives can therefore generate clinically useful real-world rankings of psychotropic weight liability while also highlighting mechanistically plausible, though correlational, pharmacological associations.",
+  "ai_type_tags": [
+    "machine_learning",
+    "nlp",
+    "llm_genai"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Johan H. G. Natter",
+    "Taïoh Yokoyama",
+    "Michel Bruno",
+    "Hervé Javelot",
+    "Julien Godet"
+  ],
+  "authors_full": [
+    {
+      "name": "Johan H. G. Natter"
+    },
+    {
+      "name": "Taïoh Yokoyama"
+    },
+    {
+      "name": "Michel Bruno"
+    },
+    {
+      "name": "Hervé Javelot"
+    },
+    {
+      "name": "Julien Godet"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "用分类器和LLM从患者叙事量化精神类药物体重效应，未作临床验证。",
+      "ai_score": 5,
+      "clinical_validation": "none",
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "weak_proxy",
+      "real_world_deployment": false,
+      "safety_evaluated": false,
+      "tldr": "对222545篇去重患者叙事的回顾性分析显示AI可估计176种精神类药物的体重效应且跨平台一致，但结论仅为相关性且缺乏临床验证。",
+      "topic_tags": [
+        "transdiagnostic",
+        "risk_prediction",
+        "treatment_support",
+        "general_population"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-16",
+  "doi": "10.1038/s41398-026-04551-z",
+  "id": "p_HZJhUdOoejLG2_QF",
+  "issue": null,
+  "journal": "Translational Psychiatry",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W7234224067"
+    }
+  ],
+  "title": "Large-Scale mapping of psychotropic weight effects: LLM-Based event detection across 222,545 deduplicated real-world patient narratives",
+  "title_zh": "精神类药物体重效应的大规模图谱：基于LLM的事件检测与222545篇真实世界患者叙事分析",
+  "unified_ingested_at": "2026-11-18T09:52:22.617209Z",
+  "url": "https://doi.org/10.1038/s41398-026-04551-z",
+  "volume": null,
+  "year": 2026
+}

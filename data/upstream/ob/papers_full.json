@@ -70224,6 +70224,97 @@
     "year": 2026
   },
   {
+    "abstract": "AI assistants are becoming part of how knowledge workers think and perform, accumulating the prompts, exemplars, memory and interaction histories that encode a worker's professional judgment. This infrastructure typically runs under employer or platform control. We name the resulting process expertise capture, the absorption of worker-applied knowledge and judgment into AI resources under organizational control. We develop a framework of contribution forms, technical residences and transformation families, and show that how far a contribution can be attributed, separated and revoked depends on where it resides and how it has been transformed, properties fixed by system design long before any dispute arises. When a worker departs, the organization retains a capability shaped by their judgment while the worker loses access to it, and the asymmetry compounds as contributions move from inspectable artifacts into derivatives, learned components and successor systems. We outline three measures, write-time provenance, extraction of separable contributions and an executable exit procedure, that make an agreed allocation technically performable, and make explicit what cannot be separated at all.",
+    "ai_reason": "聚焦职场AI对员工专长的吸收与控制",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "人机协作",
+      "AI治理"
+    ],
+    "authors": [
+      "Andreas Ekelhart",
+      "Ahmad Mohsin",
+      "Iqbal H. Sarker",
+      "Helge Janicke"
+    ],
+    "authors_full": [
+      {
+        "name": "Andreas Ekelhart"
+      },
+      {
+        "name": "Ahmad Mohsin"
+      },
+      {
+        "name": "Iqbal H. Sarker"
+      },
+      {
+        "name": "Helge Janicke"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-16",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 84864,
+    "ingested_at": "2026-11-17T10:10:26.082502",
+    "issue": null,
+    "journal": "arXiv:cs.CR",
+    "pdf_url": "https://arxiv.org/pdf/2611.21456v1",
+    "scored_at": "2026-11-18T09:44:02.513663",
+    "title": "Expertise capture in workplace AI",
+    "title_zh": "工作场所 AI 中的专业知识捕获",
+    "tldr": "知识工作者使用AI助手时，提示词、示例、记忆和交互记录会将专业判断吸收到组织或平台控制的资源中，形成“专长捕获”。框架区分贡献形态、存放位置和转换层级，指出员工离职后组织仍保留其判断形成的能，而员工失去访问权，并提出写入时溯源、可分离贡献提取及退出程序。",
+    "topic_tags": [
+      "知识管理",
+      "组织学习",
+      "隐私",
+      "工作未来"
+    ],
+    "url": "https://arxiv.org/abs/2611.21456v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Organizations increasingly use large language models (LLMs) for decisions about people, such as hiring, investment and employee evaluation, and rely on them over long periods of time. Fairness audits of such systems, however, are conducted only once. We examine how the biases of LLMs change over time. In a venture screening setting, models from five providers decided whether and how much to invest in startups whose founders differed only in gender, origin and university. We repeated this audit three times over 13 months (248,400 API calls). Study 1 shows that the same model, called under the same identifier one year later, displayed a significantly different bias pattern. Study 2 shows that the successors of retired models carried the same bias as their predecessors, but in a significantly different size and form. Study 3 shows that the bias does not depend on the industry of the startup. A document analysis further shows that providers change and retire models at their discretion, with notice periods of zero to six months. Drawing on these findings, we develop a theory of evidence anchoring. We theorize that bias resides in the model class and persists, whereas audit evidence is anchored to a single model and expires when the provider decides. We derive policy advice for organizations and regulators, namely audits of model classes instead of single models, a version record for every model response, and re-audits triggered by model changes.",
+    "ai_reason": "追踪供应商LLM偏见及审计时效",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "算法决策",
+      "AI治理"
+    ],
+    "authors": [
+      "Mika Facchini"
+    ],
+    "authors_full": [
+      {
+        "name": "Mika Facchini"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-16",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 84866,
+    "ingested_at": "2026-11-17T10:10:26.084401",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.20901v1",
+    "scored_at": "2026-11-18T09:44:02.513195",
+    "title": "Auditing a Moving Target: Evidence Anchoring and the Expiry of Fairness Audits of Provider-Served Language Models",
+    "title_zh": "审计流动目标：证据锚定与提供商语言模型公平性审计的时效性",
+    "tldr": "对5家供应商的LLM创业投资模型在13个月内重复审计248,400次，比较创始人性别、来源和大学差异下的偏差。结果显示，同一模型的偏差会显著变化，模型继任者延续偏差但形式与幅度不同；偏差源于模型类别而非行业。建议审计模型类别、记录版本并在变更时复审。",
+    "topic_tags": [
+      "公平性",
+      "偏见",
+      "模型审计"
+    ],
+    "url": "https://arxiv.org/abs/2611.20901v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "A coding agent working within a software organization must establish what to build, collaborate with colleagues, and verify what it delivers. We introduce SWE-CoWork, a benchmark comprising 101 development assignments across 101 real repositories, 11 programming languages, and 12 application domains. Each assignment places an agent in a simulated engineering organization with 26 colleagues who have distinct responsibilities, bounded knowledge, and controlled collaboration behavior. Starting from a brief handoff, agents must recover requirements distributed across colleagues and workplace records, reconcile conflicting evidence, and implement changes evaluated by private executable tests. We evaluate eleven models and find a substantial gap between partial implementation and complete task delivery. The two leading models satisfy approximately 63% of fail-to-pass (F2P) tests but complete fewer than 8% of assignments. Providing complete requirements upfront improves F2P by approximately 16 percentage points for Seed Evolving and GPT-6 Astra, yet leaves complete task success unchanged. Requirement-level trajectory analysis reveals failures throughout the delivery process: Claude-Opus-5.5 directs a mean of 93% of first questions about queried cards to their accountable owners across runs but obtains only 64% of colleague-held requirements. Deferred questions go unfollowed, implementations remain incomplete even after requirements are acquired, and 31% of requirements reported as completed fail their tests. These findings highlight sustained requirement tracking, from clarification through implementation, verification, and handoff, as a key challenge for reliable autonomous software engineering.",
     "ai_reason": "评测组织情境中的AI编码代理",
     "ai_score": 5.0,
@@ -70444,6 +70535,115 @@
     "year": 2026
   },
   {
+    "abstract": "Prior work has shown that large language models (LLMs) express implicit biases in high-publicity, one-off decision scenarios such as hiring and intelligence assessment. However, as people increasingly employ autonomous, LLM-powered AI agents that make decisions on their behalf in doing day-to-day tasks, it is of critical importance that we understand how implicit biases, based on sociodemographic assumptions, emerge across a broad milieu of workaday decision scenarios. We used the 17 domains of daily activity in the American Time Use Survey (ATUS) to generate an atlas of 506 decision scenarios in which LLMs --- endowed with personas representing different races, gender identities, and political ideologies --- expressed significant implicit bias. Next, in a crowdsourced audit, 500 participants made 8,010 binary choices about which implicitly biased decision scenarios most deserved further review. We found that participants prioritized decision scenarios that had broad relevance (e.g., about food choices), were high stakes (e.g., about health), and where all members of a simulated sociodemographic group made unanimous decisions (because it was a clear indication of stereotyping). They were less swayed by the magnitude of an observed disparity or the specific ATUS domain the decision scenario represented. When examining the rationale behind their prioritization choices, we found that participants often interpreted disparities as traits of demographic groups and judged whether those traits seemed plausible, often based on their own internalized stereotypes. We discuss implications for building personalized AI agents, digital twins, social simulations, and for using crowdsourced bias audits.",
+    "ai_reason": "核心研究LLM代理的隐性偏见",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "算法决策",
+      "AI治理"
+    ],
+    "authors": [
+      "Jason Alexander",
+      "Yuxuan Li",
+      "Michael Licamele",
+      "Wesley Hanwen Deng",
+      "Sauvik Das"
+    ],
+    "authors_full": [
+      {
+        "name": "Jason Alexander"
+      },
+      {
+        "name": "Yuxuan Li"
+      },
+      {
+        "name": "Michael Licamele"
+      },
+      {
+        "name": "Wesley Hanwen Deng"
+      },
+      {
+        "name": "Sauvik Das"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-16",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 84873,
+    "ingested_at": "2026-11-17T10:10:26.088727",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.21376v1",
+    "scored_at": "2026-11-18T09:44:02.512671",
+    "title": "A Crowd-Audited Atlas of Implicit Bias in LLM-Powered Agents",
+    "title_zh": "LLM驱动智能体隐性偏差的众包审计图谱",
+    "tldr": "为考察LLM代理在日常决策中的隐性偏见，基于美国时间使用调查构建17个领域、506个情境，以不同人口特征角色模拟决策；500名参与者完成8,010次审查选择。结果显示，广泛相关性、高风险及群体一致偏差更受重视，差异幅度影响较弱。",
+    "topic_tags": [
+      "偏见",
+      "公平性",
+      "算法决策",
+      "AI治理"
+    ],
+    "url": "https://arxiv.org/abs/2611.21376v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Job titles and job descriptions alone provide limited insight into how technical roles differ in a changing job market. To assess how such roles differ in their work and industry applications, we design and compare two methods based on deep learning and transformer representations using 36,081 early-career job postings collected from LinkedIn in the United States between December 2025 and October 2026.   We first apply PERC, short for Preprocessing (P), Embedding (E), Dimensionality Reduction (R) and Clustering (C). We employ GPT-6 Luna to classify job description passages into Team context, Role task and Qualifications. We then create combinations of these sections and examine whether embedding and clustering the segmented passages produce meaningful semantic clusters about different job roles. We use Maximum Mean Discrepancy (MMD) to rank observed differences between embedding distributions and employ a pretrained sparse autoencoder (SAE) to extract features from layer-19 representations of Llama-3.1-8B-Instruct. Lastly, we employ GPT-6 Luna to come up with hypotheses about job roles' feature patterns, and GPT-6.1 Terra to investigate whether those patterns exist in held-out job descriptions from unseen companies.   Some example findings include Data Scientist advertisements placing more emphasis on machine learning model development, Data Analyst advertisements on reporting business performance, and Machine Learning Engineer advertisements on applying developed models in real-world settings. We also observe differences in the applications described by Data Analyst and Business Analyst advertisements across selected months, although our dataset's scale and uneven coverage limit their interpretation. Overall, we present a realistic application of SAEs and PERC to unstructured textual data and examine how automated insight extraction could support manual analysis of job descriptions.",
+    "ai_reason": "以GPT和Transformer聚类分析职位描述",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "自然语言处理",
+      "机器学习",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Yisong Cao",
+      "Leah Kim",
+      "Brian Wright",
+      "Ali Rivera"
+    ],
+    "authors_full": [
+      {
+        "name": "Yisong Cao"
+      },
+      {
+        "name": "Leah Kim"
+      },
+      {
+        "name": "Brian Wright"
+      },
+      {
+        "name": "Ali Rivera"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-16",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 84874,
+    "ingested_at": "2026-11-17T10:10:26.089214",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.21586v1",
+    "scored_at": "2026-11-18T09:44:02.512071",
+    "title": "Beyond Job Titles: Interpreting Early-Career Job Advertisements with Sparse Autoencoders and Semantic Clustering",
+    "title_zh": "超越职位名称：利用稀疏自编码器与语义聚类解析初级职位广告",
+    "tldr": "为区分早期职业岗位的任务与行业场景，基于36,081份LinkedIn招聘广告，用GPT-6分类、语义嵌入与聚类、MMD及稀疏自编码器提取并验证特征。数据科学家侧重模型开发，分析师侧重业务绩效报告，机器学习工程师侧重模型应用。",
+    "topic_tags": [
+      "招聘",
+      "HR",
+      "工作设计",
+      "劳动力市场"
+    ],
+    "url": "https://arxiv.org/abs/2611.21586v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Large Language Models (LLMs) have been known to exhibit a wide range of social biases including name-nationality associations, occupation-gender associations and racial stereotypes. Existing approaches to evaluating these biases typically involve measuring surface-level behavior where a model is fed a dataset of prompts and its outputs are scored relative to ground-truth answers. Inspired by prior elicitation in cognitive science, we propose a different perspective that reconstructs latent bias as a prior underlying the model's behavior. We formulate the problem as a Bayesian inverse problem where, given prompt-response observations on a bias benchmark dataset, we infer a low-dimensional latent distribution that summarizes the model's stereotyping tendencies. This paper develops the mathematical foundation, a practical reconstruction algorithm, and experiments using the Bias Benchmark for QA (BBQ) benchmark to infer the prior distributions of LLMs over responses in ambiguous social contexts.",
     "ai_reason": "核心评估LLM偏见及潜在分布",
     "ai_score": 5.0,
@@ -70547,6 +70747,152 @@
     "year": 2026
   },
   {
+    "abstract": "Background: AI systems are increasingly deployed to support mental health clinicians, yet real-world evidence remains limited. In crisis counseling, where clients often seek human connection, understanding whether AI augmentation preserves or undermines meaningful human engagement is essential.   Methods: In a mixed-methods study of a counselor-facing AI copilot on a WhatsApp-based crisis hotline in India (Mar.-Oct. 2025), counselors could request, edit, and send AI messages. We analyzed 20 interviews, 8 shadowing sessions, 56 survey responses, and edits in 27,778 copilot messages from 108 counselors via thematic analysis (Technology Acceptance Model 2, plus inductive coding of emergent factors), and survey statistics.   Results: Counselors reported high copilot acceptance (survey): 98.2% found it helpful; 89.3% likely to continue use; 80.4% reported efficiency gains. Interviews highlighted sentence scaffolding, empathetic phrasing, stress reduction, catching missed details, and efficiency. Barriers (survey) included repetitive outputs (23.2%), lack of context (17.9%), and authenticity concerns (10.7%). While 69.6% (survey) reported skill enhancement, interviews surfaced skill atrophy concerns. Counselors frequently accepted copilot suggestions, editing to remove questions, adjust tone, or personalize style.   Conclusion: In one of the largest real-world deployments of a counselor-facing mental health AI copilot, counselors reported reduced cognitive load, empathetic communication, and greater efficiency, alongside concerns about skill atrophy, authenticity, and over-reliance. In settings like crisis counseling where clients seek human connection, AI tools must balance operational support with preserving clinical skill and genuine therapeutic engagement. Designs soliciting approval or editing of complete drafts may overweight efficiency at the expense of sustained human engagement.",
+    "ai_reason": "研究危机咨询中的人机协作、接受与参与",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Ivy Pham",
+      "Akshay Swaminathan",
+      "Sebastian Garcia",
+      "Jaimie Lim",
+      "Gloria Ye"
+    ],
+    "authors_full": [
+      {
+        "name": "Ivy Pham"
+      },
+      {
+        "name": "Akshay Swaminathan"
+      },
+      {
+        "name": "Sebastian Garcia"
+      },
+      {
+        "name": "Jaimie Lim"
+      },
+      {
+        "name": "Gloria Ye"
+      },
+      {
+        "name": "Divyanjali Verma"
+      },
+      {
+        "name": "Alan Pham"
+      },
+      {
+        "name": "Chastin Chung"
+      },
+      {
+        "name": "Shreya Shah"
+      },
+      {
+        "name": "Shaked Azzam"
+      },
+      {
+        "name": "Sharang Phadke"
+      },
+      {
+        "name": "Ivan Lopez"
+      },
+      {
+        "name": "William Wang"
+      },
+      {
+        "name": "Angelina Wang"
+      },
+      {
+        "name": "Nigam H. Shah"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-16",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 84880,
+    "ingested_at": "2026-11-17T10:10:26.092156",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.21558v1",
+    "scored_at": "2026-11-18T09:43:50.605502",
+    "title": "Benefits and Barriers to Human-AI Teaming for Crisis Counseling",
+    "title_zh": "危机咨询中人机协作的益处与障碍",
+    "tldr": "针对危机咨询中AI辅助是否损害人际连接，结合印度WhatsApp热线108名咨询员的访谈、观察、问卷及27,778条协同消息，发现助手可提供共情措辞、降低认知负荷并提升效率，但也存在重复、上下文不足、真实性不足及技能退化风险。",
+    "topic_tags": [
+      "人机协作",
+      "心理健康",
+      "工作设计",
+      "信任"
+    ],
+    "url": "https://arxiv.org/abs/2611.21558v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "We audit face-related bias in VLMs using BALPORTRAITS, a new balanced dataset of 9,000 fictional portraits across ethnicity, gender, and age segments. Sixteen VLMs estimate portrait fitness scores for occupations, brands, activities, and banking or insurance products within an advertising-casting framework designed to avoid direct inference of protected attributes. Item-level estimations are aggregated with scenario-specific prestige scores to compare rankings across demographic groups. While the magnitude and direction of these biases vary across scenarios, model families, and demographic dimensions, with age, ethnicity, and gender contributing differently depending on the task, we find demographic dispersion across all evaluated models, with a majority of pairwise segment differences reaching statistical significance. This study introduces a controlled protocol to assess implicit face-related associations and demonstrates that single-scenario or single-attribute audits are insufficient.",
+    "ai_reason": "审计VLM在广告场景中的人口偏差",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "多模态",
+      "视觉语言模型",
+      "算法决策",
+      "AI治理"
+    ],
+    "authors": [
+      "Alexandre Fournier-Montgieux",
+      "Akram Elbouanani",
+      "Aboubacar Tuo",
+      "Adrian Popescu",
+      "Hervé Le Borgne"
+    ],
+    "authors_full": [
+      {
+        "name": "Alexandre Fournier-Montgieux"
+      },
+      {
+        "name": "Akram Elbouanani"
+      },
+      {
+        "name": "Aboubacar Tuo"
+      },
+      {
+        "name": "Adrian Popescu"
+      },
+      {
+        "name": "Hervé Le Borgne"
+      },
+      {
+        "name": "Bertrand Luvison"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-16",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 84882,
+    "ingested_at": "2026-11-17T10:10:26.093099",
+    "issue": null,
+    "journal": "arXiv:cs.CV",
+    "pdf_url": "https://arxiv.org/pdf/2611.21403v1",
+    "scored_at": "2026-11-18T09:43:50.605213",
+    "title": "Portrait Fitness as a Pretext: Probing Implicit Demographic Bias in VLMs",
+    "title_zh": "肖像适配性作为切入点：探查 VLMs 中隐含的人口统计偏见",
+    "tldr": "为检验视觉语言模型在广告选角中是否隐含人口统计偏见，构建覆盖族裔、性别和年龄的9000张平衡虚构肖像集，在16个模型上评估多类场景适配度排名。偏差方向随场景和群体而变，多数组间差异显著，单一场景或属性审计不足以揭示偏见。",
+    "topic_tags": [
+      "偏见",
+      "公平性",
+      "广告",
+      "算法决策"
+    ],
+    "url": "https://arxiv.org/abs/2611.21403v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "When do firms take public positions on divisive societal issues and why? We assemble a comprehensive dataset on corporate stance-taking in the United States, using large language models to read 52,000 news articles and press releases about 836 companies that belonged to the S&P 500 at any point between 2008 and 2025. We identify 9,917 stances on nine partisan issues such as climate change, abortion, and racial discrimination. We show that stance-taking increased fourfold after 2008 and peaked in 2021. It is overwhelmingly liberal and concentrated among the largest firms. A quarter of stances give no explicit business justification. Stance-taking is only weakly related to lobbying and campaign contributions and, unlike them, does not follow the electoral cycle. Instead, firms tend to speak when media coverage and public interest in an issue peak. Together, these findings suggest that stance-taking can be understood as a contribution to broad policy debates rather than a strategy to shape policies that affect firms' core business. Finally, we investigate whose views corporate stances represent. Consumer-facing firms take more stances, and firms whose consumers lean Democratic take more liberal stances on issues other than climate. Companies with larger shares of Democratic employees, executives, and board members also take more liberal stances. Exploiting within-firm variation, we find that having more Democrats among a company's leadership increases liberal stance-taking, while having more women increases stance-taking on gender-related issues and abortion.",
     "ai_reason": "用LLM测量企业立场，属公司战略",
     "ai_score": 3.0,
@@ -70601,6 +70947,135 @@
       "利益相关者"
     ],
     "url": "https://arxiv.org/abs/2611.19068v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Broad workplace scores can mix competence within one business function with the extra cost of coordinating across functions and systems, making failures hard to localize. OfficePrism evaluates this prerequisite through 420 single-domain enterprise tasks spanning seven business functions under shared, benchmark-defined L1--L3 task-structure levels. Each task runs in a fresh environment combining a shared synthetic organization with one function-specific domain and yped state access. Our pipeline uses grounded records, business rules, and tool schemas to jointly construct a Chinese-language ticket, a hidden executable reference witness, and an expected response, followed by automated filtering and human curation. The same task set is evaluated through full-schema and search-and-dispatch packages. Across 124 model--harness--package configurations, the per-case joint natural-language-and-database pass rate ranges from 22.6% to 76.4%, with a median of 67.9%. L1 is highest in all 124 configurations, and L2 exceeds L3 in 122. Among 50 configurations sharing the same harness and model labels across both packages, search scores higher in 30, ties in one, and scores lower in 19.",
+    "ai_reason": "代理评测覆盖七类企业业务职能",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI智能体",
+      "LLM",
+      "工具使用"
+    ],
+    "authors": [
+      "Hanfeng Liu",
+      "Zhenyu Luo",
+      "Dongchao Zhang",
+      "Zexi Liu",
+      "Zulong Chen"
+    ],
+    "authors_full": [
+      {
+        "name": "Hanfeng Liu"
+      },
+      {
+        "name": "Zhenyu Luo"
+      },
+      {
+        "name": "Dongchao Zhang"
+      },
+      {
+        "name": "Zexi Liu"
+      },
+      {
+        "name": "Zulong Chen"
+      },
+      {
+        "name": "Jinxin Hu"
+      },
+      {
+        "name": "Jia Xu"
+      },
+      {
+        "name": "Zeyi Wen"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-17",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 84962,
+    "ingested_at": "2026-11-18T09:43:01.227997",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.22262v1",
+    "scored_at": "2026-11-18T09:44:00.402351",
+    "title": "OfficePrism: Benchmarking Agents on Single-Domain Operations Across Enterprise Business Functions",
+    "title_zh": "OfficePrism：企业各业务职能中单域运营智能体的基准评测",
+    "tldr": "为定位企业智能体跨职能协作中的能力短板，构建覆盖7类业务职能、420项单域任务的OfficePrism，并按任务结构复杂度比较完整模式与搜索分派模式。联合通过率为22.6%—76.4%，任务越复杂表现越低，搜索模式优劣并不一致。",
+    "topic_tags": [
+      "企业运营",
+      "基准评测",
+      "任务复杂度",
+      "工作流程"
+    ],
+    "url": "https://arxiv.org/abs/2611.22262v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Professional work involves under-specified assignments, where relevant information is spread across workplace applications and may conflict or change over time. To evaluate how well frontier agents can perform economically valuable work in such settings, we introduce ATLAS-Finance, a benchmark of 100 end-to-end investment-banking tasks across 13 simulated firms. As in real banking workflows, agents must search email, chat, calendars, notes, and files to identify requirements, gather information, reconcile conflicts/updates, and then build complex financial models. Tasks were developed by experienced bankers based on their real deal work and take them 15-30 hours to complete. Agent deliverables are evaluated with expert-authored rubrics (median: 124.5 criteria) covering financial rationale and results, spreadsheet construction, completeness, and formatting. Despite completing substantial portions of the requested work, current agents rarely produce correct deliverables. Across today's frontier models, the best ones (Claude Opus and Fable) pass fewer than 11% of tasks.",
+    "ai_reason": "AI代理执行银行复杂专业任务",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI智能体",
+      "LLM",
+      "工具使用"
+    ],
+    "authors": [
+      "Elaine Lau",
+      "Antoine Pangas",
+      "Alexandre Finot",
+      "Collin Schweiker",
+      "Amir Bouzidi"
+    ],
+    "authors_full": [
+      {
+        "name": "Elaine Lau"
+      },
+      {
+        "name": "Antoine Pangas"
+      },
+      {
+        "name": "Alexandre Finot"
+      },
+      {
+        "name": "Collin Schweiker"
+      },
+      {
+        "name": "Amir Bouzidi"
+      },
+      {
+        "name": "Hui Wen Goh"
+      },
+      {
+        "name": "Andrew Peter Martin"
+      },
+      {
+        "name": "Jonas Mueller"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-17",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 84963,
+    "ingested_at": "2026-11-18T09:43:01.228970",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.22085v1",
+    "scored_at": "2026-11-18T09:44:00.402056",
+    "title": "ATLAS-Finance: Benchmarking AI Agents in Realistic Banking Environments",
+    "title_zh": "ATLAS-Finance：真实银行环境中的 AI 智能体基准评测",
+    "tldr": "面向投行任务中信息分散、冲突且动态变化的问题，构建含13家模拟公司、100项任务的ATLAS-Finance基准，并以专家量表评估交付物。当前前沿智能体虽能完成部分工作，最佳模型任务通过率仍不足11%。",
+    "topic_tags": [
+      "金融",
+      "工作流程",
+      "基准评测"
+    ],
+    "url": "https://arxiv.org/abs/2611.22085v1",
     "volume": null,
     "year": 2026
   },
@@ -75000,34 +75475,38 @@
     "year": 2026
   },
   {
-    "abstract": null,
+    "abstract": "Technology, including generative artificial intelligence (GenAI), is changing professional work, but its implications for how occupational personality requirements are rewarded in the labor market remain unclear. Using job-incumbent ratings from the U.S. Department of Labor’s Occupational Information Network (O*NET), we identify two personality requirement composites: intellectual tenacity (achievement/effort, persistence, initiative, analytical thinking, innovation, and independence) and social adjustment (emotion regulation, concern for others, social orientation, cooperation, and stress tolerance). We link these measures to more than 15 million workers in the American Community Survey from 2006 to 2024. Intellectual tenacity requirements were positively associated with hourly wages, whereas social adjustment requirements had a weaker, negative association. The wage premium for intellectual tenacity requirements was approximately stable through 2014 and rose thereafter, while the return to social adjustment requirements declined. These divergent trends began before widespread GenAI adoption, but they are concentrated in occupations with greater exposure to GenAI: wage returns for intellectual tenacity requirements increased in occupations highly exposed to GenAI, while returns to social adjustment requirements decreased in those occupations. These findings suggest that broad measures of personality or non-cognitive occupational requirements can obscure opposing shifts in the labor-market value of persistent analytical effort and social adjustment.",
     "ai_reason": "以生成式AI暴露连接工作人格收益",
     "ai_score": 5.0,
     "ai_type_tags": [
       "GenAI"
     ],
     "authors": [
-      "Christos Makridis",
+      "Christos Andreas Makridis",
       "Louis Hickman"
     ],
     "authors_full": [
       {
         "affiliation": [
-          "Arizona State University, 300 E Lemon St, Tempe, Arizona, United States, 85287",
-          "Gallup Inc, Washington, United States, 20004;"
+          "University of Nicosia",
+          "Arizona State University",
+          "Columbia University",
+          "Stanford University"
         ],
-        "name": "Christos Makridis",
-        "orcid": null
+        "name": "Christos Andreas Makridis",
+        "orcid": "https://orcid.org/0000-0002-6547-5897",
+        "position": "first"
       },
       {
         "affiliation": [
-          "Virginia Tech, Blacksburg, Virginia, United States;"
+          "Virginia Tech"
         ],
         "name": "Louis Hickman",
-        "orcid": null
+        "orcid": "https://orcid.org/0000-0002-2752-7705",
+        "position": "last"
       }
     ],
-    "cited_by": 0,
+    "cited_by": 1,
     "date": "2026-11-16",
     "doi": "10.5465/amd.2025.0303",
     "domain_score": 5.0,
@@ -75035,7 +75514,7 @@
     "ingested_at": "2026-11-17T10:10:11.222085",
     "issue": null,
     "journal": "AOM-Discoveries",
-    "pdf_url": null,
+    "pdf_url": "https://doi.org/10.2139/ssrn.4365176",
     "scored_at": "2026-11-17T10:10:50.533092",
     "title": "Intellectual Tenacity at Work: Generative AI Exposure and the Economic Returns to Occupational Personality Requirements",
     "title_zh": "职场中的智力韧性：生成式AI暴露与职业人格要求的经济回报",
@@ -82870,6 +83349,77 @@
   },
   {
     "abstract": null,
+    "ai_reason": "深度学习文本情感分析是核心方法",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "深度学习",
+      "机器学习",
+      "自然语言处理",
+      "情感分析"
+    ],
+    "authors": [
+      "Ankush Chatterjee",
+      "Umang Gupta",
+      "Manoj Kumar Chinnakotla",
+      "Radhakrishnan Srikanth",
+      "Michel Galley"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Ankush Chatterjee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Umang Gupta",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Manoj Kumar Chinnakotla",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Radhakrishnan Srikanth",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Michel Galley",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Puneet Agrawal",
+        "orcid": null
+      }
+    ],
+    "cited_by": 285,
+    "date": "2019-04",
+    "doi": "10.1016/j.chb.2018.12.029",
+    "domain_score": 3.0,
+    "id": 52578,
+    "ingested_at": "2026-08-12T04:23:47.301152",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:33.731631",
+    "title": "Understanding Emotions in Text Using Deep Learning and Big Data",
+    "title_zh": "利用深度学习与大数据理解文本情感",
+    "tldr": "仅据标题推断：结合深度学习与大数据分析和识别文本中的情绪；因缺少摘要，无法判断具体样本、研究任务与实证结果。",
+    "topic_tags": [
+      "情绪识别",
+      "文本分析",
+      "大数据"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.12.029",
+    "volume": "93",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "AI中介英语学习，AI核心教育应用",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -83040,6 +83590,52 @@
     "url": "https://doi.org/10.1016/j.chb.2025.108671",
     "volume": "170",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自主机器人态度为核心，技术接受相关",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "自主系统"
+    ],
+    "authors": [
+      "Timo Gnambs",
+      "Markus Appel"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Timo Gnambs",
+        "orcid": "https://orcid.org/0000-0002-6984-1276"
+      },
+      {
+        "affiliation": [],
+        "name": "Markus Appel",
+        "orcid": "https://orcid.org/0000-0003-4111-1308"
+      }
+    ],
+    "cited_by": 195,
+    "date": "2019-04",
+    "doi": "10.1016/j.chb.2018.11.045",
+    "domain_score": 4.0,
+    "id": 52596,
+    "ingested_at": "2026-08-12T04:23:47.769785",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:33.731381",
+    "title": "Are robots becoming unpopular? Changes in attitudes towards autonomous robotic systems in Europe",
+    "title_zh": "机器人正变得不受欢迎吗：欧洲对自主机器人系统的态度变化",
+    "tldr": "追踪欧洲公众对自主机器人系统的态度变化，判断其接受度是否下降，并关注不同群体或时期之间是否存在态度差异。",
+    "topic_tags": [
+      "机器人",
+      "公众态度",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.11.045",
+    "volume": "93",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -83692,6 +84288,58 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聊天机器人是核心学习伙伴，属教育技术",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "聊天机器人",
+      "人机协作"
+    ],
+    "authors": [
+      "Luke K. Fryer",
+      "Kaori Nakao",
+      "Andrew Thompson"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Luke K. Fryer",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kaori Nakao",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Andrew Thompson",
+        "orcid": null
+      }
+    ],
+    "cited_by": 375,
+    "date": "2019-04",
+    "doi": "10.1016/j.chb.2018.12.023",
+    "domain_score": 3.0,
+    "id": 52708,
+    "ingested_at": "2026-08-12T04:23:50.554627",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:33.730856",
+    "title": "Chatbot learning partners: Connecting learning experiences, interest and competence",
+    "title_zh": "Chatbot学习伙伴：联结学习体验、兴趣与胜任力",
+    "tldr": "考察聊天机器人作为学习伙伴时，如何连接学习经历、兴趣与能力形成，并关注其对学习体验和参与动机的作用。",
+    "topic_tags": [
+      "教育",
+      "培训",
+      "人机协作"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.12.023",
+    "volume": "93",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "自治机器人协作涉及AI与工作压力",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -84051,6 +84699,58 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108402",
     "volume": "161",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "机器人接受度为核心，技术态度行为相关",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Rita Latikka",
+      "Tuuli Turja",
+      "Atte Oksanen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Rita Latikka",
+        "orcid": "https://orcid.org/0000-0003-3798-0017"
+      },
+      {
+        "affiliation": [],
+        "name": "Tuuli Turja",
+        "orcid": "https://orcid.org/0000-0001-7815-9511"
+      },
+      {
+        "affiliation": [],
+        "name": "Atte Oksanen",
+        "orcid": "https://orcid.org/0000-0003-4143-5580"
+      }
+    ],
+    "cited_by": 159,
+    "date": "2019-04",
+    "doi": "10.1016/j.chb.2018.12.017",
+    "domain_score": 4.0,
+    "id": 52756,
+    "ingested_at": "2026-08-12T04:23:51.647838",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:33.730553",
+    "title": "Self-efficacy and acceptance of robots",
+    "title_zh": "自我效能感与机器人接受度",
+    "tldr": "关注个体在与机器人互动时的自我效能及其对机器人接受度的影响，考察个人能力信心、使用经验与心理抗拒之间的关系。",
+    "topic_tags": [
+      "机器人",
+      "人机交互",
+      "技术接受"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.12.017",
+    "volume": "93",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -87294,6 +87994,98 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107502",
     "volume": "139",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "自动网络欺凌检测，AI为核心且偏计算",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "自然语言处理",
+      "文本分类",
+      "多模态"
+    ],
+    "authors": [
+      "H. Rosa",
+      "N. Pereira",
+      "R. Ribeiro",
+      "P.C. Ferreira",
+      "J.P. Carvalho"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "H. Rosa",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "N. Pereira",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "R. Ribeiro",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "P.C. Ferreira",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "J.P. Carvalho",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "S. Oliveira",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "L. Coheur",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "P. Paulino",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "A.M. Veiga Simão",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "I. Trancoso",
+        "orcid": null
+      }
+    ],
+    "cited_by": 241,
+    "date": "2019-04",
+    "doi": "10.1016/j.chb.2018.12.021",
+    "domain_score": 3.0,
+    "id": 53295,
+    "ingested_at": "2026-08-12T04:24:04.138299",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:28.422318",
+    "title": "Automatic cyberbullying detection: A systematic review",
+    "title_zh": "自动网络欺凌检测：系统性综述",
+    "tldr": "系统梳理网络欺凌自动检测的数据、算法、评价指标与挑战，指出类别不平衡、语境依赖、跨平台泛化、标注主观及隐私等问题，并展望多模态与上下文建模、可解释检测及偏差控制，以提升真实场景中的准确性与稳健性。",
+    "topic_tags": [
+      "网络欺凌",
+      "社交媒体",
+      "伦理",
+      "隐私"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.12.021",
+    "volume": "93",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -102830,6 +103622,106 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2026.109264",
     "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "以GPT-4o推断眼睛背后的心理状态",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GPT-4o",
+      "多模态",
+      "LLM"
+    ],
+    "authors": [
+      "James W.A. Strachan",
+      "Oriana Pansardi",
+      "Marco Celotto",
+      "Eugenio Scaliti",
+      "Krati Saxena"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "James W.A. Strachan",
+        "orcid": "https://orcid.org/0000-0002-8618-3834"
+      },
+      {
+        "affiliation": [],
+        "name": "Oriana Pansardi",
+        "orcid": "https://orcid.org/0000-0001-6092-1889"
+      },
+      {
+        "affiliation": [],
+        "name": "Marco Celotto",
+        "orcid": "https://orcid.org/0000-0002-0890-0703"
+      },
+      {
+        "affiliation": [],
+        "name": "Eugenio Scaliti",
+        "orcid": "https://orcid.org/0000-0002-4977-2197"
+      },
+      {
+        "affiliation": [],
+        "name": "Krati Saxena",
+        "orcid": "https://orcid.org/0000-0001-7049-9685"
+      },
+      {
+        "affiliation": [],
+        "name": "Chunzhi Yi",
+        "orcid": "https://orcid.org/0000-0002-4180-1109"
+      },
+      {
+        "affiliation": [],
+        "name": "Fabio Manzi",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Alessandro Rufo",
+        "orcid": "https://orcid.org/0009-0003-8565-4192"
+      },
+      {
+        "affiliation": [],
+        "name": "Guido Manzi",
+        "orcid": "https://orcid.org/0009-0009-2927-3380"
+      },
+      {
+        "affiliation": [],
+        "name": "Michael S.A. Graziano",
+        "orcid": "https://orcid.org/0000-0002-7727-3475"
+      },
+      {
+        "affiliation": [],
+        "name": "Stefano Panzeri",
+        "orcid": "https://orcid.org/0000-0003-1700-8909"
+      },
+      {
+        "affiliation": [],
+        "name": "Cristina Becchio",
+        "orcid": "https://orcid.org/0000-0002-6845-0521"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-08",
+    "doi": "10.1016/j.chb.2026.108992",
+    "domain_score": 3.0,
+    "id": 84898,
+    "ingested_at": "2026-11-18T09:42:45.705426",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:02.514403",
+    "title": "GPT-4o reads the mind in the eyes",
+    "title_zh": "GPT-4o 从眼神中读取内心",
+    "tldr": "仅据标题推断，研究以包含眼部信息的图像测试GPT-4o，判断其能否识别人格、情绪或心理状态，并与人类基准比较。标题暗示模型具备从眼线索进行“读心”推断的能力，但准确率、偏差及适用边界仍需原文核验。",
+    "topic_tags": [
+      "心理推断",
+      "多模态认知",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.108992",
+    "volume": "181",
     "year": 2026
   },
   {
@@ -128025,6 +128917,72 @@
     "year": 2020
   },
   {
+    "abstract": "Interactions between consumers and humanoid service robots (HSRs; i.e., robots with a human-like morphology such as a face, arms, and legs) will soon be part of routine marketplace experiences. It is unclear, however, whether these humanoid robots (compared with human employees) will trigger positive or negative consequences for consumers and companies. Seven experimental studies reveal that consumers display compensatory responses when they interact with an HSR rather than a human employee (e.g., they favor purchasing status goods, seek social affiliation, and order and eat more food). The authors investigate the underlying process driving these effects, and they find that HSRs elicit greater consumer discomfort (i.e., eeriness and a threat to human identity), which in turn results in the enhancement of compensatory consumption. Moreover, this research identifies boundary conditions of the effects such that the compensatory responses that HSRs elicit are (1) mitigated when consumer-perceived social belongingness is high, (2) attenuated when food is perceived as more healthful, and (3) buffered when the robot is machinized (rather than anthropomorphized).",
+    "ai_reason": "核心研究人形服务机器人体验",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人形机器人",
+      "服务机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Martin Mende",
+      "Maura L. Scott",
+      "Jenny van Doorn",
+      "Dhruv Grewal",
+      "Ilana Shanks"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Martin Mende",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Maura L. Scott",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jenny van Doorn",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dhruv Grewal",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ilana Shanks",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1090,
+    "date": "2019-04-22",
+    "doi": "10.1177/0022243718822827",
+    "domain_score": 5.0,
+    "id": 47231,
+    "ingested_at": "2026-08-12T04:21:36.881208",
+    "issue": "4",
+    "journal": "JMR",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:17.097293",
+    "title": "Service Robots Rising: How Humanoid Robots Influence Service Experiences and Elicit Compensatory Consumer Responses",
+    "title_zh": "服务机器人的兴起：人形机器人如何影响服务体验并引发补偿性消费者反应",
+    "tldr": "通过七项实验比较消费者与类人服务机器人及人类员工的互动，发现机器人引发恐怖谷不适感及人类身份威胁，进而增强地位、归属和享乐等补偿性消费。较高归属感、健康食品感知及机械化外观可削弱这些效应。",
+    "topic_tags": [
+      "消费者行为",
+      "服务营销",
+      "人机交互",
+      "机器人营销"
+    ],
+    "url": "https://doi.org/10.1177/0022243718822827",
+    "volume": "56",
+    "year": 2019
+  },
+  {
     "abstract": null,
     "ai_reason": "多媒体智能分析为营销核心",
     "ai_score": 5.0,
@@ -151859,6 +152817,59 @@
     "year": 2022
   },
   {
+    "abstract": "We build a game-theoretic model to examine how better demand forecasting resulting from algorithms, machine learning, and artificial intelligence affects the sustainability of collusion in an industry. We find that, although better forecasting allows colluding firms to better tailor prices to demand conditions, it also increases each firm’s temptation to deviate to a lower price in time periods of high predicted demand. Overall, our research suggests that, despite concerns expressed by policy makers, better forecasting and algorithms can lead to lower prices and higher consumer surplus.  This paper was accepted by Joshua Gans, business strategy.",
+    "ai_reason": "算法需求预测影响卖方合谋",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "算法决策",
+      "需求预测",
+      "AI治理"
+    ],
+    "authors": [
+      "Jeanine Miklós-Thal",
+      "Catherine Tucker"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Simon Graduate School of Business, University of Rochester, Rochester, New York 14627"
+        ],
+        "name": "Jeanine Miklós-Thal",
+        "orcid": "https://orcid.org/0000-0002-4014-8259"
+      },
+      {
+        "affiliation": [
+          "MIT Sloan School of Management, Massachusetts Institute of Technology, Cambridge, Massachusetts 02142"
+        ],
+        "name": "Catherine Tucker",
+        "orcid": "https://orcid.org/0000-0002-1847-4832"
+      }
+    ],
+    "cited_by": 144,
+    "date": "2019-04",
+    "doi": "10.1287/mnsc.2019.3287",
+    "domain_score": 5.0,
+    "id": 42076,
+    "ingested_at": "2026-08-12T04:19:32.255145",
+    "issue": "4",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:47.964309",
+    "title": "Collusion by Algorithm: Does Better Demand Prediction Facilitate Coordination Between Sellers?",
+    "title_zh": "算法合谋：更准确的需求预测是否促进卖家间协调？",
+    "tldr": "构建博弈模型，分析算法与人工智能提升需求预测后，卖家能否通过精准定价维持合谋。发现高需求预测会增强降价偏离动机，使合谋更难持续，并可能压低价格、提高消费者剩余。",
+    "topic_tags": [
+      "竞争战略",
+      "定价",
+      "算法合谋",
+      "消费者福利"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2019.3287",
+    "volume": "65",
+    "year": 2019
+  },
+  {
     "abstract": "We combine ideas from machine learning (ML) and operations research and management science (OR/MS) in developing a framework, along with specific methods, for using data to prescribe optimal decisions in OR/MS problems. In a departure from other work on data-driven optimization, we consider data consisting, not only of observations of quantities with direct effect on costs/revenues, such as demand or returns, but also predominantly of observations of associated auxiliary quantities. The main problem of interest is a conditional stochastic optimization problem, given imperfect observations, where the joint probability distributions that specify the problem are unknown. We demonstrate how our proposed methods are generally applicable to a wide range of decision problems and prove that they are computationally tractable and asymptotically optimal under mild conditions, even when data are not independent and identically distributed and for censored observations. We extend these to the case in which some decision variables, such as price, may affect uncertainty and their causal effects are unknown. We develop the coefficient of prescriptiveness P to measure the prescriptive content of data and the efficacy of a policy from an operations perspective. We demonstrate our approach in an inventory management problem faced by the distribution arm of a large media company, shipping 1 billion units yearly. We leverage both internal data and public data harvested from IMDb, Rotten Tomatoes, and Google to prescribe operational decisions that outperform baseline measures. Specifically, the data we collect, leveraged by our methods, account for an 88% improvement as measured by our coefficient of prescriptiveness.  This paper was accepted by Noah Gans, optimization.",
     "ai_reason": "机器学习结合运筹优化决策",
     "ai_score": 5.0,
@@ -151966,6 +152977,64 @@
     "url": "https://doi.org/10.1287/mnsc.2021.4156",
     "volume": "68",
     "year": 2022
+  },
+  {
+    "abstract": "We study dynamic unstructured bargaining with deadlines and one-sided private information about the amount available to share (the “pie size”). Using mechanism design theory, we show that given the players’ incentives, the equilibrium incidence of bargaining failures (“strikes”) should increase with the pie size, and we derive a condition under which strikes are efficient. In our setting, no equilibrium satisfies both equality and efficiency in all pie sizes. We derive two equilibria that resolve the trade-off between equality and efficiency by favoring either equality or efficiency. Using a novel experimental paradigm, we confirm that strike incidence is decreasing in the pie size. Subjects reach equal splits in small pie games (in which strikes are efficient), while most payoffs are close to either the efficient or the equal equilibrium prediction, when the pie is large. We employ a machine learning approach to show that bargaining process features recorded early in the game improve out-of-sample prediction of disagreements at the deadline. The process feature predictions are as accurate as predictions from pie sizes only, and adding process and pie data together improves predictions even more.Data are available at https://doi.org/10.1287/mnsc.2017.2965 .This paper was accepted by Uri Gneezy, behavioral economics.",
+    "ai_reason": "机器学习用于谈判结果预测",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "机器学习",
+      "预测模型"
+    ],
+    "authors": [
+      "Colin F. Camerer",
+      "Gideon Nave",
+      "Alec Smith"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Humanities and Social Sciences and Computational and Neural Systems, California Institute of Technology, Pasadena, California 91125"
+        ],
+        "name": "Colin F. Camerer",
+        "orcid": "https://orcid.org/0000-0003-4049-1871"
+      },
+      {
+        "affiliation": [
+          "Marketing Department, The Wharton School, University of Pennsylvania, Philadelphia, Pennsylvania 19104"
+        ],
+        "name": "Gideon Nave",
+        "orcid": "https://orcid.org/0000-0001-6251-5630"
+      },
+      {
+        "affiliation": [
+          "Department of Economics, Virginia Tech, Blacksburg, Virginia 24061"
+        ],
+        "name": "Alec Smith",
+        "orcid": "https://orcid.org/0000-0002-1938-4660"
+      }
+    ],
+    "cited_by": 71,
+    "date": "2019-04",
+    "doi": "10.1287/mnsc.2017.2965",
+    "domain_score": 5.0,
+    "id": 42257,
+    "ingested_at": "2026-08-12T04:19:36.687193",
+    "issue": "4",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:47.963820",
+    "title": "Dynamic Unstructured Bargaining with Private Information: Theory, Experiment, and Outcome Prediction via Machine Learning",
+    "title_zh": "私有信息下的动态非结构化谈判：理论、实验与机器学习结果预测",
+    "tldr": "针对含截止期限和单边私有信息的动态谈判，结合机制设计、实验与机器学习，揭示平等与效率的权衡；早期谈判特征可预测到期分歧，联合共享资源信息后预测更准。",
+    "topic_tags": [
+      "谈判",
+      "决策",
+      "行为经济学"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.2017.2965",
+    "volume": "65",
+    "year": 2019
   },
   {
     "abstract": "Ensuring fairness in algorithmic decision making is a crucial policy issue. Current legislation ensures fairness by barring algorithm designers from using demographic information in their decision making. As a result, to be legally compliant, the algorithms need to ensure equal treatment. However, in many cases, ensuring equal treatment leads to disparate impact particularly when there are differences among groups based on demographic classes. In response, several “fair” machine learning (ML) algorithms that require impact parity (e.g., equal opportunity) at the cost of equal treatment have recently been proposed to adjust for the societal inequalities. Advocates of fair ML propose changing the law to allow the use of protected class-specific decision rules. We show that the proposed fair ML algorithms that require impact parity, while conceptually appealing, can make everyone worse off, including the very class they aim to protect. Compared with the current law, which requires treatment parity, the fair ML algorithms, which require impact parity, limit the benefits of a more accurate algorithm for a firm. As a result, profit maximizing firms could underinvest in learning, that is, improving the accuracy of their machine learning algorithms. We show that the investment in learning decreases when misclassification is costly, which is exactly the case when greater accuracy is otherwise desired. Our paper highlights the importance of considering strategic behavior of stake holders when developing and evaluating fair ML algorithms. Overall, our results indicate that fair ML algorithms that require impact parity, if turned into law, may not be able to deliver some of the anticipated benefits.  This paper was accepted by Kartik Hosanagar, information systems.",
@@ -154882,6 +155951,48 @@
     "url": "https://doi.org/10.1287/mnsc.1070.0760",
     "volume": "54",
     "year": 2008
+  },
+  {
+    "abstract": "Selected aspects of a heuristic programming study of the design behavior of a practicing mechanical engineer are described. The study documents the tremendous influence that personality and social variables exert on the technical practice of engineering design. The study bears testimony to Churchman's inseparability thesis [Churchman, C. W. 1968. Challenge to Reason. McGraw-Hill, New York.], i.e., that without our developing some sophisticated notion of what the “system” as a whole is like, the components or subsystems of a system can only be identified and studied with difficulty. The conclusion of the study is that, contrary to most theories of the engineering design process, the behavioral and technical aspects of design are highly inseparable. In certain instances, the influence of behavioral factors on design outweighs the technical factors.",
+    "ai_reason": "以启发式编程研究工程设计",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "启发式编程"
+    ],
+    "authors": [
+      "Ian I. Mitroff"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "University of Pittsburgh"
+        ],
+        "name": "Ian I. Mitroff",
+        "orcid": null
+      }
+    ],
+    "cited_by": 5,
+    "date": "1972-04",
+    "doi": "10.1287/mnsc.18.8.b454",
+    "domain_score": 3.0,
+    "id": 84920,
+    "ingested_at": "2026-11-18T09:42:46.129616",
+    "issue": "8",
+    "journal": "MgmtSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-18T09:44:20.853626",
+    "title": "On the Social Psychology of the Safety Factor: A Case Study in the Sociology of Engineering Science",
+    "title_zh": "安全系数的社会心理学：工程科学的社会学案例研究",
+    "tldr": "以一名机械工程师的设计行为为案例，运用启发式编程考察人格、社会情境与组织环境对工程决策的影响。研究发现，设计行为中的技术与社会心理因素不可分割；若忽视系统整体情境，工程师设计中的行为因素甚至可能超过技术因素。",
+    "topic_tags": [
+      "工程设计",
+      "组织行为",
+      "决策",
+      "创新"
+    ],
+    "url": "https://doi.org/10.1287/mnsc.18.8.b454",
+    "volume": "18",
+    "year": 1972
   },
   {
     "abstract": "This paper presents a novel integrative approach that combines artificial intelligence-driven forecasting with behavioral interventions to help businesses optimize energy consumption under critical peak pricing schemes.",
