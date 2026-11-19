@@ -1,0 +1,54 @@
+{
+  "abstract": "Affective priming -- asking participants to write about a recalled event, such as a time they felt grateful or lacked control, and then measuring the induced state and its spillover onto related judgments -- is a standard way to manipulate emotion in the social sciences, and it also shifts the responses of LLM-based digital twins. The writing task, however, requires generating a full text. We test whether activation steering can replace it. Using Llama-3.1-8B-Instruct on 100 personas in two domains (gratitude, lack of control), we compare a real-prompt path replicating the original Twin-2K-500 Mega Study (J2) with an injection path that skips the writing and adds a mean-difference direction, extracted from human writing, to the residual stream at varying strengths. The real-prompt effects fall between the original human and digital-twin effects in 5 of 6 comparisons. Injection shifts the manipulation check in a dose-dependent way and matches the real-prompt effect at one strength in the gratitude domain (beta ~ 2.7), but overshoots beyond it, on the proximal measure as well, and asymmetrically across the two directions. A structure-matched No-Injection baseline separates two sources of difference: omitting the writing task raises the proximal measure in both domains, whereas the injected direction itself moves a distal measure in the lack-of-control domain. Substitution is therefore measure-dependent: validity established for one way of inducing a state does not carry over uniformly to another.",
+  "ai_type_tags": [
+    "LLM",
+    "激活引导",
+    "数字孪生"
+  ],
+  "arxiv_id": "2611.22738",
+  "authors": [
+    "Junyi Fan"
+  ],
+  "authors_full": [
+    {
+      "name": "Junyi Fan"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "采用人类情感启动范式，对比人格化LLM的判断效应",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "比较Llama-3.1-8B数字孪生中真实情感提示与从人类写作提取的激活引导，检验后者能否替代写作式情感启动。注入效应随强度变化，并在感恩场景某一强度匹配提示，但会过冲且在控制感方向不对称，表明替代效果依赖测量指标。",
+      "topic_tags": [
+        "情感计算",
+        "用户模拟",
+        "数字孪生",
+        "心理实验"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-17",
+  "doi": null,
+  "id": "p_W9gGsKUu_Xzs2ewG",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.22738v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39369,
+      "revision": "02f789324e341a5cadf544ec7f0624ad287c0e74"
+    }
+  ],
+  "title": "Can Activation Steering Substitute for Prompt-Based Affective Priming in LLM Digital Twins?",
+  "title_zh": "激活引导能否替代 LLM 数字孪生中的提示词情感预激活？",
+  "unified_ingested_at": "2026-11-19T09:59:50.584575Z",
+  "url": "https://arxiv.org/abs/2611.22738v1",
+  "volume": null,
+  "year": 2026
+}

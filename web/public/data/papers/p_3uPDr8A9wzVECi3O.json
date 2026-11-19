@@ -1,0 +1,61 @@
+{
+  "abstract": "Predictive process monitoring (PPM) typically forecasts the future of individual process instances, hence operating on trace level. Process managers, however, typically operate on process level, e.g., when assigning staff or calculating KPIs. The question is how well such process-level managerial decisions are supported by existing approaches, given that PPM research has so far not focused on process-level predictions. We answer this question through a comprehensive benchmarking study of two process-level prediction tasks: concurrent trace prediction and average throughput time prediction. Across synthetic and real-life event logs, we compare statistical and machine-learning-based methods, foundation models, business process simulation, and, importantly, established trace-level PPM approaches, aggregating their predictions to the process-level. We assess which modeling paradigms are most suitable for predicting process-level behavior and whether existing trace-level PPM can be effectively repurposed for this task. Our results show substantial variation in performance across approaches. Notably, aggregated trace-level predictions cause errors to compound on process-level, reducing accuracy and highlighting process-level prediction as a distinct predictive task that warrants dedicated research.",
+  "ai_type_tags": [
+    "机器学习",
+    "基础模型",
+    "流程挖掘"
+  ],
+  "arxiv_id": "2611.24425",
+  "authors": [
+    "Michael Grohs",
+    "Lukas Kirchdorfer",
+    "Jana-Rebecca Rehse"
+  ],
+  "authors_full": [
+    {
+      "name": "Michael Grohs"
+    },
+    {
+      "name": "Lukas Kirchdorfer"
+    },
+    {
+      "name": "Jana-Rebecca Rehse"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "比较机器学习与基础模型支持流程管理决策",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对现有预测性流程监控能否支持流程级管理决策，比较并发轨迹与平均周期时长预测；综合统计、机器学习、基础模型、流程模拟及轨迹级方法，发现直接聚合轨迹级预测会累积误差，流程级预测需独立建模。",
+      "topic_tags": [
+        "业务流程管理",
+        "预测分析",
+        "管理决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-18",
+  "doi": null,
+  "id": "p_3uPDr8A9wzVECi3O",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2611.24425v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85040,
+      "revision": "f4d1ea9b56475591b78b606981e530f0edc54997"
+    }
+  ],
+  "title": "Predicting Process-Level Behavior: A Benchmarking Study",
+  "title_zh": "预测过程级行为：一项基准研究",
+  "unified_ingested_at": "2026-11-19T09:59:50.584575Z",
+  "url": "https://arxiv.org/abs/2611.24425v1",
+  "volume": null,
+  "year": 2026
+}

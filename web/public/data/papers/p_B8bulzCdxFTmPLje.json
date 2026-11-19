@@ -1,0 +1,83 @@
+{
+  "abstract": "Realistic user simulation enables the study of human interactions when direct experimentation is costly or potentially harmful. However, existing simulators largely overlook the psychological mechanisms that drive user behavior. We introduce SimAI, a framework for mechanistic user simulation that models how psychological factors interact to shape user responses. To overcome the challenge of supervising open-ended behavior, we propose a graph reconstruction objective that provides graph-level rewards based on how well simulated conversations reflect the underlying psychological relationships. To support this approach, we construct PSYCHE, a dataset of 18,576 profile-network pairs derived from 516 psychotherapy cases. Automatic evaluations show that SimAI achieves greater simulation and behavioral diversity than existing patient simulators while maintaining strong profile alignment. In an interactive study with 30 mental-health professionals and trainees, SimAI receives the highest average ratings for conversational authenticity, realistic help-seeking behavior, and clinical training utility. Beyond simulation quality, SimAI enables realistic clinical training and uncovers safety failures in prolonged AI interactions with vulnerable users. Code is available at https://github.com/behavioral-data/ANGEL-UserSim.",
+  "ai_type_tags": [
+    "对话式 AI",
+    "用户模拟",
+    "图级奖励",
+    "心理网络建模"
+  ],
+  "arxiv_id": "2611.21808",
+  "authors": [
+    "Cheng Li",
+    "Adhyyan Narang",
+    "Jiayi Yuan",
+    "John F. Buss",
+    "Jina Suh"
+  ],
+  "authors_full": [
+    {
+      "name": "Cheng Li"
+    },
+    {
+      "name": "Adhyyan Narang"
+    },
+    {
+      "name": "Jiayi Yuan"
+    },
+    {
+      "name": "John F. Buss"
+    },
+    {
+      "name": "Jina Suh"
+    },
+    {
+      "name": "Devon Sandel-Fernandez"
+    },
+    {
+      "name": "Yulia Tsvetkov"
+    },
+    {
+      "name": "Adam M. Kuczynski"
+    },
+    {
+      "name": "Tim Althoff"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以用户心理与行为为模拟对象，但无真人研究",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "提出SimAI，以心理因素网络建模用户响应，并用图重建目标奖励模拟对话与心理关系的一致性。基于516个心理治疗案例构建1.8万余组数据；自动指标、30名专业人员互动评价及安全测试显示，其真实性、求助行为多样性和训练效用优于既有患者模拟器，还可暴露脆弱用户长时交互风险。",
+      "topic_tags": [
+        "用户模拟",
+        "心理健康",
+        "人机交互(HCI)",
+        "心理网络"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-16",
+  "doi": null,
+  "id": "p_B8bulzCdxFTmPLje",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.21808v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39363,
+      "revision": "02f789324e341a5cadf544ec7f0624ad287c0e74"
+    }
+  ],
+  "title": "SimAI: Mechanistic User Simulation through Psychological Network Models",
+  "title_zh": "SimAI：基于心理网络模型的机制化用户模拟",
+  "unified_ingested_at": "2026-11-19T09:59:50.584575Z",
+  "url": "https://arxiv.org/abs/2611.21808v1",
+  "volume": null,
+  "year": 2026
+}
