@@ -1,0 +1,57 @@
+{
+  "abstract": "Surprisal from a language model's final layer predicts how long people read a word, yet the model computes its prediction across many layers. We read each word's prediction at every layer with the tuned lens and summarize this layerwise surprisal trajectory by its resolution depth, the depth around which its change is centered. On eight English eye-tracking and self-paced reading corpora (81,957 words) and ten GPT-2, OPT and Pythia models, words that a model resolves later, and the words after them, are read more slowly than equally surprising words. Resolution depth improves held-out prediction beyond final-layer surprisal, entropy and the best single layer by 0.26 millinats per word (pooled p = 0.001), about a third of entropy's gain, and each model family gains, GPT-2 and Pythia through one corpus each. The net gain varies between corpora (random-effects mean 0.07, p = 0.37); against layer-shuffled depth, which adds as many coefficients, it is positive in seven of eight corpora (random-effects mean 0.23, p = 0.016), and untrained networks show no gain under the logit lens. Pooled over corpora, the effect holds with corrected word probabilities and beyond first-to-last-layer divergences, and a whole-trajectory functional regression adds no significant information beyond resolution depth.",
+  "ai_type_tags": [
+    "语言模型",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2611.25970",
+  "authors": [
+    "Donato Riccio",
+    "Fabrizio Maturo"
+  ],
+  "authors_full": [
+    {
+      "name": "Donato Riccio"
+    },
+    {
+      "name": "Fabrizio Maturo"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "结合眼动阅读数据分析模型与人类行为",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "语言模型的最终层困惑度可预测阅读时长，但预测实际在多层逐步形成。研究用调谐透镜提取各层的“解决深度”，在8个英语眼动与自定速阅读语料、10个模型中验证：较晚解析的词及其后继词阅读更慢，该指标优于最终层困惑度、熵和最佳单层，并具有跨模型家族泛化能力。",
+      "topic_tags": [
+        "眼动追踪",
+        "阅读理解",
+        "认知建模",
+        "自然语言处理"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-19",
+  "doi": null,
+  "id": "p_eLmD2lapVP9JebS4",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.25970v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39516,
+      "revision": "5d9c142cadebe377205be460300c6ffbfaf2b87b"
+    }
+  ],
+  "title": "The Depth of a Prediction: Where Language Models Resolve a Word Predicts Human Reading Time",
+  "title_zh": null,
+  "unified_ingested_at": "2026-11-20T09:47:29.608813Z",
+  "url": "https://arxiv.org/abs/2611.25970v1",
+  "volume": null,
+  "year": 2026
+}
