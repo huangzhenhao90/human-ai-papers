@@ -1,0 +1,97 @@
+{
+  "abstract": "Real-world harness engineering is driven by explicit and implicit user requirements, which guide development and validation. However, existing harness evolution methods often overlook implicit requirements and interaction needs, while using a single evolution agent to modify the harness and benchmark scores to select changes. This process often produces narrow patches and leads to benchmark-specific local optima. We introduce Agentic Harness Engineering Beta (AHE-Beta), a requirement-centered loop that brings real-world engineering practices into harness evolution. The loop consists of three steps: (1) User-driven evaluation lets simulated users raise their requirements as issues while they work with the harness over multiple turns. (2) Team-based modification implements those requirements as generalizable changes rather than task-specific patches. (3) Requirement-driven selection merges a change only when it resolves a verified requirement and passes review. Empirically, on held-out tasks, AHE-Beta raises pass@1 from 21.9% to 33.3% while using 40.8% fewer tokens than Base Harness, and achieves higher pass@1 than Claude Code, Meta-Harness, and AHE. In a blind human A/B test, real users prefer AHE-Beta in 31 of 48 valid pairs and rate it higher on all five dimensions, matching the directional preference of the user simulator. The human A/B results show that AHE-Beta achieves its goal of aligning harness evolution with real-world user requirements. Without further evolution, the gains transfer to GLM-5.3 and DeepSeek-V4.1-Flash with pass@1 improvements of 15.8% and 5.3% over Base Harness. Together, these results show that requirement-centered harness evolution is a more general method for improving agent capabilities.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "人机协作",
+    "多轮交互"
+  ],
+  "arxiv_id": "2611.24924",
+  "authors": [
+    "Jiahang Lin",
+    "Jiahao Chen",
+    "Yiding Wang",
+    "Shichun Liu",
+    "Chengjun Pan"
+  ],
+  "authors_full": [
+    {
+      "name": "Jiahang Lin"
+    },
+    {
+      "name": "Jiahao Chen"
+    },
+    {
+      "name": "Yiding Wang"
+    },
+    {
+      "name": "Shichun Liu"
+    },
+    {
+      "name": "Chengjun Pan"
+    },
+    {
+      "name": "Shihan Dou"
+    },
+    {
+      "name": "Honglin Guo"
+    },
+    {
+      "name": "Yuyang Hu"
+    },
+    {
+      "name": "Changhao Jiang"
+    },
+    {
+      "name": "Zhenhua Han"
+    },
+    {
+      "name": "Hang Yan"
+    },
+    {
+      "name": "Qi Zhang"
+    },
+    {
+      "name": "Tao Gui"
+    },
+    {
+      "name": "Xuanjing Huang"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "模拟用户多轮需求驱动智能体框架评估",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对智能体运行框架的演化常忽视隐含需求、易因按基准分数筛选而陷入局部最优，AHE-Beta建立需求中心闭环：模拟用户多轮提出问题，团队实施通用修改，再按经验证的需求筛选。留出任务pass@1从21.9%升至33.3%，token用量减少40.8%；盲测48对中31对偏好新方案。",
+      "topic_tags": [
+        "软件工程",
+        "用户需求",
+        "用户研究方法",
+        "人机交互(HCI)"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-18",
+  "doi": null,
+  "id": "p_mvSQOZLqZqQo9_Gg",
+  "issue": null,
+  "journal": "arXiv:cs.SE",
+  "pdf_url": "https://arxiv.org/pdf/2611.24924v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39424,
+      "revision": "60d9cc309c8ae6bea276d8583a01882a5713eab6"
+    }
+  ],
+  "title": "Agentic Harness Engineering Beta: Requirement-Centered Evolution of Agent Harnesses",
+  "title_zh": "智能体框架工程 Beta：以需求为中心的智能体框架演进",
+  "unified_ingested_at": "2026-11-21T09:20:17.367857Z",
+  "url": "https://arxiv.org/abs/2611.24924v1",
+  "volume": null,
+  "year": 2026
+}

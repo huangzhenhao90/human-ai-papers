@@ -1,0 +1,74 @@
+{
+  "abstract": "Dynamical Perceptual-Motor Primitives (DPMPs) offer a tractable framework for generating human-like movement dynamics in artificial agents (AAs) and have been used to support coordination in human-AI teaming tasks. Traditionally, DPMP controllers rely on heuristic (rule-based) decision policies derived from human behavior to guide goal selection and action sequencing. Although effective in structured tasks, such heuristics can be difficult to generalize to more complex settings, motivating interest in deep reinforcement learning (DRL) approaches for learning decision policies for human-AI interaction. A key challenge, however, is ensuring that DRL policies remain aligned with human strategies, particularly when agents are trained through self-play. To examine this issue, we compared three target-selection policies governing DPMP-based AAs in a first-person herding task: (1) a human-derived heuristic policy, (2) a self-play DRL policy (SP-DRL), and (3) a human-sensitive DRL policy (HS-DRL) trained alongside a heuristic agent. Results showed that heuristic agents most closely matched typical human-human coordination patterns, followed by HS-DRL agents, whereas SP-DRL agents deviated most. These findings highlight the importance of human-informed training when developing DRL-based teammates and suggest that simple heuristic policies may remain an effective approach for designing human-aligned AAs capable of human-AI collaboration.",
+  "ai_type_tags": [
+    "智能体/Agent",
+    "深度强化学习",
+    "自博弈",
+    "人类敏感训练"
+  ],
+  "arxiv_id": "2611.23747",
+  "authors": [
+    "Ayman bin Kamruddin",
+    "Christopher Lam",
+    "Gaurav Patil",
+    "Mirco Musolesi",
+    "Mario di Bernardo"
+  ],
+  "authors_full": [
+    {
+      "name": "Ayman bin Kamruddin"
+    },
+    {
+      "name": "Christopher Lam"
+    },
+    {
+      "name": "Gaurav Patil"
+    },
+    {
+      "name": "Mirco Musolesi"
+    },
+    {
+      "name": "Mario di Bernardo"
+    },
+    {
+      "name": "Michael J. Richardson"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "人类参与的人机协作策略对照实验",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "在基于动态感知运动基元（DPMP）的第一人称牧羊任务中，比较启发式、自博弈深度强化学习（SP-DRL）及与启发式智能体共同训练的人类敏感深度强化学习（HS-DRL）。启发式最接近人类协作模式，HS-DRL次之，SP-DRL偏差最大，说明人类参照训练与简单启发式更适合设计人机协作智能体。",
+      "topic_tags": [
+        "人机协作",
+        "人机交互(HCI)",
+        "强化学习",
+        "人类行为建模"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-18",
+  "doi": null,
+  "id": "p_on7lKrpSolnr85E0",
+  "issue": null,
+  "journal": "arXiv:cs.MA",
+  "pdf_url": "https://arxiv.org/pdf/2611.23747v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39422,
+      "revision": "60d9cc309c8ae6bea276d8583a01882a5713eab6"
+    }
+  ],
+  "title": "A Comparison of Heuristic, Human-Sensitive, and Self-Play DRL Policies in Human-Agent Teaming",
+  "title_zh": "启发式、人类敏感型与自博弈DRL策略在人机协作中的比较",
+  "unified_ingested_at": "2026-11-21T09:20:17.367857Z",
+  "url": "https://arxiv.org/abs/2611.23747v1",
+  "volume": null,
+  "year": 2026
+}

@@ -71174,6 +71174,281 @@
     "year": 2026
   },
   {
+    "abstract": "The deployment of large language models (LLMs) in hiring pipelines is growing, yet existing evaluations generally overlook their compliance with legal rules. To fill this gap, we introduce HireWatch, an evaluation that assesses whether LLMs comply with U.S. laws that govern the questions that job candidates may be asked. We construct a 200-item bank of lawful and unlawful interview questions, whose legal classification is based on U.S. federal statutes, regulations, and agency guidance. We instruct LLMs to select questions from this bank in preparing for job interviews, across a set of various occupations and contexts, and report the fraction of unlawful questions that LLMs select. Evaluation of 18 closed and open-weight LLMs across ~100,000 trials under different types of contextual pressure reveals that LLMs' legal compliance is brittle. While LLMs generally avoid selecting unlawful questions in low-pressure contexts, legal violations increase sharply under higher pressure. Explicit prompts to comply with law can improve compliance rates, but do not altogether eliminate legal violations. We publicly release our code and data at https://github.com/hnghiem-nlp/hirewatch_repo.",
+    "ai_reason": "评估LLM招聘中的就业法合规",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI招聘",
+      "AI治理"
+    ],
+    "authors": [
+      "Huy Nghiem",
+      "Maria Kostylew",
+      "Noam Kolt"
+    ],
+    "authors_full": [
+      {
+        "name": "Huy Nghiem"
+      },
+      {
+        "name": "Maria Kostylew"
+      },
+      {
+        "name": "Noam Kolt"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-16",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 85135,
+    "ingested_at": "2026-11-20T09:49:38.584033",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.24970v1",
+    "scored_at": "2026-11-20T09:50:13.022167",
+    "title": "HireWatch: Evaluating LLM Compliance with U.S. Employment Law Under Contextual Pressure",
+    "title_zh": "HireWatch：情境压力下LLM对美国就业法律的合规性评估",
+    "tldr": "构建含200道合法与违法面试题的HireWatch评测，在约10万次试验中检验18个闭源及开放权重LLM。结果显示，低压力下违法问题较少，但情境压力升高时违规骤增；守法提示可改善合规，却无法彻底消除违法。",
+    "topic_tags": [
+      "AI招聘",
+      "招聘",
+      "伦理",
+      "法律合规"
+    ],
+    "url": "https://arxiv.org/abs/2611.24970v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Organizations monitor their workers' activity for insider threats, in which workers misuse their legitimate access, by copying confidential files before leaving. Detectors score how unusual each day of activity is, flagging the most unusual for an analyst to review. Prominent current approaches use opaque neural networks, so explanations of a flag point to internal features: patterns of neuron activity most active on days of misuse. We audit such explanations for language-model detectors trained on CERT's simulated workplace logs. To test an explanation, we see what happens to the detector's score when we remove its features inside the model. We compare this to a control: a change that is as similar as possible to the removal, but without actually removing the features. Because defining \"similar\" requires choosing a metric, our central contribution is the tipping radius: a first-order prediction of how far that metric must move before the difference between removal and control disappears, a measure of how fragile the result is to that choice. In 33 of 34 runs of seven language models, the tipping radius is at most 18% of the distance between two standard choices of metric. Moving that far removes at least 58% of the difference or reverses it, while random moves of the same size leave it largely intact. The result replicates in thirteen of fourteen pre-declared primary runs on openly released models, though on our trained detectors the difference is often too small to measure. We also find that a flag's score partly reflects who the worker is, not what they did, and that the features named depend on whom they are compared against. Audits should therefore fix the control's metric in advance, report its tipping radius, and disclose that comparison.",
+    "ai_reason": "语言模型内鬼检测解释的可靠性",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "可解释 AI",
+      "算法决策"
+    ],
+    "authors": [
+      "Suramya R. Angdembay"
+    ],
+    "authors_full": [
+      {
+        "name": "Suramya R. Angdembay"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-19",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 85136,
+    "ingested_at": "2026-11-20T09:49:38.584858",
+    "issue": null,
+    "journal": "arXiv:cs.LG",
+    "pdf_url": "https://arxiv.org/pdf/2611.25796v1",
+    "scored_at": "2026-11-20T09:50:00.764353",
+    "title": "How Reliable Are Explanations of Language Models That Detect Insider Threats?",
+    "title_zh": "检测内部威胁的语言模型解释有多可靠？",
+    "tldr": "以CERT模拟职场日志审计7个语言模型内部威胁检测器的特征归因，通过特征移除、对照扰动及“临界半径”检验解释对指标选择的敏感性。33/34次运行中，指标小幅偏移即可消除至少58%的差异或反转结论；开放模型预注册复现为13/14，表明现有解释高度脆弱、可靠性有限。",
+    "topic_tags": [
+      "内部威胁检测",
+      "员工监控",
+      "组织安全",
+      "算法决策"
+    ],
+    "url": "https://arxiv.org/abs/2611.25796v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Generative AI is becoming embedded in knowledge work as an intelligent collaborator to assist in completing tasks. However, this readily available assistance risks displacing key interactions through which colleague relationships are built and sustained at work. This paper leverages the concept of help-seeking behaviour to investigate whether and how AI usage shapes colleague relationships. We conducted an online experimental vignette study where 248 knowledge workers evaluated scenarios that systematically varied whether and how AI was used across different work tasks. Using linear mixed-effects models, we found that AI-enabled work reduced help-seeking intentions compared to non-AI work across tasks, and especially for brainstorming. Visible AI usage was associated with greater help-seeking intentions towards colleagues, and individual contributors' colleague relationships were more vulnerable than managers. Our findings identify opportunities for workplace AI tools, practices, and policies to preserve colleague relationships in increasingly AI-integrated workplaces.",
+    "ai_reason": "LLM工作使用影响同事求助行为",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机协作"
+    ],
+    "authors": [
+      "Kevin Chow",
+      "Sophia Deng",
+      "Bowen He",
+      "Hanyi Min",
+      "Qiaosi Wang"
+    ],
+    "authors_full": [
+      {
+        "name": "Kevin Chow"
+      },
+      {
+        "name": "Sophia Deng"
+      },
+      {
+        "name": "Bowen He"
+      },
+      {
+        "name": "Hanyi Min"
+      },
+      {
+        "name": "Qiaosi Wang"
+      },
+      {
+        "name": "Koustuv Saha"
+      },
+      {
+        "name": "Vedant Das Swain"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-18",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 85138,
+    "ingested_at": "2026-11-20T09:49:38.586487",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.25269v1",
+    "scored_at": "2026-11-20T09:50:13.021387",
+    "title": "AI-Induced Social Erosion: Using LLMs for Work Tasks Reduces Help-Seeking Intentions Towards Colleagues",
+    "title_zh": "AI引发的社会侵蚀：使用LLMs处理工作任务会降低向同事求助的意愿",
+    "tldr": "基于248名知识工作者的在线情境实验和线性混合效应模型，发现生成式AI参与工作会降低向同事求助的意愿；公开使用AI反而提高求助意愿，且个体贡献者比管理者更易受损，需通过工作制度保护同事互动。",
+    "topic_tags": [
+      "人机协作",
+      "同事关系",
+      "知识工作",
+      "工作未来"
+    ],
+    "url": "https://arxiv.org/abs/2611.25269v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Crisis and disaster governance increasingly relies on technologies that sense, classify and act faster than humans can. Drone swarms coordinated with human operators, known as human-swarm teaming, provide a productive case to review the field of crisis governance. They promise better situational awareness in disaster response, but they also raise questions about human control, responsibility, surveillance, triage, dual use and public legitimacy. This report maps the ethical and societal territory that HST opens up. It unpacks this territory with a 3i-framework, the Interface, where operators and swarms work together, the Infrastructure, where organisations distribute tasks, decisions and blame, and the Imaginary, where law, policy and shared societal assumptions define what a crisis is and which interventions it justifies. The central claim is that these concerns cannot be addressed one level at a time. Many of the most pressing problems, such as responsibility gaps and the erosion of meaningful human control, arise at the joints between levels, through four translations, habits harden, routines become stories, principles become procedures, and procedures become prompts. Drawing on a critical review of literature across philosophy of technology, political theory, moral psychology, philosophy of mind, AI ethics, and critical disaster and security studies, the report develops this framework, illustrates it with two worked examples, and derives design and governance implications and a set of questions for developers, emergency organisations and policymakers.",
+    "ai_reason": "以人机群体协作讨论危机治理",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器人",
+      "群体智能",
+      "人机协作",
+      "AI治理"
+    ],
+    "authors": [
+      "Anthony Longo"
+    ],
+    "authors_full": [
+      {
+        "name": "Anthony Longo"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-18",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 85140,
+    "ingested_at": "2026-11-20T09:49:38.588059",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.25202v1",
+    "scored_at": "2026-11-20T09:50:13.020554",
+    "title": "Crisis Governance at the Joints. Mapping the Ethical and Societal Territory of Crisis Management Technologies: The Case of Human-Swarm Teaming",
+    "title_zh": "关节处的危机治理：危机管理技术的伦理与社会版图：人机蜂群协作案例",
+    "tldr": "以无人机群体与人类操作员协作为案例，通过技术哲学、伦理与灾害治理文献的批判性综述，构建“界面—基础设施—想象”三层框架，分析责任缺口、人类控制、监控及合法性问题，强调治理须处理各层衔接及其转化过程。",
+    "topic_tags": [
+      "伦理",
+      "危机治理",
+      "人机协作",
+      "AI治理"
+    ],
+    "url": "https://arxiv.org/abs/2611.25202v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Assessments of AI's impact on labour often rely on conventional occupational categories or broad market indicators. This dominant trend, however, obscures how tasks within the same occupation vary in practice across work arrangements. This limitation is particularly important in online freelancing, where workers are typically remote and devote substantial time performing unpaid tasks. This article introduces a task-based framework that distinguishes AI-driven disruption, defined as the extent of change in how work is performed, from livelihood vulnerability associated with that change. The framework is subsequently applied to assess the potential for automation, substitution, and enhancement across four categories of platform work: writing, virtual assistance, transcription, and web and software development. The model estimates high disruption across all four categories, while livelihood vulnerability scores are lower and vary by occupation. Potential efficiency gains on unpaid tasks partly offset potential wage impact associated with paid work in the model. The article compares these estimates with evidence from a survey of 52 online freelancers and 20 follow-up interviews in Nairobi, Kenya. Workers report changes in how they perform tasks and intensifying competition, while their accounts show how adapting their skills and using AI strategically shape their concerns about job loss. The findings show how task-based modelling can provide a baseline for assessing AI-driven changes in platform work and how workers' experiences differ from projections and help explain how these changes may threaten their livelihoods.",
+    "ai_reason": "AI驱动平台工作转型与劳动脆弱性",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器学习",
+      "自动化",
+      "人机协作"
+    ],
+    "authors": [
+      "Farhan Latif"
+    ],
+    "authors_full": [
+      {
+        "name": "Farhan Latif"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-19",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 85141,
+    "ingested_at": "2026-11-20T09:49:38.588838",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.25585v1",
+    "scored_at": "2026-11-20T09:50:00.763971",
+    "title": "AI-Driven Transformation of Digital Platform Work: A Task-Based Model for Measuring Labour Disruption and Vulnerability, with Early Evidence from Online Freelancing in Kenya",
+    "title_zh": "AI驱动数字平台工作转型：任务模型测量劳动扰动与脆弱性——肯尼亚自由职业初步证据",
+    "tldr": "针对传统职业分类掩盖平台职业内部任务差异的问题，构建区分“工作方式改变”与“生计脆弱性”的任务模型，并结合52名肯尼亚自由职业者问卷和20次访谈评估写作、虚拟助理、转录及网络开发。四类工作均面临高AI扰动，但生计风险较低且因职业而异；免费任务提效部分抵消工资冲击，竞争加剧与技能调整并存。",
+    "topic_tags": [
+      "零工经济",
+      "工作设计",
+      "工作未来",
+      "算法管理"
+    ],
+    "url": "https://arxiv.org/abs/2611.25585v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "\"AI safety\" has grown from a niche contingent of actors into the dominant framing for artificial intelligence (AI) assessment and evaluation, overshadowing AI ethics. Through political and monetary influence, AI safety has shifted political focus within the US and abroad. The focus has shifted away from harms that currently affect the public toward threats framed as \"existential risks\". We argue that safety cannot be achieved while anti-Blackness is left unaddressed. We ground this argument in Sylvia Wynter's critique of the \"overrepresentation\" of Man: the modern, Western conception of the Human that is predicated on the subjugation and othering of Blackness. To analyze the state of addressing anti-Blackness in the age of AI safety, we conduct a two-stage, language model-assisted content analysis of 69,290 accepted main-track papers from ten leading machine learning (ML), natural language processing (NLP), and AI ethics conferences (2020--2025). Safety research grew from 0.5% of accepted papers in 2020 to 6.4% in 2025, overtaking ethics. Yet 94% of safety papers rely on automated metrics, and only 11% of safety papers mention harms that affect society directly, compared with 78% of ethics papers. Of the 2,182 safety papers, 8 mention race; none make it central, and none name Black or African-diaspora communities. Across all 254 identified as race-focused papers, only 3 describe racial harm in safety terms, and 55% appear at three ethics venues that publish 2.5% of the corpus. We offer this interdisciplinary examination of AI safety to argue that a just technological future depends on confronting anti-Blackness directly.",
+    "ai_reason": "AI安全与反黑人性为核心议题",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "自然语言处理",
+      "AI 治理"
+    ],
+    "authors": [
+      "Mírian Silva",
+      "Serena Oduro"
+    ],
+    "authors_full": [
+      {
+        "name": "Mírian Silva"
+      },
+      {
+        "name": "Serena Oduro"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-18",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 85142,
+    "ingested_at": "2026-11-20T09:49:38.589599",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.25302v1",
+    "scored_at": "2026-11-20T09:50:13.020060",
+    "title": "Whose Safety? Addressing Anti-Blackness in the Age of AI Safety",
+    "title_zh": "谁的安全：AI安全时代下反黑人性的应对",
+    "tldr": "基于反黑人化理论，对2020—2025年10个机器学习、自然语言处理与AI伦理会议的69,290篇论文开展语言模型辅助分析。安全论文占比由0.5%升至6.4%并超过伦理，但94%依赖自动指标，仅11%讨论直接社会危害；2,182篇安全论文中仅8篇提及种族且无一以黑人问题为核心，显示AI安全议程边缘化现实与种族伤害。",
+    "topic_tags": [
+      "伦理",
+      "公平性",
+      "偏见",
+      "种族正义"
+    ],
+    "url": "https://arxiv.org/abs/2611.25302v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "用AI分析AMJ期刊运营，AI是核心议题",
     "ai_score": 5.0,
@@ -74072,6 +74347,57 @@
     "year": 2021
   },
   {
+    "abstract": null,
+    "ai_reason": "核心讨论AI时代组织目标层级",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI",
+      "人机协作"
+    ],
+    "authors": [
+      "David Diwei Lv",
+      "SAKU Mantere"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "The Hong Kong Polytechnic University"
+        ],
+        "name": "David Diwei Lv",
+        "orcid": "https://orcid.org/0000-0002-3226-0611"
+      },
+      {
+        "affiliation": [
+          "McGill University"
+        ],
+        "name": "SAKU Mantere",
+        "orcid": null
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-20",
+    "doi": "10.5465/amr.2024.0336",
+    "domain_score": 5.0,
+    "id": 85153,
+    "ingested_at": "2026-11-21T09:09:22.882759",
+    "issue": null,
+    "journal": "AMR",
+    "pdf_url": null,
+    "scored_at": "2026-11-21T09:09:55.970439",
+    "title": "Organizational Goal Hierarchies in the Age of Artificial Intelligence: A Dynamic Behavioral Perspective",
+    "title_zh": "人工智能时代的组织目标层级：动态行为视角",
+    "tldr": "聚焦AI时代组织目标层级如何适应技术与环境变化，从动态行为视角分析个人、团队与组织目标的互动，指出目标权重及调整机制需随情境持续演化。",
+    "topic_tags": [
+      "组织变革",
+      "决策",
+      "团队",
+      "战略"
+    ],
+    "url": "https://doi.org/10.5465/amr.2024.0336",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Managing with artificial intelligence (AI) refers to humans’ interaction with algorithms performing managerial tasks in organizations. Two literatures exploring this interaction—human-AI collaboration (HAIC) and algorithmic management (AM)—have focused on distinct managerial tasks: while HAIC examines executive decision-making, AM focuses on managerial control. This article presents a review of both literatures to identify opportunities for integration and advancement. We observe that HAIC’s and AM’s micro-level emphases on different managerial tasks have resulted in diverging conceptualizations of context, agency, interaction, and outcome. Adopting a more encompassing systems lens, we unveil previously concealed linkages between HAIC and AM, suggesting that the two literatures have analyzed two sides of the same phenomenon: while HAIC explores how humans use AI to manage, AM describes how humans are managed by AI. We develop an integrative framework that elevates the viewpoint from tasks to the organizational context, from individual to collective agency, from local to systemic interaction, and from micro-level to multilevel outcomes. By employing this framework, we lay the foundations for an organizational perspective on managing with AI.",
     "ai_reason": "AI管理框架，AI与OB核心",
     "ai_score": 5.0,
@@ -75350,7 +75676,7 @@
     "pdf_url": null,
     "scored_at": "2026-11-19T09:51:09.197537",
     "title": "GUIDEPOST: Creativity, Artificial Intelligence, and a World of Surprises Guidepost Letter for Academy of Management Discoveries",
-    "title_zh": null,
+    "title_zh": "GUIDEPOST：创造力、人工智能与惊喜世界：Academy of Management Discoveries 指南信",
     "tldr": "以指南信形式讨论人工智能与创造力的关系，聚焦AI带来的意外性及人机协同创新，强调在发挥技术潜力的同时重新审视创造力培养与组织实践。",
     "topic_tags": [
       "创意",
@@ -77070,6 +77396,66 @@
   },
   {
     "abstract": null,
+    "ai_reason": "研究AI对话助手交互风格及老年用户",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式AI",
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Veena Chattaraman",
+      "Wi-Suk Kwon",
+      "Juan E. Gilbert",
+      "Kassandra Ross"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Veena Chattaraman",
+        "orcid": "https://orcid.org/0000-0001-5370-7745"
+      },
+      {
+        "affiliation": [],
+        "name": "Wi-Suk Kwon",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Juan E. Gilbert",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kassandra Ross",
+        "orcid": null
+      }
+    ],
+    "cited_by": 440,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.048",
+    "domain_score": 4.0,
+    "id": 51721,
+    "ingested_at": "2026-08-12T04:23:26.994845",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-21T09:10:11.263891",
+    "title": "Should AI-Based, conversational digital assistants employ social- or task-oriented interaction style? A task-competency and reciprocity perspective for older adults",
+    "title_zh": "AI对话式数字助手：应采用社交导向还是任务导向交互？老年人任务能力与互惠视角",
+    "tldr": "比较AI对话助手采用社会导向或任务导向交互对老年用户的适用性，从任务胜任力与互惠感出发推断：社会导向有助关系建立，任务导向利于任务完成，最佳风格取决于情境与用户能力。",
+    "topic_tags": [
+      "人机交互",
+      "消费者行为",
+      "老年用户",
+      "服务设计"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.048",
+    "volume": "90",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究AI生成人脸检测，HCI/心理学领域",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -78663,6 +79049,72 @@
     "url": "https://doi.org/10.1016/j.chb.2020.106548",
     "volume": "114",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "以AI教师为对象检验社会认同",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI教育",
+      "语音交互",
+      "人机交互"
+    ],
+    "authors": [
+      "Chad Edwards",
+      "Autumn Edwards",
+      "Brett Stoll",
+      "Xialing Lin",
+      "Noelle Massey"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Chad Edwards",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Autumn Edwards",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Brett Stoll",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Xialing Lin",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Noelle Massey",
+        "orcid": null
+      }
+    ],
+    "cited_by": 255,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.027",
+    "domain_score": 4.0,
+    "id": 51894,
+    "ingested_at": "2026-08-12T04:23:31.052606",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-21T09:10:11.263684",
+    "title": "Evaluations of an artificial intelligence instructor's voice: Social Identity Theory in human-robot interactions",
+    "title_zh": "人工智能教师声音评估：人机交互中的社会认同理论",
+    "tldr": "依据社会认同理论分析用户如何评价人工智能教师的语音特征，考察教师身份、性别化声音等社会线索对感知、态度与互动反应的影响。",
+    "topic_tags": [
+      "人机交互",
+      "教育",
+      "社会认同",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.027",
+    "volume": "90",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -81729,6 +82181,46 @@
     "url": "https://doi.org/10.1016/j.chb.2020.106620",
     "volume": "116",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心讨论人机沟通及其理论拓展",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "人工智能沟通"
+    ],
+    "authors": [
+      "Patric R. Spence"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Patric R. Spence",
+        "orcid": "https://orcid.org/0000-0002-1793-6871"
+      }
+    ],
+    "cited_by": 69,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.09.014",
+    "domain_score": 4.0,
+    "id": 52314,
+    "ingested_at": "2026-08-12T04:23:40.943535",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-21T09:10:11.262464",
+    "title": "Searching for questions, original thoughts, or advancing theory: Human-machine communication",
+    "title_zh": "探寻问题、原创思想或推进理论：人机通信",
+    "tldr": "梳理人机传播研究能否提出重要问题、产生原创观点并推动理论发展，评估现有研究对沟通理论与人机关系的贡献及局限。",
+    "topic_tags": [
+      "人机沟通",
+      "理论发展",
+      "人机交互"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.09.014",
+    "volume": "90",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -85515,6 +86007,65 @@
     "url": "https://doi.org/10.1016/j.chb.2022.107383",
     "volume": "136",
     "year": 2022
+  },
+  {
+    "abstract": null,
+    "ai_reason": "以社交机器人互动为核心，属AI研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Autumn Edwards",
+      "Chad Edwards",
+      "David Westerman",
+      "Patric R. Spence"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Autumn Edwards",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Chad Edwards",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "David Westerman",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Patric R. Spence",
+        "orcid": null
+      }
+    ],
+    "cited_by": 173,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.042",
+    "domain_score": 4.0,
+    "id": 52920,
+    "ingested_at": "2026-08-12T04:23:55.430199",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-21T09:10:11.089151",
+    "title": "Initial expectations, interactions, and beyond with social robots",
+    "title_zh": "与社交机器人相处：初步期望、互动及延伸议题",
+    "tldr": "考察用户对社交机器人的初始期待如何影响实际互动、关系形成及后续态度，并关注预期与真实交互结果之间的一致性和偏差。",
+    "topic_tags": [
+      "人机交互",
+      "社会机器人",
+      "信任",
+      "用户态度"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.042",
+    "volume": "90",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -90226,6 +90777,54 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聚焦算法推荐及新闻消费规范",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "算法决策",
+      "AI治理"
+    ],
+    "authors": [
+      "Efrat Nechushtai",
+      "Seth C. Lewis"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Efrat Nechushtai",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Seth C. Lewis",
+        "orcid": null
+      }
+    ],
+    "cited_by": 169,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.07.043",
+    "domain_score": 3.0,
+    "id": 53956,
+    "ingested_at": "2026-08-12T05:42:26.793623",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-20T09:50:43.919297",
+    "title": "What kind of news gatekeepers do we want machines to be? Filter bubbles, fragmentation, and the normative dimensions of algorithmic recommendations",
+    "title_zh": "我们希望机器成为何种新闻守门人？过滤气泡、碎片化与算法推荐的规范维度",
+    "tldr": "仅据标题推断，文章以“新闻守门人”角色审视算法推荐，探讨过滤气泡与信息碎片化之外应遵循的规范。分析可能结合推荐机制与伦理判断，核心主张是机器守门人应兼顾多元曝光、透明度与公共利益，而非仅追求个性化或点击效率。",
+    "topic_tags": [
+      "推荐系统",
+      "新闻传播",
+      "算法治理",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.07.043",
+    "volume": "90",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "算法意识与人机沟通隐私，涉及算法",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -90375,6 +90974,47 @@
     "url": "https://doi.org/10.1016/j.chb.2021.106716",
     "volume": "119",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "虚拟助手的声音来源倾向是核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "虚拟助手",
+      "语音交互",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Andrea L. Guzman"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Andrea L. Guzman",
+        "orcid": "https://orcid.org/0000-0002-6874-9435"
+      }
+    ],
+    "cited_by": 156,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.009",
+    "domain_score": 4.0,
+    "id": 54009,
+    "ingested_at": "2026-08-12T05:42:28.369663",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-20T09:50:43.918897",
+    "title": "Voices in and of the machine: Source orientation toward mobile virtual assistants",
+    "title_zh": "机器内外的声音：移动虚拟助理的信源导向",
+    "tldr": "仅据标题推断，研究关注用户如何理解移动虚拟助手的声音来源，以及这种来源定向如何影响对助手可信度、角色与互动方式的判断。分析以“来源定向”为核心框架，结果指向不同归因将塑造用户对移动虚拟助手的技术认知与接受意愿。",
+    "topic_tags": [
+      "人机交互",
+      "技术接受",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.009",
+    "volume": "90",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -91984,6 +92624,53 @@
   },
   {
     "abstract": null,
+    "ai_reason": "机器人说服策略与人机互动为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "机器人",
+      "人机交互"
+    ],
+    "authors": [
+      "Seungcheol Austin Lee",
+      "Yuhua (Jake) Liang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Seungcheol Austin Lee",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Yuhua (Jake) Liang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 46,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.026",
+    "domain_score": 4.0,
+    "id": 54367,
+    "ingested_at": "2026-08-12T05:42:38.863576",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-20T09:50:43.918040",
+    "title": "Robotic foot-in-the-door: Using sequential-request persuasive strategies in human-robot interaction",
+    "title_zh": "机器人“登门槛”效应：人机交互中序列请求说服策略的应用",
+    "tldr": "将“脚进门”渐进式说服策略用于人机互动：机器人先提出较小请求，再逐步提出更大目标，并检验其对服从意愿与实际行为的影响。结果显示，先完成低门槛请求可提高用户接受后续较大请求的概率。",
+    "topic_tags": [
+      "说服策略",
+      "人机交互",
+      "行为决策",
+      "机器人"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.026",
+    "volume": "90",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "人-自主团队奖励对齐，AI相关",
     "ai_score": 4.0,
     "ai_type_tags": [
@@ -92687,6 +93374,59 @@
     "url": "https://doi.org/10.1016/j.chb.2023.107869",
     "volume": "148",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "人机沟通与性别分类效应为核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "偏见检测"
+    ],
+    "authors": [
+      "Yi Mou",
+      "Kun Xu",
+      "Kai Xia"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Yi Mou",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kun Xu",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Kai Xia",
+        "orcid": null
+      }
+    ],
+    "cited_by": 28,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.049",
+    "domain_score": 3.0,
+    "id": 54542,
+    "ingested_at": "2026-08-12T05:42:44.050569",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-20T09:50:58.400972",
+    "title": "Unpacking the black box: Examining the (de)Gender categorization effect in human-machine communication",
+    "title_zh": "解构黑箱：人机交流中（去）性别化分类效应考察",
+    "tldr": "考察人机沟通中的性别化与去性别化分类效应，比较机器被判定为男性、女性或无性别时用户的认知、态度与互动反应。结果表明，性别线索会系统性塑造人们对人机沟通的社会判断与行为回应。",
+    "topic_tags": [
+      "性别",
+      "人机交互",
+      "偏见",
+      "刻板印象"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.049",
+    "volume": "90",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -93625,6 +94365,111 @@
   },
   {
     "abstract": null,
+    "ai_reason": "聚焦人类与社会机器的道德能动性",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI 伦理"
+    ],
+    "authors": [
+      "Jaime Banks"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Jaime Banks",
+        "orcid": null
+      }
+    ],
+    "cited_by": 126,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.028",
+    "domain_score": 3.0,
+    "id": 54800,
+    "ingested_at": "2026-08-12T05:42:51.598443",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-20T09:50:58.399385",
+    "title": "A perceived moral agency scale: Development and validation of a metric for humans and social machines",
+    "title_zh": "感知道德能动性量表：人类与社会机器人的指标开发与验证",
+    "tldr": "针对人类与社会机器的道德能动性缺乏统一测量工具的问题，开发并验证感知道德能动性量表。结果表明，该量表能够一致测量受众对人类及社会机器道德选择与责任承担倾向的感知。",
+    "topic_tags": [
+      "道德能动性",
+      "人机交互",
+      "心理测量"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.028",
+    "volume": "90",
+    "year": 2019
+  },
+  {
+    "abstract": null,
+    "ai_reason": "虚拟智能体行为及谈判评价为核心",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "虚拟代理",
+      "人机交互",
+      "多模态"
+    ],
+    "authors": [
+      "Astrid M. Rosenthal-von der Pütten",
+      "Carolin Straßmann",
+      "Ramin Yaghoubzadeh",
+      "Stefan Kopp",
+      "Nicole C. Krämer"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Astrid M. Rosenthal-von der Pütten",
+        "orcid": "https://orcid.org/0000-0002-2497-143X"
+      },
+      {
+        "affiliation": [],
+        "name": "Carolin Straßmann",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Ramin Yaghoubzadeh",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Stefan Kopp",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Nicole C. Krämer",
+        "orcid": null
+      }
+    ],
+    "cited_by": 39,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.08.047",
+    "domain_score": 4.0,
+    "id": 54806,
+    "ingested_at": "2026-08-12T05:42:51.769752",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-20T09:50:58.399009",
+    "title": "Dominant and submissive nonverbal behavior of virtual agents and its effects on evaluation and negotiation outcome in different age groups",
+    "title_zh": "虚拟代理的支配与顺从非语言行为及其对不同年龄群体评价和谈判结果的影响",
+    "tldr": "考察虚拟代理呈现支配性或顺从性非言语行为时，不同年龄群体对其评价及谈判结果的反应，揭示年龄差异对人机互动效应的调节作用。",
+    "topic_tags": [
+      "人机交互",
+      "谈判",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.08.047",
+    "volume": "90",
+    "year": 2019
+  },
+  {
+    "abstract": null,
     "ai_reason": "以模糊深度神经网络解码玩家情绪",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -93897,6 +94742,59 @@
     "url": "https://doi.org/10.1016/j.chb.2021.106761",
     "volume": "120",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI招聘选拔为核心，属HR管理研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI招聘",
+      "算法决策",
+      "机器学习"
+    ],
+    "authors": [
+      "Patrick van Esch",
+      "J. Stewart Black",
+      "Joseph Ferolie"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Patrick van Esch",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "J. Stewart Black",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Joseph Ferolie",
+        "orcid": null
+      }
+    ],
+    "cited_by": 299,
+    "date": "2019-01",
+    "doi": "10.1016/j.chb.2018.09.009",
+    "domain_score": 4.0,
+    "id": 54878,
+    "ingested_at": "2026-08-12T05:42:53.944671",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-20T09:50:58.398614",
+    "title": "Marketing AI recruitment: The next phase in job application and selection",
+    "title_zh": "AI招聘营销：求职申请与选拔的下一阶段",
+    "tldr": "聚焦AI重塑求职申请与人员甄选的下一阶段，讨论AI招聘对招聘流程、候选人筛选及组织人才决策的影响，为企业采用智能招聘技术提供管理启示。",
+    "topic_tags": [
+      "招聘",
+      "HR",
+      "决策"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2018.09.009",
+    "volume": "90",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -103952,6 +104850,59 @@
     ],
     "url": "https://doi.org/10.1016/j.chb.2026.108992",
     "volume": "181",
+    "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "聚焦人机交互中的信任心理机制",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI治理"
+    ],
+    "authors": [
+      "Irene Valori",
+      "Johannes Kraus",
+      "Merle T. Fairhurst"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Irene Valori",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Johannes Kraus",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Merle T. Fairhurst",
+        "orcid": null
+      }
+    ],
+    "cited_by": 2,
+    "date": "2026-07",
+    "doi": "10.1016/j.chb.2026.108957",
+    "domain_score": 4.0,
+    "id": 85149,
+    "ingested_at": "2026-11-21T09:09:22.788221",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-21T09:09:55.970949",
+    "title": "Interdisciplinary perspectives and current findings on the role of trust as a psychological mediator in human interaction with artificial intelligence: Editorial overview",
+    "title_zh": "人机交互中信任的心理中介作用：跨学科视角与最新发现（编者综述）",
+    "tldr": "以跨学科编辑综述整合AI交互研究，考察信任在人与AI互动中的心理中介作用，梳理信任如何连接AI特征与用户态度、接受及行为结果。",
+    "topic_tags": [
+      "信任",
+      "人机协作",
+      "消费者行为",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.108957",
+    "volume": "180",
     "year": 2026
   },
   {
@@ -127137,6 +128088,70 @@
     "year": 2021
   },
   {
+    "abstract": "Online firestorms pose severe threats to online brand communities. Any negative electronic word of mouth (eWOM) has the potential to become an online firestorm, yet not every post does, so finding ways to detect and respond to negative eWOM constitutes a critical managerial priority. The authors develop a comprehensive framework that integrates different drivers of negative eWOM and the response approaches that firms use to engage in and disengage from online conversations with complaining customers. A text-mining study of negative eWOM demonstrates distinct impacts of high- and low-arousal emotions, structural tie strength, and linguistic style match (between sender and brand community) on firestorm potential. The firm’s response must be tailored to the intensity of arousal in the negative eWOM to limit the virality of potential online firestorms. The impact of initiated firestorms can be mitigated by distinct firm responses over time, and the effectiveness of different disengagement approaches also varies with their timing. For managers, these insights provide guidance on how to detect and reduce the virality of online firestorms.",
+    "ai_reason": "以文本挖掘识别舆情，AI非核心",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "文本挖掘",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Dennis Herhausen",
+      "Stephan Ludwig",
+      "Dhruv Grewal",
+      "Jochen Wulf",
+      "Marcus Schoegel"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Dennis Herhausen",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Stephan Ludwig",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Dhruv Grewal",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Jochen Wulf",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Marcus Schoegel",
+        "orcid": null
+      }
+    ],
+    "cited_by": 284,
+    "date": "2019-01-18",
+    "doi": "10.1177/0022242918822300",
+    "domain_score": 5.0,
+    "id": 46346,
+    "ingested_at": "2026-08-12T04:21:15.369818",
+    "issue": "3",
+    "journal": "JM",
+    "pdf_url": null,
+    "scored_at": "2026-11-20T09:50:36.684361",
+    "title": "Detecting, Preventing, and Mitigating Online Firestorms in Brand Communities",
+    "title_zh": "品牌社群中网络风暴的检测、预防与缓解",
+    "tldr": "整合负面电子口碑驱动因素与企业回应框架，并通过文本挖掘检验品牌社区舆论风暴风险；情绪唤醒度、结构联结强度和语言风格匹配影响爆发潜势，企业应依情绪强度及回应时机采取参与或退出策略，降低扩散。",
+    "topic_tags": [
+      "营销",
+      "品牌",
+      "消费者行为"
+    ],
+    "url": "https://doi.org/10.1177/0022242918822300",
+    "volume": "83",
+    "year": 2019
+  },
+  {
     "abstract": "At the intersection of technology and marketing, this study develops a framework to unobtrusively detect salespeople’s faces and simultaneously extract six emotions: happiness, sadness, surprise, anger, fear, and disgust. The authors analyze 99,451 sales pitches on a livestream retailing platform and match them with actual sales transactions. Results reveal that each emotional display, including happiness, uniformly exhibits a negative U-shaped effect on sales over time. The maximum sales resistance appears in the middle rather than at the beginning or end of sales pitches. Taken together, the results show that in one-to-many screen-mediated communications, salespeople should sell with a straight face. In addition, the authors derive closed-form formulae for the optimal allocation of the presence of a face and emotional displays over the presentation span. In contrast to the U-shaped effects, the optimal face presence wanes at the start, gradually builds to a crescendo, and eventually ebbs. Finally, the study shows how to objectively rank salespeople and circumvent biases in performance appraisals, thereby making novel contributions to people analytics. This research integrates new types of data and methods, key theoretical insights, and important managerial implications to inform the expanding opportunity that livestream e-commerce presents to marketers to create, communicate, deliver, and capture value.",
     "ai_reason": "人脸情绪识别用于测量，核心是销售效果",
     "ai_score": 3.0,
@@ -141307,6 +142322,67 @@
     "year": 2026
   },
   {
+    "abstract": "In this paper, we examine the effectiveness of various recommendation strategies in the mobile channel and their impact on consumers’ utility and demand levels for individual products. We find significant differences in effectiveness among various recommendation strategies. Interestingly, recommendation strategies that directly embed social proofs for the recommended alternatives outperform other recommendations. In addition, recommendation strategies combining social proofs with higher levels of induced awareness due to the prescribed temporal diversity have an even stronger effect on the mobile channel. We also examine the heterogeneity of the demand effect across items, users, and contextual settings, further verifying empirically the aforementioned information and persuasion mechanisms and generating rich insights. We also facilitate the estimation of causal effects in the presence of endogeneity using machine-learning methods. Specifically, we develop novel econometric instruments that capture product differentiation (isolation) based on deep-learning models of user-generated reviews. Our empirical findings extend the current knowledge regarding the heterogeneous impact of recommender systems, reconcile contradictory prior results in the related literature, and have significant business implications.",
+    "ai_reason": "移动应用推荐算法与机器学习为核心",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "推荐算法",
+      "机器学习",
+      "深度学习",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Panagiotis Adamopoulos",
+      "Anindya Ghose",
+      "Alexander Tuzhilin"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Goizueta Business School, Emory University, Atlanta, GA 30322 U.S.A."
+        ],
+        "name": "Panagiotis Adamopoulos",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Stern School of Business, New York University, 44 West 4th Street, New York, NY 10012 U.S.A."
+        ],
+        "name": "Anindya Ghose",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Stern School of Business, New York University, 44 West 4th Street, New York, NY 10012 U.S.A."
+        ],
+        "name": "Alexander Tuzhilin",
+        "orcid": null
+      }
+    ],
+    "cited_by": 19,
+    "date": "2022-03-01",
+    "doi": "10.25300/misq/2021/15611",
+    "domain_score": 5.0,
+    "id": 85197,
+    "ingested_at": "2026-11-21T09:09:23.494107",
+    "issue": "1",
+    "journal": "MISQ",
+    "pdf_url": null,
+    "scored_at": "2026-11-21T09:09:59.982284",
+    "title": "Heterogeneous Demand Effects of Recommendation Strategies in a Mobile Application: Evidence From Econometric Models And Machine-Learning Instruments",
+    "title_zh": "移动应用推荐策略的异质性需求效应：计量模型与机器学习工具证据",
+    "tldr": "结合计量模型与机器学习工具，检验移动端推荐策略对消费者效用和需求的影响。嵌入社会证明的推荐效果最佳，配合时间多样性带来的认知提升后作用更强，且效应随商品、用户和情境而异。",
+    "topic_tags": [
+      "推荐系统",
+      "营销",
+      "消费者行为",
+      "广告"
+    ],
+    "url": "https://doi.org/10.25300/misq/2021/15611",
+    "volume": "46",
+    "year": 2022
+  },
+  {
     "abstract": "We propose a new data-driven approach for addressing multistage stochastic linear optimization problems with unknown distributions. The approach consists of solving a robust optimization problem that is constructed from sample paths of the underlying stochastic process. We provide asymptotic bounds on the gap between the optimal costs of the robust optimization problem and the underlying stochastic problem as more sample paths are obtained, and we characterize cases in which this gap is equal to zero. To the best of our knowledge, this is the first sample path approach for multistage stochastic linear optimization that offers asymptotic optimality guarantees when uncertainty is arbitrarily correlated across time. Finally, we develop approximation algorithms for the proposed approach by extending techniques from the robust optimization literature and demonstrate their practical value through numerical experiments on stylized data-driven inventory management problems.  This paper was accepted by David Simchi-Levi, optimization.  Funding: S. Shtern was supported by the Israel Science Foundation [Grant 1460/19].  Supplemental Material: The online appendix is available at https://doi.org/10.1287/mnsc.2022.4352 .",
     "ai_reason": "数据驱动优化方法，运筹学技术研究",
     "ai_score": 3.0,
@@ -153197,7 +154273,7 @@
     "pdf_url": null,
     "scored_at": "2026-11-19T09:51:24.803061",
     "title": "Your Uber Is Arriving: Managing On-Demand Workers Through Surge Pricing, Forecast Communication, and Worker Incentives",
-    "title_zh": null,
+    "title_zh": "您的 Uber 即将抵达：通过动态定价、预测沟通与劳动者激励管理按需劳动者",
     "tldr": "聚焦平台企业如何管理按需 workers，综合考察动态加价、需求预测沟通与司机激励对供给响应和劳动体验的影响，强调兼顾调度效率、激励与公平。",
     "topic_tags": [
       "零工经济",
@@ -159600,6 +160676,58 @@
     "year": 2020
   },
   {
+    "abstract": "We evaluate user-generated content as a source of customer needs and propose and test a machine-learning approach for identifying customer needs more efficiently.",
+    "ai_reason": "机器学习用于识别用户内容中的顾客需求",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "自然语言处理",
+      "文本挖掘"
+    ],
+    "authors": [
+      "Artem Timoshenko",
+      "John R. Hauser"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "MIT Sloan School of Management, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139;"
+        ],
+        "name": "Artem Timoshenko",
+        "orcid": "https://orcid.org/0000-0002-5431-2136"
+      },
+      {
+        "affiliation": [
+          "MIT Sloan School of Management, Massachusetts Institute of Technology, Cambridge, Massachusetts 02139"
+        ],
+        "name": "John R. Hauser",
+        "orcid": "https://orcid.org/0000-0001-8510-8640"
+      }
+    ],
+    "cited_by": 454,
+    "date": "2019-01",
+    "doi": "10.1287/mksc.2018.1123",
+    "domain_score": 5.0,
+    "id": 48273,
+    "ingested_at": "2026-08-12T04:22:02.491248",
+    "issue": "1",
+    "journal": "MktSci",
+    "pdf_url": null,
+    "scored_at": "2026-11-21T09:10:11.264071",
+    "title": "Identifying Customer Needs from User-Generated Content",
+    "title_zh": "从用户生成内容中识别客户需求",
+    "tldr": "评估用户生成内容作为客户需求数据源的有效性，并提出机器学习方法，从非结构化内容中更高效地识别客户需求，为营销与产品洞察提供支持。",
+    "topic_tags": [
+      "营销",
+      "消费者行为",
+      "用户需求",
+      "市场洞察"
+    ],
+    "url": "https://doi.org/10.1287/mksc.2018.1123",
+    "volume": "38",
+    "year": 2019
+  },
+  {
     "abstract": "This article provides a novel method to optimize the profits of proactive retention campaigns using a machine learning approach to causal inference.",
     "ai_reason": "用机器学习因果推断优化客户留存",
     "ai_score": 4.0,
@@ -161095,7 +162223,7 @@
     "pdf_url": null,
     "scored_at": "2026-11-19T09:51:05.350001",
     "title": "Algorithm appreciation: People prefer algorithmic to human judgment",
-    "title_zh": null,
+    "title_zh": "算法认可：人们更偏好算法判断而非人类判断",
     "tldr": "比较人们对算法判断与人类判断的评价偏好，核心发现是人们往往更偏爱算法，提示组织在决策中应警惕算法光环、过度信任及潜在偏差。",
     "topic_tags": [
       "决策",

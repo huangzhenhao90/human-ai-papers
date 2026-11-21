@@ -1,0 +1,62 @@
+{
+  "abstract": "The deployment of large language models (LLMs) in hiring pipelines is growing, yet existing evaluations generally overlook their compliance with legal rules. To fill this gap, we introduce HireWatch, an evaluation that assesses whether LLMs comply with U.S. laws that govern the questions that job candidates may be asked. We construct a 200-item bank of lawful and unlawful interview questions, whose legal classification is based on U.S. federal statutes, regulations, and agency guidance. We instruct LLMs to select questions from this bank in preparing for job interviews, across a set of various occupations and contexts, and report the fraction of unlawful questions that LLMs select. Evaluation of 18 closed and open-weight LLMs across ~100,000 trials under different types of contextual pressure reveals that LLMs' legal compliance is brittle. While LLMs generally avoid selecting unlawful questions in low-pressure contexts, legal violations increase sharply under higher pressure. Explicit prompts to comply with law can improve compliance rates, but do not altogether eliminate legal violations. We publicly release our code and data at https://github.com/hnghiem-nlp/hirewatch_repo.",
+  "ai_type_tags": [
+    "LLM",
+    "AI招聘",
+    "AI治理"
+  ],
+  "arxiv_id": "2611.24970",
+  "authors": [
+    "Huy Nghiem",
+    "Maria Kostylew",
+    "Noam Kolt"
+  ],
+  "authors_full": [
+    {
+      "name": "Huy Nghiem"
+    },
+    {
+      "name": "Maria Kostylew"
+    },
+    {
+      "name": "Noam Kolt"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "评估LLM招聘中的就业法合规",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "构建含200道合法与违法面试题的HireWatch评测，在约10万次试验中检验18个闭源及开放权重LLM。结果显示，低压力下违法问题较少，但情境压力升高时违规骤增；守法提示可改善合规，却无法彻底消除违法。",
+      "topic_tags": [
+        "AI招聘",
+        "招聘",
+        "伦理",
+        "法律合规"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-16",
+  "doi": null,
+  "id": "p_GRN_HgiMnyGPlgT5",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.24970v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85135,
+      "revision": "c4a0115e9b175769467b101b75c4308207aeea2d"
+    }
+  ],
+  "title": "HireWatch: Evaluating LLM Compliance with U.S. Employment Law Under Contextual Pressure",
+  "title_zh": "HireWatch：情境压力下LLM对美国就业法律的合规性评估",
+  "unified_ingested_at": "2026-11-21T09:20:17.367857Z",
+  "url": "https://arxiv.org/abs/2611.24970v1",
+  "volume": null,
+  "year": 2026
+}

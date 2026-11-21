@@ -1,0 +1,54 @@
+{
+  "abstract": "Organizations monitor their workers' activity for insider threats, in which workers misuse their legitimate access, by copying confidential files before leaving. Detectors score how unusual each day of activity is, flagging the most unusual for an analyst to review. Prominent current approaches use opaque neural networks, so explanations of a flag point to internal features: patterns of neuron activity most active on days of misuse. We audit such explanations for language-model detectors trained on CERT's simulated workplace logs. To test an explanation, we see what happens to the detector's score when we remove its features inside the model. We compare this to a control: a change that is as similar as possible to the removal, but without actually removing the features. Because defining \"similar\" requires choosing a metric, our central contribution is the tipping radius: a first-order prediction of how far that metric must move before the difference between removal and control disappears, a measure of how fragile the result is to that choice. In 33 of 34 runs of seven language models, the tipping radius is at most 18% of the distance between two standard choices of metric. Moving that far removes at least 58% of the difference or reverses it, while random moves of the same size leave it largely intact. The result replicates in thirteen of fourteen pre-declared primary runs on openly released models, though on our trained detectors the difference is often too small to measure. We also find that a flag's score partly reflects who the worker is, not what they did, and that the features named depend on whom they are compared against. Audits should therefore fix the control's metric in advance, report its tipping radius, and disclose that comparison.",
+  "ai_type_tags": [
+    "LLM",
+    "可解释 AI",
+    "算法决策"
+  ],
+  "arxiv_id": "2611.25796",
+  "authors": [
+    "Suramya R. Angdembay"
+  ],
+  "authors_full": [
+    {
+      "name": "Suramya R. Angdembay"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "语言模型内鬼检测解释的可靠性",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "以CERT模拟职场日志审计7个语言模型内部威胁检测器的特征归因，通过特征移除、对照扰动及“临界半径”检验解释对指标选择的敏感性。33/34次运行中，指标小幅偏移即可消除至少58%的差异或反转结论；开放模型预注册复现为13/14，表明现有解释高度脆弱、可靠性有限。",
+      "topic_tags": [
+        "内部威胁检测",
+        "员工监控",
+        "组织安全",
+        "算法决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-19",
+  "doi": null,
+  "id": "p_-5IuwfImhqEj143b",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2611.25796v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85136,
+      "revision": "c4a0115e9b175769467b101b75c4308207aeea2d"
+    }
+  ],
+  "title": "How Reliable Are Explanations of Language Models That Detect Insider Threats?",
+  "title_zh": "检测内部威胁的语言模型解释有多可靠？",
+  "unified_ingested_at": "2026-11-21T09:20:17.367857Z",
+  "url": "https://arxiv.org/abs/2611.25796v1",
+  "volume": null,
+  "year": 2026
+}

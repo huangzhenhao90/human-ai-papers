@@ -1,5 +1,270 @@
 [
   {
+    "abstract": "Alcohol use is linked to distributed structural brain alterations, but population-level alcohol-related neurobiology remains difficult to quantify. We tested whether deep learning–derived MRI representations capture reproducible variation in alcohol consumption severity and converge with clinical and biological markers. Representations were extracted from gray-matter volume maps in the German National Cohort (NAKO; N ≈ 28,000). Ridge-regression scores were derived from structural MRI to estimate alcohol consumption severity, measured with the Alcohol Use Disorders Identification Test–Consumption (AUDIT-C). Models were trained in NAKO, externally validated in UK Biobank ( N ≈ 25,000), evaluated in FOR2107 ( N ≈ 1900), and tested against ICD-10 alcohol use disorder (AUD), alcohol-related biomarkers, and cognition. In NAKO, the structural MRI-derived ridge-regression score correlated with measured AUDIT-C severity ( r = 0.11; 95% CI, 0.09–0.12; q FDR = 1.2 × 10 −70 ; MAE = 1.64). This association replicated in UK Biobank ( r = 0.09; 95% CI, 0.07–0.10; q FDR = 4.9 × 10 −41 ; MAE = 1.96) and generalized to AUD, with higher odds in the highest versus lowest brain-score quintile (OR = 2.28; 95% CI, 1.49–3.48; q FDR = 3.9 × 10 −4 ). The score was associated with gamma-glutamyl transferase ( β = 1.17 U/L; q FDR = 0.007), mean corpuscular volume ( β = 14.26 fL; q FDR = 4.4 × 10 −4 ), and slower reaction time ( β = 163.40 ms; q FDR = 3.0 × 10 −5 ). Deep learning–derived structural MRI representations capture weak but reproducible alcohol-related brain variation that converges with AUD diagnosis, peripheral biomarkers, and cognition, supporting their use in population-level addiction neuroscience while underscoring limits for individual-level prediction.",
+    "ai_reason": "深度学习MRI预测饮酒严重度，并外部验证AUD关联。",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "deep_learning",
+      "computer_vision",
+      "machine_learning"
+    ],
+    "authors": [
+      "Julius Wiegert",
+      "Jailan Oweda",
+      "Esra Lenz",
+      "Sebastian Volkmer",
+      "Xiuzhi Li",
+      "Amrou Abas",
+      "Antonia Mai",
+      "Lilli Rötzer",
+      "Susanne Meinert",
+      "Elisabeth Johanna Leehr"
+    ],
+    "authors_full": [
+      {
+        "name": "Julius Wiegert"
+      },
+      {
+        "name": "Jailan Oweda"
+      },
+      {
+        "name": "Esra Lenz"
+      },
+      {
+        "name": "Sebastian Volkmer"
+      },
+      {
+        "name": "Xiuzhi Li"
+      },
+      {
+        "name": "Amrou Abas"
+      },
+      {
+        "name": "Antonia Mai"
+      },
+      {
+        "name": "Lilli Rötzer"
+      },
+      {
+        "name": "Susanne Meinert"
+      },
+      {
+        "name": "Elisabeth Johanna Leehr"
+      },
+      {
+        "name": "Tim Hahn"
+      },
+      {
+        "name": "Kira Flinkenflügel"
+      },
+      {
+        "name": "Tiana Borgers"
+      },
+      {
+        "name": "Henry Völzke"
+      },
+      {
+        "name": "Udo Dannlowski"
+      },
+      {
+        "name": "Fabian Bamberg"
+      },
+      {
+        "name": "Marco Hermesdorf"
+      },
+      {
+        "name": "André Karch"
+      },
+      {
+        "name": "Klaus Berger"
+      },
+      {
+        "name": "Johanna Klinger-König"
+      },
+      {
+        "name": "Hans Jörgen Grabe"
+      },
+      {
+        "name": "Tobias Pischon"
+      },
+      {
+        "name": "Lilian Krist"
+      },
+      {
+        "name": "Thomas Oskar Philipp Keil"
+      },
+      {
+        "name": "Michael Fred Leitzmann"
+      },
+      {
+        "name": "Alexander Pabst"
+      },
+      {
+        "name": "Steffi Gerlinde Riedel-Heller"
+      },
+      {
+        "name": "Thoralf Niendorf"
+      },
+      {
+        "name": "Frauke Nees"
+      },
+      {
+        "name": "Annette Peters"
+      },
+      {
+        "name": "Bernhard Theodor Baune"
+      },
+      {
+        "name": "Kerstin Ritter"
+      },
+      {
+        "name": "Tilo T. J. Kircher"
+      },
+      {
+        "name": "Hamidreza Jamalabadi"
+      },
+      {
+        "name": "Benjamin Straube"
+      },
+      {
+        "name": "Nooshin Javaheripour"
+      },
+      {
+        "name": "Frederike Stein"
+      },
+      {
+        "name": "Lea Teutenberg"
+      },
+      {
+        "name": "Matthias Bernd Schulze"
+      },
+      {
+        "name": "Karin Halina Greiser"
+      },
+      {
+        "name": "Patrick Bach"
+      },
+      {
+        "name": "Fabian Streit"
+      },
+      {
+        "name": "Emanuel Schwarz"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "深度学习MRI预测饮酒严重度，并外部验证AUD关联。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "deep_learning",
+        "computer_vision",
+        "machine_learning"
+      ],
+      "domain_score": 4,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "MRI深度表征与饮酒严重度弱相关，并在多队列外部验证中关联AUD，但个体预测有限。",
+      "topic_tags": [
+        "substance_use",
+        "risk_prediction",
+        "screening_assessment",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "external",
+    "date": "2026-11-19",
+    "doi": "10.1038/s41398-026-04587-1",
+    "domain_score": 4,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "validated_instrument",
+    "id": "W7236612875",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "深度学习MRI预测饮酒严重度，并外部验证AUD关联。",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "deep_learning",
+        "computer_vision",
+        "machine_learning"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "deep_learning",
+          "computer_vision",
+          "machine_learning"
+        ],
+        "applications": [
+          "risk_prediction",
+          "screening_assessment"
+        ],
+        "conditions": [
+          "substance_use"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 4,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "AUDIT-C评分、AUD诊断、酒精相关生物标志物、认知及反应时间",
+        "sample": "NAKO约28000人、UK Biobank约25000人、FOR2107约1900人",
+        "study_design": "跨队列回顾性开发与外部验证"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "validated_instrument",
+      "local_recall_audit": {
+        "ai_matches": [
+          "deep learning"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "addiction"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "MRI深度表征与饮酒严重度弱相关，并在多队列外部验证中关联AUD，但个体预测有限。",
+      "topic_tags": [
+        "substance_use",
+        "risk_prediction",
+        "screening_assessment",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7236612875",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "A reproducible structural brain axis of alcohol use severity",
+    "title_zh": "可复现的酒精使用严重度结构脑轴",
+    "tldr": "MRI深度表征与饮酒严重度弱相关，并在多队列外部验证中关联AUD，但个体预测有限。",
+    "topic_tags": [
+      "substance_use",
+      "risk_prediction",
+      "screening_assessment",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04587-1",
+    "year": 2026
+  },
+  {
     "abstract": "Psychotropic drug-induced weight change is clinically important but remains difficult to compare across large numbers of medications. We analysed 222,545 deduplicated user-generated reviews covering 176 psychotropic medications and acetaminophen as a negative control. A fine-tuned classifier identified reviews describing weight gain, weight loss, or no change, and a Qwen3-8B language model extracted quantified weight changes in kilograms. We derived a Net Weight Effect (NWE), defined as the proportion of reviews describing weight gain minus the proportion describing weight loss (range −1 to +1), and the mean weight change in kilograms, both with bootstrap 95% confidence intervals. Antipsychotics had the highest class-level weight liability (NWE + 0.154; mean +12.6 kg), whereas stimulants showed the most weight-reducing profile (NWE − 0.050; mean −7.1 kg). Olanzapine, mirtazapine, and risperidone ranked highest for weight gain, whereas bupropion/naltrexone and topiramate ranked lowest. Long-term use (>6 months) was associated with a larger mean gain than medium-term use (+8.8 kg vs +2.3 kg), and females reported weight gain more frequently than males. Per-drug rankings were highly concordant across the four source platforms (Kendall’s W = 0.83). In an exploratory receptor-affinity analysis, alpha-2 adrenergic affinity was the strongest correlate of NWE (rho = 0.594; permutation FDR p = 0.006), whereas H1 histamine affinity was the strongest correlate of mean weight change (rho = 0.638; permutation FDR p = 0.042). Large-scale AI-assisted analysis of patient narratives can therefore generate clinically useful real-world rankings of psychotropic weight liability while also highlighting mechanistically plausible, though correlational, pharmacological associations.",
     "ai_reason": "用分类器和LLM从患者叙事量化精神类药物体重效应，未作临床验证。",
     "ai_score": 5,
