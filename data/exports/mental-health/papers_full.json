@@ -1,5 +1,164 @@
 [
   {
+    "abstract": "Accurate differentiation of bipolar disorder (BD), major depressive disorder (MDD), and schizophrenia (SCZ) is hindered by symptomatic overlap and subjective clinical assessments. This study applied untargeted plasma metabolomics to a large cohort of 1609 adults (BD, n = 352; MDD, n = 506; SCZ, n = 373; healthy controls, n = 378) diagnosed per DSM-IV criteria. Following stringent pre-processing and quality control, we identified metabolic features associated with diagnostic outcomes using mutual information analysis, a non-parametric method capturing nonlinear relationships, and further evaluated their diagnostic potential. After adjustment for sex ang age, a total of 297 metabolites correction showed significant associations with psychiatric diagnosis after FDR (p < 0.01). Adjusted sex and age predictive models—including logistic regression, LASSO, random forest, and XGBoost—trained on random subsets of these metabolites consistently achieved high classification performance, with mean accuracy exceeding 0.88 across all pairwise comparisons after FDR correction. These results reveal distinct yet overlapping metabolic alterations across disorders, suggesting shared pathophysiological mechanisms. Notably, robust and reproducible predictions were attainable even with small feature subsets, underscoring the stability of metabolomic signatures. Collectively, our findings support plasma metabolomics as an objective, biologically grounded tool to complement clinical assessment and enhance diagnostic precision in major psychiatric disorders.",
+    "ai_reason": "机器学习用于三类精神障碍诊断，AI为主要量化方法。",
+    "ai_score": 4,
+    "ai_type_tags": [
+      "machine_learning"
+    ],
+    "authors": [
+      "Zhen Hua Zhu",
+      "Long Song",
+      "Xu Yuan Yin",
+      "Wen Long Hou",
+      "Li Juan Man",
+      "Jie Chen",
+      "Uwe Aickelin",
+      "Li Hui"
+    ],
+    "authors_full": [
+      {
+        "name": "Zhen Hua Zhu"
+      },
+      {
+        "name": "Long Song"
+      },
+      {
+        "name": "Xu Yuan Yin"
+      },
+      {
+        "name": "Wen Long Hou"
+      },
+      {
+        "name": "Li Juan Man"
+      },
+      {
+        "name": "Jie Chen"
+      },
+      {
+        "name": "Uwe Aickelin"
+      },
+      {
+        "name": "Li Hui"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "机器学习用于三类精神障碍诊断，AI为主要量化方法。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "基于1609名成人的代谢组数据，多种机器学习模型的内部对比准确率均超过0.88。",
+      "topic_tags": [
+        "bipolar",
+        "depression",
+        "psychosis_schizophrenia",
+        "screening_assessment",
+        "adults",
+        "clinical_patients"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "internal",
+    "date": "2026-11-20",
+    "doi": "10.1038/s41398-026-04559-5",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "clinician_assessed",
+    "id": "W7237047737",
+    "journal": "Translational Psychiatry",
+    "mh_profile": {
+      "ai_reason": "机器学习用于三类精神障碍诊断，AI为主要量化方法。",
+      "ai_score": 4,
+      "ai_type_tags": [
+        "machine_learning"
+      ],
+      "clinical_validation": "internal",
+      "controlled_tags": {
+        "ai_types": [
+          "machine_learning"
+        ],
+        "applications": [
+          "screening_assessment"
+        ],
+        "conditions": [
+          "bipolar",
+          "depression",
+          "psychosis_schizophrenia"
+        ],
+        "populations": [
+          "adults",
+          "clinical_patients"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "代谢物与精神科诊断的关联及两两疾病分类模型的性能",
+        "sample": "1609名成人，包括352名双相障碍、506名重性抑郁障碍、373名精神分裂症患者和378名健康对照",
+        "study_design": "大队列代谢组学关联及多模型内部对比研究"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "clinician_assessed",
+      "local_recall_audit": {
+        "ai_matches": [],
+        "ai_signal": false,
+        "eligible": false,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "psychiatric",
+          "depressive",
+          "schizophrenia",
+          "bipolar"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "基于1609名成人的代谢组数据，多种机器学习模型的内部对比准确率均超过0.88。",
+      "topic_tags": [
+        "bipolar",
+        "depression",
+        "psychosis_schizophrenia",
+        "screening_assessment",
+        "adults",
+        "clinical_patients"
+      ]
+    },
+    "openalex_id": "W7237047737",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S163345920",
+      "ingest_mode": "full",
+      "key": "translational_psychiatry",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Metabolite profiling insights into bipolar disorder, major depressive disorder, and schizophrenia",
+    "title_zh": "双相障碍、重性抑郁障碍与精神分裂症的代谢物谱洞见",
+    "tldr": "基于1609名成人的代谢组数据，多种机器学习模型的内部对比准确率均超过0.88。",
+    "topic_tags": [
+      "bipolar",
+      "depression",
+      "psychosis_schizophrenia",
+      "screening_assessment",
+      "adults",
+      "clinical_patients"
+    ],
+    "url": "https://doi.org/10.1038/s41398-026-04559-5",
+    "year": 2026
+  },
+  {
     "abstract": "Alcohol use is linked to distributed structural brain alterations, but population-level alcohol-related neurobiology remains difficult to quantify. We tested whether deep learning–derived MRI representations capture reproducible variation in alcohol consumption severity and converge with clinical and biological markers. Representations were extracted from gray-matter volume maps in the German National Cohort (NAKO; N ≈ 28,000). Ridge-regression scores were derived from structural MRI to estimate alcohol consumption severity, measured with the Alcohol Use Disorders Identification Test–Consumption (AUDIT-C). Models were trained in NAKO, externally validated in UK Biobank ( N ≈ 25,000), evaluated in FOR2107 ( N ≈ 1900), and tested against ICD-10 alcohol use disorder (AUD), alcohol-related biomarkers, and cognition. In NAKO, the structural MRI-derived ridge-regression score correlated with measured AUDIT-C severity ( r = 0.11; 95% CI, 0.09–0.12; q FDR = 1.2 × 10 −70 ; MAE = 1.64). This association replicated in UK Biobank ( r = 0.09; 95% CI, 0.07–0.10; q FDR = 4.9 × 10 −41 ; MAE = 1.96) and generalized to AUD, with higher odds in the highest versus lowest brain-score quintile (OR = 2.28; 95% CI, 1.49–3.48; q FDR = 3.9 × 10 −4 ). The score was associated with gamma-glutamyl transferase ( β = 1.17 U/L; q FDR = 0.007), mean corpuscular volume ( β = 14.26 fL; q FDR = 4.4 × 10 −4 ), and slower reaction time ( β = 163.40 ms; q FDR = 3.0 × 10 −5 ). Deep learning–derived structural MRI representations capture weak but reproducible alcohol-related brain variation that converges with AUD diagnosis, peripheral biomarkers, and cognition, supporting their use in population-level addiction neuroscience while underscoring limits for individual-level prediction.",
     "ai_reason": "深度学习MRI预测饮酒严重度，并外部验证AUD关联。",
     "ai_score": 5,
@@ -406,6 +565,145 @@
       "general_population"
     ],
     "url": "https://doi.org/10.1038/s41398-026-04551-z",
+    "year": 2026
+  },
+  {
+    "abstract": "BACKGROUND: Antidepressant selection is constrained by limited comparative-effectiveness data, with randomized trials measuring symptom reduction rather than patient-reported tolerability. We tested whether AI-assisted analysis of patient-written online reviews recovers drug-level tolerability signals that converge with the strongest randomized evidence. METHODS: We did a cross-sectional analysis of 8348 reviews of 16 antidepressants for major depressive disorder posted to Drugs.com (February 2008-March 2025; ≥1 month reported use). Two independent large language models (Claude Sonnet 4.5, Gemini 2.5 Pro) classified each review across 17 clinical dimensions using identical structured prompts; a stratified 100-review subsample (1700 classifications per reviewer) was independently rated by two experts, with all agreement statistics highly significant. We compared per-drug top-rating prevalence with Cipriani et al.'s 2018 network meta-analysis retention and efficacy odds ratios (Spearman correlation). RESULTS: Mean inter-LLM Cohen's κ was 0.81; expert reviewers agreed substantially with the dual-AI consensus (mean κ = 0.75 and 0.80). Top rating correlated strongly with Cipriani et al. retention odds ratios (ρ = +0.79, p < 0.001) but not with efficacy odds ratios (ρ = -0.14, p = 0.64). Within-SNRI heterogeneity was substantial. Emotional blunting was the strongest negative predictor of satisfaction (OR 0.20). LIMITATIONS: Reviews are from a single platform and self-selected users; drug-level comparisons rest on few agents; and the design is cross-sectional and ecological. CONCLUSIONS: AI-classified patient reviews recover the drug-level tolerability signal of randomized retention data and surface within-class heterogeneity, particularly among SNRIs, as a hypothesis-generating signal. Within the comparable-efficacy range of contemporary antidepressants, tolerability, especially emotional blunting, principally correlates with patient satisfaction.",
+    "ai_reason": "LLM为核心分析方法，信号与随机证据一致但仅回顾性",
+    "ai_score": 5,
+    "ai_type_tags": [
+      "llm_genai",
+      "nlp"
+    ],
+    "authors": [
+      "Magid Abraham",
+      "Thomas R. Insel",
+      "Husseini K. Manji",
+      "Akshay Swaminathan"
+    ],
+    "authors_full": [
+      {
+        "name": "Magid Abraham"
+      },
+      {
+        "name": "Thomas R. Insel"
+      },
+      {
+        "name": "Husseini K. Manji"
+      },
+      {
+        "name": "Akshay Swaminathan"
+      }
+    ],
+    "channel": "mh",
+    "channel_profile": {
+      "ai_reason": "LLM为核心分析方法，信号与随机证据一致但仅回顾性",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "domain_score": 5,
+      "evidence_stage": "retrospective_validation",
+      "risk_tags": [],
+      "tldr": "两个LLM对8348条抑郁药评论的耐受性分类与随机试验保留率证据相关，但结果仍属回顾性、假设生成性证据。",
+      "topic_tags": [
+        "depression",
+        "clinical_decision_support",
+        "treatment_support",
+        "general_population"
+      ]
+    },
+    "cited_by": 0,
+    "clinical_validation": "external",
+    "date": "2026-11-15",
+    "doi": "10.1016/j.jad.2026.122743",
+    "domain_score": 5,
+    "evidence_stage": "retrospective_validation",
+    "ground_truth_quality": "self_report",
+    "id": "W7164890030",
+    "journal": "Journal of Affective Disorders",
+    "mh_profile": {
+      "ai_reason": "LLM为核心分析方法，信号与随机证据一致但仅回顾性",
+      "ai_score": 5,
+      "ai_type_tags": [
+        "llm_genai",
+        "nlp"
+      ],
+      "clinical_validation": "external",
+      "controlled_tags": {
+        "ai_types": [
+          "llm_genai",
+          "nlp"
+        ],
+        "applications": [
+          "clinical_decision_support",
+          "treatment_support"
+        ],
+        "conditions": [
+          "depression"
+        ],
+        "populations": [
+          "general_population"
+        ],
+        "risks": []
+      },
+      "domain_score": 5,
+      "domain_score_capped_by_false_positive_rule": false,
+      "evidence": {
+        "outcomes": "17个临床维度分类一致性、药物满意度、耐受性、与随机试验保留率及疗效比值的相关性",
+        "sample": "来自Drugs.com的8348条抗抑郁药评论，涉及16种药物；另取100条评论进行专家评定",
+        "study_design": "横断面在线评论分析，并辅以专家评定及外部网络Meta分析比较"
+      },
+      "evidence_stage": "retrospective_validation",
+      "ground_truth_quality": "self_report",
+      "local_recall_audit": {
+        "ai_matches": [
+          "large language models",
+          "LLM"
+        ],
+        "ai_signal": true,
+        "eligible": true,
+        "expression": "AI_SIGNAL AND MENTAL_HEALTH_SIGNAL",
+        "false_positive_matches": [],
+        "mental_health_matches": [
+          "depressive"
+        ],
+        "mental_health_signal": true
+      },
+      "real_world_deployment": false,
+      "risk_tags": [],
+      "safety_evaluated": false,
+      "tldr": "两个LLM对8348条抑郁药评论的耐受性分类与随机试验保留率证据相关，但结果仍属回顾性、假设生成性证据。",
+      "topic_tags": [
+        "depression",
+        "clinical_decision_support",
+        "treatment_support",
+        "general_population"
+      ]
+    },
+    "openalex_id": "W7164890030",
+    "pdf_url": null,
+    "real_world_deployment": false,
+    "risk_tags": [],
+    "safety_evaluated": false,
+    "source": {
+      "id": "S113871862",
+      "ingest_mode": "full",
+      "key": "journal_affective_disorders",
+      "layer": "full",
+      "type": "journal"
+    },
+    "title": "Can AI-assisted analysis of antidepressant drug online reviewers (ADORE) inform real-world use of antidepressants?",
+    "title_zh": "AI辅助分析抗抑郁药在线评论能否指导抗抑郁药的真实世界使用？",
+    "tldr": "两个LLM对8348条抑郁药评论的耐受性分类与随机试验保留率证据相关，但结果仍属回顾性、假设生成性证据。",
+    "topic_tags": [
+      "depression",
+      "clinical_decision_support",
+      "treatment_support",
+      "general_population"
+    ],
+    "url": "https://doi.org/10.1016/j.jad.2026.122743",
     "year": 2026
   },
   {
