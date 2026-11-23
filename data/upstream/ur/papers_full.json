@@ -3732,6 +3732,55 @@
     "year": 2025
   },
   {
+    "abstract": "Managing issue reports is essential for the evolution and maintenance of software systems. However, manual issue management tasks such as triaging, prioritizing, localizing, and resolving issues are highly resource-intensive for projects with large codebases and users. To address this challenge, we present SPRINT, a GitHub application that utilizes state-of-the-art deep learning techniques to streamline issue management tasks. SPRINT assists developers by: (i) identifying existing issues similar to newly reported ones, (ii) predicting issue severity, and (iii) suggesting code files that likely require modification to solve the issues. We evaluated SPRINT using existing datasets and methodologies, measuring its predictive performance, and conducted a user study with five professional developers to assess its usability and usefulness. The results show that SPRINT is accurate, usable, and useful, providing evidence of its effectiveness in assisting developers in managing issue reports. SPRINT is an open-source tool available at https://github.com/sea-lab-wm/sprint_issue_report_assistant_tool.",
+    "ai_reason": "深度学习辅助开发并含开发者用户研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "深度学习",
+      "代码理解",
+      "严重性预测",
+      "人机协作"
+    ],
+    "authors": [
+      "Ahmed Adnan",
+      "Antu Saha",
+      "Oscar Chaparro"
+    ],
+    "authors_full": [
+      {
+        "name": "Ahmed Adnan"
+      },
+      {
+        "name": "Antu Saha"
+      },
+      {
+        "name": "Oscar Chaparro"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-02-06",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 7905,
+    "ingested_at": "2026-06-14T13:03:19.956236",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2502.04147v2",
+    "scored_at": "2026-11-23T10:08:21.176951",
+    "title": "SPRINT: An Assistant for Issue Report Management",
+    "title_zh": "SPRINT：问题报告管理助手",
+    "tldr": "针对大型代码库中工单分流、严重性判定和修复定位成本高的问题，SPRINT利用深度学习识别相似工单、预测严重性并推荐待修改文件。基于既有数据集及5名专业开发者研究的评估显示，该工具预测准确，且具有可用性与实用性。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "可用性测试",
+      "AI 助手",
+      "软件工程"
+    ],
+    "url": "https://arxiv.org/abs/2502.04147v2",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Developers often struggle to design truly accessible digital solutions in corporate environments. In these environments, accessibility is usually treated as a compliance requirement rather than an innovation opportunity. By analyzing 14 LLM-based accessibility project proposals and focus group discussions with 9 participants at a Brazilian tech company, we found that inclusive innovation can emerge particularly when initiatives are led by People with Disabilities (PWD) themselves. If organizations adopt similar participatory approaches, accessibility would evolve from an afterthought into a driving force for technological excellence and cultural transformation.",
     "ai_reason": "LLM辅助无障碍开发，含焦点小组用户研究，属HCI",
     "ai_score": 4.0,
@@ -4721,6 +4770,61 @@
       "人机协作"
     ],
     "url": "https://arxiv.org/abs/2503.14936v2",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "[Context] Technical debt (TD) in machine learning (ML) systems, much like its counterpart in software engineering (SE), holds the potential to lead to future rework, posing risks to productivity, quality, and team morale. Despite growing attention to TD in SE, the understanding of ML-specific code-related TD remains underexplored. [Objective] This paper aims to identify and discuss the relevance of code-related issues that lead to TD in ML code throughout the ML workflow. [Method] The study first compiled a list of 34 potential issues contributing to TD in ML code by examining the phases of the ML workflow, their typical associated activities, and problem types. This list was refined through two focus group sessions involving nine experienced ML professionals, where each issue was assessed based on its occurrence contributing to TD in ML code and its relevance. [Results] The list of issues contributing to TD in the source code of ML systems was refined from 34 to 30, with 24 of these issues considered highly relevant. The data pre-processing phase was the most critical, with 14 issues considered highly relevant. Shortcuts in code related to typical pre-processing tasks (e.g., handling missing values, outliers, inconsistencies, scaling, rebalancing, and feature selection) often result in \"patch fixes\" rather than sustainable solutions, leading to the accumulation of TD and increasing maintenance costs. Relevant issues were also found in the data collection, model creation and training, and model evaluation phases. [Conclusion] We have made the final list of issues available to the community and believe it will help raise awareness about issues that need to be addressed throughout the ML workflow to reduce TD and improve the maintainability of ML code.",
+    "ai_reason": "聚焦ML技术债，含专业人员焦点小组",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "机器学习",
+      "AI 工程"
+    ],
+    "authors": [
+      "Rodrigo Ximenes",
+      "Antonio Pedro Santos Alves",
+      "Tatiana Escovedo",
+      "Rodrigo Spinola",
+      "Marcos Kalinowski"
+    ],
+    "authors_full": [
+      {
+        "name": "Rodrigo Ximenes"
+      },
+      {
+        "name": "Antonio Pedro Santos Alves"
+      },
+      {
+        "name": "Tatiana Escovedo"
+      },
+      {
+        "name": "Rodrigo Spinola"
+      },
+      {
+        "name": "Marcos Kalinowski"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-02-18",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 8085,
+    "ingested_at": "2026-06-14T13:03:20.159022",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2502.13011v1",
+    "scored_at": "2026-11-23T10:08:21.176242",
+    "title": "Investigating Issues that Lead to Code Technical Debt in Machine Learning Systems",
+    "title_zh": "探究导致机器学习系统代码技术债的问题",
+    "tldr": "针对机器学习系统代码技术债务认识不足的问题，梳理机器学习工作流并汇总34项潜在问题，再由9名资深从业者参加两次焦点小组筛选，保留30项，其中24项高度相关；数据预处理最关键，缺失值、异常值、缩放、重采样等代码捷径易形成补丁式修复并累积维护成本。",
+    "topic_tags": [
+      "技术债务",
+      "软件工程",
+      "代码质量",
+      "机器学习系统"
+    ],
+    "url": "https://arxiv.org/abs/2502.13011v1",
     "volume": null,
     "year": 2025
   },
@@ -6919,6 +7023,62 @@
     "year": 2025
   },
   {
+    "abstract": "Lengthy and legally phrased privacy policies impede users' understanding of how mobile applications collect and process personal data. Prior work proposed Contextual Privacy Policies (CPPs) for mobile apps to display shorter policy snippets only in the corresponding user interface contexts, but the pipeline could not be deployable in real-world mobile environments. In this paper, we present PrivScan, the first deployable CPP Software Development Kit (SDK) for Android. It captures live app screenshots to identify GUI elements associated with types of personal data and displays CPPs in a concise, user-facing format. We provide a lightweight floating button that offers low-friction, on-demand control. The architecture leverages remote deployment to decouple the multimodal backend pipeline from a mobile client comprising five modular components, thereby reducing on-device resource demands and easing cross-platform portability. A feasibility-oriented evaluation shows an average execution time of 9.15\\,s, demonstrating the practicality of our approach. The source code of PrivScan is available at https://github.com/buyanghc/PrivScan and the demo video can be found at https://www.youtube.com/watch?v=ck-25otfyHc.",
+    "ai_reason": "移动隐私界面与用户控制，AI为辅助",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "多模态",
+      "计算机视觉",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Haochen Gong",
+      "Zhen Tao",
+      "Shidong Pan",
+      "Zhenchang Xing",
+      "Xiaoyu Sun"
+    ],
+    "authors_full": [
+      {
+        "name": "Haochen Gong"
+      },
+      {
+        "name": "Zhen Tao"
+      },
+      {
+        "name": "Shidong Pan"
+      },
+      {
+        "name": "Zhenchang Xing"
+      },
+      {
+        "name": "Xiaoyu Sun"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-26",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 8406,
+    "ingested_at": "2026-06-14T13:03:20.652125",
+    "issue": null,
+    "journal": "arXiv:cs.CR",
+    "pdf_url": "https://arxiv.org/pdf/2509.22900v1",
+    "scored_at": "2026-11-23T10:08:21.175965",
+    "title": "Towards Context-aware Mobile Privacy Notice: Implementation of A Deployable Contextual Privacy Policies Generator",
+    "title_zh": "迈向情境感知的移动隐私告知：可部署的情境化隐私政策生成器实现",
+    "tldr": "冗长、法律化的移动应用隐私政策妨碍用户理解数据处理方式。PrivScan截取实时界面，识别与个人数据相关的GUI元素并按场景展示简明隐私片段及按需控制按钮；采用远程多模态后端降低端侧负担，Android可行性评测平均耗时9.15秒，具备实际部署潜力。",
+    "topic_tags": [
+      "隐私",
+      "移动应用",
+      "信息透明",
+      "用户控制"
+    ],
+    "url": "https://arxiv.org/abs/2509.22900v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "This paper aims to explore fundamental questions in the era when AI coding assistants like GitHub Copilot are widely adopted: what do developers truly value and criticize in AI coding assistants, and what does this reveal about their needs and expectations in real-world software development? Unlike previous studies that conduct observational research in controlled and simulated environments, we analyze extensive, first-hand user reviews of AI coding assistants, which capture developers' authentic perspectives and experiences drawn directly from their actual day-to-day work contexts. We identify 1,085 AI coding assistants from the Visual Studio Code Marketplace. Although they only account for 1.64% of all extensions, we observe a surge in these assistants: over 90% of them are released within the past two years. We then manually analyze the user reviews sampled from 32 AI coding assistants that have sufficient installations and reviews to construct a comprehensive taxonomy of user concerns and feedback about these assistants. We manually annotate each review's attitude when mentioning certain aspects of coding assistants, yielding nuanced insights into user satisfaction and dissatisfaction regarding specific features, concerns, and overall tool performance. Built on top of the findings-including how users demand not just intelligent suggestions but also context-aware, customizable, and resource-efficient interactions-we propose five practical implications and suggestions to guide the enhancement of AI coding assistants that satisfy user needs.",
     "ai_reason": "分析开发者对AI编码助手的真实评价",
     "ai_score": 5.0,
@@ -7319,6 +7479,66 @@
     "year": 2025
   },
   {
+    "abstract": "Integrated Development Environments increasingly implement AI-powered code completion tools (CCTs), which promise to enhance developer efficiency, accuracy, and productivity. However, interaction challenges with CCTs persist, mainly due to mismatches between developers' mental models and the unpredictable behavior of AI-generated suggestions, which is an aspect underexplored in the literature. We conducted an elicitation study with 56 developers using co-design workshops to elicit their mental models when interacting with CCTs. Different important findings that might drive the interaction design with CCTs emerged. For example, developers expressed diverse preferences on when and how code suggestions should be triggered (proactive, manual, hybrid), where and how they are displayed (inline, sidebar, popup, chatbot), as well as the level of detail. It also emerged that developers need to be supported by customization of activation timing, display modality, suggestion granularity, and explanation content, to better fit the CCT to their preferences. To demonstrate the feasibility of these and the other guidelines that emerged during the study, we developed ATHENA, a proof-of-concept CCT that dynamically adapts to developers' coding preferences and environments, ensuring seamless integration into diverse workflows.",
+    "ai_reason": "以开发者心智模型为核心的工作坊研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "代码补全",
+      "AI 编程助手",
+      "可解释 AI"
+    ],
+    "authors": [
+      "Giuseppe Desolda",
+      "Andrea Esposito",
+      "Francesco Greco",
+      "Cesare Tucci",
+      "Paolo Buono"
+    ],
+    "authors_full": [
+      {
+        "name": "Giuseppe Desolda"
+      },
+      {
+        "name": "Andrea Esposito"
+      },
+      {
+        "name": "Francesco Greco"
+      },
+      {
+        "name": "Cesare Tucci"
+      },
+      {
+        "name": "Paolo Buono"
+      },
+      {
+        "name": "Antonio Piccinno"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-02-04",
+    "doi": "https://doi.org/10.1016/j.ijhcs.2025.103648",
+    "domain_score": 5.0,
+    "id": 8446,
+    "ingested_at": "2026-06-14T13:03:20.687172",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2502.02194v3",
+    "scored_at": "2026-11-23T10:08:21.177207",
+    "title": "Understanding User Mental Models in AI-Driven Code Completion Tools: Insights from an Elicitation Study",
+    "title_zh": "AI驱动代码补全工具中的用户心智模型：引出研究所得洞见",
+    "tldr": "通过56名开发者参与的共设计工作坊，揭示开发者对AI代码补全工具在触发方式、展示位置、建议粒度和解释内容上的偏好差异。研究据此开发可动态适配个人偏好与工作流的ATHENA概念原型，为工具交互设计提供可行方案。",
+    "topic_tags": [
+      "用户研究方法",
+      "用户心智模型",
+      "人机交互(HCI)",
+      "个性化"
+    ],
+    "url": "https://arxiv.org/abs/2502.02194v3",
+    "volume": null,
+    "year": 2025
+  },
+  {
     "abstract": "Explainability is increasingly required in AI-enabled software systems to support transparency, user trust, and compliance. Yet, explainability requirements are often written ad hoc, and unguided large language model support can yield vague, inconsistent, or incomplete statements. This paper presents a sequential, guideline-driven workflow for formulating explainability requirements and evaluates its tool-based operationalization. We first elicited candidate quality properties through a structured literature review and developer interviews. We then prioritized these properties in an online survey with practitioners (n=20) and derived a concise guideline of ten core properties with actionable formulation instructions. Next, we operationalized the guideline in a web-based tool that supports an iterative workflow of drafting, property-based checks, and revision. We evaluated the workflow in two complementary studies. In a workshop with requirements engineers (n=6), tool support reduced formulation time by 23.5% on average (Wilcoxon p=0.021). In an independent online study with software developers (n=18), tool-supported and manually written requirements received comparable ratings for implementability and formulation quality, with a descriptive slight preference tendency toward the tool-supported versions. Overall, our results suggest that combining a prioritized quality guideline with lightweight LLM support can reduce formulation effort while producing requirements that are perceived comparably to manually written ones.",
     "ai_reason": "AI可解释性需求工程，含开发者访谈调研但偏SE方法论",
     "ai_score": 4.0,
@@ -7667,6 +7887,75 @@
       "HCI"
     ],
     "url": "https://arxiv.org/abs/2510.09968v1",
+    "volume": null,
+    "year": 2025
+  },
+  {
+    "abstract": "Log-based software reliability maintenance systems are crucial for sustaining stable customer experience. However, existing deep learning-based methods represent a black box for service providers, making it impossible for providers to understand how these methods detect anomalies, thereby hindering trust and deployment in real production environments. To address this issue, this paper defines a trustworthiness metric, diagnostic faithfulness, for models to gain service providers' trust, based on surveys of SREs at a major cloud provider. We design two evaluation tasks: attention-based root cause localization and event perturbation. Empirical studies demonstrate that existing methods perform poorly in diagnostic faithfulness. Consequently, we propose FaithLog, a faithful log-based anomaly detection system, which achieves faithfulness through a carefully designed causality-guided attention mechanism and adversarial consistency learning. Evaluation results on two public datasets and one industrial dataset demonstrate that the proposed method achieves state-of-the-art performance in diagnostic faithfulness.",
+    "ai_reason": "调查SRE信任与理解，评估模型忠实性",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "可解释 AI",
+      "深度学习",
+      "异常检测",
+      "根因分析"
+    ],
+    "authors": [
+      "Minghua He",
+      "Tong Jia",
+      "Chiming Duan",
+      "Pei Xiao",
+      "Lingzhe Zhang"
+    ],
+    "authors_full": [
+      {
+        "name": "Minghua He"
+      },
+      {
+        "name": "Tong Jia"
+      },
+      {
+        "name": "Chiming Duan"
+      },
+      {
+        "name": "Pei Xiao"
+      },
+      {
+        "name": "Lingzhe Zhang"
+      },
+      {
+        "name": "Kangjin Wang"
+      },
+      {
+        "name": "Yifan Wu"
+      },
+      {
+        "name": "Ying Li"
+      },
+      {
+        "name": "Gang Huang"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2025-09-29",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 8547,
+    "ingested_at": "2026-06-14T13:03:20.767505",
+    "issue": null,
+    "journal": "arXiv:cs.SE",
+    "pdf_url": "https://arxiv.org/pdf/2509.24352v1",
+    "scored_at": "2026-11-23T10:08:21.175000",
+    "title": "Walk the Talk: Is Your Log-based Software Reliability Maintenance System Really Reliable?",
+    "title_zh": "边走边谈：基于日志的软件可靠性维护系统真的可靠吗？",
+    "tldr": "面向云服务日志可靠性维护，聚焦深度学习异常检测难以解释的问题。基于SRE调查定义诊断忠实度，并通过根因定位与事件扰动评测发现现有方法表现不佳；FaithLog借助因果引导注意力和对抗一致性学习，在公开及工业数据上达到领先的诊断忠实度。",
+    "topic_tags": [
+      "软件可靠性",
+      "可解释性",
+      "信任",
+      "异常检测"
+    ],
+    "url": "https://arxiv.org/abs/2509.24352v1",
     "volume": null,
     "year": 2025
   },
@@ -41974,7 +42263,7 @@
     "pdf_url": "https://arxiv.org/pdf/2611.03389v1",
     "scored_at": "2026-11-04T08:24:11.699811",
     "title": "CrowdForge: Effects of Audio and Visual Audience Participation Modalities on Agency, Collaboration, and Engagement in AI-Mediated MR Performances",
-    "title_zh": null,
+    "title_zh": "CrowdForge：音频与视觉参与方式对AI介导MR表演中能动性、协作及参与度的影响",
     "tldr": "混合方法音乐会研究比较音频、视觉及音视频参与条件。可观察性是受众感知主导权的主要驱动因素：视觉交互提供清晰反馈，音频生成提供音乐结构控制；受众借此突破边界并加深参与，表演者成功化解挑战时产生创作连贯性。",
     "topic_tags": [
       "人机交互",
@@ -43412,7 +43701,7 @@
     "pdf_url": "https://arxiv.org/pdf/2611.08321v1",
     "scored_at": "2026-11-07T08:06:39.124988",
     "title": "ControlAnything: Generative UI and On-Demand Device Integration for Mixed-Reality Hand Interaction by a Coding Agent",
-    "title_zh": null,
+    "title_zh": "ControlAnything：编程智能体实现混合现实手部交互的生成式UI与按需设备集成",
     "tldr": "为减少混合现实手部输入与物理设备间的事先集成，ControlAnything让编码智能体依据用户语音与选取目标，现场生成并测试连接程序。单次技术评估中10个请求有9个进入就绪状态，中位耗时32.5秒；但仅有传输确认，尚不能证明设备产生真实物理效果。",
     "topic_tags": [
       "人机交互(HCI)",
@@ -47034,7 +47323,7 @@
     "pdf_url": "https://arxiv.org/pdf/2611.25428v1",
     "scored_at": "2026-11-20T09:29:16.884928",
     "title": "GenAI-DBT: Evaluating a DBT-Informed Generative AI Platform for Mindfulness Skills Training: A Pilot Randomized Study",
-    "title_zh": null,
+    "title_zh": "GenAI-DBT：DBT启发的正念技能训练生成式AI平台评估：先导随机研究",
     "tldr": "30天随机试点将45名大学生分配至DBT引导的生成式AI助手、普通聊天机器人或静态网页。三组可用性及主要心理量表无显著差异；GenAI-DBT依从率和语言效价改善较高，用户认可情境化练习，但响应延迟、内容重复和个性化不足仍待改进，临床疗效尚未确立。",
     "topic_tags": [
       "可用性测试",
@@ -47137,7 +47426,7 @@
     "pdf_url": "https://arxiv.org/pdf/2611.25970v1",
     "scored_at": "2026-11-20T09:29:16.884634",
     "title": "The Depth of a Prediction: Where Language Models Resolve a Word Predicts Human Reading Time",
-    "title_zh": null,
+    "title_zh": "预测的深度：语言模型消解词汇的位置可预测人类阅读时间",
     "tldr": "语言模型的最终层困惑度可预测阅读时长，但预测实际在多层逐步形成。研究用调谐透镜提取各层的“解决深度”，在8个英语眼动与自定速阅读语料、10个模型中验证：较晚解析的词及其后继词阅读更慢，该指标优于最终层困惑度、熵和最佳单层，并具有跨模型家族泛化能力。",
     "topic_tags": [
       "眼动追踪",
@@ -47292,6 +47581,130 @@
       "任务指导"
     ],
     "url": "https://arxiv.org/abs/2611.26491v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Persona-prompted large language models (LLMs) are increasingly used as synthetic survey respondents and digital twins. We examine how LLMs generate individual survey responses and why synthetic responses can show algorithmic fidelity in aggregate while tracking individual respondents poorly. We constructed 14,000 synthetic respondents from attributes of participants in Round 11 of the European Social Survey across 28 countries. Gemini 2.5 Flash and GPT-5-mini answered 15 attitude questions. We compared their outputs with each participant's answers and with the estimated human conditional mean for that profile. Synthetic responses tracked the conditional mean more closely than matched human responses did: correlations were 0.59 for Gemini and 0.55 for GPT-5-mini, compared with 0.44 for humans. Correlations with the matched individual's answers were only 0.28 and 0.26. Persona attributes accounted for 0.617 and 0.468 of synthetic response variance, compared with 0.192 in human data. Synthetic profiles occupied about five effective dimensions, versus nearly ten for humans. Repeated generation added only 12% of the human residual variation. Personal values accounted for most of the predictable component, while a few semantically relevant cues dominated response formation. Removing the three strongest cues reduced persona-explained variation by about half, after which the models re-anchored on the remaining attributes. We call this pattern over-determination: personas constrain synthetic answers much more strongly than they constrain the people they describe. The results suggest synthetic respondents may support questionnaire pretesting, directional exploration, and broad segment comparisons, but not individual digital twins or within-segment analysis. Validation of synthetic responses should assess conditional variance, dimensional structure, and individual heterogeneity.",
+    "ai_reason": "以真实调查参与者检验合成受访者效度",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "AI 问卷生成",
+      "AI 用户画像"
+    ],
+    "authors": [
+      "Suchecki Konrad",
+      "Flores Laurent"
+    ],
+    "authors_full": [
+      {
+        "name": "Suchecki Konrad"
+      },
+      {
+        "name": "Flores Laurent"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-20",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 39668,
+    "ingested_at": "2026-11-23T10:05:05.598607",
+    "issue": null,
+    "journal": "arXiv:cs.CY",
+    "pdf_url": "https://arxiv.org/pdf/2611.27449v1",
+    "scored_at": "2026-11-23T10:05:43.369188",
+    "title": "Answering the persona, not the person: Over-determination in the construction of synthetic respondents",
+    "title_zh": "回应角色而非个人：合成受访者构建中的过度决定",
+    "tldr": "以欧洲社会调查画像构建1.4万个LLM合成受访者并回答态度题，发现其更贴近画像条件均值，却难追踪真实个体。画像属性解释的方差远高于人类、个体维度更少，重复生成也难补足残余差异，显示人格提示会造成“过度决定”并削弱个体真实性。",
+    "topic_tags": [
+      "用户研究方法",
+      "问卷",
+      "用户画像"
+    ],
+    "url": "https://arxiv.org/abs/2611.27449v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Sustaining user experience (UX) quality in large-scale web search requires scalable evaluation. Traditional surveys are slow and bottleneck rapid A/B testing, while automated metrics often lack the granularity to diagnose visual-spatial UX anomalies. To address this, we introduce the Dual-Tier Sentiment Framework, a novel industrial architecture for automated UX attribution. Tier 1 (Macro System) acts as a scalable user sentiment regression detector, utilizing a fine-tuned encoder-decoder LLM (based on Gemini XS) on telemetry features. Through multi-task regularization and contextual feature engineering, this tier achieves a +9.8% PR-AUC gain on over 500,000 held-out records, matching baseline recall on all validated regressions with $\\sim$20% relative precision gain among the 12 held-out experiments. In production, it reduces measurement latency from weeks to hours and cuts survey overhead by over 40%. Tier 2 (Micro System) provides granular diagnostics by employing a Multimodal LLM (Gemini 3.0 Pro) to natively assess visual renderings and spatial layout of web result blocks, quantifying \"User Toil\" as the estimated effort required to reach a satisfactory result. Enhanced by RL-based automated prompt optimization and an AI judge for win/loss patterns, the MLLM yields a $>$6.5% F1 score improvement, offering deep insights into content quality and layout friction. Ultimately, this framework enables scalable, accurate, and diagnostic UX attribution, processing O(100k) live experiment queries daily.",
+    "ai_reason": "以LLM自动化评估网页搜索UX与用户情绪",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "多模态",
+      "情感识别",
+      "可用性 AI"
+    ],
+    "authors": [
+      "Yi Ding",
+      "Gaurav Kumar",
+      "Rui Min",
+      "Isabella Ye",
+      "Bhavika Goyal"
+    ],
+    "authors_full": [
+      {
+        "name": "Yi Ding"
+      },
+      {
+        "name": "Gaurav Kumar"
+      },
+      {
+        "name": "Rui Min"
+      },
+      {
+        "name": "Isabella Ye"
+      },
+      {
+        "name": "Bhavika Goyal"
+      },
+      {
+        "name": "Emilio Antunez"
+      },
+      {
+        "name": "Huihui Chen"
+      },
+      {
+        "name": "Ke Xu"
+      },
+      {
+        "name": "Xiaowei Sun"
+      },
+      {
+        "name": "Xin Xu"
+      },
+      {
+        "name": "Huijie Feng"
+      },
+      {
+        "name": "Pradyumna Narayana"
+      },
+      {
+        "name": "Golnaz Farhadi"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-20",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 39673,
+    "ingested_at": "2026-11-23T10:05:05.604273",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.27899v1",
+    "scored_at": "2026-11-23T10:05:43.368066",
+    "title": "The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search",
+    "title_zh": "双层情感框架：网页搜索中可扩展的多模态UX归因",
+    "tldr": "面向大规模网页搜索的UX评估，双层框架以微调LLM从遥测数据回归用户满意度，并用多模态LLM诊断结果页的视觉布局与操作负担。测量周期由数周缩至数小时，问卷成本降低逾40%，异常识别精度亦获提升。",
+    "topic_tags": [
+      "用户体验(UX)",
+      "可用性",
+      "用户研究方法",
+      "多模态交互"
+    ],
+    "url": "https://arxiv.org/abs/2611.27899v1",
     "volume": null,
     "year": 2026
   },
@@ -59424,6 +59837,72 @@
     "url": "https://doi.org/10.1016/j.chb.2026.108929",
     "volume": "180",
     "year": 2026
+  },
+  {
+    "abstract": null,
+    "ai_reason": "智能自适应个性化工作空间研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "人机交互",
+      "上下文感知",
+      "自适应系统"
+    ],
+    "authors": [
+      "JENNIFER LAI",
+      "ANTHONY LEVAS",
+      "PAUL CHOU",
+      "CLAUDIO PINHANEZ",
+      "MARISA VIVEROS"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "JENNIFER LAI",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "ANTHONY LEVAS",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "PAUL CHOU",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "CLAUDIO PINHANEZ",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "MARISA VIVEROS",
+        "orcid": null
+      }
+    ],
+    "cited_by": 21,
+    "date": "2002-11",
+    "doi": "10.1006/ijhc.2002.1028",
+    "domain_score": 4.0,
+    "id": 39645,
+    "ingested_at": "2026-11-23T10:05:02.225939",
+    "issue": "5",
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-11-23T10:08:00.992567",
+    "title": "BlueSpace: personalizing workspace through awareness and adaptability",
+    "title_zh": "BlueSpace：通过感知与适应性实现工作区个性化",
+    "tldr": "BlueSpace旨在通过情境感知与自适应能力个性化工作空间，使环境随用户活动及需求动态调整；因缺少摘要，具体交互机制、评价指标与实证效果尚无法确认。",
+    "topic_tags": [
+      "个性化",
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "情境感知"
+    ],
+    "url": "https://doi.org/10.1006/ijhc.2002.1028",
+    "volume": "57",
+    "year": 2002
   },
   {
     "abstract": null,
@@ -116193,7 +116672,7 @@
     "pdf_url": null,
     "scored_at": "2026-11-22T09:07:28.646709",
     "title": "Synthetic Micro-research: What Organisations Ask once Respondents Cost Nothing",
-    "title_zh": null,
+    "title_zh": "合成微型研究：当受访者不再产生成本时，组织会询问什么",
     "tldr": "分析895个企业合成受访者项目的使用日志，发现多数项目由非研究人员发起，中位3.9小时即可获得结果；其主要用途是概念筛选和客户、市场描述，支持低成本、低风险的微型市场决策。",
     "topic_tags": [
       "用户研究方法",
@@ -120457,7 +120936,7 @@
     "pdf_url": null,
     "scored_at": "2026-11-22T09:08:02.130604",
     "title": "The Impact of Intelligent Pedagogical Agents’ Interventions on Student Behavior and Performance in Open-Ended Game Design Environments",
-    "title_zh": null,
+    "title_zh": "智能教学智能体干预对开放式游戏设计环境中学生行为与表现的影响",
     "tldr": "在开放式游戏设计学习环境中评估教学智能体，比较无干预、单次与重复干预对两类错误的影响；学生整体评价积极，重复干预可减少部分错误并促进正确行为，但效果依错误类型而异。",
     "topic_tags": [
       "人机协作",

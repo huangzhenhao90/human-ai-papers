@@ -1,0 +1,95 @@
+{
+  "abstract": "Sustaining user experience (UX) quality in large-scale web search requires scalable evaluation. Traditional surveys are slow and bottleneck rapid A/B testing, while automated metrics often lack the granularity to diagnose visual-spatial UX anomalies. To address this, we introduce the Dual-Tier Sentiment Framework, a novel industrial architecture for automated UX attribution. Tier 1 (Macro System) acts as a scalable user sentiment regression detector, utilizing a fine-tuned encoder-decoder LLM (based on Gemini XS) on telemetry features. Through multi-task regularization and contextual feature engineering, this tier achieves a +9.8% PR-AUC gain on over 500,000 held-out records, matching baseline recall on all validated regressions with $\\sim$20% relative precision gain among the 12 held-out experiments. In production, it reduces measurement latency from weeks to hours and cuts survey overhead by over 40%. Tier 2 (Micro System) provides granular diagnostics by employing a Multimodal LLM (Gemini 3.0 Pro) to natively assess visual renderings and spatial layout of web result blocks, quantifying \"User Toil\" as the estimated effort required to reach a satisfactory result. Enhanced by RL-based automated prompt optimization and an AI judge for win/loss patterns, the MLLM yields a $>$6.5% F1 score improvement, offering deep insights into content quality and layout friction. Ultimately, this framework enables scalable, accurate, and diagnostic UX attribution, processing O(100k) live experiment queries daily.",
+  "ai_type_tags": [
+    "LLM",
+    "多模态",
+    "情感识别",
+    "可用性 AI"
+  ],
+  "arxiv_id": "2611.27899",
+  "authors": [
+    "Yi Ding",
+    "Gaurav Kumar",
+    "Rui Min",
+    "Isabella Ye",
+    "Bhavika Goyal"
+  ],
+  "authors_full": [
+    {
+      "name": "Yi Ding"
+    },
+    {
+      "name": "Gaurav Kumar"
+    },
+    {
+      "name": "Rui Min"
+    },
+    {
+      "name": "Isabella Ye"
+    },
+    {
+      "name": "Bhavika Goyal"
+    },
+    {
+      "name": "Emilio Antunez"
+    },
+    {
+      "name": "Huihui Chen"
+    },
+    {
+      "name": "Ke Xu"
+    },
+    {
+      "name": "Xiaowei Sun"
+    },
+    {
+      "name": "Xin Xu"
+    },
+    {
+      "name": "Huijie Feng"
+    },
+    {
+      "name": "Pradyumna Narayana"
+    },
+    {
+      "name": "Golnaz Farhadi"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以LLM自动化评估网页搜索UX与用户情绪",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "面向大规模网页搜索的UX评估，双层框架以微调LLM从遥测数据回归用户满意度，并用多模态LLM诊断结果页的视觉布局与操作负担。测量周期由数周缩至数小时，问卷成本降低逾40%，异常识别精度亦获提升。",
+      "topic_tags": [
+        "用户体验(UX)",
+        "可用性",
+        "用户研究方法",
+        "多模态交互"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-20",
+  "doi": null,
+  "id": "p_YTkWW-bYFHPlyCMN",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.27899v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39673,
+      "revision": "64880b72035feff0639d488e13723dcc8d979f6a"
+    }
+  ],
+  "title": "The Dual-Tier Sentiment Framework: Scalable Multimodal UX Attribution in Web Search",
+  "title_zh": "双层情感框架：网页搜索中可扩展的多模态UX归因",
+  "unified_ingested_at": "2026-11-23T10:26:33.547933Z",
+  "url": "https://arxiv.org/abs/2611.27899v1",
+  "volume": null,
+  "year": 2026
+}

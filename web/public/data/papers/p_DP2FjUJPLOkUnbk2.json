@@ -1,0 +1,72 @@
+{
+  "abstract": "Multi-agent LLM systems increasingly divide long tasks among subagents whose reports a senior agent turns into the final answer. Such a division of labor pays off only if each agent, and above all the senior agent, carries out the duties of its role. Current evaluations, however, mostly score the final answer, and a fluent, well-cited answer cannot show whether the senior agent weighed its subagents' reports or merely aggregated them. To assess whether a senior agent meets its assigned responsibilities, we define role integrity as the preservation of an agent's functional responsibilities when it acts on its subordinates' material. To measure it, we introduce RI-Bench, a behavioral benchmark grounded in the structures and public records of three institutional hierarchies: peer review, appellate adjudication, and parliamentary inquiry. We choose these hierarchies because their rules explicitly assign the senior role a duty toward subordinate material, and together they cover three basic duties: to weigh, to verify, and to relay. Rather than scoring output correctness, we measure how senior agents' outputs respond to controlled changes in subordinate material, using rule-based checks and a rubric-guided LLM judge calibrated against human annotation. Across eight LLMs and over 12,000 agentic episodes, senior agents rarely adopt a planted procedural error (2.9% of rulings) but often follow a majority of generic reviews (up to 71% of decisions) or drop witnesses' stated limitations (up to 65% of cited claims). Obligation prompts reduce these failures without removing them, and they also shift behavior in the control conditions. These findings motivate direct, obligation-specific evaluation of role integrity rather than inferring it from general capability or explicit role instructions. Code and data are available at https://github.com/jxtse/ri-bench.",
+  "ai_type_tags": [
+    "LLM",
+    "多智能体",
+    "AI评测"
+  ],
+  "arxiv_id": "2611.27139",
+  "authors": [
+    "Jinxiang Xie",
+    "Xinyi Zhang",
+    "Changjiang Jiang",
+    "Kexu Liu",
+    "Qi Yang"
+  ],
+  "authors_full": [
+    {
+      "name": "Jinxiang Xie"
+    },
+    {
+      "name": "Xinyi Zhang"
+    },
+    {
+      "name": "Changjiang Jiang"
+    },
+    {
+      "name": "Kexu Liu"
+    },
+    {
+      "name": "Qi Yang"
+    },
+    {
+      "name": "Yuxin Su"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心评估多智能体系统中的角色完整性",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "RI-Bench通过操控下级代理材料并检验输出变化，评估高级代理是否履行权衡、核实和转述职责。跨8种LLM、逾1.2万次代理测试发现，高级代理很少采纳植入的程序错误，却常跟随泛化评审的多数意见，并忽略证人陈述的局限。",
+      "topic_tags": [
+        "团队",
+        "决策",
+        "组织治理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-20",
+  "doi": null,
+  "id": "p_DP2FjUJPLOkUnbk2",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.27139v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85331,
+      "revision": "6b7ee3f6dc6486f8fc331284aafa4fdc943dce51"
+    }
+  ],
+  "title": "Do Senior Agents Do Their Job? Measuring Role Integrity in How LLM Agents Use Subordinate Material",
+  "title_zh": "高级智能体是否履行职责：LLM智能体使用下属材料时的角色操守评估",
+  "unified_ingested_at": "2026-11-23T10:26:33.547933Z",
+  "url": "https://arxiv.org/abs/2611.27139v1",
+  "volume": null,
+  "year": 2026
+}

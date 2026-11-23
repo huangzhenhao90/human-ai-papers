@@ -1,0 +1,57 @@
+{
+  "abstract": "Persona-prompted large language models (LLMs) are increasingly used as synthetic survey respondents and digital twins. We examine how LLMs generate individual survey responses and why synthetic responses can show algorithmic fidelity in aggregate while tracking individual respondents poorly. We constructed 14,000 synthetic respondents from attributes of participants in Round 11 of the European Social Survey across 28 countries. Gemini 2.5 Flash and GPT-5-mini answered 15 attitude questions. We compared their outputs with each participant's answers and with the estimated human conditional mean for that profile. Synthetic responses tracked the conditional mean more closely than matched human responses did: correlations were 0.59 for Gemini and 0.55 for GPT-5-mini, compared with 0.44 for humans. Correlations with the matched individual's answers were only 0.28 and 0.26. Persona attributes accounted for 0.617 and 0.468 of synthetic response variance, compared with 0.192 in human data. Synthetic profiles occupied about five effective dimensions, versus nearly ten for humans. Repeated generation added only 12% of the human residual variation. Personal values accounted for most of the predictable component, while a few semantically relevant cues dominated response formation. Removing the three strongest cues reduced persona-explained variation by about half, after which the models re-anchored on the remaining attributes. We call this pattern over-determination: personas constrain synthetic answers much more strongly than they constrain the people they describe. The results suggest synthetic respondents may support questionnaire pretesting, directional exploration, and broad segment comparisons, but not individual digital twins or within-segment analysis. Validation of synthetic responses should assess conditional variance, dimensional structure, and individual heterogeneity.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 问卷生成",
+    "AI 用户画像"
+  ],
+  "arxiv_id": "2611.27449",
+  "authors": [
+    "Suchecki Konrad",
+    "Flores Laurent"
+  ],
+  "authors_full": [
+    {
+      "name": "Suchecki Konrad"
+    },
+    {
+      "name": "Flores Laurent"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以真实调查参与者检验合成受访者效度",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "以欧洲社会调查画像构建1.4万个LLM合成受访者并回答态度题，发现其更贴近画像条件均值，却难追踪真实个体。画像属性解释的方差远高于人类、个体维度更少，重复生成也难补足残余差异，显示人格提示会造成“过度决定”并削弱个体真实性。",
+      "topic_tags": [
+        "用户研究方法",
+        "问卷",
+        "用户画像"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-20",
+  "doi": null,
+  "id": "p_NPQL0yw7vylv2muW",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2611.27449v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39668,
+      "revision": "64880b72035feff0639d488e13723dcc8d979f6a"
+    }
+  ],
+  "title": "Answering the persona, not the person: Over-determination in the construction of synthetic respondents",
+  "title_zh": "回应角色而非个人：合成受访者构建中的过度决定",
+  "unified_ingested_at": "2026-11-23T10:26:33.547933Z",
+  "url": "https://arxiv.org/abs/2611.27449v1",
+  "volume": null,
+  "year": 2026
+}
