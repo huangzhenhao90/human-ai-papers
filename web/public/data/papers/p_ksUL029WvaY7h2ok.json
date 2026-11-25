@@ -1,0 +1,78 @@
+{
+  "abstract": "The empirical risk minimization approach to data-driven decision making requires access to training data drawn under the same conditions as those that will be faced when the decision rule is deployed. However, we may be concerned that our training sample is biased in the sense that some groups (characterized by either observable or unobservable attributes) may be under- or over-represented relative to the general population; and in this setting, empirical risk minimization over the training set may fail to yield rules that perform well at deployment. We propose a model of sampling bias called conditional [Formula: see text]-biased sampling, where observed covariates can affect the probability of sample selection arbitrarily much but the amount of unexplained variation in the probability of sample selection is bounded by a constant factor. Applying the distributionally robust optimization framework, we propose a method for learning a decision rule that minimizes the worst-case risk incurred under a family of test distributions that can generate the training distribution under conditional [Formula: see text]-biased sampling. We apply a result of Rockafellar and Uryasev to show that this problem is equivalent to an augmented convex risk minimization problem. We give statistical guarantees for learning a model that is robust to sampling bias via the method of sieves, and propose a deep learning algorithm whose loss function captures our robust learning target. We empirically validate our proposed method in a case study on prediction of mental health scores from health survey data and a case study on intensive care unit length-of-stay prediction.\n                  This paper was accepted by Vivek Farias, data science.\n                  Funding: This research was supported by NSF grant SES-2242876. RS is further supported by a NSF GRFP under grant DGE-1656518, a Stanford Data Science PhD Fellowship, and a Stanford Diversifying Academia Recruiting Excellence (DARE) Fellowship.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.08073 .",
+  "ai_type_tags": [
+    "机器学习",
+    "深度学习",
+    "算法决策",
+    "分布鲁棒优化"
+  ],
+  "arxiv_id": "2024.08073",
+  "authors": [
+    "Roshni Sahoo",
+    "Lihua Lei",
+    "Stefan Wager"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Columbia University"
+      ],
+      "name": "Roshni Sahoo",
+      "orcid": "https://orcid.org/0000-0002-7424-445X",
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "Stanford University"
+      ],
+      "name": "Lihua Lei",
+      "orcid": "https://orcid.org/0000-0002-0946-3752",
+      "position": "middle"
+    },
+    {
+      "affiliation": [
+        "Stanford University"
+      ],
+      "name": "Stefan Wager",
+      "orcid": "https://orcid.org/0000-0002-7526-9077",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "聚焦有偏样本下的数据驱动决策",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "针对训练样本中群体过度或不足代表总体所导致的部署失效，构建条件采样偏差模型，以分布鲁棒优化学习最坏情形风险规则，并借助筛法获得统计保证及深度学习实现。",
+      "topic_tags": [
+        "决策",
+        "偏见",
+        "公平性",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-23",
+  "doi": "10.1287/mnsc.2024.08073",
+  "id": "p_ksUL029WvaY7h2ok",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85392,
+      "revision": "91e3f9ca2527d732e7a8bdf309bc589a89dc4388"
+    }
+  ],
+  "title": "Learning from a Biased Sample",
+  "title_zh": "从有偏样本中学习",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://doi.org/10.1287/mnsc.2024.08073",
+  "volume": null,
+  "year": 2026
+}

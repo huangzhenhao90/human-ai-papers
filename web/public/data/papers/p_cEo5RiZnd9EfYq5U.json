@@ -1,0 +1,83 @@
+{
+  "abstract": "Degree certificates play a critical role in high-stakes decisions such as university admission, immigration, and hiring. The issuing institution vouches for the holder, so a forged certificate may let its bearer pass these checks. Degree certificate forgery is increasingly prevalent. Yet, many assume that it is easy to spot. Reported cases show otherwise: in 2024, the business school of the University of Hong Kong found that about 30 master's students had enrolled with forged academic credentials. Few studies have looked at how to detect forged degree certificates, partly because public benchmarks are scarce. We present TamperCert, a benchmark built from 400 real degree certificates issued by 38 universities. Each certificate was subjected to 11 publicly available tampering methods to alter the holder's name and further processed with four additional post-processing techniques, resulting in over 20,000 forged images. We evaluate 13 detectors, a commercial multimodal large language model (MLLM), and detectors trained on TamperCert.Our findings reveal that no detector is reliable for every tampering method. Consequently, a determined forger may still evade detection. Moreover, the commercial MLLM misses most forgeries made by general-purpose generative models, and post-processing, such as resizing an image or photographing it with a camera, severely degrades detection.",
+  "ai_type_tags": [
+    "多模态",
+    "大语言模型",
+    "机器学习",
+    "图像篡改检测"
+  ],
+  "arxiv_id": "2611.30419",
+  "authors": [
+    "ChiFung Kwan",
+    "Kangzhong Wang",
+    "Youqian Zhang",
+    "Weijie Chen",
+    "Jiaqi Gao"
+  ],
+  "authors_full": [
+    {
+      "name": "ChiFung Kwan"
+    },
+    {
+      "name": "Kangzhong Wang"
+    },
+    {
+      "name": "Youqian Zhang"
+    },
+    {
+      "name": "Weijie Chen"
+    },
+    {
+      "name": "Jiaqi Gao"
+    },
+    {
+      "name": "Yongjian Wu"
+    },
+    {
+      "name": "Eugene Yujun Fu"
+    },
+    {
+      "name": "Qingqing Ye"
+    },
+    {
+      "name": "Haibo Hu"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI检测学历证书文本篡改",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对学历证书篡改难以可靠识别的问题，构建包含400张真证书、逾2万张伪造样本的TamperCert基准，评测13种检测器及商用多模态大模型。检测器对不同篡改方式鲁棒性不足，通用生成式伪造多被漏检，缩放或翻拍等后处理会显著降低识别率。",
+      "topic_tags": [
+        "文档欺诈",
+        "图像取证",
+        "深度伪造",
+        "教育认证"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-23",
+  "doi": null,
+  "id": "p_cEo5RiZnd9EfYq5U",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.30419v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85547,
+      "revision": "91e3f9ca2527d732e7a8bdf309bc589a89dc4388"
+    }
+  ],
+  "title": "TamperCert: A Benchmark for Detecting Text Tampering in Degree Certificates",
+  "title_zh": "TamperCert：检测学位证书文本篡改的基准",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.30419v1",
+  "volume": null,
+  "year": 2026
+}

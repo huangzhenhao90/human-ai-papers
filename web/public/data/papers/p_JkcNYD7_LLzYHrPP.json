@@ -1,0 +1,55 @@
+{
+  "abstract": "Vision-language models have been used to simulate where a user looks on a web page. However, a persona in the prompt reaches the simulated gaze only partly. We measure this reach as the difference in one model's gaze between two MatrAIx personas that differ in a single attribute. We introduce persona lenses, which place the persona between the model and the page: a text lens (a two-step prompt in which the model first writes what the persona would look at), a pixel lens (marks on the region matching the persona's interests) and a weight lens (a dwell reward gated to keep the scanpath natural). Using Qwen3-VL (4B and 32B) and Qwen3.5-9B on generated and live pages, we compare the lenses with one another and with scale, the 32B model with no lens. It has been confirmed that the text lens separates the personas strongly but is not robust to profile changes that should not move gaze. The pixel lens separates the personas less but is unaffected by attributes unrelated to gaze. At 4B and 9B, the weight lens separates the personas on interests held out from training, with no extra step on a new page. The 32B model separates the personas with the base prompt alone. Therefore, the choice of a lens depends on cost and model size.",
+  "ai_type_tags": [
+    "视觉语言模型(VLM)",
+    "多模态",
+    "眼动AI",
+    "用户模拟"
+  ],
+  "arxiv_id": "2611.25508",
+  "authors": [
+    "Yoonho Shin"
+  ],
+  "authors_full": [
+    {
+      "name": "Yoonho Shin"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "以人格模拟网页注视，属用户视角但无真人评测",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "为提升视觉语言模型模拟不同人物凝视网页的准确性，提出文本、像素和权重三类人物透镜，并在不同规模Qwen模型及真实页面上比较。文本透镜区分能力强但易受无关画像变化干扰，像素透镜更稳健，权重透镜适合较小模型，方案选择取决于成本与模型规模。",
+      "topic_tags": [
+        "眼动追踪",
+        "用户画像",
+        "可视化",
+        "多模态交互"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-19",
+  "doi": null,
+  "id": "p_JkcNYD7_LLzYHrPP",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2611.25508v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39512,
+      "revision": "9054f8d5ea97d3f89274be2a77eaa2806b3988c0"
+    }
+  ],
+  "title": "Persona Lenses: What Makes a Vision-Language Model See Through Its Persona's Eyes?",
+  "title_zh": "Persona透镜：视觉语言模型何以透过Persona之眼观察？",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.25508v1",
+  "volume": null,
+  "year": 2026
+}

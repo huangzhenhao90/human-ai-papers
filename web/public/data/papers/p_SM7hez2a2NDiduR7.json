@@ -1,0 +1,63 @@
+{
+  "abstract": "Large language models (LLMs) increasingly answer surveys on behalf of real panelists, and each panelist's recorded demographic attributes (e.g., age, education, ethnicity) are often placed in the prompt on the premise that richer profiles make more faithful synthetic respondents. While data minimization limits personal data to what a purpose requires, a synthetic survey serves several purposes at once, from predicting individual answers to estimating how opinions are distributed and comparing groups. We ask which of these purposes require the respondent's record, and whether improved estimates support sound conclusions about groups. We vary whose profile a model receives, where it comes from, and how many fields it contains, in two U.S. surveys with eleven open-weight and three hosted models, and compare each model with a statistical model fit to the same information. We make four contributions. First, we show that the record adds little to individual predictions and that, for the open-weight models, most of its gain in population estimates remains when it is replaced by census data or a synthetic persona. Second, we find that group comparisons improve only with the respondent's own record, and that even then the models' group differences rest more on the demographic label in the prompt than on the individual respondent, which the usual check of reproducing known group differences does not reveal. Third, we find that the models make groups look more alike than they are, keeping differences in circumstances while flattening or reversing differences in attitudes, most sharply for religious affiliation and ethnic origin, both special categories of personal data. Fourth, we outline an audit that a survey organization can run on questions it has already fielded to decide which estimates may use the record.",
+  "ai_type_tags": [
+    "LLM",
+    "AI 问卷生成",
+    "合成受访者",
+    "数据治理"
+  ],
+  "arxiv_id": "2611.20606",
+  "authors": [
+    "Aspen Wang",
+    "Yen Yu Shan",
+    "Lun-Wei Ku"
+  ],
+  "authors_full": [
+    {
+      "name": "Aspen Wang"
+    },
+    {
+      "name": "Yen Yu Shan"
+    },
+    {
+      "name": "Lun-Wei Ku"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "审计LLM合成受访者的人口信息与调查效度",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "审计LLM代替真实受访者回答调查时的人口统计信息披露：档案对个体预测增益有限，群体估计收益多可由普查数据或合成角色替代；群体比较虽依赖受访者档案，却更多受人口标签驱动并抹平真实群体差异。",
+      "topic_tags": [
+        "LLM 合成受访者",
+        "人口统计信息披露",
+        "数据最小化",
+        "群体比较"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-16",
+  "doi": null,
+  "id": "p_SM7hez2a2NDiduR7",
+  "issue": null,
+  "journal": "arXiv:cs.CY",
+  "pdf_url": "https://arxiv.org/pdf/2611.20606v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39281,
+      "revision": "9054f8d5ea97d3f89274be2a77eaa2806b3988c0"
+    }
+  ],
+  "title": "Necessary for What? Auditing Demographic Disclosure to LLM Synthetic Respondents",
+  "title_zh": "何为必要？对LLM合成受访者的人口统计信息披露进行审计",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.20606v1",
+  "volume": null,
+  "year": 2026
+}

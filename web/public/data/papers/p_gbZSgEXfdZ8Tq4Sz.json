@@ -1,0 +1,80 @@
+{
+  "abstract": "Objective: Case investigation and contact tracing are labor-intensive. Web forms struggle when respondents need clarification before disclosing contacts, and open-ended chatbots may deviate from protocols. We developed and evaluated Epira, a protocol-controlled large language model (LLM) interviewer for multi-disease case investigation and contact tracing.   Materials and Methods: Epira pairs LLM dialogue with a rule-based controller enforcing required questions, safety handoffs, and a structured case record, and adapts to new diseases by questionnaire upload. Local (Qwen2.5) and cloud (GPT-5.4) backends were tested. Study 1 used 108 simulated cases with ground-truth fields and contacts for measles and gonorrhea under Epira and open-ended conditions (864 sessions). Study 2 enrolled 72 volunteers in a 2$\\times$2 disease-by-model interview assessing completion, usability, acceptability, and trust.   Results: Across Study 1, Epira with a local LLM captured 88.9% of required fields and 60.1% of ground-truth contacts. Open-ended interviewers recovered 31.1-41.9 percentage points fewer required fields than the same models in Epira. In Study 2, completion was 100%; mean adapted System Usability Scale (SUS) was 82.95 $\\pm$ 16.17 on a 0-100 scale and mean trust was 3.85 $\\pm$ 0.77 on a 1-5 scale.   Discussion: Protocol control drove completeness more than model choice. Local and cloud deployments produced similar records, supporting privacy-preserving local use with human review of routed interviews and missed contacts.   Conclusion: Epira recovers required fields and contacts under diverse disclosure conditions, works with local and cloud LLMs, and received favorable usability and trust ratings.",
+  "ai_type_tags": [
+    "LLM",
+    "对话式AI",
+    "AI助手",
+    "人机交互"
+  ],
+  "arxiv_id": "2611.25577",
+  "authors": [
+    "Ishita Asnani",
+    "Shaghayegh Fazliani",
+    "Zachary Ryan",
+    "Kriyoshig Prasai",
+    "Chirag Kumar"
+  ],
+  "authors_full": [
+    {
+      "name": "Ishita Asnani"
+    },
+    {
+      "name": "Shaghayegh Fazliani"
+    },
+    {
+      "name": "Zachary Ryan"
+    },
+    {
+      "name": "Kriyoshig Prasai"
+    },
+    {
+      "name": "Chirag Kumar"
+    },
+    {
+      "name": "Indra Gonzalez Ojeda"
+    },
+    {
+      "name": "Marc Lipsitch"
+    },
+    {
+      "name": "Madeleine Udell"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "LLM访谈系统，含模拟案例与真人志愿者评估",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "面向病例调查与接触追踪，构建规则控制器约束的LLM访谈助手Epira。模拟病例中必填字段覆盖率达88.9%，较开放式访谈提升31.1—41.9个百分点；72人实验完成率100%、SUS均值82.95。协议约束比模型选择更关键，本地与云端效果相近，适合隐私化应用。",
+      "topic_tags": [
+        "对话式AI",
+        "可用性",
+        "信任",
+        "数字健康"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-19",
+  "doi": null,
+  "id": "p_gbZSgEXfdZ8Tq4Sz",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2611.25577v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39511,
+      "revision": "9054f8d5ea97d3f89274be2a77eaa2806b3988c0"
+    }
+  ],
+  "title": "Design and Evaluation of Epira: An Automated Interview System for Case Investigation and Contact Tracing",
+  "title_zh": "Epira的设计与评估：面向案件调查与接触者追踪的自动化访谈系统",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.25577v1",
+  "volume": null,
+  "year": 2026
+}

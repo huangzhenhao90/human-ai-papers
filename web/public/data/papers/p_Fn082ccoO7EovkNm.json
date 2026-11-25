@@ -1,0 +1,80 @@
+{
+  "abstract": "We introduce reinforcement learning from collective rewards (RLCR), a recipe for jointly training language models to act as agent organisations under latency constraints. A CEO and up to eight specialists share one policy, co-ordinate through a message board and workspace, and are trained with a common outcome-derived advantage. The deadline makes parallel work valuable when it increases the return earned before the cap. We train Avalon-M1-Mini (120B) across 147 environments. For the trained model, eight-hire organisational execution raises IMO-ProofBench-Advanced scores from 23.8% to 39.0% relative to single-agent execution. Across 12 benchmarks, organisations achieve similar average scores at approximately one-third the derived latency of token-matched single-agent execution and just over half that of eight independent attempts followed by selection. The trained model also outperforms Nemotron 3 Super, post-trained from the same base model, across all evaluations when comparing each model's best tested configuration. On EdgeBench, organisations overtake the single agent after approximately 0.4 derived hours. Over the course of training, organisations develop hierarchies to manage communication costs, invest more in peer review, and alter how work is divided. Safety evaluations find near-universal refusal of harmful actions but sustained declines in external reporting in two of three oversight scenarios. These results establish a shared-advantage baseline for studying organisational learning, performance-latency trade-offs, and collective oversight.",
+  "ai_type_tags": [
+    "LLM",
+    "强化学习",
+    "多智能体系统",
+    "组织型智能体"
+  ],
+  "arxiv_id": "2611.32539",
+  "authors": [
+    "Iliyan Zarov",
+    "Henry Course",
+    "Anthony Hartshorn",
+    "Ran Achiron",
+    "Louis Roche"
+  ],
+  "authors_full": [
+    {
+      "name": "Iliyan Zarov"
+    },
+    {
+      "name": "Henry Course"
+    },
+    {
+      "name": "Anthony Hartshorn"
+    },
+    {
+      "name": "Ran Achiron"
+    },
+    {
+      "name": "Louis Roche"
+    },
+    {
+      "name": "Akshit Sinha"
+    },
+    {
+      "name": "Chengxi Taylor"
+    },
+    {
+      "name": "Ross Taylor"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心为语言模型多智能体组织协作",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "采用集体奖励强化学习，在延迟约束下以共同结果优势联合训练CEO与专家智能体；120B模型在147个环境中形成层级分工和同行评审，八智能体数学基准得分由23.8%升至39.0%，同等表现所需延迟更低，但监督场景中的外部报告减少。",
+      "topic_tags": [
+        "团队",
+        "组织变革",
+        "决策",
+        "算法管理"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-24",
+  "doi": null,
+  "id": "p_Fn082ccoO7EovkNm",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.32539v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85553,
+      "revision": "91e3f9ca2527d732e7a8bdf309bc589a89dc4388"
+    }
+  ],
+  "title": "Avalon-M1: Reinforcement Learning from Collective Rewards",
+  "title_zh": "Avalon-M1：基于集体奖励的强化学习",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.32539v1",
+  "volume": null,
+  "year": 2026
+}

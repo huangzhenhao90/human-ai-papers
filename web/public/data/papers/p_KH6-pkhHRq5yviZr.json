@@ -1,0 +1,80 @@
+{
+  "abstract": "Mental disorders pose significant challenges to healthcare systems and have profound social implications. The rapid development of large language model (LLM) presents new opportunities for improving mental healthcare. However, existing approaches primarily rely on instruction tuning and few-shot in-contextlearning with massive datasets and large-scale backbone models, leading to significant computational costs. To address these limitations, we propose MentalQLM, a novel lightweight LLM that leverages a dual Low-Rank Adaptation (LoRA) strategy for parameter-efficient fine-tuning. The development of our proposed MentalQLM includes two key stages. Firstly, we perform dataset pruning based on perplexity and diversity analysis to reduce computational load. The first LoRA module is applied during instruction tuning to adapt the base LLM for mental health classification. Secondly, we introduce a dense layer augmented with a second LoRA module, fine-tuned specifically to boost performance on complex multi-class classification problems. Experimental results demonstrate that our proposed MentalQLM, with only 0.5 billion parameters, achieves an average weighted F1-score of 0.778 on mental disorder diagnosis across five benchmark datasets. It outperforms the state-of-the-art instruction-tuned MentaLLaMA-Chat-13B model by 3.2%, and the few-shot tuned GPT-4 model by 17.7% . This promising performance, combined with its significantly lower resource requirements, positions our developed MentalQLM as a cost-effective and efficient solution for real-world mental healthcare applications, especially in computationally constrained environments.",
+  "ai_type_tags": [
+    "llm_genai",
+    "nlp"
+  ],
+  "arxiv_id": null,
+  "authors": [
+    "Jiayu Shi",
+    "Zexiao Wang",
+    "Jiandong Zhou",
+    "Chengyu Liu",
+    "Poly Z. H. Sun",
+    "Erying Zhao",
+    "Lei Lü"
+  ],
+  "authors_full": [
+    {
+      "name": "Jiayu Shi"
+    },
+    {
+      "name": "Zexiao Wang"
+    },
+    {
+      "name": "Jiandong Zhou"
+    },
+    {
+      "name": "Chengyu Liu"
+    },
+    {
+      "name": "Poly Z. H. Sun"
+    },
+    {
+      "name": "Erying Zhao"
+    },
+    {
+      "name": "Lei Lü"
+    }
+  ],
+  "channel_profiles": {
+    "mh": {
+      "ai_reason": "以轻量LLM执行精神障碍多分类并在五个基准集评测",
+      "ai_score": 5,
+      "clinical_validation": "none",
+      "domain_score": 4,
+      "evidence_stage": "benchmark_development",
+      "ground_truth_quality": "unknown",
+      "real_world_deployment": false,
+      "safety_evaluated": false,
+      "tldr": "0.5B参数模型在五个精神障碍诊断基准集上取得平均加权F1为0.778，但摘要未陈述临床验证或真实世界应用。",
+      "topic_tags": [
+        "transdiagnostic",
+        "screening_assessment",
+        "clinical_decision_support"
+      ]
+    }
+  },
+  "channels": [
+    "mh"
+  ],
+  "cited_by": 33,
+  "date": "2025-08-01",
+  "doi": "10.1109/jbhi.2025.3594133",
+  "id": "p_KH6-pkhHRq5yviZr",
+  "issue": null,
+  "journal": "IEEE Journal of Biomedical and Health Informatics",
+  "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/12/30/2024.12.29.24319755.full.pdf",
+  "source_refs": [
+    {
+      "channel": "mh",
+      "legacy_id": "W4412837006"
+    }
+  ],
+  "title": "MentalQLM: A Lightweight Large Language Model for Mental Healthcare Based on Instruction Tuning and Dual LoRA Modules",
+  "title_zh": "MentalQLM：基于指令微调和双LoRA模块的轻量级心理健康大语言模型",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://doi.org/10.1109/jbhi.2025.3594133",
+  "volume": null,
+  "year": 2025
+}

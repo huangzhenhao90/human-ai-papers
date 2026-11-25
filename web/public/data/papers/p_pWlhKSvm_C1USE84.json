@@ -1,0 +1,66 @@
+{
+  "abstract": "Real-world applications of modern AI systems require generalization to both unseen environments and novel human users. The field of zero-shot coordination (ZSC) has focused primarily on deploying AI to cooperate with novel partners in otherwise familiar environments. Popular population-based methods achieve this by partnering the agent with a diversity of simulated human users during training in a fixed environment, but does not consider the more realistic scenario where both the users and the environment are unseen during training. Recently, training across environments has been explored in training a single self-play agent, which shows better generalization on both novel human users and unseen environments. In this work, we ask whether jointly modeling partner diversity and environment diversity yields stronger coordination with novel partners in novel environments. We introduce Cross Environment Co-Play (CECP), a two-stage framework that first trains a population of self-play agents across a distribution of procedurally generated environments, and then trains a cooperator policy against this partner population. To further couple social and environmental reasoning, we add a next-state prediction module that encourages representations to encode both partner behavior and task structure. We evaluate CECP on both a neuroscience-inspired cooperative foraging task, and the popular ZSC benchmark Overcooked, under held-out partner and held-out environment conditions. CECP achieves the strongest performance among the compared baselines and attains state-of-the-art results under our evaluation protocol for human-AI collaboration. We analyze the model's latent representation encoded by the next-state prediction module, showing it can not only improve the performance of the cooperative AI, but also provide more interpretable latents, demonstrated by the inference of partner skill levels.",
+  "ai_type_tags": [
+    "机器学习",
+    "强化学习",
+    "多智能体系统",
+    "零样本协调"
+  ],
+  "arxiv_id": "2611.32031",
+  "authors": [
+    "Patrick Q. Zhang",
+    "Yancheng Liang",
+    "Adrienne Fairhall",
+    "Natasha Jaques"
+  ],
+  "authors_full": [
+    {
+      "name": "Patrick Q. Zhang"
+    },
+    {
+      "name": "Yancheng Liang"
+    },
+    {
+      "name": "Adrienne Fairhall"
+    },
+    {
+      "name": "Natasha Jaques"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "核心研究人机协作中的人类与AI伙伴多样性",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "面向陌生伙伴与陌生环境同时出现的情形，构建跨环境协同训练框架：在程序生成的多环境中训练自博弈智能体群，再训练协作者，并加入下一状态预测以联合表征伙伴行为与任务结构。在合作觅食和Overcooked测试中，该框架提升了零样本协调与泛化能力。",
+      "topic_tags": [
+        "人机协作",
+        "团队",
+        "决策"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-24",
+  "doi": null,
+  "id": "p_pWlhKSvm_C1USE84",
+  "issue": null,
+  "journal": "arXiv:cs.MA",
+  "pdf_url": "https://arxiv.org/pdf/2611.32031v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85549,
+      "revision": "91e3f9ca2527d732e7a8bdf309bc589a89dc4388"
+    }
+  ],
+  "title": "Unifying Partner and Environment Diversity to Improve Human-AI Coordination",
+  "title_zh": "统一伙伴与环境多样性以提升人机协作",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.32031v1",
+  "volume": null,
+  "year": 2026
+}

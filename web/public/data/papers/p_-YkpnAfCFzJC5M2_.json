@@ -1,0 +1,67 @@
+{
+  "abstract": "Recent advances in video generation have made automated advertising production increasingly feasible. However, an effective advertisement must faithfully represent the product and communicate its selling points through compelling visual storytelling, which requires more than visual synthesis: it calls for deeper product understanding and strategic decisions about how to present product value. Crucially, product research and creative design are closely intertwined, as the information gathered about a product determines which features can be faithfully demonstrated and how they should be presented. In this paper, we introduce AdProducer, the first end-to-end agentic framework for advertising video creation, transforming concise creative briefs into finished advertisements. Our multimodal agent autonomously researches products through web and image search and translates its findings into selling-point-driven storyboards that guide a frozen video generator. To achieve this, we develop a dedicated data construction pipeline that yields two training datasets, AdProducer-SFT and AdProducer-RL, and train the agent through supervised fine-tuning followed by reinforcement learning with joint optimization of storyboard- and video-level rewards. We further introduce AdCreation-Bench, comprising 305 advertising briefs across eight domains, with two complementary metrics: PG-Score for product correctness and creative execution, and Ad-Score for overall advertising effectiveness assessed by an independent judge. Experiments demonstrate that AdProducer improves the PG-Score of MiniMax H3 from 17.3 to 51.3 and generalizes to Veo 3.1 without additional training, improving its score from 28.0 to 35.9, with consistent gains in Ad-Score, VideoScore2, and human evaluations. Code, models, and data are released.",
+  "ai_type_tags": [
+    "GenAI",
+    "多模态",
+    "视频生成",
+    "AI智能体"
+  ],
+  "arxiv_id": "2611.31466",
+  "authors": [
+    "Kunyang Li",
+    "Chaoyang Wang",
+    "Mubarak Shah",
+    "Yuzhang Shang"
+  ],
+  "authors_full": [
+    {
+      "name": "Kunyang Li"
+    },
+    {
+      "name": "Chaoyang Wang"
+    },
+    {
+      "name": "Mubarak Shah"
+    },
+    {
+      "name": "Yuzhang Shang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "AI代理生成广告视频，营销核心",
+      "ai_score": 5.0,
+      "domain_score": 5.0,
+      "tldr": "面向广告视频生成中产品理解不足、分镜与创意策略脱节的问题，AdProducer以多模态智能体自主检索产品资料，将卖点转化为分镜并指导视频生成器；通过监督微调和分镜—视频联合奖励强化学习训练，并建立覆盖8领域305个创意简报的评估基准。",
+      "topic_tags": [
+        "广告",
+        "营销",
+        "创意",
+        "内容生成"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-23",
+  "doi": null,
+  "id": "p_-YkpnAfCFzJC5M2_",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2611.31466v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85551,
+      "revision": "91e3f9ca2527d732e7a8bdf309bc589a89dc4388"
+    }
+  ],
+  "title": "AdProducer: Towards Agentic Advertising Video Generation",
+  "title_zh": "AdProducer：迈向智能体式广告视频生成",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.31466v1",
+  "volume": null,
+  "year": 2026
+}

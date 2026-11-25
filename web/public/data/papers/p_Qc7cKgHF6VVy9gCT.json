@@ -1,0 +1,71 @@
+{
+  "abstract": "Memory benchmarks built on question answering tell an agent which fact to recall. Workplace requests often leave that need implicit: to post an update in the team's channel, an agent must work out which channel from earlier interactions and use it in a tool call. We evaluate Memanto, a memory agent that ranks memories with an information-theoretic relevance score, on DolphinBench, which tests memory through 600 simulated workplace tasks, each validated as requiring memory. Running in the Hermes agent harness with GPT-6-Luna and at most 6 iterations per conversation, Memanto completes 503 tasks (83.83%). The strongest configuration reported by the benchmark's authors, Mem0 with GPT-5.6-Luna and up to 60 iterations, completes 424 (70.67%). Memanto's run also has the lowest total cost ($10.86, against $61.48 for the cheapest reported run) and the shortest median task latency (15.32s). Grading uses the benchmark's own judge, but the agent model differs, so these results compare complete systems. The memory system affects both whether an agent completes such tasks and what completion costs.",
+  "ai_type_tags": [
+    "LLM",
+    "AI智能体",
+    "记忆增强",
+    "工具调用"
+  ],
+  "arxiv_id": "2611.28231",
+  "authors": [
+    "Suleman Khan",
+    "Rasa Rahnema",
+    "Tara Khani",
+    "Majid Fekri",
+    "Fattane Zarrinkalam"
+  ],
+  "authors_full": [
+    {
+      "name": "Suleman Khan"
+    },
+    {
+      "name": "Rasa Rahnema"
+    },
+    {
+      "name": "Tara Khani"
+    },
+    {
+      "name": "Majid Fekri"
+    },
+    {
+      "name": "Fattane Zarrinkalam"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "评测AI代理记忆与工作表现",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "以DolphinBench的600项模拟职场任务评测Memanto，比较任务完成率、成本与延迟。Memanto在GPT-6-Luna、最多6轮交互下完成503项（83.83%），高于对比系统Mem0的70.67%，且总成本最低（10.86美元）、中位延迟最短（15.32秒），表明记忆系统显著影响智能体任务成效与经济性。",
+      "topic_tags": [
+        "知识管理",
+        "人机协作",
+        "工作设计",
+        "组织协作"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-20",
+  "doi": null,
+  "id": "p_Qc7cKgHF6VVy9gCT",
+  "issue": null,
+  "journal": "arXiv:cs.IR",
+  "pdf_url": "https://arxiv.org/pdf/2611.28231v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85548,
+      "revision": "91e3f9ca2527d732e7a8bdf309bc589a89dc4388"
+    }
+  ],
+  "title": "Evaluating Memanto on DolphinBench for AI Agents",
+  "title_zh": "在 DolphinBench 上评估面向 AI Agents 的 Memanto",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.28231v1",
+  "volume": null,
+  "year": 2026
+}

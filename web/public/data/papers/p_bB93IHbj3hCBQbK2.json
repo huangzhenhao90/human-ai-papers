@@ -1,0 +1,80 @@
+{
+  "abstract": "Low-light video capture is now common on smartphones and wearables, yet dynamic illumination coupled with mobile/werable user motion causes noise, blur, and flicker that make videos hard to perceive and use, especially for users with night blindness and near-eye displays. Prior work enhances frames with post-hoc temporal constraints or optimizes videos directly; however,low-light and motion degradations are spatiotemporally coupled, so post-hoc consistency after per-frame restoration often leaves flicker and motion artifacts. We present UbiEnlight, the first diffusion-transformer-based on-device system for real-time, temporally stable low-light video enhancement. UbiEnlight builds on two insights: (1) illumination and structure separate more robustly in the frequency domain, enabling a spectrum-guided diffusion transformer that injects Fourier amplitude/phase priors to correct illumination while anchoring structure without optical flow; and (2) user perceptual tolerance varies by context, motivating a perception-aware controller that adapts sampling depth, attention reuse, and frame caching at runtime. We implement UbiEnlight on smartphones and smartglasses, and evaluate it against state-of-the-art baselines. UbiEnlight improves temporal stability by up to 54.76% under dynamic/extreme conditions while sustaining real-time on-device performance.",
+  "ai_type_tags": [
+    "扩散模型",
+    "Transformer",
+    "计算机视觉",
+    "端侧 AI"
+  ],
+  "arxiv_id": "2611.28085",
+  "authors": [
+    "Minfan Wang",
+    "Sicong Liu",
+    "Teng Li",
+    "Zimu Zhou",
+    "Sixun He"
+  ],
+  "authors_full": [
+    {
+      "name": "Minfan Wang"
+    },
+    {
+      "name": "Sicong Liu"
+    },
+    {
+      "name": "Teng Li"
+    },
+    {
+      "name": "Zimu Zhou"
+    },
+    {
+      "name": "Sixun He"
+    },
+    {
+      "name": "Bin Guo"
+    },
+    {
+      "name": "Junzhao Du"
+    },
+    {
+      "name": "Zhiwen Yu"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用户感知导向的低光增强，含特殊用户需求",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对手机与智能眼镜在低光、运动场景中的噪声、模糊和闪烁，构建端侧扩散 Transformer：利用频域先验分离光照与结构，并按用户感知容忍度动态调节计算资源。动态极端条件下时序稳定性最高提升54.76%，同时保持实时。",
+      "topic_tags": [
+        "低光视频增强",
+        "端侧计算",
+        "用户感知",
+        "可访问性"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-16",
+  "doi": "10.1145/3832024",
+  "id": "p_bB93IHbj3hCBQbK2",
+  "issue": null,
+  "journal": "arXiv:cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2611.28085v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 39920,
+      "revision": "9054f8d5ea97d3f89274be2a77eaa2806b3988c0"
+    }
+  ],
+  "title": "UbiEnlight: User-Perception-Aware Real-Time Low-Light Video Enhancement on Mobile Devices and Smartglasses",
+  "title_zh": "UbiEnlight：移动设备与智能眼镜上的用户感知实时低光视频增强",
+  "unified_ingested_at": "2026-11-25T10:58:20.953328Z",
+  "url": "https://arxiv.org/abs/2611.28085v1",
+  "volume": null,
+  "year": 2026
+}
