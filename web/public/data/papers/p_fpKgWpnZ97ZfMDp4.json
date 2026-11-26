@@ -1,0 +1,66 @@
+{
+  "abstract": "Large-scale portfolio selection requires accurate forecasts of high-dimensional dynamic conditional covariance matrices (CCMs). This task is challenging because the number of covariance elements grows quickly with the number of assets, whereas the available time-series observations are limited and noisy. In this paper, we propose a novel graph-based quantiled (GRAND) CCM estimator in the spirit of “divide and conquer.” By extracting information from the extensive asset features, the GRAND method leverages a new graph-based deep learning network, called the self-grouping autoencoder (SGA), to learn the conditional quantiles of returns. Using those learned conditional quantiles, the GRAND method further learns (co)variances of CCM element-wisely via the quantiled conditional moment (QCM) method, and finally, it makes the resulting assembled CCM estimator positive semidefinite through a projection. Because of the use of the SGA network and the QCM method in an element-wise way, the GRAND method is blessing dimensionality in learning the CCM of a large-scale portfolio, while keeping the computation manageable and maintaining causal semantics. From an extensive empirical analysis of the Chinese stock market, we show that the GRAND method can produce much better tangency portfolios than its competitors, and provide dynamic causal graphs to study variance and quantile connectedness of all stocks for interpreting systemic risk and forecasting the business cycle.\n                  This paper was accepted by Kay Giesecke, finance.\n                  Funding: This work was supported by the National Natural Science Foundation of China [Grants 72503203 and 72573142]; the Natural Science Foundation of Fujian Province [Grants 2025J01036 and 2025J08009]; the Fundamental Research Funds for the Central Universities [Grant 20720251053]; and the Research Grants Council, University Grants Committee [Grants 17302424, 17304421, 17304723, and 17312622].\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.08930 .",
+  "ai_type_tags": [
+    "机器学习",
+    "深度学习",
+    "图神经网络",
+    "自编码器"
+  ],
+  "arxiv_id": "2024.08930",
+  "authors": [
+    "Zhoufan Zhu",
+    "Ke Zhu"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Wang Yanan Institute for Studies in Economics, Xiamen University, Xiamen 361005, China; and Department of Finance, School of Economics, Xiamen University, Xiamen 361005, China"
+      ],
+      "name": "Zhoufan Zhu",
+      "orcid": "https://orcid.org/0000-0001-9800-6344"
+    },
+    {
+      "affiliation": [
+        "Department of Statistics and Actuarial Science, The University of Hong Kong, Hong Kong"
+      ],
+      "name": "Ke Zhu",
+      "orcid": "https://orcid.org/0000-0001-7093-1220"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "深度学习用于投资组合协方差预测",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "提出结合图式自分组自编码器与分位数条件矩方法的GRAND估计器，以高效学习高维动态条件协方差矩阵；中国股市实验显示其能改善最优风险资产组合，并支持系统性风险与经济周期分析。",
+      "topic_tags": [
+        "投资组合管理",
+        "风险管理",
+        "因果推断"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-25",
+  "doi": "10.1287/mnsc.2024.08930",
+  "id": "p_fpKgWpnZ97ZfMDp4",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85598,
+      "revision": "e99da4082670d8f91c5972672602bcd32b066e72"
+    }
+  ],
+  "title": "Machine Learning Vast Dynamic Conditional Covariance Matrices: The Spirit of “Divide and Conquer”",
+  "title_zh": "机器学习海量动态条件协方差矩阵：“分而治之”的精神",
+  "unified_ingested_at": "2026-11-26T10:35:17.609365Z",
+  "url": "https://doi.org/10.1287/mnsc.2024.08930",
+  "volume": null,
+  "year": 2026
+}

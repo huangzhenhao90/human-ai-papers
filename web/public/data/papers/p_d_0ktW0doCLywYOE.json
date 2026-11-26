@@ -1,0 +1,57 @@
+{
+  "abstract": "Public admission capacity caps published prior to matriculation are widely used by ministries and institutional analysts as default intake projections in centralized postsecondary clearinghouses. Using an audited 2022 to 2026 Vietnamese undergraduate panel (26,895 program-year records across 309 universities) linked to strictly lagged t-1 occupational vacancy signals, this paper evaluates machine learning, multilevel, and censored econometric estimators against published quotas across 5,385 continuing 2024 programs (five-fold university-grouped cross-validation) and 3,348 matched (2,179 grain-consistent) 2025 programs strictly out of time. Because 62.8% of 2024 programs enroll their exact published quota, unanchored log-growth ensembles degrade accuracy, while the worst 5% generate half of total quota error via unfilled \"phantom capacity.\" Controlled target ablations, including a single-factor test under widened non-binding clipping, show that parameterizing the log fill ratio ln(D_it / S_it) instead of log growth reduces 2024 MAE by 21.5% (14.86 to 11.67), aligns ML with Tobit, Cragg, REML HLM, and capped L1 baselines, and lifts combined tuition and institutional-tier TreeSHAP attribution from 2.5% to 45.8%. Hurdle stacking attains the lowest full-census 2024 MAE (H-Hard 11.29; H-Soft 11.32 vs. 12.35, p = 0.022, clearing 10% not 5% FDR; fold-overlap p = 0.134), whereas continuous QA-Stack outperforms H-Soft on mixed-reporting campuses, Tobit (median) ties H-Soft across both 90% MCS sets, and interior-only Cragg-ML lowers RMSE to 28.1. Under Vietnam's 2025 unified-clearing reform, exact filling falls to 10.4%, H-Soft and capped L1 tie quotas (p = 0.979), and 90% cluster-weighted conformal coverage drops from 89.3% to 74.6%. Across 257 reporting campuses, reconciled 2026 national totals (627,114 to 629,256) lie squarely within 604,533 to 662,044.",
+  "ai_type_tags": [
+    "机器学习",
+    "集成学习",
+    "可解释 AI"
+  ],
+  "arxiv_id": "2611.34104",
+  "authors": [
+    "Dat Tat Mai",
+    "James Jin Kang"
+  ],
+  "authors_full": [
+    {
+      "name": "Dat Tat Mai"
+    },
+    {
+      "name": "James Jin Kang"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "机器学习用于高校招生名额预测",
+      "ai_score": 4.0,
+      "domain_score": 3.0,
+      "tldr": "以越南2022—2026年26,895条本科项目年度数据及滞后职业空缺信号，对比机器学习、集成模型、删失计量模型与已公布招生配额。因62.8%的项目恰招满，未锚定增长率模型失准；改用招生填充率使2024年MAE下降21.5%，双阶段堆叠模型总体最优，并提升TreeSHAP归因能力。",
+      "topic_tags": [
+        "教育",
+        "招生决策",
+        "预测分析"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-25",
+  "doi": null,
+  "id": "p_d_0ktW0doCLywYOE",
+  "issue": null,
+  "journal": "arXiv:cs.LG",
+  "pdf_url": "https://arxiv.org/pdf/2611.34104v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85630,
+      "revision": "e99da4082670d8f91c5972672602bcd32b066e72"
+    }
+  ],
+  "title": "Do Machine Learning Ensembles Beat Published Quotas? Target Parameterization, Censored Baselines, and Conformal Intervals Under Admissions Reform",
+  "title_zh": null,
+  "unified_ingested_at": "2026-11-26T10:35:17.609365Z",
+  "url": "https://arxiv.org/abs/2611.34104v1",
+  "volume": null,
+  "year": 2026
+}

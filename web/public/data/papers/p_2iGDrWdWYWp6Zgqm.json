@@ -1,0 +1,67 @@
+{
+  "abstract": "Multi-session hiring assistants must infer evolving recruiter preferences and decision patterns across projects and time. We introduce Open Knowledge Format (OKF)-indexed episodic memory to organize interactions and retrieve related events through their lineage. We also introduce Procedure Memory, which learns reusable decision procedures from these episodes through prompted reflection or reinforcement learning. We compare these approaches with no memory, full-history context, and conversation search, and evaluate Jev-class models for index navigation and GPT-5.6 Luna as a lower-cost alternative to GPT-5.4.   In our evaluation, OKF-indexed retrieval achieves low-priority preference F1 scores of 0.93-0.95 at medium and high preference overlap between hiring projects. It significantly outperforms full-history context and conversation search in both settings, and no memory at high overlap, while using 69% fewer context tokens than full history. Procedure Memory reduces conversational turns by up to 39% relative to no memory. Qualitative and long-horizon evaluations provide evidence of temporal reasoning, with RL-learned procedures achieving 60% on both correct abstention and exact-field identification. Jev-class models improve conversational efficiency but more frequently miss temporally relevant evidence, highlighting the importance of evidence selection.   On PersonaMem-v2, Procedure Memory with OKF retrieval achieves 50.2% accuracy versus 48.6% for full-history context and 29.0% for no memory, using 90.5% fewer reader input tokens than full history. GPT-5.6 Luna performs comparably to GPT-5.4 at lower cost. These findings highlight the value of structured episodic memory and learned decision procedures for efficient personalization and temporal reasoning.",
+  "ai_type_tags": [
+    "LLM",
+    "强化学习",
+    "智能体",
+    "人机交互"
+  ],
+  "arxiv_id": "2611.34576",
+  "authors": [
+    "Praveen Kumar Bodigutla",
+    "Yizhi Zhang",
+    "Sai Vivek Kanaparthy",
+    "Arup De"
+  ],
+  "authors_full": [
+    {
+      "name": "Praveen Kumar Bodigutla"
+    },
+    {
+      "name": "Yizhi Zhang"
+    },
+    {
+      "name": "Sai Vivek Kanaparthy"
+    },
+    {
+      "name": "Arup De"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "LLM招聘助手学习招聘者决策程序",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "为多会话招聘助手构建OKF索引情节记忆与可复用程序记忆，通过提示反思或强化学习学习招聘决策程序。OKF检索在偏好高度重合场景的F1达0.93—0.95，优于完整历史与对话搜索，且少用69%上下文令牌；程序记忆最多减少39%对话轮次。",
+      "topic_tags": [
+        "招聘",
+        "知识管理",
+        "决策",
+        "人机交互"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-25",
+  "doi": null,
+  "id": "p_2iGDrWdWYWp6Zgqm",
+  "issue": null,
+  "journal": "arXiv:cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2611.34576v1",
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85625,
+      "revision": "e99da4082670d8f91c5972672602bcd32b066e72"
+    }
+  ],
+  "title": "Procedure Inference as Memory: Learning Recruiter Decision Procedures from OKF-Structured Episodes in Multi-Session Hiring Assistants",
+  "title_zh": "程序推断作为记忆：从OKF结构化情节中学习招聘者决策程序，用于多会话招聘助手",
+  "unified_ingested_at": "2026-11-26T10:35:17.609365Z",
+  "url": "https://arxiv.org/abs/2611.34576v1",
+  "volume": null,
+  "year": 2026
+}

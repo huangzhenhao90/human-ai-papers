@@ -1,0 +1,66 @@
+{
+  "abstract": "This paper presents a scalable, nonparametric approach to estimating point-wise price elasticities designed for real-time pricing decisions. A key challenge in these settings is correcting for price endogeneity while remaining computationally efficient. We address this by leveraging nonparametric control functions to decompose the identification of causal elasticities into a sequence of scalable intermediate prediction tasks. We implement this framework with bootstrap averaged (bagged) nearest neighbors, which admits a closed-form representation that enables scalable, real-time implementation. We establish uniform consistency of our estimator and show in Monte Carlo simulations that it robustly recovers local elasticities across a diverse range of data-generating processes. We demonstrate the method’s practical usefulness by applying it to the New York City ride-sharing market, recovering substantial spatial-temporal heterogeneity in price elasticity and updating citywide elasticity estimates in less than one minute, which provide a “just-in-time” input for algorithmic pricing systems.\n                  This paper was accepted by Raphael Thomadsen, marketing.\n                  Funding: J. Wang acknowledges financial support from the Research Grants Council of the Hong Kong Special Administrative Region, China [Grant 14508924].\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.04791 .",
+  "ai_type_tags": [
+    "机器学习",
+    "算法决策",
+    "定价算法"
+  ],
+  "arxiv_id": "2024.04791",
+  "authors": [
+    "Jingbo Wang",
+    "Yufeng Huang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "Department of Marketing, Chinese University of Hong Kong, Hong Kong"
+      ],
+      "name": "Jingbo Wang",
+      "orcid": "https://orcid.org/0000-0001-9612-4558"
+    },
+    {
+      "affiliation": [
+        "Simon Business School, University of Rochester, Rochester, New York 14627"
+      ],
+      "name": "Yufeng Huang",
+      "orcid": "https://orcid.org/0000-0002-7342-1979"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "以机器学习估计价格弹性，属营销定价",
+      "ai_score": 3.0,
+      "domain_score": 5.0,
+      "tldr": "提出可扩展的非参数即时价格弹性估计法，以非参数控制函数将因果识别分解为可扩展预测任务，并用装袋近邻实现快速估计。理论证明估计量一致，模拟显示其可稳健恢复局部弹性；纽约网约车应用可在不足一分钟内更新全市估计，揭示显著时空异质性并支持实时算法定价。",
+      "topic_tags": [
+        "营销",
+        "定价",
+        "决策",
+        "消费者行为"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-25",
+  "doi": "10.1287/mnsc.2024.04791",
+  "id": "p_l2MfEgUlZjW1vy8V",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85600,
+      "revision": "e99da4082670d8f91c5972672602bcd32b066e72"
+    }
+  ],
+  "title": "Scalable Just-in-Time Price Elasticity Estimation",
+  "title_zh": "可扩展的即时价格弹性估计",
+  "unified_ingested_at": "2026-11-26T10:35:17.609365Z",
+  "url": "https://doi.org/10.1287/mnsc.2024.04791",
+  "volume": null,
+  "year": 2026
+}
