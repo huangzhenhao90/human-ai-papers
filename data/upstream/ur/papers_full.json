@@ -48529,6 +48529,63 @@
     "year": 2026
   },
   {
+    "abstract": "Simulating dialogue of a population with LLM-enacted personas is increasingly common, yet each pipeline is generally built for one task, so a new task usually means reworking how the persona is authored, enacted and evaluated. We present an end-to-end persona dialogue pipeline meant to carry over to other populations as a whole; a background is written by an LLM from a national survey report, an off-the-shelf LLM enacts it without fine-tuning, and both are rated for perceived plausibility. We apply it to thirty personas of Korean older adults living alone; three LLM judges compare eight simulator LLMs, and thirty experts who work with this population evaluate the selected one, GPT-5.5. Experts found the backgrounds and dialogues largely realistic but most often faulted a persona for being more capable than its background said, and agreement between their ratings and the LLM judges could not be established. We release the pipeline, personas and their dialogues.",
+    "ai_reason": "据调查构建老年画像并由专家评估",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "对话式 AI",
+      "AI 用户画像"
+    ],
+    "authors": [
+      "Jinyoung Jeong",
+      "Inhee Cho",
+      "Byungju Kim",
+      "Jiwon Baek",
+      "Youngjae Yoo"
+    ],
+    "authors_full": [
+      {
+        "name": "Jinyoung Jeong"
+      },
+      {
+        "name": "Inhee Cho"
+      },
+      {
+        "name": "Byungju Kim"
+      },
+      {
+        "name": "Jiwon Baek"
+      },
+      {
+        "name": "Youngjae Yoo"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-25",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 39995,
+    "ingested_at": "2026-11-26T10:16:32.876978",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.33736v1",
+    "scored_at": "2026-11-27T10:23:48.437466",
+    "title": "AI Persona Dialogue Pipeline; From Survey Report to Conversational Personas, Evaluated by LLMs and Experts",
+    "title_zh": "AI人格对话流程：从调查报告到对话人格，由LLM与专家评估",
+    "tldr": "将全国调查报告转为30个由LLM扮演的韩国独居老人角色，并由模拟模型、LLM评审及领域专家评估。背景与对话总体真实，但角色常能力越界，LLM与专家评分的一致性也无法确认，凸显生成式角色仿真及自动评估的局限。",
+    "topic_tags": [
+      "用户画像",
+      "对话式 AI",
+      "老年用户",
+      "人机交互"
+    ],
+    "url": "https://arxiv.org/abs/2611.33736v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "When users assume that an AI chatbot has mental states, they are more likely to develop over-reliance, emotional dependence, and in extreme cases, psychological harm or self-harm. However, how these mind attributions arise in conversations and how human or AI factors influence this is still unknown. We study how users attribute minds using a minimal framework: a simulated user with different characteristics chats with assistants that differ in social style and memory. We also introduce a message-level measure of who attributes a mind to whom in four directions, checked with trained coders and applied by a fine-tuned encoder that reproduces an LLM judge. Our results show that, on average, nine out of thirteen characteristics raised simulated users' attribution to the assistant. We found that relational needs such as attachment anxiety raised it as theory predicts, some general personality traits raised it as well, and AI-specific characteristics the least. By contrast, the assistant's social style barely changed simulated users' mind attribution. Instead, sycophantic instructions raised the assistant's attribution to itself. Memory raised users' attribution only with some user models. The model playing the user changed overall attribution and the effects of characteristics, style, and memory. Our framework measures how persona descriptions affect mind attribution in simulation. It gives concrete hypotheses for human studies and shows the need for more consistent user simulators.",
     "ai_reason": "模拟用户分析人机对话中的心智归因",
     "ai_score": 5.0,
@@ -48592,6 +48649,95 @@
     "year": 2026
   },
   {
+    "abstract": "Research on serendipity-oriented recommender systems has focused on algorithms that recommend unexpected yet useful items. However, serendipity is increasingly viewed as a user experience shaped by both algorithmic outputs and system features. This study positions recommendations not as the primary goal users pursue but as an environmental affordance that creates opportunities for discovery during other activities. We propose RecField, a spatial movie organization interface where users freely arrange movies into collection zones. For each collection, RecField provides attribute-based recommendation lists labeled according to their recommendation perspectives. A between-subjects experiment ($N$ = 57) examined the effects of recommendations on discoveries made during a foreground task of creating and organizing personal movie profiles. Although recommendations did not significantly affect environment-level perceived serendipity, ratings of encounter-related aspects tended to be higher, with small effect sizes. At the individual-movie level, favorites in the recommendation condition received significantly higher ratings for stimulating the desire to watch and broadening preferences, but not for novelty or unexpectedness. Notably, only 14\\% of evaluated favorites in the recommendation condition were added directly from recommendation lists. Differences in ratings showed similar effect sizes even when the analysis was restricted to favorites added through other routes. These findings suggest that embedded recommendations can contribute to serendipitous experiences both directly through item acceptance and indirectly by prompting users' own exploration and re-evaluation. They also highlight the value of evaluating serendipity at both the environment and item levels and the limitations of relying solely on direct recommendation acceptance rates.",
+    "ai_reason": "界面及57人实验研究推荐与偶遇体验",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "AI 推荐",
+      "推荐算法",
+      "人机交互"
+    ],
+    "authors": [
+      "Kenta Oku"
+    ],
+    "authors_full": [
+      {
+        "name": "Kenta Oku"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-25",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 39997,
+    "ingested_at": "2026-11-26T10:16:32.878557",
+    "issue": null,
+    "journal": "arXiv:cs.IR",
+    "pdf_url": "https://arxiv.org/pdf/2611.34330v1",
+    "scored_at": "2026-11-27T10:23:48.437217",
+    "title": "RecField: Embedding Recommendations into Spatial Movie Organization as Affordances for Serendipitous Encounters",
+    "title_zh": "RecField：将推荐嵌入空间电影组织，提供促成偶遇的可供性",
+    "tldr": "将推荐作为空间整理电影时的环境可供性，RecField允许用户自由建立收藏区并按属性呈现推荐。57人组间实验显示，整体意外性未显著提高，但被推荐收藏品更易激发观看欲并拓宽偏好；仅14%的喜爱条目直接取自推荐列表，表明推荐对整体偶然发现的作用有限。",
+    "topic_tags": [
+      "推荐系统",
+      "用户体验(UX)",
+      "界面设计",
+      "意外发现"
+    ],
+    "url": "https://arxiv.org/abs/2611.34330v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Large language models increasingly replace real people in the AI development pipeline, as they are used to generate training dialogues at scale and to drive alignment and evaluation. However, out-of-the-box models produce monolingual and stylistically flat texts as synthetic user prompts, failing to replicate the real user-AI communication mechanics. We present PersonaFactory, an end-to-end pipeline that generates detailed user personas and uses them to augment existing user prompts from their point of view, producing a bank of over 740000 structured synthetic personas detailing their background and communication behaviors, and a corpus of roughly 1.24 million persona-styled synthetic conversations spanning 85 languages. We evaluate the effect of personal features on style adoption and intent preservation, using an LLM-judge and heuristic metrics to assess augmentation fidelity together with the downstream impact on assistant persona control through training data. Results show that our structured, attribute-based style representation enables per-axis control and better intent preservation at comparable style fidelity than free-text persona descriptions used in existing methods. A human expert evaluation found the augmented conversations plausible, with favorable ratings for intent preservation, style naturalness, and multilingual authenticity. Finally, PersonaFactory conversations achieve comparable performance to original training data on capability benchmarks, are preferred on real user prompts at equal reply length, and adapt their reply style more closely to users without explicit steering.",
+    "ai_reason": "合成用户画像与交互提示是核心对象",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "GenAI",
+      "AI 用户画像",
+      "对话式 AI"
+    ],
+    "authors": [
+      "Bich Ngoc Doan",
+      "Hanna Yukhymenko",
+      "Imanol Schlag"
+    ],
+    "authors_full": [
+      {
+        "name": "Bich Ngoc Doan"
+      },
+      {
+        "name": "Hanna Yukhymenko"
+      },
+      {
+        "name": "Imanol Schlag"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-25",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 40001,
+    "ingested_at": "2026-11-26T10:16:32.887548",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.34785v1",
+    "scored_at": "2026-11-27T10:23:48.436504",
+    "title": "PersonaFactory: Stylistic User Prompt Augmentation with Synthetic Persona Bank",
+    "title_zh": "PersonaFactory：基于合成人格库的风格化用户提示增强",
+    "tldr": "为改善LLM合成用户提示的单语与风格扁平问题，PersonaFactory生成74万余个结构化用户画像，并据此增强提示，形成覆盖85种语言、约124万段合成对话。属性化画像较自由文本更能逐维控制风格并保持意图，专家评价认可其自然性与真实性，增强数据的能力基准表现与原始数据相当。",
+    "topic_tags": [
+      "用户画像",
+      "合成数据",
+      "个性化",
+      "多语言对话"
+    ],
+    "url": "https://arxiv.org/abs/2611.34785v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Conversations are central to how people exchange information, share experiences, and develop collective understanding. Yet, across conversational settings, discussions often suffer from uneven participation, unanswered contributions, and a narrow range of perspectives. As generative AI agents increasingly participate alongside humans, hybrid human-AI conversations present a new opportunity to address these challenges. We investigate whether AI agents can serve as catalysts for human interaction, improving conversational engagement and broadening collective discourse. We develop a framework for introducing generic and persona-conditioned AI agents into evolving discussions and evaluate it through two complementary studies. First, using agent-based simulations grounded in Reddit discussions across four domains, we find that AI-generated conversations are more positive and less toxic than human conversations, but substantially less semantically diverse. Persona conditioning produces more human-like contributions and narrows this diversity gap, while increasing the representation of underrepresented personas can shift which perspectives emerge without necessarily increasing overall diversity. Second, we conduct a pre-registered experiment with 221 participants across nine discussion threads, comparing human-only conversations with those involving generic or persona-conditioned AI agents. We find that AI participation increases responsiveness, reduces unanswered contributions, and broadens the range of ideas expressed by human participants, even though the AI agents themselves do not fully reproduce human conversational diversity. These findings suggest that the value of hybrid human-AI conversations lies not simply in the content AI agents generate, but also in their potential to stimulate more responsive and diverse interactions among humans.",
     "ai_reason": "AI代理参与人机讨论，评估参与和话语质量",
     "ai_score": 5.0,
@@ -48637,6 +48783,238 @@
       "会话质量"
     ],
     "url": "https://arxiv.org/abs/2611.33459v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simulated participants act from isolated profiles of goals, knowledge, and permissions, adapting to the agent's speech and tool outcomes. Across 20 domains, 100 scenarios vary group size, acoustics, and follow-up demands to form 800 cases (408 tool-augmented, 392 tool-free). Joint Task Success (JTS) requires all user goals, privacy boundaries, and terminal states to hold jointly, while Pure JTS further disallows unauthorized tool calls; Attribution, Threading, and Coordination (ATC) diagnostics localize failures. Across 13 voice agents, proprietary systems peak at 62.24\\% tool-free and 65.44\\% tool-augmented success, while open-weight models remain below 20\\%. ATC diagnostics show that open-weight models lag primarily in multi-turn attribution and threading, and controlled contrasts reveal that larger groups consistently degrade joint task success across capable systems. By coupling reactive multi-user simulation with verifiable session-level outcomes, $μ$-Bench provides a rigorous testbed for shared voice agents.",
+    "ai_reason": "多用户语音代理交互评测，关注权限隐私",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "语音智能体",
+      "对话式 AI",
+      "智能体/Agent",
+      "任务型 AI"
+    ],
+    "authors": [
+      "Qihao Lin",
+      "Guanxu Chen",
+      "Shuhang Zheng",
+      "Xiaoya Lu",
+      "Jingyi Yang"
+    ],
+    "authors_full": [
+      {
+        "name": "Qihao Lin"
+      },
+      {
+        "name": "Guanxu Chen"
+      },
+      {
+        "name": "Shuhang Zheng"
+      },
+      {
+        "name": "Xiaoya Lu"
+      },
+      {
+        "name": "Jingyi Yang"
+      },
+      {
+        "name": "Terumi Chiba"
+      },
+      {
+        "name": "Wenyi Yu"
+      },
+      {
+        "name": "Chao Zhang"
+      },
+      {
+        "name": "Zhuan Shi"
+      },
+      {
+        "name": "Jing Shao"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-25",
+    "doi": null,
+    "domain_score": 4.0,
+    "id": 40004,
+    "ingested_at": "2026-11-26T10:16:32.890339",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.34920v1",
+    "scored_at": "2026-11-27T10:23:48.436226",
+    "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+    "title_zh": "μ-Bench：共享交互式语音代理的多用户任务完成基准评测",
+    "tldr": "面向共享空间语音智能体的多用户协作，建立闭环全双工基准μ-Bench，以独立目标、知识与权限的模拟参与者评测联合任务、隐私和工具调用。13个系统最佳工具无关/工具增强成功率为62.24%/65.44%，开放模型低于20%，主要败在多轮归因与线程协调，群体增大也会降低成功率。",
+    "topic_tags": [
+      "多用户语音交互",
+      "任务完成评测",
+      "隐私与权限",
+      "共享空间"
+    ],
+    "url": "https://arxiv.org/abs/2611.34920v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "LLM-based user simulators are increasingly used to evaluate conversational assistants. Yet, these simulators can drift from their assigned goals or fail to exhaustively explore all specified options, causing evaluation errors incorrectly attributed to the assistant. Prior work has examined goal alignment in single-task settings, but many practical scenarios require simulators to execute multi-step workflows with sequential tasks, fallback logic, and cross-task dependencies, where simulator fidelity has not been measured. To close this gap, we introduce a benchmark of 500 workflows represented using the Hierarchical Task Network (HTN) abstraction. Our experiments reveal that the simulator's fidelity degrades sharply with workflow complexity, and that goal drift accounts for the majority of failures. Fidelity also depends on the assistant's response style, with the same simulator scoring substantially better or worse across styles. To address this, we propose ReUST (Reasoning + User State Tracking), a simple prompting strategy to maintain state information across dialogue turns. ReUST improves goal success rate by more than 12 points for mid-sized and large models, and reduces simulator sensitivity to the assistant's response style.",
+    "ai_reason": "用LLM模拟用户评测对话助手工作流可靠性",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "用户模拟",
+      "对话式 AI",
+      "人机交互"
+    ],
+    "authors": [
+      "Pusala Pavan Teja",
+      "Jayasimha Talur",
+      "Saab Mansour",
+      "Marcello Federico"
+    ],
+    "authors_full": [
+      {
+        "name": "Pusala Pavan Teja"
+      },
+      {
+        "name": "Jayasimha Talur"
+      },
+      {
+        "name": "Saab Mansour"
+      },
+      {
+        "name": "Marcello Federico"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-25",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 40005,
+    "ingested_at": "2026-11-26T10:16:32.891057",
+    "issue": null,
+    "journal": "arXiv:cs.CL",
+    "pdf_url": "https://arxiv.org/pdf/2611.34044v1",
+    "scored_at": "2026-11-27T10:23:48.435974",
+    "title": "Reliable User Simulation in Complex Multi-Step Workflows",
+    "title_zh": "复杂多步骤工作流中的可靠用户仿真",
+    "tldr": "针对多步骤工作流评测中LLM用户模拟器易偏离目标、遗漏分支的问题，构建含500个HTN工作流的基准，揭示复杂度升高会显著降低保真度且目标漂移是主要故障，评分还受助手回复风格影响。ReUST通过跨轮推理与用户状态跟踪，将中大型模型的目标成功率提升逾12个百分点，并降低风格敏感性。",
+    "topic_tags": [
+      "对话式 AI",
+      "用户研究方法",
+      "人机交互(HCI)",
+      "AI 评测"
+    ],
+    "url": "https://arxiv.org/abs/2611.34044v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Coding agents are increasingly capable of generating 3D models, yet enabling users to effectively control the modeling process remains challenging. Existing workflows rely primarily on text prompts and reference images, which often struggle to convey precise spatial intentions and require iterative corrections. We introduce SemProxy, a lightweight intermediate representation that bridges intuitive human interaction and agentic 3D modeling. Instantiated as labeled 3D bounding boxes, semantic 3D proxies allow users to directly specify object parts and spatial arrangements while leaving geometric details to coding agents. These proxies can be serialized into structured text and rendered as images, making them directly accessible to existing coding agents without additional training or modifications. We further develop ProxyStudio, a user interface that integrates text, image references, and interactive 3D proxy editing into agentic modeling workflows. We demonstrate the versatility of SemProxy across object- and scene-level modeling tasks with different coding agents, and evaluate its effectiveness in supporting controllable human-agent collaborative 3D modeling through a user study.",
+    "ai_reason": "以直接操控满足用户建模意图，未见用户评估",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "智能体/Agent",
+      "人机交互",
+      "多模态",
+      "GenAI"
+    ],
+    "authors": [
+      "Shuyuan Zhang",
+      "Changjian Li"
+    ],
+    "authors_full": [
+      {
+        "name": "Shuyuan Zhang"
+      },
+      {
+        "name": "Changjian Li"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-25",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 40006,
+    "ingested_at": "2026-11-26T10:16:32.894202",
+    "issue": null,
+    "journal": "arXiv:cs.CV",
+    "pdf_url": "https://arxiv.org/pdf/2611.34414v1",
+    "scored_at": "2026-11-27T10:23:48.435722",
+    "title": "SemProxy: Semantic 3D Proxies for Controllable Agentic 3D Modeling",
+    "title_zh": "SemProxy：用于可控智能体三维建模的语义三维代理",
+    "tldr": "针对文本提示和参考图难以精确表达空间意图的问题，SemProxy以带标签的三维包围盒作为轻量中间表示，让用户编辑对象部件与空间布局，由编码智能体补足几何细节。ProxyStudio整合文本、图像与三维代理编辑；跨对象、场景任务及用户研究验证了其对可控协同建模的支持。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "可视化",
+      "用户体验(UX)"
+    ],
+    "url": "https://arxiv.org/abs/2611.34414v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": "Multi-paper-to-slide generation (multi-PTSG) is the task of constructing a unified presentation from multiple research papers by selecting, organizing, and synthesizing information across sources. This task introduces two main challenges: (i) combining multiple sources into a coherent narrative requires identifying cross-paper relationships and synthesizing their content, and (ii) the desired organization and emphasis varies substantially across presenters, making personalization essential for user satisfaction. Motivated by these challenges, we propose KeyDeck, the first multi-PTSG framework that integrates per-paper and cross-paper analysis to identify relationships among sources and synthesize their contributions into a coherent narrative, and reference-guided personalization to infer presenters' narrative, content, textual, and visual preferences and adapt slide generation accordingly. To evaluate generation quality, personalization adherence, and conversational goal satisfaction, we introduce KeyBench, a benchmark of 100 expert-authored multi-paper presentations, together with a comprehensive evaluation framework. Our results demonstrate that KeyDeck outperforms existing approaches in multi-PTSG quality, personalization adherence, and conversational goal satisfaction.",
+    "ai_reason": "面向演示者的个性化生成，缺少用户评估",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "LLM",
+      "人机交互"
+    ],
+    "authors": [
+      "Tarik Can Ozden",
+      "Sachidanand VS",
+      "Ram Prakash Reddy Motati",
+      "Ozgur Kara",
+      "Dilek Hakkani-Tür"
+    ],
+    "authors_full": [
+      {
+        "name": "Tarik Can Ozden"
+      },
+      {
+        "name": "Sachidanand VS"
+      },
+      {
+        "name": "Ram Prakash Reddy Motati"
+      },
+      {
+        "name": "Ozgur Kara"
+      },
+      {
+        "name": "Dilek Hakkani-Tür"
+      },
+      {
+        "name": "Junho Kim"
+      },
+      {
+        "name": "James Matthew Rehg"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-25",
+    "doi": null,
+    "domain_score": 3.0,
+    "id": 40008,
+    "ingested_at": "2026-11-26T10:16:32.896360",
+    "issue": null,
+    "journal": "arXiv:cs.AI",
+    "pdf_url": "https://arxiv.org/pdf/2611.33715v1",
+    "scored_at": "2026-11-27T10:23:48.435175",
+    "title": "KeyDeck: Multi-Paper-to-Slide Generation via Cross-Paper Synthesis and Reference-Guided Personalization",
+    "title_zh": "KeyDeck：基于跨论文综合与参考引导个性化的多论文转幻灯片生成",
+    "tldr": "KeyDeck结合单篇与跨论文分析识别文献关联、构建连贯叙事，并依据参考示例推断演讲者的叙事、内容、文字和视觉偏好。配套100套专家演示基准KeyBench，实验显示其在生成质量、个性化遵循和对话目标满足度上优于既有方法。",
+    "topic_tags": [
+      "可视化",
+      "个性化",
+      "用户体验(UX)",
+      "人机协作"
+    ],
+    "url": "https://arxiv.org/abs/2611.33715v1",
     "volume": null,
     "year": 2026
   },
@@ -52901,6 +53279,74 @@
     "year": 2025
   },
   {
+    "abstract": "Abstract\n                  Despite the rapid integration of artificial intelligence (AI) in professional environments, its implications for employee engagement are not yet well understood. Hence, this study examines how AI technologies impact employee engagement in the IT sector. The study consisted of 28 semi-structured interviews with IT professionals, recruited in Sweden. The responses were recorded, transcribed, and thematically analyzed using the job demands-resource framework. The findings reveal that AI can enhance work engagement by reducing repetitive tasks, supporting learning, and increasing the meaningfulness of work. However, AI also introduces new demands, including cognitive overload, skill relevance uncertainty, and concerns about tool reliability and leadership support. Theoretically, the findings highlight the need to adapt the Job Demands Resources model to account for the dynamic, context-dependent nature of digital technologies, such as AI. This suggests the emergence of a concept we term Digital Work Engagement, a positive and fulfilling user experience of vigor, dedication, and absorption based on the worker’s interactions with and relation to technology in the workplace. Practically, the study offers guidance for designers and managers on fostering work engagement by aligning AI development and integration with professional growth, autonomy, and support.",
+    "ai_reason": "AI为核心，访谈28名IT从业者并编码分析",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "AI",
+      "人机协作"
+    ],
+    "authors": [
+      "Andreas Bergqvist",
+      "Niklas Humble",
+      "Mats Daniels",
+      "Åsa Cajander"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Department of Information Technology, Uppsala Universitet , Uppsala ,"
+        ],
+        "name": "Andreas Bergqvist",
+        "orcid": "https://orcid.org/0009-0008-9348-3879"
+      },
+      {
+        "affiliation": [
+          "Department of Information Technology, Uppsala Universitet , Uppsala ,",
+          "Department of Communication, Quality Management and Information Systems, Mid Sweden University , Sundsvall ,"
+        ],
+        "name": "Niklas Humble",
+        "orcid": "https://orcid.org/0000-0002-5791-4765"
+      },
+      {
+        "affiliation": [
+          "Department of Information Technology, Uppsala Universitet , Uppsala ,"
+        ],
+        "name": "Mats Daniels",
+        "orcid": "https://orcid.org/0000-0002-8465-7629"
+      },
+      {
+        "affiliation": [
+          "Department of Information Technology, Uppsala Universitet , Uppsala ,"
+        ],
+        "name": "Åsa Cajander",
+        "orcid": "https://orcid.org/0000-0001-7472-2215"
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-05-02",
+    "doi": "10.1093/iwc/iwag024",
+    "domain_score": 5.0,
+    "id": 39814,
+    "ingested_at": "2026-11-25T10:47:46.169458",
+    "issue": null,
+    "journal": "IwC",
+    "pdf_url": null,
+    "scored_at": "2026-11-27T10:24:00.577672",
+    "title": "AI and work engagement in the IT industry",
+    "title_zh": "人工智能与IT行业的工作投入度",
+    "tldr": "基于瑞典28名IT从业者的半结构式访谈与主题分析，AI通过减少重复劳动、支持学习和提升工作意义感促进敬业度，但也带来认知过载、技能不确定性及支持不足等问题；据此提出“数字工作敬业度”概念。",
+    "topic_tags": [
+      "用户研究方法",
+      "访谈",
+      "AI采用",
+      "员工敬业度"
+    ],
+    "url": "https://doi.org/10.1093/iwc/iwag024",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "AI-based voice assistants (VAs), such as Amazon Alexa, are emerging as powerful mediators of AI-assisted shopping processes, yet their influence on consumer decision autonomy remains underexplored. To examine whether and how consumers delegate decisions to AI-powered assistants within an efficiency–autonomy trade-off, this study employed a single-session online experiment (n = 484) using a custom Alexa shopping app. To account for the role of the first recommended option, the brand (private label vs. national) and price (cheap vs. premium) were varied. Contrary to other shopping environments, when purchasing low-involvement and utilitarian products through VA-assisted shopping, evaluating fewer alternatives (indicative of greater efficiency) is associated with higher decision satisfaction and a greater intention to cede decision autonomy to the VA. The findings reveal that the number of alternatives evaluated is negatively associated with consumers’ intentions to delegate tasks to the VA and trust its product recommendations, both directly and indirectly, through decision satisfaction. Notably, the effect of streamlined choice persists across brand types and price levels. The results highlight consumers’ willingness to trade autonomy for efficiency in AI-assisted voice shopping, which has strategic implications for national brands operating in voice commerce environments.",
     "ai_reason": "AI语音助手在购物中的效率-自主权权衡，核心消费者决策满意度研究",
     "ai_score": 4.0,
@@ -56362,46 +56808,49 @@
     ],
     "authors": [
       "Brodrick Stigall",
-      "Earl Huff",
+      "Earl W. Huff",
       "Julian Brinkley",
-      "Kelly Caine",
+      "Kelly E. Caine",
       "Emma Dixon"
     ],
     "authors_full": [
       {
         "affiliation": [
-          "The University of Memphis, Department of Computer Science, United States"
+          "University of Memphis"
         ],
         "name": "Brodrick Stigall",
-        "orcid": "https://orcid.org/0000-0002-2965-0168"
+        "orcid": "https://orcid.org/0000-0002-2965-0168",
+        "position": "first"
       },
       {
         "affiliation": [
-          "The University of Texas at Austin, School of Information, United States"
+          "The University of Texas at Austin"
         ],
-        "name": "Earl Huff",
-        "orcid": "https://orcid.org/0000-0001-8747-8266"
+        "name": "Earl W. Huff",
+        "orcid": "https://orcid.org/0000-0001-8747-8266",
+        "position": "middle"
       },
       {
-        "affiliation": [
-          "Enteraxion Software Development, United States"
-        ],
+        "affiliation": [],
         "name": "Julian Brinkley",
-        "orcid": "https://orcid.org/0000-0002-4885-1854"
+        "orcid": "https://orcid.org/0000-0002-4885-1854",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "Clemson University, United States"
+          "Clemson University"
         ],
-        "name": "Kelly Caine",
-        "orcid": "https://orcid.org/0000-0003-3025-4194"
+        "name": "Kelly E. Caine",
+        "orcid": "https://orcid.org/0000-0003-3025-4194",
+        "position": "middle"
       },
       {
         "affiliation": [
-          "Clemson University, United States"
+          "Clemson University"
         ],
         "name": "Emma Dixon",
-        "orcid": "https://orcid.org/0000-0002-3142-9649"
+        "orcid": "https://orcid.org/0000-0002-3142-9649",
+        "position": "last"
       }
     ],
     "cited_by": 0,
@@ -58487,6 +58936,58 @@
     "url": "https://doi.org/10.1016/j.chb.2026.109156",
     "volume": null,
     "year": 2026
+  },
+  {
+    "abstract": "Understanding a target audience's emotional responses to a video advertisement is crucial to evaluate the advertisement's effectiveness. However, traditional methods for collecting such information are slow, expensive, and coarse grained. We propose AttentiveVideo, a scalable intelligent mobile interface with corresponding inference algorithms to monitor and quantify the effects of mobile video advertising in real time. Without requiring additional sensors, AttentiveVideo employs a combination of implicit photoplethysmography (PPG) sensing and facial expression analysis (FEA) to detect the\n                    attention, engagement\n                    , and\n                    sentiment\n                    of viewers as they watch video advertisements on unmodified smartphones. In a 24-participant study, AttentiveVideo achieved good accuracy on a wide range of emotional measures (the best average accuracy = 82.6% across nine measures). While feature fusion alone did not improve prediction accuracy with a single model, it significantly improved the accuracy when working together with model fusion. We also found that the PPG sensing channel and the FEA technique have different strength in data availability, latency detection, accuracy, and usage environment. These findings show the potential for both low-cost collection and deep understanding of emotional responses to mobile video advertisements.",
+    "ai_reason": "以智能算法感知观看者注意与情绪",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "情感识别",
+      "多模态",
+      "人机交互"
+    ],
+    "authors": [
+      "Phuong Pham",
+      "Jingtao Wang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Microsoft"
+        ],
+        "name": "Phuong Pham",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Google"
+        ],
+        "name": "Jingtao Wang",
+        "orcid": null
+      }
+    ],
+    "cited_by": 8,
+    "date": "2019-03-18",
+    "doi": "10.1145/3232233",
+    "domain_score": 5.0,
+    "id": 39815,
+    "ingested_at": "2026-11-25T10:47:46.202393",
+    "issue": "2-3",
+    "journal": "TiiS",
+    "pdf_url": null,
+    "scored_at": "2026-11-27T10:24:23.991689",
+    "title": "AttentiveVideo",
+    "title_zh": "AttentiveVideo",
+    "tldr": "AttentiveVideo利用普通智能手机的隐式PPG信号与面部表情分析，实时估计观众观看视频广告时的注意、参与度与情绪。24人研究中九项指标的最佳平均准确率达82.6%，特征与模型联合融合可提升预测效果，两类信号在延迟、准确性和环境适应性上各有所长。",
+    "topic_tags": [
+      "广告",
+      "情感计算",
+      "移动端交互",
+      "用户体验(UX)"
+    ],
+    "url": "https://doi.org/10.1145/3232233",
+    "volume": "9",
+    "year": 2019
   },
   {
     "abstract": null,
@@ -64188,6 +64689,66 @@
   },
   {
     "abstract": null,
+    "ai_reason": "比较儿童与AI及人类伙伴的沟通修复",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "对话式AI",
+      "人机交互",
+      "自然语言处理"
+    ],
+    "authors": [
+      "Zhixin Li",
+      "Trisha Thomas",
+      "Chi-Lin Yu",
+      "Ying Xu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Zhixin Li",
+        "orcid": "https://orcid.org/0009-0006-1118-4361"
+      },
+      {
+        "affiliation": [],
+        "name": "Trisha Thomas",
+        "orcid": "https://orcid.org/0000-0001-8323-1012"
+      },
+      {
+        "affiliation": [],
+        "name": "Chi-Lin Yu",
+        "orcid": "https://orcid.org/0000-0002-4381-7163"
+      },
+      {
+        "affiliation": [],
+        "name": "Ying Xu",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-04",
+    "doi": "10.1016/j.ijhcs.2026.103800",
+    "domain_score": 5.0,
+    "id": 40040,
+    "ingested_at": "2026-11-27T10:23:18.861109",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": null,
+    "scored_at": "2026-11-27T10:24:00.578670",
+    "title": "Children’s communication repairs with AI versus human partners",
+    "title_zh": "儿童与AI及人类伙伴的沟通修复比较",
+    "tldr": "比较儿童与AI伙伴及人类伙伴交流时采用的沟通修复策略，考察不同伙伴条件下儿童修正沟通问题的行为差异，为儿童友好型对话系统与交互设计提供依据。",
+    "topic_tags": [
+      "儿童",
+      "对话式AI",
+      "人机交互",
+      "沟通修复"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2026.103800",
+    "volume": "211",
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "研究儿童对Google（AI搜索）的信任，用户视角明确",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -69300,6 +69861,54 @@
     "url": "https://doi.org/10.1016/j.chb.2024.108518",
     "volume": "165",
     "year": 2025
+  },
+  {
+    "abstract": null,
+    "ai_reason": "深度伪造为核心，研究记忆与真实性感知",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "深度伪造",
+      "GenAI",
+      "多模态"
+    ],
+    "authors": [
+      "María T. Soto-Sanfiel",
+      "Gina Junhan Fu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "María T. Soto-Sanfiel",
+        "orcid": "https://orcid.org/0000-0002-1364-8821"
+      },
+      {
+        "affiliation": [],
+        "name": "Gina Junhan Fu",
+        "orcid": "https://orcid.org/0009-0008-2477-9473"
+      }
+    ],
+    "cited_by": 2,
+    "date": "2026-09",
+    "doi": "10.1016/j.chb.2026.109008",
+    "domain_score": 4.0,
+    "id": 39688,
+    "ingested_at": "2026-11-24T12:05:40.625725",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-27T10:24:00.576899",
+    "title": "Deepfaking the past: Memory and perceived truth of resurrected historical figures",
+    "title_zh": "深度伪造过去：复活历史人物的记忆与感知真实性",
+    "tldr": "聚焦以深度伪造技术“复活”历史人物后，个体的历史记忆与真实性判断如何变化，考察逼真再现是否会被当作事实依据，并提示历史歪曲、身份伦理及生成内容治理风险。",
+    "topic_tags": [
+      "记忆",
+      "感知真实性",
+      "深度伪造",
+      "伦理"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109008",
+    "volume": "182",
+    "year": 2026
   },
   {
     "abstract": null,
@@ -107466,6 +108075,74 @@
   },
   {
     "abstract": null,
+    "ai_reason": "研究用户对深度伪造危害的第三方感知",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "深度伪造",
+      "生成式AI",
+      "AI伦理"
+    ],
+    "authors": [
+      "Shilan Huang",
+      "Liuyu Huang",
+      "Dion Hoe-Lian Goh",
+      "Haoran Qiu"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Nanyang Technological University"
+        ],
+        "name": "Shilan Huang",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Nanyang Technological University"
+        ],
+        "name": "Liuyu Huang",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Nanyang Technological University"
+        ],
+        "name": "Dion Hoe-Lian Goh",
+        "orcid": null
+      },
+      {
+        "affiliation": [
+          "Nanyang Technological University"
+        ],
+        "name": "Haoran Qiu",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-04-17",
+    "doi": "10.1080/0144929x.2026.2657454",
+    "domain_score": 4.0,
+    "id": 40045,
+    "ingested_at": "2026-11-27T10:23:18.984164",
+    "issue": null,
+    "journal": "BIT",
+    "pdf_url": null,
+    "scored_at": "2026-11-27T10:24:00.577895",
+    "title": "Not all harms are equal: an investigation of third-person perception of deepfakes harms",
+    "title_zh": "并非所有危害都同等：深度伪造危害的第三人称感知研究",
+    "tldr": "考察个体对深度伪造危害的第三人称感知，比较不同危害及影响对象的风险判断，揭示人们对各类深伪风险的关注并不一致，为差异化风险沟通与AI治理提供依据。",
+    "topic_tags": [
+      "深度伪造",
+      "AI伦理",
+      "风险认知",
+      "第三人称感知"
+    ],
+    "url": "https://doi.org/10.1080/0144929x.2026.2657454",
+    "volume": null,
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心研究AI聊天机器人信任与道德感知",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -129300,6 +129977,70 @@
     "year": 2025
   },
   {
+    "abstract": "As Large Language Models (LLMs) become integrated into human-subjects research, understanding how participants perceive and consent to data use is central to building transparent and trustworthy research practices. We conducted a scenario-based study in which 157 participants evaluated 12 scenarios (sampled from a pool of 864), each varying across seven parameters: topic sensitivity, LLM management, data anonymization, data retention, model training, additional data access, and additional consent. We find that the effects of parameters on participants’ willingness to participate were mediated by their attitudinal evaluations—most robustly comfort, usefulness and safety—with no residual direct effects (consistent with full mediation). Anonymization and additional consent increased participation willingness, while indefinite data retention reduced it. Surprisingly, corporate LLM management (vs. federal) did not reduce participation, and data use for model training or personalization—despite potential data leakage—tended to increase participation willingness. We conclude with design implications for consent processes, transparency mechanisms, and governance practices that align research with participants’ stated preferences.",
+    "ai_reason": "LLM场景实验测量参与者知情与参与意愿",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "LLM",
+      "对话式 AI",
+      "人机交互",
+      "AI 治理"
+    ],
+    "authors": [
+      "Hanna Alzughbi",
+      "Jinkyung Park",
+      "Bart P. Knijnenburg"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [
+          "Clemson University"
+        ],
+        "name": "Hanna Alzughbi",
+        "orcid": "https://orcid.org/0009-0009-3582-197X",
+        "position": "first"
+      },
+      {
+        "affiliation": [
+          "Clemson University"
+        ],
+        "name": "Jinkyung Park",
+        "orcid": "https://orcid.org/0000-0002-0804-832X",
+        "position": "middle"
+      },
+      {
+        "affiliation": [
+          "Clemson University"
+        ],
+        "name": "Bart P. Knijnenburg",
+        "orcid": "https://orcid.org/0000-0003-1341-0669",
+        "position": "last"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11",
+    "doi": "10.1016/j.ijhcs.2026.103979",
+    "domain_score": 5.0,
+    "id": 39386,
+    "ingested_at": "2026-11-19T09:44:14.460632",
+    "issue": null,
+    "journal": "IJHCS",
+    "pdf_url": "https://doi.org/10.1016/j.ijhcs.2026.103979",
+    "scored_at": "2026-11-27T10:24:00.576659",
+    "title": "Understanding people’s willingness to participate in human-LLM conversational interaction research studies - a scenario study",
+    "title_zh": "了解人们参与人类-LLM对话交互研究的意愿：一项情景研究",
+    "tldr": "通过157名参与者评估12种人机对话研究场景，考察数据匿名化、留存、训练、访问及同意机制对参与意愿的影响。舒适度、实用性与安全感完全中介参与意愿；匿名化和追加同意提高意愿，无限期留存降低意愿。",
+    "topic_tags": [
+      "用户研究方法",
+      "知情同意",
+      "AI 治理",
+      "信任"
+    ],
+    "url": "https://doi.org/10.1016/j.ijhcs.2026.103979",
+    "volume": "219",
+    "year": 2026
+  },
+  {
     "abstract": null,
     "ai_reason": "AI chatbot采纳研究，含用户感知、信任等用研变量",
     "ai_score": 5.0,
@@ -134203,7 +134944,7 @@
     "year": 2025
   },
   {
-    "abstract": null,
+    "abstract": "AI-driven Virtual Influencers (VIs) are increasingly deployed as persuasive agents in digital environments, yet the mechanisms of human-agent interaction driving their effectiveness remain theoretically ambiguous. Existing VI research is fragmented, producing contradictory findings that obscure how persuasion operates when the source is non-human. To address this, this study identifies critical success factors and examines their structural relationships and relative importance using a multi-method approach (SLR, Fuzzy DEMATEL, and Fuzzy DANP) grounded in Lasswell's Communication Model. The analysis suggests a distinct hierarchy in which source-related factors occupy the primary position and exert the strongest perceived influence on the remaining endorsement-related factors. Notably, expert evaluations indicate that structural credibility carries greater relative importance than visual fidelity, while attitude emerges as a central structural mechanism rather than a static outcome. Theoretically, the findings contribute an expert-informed structural perspective on VI endorsement by illustrating how Lasswell's communication components may be structurally related and by synthesising complementary insights from Source Credibility, the CASA paradigm, and Uncanny Valley theory into a coherent interpretive framework. Collectively, this perspective may help designers and strategists better understand the VI ecosystem and inform decisions to minimise deployment risks while enhancing system acceptance and value.",
     "ai_reason": "聚焦虚拟网红代言说服及消费者反应",
     "ai_score": 3.0,
     "ai_type_tags": [
@@ -134211,22 +134952,24 @@
     ],
     "authors": [
       "Jasper Aniket",
-      "Neeraj Kaushik"
+      "Neeraj Kaushık"
     ],
     "authors_full": [
       {
         "affiliation": [
-          "National Institute of Technology"
+          "National Institute of Technology Kurukshetra"
         ],
         "name": "Jasper Aniket",
-        "orcid": "https://orcid.org/0009-0008-1386-2335"
+        "orcid": "https://orcid.org/0009-0008-1386-2335",
+        "position": "first"
       },
       {
         "affiliation": [
-          "National Institute of Technology"
+          "National Institute of Technology Kurukshetra"
         ],
-        "name": "Neeraj Kaushik",
-        "orcid": "https://orcid.org/0000-0003-2651-3448"
+        "name": "Neeraj Kaushık",
+        "orcid": "https://orcid.org/0000-0003-2651-3448",
+        "position": "last"
       }
     ],
     "cited_by": 0,

@@ -1,0 +1,86 @@
+{
+  "abstract": "Voice agents in shared spaces must satisfy interdependent multi-user requests while upholding per-user authority, privacy, and task constraints. Existing evaluations offer limited coverage when participants react throughout a session. We introduce $μ$-Bench, a benchmark for joint task completion in closed-loop, full-duplex multi-user voice interaction. Simulated participants act from isolated profiles of goals, knowledge, and permissions, adapting to the agent's speech and tool outcomes. Across 20 domains, 100 scenarios vary group size, acoustics, and follow-up demands to form 800 cases (408 tool-augmented, 392 tool-free). Joint Task Success (JTS) requires all user goals, privacy boundaries, and terminal states to hold jointly, while Pure JTS further disallows unauthorized tool calls; Attribution, Threading, and Coordination (ATC) diagnostics localize failures. Across 13 voice agents, proprietary systems peak at 62.24\\% tool-free and 65.44\\% tool-augmented success, while open-weight models remain below 20\\%. ATC diagnostics show that open-weight models lag primarily in multi-turn attribution and threading, and controlled contrasts reveal that larger groups consistently degrade joint task success across capable systems. By coupling reactive multi-user simulation with verifiable session-level outcomes, $μ$-Bench provides a rigorous testbed for shared voice agents.",
+  "ai_type_tags": [
+    "语音智能体",
+    "对话式 AI",
+    "智能体/Agent",
+    "任务型 AI"
+  ],
+  "arxiv_id": "2611.34920",
+  "authors": [
+    "Qihao Lin",
+    "Guanxu Chen",
+    "Shuhang Zheng",
+    "Xiaoya Lu",
+    "Jingyi Yang"
+  ],
+  "authors_full": [
+    {
+      "name": "Qihao Lin"
+    },
+    {
+      "name": "Guanxu Chen"
+    },
+    {
+      "name": "Shuhang Zheng"
+    },
+    {
+      "name": "Xiaoya Lu"
+    },
+    {
+      "name": "Jingyi Yang"
+    },
+    {
+      "name": "Terumi Chiba"
+    },
+    {
+      "name": "Wenyi Yu"
+    },
+    {
+      "name": "Chao Zhang"
+    },
+    {
+      "name": "Zhuan Shi"
+    },
+    {
+      "name": "Jing Shao"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "多用户语音代理交互评测，关注权限隐私",
+      "ai_score": 5.0,
+      "domain_score": 4.0,
+      "tldr": "面向共享空间语音智能体的多用户协作，建立闭环全双工基准μ-Bench，以独立目标、知识与权限的模拟参与者评测联合任务、隐私和工具调用。13个系统最佳工具无关/工具增强成功率为62.24%/65.44%，开放模型低于20%，主要败在多轮归因与线程协调，群体增大也会降低成功率。",
+      "topic_tags": [
+        "多用户语音交互",
+        "任务完成评测",
+        "隐私与权限",
+        "共享空间"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-25",
+  "doi": null,
+  "id": "p_MZXlTm9Sa6KNabOv",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.34920v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 40004,
+      "revision": "233b9a62008795de1e3b112864dd7fa0fe5dba21"
+    }
+  ],
+  "title": "$μ$-Bench: Benchmarking Multi-User Task Completion in Shared Interaction Voice Agents",
+  "title_zh": "μ-Bench：共享交互式语音代理的多用户任务完成基准评测",
+  "unified_ingested_at": "2026-11-27T10:38:39.525705Z",
+  "url": "https://arxiv.org/abs/2611.34920v1",
+  "volume": null,
+  "year": 2026
+}

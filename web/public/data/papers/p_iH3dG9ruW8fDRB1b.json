@@ -1,0 +1,68 @@
+{
+  "abstract": "In the last decade, there has been a surge of text-mining applications in the information systems literature. In these applications, researchers typically construct independent variables from documents by various text-mining techniques. The most prominent example could be using online review sentiments to investigate online word-of-mouth issues. Typically, most documents contain information richer than the independent variable, and researchers may construct control variables from the same documents to alleviate endogeneity issues. However, researchers need to manually craft these variables, and this process may not guarantee that all the important confounding factors are extracted and included in the regression model with a correct functional form. If useful textual information is overlooked and a valid identification strategy is not available, the omitted variable bias may occur. To solve this challenge, we propose a novel model that utilizes text embedding based on the state-of-the-art neural network language model (i.e., bidirectional encoder representations from transformers (BERT)) to automatically create a new control variable vector for controlling latent confounding factors in the absence of a valid identification strategy. Moreover, our approach can be considered a semiparametric approach in that our model contains a linear term of the key independent variable and an unknown functional term of the textual control variables. Our approach extends the semiparametric framework, double machine learning, by introducing a novel Neyman-orthogonal loss function in an integrated deep neural network to minimize the estimation bias. Our experiments demonstrate the effectiveness of controlling textual control variables by text embedding and improving the estimation performance by the novel loss function.\n                  This paper was accepted by Anindya Ghose, information systems.\n                  Supplemental Material: The online appendix and data files are available at https://doi.org/10.1287/mnsc.2024.04758 .",
+  "ai_type_tags": [
+    "BERT",
+    "自然语言处理",
+    "机器学习"
+  ],
+  "arxiv_id": "2024.04758",
+  "authors": [
+    "Mengke Qiao",
+    "Ke‐Wei Huang"
+  ],
+  "authors_full": [
+    {
+      "affiliation": [
+        "University of Alabama"
+      ],
+      "name": "Mengke Qiao",
+      "orcid": null,
+      "position": "first"
+    },
+    {
+      "affiliation": [
+        "National University of Singapore"
+      ],
+      "name": "Ke‐Wei Huang",
+      "orcid": "https://orcid.org/0000-0002-9932-6195",
+      "position": "last"
+    }
+  ],
+  "channel_profiles": {
+    "ob": {
+      "ai_reason": "以BERT校正文本混杂，面向口碑研究",
+      "ai_score": 4.0,
+      "domain_score": 4.0,
+      "tldr": "针对文本挖掘中控制变量遗漏引发内生性与遗漏变量偏误，结合BERT文本嵌入和部分线性回归构建半参数模型，在缺乏有效识别策略时自动生成文本控制变量，并保留关键自变量的线性效应。",
+      "topic_tags": [
+        "文本挖掘",
+        "因果推断",
+        "回归分析",
+        "管理研究方法"
+      ]
+    }
+  },
+  "channels": [
+    "ob"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-26",
+  "doi": "10.1287/mnsc.2024.04758",
+  "id": "p_iH3dG9ruW8fDRB1b",
+  "issue": null,
+  "journal": "MgmtSci",
+  "pdf_url": null,
+  "source_refs": [
+    {
+      "channel": "ob",
+      "legacy_id": 85677,
+      "revision": "a4a40c61b55fa33bc88e750f9fcfa8cf7a740b7f"
+    }
+  ],
+  "title": "Correcting the Unobserved Textual Confounding Factors in Regression by BERT and Partially Linear Regression",
+  "title_zh": "利用BERT和部分线性回归校正未观测的文本混杂因素",
+  "unified_ingested_at": "2026-11-27T10:38:39.525705Z",
+  "url": "https://doi.org/10.1287/mnsc.2024.04758",
+  "volume": null,
+  "year": 2026
+}

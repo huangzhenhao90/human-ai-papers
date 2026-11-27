@@ -1,0 +1,67 @@
+{
+  "abstract": "LLM-based user simulators are increasingly used to evaluate conversational assistants. Yet, these simulators can drift from their assigned goals or fail to exhaustively explore all specified options, causing evaluation errors incorrectly attributed to the assistant. Prior work has examined goal alignment in single-task settings, but many practical scenarios require simulators to execute multi-step workflows with sequential tasks, fallback logic, and cross-task dependencies, where simulator fidelity has not been measured. To close this gap, we introduce a benchmark of 500 workflows represented using the Hierarchical Task Network (HTN) abstraction. Our experiments reveal that the simulator's fidelity degrades sharply with workflow complexity, and that goal drift accounts for the majority of failures. Fidelity also depends on the assistant's response style, with the same simulator scoring substantially better or worse across styles. To address this, we propose ReUST (Reasoning + User State Tracking), a simple prompting strategy to maintain state information across dialogue turns. ReUST improves goal success rate by more than 12 points for mid-sized and large models, and reduces simulator sensitivity to the assistant's response style.",
+  "ai_type_tags": [
+    "LLM",
+    "用户模拟",
+    "对话式 AI",
+    "人机交互"
+  ],
+  "arxiv_id": "2611.34044",
+  "authors": [
+    "Pusala Pavan Teja",
+    "Jayasimha Talur",
+    "Saab Mansour",
+    "Marcello Federico"
+  ],
+  "authors_full": [
+    {
+      "name": "Pusala Pavan Teja"
+    },
+    {
+      "name": "Jayasimha Talur"
+    },
+    {
+      "name": "Saab Mansour"
+    },
+    {
+      "name": "Marcello Federico"
+    }
+  ],
+  "channel_profiles": {
+    "ur": {
+      "ai_reason": "用LLM模拟用户评测对话助手工作流可靠性",
+      "ai_score": 5.0,
+      "domain_score": 3.0,
+      "tldr": "针对多步骤工作流评测中LLM用户模拟器易偏离目标、遗漏分支的问题，构建含500个HTN工作流的基准，揭示复杂度升高会显著降低保真度且目标漂移是主要故障，评分还受助手回复风格影响。ReUST通过跨轮推理与用户状态跟踪，将中大型模型的目标成功率提升逾12个百分点，并降低风格敏感性。",
+      "topic_tags": [
+        "对话式 AI",
+        "用户研究方法",
+        "人机交互(HCI)",
+        "AI 评测"
+      ]
+    }
+  },
+  "channels": [
+    "ur"
+  ],
+  "cited_by": 0,
+  "date": "2026-11-25",
+  "doi": null,
+  "id": "p_n1LGOriB_gg7jouN",
+  "issue": null,
+  "journal": "arXiv:cs.CL",
+  "pdf_url": "https://arxiv.org/pdf/2611.34044v1",
+  "source_refs": [
+    {
+      "channel": "ur",
+      "legacy_id": 40005,
+      "revision": "233b9a62008795de1e3b112864dd7fa0fe5dba21"
+    }
+  ],
+  "title": "Reliable User Simulation in Complex Multi-Step Workflows",
+  "title_zh": "复杂多步骤工作流中的可靠用户仿真",
+  "unified_ingested_at": "2026-11-27T10:38:39.525705Z",
+  "url": "https://arxiv.org/abs/2611.34044v1",
+  "volume": null,
+  "year": 2026
+}
