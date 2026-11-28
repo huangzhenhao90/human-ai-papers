@@ -48689,6 +48689,59 @@
     "year": 2026
   },
   {
+    "abstract": "Generative AI systems are increasingly deployed at scale to support human users in creative tasks across a variety of domains. However, as more users adopt the same AI agent, the resulting artifacts may become increasingly homogeneous, leading to a collapse in collective diversity. Prior work has documented this risk, but lacks a systematic framework for understanding how collective diversity changes as AI adoption scales across co-creation settings. In this work, we conduct a large-scale crowdsourcing study to understand and model the dynamics of collective diversity, quality, and effort in human-AI co-creation across two creative domains: Creative Hypothesis Generation and Creative Story Writing. We find that current AI agents used in co-creation can improve artifact quality and reduce effort, but at the cost of declining collective diversity as adoption increases. We further show that more fine-grained human-AI interaction, along with more diverse agent policies, can mitigate this collapse. Finally, we fit predictive models that quantify how collective diversity scales with adoption across co-creation settings, providing insights for designing AI agents that aim to preserve collective diversity.",
+    "ai_reason": "人类与AI共创的大规模众包研究",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "智能体/Agent",
+      "人机协作",
+      "人机交互"
+    ],
+    "authors": [
+      "Manh Hung Nguyen",
+      "Chao Wen",
+      "Sebastian Tschiatschek",
+      "Adish Singla"
+    ],
+    "authors_full": [
+      {
+        "name": "Manh Hung Nguyen"
+      },
+      {
+        "name": "Chao Wen"
+      },
+      {
+        "name": "Sebastian Tschiatschek"
+      },
+      {
+        "name": "Adish Singla"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11-15",
+    "doi": null,
+    "domain_score": 5.0,
+    "id": 39999,
+    "ingested_at": "2026-11-26T10:16:32.882665",
+    "issue": null,
+    "journal": "arXiv:cs.HC",
+    "pdf_url": "https://arxiv.org/pdf/2611.33192v1",
+    "scored_at": "2026-11-28T09:41:43.642753",
+    "title": "Dynamics of Collective Diversity in Human-AI Co-Creation for Creative Tasks",
+    "title_zh": "创意任务中Human-AI协同创作的集体多样性动态",
+    "tldr": "通过两项创意任务的大规模众包研究，刻画AI采用规模下集体多样性、质量与投入的变化。AI代理虽能提升产出质量、降低努力，却导致多样性随采用率上升而下降；细粒度人机交互及多样化代理策略可缓解这一趋势。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "AI采用",
+      "集体多样性"
+    ],
+    "url": "https://arxiv.org/abs/2611.33192v1",
+    "volume": null,
+    "year": 2026
+  },
+  {
     "abstract": "Large language models increasingly replace real people in the AI development pipeline, as they are used to generate training dialogues at scale and to drive alignment and evaluation. However, out-of-the-box models produce monolingual and stylistically flat texts as synthetic user prompts, failing to replicate the real user-AI communication mechanics. We present PersonaFactory, an end-to-end pipeline that generates detailed user personas and uses them to augment existing user prompts from their point of view, producing a bank of over 740000 structured synthetic personas detailing their background and communication behaviors, and a corpus of roughly 1.24 million persona-styled synthetic conversations spanning 85 languages. We evaluate the effect of personal features on style adoption and intent preservation, using an LLM-judge and heuristic metrics to assess augmentation fidelity together with the downstream impact on assistant persona control through training data. Results show that our structured, attribute-based style representation enables per-axis control and better intent preservation at comparable style fidelity than free-text persona descriptions used in existing methods. A human expert evaluation found the augmented conversations plausible, with favorable ratings for intent preservation, style naturalness, and multilingual authenticity. Finally, PersonaFactory conversations achieve comparable performance to original training data on capability benchmarks, are preferred on real user prompts at equal reply length, and adapt their reply style more closely to users without explicit steering.",
     "ai_reason": "合成用户画像与交互提示是核心对象",
     "ai_score": 5.0,
@@ -49836,6 +49889,46 @@
     "url": "https://doi.org/10.1093/iwc/iwad022",
     "volume": "35",
     "year": 2023
+  },
+  {
+    "abstract": null,
+    "ai_reason": "核心讨论机器的人工伦理与信任",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI 治理"
+    ],
+    "authors": [
+      "Henrik Skaug Sætra"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Henrik Skaug Sætra",
+        "orcid": "https://orcid.org/0000-0002-7558-6451"
+      }
+    ],
+    "cited_by": 11,
+    "date": "2024-04",
+    "doi": "10.1016/j.chb.2023.108108",
+    "domain_score": 4.0,
+    "id": 40030,
+    "ingested_at": "2026-11-27T10:23:18.655437",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-28T09:41:45.945328",
+    "title": "A Machine's ethos? An inquiry into artificial ethos and trust",
+    "title_zh": "机器的伦理精神：人工伦理精神与信任之探究",
+    "tldr": "从标题看，聚焦人工制品的“气质”（ethos）及其与信任的关系，探讨机器如何被感知为具有意图、价值或道德取向，以及这种人工属性如何塑造用户信任。",
+    "topic_tags": [
+      "信任",
+      "伦理",
+      "人机交互(HCI)"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2023.108108",
+    "volume": "153",
+    "year": 2024
   },
   {
     "abstract": null,
@@ -53035,6 +53128,54 @@
     "url": "https://doi.org/10.1145/3453173",
     "volume": "11",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "聚焦人机查证中的责任分配",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "GenAI",
+      "人机交互",
+      "人机协作"
+    ],
+    "authors": [
+      "Chia-Mei Lu",
+      "Shu Ching Yang"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Chia-Mei Lu",
+        "orcid": "https://orcid.org/0000-0001-9181-9828"
+      },
+      {
+        "affiliation": [],
+        "name": "Shu Ching Yang",
+        "orcid": "https://orcid.org/0000-0003-4105-1747"
+      }
+    ],
+    "cited_by": 0,
+    "date": "2026-11",
+    "doi": "10.1016/j.chb.2026.109278",
+    "domain_score": 4.0,
+    "id": 40085,
+    "ingested_at": "2026-11-28T09:41:10.989891",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-28T09:41:43.643079",
+    "title": "After AI Checks, Who Consolidates? Responsibility Allocation in Human–GenAI Inquiry",
+    "title_zh": "AI核查后由谁整合：Human–GenAI探究中的责任分配",
+    "tldr": "聚焦GenAI完成检查后由谁整合结论并承担责任，分析AI核查情境下人类与GenAI之间的责任分配，揭示自动化检查如何改变后续确认、判断与问责边界。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "人机协作",
+      "信任",
+      "责任分配"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109278",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": null,
@@ -58293,6 +58434,51 @@
     "url": "https://doi.org/10.1016/j.chb.2021.106934",
     "volume": "124",
     "year": 2021
+  },
+  {
+    "abstract": null,
+    "ai_reason": "AI情境下在线体验的统一消费框架",
+    "ai_score": 3.0,
+    "ai_type_tags": [
+      "人机交互"
+    ],
+    "authors": [
+      "Donna L. Hoffman",
+      "Thomas P. Novak"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Donna L. Hoffman",
+        "orcid": null
+      },
+      {
+        "affiliation": [],
+        "name": "Thomas P. Novak",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-07-13",
+    "doi": "10.1007/s11747-026-01173-1",
+    "domain_score": 5.0,
+    "id": 40097,
+    "ingested_at": "2026-11-28T09:41:11.269410",
+    "issue": null,
+    "journal": "JAMS",
+    "pdf_url": null,
+    "scored_at": "2026-11-28T09:41:43.644581",
+    "title": "Assembling flow: A unified theoretical framework for understanding online experience in an AI-powered world",
+    "title_zh": "组装流：理解AI赋能世界在线体验的统一理论框架",
+    "tldr": "从标题看，旨在构建理解AI驱动在线体验的统一理论框架，整合“心流”与界面要素，解释用户投入和流畅体验的形成机制，为AI嵌入在线服务的设计与评估提供理论视角。",
+    "topic_tags": [
+      "用户体验(UX)",
+      "人机交互(HCI)",
+      "服务体验"
+    ],
+    "url": "https://doi.org/10.1007/s11747-026-01173-1",
+    "volume": null,
+    "year": 2026
   },
   {
     "abstract": "This work contributes a research protocol for evaluating human-AI interaction in the context of specific AI products. The research protocol enables UX and HCI researchers to assess different human-AI interaction solutions and validate design decisions before investing in engineering. We present a detailed account of the research protocol and demonstrate its use by employing it to study an existing set of human-AI interaction guidelines. We used factorial surveys with a 2 × 2 mixed design to compare user perceptions when a guideline is applied versus violated, under conditions of optimal versus sub-optimal AI performance. The results provided both qualitative and quantitative insights into the UX impact of each guideline. These insights can support creators of user-facing AI systems in their nuanced prioritization and application of the guidelines.",
@@ -86843,6 +87029,59 @@
   },
   {
     "abstract": null,
+    "ai_reason": "自动驾驶采纳的信任与接受度面板研究",
+    "ai_score": 4.0,
+    "ai_type_tags": [
+      "自动驾驶",
+      "AI技术接受"
+    ],
+    "authors": [
+      "Hongjie Tang",
+      "Shirley S. Ho",
+      "Liang Chen"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "Hongjie Tang",
+        "orcid": "https://orcid.org/0000-0002-8798-7738"
+      },
+      {
+        "affiliation": [],
+        "name": "Shirley S. Ho",
+        "orcid": "https://orcid.org/0000-0003-1079-103X"
+      },
+      {
+        "affiliation": [],
+        "name": "Liang Chen",
+        "orcid": null
+      }
+    ],
+    "cited_by": 1,
+    "date": "2026-11",
+    "doi": "10.1016/j.chb.2026.109063",
+    "domain_score": 5.0,
+    "id": 40084,
+    "ingested_at": "2026-11-28T09:41:10.968081",
+    "issue": null,
+    "journal": "CHB",
+    "pdf_url": null,
+    "scored_at": "2026-11-28T09:41:43.643711",
+    "title": "From social trust to AI technology acceptance: A panel study of AI-Powered autonomous vehicle adoption in Singapore",
+    "title_zh": "从社会信任到AI技术接受：新加坡AI赋能自动驾驶汽车采纳的面板研究",
+    "tldr": "基于新加坡面板研究，考察社会信任如何影响居民对AI驱动自动驾驶车的技术接受，追踪社会信任向采纳意愿转变的动态关系，为智能交通普及提供依据。",
+    "topic_tags": [
+      "AI采用",
+      "信任",
+      "消费者行为",
+      "智能交通"
+    ],
+    "url": "https://doi.org/10.1016/j.chb.2026.109063",
+    "volume": "184",
+    "year": 2026
+  },
+  {
+    "abstract": null,
     "ai_reason": "核心为LLM驱动的对话代理，HCI交互研究",
     "ai_score": 5.0,
     "ai_type_tags": [
@@ -98822,6 +99061,47 @@
     "url": "https://doi.org/10.1145/3610578",
     "volume": "14",
     "year": 2024
+  },
+  {
+    "abstract": null,
+    "ai_reason": "聚焦智能界面的理论与实践",
+    "ai_score": 5.0,
+    "ai_type_tags": [
+      "人机交互",
+      "AI 助手"
+    ],
+    "authors": [
+      "M.F McTear"
+    ],
+    "authors_full": [
+      {
+        "affiliation": [],
+        "name": "M.F McTear",
+        "orcid": null
+      }
+    ],
+    "cited_by": 25,
+    "date": "2000-02",
+    "doi": "10.1016/s0953-5438(99)00002-8",
+    "domain_score": 4.0,
+    "id": 39811,
+    "ingested_at": "2026-11-25T10:47:46.070070",
+    "issue": "4",
+    "journal": "IwC",
+    "pdf_url": null,
+    "scored_at": "2026-11-28T09:42:25.347568",
+    "title": "Intelligent interface technology: from theory to reality?",
+    "title_zh": "智能界面技术：从理论到现实？",
+    "tldr": "从标题看，检视智能界面技术由理论走向现实时遭遇的落差，关注概念模型与实际部署、用户需求及使用情境之间的错位，并讨论面向真实应用的可用性评估与设计转化路径。",
+    "topic_tags": [
+      "人机交互(HCI)",
+      "用户体验(UX)",
+      "可用性",
+      "服务设计"
+    ],
+    "url": "https://doi.org/10.1016/s0953-5438(99)00002-8",
+    "volume": "12",
+    "year": 2000
   },
   {
     "abstract": null,
